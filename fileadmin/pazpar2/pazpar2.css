@@ -114,6 +114,31 @@
 	margin-left: 0.3em;
 }
 
+
+/* ZDB Info */
+.pz2-ZDBLibraryName {
+	display: block;
+	font-style: italic;
+	color: #666;
+}
+
+a.pz2-ZDBGeneralInfo {
+	display:block;
+}
+
+td div {
+	position: relative;
+}
+
+td div h4 {
+	position: absolute;
+	right: 100%;
+	padding-right: 4px;
+	text-align: right;
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color: #666;
+}
+
 /* Google Books */
 .googleBooks {
 	display: block;
