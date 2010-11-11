@@ -34,10 +34,11 @@ var germanTerms = {
 	'detail-label-title': 'Titel',
 	'detail-label-series-title': 'Serie',
 	'detail-label-author': 'Autor',
+	'detail-label-author-plural': 'Autoren',
 	'detail-label-date': 'Jahr',
-	'detail-label-isbn': 'ISBN',
 	'detail-label-medium': 'Art',
-	'detail-label-description': 'Infos',
+	'detail-label-description': 'Information',
+	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
 	'detail-local-label-id': 'PPN',
 	'link': '[Link]',
@@ -499,13 +500,21 @@ function replaceHtml(el, html) {
 function renderDetails(data, marker) {
 	var detailLine = function (title, information) {
 		var rowMarkup = [];
-		rowMarkup.push('<tr class="pz2-detail-', title, '"><th>', 
-			localise('detail-label-'+title), ':</th><td>');
+		rowMarkup.push('<tr class="pz2-detail-', title, '"><th>');
 
 		if (information.length == 1) {
+			rowMarkup.push(localise('detail-label-'+title), ':</th><td>');
 			rowMarkup.push(information[0]);
 		}
 		else {
+			var labelKey = 'detail-label-' + title + '-plural';
+			var labelLocalisation = localise(labelKey);
+			if (labelKey === labelLocalisation) { // no plural form, fall back to singular
+				labelKey = 'detail-label-' + title;
+				labelLocalisation = localise(labelKey);
+			}
+			rowMarkup.push(labelLocalisation, ':</th><td>');
+
 			rowMarkup.push('<ul>');
 			for (var itemNumber in information) {
 				rowMarkup.push('<li>' + information[itemNumber] + '</li>');
