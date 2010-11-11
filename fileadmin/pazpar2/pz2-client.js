@@ -567,8 +567,16 @@ function renderDetails(data, marker) {
 	}
 
 
-	var detailLine = function (title, informationElement) {
-		if (informationElement && title) {
+	/*	detailLine
+		input:	title - string with element's name
+				informationElement - array of DOM elements with the information to be displayed
+		output: DOM element of table row with 
+				* heading containing the localised and plural conscious name of the item
+				* data containing the informationElements passed. 
+					If there is more than one of them, they are wrapped in a list
+	*/
+	var detailLine = function (title, informationElements) {
+		if (informationElements && title) {
 			var tableRow = document.createElement('tr');
 			tableRow.setAttribute('class', 'pz2-detail-' + title);
 			var rowHeading = document.createElement('th');
@@ -576,9 +584,9 @@ function renderDetails(data, marker) {
 			var rowData = document.createElement('td');
 			tableRow.appendChild(rowData);
 
-			if (!$.isArray(informationElement)) {
+			if (informationElements.length == 1) {
 				rowHeading.appendChild(document.createTextNode(localise('detail-label-'+title)+':'));
-				rowData.appendChild(informationElement);
+				rowData.appendChild(informationElements[0]);
 			}
 			else {
 				var labelKey = 'detail-label-' + title + '-plural';
@@ -592,18 +600,23 @@ function renderDetails(data, marker) {
 				var rowDataUL = document.createElement('ul');
 				rowData.appendChild(rowDataUL);
 
-				for (var itemNumber in informationElement) {
+				for (var itemNumber in informationElements) {
 					var rowDataLI = document.createElement('li');
 					rowDataUL.appendChild(rowDataLI);
-					rowDataLI.appendChild(informationElement[itemNumber]);
+					rowDataLI.appendChild(informationElements[itemNumber]);
 				}
 			}
 		}
 
 		return tableRow;
-	}	
+	}
 
 
+	/*	detailLineAuto
+		input:	title - string with the element's name
+		output:	DOM element for title and the data coming from data[md-title]
+				as created by detailLine.
+	*/
 	var detailLineAuto = function (title) {
 		var result = undefined;
 		var element = DOMElementForTitle(title);
@@ -616,6 +629,10 @@ function renderDetails(data, marker) {
 	} 
 
 	
+	/*	linkForDOI
+		input:	DOI - string with DOI
+		output: DOM anchor element with link to the DOI at dx.doi.org
+	*/
 	var linkForDOI = function (DOI) {
 		var linkElement = document.createElement('a');
 		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
@@ -666,6 +683,11 @@ function renderDetails(data, marker) {
 	} 
 */ 
 
+	/*	DOMElementForTitle
+		input:	title - title string
+		output:	nil, if the field md-title does not exist in data. Otherwise:
+				array of DOM elements created from the fields of data[md-title]
+	*/
 	var DOMElementForTitle = function (title) {
 		var result = [];
 		if ( data['md-' + title] !== undefined ) {
@@ -691,10 +713,15 @@ function renderDetails(data, marker) {
 	}
 
 
-	var EZBLink = function () {
-		var ISSN = data['md-issn'];
+	/*	EZBLinkForISSN
+		input:	string that's assumed to be an ISSN
+		output:	* undefined if ISSN is undefined
+				* DOM anchor element with link to EZB page containing an image with the
+					'traffic lights' for that journal
+	*/
+	var EZBLinkForISSN = function (ISSN) {
 		if (ISSN) {
-			var EZBURL = 'http://ezb.uni-regensburg.de/ezeit/vascoda/openURL.phtml?pid=format%3Dxml&genre=article&issn=' + ISSN;
+			var EZBURL = 'http://ezb.uni-regensburg.de/ezeit/vascoda/openURL.phtml?pid=format%3Dhtml&genre=article&issn=' + ISSN;
 			var EZBImageURL = 'http://ezb.uni-regensburg.de/vascoda/get_image.php?issn=' + ISSN	;		
 
 			var EZBLink = document.createElement('a');
@@ -709,6 +736,24 @@ function renderDetails(data, marker) {
 	}
 
 
+	/*	EZBLinks
+		output:	* array of DOM elements with links and 'traffic light' images for each ISSN found
+				* undefined if no ISSN information is available
+	*/
+	var EZBLinks = function () {
+		var ISSNs = data['md-issn'];
+		if (ISSNs) {
+			var result = [];
+			for (var ISSNNumber in ISSNs) {
+				var ISSNElement = EZBLinkForISSN(ISSNs[ISSNNumber]);
+				if (ISSNElement) {
+					result.push(ISSNElement);
+				}
+			}
+		}
+
+		return result;
+	}
 
 	
 	/*
@@ -1061,7 +1106,7 @@ function renderDetails(data, marker) {
 	appendInfoToContainer( detailLineAuto('issn'), detailsTable );
 	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
 	appendInfoToContainer( locationDetails(), detailsTable );
-	appendInfoToContainer( detailLine(localise('availability'), EZBLink()), detailsTable );
+	appendInfoToContainer( detailLine(localise('availability'), EZBLinks()), detailsTable );
 	appendInfoToContainer( extraLinks(), detailsTable );
 
 	return detailsDiv;
