@@ -629,7 +629,7 @@ function renderDetails(data, marker) {
 				and adds hyphens to them.
 		*/
 		var normaliseISBNsInString = function (ISBN) {
-			return ISBN.replace(/([0-9])-([0-9Xx])/g, '$1$2');
+			return ISBN.replace(/([0-9]*)-([0-9Xx])/g, '$1$2');
 		}
 
 
