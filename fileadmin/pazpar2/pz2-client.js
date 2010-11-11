@@ -114,86 +114,111 @@ function my_oninit() {
 */
 function my_onshow(data) {
 
-	var titleInfo = function() {
-		var output = '<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
-			+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
-			+ '" onclick="toggleDetails(this.id);return false;">'
-			+ '<span class="pz2-item-title">'
+	/*	markupForField
+		Creates DOM element and content for a field name; Appends it to given container.
+		input:	fieldName - string with key for a field stored in hit
+				container (optional)- the DOM element we created is appended here
+				prepend (optional) - string inserted before the DOM element with the field data
+		output: the DOM SPAN element that was appended
+	*/
+	var markupForField = function (fieldName, container, prepend) {
+		var theHit = hit['md-' + fieldName];
 
-		if (hit['md-multivolume-title'] !== undefined) {
-			output += ' <span class="pz2-item-multivolume-title">' 
-				+ hit['md-multivolume-title'] + '</span>: ';
+		if (theHit !== undefined && container) {
+			var span = document.createElement('span');
+			span.setAttribute('class', 'pz2-' + fieldName);
+			span.appendChild(document.createTextNode(theHit));
+		
+			if (container) {
+				if (prepend) {
+					container.appendChild(document.createTextNode(prepend));
+				}
+				container.appendChild(span);
+			}
 		}
 
-		output += hit["md-title"] + '</span>';
-
-		if (hit['md-title-remainder'] !== undefined) {
-			output += ' <span class="pz2-item-title-remainder">' 
-				+ hit['md-title-remainder'] + '</span>';
-		}
-
-		if (hit['md-title-number-section'] !== undefined) {
-			output += ' <span class="pz2-item-title-number-section">'
-				+ hit['md-title-number-section'] + '</span>';
-		}
-
-
-		output += '.';
-
-		return output;
+		return span;
 	}
 
 
+
+	/*	titleInfo
+		Returns DOM SPAN element with markup for the current hit's title.
+		output:	DOM SPAN element
+	*/
+	var titleInfo = function() {
+		var titleCompleteElement = document.createElement('span');
+		titleCompleteElement.setAttribute('class', 'pz2-title-complete');
+
+		var titleMainElement = document.createElement('span');
+		titleCompleteElement.appendChild(titleMainElement);
+		titleMainElement.setAttribute('class', 'pz2-title-main');
+		markupForField('title', titleMainElement);
+		markupForField('multivolume-title', titleMainElement, ' ');
+
+		markupForField('title-remainder', titleCompleteElement, ' ');
+		markupForField('title-number-section', titleCompleteElement, ' ');
+
+		titleCompleteElement.appendChild(document.createTextNode('. '));
+
+		return titleCompleteElement;
+	}
+
+
+
+	/*	authorInfo
+		Returns DOM SPAN element with markup for the current hit's author information.
+		The pre-formatted title-responsibility field is preferred and a list of author
+			names is used as a fallback.
+		output:	* DOM SPAN element
+	*/
 	var authorInfo = function() {
-		var output = '';
-		// use responsibility field if available
+		var outputText;
+
 		if (hit['md-title-responsibility'] !== undefined) {
-		 	output = hit['md-title-responsibility'];
+			// use responsibility field if available
+		 	outputText = hit['md-title-responsibility'];
 		}
-		// otherwise try to fall back to author fields
 		else if (hit['md-author'] !== undefined) {
+			// otherwise try to fall back to author fields
 			var authors = [];
 			for (var index = 0; index < hit['md-author'].length; index++) {
 				var authorname = hit['md-author'][index];
 				authors.push(authorname);
 			}
 
-			output = authors.join('; ');
+			outputText = authors.join('; ');
 		}
 
 		// ensure the author designation ends with a single full stop
 		var extraFullStop = '';
-		if (output[output.length - 1] != '.') {
+		if (outputText[outputText.length - 1] != '.') {
 			extraFullStop = '.';
 		}
 		
-		if (output != '') {
-			output = '<span class="pz2-item-responsibility">' 
-						+ output + extraFullStop + '</span>';
+		var output = document.createElement('span');
+		if (outputText != '') {
+			output.setAttribute('class', 'pz2-item-responsibility');
+			output.appendChild(document.createTextNode(outputText + extraFullStop))
 		}
 		
 		return output;
 	}
 
 
-	var journalInfo = function () {
-		var output = [];
 
-		if (hit['md-journal-title'] !== undefined) {
-			output.push('<span class="pz2-journal-title">'
-				+ hit['md-journal-title'] + '</span>');
-			if (hit['md-journal-subpart'] !== undefined) {
-				output.push(', <span class="pz2-journal-subpart">'
-				+ hit['md-journal-subpart'] + '</span>');
-			}
+	/*	appendJournalInfo
+		Appends DOM SPAN element with the current hit's journal information to linkElement.
+	*/
+	var appendJournalInfo = function () {
+		var output = document.createElement('span');
+		output.setAttribute('class', 'pz2-journal');
+
+		var journalTitle = markupForField('journal-title', linkElement, localise(' In') + ': ');
+		if (journalTitle) {
+			markupForField('journal-subpart', journalTitle, ', ')
+			journalTitle.appendChild(document.createTextNode('.'));
 		}
-
-		if (output != []) {
-			output.unshift(localise('In') + ': ');
-			output.push('.');
-		}
-
-		return output.join('');
 	} 
 
 
@@ -210,36 +235,47 @@ function my_onshow(data) {
 	// navi
 	var results = document.getElementById("pz2-results");
   
-	var html = ['<ol start="' + (1 + recPerPage * (curPage - 1)) + '">'];
+
+	// Create results list.
+	var OL = document.createElement('ol');
+	OL.setAttribute('start', 1 + recPerPage * (curPage - 1))
+
 	for (var i = 0; i < data.hits.length; i++) {
 		var hit = data.hits[i];
 
-		html.push(titleInfo());
+		var LI = document.createElement('li');
+		OL.appendChild(LI);
+		LI.setAttribute('id', 'recdiv_' + HTMLIDForRecordData(hit));
 
-		var authors = authorInfo();
-		if (authors != '') {
-			html.push(' ' + authors );
-		}
+		var linkElement = document.createElement('a');
+		LI.appendChild(linkElement);
+		linkElement.setAttribute('href', '#');
+		linkElement.setAttribute('class', 'pz2-recordLink');
+		linkElement.setAttribute('onclick', 'toggleDetails(this.id);return false;');
+		linkElement.setAttribute('id', 'rec_' + HTMLIDForRecordData(hit));
 
-		var journal = journalInfo();
-		if (hit['md-medium'] == 'article' && journal != '') {
-			html.push(' ' + journal);
+		linkElement.appendChild( titleInfo() );
+		linkElement.appendChild( authorInfo() );
+
+		if (hit['md-medium'] == 'article') {
+			appendJournalInfo();
 		}
 		else {
-			if (hit['md-date'] !== undefined) {
-				html.push(' <span class="pz2-item-date">'
-					+ hit['md-date'] + '</span>.');
-			}
+			markupForField('date', linkElement, ' ');
 		}
 
 		if (hit.recid == curDetRecId) {
-			html.push(renderDetails(curDetRecData));
+			linkElement.appendChild(renderDetails(curDetRecData));
 		}
-		html.push('</a></li>');
 	}
-   	html.push('</ol>');
-	replaceHtml(results, html.join(''));
+
+	// Replace old results list
+	while ( results.childNodes.length > 0 ) {
+		results.removeChild( results.firstChild );
+	}
+	results.appendChild(OL);
 }
+
 
 
 function my_onstat(data) {
