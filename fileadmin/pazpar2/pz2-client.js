@@ -35,6 +35,8 @@ var germanTerms = {
 	'detail-label-series-title': 'Serie',
 	'detail-label-author': 'Autor',
 	'detail-label-author-plural': 'Autoren',
+	'detail-label-other-person': 'Person',
+	'detail-label-other-person-plural': 'Personen',
 	'detail-label-date': 'Jahr',
 	'detail-label-medium': 'Art',
 	'detail-label-description': 'Information',
@@ -665,6 +667,7 @@ function renderDetails(data, marker) {
 	}
 
 	detailsHTML.push( detailLineAuto('author') );
+	detailsHTML.push( detailLineAuto('other-person') )
 	detailsHTML.push( detailLineAuto('description') );
  	detailsHTML.push( detailLineAuto('medium') );
 	detailsHTML.push( detailLineAuto('series-title') );
