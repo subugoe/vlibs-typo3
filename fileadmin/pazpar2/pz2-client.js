@@ -45,6 +45,7 @@ var germanTerms = {
 	'detail-label-issn': 'ISSN',
 	'detail-label-isbn': 'ISBN',
 	'detail-label-doi': 'DOI',
+	'detail-label-doi-plural': 'DOIs',
 	'detail-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
@@ -81,12 +82,13 @@ my_paz = new pz2( { "onshow": my_onshow,
 					"serviceId": my_serviceID } );
 // some state vars
 var curPage = 1;
-var recPerPage = 90;
+var recPerPage = 100;
 var totalRec = 0;
 var curDetRecId = '';
 var curDetRecData = null;
 var curSort = 'date';
 var curFilter = null;
+var filter = [];
 var submitted = false;
 
 
@@ -249,10 +251,10 @@ function my_onterm(data) {
 		var terms = data[type];
 		for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
         	theHTML.push( '<li><a href="#"'
-        	+ ' target_id=' + terms[i].id
-        	+ ' onclick="limitTarget(this.getAttribute(\'target_id\'), this.firstChild.nodeValue);return false;">'
+        	+ ' target_name=' + terms[i].name
+        	+ ' onclick="limitTarget(' + terms[i].name + '), this.firstChild.nodeValue);return false;">'
         	+ terms[i].name 
-        	+ ' <span class="count">(' + terms[i].freq + ')</span>'
+        	+ '<span class="count">' + terms[i].freq + '</span>'
         	+ '</a></li>');
     	}
 		theHTML.push('</ol></div>');
@@ -278,8 +280,12 @@ function my_onrecord(data) {
     if (detRecordDiv) return;
     curDetRecData = data;
     var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
-    var html = renderDetails(curDetRecData).join('');
-    recordDiv.innerHTML += html;
+    var details = renderDetails(curDetRecData);
+
+//	replaceHtml(recordDiv, html);
+//	var myDiv = document.createElement('div');
+	//myDiv.innerHTML = html;
+   recordDiv.appendChild( details );
 }
 
 
@@ -341,6 +347,8 @@ function resetPage()
 
 function triggerSearch ()
 {
+	// TODO-ssp: Set filter to correct term (target-facet?)
+	// var filter = NULL;
     my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
 }
 
@@ -382,6 +390,37 @@ function delimitTarget ()
     triggerSearch();
     return false;
 }
+
+function limitResults(name, kind) {
+	var thisFilter = {'name': name, 'kind': kind};
+	for (var index in filter) {
+		if (filter[index] == thisFilter) {
+			filter.push(thisFilter);
+			redisplay();
+			load();
+			break;
+		}
+	}
+}
+
+function delimitResults(name, kind) {
+	var thisFilter = {'name': name, 'kind': kind};
+	for (var index in filter) {
+		if (filter[index] == thisFilter) {
+			filter.splice(index, 1);
+			redisplay();
+			load();
+			break;
+		}
+	}
+
+}
+
+function redisplay() {
+	
+}
+
+
 
 function drawPager (pagerDiv)
 {
@@ -502,14 +541,39 @@ function replaceHtml(el, html) {
 };
 
 
-function renderDetails(data, marker) {
-	var detailLine = function (title, information) {
-		var rowMarkup = [];
-		rowMarkup.push('<tr class="pz2-detail-', title, '"><th>');
 
-		if (information.length == 1) {
-			rowMarkup.push(localise('detail-label-'+title), ':</th><td>');
-			rowMarkup.push(information[0]);
+
+
+function renderDetails(data, marker) {
+
+	var deduplicate = function (information) {
+		// remove duplicate entries from an array
+		for (var i = 0; i < information.length; i++) {
+			var item = information[i];
+			var isDuplicate = false;
+			for (var j = 0; j < i; j++) {
+				var jtem = information[j];					
+				if ( item == jtem) {
+					isDuplicate = true;
+					information.splice(i, 1);
+					i--;
+					break;
+				}
+			}
+		}	
+	}
+
+	var detailLine = function (title, informationElement) {
+		var tableRow = document.createElement('tr');
+		tableRow.setAttribute('class', 'pz2-detail-' + title);
+		var rowHeading = document.createElement('th');
+		tableRow.appendChild(rowHeading);
+		var rowData = document.createElement('td');
+		tableRow.appendChild(rowData);
+
+		if (informationElement.length == 1) {
+			rowHeading.appendChild(document.createTextNode(localise('detail-label-'+title)+':'));
+			rowData.appendChild(informationElement[0]);
 		}
 		else {
 			var labelKey = 'detail-label-' + title + '-plural';
@@ -518,55 +582,60 @@ function renderDetails(data, marker) {
 				labelKey = 'detail-label-' + title;
 				labelLocalisation = localise(labelKey);
 			}
-			rowMarkup.push(labelLocalisation, ':</th><td>');
+			rowHeading.appendChild(document.createTextNode(labelLocalisation + ':'));
 
-			rowMarkup.push('<ul>');
-			for (var itemNumber in information) {
-				rowMarkup.push('<li>' + information[itemNumber] + '</li>');
+			var rowDataUL = document.createElement('ul');
+			rowData.appendChild(rowDataUL);
+
+			for (var itemNumber in informationElement) {
+				var rowDataLI = document.createElement('li');
+				rowDataUL.appendChild(rowDataLI);
+				rowDataLI.appendChild(informationElement[itemNumber]);
 			}
-			rowMarkup.push('</ul>');
 		}
 
-		rowMarkup.push('</td></tr>');
-
-		return rowMarkup.join('');
+		return tableRow;
 	}	
 
 		
-	var linkForDOI = function (DOIs) {
-		if ( DOIs !== undefined ) {
-			var result = [];
-			for ( var DOINumber in DOIs ) {
-				var DOI = DOIs[DOINumber];
-				result.push('<a href="http://dx.doi.org/' + DOI + '">' + DOI + '</a>');
+	var linkForDOI = function (DOI) {
+		var linkElement = document.createElement('a');
+		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
+		linkElement.appendChild(document.createTextNode(DOI));
+		return linkElement;
+	}
+
+
+	var DOMElementForTitle = function (title) {
+		var result = [];
+		if ( data['md-' + title] !== undefined ) {
+			var theData = data['md-' + title];
+		    deduplicate(theData);
+
+			for (dataNumber in theData) {
+				var rawDatum = theData[dataNumber];
+				var wrappedDatum;
+				switch	(title) {
+					case 'doi':
+						wrappedDatum = linkForDOI(rawDatum);
+						break;
+					default:
+						wrappedDatum = document.createTextNode(rawDatum);
+				}
+				result.push(wrappedDatum);
 			}
 		}
+
 		return result;
 	}
 
 
-	var processedDataForTitle = function (title) {
-		var theData;
-		if ( data['md-' + title] !== undefined ) {
-			theData = data['md-' + title];
-					
-			switch	(title) {
-				case 'doi':
-					theData = linkForDOI(theData);
-					break;
-			}
-		}
-
-		return theData;
-	}
-
-
 	var detailLineAuto = function (title) {
-		var result = '';
-		var theData = processedDataForTitle(title);
+		var result = undefined;
+		var element = DOMElementForTitle(title);
 
-		if ( theData !== undefined ) {
-			result = detailLine( title, theData );
+		if (element.length !== 0) {
+			result = detailLine( title, element );
 		}
 
 		return result;
@@ -581,13 +650,13 @@ function renderDetails(data, marker) {
 
 	var googleBooksLink = function () {
 		// make sure Google Books script is loaded
-		if (typeof GBS_insertPreviewButtonPopup != 'function') {
+/*		if (typeof GBS_insertPreviewButtonPopup != 'function') {
 			var scriptTag = document.createElement('script');
 			scriptTag.type = 'text/javascript';
 			scriptTag.src = 'http://books.google.com/books/previewlib.js';
 			document.getElementsByTagName('head')[0].appendChild(scriptTag);			
 		}
-
+*/
 		var searchTerms = [];
 		for (locationNumber in data.location) {
 			var numberField = String(data.location[locationNumber]['md-isbn']);
@@ -605,40 +674,78 @@ function renderDetails(data, marker) {
 		var scriptElement = document.createElement("script");
 		scriptElement.setAttribute("id", "jsonScript");
 		scriptElement.setAttribute("src", "http://books.google.com/books?bibkeys=" + 
-      		searchTerms + "&bla=bla&jscmd=viewapi&callback=receiveBookInfo");
+      		searchTerms + "&jscmd=viewapi&callback=receiveBookInfo");
   		scriptElement.setAttribute("type", "text/javascript");
   		// make the request to Google booksearch
-  		document.documentElement.firstChild.appendChild(scriptElement);
+  		// document.documentElement.firstChild.appendChild(scriptElement);
 
+		scriptElement = document.createElement('script');
+		scriptElement.setAttribute('language', 'javascript');
+		var myScript = "GBS_insertPreviewButtonPopup(['" + searchTerms.join("','") + "']);";
+//		scriptElement.appendChild(document.createTextNode(myScript));
+
+		return scriptElement;
 	}
 
 
 	var extraLinks = function () {
-		var links = '<tr><th></th><td class="pz2-links" id="pz2-links_' + HTMLIDForRecordData(data) + '"></td></tr>';
-		googleBooksLink()
-		return links;
+		var tr = document.createElement('tr');
+		tr.appendChild(document.createElement('th'));
+		var td = document.createElement('td');
+		td.appendChild(googleBooksLink());
+		tr.appendChild(td);
+
+		return tr;
 	}
 
-	var locationDetails = function () {
-		
-		
-		var addInfoItemWithLabel = function (fieldContent, labelName) {
-			var infoItem = '';
-			if ( fieldContent !== undefined ) {
-				if ( labelName !== undefined ) {
-				 infoItem = '<span class="pz2-label">' + labelName + ':</span>&nbsp;';
+
+	var appendInfoToContainer = function (info, container) {
+		if (info != undefined && container != undefined ) {
+			if (typeof(info.length) === 'undefined') {
+				// info is a single item
+				container.appendChild(info);
+			}
+			else {
+				for (var infoNumber in info) {
+					container.appendChild(info[infoNumber]);
 				}
-				infoItem += fieldContent;
+			}
+		}
+	}
+
+
+
+
+	var locationDetails = function () {
+
+		var detailInfoItemWithLabel = function (fieldContent, labelName, dontTerminate) {
+			var infoSpan;
+			if ( fieldContent !== undefined ) {
+				infoSpan = document.createElement('span');
+				infoSpan.setAttribute('class', 'pz2-info'); 
+				if ( labelName !== undefined ) {
+					var infoLabel = document.createElement('span');
+					infoSpan.appendChild(infoLabel);
+					infoLabel.setAttribute('class', 'pz2-label');
+					infoLabel.appendChild(document.createTextNode(labelName));
+					infoSpan.appendChild(document.createTextNode(' '));
+				}
+				infoSpan.appendChild(document.createTextNode(fieldContent));
+
+				if (!dontTerminate) {
+					infoSpan.appendChild(document.createTextNode('; '));
+				}
 			}			
-			localInfoItems.push(infoItem);
+			return infoSpan;
 		}
 
 
-		var addInfoItem = function (fieldName) {
+		var detailInfoItem = function (fieldName) {
+			var infoItem;
 			var value = location['md-'+fieldName];
 
 			if ( value !== undefined ) {
-				var label = undefined;
+				var label;
 				var labelID = 'detail-label-' + fieldName;
 				var localisedLabelString = localise(labelID);
 
@@ -647,14 +754,15 @@ function renderDetails(data, marker) {
 				}
 
 				var content = value.join(', ').replace(/^[ ]*/,'').replace(/[ ;.,]*$/,'');
-				if (content !== '') {
-					content = '<span class="pz2-local-"' + fieldName + '">' + content + '</span>';
-				}
 
-				addInfoItemWithLabel(content, label);
+				infoItem = detailInfoItemWithLabel(content, label);
 			}
+
+			return infoItem;
 		}
-	
+
+
+
 		/*
 			Attempts to recognise hyphen-less ISBNs in a string
 				and adds hyphens to them.
@@ -705,7 +813,42 @@ function renderDetails(data, marker) {
 			}
 		}
 
-		var markup = [];
+		
+		var electronicURLs = function() {
+			var electronicURLs = location['md-electronic-url'];
+			var URLsContainer;
+
+			if (electronicURLs.length != 0) {
+				URLsContainer = document.createElement('span');
+
+				for (var URLNumber in electronicURLs) {
+					var URLInfo = electronicURLs[URLNumber];
+					var linkText = '[' + localise('Link') + ']';
+					var linkURL = URLInfo;
+	
+					if (typeof(URLInfo) === 'object' && URLInfo['#text'] !== undefined) {
+						// URLInfo is not just an URL but an array also containing the link name 
+						if (URLInfo['@name'] !== undefined) {
+							linkText = '[' + URLInfo['@name'] + ']';
+						}
+						linkURL = URLInfo['#text'];
+					}
+
+					var link = document.createElement('a');
+					URLsContainer.appendChild(link);
+					link.setAttribute('href', linkURL);
+					link.setAttribute('target', 'pz2-linktarget');
+					link.innerHTML = linkText;
+					if (URLNumber < electronicURLs.length - 1) {
+						URLsContainer.appendChild(document.createTextNode(', '));
+					}
+				}
+			}
+			return URLsContainer;		
+		}
+
+
+		var locationDetails = [];
 
 		for ( var locationNumber in data.location ) {
 			var localInfoItems = []
@@ -714,76 +857,52 @@ function renderDetails(data, marker) {
 			var localURL = location['@id'];
 			var localName = location['@name'];
 
-			markup.push('<tr><th>' + localise('Ausgabe') + ':</th><td>');
+			var detailsRow = document.createElement('tr');
+			var detailsHeading = document.createElement('th');
+			detailsRow.appendChild(detailsHeading);
+			detailsHeading.appendChild(document.createTextNode(localise('Ausgabe')+':'));
+			var detailsData = document.createElement('td');
+			detailsRow.appendChild(detailsData);
 
-			addInfoItem('edition');
-			addInfoItem('physical-extent');
-			addInfoItem('publication-name');
-			addInfoItem('publication-place');
-			addInfoItem('date');
+			appendInfoToContainer( detailInfoItem('edition'), detailsData );
+			appendInfoToContainer( detailInfoItem('physical-extent'), detailsData );
+			appendInfoToContainer( detailInfoItem('publication-name'), detailsData );
+			appendInfoToContainer( detailInfoItem('publication-place'), detailsData );
+			appendInfoToContainer( detailInfoItem('date'), detailsData );
 
 			cleanISBNs();
-			addInfoItem('isbn');
-
+			appendInfoToContainer( detailInfoItem('isbn'), detailsData );
+			appendInfoToContainer( electronicURLs(), detailsData);
 			
-			// electronic resources
-			var electronicURLs = location['md-electronic-url'];
-			var URLsMarkup = []
-			for (var URLNumber in electronicURLs) {
-				var URLInfo = electronicURLs[URLNumber];
-				var linkText = '[' + localise('Link') + ']';
-				var linkURL = URLInfo;
-
-				if (typeof(URLInfo) === 'object' && URLInfo['#text'] !== undefined) {
-					// URLInfo is not just an URL but an array also containing the link name 
-					if (URLInfo['@name'] !== undefined) {
-						linkText = '[' + URLInfo['@name'] + ']';
-					}
-					linkURL = URLInfo['#text'];
-				}
-
-				URLsMarkup.push( '<a href="' + linkURL + ' target="pz2-linktarget">' 
-										+ linkText + '</a>' );
-			}
-			if (URLsMarkup.length > 0) {
-				localInfoItems.push(URLsMarkup.join(' '));
-			}
-
-			if (localInfoItems.length > 0) {
-				markup.push(localInfoItems.join('; '));
-				markup.push('; ');
-			}
-			markup.push('<span class="pz2-location" title="' + localURL + '">' 
-				+ localName + ': ' + location['md-id'] + '</span>');
- 			markup.push('.</td></tr>');	
+			var catalogueInfo = detailInfoItemWithLabel(location['md-id'], localName, true);
+			catalogueInfo.setAttribute('title', localURL);
+			detailsData.appendChild( catalogueInfo );
+			
+			locationDetails.push(detailsRow);
 		}
 
-		return markup.join('');
+		return locationDetails;
 	}
 
 
-	var detailsHTML = ['<div class="pz2-details" id="det_', HTMLIDForRecordData(data), '"><table>'];
-	if (marker) {
-		detailsHTML.push('<tr class="pz2-detail-' + marker + '"><td>'
-			+ marker + '</td></tr>');
-	}
+	var detailsDiv = document.createElement('div');
+	detailsDiv.setAttribute('class', 'pz2-details');
+	detailsDiv.setAttribute('id', 'det_' + HTMLIDForRecordData(data));
 
-	detailsHTML.push( detailLineAuto('author') );
-	detailsHTML.push( detailLineAuto('other-person') )
-	detailsHTML.push( detailLineAuto('description') );
- 	detailsHTML.push( detailLineAuto('medium') );
-	detailsHTML.push( detailLineAuto('series-title') );
-	detailsHTML.push( detailLineAuto('issn') );
-	detailsHTML.push( detailLineAuto('doi') )
-	detailsHTML.push( locationDetails() );
-	detailsHTML.push( extraLinks() );
+	var detailsTable = document.createElement('table');
+	detailsDiv.appendChild(detailsTable);
 
-    if (data['md-electronic-url'] !== undefined) {
-		var link = '<a href="' + data['md-electronic-url'] + '>' + data['md-electronic-url'] + '</a>';
-		detailsHTML.push( detailLine('URL', link) );
-	}
+	appendInfoToContainer( detailLineAuto('author'), detailsTable );
+	appendInfoToContainer( detailLineAuto('other-person'), detailsTable )
+	appendInfoToContainer( detailLineAuto('description'), detailsTable );
+ 	appendInfoToContainer( detailLineAuto('medium'), detailsTable );
+	appendInfoToContainer( detailLineAuto('series-title'), detailsTable );
+	appendInfoToContainer( detailLineAuto('issn'), detailsTable );
+	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
+	appendInfoToContainer( locationDetails(), detailsTable );
+	appendInfoToContainer( extraLinks(), detailsTable );
 
-    return detailsHTML;
+    return detailsDiv;
 }
 
 
@@ -806,4 +925,3 @@ function recordIDForHTMLID (HTMLID) {
 
 //EOF
  
-
