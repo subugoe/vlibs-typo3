@@ -21,6 +21,7 @@ body {
 	background: #fff;
 	margin: auto;
 	-webkit-box-shadow: 2px 2px 4px #666;
+	position: relative;
 }
 
 
@@ -40,6 +41,22 @@ body {
 #head h1 .initial {
 	font-size: 800%;
 	line-height: 40%;
+}
+
+#head ul.languageSwitcher {
+	list-style-type: none;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+#head ul.languageSwitcher li {
+	display: inline;
+	margin-left: 6px;
+}
+
+#head ul.languageSwitcher li.currentLanguage img {
+	-webkit-box-shadow: 0px 0px 4px #fff;
 }
 
 #main {
