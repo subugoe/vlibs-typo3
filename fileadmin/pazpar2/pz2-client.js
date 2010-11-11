@@ -541,6 +541,52 @@ function renderDetails(data, marker) {
 	} 
 
 
+
+	this.receiveBookInfo = function (info) {
+		// Todo: Implement callback once a reasonable local data structure is in place
+	}
+
+
+	var googleBooksLink = function () {
+		// make sure Google Books script is loaded
+		if (typeof GBS_insertPreviewButtonPopup != 'function') {
+			var scriptTag = document.createElement('script');
+			scriptTag.type = 'text/javascript';
+			scriptTag.src = 'http://books.google.com/books/previewlib.js';
+			document.getElementsByTagName('head')[0].appendChild(scriptTag);			
+		}
+
+		var searchTerms = [];
+		for (locationNumber in data.location) {
+			var numberField = String(data.location[locationNumber]['md-isbn']);
+			var matches = numberField.replace(/-/g,'').match(/[0-9]{9,12}[0-9xX]/g);
+			for (var matchNumber in matches) {
+				searchTerms.push('ISBN:' + matches[matchNumber]);
+			}
+			numberField = String(data.location[locationNumber]['md-oclc']);
+			matches = numberField.match(/[0-9]{4,}/g);
+			for (var matchNumber in matches) {
+				searchTerms.push('OCLC:' + matches[matchNumber]);
+			}
+		}
+		
+		var scriptElement = document.createElement("script");
+		scriptElement.setAttribute("id", "jsonScript");
+		scriptElement.setAttribute("src", "http://books.google.com/books?bibkeys=" + 
+      		searchTerms + "&bla=bla&jscmd=viewapi&callback=receiveBookInfo");
+  		scriptElement.setAttribute("type", "text/javascript");
+  		// make the request to Google booksearch
+  		document.documentElement.firstChild.appendChild(scriptElement);
+
+	}
+
+
+	var extraLinks = function () {
+		var links = '<tr><th></th><td class="pz2-links" id="pz2-links_' + HTMLIDForRecordData(data) + '"></td></tr>';
+		googleBooksLink()
+		return links;
+	}
+
 	var locationDetails = function () {
 		
 		
@@ -662,6 +708,7 @@ function renderDetails(data, marker) {
  	detailsHTML.push( detailLineAuto('medium') );
 	detailsHTML.push( detailLineAuto('series-title') );
 	detailsHTML.push( locationDetails() );
+	detailsHTML.push( extraLinks() );
 
     if (data['md-electronic-url'] !== undefined) {
 		var link = '<a href="' + data['md-electronic-url'] + '>' + data['md-electronic-url'] + '</a>';
