@@ -17,9 +17,9 @@ var termListNames = ['xtargets', 'medium', 'author', 'subject', 'date'];
 var termListMax = {'xtargets': 16, 'medium': 6, 'author': 10, 'subject': 10, 'date': 6 };
 
 if (document.location.hash == '#useproxy') {
-    usesessions = false;
-    pazpar2path = '/service-proxy/';
-    showResponseType = 'json';
+	usesessions = false;
+	pazpar2path = '/service-proxy/';
+	showResponseType = 'json';
 }
 
 
@@ -69,16 +69,16 @@ function localise (term) {
 
 
 my_paz = new pz2( { "onshow": my_onshow,
-                    "showtime": 500,            //each timer (show, stat, term, bytarget) can be specified this way
-                    "pazpar2path": pazpar2path,
-                    "oninit": my_oninit,
-                    "onstat": my_onstat,
-                    "onterm": my_onterm,
-                    "termlist": termListNames.join(","),
-                    "onbytarget": my_onbytarget,
-	 			    "usesessions" : usesessions,
-                    "showResponseType": showResponseType,
-                    "onrecord": my_onrecord,
+					"showtime": 500,			//each timer (show, stat, term, bytarget) can be specified this way
+					"pazpar2path": pazpar2path,
+					"oninit": my_oninit,
+					"onstat": my_onstat,
+					"onterm": my_onterm,
+					"termlist": termListNames.join(","),
+					"onbytarget": my_onbytarget,
+	 				"usesessions" : usesessions,
+					"showResponseType": showResponseType,
+					"onrecord": my_onrecord,
 					"serviceId": my_serviceID } );
 // some state vars
 var curPage = 1;
@@ -96,16 +96,16 @@ var submitted = false;
 // pz2.js event handlers:
 //
 function my_oninit() {
-    my_paz.stat();
-    my_paz.bytarget();
+	my_paz.stat();
+	my_paz.bytarget();
 }
 
 
 function my_onshow(data) {
 	var titleInfo = function() {
 		var output = '<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
-        	+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
-        	+ '" onclick="toggleDetails(this.id);return false;">'
+			+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
+			+ '" onclick="toggleDetails(this.id);return false;">'
 			+ '<span class="pz2-item-title">'
 
 		if (hit['md-multivolume-title'] !== undefined) {
@@ -186,21 +186,21 @@ function my_onshow(data) {
 
 
 
-    totalRec = data.merged;
-    // move it out
-    var pager = document.getElementById("pz2-pager");
-    pager.innerHTML = "";
-    pager.innerHTML +='<div class="pz2-recordCount">' 
-                    + (data.start + 1) + ' to ' + (data.start + data.num) +
-                     ' of ' + data.merged + ' (found: ' 
-                     + data.total + ')</div>';
-    drawPager(pager);
-    // navi
-    var results = document.getElementById("pz2-results");
+	totalRec = data.merged;
+	// move it out
+	var pager = document.getElementById("pz2-pager");
+	pager.innerHTML = "";
+	pager.innerHTML +='<div class="pz2-recordCount">' 
+					+ (data.start + 1) + ' to ' + (data.start + data.num) +
+					 ' of ' + data.merged + ' (found: ' 
+					 + data.total + ')</div>';
+	drawPager(pager);
+	// navi
+	var results = document.getElementById("pz2-results");
   
-    var html = ['<ol start="' + (1 + recPerPage * (curPage - 1)) + '">'];
-    for (var i = 0; i < data.hits.length; i++) {
-        var hit = data.hits[i];
+	var html = ['<ol start="' + (1 + recPerPage * (curPage - 1)) + '">'];
+	for (var i = 0; i < data.hits.length; i++) {
+		var hit = data.hits[i];
 
 		html.push(titleInfo());
 
@@ -224,22 +224,22 @@ function my_onshow(data) {
 			html.push(renderDetails(curDetRecData));
 		}
 		html.push('</a></li>');
-    }
+	}
    	html.push('</ol>');
-    replaceHtml(results, html.join(''));
+	replaceHtml(results, html.join(''));
 }
 
 
 function my_onstat(data) {
-    var stat = document.getElementById("pz2-stat");
-    if (stat == null)
+	var stat = document.getElementById("pz2-stat");
+	if (stat == null)
 	return;
-    
-    stat.innerHTML = '<h4>Status Information</h4term> -- Active clients: '
-                        + data.activeclients
-                        + '/' + data.clients + ' -- </span>'
-                        + '<span>Retrieved records: ' + data.records
-                        + '/' + data.hits + ' :.</span>';
+	
+	stat.innerHTML = '<h4>Status Information</h4term> -- Active clients: '
+						+ data.activeclients
+						+ '/' + data.clients + ' -- </span>'
+						+ '<span>Retrieved records: ' + data.records
+						+ '/' + data.hits + ' :.</span>';
 }
 
 
@@ -250,37 +250,37 @@ function my_onterm(data) {
 			'<h5>', localise('facet-title-'+type), '</h5><ol>'];
 		var terms = data[type];
 		for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
-        	theHTML.push( '<li><a href="#"'
-        	+ ' target_name=' + terms[i].name
-        	+ ' onclick="limitTarget(' + terms[i].name + '), this.firstChild.nodeValue);return false;">'
-        	+ terms[i].name 
-        	+ '<span class="count">' + terms[i].freq + '</span>'
-        	+ '</a></li>');
-    	}
+			theHTML.push( '<li><a href="#"'
+			+ ' target_name=' + terms[i].name
+			+ ' onclick="limitTarget(' + terms[i].name + '), this.firstChild.nodeValue);return false;">'
+			+ terms[i].name 
+			+ '<span class="count">' + terms[i].freq + '</span>'
+			+ '</a></li>');
+		}
 		theHTML.push('</ol></div>');
 		return theHTML;		
 	}
 
-    var newTermListsHTML = ['<h4>Termlists:</h4>'];
+	var newTermListsHTML = ['<h4>Termlists:</h4>'];
 
 	for ( index in termListNames ) {
 		newTermListsHTML = newTermListsHTML.concat(termListHTML(termListNames[index]));
 	}
 
-    var currentTermLists = document.getElementById("pz2-termLists");
-    replaceHtml(currentTermLists, newTermListsHTML.join(''));
+	var currentTermLists = document.getElementById("pz2-termLists");
+	replaceHtml(currentTermLists, newTermListsHTML.join(''));
 }
 
 
 function my_onrecord(data) {
-    // FIXME: record is async!!
-    clearTimeout(my_paz.recordTimer);
-    // in case on_show was faster to redraw element
-    var detRecordDiv = document.getElementById('det_'+ HTMLIDForRecordData(data));
-    if (detRecordDiv) return;
-    curDetRecData = data;
-    var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
-    var details = renderDetails(curDetRecData);
+	// FIXME: record is async!!
+	clearTimeout(my_paz.recordTimer);
+	// in case on_show was faster to redraw element
+	var detRecordDiv = document.getElementById('det_'+ HTMLIDForRecordData(data));
+	if (detRecordDiv) return;
+	curDetRecData = data;
+	var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
+	var details = renderDetails(curDetRecData);
 
 //	replaceHtml(recordDiv, html);
 //	var myDiv = document.createElement('div');
@@ -290,20 +290,20 @@ function my_onrecord(data) {
 
 
 function my_onbytarget(data) {
-    var targetDiv = document.getElementById("pz2-byTarget");
-    var table ='<table><thead><tr><td>Target ID</td><td>Hits</td><td>Diags</td>'
-        +'<td>Records</td><td>State</td></tr></thead><tbody>';
-    
-    for (var i = 0; i < data.length; i++ ) {
-        table += "<tr><td>" + data[i].id +
-            "</td><td>" + data[i].hits +
-            "</td><td>" + data[i].diagnostic +
-            "</td><td>" + data[i].records +
-            "</td><td>" + data[i].state + "</td></tr>";
-    }
+	var targetDiv = document.getElementById("pz2-byTarget");
+	var table ='<table><thead><tr><td>Target ID</td><td>Hits</td><td>Diags</td>'
+		+'<td>Records</td><td>State</td></tr></thead><tbody>';
+	
+	for (var i = 0; i < data.length; i++ ) {
+		table += "<tr><td>" + data[i].id +
+			"</td><td>" + data[i].hits +
+			"</td><td>" + data[i].diagnostic +
+			"</td><td>" + data[i].records +
+			"</td><td>" + data[i].state + "</td></tr>";
+	}
 
-    table += '</tbody></table>';
-    targetDiv.innerHTML = table;
+	table += '</tbody></table>';
+	targetDiv.innerHTML = table;
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -323,72 +323,72 @@ function domReady ()
 // when search button pressed
 function onFormSubmitEventHandler() 
 {
-    resetPage();
-    loadSelect();
-    triggerSearch();
-    submitted = true;
-    return false;
+	resetPage();
+	loadSelect();
+	triggerSearch();
+	submitted = true;
+	return false;
 }
 
 function onSelectDdChange()
 {
-    if (!submitted) return false;
-    resetPage();
-    loadSelect();
-    my_paz.show(0, recPerPage, curSort);
-    return false;
+	if (!submitted) return false;
+	resetPage();
+	loadSelect();
+	my_paz.show(0, recPerPage, curSort);
+	return false;
 }
 
 function resetPage()
 {
-    curPage = 1;
-    totalRec = 0;
+	curPage = 1;
+	totalRec = 0;
 }
 
 function triggerSearch ()
 {
 	// TODO-ssp: Set filter to correct term (target-facet?)
 	// var filter = NULL;
-    my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
+	my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
 }
 
 function loadSelect ()
 {
-    curSort = document.select.sort.value;
-    recPerPage = document.select.perpage.value;
+	curSort = document.select.sort.value;
+	recPerPage = document.select.perpage.value;
 }
 
 // limit the query after clicking the facet
 function limitQuery (field, value)
 {
-    document.search.query.value += ' and ' + field + '="' + value + '"';
-    onFormSubmitEventHandler();
+	document.search.query.value += ' and ' + field + '="' + value + '"';
+	onFormSubmitEventHandler();
 }
 
 // limit by target functions
 function limitTarget (id, name)
 {
-    var navi = document.getElementById('pz2-navi');
-    navi.innerHTML = 
-        'Source: <a class="crossout" href="#" onclick="delimitTarget();return false;">'
-        + name + '</a>';
-    navi.innerHTML += '<hr/>';
-    curFilter = 'pz:id=' + id;
-    resetPage();
-    loadSelect();
-    triggerSearch();
-    return false;
+	var navi = document.getElementById('pz2-navi');
+	navi.innerHTML = 
+		'Source: <a class="crossout" href="#" onclick="delimitTarget();return false;">'
+		+ name + '</a>';
+	navi.innerHTML += '<hr/>';
+	curFilter = 'pz:id=' + id;
+	resetPage();
+	loadSelect();
+	triggerSearch();
+	return false;
 }
 
 function delimitTarget ()
 {
-    var navi = document.getElementById('pz2-navi');
-    navi.innerHTML = '';
-    curFilter = null; 
-    resetPage();
-    loadSelect();
-    triggerSearch();
-    return false;
+	var navi = document.getElementById('pz2-navi');
+	navi.innerHTML = '';
+	curFilter = null; 
+	resetPage();
+	loadSelect();
+	triggerSearch();
+	return false;
 }
 
 function limitResults(name, kind) {
@@ -424,101 +424,101 @@ function redisplay() {
 
 function drawPager (pagerDiv)
 {
-    //client indexes pages from 1 but pz2 from 0
-    var onsides = 6;
-    var pages = Math.ceil(totalRec / recPerPage);
-    
-    var firstClkbl = ( curPage - onsides > 0 ) 
-        ? curPage - onsides
-        : 1;
+	//client indexes pages from 1 but pz2 from 0
+	var onsides = 6;
+	var pages = Math.ceil(totalRec / recPerPage);
+	
+	var firstClkbl = ( curPage - onsides > 0 ) 
+		? curPage - onsides
+		: 1;
 
-    var lastClkbl = firstClkbl + 2*onsides < pages
-        ? firstClkbl + 2*onsides
-        : pages;
+	var lastClkbl = firstClkbl + 2*onsides < pages
+		? firstClkbl + 2*onsides
+		: pages;
 
-    var prev = '<span class="pz2-prev">&#60;&#60; Prev</span><b> | </b>';
-    if (curPage > 1)
-        var prev = '<a href="#" class="pz2-prev" onclick="pagerPrev();">'
-        +'&#60;&#60; Prev</a><b> | </b>';
+	var prev = '<span class="pz2-prev">&#60;&#60; Prev</span><b> | </b>';
+	if (curPage > 1)
+		var prev = '<a href="#" class="pz2-prev" onclick="pagerPrev();">'
+		+'&#60;&#60; Prev</a><b> | </b>';
 
-    var middle = '';
-    for(var i = firstClkbl; i <= lastClkbl; i++) {
-        var numLabel = i;
-        if(i == curPage)
-            numLabel = '<b>' + i + '</b>';
+	var middle = '';
+	for(var i = firstClkbl; i <= lastClkbl; i++) {
+		var numLabel = i;
+		if(i == curPage)
+			numLabel = '<b>' + i + '</b>';
 
-        middle += '<a href="#" onclick="showPage(' + i + ')"> '
-            + numLabel + ' </a>';
-    }
-    
-    var next = '<b> | </b><span class="pz2-next">Next &#62;&#62;</span>';
-    if (pages - curPage > 0)
-    var next = '<b> | </b><a href="#" class="pz2-next" onclick="pagerNext()">'
-        +'Next &#62;&#62;</a>';
+		middle += '<a href="#" onclick="showPage(' + i + ')"> '
+			+ numLabel + ' </a>';
+	}
+	
+	var next = '<b> | </b><span class="pz2-next">Next &#62;&#62;</span>';
+	if (pages - curPage > 0)
+	var next = '<b> | </b><a href="#" class="pz2-next" onclick="pagerNext()">'
+		+'Next &#62;&#62;</a>';
 
-    predots = '';
-    if (firstClkbl > 1)
-        predots = '...';
+	predots = '';
+	if (firstClkbl > 1)
+		predots = '...';
 
-    postdots = '';
-    if (lastClkbl < pages)
-        postdots = '...';
+	postdots = '';
+	if (lastClkbl < pages)
+		postdots = '...';
 
-    pagerDiv.innerHTML += '<div style="float: clear">' 
-        + prev + predots + middle + postdots + next + '</div><hr/>';
+	pagerDiv.innerHTML += '<div style="float: clear">' 
+		+ prev + predots + middle + postdots + next + '</div><hr/>';
 }
 
 function showPage (pageNum)
 {
-    curPage = pageNum;
-    my_paz.showPage( curPage - 1 );
+	curPage = pageNum;
+	my_paz.showPage( curPage - 1 );
 }
 
 // simple paging functions
 
 function pagerNext() {
-    if ( totalRec - recPerPage*curPage > 0) {
-        my_paz.showNext();
-        curPage++;
-    }
+	if ( totalRec - recPerPage*curPage > 0) {
+		my_paz.showNext();
+		curPage++;
+	}
 }
 
 function pagerPrev() {
-    if ( my_paz.showPrev() != false )
-        curPage--;
+	if ( my_paz.showPrev() != false )
+		curPage--;
 }
 
 // swithing view between targets and records
 
 function switchView(view) {
-    
-    var targets = document.getElementById('pz2-targetView');
-    var records = document.getElementById('pz2-recordView');
-    
-    switch(view) {
-        case 'pz2-targetView':
-            targets.style.display = "block";            
-            records.style.display = "none";
-            break;
-        case 'pz2-recordView':
-            targets.style.display = "none";            
-            records.style.display = "block";
-            break;
-        default:
-            alert('Unknown view.');
-    }
+	
+	var targets = document.getElementById('pz2-targetView');
+	var records = document.getElementById('pz2-recordView');
+	
+	switch(view) {
+		case 'pz2-targetView':
+			targets.style.display = "block";			
+			records.style.display = "none";
+			break;
+		case 'pz2-recordView':
+			targets.style.display = "none";			
+			records.style.display = "block";
+			break;
+		default:
+			alert('Unknown view.');
+	}
 }
 
 // detailed record drawing
 function toggleDetails (prefixRecId) {
-    var recId = prefixRecId.replace('rec_', '');
-    // var oldRecId = curDetRecId;
-    // curDetRecId = recId;
-    
-    // remove current detailed view if any
-    var detRecordDiv = document.getElementById('det_'+ recId);
-    // lovin DOM!
-    if (detRecordDiv) {
+	var recId = prefixRecId.replace('rec_', '');
+	// var oldRecId = curDetRecId;
+	// curDetRecId = recId;
+	
+	// remove current detailed view if any
+	var detRecordDiv = document.getElementById('det_'+ recId);
+	// lovin DOM!
+	if (detRecordDiv) {
 		detRecordDiv.parentNode.removeChild(detRecordDiv);
 	}
 	else {
@@ -529,14 +529,14 @@ function toggleDetails (prefixRecId) {
 function replaceHtml(el, html) {
   var oldEl = typeof el === "string" ? document.getElementById(el) : el;
   /*@cc_on // Pure innerHTML is slightly faster in IE
-    oldEl.innerHTML = html;
-    return oldEl;
-    @*/
+	oldEl.innerHTML = html;
+	return oldEl;
+	@*/
   var newEl = oldEl.cloneNode(false);
   newEl.innerHTML = html;
   oldEl.parentNode.replaceChild(newEl, oldEl);
   /* Since we just removed the old element from the DOM, return a reference
-     to the new element, which can be used to restore variable references. */
+	 to the new element, which can be used to restore variable references. */
   return newEl;
 };
 
@@ -610,7 +610,7 @@ function renderDetails(data, marker) {
 		var result = [];
 		if ( data['md-' + title] !== undefined ) {
 			var theData = data['md-' + title];
-		    deduplicate(theData);
+			deduplicate(theData);
 
 			for (dataNumber in theData) {
 				var rawDatum = theData[dataNumber];
