@@ -12,5 +12,12 @@ page.headerData {
 
 	50 = TEXT
 	50.value = <link rel="stylesheet" type="text/css" href="/vlib-test/fileadmin/pazpar2/pazpar2.css">
+	
+	60 = TEXT
+	60.value = <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+	70 = TEXT
+	70.value = 	<script type="text/javascript">google.load('books', '0');</script>
+
 }
 
