@@ -90,28 +90,20 @@
 	vertical-align: top;
 }
 
-.pz2-locations {
-	position: relative;
-}
-
-.pz2-locations dt {
-	font-weight: bold;
-	float: left;
-	clear: left;
-}
-
-.pz2-locations dd {
-	padding-left: 1em;
-	text-indent: 0.5em;
-}
-
 .pz2-details ul {
 	padding-left: 2em;
 }
 
+.pz2-detail-availability td a {
+	margin-bottom: 2px;
+}
+
+
 #pz2-results .pz2-details ul li {
 	margin: 0;
 }
+
+
 
 
 /* facets */
@@ -121,3 +113,26 @@
 	font-style: italic;
 	margin-left: 0.3em;
 }
+
+/* Google Books */
+.googleBooks {
+	display: block;
+	float: right;
+}
+
+.googleBooks .bookCover {
+	margin-left: 6px;
+}
+
+#googlePreviewContainer {
+	position: absolute;
+	left: 2em;
+	right: 2em;
+	top: 2em;
+	bottom: 2em;
+}
+
+#googlePreview {
+	height: 550px;
+}
+

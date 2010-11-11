@@ -37,7 +37,6 @@ var germanTerms = {
 	'detail-label-author-plural': 'Autoren',
 	'detail-label-other-person': 'Person',
 	'detail-label-other-person-plural': 'Personen',
-	'detail-label-date': 'Jahr',
 	'detail-label-medium': 'Art',
 	'detail-label-description': 'Information',
 	'detail-label-description-plural': 'Informationen',
@@ -46,9 +45,13 @@ var germanTerms = {
 	'detail-label-isbn': 'ISBN',
 	'detail-label-doi': 'DOI',
 	'detail-label-doi-plural': 'DOIs',
+	'detail-label-availability': 'Verfügbarkeit',
 	'detail-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
+	'Google Books Vorschau': 'Google Books Vorschau',
+	'Umschlagbild': 'Umschlagbild',
+	'Ampelgraphik': 'Ampelgraphik der Elektronischen Zeitschriftenbibliothek zur Darstellung der Verfügbarkeit der Zeitschrift',
 };
 
 
@@ -563,41 +566,56 @@ function renderDetails(data, marker) {
 		}	
 	}
 
+
 	var detailLine = function (title, informationElement) {
-		var tableRow = document.createElement('tr');
-		tableRow.setAttribute('class', 'pz2-detail-' + title);
-		var rowHeading = document.createElement('th');
-		tableRow.appendChild(rowHeading);
-		var rowData = document.createElement('td');
-		tableRow.appendChild(rowData);
+		if (informationElement && title) {
+			var tableRow = document.createElement('tr');
+			tableRow.setAttribute('class', 'pz2-detail-' + title);
+			var rowHeading = document.createElement('th');
+			tableRow.appendChild(rowHeading);
+			var rowData = document.createElement('td');
+			tableRow.appendChild(rowData);
 
-		if (informationElement.length == 1) {
-			rowHeading.appendChild(document.createTextNode(localise('detail-label-'+title)+':'));
-			rowData.appendChild(informationElement[0]);
-		}
-		else {
-			var labelKey = 'detail-label-' + title + '-plural';
-			var labelLocalisation = localise(labelKey);
-			if (labelKey === labelLocalisation) { // no plural form, fall back to singular
-				labelKey = 'detail-label-' + title;
-				labelLocalisation = localise(labelKey);
+			if (!$.isArray(informationElement)) {
+				rowHeading.appendChild(document.createTextNode(localise('detail-label-'+title)+':'));
+				rowData.appendChild(informationElement);
 			}
-			rowHeading.appendChild(document.createTextNode(labelLocalisation + ':'));
+			else {
+				var labelKey = 'detail-label-' + title + '-plural';
+				var labelLocalisation = localise(labelKey);
+				if (labelKey === labelLocalisation) { // no plural form, fall back to singular
+					labelKey = 'detail-label-' + title;
+					labelLocalisation = localise(labelKey);
+				}
+				rowHeading.appendChild(document.createTextNode(labelLocalisation + ':'));
 
-			var rowDataUL = document.createElement('ul');
-			rowData.appendChild(rowDataUL);
+				var rowDataUL = document.createElement('ul');
+				rowData.appendChild(rowDataUL);
 
-			for (var itemNumber in informationElement) {
-				var rowDataLI = document.createElement('li');
-				rowDataUL.appendChild(rowDataLI);
-				rowDataLI.appendChild(informationElement[itemNumber]);
+				for (var itemNumber in informationElement) {
+					var rowDataLI = document.createElement('li');
+					rowDataUL.appendChild(rowDataLI);
+					rowDataLI.appendChild(informationElement[itemNumber]);
+				}
 			}
 		}
 
 		return tableRow;
 	}	
 
-		
+
+	var detailLineAuto = function (title) {
+		var result = undefined;
+		var element = DOMElementForTitle(title);
+
+		if (element.length !== 0) {
+			result = detailLine( title, element );
+		}
+
+		return result;
+	} 
+
+	
 	var linkForDOI = function (DOI) {
 		var linkElement = document.createElement('a');
 		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
@@ -605,6 +623,48 @@ function renderDetails(data, marker) {
 		return linkElement;
 	}
 
+	/* 
+		Create link to bookcover at GBV
+		Requires jQuery
+	*/
+/*
+	var GBVBookLinkForNumber = function (number) {
+		if (id != null && id != "") {
+
+		var url = "http://ws.gbv.de/covers/?format=seealso&callback=?&id=" + number;
+		var coverContainer = document.createElement('span');
+		coverContainer.setAttribute('id', )
+
+		$.getJSON(url, function(response) {
+			if (!response || !response[2][0] || !response[3][0]) return;
+			var imghref = response[3][0];
+			var size = response[2][0].split('x');
+			var width = 36;
+			var height = Math.round(size[1]/size[0]*width);
+			var type = "image";
+			if (response[1][0]) type = response[1][0];
+			if (imghref) { // imghref ist die URL des Covers
+				$("#bookcover").html('<img src="' + imghref + '"' + 
+					'alt="' + type + '"' + 
+					'title="' + type + '"' +
+					'width="' + width + '"' + 'height="' + height + '"' + 
+					'style="width:' + width + ';' + 'height:' + height + '"' +
+					'border="0">'
+				);
+				var img = $("#bookcover > img");
+				img.hover(
+					function(){
+						$(this).attr({'width' : size[0], 'height' : size[1]})
+							.css({'width' : size[0], 'height' : size[1]});
+					}, function(){
+						$(this).attr({'width' : width, 'height': height})
+							.css({'width' : width, 'height' : height});
+					}
+				);
+			}
+		});
+	} 
+*/ 
 
 	var DOMElementForTitle = function (title) {
 		var result = [];
@@ -612,7 +672,8 @@ function renderDetails(data, marker) {
 			var theData = data['md-' + title];
 			deduplicate(theData);
 
-			for (dataNumber in theData) {
+			// run loop backwards as pazpar2 seems to reverse the order of metadata items
+			for (var dataNumber = theData.length -1; dataNumber >= 0; dataNumber--) {
 				var rawDatum = theData[dataNumber];
 				var wrappedDatum;
 				switch	(title) {
@@ -630,33 +691,34 @@ function renderDetails(data, marker) {
 	}
 
 
-	var detailLineAuto = function (title) {
-		var result = undefined;
-		var element = DOMElementForTitle(title);
+	var EZBLink = function () {
+		var ISSN = data['md-issn'];
+		if (ISSN) {
+			var EZBURL = 'http://ezb.uni-regensburg.de/ezeit/vascoda/openURL.phtml?pid=format%3Dxml&genre=article&issn=' + ISSN;
+			var EZBImageURL = 'http://ezb.uni-regensburg.de/vascoda/get_image.php?issn=' + ISSN	;		
 
-		if (element.length !== 0) {
-			result = detailLine( title, element );
-		}
+			var EZBLink = document.createElement('a');
+			EZBLink.setAttribute('href', EZBURL);
+			var EZBImage = document.createElement('img');
+			EZBLink.appendChild(EZBImage);
+			EZBImage.setAttribute('src', EZBImageURL);
+			EZBImage.setAttribute('alt', localise('Ampelgraphik'));
+		} 
 
-		return result;
-	} 
-
-
-
-	this.receiveBookInfo = function (info) {
-		// Todo: Implement callback once a reasonable local data structure is in place
+		return EZBLink;
 	}
 
 
-	var googleBooksLink = function () {
-		// make sure Google Books script is loaded
-/*		if (typeof GBS_insertPreviewButtonPopup != 'function') {
-			var scriptTag = document.createElement('script');
-			scriptTag.type = 'text/javascript';
-			scriptTag.src = 'http://books.google.com/books/previewlib.js';
-			document.getElementsByTagName('head')[0].appendChild(scriptTag);			
-		}
-*/
+
+	
+	/*
+		Figure out whether there is a Google Books Preview for the current data.
+		Parameters: 
+		* element: DOM element that is the container of the Google Books Preview button.
+	*/
+	var addGoogleBooksLinkIntoElement = function (element) {
+
+		// Create list of search terms from ISBN and OCLC numbers.
 		var searchTerms = [];
 		for (locationNumber in data.location) {
 			var numberField = String(data.location[locationNumber]['md-isbn']);
@@ -671,29 +733,116 @@ function renderDetails(data, marker) {
 			}
 		}
 		
-		var scriptElement = document.createElement("script");
-		scriptElement.setAttribute("id", "jsonScript");
-		scriptElement.setAttribute("src", "http://books.google.com/books?bibkeys=" + 
-      		searchTerms + "&jscmd=viewapi&callback=receiveBookInfo");
-  		scriptElement.setAttribute("type", "text/javascript");
-  		// make the request to Google booksearch
-  		// document.documentElement.firstChild.appendChild(scriptElement);
 
-		scriptElement = document.createElement('script');
-		scriptElement.setAttribute('language', 'javascript');
-		var myScript = "GBS_insertPreviewButtonPopup(['" + searchTerms.join("','") + "']);";
-//		scriptElement.appendChild(document.createTextNode(myScript));
+		// Asynchronously query Google Books for the ISBN/OCLC numbers in question.
+		var googleBooksURL = 'http://books.google.com/books?bibkeys=' + searchTerms 
+					+ '&jscmd=viewapi&callback=?';
+		$.getJSON(googleBooksURL,
+			function(data) {
+				/*
+					If there are multiple results choose the one we want:
+						1. If available the first one with 'full' preview capabilities,
+						2. otherwise the first one with 'partial' preview capabilities,
+						3. undefined if none of the results has preview capabilities.
+					Usually the first item in the list is also the newest one.
+				*/
+				var selectedBook;
+				$.each(data, 
+					function(bookNumber, book) {
+						if (book.preview === 'full') {
+							selectedBook = book;
+							return false;
+						}
+						else if (book.preview === 'partial' && selectedBook === undefined) {
+							selectedBook = book;
+						}
+					}
+				);
+			
+				// Add link to Google Books if there is a selected book.
+				if (selectedBook !== undefined) {
+					var bookLink = document.createElement('a');
+					bookLink.setAttribute('href', selectedBook.preview_url);
+					bookLink.onclick = openPreview;
 
-		return scriptElement;
+					var language = $('html').attr('lang');
+					if (language === undefined) {
+						language = 'en';
+					}
+					var buttonImageURL = 'http://www.google.com/intl/' + language + '/googlebooks/images/gbs_preview_button1.gif';
+					var buttonImage = document.createElement('img');
+					buttonImage.setAttribute('src', buttonImageURL);
+					buttonImage.setAttribute('alt', localise('Google Books Vorschau'));
+					bookLink.appendChild(buttonImage);
+					element.appendChild(bookLink);
+
+					if (selectedBook.thumbnail_url !== undefined) {
+						var coverArtImage = document.createElement('img');
+						bookLink.appendChild(coverArtImage);
+						coverArtImage.setAttribute('src', selectedBook.thumbnail_url);
+						coverArtImage.setAttribute('alt', localise('Umschlagbild'));
+						coverArtImage.setAttribute('class', 'bookCover');
+					}
+				}
+			}
+		);
+
+
+		// Open Preview when Google Books button is clicked.
+		var openPreview = function() {
+			// Get hold of containing <div>, creating it if necessary.
+			var previewDivName = 'googlePreview';
+			var previewDiv = document.getElementById(previewDivName);
+			var previewContainerDivName = 'googlePreviewContainer';
+			var previewContainerDiv = document.getElementById(previewContainerDivName);
+
+			if (!previewContainerDiv) {
+				previewContainerDiv = document.createElement('div');
+				previewContainerDiv.setAttribute('id', previewContainerDivName);
+				$('#page').get(0).appendChild(previewContainerDiv);
+
+				var titleBarDiv = document.createElement('div');
+				titleBarDiv.setAttribute('class', 'titleBar');
+				previewContainerDiv.appendChild(titleBarDiv);
+				$(titleBarDiv).css({height:'20px', width:'100%', position:'absolute', top:'-20px', background:'#eee'});
+
+				var closeBoxLink = document.createElement('a');
+				titleBarDiv.appendChild(closeBoxLink);
+				$(closeBoxLink).css({display:'block', height:'16px', width:'16px', position:'absolute', right:'2px', top:'2px', background:'#666'})
+				closeBoxLink.setAttribute('href', 'javascript:$("#' + previewContainerDivName + '").hide(200);');
+
+				var previewDiv = document.createElement('div');
+				previewDiv.setAttribute('id', previewDivName);
+				previewContainerDiv.appendChild(previewDiv);
+			}
+			else {
+				$(previewContainerDiv).show(200);
+			}
+
+			// Viewer: stored in the container div, created when needed.
+			var viewer = new google.books.DefaultViewer(previewDiv);
+			viewer.load(this.href);
+
+			return false;
+		}		
 	}
-
 
 	var extraLinks = function () {
 		var tr = document.createElement('tr');
 		tr.appendChild(document.createElement('th'));
 		var td = document.createElement('td');
-		td.appendChild(googleBooksLink());
 		tr.appendChild(td);
+
+		var booksSpan = document.createElement('span');
+		td.appendChild(booksSpan);
+		booksSpan.setAttribute('class', 'googleBooks');
+		addGoogleBooksLinkIntoElement(booksSpan);
+
+
+		//var coverSpan = document.createElement('span');
+		//td.appendChild(coverSpan);
+		//coverSpan.setAttribute('class', 'covers');
+		// addCoverArtIntoElement(coverSpan);
 
 		return tr;
 	}
@@ -763,21 +912,29 @@ function renderDetails(data, marker) {
 
 
 
-		/*
-			Attempts to recognise hyphen-less ISBNs in a string
-				and adds hyphens to them.
+		/*  cleanISBNs
+			Takes the array of ISBNs in location['md-isbn'] and
+				1. Normalises them
+				2. Removes duplicates (particularly the ISBN-10 corresponding to an ISBN-13)
 		*/
-		var normaliseISBNsInString = function (ISBN) {
-			return ISBN.replace(/([0-9]*)-([0-9Xx])/g, '$1$2');
-		}
+		var cleanISBNs = function () {
+			/*	normaliseISBNsINString
+				Vague matching of ISBNs and removing the hyphens in them.
+				input: string
+				output: string
+			*/
+			var normaliseISBNsInString = function (ISBN) {
+				return ISBN.replace(/([0-9]*)-([0-9Xx])/g, '$1$2');
+			}
 
 
-		var cleanISBNs = function (){
+			/*	pickISBN 
+				input: 2 ISBN number strings without dashes
+				output: if both are 'the same': the longer one (ISBN-13)
+				        if they aren't 'the same': undefined
+			*/
 			var pickISBN = function (ISBN1, ISBN2) {
 				var result = undefined;
-				// input: 2 ISBN number strings without dashes
-				// output: if both are 'the same': the longer one (ISBN-13)
-				//         if they aren't the same: undefined
 				var numberRegexp = /([0-9]{9,12})[0-9xX].*/;
 				var numberPart1 = ISBN1.replace(numberRegexp, '$1');
 				var numberPart2 = ISBN2.replace(numberRegexp, '$1');
@@ -791,6 +948,8 @@ function renderDetails(data, marker) {
 				}
 				return result;
 			}
+
+
 
 			if (location['md-isbn'] !== undefined) {
 				var newISBNs = []
@@ -818,7 +977,7 @@ function renderDetails(data, marker) {
 			var electronicURLs = location['md-electronic-url'];
 			var URLsContainer;
 
-			if (electronicURLs.length != 0) {
+			if (electronicURLs && electronicURLs.length != 0) {
 				URLsContainer = document.createElement('span');
 
 				for (var URLNumber in electronicURLs) {
@@ -843,6 +1002,7 @@ function renderDetails(data, marker) {
 						URLsContainer.appendChild(document.createTextNode(', '));
 					}
 				}
+				URLsContainer.appendChild(document.createTextNode('; '));
 			}
 			return URLsContainer;		
 		}
@@ -873,6 +1033,7 @@ function renderDetails(data, marker) {
 			cleanISBNs();
 			appendInfoToContainer( detailInfoItem('isbn'), detailsData );
 			appendInfoToContainer( electronicURLs(), detailsData);
+
 			
 			var catalogueInfo = detailInfoItemWithLabel(location['md-id'], localName, true);
 			catalogueInfo.setAttribute('title', localURL);
@@ -900,9 +1061,10 @@ function renderDetails(data, marker) {
 	appendInfoToContainer( detailLineAuto('issn'), detailsTable );
 	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
 	appendInfoToContainer( locationDetails(), detailsTable );
+	appendInfoToContainer( detailLine(localise('availability'), EZBLink()), detailsTable );
 	appendInfoToContainer( extraLinks(), detailsTable );
 
-    return detailsDiv;
+	return detailsDiv;
 }
 
 
