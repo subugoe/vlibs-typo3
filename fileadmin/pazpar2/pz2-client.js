@@ -39,7 +39,6 @@ var germanTerms = {
 	'detail-label-medium': 'Art',
 	'detail-label-description': 'Infos',
 	'detail-label-series-title': 'Reihe',
-	'detail-local-label-isbn': 'ISBN',
 	'detail-local-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
@@ -566,7 +565,27 @@ function renderDetails(data, marker) {
 			}
 		}
 	
+		/*
+			Attempts to recognise hyphen-less ISBNs in a string
+				and adds hyphens to them.
+		*/
+		var normaliseISBNsInString = function (ISBN) {
+			var normalisedISBN;
+			normalisedISBN = ISBN.replace(/(^|[^0-9])([0-9]{3})([0-9])([0-9]{3})([0-9]{5})([0-9Xx])/g, '$2-$3-$4-$5-$6');
+			normalisedISBN = normalisedISBN.replace(/(^|[^0-9])([0-9])([0-9]{3})([0-9]{5})([0-9Xx])/g, '$2-$3-$4-$5');
+			return normalisedISBN;
+		}
 
+
+		var normaliseISBNs = function (){
+			if (location['md-isbn'] !== undefined) {
+				var newISBNs = []
+				for (var index in location['md-isbn']) {
+					newISBNs.push(normaliseISBNsInString(location['md-isbn'][index]))
+				}
+				location['md-isbn'] = newISBNs;
+			}
+		}
 
 		var markup = [];
 
@@ -584,6 +603,8 @@ function renderDetails(data, marker) {
 			addInfoItem('publication-name');
 			addInfoItem('publication-place');
 			addInfoItem('date');
+
+			normaliseISBNs();
 			addInfoItem('isbn');
 
 			
