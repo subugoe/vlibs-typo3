@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="InsertImage-Tooltip">Bild einfügen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="InsertImage-Tooltip" type="integer">8681746</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="InsertImage-Tooltip">Insert/modify image</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="TextMode-Tooltip">Textmodus umschalten</label>
+			<label index="HTMLMode-Tooltip">HTML-Modus umschalten</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="TextMode-Tooltip" type="integer">71763705</label>
+			<label index="HTMLMode-Tooltip" type="integer">205270322</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="TextMode-Tooltip">Toggle text mode</label>
+			<label index="HTMLMode-Tooltip">Toggle HTML mode</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="bigControlPanel">Erweiterte Ansicht</label>
+			<label index="clipBoard">Zwischenablage anzeigen</label>
+			<label index="clip_paste">Inhalt der Zwischenablage einfügen</label>
+			<label index="clip_pasteInto">Einfügen in: Inhalt der Zwischenablage wird in diesen Ordner eingefügt</label>
+			<label index="clip_markRecords">Alles/nichts markieren</label>
+			<label index="clip_selectMarked">Auswahl der Dateien in die Zwischenablage übertragen</label>
+			<label index="clip_deleteMarked">Markierte löschen</label>
+			<label index="clip_deleteMarkedWarning">Alle markierten Dateien aus diesem Ordner tatsächlich löschen?</label>
+			<label index="displayThumbs">Vorschaubilder anzeigen</label>
+			<label index="c_file">Dateiname</label>
+			<label index="c_size">Größe</label>
+			<label index="c_fileext">Typ</label>
+			<label index="c_tstamp">Datum</label>
+			<label index="c_rw">RW</label>
+			<label index="c__REF_">Ref.</label>
+			<label index="files">Dateien</label>
+			<label index="temp">Temporäre Dateien</label>
+			<label index="read">L</label>
+			<label index="recycler">Papierkorb</label>
+			<label index="mlang_labels_tablabel">Anzeige von Dateien und Ordnern</label>
+			<label index="mlang_labels_tabdescr">Dies ist das Dateiverwaltungssystem von TYPO3. Es erlaubt den Zugriff auf die für Ihren Benutzer gültigen Verzeichnisfreigaben. Mit diesem Modul können Sie Dateien hochladen, sie auf dem Server kopieren, verschieben und löschen.</label>
+			<label index="mlang_tabs_tab">Dateiliste</label>
+			<label index="write">S</label>
+			<label index="paramError">Parameterfehler:</label>
+			<label index="targetNoDir">Ziel war kein Verzeichnis!</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="clipBoard" type="integer">249278403</label>
+			<label index="clip_paste" type="integer">25920339</label>
+			<label index="clip_pasteInto" type="integer">24767218</label>
+			<label index="clip_markRecords" type="integer">58652945</label>
+			<label index="clip_selectMarked" type="integer">231792509</label>
+			<label index="clip_deleteMarked" type="integer">126346891</label>
+			<label index="clip_deleteMarkedWarning" type="integer">236800089</label>
+			<label index="displayThumbs" type="integer">15222013</label>
+			<label index="c_file" type="integer">20254743</label>
+			<label index="c_size" type="integer">116837234</label>
+			<label index="c_fileext" type="integer">169845367</label>
+			<label index="c_tstamp" type="integer">71780721</label>
+			<label index="c_rw" type="integer">96918589</label>
+			<label index="files" type="integer">73111091</label>
+			<label index="mlang_labels_tablabel" type="integer">240946544</label>
+			<label index="mlang_labels_tabdescr" type="integer">48584464</label>
+			<label index="mlang_tabs_tab" type="integer">36854838</label>
+			<label index="c__REF_" type="integer">101427931</label>
+			<label index="bigControlPanel" type="integer">97098220</label>
+			<label index="temp" type="integer">179433039</label>
+			<label index="read" type="integer">236854589</label>
+			<label index="recycler" type="integer">184146156</label>
+			<label index="write" type="integer">102669318</label>
+			<label index="paramError" type="integer">212917917</label>
+			<label index="targetNoDir" type="integer">165430960</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="clipBoard">Show clipboard</label>
+			<label index="clip_paste">Paste in clipboard content</label>
+			<label index="clip_pasteInto">Paste into: Clipboard content is inserted into this folder</label>
+			<label index="clip_markRecords">Mark All/Mark none</label>
+			<label index="clip_selectMarked">Transfer the selection of files to clipboard</label>
+			<label index="clip_deleteMarked">Delete marked</label>
+			<label index="clip_deleteMarkedWarning">Are you sure you want to delete all marked files from this folder?</label>
+			<label index="displayThumbs">Display thumbnails</label>
+			<label index="c_file">Filename</label>
+			<label index="c_size">Size</label>
+			<label index="c_fileext">Type</label>
+			<label index="c_tstamp">Date</label>
+			<label index="c_rw">RW</label>
+			<label index="files">files</label>
+			<label index="mlang_labels_tablabel">Listing of files in the directory</label>
+			<label index="mlang_labels_tabdescr">This is the file administration system in TYPO3. It allows you to access the file mounts of your login. Through this module you can upload, copy, move an delete files on the server.</label>
+			<label index="mlang_tabs_tab">Filelist</label>
+			<label index="c__REF_">Ref</label>
+			<label index="bigControlPanel">Extended view</label>
+			<label index="temp">Temporary files</label>
+			<label index="read">R</label>
+			<label index="recycler">Recycler</label>
+			<label index="write">W</label>
+			<label index="paramError">Parameter Error:</label>
+			<label index="targetNoDir">Target was not a directory!</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

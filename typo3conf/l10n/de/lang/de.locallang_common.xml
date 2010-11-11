@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="about">Über</label>
+			<label index="and">und</label>
+			<label index="ascending">Aufsteigend</label>
+			<label index="back">Zurück</label>
+			<label index="byteSizeUnits">B| KB| MB| GB</label>
+			<label index="cancel">Abbruch</label>
+			<label index="category">Kategorie</label>
+			<label index="close">Schließen</label>
+			<label index="delete">Löschen</label>
+			<label index="descending">Absteigend</label>
+			<label index="details">Details</label>
+			<label index="disable">Deaktivieren</label>
+			<label index="disabled">Deaktiviert</label>
+			<label index="down">Nach unten</label>
+			<label index="download">Herunterladen</label>
+			<label index="edit">Bearbeiten</label>
+			<label index="editField">Feld bearbeiten</label>
+			<label index="editFile">Datei bearbeiten</label>
+			<label index="enable">Aktivieren</label>
+			<label index="enabled">Aktiviert</label>
+			<label index="file">Datei</label>
+			<label index="files">Dateien</label>
+			<label index="first">Erste</label>
+			<label index="from">Von</label>
+			<label index="go">Gehen</label>
+			<label index="goTo">Gehe zu</label>
+			<label index="help">Hilfe</label>
+			<label index="item">Element</label>
+			<label index="items">Elemente</label>
+			<label index="last">Letzte</label>
+			<label index="left">Links</label>
+			<label index="login">Anmelden</label>
+			<label index="logout">Abmelden</label>
+			<label index="more">Mehr</label>
+			<label index="move">Verschieben</label>
+			<label index="new">Neu</label>
+			<label index="next">Nächste</label>
+			<label index="no">Nein</label>
+			<label index="ok">OK</label>
+			<label index="open">Öffnen</label>
+			<label index="page">Seite</label>
+			<label index="pages">Seiten</label>
+			<label index="previous">Vorherige</label>
+			<label index="print">Drucken</label>
+			<label index="reload">Neu laden</label>
+			<label index="right">Rechts</label>
+			<label index="save">Speichern</label>
+			<label index="saveAndClose">Speichern und schließen</label>
+			<label index="saveAndCloseDoc">Dokument speichern und schließen</label>
+			<label index="saveAndCreateNewDoc">Dokument speichern und neues erstellen</label>
+			<label index="saveAndViewPage">Speichern und Web-Seite anzeigen</label>
+			<label index="search">Suchen</label>
+			<label index="send">Senden</label>
+			<label index="start">Start</label>
+			<label index="stop">Stopp</label>
+			<label index="submit">Abschicken</label>
+			<label index="to">Bis</label>
+			<label index="tsRef">TSref-Referenz</label>
+			<label index="up">Nach oben</label>
+			<label index="upload">Hochladen</label>
+			<label index="user">Benutzer</label>
+			<label index="users">Benutzer</label>
+			<label index="view">Anzeigen</label>
+			<label index="yes">Ja</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="about" type="integer">150467777</label>
+			<label index="and" type="integer">199611859</label>
+			<label index="ascending" type="integer">217316127</label>
+			<label index="back" type="integer">5603241</label>
+			<label index="byteSizeUnits" type="integer">126536229</label>
+			<label index="cancel" type="integer">245659783</label>
+			<label index="category" type="integer">61717939</label>
+			<label index="close" type="integer">222113377</label>
+			<label index="delete" type="integer">254438473</label>
+			<label index="descending" type="integer">238876076</label>
+			<label index="details" type="integer">65812061</label>
+			<label index="disable" type="integer">198159566</label>
+			<label index="down" type="integer">9058343</label>
+			<label index="download" type="integer">134327076</label>
+			<label index="edit" type="integer">131916066</label>
+			<label index="editField" type="integer">34217775</label>
+			<label index="editFile" type="integer">24704589</label>
+			<label index="enable" type="integer">49998879</label>
+			<label index="file" type="integer">11696408</label>
+			<label index="files" type="integer">153041452</label>
+			<label index="first" type="integer">133912045</label>
+			<label index="go" type="integer">99644846</label>
+			<label index="goTo" type="integer">239332408</label>
+			<label index="help" type="integer">111308628</label>
+			<label index="item" type="integer">131551035</label>
+			<label index="items" type="integer">165585921</label>
+			<label index="last" type="integer">223720198</label>
+			<label index="left" type="integer">155571682</label>
+			<label index="login" type="integer">161344120</label>
+			<label index="logout" type="integer">3292644</label>
+			<label index="more" type="integer">222144894</label>
+			<label index="move" type="integer">112997933</label>
+			<label index="new" type="integer">3944062</label>
+			<label index="next" type="integer">17482704</label>
+			<label index="no" type="integer">196073266</label>
+			<label index="ok" type="integer">235577377</label>
+			<label index="open" type="integer">205255751</label>
+			<label index="page" type="integer">26464201</label>
+			<label index="pages" type="integer">72592619</label>
+			<label index="previous" type="integer">231864181</label>
+			<label index="print" type="integer">20822564</label>
+			<label index="reload" type="integer">80857126</label>
+			<label index="right" type="integer">153815495</label>
+			<label index="save" type="integer">211601612</label>
+			<label index="saveAndClose" type="integer">125326617</label>
+			<label index="saveAndCloseDoc" type="integer">43846535</label>
+			<label index="saveAndCreateNewDoc" type="integer">21075397</label>
+			<label index="saveAndViewPage" type="integer">16814707</label>
+			<label index="search" type="integer">20138052</label>
+			<label index="send" type="integer">155805401</label>
+			<label index="start" type="integer">174138022</label>
+			<label index="stop" type="integer">18511197</label>
+			<label index="submit" type="integer">172833558</label>
+			<label index="tsRef" type="integer">61814681</label>
+			<label index="up" type="integer">39384216</label>
+			<label index="upload" type="integer">152310342</label>
+			<label index="user" type="integer">150585321</label>
+			<label index="users" type="integer">261795423</label>
+			<label index="view" type="integer">70589694</label>
+			<label index="yes" type="integer">154974727</label>
+			<label index="from" type="integer">98197902</label>
+			<label index="to" type="integer">236066426</label>
+			<label index="disabled" type="integer">194993273</label>
+			<label index="enabled" type="integer">861095</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="about">About</label>
+			<label index="and">and</label>
+			<label index="ascending">Ascending</label>
+			<label index="back">Back</label>
+			<label index="byteSizeUnits"> B| KB| MB| GB</label>
+			<label index="cancel">Cancel</label>
+			<label index="category">Category</label>
+			<label index="close">Close</label>
+			<label index="delete">Delete</label>
+			<label index="descending">Descending</label>
+			<label index="details">Details</label>
+			<label index="disable">Disable</label>
+			<label index="down">Down</label>
+			<label index="download">Download</label>
+			<label index="edit">Edit</label>
+			<label index="editField">Edit field</label>
+			<label index="editFile">Edit file</label>
+			<label index="enable">Enable</label>
+			<label index="file">File</label>
+			<label index="files">Files</label>
+			<label index="first">First</label>
+			<label index="go">Go</label>
+			<label index="goTo">Go to</label>
+			<label index="help">Help</label>
+			<label index="item">Item</label>
+			<label index="items">Items</label>
+			<label index="last">Last</label>
+			<label index="left">Left</label>
+			<label index="login">Login</label>
+			<label index="logout">Logout</label>
+			<label index="more">More</label>
+			<label index="move">Move</label>
+			<label index="new">New</label>
+			<label index="next">Next</label>
+			<label index="no">No</label>
+			<label index="ok">OK</label>
+			<label index="open">Open</label>
+			<label index="page">Page</label>
+			<label index="pages">Pages</label>
+			<label index="previous">Previous</label>
+			<label index="print">Print</label>
+			<label index="reload">Reload</label>
+			<label index="right">Right</label>
+			<label index="save">Save</label>
+			<label index="saveAndClose">Save and close</label>
+			<label index="saveAndCloseDoc">Save and close document</label>
+			<label index="saveAndCreateNewDoc">Save and create new document</label>
+			<label index="saveAndViewPage">Save and view page</label>
+			<label index="search">Search</label>
+			<label index="send">Send</label>
+			<label index="start">Start</label>
+			<label index="stop">Stop</label>
+			<label index="submit">Submit</label>
+			<label index="tsRef">TSref reference</label>
+			<label index="up">Up</label>
+			<label index="upload">Upload</label>
+			<label index="user">User</label>
+			<label index="users">Users</label>
+			<label index="view">View</label>
+			<label index="yes">Yes</label>
+			<label index="from">From</label>
+			<label index="to">To</label>
+			<label index="disabled">Disabled</label>
+			<label index="enabled">Enabled</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="labels.username">Benutzername</label>
+			<label index="labels.openId">OpenID</label>
+			<label index="labels.password">Passwort</label>
+			<label index="labels.interface">Oberfläche</label>
+			<label index="labels.submitLogin">Anmelden</label>
+			<label index="labels.submitLogout">Abmelden</label>
+			<label index="labels.donate">Spenden</label>
+			<label index="labels.whatIsOpenId">Was ist OpenID?</label>
+			<label index="labels.switchToOpenId">Zum OpenID-Login</label>
+			<label index="labels.switchToDefault">Zum Standard-Login</label>
+			<label index="availableInterfaces">Backend,Frontend,Traditionelles Backend</label>
+			<label index="interface.backend">Backend</label>
+			<label index="interface.frontend">Frontend</label>
+			<label index="interface.backend_old">Traditionelles Backend</label>
+			<label index="headline">Anmeldung am Backend von ###SITENAME###</label>
+			<label index="info.about">Dies ist die Anmeldung am TYPO3-Backend. Um auf die Verwaltungsoberfläche zugreifen zu können, benötigen Sie einen Benutzernamen und ein Passwort. Falls Sie ein Besucher von ###SITENAME### sind, besuchen Sie bitte den öffentlichen Bereich: ###SITELINK###</label>
+			<label index="info.reset">Formular zurücksetzen</label>
+			<label index="info.cookies_and_js">(Hinweis: Cookies und JavaScript müssen aktiviert sein!)</label>
+			<label index="clear">Dieses Feld leeren!</label>
+			<label index="login_process">Anmeldedaten werden verifiziert...</label>
+			<label index="newsheadline">Wichtige Meldungen:</label>
+			<label index="error.login">Der Anmeldeversuch ist fehlgeschlagen. Achten Sie darauf, Benutzernamen und Passwort korrekt einzugeben, einschließlich Groß-/Kleinschreibung.</label>
+			<label index="error.login.title">Ihr Anmeldeversuch war nicht erfolgreich</label>
+			<label index="error.login.description">Bitte stellen Sie sicher, dass Ihr Benutzername und Passwort korrekt sind. Groß-/Kleinschreibung wird unterschieden.</label>
+			<label index="error.javascript">Bitte aktivieren Sie JavaScript!</label>
+			<label index="error.cookies">Bitte aktivieren Sie Cookies!</label>
+			<label index="error.cookies_ignore">Ignorieren!</label>
+			<label index="error.capslock">Achtung: Feststelltaste aktiviert!</label>
+			<label index="error.furtherInformation">Weitere Informationen und Hilfe erhalten Sie hier</label>
+			<label index="warranty.by">Gewährleistung wird geboten von %s; %sDetails sind hier verfügbar.%s</label>
+			<label index="no.warranty">Sie nutzen TYPO3 OHNE GEWÄHRLEISTUNG; %sDetails sind hier verfügbar.%s</label>
+			<label index="typo3.logo">TYPO3-Logo</label>
+			<label index="typo3.cms">TYPO3 CMS</label>
+			<label index="version.short">Ver.</label>
+			<label index="copyright">Copyright</label>
+			<label index="extension.copyright">Erweiterungen sind Eigentum ihrer jeweiligen Autoren.</label>
+			<label index="details.link">Weitere Informationen erhalten Sie unter %s.</label>
+			<label index="free.software">Dies ist freie Software und Sie dürfen sie unter gewissen Voraussetzungen verbreiten; %sDetails sind hier verfügbar.%s</label>
+			<label index="keep.notice">Das Erscheinen dieses Hinweises zu verhindern, ist gesetzlich verboten.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="labels.username" type="integer">257964500</label>
+			<label index="labels.password" type="integer">231098347</label>
+			<label index="labels.interface" type="integer">63023816</label>
+			<label index="labels.submitLogin" type="integer">161344120</label>
+			<label index="labels.submitLogout" type="integer">185346853</label>
+			<label index="labels.donate" type="integer">5787204</label>
+			<label index="availableInterfaces" type="integer">191890180</label>
+			<label index="headline" type="integer">240658539</label>
+			<label index="info.about" type="integer">56042511</label>
+			<label index="info.reset" type="integer">155169575</label>
+			<label index="clear" type="integer">226364655</label>
+			<label index="newsheadline" type="integer">32077743</label>
+			<label index="error.login" type="integer">104583019</label>
+			<label index="error.javascript" type="integer">213516707</label>
+			<label index="error.cookies" type="integer">87593890</label>
+			<label index="error.cookies_ignore" type="integer">208422426</label>
+			<label index="error.capslock" type="integer">125844377</label>
+			<label index="warranty.by" type="integer">39543108</label>
+			<label index="no.warranty" type="integer">218066175</label>
+			<label index="typo3.logo" type="integer">9122974</label>
+			<label index="typo3.cms" type="integer">46966526</label>
+			<label index="version.short" type="integer">134263603</label>
+			<label index="copyright" type="integer">100756011</label>
+			<label index="extension.copyright" type="integer">137085499</label>
+			<label index="details.link" type="integer">97586013</label>
+			<label index="free.software" type="integer">199469956</label>
+			<label index="keep.notice" type="integer">26313953</label>
+			<label index="labels.openId" type="integer">17662508</label>
+			<label index="labels.whatIsOpenId" type="integer">105762531</label>
+			<label index="interface.backend" type="integer">48506818</label>
+			<label index="interface.frontend" type="integer">228047462</label>
+			<label index="interface.backend_old" type="integer">116453634</label>
+			<label index="info.cookies_and_js" type="integer">258680830</label>
+			<label index="login_process" type="integer">113316142</label>
+			<label index="labels.switchToOpenId" type="integer">159789141</label>
+			<label index="labels.switchToDefault" type="integer">47057790</label>
+			<label index="error.login.title" type="integer">154250307</label>
+			<label index="error.login.description" type="integer">175839346</label>
+			<label index="error.furtherInformation" type="integer">1511581</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="labels.username">Username</label>
+			<label index="labels.password">Password</label>
+			<label index="labels.interface">Interface</label>
+			<label index="labels.submitLogin">Login</label>
+			<label index="labels.submitLogout">Log Out</label>
+			<label index="labels.donate">Donate</label>
+			<label index="availableInterfaces">Backend,Front End,Traditional Backend</label>
+			<label index="headline">Login to the TYPO3 Backend on ###SITENAME###</label>
+			<label index="info.about">This is the backend login of TYPO3. You need username and password to access this administration interface. If you are a visitor of ###SITENAME###, please visit the public website: ###SITELINK###</label>
+			<label index="info.reset">Reset this form</label>
+			<label index="clear">Clear this field!</label>
+			<label index="newsheadline">Important Messages:</label>
+			<label index="error.login">Your login attempt did not succeed. Make sure to spell your username and password correctly, including upper/lowercase characters.</label>
+			<label index="error.javascript">Activate JavaScript, please!</label>
+			<label index="error.cookies">Activate Cookies, please!</label>
+			<label index="error.cookies_ignore">Ignore!</label>
+			<label index="error.capslock">Attention: Caps lock enabled!</label>
+			<label index="warranty.by">Warranty is supplied by %s; %sclick for details.%s</label>
+			<label index="no.warranty">TYPO3 comes with ABSOLUTELY NO WARRANTY; %sclick for details.%s</label>
+			<label index="typo3.logo">TYPO3 logo</label>
+			<label index="typo3.cms">TYPO3 CMS</label>
+			<label index="version.short">ver.</label>
+			<label index="copyright">Copyright</label>
+			<label index="extension.copyright">Extensions are copyright of their respective owners.</label>
+			<label index="details.link">Go to %s for details.</label>
+			<label index="free.software">This is free software, and you are welcome to redistribute it under certain conditions; %sclick for details.%s</label>
+			<label index="keep.notice">Obstructing the appearance of this notice is prohibited by law.</label>
+			<label index="labels.openId">OpenID</label>
+			<label index="labels.whatIsOpenId">What is OpenId?</label>
+			<label index="interface.backend">Backend</label>
+			<label index="interface.frontend">Frontend</label>
+			<label index="interface.backend_old">Traditional Backend</label>
+			<label index="info.cookies_and_js">(Note: Cookies and JavaScript must be enabled!)</label>
+			<label index="login_process">Verifying Login Data ...</label>
+			<label index="labels.switchToOpenId">Switch to OpenID</label>
+			<label index="labels.switchToDefault">Switch to default login</label>
+			<label index="error.login.title">Your login attempt did not succeed</label>
+			<label index="error.login.description">Make sure to spell your username and password correctly, including upper/lowercase characters.</label>
+			<label index="error.furtherInformation">For more information or further help click here</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

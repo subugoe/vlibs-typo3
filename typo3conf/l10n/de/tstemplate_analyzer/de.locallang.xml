@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="currentTemplate">Aktuelles Template:</label>
+			<label index="title">Titel</label>
+			<label index="rootlevel">Wurzelebene</label>
+			<label index="clearSetup">Setup löschen</label>
+			<label index="clearConstants">Konstanten löschen</label>
+			<label index="pid">PID</label>
+			<label index="rootline">Rootline</label>
+			<label index="nextLevel">Nächste Ebene</label>
+			<label index="templateHierarchy">Template-Hierarchie:</label>
+			<label index="displayOptions">Optionen anzeigen</label>
+			<label index="lineNumbers">Zeilennummern</label>
+			<label index="syntaxHighlight">Syntaxhervorhebung</label>
+			<label index="comments">Kommentare</label>
+			<label index="cropLines">Zeilen kappen</label>
+			<label index="blockMode">Blockmodus</label>
+			<label index="constants">Konstanten:</label>
+			<label index="setup">Setup:</label>
+			<label index="viewCompleteTS">Vollständige TS-Auflistung anzeigen</label>
+			<label index="completeTS">Vollständiges TS:</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="currentTemplate" type="integer">165379301</label>
+			<label index="title" type="integer">192455458</label>
+			<label index="rootlevel" type="integer">89010955</label>
+			<label index="clearSetup" type="integer">20145144</label>
+			<label index="clearConstants" type="integer">195571179</label>
+			<label index="pid" type="integer">47658329</label>
+			<label index="rootline" type="integer">138307445</label>
+			<label index="nextLevel" type="integer">262774904</label>
+			<label index="templateHierarchy" type="integer">67860086</label>
+			<label index="displayOptions" type="integer">164348493</label>
+			<label index="lineNumbers" type="integer">191589026</label>
+			<label index="syntaxHighlight" type="integer">95403856</label>
+			<label index="comments" type="integer">138493032</label>
+			<label index="cropLines" type="integer">209144187</label>
+			<label index="blockMode" type="integer">193307856</label>
+			<label index="constants" type="integer">9435897</label>
+			<label index="setup" type="integer">99513535</label>
+			<label index="viewCompleteTS" type="integer">88315695</label>
+			<label index="completeTS" type="integer">29860751</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="currentTemplate">Current template:</label>
+			<label index="title">Title</label>
+			<label index="rootlevel">Rootlevel</label>
+			<label index="clearSetup">Clear Setup</label>
+			<label index="clearConstants">Clear Constants</label>
+			<label index="pid">PID</label>
+			<label index="rootline">Rootline</label>
+			<label index="nextLevel">Next Level</label>
+			<label index="templateHierarchy">Template hierarchy:</label>
+			<label index="displayOptions">Display Options</label>
+			<label index="lineNumbers">Line numbers</label>
+			<label index="syntaxHighlight">Syntax highlight</label>
+			<label index="comments">Comments</label>
+			<label index="cropLines">Crop lines</label>
+			<label index="blockMode">Block mode</label>
+			<label index="constants">Constants:</label>
+			<label index="setup">Setup:</label>
+			<label index="viewCompleteTS">View the complete TS Listing</label>
+			<label index="completeTS">Complete TS:</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

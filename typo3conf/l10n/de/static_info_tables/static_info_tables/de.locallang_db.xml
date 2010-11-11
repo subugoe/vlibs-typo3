@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="static_territories.title">Gebiet</label>
+			<label index="static_territories_item.tr_iso_nr">Gebietskennung nach ISO Nr:</label>
+			<label index="static_territories_item.tr_parent_iso_nr">Kennung übergeordnetes Gebiet:</label>
+			<label index="static_territories_item.tr_name_en">Name (EN):</label>
+			<label index="static_countries.title">Länder</label>
+			<label index="static_countries_item.cn_iso_2">Länderkennung nach ISO 3166 A2:</label>
+			<label index="static_countries_item.cn_iso_3">Länderkennung nach ISO 3166 A3:</label>
+			<label index="static_countries_item.cn_iso_nr">Länderkennung nach ISO 3166 Nr:</label>
+			<label index="static_countries_item.cn_official_name_local">Offizieller Name (lokal):</label>
+			<label index="static_countries_item.cn_official_name_en">Offizieller Name (EN):</label>
+			<label index="static_countries_item.cn_capital">Hauptstadt:</label>
+			<label index="static_countries_item.cn_tldomain">Toplevel-Domäne:</label>
+			<label index="static_countries_item.cn_currency_iso_nr">Währungskennung nach ISO 4217 Nr:</label>
+			<label index="static_countries_item.cn_currency_iso_3">Währungskennung nach ISO 4217 A3:</label>
+			<label index="static_countries_item.cn_phone">Intern. Tel.-Vorwahl:</label>
+			<label index="static_countries_item.cn_uno_member">UN-Mitglied:</label>
+			<label index="static_countries_item.cn_eu_member">EU-Mitglied:</label>
+			<label index="static_countries_item.cn_address_format">Adressformat:</label>
+			<label index="static_countries_item.cn_address_format_1">PLZ Ort</label>
+			<label index="static_countries_item.cn_address_format_2">Ort PLZ</label>
+			<label index="static_countries_item.cn_address_format_3">Ort Regionskürzel PLZ</label>
+			<label index="static_countries_item.cn_address_format_4">Stadt (Region) PLZ</label>
+			<label index="static_countries_item.cn_address_format_5">Stadt/PLZ</label>
+			<label index="static_countries_item.cn_address_format_6">PLZ Ort, Regionskürzel</label>
+			<label index="static_countries_item.cn_address_format_7">PLZ Ort (Regionskürzel)</label>
+			<label index="static_countries_item.cn_address_format_8">PLZ Stadt (Region)</label>
+			<label index="static_countries_item.cn_address_format_9">Stadt - Regionskürzel/PLZ</label>
+			<label index="static_countries_item.cn_zone_flag">Zone flag:</label>
+			<label index="static_countries_item.cn_short_local">Kurzname (lokal):</label>
+			<label index="static_countries_item.cn_short_en">Kurzname (EN):</label>
+			<label index="static_country_zones.title">Landesteile (Bundesländer)</label>
+			<label index="static_country_zones_item.zn_country_iso_nr">Länderkennung nach ISO 3166 Nr:</label>
+			<label index="static_country_zones_item.zn_country_iso_2">Länderkennung nach ISO 3166 A2:</label>
+			<label index="static_country_zones_item.zn_country_iso_3">Länderkennung nach ISO 3166 A3:</label>
+			<label index="static_country_zones_item.zn_code">Landesgliederungskennung nach ISO 3166-2:</label>
+			<label index="static_country_zones_item.zn_name_en">Name (EN):</label>
+			<label index="static_languages.title">Sprachen</label>
+			<label index="static_languages_item.lg_iso_2">Sprachkennung nach ISO 639-1 A2:</label>
+			<label index="static_languages_item.lg_collate_locale">Gebietsschema:</label>
+			<label index="static_languages_item.lg_name_en">Name (EN):</label>
+			<label index="static_languages_item.lg_typo3">TYPO3-Sprachkennung:</label>
+			<label index="static_languages_item.lg_sacred">Religionssprache:</label>
+			<label index="static_languages_item.lg_constructed">Kunstsprache:</label>
+			<label index="static_currencies.title">Währungen</label>
+			<label index="static_currencies_item.cu_iso_3">Währungskennung nach ISO 4217 A3:</label>
+			<label index="static_currencies_item.cu_iso_nr">Währungskennung nach ISO 4217 Nr:</label>
+			<label index="static_currencies_item.cu_name_en">Name (EN):</label>
+			<label index="static_currencies_item.cu_sub_name_en">Sub-Name (EN):</label>
+			<label index="static_currencies_item.cu_symbol_left">Symbol links:</label>
+			<label index="static_currencies_item.cu_symbol_right">Symbol rechts:</label>
+			<label index="static_currencies_item.cu_thousands_point">Tausenderpunkt:</label>
+			<label index="static_currencies_item.cu_decimal_point">Dezimalpunkt:</label>
+			<label index="static_currencies_item.cu_decimal_digits">Dezimalstellen:</label>
+			<label index="static_currencies_item.cu_sub_divisor">Divisor:</label>
+			<label index="static_currencies_item.cu_sub_symbol_left">Subsymbol links:</label>
+			<label index="static_currencies_item.cu_sub_symbol_right">Subsymbol rechts:</label>
+			<label index="static_markets.title">Marktplätze</label>
+			<label index="static_markets.country">Land:</label>
+			<label index="static_markets.mic">MIC:</label>
+			<label index="static_markets.institution_description">Institution:</label>
+			<label index="static_markets.acronym">Abkürzung:</label>
+			<label index="static_markets.city">Stadt:</label>
+			<label index="static_markets.url">URL:</label>
+			<label index="static_taxes.title">Steuern</label>
+			<label index="static_taxes_item.cn_iso_2">Länderkennung nach ISO 3166 A2:</label>
+			<label index="static_taxes_item.cn_iso_3">Länderkennung nach ISO 3166 A3:</label>
+			<label index="static_taxes_item.cn_iso_nr">Länderkennung nach ISO 3166 Nr:</label>
+			<label index="static_taxes_item.zn_code">Zonenkürzel:</label>
+			<label index="static_taxes_item.tx_name_en">Steuername (EN):</label>
+			<label index="static_taxes_item.tx_code">Steuerkürzel:</label>
+			<label index="static_taxes_item.tx_scope">Geltungsbereich:</label>
+			<label index="static_taxes_item.tx_scope.I.0">Land</label>
+			<label index="static_taxes_item.tx_scope.I.1">Bundesland/Provinz</label>
+			<label index="static_taxes_item.tx_class">Steuerklasse:</label>
+			<label index="static_taxes_item.tx_class.I.0">Steuerpflichtige Waren</label>
+			<label index="static_taxes_item.tx_class.I.1">Steuerpflichtige Dienstleistungen</label>
+			<label index="static_taxes_item.tx_class.I.2">Steuerpflichtige Waren und Dienstleistungen</label>
+			<label index="static_taxes_item.tx_rate">Steuersatz:</label>
+			<label index="static_taxes_item.tx_priority">Priorität:</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="static_countries.title" type="integer">126932382</label>
+			<label index="static_countries_item.cn_iso_2" type="integer">47145425</label>
+			<label index="static_countries_item.cn_iso_3" type="integer">129658471</label>
+			<label index="static_countries_item.cn_iso_nr" type="integer">46311532</label>
+			<label index="static_countries_item.cn_official_name_local" type="integer">148211490</label>
+			<label index="static_countries_item.cn_official_name_en" type="integer">129404335</label>
+			<label index="static_countries_item.cn_capital" type="integer">129085910</label>
+			<label index="static_countries_item.cn_tldomain" type="integer">172508763</label>
+			<label index="static_countries_item.cn_currency_iso_nr" type="integer">210330190</label>
+			<label index="static_countries_item.cn_currency_iso_3" type="integer">73243628</label>
+			<label index="static_countries_item.cn_phone" type="integer">98600083</label>
+			<label index="static_countries_item.cn_eu_member" type="integer">220675826</label>
+			<label index="static_countries_item.cn_address_format" type="integer">258176925</label>
+			<label index="static_countries_item.cn_address_format_1" type="integer">259286835</label>
+			<label index="static_countries_item.cn_address_format_2" type="integer">29075071</label>
+			<label index="static_countries_item.cn_address_format_3" type="integer">220926361</label>
+			<label index="static_countries_item.cn_address_format_4" type="integer">116426090</label>
+			<label index="static_countries_item.cn_address_format_5" type="integer">236589604</label>
+			<label index="static_countries_item.cn_address_format_6" type="integer">115480938</label>
+			<label index="static_countries_item.cn_address_format_7" type="integer">155192228</label>
+			<label index="static_countries_item.cn_address_format_8" type="integer">37972116</label>
+			<label index="static_countries_item.cn_zone_flag" type="integer">216200146</label>
+			<label index="static_countries_item.cn_short_local" type="integer">226207428</label>
+			<label index="static_countries_item.cn_short_en" type="integer">203255010</label>
+			<label index="static_country_zones.title" type="integer">14543292</label>
+			<label index="static_country_zones_item.zn_country_iso_nr" type="integer">46311532</label>
+			<label index="static_country_zones_item.zn_country_iso_2" type="integer">47145425</label>
+			<label index="static_country_zones_item.zn_country_iso_3" type="integer">129658471</label>
+			<label index="static_country_zones_item.zn_code" type="integer">117876527</label>
+			<label index="static_languages.title" type="integer">60853806</label>
+			<label index="static_languages_item.lg_iso_2" type="integer">161337573</label>
+			<label index="static_languages_item.lg_name_en" type="integer">145837609</label>
+			<label index="static_languages_item.lg_typo3" type="integer">19890474</label>
+			<label index="static_currencies.title" type="integer">234683459</label>
+			<label index="static_currencies_item.cu_iso_3" type="integer">73243628</label>
+			<label index="static_currencies_item.cu_iso_nr" type="integer">210330190</label>
+			<label index="static_currencies_item.cu_name_en" type="integer">145837609</label>
+			<label index="static_currencies_item.cu_sub_name_en" type="integer">77949357</label>
+			<label index="static_currencies_item.cu_symbol_left" type="integer">82440994</label>
+			<label index="static_currencies_item.cu_symbol_right" type="integer">912726</label>
+			<label index="static_currencies_item.cu_thousands_point" type="integer">97936547</label>
+			<label index="static_currencies_item.cu_decimal_point" type="integer">194134052</label>
+			<label index="static_currencies_item.cu_decimal_digits" type="integer">153453876</label>
+			<label index="static_currencies_item.cu_sub_divisor" type="integer">181976944</label>
+			<label index="static_currencies_item.cu_sub_symbol_left" type="integer">257294363</label>
+			<label index="static_currencies_item.cu_sub_symbol_right" type="integer">180538285</label>
+			<label index="static_taxes.title" type="integer">43562229</label>
+			<label index="static_taxes_item.cn_iso_2" type="integer">47145425</label>
+			<label index="static_taxes_item.cn_iso_3" type="integer">129658471</label>
+			<label index="static_taxes_item.cn_iso_nr" type="integer">46311532</label>
+			<label index="static_taxes_item.zn_code" type="integer">117876527</label>
+			<label index="static_taxes_item.tx_name_en" type="integer">226775552</label>
+			<label index="static_taxes_item.tx_code" type="integer">153496813</label>
+			<label index="static_taxes_item.tx_scope" type="integer">92266942</label>
+			<label index="static_taxes_item.tx_scope.I.0" type="integer">93787849</label>
+			<label index="static_taxes_item.tx_scope.I.1" type="integer">151152448</label>
+			<label index="static_taxes_item.tx_class" type="integer">108564327</label>
+			<label index="static_taxes_item.tx_class.I.0" type="integer">180454434</label>
+			<label index="static_taxes_item.tx_class.I.1" type="integer">109297838</label>
+			<label index="static_taxes_item.tx_class.I.2" type="integer">130964316</label>
+			<label index="static_taxes_item.tx_rate" type="integer">167203922</label>
+			<label index="static_taxes_item.tx_priority" type="integer">6238968</label>
+			<label index="static_markets.title" type="integer">86783926</label>
+			<label index="static_markets.country" type="integer">258260574</label>
+			<label index="static_markets.mic" type="integer">65053578</label>
+			<label index="static_markets.institution_description" type="integer">167506172</label>
+			<label index="static_markets.acronym" type="integer">246377376</label>
+			<label index="static_markets.city" type="integer">201307921</label>
+			<label index="static_markets.url" type="integer">62115936</label>
+			<label index="static_territories_item.tr_name_en" type="integer">145837609</label>
+			<label index="static_countries_item.cn_uno_member" type="integer">92583675</label>
+			<label index="static_countries_item.cn_address_format_9" type="integer">148567540</label>
+			<label index="static_country_zones_item.zn_name_en" type="integer">145837609</label>
+			<label index="static_territories.title" type="integer">1297305</label>
+			<label index="static_territories_item.tr_iso_nr" type="integer">192875832</label>
+			<label index="static_territories_item.tr_parent_iso_nr" type="integer">96465878</label>
+			<label index="static_languages_item.lg_collate_locale" type="integer">163422937</label>
+			<label index="static_languages_item.lg_sacred" type="integer">197758038</label>
+			<label index="static_languages_item.lg_constructed" type="integer">246329471</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="static_countries.title">Countries</label>
+			<label index="static_countries_item.cn_iso_2">ISO 3166-1 A2 Country code:</label>
+			<label index="static_countries_item.cn_iso_3">ISO 3166-1 A3 Country code:</label>
+			<label index="static_countries_item.cn_iso_nr">ISO 3166-1 Nr Country code:</label>
+			<label index="static_countries_item.cn_official_name_local">Official name (local):</label>
+			<label index="static_countries_item.cn_official_name_en">Official name (EN):</label>
+			<label index="static_countries_item.cn_capital">Capital:</label>
+			<label index="static_countries_item.cn_tldomain">Top level domain:</label>
+			<label index="static_countries_item.cn_currency_iso_nr">ISO 4217 Nr Currency code:</label>
+			<label index="static_countries_item.cn_currency_iso_3">ISO 4217 A3 Currency code:</label>
+			<label index="static_countries_item.cn_phone">Int. phone prefix:</label>
+			<label index="static_countries_item.cn_eu_member">EU member:</label>
+			<label index="static_countries_item.cn_address_format">Address format:</label>
+			<label index="static_countries_item.cn_address_format_1">zip city</label>
+			<label index="static_countries_item.cn_address_format_2">city zip</label>
+			<label index="static_countries_item.cn_address_format_3">city region-code zip</label>
+			<label index="static_countries_item.cn_address_format_4">city (region-name) zip</label>
+			<label index="static_countries_item.cn_address_format_5">city/zip</label>
+			<label index="static_countries_item.cn_address_format_6">zip city, region-code</label>
+			<label index="static_countries_item.cn_address_format_7">zip city region-code</label>
+			<label index="static_countries_item.cn_address_format_8">zip city (region-name)</label>
+			<label index="static_countries_item.cn_zone_flag">Zone flag:</label>
+			<label index="static_countries_item.cn_short_local">Short name (local):</label>
+			<label index="static_countries_item.cn_short_en">Short name (EN):</label>
+			<label index="static_country_zones.title">Country subdivisions</label>
+			<label index="static_country_zones_item.zn_country_iso_nr">ISO 3166-1 Nr Country code:</label>
+			<label index="static_country_zones_item.zn_country_iso_2">ISO 3166-1 A2 Country code:</label>
+			<label index="static_country_zones_item.zn_country_iso_3">ISO 3166-1 A3 Country code:</label>
+			<label index="static_country_zones_item.zn_code">ISO 3166-2 Country Zone code:</label>
+			<label index="static_languages.title">Languages</label>
+			<label index="static_languages_item.lg_iso_2">ISO 639-1 A2 Language code:</label>
+			<label index="static_languages_item.lg_name_en">Name (EN):</label>
+			<label index="static_languages_item.lg_typo3">Typo3 language code:</label>
+			<label index="static_currencies.title">Currencies</label>
+			<label index="static_currencies_item.cu_iso_3">ISO 4217 A3 Currency code:</label>
+			<label index="static_currencies_item.cu_iso_nr">ISO 4217 Nr Currency code:</label>
+			<label index="static_currencies_item.cu_name_en">Name (EN):</label>
+			<label index="static_currencies_item.cu_sub_name_en">Sub name (EN):</label>
+			<label index="static_currencies_item.cu_symbol_left">Symbol left:</label>
+			<label index="static_currencies_item.cu_symbol_right">Symbol right:</label>
+			<label index="static_currencies_item.cu_thousands_point">Thousands point:</label>
+			<label index="static_currencies_item.cu_decimal_point">Decimal point:</label>
+			<label index="static_currencies_item.cu_decimal_digits">Decimal digits:</label>
+			<label index="static_currencies_item.cu_sub_divisor">Divisor:</label>
+			<label index="static_currencies_item.cu_sub_symbol_left">Sub symbol left:</label>
+			<label index="static_currencies_item.cu_sub_symbol_right">Sub symbol right:</label>
+			<label index="static_taxes.title">Static taxes</label>
+			<label index="static_taxes_item.cn_iso_2">ISO 3166-1 A2 Country code:</label>
+			<label index="static_taxes_item.cn_iso_3">ISO 3166-1 A3 Country code:</label>
+			<label index="static_taxes_item.cn_iso_nr">ISO 3166-1 Nr Country code:</label>
+			<label index="static_taxes_item.zn_code">ISO 3166-2 Country Zone code:</label>
+			<label index="static_taxes_item.tx_name_en">Tax name (EN):</label>
+			<label index="static_taxes_item.tx_code">Tax code:</label>
+			<label index="static_taxes_item.tx_scope">Juridiction:</label>
+			<label index="static_taxes_item.tx_scope.I.0">Country</label>
+			<label index="static_taxes_item.tx_scope.I.1">State/province</label>
+			<label index="static_taxes_item.tx_class">Class:</label>
+			<label index="static_taxes_item.tx_class.I.0">Taxable goods</label>
+			<label index="static_taxes_item.tx_class.I.1">Taxable services</label>
+			<label index="static_taxes_item.tx_class.I.2">Taxable goods and services</label>
+			<label index="static_taxes_item.tx_rate">Rate:</label>
+			<label index="static_taxes_item.tx_priority">Priority:</label>
+			<label index="static_markets.title">Markets</label>
+			<label index="static_markets.country">Country:</label>
+			<label index="static_markets.mic">MIC:</label>
+			<label index="static_markets.institution_description">Institution:</label>
+			<label index="static_markets.acronym">Acronym:</label>
+			<label index="static_markets.city">City:</label>
+			<label index="static_markets.url">URL:</label>
+			<label index="static_territories_item.tr_name_en">Name (EN):</label>
+			<label index="static_countries_item.cn_uno_member">UN member:</label>
+			<label index="static_countries_item.cn_address_format_9">city - region-code/zip</label>
+			<label index="static_country_zones_item.zn_name_en">Name (EN):</label>
+			<label index="static_territories.title">Territory</label>
+			<label index="static_territories_item.tr_iso_nr">ISO nr territory code:</label>
+			<label index="static_territories_item.tr_parent_iso_nr">Parent territory code:</label>
+			<label index="static_languages_item.lg_collate_locale">Collating locale:</label>
+			<label index="static_languages_item.lg_sacred">Sacred language:</label>
+			<label index="static_languages_item.lg_constructed">Constructed language:</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

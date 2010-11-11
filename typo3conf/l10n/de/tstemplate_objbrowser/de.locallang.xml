@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="constants">Konstanten</label>
+			<label index="setup">Setup</label>
+			<label index="all">Alle</label>
+			<label index="plainSubstitution">Einfaches Ersetzen (Standard)</label>
+			<label index="substitutedGreen">Ersetzte Konstanten in grün</label>
+			<label index="unsubstitutedGreen">NICHT-ersetzte Konstanten in grün</label>
+			<label index="currentTemplate">Aktuelles Template:</label>
+			<label index="badProperty">Ungültige Eigenschaft!</label>
+			<label index="noSpaces">Sie müssen eine Eigenschaft mit folgenden Zeichen eingeben: a-z, A-Z und 0-9, keine Leerzeichen!</label>
+			<label index="nothingUpdated">Keine Aktualisierung durchgeführt!</label>
+			<label index="propertyAdded">Eigenschaft hinzugefügt</label>
+			<label index="valueUpdated">Wert aktualisiert</label>
+			<label index="objectCleared">Objekt gelöscht</label>
+			<label index="updateButton">Aktualisieren</label>
+			<label index="editProperty">Objekt-/Eigenschaftswert bearbeiten:</label>
+			<label index="addButton">Hinzufügen</label>
+			<label index="addProperty">Objekteigenschaft hinzufügen:</label>
+			<label index="clear">Löschen?</label>
+			<label index="clearButton">Löschen</label>
+			<label index="clearObject">Objekt löschen:</label>
+			<label index="edit">Bearbeiten:</label>
+			<label index="noCurrentTemplate">Sie können Eigenschaften und Werte nicht bearbeiten, wenn kein Template gewählt ist.</label>
+			<label index="addKey">&lt;b&gt;Schlüssel '%s'&lt;/b&gt;&lt;/a&gt; zur Objektliste hinzufügen</label>
+			<label index="removeKey">Schlüssel aus Objektliste entfernen</label>
+			<label index="back">&lt; Zurück</label>
+			<label index="browse">Durchsuchen:</label>
+			<label index="objectList">Objektliste:</label>
+			<label index="search">Suche:</label>
+			<label index="regExp">Reguläre Ausdrücke</label>
+			<label index="errorsWarnings">Fehler und Warnungen</label>
+			<label index="setupRoot">Setup-Wurzel</label>
+			<label index="constantRoot">Konstantenwurzel</label>
+			<label index="displayComments">Kommentare anzeigen</label>
+			<label index="sortAlphabetically">Alphabetisch sortieren</label>
+			<label index="cropLines">Zeilen kappen</label>
+			<label index="displayConstants">Konstanten anzeigen:</label>
+			<label index="displayOptions">Optionen anzeigen:</label>
+			<label index="conditions">Bedingungen:</label>
+			<label index="setConditions">Bedingungen setzen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="constants" type="integer">172054547</label>
+			<label index="setup" type="integer">181548907</label>
+			<label index="all" type="integer">186422474</label>
+			<label index="plainSubstitution" type="integer">254379671</label>
+			<label index="substitutedGreen" type="integer">10827576</label>
+			<label index="unsubstitutedGreen" type="integer">141532187</label>
+			<label index="currentTemplate" type="integer">165379301</label>
+			<label index="badProperty" type="integer">66714980</label>
+			<label index="noSpaces" type="integer">3263710</label>
+			<label index="nothingUpdated" type="integer">133468862</label>
+			<label index="propertyAdded" type="integer">257206591</label>
+			<label index="valueUpdated" type="integer">127440183</label>
+			<label index="objectCleared" type="integer">23313925</label>
+			<label index="updateButton" type="integer">6894342</label>
+			<label index="editProperty" type="integer">247509811</label>
+			<label index="addButton" type="integer">247599607</label>
+			<label index="addProperty" type="integer">40958260</label>
+			<label index="clear" type="integer">198057166</label>
+			<label index="clearButton" type="integer">230886336</label>
+			<label index="clearObject" type="integer">69382472</label>
+			<label index="edit" type="integer">202632783</label>
+			<label index="noCurrentTemplate" type="integer">197917197</label>
+			<label index="addKey" type="integer">172839954</label>
+			<label index="removeKey" type="integer">85015516</label>
+			<label index="back" type="integer">57471969</label>
+			<label index="browse" type="integer">20214859</label>
+			<label index="objectList" type="integer">75452499</label>
+			<label index="search" type="integer">38545776</label>
+			<label index="regExp" type="integer">37435096</label>
+			<label index="errorsWarnings" type="integer">187129536</label>
+			<label index="setupRoot" type="integer">55622333</label>
+			<label index="constantRoot" type="integer">218779470</label>
+			<label index="displayComments" type="integer">161952099</label>
+			<label index="sortAlphabetically" type="integer">60668741</label>
+			<label index="cropLines" type="integer">209144187</label>
+			<label index="displayConstants" type="integer">129350474</label>
+			<label index="displayOptions" type="integer">48928696</label>
+			<label index="conditions" type="integer">240614714</label>
+			<label index="setConditions" type="integer">235689546</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="constants">Constants</label>
+			<label index="setup">Setup</label>
+			<label index="all">All</label>
+			<label index="plainSubstitution">Plain substitution (default)</label>
+			<label index="substitutedGreen">Substituted constants in green</label>
+			<label index="unsubstitutedGreen">UN-substituted constants in green</label>
+			<label index="currentTemplate">Current template:</label>
+			<label index="badProperty">Bad property!</label>
+			<label index="noSpaces">You must enter a property with characters a-z, A-Z and 0-9, no spaces!</label>
+			<label index="nothingUpdated">Nothing was updated!</label>
+			<label index="propertyAdded">Property added</label>
+			<label index="valueUpdated">Value updated</label>
+			<label index="objectCleared">Object cleared</label>
+			<label index="updateButton">Update</label>
+			<label index="editProperty">Edit object/property value:</label>
+			<label index="addButton">Add</label>
+			<label index="addProperty">Add object property:</label>
+			<label index="clear">Clear?</label>
+			<label index="clearButton">Clear</label>
+			<label index="clearObject">Clear object:</label>
+			<label index="edit">Edit:</label>
+			<label index="noCurrentTemplate">You cannot edit properties and values, if there's no current template.</label>
+			<label index="addKey">&lt;b&gt;Add key&lt;/b&gt;&lt;/a&gt; &quot;%s&quot; to Object List</label>
+			<label index="removeKey">Remove key from OL</label>
+			<label index="back">&lt; Back</label>
+			<label index="browse">Browse:</label>
+			<label index="objectList">Object List:</label>
+			<label index="search">Search:</label>
+			<label index="regExp">Regular expressions</label>
+			<label index="errorsWarnings">Errors and warnings</label>
+			<label index="setupRoot">setup root</label>
+			<label index="constantRoot">constants root</label>
+			<label index="displayComments">Display comments</label>
+			<label index="sortAlphabetically">Sort alphabetically</label>
+			<label index="cropLines">Crop lines</label>
+			<label index="displayConstants">Display constants:</label>
+			<label index="displayOptions">Display options:</label>
+			<label index="conditions">Conditions:</label>
+			<label index="setConditions">Set conditions</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

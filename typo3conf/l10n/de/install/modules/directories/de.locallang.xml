@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="module_directories_title">Verzeichnisse</label>
+			<label index="module_directories_description">Prüft die Verzeichnisstruktur.</label>
+			<label index="im_directories_typo3temp">Dieser Ordner wird sowohl von der Frontend- (FE) als auch von der Backend- (BE) Benutzerschnittstelle zum Speichern bearbeiteter Bilddateien verwendet.</label>
+			<label index="im_directories_typo3temp_sub">Dieser Ordner ist Teil des Abschnitts typo3temp/. Er muss beschreibbar sein.</label>
+			<label index="im_directories_typo3conf">Dieses Verzeichnis enthält die lokalen Konfigurationsdateien der Web-Site. TYPO3 muss während der Konfiguration und bei der Installation von Erweiterungen mit dem Extension-Manager (EM) in diese Dateien schreiben können.</label>
+			<label index="im_directories_typo3conf_ext">Speicherort für lokale Erweiterungen. Damit der Extension-Manager für diese Web-Site Erweiterungen installieren kann, muss hierhin geschrieben werden können.</label>
+			<label index="im_directories_typo3conf_l10n">Speicherort für Übersetzungen.  Damit der Extension-Manager für diese Web-Site Erweiterungen und Übersetzungen installieren kann, muss hierhin geschrieben werden können.</label>
+			<label index="im_directories_typo3_ext">Speicherort für globale Erweiterungen. Hierhin muss geschrieben werden können, damit der Extension-Manager Erweiterungen global im Quelltext installieren kann.</label>
+			<label index="im_directories_uploads">Speicherort für Dateien, die vom RTE hochgeladen werden sowie in den Unterverzeichnissen für Tabellen.</label>
+			<label index="im_directories_uploads_pics">Standardspeicherort für hochgeladene Dateien (insbesondere Bilder).</label>
+			<label index="im_directories_uploads_media">Standardspeicherort für hochgeladene Dateien (insbesondere alles außer Bildern).</label>
+			<label index="im_directories_uploads_tf">Standardspeicherort für hochgeladene Dateien (TS-Vorlagenressourcen).</label>
+			<label index="im_directories_fileadmin">Speicherort für lokale Dateien wie Vorlagen, unabhängige hochgeladene Dateien usw.</label>
+			<label index="im_directories_fileadmin_tmp">Standardmäßiger zeitweiliger Speicherort für von Administatoren hochgeladene Dateien.</label>
+			<label index="im_directories_directoryNotExisting">Verzeichnis &quot;%s&quot; ist nicht vorhanden und konnte nicht erstellt werden. Bitte von Hand erstellen.</label>
+			<label index="im_directories_fullPath">Vollqualifizierter Pfad: %s</label>
+			<label index="im_directories_writeable">Verzeichnis %s ist beschreibbar!</label>
+			<label index="im_directories_not_writeable">Verzeichnis %s ist nicht beschreibbar!</label>
+			<label index="im_directories_dirNotNeededToExist1">Dieses Verzeichnis ist nicht obligatorisch. Wenn es jedoch vorhanden ist, muss es beschreibbar sein.</label>
+			<label index="im_directories_dirNotNeededToExist2">Dieses Verzeichnis ist nicht obligatorisch. Wenn es jedoch vorhanden ist, kann es beschreibbar sein.</label>
+			<label index="im_directories_dirMustBeWriteable">Das Verzeichnis %s muss beschreibbar sein!</label>
+			<label index="im_directories_dirCanBeWriteable">Das Verzeichnis %s muss nicht notwendigerweise beschreibbar sein.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="module_directories_title" type="integer">257998049</label>
+			<label index="module_directories_description" type="integer">59075446</label>
+			<label index="im_directories_typo3temp" type="integer">210346721</label>
+			<label index="im_directories_typo3temp_sub" type="integer">61852554</label>
+			<label index="im_directories_typo3conf" type="integer">45100858</label>
+			<label index="im_directories_typo3conf_ext" type="integer">20572254</label>
+			<label index="im_directories_typo3conf_l10n" type="integer">219220507</label>
+			<label index="im_directories_typo3_ext" type="integer">135353799</label>
+			<label index="im_directories_uploads" type="integer">214388119</label>
+			<label index="im_directories_uploads_pics" type="integer">265602955</label>
+			<label index="im_directories_uploads_media" type="integer">139242585</label>
+			<label index="im_directories_uploads_tf" type="integer">223615383</label>
+			<label index="im_directories_fileadmin" type="integer">65241981</label>
+			<label index="im_directories_fileadmin_tmp" type="integer">245334989</label>
+			<label index="im_directories_directoryNotExisting" type="integer">150773992</label>
+			<label index="im_directories_fullPath" type="integer">198298235</label>
+			<label index="im_directories_writeable" type="integer">74134389</label>
+			<label index="im_directories_not_writeable" type="integer">220759445</label>
+			<label index="im_directories_dirNotNeededToExist1" type="integer">51847839</label>
+			<label index="im_directories_dirNotNeededToExist2" type="integer">242490841</label>
+			<label index="im_directories_dirMustBeWriteable" type="integer">72264992</label>
+			<label index="im_directories_dirCanBeWriteable" type="integer">174260081</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="module_directories_title">Directories</label>
+			<label index="module_directories_description">Checks directory structure.</label>
+			<label index="im_directories_typo3temp">This folder is used by both the frontend (FE) and backend (BE) interface for image manipulated files.</label>
+			<label index="im_directories_typo3temp_sub">This folder is part of the typo3temp/ section. It needs to be writable, too.</label>
+			<label index="im_directories_typo3conf">This directory contains the local configuration files of your website. TYPO3 must be able to write to these configuration files during setup and when the Extension Manager (EM) installs extensions.</label>
+			<label index="im_directories_typo3conf_ext">Location for local extensions. Must be writable if the Extension Manager is supposed to install extensions for this website.</label>
+			<label index="im_directories_typo3conf_l10n">Location for translations. Must be writable if the Extension Manager is supposed to install translations for extensions.</label>
+			<label index="im_directories_typo3_ext">Location for global extensions. Must be writable if the Extension Manager is supposed to install extensions globally in the source.</label>
+			<label index="im_directories_uploads">Location for uploaded files from RTE + in the subdirs for tables.</label>
+			<label index="im_directories_uploads_pics">Typical location for uploaded files (images especially).</label>
+			<label index="im_directories_uploads_media">Typical location for uploaded files (non-images especially).</label>
+			<label index="im_directories_uploads_tf">Typical location for uploaded files (TS template resources).</label>
+			<label index="im_directories_fileadmin">Location for local files such as templates, independent uploads etc.</label>
+			<label index="im_directories_fileadmin_tmp">Typical temporary location for default upload of files by administrators.</label>
+			<label index="im_directories_directoryNotExisting">directory &quot;%s&quot; does not exist and could not be created. Please create it manually.</label>
+			<label index="im_directories_fullPath">Full path: %s</label>
+			<label index="im_directories_writeable">Directory %s is writeable!</label>
+			<label index="im_directories_not_writeable">Directory %s is not writeable!</label>
+			<label index="im_directories_dirNotNeededToExist1">This directory does not necessarily have to exist but if it does it must be writable.</label>
+			<label index="im_directories_dirNotNeededToExist2">This directory does not necessarily have to exist. If it does, it can be writable or not.</label>
+			<label index="im_directories_dirMustBeWriteable">The directory %s must be writable!</label>
+			<label index="im_directories_dirCanBeWriteable">The directory %s does not necessarily have to be writable.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

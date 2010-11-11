@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title">RealURL-Verwaltung</label>
+			<label index="description">Dieses Modul dient zur Verwaltung der RealURL-Konfiguration.</label>
+			<label index="menuitem_init">Initialisierung</label>
+			<label index="menuitem_preVars">Vorgezogene Variablen (Pre-vars)</label>
+			<label index="menuitem_fixedPostVars">Fest angehängte Variablen (Fixed Post-vars)</label>
+			<label index="menuitem_postVarSets">Sätze angehängter Variablen (Post var sets)</label>
+			<label index="menuitem_pagePath">Seitenpfade</label>
+			<label index="menuitem_fileName">Dateinamen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title" type="integer">33161543</label>
+			<label index="description" type="integer">152073919</label>
+			<label index="menuitem_init" type="integer">156965367</label>
+			<label index="menuitem_preVars" type="integer">150109858</label>
+			<label index="menuitem_fixedPostVars" type="integer">82063543</label>
+			<label index="menuitem_postVarSets" type="integer">160970384</label>
+			<label index="menuitem_pagePath" type="integer">124501476</label>
+			<label index="menuitem_fileName" type="integer">248164827</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title">RealURL management</label>
+			<label index="description">This module manages RealURL configuration. Tabs below are placed in the order you should use them when creating RealURL configuration.</label>
+			<label index="menuitem_init">Init</label>
+			<label index="menuitem_preVars">Pre-vars</label>
+			<label index="menuitem_fixedPostVars">Fixed Post-vars</label>
+			<label index="menuitem_postVarSets">Post var sets</label>
+			<label index="menuitem_pagePath">Path path</label>
+			<label index="menuitem_fileName">File names</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="CharacterMapTooltip">Einfügen von Sonderzeichen</label>
+			<label index="InsertCharacter-Tooltip">Einfügen von Sonderzeichen</label>
+			<label index="Insert special character">Sonderzeichen einfügen</label>
+			<label index="general">Allgemein</label>
+			<label index="mathematical">Mathematisch</label>
+			<label index="graphical">Formen und Farben</label>
+			<label index="HTML value:">HTML-Wert:</label>
+			<label index="Close">Schließen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="CharacterMapTooltip" type="integer">211069571</label>
+			<label index="Insert special character" type="integer">211069571</label>
+			<label index="HTML value:" type="integer">111194696</label>
+			<label index="Close" type="integer">222113377</label>
+			<label index="InsertCharacter-Tooltip" type="integer">211069571</label>
+			<label index="general" type="integer">14366585</label>
+			<label index="mathematical" type="integer">81380323</label>
+			<label index="graphical" type="integer">118532621</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="CharacterMapTooltip">Insert special character</label>
+			<label index="Insert special character">Insert special character</label>
+			<label index="HTML value:">HTML value:</label>
+			<label index="Close">Close</label>
+			<label index="InsertCharacter-Tooltip">Insert special character</label>
+			<label index="general">General</label>
+			<label index="mathematical">Mathematical</label>
+			<label index="graphical">Shapes and arrows</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

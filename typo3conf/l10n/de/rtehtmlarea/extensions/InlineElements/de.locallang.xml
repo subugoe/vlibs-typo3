@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="No markup">Kein Textformat</label>
+			<label index="Bold">Fett</label>
+			<label index="BiDi override">BiDi übersteuern</label>
+			<label index="Large text">Großer Text</label>
+			<label index="Citation">Zitatquelle</label>
+			<label index="Code">Code</label>
+			<label index="Definition">Definition</label>
+			<label index="Deleted text">Gelöschter Text</label>
+			<label index="Emphasis">Betonung</label>
+			<label index="Inserted text">Eingefügter Text</label>
+			<label index="Italic">Kursiv</label>
+			<label index="Keyboard">Tastatur</label>
+			<label index="Label">Label</label>
+			<label index="Monospaced text">Text mit dicktengleicher Schrift</label>
+			<label index="Quotation">Zitat</label>
+			<label index="Sample">Beispiel</label>
+			<label index="Small text">Kleiner Text</label>
+			<label index="Style container">Stilbehälter</label>
+			<label index="Strike-through">Durchgestrichen</label>
+			<label index="Strong emphasis">Starke Betonung</label>
+			<label index="Subscript">Tiefgestellt</label>
+			<label index="Superscript">Hochgestellt</label>
+			<label index="Underline">Unterstrichen</label>
+			<label index="Variable">Variable</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="No markup" type="integer">438135</label>
+			<label index="Bold" type="integer">18137861</label>
+			<label index="BiDi override" type="integer">42781358</label>
+			<label index="Large text" type="integer">219697374</label>
+			<label index="Citation" type="integer">92773637</label>
+			<label index="Code" type="integer">211868589</label>
+			<label index="Definition" type="integer">12095665</label>
+			<label index="Deleted text" type="integer">203450772</label>
+			<label index="Emphasis" type="integer">70412501</label>
+			<label index="Inserted text" type="integer">189297700</label>
+			<label index="Italic" type="integer">30962801</label>
+			<label index="Keyboard" type="integer">114183557</label>
+			<label index="Label" type="integer">184688118</label>
+			<label index="Monospaced text" type="integer">226699895</label>
+			<label index="Quotation" type="integer">120591795</label>
+			<label index="Sample" type="integer">207475122</label>
+			<label index="Small text" type="integer">116401167</label>
+			<label index="Style container" type="integer">84664734</label>
+			<label index="Strike-through" type="integer">223909343</label>
+			<label index="Strong emphasis" type="integer">214271069</label>
+			<label index="Subscript" type="integer">153638286</label>
+			<label index="Superscript" type="integer">103903129</label>
+			<label index="Underline" type="integer">139620890</label>
+			<label index="Variable" type="integer">75240580</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="No markup">No text format</label>
+			<label index="Bold">Bold</label>
+			<label index="BiDi override">BiDi override</label>
+			<label index="Large text">Large text</label>
+			<label index="Citation">Citation</label>
+			<label index="Code">Code</label>
+			<label index="Definition">Definition</label>
+			<label index="Deleted text">Deleted text</label>
+			<label index="Emphasis">Emphasis</label>
+			<label index="Inserted text">Inserted text</label>
+			<label index="Italic">Italic</label>
+			<label index="Keyboard">Keyboard</label>
+			<label index="Label">Label</label>
+			<label index="Monospaced text">Monospaced text</label>
+			<label index="Quotation">Quotation</label>
+			<label index="Sample">Sample</label>
+			<label index="Small text">Small text</label>
+			<label index="Style container">Style container</label>
+			<label index="Strike-through">Strike-through</label>
+			<label index="Strong emphasis">Strong emphasis</label>
+			<label index="Subscript">Subscript</label>
+			<label index="Superscript">Superscript</label>
+			<label index="Underline">Underline</label>
+			<label index="Variable">Variable</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

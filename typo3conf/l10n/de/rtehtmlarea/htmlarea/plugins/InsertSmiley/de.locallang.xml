@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="Insert Smiley">Emoticon einfügen</label>
+			<label index="Smiley">Emoticon</label>
+			<label index="Cancel">Abbrechen</label>
+			<label index="mozilla_smile">Lächeln</label>
+			<label index="mozilla_frown">Mundwinkel nach unten</label>
+			<label index="mozilla_wink">Zwinkern</label>
+			<label index="mozilla_tongueout">Zunge herausstrecken</label>
+			<label index="mozilla_laughing">Lachen</label>
+			<label index="mozilla_embarassed">Verlegen</label>
+			<label index="mozilla_undecided">Unentschieden</label>
+			<label index="mozilla_surprised">Überrascht</label>
+			<label index="mozilla_kiss">Kuss</label>
+			<label index="mozilla_yell">Schreien</label>
+			<label index="mozilla_cool">Cool</label>
+			<label index="mozilla_moneyinmouth">Geldmund</label>
+			<label index="mozilla_footinmouth">Ins Fettnäpfchen treten</label>
+			<label index="mozilla_innocent">Unschuldig</label>
+			<label index="mozilla_cry">Weinen</label>
+			<label index="mozilla_sealed">Versiegelte Lippen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="Insert Smiley" type="integer">49611209</label>
+			<label index="Smiley" type="integer">48558208</label>
+			<label index="Cancel" type="integer">245659783</label>
+			<label index="mozilla_smile" type="integer">118254041</label>
+			<label index="mozilla_frown" type="integer">91558640</label>
+			<label index="mozilla_wink" type="integer">60651653</label>
+			<label index="mozilla_tongueout" type="integer">184265072</label>
+			<label index="mozilla_laughing" type="integer">164167753</label>
+			<label index="mozilla_embarassed" type="integer">107275160</label>
+			<label index="mozilla_undecided" type="integer">250741701</label>
+			<label index="mozilla_surprised" type="integer">211642678</label>
+			<label index="mozilla_kiss" type="integer">224525010</label>
+			<label index="mozilla_yell" type="integer">20609569</label>
+			<label index="mozilla_cool" type="integer">36413497</label>
+			<label index="mozilla_moneyinmouth" type="integer">11091560</label>
+			<label index="mozilla_footinmouth" type="integer">103422140</label>
+			<label index="mozilla_innocent" type="integer">68465249</label>
+			<label index="mozilla_cry" type="integer">173813380</label>
+			<label index="mozilla_sealed" type="integer">89183148</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="Insert Smiley">Insert Smiley</label>
+			<label index="Smiley">Smiley</label>
+			<label index="Cancel">Cancel</label>
+			<label index="mozilla_smile">Smile</label>
+			<label index="mozilla_frown">Frown</label>
+			<label index="mozilla_wink">Wink</label>
+			<label index="mozilla_tongueout">Tongue out</label>
+			<label index="mozilla_laughing">Laughing</label>
+			<label index="mozilla_embarassed">Embarassed</label>
+			<label index="mozilla_undecided">Undecided</label>
+			<label index="mozilla_surprised">Surprise</label>
+			<label index="mozilla_kiss">Kiss</label>
+			<label index="mozilla_yell">Yell</label>
+			<label index="mozilla_cool">Cool</label>
+			<label index="mozilla_moneyinmouth">Money Mouth</label>
+			<label index="mozilla_footinmouth">Foot in mouth</label>
+			<label index="mozilla_innocent">Innocent</label>
+			<label index="mozilla_cry">Cry</label>
+			<label index="mozilla_sealed">Lips are sealed</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

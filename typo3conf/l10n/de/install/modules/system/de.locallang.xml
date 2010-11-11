@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title_sessionTimeout">Zeitablauf für Sitzung</label>
+			<label index="help_sessionTimeout">Zeitablauf der Sitzung für Backend-Benutzer. Standard ist 3600 Sekunden = 1 Stunde.</label>
+			<label index="title_devIPmask">devIPmask</label>
+			<label index="description_devIPmask">Definiert eine Liste von IP-Adressen, bei denen Informationen für die Entwicklung angezeigt werden können.</label>
+			<label index="help_devIPmask">Wird von der Funktion debug() als Filter verwendet. Einzelheiten zur Syntax siehe unter der Funktion t3lib_div::cmpIP(). Keine Angabe blockiert den Zugriff für alle, &quot;*&quot; erlaubt ihn für alle.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title_sessionTimeout" type="integer">265451809</label>
+			<label index="help_sessionTimeout" type="integer">247717708</label>
+			<label index="title_devIPmask" type="integer">93367124</label>
+			<label index="description_devIPmask" type="integer">96651889</label>
+			<label index="help_devIPmask" type="integer">68214593</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title_sessionTimeout">session timeout</label>
+			<label index="help_sessionTimeout">Session time out for backend users. Default is 3600 seconds = 1 hour.</label>
+			<label index="title_devIPmask">devIPmask</label>
+			<label index="description_devIPmask">Defines a list of IP addresses which will allow development-output to display.</label>
+			<label index="help_devIPmask">The debug() function will use this as a filter. See the function t3lib_div::cmpIP() for details on syntax. Setting this to blank value will deny all. Setting to &quot;*&quot; will allow all.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

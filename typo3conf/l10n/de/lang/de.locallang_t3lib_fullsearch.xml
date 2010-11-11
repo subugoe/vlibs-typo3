@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="query_loaded">Abfrage &quot;%s&quot; geladen!</label>
+			<label index="query_from_action_loaded">Abfrage aus Aktion &quot;%s&quot; geladen!</label>
+			<label index="query_saved">Abfrage gespeichert!</label>
+			<label index="query_notsaved">Keine Abfrage gespeichert!</label>
+			<label index="query_removed">Abfrageeintrag &quot;%s&quot; entfernt!</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="query_loaded" type="integer">200772838</label>
+			<label index="query_saved" type="integer">67261190</label>
+			<label index="query_notsaved" type="integer">202855047</label>
+			<label index="query_removed" type="integer">77504252</label>
+			<label index="query_from_action_loaded" type="integer">99280863</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="query_loaded">Query &quot;%s&quot; loaded!</label>
+			<label index="query_saved">Query saved!</label>
+			<label index="query_notsaved">No query saved!</label>
+			<label index="query_removed">&quot;%s&quot; query entry removed!</label>
+			<label index="query_from_action_loaded">Query from action &quot;%s&quot; loaded!</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

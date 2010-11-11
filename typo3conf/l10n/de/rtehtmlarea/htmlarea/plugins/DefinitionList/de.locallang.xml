@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="Indent-Tooltip">Einzug vergrößern</label>
+			<label index="Outdent-Tooltip">Einzug verkleinern</label>
+			<label index="DefinitionList-Tooltip">Definitionsliste</label>
+			<label index="DefinitionItem-Tooltip">Begriff und Definition umschalten</label>
+			<label index="No block">Kein Blockformat</label>
+			<label index="Remove block">Blockformat entfernen</label>
+			<label index="Technische Universitat Ilmenau">Technische Universität Ilmenau</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="Indent-Tooltip" type="integer">192238066</label>
+			<label index="Outdent-Tooltip" type="integer">135945782</label>
+			<label index="DefinitionList-Tooltip" type="integer">3150652</label>
+			<label index="DefinitionItem-Tooltip" type="integer">2147201</label>
+			<label index="No block" type="integer">99941788</label>
+			<label index="Remove block" type="integer">100711418</label>
+			<label index="Technische Universitat Ilmenau" type="integer">62570617</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="Indent-Tooltip">Increase indent</label>
+			<label index="Outdent-Tooltip">Reduce indent</label>
+			<label index="DefinitionList-Tooltip">Definition list</label>
+			<label index="DefinitionItem-Tooltip">Toggle term and definition</label>
+			<label index="No block">No block format</label>
+			<label index="Remove block">Remove block format</label>
+			<label index="Technische Universitat Ilmenau">Technische Universität Ilmenau</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="module_php_title">PHP</label>
+			<label index="module_php_description">Zeigt Informationen über die PHP-Installation auf dem Server an.</label>
+			<label index="module_php_check_version_title">PHP-Versionsprüfung</label>
+			<label index="module_php_check_version_description">Prüft, ob die installiert PHP-Version die Erfordernisse von TYPO3 erfüllt.</label>
+			<label index="module_php_method_phpversion_title">PHP-Version</label>
+			<label index="module_php_error_phpversion">Ihre PHP-Version (%s) ist veraltet. TYPO3 erfordert mindestens PHP 5.1.0.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="module_php_title" type="integer">50250642</label>
+			<label index="module_php_description" type="integer">11910436</label>
+			<label index="module_php_check_version_title" type="integer">192070753</label>
+			<label index="module_php_check_version_description" type="integer">51187373</label>
+			<label index="module_php_method_phpversion_title" type="integer">129886032</label>
+			<label index="module_php_error_phpversion" type="integer">147500397</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="module_php_title">PHP</label>
+			<label index="module_php_description">Shows information about the PHP installation on the server.</label>
+			<label index="module_php_check_version_title">PHP Version check</label>
+			<label index="module_php_check_version_description">Checks if the installed PHP version fits the needs of TYPO3</label>
+			<label index="module_php_method_phpversion_title">PHP-Version</label>
+			<label index="module_php_error_phpversion">Your PHP version (%s) is too old. TYPO3 requires at least PHP 5.1.0</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="CleanWord-Tooltip">HTML-Inhalt säubern</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="CleanWord-Tooltip" type="integer">42208392</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="CleanWord-Tooltip">Clean up HTML content</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

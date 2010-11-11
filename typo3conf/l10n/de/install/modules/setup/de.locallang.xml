@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="module_setup_title">Installation</label>
+			<label index="module_setup_description">Dies ist die zentrale Anlaufstelle des TYPO3-Installationszentrums.</label>
+			<label index="label_value_modified">%s geändert (neuer Wert: %s)</label>
+			<label index="label_path">Pfad:</label>
+			<label index="label_default">Standardwert:</label>
+			<label index="msg_searchResultMessage">&lt;strong&gt;%d&lt;/strong&gt; Ergebnisse gefunden für &quot;%s&quot;</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="module_setup_title" type="integer">181548907</label>
+			<label index="module_setup_description" type="integer">26824318</label>
+			<label index="label_value_modified" type="integer">184340269</label>
+			<label index="label_path" type="integer">96339618</label>
+			<label index="label_default" type="integer">202573126</label>
+			<label index="msg_searchResultMessage" type="integer">42427982</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="module_setup_title">Setup</label>
+			<label index="module_setup_description">This is the the central point of the TYPO3 setup center.</label>
+			<label index="label_value_modified">%s modfied (new value: %s)</label>
+			<label index="label_path">path:</label>
+			<label index="label_default">default value:</label>
+			<label index="msg_searchResultMessage">&lt;strong&gt;%d&lt;/strong&gt; results found for &quot;%s&quot;</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

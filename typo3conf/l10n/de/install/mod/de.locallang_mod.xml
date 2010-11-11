@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_labels_tablabel">Installations-Tool</label>
+			<label index="mlang_labels_tabdescr">Bietet einen Verweis auf das Installations-Tool. Zu beachten ist, dass das Installations-Tool (in typo3/install/) aktiviert sein muss.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</label>
+			<label index="mlang_tabs_tab">Installation</label>
+			<label index="msg_error_occured">Es ist ein Fehler aufgetreten. Einzelheiten:</label>
+			<label index="msg_error_nomodregister">Kein Modulindex gefunden.</label>
+			<label index="msg_error_modulenotloaded">Das gewünschte Modul &quot;%s&quot; konnte nicht geladen werden.</label>
+			<label index="msg_error_modulenotfound">Das gewünschte Modul &quot;%s&quot; konnte nicht gefunden werden.</label>
+			<label index="msg_error_methodnotfound">Die gewünschte Methode &quot;%s&quot; konnte im Modul &quot;%s&quot; nicht gefunden werden.</label>
+			<label index="msg_error_nomoduleconfig">Keine Konfigurationsdatei für Modul &quot;%s&quot; gefunden.</label>
+			<label index="msg_error_noclassfile">Keine Klassendatei für %s in Modul &quot;%s&quot; gefunden.</label>
+			<label index="msg_warning_nomaincat">Hauptkategorie &quot;%s&quot; nicht gefunden.</label>
+			<label index="msg_warning_nosubcat">Unterkategorie &quot;%s&quot; nicht gefunden. Daten der Hauptkategorie werden verwendet.</label>
+			<label index="msg_error_noallowupdate_flag">Flagge -&gt;allowUpdateLocalConf nicht im Installationsobjekt gesetzt. Daher kann &quot;localconf.php&quot; nicht geändert werden.</label>
+			<label index="msg_error_filenotwritable">%s ist nicht schreibbar. Evtl. ein Problem mit den Schreibrechten.</label>
+			<label index="msg_error_filenotmatch">&quot;%s&quot; NICHT ordnungsgemäß geschrieben (geschriebener Inhalt stimmt nicht mit Dateiinhalt überein) - evtl. unzureichender Speicherplatz.</label>
+			<label index="msg_error_filenotcopy">%s konnte nicht durch %s ersetzt werden - evtl. ein Problem mit den Schreibrechten.</label>
+			<label index="no_return_value">Modul &quot;%s&quot; hat keinen Inhalt zurückgegeben!</label>
+			<label index="no_method">Keine Darstellungsmethode für Typ &quot;%s&quot; gefunden</label>
+			<label index="no_data">Nichts zum Ausgeben gefunden</label>
+			<label index="no_image">Kein Bild gefunden</label>
+			<label index="msg_error_login_not_sucessful">Anmeldung nicht erfolgreich</label>
+			<label index="msg_error_login_not_sucessful_message">Angegebenes Kennwort war nicht korrekt. Die MD5-Prüfsumme ist &quot;%s&quot;.</label>
+			<label index="login_emailwarning_true_subject">Anmeldung am Installationsprogramm bei &quot;%s&quot;</label>
+			<label index="login_emailwarning_true_message">Am Installationsprogramm der TYPO3-Site &quot;%s&quot; (%s) hat sich jemand von der fernen Adresse &quot;%s&quot; (%s) aus angemeldet.</label>
+			<label index="login_emailwarning_false_subject">Versuch der Anmeldung am Installationsprogramm bei &quot;%s&quot;</label>
+			<label index="login_emailwarning_false_message">Jemand hat versucht, sich am Installationsprogramm der TYPO3-Site &quot;%s&quot; (%s) anzumelden.
+
+Benutztes Kennwort: &quot;%s&quot;
+
+REMOTE_ADDR: &quot;%s&quot; (%s)</label>
+			<label index="label_true">OK</label>
+			<label index="label_false">Problem</label>
+			<label index="label_help">Hilfe</label>
+			<label index="label_save">Optionen speichern</label>
+			<label index="label_expandAll">alle anzeigen</label>
+			<label index="label_collapseAll">alle verbergen</label>
+			<label index="label_login">Anmeldung</label>
+			<label index="label_setup_password">Das Kennwort für das Installationsprogramm eingeben</label>
+			<label index="label_localconfwritten">Konfiguration erfolgreich in %s gespeichert.</label>
+			<label index="label_subsectionsfound">Es wurden folgende Unterabschnitte gefunden.</label>
+			<label index="label_deliverable_options">Einstellungen</label>
+			<label index="label_deliverable_methods">Methoden</label>
+			<label index="label_deliverable_checks">Prüfungen</label>
+			<label index="label_section">Sie befinden sich im Abschnitt:</label>
+			<label index="label_category_database">Datenbank</label>
+			<label index="label_category_server">Server</label>
+			<label index="label_category_gfx">Grafik</label>
+			<label index="label_category_system">System</label>
+			<label index="label_subcategory_connection">Verbindung</label>
+			<label index="label_subcategory_cleanup">Säubern</label>
+			<label index="label_subcategory_php">PHP</label>
+			<label index="label_subcategory_directories">Verzeichnisse</label>
+			<label index="label_subcategory_backend">Backend</label>
+			<label index="label_subcategory_frontend">Frontend</label>
+			<label index="label_subcategory_general">Allgemein</label>
+			<label index="label_subcategory_gd">GD</label>
+			<label index="label_subcategory_igm">Image bzw. GraphicsMagick</label>
+			<label index="label_subcategory_quality">Qualität</label>
+			<label index="label_subcategory_development">Entwicklung</label>
+			<label index="descr_database">Sie befinden sich im Abschnitt &quot;Datenbank&quot;. Hier können alle die Datenbank betreffenden Einstellungen angepasst werden.</label>
+			<label index="descr_server">Sie befinden sich im Abschnitt &quot;Server&quot;.</label>
+			<label index="descr_system">Sie befinden sich im Abschnitt &quot;System&quot;.</label>
+			<label index="msg_setup_firstcall">SICHERHEIT:
+
+Achten Sie darauf, das Installationsprogramm mit einem anderen Kennwort als &quot;joh316&quot; zu schützen.
+
+Am besten entfernen Sie die Datei &quot;ENABLE_INSTALL_TOOL&quot; aus dem Verzeichnis typo3conf/.
+
+Übrigens funktioniert das Installationsprogramm nur ordnungsgemäß, wenn Ihr Web-Browser Cookies akzeptiert. Sollte dieser Dialog immer wieder erscheinen, wurden Cookies nicht aktiviert.</label>
+			<label index="msg_login_passwordhint">Das Kennwort für das Installationsprogramm stimmt nicht mit dem Administratorkennwort für TYPO3 überein.
+
+Wenn Sie das aktuelle Kennwort nicht wissen, können Sie ein neues einrichten, indem Sie den Wert für $TYPO3_CONF_VARS['BE']['installToolPassword'] in der Datei typo3conf/localconf.php auf dem MD5-Hash des gewünschten Kennworts ändern.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_labels_tablabel" type="integer">91233822</label>
+			<label index="mlang_labels_tabdescr" type="integer">184150281</label>
+			<label index="mlang_tabs_tab" type="integer">55149455</label>
+			<label index="msg_error_occured" type="integer">64362022</label>
+			<label index="msg_error_nomodregister" type="integer">227405922</label>
+			<label index="msg_error_modulenotloaded" type="integer">50242081</label>
+			<label index="msg_error_modulenotfound" type="integer">66562620</label>
+			<label index="msg_error_methodnotfound" type="integer">169580364</label>
+			<label index="msg_error_nomoduleconfig" type="integer">256287139</label>
+			<label index="msg_error_noclassfile" type="integer">18487786</label>
+			<label index="msg_warning_nomaincat" type="integer">204348233</label>
+			<label index="msg_warning_nosubcat" type="integer">109441760</label>
+			<label index="msg_error_noallowupdate_flag" type="integer">138212541</label>
+			<label index="msg_error_filenotwritable" type="integer">248665880</label>
+			<label index="msg_error_filenotmatch" type="integer">171066781</label>
+			<label index="msg_error_filenotcopy" type="integer">42389720</label>
+			<label index="no_return_value" type="integer">129958801</label>
+			<label index="no_method" type="integer">127946391</label>
+			<label index="no_data" type="integer">217586634</label>
+			<label index="no_image" type="integer">90840691</label>
+			<label index="msg_error_login_not_sucessful" type="integer">232943648</label>
+			<label index="msg_error_login_not_sucessful_message" type="integer">118567173</label>
+			<label index="login_emailwarning_true_subject" type="integer">100699372</label>
+			<label index="login_emailwarning_true_message" type="integer">65943229</label>
+			<label index="login_emailwarning_false_subject" type="integer">59882775</label>
+			<label index="login_emailwarning_false_message" type="integer">141277523</label>
+			<label index="label_true" type="integer">235577377</label>
+			<label index="label_false" type="integer">233894413</label>
+			<label index="label_help" type="integer">111308628</label>
+			<label index="label_save" type="integer">152143934</label>
+			<label index="label_expandAll" type="integer">179809435</label>
+			<label index="label_collapseAll" type="integer">199759079</label>
+			<label index="label_login" type="integer">161344120</label>
+			<label index="label_setup_password" type="integer">228728944</label>
+			<label index="label_localconfwritten" type="integer">168363325</label>
+			<label index="label_subsectionsfound" type="integer">100773628</label>
+			<label index="label_deliverable_options" type="integer">256864370</label>
+			<label index="label_deliverable_methods" type="integer">34361781</label>
+			<label index="label_deliverable_checks" type="integer">257234177</label>
+			<label index="label_section" type="integer">119574104</label>
+			<label index="label_category_database" type="integer">238058928</label>
+			<label index="label_category_server" type="integer">162142979</label>
+			<label index="label_category_gfx" type="integer">221466108</label>
+			<label index="label_category_system" type="integer">172350102</label>
+			<label index="label_subcategory_connection" type="integer">204261128</label>
+			<label index="label_subcategory_cleanup" type="integer">207336407</label>
+			<label index="label_subcategory_php" type="integer">50250642</label>
+			<label index="label_subcategory_directories" type="integer">257998049</label>
+			<label index="label_subcategory_backend" type="integer">48506818</label>
+			<label index="label_subcategory_frontend" type="integer">228047462</label>
+			<label index="label_subcategory_general" type="integer">14366585</label>
+			<label index="label_subcategory_gd" type="integer">90833767</label>
+			<label index="label_subcategory_igm" type="integer">177618238</label>
+			<label index="label_subcategory_quality" type="integer">91294027</label>
+			<label index="label_subcategory_development" type="integer">53539997</label>
+			<label index="descr_database" type="integer">182451343</label>
+			<label index="descr_server" type="integer">149101444</label>
+			<label index="descr_system" type="integer">93805759</label>
+			<label index="msg_setup_firstcall" type="integer">195779637</label>
+			<label index="msg_login_passwordhint" type="integer">238323239</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_labels_tablabel">Install Tool</label>
+			<label index="mlang_labels_tabdescr">Provides a simple link to the Install Tool. Notice the Install Tool (in typo3/install/) must be enabled.&lt;br /&gt;&lt;em&gt;Access for 'admin' users only!&lt;/em&gt;</label>
+			<label index="mlang_tabs_tab">Install</label>
+			<label index="msg_error_occured">An error occured. Please see details:</label>
+			<label index="msg_error_nomodregister">No module register was found.</label>
+			<label index="msg_error_modulenotloaded">The requested module &quot;%s&quot; could not be loaded.</label>
+			<label index="msg_error_modulenotfound">The requested module &quot;%s&quot; was not found.</label>
+			<label index="msg_error_methodnotfound">The requested method &quot;%s&quot; was not found in module &quot;%s&quot;.</label>
+			<label index="msg_error_nomoduleconfig">No config file was found for module &quot;%s&quot;.</label>
+			<label index="msg_error_noclassfile">No class-file was found in %s for module &quot;%s&quot;.</label>
+			<label index="msg_warning_nomaincat">No main category named &quot;%s&quot; was found.</label>
+			<label index="msg_warning_nosubcat">No sub category named &quot;%s&quot; was found. Using data from main category.</label>
+			<label index="msg_error_noallowupdate_flag">-&gt;allowUpdateLocalConf flag in the install object is not set and therefore 'localconf.php' cannot be altered.</label>
+			<label index="msg_error_filenotwritable">%s is not writable! Maybe a write access problem?</label>
+			<label index="msg_error_filenotmatch">'%s' was NOT written properly (written content didn't match file content) - maybe a disk space problem?</label>
+			<label index="msg_error_filenotcopy">%s could not be replaced by %s - maybe a write access problem?</label>
+			<label index="no_return_value">The module &quot;%s&quot; didn't returned any content!</label>
+			<label index="no_method">No rendermethod was found for type &quot;%s&quot;</label>
+			<label index="no_data">There was nothing found for output</label>
+			<label index="no_image">No image found</label>
+			<label index="msg_error_login_not_sucessful">Login was not sucessful</label>
+			<label index="msg_error_login_not_sucessful_message">The submitted password was not correct. Your md5 checksum is &quot;%s&quot;</label>
+			<label index="login_emailwarning_true_subject">Install Tool Login at &quot;%s&quot;</label>
+			<label index="login_emailwarning_true_message">There has been a Install Tool login at TYPO3 site &quot;%s&quot; (%s) from remote address &quot;%s&quot; (%s).</label>
+			<label index="login_emailwarning_false_subject">Install Tool Login ATTEMPT at &quot;%s&quot;</label>
+			<label index="login_emailwarning_false_message">There has been a Install Tool login attempt at TYPO3 site &quot;%s&quot; (%s).
+Password tried was &quot;%s&quot;
+REMOTE_ADDR was &quot;%s&quot; (%s)</label>
+			<label index="label_true">OK</label>
+			<label index="label_false">Problem</label>
+			<label index="label_help">Help</label>
+			<label index="label_save">Save options</label>
+			<label index="label_expandAll">expand all</label>
+			<label index="label_collapseAll">collapse all</label>
+			<label index="label_login">Login</label>
+			<label index="label_setup_password">Enter the Install Tool Password</label>
+			<label index="label_localconfwritten">Configuration sucessfully written to %s</label>
+			<label index="label_subsectionsfound">The following subsections where found.</label>
+			<label index="label_deliverable_options">Settings</label>
+			<label index="label_deliverable_methods">Methods</label>
+			<label index="label_deliverable_checks">Checks</label>
+			<label index="label_section">You are in section:</label>
+			<label index="label_category_database">Database</label>
+			<label index="label_category_server">Server</label>
+			<label index="label_category_gfx">Graphics</label>
+			<label index="label_category_system">System</label>
+			<label index="label_subcategory_connection">Connection</label>
+			<label index="label_subcategory_cleanup">Clean Up</label>
+			<label index="label_subcategory_php">PHP</label>
+			<label index="label_subcategory_directories">Directories</label>
+			<label index="label_subcategory_backend">Backend</label>
+			<label index="label_subcategory_frontend">Frontend</label>
+			<label index="label_subcategory_general">General</label>
+			<label index="label_subcategory_gd">GD</label>
+			<label index="label_subcategory_igm">Image- GrapicsMagick</label>
+			<label index="label_subcategory_quality">Quality</label>
+			<label index="label_subcategory_development">Development</label>
+			<label index="descr_database">You are in section &quot;Database&quot;. Here you can change and check all settings concerning your database.</label>
+			<label index="descr_server">You are in section &quot;Server&quot;.</label>
+			<label index="descr_system">You are in section &quot;System&quot;.</label>
+			<label index="msg_setup_firstcall">SECURITY:
+Make sure to protect the Install Tool with another password than &quot;joh316&quot;.
+Better you remove the file &quot;ENABLE_INSTALL_TOOL&quot; in typo3conf/ directory.
+
+BTW: This Install Tool will only work if cookies are accepted by your web browser. If this dialog pops up over and over again you didn't enable cookies.
+			</label>
+			<label index="msg_login_passwordhint">The Install Tool Password is not the admin password of TYPO3.
+If you don't know the current password, you can set a new one by setting the value of $TYPO3_CONF_VARS['BE']['installToolPassword'] in typo3conf/localconf.php to the md5() hash value of the password you desire.
+			</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

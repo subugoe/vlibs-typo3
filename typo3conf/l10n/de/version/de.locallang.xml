@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Versionierung</label>
+			<label index="title_review">Zur Begut./Veröff.</label>
+			<label index="mlang_labels_tablabel">Seiten- und Inhalts-Versionierung sowie Arbeitsumgebungsverwaltung für Seiten</label>
+			<label index="mlang_labels_tabdescr">Das Modul Web &gt; Versionierung erlaubt den Zugriff auf die Versionierungsfunktionen des Seitenbaumes.</label>
+			<label index="mlang_tabs_tab">Versionierung</label>
+			<label index="clickAPage_header">Modul Web &gt; Versionierung</label>
+			<label index="clickAPage_content">Zum Anzeigen des Moduls Versionierung auf eine Seite im Frame mit dem Seitenbaum klicken.</label>
+			<label index="filter_drafts">Entwürfe</label>
+			<label index="filter_archive">Archiv</label>
+			<label index="filter_all">Alle</label>
+			<label index="diffing">VERGLEICH</label>
+			<label index="fieldname">Feldname</label>
+			<label index="coloredDiffView">Farbige diff-Ansicht</label>
+			<label index="recordsMatchesCompletely">Datensätze stimmen in allen bearbeitbaren Feldern überein!</label>
+			<label index="errorRecordsNotFound">FEHLER: Datensätze konnten nicht gefunden werden!</label>
+			<label index="errorDiffSources">FEHLER: Es wurden keine zwei Quellen für den Vergleich festgelegt!</label>
+			<label index="tblHeader_title">Titel</label>
+			<label index="tblHeader_uid">UID</label>
+			<label index="tblHeader_t3ver_oid">oid</label>
+			<label index="tblHeader_t3ver_id">id</label>
+			<label index="tblHeader_t3ver_wsid">wsid</label>
+			<label index="tblHeader_t3ver_state">Status</label>
+			<label index="tblHeader_t3ver_stage">Stufe</label>
+			<label index="tblHeader_t3ver_count">Anzahl</label>
+			<label index="tblHeader_pid">pid</label>
+			<label index="tblHeader_t3ver_label">Label</label>
+			<label index="tblHeaderDesc_title">Überschrift des Elements</label>
+			<label index="tblHeaderDesc_uid">Eindeutige ID des Elements</label>
+			<label index="tblHeaderDesc_t3ver_oid">t3ver_oid - Verweis auf UID der Live-Version</label>
+			<label index="tblHeaderDesc_t3ver_id">t3ver_id - Versioinsnummer, inkrementeller Integer-Wert</label>
+			<label index="tblHeaderDesc_t3ver_wsid">t3ver_wsid - ID der Arbeitsumgebung. Pro ID kann es nur eine Version eines Elements geben (ausgenommen ID Null).</label>
+			<label index="tblHeaderDesc_t3ver_state">t3ver_state - Zustand einer Version: 1=Platzhalter für &quot;neu&quot;. 2=Als gelöscht markiert.</label>
+			<label index="tblHeaderDesc_t3ver_stage">t3ver_stage - Veröffentlichungsstufe: Bearbeiten (0), Begutachten (1), Veröffentlichen (10), Abgelehnt (-1)</label>
+			<label index="tblHeaderDesc_t3ver_count">t3ver_count - Lebenszykluszähler. Erhöht, wenn Element nicht veröffentlicht ist.</label>
+			<label index="tblHeaderDesc_pid">Seiten-ID</label>
+			<label index="tblHeaderDesc_t3ver_label">Label</label>
+			<label index="diff">Diff</label>
+			<label index="swapWithCurrent">Mit aktueller AUSTAUSCHEN</label>
+			<label index="currentOnlineVersion">DERZEITIGE ONLINE-VERSION!</label>
+			<label index="cmdPid0">Seite: Seite + Inhalt</label>
+			<label index="cmdPid100">Zweig: Alle Unterseiten</label>
+			<label index="cmdPid1">Element: Nur ein Datensatz</label>
+			<label index="createNewVersion">Neue Version erstellen</label>
+			<label index="previewLink">Vorschau-Link</label>
+			<label index="publishPage">Seite veröffentlichen</label>
+			<label index="swapPage">Seite austauschen</label>
+			<label index="publishPageQuestion">Alle Inhalte %sdieser Seite tatsächlich veröffentlichen?</label>
+			<label index="swapPageQuestion">Alle Inhalte %sdieser Seite tatsächlich austauschen?</label>
+			<label index="publishPageQuestionStage">auf Stufe &quot;Veröffentlichen&quot;</label>
+			<label index="previewUrl">Vorschau-URL:</label>
+			<label index="previewInstruction">Mit Hilfe dieses Links kann dieses Seite die nächsten %s Stunden wie in der Arbeitsumgebung vorhanden betrachtet werden (keine Anmeldung im Backend erforderlich):</label>
+			<label index="versionDetails">Details für Version</label>
+			<label index="wsManagement">Arbeitsumgebungsverwaltung</label>
+			<label index="showDiffView">Unterschiede anzeigen</label>
+			<label index="liveVersion">Live-Version:</label>
+			<label index="wsVersions">Arbeitsumgebungsversionen:</label>
+			<label index="controls">Bedienungselemente:</label>
+			<label index="goBack">Zum Zurückkehren hier klicken</label>
+			<label index="showAllInformation">Alle Informationen anzeigen</label>
+			<label index="newElement">Neues Element</label>
+			<label index="deletedElement">Gelöschtes Element</label>
+			<label index="moveToPlaceholder">Platzhalter für Verschieben (Ziel)</label>
+			<label index="moveToPointer">Zeiger für Verschieben (Quelle)</label>
+			<label index="notAvailable">nicht zutreffend</label>
+			<label index="change">Änderung:</label>
+			<label index="element">[Element]</label>
+			<label index="page">[Seite]</label>
+			<label index="branch">[Zweig]</label>
+			<label index="otherVersions">Andere Version(en) in der Arbeitsumgebung</label>
+			<label index="multipleVersions">Mehrere Versionen in der selben Arbeitsumgebung!</label>
+			<label index="versionInVersion">Version in Version!</label>
+			<label index="lifecycle">Lebenszyklus</label>
+			<label index="workspace">Arbeitsumgebung</label>
+			<label index="diffToLiveElement">Unterschiede zum Live-Element:</label>
+			<label index="commentForReviewer">Anmerkung für Gutachter:</label>
+			<label index="commentForPublisher">Anmerkung für Veröffentlicher:</label>
+			<label index="sendItemsToReview">Senden von %s Element(en) zur Begutachtung.</label>
+			<label index="sendAllToReview">Alle zur Begutachtung senden</label>
+			<label index="approveToPublish">Veröffentlichung von %s Element(en) bestätigen.</label>
+			<label index="approveAllToPublish">Alle zur Veröffentlichung freigeben</label>
+			<label index="offline">[Offline]</label>
+			<label index="draft">Entwurf</label>
+			<label index="archive">Archiv</label>
+			<label index="publishedXTimes">%s-mal veröffentlicht</label>
+			<label index="stage.sentToReview">Element zur Begutachtung geschickt</label>
+			<label index="stage.approvedForPublish">Zur Veröffentlichung freigegeben</label>
+			<label index="stage.rejectedElement">Abgelehntes Element!</label>
+			<label index="stage.resetToEdit">Auf Bearbeiten zurückgesetzt</label>
+			<label index="stage.undefined">[nicht definiert]</label>
+			<label index="userComment">Benutzeranmerkung</label>
+			<label index="subElementsClick">[Unterelemente, Details mit Klick]</label>
+			<label index="subElements">[Unterelemente]</label>
+			<label index="completeMatch">Vollständige Übereinstimmung bei bearbeitbaren Feldern.</label>
+			<label index="editing">Bearbeiten</label>
+			<label index="sendToReview">Zur Begutachtung schicken</label>
+			<label index="review">Begutachtung</label>
+			<label index="swap">Austauschen</label>
+			<label index="approveForPublishing">Zur Veröffentlichung freigeben</label>
+			<label index="publish">Veröffentlichen</label>
+			<label index="rejected">Abgelehnt</label>
+			<label index="comment">Anmerkung:</label>
+			<label index="resetStage">Stufe zurücksetzen</label>
+			<label index="undefined">Nicht definiert</label>
+			<label index="rejectExplain">Bitte einen Grund für die Ablehnung angeben:</label>
+			<label index="removeFromWorkspace">Aus Arbeitsumgebung entfernen</label>
+			<label index="showLog">Protokoll anzeigen</label>
+			<label index="liveWorkspace">[Live-Arbeitsumgebung]</label>
+			<label index="draftWorkspaces">Entwurfsarbeitsumgebungen</label>
+			<label index="defaultDraft">[Standardentwurf]</label>
+			<label index="errors">Fehler:</label>
+			<label index="refresh">Aktualisieren</label>
+			<label index="allowPreviewOfWholeWorkspace">Vorschau der gesamten Arbeitsumgebung erlauben</label>
+			<label index="versionId">ID:</label>
+			<label index="workspaceId">Arbeitsumgebungs-ID:</label>
+			<label index="live">LIVE</label>
+			<label index="versionSelect.label">Versionen dieser Seite:</label>
+			<label index="versionSelect.live">LIVE-Version</label>
+			<label index="versionSelect.publish">Seite veröffentlichen</label>
+			<label index="versionSelect.inBranch">Innerhalb Zweig, keine weitere Versionierung möglich</label>
+			<label index="versionSelect.versionsFound">Versionen auf Seite gefunden, keine &quot;Seiten&quot;-Versionierung möglich</label>
+			<label index="autopublishTask.name">Automatische Veröffentlichung von Arbeitsumgebungen</label>
+			<label index="autopublishTask.description">Dieser Prozess prüft Arbeitsumgebungen auf ein Veröffentlichungsdatum in der Vergangenheit und veröffentlicht diese ggf. automatisch.</label>
+			<label index="function1">Funktion #1</label>
+			<label index="function2">Funktion #2</label>
+			<label index="function3">Funktion #3</label>
+			<label index="cm1_title">Versionierung</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="cm1_title" type="integer">26780425</label>
+			<label index="title" type="integer">26780425</label>
+			<label index="mlang_labels_tablabel" type="integer">47790076</label>
+			<label index="mlang_labels_tabdescr" type="integer">228164280</label>
+			<label index="mlang_tabs_tab" type="integer">26780425</label>
+			<label index="function1" type="integer">209170062</label>
+			<label index="function2" type="integer">109930407</label>
+			<label index="function3" type="integer">258031659</label>
+			<label index="title_review" type="integer">246273957</label>
+			<label index="clickAPage_header" type="integer">90732202</label>
+			<label index="clickAPage_content" type="integer">5149509</label>
+			<label index="filter_drafts" type="integer">229879618</label>
+			<label index="filter_archive" type="integer">242383616</label>
+			<label index="filter_all" type="integer">186422474</label>
+			<label index="diffing" type="integer">114185795</label>
+			<label index="fieldname" type="integer">223557556</label>
+			<label index="coloredDiffView" type="integer">225153748</label>
+			<label index="recordsMatchesCompletely" type="integer">180714539</label>
+			<label index="errorRecordsNotFound" type="integer">71582257</label>
+			<label index="errorDiffSources" type="integer">244468037</label>
+			<label index="tblHeader_title" type="integer">192455458</label>
+			<label index="tblHeader_uid" type="integer">243081769</label>
+			<label index="tblHeader_t3ver_oid" type="integer">19985457</label>
+			<label index="tblHeader_t3ver_id" type="integer">192985975</label>
+			<label index="tblHeader_t3ver_wsid" type="integer">61205992</label>
+			<label index="tblHeader_t3ver_state" type="integer">166541794</label>
+			<label index="tblHeader_t3ver_stage" type="integer">162054841</label>
+			<label index="tblHeader_t3ver_count" type="integer">237585056</label>
+			<label index="tblHeader_pid" type="integer">14365193</label>
+			<label index="tblHeader_t3ver_label" type="integer">184688118</label>
+			<label index="tblHeaderDesc_title" type="integer">242606139</label>
+			<label index="tblHeaderDesc_uid" type="integer">10455612</label>
+			<label index="tblHeaderDesc_t3ver_oid" type="integer">25404875</label>
+			<label index="tblHeaderDesc_t3ver_id" type="integer">175077715</label>
+			<label index="tblHeaderDesc_t3ver_wsid" type="integer">232403511</label>
+			<label index="tblHeaderDesc_t3ver_state" type="integer">216647446</label>
+			<label index="tblHeaderDesc_t3ver_stage" type="integer">242644824</label>
+			<label index="tblHeaderDesc_t3ver_count" type="integer">215298889</label>
+			<label index="tblHeaderDesc_pid" type="integer">50799274</label>
+			<label index="tblHeaderDesc_t3ver_label" type="integer">184688118</label>
+			<label index="diff" type="integer">76951797</label>
+			<label index="swapWithCurrent" type="integer">123906340</label>
+			<label index="currentOnlineVersion" type="integer">158629193</label>
+			<label index="cmdPid0" type="integer">74682136</label>
+			<label index="cmdPid100" type="integer">114467233</label>
+			<label index="cmdPid1" type="integer">67710081</label>
+			<label index="createNewVersion" type="integer">25790406</label>
+			<label index="previewLink" type="integer">151754309</label>
+			<label index="publishPage" type="integer">40454034</label>
+			<label index="swapPage" type="integer">101882904</label>
+			<label index="publishPageQuestion" type="integer">176751650</label>
+			<label index="swapPageQuestion" type="integer">46424648</label>
+			<label index="publishPageQuestionStage" type="integer">118673218</label>
+			<label index="previewUrl" type="integer">146648316</label>
+			<label index="previewInstruction" type="integer">155325676</label>
+			<label index="versionDetails" type="integer">222775735</label>
+			<label index="wsManagement" type="integer">264680986</label>
+			<label index="showDiffView" type="integer">218673716</label>
+			<label index="liveVersion" type="integer">76765232</label>
+			<label index="wsVersions" type="integer">189928675</label>
+			<label index="controls" type="integer">44875680</label>
+			<label index="goBack" type="integer">224991832</label>
+			<label index="showAllInformation" type="integer">102535274</label>
+			<label index="newElement" type="integer">23930316</label>
+			<label index="deletedElement" type="integer">133228756</label>
+			<label index="moveToPlaceholder" type="integer">9972041</label>
+			<label index="moveToPointer" type="integer">187708631</label>
+			<label index="notAvailable" type="integer">58896629</label>
+			<label index="change" type="integer">261119659</label>
+			<label index="element" type="integer">241728875</label>
+			<label index="page" type="integer">44499327</label>
+			<label index="branch" type="integer">96065780</label>
+			<label index="otherVersions" type="integer">258876500</label>
+			<label index="multipleVersions" type="integer">84443106</label>
+			<label index="versionInVersion" type="integer">156896237</label>
+			<label index="lifecycle" type="integer">247329668</label>
+			<label index="workspace" type="integer">3809681</label>
+			<label index="diffToLiveElement" type="integer">220104952</label>
+			<label index="commentForReviewer" type="integer">17950935</label>
+			<label index="commentForPublisher" type="integer">151962634</label>
+			<label index="sendItemsToReview" type="integer">25505756</label>
+			<label index="sendAllToReview" type="integer">258676959</label>
+			<label index="approveToPublish" type="integer">96467893</label>
+			<label index="approveAllToPublish" type="integer">91983416</label>
+			<label index="offline" type="integer">268410096</label>
+			<label index="draft" type="integer">251898646</label>
+			<label index="archive" type="integer">242383616</label>
+			<label index="publishedXTimes" type="integer">24239357</label>
+			<label index="stage.sentToReview" type="integer">214274176</label>
+			<label index="stage.approvedForPublish" type="integer">119619431</label>
+			<label index="stage.rejectedElement" type="integer">32099403</label>
+			<label index="stage.resetToEdit" type="integer">190734554</label>
+			<label index="stage.undefined" type="integer">103468811</label>
+			<label index="userComment" type="integer">150338229</label>
+			<label index="subElementsClick" type="integer">262597481</label>
+			<label index="subElements" type="integer">220524683</label>
+			<label index="completeMatch" type="integer">68113539</label>
+			<label index="editing" type="integer">186429311</label>
+			<label index="sendToReview" type="integer">217011724</label>
+			<label index="review" type="integer">72867157</label>
+			<label index="swap" type="integer">142053212</label>
+			<label index="approveForPublishing" type="integer">167677930</label>
+			<label index="publish" type="integer">17867952</label>
+			<label index="rejected" type="integer">221753846</label>
+			<label index="comment" type="integer">37810947</label>
+			<label index="resetStage" type="integer">35072540</label>
+			<label index="undefined" type="integer">247528449</label>
+			<label index="rejectExplain" type="integer">227611704</label>
+			<label index="removeFromWorkspace" type="integer">206473617</label>
+			<label index="showLog" type="integer">55060445</label>
+			<label index="liveWorkspace" type="integer">57919107</label>
+			<label index="draftWorkspaces" type="integer">142626747</label>
+			<label index="defaultDraft" type="integer">105965277</label>
+			<label index="errors" type="integer">206095404</label>
+			<label index="refresh" type="integer">104491656</label>
+			<label index="allowPreviewOfWholeWorkspace" type="integer">112383303</label>
+			<label index="versionId" type="integer">235866885</label>
+			<label index="workspaceId" type="integer">101037232</label>
+			<label index="live" type="integer">255185490</label>
+			<label index="versionSelect.label" type="integer">18790874</label>
+			<label index="versionSelect.live" type="integer">139479452</label>
+			<label index="versionSelect.publish" type="integer">213943015</label>
+			<label index="versionSelect.inBranch" type="integer">147650773</label>
+			<label index="versionSelect.versionsFound" type="integer">75828092</label>
+			<label index="autopublishTask.name" type="integer">122351724</label>
+			<label index="autopublishTask.description" type="integer">204606781</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="cm1_title">Versioning</label>
+			<label index="title">Versioning</label>
+			<label index="mlang_labels_tablabel">Page and content versioning and workspace management for pages.</label>
+			<label index="mlang_labels_tabdescr">The Web&gt;Versioning module provides access to versioning features for the page tree.</label>
+			<label index="mlang_tabs_tab">Versioning</label>
+			<label index="function1">Function #1</label>
+			<label index="function2">Function #2</label>
+			<label index="function3">Function #3</label>
+			<label index="title_review">Send to review/pub</label>
+			<label index="clickAPage_header">Web&gt;Versioning module</label>
+			<label index="clickAPage_content">Please click a page in the pagetree frame to see the versioning module.</label>
+			<label index="filter_drafts">Drafts</label>
+			<label index="filter_archive">Archive</label>
+			<label index="filter_all">All</label>
+			<label index="diffing">DIFFING</label>
+			<label index="fieldname">Fieldname</label>
+			<label index="coloredDiffView">Colored diff-view</label>
+			<label index="recordsMatchesCompletely">Records matches completely on all editable fields!</label>
+			<label index="errorRecordsNotFound">ERROR: Records could strangely not be found!</label>
+			<label index="errorDiffSources">ERROR: You didn't select two sources for diffing!</label>
+			<label index="tblHeader_title">Title</label>
+			<label index="tblHeader_uid">UID</label>
+			<label index="tblHeader_t3ver_oid">oid</label>
+			<label index="tblHeader_t3ver_id">id</label>
+			<label index="tblHeader_t3ver_wsid">wsid</label>
+			<label index="tblHeader_t3ver_state">state</label>
+			<label index="tblHeader_t3ver_stage">stage</label>
+			<label index="tblHeader_t3ver_count">count</label>
+			<label index="tblHeader_pid">pid</label>
+			<label index="tblHeader_t3ver_label">Label</label>
+			<label index="tblHeaderDesc_title">Header of element</label>
+			<label index="tblHeaderDesc_uid">Unique ID of element</label>
+			<label index="tblHeaderDesc_t3ver_oid">t3ver_oid - Reference to live version UID</label>
+			<label index="tblHeaderDesc_t3ver_id">t3ver_id - Version number, incremental integer</label>
+			<label index="tblHeaderDesc_t3ver_wsid">t3ver_wsid - Workspace ID. There can be only one version of an element per ID (except ID zero).</label>
+			<label index="tblHeaderDesc_t3ver_state">t3ver_state - Special states of a version: 1=Placeholder for &quot;New&quot;. 2=Marked deleted.</label>
+			<label index="tblHeaderDesc_t3ver_stage">t3ver_stage - Publishing stage: Editing (0), review (1), publish (10), rejected (-1).</label>
+			<label index="tblHeaderDesc_t3ver_count">t3ver_count - Life cycle counter. Incremented each time element is unpublished.</label>
+			<label index="tblHeaderDesc_pid">Page ID</label>
+			<label index="tblHeaderDesc_t3ver_label">Label</label>
+			<label index="diff">Diff</label>
+			<label index="swapWithCurrent">SWAP with current</label>
+			<label index="currentOnlineVersion">CURRENT ONLINE VERSION!</label>
+			<label index="cmdPid0">Page: Page + content</label>
+			<label index="cmdPid100">Branch: All subpages</label>
+			<label index="cmdPid1">Element: Just record</label>
+			<label index="createNewVersion">Create new version</label>
+			<label index="previewLink">Preview Link</label>
+			<label index="publishPage">Publish Page</label>
+			<label index="swapPage">Swap page</label>
+			<label index="publishPageQuestion">Are you sure you want to publish all content %sfrom this page?</label>
+			<label index="swapPageQuestion">Are you sure you want to publish (swap) all content %sfrom this page?</label>
+			<label index="publishPageQuestionStage">in &quot;Publish&quot; stage </label>
+			<label index="previewUrl">Preview Url:</label>
+			<label index="previewInstruction">You can preview this page from the workspace using this link for the next %s hours (does not require backend login):</label>
+			<label index="versionDetails">Details for version</label>
+			<label index="wsManagement">Workspace management</label>
+			<label index="showDiffView">Show difference view</label>
+			<label index="liveVersion">Live Version:</label>
+			<label index="wsVersions">Workspace Versions:</label>
+			<label index="controls">Controls:</label>
+			<label index="goBack">Click here to go back</label>
+			<label index="showAllInformation">Show all information</label>
+			<label index="newElement">New element</label>
+			<label index="deletedElement">Deleted element</label>
+			<label index="moveToPlaceholder">Move-to placeholder (destination)</label>
+			<label index="moveToPointer">Move-to pointer (source)</label>
+			<label index="notAvailable">N/A</label>
+			<label index="change">change:</label>
+			<label index="element"> [Element]</label>
+			<label index="page"> [Page]</label>
+			<label index="branch"> [Branch]</label>
+			<label index="otherVersions">Other version(s) in workspace </label>
+			<label index="multipleVersions">Multiple versions in same workspace!</label>
+			<label index="versionInVersion">Version inside version!</label>
+			<label index="lifecycle">Lifecycle</label>
+			<label index="workspace">Workspace</label>
+			<label index="diffToLiveElement">Difference to live element:</label>
+			<label index="commentForReviewer">Comment for Reviewer:</label>
+			<label index="commentForPublisher">Comment for Publisher:</label>
+			<label index="sendItemsToReview">Sending %s item(s) to review. </label>
+			<label index="sendAllToReview">Send all to Review</label>
+			<label index="approveToPublish">Approving %s item(s) to publishing. </label>
+			<label index="approveAllToPublish">Approve all for Publishing</label>
+			<label index="offline">[Offline]</label>
+			<label index="draft">Draft</label>
+			<label index="archive">Archive</label>
+			<label index="publishedXTimes">Published %s times</label>
+			<label index="stage.sentToReview">sent element to &quot;Review&quot;</label>
+			<label index="stage.approvedForPublish">approved for &quot;Publish&quot;</label>
+			<label index="stage.rejectedElement">rejected element!</label>
+			<label index="stage.resetToEdit">reset to &quot;Editing&quot;</label>
+			<label index="stage.undefined">[undefined]</label>
+			<label index="userComment">User Comment</label>
+			<label index="subElementsClick">[Sub elements, click for details]</label>
+			<label index="subElements">[Sub elements]</label>
+			<label index="completeMatch">Complete match on editable fields.</label>
+			<label index="editing">Editing</label>
+			<label index="sendToReview">Send to Review</label>
+			<label index="review">Review</label>
+			<label index="swap">Swap</label>
+			<label index="approveForPublishing">Approve for Publishing</label>
+			<label index="publish">Publish</label>
+			<label index="rejected">Rejected</label>
+			<label index="comment">Comment:</label>
+			<label index="resetStage">Reset stage</label>
+			<label index="undefined">Undefined</label>
+			<label index="rejectExplain">Please explain why you reject:</label>
+			<label index="removeFromWorkspace">Remove from workspace</label>
+			<label index="showLog">Show Log</label>
+			<label index="liveWorkspace">[Live workspace]</label>
+			<label index="draftWorkspaces">Draft Workspaces</label>
+			<label index="defaultDraft">[Default Draft]</label>
+			<label index="errors">Errors:</label>
+			<label index="refresh">Refresh</label>
+			<label index="allowPreviewOfWholeWorkspace">Allow preview of whole workspace</label>
+			<label index="versionId">ID:</label>
+			<label index="workspaceId">Workspace-Id:</label>
+			<label index="live">LIVE</label>
+			<label index="versionSelect.label">Versions of this page:</label>
+			<label index="versionSelect.live">LIVE version</label>
+			<label index="versionSelect.publish">Publish page</label>
+			<label index="versionSelect.inBranch">Inside branch, no further versioning possible</label>
+			<label index="versionSelect.versionsFound">Versions found on page, no &quot;Page&quot; versioning possible</label>
+			<label index="autopublishTask.name">Workspaces auto-publication</label>
+			<label index="autopublishTask.description">This tasks checks any workspace that has a publication date set in the past and automatically publishes it.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Aufgaben</label>
+			<label index="task_overview">Übersicht</label>
+			<label index="error_header">Fehler</label>
+			<label index="error-access">Kein Zugriff auf dieses Modul.</label>
+			<label index="error_no-instance">Die Klasse &quot;%s&quot; implementiert nicht das Aufgaben-Interface. Das ist aber nötig, um hier angezeigt zu werden.</label>
+			<label index="no-tasks">Noch keine Aufgaben eingetragen.</label>
+			<label index="lReplyAddress">Antwortadresse ist Ihre E-Mail-Adresse</label>
+			<label index="lSelf">Selbst</label>
+			<label index="lSendNew">Nachricht senden</label>
+			<label index="lSendReply">Nachricht beantworten</label>
+			<label index="listSeparator_Groups">__Gruppen:__</label>
+			<label index="lHomedir">Home-Verzeichnis</label>
+			<label index="lNone">[kein]</label>
+			<label index="lCreate">Anlegen</label>
+			<label index="lCancel">Abbrechen</label>
+			<label index="lDelete_warning">Diesen Benutzer tatsächlich löschen?</label>
+			<label index="lDelete">Löschen</label>
+			<label index="lUpdate">Aktualisieren</label>
+			<label index="task_description">Beschreibung, lorem ipsum...</label>
+			<label index="taskcenter-about">&lt;p&gt;Das Menü auf der linken Seite zeigt alle angelegten Aufgaben und erlaubt es, die Aufgaben in einer effizienten Art und Weise zu erledigen.&lt;/p&gt;
+&lt;ul class=&quot;withicons&quot;&gt;
+&lt;li&gt;Klicken Sie auf den Titel einer Aufgabe, um eine detaillierte Ansicht der Aufgabe zu erhalten.&lt;/li&gt;
+&lt;li&gt;Klicken Sie auf den Pfeil auf der rechten Seite, um das Untermenü der Aufgabe zu öffnen oder zu schließen.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;
+&lt;strong&gt;Hinweis:&lt;/strong&gt; Stellen Sie das Aufgabenzentrum als Standardmodul nach Ihrem Login ein, um noch schneller zu sein!</label>
+			<label index="taskcenter-adminheader">Aufgabe anlegen</label>
+			<label index="taskcenter-admin">Es ist sehr leicht, das Aufgabenzentrum um eine eigene Aufgabe zu erweitern. Mehr Informationen finden Sie im Handbuch zur Erweiterung &quot;Taskcenter&quot;.</label>
+			<label index="title">Aufgabenübersicht</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title" type="integer">6410427</label>
+			<label index="lReplyAddress" type="integer">224962887</label>
+			<label index="lSelf" type="integer">181856101</label>
+			<label index="lSendNew" type="integer">122144419</label>
+			<label index="lSendReply" type="integer">105689675</label>
+			<label index="listSeparator_Groups" type="integer">221382396</label>
+			<label index="lHomedir" type="integer">24871266</label>
+			<label index="lNone" type="integer">173298844</label>
+			<label index="lCreate" type="integer">109504151</label>
+			<label index="lCancel" type="integer">245659783</label>
+			<label index="lDelete_warning" type="integer">173897440</label>
+			<label index="lDelete" type="integer">254438473</label>
+			<label index="lUpdate" type="integer">6894342</label>
+			<label index="task_description" type="integer">183402684</label>
+			<label index="mlang_tabs_tab" type="integer">251008342</label>
+			<label index="task_overview" type="integer">62421031</label>
+			<label index="error_header" type="integer">151171285</label>
+			<label index="taskcenter-adminheader" type="integer">186927247</label>
+			<label index="error-access" type="integer">210161687</label>
+			<label index="error_no-instance" type="integer">263120148</label>
+			<label index="no-tasks" type="integer">671101</label>
+			<label index="taskcenter-about" type="integer">94190705</label>
+			<label index="taskcenter-admin" type="integer">169461553</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Task overview</label>
+			<label index="lReplyAddress">Reply address is your email</label>
+			<label index="lHomedir">Home dir</label>
+			<label index="lSelf">Self</label>
+			<label index="lSendNew">Send message</label>
+			<label index="lSendReply">Reply to message</label>
+			<label index="listSeparator_Groups">__Groups:__</label>
+			<label index="lNone">[none]</label>
+			<label index="lCreate">Create</label>
+			<label index="lCancel">Cancel</label>
+			<label index="lDelete_warning">Are you sure you want to delete this user?</label>
+			<label index="lDelete">Delete</label>
+			<label index="lUpdate">Update</label>
+			<label index="task_description">Description, blablabla lipusm</label>
+			<label index="mlang_tabs_tab">Tasks</label>
+			<label index="task_overview">Overview</label>
+			<label index="error_header">Error</label>
+			<label index="taskcenter-adminheader">Create a task</label>
+			<label index="error-access">No access to this module.</label>
+			<label index="error_no-instance">The class &quot;%s&quot; does not implement the task interface &quot;%s&quot; which is necessary to be displayed here.</label>
+			<label index="no-tasks">No tasks have been registered yet.</label>
+			<label index="taskcenter-about">
+				
+					&lt;p&gt;The menu on the left side shows all allowed tasks and let you allow to complete your tasks in an effecient way.&lt;/p&gt;
+					&lt;ul class=&quot;withicons&quot;&gt;
+						&lt;li&gt;Clicking on the title of a task will open a detailed view of the task itself.&lt;/li&gt;
+						&lt;li&gt;Click on the arrow on the right side will open/close the submenu of the task.&lt;/li&gt;
+					&lt;/ul&gt;
+					&lt;br /&gt;
+					&lt;strong&gt;Note:&lt;/strong&gt; Set the taskcenter as the default module after your login to be even faster!
+
+				
+			</label>
+			<label index="taskcenter-admin">It is simple to extend the taskcenter by a custom task. For more information please look into the manual of the extension 'taskcenter'.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

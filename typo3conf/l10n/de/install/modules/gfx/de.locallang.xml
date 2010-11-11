@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="module_gfx_title">Grafik</label>
+			<label index="module_gfx_description">Erlaubt die Konfiguration des Grafiksubsystems der TYPO3-Installation</label>
+			<label index="title_image_processing">Bildbearbeitung</label>
+			<label index="description_image_processing">Aktiviert Funktionen zur Verarbeitung von Bildern</label>
+			<label index="help_image_processing">Wird diese Option deaktiviert, stehen weder Bildbearbeitungsfunktionen über GD noch über IM zur Verfügung!</label>
+			<label index="title_thumbnails">Vorschaubilder</label>
+			<label index="description_thumbnails">Aktiviert die Verwendung von Vorschaubildern in der Benutzerschnittstelle des Backends.</label>
+			<label index="help_thumbnails">Vorschaubilder werden von IM und teilweise GD über die Datei typo3/thumbs.php erstellt.</label>
+			<label index="title_thumbnails_png">Vorschaubilder als PNG</label>
+			<label index="description_thumbnails_png">Ist diese Option aktiviert, werden Vorschaubilder von NICHT-JPEG-Dateien im Format PNG erstellt, ansonsten im Format GIF (0=GIF/1=PNG).</label>
+			<label index="help_thumbnails_png">Bit1: Es werden auch JPEG-Dateien in PNG oder GIF konvertiert (2=GIF/3=PNG)</label>
+			<label index="title_noIconProc">Keine Verarbeitung von Symbolen</label>
+			<label index="description_noIconProc">Ist diese Option aktiviert, werden Symbole nicht mit Zusätzen für verborgen, Startzeit, Stoppzeit usw. überlagert.</label>
+			<label index="help_noIconProc">Sie müssen vorbereitet vorhanden sein. Ist diese Option deaktiviert, dies nur durchführen, wenn auf dem Server die vollständigen TYPO3-Bildbearbeitungsfunktionen zur Verfügung stehen.</label>
+			<label index="title_gif_compress">GIF-Komprimierung</label>
+			<label index="description_gif_compress">Aktiviert die Nutzung von t3lib_div::gif_compress()</label>
+			<label index="help_gif_compress">Eine Umgehungslösung zur Komprimierung von mit GD oder IM erstellten GIF-Dateien, die nur RLE oder gar keine Komprimierung verwenden.</label>
+			<label index="title_imagefile_ext">Erweiterungen von Bilddateien</label>
+			<label index="description_imagefile_ext">Kommaliste der Dateiendungen, die von TYPO3 als Bilder erkannt werden sollen.</label>
+			<label index="help_imagefile_ext">Wenn IM nicht zur Verfügung steht, sollte hier 'gif,png,jpeg,jpg' eingetragen werden. Nur Kleinschreibung und keine Leerzeichen!</label>
+			<label index="title_gdlib">GD aktivieren</label>
+			<label index="description_gdlib">Aktiviert die Nutzung von GD</label>
+			<label index="title_gdlib_png">GD PNG</label>
+			<label index="description_gdlib_png">Aktiviert die Nutzung von GD, ausschließlich mit PNG.</label>
+			<label index="help_gdlib_png">Dies führt dazu, dass sämtliche Dateien, die normalerweise als GIF erstellt werden, nun als PNG erstellt werden!</label>
+			<label index="title_gdlib_2">GDlib 2.0.1+</label>
+			<label index="description_gdlib_2">Diese Option aktivieren, falls die neue GDlib 2.0.1+ eingesetzt wird.</label>
+			<label index="help_gdlib_2">Setzt man diese Option nicht und verwendet trotzdem GDlib2, kann es zu ungewöhnlichem Verhalten wie schwarzen Bildern usw. führen. Diese Funktion hat nur Auswirkungen, wenn auch ImageMagick installiert wurde und funktioniert. Es ist auch möglich, den Wert &quot;no_imagecopyresized_fix&quot; anzugeben. In diesem Fall wird nicht versucht, ein bekanntes Problem zu beheben, bei dem &quot;imagecopyresized&quot; nicht ordungsgemäß funktioniert.</label>
+			<label index="title_im">ImageMagick bzw. GraphicsMagick aktivieren</label>
+			<label index="description_im">Aktiviert die Nutzung von ImageMagick oder GraphicsMagick</label>
+			<label index="title_im_path">Pfad für ImageMagick/GraphicsMagick</label>
+			<label index="description_im_path">Pfad zu den IM-Programmen &quot;convert&quot;, &quot;combine&quot; und &quot;identify&quot;.</label>
+			<label index="help_im_path">Aufgrund der Funktionalität und Geschwindigkeit wird Version 4.2.9 von ImageMagick empfohlen!</label>
+			<label index="title_im_path_lzw">Pfad für ImageMagick/GraphicsMagick mit LZW-Unterstützung</label>
+			<label index="description_im_path_lzw">Pfad zum IM-Programm &quot;convert&quot;, bei dem LZW aktiviert ist!</label>
+			<label index="help_im_path_lzw">Siehe &quot;gif_compress&quot;. Wenn Ihre Version 4.2.9 von ImageMagick mit LZW-Unterstützung kompiliert wurde, können Sie dieses Feld leer lassen UND die Option &quot;gif_compress&quot; deaktivieren! Tipp: Sie können das LZW-&quot;convert&quot; mit einer Präfix wie etwa &quot;myver_convert&quot; aufrufen, indem Sie hier einen Pfad wie z.B. &quot;/usr/bin/myver_&quot; statt nur &quot;/usr/bin/&quot; eingeben.</label>
+			<label index="title_im_version_5">ImageMagick/GraphicsMagick Version 5</label>
+			<label index="description_im_version_5">Diese Option aktivieren, falls zwar ImageMagick/GraphicsMagick verwendet wird, aber nicht IM Version 4.x.</label>
+			<label index="help_im_version_5">Durch Setzen dieses Wertes werden automatisch einige Einstellungen für die Nutzung der spezifischen Programmversion vorgenommen. Gültige Werte sind: &quot;im4&quot;, &quot;im5&quot;, &quot;im6&quot; und &quot;gm&quot; (verwendet GraphicsMagick statt ImageMagick).</label>
+			<label index="title_im_negate_mask">Maske invertieren</label>
+			<label index="description_im_negate_mask">Gibt an, ob Maskenbilder zuerst invertiert werden sollen.</label>
+			<label index="help_im_negate_mask">Dies hängt von der Version von ImageMagick ab. Unter Version 5.1 sollte die Option nicht aktiviert werden. Über ImageMagick 5.2+ sollte sie aktiviert werden. Benutzen Sie einfach die Option, falls die Maske umgekehrt zur eigentlichen Absicht funktioniert.</label>
+			<label index="title_im_imvMaskState">Maskenstatus invertieren</label>
+			<label index="description_im_imvMaskState">Gibt an, ob der Status von &quot;im_negate_mask&quot; invertiert werden soll.</label>
+			<label index="help_im_imvMaskState">Die ist bei neueren Version von ImageMagick 5 sehr hilfreich (mindestens 5.4.3+), bei denen durch die Einstellung &quot;im_version_5&quot; auch &quot;im_negate_mask&quot; gesetzt wird, was dann aber falsch ist... Ein Hallelujah für ImageMagick - habe ich schon einmal bereut, dieses Paket zu nutzen...</label>
+			<label index="title_im_no_effects">Keine Effekte</label>
+			<label index="description_im_no_effects">Erforderlich bei Nutzung von ImageMagick 5+.</label>
+			<label index="help_im_no_effects">Für die Nutzung von Effekten wird Version 4.2.9 empfohlen. Bei ImageMagick Version 5+ nimmt die Berechnung von Effekten sehr viel Zeit in Anspruch! Diese Option sollte deaktiviert werden, so dass Schärfen, Weichzeichnen usw. nicht durchgeführt werden. (Bei neueren Versionen von IM5 sind Effekte wieder erlaubt, aber die Syntax hat sich geändert!)</label>
+			<label index="title_im_v5effects">IM V5 Effekte</label>
+			<label index="description_im_v5effects">Mögliche Werte: -1, 0, 1 (siehe Hilfe)</label>
+			<label index="help_im_v5effects">0=deaktiviert. -1=Bilder nicht standardmäßig schärfen. 1=Alles; weichzeichnen und schärfen ist wieder für ImageMagick erlaubt und die Einstellung &quot;im_no_effects&quot; wird ignoriert. Weichzeichnen und Schärfen erfordern aber eine andere Syntax. Einzelheiten siehe class.t3lib_stdgraphic.php.</label>
+			<label index="title_im_mask_temp_ext_gif">Für temporäre Maskentypen GIF verwenden</label>
+			<label index="description_im_mask_temp_ext_gif">Sollte gesetzt werden, wenn ImageMagick in Version 5+ vorhanden ist.</label>
+			<label index="help_im_mask_temp_ext_gif">Wird in class.tslib_content.php zur Maskierung von Bildern verwendet. Normalerweise werden PNGs verwendet, da sie für temporäre Dateien schneller sind. PNGs scheinen aber bei einigen Versionen von IM 5+ nicht zu funktionieren, daher...</label>
+			<label index="title_im_mask_temp_ext_noloss">Verlustloser temporärer Maskentyp</label>
+			<label index="description_im_mask_temp_ext_noloss">Dateiendung, die für temporäre Dateien bei der verlustlosen Maskenverarbeitung mit ImageMagick verwendet werden soll.</label>
+			<label index="help_im_mask_temp_ext_noloss">Normalerweise funktioniert &quot;miff&quot; (ImageMagick-eigenes Format) ordnungsgemäß. Zumindest IM 5.4.9 war jedoch nicht in der Lage, sein eigenes Format zu schreiben, daher wurde diese Option eingeführt. Sollten Maskierungsvorgänge nicht ordungsgemäß funktionieren, versuchen Sie es mit tif, png, oder jpg.</label>
+			<label index="title_im_noScaleUp">Keine Hochskalierung</label>
+			<label index="description_im_noScaleUp">Ist die Option aktiviert, werden Bilder auch bei entsprechender Anweisung nicht hochskaliert (in t3lib/stdgraphics.php).</label>
+			<label index="title_im_combine_filename">Dateiname für combine</label>
+			<label index="description_im_combine_filename">Dateiname für das Programm &quot;combine&quot; von IM V4</label>
+			<label index="help_im_combine_filename">Bei den neuesten Versionen von ImageMagick wurde der Name von combine in composite geändert. Falls erforderlich, hier eintragen.</label>
+			<label index="title_im_noFramePrepended">Kein Voranstellen des Rahmens</label>
+			<label index="description_im_noFramePrepended">Ist die Option aktiviert, wird der Frame-Indikator [x] in stdgraphic nicht den Dateinamen vorangestellt.</label>
+			<label index="help_im_noFramePrepended">Einige Versionen von IM 5+ funktionieren überhaupt nicht mit der typischen Präfix [0], mit der sich bei mehrseitigen PDFs und animierten GIFs nur die erste Seite/Rahmen skalieren lässt, was die Bearbeitungszeit erheblich verkürzt. Diese Option nur setzen, wenn ImageMagick die Dateien nicht finden kann. Beachten Sie, dass die Aktivierung dieser Option zur Änderung der Namen für temporäre Dateien führt. Daher werden auch Bilder skaliert, die sich schon im Cache befanden.</label>
+			<label index="title_jpg_quality">JPEG-Qualität</label>
+			<label index="description_jpg_quality">Standardqualität für JPEG-Erstellung</label>
+			<label index="title_enable_typo3temp_db_tracking">typo3temp Datenbankverfolgung</label>
+			<label index="description_enable_typo3temp_db_tracking">Ist diese Option aktiviert, werden alle Dateien in typo3temp in einer Datenbanktabelle protokolliert.</label>
+			<label index="help_enable_typo3temp_db_tracking">Zusätzlich zur Protokollierung der Originalnamen sorgt dies auch dafür, dass Bilder nicht gleichzeitig von zwei Prozessen bearbeitet werden.</label>
+			<label index="title_TTFLocaleConv">Lokale TTF-Konvertierung</label>
+			<label index="description_TTFLocaleConv">Einen lokalen Konvertierungs-String für die Umkodierung von Eingabe in TrueType-Funktionen eingeben.</label>
+			<label index="help_TTFLocaleConv">Z.B. &quot;cp1250..UTF-8&quot;. Funktioniert nur, wenn bei PHP &quot;recode&quot; aktiviert ist. Unerwünscht seit TYPO3 Version 3.6.0. Stattdessen [BE][forceCharset] einrichten, da Strings automatisch vom Datenbankzeichensatz in UTF-8 umgewandelt werden.</label>
+			<label index="title_TTFdpi">TTF-dpi</label>
+			<label index="description_TTFdpi">Gibt an, welche Auflösung in dpi das FreeType-Modul verwendet.</label>
+			<label index="help_TTFdpi">Für FreeType1 sollte 72 eingetragen werden, für FreeType2 96 (andernfalls werden Schriften viel größer als mit FreeType1 dargestellt). Dient als globaler Skalierungsfaktor für FreeType.</label>
+			<label index="title_png_truecolor">Echtfarben-PNGs</label>
+			<label index="description_png_truecolor">Ist die Option aktiviert, werden PNGs im Echtfarbmodus erstellt.</label>
+			<label index="help_png_truecolor">Bei Benutzung von GDlib2 können Bilder im Echtfarbmodus erstellt werden, falls sie nicht gut aussehen. Beachten Sie, dass die resultierenden Dateien größer sind. JPEGs werden stets als Echtfarbbilder erstellt (GDlib2 erforderlich).</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="module_gfx_title" type="integer">221466108</label>
+			<label index="module_gfx_description" type="integer">5076819</label>
+			<label index="title_image_processing" type="integer">46297556</label>
+			<label index="description_image_processing" type="integer">262823582</label>
+			<label index="help_image_processing" type="integer">34999421</label>
+			<label index="title_thumbnails" type="integer">181167841</label>
+			<label index="description_thumbnails" type="integer">240200606</label>
+			<label index="help_thumbnails" type="integer">255640066</label>
+			<label index="title_thumbnails_png" type="integer">146250497</label>
+			<label index="description_thumbnails_png" type="integer">873266</label>
+			<label index="help_thumbnails_png" type="integer">267491654</label>
+			<label index="title_noIconProc" type="integer">253834040</label>
+			<label index="description_noIconProc" type="integer">143960653</label>
+			<label index="help_noIconProc" type="integer">23072464</label>
+			<label index="title_gif_compress" type="integer">213902728</label>
+			<label index="description_gif_compress" type="integer">66610858</label>
+			<label index="help_gif_compress" type="integer">1311030</label>
+			<label index="title_imagefile_ext" type="integer">238487293</label>
+			<label index="description_imagefile_ext" type="integer">99885985</label>
+			<label index="help_imagefile_ext" type="integer">224080979</label>
+			<label index="title_gdlib" type="integer">166177061</label>
+			<label index="description_gdlib" type="integer">256232320</label>
+			<label index="title_gdlib_png" type="integer">204089981</label>
+			<label index="description_gdlib_png" type="integer">92710879</label>
+			<label index="help_gdlib_png" type="integer">117723602</label>
+			<label index="title_gdlib_2" type="integer">218803953</label>
+			<label index="description_gdlib_2" type="integer">135208545</label>
+			<label index="help_gdlib_2" type="integer">37323721</label>
+			<label index="title_im" type="integer">156049760</label>
+			<label index="description_im" type="integer">109461304</label>
+			<label index="title_im_path" type="integer">152465401</label>
+			<label index="description_im_path" type="integer">181174659</label>
+			<label index="help_im_path" type="integer">199632200</label>
+			<label index="title_im_path_lzw" type="integer">238833303</label>
+			<label index="description_im_path_lzw" type="integer">169842415</label>
+			<label index="help_im_path_lzw" type="integer">42001841</label>
+			<label index="title_im_version_5" type="integer">72707691</label>
+			<label index="description_im_version_5" type="integer">74555220</label>
+			<label index="help_im_version_5" type="integer">24298792</label>
+			<label index="title_im_negate_mask" type="integer">246243155</label>
+			<label index="description_im_negate_mask" type="integer">70155243</label>
+			<label index="help_im_negate_mask" type="integer">108920535</label>
+			<label index="title_im_imvMaskState" type="integer">769589</label>
+			<label index="description_im_imvMaskState" type="integer">36121614</label>
+			<label index="help_im_imvMaskState" type="integer">249479346</label>
+			<label index="title_im_no_effects" type="integer">19642635</label>
+			<label index="description_im_no_effects" type="integer">266928600</label>
+			<label index="help_im_no_effects" type="integer">122257350</label>
+			<label index="title_im_v5effects" type="integer">9393901</label>
+			<label index="description_im_v5effects" type="integer">231203870</label>
+			<label index="help_im_v5effects" type="integer">252972953</label>
+			<label index="title_im_mask_temp_ext_gif" type="integer">99671560</label>
+			<label index="description_im_mask_temp_ext_gif" type="integer">4466187</label>
+			<label index="help_im_mask_temp_ext_gif" type="integer">206910156</label>
+			<label index="title_im_mask_temp_ext_noloss" type="integer">139987698</label>
+			<label index="description_im_mask_temp_ext_noloss" type="integer">128851728</label>
+			<label index="help_im_mask_temp_ext_noloss" type="integer">231362916</label>
+			<label index="title_im_noScaleUp" type="integer">116016576</label>
+			<label index="description_im_noScaleUp" type="integer">220265969</label>
+			<label index="title_im_combine_filename" type="integer">230348835</label>
+			<label index="description_im_combine_filename" type="integer">251301285</label>
+			<label index="help_im_combine_filename" type="integer">4137943</label>
+			<label index="title_im_noFramePrepended" type="integer">14107137</label>
+			<label index="description_im_noFramePrepended" type="integer">105720491</label>
+			<label index="help_im_noFramePrepended" type="integer">65067758</label>
+			<label index="title_jpg_quality" type="integer">230913130</label>
+			<label index="description_jpg_quality" type="integer">162379908</label>
+			<label index="title_enable_typo3temp_db_tracking" type="integer">102814743</label>
+			<label index="description_enable_typo3temp_db_tracking" type="integer">148409718</label>
+			<label index="help_enable_typo3temp_db_tracking" type="integer">32269185</label>
+			<label index="title_TTFLocaleConv" type="integer">56969561</label>
+			<label index="description_TTFLocaleConv" type="integer">152759054</label>
+			<label index="help_TTFLocaleConv" type="integer">171825255</label>
+			<label index="title_TTFdpi" type="integer">94562583</label>
+			<label index="description_TTFdpi" type="integer">153058047</label>
+			<label index="help_TTFdpi" type="integer">108374820</label>
+			<label index="title_png_truecolor" type="integer">194923403</label>
+			<label index="description_png_truecolor" type="integer">74853105</label>
+			<label index="help_png_truecolor" type="integer">3770762</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="module_gfx_title">Graphics</label>
+			<label index="module_gfx_description">Let you setup the graphic subsystem of your TYPO3 installation.</label>
+			<label index="title_image_processing">Image Processing</label>
+			<label index="description_image_processing">Enables image processing features.</label>
+			<label index="help_image_processing">Disabling this means NO image processing with either GD or IM!</label>
+			<label index="title_thumbnails">Thumbnails</label>
+			<label index="description_thumbnails">Enables the use of thumbnails in the backend interface.</label>
+			<label index="help_thumbnails">Thumbnails are generated by IM/partly GD in the file typo3/thumbs.php</label>
+			<label index="title_thumbnails_png">Thumbnails as PNG</label>
+			<label index="description_thumbnails_png">If set, thumbnails from non-jpegs will be 'png', otherwise 'gif' (0=gif/1=png).</label>
+			<label index="help_thumbnails_png">Bit1: Even JPG's will be converted to png or gif (2=gif/3=png)</label>
+			<label index="title_noIconProc">No icon processing</label>
+			<label index="description_noIconProc">If true, icons are never processed with overlays for hidden, starttime, endtime etc.</label>
+			<label index="help_noIconProc">They must be available pre-processed. If this is disabled, do so only if you have full image processing capabilities on the server for TYPO3.</label>
+			<label index="title_gif_compress">GIF compress</label>
+			<label index="description_gif_compress">Enables the use of the t3lib_div::gif_compress()</label>
+			<label index="help_gif_compress">Workaround function for compressing giffiles made with GD or IM, which probably use only RLE or no compression at all.</label>
+			<label index="title_imagefile_ext">Imagefile extensions</label>
+			<label index="description_imagefile_ext">Commalist of file extensions perceived as images by TYPO3.</label>
+			<label index="help_imagefile_ext">List should be set to 'gif,png,jpeg,jpg' if IM is not available. Lowercase and no spaces between!</label>
+			<label index="title_gdlib">Enable GD</label>
+			<label index="description_gdlib">Enables the use of GD</label>
+			<label index="title_gdlib_png">GD PNG</label>
+			<label index="description_gdlib_png">Enables the use of GD, with PNG only.</label>
+			<label index="help_gdlib_png">This means that all items normally generated as gif-files will be png-files instead!</label>
+			<label index="title_gdlib_2">GDlib 2.0.1+</label>
+			<label index="description_gdlib_2">Set this if you are using the new GDlib 2.0.1+.</label>
+			<label index="help_gdlib_2">If you don't set this flag and still use GDlib2, you might encounter strange behaviours like black images etc. This feature might take effect only if ImageMagick is installed and working as well! You can also use the value &quot;no_imagecopyresized_fix&quot; - in that case it will NOT try to fix a known issue where &quot;imagecopyresized&quot; does not work correctly.</label>
+			<label index="title_im">Enable Image- GraphicsMagick</label>
+			<label index="description_im">Enables the use of ImageMagick or GraphicsMagick</label>
+			<label index="title_im_path">Image- GraphicsMagick path</label>
+			<label index="description_im_path">Path to the IM tools 'convert', 'combine', 'identify'.</label>
+			<label index="help_im_path">Version 4.2.9 of ImageMagick is highly recommended due to features and speed!</label>
+			<label index="title_im_path_lzw">Image- GraphicsMagick with LZW path</label>
+			<label index="description_im_path_lzw">Path to the IM tool 'convert' with LZW enabled!</label>
+			<label index="help_im_path_lzw">See 'gif_compress'. If your version 4.2.9 of ImageMagick is compiled with LZW you may leave this field blank AND disable the flag 'gif_compress'! Tip: You can call LZW 'convert' with a prefix like 'myver_convert' by setting this path with it, eg. '/usr/bin/myver_' instead of just '/usr/bin/'.</label>
+			<label index="title_im_version_5">Image- GraphicsMagick Version 5</label>
+			<label index="description_im_version_5">Set this if you're using ImageMagick/GraphicsMagick but not IM 4.x.</label>
+			<label index="help_im_version_5">Setting this value will automatically configure some settings for use with the specified program version. Allowed values are: &quot;im4&quot;, &quot;im5&quot;, &quot;im6&quot; and &quot;gm&quot; (uses GraphicsMagick instead of ImageMagick).</label>
+			<label index="title_im_negate_mask">Negate mask</label>
+			<label index="description_im_negate_mask">Indicates if the mask images should be inverted first.</label>
+			<label index="help_im_negate_mask">This depends of the ImageMagick version. Below ver. 5.1 this should be false. Above ImageMagick version 5.2+ it should be true. Just set the flag if the masks works opposite the intension!</label>
+			<label index="title_im_imvMaskState">Invert mask state</label>
+			<label index="description_im_imvMaskState">If set, the 'im_negate_mask' state is inverted.</label>
+			<label index="help_im_imvMaskState">This is very useful with newer versions of IM5 (at least 5.4.3+) where the 'im_version_5' setting will set 'im_negate_mask' which will eventually be wrong... Halleluja for ImageMagick - have I ever regreted using that package...</label>
+			<label index="title_im_no_effects">No effects</label>
+			<label index="description_im_no_effects">This is necessary if using ImageMagick 5+.</label>
+			<label index="help_im_no_effects">Approved version for using effects is version 4.2.9. Effects in Imagemagick 5+ tends to render very slowly! Therefore this must be disabled in order not to perform sharpen, blurring and such. (However lately IM5 is allowed for effects again, but syntax has changed!)</label>
+			<label index="title_im_v5effects">IM V5 effects</label>
+			<label index="description_im_v5effects">Possible values: -1, 0, 1 (see help)</label>
+			<label index="help_im_v5effects">0=disabled. -1=Do not sharpen images by default. 1=All; blur and sharpening is allowed in ImageMagick again and the 'im_no_effects' flag is cancelled. Blurring and sharpening has new syntaxes though. See class.t3lib_stdgraphic.php for details.</label>
+			<label index="title_im_mask_temp_ext_gif">Use GIF as temporary mask type</label>
+			<label index="description_im_mask_temp_ext_gif">This should be set if ImageMagick is version 5+.</label>
+			<label index="help_im_mask_temp_ext_gif">This is used in class.tslib_content.php for masking images and the extension png is normally used because it's faster than gif for temporary files. But png seems not to work with some IM 5+ versions, so...</label>
+			<label index="title_im_mask_temp_ext_noloss">Lossless temporary mask type</label>
+			<label index="description_im_mask_temp_ext_noloss">Loss-less ImageMagick extension to use for mask processing in temporary filenames.</label>
+			<label index="help_im_mask_temp_ext_noloss">Normally 'miff' (ImageMagick's OWN format) will do fine. However at least IM 5.4.9 has proved not to be able to write to its own file format which forced me to add this option. You can try and set this to tif/png/jpg if some masking doesn't work the way it should.</label>
+			<label index="title_im_noScaleUp">No scale up</label>
+			<label index="description_im_noScaleUp">If set, images are not being scaled up if told so (in t3lib/stdgraphics.php)</label>
+			<label index="title_im_combine_filename">Combine filename</label>
+			<label index="description_im_combine_filename">Filename for IM V4 'combine' program.</label>
+			<label index="help_im_combine_filename">Latest ImageMagick versions has changed the name of combine to composite. Configure here if needed.</label>
+			<label index="title_im_noFramePrepended">No frame prepend</label>
+			<label index="description_im_noFramePrepended">If set, the [x] frame indicator is NOT prepended to filenames in stdgraphic.</label>
+			<label index="help_im_noFramePrepended">Some IM5+ version didn't work at all with the typical [0]-prefix, which allow multipage pdf's and animated gif's to be scaled only for the first frame/page and that seriously cuts down rendering time. Set this flag only if your ImageMagick version cannot find the files. Notice that changing this flag causes temporary filenames to change, thus the server will begin scaling images again which were previously cached.</label>
+			<label index="title_jpg_quality">Jpeg quality</label>
+			<label index="description_jpg_quality">Default JPEG generation quality</label>
+			<label index="title_enable_typo3temp_db_tracking">typo3temp DB tracking</label>
+			<label index="description_enable_typo3temp_db_tracking">If set, then all files in typo3temp will be logged in a database table.</label>
+			<label index="help_enable_typo3temp_db_tracking">In addition to being a log of the files with original filenames, it also serves to secure that the same image is not rendered simultaneously by two different processes.</label>
+			<label index="title_TTFLocaleConv">Locale TTF conversion</label>
+			<label index="description_TTFLocaleConv">Enter locale conversion string used to recode input to TrueType functions.</label>
+			<label index="help_TTFLocaleConv">Eg. 'cp1250..UTF-8'. Works ONLY if 'recode' is enabled in PHP. Deprecated from ver. 3.6.0 of TYPO3. Set up [BE][forceCharset] as strings are automatically converted from databsae charset to UTF-8.</label>
+			<label index="title_TTFdpi">TTF dpi</label>
+			<label index="description_TTFdpi">Enter how many dpi the FreeType module uses.</label>
+			<label index="help_TTFdpi">Freetype1 should be set to 72. Freetype2 should be set to 96 (otherwise fonts are rendered way bigger than FreeType1). This works as a global scaling factor for Freetype.</label>
+			<label index="title_png_truecolor">Truecolor PNG</label>
+			<label index="description_png_truecolor">If set PNGs will get created as truecolor PNGs.</label>
+			<label index="help_png_truecolor">If you use GDlib2 you can create truecolor images if they look not well currently. Note that this results in an increased image size. JPEGs get always created in truecolor now (GDlib2 required)</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

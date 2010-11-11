@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="report_title">Installierte Dienste</label>
+			<label index="report_description">Liste aller installierten Dienste mit Angaben zum Status und weiteren Informationen.</label>
+			<label index="report_explanation">Dieser Bericht zeigt eine Liste der installierten Dienste mit detaillierten Informationen zu jedem Dienst. Die Dienste sind nach Typ, Priorität und Qualität sortiert. Dienste, die nicht verfügbar sind, sind mit einem Statusfehler hervorgehoben.</label>
+			<label index="externals_explanation">Die Spalte &quot;Extern&quot; zeigt an, welche externen Programme ein Dienst benötigt. Wenn ein benötigtes Programm fehlt oder nicht ausführbar ist, ist der Dienst nicht verfügbar. Die Suchpfade für ausführbare Programme sind unten aufgelistet.</label>
+			<label index="service_type">Diensttyp: %s</label>
+			<label index="service">Dienst</label>
+			<label index="priority">Priorität</label>
+			<label index="quality">Qualität</label>
+			<label index="subtypes">Untertypen</label>
+			<label index="os">OS</label>
+			<label index="externals">Extern</label>
+			<label index="available">Verfügbar</label>
+			<label index="any">Alle</label>
+			<label index="search_paths">Festgelegte Suchpfade für externe Programme</label>
+			<label index="path">Pfad</label>
+			<label index="valid">Gültig</label>
+			<label index="no_search_paths">Keine Suchpfade festgelegt.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="report_title" type="integer">91199384</label>
+			<label index="report_description" type="integer">152149408</label>
+			<label index="report_explanation" type="integer">262699599</label>
+			<label index="service_type" type="integer">211072250</label>
+			<label index="service" type="integer">204187623</label>
+			<label index="priority" type="integer">84056429</label>
+			<label index="quality" type="integer">91294027</label>
+			<label index="subtypes" type="integer">220232810</label>
+			<label index="os" type="integer">24887552</label>
+			<label index="externals" type="integer">37694119</label>
+			<label index="available" type="integer">126436830</label>
+			<label index="any" type="integer">248736286</label>
+			<label index="search_paths" type="integer">60584296</label>
+			<label index="path" type="integer">180814866</label>
+			<label index="valid" type="integer">61632607</label>
+			<label index="no_search_paths" type="integer">166775400</label>
+			<label index="externals_explanation" type="integer">225194673</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="report_title">Installed Services</label>
+			<label index="report_description">List of all installed services with information and status for each of them.</label>
+			<label index="report_explanation">This report displays a list of installed services, with detailed information about each of them. The services are ordered by type, priority and quality. Unavailable services are highlighted with an error status.</label>
+			<label index="service_type">Service type: %s</label>
+			<label index="service">Service</label>
+			<label index="priority">Priority</label>
+			<label index="quality">Quality</label>
+			<label index="subtypes">Subtypes</label>
+			<label index="os">OS</label>
+			<label index="externals">Externals</label>
+			<label index="available">Available</label>
+			<label index="any">Any</label>
+			<label index="search_paths">Configured search paths for external programs</label>
+			<label index="path">Path</label>
+			<label index="valid">Valid</label>
+			<label index="no_search_paths">No search paths configured.</label>
+			<label index="externals_explanation">The &quot;Externals&quot; column shows which external programs a given service relies on. If such program is missing or not executable, the service will be unavailable. Search paths for executables are listed at the bottom of this report.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>
