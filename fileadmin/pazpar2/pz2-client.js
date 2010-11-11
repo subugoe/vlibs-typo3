@@ -633,11 +633,42 @@ function renderDetails(data, marker) {
 		}
 
 
-		var normaliseISBNs = function (){
+		var cleanISBNs = function (){
+			var pickISBN = function (ISBN1, ISBN2) {
+				var result = undefined;
+				// input: 2 ISBN number strings without dashes
+				// output: if both are 'the same': the longer one (ISBN-13)
+				//         if they aren't the same: undefined
+				var numberRegexp = /([0-9]{9,12})[0-9xX].*/;
+				var numberPart1 = ISBN1.replace(numberRegexp, '$1');
+				var numberPart2 = ISBN2.replace(numberRegexp, '$1');
+				if (!(numberPart1 == numberPart2)) {
+					if (numberPart1.indexOf(numberPart2) != -1) {
+						result = ISBN1;
+					}
+					else if (numberPart2.indexOf(numberPart1) != -1) {
+						result = ISBN2;
+					}
+				}
+				return result;
+			}
+
 			if (location['md-isbn'] !== undefined) {
 				var newISBNs = []
 				for (var index in location['md-isbn']) {
-					newISBNs.push(normaliseISBNsInString(location['md-isbn'][index]))
+					var normalisedISBN = normaliseISBNsInString(location['md-isbn'][index]);
+					for (var newISBNNumber in newISBNs) {
+						var newISBN = newISBNs[newISBNNumber];
+						var preferredISBN = pickISBN(normalisedISBN, newISBN);
+						if (preferredISBN !== undefined) {
+							newISBNs.splice(newISBNNumber, 1, preferredISBN);
+							normalisedISBN = undefined;
+							break;
+						}
+					}
+					if (normalisedISBN !== undefined) {
+						newISBNs.push(normalisedISBN);
+					}
 				}
 				location['md-isbn'] = newISBNs;
 			}
@@ -660,7 +691,7 @@ function renderDetails(data, marker) {
 			addInfoItem('publication-place');
 			addInfoItem('date');
 
-			normaliseISBNs();
+			cleanISBNs();
 			addInfoItem('isbn');
 
 			
