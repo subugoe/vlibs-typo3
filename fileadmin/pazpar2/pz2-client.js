@@ -42,6 +42,7 @@ var germanTerms = {
 	'detail-label-description': 'Information',
 	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
+	'detail-label-issn': 'ISSN',
 	'detail-local-label-isbn': 'ISBN',
 	'detail-local-label-id': 'PPN',
 	'link': '[Link]',
@@ -707,6 +708,7 @@ function renderDetails(data, marker) {
 	detailsHTML.push( detailLineAuto('description') );
  	detailsHTML.push( detailLineAuto('medium') );
 	detailsHTML.push( detailLineAuto('series-title') );
+	detailsHTML.push( detailLineAuto('issn'));
 	detailsHTML.push( locationDetails() );
 	detailsHTML.push( extraLinks() );
 
