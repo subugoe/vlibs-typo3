@@ -618,32 +618,24 @@ function renderDetails(data, marker) {
 
 			
 			// electronic resources
-			var localElectronicURLs = location['md-electronic-url'];
-			var localElectronicTexts = location['md-electronic-text'];
+			var electronicURLs = location['md-electronic-url'];
+			var URLsMarkup = []
+			for (var URLNumber in electronicURLs) {
+				var URLInfo = electronicURLs[URLNumber];
+				if (URLInfo['#text'] !== undefined) {
+					var linkName = localise('Link');
+					if (URLInfo['@name'] !== undefined) {
+						linkName = URLInfo['@name'];
+					}
 
-			if ( localElectronicURLs !== undefined ) {
-				var URLMarkup = ['<span class="pz2-links">'];
-				var links = [];
-				if ( localElectronicTexts !== undefined 
-					&& localElectronicURLs.length == localElectronicTexts.length ) {
-					for ( var URLNumber in localElectronicURLs ) {
-						links.push('<a target="pz2-detail-tab" href="' 
-							+ localElectronicURLs[URLNumber] + '">' 
-							+ localElectronicTexts[URLNumber] + '</a>');
-					}
+					var URLMarkup = '<a href="' +  URLInfo['#text'] + ' target="pz2-linktarget">'
+										+ '[' + linkName + ']' + '</a>';
 				}
-				else {
-					for ( var URLNumber in localElectronicURLs ) {
-						links.push('<a target="pz2-detail-tab" href="' 
-							+ localElectronicURLs[URLNumber] + '">' 
-							+ localise('link') + '</a>');
-					}
-				}
-				URLMarkup.push(links.join(', '));
-				URLMarkup.push('</span>');
-				localInfoItems.push(URLMarkup.join(''));
+				URLsMarkup.push(URLMarkup);
 			}
-
+			if (URLsMarkup.length > 0) {
+				localInfoItems.push(URLsMarkup.join(' '));
+			}
 
 			if (localInfoItems.length > 0) {
 				markup.push(localInfoItems.join('; '));
