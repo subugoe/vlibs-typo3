@@ -32,6 +32,7 @@ var germanTerms = {
 	'facet-title-subject': 'Themengebiete',
 	'facet-title-date': 'Jahre',
 	'detail-label-title': 'Titel',
+	'detail-label-series-title': 'Serie',
 	'detail-label-author': 'Autor',
 	'detail-label-date': 'Jahr',
 	'detail-label-isbn': 'ISBN',
@@ -94,6 +95,36 @@ function my_oninit() {
 
 
 function my_onshow(data) {
+	var titleInfo = function() {
+		var output = '<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
+        	+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
+        	+ '" onclick="toggleDetails(this.id);return false;">'
+			+ '<span class="pz2-item-title">'
+
+		if (hit['md-multivolume-title'] !== undefined) {
+			output += ' <span class="pz2-item-multivolume-title">' 
+				+ hit['md-multivolume-title'] + '</span>: ';
+		}
+
+		output += hit["md-title"] + '</span>';
+
+		if (hit['md-title-remainder'] !== undefined) {
+			output += ' <span class="pz2-item-title-remainder">' 
+				+ hit['md-title-remainder'] + '</span>';
+		}
+
+		if (hit['md-title-number-section'] !== undefined) {
+			output += ' <span class="pz2-item-title-number-section">'
+				+ hit['md-title-number-section'] + '</span>';
+		}
+
+
+		output += '.';
+
+		return output;
+	}
+
+
 	var authorInfo = function() {
 		var output = '';
 		// use responsibility field if available
@@ -133,7 +164,7 @@ function my_onshow(data) {
 			output.push('<span class="pz2-journal-title">'
 				+ hit['md-journal-title'] + '</span>');
 			if (hit['md-journal-subpart'] !== undefined) {
-				output.push(' , <span class="pz2-journal-subpart">'
+				output.push(', <span class="pz2-journal-subpart">'
 				+ hit['md-journal-subpart'] + '</span>');
 			}
 		}
@@ -164,15 +195,7 @@ function my_onshow(data) {
     for (var i = 0; i < data.hits.length; i++) {
         var hit = data.hits[i];
 
-		html.push('<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
-        	+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
-        	+ '" onclick="toggleDetails(this.id);return false;">'
-			+ '<span class="pz2-item-title">'+ hit["md-title"] + '</span>'); 
-		if (hit['md-title-remainder'] !== undefined) {
-			html.push(' <span class="pz2-item-title-remainder">' 
-				+ hit['md-title-remainder'] + '</span>');
-		}
-		html.push('.');
+		html.push(titleInfo());
 
 		var authors = authorInfo();
 		if (authors != '') {
@@ -181,7 +204,7 @@ function my_onshow(data) {
 
 		var journal = journalInfo();
 		if (hit['md-medium'] == 'article' && journal != '') {
-			html.push(' ' + journal)
+			html.push(' ' + journal);
 		}
 		else {
 			if (hit['md-date'] !== undefined) {
@@ -508,25 +531,44 @@ function renderDetails(data, marker) {
 
 
 	var locationDetails = function () {
+		
+		
+		var addInfoItemWithLabel = function (fieldContent, labelName) {
+			var infoItem = '';
+			if ( fieldContent !== undefined ) {
+				if ( labelName !== undefined ) {
+				 infoItem = '<span class="pz2-label">' + labelName + ':</span>&nbsp;';
+				}
+				infoItem += fieldContent;
+			}			
+			localInfoItems.push(infoItem);
+		}
+
+
 		var addInfoItem = function (fieldName) {
 			var value = location['md-'+fieldName];
 
 			if ( value !== undefined ) {
-				var title = '';
-				var labelString = 'detail-local-label-'+fieldName
-				var localisedLabelString = localise(labelString);
-				if ( localisedLabelString != labelString ) {
-					title = '<span class="title">' + localisedLabelString + ':</span> ';
-				}  
-				localInfoItems.push('<span class="pz2-local-"' + fieldName + '">'
-					+ title + value.join(', ') + '</span>');
+				var label = undefined;
+				var labelID = 'detail-local-label-' + fieldName;
+				var localisedLabelString = localise(labelID);
+
+				if ( localisedLabelString != labelID ) {
+					label = localisedLabelString;
+				}
+
+				var content = value.join(', ').replace(/^[ ]*/,'').replace(/[ ;.,]*$/,'');
+				if (content !== '') {
+					content = '<span class="pz2-local-"' + fieldName + '">' + content + '</span>';
+				}
+
+				addInfoItemWithLabel(content, label);
 			}
 		}
 	
 
-		var markup = ['<tr><th>', localise('Kataloge'), 
-			':</th><td><dl class="pz2-locations">'];
 
+		var markup = [];
 
 		for ( var locationNumber in data.location ) {
 			var localInfoItems = []
@@ -535,13 +577,13 @@ function renderDetails(data, marker) {
 			var localURL = location['@id'];
 			var localName = location['@name'];
 
-			markup.push('<dt class="pz2-location" title="' + localURL + '">' 
-				+ localName + '</dt><dd>');
+			markup.push('<tr><th>' + localise('Ausgabe') + ':</th><td>');
 
+			addInfoItem('edition');
+			addInfoItem('physical-extent');
 			addInfoItem('publication-name');
 			addInfoItem('publication-place');
-			addInfoItem('publication-year');
-			addInfoItem('series-title');
+			addInfoItem('date');
 			addInfoItem('isbn');
 
 			
@@ -551,7 +593,7 @@ function renderDetails(data, marker) {
 
 			if ( localElectronicURLs !== undefined ) {
 				var URLMarkup = ['<span class="pz2-links">'];
-				var links = []
+				var links = [];
 				if ( localElectronicTexts !== undefined 
 					&& localElectronicURLs.length == localElectronicTexts.length ) {
 					for ( var URLNumber in localElectronicURLs ) {
@@ -572,58 +614,36 @@ function renderDetails(data, marker) {
 				localInfoItems.push(URLMarkup.join(''));
 			}
 
-			addInfoItem('id');
 
-			markup.push(localInfoItems.join('; '));
-			markup.push('.</dd>');	
+			if (localInfoItems.length > 0) {
+				markup.push(localInfoItems.join('; '));
+				markup.push('; ');
+			}
+			markup.push('<span class="pz2-location" title="' + localURL + '">' 
+				+ localName + ': ' + location['md-id'] + '</span>');
+ 			markup.push('.</td></tr>');	
 		}
-		markup.push('</dl></td></tr>');
+
 		return markup.join('');
 	}
 
 
-
-	var detailsHTML = ['<div class="pz2-details" id="det_', 
-		HTMLIDForRecordData(data), '"><table>'];
+	var detailsHTML = ['<div class="pz2-details" id="det_', HTMLIDForRecordData(data), '"><table>'];
 	if (marker) {
 		detailsHTML.push('<tr class="pz2-detail-' + marker + '"><td>'
 			+ marker + '</td></tr>');
 	}
 
-/*
-	if (data['md-title'] !== undefined) {
-		var titleDetail = data['md-title'];
-		if (data['md-title-remainder'] !== undefined) {
-			titleDetail += ' : <span class="pz2-title-remainder">' 
-				+ data['md-title-remainder'] + '</span>';
-		}
-	  	if (data['md-title-responsibility'] !== undefined) {
-	    	titleDetail += ' / <span class="pz2-item-responsibility">'+ data['md-title-responsibility'] + '</span>';
-	  	}
-		detailsHTML.push( detailLine('title', titleDetail) );
-	}
-*/
 	detailsHTML.push( detailLineAuto('author') );
-//	detailsHTML.push( detailLineAuto('date') );
 	detailsHTML.push( detailLineAuto('description') );
-	detailsHTML.push( detailLineAuto('isbn') );
-	detailsHTML.push( detailLineAuto('medium') );
+ 	detailsHTML.push( detailLineAuto('medium') );
+	detailsHTML.push( detailLineAuto('series-title') );
 	detailsHTML.push( locationDetails() );
 
     if (data['md-electronic-url'] !== undefined) {
 		var link = '<a href="' + data['md-electronic-url'] + '>' + data['md-electronic-url'] + '</a>';
 		detailsHTML.push( detailLine('URL', link) );
 	}
-
-/*
-    if (data["location"][0]["md-subject"] != undefined)
-        details += '<tr><td><b>Subject</b></td><td><b>:</b> ' + data["location"][0]["md-subject"] + '</td></tr>';
-*/
-/*
-    if (data["location"][0]["@name"] != undefined)
-        details += '<tr><td><b>Location</b></td><td><b>:</b> ' + data["location"][0]["@name"] + " (" +data["location"][0]["@id"] + ")" + '</td></tr>';
-    details += '</table></div>';
-*/
 
     return detailsHTML;
 }
@@ -635,7 +655,7 @@ function renderDetails(data, marker) {
 */
 function HTMLIDForRecordData (recordData) {
 	if (recordData.recid[0] !== undefined) {
-		return recordData.recid[0].replace(/ /g,'-');
+		return recordData.recid[0].replace(/ /g,'+');
 	}
 }
 
@@ -643,7 +663,7 @@ function HTMLIDForRecordData (recordData) {
 	Output: input with dashes replaced by spaces
 */
 function recordIDForHTMLID (HTMLID) {
-	return HTMLID.replace(/-/g,' ');
+	return HTMLID.replace(/\+/g,' ');
 }
 
 //EOF
