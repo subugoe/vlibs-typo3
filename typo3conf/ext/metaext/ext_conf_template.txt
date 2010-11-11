@@ -1,0 +1,74 @@
+# cat=basic/enable; type=boolean; label=Extend Constant Editor:If enabled, the 'class.t3lib_tsparser_ext' will be xclassed to add some more subcategories which helps to arrange the editable options. no 'class.t3lib_tsparser_ext' function will actually be overwritten so this should be uncritical for the future. If you don't install this patch, all entries with extended subcategories will be grouped under the default subcategory 'Others', so this is only a cosmetic though recommended patch.
+extconsteditor = 1
+
+# cat=basic/enable; type=boolean; label=Patch 6637:If enabled, the 'class.tslib_menu' will be xclassed to apply patch6637 (see: http://bugs.typo3.org/view.php?id=6637), which will give you a 'reverseOrder' for hmenu special = rootline. without applying this patch (or patching the core file itself) the reverse rootline titletag feature won't work. NOTE: This patch becomes obsolete for Typo3 >= 4.3 as this functionality will be incorporated with this version. 
+patch6637 = 0
+
+# cat=basic/enable; type=boolean; label=disableNoCacheParameter:This turns off the ability to disable caching on several locations. On the page cahing policies, via setting config.no_cache = true or disabling caching inside extensions via set_no_cache(). All these settings will be ignored then. 
+disableNoCacheParameter = 0
+
+# cat=basic/enable/a1; type=boolean; label=Hide Untranslated Pages: If this setting is checked, all pages with no translation won't show up in the menu if the language setting is not L=0 (which would be the default language). Hiding untranslated pages is neccessary if you use the config option 'sys_language_mode = strict' which would result in a 404 if a page isn't translated yet. and 'sys_language_mode = fallback' is no good idea at all, because of the double content which would be created if the language overlay sends out the untranslated content when calling the page in a language which is not the default (L=0). Changing this setting eventually changes the behaviour the a setting under Web->Page->Page properties->Localization settings-> from 'Hide page if no translation for current language exists' to 'Show page even if no translation exists'. That in mind you should check this setting on pages where you manually changed them earlier, because they will behave exactly oposite.  
+hideUntranslatedPages = 1
+
+# cat=basic/enable; type=string; label=create sitemaps:comma separated list of sitemaps to create (realurl needs to be enabled [cooluri config will follow soon]). see manual for sitemap integration and configuration reference. valid values would be 'sitemap.xml:1234,anothersitemap.xml:2345,...' where the item in front of the colon is the name and behind is the typeNum which you can refer to in your setup. if this field is not empty, also a realurl config will be added. see manual for avoiding possible pitfalls.
+sitemaplist = sitemap.xml:2755 
+
+# cat=basic/enable; type=options[hide author field=1,show author field=0]; label=hide AUTHOR field:you can choose to hide the [author] field in the [metatags] section of the pages module. this is a STANDARD field of Typo3 and might be used with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hideauthor = 0
+# cat=basic/enable; type=options[hide email field=1,show email field=0]; label=hide email field:you can choose to hide the [email] field in the [metatags] section of the pages module. this is a STANDARD field of Typo3 and might be used with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hideemail = 0
+# cat=basic/enable; type=options[hide abstract field=1,show abstract field=0]; label=hide abstract field:you can choose to hide the [abstract] field in the [metatags] section of the pages module. this is a STANDARD field of Typo3 and might be used with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hideabstract = 0
+# cat=basic/enable; type=options[hide keywords field=1,show keywords field=0]; label=hide keywords field:you can choose to hide the [keywords] field in the [metatags] section of the pages module. this is a STANDARD field of Typo3 and might be used with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidekeywords = 0
+# cat=basic/enable; type=options[hide description field=1,show description field=0]; label=hide description field:you can choose to hide the [description] field in the [metatags] section of the pages module. this is a STANDARD field of Typo3 and might be used with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidedescription = 0
+# cat=basic/enable; type=options[hide alttitle field=1,show alttitle field=0]; label=hide alttitle field:you can choose to hide the [alttitle] field in the [general] section of the pages module. this is one of the NEW fields that come with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidealttitle = 0
+# cat=basic/enable; type=options[hide geotag fields=1,show geotag fields=0]; label=hide geotag fields:you can choose to hide the [geo.xxxx] fields in the [metatags] section of the pages module. these are three NEW fields which come with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidegeotagfields = 0
+# cat=basic/enable; type=options[hide copyright field=1,show copyright field=0]; label=hide copyright field:you can choose to hide the [copyright] field in the [metatags] section of the pages module. this is one of the NEW fields that come with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidecopyright = 0
+# cat=basic/enable; type=options[hide publisher field=1,show publisher field=0]; label=hide publisher field:you can choose to hide the [publisher] field in the [metatags] section of the pages module. this is one of the NEW fields that come with this extension. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hidepublisher = 0
+# cat=basic/enable; type=options[hide robots field=1,show robots field=0]; label=hide robots field:you can choose to hide the [author] field in the [robots] section of the pages module. this is one of the NEW fields that come with this extension. it is possible to also use it as a switch to exclude some sites from beeing included into the sitemap. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hiderobots = 0
+# cat=basic/enable; type=options[hide importance field=1,show importance field=0]; label=hide IMPORTANCE field:you can choose to hide the [importance] field in the [metatags] section of the pages module. this is one of the NEW fields that come with this extension and it is only needed if you use the sitemap which you can generate with this extension, too. NOTE: this only hides the field, the underlying data is left unaffected and will be displayed if configured.
+hideimportance = 0
+
+
+# cat=basic/chtml; type=boolean; label=Post Processing:Enable the output post processor which can fulfill various tsks like: removing html comments, indenting code, etc.
+postprocessing = 1
+
+# cat=basic/chtml; type=boolean; label=Unicode Processing:This switches on the Unicode flag for various regular expressions. You should enable this in the case you are using UTF-8 content. If you don't while using UTF-8 you might only get an empty page as result.
+processunicode = 0
+
+# cat=basic/chtml; type=boolean; label=remove ALL html comments:If post processing is enabled, this feature will remove ALL html comments (<!--TYPO3SEARCH_start/end--> and comments inside <script/style> tags and conditional comments will be spared, though).
+removehtmlcomments = 0
+
+# cat=basic/chtml; type=boolean; label=maintain the copyright comment:It is encouradged to leave this option enabled to maintain the injection of the '... This website is brought to you by TYPO3 ...' comment in the head section of your created pagecontent. even though it is not needed for maintaining the copyright laws, it is highly encouradged and a friendly turn to place this notice within the header. both, the sorting header tags and the remove ALL html comments options do remove these lines. if you leave this option enabled, the comment will get reinjected in any case.
+copyrightcomment = 1
+
+# cat=basic/chtml; type=boolean; label=remove comment tags within cdata:If some extension produces additional comment tags inside cdata markings like so: '/*<![CDATA[*/ <!--  .... // --> /*]]>*/' the '<!--' and '// -->' part will get removed if this option is selected. The point is if they remain within style tags, the gecko engine is moaning about invalid selectors which is actually not an error but an avoidable warning. the flipside would be that if you turn this feature on, really very old browser might display the content of inline script and style tags, because they're not able to interprete these. if you have concerns about this or you don't encounter these sort of cdata + htmlcomment in your code, you might simply leave this feature unselected. this feature is only active if the 'remove all html comments' feature is also activated, anyway.
+removetagsinsidescript = 1
+
+# cat=basic/chtml; type=boolean; label=remove blank lines:If post processing is enabled, this feature will remove lines wihout content, i.e. only linefeed or whitespace. 
+removeblanklines = 1
+
+# cat=basic/chtml; type=boolean; label=remove whitespace:If post processing is enabled, this feature will remove the surrounding whitespace, i.e. tab & space characters. 
+removewhitespace = 1
+
+# cat=basic/chtml; type=boolean; label=sort headertags:If post processing is enabled, this feature will sort all the tags in the header so that the more important tags are on top. sorting follows this priority 'base > title > meta > link > style > script > conditional comment'. NOTE: ANY OTHER CONTENT will get REMOVED though. if this is not ok with you, please leave this feature disabled. 
+sortheadertags = 1
+
+# cat=basic/chtml; type=boolean; label=indentation:If post processing is enabled, this feature will remove surrounding whitespace and formats the output with a not too complex but nice indentation.. 
+indentation = 1
+
+# cat=basic/chtml; type=boolean; label=indent curly braces:If indentation is enabled, usually curly braces used in javascript or css class content will also be indented. just for the worstcase that indenting curly braces gives you trouble, here you can switch this off
+indentcurlybraces = 1
+
+# cat=basic/chtml; type=options[tab=0,2 spaces=1,4 spaces=2,6 spaces=3]; label=indentation character:If indentation is enabled, this is the character used for indentation. chose either the 'tab' character or 2,4, or 6 'space' characters.
+indentationchar = 0
+
+# cat=basic/chtml; type=string; label=Additional pageTyp Values:If you've got other pages configured whose content you want to push through the postprocessor insert the respective pageTyp values as a coma separated list, eg.: 700,3005 (this means: pages with pageTyp=700 or pageTyp=3005 would get postprocessed, too)
+additionalpagetypes = 

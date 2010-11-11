@@ -1,0 +1,4 @@
+<FilesMatch "\.(txt|ts)$">  
+Order deny,allow
+deny from all
+</FilesMatch>

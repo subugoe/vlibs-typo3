@@ -1,0 +1,15 @@
+2009-03-09 sensomedia.de  <info@sensomedia.de>
+
+0.5.1: in some cases, sorting of script tags could break the script tags content, this is fixed now. even if far from standard, some ext use the <noscript> tag inside the header, so I decided to include it in the list of sortable headertags, too.
+0.5.0: abstract field can now be used as fallback for description (configure in constants). hideuntranslated pages is configurable now (configure in EM). misc bugfixes: htmlentities in title string is possible now. using conditional comments in the header while having headersort/remove html comments turned on works now as expected.
+0.4.0: New fields: geotags. you can hide fields in the page module now. 
+0.3.2: Hotfix small bug
+0.3.1: Hotfix small bug
+0.3.0: Introducing sitemap feature including auto realurl config for sitemap(s).
+0.2.6: Small improvements to the post processor (sparing conditional comments properly if remove all html comments is selected and post processing turned on). - Updated manual.
+0.2.6: Some improvements to the post processor: a.o. reinjection of copyright notice, including conditional comments in headersort, remove comments within cdata - option
+0.2.5: Important Bugfix: in some cases some characters are swallowed due to calculation error. fixed now.
+0.2.4: Small improvements to the post processor (sparing !--TYPO3SEARCH_start/end-- tags now if remove all html comments is selected and post processing turned on). - Updated manual.
+0.2.3: Important Bugfix: introducing unicode switch for postprocessing in EM config. if using non unicode content with unicode flag only a white page might get delivered.
+0.2.2: wrong manual got uploaded with the last version. now this is the right one.
+0.2.1: initial ter

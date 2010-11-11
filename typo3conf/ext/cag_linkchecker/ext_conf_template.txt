@@ -1,0 +1,2 @@
+  # cat=basic/enable; type=boolean; label=Set PageTSconfig by default: Sets default page TS config which includes tt_content.bodytext to searched for broken links
+setPageTSconfig = 1

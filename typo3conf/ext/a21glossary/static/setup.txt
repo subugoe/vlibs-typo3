@@ -1,0 +1,103 @@
+# global accessibility glossary configurations
+config.tx_a21glossary {
+	caseSensitiv = 1
+	patternModifiers = s
+	patternModifiersLink =
+	excludePages = {$a21glossary.glossaryPage}
+	excludePages.{$a21glossary.glossaryPage} = acronym,abbr,dfn
+	pidList = {$a21glossary.storagePage}
+	linkToGlossary = acronym,abbr,dfn
+	linkOnlyIfNotEmpty = description
+	typolink {
+		parameter = {$a21glossary.glossaryPage}
+		parameter.override.field = link
+		additionalParams.field = uid
+		additionalParams.wrap = &tx_a21glossary[uid]=|
+		additionalParams.dataWrap = |&tx_a21glossary[back]={TSFE:id}
+		useCacheHash = 1
+		ATagParams = class="glossary"
+	}
+}
+
+# configuration of the glossary list display
+tx_a21glossary_main = COA
+tx_a21glossary_main {
+	10 = TEXT
+	10.if.isTrue.field = short
+	10.field = short
+	10.wrap = {$a21glossary.shortWrap}
+
+	20 = COA
+	20.wrap = {$a21glossary.restWrap}
+	20 {
+		10 = CASE
+		10.key.field = shorttype
+		10.stdWrap.if.isTrue.field = shorttype
+		10.stdWrap.wrap = {$a21glossary.typeWrap}
+		10.acronym = TEXT
+		10.acronym.value = acronym of:
+		10.abbr = TEXT
+		10.abbr.value = abbreviation of:
+		10.dfn = TEXT
+		10.dfn.value = definition:
+
+		20 = TEXT
+		20.if.isTrue.field = longversion
+		20.field = longversion
+		20.wrap = {$a21glossary.longWrap}
+
+		30 = TEXT
+		30.if.isTrue.field = description
+		30.field = description
+		30.wrap = {$a21glossary.descriptionWrap}
+	}
+}
+
+# configuration of the glossary list plugin
+tt_content.list.20.a21glossary = CONTENT
+tt_content.list.20.a21glossary {
+	table = tx_a21glossary_main
+	stdWrap.wrap = {$a21glossary.allWrap}
+	stdWrap {
+		append = COA
+		append.stdWrap.if.isTrue.data = GPvar:tx_a21glossary|back
+		append.10 = TEXT
+		append.10.value = {$a21glossary.back}
+		append.10.wrap = {$a21glossary.backWrap}
+		append.10.typolink.parameter.data = GPvar:tx_a21glossary|back
+		append.10.typolink.useCacheHash = 1
+		append.20 = TEXT
+		append.20.value = {$a21glossary.allEntries}
+		append.20.wrap = {$a21glossary.allEntriesWrap}
+		append.20.typolink.parameter.data = TSFE:id
+	}
+	select {
+		pidInList.field = pages
+		orderBy = {$a21glossary.orderBy}
+		where = exclude=0 AND hidden=0
+		andWhere.dataWrap = (sys_language_uid=-1 OR sys_language_uid={TSFE:sys_language_uid})|
+		#languageField = sys_language_uid
+	}
+}
+
+[globalVar = GP:tx_a21glossary|uid >0]
+
+tt_content.list.20.a21glossary {
+	select {
+		andWhere.data = GPvar:tx_a21glossary|uid
+		andWhere.intval = 1
+		andWhere.noTrimWrap = | AND uid='|'|
+	}
+}
+
+[global]
+
+
+# CSS configuration
+plugin.tx_a21glossary._CSS_DEFAULT_STYLE (
+	acronym, dfn, abbr, span.abbr { border-bottom: 1px dotted black; cursor: help; }
+	dl.glossary dt { font-weight: bold; margin: 0 0 3px 0; font-style: normal; }
+	dl.glossary dd { margin: 0 0 15px 20px; }
+	dl.glossary .description { margin: 0; padding: 0; }
+	dl.glossary .type { font-style: italic; padding: 0 3px 0 0; }
+)

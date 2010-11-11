@@ -1,0 +1,25 @@
+plugin.meta >
+plugin.meta {
+    # cat=plugin.meta; type=string; label= Description: Write a short abstract for your website.
+  description = 
+    # cat=plugin.meta; type=string; label= Keywords: Enter a comma separated list of keywords.
+  keywords = 
+    # cat=plugin.meta; type=string; label= Robots: Use for instance these codes: Index all pages: "all".  Index no pages: "none". Only this page: "index,nofollow".  Only subpages: "noindex,follow"
+  robots = 
+    # cat=plugin.meta; type=string; label= Copyright info: Enter copyright information, eg. "Me Myself and I, 2001. All rights reserved."
+  copyright = 
+    # cat=plugin.meta; type=string; label= Reply-to email
+  email = 
+    # cat=plugin.meta; type=string; label= Author: Enter name of author.
+  author = 
+    # cat=plugin.meta; type=options[,Arabic=ar,Chinese=zh,Danish=dk,Dutch=nl,English=en,Finnish=fi,French=fr,German=de,Greek=el,Hebrew=he,Icelandic=is,Italian=it,Japanese=ja,Norwegian=no,Polish=pl,Portuguese=pt,Russian=ru,Spanish=es,Swedish=sv,Turkish=tr,Multi language=mul]; label= Language: Select language of the content.
+  language = 
+    # cat=plugin.meta; type=string; label= Distribution
+  distribution = 
+    # cat=plugin.meta; type=options[,General,Mature,14 years,Restricted]; label= Rating
+  rating = 
+    # cat=plugin.meta; type=int+; label= Revisit after: Number of days between search engine visits.
+  revisit = 
+    # cat=plugin.meta; type=boolean; label= Always include global: 
+  includeGlobal = 0
+}

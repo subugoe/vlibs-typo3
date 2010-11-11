@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Labels for cag_linkchecker mod1</description>
+        <type>module</type>
+        <csh_table></csh_table>
+        <labelContext type="array">
+        </labelContext>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="title">Check Links</label>
+            <label index="start">Overview</label>
+            <label index="menu.introduction">Introduction</label>
+            <label index="menu.checkLinks">Check Links for validity</label>
+            <label index="menu.overview">Overview of links on website</label>
+            <label index="overview.header">Overview - choose options to check the links</label>
+            <label index="overview.all.header">Total amounts in tt_content</label>
+            <label index="overview.all.records">Records with ext. links: </label>
+            <label index="overview.all.links">External links: </label>
+            <label index="overview.branch.header">Amounts from actual branch in tt_content</label>
+            <label index="overview.branch.records">Records with ext. links: </label>
+            <label index="overview.branch.links">External links: </label>
+            <label index="overview.attention.header">Attention: </label>
+            <label index="overview.attention.text">Checking links may take up to several minutes. Checking ONE link can last up to 3 seconds.</label>
+            <label index="list.header">Listing of certainly broken links</label>
+            <label index="list.tableHead.path">Path</label>
+            <label index="list.tableHead.type">Type</label>
+            <label index="list.tableHead.headline">Title</label>
+            <label index="list.tableHead.linktarget">URL / Link Target</label>
+            <label index="list.tableHead.linkmessage">Response</label>
+            <label index="list.report.pagedeleted">Page deleted</label>
+            <label index="list.report.pagenotexisting">Page '###title###' doesn't exist</label>
+            <label index="list.report.rowdeleted">###title### row deleted</label>
+            <label index="list.report.rownotexisting">###title### row doesn't exist</label>
+            <label index="list.report.noresponse">External Link not reachable</label>
+            <label index="list.report.filenotexisting">File doesn't exist</label>
+            <label index="label_send">Check Links</label>
+            <label index="label_showalllinks">Show all Links (incl. working links)</label>
+            <label index="hooks.db">Internal Links</label>
+            <label index="hooks.file">File Links</label>
+            <label index="hooks.external">External Links</label>
+            <label index="hooks.linkhandler">Linkhandler Links</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="title">Links überprüfen</label>
+            <label index="start">Übersicht</label>
+            <label index="menu.introduction">Einführung</label>
+            <label index="menu.checkLinks">Links überprüfen</label>
+            <label index="menu.overview">Übersicht der vorhandenen Links</label>
+            <label index="overview.header">Übersicht - bitte auswählen</label>
+            <label index="overview.all.header">Gesamtanzahl</label>
+            <label index="overview.all.records">Einträge mit externen Links: </label>
+            <label index="overview.all.links">Externe Links: </label>
+            <label index="overview.branch.header">Anzahl vom ausgewählten Seitenbaum</label>
+            <label index="overview.branch.records">Einträge mit externen Links: </label>
+            <label index="overview.branch.links">Externe Links: </label>
+            <label index="overview.attention.header">Vorsicht: </label>
+            <label index="overview.attention.text">Links überprüfen kann bis zu 3 Minuten dauern. EINEN Link zu überprüfen kann bis zu 3 Sekunden dauern.</label>
+            <label index="list.header">Übersicht an kaputten Links</label>
+            <label index="list.tableHead.path">Pfad</label>
+            <label index="list.tableHead.type">Typ</label>
+            <label index="list.tableHead.headline">Titel</label>
+            <label index="list.tableHead.linktarget">URL / Linkziel</label>
+            <label index="list.tableHead.linkmessage">Antwort</label>
+            <label index="list.report.pagedeleted">Interne Seite '###title###' gelöscht</label>
+            <label index="list.report.pagenotexisting">Interne Seite existiert nicht</label>
+            <label index="list.report.rowdeleted">###title### Eintrag gelöscht</label>
+            <label index="list.report.rownotexisting">###title### Eintrag existiert nicht</label>
+            <label index="list.report.noresponse">Externer Link nicht erreichbar</label>
+            <label index="list.report.filenotexisting">Datei existiert nicht</label>
+            <label index="label_send">Links überprüfen</label>
+            <label index="label_showalllinks">Alle Links anzeigen (inkl. funktionierende)</label>
+            <label index="hooks.db">Interne Links</label>
+            <label index="hooks.file">Datei Links</label>
+            <label index="hooks.external">Externe Links</label>
+            <label index="hooks.linkhandler">Linkhandler Links</label>
+        </languageKey>
+        <languageKey index="it" type="array">
+            <label index="title">Verifica link</label>
+            <label index="start">Panoramica</label>
+            <label index="menu.introduction">Introduzione</label>
+            <label index="menu.checkLinks">Verifica la validità dei link</label>
+            <label index="menu.overview">Panoramica dei link nel sito</label>
+            <label index="overview.header">Panoramica - scegli le opzioni per la verifica dei links</label>
+            <label index="overview.all.header">Totale in tt_content</label>
+            <label index="overview.all.records">Record con link esterni: </label>
+            <label index="overview.all.links">Link esterni: </label>
+            <label index="overview.branch.header">Totale per il ramo corrente tt_content</label>
+            <label index="overview.branch.records">Record con link esterni: </label>
+            <label index="overview.branch.links">Link esterni: </label>
+            <label index="overview.attention.header">Attenzione: </label>
+            <label index="overview.attention.text">Il controllo dei link potrebbe durare alcuni minuti. Controllare UN link può impiegare fino a 3 secondi.</label>
+            <label index="list.header">Elenco dei link non funzionanti</label>
+            <label index="list.tableHead.path">Percorso</label>
+            <label index="list.tableHead.type">Tipo</label>
+            <label index="list.tableHead.headline">Titolo</label>
+            <label index="list.tableHead.linktarget">URL / Obiettivo del link</label>
+            <label index="list.tableHead.linkmessage">Responso</label>
+            <label index="list.report.pagedeleted">Pagina cancellata</label>
+            <label index="list.report.pagenotexisting">La pagina '###title###' non esiste</label>
+            <label index="list.report.rowdeleted">Linea ###title### cancellata</label>
+            <label index="list.report.rownotexisting">La linea ###title### non esiste</label>
+            <label index="list.report.noresponse">Link esterno non raggiungibile</label>
+            <label index="list.report.filenotexisting">Il file non esiste</label>
+            <label index="label_send">Verifica i link</label>
+            <label index="label_showalllinks">Mostra tutti i link (inclusi quelli funzionanti)</label>
+            <label index="hooks.db">Link interni</label>
+            <label index="hooks.file">Link a files</label>
+            <label index="hooks.external">Link esterni</label>
+            <label index="hooks.linkhandler">Linkhandler Links</label>
+        </languageKey>
+    </data>
+</T3locallang>

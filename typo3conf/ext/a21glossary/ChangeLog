@@ -1,0 +1,3 @@
+09-03-05 (0.4.11) Artplan21 <info at artplan21.de>
+
+	* major security fix: intval'd tx_a21glossary[uid] (for detail view) to prevent sql injections

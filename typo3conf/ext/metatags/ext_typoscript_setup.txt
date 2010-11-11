@@ -1,0 +1,42 @@
+plugin.meta >
+plugin.meta = PHP_SCRIPT
+plugin.meta {
+  file = EXT:metatags/meta.php
+  global {
+    description = {$plugin.meta.description}
+    description_2 = {$styles.content.meta.site_description}
+    keywords = {$plugin.meta.keywords}
+    keywords_2 = {$styles.content.meta.site_keywords}
+    robots = {$plugin.meta.robots}
+    copyright = {$plugin.meta.copyright}
+    email = {$plugin.meta.email}
+    author = {$plugin.meta.author}
+    language = {$plugin.meta.language}
+    distribution = {$plugin.meta.distribution}
+    rating = {$plugin.meta.rating}
+    revisit = {$plugin.meta.revisit}
+  }
+  local {
+      // stdWrap, "loads" the local description (if any) for the page
+    description.field = description
+      // stdWrap, "loads" the local keywords (if any) for the page
+    keywords.field = keywords
+  }
+  flags {
+     // Boolean, This includes the keywords/description set in styles.content (default) for backwards compatibility (if not set, keywords_2/description_2 is simply unset). 
+    useSecondaryDescKey = 1
+     // Boolean, This includes the global description (from above), even if local description is found for a page
+    alwaysGlobalDescription = {$plugin.meta.includeGlobal}
+     // Boolean, This includes the global keywords (from above), even if local keywords are found for a page
+    alwaysGlobalKeywords = {$plugin.meta.includeGlobal}
+     // Boolean, This enables the "Dublin Core" standard meta-tags.
+    DC =1
+  }
+}
+
+
+
+
+page.headerData.999 < plugin.meta
+frameset.headerData.999 < plugin.meta
+	

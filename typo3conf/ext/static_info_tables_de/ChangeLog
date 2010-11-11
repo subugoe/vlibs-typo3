@@ -1,0 +1,8 @@
+2009-05-30  Franz Holzinger  <franz@ttproducts.de>
+	* Todo: Das Split muss verbessert werden, damit ein ',' auch innerhalb eines Wertes vorkommen kann
+	* Löschen von static_taxes, wo es keine deutsche Übersetzung gegeben hat.
+	* neue Länder Serbien und Montenegro
+
+2006-12-19  Franz Holzinger  <kontakt@fholzinger.com>
+	* enable the function to load additional TCA to allow fields added from the language specific static_info_tables derivates
+	* Added a ChangeLog file

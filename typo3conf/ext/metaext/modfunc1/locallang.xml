@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Metatags Manager</label>
+			<label index="depth_0">only this page</label>
+			<label index="pages_0">Seite 1</label>
+			<label index="pages_1">Seite 2</label>
+			<label index="depth_1">1 level</label>
+			<label index="depth_2">2 levels</label>
+			<label index="depth_3">3 levels</label>
+			<label index="depth_I">show all</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="title">Metatags Manager</label>
+			<label index="depth_0">aktuelle Seite</label>
+			<label index="pages_0">Seite 1</label>
+			<label index="pages_1">Seite 2</label>
+			<label index="depth_1">1 Ebene</label>
+			<label index="depth_2">2 Ebenen</label>
+			<label index="depth_3">3 Ebenen</label>
+			<label index="depth_I">zeige alle</label>
+		</languageKey>
+	</data>
+</T3locallang>

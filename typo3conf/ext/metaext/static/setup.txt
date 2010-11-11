@@ -1,0 +1,615 @@
+################################################################################
+### SETUP START ################################################################
+################################################################################
+
+################################################################################
+
+################################################################################
+### INCLUDE SUBCONFIG ##########################################################
+################################################################################
+
+
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:metaext/static/lib.ts">
+
+
+################################################################################
+### METATAGS START #############################################################
+################################################################################
+
+plugin.tx_metaext_metatags >
+plugin.tx_metaext_metatags = COA
+plugin.tx_metaext_metatags {
+
+	L < plugin.tx_metaext_lib
+		
+	### rootline menu with reverse order (needs patch if T3Version < 4.3) included in this extension
+	#
+	title_rootline = HMENU
+	title_rootline {
+		special = rootline
+		special.range = 1|-1
+		special.reverseOrder = 1  // patch 6637 on typo3/sysext/cms/tslib/class.tslib_menu.php reuired to get this working / confirmed to core with  t3 v4.3 
+		includeNotInMenu = 1
+		1 = TMENU
+		1 {
+			wrap = | 
+			noBlur = 1
+			NO {
+				wrapItemAndSub = |*| | {$plugin.tx_metaext_metatags.rootlinedividerstring} |*| |
+				stdWrap.noTrimWrap = | | |
+				doNotLinkIt=1
+			} 
+		}
+		stdWrap.trim = 1
+	}
+
+	### assemble the titletag 
+	# creation scheme
+	# [alternativetitle (if set) or subtitle (if set) << ]*[pagelev1 :: pagelev1 :: pagelev0 or title][ :: yoursitename]*
+	# []* optional subgroups, [] mandatoriy subgroups
+	# * turn on or of via constant editor
+	# 
+	titletag = COA
+	titletag {
+		
+		### prepend 'alternativetitle (or: subtitle) << ' if available 
+		1 = TEXT
+		1.if.isTrue = {$plugin.tx_metaext_metatags.prependextratitle}					
+		1.data = page:tx_metaext_alttitle//page:subtitle
+		1.trim = 1
+		1.required = 1
+		1.insertData = 1
+		1.noTrimWrap = || {$plugin.tx_metaext_metatags.titledividerstring} |	
+		
+		### insert 'the :: page :: rootline' (includes title)
+		2 < plugin.tx_metaext_metatags.title_rootline
+		2.if.isTrue =  {$plugin.tx_metaext_metatags.fullrootline}
+		
+		### insert only 'title'  --- inverted .2
+		3 = TEXT
+		3.if.isTrue = {$plugin.tx_metaext_metatags.fullrootline}
+		3.if.negate = 1
+		3.data = field:title 
+		3.trim = 1
+		
+		### append ' :: sitename' 
+		### not that good for multidomain... maybe: TSFE:tmpl|sitetitle   TODO: need to check the config for alternative sitename
+		4 = TEXT 
+		4.if.isTrue = {$plugin.tx_metaext_metatags.appendsitename}			
+		4.data = global:TYPO3_CONF_VARS|SYS|sitename       
+		4.noTrimWrap = | {$plugin.tx_metaext_metatags.sitenamedividerstring} | | 
+		###
+		stdWrap.trim = 1
+		wrap = |
+	}
+
+
+	### creating <title>your generated title here</title>
+	10 = TEXT 
+	10.prepend < .L.tab
+	10.stdWrap.prepend < .titletag
+	10.required = 1
+	10.stdWrap.insertData = 1
+	10.htmlSpecialChars = 0
+	10.wrap = <title>|</title>
+	10.append < .L.lf
+
+	### creating <meta name="DC.title" content="your generated title here" />
+	20 < .10
+	20.wrap = <meta name="DC.title" content="|" />
+
+
+	### creating <meta name="keywords" content="your, keywords, go, here" />
+	30 = TEXT 
+	30.prepend < .L.tab
+	30.data = page:keywords
+	30.stdWrap.stdWrap >
+	30.required = 1
+	30.stdWrap.if.value = {$plugin.tx_metaext_metatags.showkeywords}
+	30.stdWrap.if.equals = 1
+	30.wrap = <meta name="keywords" content="|" />
+	30.append < .L.lf
+
+
+	### creating <meta name="description" content="your description goes here" />
+	40 = TEXT
+	40.prepend < .L.tab
+	40.data = page:description
+	40.required = 1
+	40.stdWrap.if.value = {$plugin.tx_metaext_metatags.showdescription}
+	40.stdWrap.if.equals = 1
+	40.wrap = <meta name="description" content="|" />
+	40.append < .L.lf
+
+	### creating <meta name="abstract" content="your abstrct goes here" />
+	50 = TEXT
+	50.prepend < .L.tab
+	50.data = page:abstract
+	50.required = 1
+	50.stdWrap.if.value = {$plugin.tx_metaext_metatags.showabstract}
+	50.stdWrap.if.equals = 1
+	50.stdWrap.trim = 1
+	50.wrap = <meta name="abstract" content="|" />
+	50.append < .L.lf
+
+	### creating <meta name="author" content="author name goes here" />
+	60 = TEXT
+	60.prepend < .L.tab
+	60.value = {$plugin.tx_metaext_metatags.author}	
+	60.override.field = author
+	60.required = 1
+	60.stdWrap.if.value = {$plugin.tx_metaext_metatags.showauthor}
+	60.stdWrap.if.equals = 1
+	60.stdWrap.trim = 1
+	60.wrap = <meta name="author" content="|" />
+	60.append < .L.lf
+
+	### creating <meta name="publisher" content="publisher goes here" />
+	70 = TEXT
+	70.prepend < .L.tab
+	70.value = {$plugin.tx_metaext_metatags.publisher}	
+	70.override.field = tx_metaext_copyright
+	70.required = 1
+	70.stdWrap.if.value = {$plugin.tx_metaext_metatags.showpublisher}
+	70.stdWrap.if.equals = 1
+	70.stdWrap.trim = 1
+	70.wrap = <meta name="publisher" content="|" />
+	70.append < .L.lf
+
+	### creating <meta name="copyright" content="copyright goes here" />
+	80 = TEXT
+	80.prepend < .L.tab
+	80.value = {$plugin.tx_metaext_metatags.copyright}	
+	80.override.field = tx_metaext_publisher
+	80.required = 1
+	80.stdWrap.if.value = {$plugin.tx_metaext_metatags.showcopyright}
+	80.stdWrap.if.equals = 1
+	80.stdWrap.trim = 1
+	80.wrap = <meta name="copyright" content="|" />
+	80.append < .L.lf
+
+	### creating <meta name="email" content="email address goes here" />
+	90 = TEXT
+	90.prepend < .L.tab
+	90.value = {$plugin.tx_metaext_metatags.email}	
+	90.override.field = email
+	90.required = 1
+	90.stdWrap.if.value = {$plugin.tx_metaext_metatags.showemail}
+	90.stdWrap.if.equals = 1
+	90.stdWrap.trim = 1
+	90.wrap = <meta name="email" content="|" />
+	90.append < .L.lf
+
+	### creating <meta name="distribution" content="distribution type goes here" />
+	100 = TEXT
+	100.prepend < .L.tab
+	100.value = {$plugin.tx_metaext_metatags.distribution}	
+	100.required = 1
+	100.stdWrap.trim = 1
+	100.wrap = <meta name="distribution" content="|" />
+	100.append < .L.lf
+
+	### creating <meta name="date" content="last changed or creation date here" />
+	110 = TEXT
+	110.stdWrap.prepend < .L.tab
+	110.stdWrap.if.value = {$plugin.tx_metaext_metatags.showdate}
+	110.stdWrap.if.equals = 1
+	110.stdWrap.data = page:SYS_LASTCHANGED//page:crdate
+	110.stdWrap.strftime = %Y-%m-%d
+	110.stdWrap.wrap = <meta name="date" content="|" />
+	110.stdWrap.append < .L.lf
+
+	### creating <meta name="robots" content="index,follow" />
+	# getting the page value (if set)
+	120 = TEXT
+	120.value =  ~all,follow~index,follow~index,nofollow~noindex,follow~noindex,nofollow
+	120.split {
+		token = ~
+		cObjNum = 1
+		1.current = 1
+		1.if.value.data = register:SPLIT_COUNT
+		1.if.equals = {$plugin.tx_metaext_metatags.robots}
+		1.required = 1
+	}
+	# getting the constants value (if set) 
+	121 = TEXT
+	121.value =  ~all,follow~index,follow~index,nofollow~noindex,follow~noindex,nofollow
+	121.split {
+		token = ~
+		cObjNum = 1
+		1.current = 1
+		1.if.value.data = register:SPLIT_COUNT
+		1.if.equals.field = tx_metaext_robots
+		1.required = 1
+	}
+	# creating the metatag if page-value//constants-value is set
+	122 = TEXT
+	122.prepend < .L.tab
+	122.stdWrap.cObject < plugin.tx_metaext_metatags.120
+	122.stdWrap.override.cObject < plugin.tx_metaext_metatags.121
+	122.required = 1
+	122.wrap = <meta name="robots" content="|" />
+	122.append < .L.lf
+	# unset unnecessary objects 
+	120 >
+	121 >
+	
+	### creating <meta name="verify-v1" content="your google verification code here" />
+	130 = TEXT
+	130.prepend < .L.tab
+	130.value = {$plugin.tx_metaext_metatags.v1verification}
+	130.required = 1
+	130.wrap = <meta name="verify-v1" content="|" />
+	130.append < .L.lf
+	
+	### creating <meta name="ICBM" content="position goes here" />
+	140 = TEXT
+	140.prepend < .L.tab
+	140.value = {$plugin.tx_metaext_metatags.geo.position}	
+	140.override.field = tx_metaext_geoposition
+	140.required = 1
+	140.stdWrap.trim = 1
+	140.wrap = <meta name="ICBM" content="|" />
+	140.append < .L.lf
+
+	### creating <meta name="geo.position" content="position goes here" />
+	150 < .140
+	150.wrap = <meta name="geo.position" content="|" />
+
+	### creating <meta name="geo.region" content="region goes here" />
+	160 = TEXT
+	160.prepend < .L.tab
+	160.value = {$plugin.tx_metaext_metatags.geo.region}	
+	160.override.field = tx_metaext_georegion
+	160.required = 1
+	160.stdWrap.trim = 1
+	160.wrap = <meta name="geo.region" content="|" />
+	160.append < .L.lf
+
+	### creating <meta name="geo.placename" content="placename goes here" />
+	170 = TEXT
+	170.prepend < .L.tab
+	170.value = {$plugin.tx_metaext_metatags.geo.placename}	
+	170.override.field = tx_metaext_geoplacename
+	170.required = 1
+	170.stdWrap.trim = 1
+	170.wrap = <meta name="geo.placename" content="|" />
+	170.append < .L.lf
+
+	### creating <meta name="country" content="countryname goes here" />
+	180 = TEXT
+	180.prepend < .L.tab
+	180.value = {$plugin.tx_metaext_metatags.country}	
+	180.required = 1
+	180.stdWrap.trim = 1
+	180.wrap = <meta name="country" content="|" />
+	180.append < .L.lf
+
+	### creating <meta name="state" content="statename goes here" />
+	190 = TEXT
+	190.prepend < .L.tab
+	190.value = {$plugin.tx_metaext_metatags.state}	
+	190.required = 1
+	190.stdWrap.trim = 1
+	190.wrap = <meta name="state" content="|" />
+	190.append < .L.lf
+
+	### creating <meta name="city" content="city goes here" />
+	200 = TEXT
+	200.prepend < .L.tab
+	200.value = {$plugin.tx_metaext_metatags.city}	
+	200.required = 1
+	200.stdWrap.trim = 1
+	200.wrap = <meta name="city" content="|" />
+	200.append < .L.lf
+
+	### creating <meta name="zip" content="zip goes here" />
+	210 = TEXT
+	210.prepend < .L.tab
+	210.value = {$plugin.tx_metaext_metatags.zip}	
+	210.required = 1
+	210.stdWrap.trim = 1
+	210.wrap = <meta name="zip" content="|" />
+	210.append < .L.lf
+
+}
+### using abstract as fallback for description metatag (if selected in constants), but only if the abstract metatag is disabled
+[globalVar = LIT:1 = {$plugin.tx_metaext_metatags.useabstract_ifnodescription}] 
+	plugin.tx_metaext_metatags.40.data = page:description // page:abstract
+[globalVar = LIT:1 = {$plugin.tx_metaext_metatags.showabstract}] 
+	plugin.tx_metaext_metatags.40.data = page:description
+[global]
+
+
+
+
+################################################################################
+### METATAGS END ###############################################################
+################################################################################
+
+
+################################################################################
+
+
+################################################################################
+### CONFIG START ###############################################################
+################################################################################
+
+
+plugin.tx_metaext_config >
+plugin.tx_metaext_config = COA
+
+
+### Site language settings ----------------------------------------------------------------
+
+# default language configuration
+plugin.tx_metaext_config.config {
+	sys_language_uid = 0
+	language = {$plugin.tx_metaext_config.L1_language}
+	locale_all = {$plugin.tx_metaext_config.L1_locale_all}
+    htmlTag_langKey = {$plugin.tx_metaext_config.L1_language}
+}
+[global]
+
+# second language configuration
+[globalVar = GP:L = {$plugin.tx_metaext_config.L2_sys_language_uid}]
+plugin.tx_metaext_config.config {
+	sys_language_uid = {$plugin.tx_metaext_config.L2_sys_language_uid}
+	language = {$plugin.tx_metaext_config.L2_language}
+	locale_all = {$plugin.tx_metaext_config.L2_locale_all}
+    htmlTag_langKey = {$plugin.tx_metaext_config.L2_language}
+}
+[global]
+
+# third language configuration
+[globalVar = GP:L = {$plugin.tx_metaext_config.L3_sys_language_uid}]
+plugin.tx_metaext_config.config {
+	sys_language_uid = {$plugin.tx_metaext_config.L3_sys_language_uid}
+	language = {$plugin.tx_metaext_config.L3_language}
+	locale_all = {$plugin.tx_metaext_config.L3_locale_all}
+    htmlTag_langKey = {$plugin.tx_metaext_config.L3_language}
+}
+[global]
+
+# fourth language configuration
+[globalVar = GP:L = {$plugin.tx_metaext_config.L4_sys_language_uid}]
+plugin.tx_metaext_config.config {
+	sys_language_uid = {$plugin.tx_metaext_config.L4_sys_language_uid}
+	language = {$plugin.tx_metaext_config.L4_language}
+	locale_all = {$plugin.tx_metaext_config.L4_locale_all}
+    htmlTag_langKey = {$plugin.tx_metaext_config.L4_language}
+}
+[global]
+
+# fifth language configuration
+[globalVar = GP:L = {$plugin.tx_metaext_config.L5_sys_language_uid}]
+plugin.tx_metaext_config.config {
+	sys_language_uid = {$plugin.tx_metaext_config.L5_sys_language_uid}
+	language = {$plugin.tx_metaext_config.L5_language}
+	locale_all = {$plugin.tx_metaext_config.L5_locale_all}
+    htmlTag_langKey = {$plugin.tx_metaext_config.L5_language}
+}
+[global]
+
+
+plugin.tx_metaext_config {
+
+	config {
+		
+
+		### Site specific features --------------------------------------------------------
+		
+		# This writes the <base> tag in the header of the document. Set this to the value that
+		# is expected to be the URL, and append a '/' to the end of the string.
+		#
+		baseURL = {$plugin.tx_metaext_config.baseURL}
+		
+		# If this value is set, then all relative links in TypoScript are prepended with this string.
+		# Used to convert relative paths to absolute paths. 
+		# This path is automatically set to baseURL here. realurl is compatible by now if you put 
+		# 'reapplyAbsRefPrefix' => true, into the init section of the realurl conf. you should avoid to 
+		# enable the 'Add PATCH for real_url' EM option because this is outdated and would also break 
+		# this feature. 
+		# 
+		absRefPrefix = {$plugin.tx_metaext_config.baseURL}
+
+		sys_language_mode = {$plugin.tx_metaext_config.sys_language_mode}		
+		
+		spamProtectEmailAddresses = {$plugin.tx_metaext_config.spamProtectEmailAddresses}
+		spamProtectEmailAddresses_atSubst = {$plugin.tx_metaext_config.spamProtectEmailAddresses_atSubst}
+		spamProtectEmailAddresses_lastDotSubst ={$plugin.tx_metaext_config.spamProtectEmailAddresses_lastDotSubst}
+		
+		
+		doctype = {$plugin.tx_metaext_config.doktype}
+		xhtmlDoctype = {$plugin.tx_metaext_config.doktype}
+		#disableCharsetHeader
+		#disableImgBorderAttr
+		xmlprologue = none
+		xhtml_cleaning = all
+		metaCharset = {$plugin.tx_metaext_config.charset}
+		renderCharset = {$plugin.tx_metaext_config.charset}
+		htmlTag_dir = {$plugin.tx_metaext_config.htmlTag_dir}
+
+
+		### Speaking URL Managemnt --------------------------------------------------------
+
+		# Real URL --------------------------------
+		#
+		tx_realurl_enable = {$plugin.tx_metaext_config.tx_realurl_enable}
+		
+		# Cool URI --------------------------------
+		#
+		tx_cooluri_enable = {$plugin.tx_metaext_config.tx_cooluri_enable}
+
+		# Simulate Static Documents ---------------
+		#
+		simulateStaticDocuments = {$plugin.tx_metaext_config.simulateStaticDocuments}
+		simulateStaticDocuments_addTitle = {$plugin.tx_metaext_config.simulateStaticDocuments_addTitle}
+
+		# Word separator for URLs generated by simulateStaticDocuments. If set to hyphen, this option
+		# allows search engines to index keywords in URLs.
+		simulateStaticDocuments_replacementChar = -
+
+		# Other -----------------------------------
+		#
+		# It might happen that TYPO3 generates links with the same parameter twice or more. This is
+		# no problem because only the last parameter is used, thus the problem is just a cosmetic one.
+		#
+		uniqueLinkVars = 1
+
+		# HTTP_GET_VARS, which should be passed on with links in TYPO3. This is compiled into a string
+		# stored in $GLOBALS["TSFE"]->linkVars
+		#
+		linkVars = {$plugin.tx_metaext_config.linkVars}
+		
+		prefixLocalAnchors = all
+		redirectOldLinksToNew = 1
+
+
+		### Page Decoration Settings --------------------------------------------------
+		
+		### supress original <title> tag
+		### 1 = no page title in <title> tag, 2 = no <title> tag at all
+		noPageTitle = 2
+		#pageTitleFirst
+		disablePrefixComment = 1
+		removeDefaultJS = {$plugin.tx_metaext_config.removeDefaultJS}
+		minifyJS = 1
+		inlineStyle2TempFile = {$plugin.tx_metaext_config.inlineStyle2TempFile}
+		meaningfulTempFilePrefix = 1
+		#jumpurl_enable
+		#jumpurl_mailto_disable
+		
+		
+		### Administrative settings --------------------------------------------------------
+		
+		admPanel = {$plugin.tx_metaext_config.adminPanel}
+
+		no_cache = {$plugin.tx_metaext_config.no_cache}
+		cache_clearAtMidnight = {$plugin.tx_metaext_config.cache_clearAtMidnight}
+		stat = {$plugin.tx_metaext_config.stat}
+		debug = 0
+		#beLoginLinkIPList
+		#beLoginLinkIPList_login
+		#beLoginLinkIPList_logout
+		
+	}
+
+}
+
+### sys_language_mode settings for 'content_fallback'
+[globalVar = LIT:content_fallback = {$plugin.tx_metaext_config.sys_language_mode}]
+plugin.tx_metaext_config.config {
+	sys_language_mode = {$plugin.tx_metaext_config.sys_language_mode};{$plugin.tx_metaext_config.sys_language_fallback_options}
+}
+[global]
+
+
+
+### some of the targets are still hardcoded in the setup for css-styled-content, so this fixes
+### them too. the values still comes from the constants from css-styled-content
+### (see constant editor: CONTENT and ADVANCED). 
+
+config.intTarget = {$PAGE_TARGET}
+config.extTarget = {styles.content.links.extTarget}
+styles.content.loginform.target = {$PAGE_TARGET}
+tt_content.uploads.20.linkProc.target = {styles.content.links.extTarget}
+
+
+################################################################################
+### CONFIG END #################################################################
+################################################################################
+
+
+################################################################################
+
+
+################################################################################
+### SITEMAP START ##############################################################
+################################################################################
+
+
+includeLibs.tx_metaext_sitemap = EXT:metaext/lib/class.tx_metaext_sitemap.php
+
+plugin.tx_metaext_sitemap >
+plugin.tx_metaext_sitemap = PAGE
+plugin.tx_metaext_sitemap {
+	typeNum = {$plugin.tx_metaext_sitemap.typenum}
+	config.disableAllHeaderCode = 1
+	config.renderCharset = UTF-8
+	config.xmlprologue = xml_10
+	config.additionalHeaders = Content-type: text/xml
+	10 = USER
+	10{ 
+		userFunc = tx_metaext_sitemap->createSitemap
+		showhiddeninmenu = {$plugin.tx_metaext_sitemap.showhiddeninmenu}
+		showhiddenpages = {$plugin.tx_metaext_sitemap.showhiddenpages}
+		showsearchexcluded	= {$plugin.tx_metaext_sitemap.showsearchexcluded}
+		excludeifrobots	= {$plugin.tx_metaext_sitemap.excludeifrobots}
+		excludeshortcuts = {$plugin.tx_metaext_sitemap.excludeshortcuts}
+		startuid = {$plugin.tx_metaext_sitemap.startuid}
+		levels = {$plugin.tx_metaext_sitemap.levels}
+		includepriority = {$plugin.tx_metaext_sitemap.includepriority}
+	}
+}
+
+##################################
+###  reference implementation  ###
+##################################
+/*
+First Off: This feature needs RealURL to be installed and working!
+------------------------------------------------------------------
+
+you can configure a default sitemap with the constant editor,
+then simply add the following to your page template:
+
+eg.:
+
+  mysitemap < plugin.tx_metaext_sitemap
+
+
+you can create as many sitemaps as you like. 
+you need to specify a different typeNum for each
+of them, though.
+you can also overwrite each default setting for 
+each individual sitemap:
+
+eg.:
+
+  mysitemap1 < plugin.tx_metaext_sitemap
+  mysitemap1.typeNum = 1234
+  mysitemap1.10.showhiddenpages = 1
+  mysitemap1.10.startuid = 234
+
+  mysitemap2 < plugin.tx_metaext_sitemap
+  mysitemap2.typeNum = 5005
+  mysitemap2.10.startuid = 40
+  mysitemap2.10.levels = 2
+
+you need to enter the sitemap list into the plugins EM config editor
+in this case you'd enter somethin like that into the field:
+
+  sitemapname.xml:1234, someothersitemapname.xml:5005 
+
+don't forget to clear the config cache after changing settings in the
+plugins extension manager settings.
+
+*/
+
+
+
+
+
+
+
+################################################################################
+### SITEMAP END ################################################################
+################################################################################
+
+
+################################################################################
+
+
+################################################################################
+### SETUP END ##################################################################
+################################################################################

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'metaext'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pages.tx_metaext_alttitle">Alternative PageTitle</label>
+			<label index="pages.tx_metaext_geoposition">geo.position 'latitude;longtitude' (also used for ICBM)</label>
+			<label index="pages.tx_metaext_georegion">geo.region (region code following ISO_3166-2 (see: http://de.wikipedia.org/wiki/ISO_3166-2)</label>
+			<label index="pages.tx_metaext_geoplacename">geo.placename (lokal attribution like: 'Cologne, NRW'; free text)</label>
+			<label index="pages.tx_metaext_copyright">Copyright</label>
+			<label index="pages.tx_metaext_publisher">Publisher</label>
+			<label index="pages.tx_metaext_robots">Robots crawl advices (index,follow)</label>
+			<label index="pages.tx_metaext_robots.I.0">(global)</label>
+			<label index="pages.tx_metaext_robots.I.1">all,follow</label>
+			<label index="pages.tx_metaext_robots.I.2">index,follow</label>
+			<label index="pages.tx_metaext_robots.I.3">index,nofollow</label>
+			<label index="pages.tx_metaext_robots.I.4">noindex,follow</label>
+			<label index="pages.tx_metaext_robots.I.5">noindex,nofollow</label>
+			<label index="pages.tx_metaext_importance">Sitemap 'Importance'</label>
+			<label index="pages.tx_metaext_importance.I.0">0.1</label>
+			<label index="pages.tx_metaext_importance.I.1">0.2</label>
+			<label index="pages.tx_metaext_importance.I.2">0.3</label>
+			<label index="pages.tx_metaext_importance.I.3">0.4</label>
+			<label index="pages.tx_metaext_importance.I.4">0.5</label>
+			<label index="pages.tx_metaext_importance.I.5">0.6</label>
+			<label index="pages.tx_metaext_importance.I.6">0.7</label>
+			<label index="pages.tx_metaext_importance.I.7">0.8</label>
+			<label index="pages.tx_metaext_importance.I.8">0.9</label>
+			<label index="pages.tx_metaext_importance.I.9">1.0</label>
+			<label index="moduleFunction.tx_metaext_modfunc1">Metatags Manager</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pages.tx_metaext_alttitle">Alternativer Seitentitel</label>
+			<label index="pages.tx_metaext_geoposition">geo.position 'latitude;longtitude' (auch für ICBM)</label>
+			<label index="pages.tx_metaext_georegion">geo.region (Regionscode nach ISO_3166-2 (see: http://de.wikipedia.org/wiki/ISO_3166-2)</label>
+			<label index="pages.tx_metaext_geoplacename">geo.placename (lokale Zuordnung, z.B.: 'Köln, NRW'; Freitext)</label>
+			<label index="pages.tx_metaext_copyright">Copyright</label>
+			<label index="pages.tx_metaext_publisher">Herausgeber</label>
+			<label index="pages.tx_metaext_robots">Suchmaschinen Crawlanweisung (index,follow)</label>
+			<label index="pages.tx_metaext_robots.I.0">(global)</label>
+			<label index="pages.tx_metaext_robots.I.1">all,follow</label>
+			<label index="pages.tx_metaext_robots.I.2">index,follow</label>
+			<label index="pages.tx_metaext_robots.I.3">index,nofollow</label>
+			<label index="pages.tx_metaext_robots.I.4">noindex,follow</label>
+			<label index="pages.tx_metaext_robots.I.5">noindex,nofollow</label>
+			<label index="pages.tx_metaext_importance">Sitemap 'Wichtigkeit'</label>
+			<label index="pages.tx_metaext_importance.I.0">0.1</label>
+			<label index="pages.tx_metaext_importance.I.1">0.2</label>
+			<label index="pages.tx_metaext_importance.I.2">0.3</label>
+			<label index="pages.tx_metaext_importance.I.3">0.4</label>
+			<label index="pages.tx_metaext_importance.I.4">0.5</label>
+			<label index="pages.tx_metaext_importance.I.5">0.6</label>
+			<label index="pages.tx_metaext_importance.I.6">0.7</label>
+			<label index="pages.tx_metaext_importance.I.7">0.8</label>
+			<label index="pages.tx_metaext_importance.I.8">0.9</label>
+			<label index="pages.tx_metaext_importance.I.9">1.0</label>
+			<label index="moduleFunction.tx_metaext_modfunc1">Metatags Manager</label>
+		</languageKey>
+	</data>
+</T3locallang>

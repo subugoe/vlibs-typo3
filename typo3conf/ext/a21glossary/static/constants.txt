@@ -1,0 +1,28 @@
+a21glossary {
+	# cat=a21glossary; type=; label=Storage page: Comma separated list of page IDs where the glossary entries are stored in the backend
+	storagePage = 0
+	# cat=a21glossary; type=int+; label=Frontend glossary page: Page ID of the frontend glossary page, where the list of glossary entries are shown
+	glossaryPage = 0
+	# cat=a21glossary; type=wrap; label=Glossary wrap: It wraps the whole glossary content
+	allWrap = <dl class="glossary">|</dl>
+	# cat=a21glossary;  type=wrap; label=Term wrap: It wraps the term (Acronym / abbreviation / definition) in the glossary list
+	shortWrap = <dt>|</dt>
+	# cat=a21glossary; type=wrap; label=Description block wrap: It wraps the rest block - long version, description etc.
+	restWrap = <dd>|</dd>
+	# cat=a21glossary;  type=wrap; label=Type wrap: It wraps the type of the term - acronym / abbreviation / definition
+	typeWrap = <span class="type">|</span>
+	# cat=a21glossary;  type=wrap; label=Long version wrap: It wraps the long version of the term
+	longWrap =  <b>|</b>
+	# cat=a21glossary;  type=wrap; label=Description wrap: It wraps the description of the term
+	descriptionWrap = <p class="description">|</p>
+	# cat=a21glossary;  type=; label=Back label: The label of the link back to the previous page, displayed in the glossary list
+	back = back
+	# cat=a21glossary;  type=wrap; label=Back label wrap: Wraps the label and the link back to the previous page, displayed in the glossary list
+	backWrap = <p class=back">|</p>
+	# cat=a21glossary;  type=; label=All entries label: The label of the link to displaying all entries of the glossary list
+	allEntries = show all entries
+	# cat=a21glossary;  type=wrap; label=All entries label wrap: Wraps the label and the the link to displaying all entries of the glossary list
+	allEntriesWrap = <p class="all">|</p>
+	# cat=a21glossary;  type=; label=Sorting field: The database field to sort the entries in the glossary list
+	orderBy = short
+}

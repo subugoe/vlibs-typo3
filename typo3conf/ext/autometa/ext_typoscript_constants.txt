@@ -1,0 +1,8 @@
+#cat=autometa; type=boolean; label=Keywords (enable/disable)
+plugin.autometa.keywords.enable = 1
+#cat=autometa; type=boolean; label=Description (enable/disable)
+plugin.autometa.description.enable = 1
+#cat=autometa; type=boolean; label=Author (enable/disable)
+plugin.autometa.author.enable = 0
+#cat=autometa; type=boolean; label=Date (enable/disable)
+plugin.autometa.date.enable = 1

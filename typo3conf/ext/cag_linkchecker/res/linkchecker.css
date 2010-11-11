@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+
+/* somehow we need to override this in TYPO3 4.2.x */
+#typo3-mod-php .docheader-row2-right a {
+	display: inline;
+}
+
+#typo3-mod-php .cag_linkchecker_checkoptions {
+	margin-bottom: 10px;
+}
+
+#typo3-mod-php .cag_linkchecker_checkoptions_send {
+	margin-top: 5px;
+}
+
+#typo3-mod-php .cag_linkchecker_singleOption {
+	padding: 2px 0;
+}
+
+#typo3-mod-php .cag_linkchecker_singleOption label {
+	padding-left: 10px;
+}
+
+#typo3-mod-php .cag_linkchecker_singleOption-showalllinks {
+	padding-bottom: 10px;
+}

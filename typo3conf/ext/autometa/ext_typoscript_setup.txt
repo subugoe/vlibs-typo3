@@ -1,0 +1,53 @@
+plugin.autometa {
+	charset = UTF-8
+	keywords {
+		amount = 10
+		weight.enable = 1
+		stopwordsdir = /fileadmin/autometa/
+	}
+	description {
+		length = 175
+		title.regex = 
+	}
+	author.regex = 
+}
+
+[globalVar = LIT:1 = {$plugin.autometa.keywords.enable}]
+page.meta {
+	keywords >
+	keywords {
+		field = keywords
+		ifEmpty = ###AUTOMETA_KEYWORDS###
+	}
+}
+[end] 
+
+[globalVar = LIT:1 = {$plugin.autometa.description.enable}]
+page.meta {
+	description >
+	description {
+		field = description
+		ifEmpty = ###AUTOMETA_DESCRIPTION###
+	}
+}
+[end] 
+
+[globalVar = LIT:1 = {$plugin.autometa.author.enable}]
+page.meta {
+	author >
+	author {
+		field = author
+		ifEmpty = ###AUTOMETA_AUTHOR###
+	}
+}
+[end] 
+
+[globalVar = LIT:1 = {$plugin.autometa.date.enable}]
+page.meta {
+	date >
+	date {
+		field = SYS_LASTCHANGED
+		date = c
+	}
+}
+[end]

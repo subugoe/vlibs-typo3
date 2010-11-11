@@ -1,0 +1,4 @@
+# cat=basic; type=string; label=List of language UIDs:(without spaces) or "all" --> the URL should be rendered in the default language for this languages
+language_uids = 
+# cat=basic; type=string; label=Default language UID
+default_language_uid = 0

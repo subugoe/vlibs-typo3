@@ -1,0 +1,102 @@
+features:
+	* Find another solution to manipuate HTML output for not overriding the cache, maybe optional db saving.
+	* Add/generate other meta elements out of content.
+	  - "author" could be generated/read out of page content via regular expression (if available) or set static?
+	* Add support for dublin core (not really needed though).
+	* Remove meta generator.
+	* Won't add support for http-equiv since they are no "real" meta informations and should stick to http header.
+
+todo:
+	* Add errorhandling on unknown charset.
+	* Errorhandling on empty charset, fallback to UTF-8?
+	* Use PCRE to find author (defined in TypoScript).
+	* Proper code documentation for functions (comments - partly done).
+	* Possibly keep long numeric values.
+	* Make weighted keywords configureable (weight amount of specific elements).
+	* Make the use of TYPO3SEARCH comments optional though it's not useful anyway.
+	* Test if unicode properties (\p{L} work with any non UTF-8 charset or without u modifier.
+	* Case-sensitive stopwords.
+	* Add TypoScript setup of "page.meta" and constants "plugin.autometa" to debug output.
+	
+Version 1.0.1: 2010-04-27  S. Arnold <s.arnold@rebell.at>
+	* Fix: PREC pattern was not escaped correctly; added delimiter to preg_quote()
+	
+Version 1.0.0: 2010-04-17  S. Arnold <s.arnold@rebell.at>
+	* Fix: Some debug output was created while debugging is off.
+	* Fix: Some typos.
+	* First upload to TER; Thanks to Rene Lauenroth for transfering the extension key.
+	
+Version 0.0.12: 2010-03-31  S. Arnold <s.arnold@rebell.at>
+	* Fix: Description was weighted too, now only for keywords.
+	* Fix: Typo for TYPO3SEARCH debug output.
+	* Fix: Splitting keywords won't work without u modifier if UTF-8 is used.
+	* Add: Some more stopwords in stopwords.de.
+
+Version 0.0.11: 2010-03-04  S. Arnold <s.arnold@rebell.at>
+	* Add: Weighted keywords are available now, weight is hardcoded:
+	       h1, h2 × 5
+	       h3, h4 × 4
+	       h5, h6 × 3
+	       em, strong × 2
+	* Remove: old, unneeded code fragment.
+	* Add: Configureable regular expression for finding the title.
+	       Example: /<title>(.*)(?:\s-\s.*)<\/title>/i matches 'foo bar baz - example.com' while '-' devides the title form the site name.
+	* Add: Debug output for total parsetime.
+	* Add: Few documentation in the code.
+	
+Version 0.0.10: 2010-03-04  S. Arnold <s.arnold@rebell.at>
+	* Add: Configureable number of keywords.
+	* Fix: Errorhandling for description length.
+	
+Version 0.0.9: 2010-03-04  S. Arnold <s.arnold@rebell.at>
+	* Change: Enable switches are now in constants, added via ext_typoscript_constants.txt.
+	* Add: Date can be added now, will be generated with pure typoscript.
+	* Add: Pepared setup for author.
+	* Fix: If an element is disabled, it won't override already set stuff anymore.
+	* Add: Setup variables for PCRE (title and author) though unused for the moment.
+	* Add: Conflicts in ext_emconf.php.
+	
+Version 0.0.8: 2010-03-03  S. Arnold <s.arnold@rebell.at>
+	* Fix: Keywords and description can now be dissabled in TypoScript.
+	
+Version 0.0.7: 2010-03-03  S. Arnold <s.arnold@rebell.at>
+	* Fix: Switch htmlentities and htmlspecialchars in html_codec().
+	* Fix: Fixed warning t3lib_div::devLog() output for non UTF-8 charsets.
+	* Add: New entries to stopwords.de.
+	* Add: Simple generic stopwords.
+	
+Version 0.0.6: 2010-03-03  S. Arnold <s.arnold@rebell.at>
+	* Fix: Reading stopwords with iconv for non UTF-8 charsets.
+	* Add: 'ab' to stopwords.de.
+	* Add: Numeric values stripped from keywords.
+	* Fix: get_rawhtml() had no output without TYPO3SEARCH comments.
+	* Fix: Replaced '…' on non UTF-8 charsets with '...'.
+	
+Version 0.0.5: 2010-03-02  S. Arnold <s.arnold@rebell.at>
+	* Add: Utility function for encoding and decoding of html entitites (html_codec).
+	* Fix: Support for non UTF-8 content, customizable charset used in html_codec().
+	* Fix: Removed u modifier from PCRE function with non UTF-8 context.
+	* Add: Customizeable path for custom stopword files.
+	* Change: TYPO3SEARCH parsing is now an external function (get_rawhtml).
+	* Add: Length of description can now be configured via TypoScript Setup. Default is 175 characters.
+	* Add: default TypoScript Setup for enabling/disabling generation of author and date.
+	
+Version 0.0.4: 2010-03-01  S. Arnold <s.arnold@rebell.at>
+	* Fix: Error control function for optional unicode properties.
+	* Fix: Strip head, script and style elements with contents before stripping tags.
+	
+Version 0.0.3: 2010-02-28  S. Arnold <s.arnold@rebell.at>
+	* Add: Langugage specific stopwords.
+	* Fix: Truncating of description.
+	* Fix: Some extra debugging Messages.
+	
+Version 0.0.2: 2010-02-27  S. Arnold <s.arnold@rebell.at>
+	* Add: ext_conf_template.txt
+	* Add: t3lib_div::devLog() calls for debugging purposes.
+	* Fix: Fallback for missing unicode properties in PCEL.
+	* Change: Small refactoring, store generated plaintext in a variable.
+
+Version 0.0.1: 2009-09-23  S. Arnold <s.arnold@rebell.at> 
+	* New: Based on sourceopt fehook.
+	* New: Created parts with kickstarter.
+	* Add: Icon (FAMFAMFAM Silk Icons - package_add).
