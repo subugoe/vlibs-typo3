@@ -43,9 +43,9 @@ var germanTerms = {
 	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
 	'detail-label-issn': 'ISSN',
+	'detail-label-isbn': 'ISBN',
 	'detail-label-doi': 'DOI',
-	'detail-local-label-isbn': 'ISBN',
-	'detail-local-label-id': 'PPN',
+	'detail-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
 };
@@ -639,7 +639,7 @@ function renderDetails(data, marker) {
 
 			if ( value !== undefined ) {
 				var label = undefined;
-				var labelID = 'detail-local-label-' + fieldName;
+				var labelID = 'detail-label-' + fieldName;
 				var localisedLabelString = localise(labelID);
 
 				if ( localisedLabelString != labelID ) {
