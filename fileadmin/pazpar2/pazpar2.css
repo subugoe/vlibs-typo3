@@ -108,3 +108,12 @@
 #pz2-results .pz2-details ul li {
 	margin: 0;
 }
+
+
+/* facets */
+.pz2-termList .count {
+	color: #999;
+	font-size: 81%;
+	font-style: italic;
+	margin-left: 0.3em;
+}
