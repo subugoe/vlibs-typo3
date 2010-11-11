@@ -43,6 +43,7 @@ var germanTerms = {
 	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
 	'detail-label-issn': 'ISSN',
+	'detail-label-doi': 'DOI',
 	'detail-local-label-isbn': 'ISBN',
 	'detail-local-label-id': 'PPN',
 	'link': '[Link]',
@@ -531,14 +532,44 @@ function renderDetails(data, marker) {
 		return rowMarkup.join('');
 	}	
 
+		
+	var linkForDOI = function (DOIs) {
+		if ( DOIs !== undefined ) {
+			var result = [];
+			for ( var DOINumber in DOIs ) {
+				var DOI = DOIs[DOINumber];
+				result.push('<a href="http://dx.doi.org/' + DOI + '">' + DOI + '</a>');
+			}
+		}
+		return result;
+	}
+
+
+	var processedDataForTitle = function (title) {
+		var theData;
+		if ( data['md-' + title] !== undefined ) {
+			theData = data['md-' + title];
+					
+			switch	(title) {
+				case 'doi':
+					theData = linkForDOI(theData);
+					break;
+			}
+		}
+
+		return theData;
+	}
+
 
 	var detailLineAuto = function (title) {
-		// check whether metadata for type title exist
-		if ( data['md-' + title] !== undefined ) {
-			// build row with class / localised title / data
-			return detailLine( title, data['md-' + title] );
+		var result = '';
+		var theData = processedDataForTitle(title);
+
+		if ( theData !== undefined ) {
+			result = detailLine( title, theData );
 		}
-		return '';
+
+		return result;
 	} 
 
 
@@ -742,7 +773,8 @@ function renderDetails(data, marker) {
 	detailsHTML.push( detailLineAuto('description') );
  	detailsHTML.push( detailLineAuto('medium') );
 	detailsHTML.push( detailLineAuto('series-title') );
-	detailsHTML.push( detailLineAuto('issn'));
+	detailsHTML.push( detailLineAuto('issn') );
+	detailsHTML.push( detailLineAuto('doi') )
 	detailsHTML.push( locationDetails() );
 	detailsHTML.push( extraLinks() );
 
