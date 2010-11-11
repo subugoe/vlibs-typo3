@@ -702,47 +702,12 @@ function renderDetails(data, marker) {
 	}
 
 
-	/*	EZBLinkForISSN
-		input:	string that's assumed to be an ISSN
-		output:	* undefined if ISSN is undefined
-				* DOM anchor element with link to EZB page containing an image with the
-					'traffic lights' for that journal
+
+
 	*/
-	var EZBLinkForISSN = function (ISSN) {
-		if (ISSN) {
-			var EZBURL = 'http://ezb.uni-regensburg.de/ezeit/vascoda/openURL.phtml?pid=format%3Dhtml&genre=article&issn=' + ISSN;
-			var EZBImageURL = 'http://ezb.uni-regensburg.de/vascoda/get_image.php?issn=' + ISSN	;		
-
-			var EZBLink = document.createElement('a');
-			EZBLink.setAttribute('href', EZBURL);
-			var EZBImage = document.createElement('img');
-			EZBLink.appendChild(EZBImage);
-			EZBImage.setAttribute('src', EZBImageURL);
-			EZBImage.setAttribute('alt', localise('Ampelgraphik'));
-		} 
-
-		return EZBLink;
-	}
-
-
-	/*	EZBLinks
-		output:	* array of DOM elements with links and 'traffic light' images for each ISSN found
-				* undefined if no ISSN information is available
-	*/
-	var EZBLinks = function () {
 		var ISSNs = data['md-issn'];
-		if (ISSNs) {
-			var result = [];
-			for (var ISSNNumber in ISSNs) {
-				var ISSNElement = EZBLinkForISSN(ISSNs[ISSNNumber]);
-				if (ISSNElement) {
-					result.push(ISSNElement);
-				}
-			}
 		}
 
-		return result;
-	}
 
 	
 	/*
@@ -1095,7 +1060,6 @@ function renderDetails(data, marker) {
 	appendInfoToContainer( detailLineAuto('issn'), detailsTable );
 	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
 	appendInfoToContainer( locationDetails(), detailsTable );
-	appendInfoToContainer( detailLine(localise('availability'), EZBLinks()), detailsTable );
 	appendInfoToContainer( extraLinks(), detailsTable );
 
 	return detailsDiv;
