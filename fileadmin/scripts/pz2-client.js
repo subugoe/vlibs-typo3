@@ -9,28 +9,56 @@
 var usesessions = true;
 var pazpar2path = '/pazpar2/search.pz2';
 var showResponseType = '';
-var termListNames = ["xtargets", "medium", "author", "subject", "date"];
+
+/* Maintain a list of all facet types so we can loop over it. 
+   Don't forget to also set termlist attributes in the corresponding
+   metadata tags for the service. */ 
+var termListNames = ['xtargets', 'medium', 'author', 'subject', 'date'];
+var termListMax = {'xtargets': 16, 'medium': 6, 'author': 10, 'subject': 10, 'date': 6 };
+
 if (document.location.hash == '#useproxy') {
     usesessions = false;
     pazpar2path = '/service-proxy/';
     showResponseType = 'json';
 }
 
+
+/* Simple-minded localisation:
+   Create a hash for each language, then use the appropriate one on the page. */
 var germanTerms = {
-	"xtargets": "Kataloge",
-	"medium": "Dokumententyp",
-	"author": "Autoren",
-	"subject": "Themengebiete",
-	"date": "Jahre",
+	'facet-title-xtargets': 'Kataloge',
+	'facet-title-medium': 'Art',
+	'facet-title-author': 'Autoren',
+	'facet-title-subject': 'Themengebiete',
+	'facet-title-date': 'Jahre',
+	'detail-label-title': 'Titel',
+	'detail-label-author': 'Autor',
+	'detail-label-date': 'Jahr',
+	'detail-label-isbn': 'ISBN',
+	'detail-label-medium': 'Art',
+	'detail-label-description': 'Infos',
+	'detail-label-series-title': 'Reihe',
+	'detail-local-label-isbn': 'ISBN',
+	'detail-local-label-id': 'PPN',
+	'link': '[Link]',
+	'Kataloge': 'Kataloge',
 };
+
 
 var localisations = {
-	"de": germanTerms,
+	'de': germanTerms,
 };
 
-function localise(term) {
-	return localisations["de"][term];
+
+function localise (term) {
+	var localised = localisations['de'][term];
+	if ( localised == undefined ) {
+		localised = term;
+	}
+	return localised;
 }
+
+
 
 
 my_paz = new pz2( { "onshow": my_onshow,
@@ -54,7 +82,6 @@ var curDetRecData = null;
 var curSort = 'date';
 var curFilter = null;
 var submitted = false;
-var termListMax = {"xtargets": 16, "medium": 6, "author": 10, "subject": 10, "date": 6 };
 
 
 //
@@ -82,21 +109,25 @@ function my_onshow(data) {
     var html = ['<ol start="' + (1 + recPerPage * (curPage - 1)) + '">'];
     for (var i = 0; i < data.hits.length; i++) {
         var hit = data.hits[i];
-		html.push('<li id="recdiv_' + hit.recid + '" >'
-        	+ '<a href="#" id="rec_' + hit.recid
-        	+ '" onclick="showDetails(this.id);return false;">'
-			+ '<span class="pz-item-title">'+ hit["md-title"] + '</span>'); 
-		if (hit["md-title-remainder"] !== undefined) {
-			html.push(' <span class="pz-item-title-remainder">' 
-				+ hit["md-title-remainder"] + '.</span>');
+		html.push('<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
+        	+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
+        	+ '" onclick="toggleDetails(this.id);return false;">'
+			+ '<span class="pz2-item-title">'+ hit["md-title"] + '</span>'); 
+		if (hit['md-title-remainder'] !== undefined) {
+			html.push(' <span class="pz2-item-title-remainder">' 
+				+ hit['md-title-remainder'] + '.</span>');
 		}
-		if (hit["md-title-responsibility"] !== undefined) {
-		 	html.push(' <span class="pz-item-responsibility">'
-				+ hit["md-title-responsibility"] + '</span>');
+		if (hit['md-title-responsibility'] !== undefined) {
+		 	html.push(' <span class="pz2-item-responsibility">'
+				+ hit['md-title-responsibility'] + '</span>');
 		}
-		if (hit["md-date"] !== undefined) {
-			html.push(', <span class="pz-item-date">'
-				+ hit["md-date"] + '</span>');
+		else if (hit['md-title-author'] !== undefined) {
+			html.push(' <span class="pz2-item-responsibility">'
+				+ hit['md-title-author'] + '</span>');
+		}
+		if (hit['md-date'] !== undefined) {
+			html.push(', <span class="pz2-item-date">'
+				+ hit['md-date'] + '</span>.');
 		}
 		if (hit.recid == curDetRecId) {
 			html.push(renderDetails(curDetRecData));
@@ -125,7 +156,7 @@ function my_onterm(data) {
 	// Creates markup for the termlist of type
 	var termListHTML = function (type) {
 		var theHTML = ['<div class="pz2-termList pz2-termList-', type, '">',
-			'<h5>', localise(type), '</h5><ol>'];
+			'<h5>', localise('facet-title-'+type), '</h5><ol>'];
 		var terms = data[type];
 		for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
         	theHTML.push( '<li><a href="#"'
@@ -154,11 +185,11 @@ function my_onrecord(data) {
     // FIXME: record is async!!
     clearTimeout(my_paz.recordTimer);
     // in case on_show was faster to redraw element
-    var detRecordDiv = document.getElementById('det_'+data.recid);
+    var detRecordDiv = document.getElementById('det_'+ HTMLIDForRecordData(data));
     if (detRecordDiv) return;
     curDetRecData = data;
-    var recordDiv = document.getElementById('recdiv_'+curDetRecData.recid);
-    var html = renderDetails(curDetRecData);
+    var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
+    var html = renderDetails(curDetRecData).join('');
     recordDiv.innerHTML += html;
 }
 
@@ -185,11 +216,13 @@ function my_onbytarget(data) {
 
 // wait until the DOM is ready
 function domReady () 
-{ 
-    document.search.onsubmit = onFormSubmitEventHandler;
-    document.search.query.value = '';
-    document.select.sort.onchange = onSelectDdChange;
-    document.select.perpage.onchange = onSelectDdChange;
+{
+	if ( document.search ) {
+		document.search.onsubmit = onFormSubmitEventHandler;
+		document.search.query.value = '';
+		document.select.sort.onchange = onSelectDdChange;
+		document.select.perpage.onchange = onSelectDdChange;
+	}
 }
 
 // when search button pressed
@@ -349,25 +382,28 @@ function switchView(view) {
 }
 
 // detailed record drawing
-function showDetails (prefixRecId) {
+function toggleDetails (prefixRecId) {
     var recId = prefixRecId.replace('rec_', '');
-    var oldRecId = curDetRecId;
-    curDetRecId = recId;
+    // var oldRecId = curDetRecId;
+    // curDetRecId = recId;
     
     // remove current detailed view if any
-    var detRecordDiv = document.getElementById('det_'+oldRecId);
+    var detRecordDiv = document.getElementById('det_'+ recId);
     // lovin DOM!
-    if (detRecordDiv)
-      detRecordDiv.parentNode.removeChild(detRecordDiv);
+    if (detRecordDiv) {
+		detRecordDiv.parentNode.removeChild(detRecordDiv);
+	}
+	else {
 
     // if the same clicked, just hide
-    if (recId == oldRecId) {
-        curDetRecId = '';
-        curDetRecData = null;
-        return;
-    }
+ //   if (recId == oldRecId) {
+   //     curDetRecId = '';
+     //   curDetRecData = null;
+//        return;
+  //  }
     // request the record
-    my_paz.record(recId);
+		my_paz.record(recordIDForHTMLID(recId));
+	}
 }
 
 function replaceHtml(el, html) {
@@ -384,35 +420,170 @@ function replaceHtml(el, html) {
   return newEl;
 };
 
-function renderDetails(data, marker)
-{
-    var details = '<div class="pz2-details" id="det_'+data.recid+'"><table>';
-    if (marker) details += '<tr><td>'+ marker + '</td></tr>';
-    if (data["md-title"] != undefined) {
-        details += '<tr><td><b>Title</b></td><td><b>:</b> '+data["md-title"];
-  	if (data["md-title-remainder"] !== undefined) {
-	      details += ' : <span>' + data["md-title-remainder"] + ' </span>';
-  	}
-  	if (data["md-title-responsibility"] !== undefined) {
-	      details += ' <span><i>'+ data["md-title-responsibility"] +'</i></span>';
-  	}
- 	  details += '</td></tr>';
-    }
-    if (data["md-date"] != undefined)
-        details += '<tr><td><b>Date</b></td><td><b>:</b> ' + data["md-date"] + '</td></tr>';
-    if (data["md-author"] != undefined)
-        details += '<tr><td><b>Author</b></td><td><b>:</b> ' + data["md-author"] + '</td></tr>';
-    if (data["md-electronic-url"] != undefined)
-        details += '<tr><td><b>URL</b></td><td><b>:</b> <a href="' + data["md-electronic-url"] + '" target="_blank">' + data["md-electronic-url"] + '</a>' + '</td></tr>';
+
+function renderDetails(data, marker) {
+	var detailLine = function (title, information) {
+		var rowMarkup = [];
+		rowMarkup.push('<tr class="pz2-detail-', title, '"><th>', 
+			localise('detail-label-'+title), ':</th><td>');
+		if (information.length == 1) {
+			rowMarkup.push(information[0]);
+		}
+		else {
+			rowMarkup.push('<ul>');
+			for (var itemNumber in information) {
+				rowMarkup.push('<li>' + information[itemNumber] + '</li>');
+			}
+			rowMarkup.push('</ul>');
+		}
+		rowMarkup.push('</td></tr>');
+		return rowMarkup.join('');
+	}	
+
+	var detailLineAuto = function (title) {
+		// check whether metadata for type title exist
+		if ( data['md-' + title] !== undefined ) {
+			// build row with class / localised title / data
+			return detailLine( title, data['md-' + title] );
+		}
+		return '';
+	} 
+
+	var locationDetails = function () {
+		var addInfoItem = function (fieldName) {
+			var value = location['md-'+fieldName];
+			if ( value !== undefined ) {
+				var title = '';
+				var labelString = 'detail-local-label-'+fieldName
+				var localisedLabelString = localise(labelString);
+				if ( localisedLabelString != labelString ) {
+					title = '<span class="title">' + localisedLabelString + ':</span> ';
+				}  
+				localInfoItems.push('<span class="pz2-local-"' + fieldName + '">'
+					+ title + value.join(', ') + '</span>');
+			}
+		}
+	
+		var markup = ['<tr><th>', localise('Kataloge'), 
+			':</th><td><dl class="pz2-locations">'];
+
+		for ( var locationNumber in data.location ) {
+			var localInfoItems = []
+
+			var location = data.location[locationNumber];
+			var localURL = location['@id'];
+			var localName = location['@name'];
+
+			markup.push('<dt class="pz2-location" title="' + localURL + '">' 
+				+ localName + '</dt><dd>');
+
+			addInfoItem('publication-name');
+			addInfoItem('publication-place');
+			addInfoItem('publication-year');
+			addInfoItem('series-title');
+			addInfoItem('isbn');
+
+			
+			// electronic resources
+			var localElectronicURLs = location['md-electronic-url'];
+			var localElectronicTexts = location['md-electronic-text'];
+
+			if ( localElectronicURLs !== undefined ) {
+				var URLMarkup = ['<span class="pz2-links">'];
+				var links = []
+				if ( localElectronicTexts !== undefined 
+					&& localElectronicURLs.length == localElectronicTexts.length ) {
+					for ( var URLNumber in localElectronicURLs ) {
+						links.push('<a target="pz2-detail-tab" href="' 
+							+ localElectronicURLs[URLNumber] + '">' 
+							+ localElectronicTexts[URLNumber] + '</a>');
+					}
+				}
+				else {
+					for ( var URLNumber in localElectronicURLs ) {
+						links.push('<a target="pz2-detail-tab" href="' 
+							+ localElectronicURLs[URLNumber] + '">' 
+							+ localise('link') + '</a>');
+					}
+				}
+				URLMarkup.push(links.join(', '));
+				URLMarkup.push('</span>');
+				localInfoItems.push(URLMarkup.join(''));
+			}
+
+			addInfoItem('id');
+
+			markup.push(localInfoItems.join('; '));
+			markup.push('.</dd>');	
+		}
+		markup.push('</dl></td></tr>');
+		return markup.join('');
+	}
+
+
+
+	var detailsHTML = ['<div class="pz2-details" id="det_', 
+		HTMLIDForRecordData(data), '"><table>'];
+	if (marker) {
+		detailsHTML.push('<tr class="pz2-detail-' + marker + '"><td>'
+			+ marker + '</td></tr>');
+	}
+
+/*
+	if (data['md-title'] !== undefined) {
+		var titleDetail = data['md-title'];
+		if (data['md-title-remainder'] !== undefined) {
+			titleDetail += ' : <span class="pz2-title-remainder">' 
+				+ data['md-title-remainder'] + '</span>';
+		}
+	  	if (data['md-title-responsibility'] !== undefined) {
+	    	titleDetail += ' / <span class="pz2-item-responsibility">'+ data['md-title-responsibility'] + '</span>';
+	  	}
+		detailsHTML.push( detailLine('title', titleDetail) );
+	}
+*/
+	detailsHTML.push( detailLineAuto('author') );
+//	detailsHTML.push( detailLineAuto('date') );
+	detailsHTML.push( detailLineAuto('description') );
+	detailsHTML.push( detailLineAuto('isbn') );
+	detailsHTML.push( detailLineAuto('medium') );
+	detailsHTML.push( locationDetails() );
+
+    if (data['md-electronic-url'] !== undefined) {
+		var link = '<a href="' + data['md-electronic-url'] + '>' + data['md-electronic-url'] + '</a>';
+		detailsHTML.push( detailLine('URL', link) );
+	}
+
+/*
     if (data["location"][0]["md-subject"] != undefined)
         details += '<tr><td><b>Subject</b></td><td><b>:</b> ' + data["location"][0]["md-subject"] + '</td></tr>';
+*/
+/*
     if (data["location"][0]["@name"] != undefined)
         details += '<tr><td><b>Location</b></td><td><b>:</b> ' + data["location"][0]["@name"] + " (" +data["location"][0]["@id"] + ")" + '</td></tr>';
     details += '</table></div>';
-    return details;
-}
- 
+*/
 
+    return detailsHTML;
+}
+
+
+/* 	Input: pz2 record data object
+	Output: ID of that object in HTML-compatible form
+			(replacing spaces by dashes)
+*/
+function HTMLIDForRecordData (recordData) {
+	if (recordData.recid[0] !== undefined) {
+		return recordData.recid[0].replace(/ /g,'-');
+	}
+}
+
+/*	Input: Record ID in HTML compatible form
+	Output: input with dashes replaced by spaces
+*/
+function recordIDForHTMLID (HTMLID) {
+	return HTMLID.replace(/-/g,' ');
+}
 
 //EOF
  

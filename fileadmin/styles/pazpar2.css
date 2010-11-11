@@ -20,7 +20,7 @@
 	margin-bottom: 1em;
 }
 
-#pz2-recordView ol a {
+.pz2-recordLink {
 	display: block;
 }
 
@@ -65,11 +65,46 @@
 
 /* item records */
 
-.pz-item-title {
+.pz2-item-title {
 	font-weight: bold;
 }
 
-.pz-item-responsibility {
+.pz2-item-responsibility {
 	font-style: italic;
 }
 
+.pz2-details {
+	font-size: 71%;
+}
+
+.pz2-details table {
+	width:100%;
+}
+
+.pz2-details th {
+	text-align: right;
+	vertical-align: top;
+}
+
+.pz2-locations {
+	position: relative;
+}
+
+.pz2-locations dt {
+	font-weight: bold;
+	float: left;
+	clear: left;
+}
+
+.pz2-locations dd {
+	padding-left: 1em;
+	text-indent: 0.5em;
+}
+
+.pz2-details ul {
+	padding-left: 2em;
+}
+
+#pz2-results .pz2-details ul li {
+	margin: 0;
+}
