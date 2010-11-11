@@ -567,9 +567,38 @@ function renderDetails(data, marker) {
 	}
 
 
+
+	/*	markupInfoItems
+		Returns marked up version of the DOM items passed, putting them into a list if necessary:
+		input:	infoItems - array of DOM elements to insert
+		output: * 1-element array => just the element
+				* multi-element array => UL with an LI containing each of the elements
+				* empty array => undefined
+	*/
+	var markupInfoItems = function (infoItems) {
+		var result;
+
+		if (infoItems.length == 1) {
+			 result = infoItems[0];
+		}
+		else if (infoItems.length > 1) {
+			result = document.createElement('ul');
+			$(infoItems).each( function(index) {
+					var LI = document.createElement('li');
+					result.appendChild(LI);
+					LI.appendChild(this);
+				}
+			);
+		}
+
+		return result;
+	}
+
+
+
 	/*	detailLine
 		input:	title - string with element's name
-				informationElement - array of DOM elements with the information to be displayed
+				informationElements - array of DOM elements with the information to be displayed
 		output: DOM element of table row with 
 				* heading containing the localised and plural conscious name of the item
 				* data containing the informationElements passed. 
@@ -577,16 +606,10 @@ function renderDetails(data, marker) {
 	*/
 	var detailLine = function (title, informationElements) {
 		if (informationElements && title) {
-			var tableRow = document.createElement('tr');
-			tableRow.setAttribute('class', 'pz2-detail-' + title);
-			var rowHeading = document.createElement('th');
-			tableRow.appendChild(rowHeading);
-			var rowData = document.createElement('td');
-			tableRow.appendChild(rowData);
+			var headingText;	
 
 			if (informationElements.length == 1) {
-				rowHeading.appendChild(document.createTextNode(localise('detail-label-'+title)+':'));
-				rowData.appendChild(informationElements[0]);
+				headingText = localise('detail-label-'+title);
 			}
 			else {
 				var labelKey = 'detail-label-' + title + '-plural';
@@ -595,21 +618,28 @@ function renderDetails(data, marker) {
 					labelKey = 'detail-label-' + title;
 					labelLocalisation = localise(labelKey);
 				}
-				rowHeading.appendChild(document.createTextNode(labelLocalisation + ':'));
+				headingText = labelLocalisation;
+			}
 
-				var rowDataUL = document.createElement('ul');
-				rowData.appendChild(rowDataUL);
+			var infoItems = markupInfoItems(informationElements);
 
-				for (var itemNumber in informationElements) {
-					var rowDataLI = document.createElement('li');
-					rowDataUL.appendChild(rowDataLI);
-					rowDataLI.appendChild(informationElements[itemNumber]);
-				}
+			if (infoItems) { // we have information, so insert it
+				var tableRow = document.createElement('tr');
+				tableRow.setAttribute('class', 'pz2-detail-' + title);
+
+				var rowHeading = document.createElement('th');
+				tableRow.appendChild(rowHeading);
+				rowHeading.appendChild(document.createTextNode(headingText + ':'));
+
+				var rowData = document.createElement('td');
+				tableRow.appendChild(rowData);
+				rowData.appendChild(infoItems);
 			}
 		}
 
 		return tableRow;
 	}
+
 
 
 	/*	detailLineAuto
