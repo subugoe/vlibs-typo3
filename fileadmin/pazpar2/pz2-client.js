@@ -42,6 +42,7 @@ var germanTerms = {
 	'detail-label-description': 'Information',
 	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
+	'detail-local-label-isbn': 'ISBN',
 	'detail-local-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
@@ -581,10 +582,7 @@ function renderDetails(data, marker) {
 				and adds hyphens to them.
 		*/
 		var normaliseISBNsInString = function (ISBN) {
-			var normalisedISBN;
-			normalisedISBN = ISBN.replace(/(^|[^0-9])([0-9]{3})([0-9])([0-9]{3})([0-9]{5})([0-9Xx])/g, '$2-$3-$4-$5-$6');
-			normalisedISBN = normalisedISBN.replace(/(^|[^0-9])([0-9])([0-9]{3})([0-9]{5})([0-9Xx])/g, '$2-$3-$4-$5');
-			return normalisedISBN;
+			return ISBN.replace(/([0-9])-([0-9Xx])/g, '$1$2');
 		}
 
 
