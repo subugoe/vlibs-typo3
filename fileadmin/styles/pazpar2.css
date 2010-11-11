@@ -1,0 +1,75 @@
+#pazpar2 {
+	margin: 1em 0em;
+}
+
+#pazpar2 a {
+	text-decoration:none;
+}
+
+
+
+.pz2-ranking .pz2-perPage {
+	display: none;
+}
+
+.pz2-recordCount {
+	float: right;
+}
+
+#pz2-navi {
+	margin-bottom: 1em;
+}
+
+#pz2-recordView ol a {
+	display: block;
+}
+
+#pz2-results {
+	margin-right: 17em;
+}
+
+#pz2-results ol {
+	padding-left: 3em;
+}
+
+#pz2-results ol li {
+	margin-bottom: 0.5em;
+}
+
+#pz2-termLists {
+	float:right;
+	width: 15em;
+	font-family: Optima, Tahoma, sans-serif;
+	font-size: 88%;
+}
+
+#pz2-termLists h4 {
+	display: none;
+}
+
+.pz2-termList h5 {
+	text-transform: uppercase;
+	margin-bottom: 0.25em;
+}
+
+.pz2-termList ol {
+	list-style-type: none;
+	margin-bottom: 1em;
+}
+
+.pz2-termList-author ol {
+	text-transform: capitalize;
+}
+
+
+
+/* item records */
+
+.pz-item-title {
+	font-weight: bold;
+}
+
+.pz-item-responsibility {
+	font-style: italic;
+}
+

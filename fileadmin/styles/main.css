@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Georgia, Palatino, serif;
+	color: #000;
+	background: #ddd;
+	padding: 1em;
+}
+
+
+#head, #foot, #menu, h1, h2, h3, h4, h5, h6 {
+	font-family: Optima, Tahoma, sans-serif;
+}
+
+
+#page { 
+	max-width: 60em;
+	background: #fff;
+	margin: auto;
+	-webkit-box-shadow: 2px 2px 4px #666;
+}
+
+
+#head {
+	background: #66b;
+	color: #fff;
+	padding: 0.5em 0.5em 0.5em 0.75em;
+	margin-top: 2em;
+}
+
+#head h1 {
+	font-size: 100%;
+	margin-bottom: -0.5em;
+	text-shadow: 2px 1.5px 4px #666;
+}
+
+#head h1 .initial {
+	font-size: 800%;
+	line-height: 40%;
+}
+
+#main {
+	position:relative;
+}
+
+
+#menu {
+	width: 10em;
+	float: left;
+	background: #66b;
+	color: #fff;
+}
+
+#menu ul {
+	list-style-type: none;
+}
+
+#menu ul li {
+	padding: 0.5em 0.75em 0em 0.75em;
+}
+
+#menu ul li, #menu ul li a {
+	color: #fff;
+}
+
+#menu ul li.current, #menu ul li.current a {
+	background: #fff;
+	color: #000;
+	text-decoration: none;
+}
+
+#content {
+	margin-left: 10em;
+	background: #fff;
+	padding: 1em;
+}
+
+
+#foot {
+	clear: both;
+	background: #66b;
+	color: #fff;
+	text-align: center;
+	padding: 0.5em;
+}
+
+#foot a, #foot a:visited {
+	color: #fff;
+}
