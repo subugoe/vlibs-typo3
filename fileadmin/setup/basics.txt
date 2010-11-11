@@ -1,0 +1,41 @@
+// Global Settings
+config {
+	doctype = html_5
+	renderCharset = utf-8
+
+	index_enable = 1
+	index_external = 1
+}
+
+
+page = PAGE
+page {
+	typenum = 0
+	stylesheet = {$my_stylesheet_file}
+	meta.description.field = description
+	meta.keywords.field = keywords
+}
+
+
+page.1 = TEMPLATE
+page.1 {
+	template = FILE
+	template.file = {$my_template_file}
+	
+	workOnSubpart = DOCUMENT
+	
+	marks {
+		HEAD < lib.head
+		LANGUAGE < lib.language
+		MENU < lib.menu
+		
+		HEADLINE = TEXT
+		HEADLINE.field = subtitle // title
+		HEADLINE.wrap = <h2>|</h2>
+
+		CONTENT < styles.content.get
+		FOOT < lib.foot
+	}
+}
+
+

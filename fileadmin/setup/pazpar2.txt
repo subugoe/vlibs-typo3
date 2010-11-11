@@ -1,0 +1,17 @@
+page.bodyTagAdd = onload="domReady();"
+
+page.headerData {
+  20 = TEXT
+  20.value = <script type="text/javascript">my_serviceID = "{$my_pz2_serviceID}";</script>
+
+  30 = TEXT
+  30.value = <script type="text/javascript" src="/demo/js/pz2.js"></script>
+  
+  40 = TEXT
+  40.value = <script type="text/javascript" src="/vlib-test/fileadmin/pazpar2/pz2-client.js"></script>
+
+  50 = TEXT
+  50.value = <link rel="stylesheet" type="text/css" href="/vlib-test/fileadmin/pazpar2/pazpar2.css">
+}
+
+
