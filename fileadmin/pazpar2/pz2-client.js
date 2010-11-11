@@ -45,7 +45,9 @@ var germanTerms = {
 	'detail-label-isbn': 'ISBN',
 	'detail-label-doi': 'DOI',
 	'detail-label-doi-plural': 'DOIs',
-	'detail-label-availability': 'Verfügbarkeit',
+	'detail-label-verfügbarkeit': 'Verfügbarkeit',
+	'elektronisch': 'digital',
+	'gedruckt': 'gedruckt',
 	'detail-label-id': 'PPN',
 	'link': '[Link]',
 	'Kataloge': 'Kataloge',
@@ -703,17 +705,229 @@ function renderDetails(data, marker) {
 
 
 
+	/*	ZDBQuery
+		Loads XML journal info from ZDB via a proxy on our own server (to avoid cross-domain load problems).
+		Inserts the information into the DOM.
 
+		input:	element - DOM element that the resulting information is inserted into.
 	*/
+	var addZDBInfoIntoElement = function (element) {
+		var serviceID = 'sub:vlib';
+		var parameters = 'sid=' + serviceID + '&genre=article';
+
 		var ISSNs = data['md-issn'];
+		for (ISSNNumber in ISSNs) {
+			parameters += '&issn=' + ISSNs[ISSNNumber];
 		}
 
+		var year = data['md-date'];
+		if (year) {
+			var yearNumber = parseInt(year[0], 10);
+			parameters += '&date=' + yearNumber;
+		}
 
+		var ZDBURL = '/zdb/full.xml?' + parameters;
+
+		$.get(ZDBURL,
+			/*	AJAX callback
+				Creates DOM elements with information coming from ZDB.
+				input:	resultData - XML from ZDB server
+				uses:	element - DOM element for inserting the information into
+			*/
+			function (resultData) {
+
+				/*	ZDBInfoItemForResult
+					Turns XML of a single ZDB Result a DOM element displaying the relevant information.
+					input:	ZDBResult - XML Element with a Full/(Print|Electronic)Data/ResultList/Result element
+					output:	DOM Element for displaying the information in ZDBResult that's relevant for us
+				*/
+				var ZDBInfoItemForResult = function (ZDBResult) {
+					var status = ZDBResult.getAttribute('state');
+					var statusText;
+
+					// Determine the access status of the result.
+					if (status == 0) {
+						statusText = localise('frei verfügbar');
+					}
+					else if (status == 1) {
+						statusText = localise('teilweise frei verfügbar');
+					}
+					else if (status == 2) {
+						statusText = localise('verfügbar');
+					}
+					else if (status == 3) {
+						statusText = localise('teilweise verfügbar');
+					}
+					else if (status == 4) {
+						statusText = localise('nicht verfügbar');
+					}
+					else if (status == 5) {
+						statusText = localise('diese Ausgabe nicht verfügbar');
+					}
+					else {
+						/*	Remaining cases are:
+								status == -1: non-unique ISSN
+								status == 10: unknown
+						*/
+					}
+					
+					// Only display detail information if we do have access.
+					if (statusText) {
+						var statusDiv = document.createElement('div');
+						statusDiv.setAttribute('class', 'pz2-ZDBStatusInfo');
+
+						var accessLinkURL = $('AccessURL', ZDBResult);
+						if (accessLinkURL.length > 0) {
+							// Having an AccessURL implies this is inside ElectronicData.
+							statusDiv.appendChild(document.createTextNode(statusText));
+							var accessLink = document.createElement('a');
+							statusDiv.appendChild(document.createTextNode(' – '));
+							statusDiv.appendChild(accessLink);
+							accessLink.setAttribute('href', accessLinkURL[0].textContent);
+							accessLink.appendChild(document.createTextNode(localise('Zugriff')));
+
+							var additionals = [];
+							var ZDBAdditionals = $('Additional', ZDBResult);
+							ZDBAdditionals.each( function (index) {
+									additionals.push(this.textContent);
+								}
+							);
+							if (additionals.length > 0) {
+								accessLink.setAttribute('title', additionals.join('; ') + '.');
+							}
+						}
+						else {
+							// Absence of an AccessURL implies this is inside PrintData.
+							var locationInfo = document.createElement('span');
+							var infoText = '';
+
+							var period = $('Period', ZDBResult)[0];
+							if (period) {
+								infoText += period.textContent + ': ';
+
+							}
+							var location = $('Location', ZDBResult)[0];
+							if (location) {
+								infoText += location.textContent + ' ';
+							}
+
+							var signature = $('Signature', ZDBResult)[0];
+							if (signature) {
+								infoText += signature.textContent;
+							}
+
+							locationInfo.appendChild(document.createTextNode(infoText));
+							statusDiv.appendChild(locationInfo);
+						}			
+					}	
+					return statusDiv;
+				}
+
+
+
+				/*	appendLibraryNameFromResultDataTo
+					If we there is a Library name, insert it into the target container.
+					input:	* data: ElectronicData or PrintData element from ZDB XML
+							* target: DOM container to which the marked up library name is appended
+				*/
+				var appendLibraryNameFromResultDataTo = function (data, target) {
+					var libraryName = $('Library', data)[0];
+					if (libraryName) {
+						var libraryNameSpan = document.createElement('span');
+						libraryNameSpan.setAttribute('class', 'pz2-ZDBLibraryName');
+						libraryNameSpan.appendChild(document.createTextNode(libraryName.textContent));
+						target.appendChild(libraryNameSpan);
+					}
+				}
+
+
+
+				/*	ZDBInfoElement
+					Coverts ZDB XML data for electronic or print journals
+						to DOM elements displaying their information.
+					input:	data - ElectronicData or PrintData element from ZDB XML
+					output:	DOM element containing the information from data
+				*/				
+				var ZDBInfoElement = function (data) {
+					var results = $('Result', data);
+
+					if (results.length > 0) {
+						var infoItems = [];
+						results.each( function(index) {
+								var ZDBInfoItem = ZDBInfoItemForResult(this);
+								if (ZDBInfoItem) {
+									infoItems.push(ZDBInfoItem);
+								}
+							}
+						);
+
+						if (infoItems.length > 0) {
+							var infos = document.createElement('span');
+							infos.appendChild(markupInfoItems(infoItems));
+						}
+					}
+
+					return infos;
+				}
+
+
+				/*	ZDBInformation
+					Converts complete ZDB XML data to DOM element containing information about them.
+					input:	data - result from ZDB XML request
+					output: DOM element displaying information about journal availability.
+								If ZDB figures out the local library and the journal
+									is accessible there, we display:
+									* its name
+									* electronic journal information with access link
+									* print journal information
+				*/
+				var ZDBInformation = function (data) {
+					var container = document.createElement('div');
+					var ZDBLink = document.createElement('a');
+					container.appendChild(ZDBLink);
+					var ZDBLinkURL = 'http://services.d-nb.de/fize-service/gvr/html-service.htm?' + parameters;
+					ZDBLink.setAttribute('href', ZDBLinkURL);
+					ZDBLink.setAttribute('class', 'pz2-ZDBLink');
+					ZDBLink.appendChild(document.createTextNode(localise('Informationen bei der Zeitschriftendatenbank')));
+					
+					var electronicInfos = ZDBInfoElement( $('ElectronicData', data) );
+					var printInfos = ZDBInfoElement( $('PrintData', data) );
+					
+					if (electronicInfos || printInfos) {
+						appendLibraryNameFromResultDataTo(data, container);
+					}
+
+					if (electronicInfos) {
+						var heading = document.createElement('h4');
+						container.appendChild(heading);
+						heading.appendChild(document.createTextNode(localise('elektronisch')));
+						container.appendChild(electronicInfos);
+					}
+
+					if (printInfos) {
+						var heading = document.createElement('h4');
+						container.appendChild(heading);
+						heading.appendChild(document.createTextNode(localise('gedruckt')));
+						container.appendChild(printInfos);
+					}
+
+					return container
+				}
+
+
+				var infoBlock = [ZDBInformation(resultData)];
+				appendInfoToContainer( detailLine(localise('verfügbarkeit'), infoBlock), element);
+
+			}
+		);
+	}
 	
+
+
+
 	/*
 		Figure out whether there is a Google Books Preview for the current data.
-		Parameters: 
-		* element: DOM element that is the container of the Google Books Preview button.
+		input:	element: DOM element that is the container of the Google Books Preview button.
 	*/
 	var addGoogleBooksLinkIntoElement = function (element) {
 
@@ -1061,6 +1275,8 @@ function renderDetails(data, marker) {
 	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
 	appendInfoToContainer( locationDetails(), detailsTable );
 	appendInfoToContainer( extraLinks(), detailsTable );
+	addZDBInfoIntoElement( detailsTable );
+
 
 	return detailsDiv;
 }
