@@ -106,7 +106,14 @@ function my_oninit() {
 }
 
 
+
+/*	my_onshow
+	Creates a brief record for the data passed.
+	Callback for pazpar2 when data become available.
+	input: 	data - pazpar2 record data
+*/
 function my_onshow(data) {
+
 	var titleInfo = function() {
 		var output = '<li id="recdiv_' + HTMLIDForRecordData(hit) + '" >'
 			+ '<a href="#" class="pz2-recordLink" id="rec_' + HTMLIDForRecordData(hit)
@@ -286,11 +293,7 @@ function my_onrecord(data) {
 	curDetRecData = data;
 	var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
 	var details = renderDetails(curDetRecData);
-
-//	replaceHtml(recordDiv, html);
-//	var myDiv = document.createElement('div');
-	//myDiv.innerHTML = html;
-   recordDiv.appendChild( details );
+	recordDiv.appendChild( details );
 }
 
 
@@ -551,8 +554,13 @@ function replaceHtml(el, html) {
 
 function renderDetails(data, marker) {
 
+	/*	deduplicate
+		Removes duplicate entries from an array. 
+		The first occurrence of any item is kept, later ones are removed.
+		This function works in place and alters the original array.
+		input:	information - array to remove duplicate entries from.
+	*/
 	var deduplicate = function (information) {
-		// remove duplicate entries from an array
 		for (var i = 0; i < information.length; i++) {
 			var item = information[i];
 			var isDuplicate = false;
@@ -659,6 +667,7 @@ function renderDetails(data, marker) {
 
 		return result;
 	} 
+
 
 	
 	/*	linkForDOI
@@ -925,7 +934,7 @@ function renderDetails(data, marker) {
 
 
 
-	/*
+	/*	addGoogleBooksLinkIntoElement
 		Figure out whether there is a Google Books Preview for the current data.
 		input:	element: DOM element that is the container of the Google Books Preview button.
 	*/
@@ -947,7 +956,7 @@ function renderDetails(data, marker) {
 		}
 		
 
-		// Asynchronously query Google Books for the ISBN/OCLC numbers in question.
+		// Query Google Books for the ISBN/OCLC numbers in question.
 		var googleBooksURL = 'http://books.google.com/books?bibkeys=' + searchTerms 
 					+ '&jscmd=viewapi&callback=?';
 		$.getJSON(googleBooksURL,
@@ -1001,13 +1010,18 @@ function renderDetails(data, marker) {
 		);
 
 
-		// Open Preview when Google Books button is clicked.
+
+		/*	openPreview
+			Called when the Google Books button is clicked.
+			Opens Google Preview.
+			output: false (so the click isn't handled any further)
+		*/
 		var openPreview = function() {
 			// Get hold of containing <div>, creating it if necessary.
-			var previewDivName = 'googlePreview';
-			var previewDiv = document.getElementById(previewDivName);
 			var previewContainerDivName = 'googlePreviewContainer';
 			var previewContainerDiv = document.getElementById(previewContainerDivName);
+			var previewDivName = 'googlePreview';
+			var previewDiv = document.getElementById(previewDivName);
 
 			if (!previewContainerDiv) {
 				previewContainerDiv = document.createElement('div');
@@ -1017,11 +1031,13 @@ function renderDetails(data, marker) {
 				var titleBarDiv = document.createElement('div');
 				titleBarDiv.setAttribute('class', 'titleBar');
 				previewContainerDiv.appendChild(titleBarDiv);
-				$(titleBarDiv).css({height:'20px', width:'100%', position:'absolute', top:'-20px', background:'#eee'});
+				$(titleBarDiv).css({height:'20px', width:'100%', 
+									position:'absolute', top:'-20px', background:'#eee'});
 
 				var closeBoxLink = document.createElement('a');
 				titleBarDiv.appendChild(closeBoxLink);
-				$(closeBoxLink).css({display:'block', height:'16px', width:'16px', position:'absolute', right:'2px', top:'2px', background:'#666'})
+				$(closeBoxLink).css({display:'block', height:'16px', width:'16px', 
+									position:'absolute', right:'2px', top:'2px', background:'#666'})
 				closeBoxLink.setAttribute('href', 'javascript:$("#' + previewContainerDivName + '").hide(200);');
 
 				var previewDiv = document.createElement('div');
@@ -1032,14 +1048,22 @@ function renderDetails(data, marker) {
 				$(previewContainerDiv).show(200);
 			}
 
-			// Viewer: stored in the container div, created when needed.
 			var viewer = new google.books.DefaultViewer(previewDiv);
 			viewer.load(this.href);
 
 			return false;
-		}		
-	}
+		}
 
+
+	} // end of addGoogleBooksLinkIntoElement
+
+
+
+	/*	extraLinks
+		Returns table row element with additional links:
+			* Google Books, if possible
+		output:	TR DOM element
+	*/
 	var extraLinks = function () {
 		var tr = document.createElement('tr');
 		tr.appendChild(document.createElement('th'));
@@ -1051,16 +1075,15 @@ function renderDetails(data, marker) {
 		booksSpan.setAttribute('class', 'googleBooks');
 		addGoogleBooksLinkIntoElement(booksSpan);
 
-
-		//var coverSpan = document.createElement('span');
-		//td.appendChild(coverSpan);
-		//coverSpan.setAttribute('class', 'covers');
-		// addCoverArtIntoElement(coverSpan);
-
 		return tr;
 	}
 
 
+	/*	appendInfoToContainer
+		Convenince method to append an item to another one, even if undefineds and arrays are involved.
+		input:	* info - the DOM element to insert
+				* container - the DOM element to insert info to
+	*/
 	var appendInfoToContainer = function (info, container) {
 		if (info != undefined && container != undefined ) {
 			if (typeof(info.length) === 'undefined') {
@@ -1077,9 +1100,18 @@ function renderDetails(data, marker) {
 
 
 
-
+	/*	locationDetails
+		Returns markup for each location of the item found from the current data.
+		output:	DOM object with information about this particular copy/location of the item found
+	*/
 	var locationDetails = function () {
 
+		/*	detailInfoItemWithLabel
+			input:	fieldContent - DOM object with content to display in the field
+					labelName - string displayed as the label
+					dontTerminate - boolean:	false puts a ; after the text
+												true puts nothing after the text
+		*/
 		var detailInfoItemWithLabel = function (fieldContent, labelName, dontTerminate) {
 			var infoSpan;
 			if ( fieldContent !== undefined ) {
@@ -1102,6 +1134,13 @@ function renderDetails(data, marker) {
 		}
 
 
+
+		/*	detailInfoItem
+			input:	fieldName - string
+			output:	DOM elements containing the label and information for fieldName data
+						* the label is looked up from the localisation table
+						* data[detail-label-fieldName] provides the data
+		*/
 		var detailInfoItem = function (fieldName) {
 			var infoItem;
 			var value = location['md-'+fieldName];
@@ -1185,7 +1224,12 @@ function renderDetails(data, marker) {
 			}
 		}
 
-		
+
+
+		/*	electronicURLs
+			Create markup for URLs in current data.
+			output:	DOM element containing URLs as links.
+		*/
 		var electronicURLs = function() {
 			var electronicURLs = location['md-electronic-url'];
 			var URLsContainer;
@@ -1219,6 +1263,7 @@ function renderDetails(data, marker) {
 			}
 			return URLsContainer;		
 		}
+
 
 
 		var locationDetails = [];
@@ -1282,8 +1327,11 @@ function renderDetails(data, marker) {
 }
 
 
-/* 	Input: pz2 record data object
-	Output: ID of that object in HTML-compatible form
+
+
+/* 	HTMLIDForRecordData
+	input:	pz2 record data object
+	output:	ID of that object in HTML-compatible form
 			(replacing spaces by dashes)
 */
 function HTMLIDForRecordData (recordData) {
@@ -1292,8 +1340,11 @@ function HTMLIDForRecordData (recordData) {
 	}
 }
 
-/*	Input: Record ID in HTML compatible form
-	Output: input with dashes replaced by spaces
+
+
+/*	recordIDForHTMLID
+	input:	record ID in HTML compatible form
+	output:	input with dashes replaced by spaces
 */
 function recordIDForHTMLID (HTMLID) {
 	return HTMLID.replace(/\+/g,' ');
