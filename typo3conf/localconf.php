@@ -10,7 +10,7 @@ $typo_db_extTableDef_script = 'extTables.php';
 
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
 
-$TYPO3_CONF_VARS['EXT']['extList'] = 'css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,t3editor,reports,realurl,rlmp_language_detection,cag_linkchecker,autometa,static_info_tables,sr_language_detect';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
+$TYPO3_CONF_VARS['EXT']['extList'] = 'css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,t3editor,reports,realurl,cag_linkchecker,static_info_tables,cshmanual,recycler,rlmp_language_detection';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
 // Updated by TYPO3 Core Update Manager 08-09-10 12:29:22
 $TYPO3_CONF_VARS['SYS']['encryptionKey'] = 'eff43017a2a82314f23139d9daf0e129a20af589316ec80bd0084f268b67125e5a14a2b2a9e0527657b4059ebd41f44e';	// Modified or inserted by TYPO3 Install Tool. 
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.4';	//  Modified or inserted by TYPO3 Install Tool.
@@ -30,7 +30,7 @@ $TYPO3_CONF_VARS['GFX']['im_path'] = '';	//  Modified or inserted by TYPO3 Insta
 $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['SYS']['sitename'] = 'VLib-Test';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 08-09-10 13:03:28
-$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'css_styled_content,version,install,rtehtmlarea,t3skin,realurl,rlmp_language_detection,cag_linkchecker,autometa,static_info_tables,sr_language_detect';	// Modified or inserted by TYPO3 Extension Manager. 
+$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'css_styled_content,version,install,rtehtmlarea,t3skin,realurl,cag_linkchecker,static_info_tables,rlmp_language_detection';	// Modified or inserted by TYPO3 Extension Manager. 
 // Updated by TYPO3 Extension Manager 22-09-10 13:52:06
 
 $TYPO3_CONF_VARS['FE']['addRootLineFields'].= ',tx_realurl_pathsegment';
@@ -40,7 +40,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'appendMissingSlash' => 'ifNotFile',
 		'postVarSet_failureMode' => 'redirect_goodUpperDir',
 		'emptyUrlReturnValue' => TRUE,
-#		'respectSimulateStaticURLs' => 1,
+		'respectSimulateStaticURLs' => 1,
 		'enableCHashCache' => 1,
 		'enableUrlDecodeCache' => 1,
 		'enableUrlEncodeCache' => 1,
@@ -67,11 +67,11 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'userFunc' => 'EXT:realurl/class.tx_realurl_advanced.php:&tx_realurl_advanced->main',
 		'spaceCharacter' => '-',
 		'segTitleFieldList' => 'tx_realurl_pathsegment,nav_title,title',
-#		'languageGetVar' => 'L',
+		'languageGetVar' => 'L',
 		'expireDays' => 3,
-#		'rootpage_id' => '1',
+		'rootpage_id' => '12',
 	),
-	'fileName' => array (
+/*	'fileName' => array (
 		'index' => array (
 			'index.html' => array (
 				'keyValues' => array (
@@ -88,7 +88,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 			'keyValues' => array( )
 		),
 	),
-	
+*/	
 	'postVarSets' => array(
 		'_DEFAULT' => array (
 			'artikel' => array(
@@ -122,5 +122,5 @@ $TYPO3_CONF_VARS['BE']['forceCharset'] = 'utf-8';	//  Modified or inserted by TY
 $TYPO3_CONF_VARS['EXT']['extConf']['cag_linkchecker'] = 'a:1:{s:15:"setPageTSconfig";s:1:"1";}';	//  Modified or inserted by TYPO3 Extension Manager.
 // Updated by TYPO3 Extension Manager 27-09-10 12:20:42
 $TYPO3_CONF_VARS['EXT']['extConf']['metaext'] = 'a:28:{s:14:"extconsteditor";s:1:"1";s:9:"patch6637";s:1:"0";s:23:"disableNoCacheParameter";s:1:"0";s:21:"hideUntranslatedPages";s:1:"1";s:11:"sitemaplist";s:16:"sitemap.xml:2755";s:10:"hideauthor";s:1:"1";s:9:"hideemail";s:1:"0";s:12:"hideabstract";s:1:"1";s:12:"hidekeywords";s:1:"0";s:15:"hidedescription";s:1:"0";s:12:"hidealttitle";s:1:"0";s:16:"hidegeotagfields";s:1:"1";s:13:"hidecopyright";s:1:"1";s:13:"hidepublisher";s:1:"1";s:10:"hiderobots";s:1:"1";s:14:"hideimportance";s:1:"1";s:14:"postprocessing";s:1:"1";s:14:"processunicode";s:1:"1";s:18:"removehtmlcomments";s:1:"0";s:16:"copyrightcomment";s:1:"0";s:22:"removetagsinsidescript";s:1:"1";s:16:"removeblanklines";s:1:"1";s:16:"removewhitespace";s:1:"1";s:14:"sortheadertags";s:1:"1";s:11:"indentation";s:1:"1";s:17:"indentcurlybraces";s:1:"1";s:15:"indentationchar";s:1:"0";s:19:"additionalpagetypes";s:0:"";}';	//  Modified or inserted by TYPO3 Extension Manager.
-// Updated by TYPO3 Extension Manager 27-09-10 17:58:42
+// Updated by TYPO3 Extension Manager 30-09-10 17:26:50
 ?>
