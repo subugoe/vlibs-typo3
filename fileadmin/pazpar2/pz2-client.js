@@ -700,16 +700,19 @@ function renderDetails(data, marker) {
 			var URLsMarkup = []
 			for (var URLNumber in electronicURLs) {
 				var URLInfo = electronicURLs[URLNumber];
-				if (URLInfo['#text'] !== undefined) {
-					var linkName = localise('Link');
-					if (URLInfo['@name'] !== undefined) {
-						linkName = URLInfo['@name'];
-					}
+				var linkText = '[' + localise('Link') + ']';
+				var linkURL = URLInfo;
 
-					var URLMarkup = '<a href="' +  URLInfo['#text'] + ' target="pz2-linktarget">'
-										+ '[' + linkName + ']' + '</a>';
+				if (typeof(URLInfo) === 'object' && URLInfo['#text'] !== undefined) {
+					// URLInfo is not just an URL but an array also containing the link name 
+					if (URLInfo['@name'] !== undefined) {
+						linkText = '[' + URLInfo['@name'] + ']';
+					}
+					linkURL = URLInfo['#text'];
 				}
-				URLsMarkup.push(URLMarkup);
+
+				URLsMarkup.push( '<a href="' + linkURL + ' target="pz2-linktarget">' 
+										+ linkText + '</a>' );
 			}
 			if (URLsMarkup.length > 0) {
 				localInfoItems.push(URLsMarkup.join(' '));
