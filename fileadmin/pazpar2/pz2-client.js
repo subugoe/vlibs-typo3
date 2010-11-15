@@ -190,14 +190,14 @@ function my_onshow(data) {
 			outputText = authors.join('; ');
 		}
 
-		// ensure the author designation ends with a single full stop
-		var extraFullStop = '';
-		if (outputText[outputText.length - 1] != '.') {
-			extraFullStop = '.';
-		}
+		if (outputText) {
+			// ensure the author designation ends with a single full stop
+			var extraFullStop = '';
+			if (outputText.length > 1 && outputText[outputText.length - 1] != '.') {
+				extraFullStop = '.';
+			}
 		
-		var output = document.createElement('span');
-		if (outputText != '') {
+			var output = document.createElement('span');
 			output.setAttribute('class', 'pz2-item-responsibility');
 			output.appendChild(document.createTextNode(outputText + extraFullStop))
 		}
