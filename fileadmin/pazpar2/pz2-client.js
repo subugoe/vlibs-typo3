@@ -1327,7 +1327,7 @@ function renderDetails(data, marker) {
 										'http://gso.gbv.de/$2/CMD?ACT=SRCHA&IKT=1016');
 				catalogueURL += '&TRM=ppn+' + itemID;
 			}
-			else if (targetURL.search(/z3950.gbv.de:20010\/subgoe_opc/) != -1) {
+			else if (targetURL.search(/z3950.gbv.de:20012\/subgoe_opc/) != -1) {
 				catalogueURL = 'http://opac.sub.uni-goettingen.de/DB=1/CMD?ACT=SRCHA&IKT=1016&TRM=ppn+' + itemID;
 			}
 
