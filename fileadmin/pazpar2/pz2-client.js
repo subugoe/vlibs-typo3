@@ -734,6 +734,7 @@ function renderDetails(data, marker) {
 	var linkForDOI = function (DOI) {
 		var linkElement = document.createElement('a');
 		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
+		linkElement.setAttribute('target', 'pz2-linktarget');
 		linkElement.appendChild(document.createTextNode(DOI));
 		return linkElement;
 	}
@@ -963,6 +964,7 @@ function renderDetails(data, marker) {
 					var ZDBLinkURL = 'http://services.d-nb.de/fize-service/gvr/html-service.htm?' + parameters;
 					ZDBLink.setAttribute('href', ZDBLinkURL);
 					ZDBLink.setAttribute('class', 'pz2-ZDBLink');
+					ZDBLink.setAttribute('target', 'pz2-linktarget');
 					ZDBLink.appendChild(document.createTextNode(localise('Informationen bei der Zeitschriftendatenbank')));
 					
 					var electronicInfos = ZDBInfoElement( $('ElectronicData', data) );
