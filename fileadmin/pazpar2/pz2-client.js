@@ -1098,7 +1098,7 @@ function renderDetails(data, marker) {
 	} // end of addGoogleBooksLinkIntoElement
 
 
-
+	
 	/*	extraLinks
 		Returns table row element with additional links:
 			* Google Books, if possible
@@ -1306,6 +1306,42 @@ function renderDetails(data, marker) {
 
 
 
+		/*	catalogueLink
+			Returns a link for the current record that points to the catalogue page for that item.
+			output:	DOM anchor element pointing to the catalogue page.
+		*/
+		var catalogueLink = function () {
+			var targetURL = location['@id'];
+			var targetName = location['@name'];
+			var itemID = location['md-id'];
+
+			var catalogueURL;			
+			if (targetURL.search(/gso.gbv.de\/sru/) != -1) {
+				catalogueURL = targetURL.replace(/(gso.gbv.de\/sru\/)(DB=[\.0-9]*)/,
+										'http://gso.gbv.de/$2/CMD?ACT=SRCHA&IKT=1016');
+				catalogueURL += '&TRM=ppn+' + itemID;
+			}
+			else if (targetURL.search(/z3950.gbv.de:20010\/subgoe_opc/) != -1) {
+				catalogueURL = 'http://opac.sub.uni-goettingen.de/DB=1/CMD?ACT=SRCHA&IKT=1016&TRM=ppn+' + itemID;
+			}
+
+			if (catalogueURL) {
+				var linkElement = document.createElement('a');
+				linkElement.setAttribute('href', catalogueURL);
+				linkElement.setAttribute('target', 'pz2-linktarget');
+				linkElement.setAttribute('class', 'pz2-detail-catalogueLink')
+				var linkText = localise('Ansehen und Ausleihen im Katalog:');
+				if (targetName) {
+					linkText += ' ' + targetName;
+				}
+				linkElement.appendChild(document.createTextNode(linkText));
+			}
+
+			return linkElement;
+		}
+
+
+
 		var locationDetails = [];
 
 		for ( var locationNumber in data.location ) {
@@ -1331,11 +1367,7 @@ function renderDetails(data, marker) {
 			cleanISBNs();
 			appendInfoToContainer( detailInfoItem('isbn'), detailsData );
 			appendInfoToContainer( electronicURLs(), detailsData);
-
-			
-			var catalogueInfo = detailInfoItemWithLabel(location['md-id'], localName, true);
-			catalogueInfo.setAttribute('title', localURL);
-			detailsData.appendChild( catalogueInfo );
+			appendInfoToContainer( catalogueLink(), detailsData);
 			
 			locationDetails.push(detailsRow);
 		}

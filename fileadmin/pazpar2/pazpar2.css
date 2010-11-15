@@ -88,6 +88,7 @@
 .pz2-details th {
 	text-align: right;
 	vertical-align: top;
+	min-width: 10em;
 }
 
 .pz2-details ul {
@@ -98,6 +99,10 @@
 	margin-bottom: 2px;
 }
 
+.pz2-detail-catalogueLink {
+	display: block;
+	font-size: 122%;
+}
 
 #pz2-results .pz2-details ul li {
 	margin: 0;
