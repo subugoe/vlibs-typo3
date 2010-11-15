@@ -1336,7 +1336,7 @@ function renderDetails(data, marker) {
 				linkElement.setAttribute('href', catalogueURL);
 				linkElement.setAttribute('target', 'pz2-linktarget');
 				linkElement.setAttribute('class', 'pz2-detail-catalogueLink')
-				var linkText = localise('Ansehen und Ausleihen im Katalog:');
+				var linkText = localise('Ansehen und Ausleihen bei:');
 				if (targetName) {
 					linkText += ' ' + targetName;
 				}
