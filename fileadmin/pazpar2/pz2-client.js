@@ -757,10 +757,14 @@ function renderDetails(data, marker) {
 		input:	element - DOM element that the resulting information is inserted into.
 	*/
 	var addZDBInfoIntoElement = function (element) {
+		var ISSNs = data['md-issn'];
+
+		// Do nothing if there are no ISSNs.
+		if (ISSNs === undefined) { return; }
+
 		var serviceID = 'sub:vlib';
 		var parameters = 'sid=' + serviceID + '&genre=article';
 
-		var ISSNs = data['md-issn'];
 		for (ISSNNumber in ISSNs) {
 			parameters += '&issn=' + ISSNs[ISSNNumber];
 		}
