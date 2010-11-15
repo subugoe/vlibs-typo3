@@ -834,6 +834,7 @@ function renderDetails(data, marker) {
 							statusDiv.appendChild(accessLink);
 							accessLink.setAttribute('href', accessLinkURL[0].textContent);
 							accessLink.appendChild(document.createTextNode(localise('Zugriff')));
+							accessLink.setAttribute('target', 'pz2-linktarget');
 
 							var additionals = [];
 							var ZDBAdditionals = $('Additional', ZDBResult);
