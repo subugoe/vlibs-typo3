@@ -867,8 +867,9 @@ function renderDetails(data, marker) {
 								accessLink.setAttribute('title', additionals.join('; ') + '.');
 							}
 						}
-						else {
+						else if (status < 4) {
 							// Absence of an AccessURL implies this is inside PrintData.
+							// status > 3 means the volume is not available. Don't print info then.
 							var locationInfo = document.createElement('span');
 							var infoText = '';
 
@@ -889,7 +890,10 @@ function renderDetails(data, marker) {
 
 							locationInfo.appendChild(document.createTextNode(infoText));
 							statusDiv.appendChild(locationInfo);
-						}			
+						}
+						else {
+							statusDiv = undefined;
+						}
 					}	
 					return statusDiv;
 				}
