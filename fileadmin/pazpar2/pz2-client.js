@@ -107,6 +107,27 @@ function my_oninit() {
 
 
 
+/*	appendInfoToContainer
+	Convenince method to append an item to another one, even if undefineds and arrays are involved.
+	input:	* info - the DOM element to insert
+			* container - the DOM element to insert info to
+*/
+var appendInfoToContainer = function (info, container) {
+	if (info != undefined && container != undefined ) {
+		if (typeof(info.length) === 'undefined') {
+			// info is a single item
+			container.appendChild(info);
+		}
+		else {
+			for (var infoNumber in info) {
+				container.appendChild(info[infoNumber]);
+			}
+		}
+	}
+}
+
+
+
 /*	my_onshow
 	Creates a brief record for the data passed.
 	Callback for pazpar2 when data become available.
@@ -254,8 +275,8 @@ function my_onshow(data) {
 		linkElement.setAttribute('onclick', 'toggleDetails(this.id);return false;');
 		linkElement.setAttribute('id', 'rec_' + HTMLIDForRecordData(hit));
 
-		linkElement.appendChild( titleInfo() );
-		linkElement.appendChild( authorInfo() );
+		appendInfoToContainer(titleInfo(), linkElement);
+		appendInfoToContainer(authorInfo(), linkElement);
 
 		if (hit['md-medium'] == 'article') {
 			appendJournalInfo();
@@ -265,7 +286,7 @@ function my_onshow(data) {
 		}
 
 		if (hit.recid == curDetRecId) {
-			linkElement.appendChild(renderDetails(curDetRecData));
+			appendInfoToContainer(renderDetails(curDetRecData), linkElement);
 		}
 	}
 
@@ -1117,26 +1138,6 @@ function renderDetails(data, marker) {
 		addGoogleBooksLinkIntoElement(booksSpan);
 
 		return tr;
-	}
-
-
-	/*	appendInfoToContainer
-		Convenince method to append an item to another one, even if undefineds and arrays are involved.
-		input:	* info - the DOM element to insert
-				* container - the DOM element to insert info to
-	*/
-	var appendInfoToContainer = function (info, container) {
-		if (info != undefined && container != undefined ) {
-			if (typeof(info.length) === 'undefined') {
-				// info is a single item
-				container.appendChild(info);
-			}
-			else {
-				for (var infoNumber in info) {
-					container.appendChild(info[infoNumber]);
-				}
-			}
-		}
 	}
 
 
