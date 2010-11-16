@@ -13,8 +13,8 @@ var showResponseType = '';
 /* Maintain a list of all facet types so we can loop over it. 
    Don't forget to also set termlist attributes in the corresponding
    metadata tags for the service. */ 
-var termListNames = ['xtargets', 'medium', 'author', 'subject', 'date'];
-var termListMax = {'xtargets': 25, 'medium': 10, 'author': 10, 'subject': 10, 'date': 6 };
+var termListNames = ['xtargets', 'medium', 'author', 'date'];
+var termListMax = {'xtargets': 25, 'medium': 10, 'author': 10, 'date': 10 };
 
 if (document.location.hash == '#useproxy') {
 	usesessions = false;
@@ -53,7 +53,6 @@ var germanTerms = {
 	'Kataloge': 'Kataloge',
 	'Google Books Vorschau': 'Google Books Vorschau',
 	'Umschlagbild': 'Umschlagbild',
-	'Ampelgraphik': 'Ampelgraphik der Elektronischen Zeitschriftenbibliothek zur Darstellung der Verfügbarkeit der Zeitschrift',
 };
 
 
@@ -94,7 +93,9 @@ var curSort = [];
 var curFilter = null;
 var facetData = {}; // stores faceting information as sent by pazpar2
 var filterArray = {};
-var displaySort =  {'date': 'descending', 'author': 'ascending', 'title': 'ascending'};
+var displaySort =  [{'fieldName': 'date', 'direction': 'descending'}, 
+						{'fieldName': 'author', 'direction': 'ascending'}, 
+						{'fieldName': 'title', 'direction': 'ascending'}];
 var displayFilter = undefined;
 var hitList = []; // local storage for the records sent from pazpar2
 var displayHitList = []; // filtered and sorted list used for display
@@ -143,7 +144,7 @@ var appendInfoToContainer = function (info, container) {
 	output: string with content of the field in the record
 */		
 function fieldContentInRecord (fieldName, record, lowerCase) {
-	var result = String(record['md-' + fieldName]);
+	var result = String(fieldContentsInRecord(fieldName, record));
 
 	if (lowerCase) {
 		result.toLowerCase();
@@ -151,6 +152,42 @@ function fieldContentInRecord (fieldName, record, lowerCase) {
 
 	return result;
 }
+
+
+
+/*	fieldContentsInRecord
+	Returns array of data from a record's md-fieldName field.
+		* special case for xtargets which is mapped to location/@name
+		* special case for date which uses the date from each location rather than the merged range
+	input:	fieldName - name of the field to use
+			record - pazpar2 record
+	output:	array with content of the field in the record
+*/
+function fieldContentsInRecord (fieldName, record) {
+	var result = [];
+	
+	if ( fieldName === 'xtargets' ) {
+		// special case xtargets: gather server names from location info for this
+		for ( var locationNumber in record.location) {
+			result.push(record.location[locationNumber]['@name']);
+		}
+	}
+	else if ( fieldName === 'date' ) {
+		// special case for dates: go through locations and collect date for each edition
+		for ( var locationNumber in record.location) {
+			var date = record.location[locationNumber]['md-date'];
+			if (date) {
+				result.push(date);
+			}
+		}		
+	}
+	else {
+		result = record['md-' + fieldName];
+	}
+
+	return result;
+}
+
 
 
 
@@ -250,18 +287,19 @@ function displayList (list) {
 		
 		var result = 0;
 
-		for (var sortKey in displaySort) {
-			var direction = (displaySort[sortKey] === 'ascending') ? 1 : -1;
+		for (var sortCriterionIndex in displaySort) {
+			var fieldName = displaySort[sortCriterionIndex].fieldName;
+			var direction = (displaySort[sortCriterionIndex].direction === 'ascending') ? 1 : -1;
 
-			if (sortKey == 'date') {
+			if (fieldName == 'date') {
 				var date1 = dateForRecord(record1);
 				var date2 = dateForRecord(record2);
 				
 				result = (date1.getTime() - date2.getTime()) * direction;
 			}
 			else {
-				var string1 = fieldContentInRecord(sortKey, record1, true);
-				var string2 = fieldContentInRecord(sortKey, record2, true);
+				var string1 = fieldContentInRecord(fieldName, record1, true);
+				var string2 = fieldContentInRecord(fieldName, record2, true);
 				
 				if (string1 == string2) {
 					result = 0;
@@ -273,7 +311,7 @@ function displayList (list) {
 					result = -1;
 				}
 				else {
-					result = ((string1 < string2) ? 1 : -1) * direction;
+					result = ((string1 < string2) ? -1 : 1) * direction;
 				}
 			}
 
@@ -287,6 +325,16 @@ function displayList (list) {
 	
 
 	return filter(list).sort(sortFunction);
+}
+
+
+
+/*	updateAndDisplay
+	Updates the displayHitList and redraws.
+*/
+function updateAndDisplay () {
+	displayHitList = displayList(hitList);
+	display();
 }
 
 
@@ -306,8 +354,7 @@ function my_onshow (data) {
 		}
 	}
 
-	displayHitList = displayList(hitList);
-	display();
+	updateAndDisplay();
 }
 
 
@@ -535,13 +582,18 @@ function display () {
 		linkElement.setAttribute('id', 'rec_' + HTMLIDForRecordData(hit));
 
 		appendInfoToContainer(titleInfo(), linkElement);
-		appendInfoToContainer(authorInfo(), linkElement);
+		var authors = authorInfo();
+		appendInfoToContainer(authors, linkElement);
 
 		if (hit['md-medium'] == 'article') {
 			appendJournalInfo();
 		}
 		else {
-			markupForField('date', linkElement, ', ', '.');
+			var spaceBefore = ' ';
+			if (authors) {
+				spaceBefore = ', ';
+			}
+			markupForField('date', linkElement, spaceBefore, '.');
 		}
 
 		if (hit.recid == curDetRecId) {
@@ -577,32 +629,147 @@ function my_onstat(data) {
 	Creates DOM elements for the facet list of the requested type.
 		Uses facet information stored in facetData.
 	input:	type - string giving the facet type
+			preferOriginalFacets (optional) - boolean that triggers using 
+				the facet information sent by pazpar2 
 	output:	DOM elements for displaying the list of faces
 */
-function facetListForType (type) {
+function facetListForType (type, preferOriginalFacets) {
+	/*	isFilteredForType
+		Returns whether there is a filter for the given type.
+		input:	type - string with the type's name
+		output:	boolean indicating whether there is a filter or not
+	*/
+	var isFilteredForType = function (type) {
+		var result = false;
+		if (filterArray[type]) {
+			result = (filterArray[type].length > 0);
+		}
+		return result;
+	}
+
+
+	/*	facetInformationForType
+		Creates list with facet information.
+			* information is collected from the filtered hit list.
+			* list is sorted by term frequency.
+		output:	list of Objects with properties 'name' and 'freq'(ency)
+					(these are analogous to the Objects passed to the callback by pz2.js)
+	*/
+	var facetInformationForType = function (type) {
+		/*	isFiltered
+			Returns whether there is any filter active.
+				(One may want to use pazpar2's original term lists if not.)
+			output:	boolean indicating whether a filter is active
+		*/
+		var isFiltered = function () {
+			var isFiltered = false;
+			for (var filterType in filterArray) {
+				isFiltered = isFilteredForType(filterType);
+				if (isFiltered) { break; }
+			}
+			return isFiltered;
+		}
+
+
+		var termList = [];
+		if (!isFiltered() && preferOriginalFacets) {
+			termList = facetData[type]
+		}
+		else {
+			// loop through data ourselves to gather information
+			var termArray = {};
+			for (var recordIndex in displayHitList) {
+				var record = displayHitList[recordIndex];
+				var dataArray = fieldContentsInRecord(type, record);
+				for (var index in dataArray) {
+					var data = dataArray[index];
+					if (termArray[data]) {
+						termArray[data]++;
+					}
+					else {
+						termArray[data] = 1;
+					}
+				}
+			}
+			
+			// sort by term frequency
+			for (var term in termArray) {
+				termList.push({'name': term, 'freq': termArray[term]});
+			} 
+			termList.sort( function(term1, term2) {
+					if (term1.freq < term2.freq) { return 1; }
+					else if (term1.freq == term2.freq) {
+						if (term1.name < term2.name) { return -1; }
+						else { return 1; }
+					}
+					else { return -1; }
+				}
+			);
+
+			// special case for dates: take the topmost items and sort by date
+			if (type === 'date') {
+				if (termList.length > termListMax['date']) {
+					termList.splice(termListMax['date'], termList.length - termListMax['date']);
+				}
+				termList.sort( function(term1, term2) {
+						return (term1.name < term2.name) ? 1 : -1;
+					}
+				);
+			}
+		}
+
+		return termList;
+	}
+
+
+	// Create container and heading.
 	var container = document.createElement('div');
 	container.setAttribute('class', 'pz2-termList pz2-termList-' + type);
 	var heading = document.createElement('h5')
 	container.appendChild(heading);
-	heading.appendChild(document.createTextNode(localise('facet-title-'+type)));
+	var headingText = localise('facet-title-'+type);
+	if (isFilteredForType(type)) {
+		headingText += ' [' + localise('gefiltert') + ']';
+	}
+	heading.appendChild(document.createTextNode(headingText));
 	var list = document.createElement('ol');
 	container.appendChild(list);
 
-	var terms = facetData[type];
+	// Loop through list of terms for the type and create an item with link for each one.
+	var terms = facetInformationForType(type);
 	for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
 		var item = document.createElement('li');
 		list.appendChild(item);
-			var link = document.createElement('a');
-			item.appendChild(link);
+
+		var link = document.createElement('a');
+		item.appendChild(link);
 		link.setAttribute('href', '#');
 		var facetName = terms[i].name; 
 		link.setAttribute('onclick', 
 			'limitResults("' + type + '","' + facetName + '");return false;');
 		link.appendChild(document.createTextNode(facetName));
-			var count = document.createElement('span');
+
+		var count = document.createElement('span');
 		link.appendChild(count);
 		count.setAttribute('class', 'pz2-facetCount');
 			count.appendChild(document.createTextNode(terms[i].freq));
+
+		// Mark facets which are currently active and add button to remove faceting.
+		if (isFilteredForType(type)) {
+			for (var filterIndex in filterArray[type]) {
+				if (facetName === filterArray[type][filterIndex]) {
+					item.setAttribute('class', 'pz2-activeFacet');
+					var cancelLink = document.createElement('a');
+					item.appendChild(cancelLink);
+					cancelLink.setAttribute('href', '#');
+					cancelLink.setAttribute('class', 'pz2-facetCancel');
+					cancelLink.setAttribute('onclick', 
+						'delimitResults("' + type + '","' + facetName + '"); return false;');
+					cancelLink.appendChild(document.createTextNode(localise('Filter aufheben')));
+					break;
+				}
+			}
+		}
 	}
 	return container;		
 }
@@ -692,35 +859,66 @@ function onFormSubmitEventHandler()
 	return false;
 }
 
-function onSelectDdChange()
-{
-	if (!submitted) return false;
-	resetPage();
+
+
+/*	onSelectDdChange
+	Called when sort-order popup menu is changed.
+		Gathers new sort-order information and redisplays.
+*/
+function onSelectDdChange() {
 	loadSelect();
-	my_paz.show(0, recPerPage, curSort);
+	updateAndDisplay();
 	return false;
 }
 
-function resetPage()
-{
+
+
+/*	resetPage
+	Empties result lists and filters, switches to first page and redisplays.
+*/
+function resetPage() {
 	curPage = 1;
 	hitList = [];
 	displayHitList = [];
+	filterArray = {};
 	display();
 }
 
-function triggerSearch ()
-{
-	// TODO-ssp: Set filter to correct term (target-facet?)
-	// var filter = NULL;
+
+
+function triggerSearch () {
 	my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
 }
 
-function loadSelect ()
-{
+
+
+/*	curSortToDisplaySort
+	Takes the passed sort value, parses it according to pazpar2's documentation and
+		sets up the according displaySort Object.
+	input:	curSortString - string with pazpar2-style sort criteria
+*/
+function curSortToDisplaySort (curSortString) {
+	var sortCriteria = curSortString.split(',');
+
+	displaySort = [];
+	for ( var criterionIndex in sortCriteria ) {
+		var criterionParts = sortCriteria[criterionIndex].split(':');
+		if (criterionParts.length == 2) {
+			var fieldName = criterionParts[0];
+			var direction = criterionParts[1];
+			displaySort.push({'fieldName': fieldName,
+								'direction': ((direction == 0) ? 'descending' : 'ascending')});
+		}
+	}
+}
+
+
+function loadSelect () {
 	curSort = document.select.sort.value;
+	curSortToDisplaySort(curSort);
 	recPerPage = document.select.perpage.value;
 }
+
 
 // limit the query after clicking the facet
 function limitQuery (field, value)
@@ -770,8 +968,8 @@ function limitResults(kind, term) {
 		filterArray[kind] = [term];
 	}
 
-	displayHitList = displayList(hitList);
-	display();
+	updateAndDisplay();
+	updateFacetLists();
 }
 
 
@@ -800,30 +998,41 @@ function delimitResults(kind, term) {
 			filterArray[kind] = undefined;
 		}
 
-		displayHitList = displayList(hitList);
-		display();
+		updateAndDisplay();
+		updateFacetLists();
 	}
 }
 
 
+
+/*	showPage
+	Display the results page with the given number.
+		If the number is out of range, go to the first or last page instead.
+	input:	pageNum - number of the page to be shown
+*/
 function showPage (pageNum) {
-	curPage = pageNum;
+	curPage = Math.min( Math.max(0, pageNum), Math.ceil(displayHitList.length / recPerPage) );
 	display();
 }
 
 
+/*	pagerNext
+	Display the next page (if available).
+*/
 function pagerNext() {
-	if ( displayHitList.length - recPerPage*curPage > 0) {
-		showPage (++curPage);
-	}
+	showPage (curPage + 1);
 }
 
 
+/*	pagerPrev
+	Display the previous page (if available).
+*/
 function pagerPrev() {
-	if ( curPage > 0 ) {
-		showPage(--curPage);
-	}
+	showPage(curPage - 1);
 }
+
+
+
 
 
 // switching view between targets and records
@@ -850,19 +1059,27 @@ function switchView(view) {
 // detailed record drawing
 function toggleDetails (prefixRecId) {
 	var recId = prefixRecId.replace('rec_', '');
-	// var oldRecId = curDetRecId;
-	// curDetRecId = recId;
 	
-	// remove current detailed view if any
 	var detRecordDiv = document.getElementById('det_'+ recId);
-	// lovin DOM!
 	if (detRecordDiv) {
-		detRecordDiv.parentNode.removeChild(detRecordDiv);
+		// Detailed record information is present.
+		if ( detRecordDiv.offsetHeight == 0 ) {
+			// … not visible, so show it
+			detRecordDiv.setAttribute('style', 'display:block');
+		}
+		else {
+			// … it's visible so hide it
+			detRecordDiv.setAttribute('style', 'display:none');
+		}
 	}
 	else {
-		my_paz.record(recordIDForHTMLID(recId));
+		// Create detailed record information if
+		var parent = document.getElementById('recdiv_'+ recId);
+		parent.appendChild(renderDetails(recordIDForHTMLID(recId)));
 	}
 }
+
+
 
 function replaceHtml(el, html) {
   var oldEl = typeof el === "string" ? document.getElementById(el) : el;
@@ -882,8 +1099,7 @@ function replaceHtml(el, html) {
 
 
 
-function renderDetails(data, marker) {
-
+function renderDetails(recordID, marker) {
 	/*	deduplicate
 		Removes duplicate entries from an array. 
 		The first occurrence of any item is kept, later ones are removed.
@@ -1221,6 +1437,7 @@ function renderDetails(data, marker) {
 				}
 
 
+
 				/*	ZDBInformation
 					Converts complete ZDB XML data to DOM element containing information about them.
 					input:	data - result from ZDB XML request
@@ -1395,7 +1612,6 @@ function renderDetails(data, marker) {
 
 			return false;
 		}
-
 
 	} // end of addGoogleBooksLinkIntoElement
 
@@ -1657,25 +1873,28 @@ function renderDetails(data, marker) {
 		return locationDetails;
 	}
 
+	
+	var data = hitList[recordID];
 
-	var detailsDiv = document.createElement('div');
-	detailsDiv.setAttribute('class', 'pz2-details');
-	detailsDiv.setAttribute('id', 'det_' + HTMLIDForRecordData(data));
+	if (data) {
+		var detailsDiv = document.createElement('div');
+		detailsDiv.setAttribute('class', 'pz2-details');
+		detailsDiv.setAttribute('id', 'det_' + HTMLIDForRecordData(data));
 
-	var detailsTable = document.createElement('table');
-	detailsDiv.appendChild(detailsTable);
+		var detailsTable = document.createElement('table');
+		detailsDiv.appendChild(detailsTable);
 
-	appendInfoToContainer( detailLineAuto('author'), detailsTable );
-	appendInfoToContainer( detailLineAuto('other-person'), detailsTable )
-	appendInfoToContainer( detailLineAuto('description'), detailsTable );
- 	appendInfoToContainer( detailLineAuto('medium'), detailsTable );
-	appendInfoToContainer( detailLineAuto('series-title'), detailsTable );
-	appendInfoToContainer( detailLineAuto('issn'), detailsTable );
-	appendInfoToContainer( detailLineAuto('doi'), detailsTable );
-	appendInfoToContainer( locationDetails(), detailsTable );
-	appendInfoToContainer( extraLinks(), detailsTable );
-	addZDBInfoIntoElement( detailsTable );
-
+		appendInfoToContainer( detailLineAuto('author'), detailsTable );
+		appendInfoToContainer( detailLineAuto('other-person'), detailsTable )
+		appendInfoToContainer( detailLineAuto('description'), detailsTable );
+	 	appendInfoToContainer( detailLineAuto('medium'), detailsTable );
+		appendInfoToContainer( detailLineAuto('series-title'), detailsTable );
+		appendInfoToContainer( detailLineAuto('issn'), detailsTable );
+		appendInfoToContainer( detailLineAuto('doi'), detailsTable );
+		appendInfoToContainer( locationDetails(), detailsTable );
+		appendInfoToContainer( extraLinks(), detailsTable );
+		addZDBInfoIntoElement( detailsTable );
+	}
 
 	return detailsDiv;
 }
@@ -1690,7 +1909,7 @@ function renderDetails(data, marker) {
 */
 function HTMLIDForRecordData (recordData) {
 	if (recordData.recid[0] !== undefined) {
-		return recordData.recid[0].replace(/ /g,'+');
+		return recordData.recid[0].replace(/ /g,'§+§');
 	}
 }
 
@@ -1701,7 +1920,7 @@ function HTMLIDForRecordData (recordData) {
 	output:	input with dashes replaced by spaces
 */
 function recordIDForHTMLID (HTMLID) {
-	return HTMLID.replace(/\+/g,' ');
+	return HTMLID.replace(/§\+§/g,' ');
 }
 
 //EOF

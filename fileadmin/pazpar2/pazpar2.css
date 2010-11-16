@@ -73,6 +73,14 @@
 	margin-left: 0.3em;
 }
 
+.pz2-activeFacet {
+	font-weight: bold;
+}
+
+.pz2-facetCancel {
+	color: #f00;
+	padding-left: 0.3em;
+}
 
 
 
