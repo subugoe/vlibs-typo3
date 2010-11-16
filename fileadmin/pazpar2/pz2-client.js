@@ -88,12 +88,13 @@ my_paz = new pz2( { "onshow": my_onshow,
 // some state vars
 var curPage = 1;
 var recPerPage = 100;
-var totalRec = 0;
 var curDetRecId = '';
 var curDetRecData = null;
-var curSort = 'date';
+var curSort = [];
 var curFilter = null;
 var filter = [];
+var displaySort =  {'date': 'descending', 'author': 'ascending', 'title': 'ascending'};
+var displayFilter = undefined;
 var submitted = false;
 
 
@@ -127,22 +128,161 @@ var appendInfoToContainer = function (info, container) {
 }
 
 
+var hitList = [];
+var displayHitList = [];
+
+
+
+/*	displayList
+	Converts a given list of data to a the list used for display by:
+		1. applying filters
+		2. sorting
+	according to the setup in the displaySort and displayFilter variables.
+*/
+function displayList (list) {
+	/*
+	*/
+	var filter = function (listToFilter) {
+		var matchesFilters = function (input) {
+			return true;
+		}
+
+		var filteredList = [];
+		for (var index in listToFilter) {
+			var item = listToFilter[index];
+			if ( matchesFilters(item) ) {
+				filteredList.push(item);
+			}
+		}
+		return filteredList;
+	}
+
+
+	/*	sortFunction
+		Sort function for pazpar2 records.
+		Sorts by date or author according to the current setup in the displaySort variable.
+		input:	record1, record2 - pazpar2 records
+		output: negative/0/positive number
+	*/
+	var sortFunction = function(record1, record2) {
+		/*	dateForRecord
+			Returns the year / last year of a date range of the given pazpar2 record.
+			If no year is present
+			input:	record - pazpar2 record
+			output: Date object with year found in the pazpar2 record
+		*/
+		function dateForRecord (record) {
+			var dateArray = record['md-date'];
+			if (dateArray) {
+				var dateString = record['md-date'][0];
+				if (dateString) {
+					var dateArray = dateString.split('-');
+					var date = new Date(dateArray[dateArray.length - 1]);
+				}
+			}
+
+			// Records without a date are treated as very old.
+			// Except when they are Guide Links which are treated as coming from the future.
+			if (date == undefined) {
+				if (record['location'][0]['@id'].search('ssgfi') != -1) {
+					date = new Date(2500,1,1);
+				}
+				else {
+					date = new Date(0,1,1);
+				}	
+			}
+
+			return date;
+		}
+
+		
+		/*	itemForRecord
+			Returns a record's md-fieldName field. 
+				* Concatenated when several instances of the field are present.
+			input:	record - pazpar2 record
+					fieldName - name of the field to use
+			output: string with content of the field in the record
+		*/		
+		function fieldContentInRecord (fieldName, record) {
+			var theName = String(record['md-' + fieldName]).toLowerCase();
+			if (!theName) {
+				theName = 'zzzzzzzzzzzzzzzzzz';
+			}
+			return theName;
+		}
+
+		var result = 0;
+
+		for (var sortKey in displaySort) {
+			var direction = (displaySort[sortKey] === 'ascending') ? 1 : -1;
+
+			if (sortKey == 'date') {
+				var date1 = dateForRecord(record1);
+				var date2 = dateForRecord(record2);
+				
+				result = (date1.getTime() - date2.getTime()) * direction;
+			}
+			else {
+				var string1 = fieldContentInRecord(sortKey, record1);
+				var string2 = fieldContentInRecord(sortKey, record2);
+				
+				if (string1 == string2) {
+					result = 0;
+				}
+				else {
+					result = ((string1 < string2) ? 1 : -1) * direction;
+				}
+			}
+
+			if (result != 0) {
+				break;
+			}
+		}
+
+		return result;
+	}
+	
+
+	return filter(list).sort(sortFunction);
+}
+
+
 
 /*	my_onshow
-	Creates a brief record for the data passed.
 	Callback for pazpar2 when data become available.
-	input: 	data - pazpar2 record data
+	Goes through the records and adds them to hitList.
+	Regenerates displayHitList and triggers redisplay.
+	input:	data - result data passed from pazpar2
 */
-function my_onshow(data) {
+function my_onshow (data) {
+	for (var hitNumber in data.hits) {
+		var hit = data.hits[hitNumber];
+		var hitID = hit.recid[0];
+		if (hitID) {
+			hitList[hitID] = hit;
+		}
+	}
+
+	displayHitList = displayList(hitList);
+	display();
+}
+
+
+
+/*	display
+	Displays the records stored in displayHitList as short records.
+*/
+function display () {
 
 	/*	markupForField
 		Creates DOM element and content for a field name; Appends it to given container.
 		input:	fieldName - string with key for a field stored in hit
 				container (optional)- the DOM element we created is appended here
 				prepend (optional) - string inserted before the DOM element with the field data
+				append (optional) - string appended after the DOM element with the field data
 		output: the DOM SPAN element that was appended
 	*/
-	var markupForField = function (fieldName, container, prepend) {
+	var markupForField = function (fieldName, container, prepend, append) {
 		var theHit = hit['md-' + fieldName];
 
 		if (theHit !== undefined && container) {
@@ -155,6 +295,9 @@ function my_onshow(data) {
 					container.appendChild(document.createTextNode(prepend));
 				}
 				container.appendChild(span);
+				if (append) {
+					container.appendChild(document.createTextNode(append));
+				}
 			}
 		}
 
@@ -191,7 +334,7 @@ function my_onshow(data) {
 		Returns DOM SPAN element with markup for the current hit's author information.
 		The pre-formatted title-responsibility field is preferred and a list of author
 			names is used as a fallback.
-		output:	* DOM SPAN element
+		output:	DOM SPAN element
 	*/
 	var authorInfo = function() {
 		var outputText;
@@ -240,29 +383,102 @@ function my_onshow(data) {
 			markupForField('journal-subpart', journalTitle, ', ')
 			journalTitle.appendChild(document.createTextNode('.'));
 		}
-	} 
+	}
 
 
+	/* 	updatePagers
+		Updates pagers and record counts shown in .pz2-pager elements.
+	*/
+	var updatePagers = function () {
+		$('div.pz2-pager').each( function(index) {
+				// remove existing pagers
+				$(this).empty()
 
-	totalRec = data.merged;
-	// move it out
-	var pager = document.getElementById("pz2-pager");
-	pager.innerHTML = "";
-	pager.innerHTML +='<div class="pz2-recordCount">' 
-					+ (data.start + 1) + ' to ' + (data.start + data.num) +
-					 ' of ' + data.merged + ' (found: ' 
-					 + data.total + ')</div>';
-	drawPager(pager);
-	// navi
-	var results = document.getElementById("pz2-results");
-  
+				var onsides = 6;
+				var pages = Math.ceil(displayHitList.length / recPerPage);
+	
+				var firstClickable = ( curPage - onsides > 0 ) ? curPage - onsides : 1;
+				var lastClickable = firstClickable + 2*onsides < pages ? firstClickable + 2*onsides	: pages;
+
+				// create pager
+				if (curPage > 1) {
+					var prevLink = document.createElement('a');
+					prevLink.setAttribute('class', 'pz2-prev');
+					prevLink.setAttribute('href', '#');
+					prevLink.setAttribute('onclick', 'pagerPrev();return false;');
+					prevLink.setAttribute('title', localise('Vorige Trefferseite anzeigen'));
+					prevLink.appendChild(document.createTextNode('«'));
+					this.appendChild(prevLink);
+				}
+		
+				var pageList = document.createElement('ol');
+				pageList.setAttribute('class', 'pz2-pages');
+				this.appendChild(pageList);	
+			
+				var dotsItem = document.createElement('li');
+				dotsItem.appendChild(document.createTextNode('…'));
+			
+				if (firstClickable > 1) {
+					pageList.appendChild(dotsItem.cloneNode());
+				}
+		
+				for(var pageNumber = firstClickable; pageNumber <= lastClickable; pageNumber++) {
+					var pageItem = document.createElement('li');
+					pageList.appendChild(pageItem);
+					if(pageNumber != curPage) {
+						var linkElement = document.createElement('a');
+						linkElement.setAttribute('href', '#');
+						linkElement.setAttribute('onclick', 'showPage(' + pageNumber + ');return false;');
+						linkElement.appendChild(document.createTextNode(pageNumber));
+						pageItem.appendChild(linkElement);
+					}
+					else {
+						pageItem.setAttribute('class', 'currentPage');
+						pageItem.appendChild(document.createTextNode(pageNumber));
+					}
+				}
+
+				if (pages - curPage > 0) {
+					var nextLink = document.createElement('a');
+					nextLink.setAttribute('class', 'pz2-next');
+					nextLink.setAttribute('href', '#');
+					nextLink.setAttribute('onclick', 'pagerNext();return false;');
+					nextLink.setAttribute('title', localise('Nächste Trefferseite anzeigen'));
+					nextLink.appendChild(document.createTextNode('»'));
+					this.appendChild(nextLink);			
+				}
+		
+				if (lastClickable < pages) {
+					pageList.appendChild(dotsItem);
+				}
+			
+			
+				// add record count information
+				var recordCountDiv = document.createElement('div');
+				recordCountDiv.setAttribute('class', 'pz2-recordCount');
+				var infoString = String(firstIndex + 1) + '-' 
+									+ String(firstIndex + numberOfRecordsOnPage) 
+									+ ' ' + localise('von') + ' ' 
+									+ String(displayHitList.length);
+				if (displayFilter) {
+					infoString += ' ' + localise('gefiltert');
+				}
+				recordCountDiv.appendChild(document.createTextNode(infoString));
+				this.appendChild(recordCountDiv);
+			}
+		);	
+	}
+
+
 
 	// Create results list.
 	var OL = document.createElement('ol');
-	OL.setAttribute('start', 1 + recPerPage * (curPage - 1))
+	var firstIndex = recPerPage * (curPage - 1);
+	var numberOfRecordsOnPage = Math.min(displayHitList.length - firstIndex, recPerPage);
+	OL.setAttribute('start', firstIndex + 1);
 
-	for (var i = 0; i < data.hits.length; i++) {
-		var hit = data.hits[i];
+	for (var i = 0; i < numberOfRecordsOnPage; i++) {
+		var hit = displayHitList[firstIndex + i];
 
 		var LI = document.createElement('li');
 		OL.appendChild(LI);
@@ -282,7 +498,7 @@ function my_onshow(data) {
 			appendJournalInfo();
 		}
 		else {
-			markupForField('date', linkElement, ' ');
+			markupForField('date', linkElement, ', ', '.');
 		}
 
 		if (hit.recid == curDetRecId) {
@@ -291,10 +507,11 @@ function my_onshow(data) {
 	}
 
 	// Replace old results list
-	while ( results.childNodes.length > 0 ) {
-		results.removeChild( results.firstChild );
-	}
+	var results = document.getElementById("pz2-results");
+	$(results).empty();
 	results.appendChild(OL);
+
+	updatePagers();
 }
 
 
@@ -407,7 +624,9 @@ function onSelectDdChange()
 function resetPage()
 {
 	curPage = 1;
-	totalRec = 0;
+	hitList = [];
+	displayHitList = [];
+	display();
 }
 
 function triggerSearch ()
@@ -485,72 +704,23 @@ function redisplay() {
 	
 }
 
-
-
-function drawPager (pagerDiv)
-{
-	//client indexes pages from 1 but pz2 from 0
-	var onsides = 6;
-	var pages = Math.ceil(totalRec / recPerPage);
-	
-	var firstClkbl = ( curPage - onsides > 0 ) 
-		? curPage - onsides
-		: 1;
-
-	var lastClkbl = firstClkbl + 2*onsides < pages
-		? firstClkbl + 2*onsides
-		: pages;
-
-	var prev = '<span class="pz2-prev">&#60;&#60; Prev</span><b> | </b>';
-	if (curPage > 1)
-		var prev = '<a href="#" class="pz2-prev" onclick="pagerPrev();">'
-		+'&#60;&#60; Prev</a><b> | </b>';
-
-	var middle = '';
-	for(var i = firstClkbl; i <= lastClkbl; i++) {
-		var numLabel = i;
-		if(i == curPage)
-			numLabel = '<b>' + i + '</b>';
-
-		middle += '<a href="#" onclick="showPage(' + i + ')"> '
-			+ numLabel + ' </a>';
-	}
-	
-	var next = '<b> | </b><span class="pz2-next">Next &#62;&#62;</span>';
-	if (pages - curPage > 0)
-	var next = '<b> | </b><a href="#" class="pz2-next" onclick="pagerNext()">'
-		+'Next &#62;&#62;</a>';
-
-	predots = '';
-	if (firstClkbl > 1)
-		predots = '...';
-
-	postdots = '';
-	if (lastClkbl < pages)
-		postdots = '...';
-
-	pagerDiv.innerHTML += '<div style="float: clear">' 
-		+ prev + predots + middle + postdots + next + '</div><hr/>';
-}
-
-function showPage (pageNum)
-{
+function showPage (pageNum) {
 	curPage = pageNum;
-	my_paz.showPage( curPage - 1 );
+	display();
 }
 
 // simple paging functions
 
 function pagerNext() {
-	if ( totalRec - recPerPage*curPage > 0) {
-		my_paz.showNext();
-		curPage++;
+	if ( displayHitList.length - recPerPage*curPage > 0) {
+		showPage (++curPage);
 	}
 }
 
 function pagerPrev() {
-	if ( my_paz.showPrev() != false )
-		curPage--;
+	if ( curPage > 0 ) {
+		showPage(--curPage);
+	}
 }
 
 // swithing view between targets and records
@@ -773,7 +943,8 @@ function renderDetails(data, marker) {
 
 
 	/*	ZDBQuery
-		Loads XML journal info from ZDB via a proxy on our own server (to avoid cross-domain load problems).
+		Loads XML journal info from ZDB via a proxy on our own server
+			(to avoid cross-domain load problems).
 		Inserts the information into the DOM.
 
 		input:	element - DOM element that the resulting information is inserted into.

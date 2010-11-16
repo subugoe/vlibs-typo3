@@ -62,6 +62,30 @@
 }
 
 
+/* pager */
+.pz2-pager {
+	text-align: center;
+}
+
+.pz2-pager ol {
+	list-style-type: none;
+	display: inline;
+}
+
+.pz2-pager li {
+	display: inline;
+}
+
+.pz2-pager a {
+	padding: 0.3em;
+}
+
+.pz2-pager .currentPage {
+	font-weight: bold;
+	padding: 0.3em;
+}
+
+
 
 /* item records */
 
@@ -79,10 +103,6 @@
 
 .pz2-details {
 	font-size: 71%;
-}
-
-.pz2-details table {
-	width:100%;
 }
 
 .pz2-details th {
@@ -107,6 +127,8 @@
 #pz2-results .pz2-details ul li {
 	margin: 0;
 }
+
+
 
 
 
