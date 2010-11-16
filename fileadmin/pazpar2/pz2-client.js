@@ -14,7 +14,7 @@ var showResponseType = '';
    Don't forget to also set termlist attributes in the corresponding
    metadata tags for the service. */ 
 var termListNames = ['xtargets', 'medium', 'author', 'subject', 'date'];
-var termListMax = {'xtargets': 16, 'medium': 6, 'author': 10, 'subject': 10, 'date': 6 };
+var termListMax = {'xtargets': 25, 'medium': 10, 'author': 10, 'subject': 10, 'date': 6 };
 
 if (document.location.hash == '#useproxy') {
 	usesessions = false;
@@ -92,10 +92,15 @@ var curDetRecId = '';
 var curDetRecData = null;
 var curSort = [];
 var curFilter = null;
-var filter = [];
+var facetData = {}; // stores faceting information as sent by pazpar2
+var filterArray = {};
 var displaySort =  {'date': 'descending', 'author': 'ascending', 'title': 'ascending'};
 var displayFilter = undefined;
+var hitList = []; // local storage for the records sent from pazpar2
+var displayHitList = []; // filtered and sorted list used for display
 var submitted = false;
+
+
 
 
 //
@@ -128,8 +133,25 @@ var appendInfoToContainer = function (info, container) {
 }
 
 
-var hitList = [];
-var displayHitList = [];
+
+/*	fieldContentInRecord
+	Returns a record's md-fieldName field. 
+		* Concatenated when several instances of the field are present.
+	input:	fieldName - name of the field to use
+			record - pazpar2 record
+			lowerCase (optional) - boolean indicating whether to transform the string to lower case
+	output: string with content of the field in the record
+*/		
+function fieldContentInRecord (fieldName, record, lowerCase) {
+	var result = String(record['md-' + fieldName]);
+
+	if (lowerCase) {
+		result.toLowerCase();
+	}
+
+	return result;
+}
+
 
 
 
@@ -140,12 +162,42 @@ var displayHitList = [];
 	according to the setup in the displaySort and displayFilter variables.
 */
 function displayList (list) {
-	/*
+	/*	filter
+		Returns a filtered list of pazpar2 records according to the current filterArray.
+		input:	list - list of pazpar2 records
+		output:	list of pazpar2 records
 	*/
 	var filter = function (listToFilter) {
-		var matchesFilters = function (input) {
-			return true;
+		/*	matchesFilters
+			Returns whether the passed record passes all filters.
+				I.e.: for each facet type it meets one of the listed conditions.
+			input:	record - pazpar2 record
+			output: boolean
+		*/
+		var matchesFilters = function (record) {
+			var matches = true;
+			for (var facetType in filterArray) {
+				for (var filterIndex in filterArray[facetType]) {
+					var filterValue = filterArray[facetType][filterIndex];
+					if (facetType === 'xtargets') {
+						for (var locationIndex in record.location) {
+							matches = (record.location[locationIndex]['@name'] == filterValue);
+							if (matches) { break; }
+						}
+					}
+					else {
+						matches = (fieldContentInRecord(facetType, record, true) == filterValue);
+					}
+
+					if (matches) { break; }
+				}
+
+				if (!matches) {	break; }
+			}
+
+			return matches;
 		}
+
 
 		var filteredList = [];
 		for (var index in listToFilter) {
@@ -196,21 +248,6 @@ function displayList (list) {
 		}
 
 		
-		/*	itemForRecord
-			Returns a record's md-fieldName field. 
-				* Concatenated when several instances of the field are present.
-			input:	record - pazpar2 record
-					fieldName - name of the field to use
-			output: string with content of the field in the record
-		*/		
-		function fieldContentInRecord (fieldName, record) {
-			var theName = String(record['md-' + fieldName]).toLowerCase();
-			if (!theName) {
-				theName = 'zzzzzzzzzzzzzzzzzz';
-			}
-			return theName;
-		}
-
 		var result = 0;
 
 		for (var sortKey in displaySort) {
@@ -223,11 +260,17 @@ function displayList (list) {
 				result = (date1.getTime() - date2.getTime()) * direction;
 			}
 			else {
-				var string1 = fieldContentInRecord(sortKey, record1);
-				var string2 = fieldContentInRecord(sortKey, record2);
+				var string1 = fieldContentInRecord(sortKey, record1, true);
+				var string2 = fieldContentInRecord(sortKey, record2, true);
 				
 				if (string1 == string2) {
 					result = 0;
+				}
+				else if (string1 == undefined) {
+					result = 1;
+				}
+				else if (string2 == undefined) {
+					result = -1;
 				}
 				else {
 					result = ((string1 < string2) ? 1 : -1) * direction;
@@ -529,32 +572,69 @@ function my_onstat(data) {
 }
 
 
-function my_onterm(data) {
-	// Creates markup for the termlist of type
-	var termListHTML = function (type) {
-		var theHTML = ['<div class="pz2-termList pz2-termList-', type, '">',
-			'<h5>', localise('facet-title-'+type), '</h5><ol>'];
-		var terms = data[type];
-		for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
-			theHTML.push( '<li><a href="#"'
-			+ ' target_name=' + terms[i].name
-			+ ' onclick="limitTarget(' + terms[i].name + '), this.firstChild.nodeValue);return false;">'
-			+ terms[i].name 
-			+ '<span class="count">' + terms[i].freq + '</span>'
-			+ '</a></li>');
-		}
-		theHTML.push('</ol></div>');
-		return theHTML;		
-	}
 
-	var newTermListsHTML = ['<h4>Termlists:</h4>'];
+/*	facetListForType
+	Creates DOM elements for the facet list of the requested type.
+		Uses facet information stored in facetData.
+	input:	type - string giving the facet type
+	output:	DOM elements for displaying the list of faces
+*/
+function facetListForType (type) {
+	var container = document.createElement('div');
+	container.setAttribute('class', 'pz2-termList pz2-termList-' + type);
+	var heading = document.createElement('h5')
+	container.appendChild(heading);
+	heading.appendChild(document.createTextNode(localise('facet-title-'+type)));
+	var list = document.createElement('ol');
+	container.appendChild(list);
+
+	var terms = facetData[type];
+	for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
+		var item = document.createElement('li');
+		list.appendChild(item);
+			var link = document.createElement('a');
+			item.appendChild(link);
+		link.setAttribute('href', '#');
+		var facetName = terms[i].name; 
+		link.setAttribute('onclick', 
+			'limitResults("' + type + '","' + facetName + '");return false;');
+		link.appendChild(document.createTextNode(facetName));
+			var count = document.createElement('span');
+		link.appendChild(count);
+		count.setAttribute('class', 'pz2-facetCount');
+			count.appendChild(document.createTextNode(terms[i].freq));
+	}
+	return container;		
+}
+
+
+
+/*	updateFacetLists
+	Updates all facet lists for the facet names stored in termListNames.
+*/
+function updateFacetLists () {
+	var container = document.getElementById('pz2-termLists');
+	$(container).empty();
+
+	var mainHeading = document.createElement('h4');
+	container.appendChild(mainHeading);
+	mainHeading.appendChild(document.createTextNode(localise('Facetten')));
 
 	for ( index in termListNames ) {
-		newTermListsHTML = newTermListsHTML.concat(termListHTML(termListNames[index]));
+		container.appendChild(facetListForType(termListNames[index]));
 	}
+}
 
-	var currentTermLists = document.getElementById("pz2-termLists");
-	replaceHtml(currentTermLists, newTermListsHTML.join(''));
+
+
+/*	my_onterm
+	pazpar2 callback for receiving facet data.
+		Stores faces data and recreates facets on page.
+	input:	data - Array with facet information.
+*/
+function my_onterm (data) {
+	facetData = data;
+	updateFacetLists();
 }
 
 
@@ -650,8 +730,7 @@ function limitQuery (field, value)
 }
 
 // limit by target functions
-function limitTarget (id, name)
-{
+function limitTarget (id, name) {
 	var navi = document.getElementById('pz2-navi');
 	navi.innerHTML = 
 		'Source: <a class="crossout" href="#" onclick="delimitTarget();return false;">'
@@ -664,8 +743,7 @@ function limitTarget (id, name)
 	return false;
 }
 
-function delimitTarget ()
-{
+function delimitTarget (id) {
 	var navi = document.getElementById('pz2-navi');
 	navi.innerHTML = '';
 	curFilter = null; 
@@ -675,41 +753,64 @@ function delimitTarget ()
 	return false;
 }
 
-function limitResults(name, kind) {
-	var thisFilter = {'name': name, 'kind': kind};
-	for (var index in filter) {
-		if (filter[index] == thisFilter) {
-			filter.push(thisFilter);
-			redisplay();
-			load();
-			break;
+
+
+/*	limitResults
+	Adds a filter for term for the data of type kind. Then redisplays.
+	input:	* kind - string with name of facet type
+			* term - string that needs to match the facet
+*/
+function limitResults(kind, term) {
+	if (filterArray[kind]) {
+		// add alternate condition to an existing filter
+		filterArray[kind].push(term);
+	}
+	else {
+		// the first filter of its kind: create array
+		filterArray[kind] = [term];
+	}
+
+	displayHitList = displayList(hitList);
+	display();
+}
+
+
+
+/*	delimitResults
+	Removes a filter for term from the data of type kind. Then redisplays.
+	input:	* kind - string with name of facet type
+			* term (optional) - string that shouldn't be filtered for
+					all terms are removed if term is omitted.
+*/
+function delimitResults(kind, term) {
+	if (filterArray[kind]) {
+		if (term) {
+			// if a term is given only delete occurrences of 'term' from the filter
+			for (var index in filterArray[kind]) {
+				if (filterArray[kind][index] == term) {
+					filterArray[kind].splice(index,1);
+				}
+			}
+			if (filterArray[kind].length == 0) {
+				filterArray[kind] = undefined;
+			}
 		}
+		else {
+			// if no term is given, delete the complete filter
+			filterArray[kind] = undefined;
+		}
+
+		displayHitList = displayList(hitList);
+		display();
 	}
 }
 
-function delimitResults(name, kind) {
-	var thisFilter = {'name': name, 'kind': kind};
-	for (var index in filter) {
-		if (filter[index] == thisFilter) {
-			filter.splice(index, 1);
-			redisplay();
-			load();
-			break;
-		}
-	}
-
-}
-
-function redisplay() {
-	
-}
 
 function showPage (pageNum) {
 	curPage = pageNum;
 	display();
 }
 
-// simple paging functions
 
 function pagerNext() {
 	if ( displayHitList.length - recPerPage*curPage > 0) {
@@ -717,13 +818,15 @@ function pagerNext() {
 	}
 }
 
+
 function pagerPrev() {
 	if ( curPage > 0 ) {
 		showPage(--curPage);
 	}
 }
 
-// swithing view between targets and records
+
+// switching view between targets and records
 
 function switchView(view) {
 	

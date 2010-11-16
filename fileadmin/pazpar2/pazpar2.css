@@ -36,6 +36,9 @@
 	margin-bottom: 0.5em;
 }
 
+
+
+/* facets */
 #pz2-termLists {
 	float:right;
 	width: 15em;
@@ -55,11 +58,22 @@
 .pz2-termList ol {
 	list-style-type: none;
 	margin-bottom: 1em;
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 .pz2-termList-author ol {
 	text-transform: capitalize;
 }
+
+.pz2-facetCount {
+	color: #999;
+	font-size: 81%;
+	font-style: italic;
+	margin-left: 0.3em;
+}
+
+
 
 
 /* pager */
@@ -129,17 +143,6 @@
 }
 
 
-
-
-
-
-/* facets */
-.pz2-termList .count {
-	color: #999;
-	font-size: 81%;
-	font-style: italic;
-	margin-left: 0.3em;
-}
 
 
 /* ZDB Info */
