@@ -10,11 +10,12 @@ var usesessions = true;
 var pazpar2path = '/pazpar2/search.pz2';
 var showResponseType = '';
 
-/* Maintain a list of all facet types so we can loop over it. 
-   Don't forget to also set termlist attributes in the corresponding
-   metadata tags for the service. */ 
-var termListNames = ['xtargets', 'medium', 'author', 'date'];
-var termListMax = {'xtargets': 25, 'medium': 10, 'author': 10, 'date': 10 };
+/*	Maintain a list of all facet types so we can loop over it.
+	Don't forget to also set termlist attributes in the corresponding
+	metadata tags for the service.
+*/
+var termListNames = ['xtargets', 'medium', 'language', 'author', 'date'];
+var termListMax = {'xtargets': 25, 'medium': 10, 'language': 6, 'author': 10, 'date': 10 };
 
 if (document.location.hash == '#useproxy') {
 	usesessions = false;
@@ -23,12 +24,14 @@ if (document.location.hash == '#useproxy') {
 }
 
 
-/* Simple-minded localisation:
-   Create a hash for each language, then use the appropriate one on the page. */
+/*	Simple-minded localisation:
+	Create a hash for each language, then use the appropriate one on the page.
+*/
 var germanTerms = {
 	'facet-title-xtargets': 'Kataloge',
 	'facet-title-medium': 'Art',
 	'facet-title-author': 'Autoren',
+	'facet-title-language': 'Sprache',
 	'facet-title-subject': 'Themengebiete',
 	'facet-title-date': 'Jahre',
 	'detail-label-title': 'Titel',
@@ -53,7 +56,7 @@ var germanTerms = {
 	'Kataloge': 'Kataloge',
 	'Google Books Vorschau': 'Google Books Vorschau',
 	'Umschlagbild': 'Umschlagbild',
-};
+}
 
 
 var localisations = {
