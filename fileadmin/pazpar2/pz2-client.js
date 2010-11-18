@@ -504,8 +504,12 @@ function display () {
 	*/
 	var updatePagers = function () {
 		$('div.pz2-pager').each( function(index) {
-				// remove existing pagers
+				// Remove existing pager content, preserving the progressIndicator
+				var progress = $(this).children('.pz2-progressIndicator');
 				$(this).empty()
+				if (progress.length == 1) {
+					this.appendChild(progress[0]);
+				}
 
 				var onsides = 6;
 				var pages = Math.ceil(displayHitList.length / recPerPage);
@@ -635,15 +639,26 @@ function display () {
 
 
 function my_onstat(data) {
-	var stat = document.getElementById("pz2-stat");
-	if (stat == null)
-	return;
-	
-	stat.innerHTML = '<h4>Status Information</h4term> -- Active clients: '
-						+ data.activeclients
-						+ '/' + data.clients + ' -- </span>'
-						+ '<span>Retrieved records: ' + data.records
-						+ '/' + data.hits + ' :.</span>';
+	// Display progress bar.
+	var progress = (data.clients - data.activeclients) / data.clients * 100;
+	var opacityValue = (progress == 100) ? 0 : 1;
+	$('.pz2-pager .pz2-progressIndicator').animate({width: progress + '%', opacity: opacityValue}, 100);
+
+	// Write out status information.
+	var statDiv = document.getElementById('pz2-stat');
+	if (statDiv) {
+		$(statDiv).empty();
+
+		var heading = document.createElement('h4');
+		statDiv.appendChild(heading);
+		heading.appendChild(document.createTextNode(localise('Status:')));
+
+		var statusText = localise('Aktive Abfragen:') + ' '
+				+ data.activeclients + '/' + data.clients + ' – '
+				+ localise('Geladene Datensätze:') + ' '
+				+ data.records + '/' + data.hits;
+		statDiv.appendChild(document.createTextNode(statusText));
+	}
 }
 
 
@@ -781,8 +796,7 @@ function facetListForType (type, preferOriginalFacets) {
 		var progressBar = document.createElement('div');
 		link.appendChild(progressBar);
 		var progress = terms[i].freq / terms['maximumNumber'] * 100;
-		progressBar.setAttribute('style', 'position:absolute;'
-				+ 'top:0px;bottom:0px;left:0px;width:' + progress + '%;');
+		progressBar.setAttribute('style', 'width:' + progress + '%;');
 		progressBar.setAttribute('class', 'pz2-progressIndicator');
 
 		// Facet Name

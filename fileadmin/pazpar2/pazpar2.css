@@ -12,10 +12,6 @@
 	display: none;
 }
 
-.pz2-recordCount {
-	float: right;
-}
-
 #pz2-navi {
 	margin-bottom: 1em;
 }
@@ -38,7 +34,8 @@
 
 
 
-/* facets */
+/* facets
+*/
 #pz2-termLists {
 	float:right;
 	width: 15em;
@@ -91,17 +88,30 @@
 	position: relative;
 }
 
+
+
+/* progress indicator
+*/
 .pz2-progressIndicator {
+	position: absolute;
+	display: block;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
 	background: #f9f6ff;
 }
 
 
-/* pager */
+
+/* pager
+*/
 .pz2-pager {
+	position: relative;
 	text-align: center;
 }
 
 .pz2-pager ol {
+	position: relative;
 	list-style-type: none;
 	display: inline;
 }
@@ -119,10 +129,15 @@
 	padding: 0.3em;
 }
 
+.pz2-recordCount {
+	position: relative;
+	float: right;
+}
 
 
-/* item records */
 
+/* item records
+*/
 .pz2-title-main {
 	font-weight: bold;
 }
