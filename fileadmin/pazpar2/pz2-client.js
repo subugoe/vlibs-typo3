@@ -699,7 +699,7 @@ function facetListForType (type, preferOriginalFacets) {
 			termList = facetData[type]
 		}
 		else {
-			// loop through data ourselves to gather information
+			// Loop through data ourselves to gather facet information.
 			var termArray = {};
 			for (var recordIndex in displayHitList) {
 				var record = displayHitList[recordIndex];
@@ -715,29 +715,35 @@ function facetListForType (type, preferOriginalFacets) {
 				}
 			}
 			
-			// sort by term frequency
+			// Sort by term frequency.
 			for (var term in termArray) {
 				termList.push({'name': term, 'freq': termArray[term]});
-			} 
-			termList.sort( function(term1, term2) {
-					if (term1.freq < term2.freq) { return 1; }
-					else if (term1.freq == term2.freq) {
-						if (term1.name < term2.name) { return -1; }
-						else { return 1; }
-					}
-					else { return -1; }
-				}
-			);
+			}
 
-			// special case for dates: take the topmost items and sort by date
-			if (type === 'date') {
-				if (termList.length > termListMax['date']) {
-					termList.splice(termListMax['date'], termList.length - termListMax['date']);
-				}
+			if (termList.length > 0) {
 				termList.sort( function(term1, term2) {
-						return (term1.name < term2.name) ? 1 : -1;
+						if (term1.freq < term2.freq) { return 1; }
+						else if (term1.freq == term2.freq) {
+							if (term1.name < term2.name) { return -1; }
+							else { return 1; }
+						}
+						else { return -1; }
 					}
 				);
+	
+				// Note the maximum number
+				termList['maximumNumber'] = termList[0].freq;
+
+				// Special case for dates: take the most frequent items and sort by date.
+				if (type === 'date') {
+					if (termList.length > termListMax['date']) {
+						termList.splice(termListMax['date'], termList.length - termListMax['date']);
+					}
+					termList.sort( function(term1, term2) {
+							return (term1.name < term2.name) ? 1 : -1;
+						}
+					);
+				}
 			}
 		}
 
@@ -764,18 +770,32 @@ function facetListForType (type, preferOriginalFacets) {
 		var item = document.createElement('li');
 		list.appendChild(item);
 
+		// Link
 		var link = document.createElement('a');
 		item.appendChild(link);
 		link.setAttribute('href', '#');
+		link.setAttribute('onclick', 
+			'limitResults("' + type + '","' + facetName + '");return false;');
+
+		// 'Progress bar'
+		var progressBar = document.createElement('div');
+		link.appendChild(progressBar);
+		var progress = terms[i].freq / terms['maximumNumber'] * 100;
+		progressBar.setAttribute('style', 'position:absolute;'
+				+ 'top:0px;bottom:0px;left:0px;width:' + progress + '%;');
+		progressBar.setAttribute('class', 'pz2-progressIndicator');
+
+		// Facet Name
 		var facetName = terms[i].name;
 		var facetDisplayName = facetName;
 		if (type === 'language') {
 			facetDisplayName = localise(facetName, languageNames);
 		}
-		link.setAttribute('onclick', 
-			'limitResults("' + type + '","' + facetName + '");return false;');
-		link.appendChild(document.createTextNode(facetDisplayName));
+		var textSpan = document.createElement('span');
+		link.appendChild(textSpan);
+		textSpan.appendChild(document.createTextNode(facetDisplayName));
 
+		// Hit Count
 		var count = document.createElement('span');
 		link.appendChild(count);
 		count.setAttribute('class', 'pz2-facetCount');
