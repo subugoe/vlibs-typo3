@@ -791,6 +791,9 @@ function facetListForType (type, preferOriginalFacets) {
 		if (type === 'language') {
 			facetDisplayName = localise(facetName, languageNames);
 		}
+		else if (type === 'medium') {
+			facetDisplayName = localise(facetName, mediaNames);			
+		}
 		var textSpan = document.createElement('span');
 		link.appendChild(textSpan);
 		textSpan.appendChild(document.createTextNode(facetDisplayName));
@@ -1972,7 +1975,43 @@ function recordIDForHTMLID (HTMLID) {
 
 
 
-/* Localised Language Codes */
+
+
+/* Localised Media Types 
+*/
+var mediaNames = {
+	'de': {
+		'article': 'Aufsatz',
+		'audio-visual': 'Video',
+		'book': 'Buch',
+		'electronic': 'Datei',
+		'journal': 'Zeitschrift',
+		'microform': 'Mikroform',
+		'music-score': 'Noten',
+		'other': 'Andere',
+		'recording': 'Aufnahme',
+		'website': 'Website',
+	},
+	
+	'en': {
+		'article': 'Article',
+		'audio-visual': 'Video',
+		'book': 'Book',
+		'electronic': 'Computer File',
+		'journal': 'Journal',
+		'microform': 'Microform',
+		'music-score': 'Music score',
+		'other': 'Other',
+		'recording': 'Recording',
+		'website': 'Website',
+	} 
+};
+
+
+
+
+/* Localised Language Codes 
+*/
 
 var languageNames = {
 	'de': {
