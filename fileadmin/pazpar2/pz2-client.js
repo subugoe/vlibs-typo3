@@ -357,6 +357,7 @@ function displayList (list) {
 function updateAndDisplay () {
 	displayHitList = displayList(hitList);
 	display();
+	updateFacetLists();
 }
 
 
