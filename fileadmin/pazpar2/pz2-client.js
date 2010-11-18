@@ -782,6 +782,8 @@ function facetListForType (type, preferOriginalFacets) {
 	// Loop through list of terms for the type and create an item with link for each one.
 	var terms = facetInformationForType(type);
 	for (var i = 0; i < terms.length && i < termListMax[type]; i++) {
+		var facetName = terms[i].name;
+
 		var item = document.createElement('li');
 		list.appendChild(item);
 
@@ -799,8 +801,7 @@ function facetListForType (type, preferOriginalFacets) {
 		progressBar.setAttribute('style', 'width:' + progress + '%;');
 		progressBar.setAttribute('class', 'pz2-progressIndicator');
 
-		// Facet Name
-		var facetName = terms[i].name;
+		// Facet Display Name
 		var facetDisplayName = facetName;
 		if (type === 'language') {
 			facetDisplayName = localise(facetName, languageNames);
