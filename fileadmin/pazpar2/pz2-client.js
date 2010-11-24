@@ -1072,7 +1072,7 @@ function delimitResults(kind, term) {
 	if (filterArray[kind]) {
 		if (term) {
 			// if a term is given only delete occurrences of 'term' from the filter
-			for (var index in filterArray[kind]) {
+			for (var index = filterArray[kind].length -1; index >= 0; index--) {
 				if (filterArray[kind][index] == term) {
 					filterArray[kind].splice(index,1);
 				}
