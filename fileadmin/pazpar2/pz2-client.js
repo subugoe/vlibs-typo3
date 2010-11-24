@@ -108,7 +108,7 @@ my_paz = new pz2( { "onshow": my_onshow,
 					"serviceId": my_serviceID } );
 // some state vars
 var curPage = 1;
-var recPerPage = 100;
+var recPerPage = 250;
 var curDetRecId = '';
 var curDetRecData = null;
 var curSort = [];
