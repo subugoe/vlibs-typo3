@@ -631,8 +631,13 @@ function display () {
 			markupForField('date', linkElement, spaceBefore, '.');
 		}
 
-		if (hit.recid == curDetRecId) {
-			appendInfoToContainer(renderDetails(curDetRecData), linkElement);
+		if (hit.detailsDivVisible) {
+			var detailsDiv = hit.detailsDiv;
+			if (!detailsDiv) {
+				detailsDiv = renderDetails(hit.recid[0]);
+				hit.detailsDiv = detailsDiv;
+			}
+			appendInfoToContainer(detailsDiv, LI);	
 		}
 	}
 
