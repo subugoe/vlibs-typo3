@@ -651,6 +651,10 @@ function display () {
 
 
 
+/*	my_onstat
+	Callback for pazpar2 status information. Updates status display.
+	input:	data - object with status information from pazpar2
+*/
 function my_onstat(data) {
 	// Display progress bar.
 	var progress = (data.clients - data.activeclients) / data.clients * 100;
@@ -884,33 +888,63 @@ function my_onterm (data) {
 
 
 function my_onrecord(data) {
-	// FIXME: record is async!!
-	clearTimeout(my_paz.recordTimer);
-	// in case on_show was faster to redraw element
-	var detRecordDiv = document.getElementById('det_'+ HTMLIDForRecordData(data));
-	if (detRecordDiv) return;
-	curDetRecData = data;
-	var recordDiv = document.getElementById('recdiv_'+ HTMLIDForRecordData(curDetRecData));
-	var details = renderDetails(curDetRecData);
-	recordDiv.appendChild( details );
 }
 
 
+
+/*	my_onbytarget
+	Callback for target status information. Updates the status display.
+	input:	data - list coming from pazpar2
+*/
 function my_onbytarget(data) {
 	var targetDiv = document.getElementById("pz2-byTarget");
-	var table ='<table><thead><tr><td>Target ID</td><td>Hits</td><td>Diags</td>'
-		+'<td>Records</td><td>State</td></tr></thead><tbody>';
-	
-	for (var i = 0; i < data.length; i++ ) {
-		table += "<tr><td>" + data[i].id +
-			"</td><td>" + data[i].hits +
-			"</td><td>" + data[i].diagnostic +
-			"</td><td>" + data[i].records +
-			"</td><td>" + data[i].state + "</td></tr>";
-	}
+	$(targetDiv).empty();
 
-	table += '</tbody></table>';
-	targetDiv.innerHTML = table;
+	var table = document.createElement('table');
+	targetDiv.appendChild(table);
+
+	var thead = document.createElement('thead');
+	table.appendChild(thead);
+	var tr = document.createElement('tr');
+	thead.appendChild(tr);
+	var td = document.createElement('td');
+	tr.appendChild(td);
+	td.appendChild(document.createTextNode(localise('Datenbank URL')));
+	td = document.createElement('td');
+	tr.appendChild(td);
+	td.appendChild(document.createTextNode(localise('Treffer')));
+	td = document.createElement('td');
+	tr.appendChild(td);
+	td.appendChild(document.createTextNode(localise('Code')));
+	td = document.createElement('td');
+	tr.appendChild(td);
+	td.appendChild(document.createTextNode(localise('Gesamt')));
+	td = document.createElement('td');
+	tr.appendChild(td);
+	td.appendChild(document.createTextNode(localise('Status')));
+	
+	var tbody = document.createElement('tbody');
+	table.appendChild(tbody);
+
+	for (var i = 0; i < data.length; i++ ) {
+		tr = document.createElement('tr');
+		tbody.appendChild(tr);
+		td = document.createElement('td');
+		tr.appendChild(td);
+		td.appendChild(document.createTextNode(data[i].id));
+		td = document.createElement('td');
+		tr.appendChild(td);
+		td.appendChild(document.createTextNode(data[i].hits));
+		td = document.createElement('td');
+		tr.appendChild(td);
+		td.appendChild(document.createTextNode(data[i].diagnostic));
+		td = document.createElement('td');
+		tr.appendChild(td);
+		td.appendChild(document.createTextNode(data[i].records));
+		td = document.createElement('td');
+		tr.appendChild(td);
+		td.appendChild(document.createTextNode(localise(data[i].state)));
+	}
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -963,7 +997,11 @@ function resetPage() {
 }
 
 
-
+/*	triggerSearch
+	Triggers search by pazpar2 middleware.
+		Called by clicking the search button.
+	TODO: Assumes there is a single search field.
+*/
 function triggerSearch () {
 	my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
 }
@@ -991,42 +1029,14 @@ function curSortToDisplaySort (curSortString) {
 }
 
 
+
+/*	loadSelect
+	Retrieves current state of the sort order popup menu and sets sort order accordingly.
+*/
 function loadSelect () {
 	curSort = document.select.sort.value;
 	curSortToDisplaySort(curSort);
 	recPerPage = document.select.perpage.value;
-}
-
-
-// limit the query after clicking the facet
-function limitQuery (field, value)
-{
-	document.search.query.value += ' and ' + field + '="' + value + '"';
-	onFormSubmitEventHandler();
-}
-
-// limit by target functions
-function limitTarget (id, name) {
-	var navi = document.getElementById('pz2-navi');
-	navi.innerHTML = 
-		'Source: <a class="crossout" href="#" onclick="delimitTarget();return false;">'
-		+ name + '</a>';
-	navi.innerHTML += '<hr/>';
-	curFilter = 'pz:id=' + id;
-	resetPage();
-	loadSelect();
-	triggerSearch();
-	return false;
-}
-
-function delimitTarget (id) {
-	var navi = document.getElementById('pz2-navi');
-	navi.innerHTML = '';
-	curFilter = null; 
-	resetPage();
-	loadSelect();
-	triggerSearch();
-	return false;
 }
 
 
@@ -1168,25 +1178,15 @@ function toggleDetails (prefixRecId) {
 
 
 
-function replaceHtml(el, html) {
-  var oldEl = typeof el === "string" ? document.getElementById(el) : el;
-  /*@cc_on // Pure innerHTML is slightly faster in IE
-	oldEl.innerHTML = html;
-	return oldEl;
-	@*/
-  var newEl = oldEl.cloneNode(false);
-  newEl.innerHTML = html;
-  oldEl.parentNode.replaceChild(newEl, oldEl);
-  /* Since we just removed the old element from the DOM, return a reference
-	 to the new element, which can be used to restore variable references. */
-  return newEl;
-};
 
-
-
-
-
-function renderDetails(recordID, marker) {
+/*	renderDetails
+	Create DIV with details information about the record passed.
+		Inserts details information and handles retrieval of external data 
+			such as ZDB info and Google Books button.
+	input:	recordID - string containing the key of the record to display details for
+	output:	DIV DOM element containing the details to be displayed
+*/
+function renderDetails(recordID) {
 	/*	deduplicate
 		Removes duplicate entries from an array. 
 		The first occurrence of any item is kept, later ones are removed.
