@@ -373,6 +373,14 @@ function my_onshow (data) {
 		var hit = data.hits[hitNumber];
 		var hitID = hit.recid[0];
 		if (hitID) {
+			var oldHit = hitList[hitID];
+			if (oldHit) {
+				hit.detailsDivVisible = oldHit.detailsDivVisible;
+				if (oldHit.location == hit.location) {
+					// preserve old details Div, if the location info hasn't changed
+					hit.detailsDiv = hitList[hitID].detailsDiv;
+				}
+			}
 			hitList[hitID] = hit;
 		}
 	}
