@@ -1987,7 +1987,7 @@ function renderDetails(recordID, marker) {
 */
 function HTMLIDForRecordData (recordData) {
 	if (recordData.recid[0] !== undefined) {
-		return recordData.recid[0].replace(/ /g,'§+§');
+		return recordData.recid[0].replace(/ /g,'-pd-');
 	}
 }
 
@@ -1998,7 +1998,7 @@ function HTMLIDForRecordData (recordData) {
 	output:	input with dashes replaced by spaces
 */
 function recordIDForHTMLID (HTMLID) {
-	return HTMLID.replace(/§\+§/g,' ');
+	return HTMLID.replace(/-pd-/g,' ');
 }
 
 
