@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/TYPO3v4/Extensions/!svn/ver/40520/extbase_kickstarter/trunk/Classes/Domain/Model/Property
+END
+TextProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/TYPO3v4/Extensions/!svn/ver/40520/extbase_kickstarter/trunk/Classes/Domain/Model/Property/TextProperty.php
+END
+FloatProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/TYPO3v4/Extensions/!svn/ver/40481/extbase_kickstarter/trunk/Classes/Domain/Model/Property/FloatProperty.php
+END
+StringProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/TYPO3v4/Extensions/!svn/ver/40520/extbase_kickstarter/trunk/Classes/Domain/Model/Property/StringProperty.php
+END
+DateTimeProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/TYPO3v4/Extensions/!svn/ver/40481/extbase_kickstarter/trunk/Classes/Domain/Model/Property/DateTimeProperty.php
+END
+IntegerProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/TYPO3v4/Extensions/!svn/ver/40481/extbase_kickstarter/trunk/Classes/Domain/Model/Property/IntegerProperty.php
+END
+BooleanProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/TYPO3v4/Extensions/!svn/ver/40481/extbase_kickstarter/trunk/Classes/Domain/Model/Property/BooleanProperty.php
+END
+SelectProperty.php
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/TYPO3v4/Extensions/!svn/ver/40481/extbase_kickstarter/trunk/Classes/Domain/Model/Property/SelectProperty.php
+END

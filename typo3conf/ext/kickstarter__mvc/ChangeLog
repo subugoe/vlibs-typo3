@@ -1,0 +1,12 @@
+2009-01-27  Christian Welzel  <gawain@camlann.de>
+
+    * generated code switched to PHP5 (constructors)
+    * reformat of generator code (removed the spaces vs tabs mess)
+    * changed name generation for models
+    * Fixed bug #6195: Missing depends on kickstarter
+    * Fixed bug #8612: configurations setup has wrong tt_content key
+    * Fixed bug #8613: xajax renderer issues
+    * Fixed bug #8638: kickstarter assumes there's a sorting field on db tables
+    * Fixed bug #8640: Switched controller not able to find key
+    * Fixed bug #8641: Switched controller setup.txt lacks configuration
+    * Fixed bug #8642: Renderer base getXajaxPageSwitch missing classname variable

@@ -19,4 +19,19 @@ t3lib_extMgm::addPlugin(array('LLL:EXT:its_langmenu/locallang_db.xml:tt_content.
 
 
 t3lib_extMgm::addStaticFile($_EXTKEY,"pi2/static/","Langmenu nc");
+
+$tempColumns = array (
+	'tx_itslangmenu_disable_in_menu' => array (
+		'exclude' => 0,
+		'label' => 'LLL:EXT:its_langmenu/locallang_db.xml:sys_language.tx_itslangmenu_disable_in_menu',
+		'config' => array (
+			'type' => 'check',
+		)
+	),
+);
+
+
+t3lib_div::loadTCA('sys_language');
+t3lib_extMgm::addTCAcolumns('sys_language',$tempColumns,1);
+t3lib_extMgm::addToAllTCAtypes('sys_language','tx_itslangmenu_disable_in_menu;;;;1-1-1');
 ?>

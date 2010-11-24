@@ -8,10 +8,12 @@
 		<languageKey index="default" type="array">
 			<label index="tt_content.list_type_pi1">Langmenu</label>
 			<label index="tt_content.list_type_pi2">Langmenu nc</label>
+			<label index="sys_language.tx_itslangmenu_disable_in_menu">Disable in ITS Langmenu</label>
 		</languageKey>
 		<languageKey index="de" type="array">
 			<label index="tt_content.list_type_pi1">Sprachmenu</label>
 			<label index="tt_content.list_type_pi2">Sprachmenu nc</label>
+			<label index="sys_language.tx_itslangmenu_disable_in_menu">Nicht sichtbar in ITS Langmenu</label>
 		</languageKey>
 	</data>
 </T3locallang>

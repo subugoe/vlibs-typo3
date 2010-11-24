@@ -36,8 +36,8 @@ class tx_itslangmenu_base {
 		if ( ! isset($this->deflangid) )
 			$this->deflangid = 0;
 		$tag = $this->deflangid;
-		$query = "SELECT * ,sys_language.uid as langid FROM sys_language,static_languages WHERE static_lang_isocode = static_languages.uid ORDER BY `title` ASC ";
-		$res = mysql(TYPO3_db,$query);
+		$query = "SELECT * ,sys_language.uid as langid FROM sys_language,static_languages WHERE (static_lang_isocode = static_languages.uid) AND (tx_itslangmenu_disable_in_menu = 0) ORDER BY `title` ASC ";
+		$res = $GLOBALS['TYPO3_DB']->sql(TYPO3_db, $query);		
 		$langArr=array();
 		$uid = $this->cObj->parentRecord['data']['uid'] ;
 		if  ($this->conf['defaultLanguagelg_iso_2'] ) {
@@ -59,7 +59,7 @@ class tx_itslangmenu_base {
 			//$GLOBALS['_GET']['L']=0;
 		}
 
-		$HTTP_ACCEPT_LANGUAGE = $GLOBALS['HTTP_SERVER_VARS']['HTTP_ACCEPT_LANGUAGE'];
+		$HTTP_ACCEPT_LANGUAGE= t3lib_div::getIndpEnv('HTTP_ACCEPT_LANGUAGE');
 		$array_accepted_langs = explode(",",$HTTP_ACCEPT_LANGUAGE);
 		/*debug($array_offered_langs );*/
 		//$array_offered_langs = array("de","en");
@@ -95,14 +95,17 @@ function ITSJUMP() {
 		$htmlform.='<form name="Springen" action="index.php"><div class="langselect"><label for="sel_lang">Language/Sprache </label>
 		<select id="sel_lang" name="URLs" onchange="ITSJUMP();" class="selectlang1"  size="1" >';
 		$lang = $GLOBALS["TSFE"]->tmpl->setup['config.']['sys_language_uid'] ;
-		$tt_params['tx_ttnews']=t3lib_div::_GP('tx_ttnews');
-		$tt_count = 0;
-		if (is_array(  $tt_params  ))
-			if (is_array($tt_params['tx_ttnews']))
-			$tt_count =intval(array_count_values($tt_params['tx_ttnews']));
+		$getvars = t3lib_div::_GET ();
+		unset ($getvars['L']);
+		#unset ($getvars['cHash']);
+    	unset ($getvars['id']);
+		
+		
 
 		foreach($this->langArr as $tag1=>$element)
 		{
+			$pp =  array("L" => "$tag1");
+			$pp2 = array_merge($getvars,$pp);
 			if ($tag1 == $lang) {
 				$link=$this->parent->pi_getPageLink($GLOBALS['TSFE']->id,"", array("L" => "$tag1"));
 				if (!substr(strtolower ($link),0,4)== 'http')
@@ -111,11 +114,7 @@ function ITSJUMP() {
 					<option value="'.$link.'" selected="selected">'.$element.'</option>';
 
 			} else	{
-				$pp= array("L" => "$tag1");
-				if ($tt_count >0)
-					$pp2 = array_merge($tt_params,$pp);
-				else
-					$pp2 =$pp;
+				
 				$link=$this->parent->pi_getPageLink($GLOBALS['TSFE']->id,"", $pp2);
 
 				if (!substr(strtolower ($link),0,4)== 'http')
@@ -137,6 +136,11 @@ function ITSJUMP() {
     }
 
     function GetLinkStyle() {
+    
+    	$getvars = t3lib_div::_GET ();
+    	unset ($getvars['L']);
+    	#unset ($getvars['cHash']);
+    	unset ($getvars['id']);
     	$lang = $GLOBALS["TSFE"]->tmpl->setup['config.']['sys_language_uid'] ;		
 		if (is_array($this->langArr)) {
 			$htmlform .= '<ul>';
@@ -145,11 +149,17 @@ function ITSJUMP() {
 			foreach($this->langArr as $tag1=>$element)
 			{
 				$count++;
-				$htmlform .= '<li>';
-				if ($tag1 == $lang)
+				$pp =  array("L" => "$tag1");
+				$pp2 = array_merge($getvars,$pp);
+				if ($tag1 == $lang) {
+					$htmlform .= '<li class="activelang"><span class="activelangspan">';
 					$htmlform .= $element;
-				else
-					$htmlform .= '<a href="'.$this->parent->pi_getPageLink($GLOBALS['TSFE']->id,"", array("L" => "$tag1")).'">'.$element.'</a>';
+					$htmlform .= '</span>';
+				} 	else { 
+					$htmlform .= '<li class="nonactivelang"><span class="nonactivelangspan">';
+					$htmlform .= '<a href="'.$this->parent->pi_getPageLink($GLOBALS['TSFE']->id,"",$pp2).'">'.$element.'</a>';
+					$htmlform .= '</span>';
+				}
 					
 				if ($count < $langcount)
 					$htmlform .= $this->conf['listdelimiter'];
@@ -160,7 +170,7 @@ function ITSJUMP() {
 		}
 
 		$htmlform.='<div style="display:none">';
-		$htmlform.='<br/><a href="http://www.its-hofmann.de"> TYPO3 Plugin its_langmenu by ITS Hofmann</a>';
+		$htmlform.='<br/><a href="http://www.its-hofmann.de"> TYPO3 Plugin its_langmenu 0.3.0 by ITS Hofmann</a>';
 		$htmlform.='</div>';
 
 
@@ -180,7 +190,7 @@ function ITSJUMP() {
 
 
 
-		//	if (t3lib_div::GPvar ('L') !== NULL) return 0;
+		
 
 			$referer = t3lib_div::getIndpEnv('HTTP_REFERER');
 

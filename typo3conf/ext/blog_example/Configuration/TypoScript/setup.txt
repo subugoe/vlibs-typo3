@@ -1,0 +1,53 @@
+ # Plugin configuration
+plugin.tx_blogexample {
+	settings {
+		 # maximum number of posts to display at once
+		maxPosts = 3
+	}
+	persistence {
+		storagePid = {$plugin.tx_blogexample.persistence.storagePid}
+		classes {
+			Tx_Extbase_Domain_Model_FrontendUser {
+				subclasses {
+					Tx_BlogExample_Domain_Model_Administrator = Tx_BlogExample_Domain_Model_Administrator
+				}
+			}
+			Tx_BlogExample_Domain_Model_Administrator {
+				mapping {
+					tableName = fe_users
+					recordType = Tx_BlogExample_Domain_Model_Administrator
+				}
+			}
+		}
+	}
+	view {
+		templateRootPath = {$plugin.tx_blogexample.view.templateRootPath}
+		partialRootPath = {$plugin.tx_blogexample.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_blogexample.view.layoutRootPath}
+	}
+	# This is an example how to modify the translation
+	_LOCAL_LANG {
+		default {
+			read_more = more >>
+		}
+	}
+}
+
+ # Module configuration
+module.tx_blogexample {
+	settings < plugin.tx_blogexample.settings
+	persistence < plugin.tx_blogexample.persistence
+	view < plugin.tx_blogexample.view
+	view {
+		templateRootPath = {$module.tx_blogexample.view.templateRootPath}
+		partialRootPath = {$module.tx_blogexample.view.partialRootPath}
+		layoutRootPath = {$module.tx_blogexample.view.layoutRootPath}
+	}
+}
+
+plugin.tx_blogexample._CSS_DEFAULT_STYLE (
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+)

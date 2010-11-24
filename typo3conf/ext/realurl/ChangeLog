@@ -1,3 +1,32 @@
+2010-11-17  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed bug #16398: MySQL extended syntax i snot used in case of persistent connections
+	* Released version 1.10.1
+
+2010-11-09  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed bug #16222: Typo in csh
+	* Fixed bug: sorting direction cannot be changed in redirects view
+
+2010-11-03  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Continue fixes for #15096 (see comment 0043394 and below in the bug report)
+
+2010-11-02  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed bug: fileName did not work if file name is an integer
+	* Fixed bug #16098: renaming page removes path cache entries instead of expiring them
+	* Fixed bug #15906: cHash comparison failure
+
+2010-11-01  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed bug #15824: Speaking URL path segment does not work
+	* Improve performance of expire time deletions
+
+2010-10-19  Dmitry Dulepov  <dmitry@typo3.org>
+
+	* Fixed bug #15768: make number of results per page in the redirects view configurable
+
 2010-09-16  Dmitry Dulepov  <dmitry@typo3.org>
 
 	* Released version 1.10.0

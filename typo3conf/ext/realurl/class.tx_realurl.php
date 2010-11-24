@@ -28,7 +28,7 @@
 /**
  * Class for creating and parsing Speaking Urls
  *
- * $Id: class.tx_realurl.php 38193 2010-09-15 10:21:21Z dmitry $
+ * $Id: class.tx_realurl.php 40340 2010-11-17 12:43:06Z dmitry $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  * @author	Dmitry Dulepov <dmitry@typo3.org>
@@ -216,7 +216,7 @@ class tx_realurl {
 	 * @return	void
 	 */
 	public function __construct() {
-		if (!t3lib_extMgm::isLoaded('dbal') && get_resource_type($GLOBALS['TYPO3_DB']->link) == 'mysql link') {
+		if (!t3lib_extMgm::isLoaded('dbal') && strpos(get_resource_type($GLOBALS['TYPO3_DB']->link), 'mysql link') !== false) {
 			$res = $GLOBALS['TYPO3_DB']->sql_query('SELECT @@VERSION');
 			$rec = $GLOBALS['TYPO3_DB']->sql_fetch_row($res);
 			$GLOBALS['TYPO3_DB']->sql_free_result($res);
@@ -649,7 +649,6 @@ class tx_realurl {
 							$GETvar = $setup['GETvar'];
 							$parameterSet = isset($paramKeyValues[$GETvar]);
 							$GETvarVal = $parameterSet ? $paramKeyValues[$GETvar] : '';
-							$this->rebuildCHash |= !$parameterSet;
 
 							// Set reverse map:
 							$revMap = is_array($setup['valueMap']) ? array_flip($setup['valueMap']) : array();
@@ -661,12 +660,13 @@ class tx_realurl {
 							} elseif ($setup['noMatch'] == 'bypass') {
 								// If no match in reverse value map and "bypass" is set, remove the parameter from the URL
 								// Must rebuild cHash because we remove a parameter!
-								$this->rebuildCHash = true;
+								$this->rebuildCHash |= $parameterSet;
 							} elseif ($setup['noMatch'] == 'null') {
 								// If no match and "null" is set, then set "dummy" value
 								// Set "dummy" value (?)
 								$prevVal = '';
 								$pathParts[] = '';
+								$this->rebuildCHash |= $parameterSet;
 							} elseif ($setup['userFunc']) {
 								$params = array(
 									'pObj' => &$this,
@@ -687,10 +687,12 @@ class tx_realurl {
 								$prevVal = $setup['valueDefault'];
 								$pathParts[] = rawurlencode($setup['valueDefault']);
 								$this->cHashParameters[$GETvar] = $setup['valueDefault'];
+								$this->rebuildCHash |= !$parameterSet;
 							} else {
 								$prevVal = $GETvarVal;
 								$pathParts[] = rawurlencode($GETvarVal);
 								$this->cHashParameters[$GETvar] = $prevVal;
+								$this->rebuildCHash |= !$parameterSet;
 							}
 
 							// Finally, unset GET var so it doesn't get processed once more:
@@ -1415,7 +1417,8 @@ class tx_realurl {
 		$keyValues = '';
 		if (is_array($this->extConf['fileName']['index'])) {
 			foreach ($this->extConf['fileName']['index'] as $key => $config) {
-				if ($key == $fileName) {
+				// Note: strict comparison because the following is true in PHP: 0 == 'whatever'
+				if ($key === $fileName) {
 					$keyValues = $config['keyValues'];
 					$this->filePart = $fileName;
 					if (isset($config['mimetype'])) {
@@ -1424,7 +1427,7 @@ class tx_realurl {
 					$handled = true;
 					break;
 				}
-				elseif ($key == '.' . $extension) {
+				elseif ($key === '.' . $extension) {
 					$keyValues = $config['keyValues'];
 					$pathPartsCopy[] = urlencode($segment);
 					$this->filePart = '.' . $extension;
@@ -1457,7 +1460,12 @@ class tx_realurl {
 		$prevVal = '';
 		foreach ($setupArr as $setup) {
 			if (count($pathParts) == 0) {
-				break;
+				// If we are here, it means we are at the end of the URL.
+				// Since some items still remain in the $setupArr, it means
+				// we stripped empty segments at the end of the URL on encoding.
+				// Reconstruct them or cHash check will fail in TSFE.
+				// Related to bug #15906.
+				$GET_string .= '&' . rawurlencode($setup['GETvar']) . '=';
 			}
 			else {
 				// Get value and remove from path parts:
@@ -1534,6 +1542,9 @@ class tx_realurl {
 
 							// Add to GET string:
 							if ($setup['GETvar'] && strlen($value)) { // Checking length of value; normally a *blank* parameter is not found in the URL! And if we don't do this we may disturb "cHash" calculations!
+								if (isset($this->extConf['init']['emptySegmentValue']) && $this->extConf['init']['emptySegmentValue'] === $value) {
+									$value = '';
+								}
 								$GET_string .= '&' . rawurlencode($setup['GETvar']) . '=' . rawurlencode($value);
 							}
 						} else {
@@ -2334,7 +2345,7 @@ class tx_realurl {
 			$pageIdList = implode(',', $GLOBALS['TYPO3_DB']->cleanIntArray($pageIdArray));
 			$GLOBALS['TYPO3_DB']->exec_DELETEquery('tx_realurl_urlencodecache', 'page_id IN (' . $pageIdList . ')');
 			$GLOBALS['TYPO3_DB']->exec_DELETEquery('tx_realurl_urldecodecache', 'page_id IN (' . $pageIdList . ')');
-			$GLOBALS['TYPO3_DB']->exec_DELETEquery('tx_realurl_pathcache', 'page_id IN (' . $pageIdList . ') AND expire<=' . time());
+			$GLOBALS['TYPO3_DB']->exec_DELETEquery('tx_realurl_pathcache', 'page_id IN (' . $pageIdList . ') AND expire>0 AND expire<=' . time());
 		}
 	}
 
@@ -2456,9 +2467,17 @@ class tx_realurl {
 	 * @return array
 	 */
 	protected function cleanUpPathParts(array $pathParts) {
-		for ($index = count($pathParts) - 1; $index >= 0; $index--) {
-			if ($pathParts[$index] == '') {
-				unset($pathParts[$index]);
+		// Remove trailing empty segments
+		for ($index = count($pathParts) - 1; $index >= 0 && $pathParts[$index] == ''; $index--) {
+			unset($pathParts[$index]);
+		}
+		if (isset($this->extConf['init']['emptySegmentValue'])) {
+			$emptyValue = rawurlencode($this->extConf['init']['emptySegmentValue']);
+			// Set empty value
+			for ($index = count($pathParts) - 1; $index >= 0; $index--) {
+				if ($pathParts[$index] == '') {
+					$pathParts[$index] = $emptyValue;
+				}
 			}
 		}
 		return $pathParts;

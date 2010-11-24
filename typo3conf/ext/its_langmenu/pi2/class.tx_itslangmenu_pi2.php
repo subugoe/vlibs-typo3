@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2008 Christoph Hofmann <typo3@its-hofmann.de>
+*  (c) 2008 - 2010 Christoph Hofmann <typo3<at>its-hofmann.de>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -29,7 +29,7 @@ require_once(t3lib_extMgm::extPath('its_langmenu').'class.tx_itslangmenu_base.ph
 /**
  * Plugin 'Langmenu nc' for the 'its_langmenu' extension.
  *
- * @author	Christoph Hofmann <typo3@its-hofmann.de>
+ * @author	Christoph Hofmann <typo3<at>its-hofmann.de>
  * @package	TYPO3
  * @subpackage	tx_itslangmenu
  */
@@ -61,8 +61,9 @@ class tx_itslangmenu_pi2 extends tslib_pibase {
 		} else {
 			$htmlform= $langmenu->GetLinkStyle();
 		}
-		$content = $htmlform;
+		$content = $htmlform;		
 		if ($conf['autolang']==1) {
+			
 			if ($langmenu->jumptolang($tag)) {
 				//return;
 			}
