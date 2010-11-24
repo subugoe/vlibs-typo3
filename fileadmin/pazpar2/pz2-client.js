@@ -1134,26 +1134,35 @@ function switchView(view) {
 	}
 }
 
-// detailed record drawing
+
+
+/*	toggleDetails
+	Called when a list item is clicked.
+		Reveals/Hides the detail information for the record.
+		Detail information is created when it is first needed and then stored with the record.
+	input:	prefixRecId - string of the form rec_RECORDID coming from the DOM ID	
+*/
 function toggleDetails (prefixRecId) {
-	var recId = prefixRecId.replace('rec_', '');
-	
-	var detRecordDiv = document.getElementById('det_'+ recId);
-	if (detRecordDiv) {
-		// Detailed record information is present.
-		if ( detRecordDiv.offsetHeight == 0 ) {
-			// … not visible, so show it
-			detRecordDiv.setAttribute('style', 'display:block');
-		}
-		else {
-			// … it's visible so hide it
-			detRecordDiv.setAttribute('style', 'display:none');
-		}
+	var recordIDHTML = prefixRecId.replace('rec_', '');
+	var recordID = recordIDForHTMLID(recordIDHTML);
+	var record = hitList[recordID];
+
+	var detRecordDivVisible = record.detailsDivVisible;
+
+	if (detRecordDivVisible) {
+		// Detailed record information is present: remove it
+		$('#det_'+ recordIDHTML).remove();
+		record.detailsDivVisible = false;
 	}
 	else {
-		// Create detailed record information if
-		var parent = document.getElementById('recdiv_'+ recId);
-		parent.appendChild(renderDetails(recordIDForHTMLID(recId)));
+		// Detailed record information is not present: get detail view and append it
+		if (!record.detailsDiv) {
+			record.detailsDiv = renderDetails(recordID);
+		}
+
+		var parent = document.getElementById('recdiv_'+ recordIDHTML);
+		parent.appendChild(record.detailsDiv);
+		record.detailsDivVisible = true;
 	}
 }
 
