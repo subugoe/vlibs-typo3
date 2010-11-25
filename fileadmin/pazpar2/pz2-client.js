@@ -45,8 +45,11 @@ var germanTerms = {
 	'detail-label-description-plural': 'Informationen',
 	'detail-label-series-title': 'Reihe',
 	'detail-label-issn': 'ISSN',
+	'detail-label-acronym-issn': 'Internationale Standardseriennummer',
 	'detail-label-isbn': 'ISBN',
+	'detail-label-acronym-isbn': 'Internationale Standardbuchnummer',
 	'detail-label-doi': 'DOI',
+	'detail-label-acronym-doi': 'Document Object Identifier: Mit dem Link zu dieser Nummer kann das Dokument im Netz gefunden werden.',
 	'detail-label-doi-plural': 'DOIs',
 	'detail-label-verfügbarkeit': 'Verfügbarkeit',
 	'elektronisch': 'digital',
@@ -1272,7 +1275,18 @@ function renderDetails(recordID) {
 
 				var rowHeading = document.createElement('th');
 				tableRow.appendChild(rowHeading);
-				rowHeading.appendChild(document.createTextNode(headingText + ':'));
+				
+				var labelNode = document.createTextNode(headingText + ':');
+				var acronymKey = 'detail-label-acronym-' + title;
+				if (localise(acronymKey) !== acronymKey) {
+					// acronym: add acronym element
+					var acronymElement = document.createElement('acronym');
+					acronymElement.setAttribute('title', localise(acronymKey));
+					acronymElement.appendChild(labelNode);
+					labelNode = acronymElement; 
+				}
+
+				rowHeading.appendChild(labelNode);
 
 				var rowData = document.createElement('td');
 				tableRow.appendChild(rowData);
@@ -1312,7 +1326,11 @@ function renderDetails(recordID) {
 		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
 		linkElement.setAttribute('target', 'pz2-linktarget');
 		linkElement.appendChild(document.createTextNode(DOI));
-		return linkElement;
+
+		var DOISpan = document.createElement('span');
+		DOISpan.appendChild(linkElement);		
+
+		return DOISpan;
 	}
 
 
@@ -1329,7 +1347,7 @@ function renderDetails(recordID) {
 			deduplicate(theData);
 
 			// run loop backwards as pazpar2 seems to reverse the order of metadata items
-			for (var dataNumber = theData.length -1; dataNumber >= 0; dataNumber--) {
+			for (var dataNumber = theData.length - 1; dataNumber >= 0; dataNumber--) {
 				var rawDatum = theData[dataNumber];
 				var wrappedDatum;
 				switch	(title) {
