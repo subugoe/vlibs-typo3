@@ -8,6 +8,7 @@
 
 
 
+
 .pz2-ranking .pz2-perPage {
 	display: none;
 }
@@ -26,11 +27,14 @@
 
 #pz2-results ol {
 	padding-left: 3em;
+	float: left; /* required so we don't clear the sidebar/faceting when clearing our <li>s */
 }
 
 #pz2-results ol li {
 	margin-bottom: 0.5em;
+	clear: right; /* required to clear the right floated Google Books element */
 }
+
 
 
 
@@ -136,6 +140,7 @@
 
 
 
+
 /* item records
 */
 .pz2-title-main {
@@ -154,14 +159,16 @@
 	font-size: 71%;
 }
 
-.pz2-details th {
+.pz2-details dt {
 	text-align: right;
-	vertical-align: top;
-	min-width: 10em;
+	font-weight: bold;
+	width: 10em;
+	float: left;
+	clear: right;
 }
 
-.pz2-details ul {
-	padding-left: 2em;
+.pz2-details dd {
+	margin-left: 10.3em;
 }
 
 .pz2-detail-availability td a {
@@ -173,6 +180,10 @@
 	font-size: 122%;
 }
 
+.pz2-details ul {
+	padding-left: 2em;
+}
+
 #pz2-results .pz2-details ul li {
 	margin: 0;
 }
@@ -180,7 +191,8 @@
 
 
 
-/* ZDB Info */
+/* ZDB Info 
+*/
 .pz2-ZDBLibraryName {
 	display: block;
 	font-style: italic;
@@ -191,11 +203,11 @@ a.pz2-ZDBGeneralInfo {
 	display:block;
 }
 
-td div {
+dd div {
 	position: relative;
 }
 
-td div h4 {
+dd div h4 {
 	position: absolute;
 	right: 100%;
 	padding-right: 4px;
@@ -204,8 +216,13 @@ td div h4 {
 	color: #666;
 }
 
-/* Google Books */
+
+
+
+/* Google Books 
+*/
 .googleBooks {
+	clear
 	display: block;
 	float: right;
 }

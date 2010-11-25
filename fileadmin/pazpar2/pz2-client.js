@@ -1245,10 +1245,10 @@ function renderDetails(recordID) {
 	/*	detailLine
 		input:	title - string with element's name
 				informationElements - array of DOM elements with the information to be displayed
-		output: DOM element of table row with 
-				* heading containing the localised and plural conscious name of the item
-				* data containing the informationElements passed. 
-					If there is more than one of them, they are wrapped in a list
+		output: Array of DOM elements containing
+				0:	DT element with the row's title
+				1:	DD element with the row's data
+						If there is more than one data item, they are wrapped in a list.
 	*/
 	var detailLine = function (title, informationElements) {
 		if (informationElements && title) {
@@ -1270,12 +1270,10 @@ function renderDetails(recordID) {
 			var infoItems = markupInfoItems(informationElements);
 
 			if (infoItems) { // we have information, so insert it
-				var tableRow = document.createElement('tr');
-				tableRow.setAttribute('class', 'pz2-detail-' + title);
+				var line = [];
 
-				var rowHeading = document.createElement('th');
-				tableRow.appendChild(rowHeading);
-				
+				var rowTitle = document.createElement('dt');
+				line.push(rowTitle);
 				var labelNode = document.createTextNode(headingText + ':');
 				var acronymKey = 'detail-label-acronym-' + title;
 				if (localise(acronymKey) !== acronymKey) {
@@ -1285,23 +1283,22 @@ function renderDetails(recordID) {
 					acronymElement.appendChild(labelNode);
 					labelNode = acronymElement; 
 				}
+				rowTitle.appendChild(labelNode);
 
-				rowHeading.appendChild(labelNode);
-
-				var rowData = document.createElement('td');
-				tableRow.appendChild(rowData);
+				var rowData = document.createElement('dd');
+				line.push(rowData);
 				rowData.appendChild(infoItems);
 			}
 		}
 
-		return tableRow;
+		return line;
 	}
 
 
 
 	/*	detailLineAuto
 		input:	title - string with the element's name
-		output:	DOM element for title and the data coming from data[md-title]
+		output:	Array of DOM elements for title and the data coming from data[md-title]
 				as created by detailLine.
 	*/
 	var detailLineAuto = function (title) {
@@ -1598,11 +1595,14 @@ function renderDetails(recordID) {
 
 
 
-	/*	addGoogleBooksLinkIntoElement
+	/*	googleBooksElement
 		Figure out whether there is a Google Books Preview for the current data.
-		input:	element: DOM element that is the container of the Google Books Preview button.
+		output:	SPAN DOM element that will contain the Google Books button and cover art.
 	*/
-	var addGoogleBooksLinkIntoElement = function (element) {
+	var googleBooksElement = function () {
+		var booksSpan = document.createElement('span');
+		booksSpan.setAttribute('class', 'googleBooks');
+
 
 		// Create list of search terms from ISBN and OCLC numbers.
 		var searchTerms = [];
@@ -1660,7 +1660,7 @@ function renderDetails(recordID) {
 					buttonImage.setAttribute('src', buttonImageURL);
 					buttonImage.setAttribute('alt', localise('Google Books Vorschau'));
 					bookLink.appendChild(buttonImage);
-					element.appendChild(bookLink);
+					booksSpan.appendChild(bookLink);
 
 					if (selectedBook.thumbnail_url !== undefined) {
 						var coverArtImage = document.createElement('img');
@@ -1673,6 +1673,7 @@ function renderDetails(recordID) {
 			}
 		);
 
+		return booksSpan;
 
 
 		/*	openPreview
@@ -1724,22 +1725,18 @@ function renderDetails(recordID) {
 
 	
 	/*	extraLinks
-		Returns table row element with additional links:
+		Returns an array with markup for extra links and information.
 			* Google Books, if possible
-		output:	TR DOM element
+		output:	Array with DT/DD pair containing the information.
 	*/
 	var extraLinks = function () {
-		var tr = document.createElement('tr');
-		tr.appendChild(document.createElement('th'));
-		var td = document.createElement('td');
-		tr.appendChild(td);
+		var titleElement = document.createElement('dt');
 
-		var booksSpan = document.createElement('span');
-		td.appendChild(booksSpan);
-		booksSpan.setAttribute('class', 'googleBooks');
-		addGoogleBooksLinkIntoElement(booksSpan);
+		var dataElement = document.createElement('dd');
+		dataElement.setAttribute('class', 'pz2-extraLinks');
+		dataElement.appendChild(googleBooksElement());
 
-		return tr;
+		return [titleElement, dataElement];
 	}
 
 
@@ -1964,25 +1961,22 @@ function renderDetails(recordID) {
 			var localURL = location['@id'];
 			var localName = location['@name'];
 
-			var detailsRow = document.createElement('tr');
-			var detailsHeading = document.createElement('th');
-			detailsRow.appendChild(detailsHeading);
+			var detailsHeading = document.createElement('dt');
+			locationDetails.push(detailsHeading);
 			detailsHeading.appendChild(document.createTextNode(localise('Ausgabe')+':'));
-			var detailsData = document.createElement('td');
-			detailsRow.appendChild(detailsData);
+
+			var detailsData = document.createElement('dd');
+			locationDetails.push(detailsData);
 
 			appendInfoToContainer( detailInfoItem('edition'), detailsData );
 			appendInfoToContainer( detailInfoItem('publication-name'), detailsData );
 			appendInfoToContainer( detailInfoItem('publication-place'), detailsData );
 			appendInfoToContainer( detailInfoItem('date'), detailsData );
 			appendInfoToContainer( detailInfoItem('physical-extent'), detailsData );
-
 			cleanISBNs();
 			appendInfoToContainer( detailInfoItem('isbn'), detailsData );
 			appendInfoToContainer( electronicURLs(), detailsData);
 			appendInfoToContainer( catalogueLink(), detailsData);
-			
-			locationDetails.push(detailsRow);
 		}
 
 		return locationDetails;
@@ -1996,7 +1990,7 @@ function renderDetails(recordID) {
 		detailsDiv.setAttribute('class', 'pz2-details');
 		detailsDiv.setAttribute('id', 'det_' + HTMLIDForRecordData(data));
 
-		var detailsTable = document.createElement('table');
+		var detailsTable = document.createElement('dl');
 		detailsDiv.appendChild(detailsTable);
 
 		appendInfoToContainer( detailLineAuto('author'), detailsTable );
@@ -2012,7 +2006,8 @@ function renderDetails(recordID) {
 	}
 
 	return detailsDiv;
-}
+
+} // end of renderDetails
 
 
 
