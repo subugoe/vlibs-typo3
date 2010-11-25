@@ -1907,7 +1907,7 @@ function renderDetails(recordID) {
 				catalogueURL += '&TRM=ppn+' + PPN;
 			}
 			else if (targetURL.search(/z3950.gbv.de:20012\/subgoe_opc/) != -1) {
-				catalogueURL = 'http://opac.sub.uni-goettingen.de/DB=1/CMD?ACT=SRCHA&IKT=1016&TRM=ppn+' + PPN;
+				catalogueURL = 'http://gso.gbv.de/DB=2.1/CMD?ACT=SRCHA&IKT=1016&TRM=ppn+' + PPN;
 			}
 
 			if (catalogueURL) {
