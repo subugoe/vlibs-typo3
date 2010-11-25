@@ -1875,13 +1875,22 @@ function renderDetails(recordID) {
 						linkURL = URLInfo['#text'];
 					}
 
-					var link = document.createElement('a');
-					URLsContainer.appendChild(link);
-					link.setAttribute('href', linkURL);
-					link.setAttribute('target', 'pz2-linktarget');
-					link.innerHTML = linkText;
-					if (URLNumber < electronicURLs.length - 1) {
-						URLsContainer.appendChild(document.createTextNode(', '));
+					// make sure the same URL isn't listed as a DOI already
+					var URLAlreadyListed = false;
+					for (var DOINumber in data['md-doi']) {
+						URLAlreadyListed |= (linkURL.search(data['md-doi'][DOINumber]) != -1);
+					}
+
+					if (!URLAlreadyListed) {
+						if (URLsContainer.childElementCount > 0) {
+							// add , as separator if not the first element
+							URLsContainer.appendChild(document.createTextNode(', '));
+						}
+						var link = document.createElement('a');
+						URLsContainer.appendChild(link);
+						link.setAttribute('href', linkURL);
+						link.setAttribute('target', 'pz2-linktarget');
+						link.innerHTML = linkText;
 					}
 				}
 				URLsContainer.appendChild(document.createTextNode('; '));
