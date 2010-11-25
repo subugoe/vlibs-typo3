@@ -3,6 +3,7 @@
 	padding: 0;
 }
 
+
 body {
 	font-family: Georgia, Palatino, serif;
 	color: #000;
@@ -13,6 +14,11 @@ body {
 
 #head, #foot, #menu, h1, h2, h3, h4, h5, h6 {
 	font-family: Optima, Tahoma, sans-serif;
+}
+
+
+img {
+	border: 0px none;
 }
 
 
