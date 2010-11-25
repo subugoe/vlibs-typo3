@@ -1702,7 +1702,8 @@ function renderDetails(recordID) {
 				titleBarDiv.appendChild(closeBoxLink);
 				$(closeBoxLink).css({display:'block', height:'16px', width:'16px', 
 									position:'absolute', right:'2px', top:'2px', background:'#666'})
-				closeBoxLink.setAttribute('href', 'javascript:$("#' + previewContainerDivName + '").hide(200);');
+				closeBoxLink.setAttribute('href', '#');
+				closeBoxLink.setAttribute('onclick', 'javascript:$("#' + previewContainerDivName + '").hide(200);return false;');
 
 				var previewDiv = document.createElement('div');
 				previewDiv.setAttribute('id', previewDivName);
