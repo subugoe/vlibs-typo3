@@ -1944,10 +1944,10 @@ function renderDetails(recordID) {
 			detailsRow.appendChild(detailsData);
 
 			appendInfoToContainer( detailInfoItem('edition'), detailsData );
-			appendInfoToContainer( detailInfoItem('physical-extent'), detailsData );
 			appendInfoToContainer( detailInfoItem('publication-name'), detailsData );
 			appendInfoToContainer( detailInfoItem('publication-place'), detailsData );
 			appendInfoToContainer( detailInfoItem('date'), detailsData );
+			appendInfoToContainer( detailInfoItem('physical-extent'), detailsData );
 
 			cleanISBNs();
 			appendInfoToContainer( detailInfoItem('isbn'), detailsData );
