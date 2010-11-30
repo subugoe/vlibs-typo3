@@ -252,6 +252,7 @@ function displayList (list) {
 			var matches = true;
 			for (var facetType in filterArray) {
 				for (var filterIndex in filterArray[facetType]) {
+					matches = false;
 					var filterValue = filterArray[facetType][filterIndex];
 					if (facetType === 'xtargets') {
 						for (var locationIndex in record.location) {
@@ -262,14 +263,12 @@ function displayList (list) {
 					else {
 						var contents = fieldContentsInRecord(facetType, record);
 						for (var index in contents) {
-							if (contents[index].toLowerCase() == filterValue) {
-								matches = true;
-								break;
-							}
+							matches = (String(contents[index]).toLowerCase() == filterValue.toLowerCase());
+							if (matches) { break; }
 						}
 					}
 
-					if (matches) { break; }
+					if (!matches) { break; }
 				}
 
 				if (!matches) {	break; }
