@@ -6,8 +6,17 @@
 	text-decoration:none;
 }
 
+.pz2-mainForm input {
+	font-size: 133%;
+}
 
+.pz2-searchField {
+	width: 20em;
+}
 
+.pz2-ranking, .pz2-mainForm {
+	display: inline;
+}
 
 .pz2-ranking .pz2-perPage {
 	display: none;

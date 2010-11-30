@@ -965,35 +965,43 @@ function my_onbytarget(data) {
 ////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-// wait until the DOM is ready
-function domReady () 
-{
-	if ( document.search ) {
-		document.search.onsubmit = onFormSubmitEventHandler;
-		document.search.query.value = '';
-		document.select.sort.onchange = onSelectDdChange;
-		document.select.perpage.onchange = onSelectDdChange;
-	}
+
+
+/*	domReady
+	Called when the page is loaded. Sets up JavaScript-based search mechanism.
+*/
+function domReady ()  {
+	$('.pz2-searchForm').each( function(index, form) {
+			form.onsubmit = onFormSubmitEventHandler;
+			form.action = null;
+			form.method = null;
+		}
+	);
+
+	$('.pz2-searchForm .pz2-searchField').val('');
+	$('.pz2-sort, .pz2-perPage').attr('onchange', 'onSelectDidChange');
 }
 
-// when search button pressed
-function onFormSubmitEventHandler() 
-{
+
+
+/*	onFormSubmitEventHandler
+	Called when the search button is pressed. Submits the query to the pazpar2 server.
+*/
+function onFormSubmitEventHandler () {
 	resetPage();
-	loadSelect();
-	triggerSearch();
+	triggerSearchForForm(this);
 	submitted = true;
 	return false;
 }
 
 
 
-/*	onSelectDdChange
+/*	onSelectDidChange
 	Called when sort-order popup menu is changed.
 		Gathers new sort-order information and redisplays.
 */
-function onSelectDdChange() {
-	loadSelect();
+function onSelectDidChange () {
+	loadSelectsInForm(this.form);
 	updateAndDisplay();
 	return false;
 }
@@ -1012,46 +1020,59 @@ function resetPage() {
 }
 
 
-/*	triggerSearch
+
+/*	triggerSearchForForm
 	Triggers search by pazpar2 middleware.
 		Called by clicking the search button.
-	TODO: Assumes there is a single search field.
+	input:	form - DOM element of the form used to trigger the search
 */
-function triggerSearch () {
-	my_paz.search(document.search.query.value, fetchRecords, curSort, curFilter);
+function triggerSearchForForm (form) {
+	var searchTerm = $('.pz2-searchField', form).val();
+	loadSelectsFromForm(form);
+	my_paz.search(searchTerm, fetchRecords, curSort, curFilter);
 }
 
 
 
-/*	curSortToDisplaySort
-	Takes the passed sort value, parses it according to pazpar2's documentation and
-		sets up the according displaySort Object.
-	input:	curSortString - string with pazpar2-style sort criteria
+/*	setSortCriteriaFromString
+	Takes the passed sort value string with sort criteria separated by -- 
+		and labels and value inside the criteria separated by -,
+			[this strange format is owed to escaping problems when creating a Flow3 template for the form]
+		parses them and sets the displaySort and curSort variables accordingly.
+	input:	curSortString - string giving the sort format
 */
-function curSortToDisplaySort (curSortString) {
-	var sortCriteria = curSortString.split(',');
+function setSortCriteriaFromString (curSortString) {
+	var sortCriteria = curSortString.split('--');
 
 	displaySort = [];
+	var curSortArray = [];
+
 	for ( var criterionIndex in sortCriteria ) {
-		var criterionParts = sortCriteria[criterionIndex].split(':');
+		var criterionParts = sortCriteria[criterionIndex].split('-');
 		if (criterionParts.length == 2) {
 			var fieldName = criterionParts[0];
 			var direction = criterionParts[1];
 			displaySort.push({'fieldName': fieldName,
-								'direction': ((direction == 0) ? 'descending' : 'ascending')});
+								'direction': ((direction == 'd') ? 'descending' : 'ascending')});
+			curSortArray.push(fieldName + ':' + ((direction == 'd') ? '0' : '1') ); 
 		}
 	}
+
+	curSort = curSortArray.join(',');
 }
 
 
 
-/*	loadSelect
-	Retrieves current state of the sort order popup menu and sets sort order accordingly.
+
+/*	loadSelectsFromForm
+	Retrieves current settings for sort order and items per page from the form that is passed.
+	input:	form - DOM element of the form to get the data from
 */
-function loadSelect () {
-	curSort = document.select.sort.value;
-	curSortToDisplaySort(curSort);
-	recPerPage = document.select.perpage.value;
+function loadSelectsFromForm (form) {
+	var sortOrderString = $('.pz2-sort option:selected', form).val();
+	setSortCriteriaFromString(sortOrderString);
+
+	recPerPage = $('.pz2-perPage option:selected', form).val();
 }
 
 
