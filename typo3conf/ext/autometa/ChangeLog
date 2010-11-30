@@ -1,9 +1,8 @@
-features:
+feature brainstorming:
 	* Find another solution to manipuate HTML output for not overriding the cache, maybe optional db saving.
 	* Add/generate other meta elements out of content.
 	  - "author" could be generated/read out of page content via regular expression (if available) or set static?
 	* Add support for dublin core (not really needed though).
-	* Remove meta generator.
 	* Won't add support for http-equiv since they are no "real" meta informations and should stick to http header.
 
 todo:
@@ -15,8 +14,20 @@ todo:
 	* Make weighted keywords configureable (weight amount of specific elements).
 	* Make the use of TYPO3SEARCH comments optional though it's not useful anyway.
 	* Test if unicode properties (\p{L} work with any non UTF-8 charset or without u modifier.
-	* Case-sensitive stopwords.
-	* Add TypoScript setup of "page.meta" and constants "plugin.autometa" to debug output.
+	* Case-sensitive stopwords?
+	
+Version 1.1.1: 2010-11-26  S. Arnold <s.arnold@rebell.at>
+	* Fix: switched t3lib_div::getIndpEnv('TYPO3_DOCUMENT_ROOT') to PATH_site (thanks to Andreas Sussitz for the hint)
+	* Add: 'so' to generic stopwords and 'alles' to stopwords.de
+	
+Version 1.1.0: 2010-07-01  S. Arnold <s.arnold@rebell.at>
+	* Fix: Some coding guideline stuff
+	* Add: Removing of meta generator
+	* Add: Logic to prevent keywords or description form being generated while switched off
+	
+Version 1.0.2: 2010-04-27  S. Arnold <s.arnold@rebell.at>
+	* Fix: added german subjunctions according to to stopwords.de
+	       data according to http://de.wiktionary.org/wiki/Kategorie:Subjunktion_(Deutsch)
 	
 Version 1.0.1: 2010-04-27  S. Arnold <s.arnold@rebell.at>
 	* Fix: PREC pattern was not escaped correctly; added delimiter to preg_quote()

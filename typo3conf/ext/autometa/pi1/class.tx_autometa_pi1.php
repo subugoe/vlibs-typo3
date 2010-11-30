@@ -27,9 +27,9 @@ require_once (PATH_tslib . 'class.tslib_content.php');
 
 class tx_autometa_pi1 extends tslib_pibase {
 
-	var $prefixId      = "tx_autometa_pi1";               // Same as class name
-	var $scriptRelPath = "pi1/class.tx_autometa_pi1.php"; // Path to this script relative to the extension dir.
-	var $extKey        = "autometa";                      // The extension key.
+	var $prefixId      = 'tx_autometa_pi1';               // Same as class name
+	var $scriptRelPath = 'pi1/class.tx_autometa_pi1.php'; // Path to this script relative to the extension dir.
+	var $extKey        = 'autometa';                      // The extension key.
 	
 	var $content;   // HTML code of the page
 	var $config;    // TypoScript Setup
@@ -60,6 +60,7 @@ class tx_autometa_pi1 extends tslib_pibase {
 		$this->add_description ($this->content);
 		$this->add_date        ($this->content);
 		$this->add_author      ($this->content);
+		$this->remove_generator($this->content);
 		
 		if ($this->extConf['enableDevLog'] == 1) {
 			t3lib_div::devLog('total parsetime', $this->extKey, 0, array('mircoseconds' => ((int)t3lib_div::convertMicrotime(microtime())-(int)$timer)));
@@ -73,7 +74,9 @@ class tx_autometa_pi1 extends tslib_pibase {
 	 * @return  void
 	 */
 	function add_keywords(&$html) {
-		$html = str_replace('###AUTOMETA_KEYWORDS###', $this->html_codec($this->get_keywords($this->get_plaintext(), $this->config['keywords.']['amount'])), $html);
+		if ($this->config['keywords.']['enable'] == 1) {
+			$html = str_replace('###AUTOMETA_KEYWORDS###', $this->html_codec($this->get_keywords($this->get_plaintext(), $this->config['keywords.']['amount'])), $html);
+		}
 	}
 	
 	/**
@@ -83,11 +86,13 @@ class tx_autometa_pi1 extends tslib_pibase {
 	 * @return  void
 	 */
 	function add_description(&$html) {
-		$html = str_replace('###AUTOMETA_DESCRIPTION###', $this->html_codec($this->get_plaintext(false, true, $this->config['description.']['length'])), $html);
+		if ($this->config['description.']['enable'] == 1) {
+			$html = str_replace('###AUTOMETA_DESCRIPTION###', $this->html_codec($this->get_plaintext(false, true, $this->config['description.']['length'])), $html);
+		}
 	}
 	
 	/**
-	 * Does nothing. A placeholder at the moment for possible other formats that can't be done via pure TypoCcript.
+	 * Does nothing. A placeholder at the moment for possible other formats that can't be done via pure TypoScript.
 	 *
 	 * @param   string  plain html of the document, passed by reference
 	 * @return  void
@@ -96,13 +101,30 @@ class tx_autometa_pi1 extends tslib_pibase {
 	}
 	
 	/**
-	 * Does nothing. A placeholder at the moment for possible other formats that can't be done via pure TypoCcript.
+	 * Does nothing. A placeholder at the moment for possible other formats that can't be done via pure TypoScript.
 	 *
 	 * @param   string  plain html of the document, passed by reference
 	 * @return  void
 	 */
 	function add_author(&$html) {
 	}
+	
+	/**
+	 * Removes the meta element with the generator information
+	 *
+	 * @param   string  plain html of the document, passed by reference
+	 * @return  void
+	 */
+	function remove_generator(&$html) {
+		if ($this->config['generator.']['enable'] == 0) {
+			$html = preg_replace (
+				'/\t?<meta name=\"?generator\"?.+?>\n?/is',
+				'',
+				$html
+			);
+		}
+	}
+	
 	
 	/**
 	 * Gets the raw HTML content of the page.
@@ -112,35 +134,37 @@ class tx_autometa_pi1 extends tslib_pibase {
 	 * @return  void
 	 */
 	function get_rawtext($str) {
-		// pretty similar to indexed_search: tx_indexedsearch_indexer->typoSearchTags();
-		$expBody = preg_split('/\<\!\-\-[\s]?TYPO3SEARCH_/',$str);
-		unset($str);
-		if(count($expBody)>1) {
-			$this->rawhtml = '';
-			foreach($expBody as $val) {
-				$part = explode('-->',$val,2);
-				if (trim($part[0]) == 'begin') {
-					$this->rawhtml.= $part[1];
-					$prev = '';
-				} elseif (trim($part[0]) == 'end') {
-					$this->rawhtml .= $prev;
-				} else {
-					$prev  = $val;
+		if ($this->config['keywords.']['enable'] == 1 || $this->config['description.']['enable'] == 1) {
+			// pretty similar to indexed_search: tx_indexedsearch_indexer->typoSearchTags();
+			$expBody = preg_split('/\<\!\-\-[\s]?TYPO3SEARCH_/',$str);
+			unset($str);
+			if(count($expBody)>1) {
+				$this->rawhtml = '';
+				foreach($expBody as $val) {
+					$part = explode('-->',$val,2);
+					if (trim($part[0]) == 'begin') {
+						$this->rawhtml.= $part[1];
+						$prev = '';
+					} elseif (trim($part[0]) == 'end') {
+						$this->rawhtml .= $prev;
+					} else {
+						$prev  = $val;
+					}
 				}
+			} else {
+				if ($this->extConf['enableDevLog'] == 1) { t3lib_div::devLog('get_rawhtml(): no TYPO3SEARCH comment found', $this->extKey, 1); }
+				$this->rawhtml = $expBody[0];
 			}
-		} else {
-			if ($this->extConf['enableDevLog'] == 1) { t3lib_div::devLog('get_rawhtml(): no TYPO3SEARCH comment found', $this->extKey, 1); }
-			$this->rawhtml = $expBody[0];
+			
+			// remove head, script and style elements entirely
+			$this->rawhtml = preg_replace(
+				array('/<head[^>]*?>.*?<\/head>/si', '/<script[^>]*?>.*?<\/script>/si', '/<style[^>]*?>.*?<\/style>/si',),
+				array(' ', ' ', ' ',),
+				$this->rawhtml
+			);
+			
+			if ($this->extConf['enableDevLog'] == 1) { t3lib_div::devLog('get_rawhtml()', $this->extKey, 0, array('rawhtml' => $this->rawhtml)); }
 		}
-		
-		// remove head, script and style elements entirely
-		$this->rawhtml = preg_replace(
-			array('/<head[^>]*?>.*?<\/head>/si', '/<script[^>]*?>.*?<\/script>/si', '/<style[^>]*?>.*?<\/style>/si',),
-			array(' ', ' ', ' ',),
-			$this->rawhtml
-		);
-		
-		if ($this->extConf['enableDevLog'] == 1) { t3lib_div::devLog('get_rawhtml()', $this->extKey, 0, array('rawhtml' => $this->rawhtml)); }
 	}
 	
 	/*
@@ -233,13 +257,12 @@ class tx_autometa_pi1 extends tslib_pibase {
 		
 		// read the stopwordsfile - must be called "stopwords.**" where ** represents a two letter ISO 639-1 language code
 		// stopwords can be separated by whitespace, commma or semicolon
-		// should be extended to a configurable path (via typoscript) where other stopwords.** files could reside - atm fileadmin is hardcoded
 		
 		$stopwords = preg_split(
 			'/\s+|,|;/',
 			strtolower(
-				$this->read_stopwords_file('/' . t3lib_extMgm::siteRelPath($this->extKey) . 'res/stopwords', true) . ' ' . 
-				$this->read_stopwords_file('/' . t3lib_extMgm::siteRelPath($this->extKey) . 'res/stopwords.' . $GLOBALS['TSFE']->tmpl->setup['config.']['language'], true) . ' ' . 
+				$this->read_stopwords_file(t3lib_extMgm::siteRelPath($this->extKey) . 'res/stopwords', true) . ' ' . 
+				$this->read_stopwords_file(t3lib_extMgm::siteRelPath($this->extKey) . 'res/stopwords.' . $GLOBALS['TSFE']->tmpl->setup['config.']['language'], true) . ' ' . 
 				$this->read_stopwords_file($this->config['keywords.']['stopwordsdir'] . 'stopwords') . ' ' . 
 				$this->read_stopwords_file($this->config['keywords.']['stopwordsdir'] . 'stopwords.' . $GLOBALS['TSFE']->tmpl->setup['config.']['language']) 
 			)
@@ -273,7 +296,7 @@ class tx_autometa_pi1 extends tslib_pibase {
 	}
 	
 	function read_stopwords_file($path, $core=false) {
-		$path = t3lib_div::getIndpEnv('TYPO3_DOCUMENT_ROOT') . $path;
+		$path = PATH_site . $path;
 		if(!$stopwords = @file_get_contents($path)) {
 			if ($this->extConf['enableDevLog'] == 1) {
 				t3lib_div::devLog(
@@ -306,7 +329,7 @@ class tx_autometa_pi1 extends tslib_pibase {
 	}
 }
 
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/autometa/pi1/class.tx_autometa_pi1.php"]){
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/autometa/pi1/class.tx_autometa_pi1.php"]);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/autometa/pi1/class.tx_autometa_pi1.php']){
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/autometa/pi1/class.tx_autometa_pi1.php']);
 }
 ?>

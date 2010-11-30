@@ -25,24 +25,33 @@
  * 'Check Internal Links' for the 'cag_linkchecker' extension.
  *
  * @author	Dimitri König <dk@cabag.ch>
+ * @author	Jochen Rieger <j.rieger@connecta.ag>
  */
 
 class tx_caglinkchecker_checkinternallinks {
 
 	function checkLink($url, $reference) {
-		$rows = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
-			'uid, deleted, title',
-			'pages',
+
+        // special treatment for internal links as they could be to pages or tt_content recs
+        list($table) = t3lib_div::trimExplode(':', $reference->recRef);
+
+        // CAG TODO: do we need to make sure, table is either 'pages' or 'tt_content'
+        $labelField = $GLOBALS['TCA'][$table]['ctrl']['label'];
+
+		list($row) = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
+			'uid, deleted, ' . $labelField,
+			$table,
 			'uid = ' . intval($url)
 		);
-		if($rows[0]) {
-			if($rows[0]['deleted'] == '1') {
-				$response = $GLOBALS['LANG']->getLL('list.report.pagedeleted');
-				$response = str_replace('###title###', $rows[0]['title'], $response); 
+
+		if($row) {
+			if($row['deleted'] == '1') {
+				$response = $GLOBALS['LANG']->getLL('list.report.' . $table . '_deleted');
+				$response = str_replace('###title###', $row[$labelField], $response); 
 				return $response;
 			}
 		} else {
-			return $GLOBALS['LANG']->getLL('list.report.pagenotexisting');
+			return $GLOBALS['LANG']->getLL('list.report.' . $table . '_notexisting');
 		}
 
 		return 1;

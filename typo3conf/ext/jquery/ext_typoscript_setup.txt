@@ -1,0 +1,6 @@
+plugin.tx_jquery {
+	base_only = false
+	plugins =
+	compressed = true
+	compatibility = true
+}

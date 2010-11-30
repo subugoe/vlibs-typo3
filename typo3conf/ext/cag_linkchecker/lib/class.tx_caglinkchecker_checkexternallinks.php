@@ -35,6 +35,7 @@ class tx_caglinkchecker_checkexternallinks {
 	 * Checks a given URL + /path/filename.ext for validity
 	 */
 	function checkLink($url, $reference) {
+
 		if($this->url_reports[$url]) {
 			return $this->url_reports[$url]; 
 		}

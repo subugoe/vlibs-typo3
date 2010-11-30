@@ -1,0 +1,6 @@
+plugin.tx_jsmanager_Executor {
+	libs {
+	}
+}
+
+page.1 = < plugin.tx_jsmanager_Executor

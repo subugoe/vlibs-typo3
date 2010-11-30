@@ -1,0 +1,15 @@
+# example jsmanager config
+plugin.tx_jsmanager_Executor.libs {
+	place = header
+	order = jquery
+	config {
+		jquery {
+			version = max
+			variant = minimized
+			plugins = compat
+			plugins {
+				compat = EXT:jquery/versions/{version}/plugins/normal/jquery.compat-1.1.js
+			}
+		}
+	}
+}

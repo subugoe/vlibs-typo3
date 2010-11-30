@@ -139,6 +139,8 @@ class tx_caglinkchecker_module1 extends t3lib_SCbase {
             }
         }
 
+        //debug($this->searchFields);
+
 		$this->pidList = $this->getPidList($this->id);
 		
 		// actually this is the main function that collects all broken links
@@ -212,6 +214,8 @@ class tx_caglinkchecker_module1 extends t3lib_SCbase {
 		
 		// let's traverse all configured tables
 		foreach ($this->searchFields as $table => $fields) {
+
+            #echo '<br />Table: ' . $table . '<br />';
 			
 			// if table is not configured, we assume the ext is not installed and therefore no need to check it
 			if (!is_array($GLOBALS['TCA'][$table])) continue;
@@ -238,6 +242,7 @@ class tx_caglinkchecker_module1 extends t3lib_SCbase {
 
 				// get all references
 				foreach ($fields as $field) {
+            
 					$haystack.= $row[$field] . ' --- ';
 					$conf = $GLOBALS['TCA'][$table]['columns'][$field]['config'];
 					if ($conf['softref'] && strlen($row[$field]))	{	// Check if a TCA configured field has softreferences defined (see TYPO3 Core API document)
@@ -247,23 +252,36 @@ class tx_caglinkchecker_module1 extends t3lib_SCbase {
 							if (is_object($softRefObj))	{	// If there was an object returned...:
 								$resultArray = $softRefObj->findRef($table, $field, $row['uid'], $row[$field], $spKey, $spParams);	// Do processing
 								if(!empty($resultArray['elements'])) {
-									//debug($resultArray['elements'], $table.':'.$field.':'.$row['uid']);
+
+                                    $elementCount = 0;
 									foreach($resultArray['elements'] as $element) {
 										$r = $element['subst'];
+
 										if(!empty($r)) {
+                                            // CAG DEBUG: okay, still there!
+                                            #t3lib_div::debug($r);
+
 											$type = $r['type'];
 											foreach($this->hookObjectsArr as $key => $hookObj) {
 												if (method_exists($hookObj, 'fetchType')) {
 													$type = $hookObj->fetchType($r, $type);
 												}
 											}
-											$results[$type][$table.':'.$field.':'.$row['uid']]["substr"] = $r;
-											$results[$type][$table.':'.$field.':'.$row['uid']]["row"] = $row;
-											$results[$type][$table.':'.$field.':'.$row['uid']]["table"] = $table;
-											$results[$type][$table.':'.$field.':'.$row['uid']]["field"] = $field;
-											$results[$type][$table.':'.$field.':'.$row['uid']]["uid"] = $row['uid'];
+
+                                            #echo $type;
+                                            $recIdentifier = $table.':'.$field.':'.$row['uid']; // TODO: maybe turn recID and elementCount around - then elementCount should be reset after each type-change
+                                            $results[$elementCount]['type'] = $type; // adding an own type for the hook possibility
+                                            $results[$elementCount]['substr'] = $r;
+                                            $results[$elementCount]['row'] = $row;
+                                            $results[$elementCount]['table'] = $table;
+                                            $results[$elementCount]['field'] = $field;
+                                            $results[$elementCount]['uid'] = $row['uid'];
+                                            #$results[$recIdentifier][$elementCount]['uid'] = $row['uid'];
+
 										}
+                                        $elementCount++;
 									}
+                                    #die(debug($results, 'results in foreach, oben'));
 								}
 							}
 						}
@@ -272,40 +290,56 @@ class tx_caglinkchecker_module1 extends t3lib_SCbase {
 			} // end while ($row = ...)
 		} // end foreach $table
 
-		//die(debug($results));
-		
-		foreach($this->hookObjectsArr as $key => $hookObj) {
-			$checkOptions = t3lib_div::_GP('checkOption');
-			if($results[$key] && $checkOptions[$key]) {
-				// ...and count'em and check'em!
-				foreach($results[$key] as $entryKey => $entryValue) {
-					$table = $entryValue['table'];
-					$row = $entryValue['row'];
-					$url = $entryValue['substr']['tokenValue'];
-					$this->linkCounts[$table]++;
 
-					// check each link
-					$checkURL = 1;
-					if (method_exists($hookObj, 'checkLink')) {
-						$checkURL = $hookObj->checkLink($url, $this);
-					}
-					
-					// broken link found!
-					if ($checkURL != 1) {
-						$this->brokenLinkCounts[$table]++;
-						$row['brokenUrl'] = $url;
-						$row['brokenUrlResponse'] = '<span style="color:red">'.$checkURL.'</span>';
-						$this->recordsWithBrokenLinks[$table][] = $row;
-					} elseif(t3lib_div::_GP('showalllinks')) {
-						$this->brokenLinkCounts[$table]++;
-						$row['brokenUrl'] = $url;
-						$row['brokenUrlResponse'] = '<span style="color:green">OK</span>';
-						$this->recordsWithBrokenLinks[$table][] = $row;
-					}
-				}
-			}
-		}
+		$checkOptions = t3lib_div::_GP('checkOption');
+        foreach ($results as $key => $linkInfo) {
 
+            #debug($linkInfo, 'type: ' . $linkInfo['type']);
+
+            if (is_array($linkInfo)) {
+
+                $type = $linkInfo['type'];
+                $table = $linkInfo['table'];
+                $row = $linkInfo['row'];
+                $url = $linkInfo['substr']['tokenValue'];
+
+                // we store the recordRef for internal links in classvar to have it available for later use in checkLink func
+                $this->recRef = $linkInfo['substr']['recordRef'];
+
+                $this->linkCounts[$table]++;
+
+                // check each link
+                $checkURL = 1;
+                #t3lib_div::debug($this->hookObjectsArr);
+
+                if (method_exists($this->hookObjectsArr[$type], 'checkLink')) {
+                    $checkURL = $this->hookObjectsArr[$type]->checkLink($url, $this);
+                }
+
+
+                // broken link found!
+                if ($checkURL != 1) {
+
+                    $this->brokenLinkCounts[$table]++;
+                    $row['brokenUrl'] = $url;
+                    $row['brokenUrlResponse'] = '<span style="color:red">'.$checkURL.'</span>';
+                    $this->recordsWithBrokenLinks[$table][] = $row;
+
+                } elseif(t3lib_div::_GP('showalllinks')) {
+
+                    $this->brokenLinkCounts[$table]++;
+                    $row['brokenUrl'] = $url;
+                    $row['brokenUrlResponse'] = '<span style="color:green">OK</span>';
+                    $this->recordsWithBrokenLinks[$table][] = $row;
+
+                }
+
+            }
+
+        }
+
+        #debug($this->recordsWithBrokenLinks, 'recWithBrokenLinks');
+	
 		#t3lib_div::debug($this->linkCounts, 'linkCounts');
 		#t3lib_div::debug($this->brokenLinkCounts, 'broken linkCounts');
 		#t3lib_div::debug($this->recordsWithBrokenLinks, 'broken links');

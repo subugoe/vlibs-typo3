@@ -1,15 +1,26 @@
 plugin.autometa {
 	charset = UTF-8
 	keywords {
+		enable = {$plugin.autometa.keywords.enable}
 		amount = 10
 		weight.enable = 1
-		stopwordsdir = /fileadmin/autometa/
+		stopwordsdir = fileadmin/autometa/
 	}
 	description {
+		enable = {$plugin.autometa.description.enable}
 		length = 175
 		title.regex = 
 	}
-	author.regex = 
+	author {
+		enable = {$plugin.autometa.author.enable}
+		regex = 
+	}
+	date {
+		enable = {$plugin.autometa.date.enable}
+	}
+	generator {
+		enable = {$plugin.autometa.generator.enable}
+	}
 }
 
 [globalVar = LIT:1 = {$plugin.autometa.keywords.enable}]

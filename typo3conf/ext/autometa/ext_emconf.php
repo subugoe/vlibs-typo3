@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "autometa".
 #
-# Auto generated 27-09-2010 15:12
+# Auto generated 30-11-2010 10:03
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -12,10 +12,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Auto Meta',
-	'description' => 'Automaticly generates meta keywords and description out of fully rendered page text.',
+	'description' => 'Automaticly generates meta keywords and description out of fully rendered page text (respects TYPO3SEARCH comments).',
 	'category' => 'fe',
 	'shy' => 0,
-	'version' => '1.0.1',
+	'version' => '1.1.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -45,7 +45,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:11:{s:9:"ChangeLog";s:4:"bfa5";s:28:"class.tx_autometa_fehook.php";s:4:"0ae1";s:21:"ext_conf_template.txt";s:4:"d1c2";s:12:"ext_icon.gif";s:4:"3bb3";s:17:"ext_localconf.php";s:4:"74a1";s:28:"ext_typoscript_constants.txt";s:4:"9430";s:24:"ext_typoscript_setup.txt";s:4:"7070";s:29:"pi1/class.tx_autometa_pi1.php";s:4:"035f";s:13:"res/stopwords";s:4:"4baa";s:16:"res/stopwords.de";s:4:"01db";s:16:"res/stopwords.en";s:4:"a5d8";}',
+	'_md5_values_when_last_written' => 'a:11:{s:9:"ChangeLog";s:4:"4e5a";s:28:"class.tx_autometa_fehook.php";s:4:"78f6";s:21:"ext_conf_template.txt";s:4:"d1c2";s:12:"ext_icon.gif";s:4:"3bb3";s:17:"ext_localconf.php";s:4:"278e";s:28:"ext_typoscript_constants.txt";s:4:"836b";s:24:"ext_typoscript_setup.txt";s:4:"08dd";s:29:"pi1/class.tx_autometa_pi1.php";s:4:"1004";s:13:"res/stopwords";s:4:"4776";s:16:"res/stopwords.de";s:4:"bbfc";s:16:"res/stopwords.en";s:4:"a5d8";}',
 );
 
 ?>

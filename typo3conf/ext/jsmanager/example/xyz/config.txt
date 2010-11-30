@@ -1,0 +1,14 @@
+# Example extension template
+plugin.tx_jsmanager_Executor.libs {
+  order = xyz
+  config {
+    xyz {
+      version = max
+      variant = packed
+      order = script,js,css
+      additional {
+        xyz = 1
+      }
+    }
+  }
+}

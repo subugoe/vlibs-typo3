@@ -25,9 +25,9 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 
-require_once(t3lib_extMgm::extPath ("autometa") . "pi1/class.tx_autometa_pi1.php");
+require_once(t3lib_extMgm::extPath('autometa') . 'pi1/class.tx_autometa_pi1.php');
 class tx_autometa_fehook extends tslib_pibase {
-	function intPages(&$params,&$that) {
+	function intPages(&$params, &$that) {
 		if (!$GLOBALS['TSFE']->isINTincScript()) { return; }
 		$tx_autometa_pi1 = t3lib_div::makeInstance('tx_autometa_pi1');
 		$tx_autometa_pi1->main (
@@ -48,7 +48,7 @@ class tx_autometa_fehook extends tslib_pibase {
 	}
 }
 
-if (defined("TYPO3_MODE") && $TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/autometa/class.tx_autometa_fehook.php"]){
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]["XCLASS"]["ext/autometa/class.tx_autometa_fehook.php"]);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/autometa/class.tx_autometa_fehook.php']){
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/autometa/class.tx_autometa_fehook.php']);
 }
 ?>
