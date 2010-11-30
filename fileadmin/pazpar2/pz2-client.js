@@ -111,7 +111,8 @@ my_paz = new pz2( { "onshow": my_onshow,
 					"serviceId": my_serviceID } );
 // some state vars
 var curPage = 1;
-var recPerPage = 250;
+var recPerPage = 100;
+var fetchRecords = 500;
 var curDetRecId = '';
 var curDetRecData = null;
 var curSort = [];
@@ -1006,7 +1007,7 @@ function resetPage() {
 	TODO: Assumes there is a single search field.
 */
 function triggerSearch () {
-	my_paz.search(document.search.query.value, recPerPage, curSort, curFilter);
+	my_paz.search(document.search.query.value, fetchRecords, curSort, curFilter);
 }
 
 
