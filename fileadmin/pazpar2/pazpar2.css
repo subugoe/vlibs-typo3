@@ -132,6 +132,10 @@
 	display: inline;
 }
 
+.pz2-next, .pz2-prev {
+	position: relative;
+}
+
 .pz2-pager li {
 	display: inline;
 }
