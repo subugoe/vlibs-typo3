@@ -93,12 +93,18 @@ function localise (term, externalDictionary) {
 }
 
 
+function my_errorHandler (error) {
+	if (error.code == 1 && this.request.status == 417) {
+		// session has expired, create a new one
+		my_paz.init(undefined, my_paz.serviceId);
+	}
+}
 
 
 
 
-my_paz = new pz2( { "onshow": my_onshow,
-					"showtime": 500,			//each timer (show, stat, term, bytarget) can be specified this way
+my_paz = new pz2( {	"onshow": my_onshow,
+					"showtime": 1000,//each timer (show, stat, term, bytarget) can be specified this way
 					"pazpar2path": pazpar2path,
 					"oninit": my_oninit,
 					"onstat": my_onstat,
@@ -108,7 +114,12 @@ my_paz = new pz2( { "onshow": my_onshow,
 	 				"usesessions" : usesessions,
 					"showResponseType": showResponseType,
 					"onrecord": my_onrecord,
-					"serviceId": my_serviceID } );
+					"serviceId": my_serviceID,
+					"errorhandler": my_errorHandler, 
+} );
+
+
+
 // some state vars
 var curPage = 1;
 var recPerPage = 100;
