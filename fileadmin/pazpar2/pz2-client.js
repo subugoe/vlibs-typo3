@@ -1092,6 +1092,7 @@ function limitResults(kind, term) {
 		filterArray[kind] = [term];
 	}
 
+	curPage = 1;
 	updateAndDisplay();
 	updateFacetLists();
 }
