@@ -8,6 +8,9 @@ $TYPO3_CONF_VARS['EXT']['extList'] = 'version,tsconfig_help,context_help,extra_p
 
 $typo_db_extTableDef_script = 'extTables.php';
 
+$TYPO3_CONF_VARS['SYS']['displayErrors'] = 2;
+$TYPO3_CONF_VARS['SYS']['devIPmask'] = '127.0.0.1,::1,134.76.162.165';
+
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
 
 $TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,t3editor,reports,realurl,cag_linkchecker,static_info_tables,cshmanual,recycler,rlmp_language_detection,fluid,blog_example,kickstarter,sqlbuddyadmin,extbase_kickstarter,pazpar2,t3jquery';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
