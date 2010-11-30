@@ -260,7 +260,13 @@ function displayList (list) {
 						}
 					}
 					else {
-						matches = (fieldContentInRecord(facetType, record, true) == filterValue);
+						var contents = fieldContentsInRecord(facetType, record);
+						for (var index in contents) {
+							if (contents[index].toLowerCase() == filterValue) {
+								matches = true;
+								break;
+							}
+						}
 					}
 
 					if (matches) { break; }
