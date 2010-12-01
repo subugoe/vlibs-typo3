@@ -118,9 +118,8 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 );
 
 
-$TYPO3_CONF_VARS['SYS']['setDBinit'] = 'SET NAMES UTF-8;\' . LF . \'SET CHARACTER SET UTF-8;';	//  Modified or inserted by TYPO3 Install Tool.
+$TYPO3_CONF_VARS['SYS']['setDBinit'] = 'SET NAMES utf-8;\' . LF . \'SET CHARACTER SET utf-8;';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['SYS']['UTF8filesystem'] = '1';	//  Modified or inserted by TYPO3 Install Tool.
-$TYPO3_CONF_VARS['BE']['forceCharset'] = 'utf-8';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 22-09-10 17:19:39
 $TYPO3_CONF_VARS['EXT']['extConf']['cag_linkchecker'] = 'a:1:{s:15:"setPageTSconfig";s:1:"1";}';	// Modified or inserted by TYPO3 Extension Manager. 
 // Updated by TYPO3 Extension Manager 27-09-10 12:20:42
