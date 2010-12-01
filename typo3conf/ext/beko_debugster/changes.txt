@@ -1,0 +1,14 @@
+1.4.7 Bugfix: removed Fatal error: Cannot use object of type ..... as array in class.tx_bekodebugster_pi1.php  on line 119
+      Bugfix: steps_back runtime config paramter was ignored
+      Bugfix: removed deprecated notice. Thanks to Christian Platt for the bug report
+1.4.6 Added dyndns support for ip_mask
+1.4.5 Added steps_back to runtime configuration. Cleaned code and removed the "Notice" errors. Worked on documentation.  
+1.4.4 Introduced configuration option "steps_back": Display this number of steps of the backtrace in the debugster title
+      Thanx to Franz Holzinger (franzimholz@yahoo.de) for the idea of this feature
+1.4.3 Output style only once when called multiple times. Thanx to Wolo Wolski <wolo@hint.pl> for the snipplet
+      Restrict debug output to IP address (configurable)
+      Bugfix: wrong title was displayed 
+
+1.4.2 Bugfixes due to differences between PHP4 and 5 
+
+earlier: Thanx to Clemens Prerovksy and Harald Lugstein for initial development
