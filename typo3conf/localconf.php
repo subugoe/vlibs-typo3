@@ -13,7 +13,7 @@ $TYPO3_CONF_VARS['SYS']['devIPmask'] = '127.0.0.1,::1,134.76.162.165';
 
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
 
-$TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,t3editor,reports,realurl,cag_linkchecker,static_info_tables,cshmanual,recycler,rlmp_language_detection,fluid,blog_example,kickstarter,sqlbuddyadmin,extbase_kickstarter,t3jquery,beko_debugster,pazpar2';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
+$TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,t3editor,reports,realurl,cag_linkchecker,static_info_tables,cshmanual,recycler,rlmp_language_detection,fluid,sqlbuddyadmin,extbase_kickstarter,t3jquery,beko_debugster,kickstarter,blog_example,pazpar2';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
 // Updated by TYPO3 Core Update Manager 08-09-10 12:29:22
 $TYPO3_CONF_VARS['SYS']['encryptionKey'] = 'eff43017a2a82314f23139d9daf0e129a20af589316ec80bd0084f268b67125e5a14a2b2a9e0527657b4059ebd41f44e';	// Modified or inserted by TYPO3 Install Tool. 
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.5';	// Modified or inserted by TYPO3 Install Tool. 
@@ -33,7 +33,7 @@ $TYPO3_CONF_VARS['GFX']['im_path'] = '';	//  Modified or inserted by TYPO3 Insta
 $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['SYS']['sitename'] = 'VLib-Test';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 08-09-10 13:03:28
-$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'extbase,css_styled_content,version,install,rtehtmlarea,t3skin,realurl,cag_linkchecker,static_info_tables,rlmp_language_detection,fluid,blog_example,kickstarter,sqlbuddyadmin,extbase_kickstarter,t3jquery,beko_debugster,pazpar2';	// Modified or inserted by TYPO3 Extension Manager. 
+$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'extbase,css_styled_content,version,install,rtehtmlarea,t3skin,realurl,cag_linkchecker,static_info_tables,rlmp_language_detection,fluid,sqlbuddyadmin,extbase_kickstarter,t3jquery,beko_debugster,kickstarter,blog_example,pazpar2';	// Modified or inserted by TYPO3 Extension Manager. 
 // Updated by TYPO3 Extension Manager 22-09-10 13:52:06
 
 $TYPO3_CONF_VARS['FE']['addRootLineFields'].= ',tx_realurl_pathsegment';
@@ -130,4 +130,9 @@ $TYPO3_CONF_VARS['EXT']['extConf']['realurl'] = 'a:5:{s:10:"configFile";s:26:"ty
 $TYPO3_CONF_VARS['EXT']['extConf']['t3jquery'] = 'a:6:{s:15:"alwaysIntegrate";s:1:"1";s:18:"dontIntegrateOnUID";s:0:"";s:9:"configDir";s:19:"uploads/tx_t3jquery";s:13:"jQueryVersion";s:5:"1.4.4";s:15:"jQueryUiVersion";s:5:"1.8.6";s:18:"jQueryTOOLSVersion";s:0:"";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['EXT']['extConf']['beko_debugster'] = 'a:2:{s:7:"ip_mask";s:19:"134.76.*, 127.0.0.1";s:10:"steps_back";s:1:"3";}';	//  Modified or inserted by TYPO3 Extension Manager.
 // Updated by TYPO3 Extension Manager 01-12-10 10:21:06
+$TYPO3_CONF_VARS['SYS']['enable_DLOG'] = '1';	//  Modified or inserted by TYPO3 Install Tool.
+$TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
+$TYPO3_CONF_VARS['FE']['logfile_dir'] = '/var/log/typo3/';	//  Modified or inserted by TYPO3 Install Tool.
+// Updated by TYPO3 Install Tool 02-12-10 10:47:45
+// Updated by TYPO3 Extension Manager 02-12-10 11:54:18
 ?>
