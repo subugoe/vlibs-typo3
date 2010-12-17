@@ -31,14 +31,14 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 
 
 	/**
-	 * Array with subject tree
+	 * Array with subject tree.
 	 *
 	 * @var Array
 	 */
 	protected $subjects;
 	
 	/**
-	 * Getter for subject tree Array
+	 * Getter for subject tree array.
 	 *
 	 * return Array
 	 */
@@ -47,7 +47,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	}
 	
 	/**
-	 * Setter for subject tree Array
+	 * Setter for subject tree array.
 	 *
 	 * @param Array $newSubjects
 	 * return void
@@ -56,6 +56,37 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 		$this->subjects = $newSubjects;
 	}
 
+
+
+	/**
+	 * Array used for month selection menu.
+	 * Array elements are associative arrays with two elements:
+	 * 	* name - the localised string used for display, e.g. Oktober 2010
+	 *	* searchTerms - string used to query the catalogue’s DTM field, e.g. 201010.
+	 * 		In case several months are used, the different strings are comma separated.
+	 *
+	 * @var Array
+	 */
+	protected $months;
+
+	/**
+	 * Getter for months array.
+	 *
+	 * return Array
+	 */
+	public function getMonths () {
+		return $this->months;
+	}
+	
+	/**
+	 * Setter for months array.
+	 *
+	 * @param Array $newMonths
+	 * return void
+	 */
+	public function setMonths ($newMonths) {
+		$this->months = $newMonths;
+	}
 
 }
 

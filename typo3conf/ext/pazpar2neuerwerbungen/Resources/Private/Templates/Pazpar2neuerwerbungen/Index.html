@@ -2,53 +2,53 @@
 
 	<f:form name="search" class="pz2-searchForm">
 		<div class="pz2-mainForm">
-			<f:form.textbox class="pz2-searchField" name="query" />
-			<f:form.submit name="button" value="<f:translate key='Find'/>" />
-		</div>
-
-		<div class="pz2-ranking">
-			<f:translate key="Sort by"/>
-
-			<f:form.select name="sort" class="pz2-sort"
-					options="{  date-d--author-a--title-a: '{f:translate(key:\'Age\')}',
-								author-a--date-d--title-a: '{f:translate(key:\'Author\')}',
-								title-a--author-a--date-d: '{f:translate(key:\'Title\')}'   }"
-					value="date-d--author-a--title-a" />
-
-			<f:form.select name="perpage" class="pz2-perPage"
-					options="{10:10, 20:20, 50:50, 100:100}"
-					value="100" />				
-		</div>
-		
-		<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
-			<fieldset class="pz2-{section.GOK}">
-				<legend>
-					<f:if condition="{section.GOK}">
-						<f:then>
-							<label>
-	 							<f:form.checkbox name="pz2subject" value="{section.GOK}"/>
-	 							<f:translate key="{section.name}">{section.name}</f:translate>
-	 						</label>
-						</f:then>
-						<f:else>
-							<f:translate key="{section.name}">{section.name}</f:translate>
-						</f:else>
-					</f:if>
-				</legend>
+			<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
+				<fieldset class="pz2-{section.GOK}">
+					<legend>
+						<f:if condition="{section.GOK}">
+							<f:then>
+								<label>
+		 							<f:form.checkbox name="pz2subject" 
+			 								value="{section.GOK}"
+			 								onclick="pz2-groupCheckboxChanged(this);"/>
+		 							<f:translate key="{section.name}">{section.name}</f:translate>
+		 						</label>
+							</f:then>
+							<f:else>
+								<f:translate key="{section.name}">{section.name}</f:translate>
+							</f:else>
+						</f:if>
+					</legend>
 				
-				<ul>
-					<f:for each="{section.subjects}" as="subject">
-						<li>
-							<label>
-								<f:form.checkbox name="pz2subject" value="<f:for each='{subject.GOK}' as='GOK'>{GOK},</f:for>" onclick="pz2-checkboxChanged(this);"/>
-								<f:translate key="{subject.name}">{subject.name}</f:translate>
-							</label>
-						</li>
-					</f:for>
-				</ul>
-			</fieldset>
-		</f:for>
-		
+					<ul>
+						<f:for each="{section.subjects}" as="subject">
+							<li>
+								<label>
+									<f:form.checkbox name="pz2subject" 
+										value="<f:for each='{subject.GOK}' as='GOK'>{GOK},</f:for>" 
+										onclick="pz2-checkboxChanged(this);"/>
+									<f:translate key="{subject.name}">{subject.name}</f:translate>
+								</label>
+							</li>
+						</f:for>
+					</ul>
+				</fieldset>
+			</f:for>
+			
+			<p>
+				<f:link.external class="pz2-rsslink" 
+								uri="TODO" 
+								additionalAttributes="{type: 'text/xml'}">
+					<f:translate key="Die aktuelle Liste als RSS-Feed abonnieren."/>
+				</f:link.external>
+			</p>
+			<f:form.select options="{pazpar2neuerwerbungen.months}"
+							 name="months" 
+							 class="pz2-months" 
+							 additionalAttributes="{onchange:'pz2-checkboxChanged(this);'}"/>
+
+			<f:form.submit name="button" value="<f:translate key='Anzeigen'/>" />
+		</div>
 	</f:form>
 
 	<div id="pz2-recordView">

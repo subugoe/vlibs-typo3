@@ -69,7 +69,57 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$this->addResourcesToHead();
 		$pz2Neuerwerbungen = new Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen;
 		$pz2Neuerwerbungen->setSubjects( $this->getSubjectsArray() );
+		$pz2Neuerwerbungen->setMonths( $this->monthsArray(12) );
 		$this->view->assign('pazpar2neuerwerbungen', $pz2Neuerwerbungen);
+	}
+
+	private function reduceMonth (&$month, &$year) {
+		if ($month == 1) {
+			$month = 12;
+			$year--;
+		}
+		else {
+			$month--;
+		}
+	}
+	
+	private function picaSearchStringForMonth ($month, $year) {
+		$leadingZero = '';
+		
+		if ($month < 10) {
+			$leadingZero = '0';
+		}
+		
+		return $year . $leadingZero . $month;
+	}
+
+
+	private function monthsArray ($numberOfMonths = 12) {
+		$months = array();
+		$year = date('Y');
+		$month = date('n');
+		
+		$currentMonthSearchString = $this->picaSearchStringForMonth($month, $year);
+		
+		for ($i = 1; $i <= $numberOfMonths; $i++) {
+			$this->reduceMonth($month, $year);
+			
+			$searchString = $this->picaSearchStringForMonth($month, $year);
+			
+			/* make sure the text encoding in the locale_all setting matches the encoding 
+					of the page, otherwise umlauts in month names may appear broken */  
+			$monthName = strftime('%B', mktime(0, 0, 0, $month, 1, 2010));
+			$displayString = $monthName . ' ' . $year;
+			if ($i > 1) {
+				$months[$searchString] = $displayString;
+			}
+			else {
+				$displayString = $this->localise('Seit') . ' ' . $displayString;
+				$months[$searchString . ',' . $currentMonthSearchString] = $displayString; 
+			}
+		}
+		
+		return $months;
 	}
 
 
@@ -78,20 +128,6 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		return $string;
 	}
 
-	// TODO: deal with $key being an array
-	private function prepareSearchKey ($searchKey) {
-		return $searchKey;
-	}
-
-	private function checkboxWithTitleAndSearchKey ($title, $searchKey) {
-		$checkbox = new Tx_Fluid_Core_ViewHelper_TagBuilder('input');
-		$checkbox->addAttribute('type', 'checkbox');
-		$checkbox->addAttribute('name', 'subject');
-		$checkbox->addAttribute('value', $this->prepareSearchKey($searchKey));
-		$checkbox->setContent($title);
-		
-		return $checkbox;
-	}
 
 	private function getSubjectsArray () {
 		$subjectsFile = 'Configuration/Subjects/' . $this->conf['subjects'] . '.php';
@@ -99,38 +135,6 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		return $subjects;	
 	}
 
-
-	private function addCheckboxes () {
-		$mySubjects = $this->getSubjectsArray();
-		
-		$fieldsetsString = '';
-		foreach ( $mySubjects as $sectionName => $section) {
-			$localisedSectionName = $this->localise($sectionName);
-			$legend = new Tx_Fluid_Core_ViewHelper_TagBuilder('legend');
-			if ( $section['searchKey'] ) {
-				$checkbox = $this->checkboxWithTitleAndSearchKey($localisedSectionName, $section['searchKey']);
-				$legend->setContent( $checkbox->render() );
-			}
-			else {
-				$legend->setContent($localisedSectionName);
-			}
-		
-			$checkboxesString = '';
-			foreach ( $section['subjects'] as $subjectName => $subjectSearchKey ) {
-				$checkbox = $this->checkboxWithTitleAndSearchKey($this->localise($subjectName), $subjectSearchKey);
-				$checkboxesString .= $checkbox->render();
-			}
-
-			$fieldset = new Tx_Fluid_Core_ViewHelper_TagBuilder('fieldset');		
-			$fieldset->setContent($legend->render() . $checkboxesString);
-			$fieldsetsString .= $fieldset->render();
-		}
-		
-		$form = new Tx_Fluid_Core_ViewHelper_TagBuilder('form');
-		$form->setContent($fieldsetsString);
-
-		echo($form->render());
-	}
 
 
 	/**

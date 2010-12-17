@@ -75,7 +75,7 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Geschichte des jüdischen Volkes in den angloamerikanischen Ländern',
-				'GOK' => array('PY! 300', 'PY! 7?')
+				'GOK' => array('PY! 300', 'PY! 7')
 			),
 		),
 	),
@@ -86,23 +86,23 @@ $subjects = array(
 		'subjects' => array (
 			array(
 				'name' => 'Sprach- und Literaturwissenschaft, Allgemeines',
-				'GOK' => array('IA2')
+				'GOK' => array('IA 2')
 			),
 			array(
 				'name' => 'Sprachwissenschaft',
-				'GOK' => array('IA3')
+				'GOK' => array('IA 3')
 			),
 			array(
 				'name' => 'Anthologien',
-				'GOK' => array('IA4')
+				'GOK' => array('IA 4')
 			),
 			array(
 				'name' => 'Literaturwissenschaft',
-				'GOK' => array('IA5')
+				'GOK' => array('IA 5')
 			),
 			array(
 				'name' => 'Textausgaben & Sekundärliteratur',
-				'GOK' => array('IA6')
+				'GOK' => array('IA 6')
 			),
 			array(
 				'name' => 'Irland',
@@ -176,23 +176,23 @@ $subjects = array(
 		'subjects' => array(
 			array(
 				'name' => 'Sprach- und Literaturwissenschaft, Allgemeines',
-				'GOK' => array('IC2')
+				'GOK' => array('IC 2')
 			),
 			array(
 				'name' => 'Sprachwissenschaft',
-				'GOK' => array('IC3')
+				'GOK' => array('IC 3')
 			),
 			array(
 				'name' => 'Anthologien',
-				'GOK' => array('IC4')
+				'GOK' => array('IC 4')
 			),
 			array(
 				'name' => 'Literaturwissenschaft',
-				'GOK' => array('IC5')
+				'GOK' => array('IC 5')
 			),
 			array(
 				'name' => 'Textausgaben & Sekundärliteratur',
-				'GOK' => array('IC6')
+				'GOK' => array('IC 6')
 			),
 		),
 	),
