@@ -10,7 +10,7 @@
 								<label>
 		 							<f:form.checkbox name="pz2subject" 
 			 								value="{section.GOK}"
-			 								onclick="pz2-groupCheckboxChanged(this);"/>
+			 								onclick="groupCheckboxChanged(this);"/>
 		 							<f:translate key="{section.name}">{section.name}</f:translate>
 		 						</label>
 							</f:then>
@@ -26,7 +26,7 @@
 								<label>
 									<f:form.checkbox name="pz2subject" 
 										value="<f:for each='{subject.GOK}' as='GOK'>{GOK},</f:for>" 
-										onclick="pz2-checkboxChanged(this);"/>
+										onclick="checkboxChanged(this);"/>
 									<f:translate key="{subject.name}">{subject.name}</f:translate>
 								</label>
 							</li>
