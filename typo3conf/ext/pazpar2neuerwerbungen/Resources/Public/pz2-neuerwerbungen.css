@@ -1,0 +1,20 @@
+fieldset {
+	width: 48%;
+	float: right;
+	position: relative;
+
+}
+
+fieldset.pz2-IA, fieldset.pz2-IB, fieldset.pz2-IC {
+	left: 0;
+	float: none;
+}
+
+form.pz2-searchForm ul {
+	list-style-type: none;
+	text-indent: -1.5em;
+}
+
+legend {
+	font-weight: bold; 
+}
