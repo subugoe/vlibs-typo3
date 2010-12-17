@@ -1,11 +1,35 @@
 
+function runSearchForForm (form) {
+	resetPage();
+	setSortCriteriaFromString('author-a--title-a--date-d');
+	var query = buildSearchQuery(form);
+	
+	my_paz.search(query, 2000, null, null);
+
+	$('.pz2-rsslink').attr('href', RSSURL(form));
+}
+
 
 function checkboxChanged (checkbox) {
-	resetPage();
-	setSortCriteriaFromString('author-a--title-a--date-d')
-	var query = buildSearchQuery(checkbox.form);
-	my_paz.search(query, 1000, null, null);
-	$('.pz2-rsslink').attr('href', RSSURL(checkbox.form));
+	toggleParentCheckboxOf(checkbox);
+	runSearchForForm(checkbox.form);
+}
+
+function groupCheckboxChanged (checkbox) {
+	toggleChildCheckboxesOf(checkbox);
+	runSearchForForm(checkbox.form);
+}
+
+function toggleParentCheckboxOf (checkbox) {
+	var fieldset = $(checkbox).parents('fieldset')[0];
+	parentCheckbox = $('legend :checkbox', fieldset);
+	
+	parentCheckbox.attr({'checked': ($('li :checkbox', fieldset).length == $('li :checked', fieldset).length)});
+}
+
+function toggleChildCheckboxesOf (checkbox) {
+	var fieldset = $(checkbox).parents('fieldset')[0];
+	$(':checkbox', fieldset).attr({'checked': checkbox.checked});
 }
 
 
