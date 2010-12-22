@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txkestatsM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="weekday_0">Sunday</label>
+			<label index="weekday_1">Monday</label>
+			<label index="weekday_2">Tuesday</label>
+			<label index="weekday_3">Wednesday</label>
+			<label index="weekday_4">Thursday</label>
+			<label index="weekday_5">Friday</label>
+			<label index="weekday_6">Saturday</label>
+			<label index="month_1">January</label>
+			<label index="month_2">February</label>
+			<label index="month_3">March</label>
+			<label index="month_4">April</label>
+			<label index="month_5">May</label>
+			<label index="month_6">June</label>
+			<label index="month_7">July</label>
+			<label index="month_8">August</label>
+			<label index="month_9">September</label>
+			<label index="month_10">October</label>
+			<label index="month_11">November</label>
+			<label index="month_12">December</label>
+			<label index="title">Statistics</label>
+			<label index="selector_type">type</label>
+			<label index="selector_type_all">all types</label>
+			<label index="selector_language">Language</label>
+			<label index="selector_language_all">all languages</label>
+			<label index="language_default">default language</label>
+			<label index="category_monthly_pages">pageviews (all)</label>
+			<label index="category_monthly_pages_fe_users">pageviews (fe-users)</label>
+			<label index="category_monthly_visits">visits (all)</label>
+			<label index="category_monthly_visits_fe_users">visits (fe-users)</label>
+			<label index="category_pages">Pages</label>
+			<label index="category_pages_all">Pageviews</label>
+			<label index="category_pages_feusers">logged-in Pageviews</label>
+			<label index="category_visits">Visits</label>
+			<label index="category_browsers">Browsers</label>
+			<label index="category_robots">Robots</label>
+			<label index="category_search_strings">Search strings</label>
+			<label index="category_referers_search_engines">Search Enginges</label>
+			<label index="category_referers_websites">Websites</label>
+			<label index="category_referers">Referers</label>
+			<label index="category_ip_addresses">IP Addresses</label>
+			<label index="category_operating_systems">Operating Systems</label>
+			<label index="category_user_agents">Browsers/Robots</label>
+			<label index="category_unknown_user_agents">Unknown User Agents</label>
+			<label index="category_other">Other</label>
+			<label index="category_time">Time</label>
+
+			<label index="category_time_hits">Pageviews</label>
+			<label index="category_time_visits">Visits</label>
+			<label index="category_time_visits_feusers">Visits (logged-in)</label>
+
+			<label index="category_day_of_month">day</label>
+			<label index="category_day_of_week">day of week</label>
+			<label index="category_hour_of_day">hour of day</label>
+
+			<label index="category_visits_day_of_month">day</label>
+			<label index="category_visits_day_of_week">day of week</label>
+			<label index="category_visits_hour_of_day">hour of day</label>
+			
+			<label index="category_visits_day_of_month_feusers">day</label>
+			<label index="category_visits_day_of_week_feusers">day of week</label>
+			<label index="category_visits_hour_of_day_feusers">hour of day</label>
+
+			<label index="category_hosts">hosts</label>
+			<label index="list_full">Monthly progression</label>
+			<label index="list_full_csv">Download monthly progression</label>
+			<label index="list_details">Single month details</label>
+			<label index="list_details_csv">Download single month details</label>
+			<label index="no_data">No data found.</label>
+
+			<label index="type_pages">Pages</label>
+			<label index="type_tracking">Live Tracking</label>
+			<label index="type_extension">Extensions</label>
+			<label index="csvdownload">CSV-Download</label>
+			<label index="csvdownload_filename">TYPO3-Statistics_###DATE###.csv</label>
+			<label index="csvdownload_statistics_for_month">Statistics for </label>
+			<label index="csvdownload_generated_on">generated on </label>
+
+			<label index="csvdownload_pages">Monthly progression</label>
+			<label index="csvdownload_referer">Referrers per month</label>
+			<label index="csvdownload_list_time_hits">Pageviews per month</label>
+			<label index="csvdownload_list_time_visits">Visits per month</label>
+			<label index="csvdownload_list_time_visits_feusers">logged-in visits per month</label>
+			<label index="csvdownload_user_agents">Browsers/Roboters</label>
+			<label index="csvdownload_more_statistics">More</label>
+
+			<label index="type_pages_day_of_month">Pageviews (day of month)</label>
+			<label index="type_pages_day_of_week">Pageviews (day of week)</label>
+			<label index="type_pages_hour_of_day">Pageviews (hour of day)</label>
+
+			<label index="type_visits_day_of_month_feusers">logged-in Visits (day of month)</label>
+			<label index="type_visits_day_of_week_feusers">logged-in Visits (day of week)</label>
+			<label index="type_visits_hour_of_day_feusers">logged-in Visits (hour of day)</label>
+
+			<label index="type_pages_referers_websites">Pageviews (referers: websites)</label>
+			<label index="type_pages_referers_search_engines">Pageviews (referers: search engines)</label>
+			<label index="type_pages_referers_searchwords">Pageviews (search words)</label>
+			<label index="type_pages_user_agents_browsers">Pageviews (user agents: browsers)</label>
+			<label index="type_pages_user_agents_robots">Pageviews (robots)</label>
+			<label index="type_pages_user_agents_unknown">Pageviews (unknown user agents)</label>
+			<label index="type_pages_ip_addresses">Pageviews (ip addresses of the visitors)</label>
+			<label index="type_pages_operating_systems">Pageviews (operating systems of the visitors)</label>
+			<label index="type_pages_hosts">Pageviews (hosts of the visitors)</label>
+			<label index="type_pages_monhthly">Pageviews (pageviews per month)</label>
+			<label index="type_pages_monthly_fe_users">Pageviews (pageviews per month, only logged in users)</label>
+			<label index="type_pages_visits_monthly">Visits (visits per month)</label>
+			<label index="type_pages_visits_monthly_fe_users">Visits (visits per month, only logged in users)</label>
+
+			<label index="extension_tt_news">News</label>
+			<label index="extension_naw_securedl">Downloads</label>
+			<label index="extension_commerce">Products</label>
+			<label index="extension_ke_yac">Calendar</label>
+			<label index="extension_ke_troubletickets">Troubletickets</label>
+
+			<label index="header_line_number">Line</label>
+			<label index="header_element_title">Name</label>
+			<label index="header_element_uid">ID</label>
+			<label index="header_counter">Counter</label>
+			<label index="header_crdate">date</label>
+			<label index="header_time">time</label>
+			<label index="header_tstamp">time</label>
+			<label index="header_element_language">language</label>
+			<label index="header_element_type">type</label>
+			<label index="header_percent">Percentage</label>
+			<label index="header_pageviews">Pageviews</label>
+			<label index="header_visits">Visits</label>
+			<label index="header_pages_per_visit">Pages per visit</label>
+
+			<label index="sum">Sum</label>
+			<label index="min">min.</label>
+			<label index="sec">sec.</label>
+			<label index="show_entries_number">entries</label>
+			<label index="referer">Referer</label>
+			<label index="searchstring">Searchstring</label>
+			<label index="refresh">Refresh</label>
+			<label index="statistics_for">Statistics for</label>
+			<label index="and_subpages">and all subpages.</label>
+			<label index="all_pages">Statistics for all pages. Please select a page in the pagetree to filter pages.</label>
+			<label index="please_select_page">Please select a page in the pagetree.</label>
+
+			<label index="iplogging_is_disabled">IP-Logging is disabled. You may enable it in the extension manager.</label>
+			<label index="tracking_is_disabled">Tracking is disabled. You may enable it in the extension-manager.</label>
+
+			<label index="updated_until">Updated until: </label>
+			<label index="last_update">Last update: </label>
+			<label index="overview">Overview</label>
+			<label index="overview_pageviews_and_visits_monthly">Pageviews and visits of the last 12 months</label>
+			<label index="overview_pageviews_current_month">Top 10: Pageviews in current month</label>
+			<label index="overview_referers_external_websites">Top 10: Referers from external websites</label>
+			<label index="overview_search_words">Top 10: Search words from external search engines</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="weekday_0">Sonntag</label>
+			<label index="weekday_1">Montag</label>
+			<label index="weekday_2">Dienstag</label>
+			<label index="weekday_3">Mittwoch</label>
+			<label index="weekday_4">Donnerstag</label>
+			<label index="weekday_5">Freitag</label>
+			<label index="weekday_6">Samstag</label>
+			<label index="month_1">Januar</label>
+			<label index="month_2">Februar</label>
+			<label index="month_3">März</label>
+			<label index="month_4">April</label>
+			<label index="month_5">Mai</label>
+			<label index="month_6">Juni</label>
+			<label index="month_7">Juli</label>
+			<label index="month_8">August</label>
+			<label index="month_9">September</label>
+			<label index="month_10">Oktober</label>
+			<label index="month_11">November</label>
+			<label index="month_12">Dezember</label>
+			<label index="title">Statistik</label>
+			<label index="selector_type">Typ</label>
+			<label index="selector_type_all">alle Typen</label>
+			<label index="selector_language">Sprache</label>
+			<label index="selector_language_all">alle Sprachen</label>
+			<label index="language_default">Standardsprache</label>
+
+			<label index="category_monthly_pages">Seiten (alle)</label>
+			<label index="category_monthly_pages_fe_users">Seiten (angem.)</label>
+			<label index="category_monthly_visits">Besuche (alle)</label>
+			<label index="category_monthly_visits_fe_users">Besuche (angem.)</label>
+			<label index="category_pages">Seiten</label>
+			<label index="category_pages_all">Seitenaufrufe</label>
+			<label index="category_pages_feusers">Seitenaufrufe (angemeldet)</label>
+			<label index="category_visits">Besuche</label>
+			<label index="category_browsers">Browser</label>
+			<label index="category_robots">Roboter</label>
+			<label index="category_search_strings">Suchbegriffe</label>
+			<label index="category_referers_search_engines">Suchmaschinen</label>
+			<label index="category_referers_websites">Websites</label>
+			<label index="category_referers">Herkunft</label>
+			<label index="category_ip_addresses">IP-Adressen</label>
+			<label index="category_operating_systems">Betriebssysteme</label>
+			<label index="category_user_agents">Browser/Roboter</label>
+			<label index="category_unknown_user_agents">Unbekannte User Agents</label>
+			<label index="category_other">Sonstige</label>
+			<label index="category_time">Zeiten</label>
+
+			<label index="category_time_hits">Seitenaufrufe</label>
+			<label index="category_time_visits">Besuche</label>
+			<label index="category_time_visits_feusers">Besuche (angemeldet)</label>
+
+			<label index="category_day_of_month">Tag</label>
+			<label index="category_day_of_week">Wochentag</label>
+			<label index="category_hour_of_day">Tageszeit</label>
+
+			<label index="category_visits_day_of_month">Tag</label>
+			<label index="category_visits_day_of_week">Wochentag</label>
+			<label index="category_visits_hour_of_day">Tageszeit</label>
+
+			<label index="category_visits_day_of_month_feusers">Tag</label>
+			<label index="category_visits_day_of_week_feusers">Wochentag</label>
+			<label index="category_visits_hour_of_day_feusers">Tageszeit</label>
+
+			<label index="category_hosts">Hosts</label>
+			<label index="list_full">Monatlicher Verlauf</label>
+			<label index="list_full_csv">Herunterladen der monatlichen Verlaufsdaten</label>
+			<label index="list_details">Monats-Detailauswertung</label>
+			<label index="list_details_csv">Herunterladen der Monats-Detailauswertung</label>
+			<label index="no_data">Keine Daten vorhanden.</label>
+
+			<label index="type_pages">Seiten</label>
+			<label index="type_tracking">Live Tracking</label>
+			<label index="type_extension">Erweiterungen</label>
+			<label index="csvdownload">CSV-Download</label>
+			<label index="csvdownload_filename">TYPO3-Statistik_###DATE###.csv</label>
+			<label index="csvdownload_statistics_for_month">Statistik für </label>
+			<label index="csvdownload_generated_on">erstellt am </label>
+			<label index="csvdownload_pages">Seitenaufrufe gesamt</label>
+			<label index="csvdownload_referer">Herkunft</label>
+			<label index="csvdownload_list_time_hits">Seitenaufrufe pro Monat</label>
+			<label index="csvdownload_list_time_visits">Besuche pro Monat</label>
+			<label index="csvdownload_list_time_visits_feusers">eingeloggte Besuche pro Monat</label>
+			<label index="csvdownload_user_agents">Browser/Roboter</label>
+			<label index="csvdownload_more_statistics">Weitere</label>
+
+			<label index="type_pages_day_of_month">Seitenaufrufe (Tage im Monat)</label>
+			<label index="type_pages_day_of_week">Seitenaufrufe (Wochentage)</label>
+			<label index="type_pages_hour_of_day">Seitenaufrufe (Tageszeit)</label>
+
+			<label index="type_visits_day_of_month">Besuche (Tage im Monat)</label>
+			<label index="type_visits_day_of_week">Besuche (Wochentage)</label>
+			<label index="type_visits_hour_of_day">Besuche (Tageszeit)</label>
+
+			<label index="type_visits_day_of_month_feusers">eingeloggte Besuche (Tage im Monat)</label>
+			<label index="type_visits_day_of_week_feusers">eingeloggte Besuche (Wochentage)</label>
+			<label index="type_visits_hour_of_day_feusers">eingeloggte Besuche (Tageszeit)</label>
+
+			<label index="type_pages_referers_websites">Seitenaufrufe (Herkunft: andere Websites)</label>
+			<label index="type_pages_referers_search_engines">Seitenaufrufe (Herkunft: Suchmaschinen)</label>
+			<label index="type_pages_referers_searchwords">Seitenaufrufe (Suchbegriffe)</label>
+			<label index="type_pages_user_agents_browsers">Seitenaufrufe (User Agent: Browser)</label>
+			<label index="type_pages_user_agents_robots">Seitenaufrufe (Roboter)</label>
+			<label index="type_pages_user_agents_unknown">Seitenaufrufe (unbekannte User Agents)</label>
+			<label index="type_pages_ip_addresses">Seitenaufrufe (IP-Adressen der Besucher)</label>
+			<label index="type_pages_operating_systems">Seitenaufrufe (Betriebssysteme der Besucher)</label>
+			<label index="type_pages_hosts">Seitenaufrufe (Hostnamen der Besucher)</label>
+			<label index="type_pages_monthly">Seitenaufrufe (pro Monat)</label>
+			<label index="type_pages_monthly_fe_users">Seitenaufrufe (pro Monat, nur eingeloggte Benutzer)</label>
+			<label index="type_pages_visits_monthly">Besuche (visits) pro Monat</label>
+			<label index="type_pages_visits_monthly_fe_users">Besuche (visits) pro Monat, nur eingeloggte Benutzer</label>
+
+			<label index="extension_tt_news">News</label>
+			<label index="extension_naw_securedl">Downloads</label>
+			<label index="extension_commerce">Produkte</label>
+			<label index="extension_ke_yac">Kalender</label>
+			<label index="extension_ke_troubletickets">Aufgaben</label>
+
+			<label index="header_line_number">Zeile</label>
+			<label index="header_element_title">Bezeichnung</label>
+			<label index="header_element_uid">ID</label>
+			<label index="header_counter">Anzahl</label>
+			<label index="header_crdate">Datum</label>
+			<label index="header_time">Zeit</label>
+			<label index="header_tstamp">Zeit</label>
+			<label index="header_element_language">Sprache</label>
+			<label index="header_element_type">Typ</label>
+			<label index="header_page">Seite</label>
+			<label index="header_percent">Anteil</label>
+			<label index="header_operating_system">Betriebssystem</label>
+			<label index="header_host">Host</label>
+			<label index="header_pageviews">Seitenaufrufe</label>
+			<label index="header_visits">Besuche</label>
+			<label index="header_pages_per_visit">Seiten pro Besuch</label>
+
+			<label index="sum">Summe</label>
+			<label index="min">Min.</label>
+			<label index="sec">Sek.</label>
+			<label index="show_entries_number">Einträge</label>
+			<label index="referer">Herkunft</label>
+			<label index="searchstring">Suchbegriff</label>
+			<label index="refresh">Aktualisieren</label>
+			<label index="statistics_for">Statistik für</label>
+			<label index="and_subpages">und alle Unterseiten.</label>
+			<label index="all_pages">Statistik für alle Seiten. Bitte wählen Sie im Seitenbaum eine Seite aus, um die Seite als Filter zu verwenden.</label>
+			<label index="please_select_page">Bitte wählen Sie im Seitenbaum eine Seite aus.</label>
+
+			<label index="iplogging_is_disabled">IP-Logging ist deaktiviert. Sie können es im Extension-Manager aktivieren.</label>
+			<label index="tracking_is_disabled">Die Tracking-Funktion ist deaktiviert. Sie können sie im Extension-Manager aktivieren.</label>
+
+			<label index="updated_until">Aktualisiert bis: </label>
+			<label index="last_update">Zuletzt aktualisiert: </label>
+			<label index="overview">Übersicht</label>
+			<label index="overview_pageviews_and_visits_monthly">Seitenaufrufe und Besuche der letzten 12 Monate</label>
+			<label index="overview_pageviews_current_month">Top 10: Seitenaufrufe im aktuellen Monat</label>
+			<label index="overview_referers_external_websites">Top 10: Verweise von externen Seiten</label>
+			<label index="overview_search_words">Top 10: Suchbegriffe über externe Suchmaschinen</label>
+		</languageKey>
+	</data>
+</T3locallang>

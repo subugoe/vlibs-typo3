@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'ke_stats'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_kestats_statdata">statistical data</label>
+			<label index="tx_kestats_statdata.type">type</label>
+			<label index="tx_kestats_statdata.category">category</label>
+			<label index="tx_kestats_statdata.element_uid">uid of the counted element</label>
+			<label index="tx_kestats_statdata.element_pid">pid of the counted element</label>
+			<label index="tx_kestats_statdata.element_title">title of the counted element</label>
+			<label index="tx_kestats_statdata.element_language">language of the counted element</label>
+			<label index="tx_kestats_statdata.element_type">type of the counted element (fx. pagetype)</label>
+			<label index="tx_kestats_statdata.counter">counter</label>
+			<label index="tx_kestats_statdata.year">year</label>
+			<label index="tx_kestats_statdata.month">month</label>
+			<label index="tx_kestats_statdata.parent_uid">parent uid</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_kestats_statdata">statistische Daten</label>
+			<label index="tx_kestats_statdata.type">Typ</label>
+			<label index="tx_kestats_statdata.category">Kategorie</label>
+			<label index="tx_kestats_statdata.element_uid">UID des gezählten Elements</label>
+			<label index="tx_kestats_statdata.element_pid">PID des gezählten Elements</label>
+			<label index="tx_kestats_statdata.element_title">Titel des gezählten Elements</label>
+			<label index="tx_kestats_statdata.element_language">Sprache des gezählten Elements</label>
+			<label index="tx_kestats_statdata.element_type">Typ des gezählten Elements (z. B. "pagetype")</label>
+			<label index="tx_kestats_statdata.counter">Zähler</label>
+			<label index="tx_kestats_statdata.year">J</label>
+			<label index="tx_kestats_statdata.month">Monat</label>
+			<label index="tx_kestats_statdata.parent_uid">Übergeordnete UID</label>
+		</languageKey>
+	</data>
+</T3locallang>

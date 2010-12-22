@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2010 Nils K. Windisch <windisch@sub.uni-goettingen.de>
+*  (c) 2007 Christian Bülter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -21,9 +21,33 @@
 *
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
-if (!defined ('TYPO3_MODE')) {
-	die ('Access denied.');
-}
-t3lib_extMgm::addStaticFile($_EXTKEY, 'setup', 'nkwdedefault');
-$tempColumns = array();
+
+/**
+ * @author	Christian Bülter <buelter@kennziffer.com>
+ * @package	TYPO3
+ * @subpackage	tx_kestats
+ */
+
+// List of search_engines (referer)
+
+$GLOBALS['search_engines'] = array(/*{{{*/
+	'www.google' => 'Google',
+	'images.google' => 'Google Images',
+	'search.live' => 'MSN',
+	'search.msn' => 'MSN',
+	'search.yahoo' => 'Yahoo',
+	'ixquick' => 'Ixquick',
+	'ok.hu'	=> 'ok.hu',
+	'suche.t-online.de' => 'T-Online',
+	'suche.freenet.de' => 'Freenet',
+	'www.bing.com' => 'Bing',
+	'suche.aolsvc.de' => 'AOL',
+	'search.babylon.com' => 'Babylon.com',
+	'search.conduit.com' => 'Conduit.com',
+	'suche.web.de' => 'Web.de',
+	'search.icq.com' => 'Icq.com',
+	'search.sweetim.com' => 'Sweetim.com',
+	'search.ch' => 'Search.ch'
+);/*}}}*/
+
 ?>

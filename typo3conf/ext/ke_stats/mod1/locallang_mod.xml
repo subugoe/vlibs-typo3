@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;web_txkestatsM1&quot; - header, description</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="mlang_tabs_tab">Statistics</label>
+			<label index="mlang_labels_tabdescr">This module displays page access statistics and extension statistics.</label>
+			<label index="mlang_labels_tablabel">Statistics</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">Statistik</label>
+			<label index="mlang_labels_tabdescr">Dieses Modul zeigt Statistiken über die Seitenaufrufe und die Aufrufe von Extensions an.</label>
+			<label index="mlang_labels_tablabel">Statistik</label>
+		</languageKey>
+	</data>
+</T3locallang>
