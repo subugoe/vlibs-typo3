@@ -25,7 +25,8 @@
 							<li>
 								<label>
 									<f:form.checkbox name="pz2subject" 
-										value="<f:for each='{subject.GOK}' as='GOK'>{GOK},</f:for>" 
+													 value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
+
 										onclick="checkboxChanged(this);"/>
 									<f:translate key="{subject.name}">{subject.name}</f:translate>
 								</label>
