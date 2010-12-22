@@ -75,7 +75,7 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Geschichte des jüdischen Volkes in den angloamerikanischen Ländern',
-				'GOK' => array('PY! 300', 'PY! 7')
+				'GOK' => array('PY# 300', 'PY# 7')
 			),
 		),
 	),
