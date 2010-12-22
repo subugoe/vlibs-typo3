@@ -14,27 +14,27 @@ $subjects = array(
 				'GOK' => array('PD')
 			),
 			array(
-				'name' => 'Weltgeschichte',
+				'name' => 'Weltgeschichte (Entdeckungen; Weltkriege etc.)',
 				'GOK' => array('PF')
 			),
 			array(
-				'name' => 'Großbritannien allgemein',
+				'name' => 'England (epochenübergreifend)',
 				'GOK' => array('PO? 000', 'PO 1', 'PO 2', 'PO 3', 'PO 4', 'PO 5', 'PO 6', 'PO 7', 'PO 8', 'PO 9', 'POL')
 			),
 			array(
-				'name' => 'Großbritannien und England im Mittelalter',
+				'name' => 'England im Mittelalter',
 				'GOK' => array('POA', 'POM')
 			),
 			array(
-				'name' => 'Großbritannien und England in der Frühen Neuzeit',
+				'name' => 'England in der Frühen Neuzeit',
 				'GOK' => array('POB', 'PON')
 			),
 			array(
-				'name' => 'Großbritannien im 19. Jahrhundert',
+				'name' => 'England im 19. Jahrhundert',
 				'GOK' => array('POD', 'POO')
 			),
 			array(
-				'name' => 'Großbritannien im 20. Jahrhundert',
+				'name' => 'England im 20. Jahrhundert',
 				'GOK' => array('POF', 'POG', 'POH', 'POO')
 			),
 			array(
@@ -46,36 +46,36 @@ $subjects = array(
 				'GOK' => array('POT', 'POV', 'POW', 'POX', 'POY', 'POZ')
 			),
 			array(
-				'name' => 'Geschichte Kanadas',
+				'name' => 'Kanada',
 				'GOK' => array('PVD', 'PVE', 'PVF', 'PVG')
 			),
 			array(
-				'name' => 'Geschichte der USA allgemein',
+				'name' => 'USA (epochenübergreifend)',
 				'GOK' => array('PVK')
 			),
 			array(
-				'name' => 'Geschichte der USA in der Frühen Neuzeit',
+				'name' => 'USA in der Frühen Neuzeit',
 				'GOK' => array('PVL')
 			),
 			array(
-				'name' => 'Geschichte der USA 1776-1918',
+				'name' => 'USA 1776-1918',
 				'GOK' => array('PVM')
 			),
 			array(
-				'name' => 'Geschichte der USA im 20. Jahrhundert',
+				'name' => 'USA im 20. Jahrhundert',
 				'GOK' => array('PVN', 'PVO', 'PVP')
 			),
 			array(
-				'name' => 'Geschichte Australiens',
+				'name' => 'Australien',
 				'GOK' => array('PXB', 'PXC', 'PXD', 'PXE')
 			),
 			array(
-				'name' => 'Geschichte Neuseelands',
+				'name' => 'Neuseeland',
 				'GOK' => array('PXN', 'PXO', 'PXP', 'PXR', 'PXS')
 			),
 			array(
-				'name' => 'Geschichte des jüdischen Volkes in den angloamerikanischen Ländern',
-				'GOK' => array('PY# 300', 'PY# 7')
+				'name' => 'Geschichte des jüdischen Volkes im angloamerik. Raum',
+				'GOK' => array('PY! 300', 'PY! 7')
 			),
 		),
 	),

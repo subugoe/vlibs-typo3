@@ -12,12 +12,56 @@
 		<languageKey index="default" type="array">
 			<label index="Anzeigen">Anzeigen</label>
 			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Die aktuelle Liste als RSS-Feed abonnieren.</label>
+
+			<!-- Unterbereiche Geschichte -->
+			<label index="Geschichte">Geschichte</label>
+			<label index="Geschichtsschreibung und -theorie">Geschichtsschreibung und -theorie</label>
+			<label index="Historische Hilfswissenschaften">Historische Hilfswissenschaften</label>
+			<label index="Weltgeschichte (Entdeckungen; Weltkriege etc.)">Weltgeschichte (Entdeckungen; Weltkriege etc.)</label>
+			<label index="England (epochenübergreifend)">England (epochenübergreifend)</label>
+			<label index="England im Mittelalter">England im Mittelalter</label>
+			<label index="England in der Frühen Neuzeit">England in der Frühen Neuzeit</label>
+			<label index="England im 19. Jahrhundert">England im 19. Jahrhundert</label>
+			<label index="England im 20. Jahrhundert">England im 20. Jahrhundert</label>
+			<label index="Schottland">Schottland</label>
+			<label index="Irland">Irland</label>
+			<label index="Kanada">Kanada</label>
+			<label index="USA (epochenübergreifend)">USA (epochenübergreifend)</label>
+			<label index="USA in der Frühen Neuzeit">USA in der Frühen Neuzeit</label>
+			<label index="USA 1776-1918">USA 1776-1918</label>
+			<label index="USA im 20. Jahrhundert">USA im 20. Jahrhundert</label>
+			<label index="Australien">Australien</label>
+			<label index="Neuseeland">Neuseeland</label>
+			<label index="Geschichte des jüdischen Volkes im angloamerik. Raum">Geschichte des jüdischen Volkes im angloamerik. Raum</label>
+
 		</languageKey>
 
 
 		<languageKey index="en" type="array">
 			<label index="Anezeigen">Show</label>
 			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Subscribe to the current query as RSS-feed.</label>
+
+			<!-- Unterbereiche Geschichte -->
+			<label index="Geschichte">History</label>
+			<label index="Geschichtsschreibung und -theorie">Historiography and Theory</label>
+			<label index="Historische Hilfswissenschaften">Auxiliary Sciences</label>
+			<label index="Weltgeschichte (Entdeckungen; Weltkriege etc.)">World History (European expansion; World Wars etc.)</label>
+			<label index="England (epochenübergreifend)">England (epoch spanning)</label>
+			<label index="England im Mittelalter">England in the Middle Ages</label>
+			<label index="England in der Frühen Neuzeit">England in the Early Modern Period</label>
+			<label index="England im 19. Jahrhundert">England in the 19th Century</label>
+			<label index="England im 20. Jahrhundert">England in the 20th Century</label>
+			<label index="Schottland">Scotland</label>
+			<label index="Irland">Ireland</label>
+			<label index="Kanada">Canada</label>
+			<label index="USA (epochenübergreifend)">USA (epoch-spanning)</label>
+			<label index="USA in der Frühen Neuzeit">USA in the Early Modern Period</label>
+			<label index="USA 1776-1918">USA 1776-1918</label>
+			<label index="USA im 20. Jahrhundert">USA in the 20th Century</label>
+			<label index="Australien">Australia</label>
+			<label index="Neuseeland">New Zealand</label>
+			<label index="Geschichte des jüdischen Volkes im angloamerik. Raum">History of the Jewish People in the Anglo-American Regions</label>
+
 		</languageKey>
 
 	</data>
