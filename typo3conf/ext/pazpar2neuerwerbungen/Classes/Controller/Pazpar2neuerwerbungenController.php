@@ -205,7 +205,14 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$scriptTag->addAttribute('type', 'text/javascript');
 		$scriptTag->setContent($jsCommand);
 		$this->response->addAdditionalHeaderData( $scriptTag->render() );
-		
+
+		// Make jQuery initialise pazpar2 when the DOM is ready.
+		$jsCommand = 'jQuery(document).ready(pz2neuerwerbungenDOMReady);';
+		$scriptTag = new Tx_Fluid_Core_ViewHelper_TagBuilder('script');
+		$scriptTag->addAttribute('type', 'text/javascript');
+		$scriptTag->setContent($jsCommand);
+		$this->response->addAdditionalHeaderData( $scriptTag->render() );
+
 		// Add Google Books support if asked to do so.
 		if ( $this->conf['useGoogleBooks'] ) {
 			// Structurally this might be better in a separate extension?
