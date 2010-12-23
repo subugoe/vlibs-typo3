@@ -18,9 +18,11 @@
  * pz2neuerwerbungenDOMReady
  *
  * To be called when the Document is ready (usually by jQuery).
+ * Hides the submit button as it's not needed when we're using JavaScript.
  * Restores state from cookies and kicks off the search.
  */
 function pz2neuerwerbungenDOMReady () {
+	$('.pz2-searchForm input[type="submit"]').hide();
 	restoreCookieState ();
 	runSearchForForm ($('.pz2-searchForm')[0]);
 }
