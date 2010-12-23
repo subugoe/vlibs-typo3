@@ -84,8 +84,8 @@ function saveFormStateAsCookie (form) {
 /*
  * runSearchForForm
  *
- * Build search query from the selected checkboxes and use it to kick off
- *	pazpar2 and set the RSS subscription URL.
+ * Build search query from the selected checkboxes. If it is non-empty,use it
+ *	to kick off pazpar2 and set the RSS subscription URL.
  *
  * input:	form - DOM form element in which to look for checked checkboxes
  */
@@ -93,10 +93,12 @@ function runSearchForForm (form) {
 	resetPage();
 	setSortCriteriaFromString('author-a--title-a--date-d');
 	var query = buildSearchQueryWithEqualsAndWildcard(form, '=', '');
-	
-	my_paz.search(query, 2000, null, null);
 
-	$('.pz2-rsslink').attr('href', RSSURL(form));
+	if (query) {
+		my_paz.search(query, 2000, null, null);
+
+		$('.pz2-rsslink').attr('href', RSSURL(form));
+	}
 
 	saveFormStateAsCookie(form);
 }
@@ -210,25 +212,32 @@ function selectedGOKsInFormWithWildcard (form, wildcard) {
  *	be used as Pica Opac queries or as CCL queries.
  * An additional not (SLK A OR SLK P) condition is added to the query to avoid
  *  getting results that are not avaialable.
+ * undefined is returned when there are no GOKs to search for.
  *
  * inputs:	form - DOM element of the form to get the data from
  *			equals - string used between the field name and the query term
  *				(typically ' ' in Pica or '=' in CCL)
  *			wildcard - string to be appended to each extracted GOK
- * output:	string containing the complete query
+ * output:	string containing the complete query / undefined if no GOKs are found
  */
 function buildSearchQueryWithEqualsAndWildcard (form, equals, wildcard) {
 	var GOKs = selectedGOKsInFormWithWildcard(form, wildcard);
-	var LKLQueryString = oredSearchQueries(GOKs, 'lkl', equals);
-	
-	var dates = [];
-	addSearchTermsToList( $('.pz2-months :selected', form)[0].value, dates, wildcard);
-	var DTMQueryString = oredSearchQueries(dates, 'dtm', equals);
-	var statuses = [];
-	addSearchTermsToList('a,r', statuses, wildcard);
-	var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
 
-	return LKLQueryString + ' and ' + DTMQueryString + ' not ' + SLKQueryString;
+	if (GOKs.length > 0) {
+		var LKLQueryString = oredSearchQueries(GOKs, 'lkl', equals);
+
+		var dates = [];
+		addSearchTermsToList( $('.pz2-months :selected', form)[0].value, dates, wildcard);
+		var	DTMQueryString = oredSearchQueries(dates, 'dtm', equals);
+
+		var statuses = [];
+		addSearchTermsToList('a,r', statuses, wildcard);
+		var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
+		
+		var queryString = LKLQueryString + ' and ' + DTMQueryString + ' not ' + SLKQueryString;
+	}
+
+	return queryString;
 }
 
 
@@ -278,19 +287,22 @@ function addSearchTermsToList (termsString, list, wildcard) {
 /*
  * RSSURL
  *
- * Creates the URL to the RSS feed for the query.
+ * Creates the URL to the RSS feed for the query if the form contains a selection.
  * TODO: figure out the correct URL format.
  *
  * input:	form - DOM element of the form to get the data from
- * output:	string with the URL to the RSS feed
+ * output:	string with the URL to the RSS feed / undefined if nothing is selected
  */
 function RSSURL (form) {
 	var searchQuery = buildSearchQueryWithEqualsAndWildcard(form, ' ', '*');
-	searchQuery = searchQuery.replace(/ /g, '+');
-	searchQuery = encodeURI(searchQuery);
 
-	var RSSURL = "http://k1www.gbv.de/rssopc/rss_feeds.php?HOST=opac.sub.uni-goettingen.de&INTPORT=80&EXTPORT=80&DB=1&SEARCH=00yS!t" + searchQuery + "!aY!cN.oY.vD.wD&EDOC=588692600"
+	if (searchQuery) {
+		searchQuery = searchQuery.replace(/ /g, '+');
+		searchQuery = encodeURI(searchQuery);
 
-	return RSSURL;
+		var RSSURL = "http://k1www.gbv.de/rssopc/rss_feeds.php?HOST=opac.sub.uni-goettingen.de&INTPORT=80&EXTPORT=80&DB=1&SEARCH=00yS!t" + searchQuery + "!aY!cN.oY.vD.wD&EDOC=588692600"
+	}
+
+return RSSURL;
 }
  
