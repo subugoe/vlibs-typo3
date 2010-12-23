@@ -1,9 +1,13 @@
+.pz2-fieldsets {
+	margin-top: 1em;
+}
+
 fieldset {
 	width: 48%;
 	float: right;
 	position: relative;
+	margin-bottom: 0.5em;
 }
-
 
 fieldset.pz2-IA, fieldset.pz2-IB, fieldset.pz2-IC {
 	left: 0;
