@@ -22,12 +22,12 @@
 				
 					<ul>
 						<f:for each="{section.subjects}" as="subject">
-							<li>
+							<li {f:if(condition: subject.inline, then: 'class="inline"')}>
 								<label>
 									<f:form.checkbox name="pz2subject" 
-													 value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
+											value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
 
-										onclick="checkboxChanged(this);"/>
+											onclick="checkboxChanged(this);"/>
 									<f:translate key="{subject.name}">{subject.name}</f:translate>
 								</label>
 							</li>

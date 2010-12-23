@@ -2,22 +2,35 @@ fieldset {
 	width: 48%;
 	float: right;
 	position: relative;
-
 }
+
 
 fieldset.pz2-IA, fieldset.pz2-IB, fieldset.pz2-IC {
 	left: 0;
 	float: none;
 }
 
+
 form.pz2-searchForm ul {
 	list-style-type: none;
-	text-indent: -1.5em;
+	padding-left: 0em;
 }
+
+
+form.pz2-searchForm li {
+	margin-left: 0.5em;
+}
+
+
+form.pz2-searchForm li.inline {
+	display: inline;
+}
+
 
 legend {
 	font-weight: bold; 
 }
+
 
 .pz2-months {
 	font-size: 133%;

@@ -39,15 +39,13 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Schottland',
-				'GOK' => array('POP', 'POQ', 'POR', 'POS')
+				'GOK' => array('POP', 'POQ', 'POR', 'POS'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Irland',
-				'GOK' => array('POT', 'POV', 'POW', 'POX', 'POY', 'POZ')
-			),
-			array(
-				'name' => 'Kanada',
-				'GOK' => array('PVD', 'PVE', 'PVF', 'PVG')
+				'GOK' => array('POT', 'POV', 'POW', 'POX', 'POY', 'POZ'),
+				'inline' => true
 			),
 			array(
 				'name' => 'USA (epochenübergreifend)',
@@ -66,12 +64,19 @@ $subjects = array(
 				'GOK' => array('PVN', 'PVO', 'PVP')
 			),
 			array(
+				'name' => 'Kanada',
+				'GOK' => array('PVD', 'PVE', 'PVF', 'PVG'),
+				'inline' => true
+			),
+			array(
 				'name' => 'Australien',
-				'GOK' => array('PXB', 'PXC', 'PXD', 'PXE')
+				'GOK' => array('PXB', 'PXC', 'PXD', 'PXE'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Neuseeland',
-				'GOK' => array('PXN', 'PXO', 'PXP', 'PXR', 'PXS')
+				'GOK' => array('PXN', 'PXO', 'PXP', 'PXR', 'PXS'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Geschichte des jüdischen Volkes im angloamerik. Raum',
@@ -90,11 +95,13 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Sprachwissenschaft',
-				'GOK' => array('IA 3')
+				'GOK' => array('IA 3'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Anthologien',
-				'GOK' => array('IA 4')
+				'GOK' => array('IA 4'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Literaturwissenschaft',
@@ -105,16 +112,19 @@ $subjects = array(
 				'GOK' => array('IA 6')
 			),
 			array(
-				'name' => 'Irland',
-				'GOK' => array('IAF')
-			),
-			array(
 				'name' => 'Schottland',
-				'GOK' => array('IAH')
+				'GOK' => array('IAH'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Wales',
-				'GOK' => array('IAJ')
+				'GOK' => array('IAJ'),
+				'inline' => true
+			),
+			array(
+				'name' => 'Irland',
+				'GOK' => array('IAF'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Altenglisch',
@@ -132,36 +142,44 @@ $subjects = array(
 		'GOK' => 'IB',
 		'subjects' => array(
 			array(
+				'name' => 'Kanada',
+				'GOK' => array('IBJ'),
+				'inline' => true
+			),
+			array(
 				'name' => 'Australien',
-				'GOK' => array('IBB')
+				'GOK' => array('IBB'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Neuseeland',
-				'GOK' => array('IBG')
-			),
-			array(
-				'name' => 'Kanada',
-				'GOK' => array('IBJ')
-			),
-			array(
-				'name' => 'Malta',
-				'GOK' => array('IBK')
+				'GOK' => array('IBG'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Afrika',
-				'GOK' => array('IBM')
+				'GOK' => array('IBM'),
+				'inline' => true,
 			),
 			array(
 				'name' => 'Karibischer Raum',
-				'GOK' => array('IBO')
+				'GOK' => array('IBO'),
+				'inline' => true
+			),
+			array(
+				'name' => 'Malta',
+				'GOK' => array('IBK'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Asien, Ozeanien',
-				'GOK' => array('IBR')
+				'GOK' => array('IBR'),
+				'inline' => true,
 			),
 			array(
 				'name' => 'Indischer Subkontinent',
-				'GOK' => array('IBW')
+				'GOK' => array('IBW'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Mischsprachen',
@@ -180,11 +198,13 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Sprachwissenschaft',
-				'GOK' => array('IC 3')
+				'GOK' => array('IC 3'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Anthologien',
-				'GOK' => array('IC 4')
+				'GOK' => array('IC 4'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Literaturwissenschaft',
