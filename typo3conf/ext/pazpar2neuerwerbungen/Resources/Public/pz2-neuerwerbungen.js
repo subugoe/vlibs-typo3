@@ -49,7 +49,7 @@ function restoreCookieState () {
 				var fieldNames = cookieValue.split(':');
 				for (var fieldNameIndex in fieldNames) {
 					var fieldName = fieldNames[fieldNameIndex];
-					$(':checkbox[value="' + fieldName + '"]').attr({'checked': true});
+					$('.pz2-searchForm :checkbox[value="' + fieldName + '"]').attr({'checked': true});
 				}
 				break;
 			}
