@@ -2,53 +2,55 @@
 
 	<f:form name="search" class="pz2-searchForm">
 		<div class="pz2-mainForm">
-			<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
-				<fieldset class="pz2-{section.GOK}">
-					<legend>
-						<f:if condition="{section.GOK}">
-							<f:then>
-								<label>
-		 							<f:form.checkbox name="pz2subject" 
-			 								value="{section.GOK}"
-			 								onclick="groupCheckboxChanged(this);"/>
-		 							<f:translate key="{section.name}">{section.name}</f:translate>
-		 						</label>
-							</f:then>
-							<f:else>
-								<f:translate key="{section.name}">{section.name}</f:translate>
-							</f:else>
-						</f:if>
-					</legend>
-				
-					<ul>
-						<f:for each="{section.subjects}" as="subject">
-							<li {f:if(condition: subject.inline, then: 'class="inline"')}>
-								<label>
-									<f:form.checkbox name="pz2subject" 
-											value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
-
-											onclick="checkboxChanged(this);"/>
-									<f:translate key="{subject.name}">{subject.name}</f:translate>
-								</label>
-							</li>
-						</f:for>
-					</ul>
-				</fieldset>
-			</f:for>
-			
 			<p>
-				<f:link.external class="pz2-rsslink" 
-								uri="TODO" 
+				<f:form.select options="{pazpar2neuerwerbungen.months}"
+							 name="months"
+							 class="pz2-months"
+							 additionalAttributes="{onchange:'pz2-checkboxChanged(this);'}"/>
+				<f:link.external class="pz2-rsslink"
+								uri="TODO"
 								additionalAttributes="{type: 'text/xml'}">
 					<f:translate key="Die aktuelle Liste als RSS-Feed abonnieren."/>
 				</f:link.external>
 			</p>
-			<f:form.select options="{pazpar2neuerwerbungen.months}"
-							 name="months" 
-							 class="pz2-months" 
-							 additionalAttributes="{onchange:'pz2-checkboxChanged(this);'}"/>
 
 			<f:form.submit name="button" value="<f:translate key='Anzeigen'/>" />
+
+			<div class="pz2-fieldsets">
+				<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
+					<fieldset class="pz2-{section.GOK}">
+						<legend>
+							<f:if condition="{section.GOK}">
+								<f:then>
+									<label>
+										<f:form.checkbox name="pz2subject"
+												value="{section.GOK}"
+												onclick="groupCheckboxChanged(this);"/>
+										<f:translate key="{section.name}">{section.name}</f:translate>
+									</label>
+								</f:then>
+								<f:else>
+									<f:translate key="{section.name}">{section.name}</f:translate>
+								</f:else>
+							</f:if>
+						</legend>
+
+						<ul>
+							<f:for each="{section.subjects}" as="subject">
+								<li {f:if(condition: subject.inline, then: 'class="inline"')}>
+									<label>
+										<f:form.checkbox name="pz2subject"
+												value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
+
+												onclick="checkboxChanged(this);"/>
+										<f:translate key="{subject.name}">{subject.name}</f:translate>
+									</label>
+								</li>
+							</f:for>
+						</ul>
+					</fieldset>
+				</f:for>
+			</div>
 		</div>
 	</f:form>
 
