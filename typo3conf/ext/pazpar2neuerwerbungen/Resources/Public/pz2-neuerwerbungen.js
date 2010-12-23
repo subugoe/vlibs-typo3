@@ -18,10 +18,11 @@
  * pz2neuerwerbungenDOMReady
  *
  * To be called when the Document is ready (usually by jQuery).
- * Restores state from cookies.
+ * Restores state from cookies and kicks off the search.
  */
 function pz2neuerwerbungenDOMReady () {
 	restoreCookieState ();
+	runSearchForForm ($('.pz2-searchForm')[0]);
 }
 
 
