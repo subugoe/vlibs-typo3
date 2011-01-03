@@ -79,7 +79,7 @@ $subjects = array(
 				'inline' => true
 			),
 			array(
-				'name' => 'Geschichte des jüdischen Volkes im angloamerik. Raum',
+				'name' => 'Jüdisches Volk im angloamerikanischen Raum',
 				'GOK' => array('PY! 300', 'PY! 7')
 			),
 		),
@@ -108,13 +108,24 @@ $subjects = array(
 				'GOK' => array('IA 5')
 			),
 			array(
-				'name' => 'Textausgaben & Sekundärliteratur',
+				'name' => 'Textausgaben und Sekundärliteratur',
 				'GOK' => array('IA 6')
+			),
+			array(
+				'name' => 'Altenglisch',
+				'GOK' => array('IAB'),
+				'inline' => true
+			),
+			array(
+				'name' => 'Mittel- und Frühneuenglisch',
+				'GOK' => array('IAD', 'IAE'),
+				'inline' => true
 			),
 			array(
 				'name' => 'Schottland',
 				'GOK' => array('IAH'),
-				'inline' => true
+				'inline' => true,
+				'break' => true
 			),
 			array(
 				'name' => 'Wales',
@@ -126,17 +137,38 @@ $subjects = array(
 				'GOK' => array('IAF'),
 				'inline' => true
 			),
-			array(
-				'name' => 'Altenglisch',
-				'GOK' => array('IAB')
-			),
-			array(
-				'name' => 'Mittelenglisch und Frühneuenglisch',
-				'GOK' => array('IAD', 'IAE')
-			),
 		),
 	),
 	
+	array(
+		'name' => 'Amerikanische Philologie',
+		'GOK' => 'IC',
+		'subjects' => array(
+			array(
+				'name' => 'Sprach- und Literaturwissenschaft, Allgemeines',
+				'GOK' => array('IC 2')
+			),
+			array(
+				'name' => 'Sprachwissenschaft',
+				'GOK' => array('IC 3'),
+				'inline' => true
+			),
+			array(
+				'name' => 'Anthologien',
+				'GOK' => array('IC 4'),
+				'inline' => true
+			),
+			array(
+				'name' => 'Literaturwissenschaft',
+				'GOK' => array('IC 5')
+			),
+			array(
+				'name' => 'Textausgaben und Sekundärliteratur',
+				'GOK' => array('IC 6')
+			),
+		),
+	),
+
 	array(
 		'name' => 'Globales Englisch',
 		'GOK' => 'IB',
@@ -188,34 +220,6 @@ $subjects = array(
 		),
 	),
 	
-	array(
-		'name' => 'Amerikanische Philologie',
-		'GOK' => 'IC',
-		'subjects' => array(
-			array(
-				'name' => 'Sprach- und Literaturwissenschaft, Allgemeines',
-				'GOK' => array('IC 2')
-			),
-			array(
-				'name' => 'Sprachwissenschaft',
-				'GOK' => array('IC 3'),
-				'inline' => true
-			),
-			array(
-				'name' => 'Anthologien',
-				'GOK' => array('IC 4'),
-				'inline' => true
-			),
-			array(
-				'name' => 'Literaturwissenschaft',
-				'GOK' => array('IC 5')
-			),
-			array(
-				'name' => 'Textausgaben & Sekundärliteratur',
-				'GOK' => array('IC 6')
-			),
-		),
-	),
 );
 
 ?>

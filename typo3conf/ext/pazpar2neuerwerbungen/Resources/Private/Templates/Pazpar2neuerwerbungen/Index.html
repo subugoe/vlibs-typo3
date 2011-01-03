@@ -38,6 +38,7 @@
 
 						<ul>
 							<f:for each="{section.subjects}" as="subject">
+								<f:if condition="{subject.break} == 1 "><br></f:if>
 								<li {f:if(condition: subject.inline, then: 'class="inline"')}>
 									<label>
 										<f:form.checkbox name="pz2subject"
