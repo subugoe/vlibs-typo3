@@ -61,7 +61,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 
 		$pz2Neuerwerbungen = new Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen;
 		$pz2Neuerwerbungen->setSubjects( $this->getSubjectsArray() );
-		$pz2Neuerwerbungen->setMonths( $this->monthsArray(12) );
+		$pz2Neuerwerbungen->setMonths( $this->monthsArray() );
 		$this->view->assign('pazpar2neuerwerbungen', $pz2Neuerwerbungen);
 	}
 
@@ -86,7 +86,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	}
 
 
-	private function monthsArray ($numberOfMonths = 12) {
+	private function monthsArray ($numberOfMonths = 13) {
 		$months = array();
 		$year = date('Y');
 		$month = date('n');
@@ -94,21 +94,20 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$currentMonthSearchString = $this->picaSearchStringForMonth($month, $year);
 		
 		for ($i = 1; $i <= $numberOfMonths; $i++) {
-			$this->reduceMonth($month, $year);
-			
 			$searchString = $this->picaSearchStringForMonth($month, $year);
 			
 			/* make sure the text encoding in the locale_all setting matches the encoding 
 					of the page, otherwise umlauts in month names may appear broken */  
 			$monthName = strftime('%B', mktime(0, 0, 0, $month, 1, 2010));
 			$displayString = $monthName . ' ' . $year;
-			if ($i > 1) {
-				$months[$searchString] = $displayString;
+
+			if ($i == 1) {
+				$displayString .= ' (' . $this->localise('unvollständig') . ')';
 			}
-			else {
-				$displayString = $this->localise('Seit') . ' ' . $displayString;
-				$months[$searchString . ',' . $currentMonthSearchString] = $displayString; 
-			}
+
+			$months[$searchString] = $displayString;
+
+			$this->reduceMonth($month, $year);
 		}
 		
 		return $months;

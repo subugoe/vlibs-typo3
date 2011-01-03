@@ -1,8 +1,8 @@
 <?php
-/********************************************************************
+/*************************************************************************
  *  Copyright notice
  *
- *  © 2010 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
+ *  © 2010-2011 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
  *  All rights reserved
  *
  *  This script is distributed in the hope that it will be useful,
@@ -10,7 +10,7 @@
  *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
  *  This copyright notice MUST APPEAR in all copies of the script.
- ********************************************************************/
+ *************************************************************************/
 
 
 /**
@@ -88,6 +88,25 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 		$this->months = $newMonths;
 	}
 
+
+
+	/**
+	 * Value of the selected item in the month selection menu:
+	 * The key of the second item in the $months array.
+	 *
+	 * @return string
+	 */
+	public function getDefaultMonth () {
+		$result = null;
+
+		$keys = array_keys($this->getMonths());
+		if ( count($keys) >= 2 ) {
+			$result = (string) $keys[1];
+		}
+
+		return $result;
+	}
+	
 }
 
 ?>
