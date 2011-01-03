@@ -80,7 +80,7 @@ $subjects = array(
 			),
 			array(
 				'name' => 'Jüdisches Volk im angloamerikanischen Raum',
-				'GOK' => array('PY! 300', 'PY! 7')
+				'GOK' => array('PYC 300', 'PYD 300', 'PYE 300', 'PYF 300', 'PYG 300', 'PYC 7', 'PYE 7', 'PYF 7', 'PYG 7')
 			),
 		),
 	),
