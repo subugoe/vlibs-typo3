@@ -19,7 +19,7 @@ $subjects = array(
 			),
 			array(
 				'name' => 'England (epochenübergreifend)',
-				'GOK' => array('PO? 000', 'PO 1', 'PO 2', 'PO 3', 'PO 4', 'PO 5', 'PO 6', 'PO 7', 'PO 8', 'PO 9', 'POL')
+				'GOK' => array('POA 000', 'POB 000', 'POD 000', 'POF 000', 'POG 000', 'POH 000', 'POL 000', 'POM 000', 'PON 000', 'POO 000', 'PO 1', 'PO 2', 'PO 3', 'PO 4', 'PO 5', 'PO 6', 'PO 7', 'PO 8', 'PO 9', 'POL')
 			),
 			array(
 				'name' => 'England im Mittelalter',
