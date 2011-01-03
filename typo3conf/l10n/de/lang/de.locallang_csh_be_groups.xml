@@ -58,7 +58,7 @@ Es ist natürlich nicht sinnvoll, Felder von Tabellen hinzuzufügen, auf die kei
 			<label index="hidden.description">Deaktiviert eine Benutzergruppe.</label>
 			<label index="hidden.details">Deaktiviert man eine Benutzergruppe, so unterbindet dies die Vererbung sämtlicher Eigenschaften der Gruppe an alle ihre Mitglieder.</label>
 			<label index="lockToDomain.description">Gibt den Host an, von dem aus sich der Benutzer anmelden muss.</label>
-			<label index="lockToDomain.details">Ein TYPO3-System kann mehrere Web-Sites in mehreren Domänen enthalten. Diese Option stellt sicher, dass sich Benutzer nur von einem bestimmten Host anmelden können.
+			<label index="lockToDomain.details">Ein TYPO3-System kann mehrere Websites in mehreren Domänen enthalten. Diese Option stellt sicher, dass sich Benutzer nur von einem bestimmten Host anmelden können.
 Gibt man hier z.B. &quot;www.meine-domäne.com&quot; ein, so muss der Benutzer sich von dieser Domäne aus anmelden, um Mitgliedschaft in dieser Gruppe zu erhalten. Andernfalls wird die Gruppe für diesen Benutzer ignoriert.</label>
 			<label index="groupMods.description">Legt fest, welche Backend-Module von den Gruppenmitgliedern genutzt werden können.</label>
 			<label index="groupMods.details">Diese Einstellung legt fest, welche &quot;Menüeinträge&quot; den Gruppenmitgliedern zur Verfügung stehen.
@@ -69,7 +69,7 @@ Hierbei handelt es sich um die Zuweisung von Backend-Modulen zum Benutzer aus de
 			<label index="inc_access_lists.details">Ist diese Option deaktiviert, so können für diese Gruppe keine Zugriffslisten konfiguriert werden. Wenn die Zugriffslisten deaktiviert, ist das Symbol für die Gruppe blau, sonst rot.</label>
 			<label index="description.description">Geben Sie eine Kurzbeschreibung der Benutzergruppe ein, aus der sich erkennen lässt, wozu sie dient und wer Mitglied sein sollte. Nur für internen Gebrauch.</label>
 			<label index="TSconfig.description">Benutzer-TSconfig: Erweiterte Konfiguration über Werte im TypoScript-Stil (für Fortgeschrittene).</label>
-			<label index="TSconfig.details">Benutzer-TSconfig kann für jeden Backend-Benutzer und jede Backend-Benutzergruppe gesetzt werden. Die für Benutzergruppen festgelegte Konfiguration wird an die Mitglieder dieser Gruppe vererbt. Zu den verfügbaren Optionen gehören typischerweise Einstellungen wie im Modul &quot;Benutzerwerkzeuge &gt; Einstellungen&quot; (tatsächlich können dessen Optionen per Benutzer-TSconfig übersteuert werden), im Admin-Panel (Frontend), diverse Optimierungen des Backends (Benutzer auf IP festlegen, Verweisrahmen anzeigen, der Zugriff auf die Funktion zum Löschen des Cache, Breite des Navigationsrahmens usw.) und die Konfiguration der Backend-Module (Übersteuerung der Konfiguration, die über Seiten-TSconfig gesetzt wurde).</label>
+			<label index="TSconfig.details">Benutzer-TSconfig kann für jeden Backend-Benutzer und jede Backend-Benutzergruppe gesetzt werden. Die für Benutzergruppen festgelegte Konfiguration wird an die Mitglieder dieser Gruppe vererbt. Zu den verfügbaren Optionen gehören typischerweise Einstellungen wie im Modul &quot;Benutzerwerkzeuge &gt; Einstellungen&quot; (tatsächlich können dessen Optionen per Benutzer-TSconfig übersteuert werden), im Admin-Panel (Frontend), diverse Optimierungen des Backends (Benutzer auf IP festlegen, der Zugriff auf die Funktion zum Löschen des Cache, Breite des Navigationsrahmens usw.) und die Konfiguration der Backend-Module (Übersteuerung der Konfiguration, die über Seiten-TSconfig gesetzt wurde).</label>
 			<label index="TSconfig.syntax">Eingabe als normales TypoScript, aber ohne Bedingungen und Konstanten.</label>
 			<label index="TSconfig.image_descr">Für das TSconfig-Feld steht Hilfe jederzeit bereit - klicken Sie einfach das Symbol des TS-Assistenten an, um ein Fenster zu öffnen.
 In dem Popup-Fenster sehen Sie dann einen Baum möglicher Konfigurationswerte. Diese wurden aus dem TSconfig-Handbuch extrahiert. Mit diesem Assistenten können Sie die benötigten Optionen suchen.</label>
@@ -135,7 +135,7 @@ Werden für einen Benutzer keine Sprachen aufgeführt, so kann er &lt;em&gt;säm
 			<label index="subgroup.description" type="integer">244521906</label>
 			<label index="explicit_allowdeny.description" type="integer">109000363</label>
 			<label index="allowed_languages.image_descr" type="integer">80725669</label>
-			<label index="TSconfig.details" type="integer">267445991</label>
+			<label index="TSconfig.details" type="integer">63149626</label>
 			<label index="TSconfig.image_descr" type="integer">230747652</label>
 			<label index="hide_in_lists.details" type="integer">20735693</label>
 			<label index="subgroup.details" type="integer">41206182</label>
@@ -214,7 +214,7 @@ When Access Lists are disabled the icon for the group is blue while it is red wh
 			<label index="subgroup.description">Select backend user groups which are automatically included for members of this group.</label>
 			<label index="explicit_allowdeny.description">Select field values to explicitly deny or allow for user group members.</label>
 			<label index="allowed_languages.image_descr">This example shows a situation where two languages, Danish and German, are created in addition to the default language.</label>
-			<label index="TSconfig.details">User TSconfig can be set for each backend user and group. Configuration set for backend groups is inherited by the user who is a member of those groups. The available options typically cover user settings like those found in the User&gt;Setup module (in fact options from that module can be forcibly overridden from User TSconfig!), configuration of the &quot;Admin Panel&quot; (frontend), various backend tweaks (lock user to IP, show shortcut frame, may user clear all cache?, width of the navigation frame etc.) and backend module configuration (overriding any configuration set for backend modules in Page TSconfig).</label>
+			<label index="TSconfig.details">User TSconfig can be set for each backend user and group. Configuration set for backend groups is inherited by the user who is a member of those groups. The available options typically cover user settings like those found in the User&gt;Setup module (in fact options from that module can be forcibly overridden from User TSconfig!), configuration of the &quot;Admin Panel&quot; (frontend), various backend tweaks (lock user to IP, may user clear all cache?, width of the navigation frame etc.) and backend module configuration (overriding any configuration set for backend modules in Page TSconfig).</label>
 			<label index="TSconfig.image_descr">In the TSconfig field help is right at hand - just click the TS wizard icon, then a window will pop up.
 In the pop-up window you will see a tree of possible configuration values. These are extracted from the TSconfig manual. You can click around to find the options you need to set through this wizard.</label>
 			<label index="hide_in_lists.details">This will affect the list of user groups in the Task Center To-Do and Messages parts as well as the Web&gt;Access module.

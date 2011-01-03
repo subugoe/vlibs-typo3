@@ -9,6 +9,7 @@
 			<label index="Top:">Oben:</label>
 			<label index="Right:">Rechts:</label>
 			<label index="Bottom:">Unten:</label>
+			<label index="image_url">Bild-URL</label>
 			<label index="image_url_invalid">Auf die URL konnte nicht zugegriffen werden, oder die Bilddaten sind fehlerhaft.</label>
 			<label index="Left:">Links:</label>
 		</languageKey>
@@ -24,6 +25,7 @@
 			<label index="Bottom:" type="integer">188130038</label>
 			<label index="Left:" type="integer">86809115</label>
 			<label index="image_url_invalid" type="integer">247559291</label>
+			<label index="image_url" type="integer">69711576</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -37,6 +39,7 @@
 			<label index="Bottom:">Bottom:</label>
 			<label index="Left:">Left:</label>
 			<label index="image_url_invalid">The url could not be accessed or is not a valid image.</label>
+			<label index="image_url">Image URL</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

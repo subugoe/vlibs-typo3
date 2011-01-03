@@ -59,10 +59,10 @@ Die Bedeutung der einzelnen Ansichten:
 Zeigt Seitenzugriffe/Benutzersitzungen für jede Seite.
 
 &lt;b&gt;Zugriffe insgesamt&lt;/b&gt;
-Zeigt Statistiken nur für diejenigen Seiten, welche einen Template-Datensatz (mit gesetzter Root-Flagge) haben. Alle Seitenzugriffe werden hier also für die gesamte Web-Site aufsummiert angezeigt.
+Zeigt Statistiken nur für diejenigen Seiten, welche einen Template-Datensatz (mit gesetzter Root-Flagge) haben. Alle Seitenzugriffe werden hier also für die gesamte Website aufsummiert angezeigt.
 
 &lt;b&gt;Zugriffe auf Hauptbereiche&lt;/b&gt;
-Zeigt die Anzahl der Seitenzugriffe/Benutzersitzungen innerhalb der Hauptbereiche der Web-Site. Ein &quot;Hauptbereich&quot; umfasst dabei alle Unterseiten einer Seite der ersten Ebene des Seitenbaums (definiert durch einen Template-Datensatz mit gesetzter Root-Flagge). In der Abbbildung wären das also zum Beispiel alle Seiten unterhalb von &quot;TypoScript examples&quot;.</label>
+Zeigt die Anzahl der Seitenzugriffe/Benutzersitzungen innerhalb der Hauptbereiche der Website. Ein &quot;Hauptbereich&quot; umfasst dabei alle Unterseiten einer Seite der ersten Ebene des Seitenbaums (definiert durch einen Template-Datensatz mit gesetzter Root-Flagge). In der Abbbildung wären das also zum Beispiel alle Seiten unterhalb von &quot;TypoScript examples&quot;.</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">

@@ -3,8 +3,8 @@
 	<data type="array">
 		<languageKey index="de" type="array">
 			<label index="status_report_title">Statusbericht</label>
-			<label index="status_report_description">Erhalten Sie einen Statusbericht über Ihre Web-Site und erkannte Probleme.</label>
-			<label index="status_report_explanation">Hier finden Sie eine kurze Übersicht über die Parameter der Web-Site sowie in der Installation festgestellte Probleme. Diese Informationen können für Support-Anfragen in den TYPO3-Mailinglisten und -Bugtrackern hilfreich sein.</label>
+			<label index="status_report_description">Erhalten Sie einen Statusbericht über Ihre Website und erkannte Probleme.</label>
+			<label index="status_report_explanation">Hier finden Sie eine kurze Übersicht über die Parameter der Website sowie in der Installation festgestellte Probleme. Diese Informationen können für Support-Anfragen in den TYPO3-Mailinglisten und -Bugtrackern hilfreich sein.</label>
 			<label index="status_ok">OK</label>
 			<label index="status_insecure">Unsicher</label>
 			<label index="status_disabled">Deaktiviert</label>
@@ -15,6 +15,9 @@
 			<label index="status_connectionFailed">Verbindung fehlgeschlagen</label>
 			<label index="status_updateComplete">Aktualisierung vollständig</label>
 			<label index="status_updateIncomplete">Aktualisierung nicht vollständig</label>
+			<label index="status_updateTaskTitle">Aktualisierung des Systemstatus</label>
+			<label index="status_updateTaskDescription">Führt eine Überprüfung des Systemstatus durch und versendet eine Mitteilung, wenn Probleme gefunden wurden.</label>
+			<label index="status_problemNotification">Ein oder mehrere Probleme in Ihrer TYPO3-Installation wurden festgestellt. Bitte prüfen Sie die %sStatusberichte%s für mehr Informationen.</label>
 			<label index="status_typo3">TYPO3-System</label>
 			<label index="status_system">System</label>
 			<label index="status_security">Sicherheit</label>
@@ -94,6 +97,9 @@
 			<label index="status_configuration_DeprecationLogEnabled" type="integer">253052153</label>
 			<label index="status_configuration_DeprecationLogFile" type="integer">2018705</label>
 			<label index="status_configuration_DeprecationLogSize" type="integer">21246902</label>
+			<label index="status_updateTaskTitle" type="integer">119233544</label>
+			<label index="status_updateTaskDescription" type="integer">150646589</label>
+			<label index="status_problemNotification" type="integer">182597193</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -142,6 +148,9 @@
 			<label index="status_configuration_DeprecationLogEnabled">The deprecation log tracks whether old APIs are being used in extensions. Depending on the extensions you use and whether they use deprecated APIs it can happen that the log takes up quite some space over time. The more space it takes up, the more it may affect your installation's performance. It is recommended to disable deprecation log in production environments.</label>
 			<label index="status_configuration_DeprecationLogFile">You can find the deprecation log file at %s.</label>
 			<label index="status_configuration_DeprecationLogSize">Your deprecation log file currently takes up %s.</label>
+			<label index="status_updateTaskTitle">System Status Update</label>
+			<label index="status_updateTaskDescription">Runs a system status check and sends notifications if problems have been found.</label>
+			<label index="status_problemNotification">One or more problems were detected with your TYPO3 installation. Please check the %sstatus report%s for more information.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

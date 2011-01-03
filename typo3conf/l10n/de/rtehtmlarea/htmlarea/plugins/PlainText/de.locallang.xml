@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="Paste-as-Plain-Text">Als einfacher Text einfügen</label>
+			<label index="Access-to-clipboard-denied">Der Inhalt konnte nicht als einfacher Text eingefügt werden, weil der Zugriff auf die Zwischenablage verboten wurde.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="Paste-as-Plain-Text" type="integer">32283654</label>
+			<label index="Access-to-clipboard-denied" type="integer">139598739</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="Paste-as-Plain-Text">Paste as plain text</label>
+			<label index="Access-to-clipboard-denied">Content could not be pasted as plain text because permission to access the clipboard was denied.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

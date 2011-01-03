@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title">RealURL-Verwaltung</label>
+			<label index="no_page_id">Bitte wählen Sie eine Seite aus dem Seitenbaum.</label>
+			<label index="depth">Tiefe:</label>
+			<label index="function">Anzeigen:</label>
+			<label index="default_language">Standard</label>
+			<label index="all_languages">Alle</label>
+			<label index="language">Sprache:</label>
+			<label index="search_path">Pfad:</label>
+			<label index="look_up">Suchen</label>
+			<label index="show_all">Alle zeigen</label>
+			<label index="displaying_results">Ergebnisse %1$d-%2$d von %3$d</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title" type="integer">45765396</label>
+			<label index="no_page_id" type="integer">259494487</label>
+			<label index="depth" type="integer">186534530</label>
+			<label index="default_language" type="integer">128029197</label>
+			<label index="language" type="integer">8937228</label>
+			<label index="search_path" type="integer">266188054</label>
+			<label index="displaying_results" type="integer">95098553</label>
+			<label index="all_languages" type="integer">186422474</label>
+			<label index="look_up" type="integer">175676653</label>
+			<label index="show_all" type="integer">247013413</label>
+			<label index="function" type="integer">152556645</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Speaking URL Management</label>
+			<label index="no_page_id">Please, select a page from the page tree.</label>
+			<label index="depth">Depth:</label>
+			<label index="default_language">Default</label>
+			<label index="language">Language:</label>
+			<label index="search_path">Path:</label>
+			<label index="displaying_results">Results %1$d-%2$d of %3$d</label>
+			<label index="all_languages">All</label>
+			<label index="look_up">Look up</label>
+			<label index="show_all">Show all</label>
+			<label index="function">Show:</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

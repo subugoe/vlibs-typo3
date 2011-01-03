@@ -53,6 +53,7 @@
 			<label index="m_function_0">Schnelleingabe</label>
 			<label index="m_function_1">Spalten</label>
 			<label index="m_function_2">Sprachen</label>
+			<label index="gridView">Rasteransicht</label>
 			<label index="m_tt_board_0">Nur Themenliste</label>
 			<label index="m_tt_board_expand">Threads ausklappen</label>
 			<label index="m_tt_address_0">Kurze Liste</label>
@@ -78,6 +79,8 @@
 			<label index="pI_hits24hours">Letzte 24 Stunden</label>
 			<label index="pI_hits10days">Letzte 10 Tage</label>
 			<label index="content_from_pid_title">Die Seite benutzt Inhalt von dieser Seite: %s</label>
+			<label index="goToListModule">Zum Modul Liste gehen</label>
+			<label index="goToListModuleMessage">Die aktuelle Seite ist vom Typ SysOrdner. SysOrdner enthalten gewöhnlich keine Inhaltselemente, sondern werden zum Sammeln anderer Arten von Datensätzen in einem Ordner verwendet.</label>
 			<label index="editPageTitle">Seitentitel bearbeiten</label>
 			<label index="editPageTitle_curLang">Seitentitel der Übersetzung bearbeiten</label>
 			<label index="editPageHeader">Bearbeite Seiten-Header</label>
@@ -164,6 +167,9 @@
 			<label index="editPageProperties" type="integer">219852795</label>
 			<label index="viewContent" type="integer">164463880</label>
 			<label index="content_from_pid_title" type="integer">234117072</label>
+			<label index="gridView" type="integer">74422714</label>
+			<label index="goToListModule" type="integer">224766204</label>
+			<label index="goToListModuleMessage" type="integer">197488510</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -247,6 +253,9 @@
 			<label index="editPageProperties">Edit page properties</label>
 			<label index="viewContent">Viewing content of</label>
 			<label index="content_from_pid_title">Page uses content from this page: %s</label>
+			<label index="gridView">Grid-View</label>
+			<label index="goToListModule">Go to list module</label>
+			<label index="goToListModuleMessage">The current page is of the type &quot;Sysfolder&quot;. Sysfolders usually don't contain content elements but are used for collecting other types of records in a single folder.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

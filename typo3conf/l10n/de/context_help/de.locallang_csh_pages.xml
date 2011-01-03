@@ -135,7 +135,7 @@ Natürlich können Administratoren dieses Feld über TypoScript-Vorlagen einer e
 			<label index="newUntil.details">Das Ablaufdatum der Seite hat keinen Effekt auf die Anzeige der Webseite. Dieser Wert ist mehr für den internen Gebrauch gedacht als Erinnerung, wann der Inhalt der Seite überarbeitet werden sollte.
 Um einen Überblick über die Ablaufdaten zu bekommen, benutzen Sie die  &quot;Seitenbaum-Übersicht&quot; des Moduls &quot;Web &gt; Info&quot;.</label>
 			<label index="newUntil.syntax">Siehe auch Seite / Start (unten klicken)</label>
-			<label index="lastUpdated.description">Geben sie Datum und Uhrzeit der letzten Änderung der Seite ein.</label>
+			<label index="lastUpdated.description">Geben Sie Datum und Uhrzeit der letzten Aktualisierung der Seite ein.</label>
 			<label index="lastUpdated.details">Wie der Wert dieses Feldes genutzt wird liegt im Ermessen der Vorlage. Zunächst muss eine &quot;Zuletzt geändert&quot;-Notiz auf den Seiten vorhanden sein und außerdem muss die Vorlage diese Werte benutzen.
 
 Die häufigste Verwendung in Standardvorlagen ist die automtische Anzeige des Zeitpunkts der letzten Änderung &lt;em&gt;solange&lt;/em&gt; dieses Feld keinen Wert enthält.</label>

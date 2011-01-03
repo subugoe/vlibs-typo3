@@ -79,7 +79,7 @@
 			<label index="search">Gesamte Datenbank durchsuchen:</label>
 			<label index="search_description">Durchsucht alle Datenbank-Tabellen und Einträge nach einem Text.</label>
 			<label index="filesearch">Alle Dateinamen nach einem Muster durchsuchen</label>
-			<label index="filesearch_description">Sucht in PATH_site (Unterverzeichnisse des Web-Site-Pfades) rekursiv nach Dateinamen, die einem Regulären Ausdruck entsprechen.</label>
+			<label index="filesearch_description">Sucht in PATH_site (Unterverzeichnisse des Website-Pfades) rekursiv nach Dateinamen, die einem Regulären Ausdruck entsprechen.</label>
 			<label index="refindex">Globalen Referenz-Index prüfen und aktualisieren</label>
 			<label index="refindex_description">Ermöglicht die Pflege des von TYPO3 verwalteten Referenz-Index.</label>
 			<label index="title">Datenbankintegritätsprüfung</label>

@@ -2,10 +2,11 @@
 <T3locallangExt>
 	<data type="array">
 		<languageKey index="de" type="array">
+			<label index="CType_formlabel">Typ</label>
 			<label index="CType.I.0">Überschrift</label>
 			<label index="CType.I.1">Text</label>
-			<label index="CType.I.2">Text mit Bild</label>
-			<label index="CType.I.3">Bild</label>
+			<label index="CType.I.2">Text und Bilder</label>
+			<label index="CType.I.3">Bilder</label>
 			<label index="CType.I.4">Aufzählung</label>
 			<label index="CType.I.5">Tabelle</label>
 			<label index="CType.I.6">Dateiverweise</label>
@@ -28,17 +29,27 @@
 			<label index="layout.I.1">Layout 1</label>
 			<label index="layout.I.2">Layout 2</label>
 			<label index="layout.I.3">Layout 3</label>
-			<label index="colPos">Spalte:</label>
+			<label index="colPos">Spalten:</label>
+			<label index="colPos_formlabel">Spalte</label>
 			<label index="colPos.I.0">Links</label>
 			<label index="colPos.I.2">Rechts</label>
 			<label index="colPos.I.3">Rand</label>
 			<label index="date">Datum:</label>
+			<label index="date_formlabel">Datum</label>
 			<label index="header">Überschrift:</label>
+			<label index="header_formlabel">Hauptüberschrift</label>
+			<label index="header.ALT.shortcut_formlabel">Name (unsichtbar)</label>
+			<label index="header.ALT.script_formlabel">Name (unsichtbar)</label>
+			<label index="header.ALT.div_formlabel">Name (unsichtbar)</label>
+			<label index="header.ALT.html_formlabel">Name (unsichtbar)</label>
 			<label index="header_position">Ausrichtung:</label>
+			<label index="header_position_formlabel">Ausrichtung</label>
 			<label index="header_position.I.1">Mitte</label>
 			<label index="header_position.I.2">Rechts</label>
 			<label index="header_position.I.3">Links</label>
 			<label index="header_link">Verweis:</label>
+			<label index="header_link_formlabel">Verweis</label>
+			<label index="header_layout_formlabel">Typ</label>
 			<label index="header_layout.I.1">Layout 1</label>
 			<label index="header_layout.I.2">Layout 2</label>
 			<label index="header_layout.I.3">Layout 3</label>
@@ -46,11 +57,14 @@
 			<label index="header_layout.I.5">Layout 5</label>
 			<label index="header_layout.I.6">Verborgen</label>
 			<label index="text_align">Ausrichtung:</label>
+			<label index="text_align_formlabel">Textausrichtung</label>
 			<label index="text_align.I.1">Mitte</label>
 			<label index="text_align.I.2">Rechts</label>
 			<label index="text_align.I.3">Links</label>
 			<label index="text_face">Schrift:</label>
+			<label index="text_face_formlabel">Schriftart</label>
 			<label index="text_size">Größe:</label>
+			<label index="text_size_formlabel">Schriftgröße</label>
 			<label index="text_size.I.1">1: Klein</label>
 			<label index="text_size.I.2">2: Mittel</label>
 			<label index="text_size.I.3">3: Groß</label>
@@ -59,6 +73,7 @@
 			<label index="text_size.I.6">Standard +1</label>
 			<label index="text_size.I.7">Standard -1</label>
 			<label index="text_color">Farbe:</label>
+			<label index="text_color_formlabel">Textfarbe</label>
 			<label index="text_color.I.1">Farbe 1</label>
 			<label index="text_color.I.2">Farbe 2</label>
 			<label index="text_color.I.3">Keine</label>
@@ -74,14 +89,20 @@
 			<label index="text_color.I.14">Olivgrün</label>
 			<label index="text_color.I.15">Rotbraun</label>
 			<label index="text_properties">Attribute:</label>
+			<label index="text_properties_formlabel">Textdekoration</label>
 			<label index="text_properties.I.0">Fett</label>
 			<label index="text_properties.I.1">Kursiv</label>
 			<label index="text_properties.I.2">Unterstrichen</label>
 			<label index="text_properties.I.3">Großbuchstaben</label>
 			<label index="bodytext.W.RTE">Rich-Text-Eingabe im Vollbild</label>
+			<label index="bodytext.W.table">Tabellenassistent</label>
+			<label index="bodytext.W.forms">Formularassistent</label>
 			<label index="imagewidth">Breite (Pixel):</label>
+			<label index="imagewidth_formlabel">Breite (Pixel)</label>
 			<label index="imageheight">Höhe (Pixel):</label>
+			<label index="imageheight_formlabel">Höhe (Pixel)</label>
 			<label index="imageorient">Position:</label>
+			<label index="imageorient_formlabel">Position und Ausrichtung</label>
 			<label index="imageorient.I.0">Oben mittig</label>
 			<label index="imageorient.I.1">Oben rechts</label>
 			<label index="imageorient.I.2">Oben links</label>
@@ -94,10 +115,18 @@
 			<label index="imageorient.I.9">Neben dem Text rechts</label>
 			<label index="imageorient.I.10">Neben dem Text links</label>
 			<label index="imageborder">Rahmen:</label>
+			<label index="imageborder.I.0">Aktivieren</label>
+			<label index="imageborder_formlabel">Rahmen</label>
 			<label index="image_noRows">Keine Reihen:</label>
+			<label index="image_noRows.I.0">Deaktivieren</label>
+			<label index="image_noRows_formlabel">Horizontale Reihen</label>
 			<label index="image_link">Verweis:</label>
+			<label index="image_link_formlabel">Verweis (mit Kommata getrennt)</label>
 			<label index="image_zoom">Klick-Vergrößern:</label>
+			<label index="image_zoom_formlabel">Bei Klick</label>
+			<label index="image_zoom.I.0">Vergrößern</label>
 			<label index="image_effects">Effekte:</label>
+			<label index="image_effects_formlabel">Effekte</label>
 			<label index="image_effects.I.0">(kein)</label>
 			<label index="image_effects.I.1">Drehen 90 mit Uhr</label>
 			<label index="image_effects.I.2">Drehen 90 gegen Uhr</label>
@@ -109,6 +138,7 @@
 			<label index="image_effects.I.8">Heller</label>
 			<label index="image_effects.I.9">Dunkler</label>
 			<label index="image_frames">Rahmen:</label>
+			<label index="image_frames_formlabel">Grafische Rahmen</label>
 			<label index="image_frames.I.0">(kein)</label>
 			<label index="image_frames.I.1">Rahmen 1</label>
 			<label index="image_frames.I.2">Rahmen 2</label>
@@ -119,6 +149,7 @@
 			<label index="image_frames.I.7">Rahmen 7</label>
 			<label index="image_frames.I.8">Rahmen 8</label>
 			<label index="image_compression">Bildqualität/-bearbeitung</label>
+			<label index="image_compression_formlabel">Qualität und Typ</label>
 			<label index="image_compression.I.1">Keine (ignoriert alle anderen Optionen!)</label>
 			<label index="image_compression.I.15">JPG/sehr hoch</label>
 			<label index="image_compression.I.16">JPG/hoch</label>
@@ -126,13 +157,18 @@
 			<label index="image_compression.I.18">JPG/niedrig</label>
 			<label index="image_compression.I.19">JPG/sehr niedrig</label>
 			<label index="imagecols">Spalten:</label>
+			<label index="imagecols_formlabel">Anzahl an Spalten</label>
 			<label index="imagecaption_position">Ausrichtung:</label>
+			<label index="imagecaption_position_formlabel">Ausrichtung der Beschriftung</label>
 			<label index="imagecaption_position.I.1">Mitte</label>
 			<label index="imagecaption_position.I.2">Rechts</label>
 			<label index="imagecaption_position.I.3">Links</label>
 			<label index="image_altText">Alternativer Text:</label>
+			<label index="altText_formlabel">Alternative Texte (mit Zeilenumbruch getrennt)</label>
 			<label index="image_titleText">Titeltext:</label>
+			<label index="titleText_formlabel">Titel (mit Zeilenumbruch getrennt)</label>
 			<label index="image_longdescURL">Langbeschreibung URL:</label>
+			<label index="longdescURL_formlabel">URLs für längere Beschreibung (mit Zeilenumbruch getrennt)</label>
 			<label index="cols">Tabellenspalten:</label>
 			<label index="cols.I.0">Auto</label>
 			<label index="recursive.I.1">1 Ebene</label>
@@ -141,6 +177,7 @@
 			<label index="recursive.I.4">4 Ebenen</label>
 			<label index="recursive.I.5">Unendlich</label>
 			<label index="menu_type">Menütyp:</label>
+			<label index="menu_type_formlabel">Menütyp</label>
 			<label index="menu_type.I.0">Menü dieser Seiten</label>
 			<label index="menu_type.I.1">Menü der Unterseiten</label>
 			<label index="menu_type.I.2">Menü der Unterseiten (mit Inhaltsangabe)</label>
@@ -150,7 +187,9 @@
 			<label index="menu_type.I.6">Kürzlich aktualisierte Seiten</label>
 			<label index="menu_type.I.7">Verwandte Seiten (nach Stichworten)</label>
 			<label index="list_type">Plug-In:</label>
+			<label index="list_type_formlabel">Ausgewähltes Plug-In</label>
 			<label index="table_bgColor">Hintergrundfarbe:</label>
+			<label index="table_bgColor_formlabel">Hintergrundfarbe</label>
 			<label index="table_bgColor.I.1">Farbe 1</label>
 			<label index="table_bgColor.I.2">Farbe 2</label>
 			<label index="table_bgColor.I.3">Keine</label>
@@ -160,15 +199,26 @@
 			<label index="table_bgColor.I.8">Grau</label>
 			<label index="table_bgColor.I.9">Silber</label>
 			<label index="table_border">Rahmen:</label>
+			<label index="table_border_formlabel">Rahmendicke (Pixel)</label>
 			<label index="table_cellspacing">Zellenabstand:</label>
+			<label index="table_cellspacing_formlabel">Zellenabstand (Pixel)</label>
 			<label index="table_cellpadding">Zellenfüllung:</label>
+			<label index="table_cellpadding_formlabel">Zellenfüllung (Pixel)</label>
 			<label index="media">Dateien:</label>
+			<label index="media.ALT.uploads_formlabel">Oder Dateien manuell auswählen</label>
 			<label index="multimedia">Datei:</label>
+			<label index="multimedia_formlabel">Ausgewählte Mediendateien</label>
 			<label index="filelink_size">Zeige Dateigröße:</label>
+			<label index="filelink_size.I.0">Aktivieren</label>
+			<label index="filelink_size_formlabel">Informationen zur Dateigröße</label>
 			<label index="records">Objekte:</label>
+			<label index="records_formlabel">Datensätze</label>
 			<label index="spaceBefore">Abstand davor:</label>
+			<label index="spaceBefore_formlabel">Oberer Abstand</label>
 			<label index="spaceAfter">Abstand danach:</label>
+			<label index="spaceAfter_formlabel">Unterer Abstand</label>
 			<label index="section_frame">Rahmen:</label>
+			<label index="section_frame_formlabel">Einrückungen und Rahmen</label>
 			<label index="section_frame.I.1">Unsichtbar</label>
 			<label index="section_frame.I.2">Linie davor</label>
 			<label index="section_frame.I.3">Linie danach</label>
@@ -178,26 +228,44 @@
 			<label index="section_frame.I.7">Rahmen 1</label>
 			<label index="section_frame.I.8">Rahmen 2</label>
 			<label index="splash_layout">Textfeldtyp:</label>
+			<label index="splash_layout_formlabel">Typ</label>
 			<label index="splash_layout.I.1">Schatten</label>
 			<label index="splash_layout.I.2">Bildrahmen 1</label>
 			<label index="splash_layout.I.3">Bildrahmen 2</label>
 			<label index="splash_layout.I.4">__Grafisch:__</label>
 			<label index="splash_layout.I.5">Merkzettel 1</label>
 			<label index="sectionIndex">Index:</label>
+			<label index="sectionIndex_formlabel">In Menüs</label>
+			<label index="sectionIndex.I.0">Sichtbar</label>
 			<label index="linkToTop">Link zum Seitenanfang einfügen:</label>
+			<label index="linkToTop_formlabel">Link zum Seitenanfang</label>
+			<label index="linkToTop.I.0">Aktivieren</label>
 			<label index="rte_enabled">Rich-Text-Editor abschalten:</label>
+			<label index="rte_enabled_formlabel">Rich-Text-Editor für diesen Text</label>
+			<label index="rte_enabled.I.0">Deaktivieren</label>
 			<label index="pi_flexform">Erweiterungsoptionen:</label>
 			<label index="ALT.imgOptions">Bildoptionen</label>
 			<label index="ALT.imgLinks">Bild-Links</label>
 			<label index="ALT.imgDimensions">Bildmaße</label>
+			<label index="select_key_formlabel">Code für dieses Plug-In</label>
 			<label index="select_key.ALT.uploads">Dateipfad:</label>
+			<label index="select_key.ALT.uploads_formlabel">Aus diesem Pfad lesen</label>
+			<label index="select_key.ALT.script_formlabel">PHP-Code</label>
 			<label index="imagecaption.ALT.uploads">Beschreibungen:</label>
+			<label index="imagecaption.ALT.uploads_formlabel">Dateibeschreibungen (mit Zeilenumbruch getrennt)</label>
 			<label index="imagecaption.ALT.script">Kommentar:</label>
 			<label index="bodytext.ALT.mailform">Konfiguration:</label>
+			<label index="bodytext.ALT.mailform_formlabel">Formular</label>
 			<label index="pages.ALT.mailform">Zielseite:</label>
-			<label index="subheader.ALT.mailform">Empfänger-E-Mail-Adresse:</label>
+			<label index="pages.ALT.searchform">Zielseite</label>
+			<label index="pages.ALT.loginform">Ausgewählte Seiten: Ziel (1.), FE-Benutzer-Container (2.)</label>
 			<label index="pages.ALT.search">Zielseite:</label>
 			<label index="pages.ALT.login">Zielseite:</label>
+			<label index="pages.ALT.menu_formlabel">Ausgewählte Seiten</label>
+			<label index="pages.ALT.list_formlabel">Startpunkt für Plug-In</label>
+			<label index="pages.ALT.script_formlabel">Startpunkt für Skript</label>
+			<label index="subheader.ALT.mailform">E-Mail-Adresse des Empfängers:</label>
+			<label index="subheader.ALT.mailform_formlabel">E-Mail-Adresse des Empfängers</label>
 			<label index="bodytext.ALT.html">HTML:</label>
 			<label index="tabs.text">Text</label>
 			<label index="tabs.media">Medien</label>
@@ -235,14 +303,58 @@
 			<label index="media.params.customEntry">Benutzerdefinierte Parameter</label>
 			<label index="media.params.customEntryLabel">Flashvariablen, -parameter oder -attribute eingeben</label>
 			<label index="media.noFile">FEHLER: URL oder Datei fehlt!</label>
+			<label index="sys_language_uid_formlabel">Sprache</label>
+			<label index="subheader_formlabel">Zusätzliche Überschrift</label>
+			<label index="hidden_formlabel">Inhaltselement</label>
+			<label index="hidden.I.0">Deaktivieren</label>
+			<label index="starttime_formlabel">Veröffentlichungszeitpunkt</label>
+			<label index="endtime_formlabel">Ablaufzeitpunkt</label>
+			<label index="fe_group_formlabel">Benutzergruppen und allgemeine Reaktionen auf Logins</label>
+			<label index="layout_formlabel">Frontend-Varianten</label>
+			<label index="bodytext_formlabel">Text</label>
+			<label index="bodytext.ALT.bulletlist_formlabel">Aufzählung</label>
+			<label index="bodytext.ALT.table_formlabel">Tabelle</label>
+			<label index="bodytext.ALT.media_formlabel">Alternativer Inhalt</label>
+			<label index="bodytext.ALT.multimedia_formlabel">Parameter</label>
+			<label index="bodytext.ALT.textbox_formlabel">Text</label>
+			<label index="bodytext.ALT.script_formlabel">Parameter zur Weitergabe an das Skript</label>
+			<label index="bodytext.ALT.html_formlabel">HTML-Code</label>
+			<label index="image_formlabel">Bilddateien</label>
+			<label index="image.ALT.textbox_formlabel">Bilddateien</label>
+			<label index="imagecaption_formlabel">Beschriftungen (mit Zeilenumbruch getrennt)</label>
+			<label index="imagecaption.ALT.script_formlabel">Kommentar</label>
+			<label index="palette.general">Inhaltselement</label>
+			<label index="palette.headers">Überschriften</label>
+			<label index="palette.header">Überschrift</label>
+			<label index="palette.visibility">Allgemeine Sichtbarkeit</label>
+			<label index="palette.access">Zugriffszeiten und -rechte</label>
+			<label index="palette.frames">Allgemeines Layout</label>
+			<label index="palette.textlayout">Textlayout</label>
+			<label index="palette.imagefiles">Bilddateien und Beschriftungen</label>
+			<label index="palette.imagelinks">Klickreaktion für Bilder</label>
+			<label index="palette.image_accessibility">Texte für Barrierefreiheit</label>
+			<label index="palette.image_settings">Bildeinstellungen</label>
+			<label index="palette.imageblock">Einstellungen des Bildblocks</label>
+			<label index="palette.mailform">Ziel und Empfänger</label>
+			<label index="palette.searchform">Suchergebnisse</label>
+			<label index="palette.loginform">Weiterleitungsziel und FE-Benutzer-Container</label>
+			<label index="palette.multimediafiles">Mediendateien und Parameter</label>
+			<label index="palette.textbox">Text in Bildern darstellen</label>
+			<label index="palette.menu">Menüs und Sitemaps</label>
+			<label index="tabs.access">Zugriff</label>
+			<label index="tabs.appearance">Erscheinungsbild</label>
+			<label index="tabs.behaviour">Verhalten</label>
+			<label index="tabs.script">Skript</label>
+			<label index="tabs.images">Bilder</label>
+			<label index="tabs.extended">Erweitert</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
 		<languageKey index="de" type="array">
 			<label index="CType.I.0" type="integer">200609118</label>
 			<label index="CType.I.1" type="integer">165673974</label>
-			<label index="CType.I.2" type="integer">221269813</label>
-			<label index="CType.I.3" type="integer">199571973</label>
+			<label index="CType.I.2" type="integer">62582812</label>
+			<label index="CType.I.3" type="integer">268373344</label>
 			<label index="CType.I.4" type="integer">88917113</label>
 			<label index="CType.I.5" type="integer">85738935</label>
 			<label index="CType.I.6" type="integer">23062602</label>
@@ -472,14 +584,126 @@
 			<label index="media.params.customEntry" type="integer">69370446</label>
 			<label index="media.params.customEntryLabel" type="integer">212779626</label>
 			<label index="media.noFile" type="integer">38557680</label>
+			<label index="colPos_formlabel" type="integer">26701183</label>
+			<label index="date_formlabel" type="integer">71780721</label>
+			<label index="header_position_formlabel" type="integer">174289006</label>
+			<label index="header_link_formlabel" type="integer">159284378</label>
+			<label index="text_align_formlabel" type="integer">200720102</label>
+			<label index="text_face_formlabel" type="integer">101025355</label>
+			<label index="text_size_formlabel" type="integer">25547366</label>
+			<label index="text_color_formlabel" type="integer">99684782</label>
+			<label index="image_zoom.I.0" type="integer">266356575</label>
+			<label index="linkToTop_formlabel" type="integer">866913</label>
+			<label index="linkToTop.I.0" type="integer">169031290</label>
+			<label index="rte_enabled_formlabel" type="integer">125120899</label>
+			<label index="rte_enabled.I.0" type="integer">198159566</label>
+			<label index="sys_language_uid_formlabel" type="integer">77154959</label>
+			<label index="hidden.I.0" type="integer">198159566</label>
+			<label index="bodytext_formlabel" type="integer">165673974</label>
+			<label index="palette.general" type="integer">233726803</label>
+			<label index="palette.headers" type="integer">26915724</label>
+			<label index="palette.header" type="integer">207972583</label>
+			<label index="tabs.script" type="integer">261127781</label>
+			<label index="tabs.images" type="integer">268373344</label>
+			<label index="tabs.access" type="integer">200750040</label>
+			<label index="header_formlabel" type="integer">222720468</label>
+			<label index="palette.visibility" type="integer">171483555</label>
+			<label index="CType_formlabel" type="integer">169845367</label>
+			<label index="header_layout_formlabel" type="integer">169845367</label>
+			<label index="sectionIndex.I.0" type="integer">247614840</label>
+			<label index="hidden_formlabel" type="integer">59687434</label>
+			<label index="fe_group_formlabel" type="integer">134883510</label>
+			<label index="layout_formlabel" type="integer">171015397</label>
+			<label index="palette.access" type="integer">228191362</label>
+			<label index="palette.frames" type="integer">143071256</label>
+			<label index="tabs.appearance" type="integer">169629929</label>
+			<label index="tabs.behaviour" type="integer">32537341</label>
+			<label index="starttime_formlabel" type="integer">162714248</label>
+			<label index="endtime_formlabel" type="integer">146876317</label>
+			<label index="section_frame_formlabel" type="integer">38824728</label>
+			<label index="palette.textlayout" type="integer">244916147</label>
+			<label index="text_properties_formlabel" type="integer">33301890</label>
+			<label index="spaceBefore_formlabel" type="integer">127692100</label>
+			<label index="spaceAfter_formlabel" type="integer">101959944</label>
+			<label index="sectionIndex_formlabel" type="integer">183723748</label>
+			<label index="header.ALT.shortcut_formlabel" type="integer">268376934</label>
+			<label index="header.ALT.script_formlabel" type="integer">268376934</label>
+			<label index="header.ALT.div_formlabel" type="integer">268376934</label>
+			<label index="header.ALT.html_formlabel" type="integer">268376934</label>
+			<label index="bodytext.W.table" type="integer">216406281</label>
+			<label index="bodytext.W.forms" type="integer">202256935</label>
+			<label index="imagewidth_formlabel" type="integer">250140708</label>
+			<label index="imageheight_formlabel" type="integer">235123475</label>
+			<label index="imageorient_formlabel" type="integer">196408857</label>
+			<label index="imageborder.I.0" type="integer">169031290</label>
+			<label index="imageborder_formlabel" type="integer">7361862</label>
+			<label index="image_noRows.I.0" type="integer">17432256</label>
+			<label index="image_noRows_formlabel" type="integer">125955059</label>
+			<label index="image_link_formlabel" type="integer">262602507</label>
+			<label index="image_zoom_formlabel" type="integer">140142887</label>
+			<label index="image_effects_formlabel" type="integer">86500469</label>
+			<label index="image_frames_formlabel" type="integer">161794983</label>
+			<label index="image_compression_formlabel" type="integer">85491782</label>
+			<label index="imagecols_formlabel" type="integer">4029516</label>
+			<label index="menu_type_formlabel" type="integer">64652666</label>
+			<label index="list_type_formlabel" type="integer">110404941</label>
+			<label index="table_bgColor_formlabel" type="integer">57203116</label>
+			<label index="table_border_formlabel" type="integer">169388069</label>
+			<label index="table_cellspacing_formlabel" type="integer">243110779</label>
+			<label index="table_cellpadding_formlabel" type="integer">253093416</label>
+			<label index="filelink_size.I.0" type="integer">169031290</label>
+			<label index="records_formlabel" type="integer">229781996</label>
+			<label index="splash_layout_formlabel" type="integer">169845367</label>
+			<label index="select_key.ALT.script_formlabel" type="integer">167068344</label>
+			<label index="pages.ALT.menu_formlabel" type="integer">67818783</label>
+			<label index="subheader.ALT.mailform_formlabel" type="integer">9763756</label>
+			<label index="bodytext.ALT.table_formlabel" type="integer">85738935</label>
+			<label index="bodytext.ALT.multimedia_formlabel" type="integer">52582928</label>
+			<label index="bodytext.ALT.textbox_formlabel" type="integer">165673974</label>
+			<label index="bodytext.ALT.html_formlabel" type="integer">240028362</label>
+			<label index="image_formlabel" type="integer">85786123</label>
+			<label index="image.ALT.textbox_formlabel" type="integer">85786123</label>
+			<label index="imagecaption.ALT.script_formlabel" type="integer">138493032</label>
+			<label index="palette.image_settings" type="integer">80321638</label>
+			<label index="tabs.extended" type="integer">253974415</label>
+			<label index="multimedia_formlabel" type="integer">15698102</label>
+			<label index="select_key_formlabel" type="integer">223357669</label>
+			<label index="select_key.ALT.uploads_formlabel" type="integer">140232699</label>
+			<label index="pages.ALT.searchform" type="integer">3848347</label>
+			<label index="bodytext.ALT.media_formlabel" type="integer">154871683</label>
+			<label index="altText_formlabel" type="integer">11224928</label>
+			<label index="titleText_formlabel" type="integer">185362111</label>
+			<label index="longdescURL_formlabel" type="integer">225917387</label>
+			<label index="media.ALT.uploads_formlabel" type="integer">230773889</label>
+			<label index="filelink_size_formlabel" type="integer">45176909</label>
+			<label index="imagecaption.ALT.uploads_formlabel" type="integer">105803020</label>
+			<label index="bodytext.ALT.mailform_formlabel" type="integer">221617261</label>
+			<label index="bodytext.ALT.script_formlabel" type="integer">13607397</label>
+			<label index="palette.menu" type="integer">20614852</label>
+			<label index="imagecaption_position_formlabel" type="integer">3804923</label>
+			<label index="pages.ALT.loginform" type="integer">204160266</label>
+			<label index="pages.ALT.list_formlabel" type="integer">467350</label>
+			<label index="pages.ALT.script_formlabel" type="integer">140980266</label>
+			<label index="imagecaption_formlabel" type="integer">39430837</label>
+			<label index="palette.imagefiles" type="integer">213241811</label>
+			<label index="bodytext.ALT.bulletlist_formlabel" type="integer">161069526</label>
+			<label index="palette.searchform" type="integer">246853740</label>
+			<label index="palette.multimediafiles" type="integer">108426217</label>
+			<label index="subheader_formlabel" type="integer">161441262</label>
+			<label index="palette.mailform" type="integer">121669010</label>
+			<label index="palette.imageblock" type="integer">256122045</label>
+			<label index="palette.loginform" type="integer">33463890</label>
+			<label index="palette.textbox" type="integer">93084502</label>
+			<label index="palette.imagelinks" type="integer">144993562</label>
+			<label index="palette.image_accessibility" type="integer">110861307</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
 		<languageKey index="de" type="array">
 			<label index="CType.I.0">Header</label>
 			<label index="CType.I.1">Text</label>
-			<label index="CType.I.2">Text w/image</label>
-			<label index="CType.I.3">Image</label>
+			<label index="CType.I.2">Text &amp; images</label>
+			<label index="CType.I.3">Images</label>
 			<label index="CType.I.4">Bullet list</label>
 			<label index="CType.I.5">Table</label>
 			<label index="CType.I.6">Filelinks</label>
@@ -709,6 +933,118 @@
 			<label index="media.params.customEntry">Custom Parameters</label>
 			<label index="media.params.customEntryLabel">Enter flashvars, params or attributes</label>
 			<label index="media.noFile">ERROR: Missing URL or File!</label>
+			<label index="colPos_formlabel">Column</label>
+			<label index="date_formlabel">Date</label>
+			<label index="header_position_formlabel">Alignment</label>
+			<label index="header_link_formlabel">Link</label>
+			<label index="text_align_formlabel">Text alignment</label>
+			<label index="text_face_formlabel">Text face</label>
+			<label index="text_size_formlabel">Text size</label>
+			<label index="text_color_formlabel">Text color</label>
+			<label index="image_zoom.I.0">Enlarge</label>
+			<label index="linkToTop_formlabel">Link to top of page</label>
+			<label index="linkToTop.I.0">Activate</label>
+			<label index="rte_enabled_formlabel">Rich Text Editor for this text</label>
+			<label index="rte_enabled.I.0">Disable</label>
+			<label index="sys_language_uid_formlabel">Language</label>
+			<label index="hidden.I.0">Disable</label>
+			<label index="bodytext_formlabel">Text</label>
+			<label index="palette.general">Content Element</label>
+			<label index="palette.headers">Headlines</label>
+			<label index="palette.header">Headline</label>
+			<label index="tabs.script">Script</label>
+			<label index="tabs.images">Images</label>
+			<label index="tabs.access">Access</label>
+			<label index="header_formlabel">Main headline</label>
+			<label index="palette.visibility">General visibility</label>
+			<label index="CType_formlabel">Type</label>
+			<label index="header_layout_formlabel">Type</label>
+			<label index="sectionIndex.I.0">Visible</label>
+			<label index="hidden_formlabel">Content element</label>
+			<label index="fe_group_formlabel">Usergroups and general login response</label>
+			<label index="layout_formlabel">Frontend variants</label>
+			<label index="palette.access">Access times and rights</label>
+			<label index="palette.frames">General layout</label>
+			<label index="tabs.appearance">Appearance</label>
+			<label index="tabs.behaviour">Behaviour</label>
+			<label index="starttime_formlabel">Release date</label>
+			<label index="endtime_formlabel">Expiration date</label>
+			<label index="section_frame_formlabel">Indentations and frames</label>
+			<label index="palette.textlayout">Text layout</label>
+			<label index="text_properties_formlabel">Text decoration</label>
+			<label index="spaceBefore_formlabel">Top margin</label>
+			<label index="spaceAfter_formlabel">Bottom margin</label>
+			<label index="sectionIndex_formlabel">In section menus</label>
+			<label index="header.ALT.shortcut_formlabel">Name (invisible)</label>
+			<label index="header.ALT.script_formlabel">Name (invisible)</label>
+			<label index="header.ALT.div_formlabel">Name (invisible)</label>
+			<label index="header.ALT.html_formlabel">Name (invisible)</label>
+			<label index="bodytext.W.table">Table Wizard</label>
+			<label index="bodytext.W.forms">Forms wizard</label>
+			<label index="imagewidth_formlabel">Width (px)</label>
+			<label index="imageheight_formlabel">Height (px)</label>
+			<label index="imageorient_formlabel">Position and alignment</label>
+			<label index="imageborder.I.0">Activate</label>
+			<label index="imageborder_formlabel">Border</label>
+			<label index="image_noRows.I.0">Deactivate</label>
+			<label index="image_noRows_formlabel">Horizontal rows</label>
+			<label index="image_link_formlabel">Links (separate with commas)</label>
+			<label index="image_zoom_formlabel">On click</label>
+			<label index="image_effects_formlabel">Effects</label>
+			<label index="image_frames_formlabel">Graphical frames</label>
+			<label index="image_compression_formlabel">Quality and type</label>
+			<label index="imagecols_formlabel">Number of columns</label>
+			<label index="menu_type_formlabel">Menu type</label>
+			<label index="list_type_formlabel">Selected plugin</label>
+			<label index="table_bgColor_formlabel">Background color</label>
+			<label index="table_border_formlabel">Border size (px)</label>
+			<label index="table_cellspacing_formlabel">Cellspacing (px)</label>
+			<label index="table_cellpadding_formlabel">Cellpadding (px)</label>
+			<label index="filelink_size.I.0">Activate</label>
+			<label index="records_formlabel">Records</label>
+			<label index="splash_layout_formlabel">Type</label>
+			<label index="select_key.ALT.script_formlabel">PHP Code</label>
+			<label index="pages.ALT.menu_formlabel">Selected pages</label>
+			<label index="subheader.ALT.mailform_formlabel">Recipient email</label>
+			<label index="bodytext.ALT.table_formlabel">Table</label>
+			<label index="bodytext.ALT.multimedia_formlabel">Parameters</label>
+			<label index="bodytext.ALT.textbox_formlabel">Text</label>
+			<label index="bodytext.ALT.html_formlabel">HTML code</label>
+			<label index="image_formlabel">Image files</label>
+			<label index="image.ALT.textbox_formlabel">Image files</label>
+			<label index="imagecaption.ALT.script_formlabel">Comments</label>
+			<label index="palette.image_settings">Image Settings</label>
+			<label index="tabs.extended">Extended</label>
+			<label index="multimedia_formlabel">Selected media file</label>
+			<label index="select_key_formlabel">Code for this plugin</label>
+			<label index="select_key.ALT.uploads_formlabel">Read from this path</label>
+			<label index="pages.ALT.searchform">Target page</label>
+			<label index="bodytext.ALT.media_formlabel">Alternative content</label>
+			<label index="altText_formlabel">Alternative texts (separate with breaks)</label>
+			<label index="titleText_formlabel">Titles (separate with breaks)</label>
+			<label index="longdescURL_formlabel">URLs for a longer description (separate with breaks)</label>
+			<label index="media.ALT.uploads_formlabel">Or select files manually</label>
+			<label index="filelink_size_formlabel">Filesize information</label>
+			<label index="imagecaption.ALT.uploads_formlabel">File descriptions (separate with breaks)</label>
+			<label index="bodytext.ALT.mailform_formlabel">Form</label>
+			<label index="bodytext.ALT.script_formlabel">Parameters to pass to the script</label>
+			<label index="palette.menu">Menus and sitemaps</label>
+			<label index="imagecaption_position_formlabel">Caption alignment</label>
+			<label index="pages.ALT.loginform">Selected pages: Target (1st), FE user container (2nd)</label>
+			<label index="pages.ALT.list_formlabel">Starting point for this plugin</label>
+			<label index="pages.ALT.script_formlabel">Starting point for this script</label>
+			<label index="imagecaption_formlabel">Captions (separate with breaks)</label>
+			<label index="palette.imagefiles">Image files and captions</label>
+			<label index="bodytext.ALT.bulletlist_formlabel">Bulletlist</label>
+			<label index="palette.searchform">Search results</label>
+			<label index="palette.multimediafiles">Media files and parameters</label>
+			<label index="subheader_formlabel">Secondary headline</label>
+			<label index="palette.mailform">Target and recipient</label>
+			<label index="palette.imageblock">Image block settings</label>
+			<label index="palette.loginform">Redirect target and FE user container</label>
+			<label index="palette.textbox">Render text into images</label>
+			<label index="palette.imagelinks">Click response for images</label>
+			<label index="palette.image_accessibility">Accessibility texts</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

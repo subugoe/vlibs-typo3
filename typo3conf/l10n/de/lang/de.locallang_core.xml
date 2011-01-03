@@ -5,6 +5,7 @@
 			<label index="labels.openInNewWindow">In neuem Fenster öffnen</label>
 			<label index="labels.goBack">Zurück</label>
 			<label index="labels.makeShortcut">Einen Verweis auf diese Seite erzeugen?</label>
+			<label index="labels.makeBookmark">Ein Lesezeichen für diese Seite erzeugen</label>
 			<label index="labels.lockedRecord">Der Benutzer &quot;%s&quot; hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</label>
 			<label index="labels.lockedRecord_content">Der Benutzer &quot;%s&quot; hat mit der Bearbeitung dieser Seite vor %s begonnen.</label>
 			<label index="labels.lockedRecordUser">Der %s &quot;%s&quot; hat mit der Bearbeitung dieses Datensatzes vor %s begonnen.</label>
@@ -175,10 +176,10 @@ Die Anmeldung erneuern?</label>
 			<label index="mess.refresh_login_button">Anmelden</label>
 			<label index="mess.refresh_login_emptyPassword">Leeres Passwort nicht erlaubt!</label>
 			<label index="mess.please_wait">Bitte warten...</label>
-			<label index="mess.be_locked">Das TYPO3-Backend ist derzeit wegen Wartungsarbeiten gesperrt. Wenn Sie dieses Browser-Fenster geöffnet lassen, steht Ihnen das Backend automatisch wieder zur Verfügung, sobald die Wartungsarbeiten beendet sind.</label>
+			<label index="mess.be_locked">Das TYPO3-Backend ist derzeit wegen Wartungsarbeiten gesperrt. Wenn Sie dieses Browserfenster geöffnet lassen, steht Ihnen das Backend automatisch wieder zur Verfügung, sobald die Wartungsarbeiten beendet sind.</label>
 			<label index="mess.login_about_to_expire">Ihre Anmeldung an TYPO3 läuft ab. Bestätigen Sie bitte, wenn Sie weiterhin angemeldet bleiben wollen.</label>
 			<label index="mess.login_about_to_expire_title">Hinweis zum Ablauf der TYPO3-Anmeldung</label>
-			<label index="mess.login_expired">Ihre TYPO3-Anmeldung ist abgelaufen. Wenn Sie fortfahren möchten, ist eine erneute Anmeldung erforderlich. Andernfalls können Sie das aktuelle Browser-Fenster schließen.</label>
+			<label index="mess.login_expired">Ihre TYPO3-Anmeldung ist abgelaufen. Wenn Sie fortfahren möchten, ist eine erneute Anmeldung erforderlich. Andernfalls können Sie das aktuelle Browserfenster schließen.</label>
 			<label index="mess.noSelItemForEdit">Sie müssen mindestens ein Element auswählen, bevor Sie mit der Bearbeitung beginnen.</label>
 			<label index="mess.onChangeAlert">Diese Änderung beeinflusst die zur Verfügung stehenden Eingabefelder.
 Die Änderungen speichern und die Anzeige aktualisieren?</label>
@@ -260,16 +261,23 @@ Die Änderungen speichern und die Anzeige aktualisieren?</label>
 			<label index="warning.memcache_not_usable">Memcache wurde konfiguriert, aber Verbindung zu Memcache ist fehlgeschlagen mit folgender/n Konfiguration(en):</label>
 			<label index="warning.file_missing">Datei fehlt!</label>
 			<label index="warning.file_missing_text">Dieses Inhaltselement verweist auf eine Datei, die nicht existiert:</label>
+			<label index="error.formProtection.tokenInvalid">Die Validierung des Sicherheitstokens dieses Formulars ist fehlgeschlagen. Bitte laden Sie das Formular erneut und schicken Sie es dann noch einmal ab.</label>
 			<label index="toolbarItems.shortcuts">Verweise</label>
 			<label index="toolbarItems.shortcut">Verweis</label>
 			<label index="toolbarItems.shortcutsGroup">Verweisgruppe</label>
 			<label index="toolbarItems.shortcutsEdit">Verweis bearbeiten</label>
 			<label index="toolbarItems.shortcutsDelete">Verweis löschen</label>
+			<label index="toolbarItems.bookmarks">Lesezeichen</label>
+			<label index="toolbarItems.bookmark">Lesezeichen</label>
+			<label index="toolbarItems.bookmarksGroup">Lesezeichengruppe</label>
+			<label index="toolbarItems.bookmarksEdit">Lesezeichen bearbeiten</label>
+			<label index="toolbarItems.bookmarksDelete">Lesezeichen löschen</label>
 			<label index="toolbarItems.search">Suchen</label>
 			<label index="toolbarItems.workspace">Arbeitsumgebung</label>
 			<label index="tabs.closeAll">Alle Tabs schließen</label>
 			<label index="tabs.closeOther">Andere Tabs schließen</label>
 			<label index="tabs.close">Tab schließen</label>
+			<label index="tabs.openInBrowserWindow">In Browserfenster öffnen</label>
 			<label index="donateWindow.title">TYPO3-Spenden-Hinweis</label>
 			<label index="donateWindow.message">&lt;b&gt;Sie nutzen TYPO3 jetzt seit mehr als drei Monaten.&lt;/b&gt; Es wäre sehr freundlich, wenn Sie für seine Weiterentwicklung spenden könnten. TYPO3 ist Open Source und ist sehr auf Spenden seiner Nutzer und Unterstützer angewiesen.&lt;br /&gt; &lt;b&gt;Danke,&lt;/b&gt; dass Sie dieses großartige Content-Management-System mit Ihrer Hilfe noch besser machen!</label>
 			<label index="donateWindow.button_donate">Jetzt spenden</label>
@@ -286,6 +294,7 @@ Prüfen Sie auch folgende Punkte:
 			<label index="extension.not.installed">Erweiterung &quot;%s&quot; ist nicht installiert.</label>
 			<label index="link.to.dblist.correctly">Bitte verlinken Sie nicht auf diese Seite. Benutzen Sie stattdessen t3lib_extMgm::createListViewLink(), um Links zu erzeugen.</label>
 			<label index="link.to.filefile.correctly">Bitte verlinken Sie nicht auf diese Seite.</label>
+			<label index="loadingIndicator">Lädt...</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -566,6 +575,15 @@ Prüfen Sie auch folgende Punkte:
 			<label index="extension.not.installed" type="integer">249839602</label>
 			<label index="link.to.dblist.correctly" type="integer">53169204</label>
 			<label index="link.to.filefile.correctly" type="integer">2928116</label>
+			<label index="tabs.openInBrowserWindow" type="integer">142944173</label>
+			<label index="loadingIndicator" type="integer">113765784</label>
+			<label index="labels.makeBookmark" type="integer">45160972</label>
+			<label index="toolbarItems.bookmarks" type="integer">128359787</label>
+			<label index="toolbarItems.bookmark" type="integer">59439948</label>
+			<label index="toolbarItems.bookmarksGroup" type="integer">28154119</label>
+			<label index="toolbarItems.bookmarksEdit" type="integer">93197906</label>
+			<label index="toolbarItems.bookmarksDelete" type="integer">240442651</label>
+			<label index="error.formProtection.tokenInvalid" type="integer">211653039</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -854,6 +872,15 @@ Check also the following points:\n
 			<label index="extension.not.installed">Extension &quot;%s&quot; is not installed.</label>
 			<label index="link.to.dblist.correctly">Please, do not link to this page. Use t3lib_extMgm::createListViewLink() for link generation.</label>
 			<label index="link.to.filefile.correctly">Please, do not link to this page.</label>
+			<label index="tabs.openInBrowserWindow">Open In Browser Window</label>
+			<label index="loadingIndicator">Loading ...</label>
+			<label index="labels.makeBookmark">Create a bookmark to this page</label>
+			<label index="toolbarItems.bookmarks">Bookmarks</label>
+			<label index="toolbarItems.bookmark">Bookmark</label>
+			<label index="toolbarItems.bookmarksGroup">Bookmark group</label>
+			<label index="toolbarItems.bookmarksEdit">Edit bookmark</label>
+			<label index="toolbarItems.bookmarksDelete">Delete bookmark</label>
+			<label index="error.formProtection.tokenInvalid">Validating the security token of this form has failed. Please reload the form and submit it again.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

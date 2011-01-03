@@ -68,6 +68,8 @@
 			<label index="sys_filemounts.base">Basis:</label>
 			<label index="sys_filemounts.base_absolute">absolut (Wurzel) /</label>
 			<label index="sys_filemounts.base_relative">relativ ../fileadmin/</label>
+			<label index="sys_news">System-Nachrichten</label>
+			<label index="sys_news.tabs.access">Zugriff</label>
 			<label index="sys_workspace.adminusers">Besitzer:</label>
 			<label index="sys_workspace.members">Mitglieder:</label>
 			<label index="sys_workspace.reviewers">Redakteure:</label>
@@ -87,12 +89,12 @@
 			<label index="doktype.I.2">Papierkorb</label>
 			<label index="title">Seitentitel:</label>
 			<label index="php_tree_stop">Seitenbaum stoppen:</label>
-			<label index="is_siteroot">Ist Anfang der Web-Site:</label>
+			<label index="is_siteroot">Ist Anfang der Website:</label>
 			<label index="storage_pid">Allgemeine Datensatzsammlung:</label>
 			<label index="be_users">Backend-Benutzer</label>
 			<label index="be_groups">Backend-Benutzergruppe</label>
 			<label index="sys_filemounts">Verzeichnisfreigaben</label>
-			<label index="sys_language">Web-Site-Sprache</label>
+			<label index="sys_language">Website-Sprache</label>
 			<label index="sys_language.isocode">Offizielle Sprache wählen (ISO-Kennung):</label>
 			<label index="sys_language.flag">Flaggensymbol wählen:</label>
 			<label index="sys_workspace">Arbeitsumgebung</label>
@@ -196,6 +198,8 @@
 			<label index="be_groups.fileoper_perms_diroper_perms" type="integer">133096906</label>
 			<label index="be_groups.fileoper_perms_diroper_perms_copy" type="integer">79850240</label>
 			<label index="be_groups.fileoper_perms_diroper_perms_delete" type="integer">60247245</label>
+			<label index="sys_news" type="integer">208636453</label>
+			<label index="sys_news.tabs.access" type="integer">200750040</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -295,6 +299,8 @@
 			<label index="be_groups.fileoper_perms_diroper_perms">Directory: Move,Delete,Rename,New</label>
 			<label index="be_groups.fileoper_perms_diroper_perms_copy">Directory: Copy</label>
 			<label index="be_groups.fileoper_perms_diroper_perms_delete">Directory: Delete recursively (rm -Rf)</label>
+			<label index="sys_news">System News</label>
+			<label index="sys_news.tabs.access">Access</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

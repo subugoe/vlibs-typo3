@@ -31,6 +31,35 @@
 			<label index="shortcut_noWSfound">FEHLER: Keine Arbeitsumgebungen gefunden!</label>
 			<label index="shortcut_FEPreview">Vorschau im Frontend aktivieren</label>
 			<label index="shortcut_workspace">Modul Arbeitsumgebungen aufrufen</label>
+			<label index="bookmarkDescription">Dieses Menü zeigt von Ihnen angelegte Lesezeichen an. Sie haben noch keine Lesezeichen hinzugefügt, können das aber mit einem Mausklick auf das Lesezeichensymbol %icon% tun, das auf jeder Seite des Backends vorhanden ist.</label>
+			<label index="bookmark_edit">Bearbeiten</label>
+			<label index="bookmark_create">Erstellen</label>
+			<label index="bookmark_editID">Bearbeiten/Suchen</label>
+			<label index="bookmark_save">Lesezeichentitel aktualisieren</label>
+			<label index="bookmark_saveClose">Aktualisieren und Editor schließen</label>
+			<label index="bookmark_close">Lesezeicheneditor schließen</label>
+			<label index="bookmark_delete">Lesezeichen entfernen</label>
+			<label index="bookmark_loadEdit">Seite wird geladen</label>
+			<label index="bookmark_searchFor">Suchen nach:</label>
+			<label index="bookmark_notEditable">Keine Seite zur Bearbeitung gefunden!</label>
+			<label index="bookmark_group">Gruppe</label>
+			<label index="bookmark_group_1">Seiten</label>
+			<label index="bookmark_group_2">Datensätze</label>
+			<label index="bookmark_group_3">Dateien</label>
+			<label index="bookmark_group_4">Werkzeuge</label>
+			<label index="bookmark_group_5">Verschiedenes</label>
+			<label index="bookmark_global">Global</label>
+			<label index="bookmark_all">Alle</label>
+			<label index="bookmark_onlyAdmin">Sie können keine gemeinsamen Lesezeichen bearbeiten!</label>
+			<label index="bookmark_selSC">Lesezeichen auswählen</label>
+			<label index="bookmark_delAllInCat">Alle Lesezeichen in dieser Gruppe löschen</label>
+			<label index="bookmark_onlineWS">LIVE-Arbeitsumgebung</label>
+			<label index="bookmark_offlineWS">Entwurfsarbeitsumgebung</label>
+			<label index="bookmark_active">aktiv</label>
+			<label index="bookmark_inactive">inaktiv</label>
+			<label index="bookmark_noWSfound">FEHLER: Keine Arbeitsumgebungen gefunden!</label>
+			<label index="bookmark_FEPreview">Vorschau im Frontend aktivieren</label>
+			<label index="bookmark_workspace">Modul Arbeitsumgebungen aufrufen</label>
 			<label index="overwriteExistingFiles">Vorhandene Dateien überschreiben</label>
 			<label index="selectPosition">Position für neue Seite auswählen</label>
 			<label index="pageSelectPosition">Seite (Position auswählen)</label>
@@ -99,6 +128,14 @@
 			<label index="fileUpload_allErrorMessageText">Keiner der Hochladevorgänge konnte abgeschlossen werden.&lt;br /&gt;&lt;br /&gt;Falls dieses Problem weiterhin besteht, benutzen Sie bitte einen anderen Browser, kontaktieren Ihren Administrator oder deaktivieren die Option &quot;Flash-Schnittstelle zum Hochladen&quot; in den Benutzereinstellungen.&lt;br /&gt;&lt;br /&gt;Problembeschreibung:&lt;br /&gt;</label>
 			<label index="fileUpload_allError401">Der Server lieferte Statuscode 401 zurück. Dies ist häufig auf einen .htaccess Passwortschutz zurückzuführen. Leider wird dies von dem von Ihnen verwendeten Flash-Plugin nicht unterstützt.</label>
 			<label index="fileUpload_allError2038">Ein Lese-/Schreibfehler ist aufgetreten (Fehler #2038). Dies ist häufig auf ein selbstsigniertes SSL-Zertifikat zurückzuführen. Leider wird dies von dem von Ihnen verwendeten Flash-Plugin nicht unterstützt.</label>
+			<label index="liveSearch_title">Kurze Liste der Ergebnisse</label>
+			<label index="liveSearch_emptyText">Suchbegriff eingeben</label>
+			<label index="liveSearch_loadingText">Suche läuft...</label>
+			<label index="liveSearch_listEmptyText">Keine Ergebnisse gefunden.</label>
+			<label index="liveSearch_showAllResults">Alle anzeigen</label>
+			<label index="liveSearch_helpTitle">Zur Benutzung von Suchpräfixen</label>
+			<label index="liveSearch_helpDescription">In ausgewählten Tabellen suchen:</label>
+			<label index="liveSearch_helpDescriptionPages">#page:Home sucht nach allen Seiten mit dem Titel &quot;Home&quot;.</label>
 			<label index="shortcut_GLOBAL">GLOBAL</label>
 			<label index="shortcut_ALL">ALLE</label>
 			<label index="CM_editPageHeader">Bearbeite Seiten-Header</label>
@@ -206,6 +243,43 @@
 			<label index="fileUpload_allErrorMessageText" type="integer">217105188</label>
 			<label index="fileUpload_allError401" type="integer">124164170</label>
 			<label index="fileUpload_allError2038" type="integer">174279287</label>
+			<label index="bookmarkDescription" type="integer">213661808</label>
+			<label index="bookmark_edit" type="integer">131916066</label>
+			<label index="bookmark_create" type="integer">109504151</label>
+			<label index="bookmark_editID" type="integer">12874064</label>
+			<label index="bookmark_save" type="integer">91198772</label>
+			<label index="bookmark_saveClose" type="integer">148652521</label>
+			<label index="bookmark_close" type="integer">267835424</label>
+			<label index="bookmark_delete" type="integer">79021249</label>
+			<label index="bookmark_loadEdit" type="integer">252728275</label>
+			<label index="bookmark_searchFor" type="integer">123652778</label>
+			<label index="bookmark_notEditable" type="integer">219401</label>
+			<label index="bookmark_group" type="integer">3749651</label>
+			<label index="bookmark_group_1" type="integer">72592619</label>
+			<label index="bookmark_group_2" type="integer">229781996</label>
+			<label index="bookmark_group_3" type="integer">153041452</label>
+			<label index="bookmark_group_4" type="integer">140664349</label>
+			<label index="bookmark_group_5" type="integer">59226864</label>
+			<label index="bookmark_global" type="integer">80504452</label>
+			<label index="bookmark_all" type="integer">186422474</label>
+			<label index="bookmark_onlyAdmin" type="integer">17753159</label>
+			<label index="bookmark_selSC" type="integer">130770294</label>
+			<label index="bookmark_delAllInCat" type="integer">217396016</label>
+			<label index="bookmark_onlineWS" type="integer">84131210</label>
+			<label index="bookmark_offlineWS" type="integer">217264973</label>
+			<label index="bookmark_active" type="integer">209102312</label>
+			<label index="bookmark_inactive" type="integer">27080852</label>
+			<label index="bookmark_noWSfound" type="integer">193761882</label>
+			<label index="bookmark_FEPreview" type="integer">73590061</label>
+			<label index="bookmark_workspace" type="integer">131969211</label>
+			<label index="liveSearch_emptyText" type="integer">249385974</label>
+			<label index="liveSearch_loadingText" type="integer">19152303</label>
+			<label index="liveSearch_listEmptyText" type="integer">66209079</label>
+			<label index="liveSearch_showAllResults" type="integer">147655948</label>
+			<label index="liveSearch_helpDescription" type="integer">5916669</label>
+			<label index="liveSearch_helpDescriptionPages" type="integer">22137224</label>
+			<label index="liveSearch_title" type="integer">61529724</label>
+			<label index="liveSearch_helpTitle" type="integer">79756859</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -310,6 +384,43 @@
 			<label index="fileUpload_allErrorMessageText">All of your uploads failed.&lt;br /&gt;&lt;br /&gt;If this problem persists, please try another browser, contact your administrator or disable this &quot;Flash Uploader&quot; in your User Settings.&lt;br /&gt;&lt;br /&gt;Detailed problem description:&lt;br /&gt;</label>
 			<label index="fileUpload_allError401">The server returned the status code 401, which is related to a .htaccess file used for password protection on your server. Unfortunately this can not be handled by your browser's Flash plugin.</label>
 			<label index="fileUpload_allError2038">An input/output error occured (Error #2038). This i.e. happens with servers using a self-signed SSL certificate, which is a limitation of your browser's Flash plugin.</label>
+			<label index="bookmarkDescription">This is the bookmarks menu. You do not have any bookmarks added yet, you can do so by clicking the bookmark icon %icon%, which you can find on each page in the backend.</label>
+			<label index="bookmark_edit">Edit</label>
+			<label index="bookmark_create">Create</label>
+			<label index="bookmark_editID">Edit/Search</label>
+			<label index="bookmark_save">Update bookmark title</label>
+			<label index="bookmark_saveClose">Update and close editor</label>
+			<label index="bookmark_close">Close bookmark editor</label>
+			<label index="bookmark_delete">Remove bookmark</label>
+			<label index="bookmark_loadEdit">Loading page</label>
+			<label index="bookmark_searchFor">Search for:</label>
+			<label index="bookmark_notEditable">No editable page found!</label>
+			<label index="bookmark_group">Group</label>
+			<label index="bookmark_group_1">Pages</label>
+			<label index="bookmark_group_2">Records</label>
+			<label index="bookmark_group_3">Files</label>
+			<label index="bookmark_group_4">Tools</label>
+			<label index="bookmark_group_5">Miscellaneous</label>
+			<label index="bookmark_global">Global</label>
+			<label index="bookmark_all">All</label>
+			<label index="bookmark_onlyAdmin">You cannot edit a shared bookmark!</label>
+			<label index="bookmark_selSC">Select bookmark</label>
+			<label index="bookmark_delAllInCat">Delete all bookmarks in this group</label>
+			<label index="bookmark_onlineWS">LIVE workspace</label>
+			<label index="bookmark_offlineWS">Draft workspace</label>
+			<label index="bookmark_active">active</label>
+			<label index="bookmark_inactive">inactive</label>
+			<label index="bookmark_noWSfound">ERROR: No workspaces found!</label>
+			<label index="bookmark_FEPreview">Enable Frontend Preview</label>
+			<label index="bookmark_workspace">Go to Workspace Module</label>
+			<label index="liveSearch_emptyText">Enter search term</label>
+			<label index="liveSearch_loadingText">Searching...</label>
+			<label index="liveSearch_listEmptyText">No results found.</label>
+			<label index="liveSearch_showAllResults">Show All</label>
+			<label index="liveSearch_helpDescription">Search in certain tables:</label>
+			<label index="liveSearch_helpDescriptionPages">#page:Home will search for all pages with the title &quot;Home&quot;</label>
+			<label index="liveSearch_title">Short result list</label>
+			<label index="liveSearch_helpTitle">How to use advanced search tags</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -4,6 +4,24 @@
 		<languageKey index="de" type="array">
 			<label index="mod_tx_cms_webinfo_page">Seitenbaumübersicht</label>
 			<label index="mod_tx_cms_webinfo_lang">Übersetzungsübersicht</label>
+			<label index="pages.palettes.standard">Seite</label>
+			<label index="pages.palettes.title">Titel</label>
+			<label index="pages.palettes.visibility">Allgemeine Sichtbarkeit</label>
+			<label index="pages.palettes.access">Zugriffszeiten und -rechte</label>
+			<label index="pages.palettes.abstract">Zusammenfassung</label>
+			<label index="pages.palettes.metatags">Meta-Tags</label>
+			<label index="pages.palettes.editorial">Redaktion</label>
+			<label index="pages.palettes.layout">Layout</label>
+			<label index="pages.palettes.module">Markiert als Container für</label>
+			<label index="pages.palettes.replace">Ersetze den Inhalt</label>
+			<label index="pages.palettes.links">Links zu dieser Seite</label>
+			<label index="pages.palettes.caching">Caching</label>
+			<label index="pages.palettes.language">Sprache</label>
+			<label index="pages.palettes.miscellaneous">Sonstige</label>
+			<label index="pages.palettes.media">Dateien</label>
+			<label index="pages.palettes.storage">Allgemeine Datensatzsammlung</label>
+			<label index="pages.palettes.config">Spezielle Konfiguration</label>
+			<label index="pages.doktype_formlabel">Typ</label>
 			<label index="pages.doktype.I.0">Erweitert</label>
 			<label index="pages.doktype.I.2">Verweis</label>
 			<label index="pages.doktype.I.3">Nicht im Menü</label>
@@ -14,20 +32,44 @@
 			<label index="pages.doktype.div.page">Seite</label>
 			<label index="pages.doktype.div.link">Link</label>
 			<label index="pages.doktype.div.special">Spezial</label>
+			<label index="pages.title_formlabel">Haupttitel</label>
+			<label index="pages.starttime_formlabel">Veröffentlichungszeitpunkt</label>
+			<label index="pages.endtime_formlabel">Ablaufzeitpunkt</label>
+			<label index="pages.fe_group_formlabel">Benutzergruppen und allgemeine Reaktionen auf Logins</label>
 			<label index="pages.hidden">Seite verbergen:</label>
+			<label index="pages.hidden_formlabel">Seite</label>
+			<label index="pages.hidden_checkbox_1_formlabel">Deaktivieren</label>
+			<label index="pages.layout_formlabel">Frontend-Varianten</label>
 			<label index="pages.layout.I.1">Layout 1</label>
 			<label index="pages.layout.I.2">Layout 2</label>
 			<label index="pages.layout.I.3">Layout 3</label>
+			<label index="pages.url_scheme">Protokoll erzwingen:</label>
+			<label index="pages.url_scheme_formlabel">Protokoll erzwingen</label>
+			<label index="pages.url_scheme.http">http://</label>
+			<label index="pages.url_scheme.https">https://</label>
 			<label index="pages.extendToSubpages">Inklusive Unterseiten:</label>
+			<label index="pages.extendToSubpages_formlabel">Vererbe Zugriffszeiten und -rechte</label>
+			<label index="pages.extendToSubpages_checkbox_1_formlabel">an Unterseiten</label>
 			<label index="pages.nav_title">Navigationstitel:</label>
+			<label index="pages.nav_title_formlabel">Alternativer Navigationstitel</label>
 			<label index="pages.nav_hide">Im Menü verbergen:</label>
+			<label index="pages.nav_hide_formlabel">In Menüs</label>
+			<label index="pages.nav_hide_checkbox_1_formlabel">verbergen</label>
 			<label index="pages.subtitle">Untertitel:</label>
+			<label index="pages.subtitle_formlabel">Untertitel</label>
 			<label index="pages.target">Zielfenster:</label>
+			<label index="pages.target_formlabel">werden mit diesen Zieleinstellungen geöffnet</label>
 			<label index="pages.alias">Adress-Alias:</label>
+			<label index="pages.alias_formlabel">verwenden diesen Alias in simulierten Pfaden</label>
 			<label index="pages.url">URL:</label>
-			<label index="pages.lastUpdated">Letzte Änderung:</label>
+			<label index="pages.url_formlabel">URL</label>
+			<label index="pages.urltype_formlabel">Protokoll</label>
+			<label index="pages.lastUpdated">Letzte Aktualisierung:</label>
+			<label index="pages.lastUpdated_formlabel">Letzte Aktualisierung</label>
 			<label index="pages.newUntil">&quot;Neu&quot; bis:</label>
+			<label index="pages.newUntil_formlabel">Markiere als 'Neu' bis</label>
 			<label index="pages.cache_timeout">Cache verfällt:</label>
+			<label index="pages.cache_timeout_formlabel">Cache-Dauer</label>
 			<label index="pages.cache_timeout.I.1">1 Min</label>
 			<label index="pages.cache_timeout.I.2">5 Min</label>
 			<label index="pages.cache_timeout.I.3">15 Min</label>
@@ -38,44 +80,77 @@
 			<label index="pages.cache_timeout.I.8">2 Tage</label>
 			<label index="pages.cache_timeout.I.9">7 Tage</label>
 			<label index="pages.cache_timeout.I.10">1 Monat</label>
+			<label index="pages.editlock_formlabel">Bearbeitbar</label>
+			<label index="pages.editlock_checkbox_1_formlabel">nur für Administratoren</label>
 			<label index="pages.tabs.metadata">Metadaten</label>
 			<label index="pages.tabs.files">Ressourcen</label>
+			<label index="pages.tabs.resources">Ressourcen</label>
 			<label index="pages.tabs.access">Zugriff</label>
 			<label index="pages.tabs.options">Optionen</label>
 			<label index="pages.tabs.mount">Einbindung</label>
 			<label index="pages.tabs.shortcut">Verweis</label>
 			<label index="pages.tabs.url">URL</label>
 			<label index="pages.tabs.extended">Erweitert</label>
+			<label index="pages.tabs.appearance">Erscheinungsbild</label>
+			<label index="pages.tabs.behaviour">Verhalten</label>
 			<label index="pages.no_cache">Nicht cachen:</label>
+			<label index="pages.no_cache_formlabel">Cache</label>
+			<label index="pages.no_cache_checkbox_1_formlabel">Deaktivieren</label>
 			<label index="pages.no_search">Nicht suchen:</label>
+			<label index="pages.no_search_formlabel">In Indexsuche</label>
+			<label index="pages.no_search_checkbox_1_formlabel">Deaktivieren</label>
 			<label index="pages.shortcut_mode">Verweismodus:</label>
+			<label index="pages.shortcut_mode_formlabel">Verweismodus</label>
+			<label index="pages.shortcut_mode.I.0">Ausgewählte Seite</label>
 			<label index="pages.shortcut_mode.I.1">Erste Unterseite</label>
 			<label index="pages.shortcut_mode.I.2">Zufällige Unterseite</label>
+			<label index="pages.shortcut_mode.I.3">Oberseite</label>
+			<label index="pages.shortcut_formlabel">Ausgewähltes Verweisziel</label>
 			<label index="pages.content_from_pid">Inhalt dieser Seite anzeigen:</label>
+			<label index="pages.content_from_pid_formlabel">Mit Inhalt der ausgewählten Seite</label>
 			<label index="pages.mount_pid">Einstiegspunkt (erweitert):</label>
+			<label index="pages.mount_pid_formlabel">Einstiegsseite</label>
 			<label index="pages.mount_pid_ol">Einstiegspunkt (diese Seite) durch eingebundene Seite ersetzen:</label>
+			<label index="pages.mount_pid_ol.I.0">Diese Seite</label>
+			<label index="pages.mount_pid_ol.I.1">Einstiegsseite</label>
+			<label index="pages.mount_pid_ol_formlabel">Zeige Inhalt von</label>
 			<label index="pages.abstract">Inhaltsangabe:</label>
+			<label index="pages.abstract_formlabel">Wird intern für Teaser und Menüs benutzt</label>
+			<label index="pages.keywords_formlabel">Schlagworte (SEO)</label>
+			<label index="pages.description_formlabel">Beschreibung (SEO)</label>
+			<label index="pages.author_formlabel">Name des Autors</label>
+			<label index="pages.author_email_formlabel">E-Mail des Autors</label>
 			<label index="pages.media">Dateien:</label>
-			<label index="pages.is_siteroot">Ist Anfang der Web-Site:</label>
+			<label index="pages.media_formlabel">Momentan mit dieser Seite verknüpft</label>
+			<label index="pages.is_siteroot">Ist Anfang der Website:</label>
+			<label index="pages.is_siteroot_formlabel">Setze diese Seite</label>
+			<label index="pages.is_siteroot_checkbox_1_formlabel">Als Anfang der Site</label>
 			<label index="pages.module">Enthält Plug-In:</label>
+			<label index="pages.module_formlabel">Ausgewählte Erweiterung</label>
 			<label index="pages.module.I.1">Shop</label>
 			<label index="pages.module.I.2">Forum</label>
 			<label index="pages.module.I.3">News</label>
-			<label index="pages.module.I.4">Web-Site-Benutzer</label>
+			<label index="pages.module.I.4">Website-Benutzer</label>
 			<label index="pages.module.I.5">Direct Mail</label>
 			<label index="pages.module.I.6">Abstimmungen</label>
-			<label index="pages.l18n_cfg">Spracheinstellungen:</label>
+			<label index="pages.l18n_cfg">Lokalisierungseinstellungen:</label>
+			<label index="pages.l18n_cfg_formlabel">Lokalisierung</label>
 			<label index="pages.l18n_cfg.I.1">Standardübersetzung verbergen</label>
 			<label index="pages.l18n_cfg.I.2">Seite verbergen, wenn keine Übersetzung für die aktuelle Sprache vorhanden ist</label>
 			<label index="pages.l18n_cfg.I.2a">Seite anzeigen, auch wenn keine Übersetzung vorhanden ist</label>
 			<label index="pages.fe_login_mode">Anmeldemodus:</label>
+			<label index="pages.fe_login_mode_formlabel">Anmeldeverhalten</label>
 			<label index="pages.fe_login_mode.disable">Sperren</label>
 			<label index="pages.fe_login_mode.disableAll">Benutzeranmeldung komplett deaktivieren</label>
 			<label index="pages.fe_login_mode.disableGroups">Anmeldung freigeben, aber Benutzergruppen deaktivieren</label>
 			<label index="pages.fe_login_mode.enable">Freigeben</label>
 			<label index="pages.fe_login_mode.enableAgain">Anmeldung wieder freigeben</label>
+			<label index="pages.storage_pid_formlabel">Auf der ausgewählten Seite</label>
+			<label index="pages.TSconfig_formlabel">TSconfig</label>
+			<label index="pages.be_layout_formlabel">Backend-Layout</label>
+			<label index="pages.be_layout_next_level_formlabel">Backend-Layout (nächste Ebene)</label>
 			<label index="tt_content">Seiteninhalt</label>
-			<label index="fe_users">Web-Site-Benutzer</label>
+			<label index="fe_users">Website-Benutzer</label>
 			<label index="fe_users.username">Benutzername:</label>
 			<label index="fe_users.password">Passwort:</label>
 			<label index="fe_users.usergroup">Benutzergruppe:</label>
@@ -84,7 +159,7 @@
 			<label index="fe_users.tabs.access">Zugriff</label>
 			<label index="fe_users.tabs.options">Optionen</label>
 			<label index="fe_users.tabs.extended">Erweitert</label>
-			<label index="fe_groups">Web-Site-Benutzergruppe</label>
+			<label index="fe_groups">Website-Benutzergruppe</label>
 			<label index="fe_groups.title">Gruppenname:</label>
 			<label index="fe_groups.lockToDomain">An Domäne binden:</label>
 			<label index="fe_groups.subgroup">Untergruppen:</label>
@@ -104,11 +179,10 @@
 			<label index="sys_template.title">Template-Titel:</label>
 			<label index="sys_template.root">Wurzelebene:</label>
 			<label index="sys_template.clear">Löschen:</label>
-			<label index="sys_template.sitetitle">Web-Site-Titel:</label>
+			<label index="sys_template.sitetitle">Website-Titel:</label>
 			<label index="sys_template.constants">Konstanten:</label>
 			<label index="sys_template.resources">Ressourcen:</label>
 			<label index="sys_template.nextLevel">Template nächste Ebene:</label>
-			<label index="sys_template.include_static">Statische Templates einschließen:</label>
 			<label index="sys_template.include_static_file">Statische Templates einschließen (aus Erweiterungen):</label>
 			<label index="sys_template.basedOn">Basis-Template einschließen:</label>
 			<label index="sys_template.includeStaticAfterBasedOn">Statische Templates NACH Basis-Template einschließen:</label>
@@ -125,6 +199,13 @@
 			<label index="sys_template.tabs.options">Optionen</label>
 			<label index="sys_template.tabs.access">Zugriff</label>
 			<label index="pages_language_overlay">Alternative Seitensprache</label>
+			<label index="be_layouts">Backend-Layout</label>
+			<label index="be_layouts.title">Titel</label>
+			<label index="be_layouts.description">Beschreibung</label>
+			<label index="be_layouts.config">Konfiguration</label>
+			<label index="be_layouts.wizard">Assistent</label>
+			<label index="be_layouts.icon">Symbol</label>
+			<label index="sys_template.include_static">Statische Templates einschließen:</label>
 			<label index="static_template">Statische Templates</label>
 			<label index="sys_language">Website Sprache</label>
 			<label index="sys_language.isocode">Offizielle Sprache auswählen (ISO Code):</label>
@@ -258,6 +339,87 @@
 			<label index="sys_template.static_file_mode.1" type="integer">3432267</label>
 			<label index="sys_template.static_file_mode.2" type="integer">192670032</label>
 			<label index="sys_domain.forced" type="integer">146803774</label>
+			<label index="pages.shortcut_mode.I.3" type="integer">118115266</label>
+			<label index="pages.url_scheme" type="integer">102165914</label>
+			<label index="pages.url_scheme.http" type="integer">230520720</label>
+			<label index="pages.url_scheme.https" type="integer">261008999</label>
+			<label index="pages.url_scheme_formlabel" type="integer">10800451</label>
+			<label index="pages.palettes.standard" type="integer">26464201</label>
+			<label index="pages.hidden_formlabel" type="integer">26464201</label>
+			<label index="pages.extendToSubpages_checkbox_1_formlabel" type="integer">26982908</label>
+			<label index="pages.shortcut_mode_formlabel" type="integer">91771315</label>
+			<label index="pages.shortcut_mode.I.0" type="integer">251676318</label>
+			<label index="pages.mount_pid_ol.I.0" type="integer">98872550</label>
+			<label index="pages.storage_pid_formlabel" type="integer">175404020</label>
+			<label index="pages.palettes.language" type="integer">77154959</label>
+			<label index="pages.palettes.media" type="integer">153041452</label>
+			<label index="pages.hidden_checkbox_1_formlabel" type="integer">198159566</label>
+			<label index="pages.nav_hide_formlabel" type="integer">243864376</label>
+			<label index="pages.subtitle_formlabel" type="integer">3536098</label>
+			<label index="pages.url_formlabel" type="integer">241907994</label>
+			<label index="pages.urltype_formlabel" type="integer">143173503</label>
+			<label index="pages.lastUpdated_formlabel" type="integer">24188541</label>
+			<label index="pages.editlock_formlabel" type="integer">94032520</label>
+			<label index="pages.editlock_checkbox_1_formlabel" type="integer">185325320</label>
+			<label index="pages.tabs.resources" type="integer">232584460</label>
+			<label index="pages.no_cache_formlabel" type="integer">179359504</label>
+			<label index="pages.no_cache_checkbox_1_formlabel" type="integer">198159566</label>
+			<label index="pages.no_search_checkbox_1_formlabel" type="integer">198159566</label>
+			<label index="pages.TSconfig_formlabel" type="integer">258585102</label>
+			<label index="pages.palettes.title" type="integer">192455458</label>
+			<label index="pages.fe_login_mode_formlabel" type="integer">102773449</label>
+			<label index="pages.palettes.visibility" type="integer">171483555</label>
+			<label index="pages.palettes.access" type="integer">228191362</label>
+			<label index="pages.palettes.abstract" type="integer">238370238</label>
+			<label index="pages.palettes.metatags" type="integer">189383889</label>
+			<label index="pages.palettes.editorial" type="integer">54256378</label>
+			<label index="pages.palettes.layout" type="integer">247307244</label>
+			<label index="pages.palettes.module" type="integer">160515377</label>
+			<label index="pages.palettes.replace" type="integer">223084686</label>
+			<label index="pages.palettes.links" type="integer">18621708</label>
+			<label index="pages.palettes.caching" type="integer">2971343</label>
+			<label index="pages.palettes.miscellaneous" type="integer">59226864</label>
+			<label index="pages.palettes.storage" type="integer">190692835</label>
+			<label index="pages.palettes.config" type="integer">29425992</label>
+			<label index="pages.doktype_formlabel" type="integer">169845367</label>
+			<label index="pages.title_formlabel" type="integer">2381349</label>
+			<label index="pages.starttime_formlabel" type="integer">249496158</label>
+			<label index="pages.endtime_formlabel" type="integer">114992516</label>
+			<label index="pages.fe_group_formlabel" type="integer">134883510</label>
+			<label index="pages.layout_formlabel" type="integer">171015397</label>
+			<label index="pages.extendToSubpages_formlabel" type="integer">87035514</label>
+			<label index="pages.nav_title_formlabel" type="integer">24678575</label>
+			<label index="pages.target_formlabel" type="integer">8034622</label>
+			<label index="pages.alias_formlabel" type="integer">231415618</label>
+			<label index="pages.newUntil_formlabel" type="integer">87485669</label>
+			<label index="pages.cache_timeout_formlabel" type="integer">99617873</label>
+			<label index="pages.tabs.appearance" type="integer">169629929</label>
+			<label index="pages.tabs.behaviour" type="integer">32537341</label>
+			<label index="pages.no_search_formlabel" type="integer">108129979</label>
+			<label index="pages.content_from_pid_formlabel" type="integer">38077310</label>
+			<label index="pages.mount_pid_formlabel" type="integer">211129765</label>
+			<label index="pages.mount_pid_ol.I.1" type="integer">211129765</label>
+			<label index="pages.mount_pid_ol_formlabel" type="integer">11329299</label>
+			<label index="pages.abstract_formlabel" type="integer">59857232</label>
+			<label index="pages.keywords_formlabel" type="integer">108375817</label>
+			<label index="pages.description_formlabel" type="integer">132225488</label>
+			<label index="pages.author_formlabel" type="integer">39142928</label>
+			<label index="pages.author_email_formlabel" type="integer">248476286</label>
+			<label index="pages.media_formlabel" type="integer">219848956</label>
+			<label index="pages.is_siteroot_formlabel" type="integer">186102602</label>
+			<label index="pages.module_formlabel" type="integer">110404941</label>
+			<label index="pages.l18n_cfg_formlabel" type="integer">57239651</label>
+			<label index="pages.nav_hide_checkbox_1_formlabel" type="integer">176746587</label>
+			<label index="pages.is_siteroot_checkbox_1_formlabel" type="integer">75401099</label>
+			<label index="pages.be_layout_formlabel" type="integer">34795027</label>
+			<label index="pages.be_layout_next_level_formlabel" type="integer">10678048</label>
+			<label index="be_layouts" type="integer">95848862</label>
+			<label index="be_layouts.title" type="integer">192455458</label>
+			<label index="be_layouts.description" type="integer">190479069</label>
+			<label index="be_layouts.config" type="integer">262485503</label>
+			<label index="be_layouts.icon" type="integer">135742274</label>
+			<label index="be_layouts.wizard" type="integer">95389504</label>
+			<label index="pages.shortcut_formlabel" type="integer">167374969</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -386,6 +548,87 @@
 			<label index="sys_template.static_file_mode.1">Always include before this template record</label>
 			<label index="sys_template.static_file_mode.2">Never include before this template record</label>
 			<label index="sys_domain.forced">Always prepend this domain in links:</label>
+			<label index="pages.shortcut_mode.I.3">Parent page</label>
+			<label index="pages.url_scheme">Enforce Protocol:</label>
+			<label index="pages.url_scheme.http">http://</label>
+			<label index="pages.url_scheme.https">https://</label>
+			<label index="pages.url_scheme_formlabel">Enforce Protocol</label>
+			<label index="pages.palettes.standard">Page</label>
+			<label index="pages.hidden_formlabel">Page</label>
+			<label index="pages.extendToSubpages_checkbox_1_formlabel">on subpages</label>
+			<label index="pages.shortcut_mode_formlabel">Shortcut mode</label>
+			<label index="pages.shortcut_mode.I.0">Selected page</label>
+			<label index="pages.mount_pid_ol.I.0">This page</label>
+			<label index="pages.storage_pid_formlabel">On selected page</label>
+			<label index="pages.palettes.language">Language</label>
+			<label index="pages.palettes.media">Files</label>
+			<label index="pages.hidden_checkbox_1_formlabel">Disable</label>
+			<label index="pages.nav_hide_formlabel">In menus</label>
+			<label index="pages.subtitle_formlabel">Subtitle</label>
+			<label index="pages.url_formlabel">URL</label>
+			<label index="pages.urltype_formlabel">Protocol</label>
+			<label index="pages.lastUpdated_formlabel">Latest update</label>
+			<label index="pages.editlock_formlabel">Editable for</label>
+			<label index="pages.editlock_checkbox_1_formlabel">Admins only</label>
+			<label index="pages.tabs.resources">Resources</label>
+			<label index="pages.no_cache_formlabel">Cache</label>
+			<label index="pages.no_cache_checkbox_1_formlabel">Disable</label>
+			<label index="pages.no_search_checkbox_1_formlabel">Disable</label>
+			<label index="pages.TSconfig_formlabel">TSconfig</label>
+			<label index="pages.palettes.title">Title</label>
+			<label index="pages.fe_login_mode_formlabel">Login behaviour</label>
+			<label index="pages.palettes.visibility">General visibility</label>
+			<label index="pages.palettes.access">Access times and rights</label>
+			<label index="pages.palettes.abstract">Abstract</label>
+			<label index="pages.palettes.metatags">Meta tags</label>
+			<label index="pages.palettes.editorial">Editorial</label>
+			<label index="pages.palettes.layout">Layout</label>
+			<label index="pages.palettes.module">Marked as container for</label>
+			<label index="pages.palettes.replace">Replace content</label>
+			<label index="pages.palettes.links">Links to this page</label>
+			<label index="pages.palettes.caching">Caching</label>
+			<label index="pages.palettes.miscellaneous">Miscellaneous</label>
+			<label index="pages.palettes.storage">General record storage</label>
+			<label index="pages.palettes.config">Special configuration</label>
+			<label index="pages.doktype_formlabel">Type</label>
+			<label index="pages.title_formlabel">Main title</label>
+			<label index="pages.starttime_formlabel">Release time</label>
+			<label index="pages.endtime_formlabel">Expiration time</label>
+			<label index="pages.fe_group_formlabel">Usergroups and general login response</label>
+			<label index="pages.layout_formlabel">Frontend variants</label>
+			<label index="pages.extendToSubpages_formlabel">Inherit time and rights settings</label>
+			<label index="pages.nav_title_formlabel">Alternative navigation title</label>
+			<label index="pages.target_formlabel">Open with these target settings</label>
+			<label index="pages.alias_formlabel">Use this alias in simulated paths</label>
+			<label index="pages.newUntil_formlabel">Mark as 'New' until</label>
+			<label index="pages.cache_timeout_formlabel">Cache lifetime</label>
+			<label index="pages.tabs.appearance">Appearance</label>
+			<label index="pages.tabs.behaviour">Behaviour</label>
+			<label index="pages.no_search_formlabel">Indexed search</label>
+			<label index="pages.content_from_pid_formlabel">With content of the selected page</label>
+			<label index="pages.mount_pid_formlabel">Mounted page</label>
+			<label index="pages.mount_pid_ol.I.1">Mounted page</label>
+			<label index="pages.mount_pid_ol_formlabel">Show content of</label>
+			<label index="pages.abstract_formlabel">Used internally for teasers and menus</label>
+			<label index="pages.keywords_formlabel">Keywords (SEO)</label>
+			<label index="pages.description_formlabel">Description (SEO)</label>
+			<label index="pages.author_formlabel">Author name</label>
+			<label index="pages.author_email_formlabel">Author email</label>
+			<label index="pages.media_formlabel">Currently attached to this page</label>
+			<label index="pages.is_siteroot_formlabel">Set this page</label>
+			<label index="pages.module_formlabel">Selected plugin</label>
+			<label index="pages.l18n_cfg_formlabel">Localization</label>
+			<label index="pages.nav_hide_checkbox_1_formlabel">hide</label>
+			<label index="pages.is_siteroot_checkbox_1_formlabel">As site root</label>
+			<label index="pages.be_layout_formlabel">Backend Layout</label>
+			<label index="pages.be_layout_next_level_formlabel">Backend Layout (on next level)</label>
+			<label index="be_layouts">Backend Layouts</label>
+			<label index="be_layouts.title">Title</label>
+			<label index="be_layouts.description">Description</label>
+			<label index="be_layouts.config">Config</label>
+			<label index="be_layouts.icon">Icon</label>
+			<label index="be_layouts.wizard">Wizard</label>
+			<label index="pages.shortcut_formlabel">Selected shortcut target</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

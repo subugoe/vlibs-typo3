@@ -28,7 +28,7 @@
 			<label index="descr_global">Globale Erweiterung (typo3/ext/) - Verfügbar für gemeinsame Ressourcen auf dem Server (dynamisch).</label>
 			<label index="descr_local">Lokale Erweiterung (typo3conf/ext/) - Lokal für nur diese TYPO3-Installation (dynamisch).</label>
 			<label index="privacy_notice">Beim Kontakt mit der Online-Bibliothek können Server-Informationen gesendet und in der Bibliothek für statistische Zwecke gespeichert werden.</label>
-			<label index="security_header">Haben Sie ein Sicherheitsproblem gefunden? Dann nehmen Sie bitte Kontakt zu uns auf!</label>
+			<label index="security_header">Haben Sie ein Sicherheitsproblem gefunden?</label>
 			<label index="security_warning_extensions">Bitte seien Sie sich der Tatsache bewusst, dass Erweiterungen von Drittanbietern stammen. Eine Erweiterung zu installieren ist ein Sicherheitsrisiko, denn das hohe Maß an Qualität und Sicherheit im TYPO3-Kern kann für Erweiterungen nicht garantiert werden.</label>
 			<label index="security_descr">Wenn Sie der Meinung sind, ein Sicherheitsproblem in TYPO3 oder einer Erweiterung entdeckt zu haben, wenden Sie sich bitte an das %sTYPO3-Sicherheitsteam%s! Vielen Dank!</label>
 			<label index="menu_loaded_extensions">Geladene Erweiterungen</label>
@@ -544,7 +544,7 @@
 			<label index="descr_global" type="integer">252612860</label>
 			<label index="descr_local" type="integer">214026576</label>
 			<label index="privacy_notice" type="integer">178654049</label>
-			<label index="security_header" type="integer">117854119</label>
+			<label index="security_header" type="integer">44219381</label>
 			<label index="security_descr" type="integer">196474613</label>
 			<label index="menu_loaded_extensions" type="integer">260059038</label>
 			<label index="menu_install_extensions" type="integer">32676540</label>
@@ -1046,7 +1046,7 @@
 			<label index="descr_global">Global extension (typo3/ext/) - Available for shared source on server (dynamic).</label>
 			<label index="descr_local">Local extension (typo3conf/ext/) - Local for this TYPO3 installation only (dynamic).</label>
 			<label index="privacy_notice">When you interact with the online repository, server information may be sent and stored in the repository for statistics.</label>
-			<label index="security_header">Found a security problem? Please get in touch with us!</label>
+			<label index="security_header">Did you find a security problem?</label>
 			<label index="security_descr">If you think you have found a security issue in TYPO3 or an extension, please contact the %sTYPO3 security team%s! Thank you!</label>
 			<label index="menu_loaded_extensions">Loaded extensions</label>
 			<label index="menu_install_extensions">Install extensions</label>

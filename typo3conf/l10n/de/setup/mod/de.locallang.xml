@@ -53,6 +53,7 @@
 			<label index="lang_sq">Albanisch</label>
 			<label index="lang_ge">Georgisch</label>
 			<label index="lang_ga">Galizisch</label>
+			<label index="lang_km">Khmer</label>
 			<label index="default">Standard</label>
 			<label index="simulate">Backend-Benutzer simulieren</label>
 			<label index="opening">Beim Start</label>
@@ -108,9 +109,11 @@
 			<label index="enableInstallTool.deleteFile">Aktivierungsdatei für Installationsprogramm löschen</label>
 			<label index="enableInstallTool.fileDelete_ok">Die Aktivierungsdatei für das Installationsprogramm wurde gelöscht.</label>
 			<label index="enableInstallTool.fileDelete_failed">Die Aktivierungsdatei für das Installationsprogramm konnte nicht gelöscht werden.</label>
+			<label index="enableInstallTool.fileHasKeep">Die Aktivierungsdatei für das Installationsprogramm hat den Inhalt &quot;KEEP_FILE&quot; und wird daher nicht gelöscht.</label>
 			<label index="tempDataCleared">Temporäre Daten gelöscht</label>
 			<label index="tempDataClearedFlashMessage">Die temporären Daten wurden gelöscht.</label>
 			<label index="tempDataClearedLog">Temporäre Daten gelöscht</label>
+			<label index="debugInWindow">Debug-Meldungen in neuem Browserfenster anzeigen</label>
 			<label index="enableInstallTool.headerTitle">Admin-Funktion zur Wiederherstellung des Zugriffs auf das Installations-Tool</label>
 			<label index="enableInstallTool.description">Wenn Sie diese Schaltfläche anklicken, wird die Datei typo3conf/ENABLE_INSTALL_TOOL erstellt (oder gelöscht, wenn sie bereits existiert).&lt;br /&gt; Die Datei schaltet den Zugriff auf das Installations-Tool frei (das Passwort wird dennoch benötigt) und wird automatisch nach einer Stunde gelöscht.</label>
 			<label index="startInTaskCenter">Beim Starten das Modul 'Aufgaben' aufrufen</label>
@@ -230,6 +233,9 @@
 			<label index="enableInstallTool.fileCreate_failed" type="integer">94497220</label>
 			<label index="enableInstallTool.fileDelete_ok" type="integer">262405758</label>
 			<label index="enableInstallTool.fileDelete_failed" type="integer">231857636</label>
+			<label index="debugInWindow" type="integer">228365664</label>
+			<label index="lang_km" type="integer">167077099</label>
+			<label index="enableInstallTool.fileHasKeep" type="integer">140178423</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -346,6 +352,9 @@
 			<label index="enableInstallTool.fileCreate_failed">The Install Tool Enable file could not be created.</label>
 			<label index="enableInstallTool.fileDelete_ok">The Install Tool Enable file has been deleted.</label>
 			<label index="enableInstallTool.fileDelete_failed">The Install Tool Enable file could not be deleted!</label>
+			<label index="debugInWindow">Display debug messages in a new browser window</label>
+			<label index="lang_km">Khmer</label>
+			<label index="enableInstallTool.fileHasKeep">The Install Tool file has the content &quot;KEEP_FILE&quot; and can not be deleted!</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

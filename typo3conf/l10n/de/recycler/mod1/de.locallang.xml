@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Papierkorb</label>
+			<label index="description">Der Papierkorb erlaubt es, gelöschte Daten auszuwählen und sie wiederherzustellen. Ist auch das übergeordnete Element gelöscht (etwa die Seite, auf der sich das wiederherzustellende Inhaltselement befunden hat), können Sie Datensätze auch rekursiv wiederherstellen.</label>
+			<label index="label_alltables">Alle Tabellen</label>
+			<label index="js.label_lostandfound">Fundbüro</label>
+			<label index="js.label_deletedTab">Gelöschte Daten</label>
+			<label index="js.label_loadMessage">Bitte warten...&lt;br /&gt;Datensätze werden geladen!</label>
+			<label index="js.label_doDelete_confirmText">Diesen Datensatz (UND im Falle einer Seite ALLE Kinddatensätze) tatsächlich löschen?&lt;br /&gt;ACHTUNG: Die Daten werden entgültig aus der Datenbank gelöscht!</label>
+			<label index="js.label_deleteButton_text">Löschen</label>
+			<label index="js.label_deleteButton_tooltip">Ausgewählte Elemente löschen</label>
+			<label index="js.label_undeleteButton_text">Wiederherstellen</label>
+			<label index="js.label_undeleteButton_tooltip">Ausgewählte Elemente wiederherstellen</label>
+			<label index="js.label_error_NoSelectedRows_title">Keine Zeile ausgewählt</label>
+			<label index="js.label_error_NoSelectedRows_msg">Sie müssen eine Zeile auswählen!</label>
+			<label index="js.label_yes">Ja</label>
+			<label index="js.label_no">Nein</label>
+			<label index="js.label_sure">Tatsächlich durchführen?</label>
+			<label index="js.label_crdate">Erstellt</label>
+			<label index="js.label_owner">Besitzer</label>
+			<label index="js.label_tstamp">Letzte Bearbeitung</label>
+			<label index="js.label_clear">Entfernen</label>
+			<label index="js.label_filter">Filter</label>
+			<label index="js.label_title_undelete">Wiederherstellen?</label>
+			<label index="js.label_text_undelete">Datensätze aus Tabellen wiederherstellen:</label>
+			<label index="js.label_title_delete">Löschen?</label>
+			<label index="js.label_text_delete">Datensätze aus Tabellen löschen:</label>
+			<label index="js.label_boxLabel_undelete_recursive">Rekursives Wiederherstellen</label>
+			<label index="js.label_tableMenu_label">Tabelle:</label>
+			<label index="js.label_tableMenu_emptyText">Eine Tabelle auswählen...</label>
+			<label index="js.label_filter_emptyText">Suchbegriff</label>
+			<label index="js.label_search">Suche:</label>
+			<label index="js.label_pagingMessage">Anzeigen der Datensätze {0} - {1} von {2}</label>
+			<label index="js.label_pagingEmpty">Keine Datensätze anzuzeigen</label>
+			<label index="js.label_noValueFound">Keine Datensätze für {0}</label>
+			<label index="js.label_records">Datensätze</label>
+			<label index="js.label_table">Tabelle</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="title" type="integer">184146156</label>
+			<label index="label_alltables" type="integer">79396010</label>
+			<label index="js.label_lostandfound" type="integer">203155875</label>
+			<label index="js.label_deletedTab" type="integer">153822893</label>
+			<label index="js.label_loadMessage" type="integer">679303</label>
+			<label index="js.label_doDelete_confirmText" type="integer">178675910</label>
+			<label index="js.label_deleteButton_text" type="integer">254438473</label>
+			<label index="js.label_deleteButton_tooltip" type="integer">193908484</label>
+			<label index="js.label_undeleteButton_text" type="integer">130147676</label>
+			<label index="js.label_undeleteButton_tooltip" type="integer">100957638</label>
+			<label index="js.label_error_NoSelectedRows_title" type="integer">192962803</label>
+			<label index="js.label_error_NoSelectedRows_msg" type="integer">228160843</label>
+			<label index="js.label_yes" type="integer">154974727</label>
+			<label index="js.label_no" type="integer">196073266</label>
+			<label index="js.label_sure" type="integer">73076236</label>
+			<label index="js.label_crdate" type="integer">109504151</label>
+			<label index="js.label_owner" type="integer">191842862</label>
+			<label index="js.label_tstamp" type="integer">177437089</label>
+			<label index="js.label_clear" type="integer">230886336</label>
+			<label index="js.label_filter" type="integer">225933520</label>
+			<label index="js.label_title_undelete" type="integer">98696878</label>
+			<label index="js.label_text_undelete" type="integer">730607</label>
+			<label index="js.label_title_delete" type="integer">126264319</label>
+			<label index="js.label_text_delete" type="integer">161832476</label>
+			<label index="js.label_boxLabel_undelete_recursive" type="integer">33496907</label>
+			<label index="js.label_tableMenu_emptyText" type="integer">97134956</label>
+			<label index="js.label_filter_emptyText" type="integer">35714003</label>
+			<label index="js.label_search" type="integer">38545776</label>
+			<label index="js.label_pagingMessage" type="integer">156690454</label>
+			<label index="js.label_pagingEmpty" type="integer">227929997</label>
+			<label index="js.label_noValueFound" type="integer">93925728</label>
+			<label index="js.label_tableMenu_label" type="integer">82279689</label>
+			<label index="js.label_records" type="integer">229781996</label>
+			<label index="js.label_table" type="integer">85738935</label>
+			<label index="description" type="integer">211122156</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="title">Recycler</label>
+			<label index="label_alltables">All tables</label>
+			<label index="js.label_lostandfound">Lost and found</label>
+			<label index="js.label_deletedTab">Deleted data</label>
+			<label index="js.label_loadMessage">Please wait...&lt;br/&gt;Records would be loaded!</label>
+			<label index="js.label_doDelete_confirmText">Delete this record AND if page ALL subrecords ? &lt;br/&gt;ATTENTION: Data will be finally deleted from the database</label>
+			<label index="js.label_deleteButton_text">Delete</label>
+			<label index="js.label_deleteButton_tooltip">Delete selected items</label>
+			<label index="js.label_undeleteButton_text">Undelete</label>
+			<label index="js.label_undeleteButton_tooltip">Undelete selected items</label>
+			<label index="js.label_error_NoSelectedRows_title">No row selected</label>
+			<label index="js.label_error_NoSelectedRows_msg">You must select a row!</label>
+			<label index="js.label_yes">Yes</label>
+			<label index="js.label_no">No</label>
+			<label index="js.label_sure">Are you Sure?</label>
+			<label index="js.label_crdate">Create</label>
+			<label index="js.label_owner">Owner</label>
+			<label index="js.label_tstamp">Last edit</label>
+			<label index="js.label_clear">Clear</label>
+			<label index="js.label_filter">Filter</label>
+			<label index="js.label_title_undelete">Undelete?</label>
+			<label index="js.label_text_undelete">Undelete records from tables: </label>
+			<label index="js.label_title_delete">Delete?</label>
+			<label index="js.label_text_delete">Delete records from tables: </label>
+			<label index="js.label_boxLabel_undelete_recursive">Undelete recursively</label>
+			<label index="js.label_tableMenu_emptyText">Choose a table...</label>
+			<label index="js.label_filter_emptyText">Keyword</label>
+			<label index="js.label_search">Search:</label>
+			<label index="js.label_pagingMessage">Displaying records {0} - {1} of {2}</label>
+			<label index="js.label_pagingEmpty">No records to display</label>
+			<label index="js.label_noValueFound">No records for {0}</label>
+			<label index="js.label_tableMenu_label">Table:</label>
+			<label index="js.label_records">Records</label>
+			<label index="js.label_table">Table</label>
+			<label index="description">The recycler allows you to select any deleted data and undelete it. You can undelete recursive if the parent of the element is deleted too.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -8,10 +8,10 @@ Wenn beispielsweise eine Seite oder ein Inhaltselement so konfiguriert wurde, da
 			<label index="title.description">Name der Benutzergruppe.</label>
 			<label index="title.details">Dieser Name erscheint in den Auswahlfeldern aller Elemente, für die eine Zugriffsbeschränkung definiert werden kann.</label>
 			<label index="lockToDomain.description">Geben Sie hier den Namen der Domäne an, für welche diese Benutzergruppe gelten soll.</label>
-			<label index="lockToDomain.details">Diese Option kann wichtig für Sie sein, wenn Sie mehrere Web-Sites in der gleichen TYPO3-Datenbank speichern, aber nur einen Speicherort für &lt;em&gt;alle&lt;/em&gt; Web-Site-Benutzer verwenden möchten. Dadurch können sich die Web-Site-Benutzer an allen Web-Sites anmelden.
-Dieses Verhalten kann man entweder als Feature (eine globale Anmeldung für alle Web-Sites) oder als Problem betrachten - im letzteren Fall sollten Sie sowieso pro Web-Site einen eigenen Speicherort für die Web-Site-Benutzer definieren. Trotzdem könnte es Ihr Wunsch sein, einer globalen Web-Site-Benutzergruppe lediglich den Zugriff auf eine bestimmte Web-Site zu gestatten. Dies können Sie erreichen, indem Sie hier einen Domänennamen oder eine IP-Adresse eintragen.
+			<label index="lockToDomain.details">Diese Option kann wichtig für Sie sein, wenn Sie mehrere Websites in der gleichen TYPO3-Datenbank speichern, aber nur einen Speicherort für &lt;em&gt;alle&lt;/em&gt; Website-Benutzer verwenden möchten. Dadurch können sich die Website-Benutzer an allen Websites anmelden.
+Dieses Verhalten kann man entweder als Feature (eine globale Anmeldung für alle Websites) oder als Problem betrachten - im letzteren Fall sollten Sie sowieso pro Website einen eigenen Speicherort für die Website-Benutzer definieren. Trotzdem könnte es Ihr Wunsch sein, einer globalen Website-Benutzergruppe lediglich den Zugriff auf eine bestimmte Website zu gestatten. Dies können Sie erreichen, indem Sie hier einen Domänennamen oder eine IP-Adresse eintragen.
 
-&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Sie mehrere Speicherorte für Web-Site-Benutzer definiert haben (also etwa für jede Web-Site einen Benutzerordner).</label>
+&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Sie mehrere Speicherorte für Website-Benutzer definiert haben (also etwa für jede Website einen Benutzerordner).</label>
 			<label index="subgroup.description">Mitglieder anderer Gruppen</label>
 			<label index="subgroup.details">Liste anderer Gruppen, bei denen diese Gruppe Mitglied ist</label>
 			<label index="description.description">Geben Sie eine Beschreibung für die Gruppe an.</label>
@@ -19,10 +19,10 @@ Dieses Verhalten kann man entweder als Feature (eine globale Anmeldung für alle
 			<label index="TSconfig.description">TSconfig für die Gruppe (fortgeschrittene Konfiguration).</label>
 			<label index="TSconfig.details">Diese Werte werden an jedes Mitglied der Gruppe vererbt. Die Werte werden unter Umständen von TSconfig-Konfiguration andere Gruppen überschrieben.</label>
 			<label index="TSconfig.syntax">TypoScript-Syntax ohne Bedingungen und Konstanten.</label>
-			<label index=".description">Definiert Benutzergruppen für Web-Site-Benutzer.</label>
-			<label index=".details">Bei TYPO3 werden Web-Site-Zugriffsbeschränkungen über Gruppenmitgliedschaften geregelt. Wenn eine Seite oder andere Inhaltselemente nur bestimmten Benutzern zugänglich sein soll, überprüft TYPO3, ob der angemeldete Benutzer Mitglied einer zugangsberechtigten Gruppe ist.</label>
+			<label index=".description">Definiert Benutzergruppen für Website-Benutzer.</label>
+			<label index=".details">Bei TYPO3 werden Website-Zugriffsbeschränkungen über Gruppenmitgliedschaften geregelt. Wenn eine Seite oder andere Inhaltselemente nur bestimmten Benutzern zugänglich sein soll, überprüft TYPO3, ob der angemeldete Benutzer Mitglied einer zugangsberechtigten Gruppe ist.</label>
 			<label index=".image_descr">Ein Teil der Eingabemaske für Frontend-Benutzergruppen.
-Seiten, Inhaltselemente und andere Datensätze, die auf der Web-Site angezeigt werden sollen, besitzen oftmals ein Auswahlfeld, über die man Zugriffsbeschränkungen für diese Elemente regeln kann.</label>
+Seiten, Inhaltselemente und andere Datensätze, die auf der Website angezeigt werden sollen, besitzen oftmals ein Auswahlfeld, über die man Zugriffsbeschränkungen für diese Elemente regeln kann.</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">

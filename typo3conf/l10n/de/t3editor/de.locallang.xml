@@ -4,6 +4,7 @@
 		<languageKey index="de" type="array">
 			<label index="deactivate">T3Editor deaktivieren</label>
 			<label index="template">Template</label>
+			<label index="file">Datei</label>
 			<label index="delimiter">:</label>
 			<label index="constants">Konstanten</label>
 			<label index="setup">Setup</label>
@@ -30,6 +31,7 @@
 			<label index="js.label_lines" type="integer">159439512</label>
 			<label index="js.label_documentModified" type="integer">158332182</label>
 			<label index="js.label_errorWhileSaving" type="integer">1696062</label>
+			<label index="file" type="integer">11696408</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -46,6 +48,7 @@
 			<label index="js.label_lines">lines</label>
 			<label index="js.label_documentModified">document has been modified</label>
 			<label index="js.label_errorWhileSaving">An error occured while saving the data.</label>
+			<label index="file">File</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

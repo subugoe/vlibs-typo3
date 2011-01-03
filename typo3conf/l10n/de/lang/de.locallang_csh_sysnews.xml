@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="hidden.description">Mit dieser Option können Sie die Nachricht verbergen. Sie wird dann nicht auf der Loginseite angezeigt.</label>
+			<label index="title.description">Geben Sie den Titel der Nachricht ein.</label>
+			<label index="content.description">Der Inhalt der Nachricht, um Redakteure auf dem Laufenden zu halten. HTML-Elemente sind nicht möglich, Zeilenumbrüche aber sind erlaubt.</label>
+			<label index=".description">System-Nachrichten werden auf der TYPO3-Loginseite angezeigt. Sie ermöglichen es Administratoren, Redakteure über anstehende Wartungsarbeiten und Ähnliches zu informieren.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="hidden.description" type="integer">70632431</label>
+			<label index="title.description" type="integer">145587839</label>
+			<label index="content.description" type="integer">21567837</label>
+			<label index=".description" type="integer">203336814</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="hidden.description">This option will hide the news from showing up at the login screen.</label>
+			<label index="title.description">Enter the title of the news.</label>
+			<label index="content.description">The news content to let editors know what's coming up. HTML is disabled, however, you can use line breaks.</label>
+			<label index=".description">System news are shown at the TYPO3 login screen, allowing admins to inform editors about upcoming system maintenance and similar events.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

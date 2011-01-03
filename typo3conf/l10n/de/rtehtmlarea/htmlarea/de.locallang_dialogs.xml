@@ -4,6 +4,7 @@
 		<languageKey index="de" type="array">
 			<label index="OK">OK</label>
 			<label index="Cancel">Abbrechen</label>
+			<label index="Delete">Löschen</label>
 			<label index="Close">Schließen</label>
 			<label index="Not set">Nicht gesetzt</label>
 			<label index="General">Allgemein</label>
@@ -113,6 +114,8 @@
 			<label index="Remove language mark">Sprache entfernen</label>
 			<label index="statusBarStyle">Stil</label>
 			<label index="statusBarReady">Bereit</label>
+			<label index="word">Wort</label>
+			<label index="words">Worte</label>
 			<label index="You must enter a number of colums">Sie müssen eine Anzahl Spalten angeben</label>
 		</languageKey>
 	</data>
@@ -230,6 +233,9 @@
 			<label index="Modify link" type="integer">18463358</label>
 			<label index="Insert image" type="integer">34623915</label>
 			<label index="Modify image" type="integer">38706423</label>
+			<label index="word" type="integer">206033287</label>
+			<label index="words" type="integer">144136673</label>
+			<label index="Delete" type="integer">254438473</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -346,6 +352,9 @@
 			<label index="Modify link">Modify link</label>
 			<label index="Insert image">Insert image</label>
 			<label index="Modify image">Modify image</label>
+			<label index="word">word</label>
+			<label index="words">words</label>
+			<label index="Delete">Delete</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -6,7 +6,7 @@
 			<label index=".details">Die Seitentabelle ist das Rückgrat von TYPO3. Alle Datensätze der Standardmodule müssen zu einer Seite &quot;gehören&quot;. Dies entspricht in etwa Dateien und Ordnern auf der Festplatte Ihres PCs. Mit einem wesentlichen Unterschied: Ordner der Festplatte sind &lt;b&gt;nur&lt;/b&gt; Behälter für Dateien. Aber &quot;Seiten&quot; im Web und TYPO3 sind gleichzeitig &quot;Dateien&quot; &lt;b&gt;und&lt;/b&gt; &quot;Ordner&quot;. Jede beliebige Seite kann Unterseiten besitzen.
 
 &lt;b&gt;Der Seitenbaum&lt;/b&gt;
-Die Seiten sind in einer Baumstruktur angeordnet, was nicht nur ein handlicher Weg der Organisation ganz allgemein ist, sondern auch der Art und Weise entspricht, wie Sie die Seiten Ihrer Web-Site anordnen sollten. Daher entspricht der Seitenbaum üblicherweise auch der Web-Site-Navigation.
+Die Seiten sind in einer Baumstruktur angeordnet, was nicht nur ein handlicher Weg der Organisation ganz allgemein ist, sondern auch der Art und Weise entspricht, wie Sie die Seiten Ihrer Website anordnen sollten. Daher entspricht der Seitenbaum üblicherweise auch der Website-Navigation.
 
 &lt;b&gt;uid, pid und die Wurzel des Baums&lt;/b&gt;
 Technisch gesehen haben alle Daten(bank)elemente ein Feld &quot;uid&quot;, das eine eindeutige Identifikation enthält (eine Zahl, die von TYPO3 vollautomatisch erzeugt und verwaltet wird und die Sie praktisch nie zu Gesicht bekommen). Zusätzlich müssen alle Datenelemente ein Feld &quot;pid&quot; besitzen, welches die &quot;uid&quot; der Seite (&quot;page id&quot;) enthält, zu der sie gehören (TYPO3 handhabt das automatisch). Falls das Feld &quot;pid&quot; gleich 0 ist, so befindet sich der Datensatz in der Wurzel (&quot;root&quot;) des Baums. Nur Administratoren ist der Zugriff auf die Wurzel gestattet und Tabelleneinträge müssen entweder einer Seite angehören oder der Wurzel.
@@ -29,9 +29,9 @@ Jedem Typ ist ein spezielles Symbol zugewiesen. Manche Typen stehen einem Anwend
 
 &lt;b&gt;[Technisch] $PAGES_TYPES&lt;/b&gt;
 Die Einschränkungen zu jedem Seitentyp sind im globalen Array $PAGES_TYPES definiert. Dort ist festgelegt, welche Tabellen auf den Seiten eines Typs erlaubt sind. Wenn Erweiterungen neue Tabellen zu TYPO3 hinzufügen ist es eventuell erforderlich, dass sie ihre Tabellen in $PAGES_TYPES registrieren, so dass Daten für diese Tabellen auf normalen Seiten hinzugefügt werden können.</label>
-			<label index="doktype.image_descr">Dieser Ausschnitt des Seitenbaums zeigt einige normale Seiten (schwach gelbe Symbole, im oberen Teil). Der Papierkorb (&quot;Garbage&quot;) mit seinem besonderen Symbol ist ebenfalls sichtbar. Die Seiten im Papierkorb werden auf der Web-Site nicht angezeigt und sind Kandidaten für eine endgültige Löschung. Im unteren Teil sehen Sie (graue) &quot;SysOrdner&quot;. Diese werden ebenfalls niemals als Web-Seiten angezeigt, sondern ermöglichen die Speicherung beliebiger Daten.</label>
+			<label index="doktype.image_descr">Dieser Ausschnitt des Seitenbaums zeigt einige normale Seiten (schwach gelbe Symbole, im oberen Teil). Der Papierkorb (&quot;Garbage&quot;) mit seinem besonderen Symbol ist ebenfalls sichtbar. Die Seiten im Papierkorb werden auf der Website nicht angezeigt und sind Kandidaten für eine endgültige Löschung. Im unteren Teil sehen Sie (graue) &quot;SysOrdner&quot;. Diese werden ebenfalls niemals als Web-Seiten angezeigt, sondern ermöglichen die Speicherung beliebiger Daten.</label>
 			<label index="TSconfig.description">Spezielle TypoScript-Konfiguration dieser Seite.</label>
-			<label index="TSconfig.details">Grundsätzlich ist &quot;TypoScript&quot; ein Konzept zur Konfiguration von Werten in einer Baumstruktur. Es wird vor allem für die Konfiguration von TYPO3-Web-Sites verwendet.
+			<label index="TSconfig.details">Grundsätzlich ist &quot;TypoScript&quot; ein Konzept zur Konfiguration von Werten in einer Baumstruktur. Es wird vor allem für die Konfiguration von TYPO3-Websites verwendet.
 
 Hier wird das gleiche Prinzip der Eingabe von Werten in einer Hierarchie verwendet, um verschiedene Eigenschaften in Bezug auf das Backend, Funktionen in Modulen, dem &quot;Rich Text Editor&quot; usw. einzustellen.
 
@@ -50,7 +50,7 @@ Wird das rote &quot;+&quot; Zeichen angeklickt, wird die Seite als &quot;Tempor�
 Im Seitenbaum ist der gesetzte Schalter sichtbar durch das rote &quot;+&quot; und der Ast des Baums kann nicht mehr aufgeklappt werden.
 Nach Anklicken des roten &quot;+&quot; wird der Ast als &quot;Temporärer Einstiegspunkt&quot; an Stelle des Seitenbaums dargestellt.</label>
 			<label index="storage_pid.description">Legen Sie fest, welche &quot;Allgemeinen Datensatzsammlungen&quot; von dieser Seite verwendet werden sollen.</label>
-			<label index="storage_pid.details">Eine &quot;Allgemeine Datensatzsammlung&quot; ist eine globale Seite zur Aufbewahrung von Daten aller Art. Das könnten Templates sein, oder Frontend Benutzer usw., die eher zur gesamten Web-Site gehören, als zu einer einzelnen Seite.
+			<label index="storage_pid.details">Eine &quot;Allgemeine Datensatzsammlung&quot; ist eine globale Seite zur Aufbewahrung von Daten aller Art. Das könnten Templates sein, oder Frontend Benutzer usw., die eher zur gesamten Website gehören, als zu einer einzelnen Seite.
 
 Es wird dringend empfohlen, dass Anwendungen das Konzept der &quot;Allgemeinen Datensatzsammlung&quot; unterstützen, so dass sie standardmäßig ihre Daten dort suchen und nur durch spezielle Konfiguration dazu gebracht werden, anderswo danach zu suchen.
 

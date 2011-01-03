@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="page.doktype.1">Standard</label>
+			<label index="page.doktype.3">Externer Link</label>
+			<label index="page.doktype.4">Verweis</label>
+			<label index="page.doktype.5">Nicht im Menü</label>
+			<label index="page.doktype.6">BE-Benutzerbereich</label>
+			<label index="page.doktype.7">Freigabe</label>
+			<label index="page.doktype.199">Abstand</label>
+			<label index="page.doktype.254">SysOrdner</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="page.doktype.1" type="integer">128029197</label>
+			<label index="page.doktype.3" type="integer">148053512</label>
+			<label index="page.doktype.4" type="integer">123085069</label>
+			<label index="page.doktype.5" type="integer">83515619</label>
+			<label index="page.doktype.6" type="integer">127762129</label>
+			<label index="page.doktype.7" type="integer">117153471</label>
+			<label index="page.doktype.199" type="integer">111909417</label>
+			<label index="page.doktype.254" type="integer">111169662</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="page.doktype.1">Default</label>
+			<label index="page.doktype.3">External Link</label>
+			<label index="page.doktype.4">Shortcut</label>
+			<label index="page.doktype.5">Not in Menu</label>
+			<label index="page.doktype.6">BE user Section</label>
+			<label index="page.doktype.7">Mountpoint</label>
+			<label index="page.doktype.199">Spacer</label>
+			<label index="page.doktype.254">Sysfolder</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

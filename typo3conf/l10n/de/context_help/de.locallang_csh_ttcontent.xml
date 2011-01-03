@@ -19,11 +19,11 @@ Fast alle anderen Typen erlauben es ebenfalls, eine Überschrift mit genau den s
 &lt;strong&gt;Text&lt;/strong&gt;
 Der Text Typ ermöglicht die Eingabe von normalen Seiteninhalten.
 
-&lt;strong&gt;Text mit Bild&lt;/strong&gt;
+&lt;strong&gt;Text und Bilder&lt;/strong&gt;
 Dies entspricht dem Typ &quot;Text&quot; (normale Seiteninhalte) mit der zusätzlichen Option, Bilder anzuhängen.
 
 &lt;strong&gt;Bild&lt;/strong&gt;
-Das gleiche wie &quot;Text mit Bild&quot;, aber ohne Textfeld (also nur Bilder).
+Das gleiche wie &quot;Text und Bilder&quot;, aber ohne Textfeld (also nur Bilder).
 
 &lt;strong&gt;Aufzählung&lt;/strong&gt;
 Damit können Sie eine Aufzählung erstellen. Jede Zeile des Textfeldes erscheint als ein Punkt in einer Liste.
@@ -44,7 +44,7 @@ Lässt Sie Mail-Formulare erstellen. Für die Erstellung von Formular-Feldern gi
 Dies fügt ein Suchfeld ein und zeigt auch das Ergebnis der Suche an, wenn diese Seite als Ziel der Suchergebnisse angegeben wird.
 
 &lt;strong&gt;Anmeldeformular&lt;/strong&gt;
-Zeigt eine Anmeldemaske für Web-Site-Benutzer an. Sie müssen mindestens einen Web-Site-Benutzer und eine Benutzergruppe anlegen, damit dieser Typ Sinn hat.
+Zeigt eine Anmeldemaske für Website-Benutzer an. Sie müssen mindestens einen Website-Benutzer und eine Benutzergruppe anlegen, damit dieser Typ Sinn hat.
 
 &lt;strong&gt;Textbox&lt;/strong&gt;
 Dieser Typ ist vorgesehen für maßgeschneiderte Designs, die typisch einigen Text und ein Bild enthalten. In anderen Worten, dieser Typ ist nicht immer verfügbar. Benutzen Sie diesen Typ also nur, wenn Sie dazu angewiesen werden. Es existieren andere Typen zur Anzeige von Text und Bildern.
@@ -56,7 +56,7 @@ Bietet eine Auswahl von verschiedenen Link-Menüs und eine Sitemap, die Sie auf 
 Dies ist ein Platzhalter für andere Datensätze. Mit anderen Worten: Mit diesem Element können Sie andere Datensätze von anderen Seiten anhängen und damit in diese Seite integrieren.
 
 &lt;strong&gt;Plug-In einfügen&lt;/strong&gt;
-Dies erlaubt es Ihnen, ein Forum, ein Gästebuch, eine Adressliste, einen Einkaufskorb etc. einzubinden. Die verschiedenen Möglichkeiten sind &lt;em&gt;nur&lt;/em&gt; dann verfügbar, wenn sie in der Vorlage richtig konfiguriert wurden. Vergewissern Sie sich also, welche Plug-Ins in Ihrer Web-Site verfügbar sind.
+Dies erlaubt es Ihnen, ein Forum, ein Gästebuch, eine Adressliste, einen Einkaufskorb etc. einzubinden. Die verschiedenen Möglichkeiten sind &lt;em&gt;nur&lt;/em&gt; dann verfügbar, wenn sie in der Vorlage richtig konfiguriert wurden. Vergewissern Sie sich also, welche Plug-Ins in Ihrer Website verfügbar sind.
 
 &lt;strong&gt;Skript&lt;/strong&gt;
 Dies ist reserviert für benutzerdefinierte Zwecke, womit es Ihnen der Vorlagenprogrammierer erlauben kann, spezialisierte Inhalte einzufügen.
@@ -68,7 +68,7 @@ Damit fügen Sie eine Trennlinie ein.
 Dies ist reiner HTML-Inhalt. Alles, was hier eingegeben wird, wird ohne weitere Verarbeitung auf der Seite angezeigt.</label>
 			<label index="hidden.description">Ist diese Option aktiviert, wird das Element nicht auf der Seite angezeigt.</label>
 			<label index="starttime.description">Geben Sie das Datum ein, ab dem das Element sichtbar sein wird. Wie in allen Datumsfeldern können Sie &quot;d&quot; eingeben, um das aktuelle Datum zu erhalten und Sie können einfach Tage addieren oder subtrahieren: mit &quot;d+7&quot; etwa erhalten Sie das Datum in einer Woche.</label>
-			<label index="endtime.description">Geben Sie das Datum ein, ab dem das Element von der Web-Site verschwindet. Wie in allen Datumsfeldern können Sie &quot;d&quot; eingeben, um das aktuelle Datum zu erhalten und Sie können einfach Tage addieren oder subtrahieren: mit &quot;31-12-2004-7&quot; etwa erhalten Sie das Datum eine Woche vor Sylvester 2004.</label>
+			<label index="endtime.description">Geben Sie das Datum ein, ab dem das Element von der Website verschwindet. Wie in allen Datumsfeldern können Sie &quot;d&quot; eingeben, um das aktuelle Datum zu erhalten und Sie können einfach Tage addieren oder subtrahieren: mit &quot;31-12-2004-7&quot; etwa erhalten Sie das Datum eine Woche vor Sylvester 2004.</label>
 			<label index="fe_group.description">Wählen Sie eine Benutzergruppe aus, die als einzige befugt ist, das Element zu betrachten.</label>
 			<label index="fe_group.details">Die Optionen in diesem Auswahlfeld sind davon abhängig, welche Benutzergruppen erstellt wurden und für Sie verfügbar sind. Wenn Sie hier eine Benutzergruppe auswählen, wird das Element nicht mehr für Anwender sichtbar sein, die nicht angemeldet sind. Nur angemeldete Benutzer, die Mitglied der ausgewählten Gruppe sind, bekommen das Element zu sehen.
 
@@ -103,10 +103,10 @@ Einige Inhaltselemente zeigen die Überschrift standardmäßig nicht an. In solc
 			<label index="header_link.description">Macht aus der Überschrift auch einen Link. Geben Sie eine Seitennummer, E-Mail-Adresse oder URL ein.</label>
 			<label index="header_link.syntax">Wenn Sie eine ID-Nummer, z.B. &quot;51&quot; eingeben, verweist die Überschrift auf die Seite mit der id=51 &lt;em&gt;innerhalb&lt;/em&gt; Ihres TYPO3-Web-Auftritts.
 Wenn Sie eine E-Mail-Adresse, z.B.. &quot;name@my-domain.test&quot; eingeben, wird der Link auf diese E-Mail-Adresse zeigen.
-Wenn Sie eine URL oder Domäne eingeben, z.B. &quot;www.typo3.com&quot; oder &quot;http://www.my-domain.org&quot;, wird der Link auf diese externe Web-Site zeigen.</label>
+Wenn Sie eine URL oder Domäne eingeben, z.B. &quot;www.typo3.com&quot; oder &quot;http://www.my-domain.org&quot;, wird der Link auf diese externe Website zeigen.</label>
 			<label index="header_layout.description">Wählen Sie ein Layout für die Überschrift aus.</label>
 			<label index="header_layout.details">Wenn Sie &quot;Normal&quot; auswählen, wird das Standardlayout (eines der Layouts 1-5) verwendet. Der Standard ist in der Vorlage festgelegt.
-Alternativ können Sie auch ein Layout ausdrücklich (von 1 bis 5) festlegen, das in der Vorlage der Web-Site individuell konfiguriert ist.
+Alternativ können Sie auch ein Layout ausdrücklich (von 1 bis 5) festlegen, das in der Vorlage der Website individuell konfiguriert ist.
 Wenn Sie &quot;Verborgen&quot; auswählen, erscheint die Überschrift einfach nicht. Dies ist hilfreich, wenn Sie dem Element einen Namen geben wollen (um es im Backend zu identifizieren), auf der Seite aber keine Überschrift erscheinen soll.</label>
 			<label index="subheader.description">Geben Sie einen Untertitel ein. Dieser wird unterhalb der Überschrift angezeigt. Falls es sich um den Inhaltstyp &quot;Formular&quot; handelt, ist hier die E-Mail-Adresse des Empfängers einzutragen.</label>
 			<label index="subheader.details">Ein Untertitel wird nur für den Inhaltstyp &quot;Überschrift&quot; angezeigt.
@@ -117,8 +117,8 @@ Wenn Sie &quot;Verborgen&quot; auswählen, erscheint die Überschrift einfach ni
 
 Dieses Feld wird in fast allen Inhaltstypen verwendet, so dass beim Wechsel zwischen Typen der Inhalt dieses Feldes nicht verloren ist. Sie können den Typ gefahrlos umschalten und nötigenfalls jederzeit zum alten Typ zurückschalten.
 
-&lt;b&gt;Text&lt;/b&gt; und &lt;b&gt;Text mit Bild:&lt;/b&gt;
-Wenn Sie als Inhaltstyp &quot;Text&quot; oder &quot;Text mit Bild&quot; wählen, ist der Inhalt normaler Text. Jeder harte Zeilenumbruch bewirkt einen neuen Absatz, Sie können das spezielle TYPO3-Tag &amp;lt;LINK&amp;gt; zur Erzeugung eines Links verwenden. Sie können auch verschiedene HTML-Tags verwenden, mit Einschränkungen.
+&lt;b&gt;Text&lt;/b&gt; und &lt;b&gt;Text und Bilder:&lt;/b&gt;
+Wenn Sie als Inhaltstyp &quot;Text&quot; oder &quot;Text und Bilder&quot; wählen, ist der Inhalt normaler Text. Jeder harte Zeilenumbruch bewirkt einen neuen Absatz, Sie können das spezielle TYPO3-Tag &amp;lt;LINK&amp;gt; zur Erzeugung eines Links verwenden. Sie können auch verschiedene HTML-Tags verwenden, mit Einschränkungen.
 
 &lt;b&gt;Aufzählung:&lt;/b&gt;
 Wenn Sie den Typ &quot;Aufzählung&quot; ausgewählt haben, ist jede Zeile ein Listeneintrag.
@@ -131,7 +131,7 @@ Wenn der Typ &quot;Tabelle&quot; ist, so repräsentiert jede Zeile eine Tabellen
 Typen wie &quot;Skript&quot;, &quot;Formular&quot; und &quot;Multimedia&quot; benutzen das Feld für Parameter, die Sie dem Element übergeben können. Und der &quot;HTML&quot;-Typ akzeptiert jede Eingabe als reines HTML, das ohne weitere Bearbeitung auf der Web-Seite ausgegeben wird.
 
 &lt;strong&gt;Rich Text Editor:&lt;/strong&gt;
-Für die Typen &quot;Text&quot;, &quot;Text mit Bild&quot; und &quot;Rich Text&quot; wird der Rich-Text-Editor benutzt, vorausgesetzt, dass der Editor grundsätzlich aktiviert ist. Dann haben Sie eine mehr oder minder umfangreiche Werkzeugleiste zur Verfügung, um den Text zu formatieren. Alle Einschränkungen sind beabsichtigt: die &lt;b&gt;Vorlage&lt;/b&gt; ist in der Regel für Formatierung verantwortlich und so beschaffen, dass ein angemessenes, einheitliches Aussehen aller Seiten einer Web-Site garantiert ist. Beachten Sie auch, dass der Inhalt bezüglich HTML &quot;gereinigt&quot; wird, bevor er in die Datenbank geschrieben wird.
+Für die Typen &quot;Text&quot;, &quot;Text und Bilder&quot; und &quot;Rich Text&quot; wird der Rich-Text-Editor benutzt, vorausgesetzt, dass der Editor grundsätzlich aktiviert ist. Dann haben Sie eine mehr oder minder umfangreiche Werkzeugleiste zur Verfügung, um den Text zu formatieren. Alle Einschränkungen sind beabsichtigt: die &lt;b&gt;Vorlage&lt;/b&gt; ist in der Regel für Formatierung verantwortlich und so beschaffen, dass ein angemessenes, einheitliches Aussehen aller Seiten einer Website garantiert ist. Beachten Sie auch, dass der Inhalt bezüglich HTML &quot;gereinigt&quot; wird, bevor er in die Datenbank geschrieben wird.
 
 Ist der &quot;Rich-Text-Editor&quot; in Ihrem Browser nicht verfügbar, dann sehen Sie stattdessen einfaches HTML, dass Sie auch bearbeiten dürfen, wenn Sie die nötigen Kenntnisse haben. Wenden Sie sich bitte an ihre Administratoren, um, bei Bedarf, eine Grundausbildung in HTML oder den &quot;Rich-Text-Editor&quot; zu bekommen.
 
@@ -160,17 +160,17 @@ auf das Symbol rechts neben dem Eingabefeld.
 			<label index="text_align.description">Richtet den Text links, mittig oder rechts aus.</label>
 			<label index="text_align.details">Siehe Seiteninhalt / Schriftart für Kommentare.
 
-&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Web-Site CSS verwendet.</label>
+&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</label>
 			<label index="text_face.description">Wählen Sie eine Schriftart für den Text aus.</label>
 			<label index="text_face.details">&lt;strong&gt;Hinweis:&lt;/strong&gt; Diese Optionen sind nur für spezielle Designs gedacht. Das normale Design sollte stattdessen in der Vorlage definiert werden. Des weiteren sollten Sie diese Option &lt;em&gt;nicht&lt;/em&gt; einsetzen, wenn Ihre Vorlage auf Stylesheets (CSS) aufbaut.</label>
 			<label index="text_size.description">Wählen Sie eine Schriftgröße für den Text aus.</label>
 			<label index="text_size.details">Siehe Seiteninhalt / Schriftart für Kommentare.
 
-&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Web-Site CSS verwendet.</label>
+&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</label>
 			<label index="text_color.description">Wählen Sie eine Schriftfarbe für den Text aus.</label>
 			<label index="text_color.details">Siehe Seiteninhalt / Schriftart für Kommentare.
 
-&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Web-Site CSS verwendet.</label>
+&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</label>
 			<label index="text_properties.description">Wählen Sie zusätzliche Schriftattribute für den Text aus.</label>
 			<label index="text_properties.details">Diese Optionen wählen Schrifteigenschaften für den gesamten Text aus. Falls Sie nur einen Teil des Textes formatieren möchten, nutzen Sie besser die Formatierungsfunktionen des Rich-Text-Editors. Alternativ können Sie auch HTML-Tags verwenden:
 
@@ -180,12 +180,12 @@ auf das Symbol rechts neben dem Eingabefeld.
 
 Siehe Seiteninhalt / Schriftart für Kommentare.
 
-&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Web-Site CSS verwendet. Die Formatierung einzelner Textstellen, wie gezeigt, funktioniert dagegen in der Regel auch mit CSS.</label>
+&lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet. Die Formatierung einzelner Textstellen, wie gezeigt, funktioniert dagegen in der Regel auch mit CSS.</label>
 			<label index="image.description">Fügt ein oder mehrere Bilder ein.</label>
 			<label index="image.details">Sie können dem Element Bilder in fast beliebiger Anzahl hinzufügen. 
 Abhängig von Ihrer TYPO3-Konfiguration können Sie Bilder in fast jedem Format anfügen. Sie müssen sich insbesondere keine Gedanken über Größe oder Kompression machen, da diese Faktoren normalerweise TYPO3-intern gehandhabt werden.
 
-Wenn Sie &quot;Text mit Bild&quot; verwenden, ist es wichtig, die richtige Position des Bildblocks auszuwählen. Für diesen Zweck nutzen Sie die Positionsauswahl, die unterhalb des Textfelds gezeigt wird. Siehe Link zu Seiteninhalt&gt;Position unten.
+Wenn Sie &quot;Text und Bilder&quot; verwenden, ist es wichtig, die richtige Position des Bildblocks auszuwählen. Für diesen Zweck nutzen Sie die Positionsauswahl, die unterhalb des Textfelds gezeigt wird. Siehe Link zu Seiteninhalt&gt;Position unten.
 
 Sie können Bilder auch in mehreren Spalten anordnen und eine Option aktivieren, mit der Sie durch Anklicken des kleinen Bildes eine größere Version des Bildes ansehen können. Um nur ein paar Optionen zu nennen. 
 Sehr wahrscheinlich stehen Ihnen gar nicht alle Optionen zur Verfügung. Dies hängt von Ihren Berechtigungen im System ab.</label>
@@ -217,7 +217,7 @@ Einzelheiten zur Syntax erhalten Sie unten über Seiteninhalt &gt; Link.</label>
 			<label index="image_compression.description">Wählen Sie Qualitäts- und Kompressionsoptionen aus.</label>
 			<label index="imagecols.description">Wählen Sie die Anzahl der Spalten des Bilderblocks aus.</label>
 			<label index="imagecaption.description">Geben Sie eine Bildunterschrift ein.</label>
-			<label index="imagecaption.details">Normalerweise wird die Bildunterschrift unter dem gesamten Bilderblock angezeigt. Die Vorlage der Web-Site kann jedoch so programmiert werden, dass sie individuelle Bildunterschriften anzeigt, indem in den Vorlagenkonstanten &quot;styles.content.imgtext.captionSplit=1&quot; gesetzt wird. 
+			<label index="imagecaption.details">Normalerweise wird die Bildunterschrift unter dem gesamten Bilderblock angezeigt. Die Vorlage der Website kann jedoch so programmiert werden, dass sie individuelle Bildunterschriften anzeigt, indem in den Vorlagenkonstanten &quot;styles.content.imgtext.captionSplit=1&quot; gesetzt wird. 
 In diesem Fall entspricht jede Zeile der Bildunterschrift je eines Bildes.
 
 Das Feld wird außerdem vom Inhaltstypen &quot;Dateiverweise&quot; verwendet, wobei jede Zeile der Beschreibung einer Datei in der Liste entspricht.</label>

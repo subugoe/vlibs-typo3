@@ -13,7 +13,7 @@
 			<label index="status_directoryShouldAlsoBeWritable">Beachten Sie auch, dass das Verzeichnis beschreibbar sein sollte, wenn es existieren würde.</label>
 			<label index="status_directoryShouldBeWritable">%s sollte beschreibbar sein.</label>
 			<label index="status_directoryMustBeWritable">%s muss beschreibbar sein.</label>
-			<label index="status_remainingUpdates">Verbleibende Updates</label>
+			<label index="status_remainingUpdates">Verbleibende Aktualisierungen</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">

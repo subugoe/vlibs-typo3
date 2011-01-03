@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="cm.copyPage">Seite kopieren</label>
+			<label index="cm.cutPage">Seite ausschneiden</label>
+			<label index="cm.viewPage">Seite anzeigen</label>
+			<label index="cm.editPageProperties">Seiteneigenschaften bearbeiten</label>
+			<label index="cm.newPage">Seite hinzufügen</label>
+			<label index="cm.pasteIntoPage">Einfügen in</label>
+			<label index="cm.pasteAfterPage">Einfügen hinter</label>
+			<label index="cm.deletePage">Seite löschen</label>
+			<label index="cm.disablePage">Seite deaktivieren</label>
+			<label index="cm.enablePage">Seite aktivieren</label>
+			<label index="cm.info">Seiteninformationen</label>
+			<label index="cm.history">Seitenverlauf</label>
+			<label index="cm.tempMountPoint">Als Baumwurzel freigeben</label>
+			<label index="cm.branchActions">Zweigaktionen</label>
+			<label index="cm.copyPasteActions">Seitenaktionen</label>
+			<label index="cm.renameFolder">Umbenennen</label>
+			<label index="cm.uploadFilesToFolder">Dateien hochladen</label>
+			<label index="cm.createFolder">Neuen Ordner erstellen</label>
+			<label index="cm.folderInfo">Ordnerinformationen</label>
+			<label index="cm.copyFolder">Kopieren</label>
+			<label index="cm.cutFolder">Ausschneiden</label>
+			<label index="cm.pasteIntoFolder">Einfügen</label>
+			<label index="cm.deleteFolder">Löschen</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="cm.copyPage" type="integer">194507302</label>
+			<label index="cm.cutPage" type="integer">247333027</label>
+			<label index="cm.editPageProperties" type="integer">219852795</label>
+			<label index="cm.newPage" type="integer">49958925</label>
+			<label index="cm.pasteIntoPage" type="integer">46910930</label>
+			<label index="cm.pasteAfterPage" type="integer">48443221</label>
+			<label index="cm.deletePage" type="integer">220131191</label>
+			<label index="cm.disablePage" type="integer">227343877</label>
+			<label index="cm.enablePage" type="integer">241773733</label>
+			<label index="cm.renameFolder" type="integer">151300144</label>
+			<label index="cm.createFolder" type="integer">141331611</label>
+			<label index="cm.copyFolder" type="integer">100361047</label>
+			<label index="cm.cutFolder" type="integer">246625500</label>
+			<label index="cm.pasteIntoFolder" type="integer">57390677</label>
+			<label index="cm.deleteFolder" type="integer">254438473</label>
+			<label index="cm.viewPage" type="integer">21191950</label>
+			<label index="cm.info" type="integer">93477283</label>
+			<label index="cm.tempMountPoint" type="integer">10294929</label>
+			<label index="cm.copyPasteActions" type="integer">231283780</label>
+			<label index="cm.uploadFilesToFolder" type="integer">194920219</label>
+			<label index="cm.folderInfo" type="integer">100292365</label>
+			<label index="cm.branchActions" type="integer">257504834</label>
+			<label index="cm.history" type="integer">256119339</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="cm.copyPage">Copy page</label>
+			<label index="cm.cutPage">Cut page</label>
+			<label index="cm.editPageProperties">Edit page properties</label>
+			<label index="cm.newPage">Add page</label>
+			<label index="cm.pasteIntoPage">Paste into</label>
+			<label index="cm.pasteAfterPage">Paste after</label>
+			<label index="cm.deletePage">Delete page</label>
+			<label index="cm.disablePage">Disable page</label>
+			<label index="cm.enablePage">Enable page</label>
+			<label index="cm.renameFolder">Rename</label>
+			<label index="cm.createFolder">Create New Folder</label>
+			<label index="cm.copyFolder">Copy</label>
+			<label index="cm.cutFolder">Cut</label>
+			<label index="cm.pasteIntoFolder">Paste</label>
+			<label index="cm.deleteFolder">Delete</label>
+			<label index="cm.viewPage">View live page</label>
+			<label index="cm.info">Page infos</label>
+			<label index="cm.tempMountPoint">Mount as treeroot</label>
+			<label index="cm.copyPasteActions">Page Actions</label>
+			<label index="cm.uploadFilesToFolder">Upload Files</label>
+			<label index="cm.folderInfo">Folder Info</label>
+			<label index="cm.branchActions">Branch Actions</label>
+			<label index="cm.history">Page history</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

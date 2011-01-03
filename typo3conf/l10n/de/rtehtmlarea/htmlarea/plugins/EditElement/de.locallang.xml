@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="editElement">Element bearbeiten</label>
+			<label index="general">Allgemein</label>
+			<label index="identification">Identifikation</label>
+			<label index="id">Id</label>
+			<label index="title">Titel</label>
+			<label index="className">Klasse</label>
+			<label index="events">Events</label>
+			<label index="onkeydown">Onkeydown</label>
+			<label index="onkeypress">Onkeypress</label>
+			<label index="onkeyup">Onkeyup</label>
+			<label index="onclick">Onclick</label>
+			<label index="ondblclick">Ondblclick</label>
+			<label index="onmousedown">Onmousedown</label>
+			<label index="onmousemove">Onmousemove</label>
+			<label index="onmouseout">Onmouseout</label>
+			<label index="onmouseover">Onmouseover</label>
+			<label index="onmouseup">Onmouseup</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="general" type="integer">14366585</label>
+			<label index="editElement" type="integer">31852556</label>
+			<label index="id" type="integer">76589678</label>
+			<label index="identification" type="integer">209230660</label>
+			<label index="title" type="integer">192455458</label>
+			<label index="className" type="integer">163414322</label>
+			<label index="events" type="integer">142581619</label>
+			<label index="onkeydown" type="integer">138440745</label>
+			<label index="onkeypress" type="integer">38833920</label>
+			<label index="onkeyup" type="integer">146278932</label>
+			<label index="onclick" type="integer">126783848</label>
+			<label index="ondblclick" type="integer">182572633</label>
+			<label index="onmousedown" type="integer">66428660</label>
+			<label index="onmousemove" type="integer">254725932</label>
+			<label index="onmouseout" type="integer">38451618</label>
+			<label index="onmouseover" type="integer">74943888</label>
+			<label index="onmouseup" type="integer">212332994</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="general">General</label>
+			<label index="editElement">Edit element</label>
+			<label index="id">Id</label>
+			<label index="identification">Identification</label>
+			<label index="title">Title</label>
+			<label index="className">Class</label>
+			<label index="events">Events</label>
+			<label index="onkeydown">Onkeydown</label>
+			<label index="onkeypress">Onkeypress</label>
+			<label index="onkeyup">Onkeyup</label>
+			<label index="onclick">Onclick</label>
+			<label index="ondblclick">Ondblclick</label>
+			<label index="onmousedown">Onmousedown</label>
+			<label index="onmousemove">Onmousemove</label>
+			<label index="onmouseout">Onmouseout</label>
+			<label index="onmouseover">Onmouseover</label>
+			<label index="onmouseup">Onmouseup</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

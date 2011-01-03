@@ -17,6 +17,7 @@
 			<label index="target">Zielfenster</label>
 			<label index="class">CSS-Klasse</label>
 			<label index="title">Titel</label>
+			<label index="params">Zusätzliche Link-Parameter</label>
 			<label index="target_popUpWindow">In einem neuen Fenster öffnen</label>
 			<label index="target_popUpWindow_width">Breite</label>
 			<label index="target_popUpWindow_height">Höhe</label>
@@ -76,6 +77,7 @@
 			<label index="importSelection" type="integer">252560736</label>
 			<label index="folder" type="integer">185543575</label>
 			<label index="class" type="integer">203897131</label>
+			<label index="params" type="integer">9725274</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -115,6 +117,7 @@
 			<label index="importSelection">Import selection</label>
 			<label index="folder">Folder</label>
 			<label index="class">CSS-Class</label>
+			<label index="params">Additional link parameters</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

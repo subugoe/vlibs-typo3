@@ -3,7 +3,7 @@
 	<data type="array">
 		<languageKey index="de" type="array">
 			<label index="mlang_labels_tablabel">Template-Werkzeuge</label>
-			<label index="mlang_labels_tabdescr">Hier können Sie TypoScript-Templates verwalten. Diese Templates sind für das Erscheinungsbild Ihrer Web-Site verantwortlich. Das Modul bietet spezielle Funktionen wie einen Objekt-Browser, einen Konstanteneditor und einfache Bearbeitungsmöglichkeiten.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</label>
+			<label index="mlang_labels_tabdescr">Hier können Sie TypoScript-Templates verwalten. Diese Templates sind für das Erscheinungsbild Ihrer Website verantwortlich. Das Modul bietet spezielle Funktionen wie einen Objekt-Browser, einen Konstanteneditor und einfache Bearbeitungsmöglichkeiten.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</label>
 			<label index="mlang_tabs_tab">Template</label>
 		</languageKey>
 	</data>

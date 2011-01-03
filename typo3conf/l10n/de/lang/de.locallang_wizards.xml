@@ -71,6 +71,10 @@
 			<label index="colorpicker_fromList">HTML-Farbbezeichnung auswählen:</label>
 			<label index="colorpicker_black">SCHWARZ</label>
 			<label index="colorpicker_white">WEISS</label>
+			<label index="grid_windowTitle">Zellenname und Spaltennummer festlegen</label>
+			<label index="grid_labelName">Name</label>
+			<label index="grid_labelColumn">Spaltennummer</label>
+			<label index="grid_labelSave">In Zelle speichern</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -144,6 +148,10 @@
 			<label index="colorpicker_fromList" type="integer">120567904</label>
 			<label index="colorpicker_black" type="integer">9240594</label>
 			<label index="colorpicker_white" type="integer">190576167</label>
+			<label index="grid_labelName" type="integer">77521672</label>
+			<label index="grid_windowTitle" type="integer">156582309</label>
+			<label index="grid_labelColumn" type="integer">26371969</label>
+			<label index="grid_labelSave" type="integer">44708083</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -217,6 +225,10 @@
 			<label index="colorpicker_fromList">Select HTML color name:</label>
 			<label index="colorpicker_black">BLACK</label>
 			<label index="colorpicker_white">WHITE</label>
+			<label index="grid_labelName">Name</label>
+			<label index="grid_windowTitle">Set cell name and column number</label>
+			<label index="grid_labelColumn">Column Number</label>
+			<label index="grid_labelSave">Save to cell</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

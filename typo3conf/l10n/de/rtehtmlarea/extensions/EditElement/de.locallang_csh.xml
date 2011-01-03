@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle">htmlArea RTE &gt; Element bearbeiten</label>
+			<label index=".description">Der Dialog &quot;Element bearbeiten&quot; erlaubt es, die allgemeinen Attribute eines Elements im RTE zu bearbeiten.</label>
+			<label index=".details">Ein Klick auf das Symbol &quot;Element bearbeiten&quot; in der Menüleiste des RTE öffnet einen Dialog, mit dessen Hilfe Sie die allgemeinen Attribute eines Elements im RTE bearbeiten können.
+Der Dialog ermöglicht es, die Attribute id, title, class, lang und dir des Elements zu bearbeiten. Außerdem können Sie JavaScript-Handler für Tastatur- und Mausevents festlegen.</label>
+			<label index=".image_descr">&quot;Element bearbeiten&quot;-Symbol in der Menüleiste.</label>
+			<label index="id.alttitle">ID-Attribut</label>
+			<label index="id.description">Geben Sie den Wert des ID-Attribut des Elements an oder bearbeiten Sie ihn.</label>
+			<label index="title.alttitle">Title-Attribut</label>
+			<label index="title.description">Geben Sie den Wert des Title-Attribut des Elements an oder bearbeiten Sie ihn.</label>
+			<label index="className.alttitle">Class-Attribut</label>
+			<label index="className.description">Wählen Sie eine CSS-Klasse, die dem Elements zugeordnet werden soll.</label>
+			<label index="events.alttitle">Eventhandler</label>
+			<label index="events.description">Mit diesem Fieldset können Sie JavaScript-Handler für Tastatur- und Mausevents festlegen.</label>
+			<label index="onkeydown.alttitle">Eventhandler Onkeydown</label>
+			<label index="onkeydown.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn eine Taste gedrückt wird.</label>
+			<label index="onkeypress.alttitle">Eventhandler Onkeypress</label>
+			<label index="onkeypress.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn eine Taste gedrückt und losgelassen wird.</label>
+			<label index="onkeyup.alttitle">Eventhandler Onkeyup</label>
+			<label index="onkeyup.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn eine Taste gedrückt wird.</label>
+			<label index="onclick.alttitle">Eventhandler Onclick</label>
+			<label index="onclick.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn mit der Maus geklickt wird.</label>
+			<label index="ondblclick.alttitle">Eventhandler Ondblclick</label>
+			<label index="ondblclick.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn mit der Maus doppelt geklickt wird.</label>
+			<label index="onmousedown.alttitle">Eventhandler Onmousedown</label>
+			<label index="onmousedown.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn eine Maustaste gedrückt wird.</label>
+			<label index="onmousemove.alttitle">Eventhandler Onmousemove</label>
+			<label index="onmousemove.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn der Mauszeiger sich bewegt.</label>
+			<label index="onmouseout.alttitle">Eventhandler Onmouseout</label>
+			<label index="onmouseout.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn der Mauszeiger sich aus dem Element bewegt.</label>
+			<label index="onmouseover.alttitle">Eventhandler Onmouseover</label>
+			<label index="onmouseover.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn der Mauszeiger sich über das Element bewegt.</label>
+			<label index="onmouseup.alttitle">Eventhandler Onmouseup</label>
+			<label index="onmouseup.description">Geben Sie das Skript an oder bearbeiten Sie das Skript, das ausgeführt werden soll, wenn eine Maustaste losgelassen wird.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle" type="integer">240670184</label>
+			<label index=".description" type="integer">46465596</label>
+			<label index=".details" type="integer">138994446</label>
+			<label index=".image_descr" type="integer">77994605</label>
+			<label index="id.alttitle" type="integer">151669437</label>
+			<label index="id.description" type="integer">24558400</label>
+			<label index="title.alttitle" type="integer">118381200</label>
+			<label index="title.description" type="integer">63256774</label>
+			<label index="className.alttitle" type="integer">11423077</label>
+			<label index="className.description" type="integer">137573467</label>
+			<label index="events.alttitle" type="integer">206379721</label>
+			<label index="events.description" type="integer">42229078</label>
+			<label index="onkeydown.alttitle" type="integer">212594941</label>
+			<label index="onkeypress.alttitle" type="integer">194942986</label>
+			<label index="onkeyup.alttitle" type="integer">56007213</label>
+			<label index="onclick.alttitle" type="integer">9940395</label>
+			<label index="ondblclick.alttitle" type="integer">70104864</label>
+			<label index="onmousedown.alttitle" type="integer">266455548</label>
+			<label index="onmousemove.alttitle" type="integer">165952724</label>
+			<label index="onmouseout.alttitle" type="integer">224683023</label>
+			<label index="onmouseover.alttitle" type="integer">237460115</label>
+			<label index="onmouseup.alttitle" type="integer">142631719</label>
+			<label index="onkeydown.description" type="integer">255904611</label>
+			<label index="onkeypress.description" type="integer">1082124</label>
+			<label index="onkeyup.description" type="integer">1082124</label>
+			<label index="onclick.description" type="integer">44213194</label>
+			<label index="ondblclick.description" type="integer">111226971</label>
+			<label index="onmousedown.description" type="integer">47154091</label>
+			<label index="onmousemove.description" type="integer">45454176</label>
+			<label index="onmouseout.description" type="integer">107080468</label>
+			<label index="onmouseover.description" type="integer">75895546</label>
+			<label index="onmouseup.description" type="integer">192512979</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle">htmlArea RTE &gt; Edit Element</label>
+			<label index=".description">The &quot;Edit element&quot; dialogue allows to edit the general attributes of an element in the RTE editing area.</label>
+			<label index=".details">Clicking the &quot;Edit element&quot; icon in the RTE tool bar opens a dialogue that allows to edit the general attributes of an element.
+The dialogue allows to edit the id, title, class, lang and dir attributes of the element. It also allows to specify handlers for keyboard and mouse events.</label>
+			<label index=".image_descr">&quot;Edit element&quot; icon in the editor tool bar.</label>
+			<label index="id.alttitle">Id attribute</label>
+			<label index="id.description">Enter or edit the value of the id attribute of the element.</label>
+			<label index="title.alttitle">Title attribute</label>
+			<label index="title.description">Enter or edit the value of the title attribute of the element.</label>
+			<label index="className.alttitle">Class attribute</label>
+			<label index="className.description">Choose a CSS class selector to be assigned to the element.</label>
+			<label index="events.alttitle">Event handlers</label>
+			<label index="events.description">Using this fieldset, edit handlers for keyboard and mouse events.</label>
+			<label index="onkeydown.alttitle">Onkeydown event handler</label>
+			<label index="onkeypress.alttitle">Onkeypress event handler</label>
+			<label index="onkeyup.alttitle">Onkeyup event handler</label>
+			<label index="onclick.alttitle">Onclick event handler</label>
+			<label index="ondblclick.alttitle">Ondblclick event handler</label>
+			<label index="onmousedown.alttitle">Onmousedown event handler</label>
+			<label index="onmousemove.alttitle">Onmousemove event handler</label>
+			<label index="onmouseout.alttitle">Onmouseout event handler</label>
+			<label index="onmouseover.alttitle">Onmouseover event handler</label>
+			<label index="onmouseup.alttitle">Onmouseup event handler</label>
+			<label index="onkeydown.description">Enter or edit the script to be run when a key is pressed.</label>
+			<label index="onkeypress.description">Enter or edit the script to be run when a key is pressed and released.</label>
+			<label index="onkeyup.description">Enter or edit the script to be run when a key is pressed and released.</label>
+			<label index="onclick.description">Enter or edit the script to be run on a mouse click.</label>
+			<label index="ondblclick.description">Enter or edit the script to be run on a mouse double-click.</label>
+			<label index="onmousedown.description">Enter or edit the script to be run when a mouse button is pressed.</label>
+			<label index="onmousemove.description">Enter or edit the script to be run when the mouse pointer moves.</label>
+			<label index="onmouseout.description">Enter or edit the script to be run when mouse pointer moves out of the element.</label>
+			<label index="onmouseover.description">Enter or edit the script to be run when mouse pointer moves over the element.</label>
+			<label index="onmouseup.description">Enter or edit the script to be run when a mouse button is released.</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

@@ -4,7 +4,7 @@
 		<languageKey index="de" type="array">
 			<label index=".alttitle">TYPO3-Kern</label>
 			<label index=".description">TYPO3 ist ein Content-Management-System (CMS). Es basiert auf einem Kern mit Basisfunktionalitäten, zu denen insbesondere die Erweiterbarkeit gehört. Es stehen hunderte solcher Erweiterungen zur Verfügung, die in Kombination ein sehr leistungsfähiges System ergeben, welches zudem genau auf Ihre Bedürfnisse zugeschnitten werden kann.</label>
-			<label index=".details">Für die meisten Benutzer ist TYPO3 einfach ein CMS mit einem &quot;Backend&quot; zur Verwaltung von Inhalten und einem &quot;Frontend&quot;, das die Web-Site anzeigt.
+			<label index=".details">Für die meisten Benutzer ist TYPO3 einfach ein CMS mit einem &quot;Backend&quot; zur Verwaltung von Inhalten und einem &quot;Frontend&quot;, das die Website anzeigt.
 
 Aber der TYPO3-Kern ist eher ein Universalsystem zur Verwaltung von Datenbankinhalten. Der TYPO3-Kern stellt eine Sammlung von Mechanismen zur Verfügung, mit denen diese Inhalte gespeichert und wieder hervorgeholt, die Rechte von Benutzern verwaltet und die Inhalte bearbeitet werden können, Dateien hochgeladen, gespeichert und mit den Inhalten der Datenbank verknüpft werden können usw. Viele dieser Mechanismen stehen in Form von APIs (Application Programming Interface, Programmierschnittstelle) den &lt;em&gt;Erweiterungen&lt;/em&gt; zur Verfügung, welche dann die eigentliche Funktionalität bereitstellen.</label>
 			<label index=".image_descr">Anmeldebildschirm für das TYPO3-Backend</label>
@@ -22,14 +22,14 @@ Für einen anderen Backend-Benutzer können die Einträge andere sein. Diese Abb
 			<label index="menu_adminFunction.details">TYPO3 hat mehrere Cache (Puffer bzw. Zwischenspeicher) -Systeme:
 
 &lt;strong&gt;Datenbank-Cache&lt;/strong&gt;
-Der zentrale Cache ist die Datenbank-Cache-Tabelle, &quot;cache_hash&quot;, die gelegentlich ausdrücklich geleert werden muss, wenn verschiedene zentrale Stellen des Systems und/oder seiner Konfiguration geändert wurden. Dieser Cache kann mit &quot;Alle Caches löschen&quot; geleert werden. Danach wird jede neu angeforderte Seite der Web-Site aus der Datenbank neu erzeugt, anstatt sie aus dem Cache auszuliefern. Mit dieser Operation werden auch &lt;em&gt;alle&lt;/em&gt; Datenbank-Tabellen, die als (entleerbare) Cache-Tabellen markiert sind, geleert.
+Der zentrale Cache ist die Datenbank-Cache-Tabelle, &quot;cache_hash&quot;, die gelegentlich ausdrücklich geleert werden muss, wenn verschiedene zentrale Stellen des Systems und/oder seiner Konfiguration geändert wurden. Dieser Cache kann mit &quot;Alle Caches löschen&quot; geleert werden. Danach wird jede neu angeforderte Seite der Website aus der Datenbank neu erzeugt, anstatt sie aus dem Cache auszuliefern. Mit dieser Operation werden auch &lt;em&gt;alle&lt;/em&gt; Datenbank-Tabellen, die als (entleerbare) Cache-Tabellen markiert sind, geleert.
 
 &lt;strong&gt;PHP-Konfigurationsdateien von Erweiterungen&lt;/strong&gt;
 TYPO3 speichert auch die Konfigurationsdateien der Erweiterungen (&quot;ext_localconf.php&quot; und &quot;ext_tables.php&quot;) in einem Cache. Diese Dateien werden von allen installierten Erweiterungen gelesen und aneinandergereiht im Ordner typo3conf/ abgelegt, unter den Namen &quot;temp_CACHED_*.php&quot;. Manchmal ist es nötig, diese Dateien zu entfernen, so dass sie von TYPO3 aus den Originalen neu erzeugt werden. Dies löst man über &quot;Konfigurations-Cache löschen&quot; aus.
 
-&lt;strong&gt;Hinweis:&lt;/strong&gt; Leeren Sie die Caches nicht wahllos, denn jedes Löschen beeinflusst die Leistungsfähigkeit Ihrer Web-Site für eine Weile negativ. Die Seiten im Zwischenspeicher müssen neu aufgebaut werden, was deutlich mehr Zeit kostet, als die Seiten einfach aus dem Cache auszuliefern. Führen Sie also Wartungsarbeiten, die das Leeren der Caches erfordern, nicht gerade zu den Spitzenzeiten der Zugriffe auf Ihre Web-Site durch. Unter schwerer Last könnte Ihr Auftritt sonst eine Weile lang erscheinen, als ob er nicht erreichbar sei.</label>
+&lt;strong&gt;Hinweis:&lt;/strong&gt; Leeren Sie die Caches nicht wahllos, denn jedes Löschen beeinflusst die Leistungsfähigkeit Ihrer Website für eine Weile negativ. Die Seiten im Zwischenspeicher müssen neu aufgebaut werden, was deutlich mehr Zeit kostet, als die Seiten einfach aus dem Cache auszuliefern. Führen Sie also Wartungsarbeiten, die das Leeren der Caches erfordern, nicht gerade zu den Spitzenzeiten der Zugriffe auf Ihre Website durch. Unter schwerer Last könnte Ihr Auftritt sonst eine Weile lang erscheinen, als ob er nicht erreichbar sei.</label>
 			<label index="pagetree.alttitle">Der Seitenbaum</label>
-			<label index="pagetree.description">Dies ist die hierarchische Anordnung von Seiten in TYPO3. Typischerweise entspricht der hier sichtbare Seitenbaum direkt der Navigation der Web-Site.</label>
+			<label index="pagetree.description">Dies ist die hierarchische Anordnung von Seiten in TYPO3. Typischerweise entspricht der hier sichtbare Seitenbaum direkt der Navigation der Website.</label>
 			<label index="pagetree.details">Der Seitenbaum hat auf den ersten Blick Ähnlichkeit mit einem Dateisystem. Es gibt allerdings einen entscheidenden Unterschied: Ordner in einem Dateisystem können nur andere Ordner oder Dateien enthalten, aber keine &lt;em&gt;Inhalte&lt;/em&gt;. Diese sind in den Dateien des Dateisystems enthalten. Aber Dateien können &lt;em&gt;keine&lt;/em&gt; anderen Dateien oder Ordner enthalten.
 
 Im Seitenbaum existiert diese Trennung nicht: &lt;em&gt;jede&lt;/em&gt; Seite des Baums besitzt normalerweise Inhalt(e), kann aber jederzeit auch gleichzeitig die Rolle eines Ordners übernehmen: sie kann Kindseiten haben.
@@ -83,7 +83,7 @@ Hier ist der Modus &quot;einzelne Tabelle&quot; für die Tabelle &quot;Seiteninh
 			<label index="list_module_root.details">Nur Datensätze ganz bestimmter Tabellen können in der Wurzel des Seitenbaums angelegt werden. Dazu gehören Backend-Benutzer und -Gruppen, Verzeichnisfreigaben, Sprachendatensätze usw. Es lassen sich aber keine Inhaltselemente oder Frontend-Benutzer in der Wurzel anlegen. Andersherum gilt ähnliches, so können Sie etwa Backend-Benutzer nicht irgendwo im Seitenbaum anlegen.
 
 Datensätze in der Wurzel des Seitenbaums haben &quot;globale&quot; Bedeutung für die ganze TYPO3-Installation und sind daher irgendwo anders im Seitenbaum nicht sinnvoll.</label>
-			<label index="list_module_root.image_descr">Beispiele für Datensätze in der Wurzel des Seitenbaums: Backend-Benutzer, -Gruppen, Verzeichnisfreigaben und Sprachen der Web-Site.
+			<label index="list_module_root.image_descr">Beispiele für Datensätze in der Wurzel des Seitenbaums: Backend-Benutzer, -Gruppen, Verzeichnisfreigaben und Sprachen der Website.
 Wenn Administratoren neue Datensätze in der Wurzel anlegen wollen, dann sehen sie eine beschränkte Auswahl an Datensatztypen. Das spiegelt die Tabellen wieder, die in der Wurzel erlaubt sind.</label>
 			<label index="list_clipboard.alttitle">TYPO3-Zwischenablage</label>
 			<label index="list_clipboard.description">Die Zwischenablage ist eine interne Datenbank, in der Datensätze und Dateien zeitweise &quot;gespeichert&quot; werden können. Normalerweise wird die Zwischenablage zum internen Kopieren/Ausschneiden/Einfügen eines oder mehrerer Elemente verwendet.</label>
@@ -91,7 +91,7 @@ Wenn Administratoren neue Datensätze in der Wurzel anlegen wollen, dann sehen s
 			<label index="list_searchbox.alttitle">Suchformular</label>
 			<label index="list_searchbox.description">Mit Hilfe dieses Suchformulars können Sie eine Volltextsuche in allen Datensätzen auf dieser Seite durchführen. Sie können auch rekursiv in Unterseiten suchen, indem Sie im Auswahlfeld zur Rechten die Anzahl der zu durchsuchenden Ebenen auswählen.</label>
 			<label index="list_options.alttitle">Optionen des Moduls &quot;Liste&quot;</label>
-			<label index="list_options.description">Ist der Modus &quot;Erweiterte Ansicht&quot; aktiviert, so werden zusätzliche Bedienelemente für jeden Datensatz angezeigt. Aktivieren Sie die &quot;Zwischenablage&quot;, um sie und den Inhalt anzuzeigen.</label>
+			<label index="list_options.description">Aktivieren Sie weitere Optionen wie den Modus &quot;Erweiterte Ansicht&quot;, der Ihnen zusätzliche Bedienelemente für jeden Datensatz anzeigt, oder die &quot;Zwischenablage&quot;, um sie und den Inhalt anzuzeigen.</label>
 			<label index="list_options.image_descr">Die Markierungsfelder.
 Durch Auswahl von &quot;Erweiterte Ansicht&quot; werden die Bedienelemente in den Datensatzlisten aktiviert.</label>
 			<label index="new_regular.alttitle">Neuen Datensatz erstellen</label>
@@ -152,7 +152,7 @@ Die Felder der Formulare haben unterschiedliche Prioritäten, so dass Felder, di
 Im Modul &quot;Web &gt; Liste&quot; können Sie das gleichzeitige Bearbeiten mehrerer Datensätze aktivieren. Wählen Sie dazu eine Tabelle aus (&quot;Nur diese Tabelle anzeigen&quot;) und aktivieren Sie eine oder mehrere Felder zur Ansicht (&quot;Felder setzen&quot;; Details siehe &quot;Web &gt; Liste&quot;). Sie sehen dann über jeder Felderspalte Symbole, mit denen Sie den Wert dieses Feldes in den Datensätzen der Seite bearbeiten können. Möglicherweise ist das gewählte Feld nicht für alle Datensätze verfügbar.
 
 &lt;b&gt;Frontend-Bearbeitung&lt;/b&gt;
-Eine andere Möglichkeit, Datensätze in TYPO3 zu bearbeiten, ist die Benutzung des Web-Site-Frontends. Abhängig von Ihren Benutzerrechten sehen Sie, wenn Sie angemeldet sind, kleine Stiftsymbole im Frontend. Wenn Sie auf diese klicken, erscheint ein Formular, mit dessen Hilfe Sie den jeweiligen Inhalt bearbeiten können.
+Eine andere Möglichkeit, Datensätze in TYPO3 zu bearbeiten, ist die Benutzung des Website-Frontends. Abhängig von Ihren Benutzerrechten sehen Sie, wenn Sie angemeldet sind, kleine Stiftsymbole im Frontend. Wenn Sie auf diese klicken, erscheint ein Formular, mit dessen Hilfe Sie den jeweiligen Inhalt bearbeiten können.
 
 &lt;b&gt;Individualisierung der Formulare [für Administratoren]&lt;/b&gt;
 Sie können die Formulare (TCEForms) individualisieren, indem Sie Benutzer-TSconfig oder Seiten-TSconfig verwenden. Siehe nachstehende Links.</label>
@@ -274,11 +274,17 @@ Das Bearbeiten von Seiten über eine ID ist über den Verweisrahmen sehr einfach
 Bestätigen Sie die Erstellung des Verweises. Es ist nicht gefährlich, sondern nur lästig Verweise wieder aufzuräumen, die Sie gegen Ihren Willen erstellt haben. Klicken Sie einfach auf &quot;OK&quot;.
 Wenn Sie auf &quot;OK&quot; geklickt haben, sollten Sie sofort sehen, dass das Menü sich aktualisiert und ein neues Symbol (das Modul-Symbol) erscheint. Wenn Sie dieses Symbol anklicken, springen Sie zu der Seite, auf der Sie den Verweis erstellt haben!
 Sie können Verweise umbenennen, Sie können sie gruppieren und gemeinsam benutzen. Wenn Sie einen Verweis bearbeiten möchten, wählen Sie das &quot;Bearbeiten&quot;-Symbol. Sie können dann den Namen des Verweises und die Gruppe, in der er erscheinen soll, verändern. Um einen Verweis zu löschen, klicken Sie auf das &quot;Löschen&quot;-Symbol und bestätigen Sie das Löschen durch einen Klick auf &quot;OK&quot;.</label>
+			<label index="bookmarks.alttitle">Backend-Lesezeichen</label>
+			<label index="bookmarks.description">Sie können Lesezeichen zu Modulen in TYPO3 recht einfach erstellen. Der Vorteil ist, dass Sie zwischen Ansichten in TYPO3 mit &lt;em&gt;nur einem&lt;/em&gt; Klick anstatt mit mehreren Klicks durch mehrere Module wechseln können. Sie können sogar eine Seiten- oder Datensatz-ID angeben, die Sie bearbeiten möchten. Zudem können Sie Datensätze durchsuchen.</label>
+			<label index="bookmarks.details">Um ein Lesezeichen erstellen zu können, muss das Modul, auf das das Lesezeichen zeigen soll, dies unterstützen. Sie können dies am oberen Rand des Moduls erkennen: Wenn sich dort ein kleines Sternchen-Symbol befindet, können Sie es anklicken, um ein Lesezeichen zu erstellen.</label>
+			<label index="bookmarks.image_descr">Um ein Lesezeichen zu einer Seite zu erstellen, klicken Sie auf das Sternchen-Symbol, das Sie normalerweise oben auf der Seite finden.
+Sie müssen das Anlegen des Lesezeichens bestätigen. Dies ist nichts Gefährliches - es schützt Sie aber davor, Lesezeichen aus Versehen und gegen Ihren Willen anzulegen. Klicken Sie auf &quot;OK&quot;. Sie sollten dann direkt sehen, wie das Lesezeichen-Symbol in der oberen Menüleiste neulädt. Wenn Sie danach das Lesezeichen-Menü öffnen, ist der neue Eintrag vorhanden. Wenn Sie nun diesen Eintrag anklicken, springen Sie direkt zu der Seite, von der aus Sie das Lesezeichen angelegt haben!
+Sie können Lesezeichen umbenennen, Sie können sie gruppieren und sogar mit anderen Benutzern teilen. Wenn Sie ein Lesezeichen bearbeiten oder löschen möchten, klicken Sie auf &quot;Bearbeiten&quot; und dann auf das Lesezeichen-Menü.</label>
 			<label index="workspaceSelector.alttitle">Arbeitsumgebungsauswahl</label>
 			<label index="workspaceSelector.description">Mit Hilfe dieses Auswahlfeldes kann zwischen den verfügbaren Arbeitsumgebungen umgeschaltet werden. Beim Umschalten zu einer anderen Arbeitsumgebung wird das Backend vollständig neu geladen.</label>
 			<label index="workspaceSelector.details">In TYPO3 gbt es zwei grundlegende Typen von Arbeitsumgebungen: Die &quot;Live&quot;-Arbeitsumgebung und eine Reihe von &quot;Entwurf&quot;-Arbeitsumgebungen.
 Bei der Arbeit in der Live-Arbeitsumgebung wirken sich alle vorgenommenen Änderungen sofort aus. Dies ist die voreingestellte und traditionelle Arbeitsweise mit TYPO3.
-Bei der Arbeit in der voreingestellten Entwurfsarbeitsumgebung oder benutzerdefinierten Arbeitsumgebungen werden Änderungen nicht auf die online verfügbare Web-Site angewendet, sondern als neue Versionen der editierbaren Elemente angelegt. Da die Versionierung unter TYPO3 nicht für alle Elemente verfügbar ist, unterliegen die Arbeitsumgebungen hinsichtlich der Bearbeitungsmöglichkeiten gewissen Einschränkungen: Es können nur Elemente bearbeitet werden, für die eine Unterstützung der Versionierung vorhanden ist, alle anderen besitzen Nur-Lesen-Status.
+Bei der Arbeit in der voreingestellten Entwurfsarbeitsumgebung oder benutzerdefinierten Arbeitsumgebungen werden Änderungen nicht auf die online verfügbare Website angewendet, sondern als neue Versionen der editierbaren Elemente angelegt. Da die Versionierung unter TYPO3 nicht für alle Elemente verfügbar ist, unterliegen die Arbeitsumgebungen hinsichtlich der Bearbeitungsmöglichkeiten gewissen Einschränkungen: Es können nur Elemente bearbeitet werden, für die eine Unterstützung der Versionierung vorhanden ist, alle anderen besitzen Nur-Lesen-Status.
 Für die Entwurfsarbeitsumgebungen ist eine Vorschaufunktion im Frontend verfügbar. Wenn die Arbeiten in einer Arbeitsumgebung abgeschlossen wurden, können sie veröffentlicht und so in die Live-Arbeitsumgebung übertragen werden.</label>
 		</languageKey>
 	</data>
@@ -339,7 +345,7 @@ Für die Entwurfsarbeitsumgebungen ist eine Vorschaufunktion im Frontend verfüg
 			<label index="list_clipboard.image_descr" type="integer">219041011</label>
 			<label index="list_searchbox.description" type="integer">111887727</label>
 			<label index="list_options.alttitle" type="integer">40663100</label>
-			<label index="list_options.description" type="integer">169912182</label>
+			<label index="list_options.description" type="integer">163792827</label>
 			<label index="list_options.image_descr" type="integer">162865293</label>
 			<label index="TCEforms.description" type="integer">40752568</label>
 			<label index="TCEforms_docSelector.description" type="integer">146094255</label>
@@ -414,6 +420,10 @@ Für die Entwurfsarbeitsumgebungen ist eine Vorschaufunktion im Frontend verfüg
 			<label index="wizard_forms_wiz.details" type="integer">165425497</label>
 			<label index="wizard_forms_wiz.image_descr" type="integer">243599301</label>
 			<label index="shortcuts.details" type="integer">88989112</label>
+			<label index="bookmarks.alttitle" type="integer">185396903</label>
+			<label index="bookmarks.description" type="integer">170597338</label>
+			<label index="bookmarks.details" type="integer">254498005</label>
+			<label index="bookmarks.image_descr" type="integer">261788932</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -516,7 +526,7 @@ When &quot;Admin&quot;-users wants to create a new record in the page tree root 
 If you select one of the numeric clipboard pads you will be able to store more than a single element on the clipboard at a time. In the record listings you will then see checkboxes next to the elements by which you can select/deselect elements for the clipboard.</label>
 			<label index="list_searchbox.description">By this search box you can do a free text search in all the listed records. You can also search recursively in sub-pages by selecting a number of levels to search in the selector box to the right of the search field.</label>
 			<label index="list_options.alttitle">List module options</label>
-			<label index="list_options.description">Enable the &quot;Extended view&quot; mode to see additional control buttons for each record in the listing. Enable the &quot;Clipboard&quot; to see the clipboard and its content.</label>
+			<label index="list_options.description">Enable additional options like the &quot;Extended view&quot; mode to see additional control buttons for each record in the listing or the &quot;Clipboard&quot; to see the clipboard and its content.</label>
 			<label index="list_options.image_descr">The options checkboxes.
 Selecting &quot;Extended view&quot; will enable the control buttons in the record lists.</label>
 			<label index="TCEforms.description">All records in TYPO3 is edited through a standardized form interface like the one you see here. No matter if you edit pages, content elements, guestbook items or user records you will use the same familiar interface.</label>
@@ -685,6 +695,13 @@ In the shortcut frame you can also enter a page id to edit in the &quot;Edit Pag
 Only &quot;Admin&quot;-users can access the shortcut frame in TYPO3 by default. Other users must have it enabled by the User TSconfig option, &quot;options.shortcutFrame = 1&quot;. See link below for details (Admins).
 
 Editing pages from an id is easy with the shortcut frame. Simply enter an integer number and that page will be loaded for editing. If you enter &quot;[table]:[id]&quot; then it will try to edit a record from the [table] table, for example &quot;tt_content:123&quot; will look for content element 123 (for admins only). Finally, if you enter a string that doesn't match a page or other record the Web&gt;List module will be invoked doing a search in the first database mount you have.</label>
+			<label index="bookmarks.alttitle">Backend Bookmarks</label>
+			<label index="bookmarks.description">You can create bookmarks to modules in TYPO3 quite easily. The treat is that you can jump between screens in TYPO3 in &lt;em&gt;one&lt;/em&gt; click rather than multiple clicks through backend modules etc. The frame also contains a field for entering a page or record id to edit or just search records.</label>
+			<label index="bookmarks.details">In order to create a bookmark it must be supported by the module you want to create the bookmark to. Whether bookmarks are supported can be seen in the top of a module. If there is a small star icon you can click it to create the bookmark.</label>
+			<label index="bookmarks.image_descr">To create a bookmark to a page, just click the star icon usually found in the top of pages.
+You will have to confirm the creation of the bookmark. It is nothing dangerous - only annoying to clean up if you happen to create bookmarks against your own will. Just answer &quot;OK&quot; here.
+When you answer &quot;OK&quot; you should immediately see the bookmark icon in the toolbar reloading and, after opening the menu, the new entry appear. If you click this entry, you will now jump to the page you created the bookmark from!
+You can name bookmarks, you can even group them and share them. If you want to edit or delete a bookmark you select the &quot;Edit&quot; checkbox and then click the bookmark icon.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

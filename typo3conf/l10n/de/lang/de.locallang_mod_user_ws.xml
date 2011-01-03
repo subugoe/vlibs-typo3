@@ -3,7 +3,7 @@
 	<data type="array">
 		<languageKey index="de" type="array">
 			<label index="mlang_labels_tablabel">Arbeitsumgebungsübersicht</label>
-			<label index="mlang_labels_tabdescr">Die Arbeitsumgebungsübersicht zeigt Änderungen, die in einer Arbeitsumgebung vorgenommen wurden. Mit den entsprechenden Berechtigungen können Sie die Änderungen an der Web-Site von hier aus veröffentlichen.</label>
+			<label index="mlang_labels_tabdescr">Die Arbeitsumgebungsübersicht zeigt Änderungen, die in einer Arbeitsumgebung vorgenommen wurden. Mit den entsprechenden Berechtigungen können Sie die Änderungen an der Website von hier aus veröffentlichen.</label>
 			<label index="mlang_tabs_tab">Arbeitsumgebung</label>
 			<label index="title">Arbeitsumgebungsverwaltung</label>
 			<label index="menuitem_review">Begutachten und veröffentlichen</label>
@@ -15,7 +15,7 @@
 			<label index="diff_show_inline">Untersch. in Zeile anzeigen</label>
 			<label index="diff_show_popup">Untersch.-PopUp (Zweige) anzeigen</label>
 			<label index="label_errors">Fehler:</label>
-			<label index="workspace_description_live">Die LIVE-Arbeitsumgebung ermöglicht Änderungen, die sich direkt auf die Web-Site auswirken. Trotzdem kann eine Versionierung in der LIVE-Arbeitsumgebung angelegt werden. Dieser Überblick zeigt die Entwurfs- und Archivversionen der einzelnen Arbeitsumgebungen, inkl. der LIVE-Arbeitsumgebung.</label>
+			<label index="workspace_description_live">Die LIVE-Arbeitsumgebung ermöglicht Änderungen, die sich direkt auf die Website auswirken. Trotzdem kann eine Versionierung in der LIVE-Arbeitsumgebung angelegt werden. Dieser Überblick zeigt die Entwurfs- und Archivversionen der einzelnen Arbeitsumgebungen, inkl. der LIVE-Arbeitsumgebung.</label>
 			<label index="workspace_description_draft">In der Entwurfsarbeitsumgebung werden alle Veränderungen als neue Versionen des Live-Inhalts angelegt. Für Änderungen gibt es eine Vorschau, sie können begutachtet und gegebenenfalls veröffentlicht werden.</label>
 			<label index="workspace_description_no_access">Sie haben auf keine Arbeitsumgebung Zugriff, was ein möglicherweise ein Irrtum ist. Bitte setzen Sie sich mit dem Administrator in Verbindung.</label>
 			<label index="edit_workspace_no_permission">Sie haben keine Berechtigung, diese Arbeitsumgebung zu bearbeiten. Nur Administratoren und Eigentümer einer Arbeitsumgebung können ihre Einstellungen ändern.</label>

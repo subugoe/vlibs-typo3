@@ -7,8 +7,8 @@
 			<label index="fileChanged">Datei geändert</label>
 			<label index="resourceUpdated">Ressource '%s' wurde aktualisiert.</label>
 			<label index="templateInformation">Template-Informationen:</label>
-			<label index="title">Titel:</label>
-			<label index="sitetitle">Seitentitel:</label>
+			<label index="title">Titel des Templates:</label>
+			<label index="sitetitle">Titel der Website:</label>
 			<label index="description">Beschreibung:</label>
 			<label index="allowedExtensions">Erlaubte Erweiterungen:</label>
 			<label index="maxFilesize">Maximale Dateigröße:</label>

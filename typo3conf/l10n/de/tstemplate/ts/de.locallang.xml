@@ -10,7 +10,7 @@
 			<label index="viewTemplates">Anzeige der Templates von</label>
 			<label index="pageName">Seitenname</label>
 			<label index="templates">Anzahl Templates</label>
-			<label index="isRoot">Ist Anfang der Web-Site</label>
+			<label index="isRoot">Ist Anfang der Website</label>
 			<label index="isExt">Ist Erweiterung</label>
 			<label index="overview">Dies ist ein Überblick über die Seiten in der Datenbank, die ein oder mehrere Templates enthalten. Klicken Sie auf einen Seitentitel, um zu der Seite zu gehen.</label>
 			<label index="areYouSure">Vorgang tatsächlich durchführen?</label>
@@ -18,17 +18,17 @@
 			<label index="noTemplateDescription">Es gibt kein Template auf dieser Seite!</label>
 			<label index="createTemplate">Erstellen Sie zuerst ein Template, um die Konstanten zu bearbeiten!</label>
 			<label index="createTemplateToEditConfiguration">Sie müssen unten ein Template erstellen, um Ihre Konfiguration zu bearbeiten.</label>
-			<label index="newWebsite">Neue Web-Site erstellen</label>
-			<label index="newWebsiteDescription">Wenn diese Seite die Wurzel einer neuen Web-Site sein soll, klicken Sie auf die Schaltfläche unten. Sie können optional ein Standard-Template als Grundlage auswählen:</label>
-			<label index="newWebsiteAction">Template für neue Seite erstellen</label>
+			<label index="newWebsite">Neue Website erstellen</label>
+			<label index="newWebsiteDescription">Wenn diese Seite die Wurzel einer neuen Website sein soll, klicken Sie auf die Schaltfläche unten. Sie können optional ein Standard-Template als Grundlage auswählen:</label>
+			<label index="newWebsiteAction">Template für neue Website erstellen</label>
 			<label index="extTemplate">Erweiterungs-Template erstellen</label>
 			<label index="extTemplateDescription">Ein Erweiterungs-Template erlaubt Ihnen, TypoScript-Werte anzugeben, die nur diese Seite und deren Unterseiten betreffen.</label>
 			<label index="extTemplateAction">Klicken Sie hier, um ein Erweiterungs-Template zu erstellen.</label>
 			<label index="goToClosest">Zur nächsten Seite mit Template gehen</label>
 			<label index="goToClosestDescription">Das nächste Template ist auf der Seite '%s' (UID %s).</label>
 			<label index="goToClosestAction">Klicken Sie hier, um dieses Template anzuzeigen.</label>
-			<label index="titleNewSiteStandard">NEUE SEITE, basierend auf Standard</label>
-			<label index="titleNewSite">NEUE SEITE</label>
+			<label index="titleNewSiteStandard">NEUE WEBSITE, basierend auf Standard</label>
+			<label index="titleNewSite">NEUE WEBSITE</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">

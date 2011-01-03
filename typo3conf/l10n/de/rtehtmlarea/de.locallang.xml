@@ -14,6 +14,11 @@
 			<label index="Address">Adresse</label>
 			<label index="No font">Keine Schriftart</label>
 			<label index="No size">Keine Schriftgröße</label>
+			<label index="rteSettings">Rich-Text-Editor</label>
+			<label index="rteWidth">Breite des RTE in Pixel oder Prozent</label>
+			<label index="rteHeight">Höhe des RTE in Pixel oder Prozent</label>
+			<label index="rteResize">Größe des RTE veränderlich machen</label>
+			<label index="rteMaxHeight">Maximale Höhe des in der Größe veränderlichen RTE</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -30,6 +35,11 @@
 			<label index="Address" type="integer">232242979</label>
 			<label index="No font" type="integer">69479293</label>
 			<label index="No size" type="integer">259700094</label>
+			<label index="rteWidth" type="integer">214588302</label>
+			<label index="rteHeight" type="integer">40016432</label>
+			<label index="rteResize" type="integer">70735116</label>
+			<label index="rteMaxHeight" type="integer">225874039</label>
+			<label index="rteSettings" type="integer">4347180</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -46,6 +56,11 @@
 			<label index="Address">Address</label>
 			<label index="No font">No font</label>
 			<label index="No size">No font size</label>
+			<label index="rteWidth">Width of the RTE in pixels or percentage</label>
+			<label index="rteHeight">Height of the RTE in pixels</label>
+			<label index="rteResize">Make RTE resizable</label>
+			<label index="rteMaxHeight">Maximal height of resizable RTE in pixels</label>
+			<label index="rteSettings">Rich Text Editor</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

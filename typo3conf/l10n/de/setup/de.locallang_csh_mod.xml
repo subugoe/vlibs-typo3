@@ -41,7 +41,7 @@ Das &quot;Symbol&quot;-Menü. Wie Sie sehen: Sie müssen sich schon sehr gut mit
 			<label index="option_copyLevels.description">Mit Hilfe dieser Option können Sie festlegen, dass beim Kopieren von Seiten deren Unterseiten ebenfalls einbezogen werden. Der hier festgelegte Wert bestimmt die Anzahl der Ebenen unterhalb der ausgewählten Seite, die beim Kopieren mit eingeschlossen werden sollen.</label>
 			<label index="option_recursiveDelete.alttitle">Rekursives Löschen</label>
 			<label index="option_recursiveDelete.description">Im Backend können Sie normalerweise keine Seiten löschen, zu denen noch Unterseiten existieren. Mit dieser Option können Sie dieses Verhalten deaktivieren.
-VORSICHT: Mit dieser Option können Sie - auch aus Versehen - eine ganze Web-Site mit nur einem Mausklick löschen! Sie sollten daher genau überlegen, ob Sie diese Sicherheitsmaßnahme deaktivieren.</label>
+VORSICHT: Mit dieser Option können Sie - auch aus Versehen - eine ganze Website mit nur einem Mausklick löschen! Sie sollten daher genau überlegen, ob Sie diese Sicherheitsmaßnahme deaktivieren.</label>
 			<label index="option_recursiveDelete.details">Wenn Sie vorhaben, einen großen Seitenbaum mit vielen Seiten zu löschen, sollten Sie sich über die Auswirkungen auf die Systemleistung im Klaren sein. Aufgrund der vielen benötigten Datenbankoperationen in so einem Fall könnte es durchaus sein, dass es in PHP noch vor Beendigung der Operation zu einem Timeout kommt. Dadurch kann es zu unvorhersehbaren Auswirkungen auf das System kommen!</label>
 			<label index="option_edit_wideDocument.alttitle">Breiten Hintergrund anzeigen</label>
 			<label index="option_edit_wideDocument.description">Mit dieser Option können Sie die TYPO3-Eingabeformulare um rund 50% verbreitern.</label>

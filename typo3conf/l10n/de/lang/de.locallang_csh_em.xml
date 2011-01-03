@@ -8,7 +8,7 @@
 
 &quot;Erweiterung&quot; ist dabei ein Oberbegriff für &quot;Plug-In&quot; und &quot;Modul&quot;:
 
-Ein &lt;b&gt;Plug-In&lt;/b&gt; stellt eine Erweiterung dar, welche einen direkten Bezug zum Erscheinungsbild und/oder den Funktionalitäten des Frontends (also der mit TYPO3 erstellten Web-Site selber) hat. Darunter fallen also Gästebücher, Shops, Bildergalerien und so weiter. Solche Plug-Ins sind normalerweise in einer PHP-Klasse angesiedelt und werden durch USER- oder USER_INT-cObjects innerhalb von TypoScript aufgerufen. &lt;em&gt;Plug-Ins sind Frontend-Erweiterungen.&lt;/em&gt;
+Ein &lt;b&gt;Plug-In&lt;/b&gt; stellt eine Erweiterung dar, welche einen direkten Bezug zum Erscheinungsbild und/oder den Funktionalitäten des Frontends (also der mit TYPO3 erstellten Website selbst) hat. Darunter fallen also Gästebücher, Shops, Bildergalerien und so weiter. Solche Plug-Ins sind normalerweise in einer PHP-Klasse angesiedelt und werden durch USER- oder USER_INT-cObjects innerhalb von TypoScript aufgerufen. &lt;em&gt;Plug-Ins sind Frontend-Erweiterungen.&lt;/em&gt;
 
 Ein &lt;b&gt;Modul&lt;/b&gt; ist eine Anwendung, die innerhalb des Backends eigene Funktionalitäten zur Verfügung stellt oder bestehende Module erweitert. Module haben häufig einen eigenen Menüpunkt innerhalb des Backends wie zum Beispiel die Protokolldateianalyse, DB-Verwaltungswerkzeuge und so weiter. &lt;em&gt;Module sind Backend-Erweiterungen.&lt;/em&gt;</label>
 			<label index="loaded.alttitle">Derzeit geladene Erweiterungen</label>
@@ -22,7 +22,7 @@ Die &quot;Rq&quot;-Erweiterungen in dieser Liste werden für die ordnungsgemäß
 			<label index="avail.details">Durch einen Mausklick auf das graue &quot;+&quot;-Symbol können Sie jede dieser Erweiterungen installieren und mit einem Mausklick auf das grüne &quot;-&quot;-Symbol deinstallieren.
 Nach einem Klick auf das Installationssymbol (&quot;+&quot;) wird Ihnen im Rahmen des Installationsprozesses häufig ein Installationsmenü für diese Erweiterung angezeigt. Hier müssen Sie z.B. das Anlegen neuer Datenbanktabellen und -felder oder das &quot;Löschen aller Caches&quot; bestätigen. Der Erweiterungs-Manager übernimmt dann im Anschluss all diese Aufgaben und macht es Ihnen somit sehr einfach, neue Erweiterungen zu installieren.</label>
 			<label index="avail.image_descr">Die Liste der verfügbaren Erweiterungen dieses TYPO3-Servers. Diese Liste wird aus all denjenigen Erweiterungen zusammengestellt, die sich in den Erweiterungsordnern &quot;Lokal&quot;, &quot;Global&quot; und &quot;System&quot; befinden.
-Nach einem Klick auf das Installationssymbol (&quot;+&quot;) wird Ihnen unter Umständen solch ein Installationsmenü angezeigt. In diesem Fall benötigt die Erweiterung eine eigene Datenbanktabelle. Der Erweiterungs-Manager erkennt automatisch, dass die Tabelle noch nicht existiert und schlägt vor, diese anzulegen. Nach Bestätigen der Schaltfläche &quot;Make updates&quot; werden alle notwendigen Änderungen automatisch durchgeführt.</label>
+Nach einem Klick auf das Installationssymbol (&quot;+&quot;) wird Ihnen unter Umständen solch ein Installationsmenü angezeigt. In diesem Fall benötigt die Erweiterung eine eigene Datenbanktabelle. Der Erweiterungs-Manager erkennt automatisch, dass die Tabelle noch nicht existiert und schlägt vor, diese anzulegen. Nach Betätigen der Schaltfläche &quot;Aktualisierungen durchführen&quot; werden alle notwendigen Änderungen automatisch durchgeführt.</label>
 			<label index="import.alttitle">Erweiterungen importieren</label>
 			<label index="import.description">Durch diesen Prozess werden Erweiterungen auf Ihren TYPO3-Server gespielt, d.h. Dateien kopiert. Sie können Erweiterungen entweder von einer URL (normalerweise aus dem TER, dem TYPO3-Extension-Repository auf typo3.org) oder aus einer lokal vorliegenden &quot;t3x&quot;-Datei importieren.  t3x (TYPO3 Extension) -Dateien entstehen durch den Export einer Erweiterung aus einem anderen TYPO3-Server.</label>
 			<label index="import.details">&lt;b&gt;Import aus dem TER&lt;/b&gt;
@@ -56,9 +56,9 @@ Der Erweiterungs-Manager geht aber noch einen Schritt weiter und analysiert dazu
 			<label index="backup_delete.description">Durch Anklicken des Links &quot;Herunterladen&quot; erzeugt der Server eine Exportdatei, die Sie anschließend auf Ihrem Rechner speichern können (als Dateiendung sollten Sie dabei &quot;t3x&quot; wählen). In dieser Datei befinden sich ein serialisiertes PHP-Array, ein Hash und alle anderen zur Erweiterung gehörenden Dateien, die - sofern dies der Server unterstützt - beim Export bereits komprimiert wurden.</label>
 			<label index="backup_delete.image_descr">&quot;Backup&quot; oder &quot;Export&quot; von Erweiterungen. Sie können diese Exportdateien auch dazu verwenden, um verschiedene Entwicklungsstände einer Erweiterung mit Mitgliedern einer Arbeitsgruppe auszutauschen.</label>
 			<label index="upload.alttitle">Erweiterung ins TER hochladen</label>
-			<label index="upload.description">Hier können Sie Ihre selbst entwickelten Erweiterungen ins TER hochladen. Zuvor müssen Sie sich aber zunächst eine Anmeldung bei typo3.org besorgen (durch einfaches Anmelden auf dieser Web-Site). Damit Sie eine Erweiterung hochladen können, müssen Sie auf der Web-Site einen Erweiterungsschlüssel (&quot;extension key&quot;) beantragen bzw. registrieren. Zusätzlich besitzt jede Erweiterung auch noch ein sog. Hochladepasswort, welches Sie beim Hochladen Ihrer Erweiterung selbst bestimmen.</label>
+			<label index="upload.description">Hier können Sie Ihre selbst entwickelten Erweiterungen ins TER hochladen. Zuvor müssen Sie sich aber zunächst eine Anmeldung bei typo3.org besorgen (durch einfaches Anmelden auf dieser Website). Damit Sie eine Erweiterung hochladen können, müssen Sie auf der Website einen Erweiterungsschlüssel (&quot;extension key&quot;) beantragen bzw. registrieren. Zusätzlich besitzt jede Erweiterung auch noch ein sog. Hochladepasswort, welches Sie beim Hochladen Ihrer Erweiterung selbst bestimmen.</label>
 			<label index="upload.details">&lt;b&gt;Änderungsprotokoll&lt;/b&gt;
-Geben Sie hier bitte die an, welche Veränderungen vorgenommen wurden und warum Sie diese geänderte Version ins TER stellen. Diese Angaben erscheinen auf der TYPO3-Web-Site innerhalb der Liste der neuen Erweiterungen (http://www.typo3.org/extensions/).
+Geben Sie hier bitte die an, welche Veränderungen vorgenommen wurden und warum Sie diese geänderte Version ins TER stellen. Diese Angaben erscheinen auf der TYPO3-Website innerhalb der Liste der neuen Erweiterungen (http://www.typo3.org/extensions/).
 
 &lt;b&gt;Versionsnummern&lt;/b&gt;
 Bestimmen Sie, wie die Versionsnummer dieser Erweiterung erhöht werden soll. Für &quot;neue&quot; Versionen sollten Sie die Werte &quot;sub&quot; oder &quot;main&quot; erhöhen - dadurch erscheint diese Version in der Liste der neuen Erweiterungen. Sollten Sie lediglich kleine Fehler beseitigt haben, wählen Sie bitte den Wert &quot;dev&quot;.</label>
@@ -92,13 +92,13 @@ Diese Option beeinflusst nicht, ob die Erweiterung geladen oder nicht geladen wi
 
 &lt;b&gt;fe:&lt;/b&gt; Frontend (Frontend-orientiert, aber kein &quot;echtes&quot; Plug-In)
 
-&lt;b&gt;plugin:&lt;/b&gt; Frontend-Erweiterung (Erweiterung, die mittels &quot;Plug-In einfügen&quot; als Inhaltselement auf der Web-Site eingefügt werden kann)
+&lt;b&gt;plugin:&lt;/b&gt; Frontend-Erweiterung (Erweiterung, die mittels &quot;Plug-In einfügen&quot; als Inhaltselement auf der Website eingefügt werden kann)
 
 &lt;b&gt;misc:&lt;/b&gt; Sonstiges (fällt nicht in eine der anderen Kategorien)
 
 &lt;b&gt;services:&lt;/b&gt; Stellt einen TYPO3-Dienst zur Verfügung
 
-&lt;b&gt;templates:&lt;/b&gt; Enthält Web-Site-Vorlagen
+&lt;b&gt;templates:&lt;/b&gt; Enthält Website-Vorlagen
 
 &lt;b&gt;doc:&lt;/b&gt; Dokumentation (Anleitungen, FAQs etc.)
 
@@ -145,7 +145,7 @@ Für die Entwicklung dieser Erweiterung mussten jedoch zuerst Änderungen oder E
 			<label index="emconf_modify_tables.details">Auflistung der Tabellen, die in der Datei ext_tables.sql dieser Erweiterung gefunden wurden.</label>
 			<label index="emconf_doNotLoadInFE.alttitle">Im Frontend laden</label>
 			<label index="emconf_doNotLoadInFE.description">Bei Auswahl von &quot;Ja&quot; (Standard), wird die Erweiterung sowohl im Frontend als auch im Backend geladen. Bei &quot;Nein&quot; wird sie nur im Backend geladen.</label>
-			<label index="emconf_doNotLoadInFE.details">Manche Erweiterungen sind nur im Backend erforderlich. Ist diese Option gesetzt, wird die Erweiterung nicht im Frontend geladen, was die Web-Site performanter macht.</label>
+			<label index="emconf_doNotLoadInFE.details">Manche Erweiterungen sind nur im Backend erforderlich. Ist diese Option gesetzt, wird die Erweiterung nicht im Frontend geladen, was die Website performanter macht.</label>
 			<label index="emconf_private.alttitle">Privat</label>
 			<label index="emconf_private.description">Mit dieser Option wird eine Erweiterung als &quot;Privat&quot; gekennzeichnet. Dadurch erscheint sie nicht mehr in der allgemeinen (öffentlichen) Auflistung innerhalb des TER.</label>
 			<label index="emconf_private.details">&quot;Private&quot; Uploads ins TER erfordern, dass Sie einen speziellen Schlüssel (Passwort) angeben, um die Erweiterung zu importieren oder sich Details zu dieser Erweiterung anzeigen zu lassen.

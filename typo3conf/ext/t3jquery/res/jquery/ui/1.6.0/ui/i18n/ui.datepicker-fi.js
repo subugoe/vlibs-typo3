@@ -1,5 +1,5 @@
 /* Finnish initialisation for the jQuery UI date picker plugin. */
-/* Written by Harri Kilpiö (harrikilpio@gmail.com). */
+/* Written by Harri Kilpio (harrikilpio@gmail.com). */
 jQuery(function($){
     $.datepicker.regional['fi'] = {
 		clearText: 'Tyhjenn&auml;', clearStatus: '',

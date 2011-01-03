@@ -10,6 +10,100 @@
 			<label index="graphical">Formen und Farben</label>
 			<label index="HTML value:">HTML-Wert:</label>
 			<label index="Close">Schließen</label>
+			<label index="nbsp">Geschütztes Leerzeichen</label>
+			<label index="Agrave">Großes a mit Gravis</label>
+			<label index="agrave">Kleines a mit Gravis</label>
+			<label index="Aacute">Großes a mit Akut</label>
+			<label index="aacute">Kleines a mit Akut</label>
+			<label index="Acirc">Großes a mit Zirkumflex</label>
+			<label index="acirc">Kleines a mit Zirkumflex</label>
+			<label index="Atilde">Großes a mit Tilde</label>
+			<label index="atilde">Kleines a mit Tilde</label>
+			<label index="Auml">Großes a mit Umlaut/Trema</label>
+			<label index="auml">Kleines a mit Umlaut/Trema</label>
+			<label index="Aring">Großes a mit Ring</label>
+			<label index="aring">Kleines a mit Ring</label>
+			<label index="AElig">Große ae-Ligatur</label>
+			<label index="aelig">Kleine ae-Ligatur</label>
+			<label index="ordf">Feminines Ordinalzeichen</label>
+			<label index="Ccedil">Großes c mit Cédille</label>
+			<label index="ccedil">Kleines c mit Cédille</label>
+			<label index="ETH">Großes Eth, isländisch</label>
+			<label index="eth">Kleines Eth, isländisch</label>
+			<label index="Egrave">Großes e mit Gravis</label>
+			<label index="egrave">Kleines e mit Gravis</label>
+			<label index="Eacute">Großes e mit Akut</label>
+			<label index="eacute">Kleines e mit Akut</label>
+			<label index="Ecirc">Großes e mit Zirkumflex</label>
+			<label index="ecirc">Kleines e mit Zirkumflex</label>
+			<label index="Euml">Großes e mit Umlaut/Trema</label>
+			<label index="euml">Kleines e mit Umlaut/Trema</label>
+			<label index="Igrave">Großes i mit Gravis</label>
+			<label index="igrave">Kleines i mit Gravis</label>
+			<label index="Iacute">Großes i mit Akut</label>
+			<label index="iacute">Kleines i mit Akut</label>
+			<label index="Icirc">Großes i mit Zirkumflex</label>
+			<label index="icirc">Kleines i mit Zirkumflex</label>
+			<label index="Iuml">Großes i mit Umlaut/Trema</label>
+			<label index="iuml">Kleines i mit Umlaut/Trema</label>
+			<label index="Ntilde">Großes n mit Tilde</label>
+			<label index="ntilde">Kleines n mit Tilde</label>
+			<label index="Ograve">Großes o mit Gravis</label>
+			<label index="ograve">Kleines o mit Gravis</label>
+			<label index="Oacute">Großes o mit Akut</label>
+			<label index="oacute">Kleines o mit Akut</label>
+			<label index="Ocirc">Großes o mit Zirkumflex</label>
+			<label index="ocirc">Kleines o mit Zirkumflex</label>
+			<label index="Otilde">Großes o mit Tilde</label>
+			<label index="otilde">Kleines o mit Tilde</label>
+			<label index="Ouml">Großes o mit Umlaut/Trema</label>
+			<label index="ouml">Kleines o mit Umlaut/Trema</label>
+			<label index="Oslash">Großes o mit Schrägstrich</label>
+			<label index="oslash">Kleines o mit Schrägstrich</label>
+			<label index="OElig">Große oe-Ligatur</label>
+			<label index="oelig">Kleine oe-Ligatur</label>
+			<label index="ordm">Maskulines Ordinalzeichen</label>
+			<label index="Scaron">Großes s mit Caron</label>
+			<label index="scaron">Kleines s mit Caron</label>
+			<label index="szlig">Scharfes s, deutsch</label>
+			<label index="THORN">Großes Thorn, isländisch</label>
+			<label index="thorn">Kleines Thorn, isländisch</label>
+			<label index="Ugrave">Großes u mit Gravis</label>
+			<label index="ugrave">Kleines u mit Gravis</label>
+			<label index="Uacute">Großes u mit Akut</label>
+			<label index="uacute">Kleines u mit Akut</label>
+			<label index="Ucirc">Großes u mit Zirkumflex</label>
+			<label index="ucirc">Kleines u mit Zirkumflex</label>
+			<label index="Uuml">Großes u mit Umlaut/Trema</label>
+			<label index="uuml">Kleines u mit Umlaut/Trema</label>
+			<label index="Yacute">Großes y mit Akut</label>
+			<label index="yacute">Kleines y mit Akut</label>
+			<label index="Yuml">Großes y mit Umlaut/Trema</label>
+			<label index="yuml">Kleines y mit Umlaut/Trema</label>
+			<label index="copy">Copyright</label>
+			<label index="reg">Registered Trademark</label>
+			<label index="trade">Trademark</label>
+			<label index="curren">Währung</label>
+			<label index="cent">Cent</label>
+			<label index="euro">Euro</label>
+			<label index="pound">Pfund</label>
+			<label index="yen">Yen</label>
+			<label index="minus">Minus</label>
+			<label index="deg">Grad</label>
+			<label index="permil">Promille</label>
+			<label index="frasl">Bruchstrich</label>
+			<label index="frac14">Bruch 1/4</label>
+			<label index="frac12">Bruch 1/2</label>
+			<label index="frac34">Bruch 3/4</label>
+			<label index="and">Logisches Und</label>
+			<label index="or">Logisches Oder</label>
+			<label index="Alpha">Großes griechisches alpha</label>
+			<label index="alpha">Kleines griechisches alpha</label>
+			<label index="Beta">Großes griechisches beta</label>
+			<label index="clubs">Kreuz</label>
+			<label index="diams">Karo</label>
+			<label index="hearts">Herz</label>
+			<label index="spades">Pik</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -22,6 +116,100 @@
 			<label index="general" type="integer">14366585</label>
 			<label index="mathematical" type="integer">81380323</label>
 			<label index="graphical" type="integer">118532621</label>
+			<label index="curren" type="integer">59163449</label>
+			<label index="cent" type="integer">237588276</label>
+			<label index="euro" type="integer">65545210</label>
+			<label index="pound" type="integer">95018093</label>
+			<label index="yen" type="integer">111051143</label>
+			<label index="deg" type="integer">107387981</label>
+			<label index="permil" type="integer">78022078</label>
+			<label index="frasl" type="integer">133994391</label>
+			<label index="frac14" type="integer">106625446</label>
+			<label index="frac12" type="integer">181229938</label>
+			<label index="frac34" type="integer">217595920</label>
+			<label index="clubs" type="integer">183432774</label>
+			<label index="diams" type="integer">150431505</label>
+			<label index="hearts" type="integer">256535791</label>
+			<label index="spades" type="integer">221782997</label>
+			<label index="Auml" type="integer">140654606</label>
+			<label index="auml" type="integer">205751923</label>
+			<label index="Euml" type="integer">113123827</label>
+			<label index="euml" type="integer">167283167</label>
+			<label index="Iuml" type="integer">147118133</label>
+			<label index="iuml" type="integer">74789655</label>
+			<label index="Ouml" type="integer">53433629</label>
+			<label index="ouml" type="integer">188994152</label>
+			<label index="Uuml" type="integer">61152996</label>
+			<label index="uuml" type="integer">157685397</label>
+			<label index="Yuml" type="integer">56805017</label>
+			<label index="yuml" type="integer">98875379</label>
+			<label index="nbsp" type="integer">7836046</label>
+			<label index="Aring" type="integer">190506185</label>
+			<label index="aring" type="integer">234625017</label>
+			<label index="Agrave" type="integer">138936702</label>
+			<label index="agrave" type="integer">239562265</label>
+			<label index="Egrave" type="integer">114022590</label>
+			<label index="egrave" type="integer">164974989</label>
+			<label index="Igrave" type="integer">146397600</label>
+			<label index="igrave" type="integer">64640509</label>
+			<label index="Ograve" type="integer">234440676</label>
+			<label index="ograve" type="integer">149636427</label>
+			<label index="Ugrave" type="integer">169469103</label>
+			<label index="ugrave" type="integer">81616921</label>
+			<label index="Aacute" type="integer">31602003</label>
+			<label index="aacute" type="integer">158399464</label>
+			<label index="Eacute" type="integer">190486296</label>
+			<label index="eacute" type="integer">3475497</label>
+			<label index="Iacute" type="integer">190380325</label>
+			<label index="iacute" type="integer">184219242</label>
+			<label index="Oacute" type="integer">123921510</label>
+			<label index="oacute" type="integer">242789510</label>
+			<label index="Uacute" type="integer">147984352</label>
+			<label index="uacute" type="integer">152529030</label>
+			<label index="Yacute" type="integer">225126599</label>
+			<label index="yacute" type="integer">87752164</label>
+			<label index="Acirc" type="integer">121342624</label>
+			<label index="acirc" type="integer">211463940</label>
+			<label index="Ecirc" type="integer">265448349</label>
+			<label index="ecirc" type="integer">7768586</label>
+			<label index="Icirc" type="integer">135693325</label>
+			<label index="icirc" type="integer">60992359</label>
+			<label index="Ocirc" type="integer">42408972</label>
+			<label index="ocirc" type="integer">168757410</label>
+			<label index="Ucirc" type="integer">256891946</label>
+			<label index="ucirc" type="integer">266226686</label>
+			<label index="Atilde" type="integer">129286788</label>
+			<label index="atilde" type="integer">145857414</label>
+			<label index="Ntilde" type="integer">49451801</label>
+			<label index="ntilde" type="integer">37193828</label>
+			<label index="Otilde" type="integer">71226881</label>
+			<label index="otilde" type="integer">87260030</label>
+			<label index="Ccedil" type="integer">80096887</label>
+			<label index="ccedil" type="integer">51664423</label>
+			<label index="AElig" type="integer">58826246</label>
+			<label index="aelig" type="integer">136139623</label>
+			<label index="ordf" type="integer">88294781</label>
+			<label index="OElig" type="integer">194700908</label>
+			<label index="oelig" type="integer">19435099</label>
+			<label index="ordm" type="integer">223209188</label>
+			<label index="ETH" type="integer">49795930</label>
+			<label index="eth" type="integer">8183040</label>
+			<label index="THORN" type="integer">44655876</label>
+			<label index="thorn" type="integer">76237370</label>
+			<label index="szlig" type="integer">232744461</label>
+			<label index="Scaron" type="integer">134380938</label>
+			<label index="scaron" type="integer">157914155</label>
+			<label index="Oslash" type="integer">119282110</label>
+			<label index="oslash" type="integer">128404013</label>
+			<label index="minus" type="integer">237809731</label>
+			<label index="copy" type="integer">100756011</label>
+			<label index="reg" type="integer">24460386</label>
+			<label index="trade" type="integer">186643824</label>
+			<label index="and" type="integer">48133607</label>
+			<label index="or" type="integer">258907398</label>
+			<label index="Alpha" type="integer">220811456</label>
+			<label index="alpha" type="integer">81975781</label>
+			<label index="Beta" type="integer">19948961</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -34,6 +222,100 @@
 			<label index="general">General</label>
 			<label index="mathematical">Mathematical</label>
 			<label index="graphical">Shapes and arrows</label>
+			<label index="curren">Currency</label>
+			<label index="cent">Cent</label>
+			<label index="euro">Euro</label>
+			<label index="pound">Pound</label>
+			<label index="yen">Yen</label>
+			<label index="deg">Degree</label>
+			<label index="permil">Per mille</label>
+			<label index="frasl">Fraction slash</label>
+			<label index="frac14">Fraction 1/4</label>
+			<label index="frac12">Fraction 1/2</label>
+			<label index="frac34">Fraction 3/4</label>
+			<label index="clubs">Club</label>
+			<label index="diams">Diamond</label>
+			<label index="hearts">Heart</label>
+			<label index="spades">Spade</label>
+			<label index="Auml">Capital a with umlaut/diaeresis</label>
+			<label index="auml">Small a with umlaut/diaeresis</label>
+			<label index="Euml">Capital e with umlaut/diaeresis</label>
+			<label index="euml">Small e with umlaut/diaeresis</label>
+			<label index="Iuml">Capital i with umlaut/diaeresis</label>
+			<label index="iuml">Small i with umlaut/diaeresis</label>
+			<label index="Ouml">Capital o with umlaut/diaeresis</label>
+			<label index="ouml">Small o with umlaut/diaeresis</label>
+			<label index="Uuml">Capital u with umlaut/diaeresis</label>
+			<label index="uuml">Small u with umlaut/diaeresis</label>
+			<label index="Yuml">Capital y with umlaut/diaeresis</label>
+			<label index="yuml">Small y with umlaut/diaeresis</label>
+			<label index="nbsp">Non-breaking space</label>
+			<label index="Aring">Capital a with ring</label>
+			<label index="aring">Small a with ring</label>
+			<label index="Agrave">Capital a with grave accent</label>
+			<label index="agrave">Small a with grave accent</label>
+			<label index="Egrave">Capital e with grave accent</label>
+			<label index="egrave">Small e with grave accent</label>
+			<label index="Igrave">Capital i with grave accent</label>
+			<label index="igrave">Small i with grave accent</label>
+			<label index="Ograve">Capital o with grave accent</label>
+			<label index="ograve">Small o with grave accent</label>
+			<label index="Ugrave">Capital u with grave accent</label>
+			<label index="ugrave">Small u with grave accent</label>
+			<label index="Aacute">Capital a with acute accent</label>
+			<label index="aacute">Small a with acute accent</label>
+			<label index="Eacute">Capital e with acute accent</label>
+			<label index="eacute">Small e with acute accent</label>
+			<label index="Iacute">Capital i with acute accent</label>
+			<label index="iacute">Small i with acute accent</label>
+			<label index="Oacute">Capital o with acute accent</label>
+			<label index="oacute">Small o with acute accent</label>
+			<label index="Uacute">Capital u with acute accent</label>
+			<label index="uacute">Small u with acute accent</label>
+			<label index="Yacute">Capital y with acute accent</label>
+			<label index="yacute">Small y with acute accent</label>
+			<label index="Acirc">Capital a with circumflex accent</label>
+			<label index="acirc">Small a with circumflex accent</label>
+			<label index="Ecirc">Capital e with circumflex accent</label>
+			<label index="ecirc">Small e with circumflex accent</label>
+			<label index="Icirc">Capital i with circumflex accent</label>
+			<label index="icirc">Small i with circumflex accent</label>
+			<label index="Ocirc">Capital o with circumflex accent</label>
+			<label index="ocirc">Small o with circumflex accent</label>
+			<label index="Ucirc">Capital u with circumflex accent</label>
+			<label index="ucirc">Small u with circumflex accent</label>
+			<label index="Atilde">Capital a with tilde</label>
+			<label index="atilde">Small a with tilde</label>
+			<label index="Ntilde">Capital n with tilde</label>
+			<label index="ntilde">Small n with tilde</label>
+			<label index="Otilde">Capital o with tilde</label>
+			<label index="otilde">Small o with tilde</label>
+			<label index="Ccedil">Capital c with cedilla</label>
+			<label index="ccedil">Small c with cedilla</label>
+			<label index="AElig">Capital ligature ae</label>
+			<label index="aelig">Small ligature ae</label>
+			<label index="ordf">Feminine ordinal indicator</label>
+			<label index="OElig">Capital ligature OE</label>
+			<label index="oelig">Small ligature OE</label>
+			<label index="ordm">Masculine ordinal indicator</label>
+			<label index="ETH">Capital eth, Icelandic</label>
+			<label index="eth">Small eth, Icelandic</label>
+			<label index="THORN">Capital THORN, Icelandic</label>
+			<label index="thorn">Small thorn, Icelandic</label>
+			<label index="szlig">Small sharp s, German</label>
+			<label index="Scaron">Capital s with caron</label>
+			<label index="scaron">Small s with caron</label>
+			<label index="Oslash">Capital o with slash</label>
+			<label index="oslash">Small o with slash</label>
+			<label index="minus">Minus sign</label>
+			<label index="copy">Copyright</label>
+			<label index="reg">Registered trademark</label>
+			<label index="trade">Trademark</label>
+			<label index="and">Logical and</label>
+			<label index="or">Logical or</label>
+			<label index="Alpha">Greek capital letter alpha</label>
+			<label index="alpha">Greek small letter alpha</label>
+			<label index="Beta">Greek capital letter beta</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle">Planer</label>
+			<label index=".description">Der Planer stellt eine Schnittstelle zur Verfügung, um einmalige oder wiederkehrende Aufträge (Tasks) zu erstellen und zu bearbeiten.</label>
+			<label index=".syntax">Der Planer nutzt einen einzigen Cron-Job, der alle registrierten Tasks abarbeitet. Dies ist sehr praktisch, da nur ein Cron-Job eingerichtet werden muss und über das Backend-Modul die Häufigkeiten aller Tasks verwaltet werden können.</label>
+			<label index="task_class.alttitle">Klasse des Tasks</label>
+			<label index="task_class.description">Wählen Sie eine Klasse aus der Liste der verfügbaren Tasks.</label>
+			<label index="task_class.details">Die Tasks werden durch unterschiedliche Erweiterungen bereitgestellt. Bitte beachten Sie das Handbuch, wie eigene Tasks erstellt und dem Planer hinzugefügt werden können.</label>
+			<label index="task_disable.alttitle">Task deaktivieren</label>
+			<label index="task_disable.description">Aktivieren Sie diese Option, um die geplante Ausführung dieses Tasks zu deaktivieren. Die Ausführung kann weiterhin manuell über das Backend-Modul erfolgen.</label>
+			<label index="task_arguments.alttitle">Zusätzliche Aufrufparameter</label>
+			<label index="task_arguments.description">Geben Sie Parameter für den Aufruf des Tasks ein, wie sie für den gewählten Task verfügbar sind.</label>
+			<label index="task_arguments.details">Aufrufparameter müssen in einer Syntax ähnlich den HTTP-Parametern eingegeben werden, z.B. &amp;arg1=wert1&amp;arg2=wert2 etc.</label>
+			<label index="task_type.alttitle">Typ des Tasks</label>
+			<label index="task_type.description">Legen Sie fest, ob der Tasks einmalig oder wiederkehrend ausgeführt werden soll.</label>
+			<label index="task_start.alttitle">Start des Tasks</label>
+			<label index="task_start.description">Geben Sie das Startdatum für den Task an.</label>
+			<label index="task_start.details">Das Datum muss in einem der Standardformate eingegeben werden, z.B. HH:MM TT-MM-JJJJ. Geben Sie &quot;16:17 31-12-2009&quot; für die erstmalige Ausführung am 31. Dezember 2009 um 16:17 Uhr ein.
+Schlüsselwärter &quot;now&quot; (heute) oder &quot;tomorrow&quot; (morgen) sind ebenfalls erlaubt.
+Datum und Zeit müssen der auf dem Server eingestellten Zeitzone entsprechen.</label>
+			<label index="task_end.alttitle">Ende des Tasks</label>
+			<label index="task_end.description">Geben Sie Datum und Zeit für die letztmalige Ausführung des Tasks ein. Dieses Feld kann leer bleiben, wenn kein Ende festgelegt werden soll.</label>
+			<label index="task_end.details">Das Datum muss in einem der Standardformate eingegeben werden, z.B. HH:MM TT-MM-JJJJ. Geben Sie &quot;16:17 31-12-2009&quot; für die erstmalige Ausführung am 31. Dezember 2009 um 16:17 Uhr ein.
+Schlüsselwärter &quot;now&quot; (heute) oder &quot;tomorrow&quot; (morgen) sind ebenfalls erlaubt.
+Datum und Zeit müssen der auf dem Server eingestellten Zeitzone entsprechen.
+
+Dieses Feld kann leer bleiben, wenn kein Ende festgelegt werden soll.</label>
+			<label index="task_frequency.alttitle">Häufigkeit des Tasks</label>
+			<label index="task_frequency.description">Geben Sie die Häufigkeit an, in der der Task ausgeführt werden soll: Entweder in Sekunden oder der von Cron-Jobs üblichen Syntax.</label>
+			<label index="task_frequency.details">Die Häufigkeit der Ausführung kann am einfachsten direkt in Sekunden eingegeben werden.
+
+Alternativ ist es möglich, dieselbe Syntax zu verwenden, wie Sie bei der Einrichtung von Cron-Jobs verwendet wird. Diese besteht aus einer Liste von fünf Zahlen oder dem &quot;*&quot;-Symbol, welche durch Leerzeichen getrennt sind. Die fünf Zahlen stehen für Minute, Stunde, Tag des Monats, Monat und Tag der Woche. Steht an Stelle einer Zahl ein *, wird dieses Feld nicht als Einschränkung ausgewertet.
+
+Beispiele:
+0 * * * *  zu jeder vollen Stunde
+30 22 * * * jeden Tag um 22:30
+*/5 * * * * alle fünf Minuten</label>
+			<label index="task_multiple.alttitle">Parallele Ausführung</label>
+			<label index="task_multiple.description">Legen Sie fest, ob der Task mehrmals parallel ausgeführt werden darf oder nicht.</label>
+			<label index="task_email.alttitle">E-Mail-Adresse</label>
+			<label index="task_email.description">Geben Sie den Empfänger der Mails an für den Test-Task an.</label>
+			<label index="task_sleepTime.alttitle">Pause</label>
+			<label index="task_sleepTime.description">Geben Sie eine Anzahl Sekunden an, während der der Task pausiert.</label>
+			<label index="task_frequency.seeAlso">Wikipedia|http://de.wikipedia.org/wiki/Cron</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle" type="integer">268086295</label>
+			<label index=".description" type="integer">250475609</label>
+			<label index=".syntax" type="integer">215909911</label>
+			<label index="task_class.alttitle" type="integer">220392919</label>
+			<label index="task_class.description" type="integer">166526588</label>
+			<label index="task_class.details" type="integer">244237521</label>
+			<label index="task_disable.alttitle" type="integer">152867112</label>
+			<label index="task_disable.description" type="integer">210670658</label>
+			<label index="task_arguments.alttitle" type="integer">174317536</label>
+			<label index="task_arguments.description" type="integer">114267997</label>
+			<label index="task_arguments.details" type="integer">246053783</label>
+			<label index="task_type.alttitle" type="integer">43241726</label>
+			<label index="task_type.description" type="integer">110910398</label>
+			<label index="task_start.alttitle" type="integer">210819512</label>
+			<label index="task_start.description" type="integer">4193447</label>
+			<label index="task_start.details" type="integer">2224915</label>
+			<label index="task_end.alttitle" type="integer">81370413</label>
+			<label index="task_end.description" type="integer">60606032</label>
+			<label index="task_end.details" type="integer">80874037</label>
+			<label index="task_frequency.alttitle" type="integer">96196406</label>
+			<label index="task_frequency.description" type="integer">39529601</label>
+			<label index="task_frequency.details" type="integer">146914964</label>
+			<label index="task_multiple.alttitle" type="integer">66900146</label>
+			<label index="task_multiple.description" type="integer">18666016</label>
+			<label index="task_email.alttitle" type="integer">188054354</label>
+			<label index="task_email.description" type="integer">58882103</label>
+			<label index="task_sleepTime.alttitle" type="integer">117377126</label>
+			<label index="task_sleepTime.description" type="integer">22284108</label>
+			<label index="task_frequency.seeAlso" type="integer">109547945</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index=".alttitle">Scheduler</label>
+			<label index=".description">The Scheduler provides an interface to register and manage recurring or one-time tasks.</label>
+			<label index=".syntax">
+				The Scheduler uses a single cron job which handles all registered tasks. It is thus very convenient as a single cron job needs to be set up and all task frequencies can be managed from the BE module.
+			</label>
+			<label index="task_class.alttitle">Class of the task</label>
+			<label index="task_class.description">Choose a class from the list of available tasks</label>
+			<label index="task_class.details">
+				The tasks are provided by various extensions. See the manual to learn how to create your own tasks and register them with the Scheduler.
+			</label>
+			<label index="task_disable.alttitle">Disable task</label>
+			<label index="task_disable.description">Check this box to disable the automatic, scheduled execution of this task. It can still be launched manually from the BE module.</label>
+			<label index="task_arguments.alttitle">Additional call arguments</label>
+			<label index="task_arguments.description">Enter whatever arguments exist for the chosen task class</label>
+			<label index="task_arguments.details">
+				Call arguments are entered using a syntax similar to HTTP query strings, i.e. &amp;arg1=value1&amp;arg2=value2 etc.
+			</label>
+			<label index="task_type.alttitle">Type of task</label>
+			<label index="task_type.description">Choose whether the task must happen a single time or will be repeated</label>
+			<label index="task_start.alttitle">Start of task</label>
+			<label index="task_start.description">Enter a start date and time for the task</label>
+			<label index="task_start.details">
+				Date must be entered in a standard format like HH:mm dd-mm-YYYY or YYYY-mm-dd HH:mm. Natural keywords can also be used, like &quot;now&quot; or &quot;tomorrow&quot;.
+				Date and time must correspond to the server's time zone.
+			</label>
+			<label index="task_end.alttitle">End of task</label>
+			<label index="task_end.description">Enter an end date and time for the task, can be blank</label>
+			<label index="task_end.details">
+				Date must be entered in a standard format like HH:mm dd-mm-YYYY or YYYY-mm-dd HH:mm. Natural keywords can also be used, like &quot;now&quot; or &quot;tomorrow&quot;.
+				Date and time must correspond to the server's time zone.
+
+				Can be left blank, if task is not supposed to end at any point.
+			</label>
+			<label index="task_frequency.alttitle">Frequency of task</label>
+			<label index="task_frequency.description">Enter a frequency, either in seconds or using a cron-like syntax</label>
+			<label index="task_frequency.details">
+				The frequency of the task can be simply entered as a number of seconds.
+
+				Alternately it is possible to use the same syntax as for cron jobs. This is simply a list of five numbers or the wildcard &quot;*&quot;, separated by blanks. The five numbers are (in order) minutes, hours, day of month, months and day of week. Examples:
+
+				*/5 * * * * means every 5 minutes
+				30 22 * * * means every day at 22:30
+			</label>
+			<label index="task_multiple.alttitle">Multiple executions</label>
+			<label index="task_multiple.description">Choose whether a task can be running several times simultaneously or not</label>
+			<label index="task_email.alttitle">Email address</label>
+			<label index="task_email.description">Enter a recipient for the mails sent by the test task</label>
+			<label index="task_sleepTime.alttitle">Sleep time</label>
+			<label index="task_sleepTime.description">Enter a number of seconds during which the task will just sleep.</label>
+			<label index="task_frequency.seeAlso">
+				Wikipedia reference|http://en.wikipedia.org/wiki/Cron
+			</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

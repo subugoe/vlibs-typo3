@@ -2,6 +2,7 @@
 <T3locallangExt>
 	<data type="array">
 		<languageKey index="de" type="array">
+			<label index="URL">URL</label>
 			<label index="Select some text">Vor dem Erstellen eines Links muss Text markiert werden</label>
 			<label index="frame">Frame-Name:</label>
 			<label index="frame_help">Den Namen des als Ziel zu verwendenden Frames eingeben</label>
@@ -12,6 +13,7 @@
 			<label index="Select some text" type="integer">13359497</label>
 			<label index="frame" type="integer">258892499</label>
 			<label index="frame_help" type="integer">18801079</label>
+			<label index="URL" type="integer">241907994</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -19,6 +21,7 @@
 			<label index="Select some text">You need to select some text before creating a link</label>
 			<label index="frame">Frame name:</label>
 			<label index="frame_help">Enter the name of the frame to be used as target</label>
+			<label index="URL">URL</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -3,7 +3,7 @@
 	<data type="array">
 		<languageKey index="de" type="array">
 			<label index=".description">Legt den Einstiegspunkt für einen bestimmten Hostnamen fest.</label>
-			<label index=".details">Wenn in einer TYPO3-Datenbank mehr als eine Web-Site enthalten ist, müssen Sie üblicherweise jeder neuen Root-Seite einen Domänennamen zuordnen. 
+			<label index=".details">Wenn in einer TYPO3-Datenbank mehr als eine Website enthalten ist, müssen Sie üblicherweise jeder neuen Root-Seite einen Domänennamen zuordnen. 
 Technisch gesehen zeigen alle Domänen auf dieselbe TYPO3-Datenbank des Servers, aber mit Hilfe dieser Domäneneinträge wird innerhalb des Seitenbaumes ein Sprungziel für Web-Anfragen definiert. Seiten, die außerhalb des so definierten Teilbaumes liegen, sind somit nicht für diese Domäne erreichbar. Dieses Konzept entspricht in etwa dem der &quot;Virtuellen Hosts&quot; des Webservers Apache.
 
 (Diese Option sollte nur für Administratoren verfügbar sein!)</label>
