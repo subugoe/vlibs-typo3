@@ -114,10 +114,49 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	}
 
 
+
+	/*
+	 * Return array of subjects.
+	 *	conf['subjects'] determines the name of the data file in Configuration/Subjects.
+	 *  Running the file sets the variable $subjectGroups to the array of subjects.	 *
+	 *  Its form should be
+	 *		* Array [subject groups]
+	 *			* Array [subject group, associative]
+	 *				* name => string - name of subject group [required]
+	 *				* GOKs => Array [optional]
+	 *					* string that is a truncated GOK notation
+	 *				* subjects => Array [required, subjects]
+	 *					* Array [subject, associative]
+	 *						* name => string - name of subject group [required]
+	 *						* GOKs => Array [required]
+	 *							* string that is a truncated GOK notation
+	 *						* inline => boolean - displayed in one line with other items?
+	 *							[optional, defaults to false]
+	 *						* break => boolean - insert <br> before current element?
+	 *							[optional, should only be used with inline => true, defaults to false]
+	 *
+	 * If the GOKs field of a subject group is not specified, create it by taking
+	 *	the union of the GOKs arrays of all its subjects.
+	 *
+	 * @return Array subjects to be displayed
+	 */
 	private function getSubjectsArray () {
 		$subjectsFile = 'Configuration/Subjects/' . $this->conf['subjects'] . '.php';
 		require_once(t3lib_extMgm::siteRelPath('pazpar2neuerwerbungen') . $subjectsFile);
-		return $subjects;	
+
+		foreach ($subjectGroups as &$subjectGroup) {
+			if (!$subjectGroup['GOKs']) {
+				$GOKs = array();
+				foreach ($subjectGroup['subjects'] as $subject) {
+					foreach ($subject['GOKs'] as $GOK) {
+						$GOKs[] = $GOK;
+					}
+				}
+				$subjectGroup['GOKs'] = $GOKs;
+			}
+		}
+
+		return $subjectGroups;
 	}
 
 

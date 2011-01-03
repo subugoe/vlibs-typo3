@@ -19,33 +19,26 @@
 
 			<div class="pz2-fieldsets">
 				<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
-					<fieldset class="pz2-{section.GOK}">
+					<fieldset class="pz2-fieldset-<f:for each='{section.GOKs}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>-</f:if>{GOK}</f:for>">
 						<legend>
-							<f:if condition="{section.GOK}">
-								<f:then>
-									<label>
-										<f:form.checkbox name="pz2subject"
-												value="{section.GOK}"
+							<label>
+								<f:form.checkbox name="pz2subject"
+												value="<f:for each='{section.GOKs}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
 												onclick="groupCheckboxChanged(this);"/>
-										<f:translate key="{section.name}">{section.name}</f:translate>
-									</label>
-								</f:then>
-								<f:else>
-									<f:translate key="{section.name}">{section.name}</f:translate>
-								</f:else>
-							</f:if>
+								<f:translate key="{section.name}"/>
+							</label>
 						</legend>
 
 						<ul>
 							<f:for each="{section.subjects}" as="subject">
-								<f:if condition="{subject.break} == 1 "><br></f:if>
 								<li {f:if(condition: subject.inline, then: 'class="inline"')}>
+									<f:if condition="{subject.break} == 1"><br></f:if>
 									<label>
 										<f:form.checkbox name="pz2subject"
-												value="<f:for each='{subject.GOK}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
+												value="<f:for each='{subject.GOKs}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
 
 												onclick="checkboxChanged(this);"/>
-										<f:translate key="{subject.name}">{subject.name}</f:translate>
+										<f:translate key="{subject.name}"/>
 									</label>
 								</li>
 							</f:for>

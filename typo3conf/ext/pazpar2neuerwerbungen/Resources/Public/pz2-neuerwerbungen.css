@@ -9,7 +9,7 @@ fieldset {
 	margin-bottom: 0.5em;
 }
 
-fieldset.pz2-IA, fieldset.pz2-IB, fieldset.pz2-IC {
+fieldset.pz2-fieldset-IA, fieldset.pz2-fieldset-IB, fieldset.pz2-fieldset-IC {
 	left: 0;
 	float: none;
 }
