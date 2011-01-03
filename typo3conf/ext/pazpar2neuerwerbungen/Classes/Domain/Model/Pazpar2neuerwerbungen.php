@@ -50,7 +50,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	 * Setter for subject tree array.
 	 *
 	 * @param Array $newSubjects
-	 * return void
+	 * @return void
 	 */
 	public function setSubjects ($newSubjects) {
 		$this->subjects = $newSubjects;
@@ -72,7 +72,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	/**
 	 * Getter for months array.
 	 *
-	 * return Array
+	 * @return Array
 	 */
 	public function getMonths () {
 		return $this->months;
@@ -82,7 +82,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	 * Setter for months array.
 	 *
 	 * @param Array $newMonths
-	 * return void
+	 * @return void
 	 */
 	public function setMonths ($newMonths) {
 		$this->months = $newMonths;
