@@ -102,7 +102,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 			$displayString = $monthName . ' ' . $year;
 
 			if ($i == 1) {
-				$displayString .= ' (' . $this->localise('unvollständig') . ')';
+				$displayString .= ' (' . Tx_Extbase_Utility_Localization::translate('unvollständig', 'pazpar2neuerwerbungen') . ')';
 			}
 
 			$months[$searchString] = $displayString;
@@ -111,12 +111,6 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		}
 		
 		return $months;
-	}
-
-
-	// TODO: use localisation
-	private function localise ($string) {
-		return $string;
 	}
 
 

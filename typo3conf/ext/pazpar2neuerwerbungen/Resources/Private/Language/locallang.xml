@@ -10,8 +10,12 @@
 	<data type="array">
 
 		<languageKey index="default" type="array">
+			<!-- <form> -->
 			<label index="Anzeigen">Anzeigen</label>
 			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Die aktuelle Liste als RSS-Feed abonnieren.</label>
+
+			<!-- PHP code -->
+			<label index="unvollständig">unvollständig</label>
 
 			<!-- Unterbereiche Geschichte -->
 			<label index="Geschichte">Geschichte</label>
@@ -38,8 +42,12 @@
 
 
 		<languageKey index="en" type="array">
+			<!-- <form> -->
 			<label index="Anezeigen">Show</label>
 			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Subscribe to the current query as RSS-feed.</label>
+
+			<!-- PHP code -->
+			<label index="unvollständig">incomplete</label>
 
 			<!-- Unterbereiche Geschichte -->
 			<label index="Geschichte">History</label>
