@@ -40,7 +40,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	/**
 	 * Getter for subject tree array.
 	 *
-	 * return Array
+	 * @return Array
 	 */
 	public function getSubjects () {
 		return $this->subjects;
@@ -94,7 +94,7 @@ class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Ext
 	 * Value of the selected item in the month selection menu:
 	 * The key of the second item in the $months array.
 	 *
-	 * @return string
+	 * @return string|null value of default month or null
 	 */
 	public function getDefaultMonth () {
 		$result = null;

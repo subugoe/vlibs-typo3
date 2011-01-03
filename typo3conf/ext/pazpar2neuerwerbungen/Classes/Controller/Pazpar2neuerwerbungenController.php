@@ -35,7 +35,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	 * defaultSettings: Return array with default settings.
 	 * Add own default settings to those set by the superclass.
 	 *
-	 * @return array
+	 * @return Array
 	 */
 	protected function defaultSettings () {
 		$defaults = parent::defaultSettings();
@@ -49,10 +49,10 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 
 
 	
-
 	/**
-	 * Index: Insert pazpar2 CSS <link> and JavaScript <script>-tags into
-	 * the page’s <head> which are required to make the search work.
+	 * Index: Make superclass insert <script> and <link> tags into <head>.
+	 * Create pazpar2neuerwerbungen model object, load subjects, assign subjects
+	 *	and current months list to the model object and assign it to view.
 	 *
 	 * @return void
 	 */
@@ -62,9 +62,20 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$pz2Neuerwerbungen = new Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen;
 		$pz2Neuerwerbungen->setSubjects( $this->getSubjectsArray() );
 		$pz2Neuerwerbungen->setMonths( $this->monthsArray() );
+
 		$this->view->assign('pazpar2neuerwerbungen', $pz2Neuerwerbungen);
 	}
 
+
+
+	/*
+	 * reduceMonth: Assume the passed references to month and year numbers
+	 *	indicate a month; reduce them to indicate the previous month.
+	 *
+	 * @param $month reference to month number
+	 * @param $year reference to year number
+	 * @return void
+	 */
 	private function reduceMonth (&$month, &$year) {
 		if ($month == 1) {
 			$month = 12;
@@ -74,7 +85,16 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 			$month--;
 		}
 	}
-	
+
+
+
+	/*
+	 * Return search string for Pica format of the given month: YYYYMM
+	 *
+	 * @param $month month number
+	 * @param $year year number
+	 * @return string the given month in YYYYMM format
+	 */
 	private function picaSearchStringForMonth ($month, $year) {
 		$leadingZero = '';
 		
@@ -86,6 +106,16 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	}
 
 
+
+	/*
+	 * Returns array of months preceding the current one.
+	 *	* Keys are of the form YYYYMM.
+	 *	* Values are localised names of the months followed by the year.
+	 *		Localised '(incomplete)' is appended to the name of the current month.
+	 *
+	 * @param $numberOfMonths (default = 13)
+	 * @return Array
+	 */
 	private function monthsArray ($numberOfMonths = 13) {
 		$months = array();
 		$year = date('Y');
@@ -162,7 +192,8 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 
 
 	/**
-	 * Helper: Inserts pazpar2 headers into page.
+	 * Inserts headers into page: first general ones by the superclass,
+	 *	then our own.
 	 *
 	 * @return void
 	 */
