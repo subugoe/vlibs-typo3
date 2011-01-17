@@ -236,7 +236,7 @@ function buildSearchQueryWithEqualsAndWildcard (form, equals, wildcard) {
 		addSearchTermsToList('a,r', statuses, wildcard);
 		var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
 		
-		var queryString = LKLQueryString + ' and ' + DTMQueryString + ' not ' + SLKQueryString;
+		var queryString = LKLQueryString + ' and ' + DTMQueryString // + ' not ' + SLKQueryString;
 	}
 
 	return queryString;
