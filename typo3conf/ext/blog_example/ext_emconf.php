@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "blog_example".
 #
-# Auto generated 23-11-2010 13:29
+# Auto generated 04-01-2011 10:25
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
