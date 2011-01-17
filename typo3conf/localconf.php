@@ -134,5 +134,5 @@ $TYPO3_CONF_VARS['SYS']['enable_DLOG'] = '1';	//  Modified or inserted by TYPO3 
 $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['FE']['logfile_dir'] = '/var/log/typo3/';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 02-12-10 10:47:45
-// Updated by TYPO3 Extension Manager 04-01-11 10:25:49
+// Updated by TYPO3 Extension Manager 05-01-11 10:55:22
 ?>
