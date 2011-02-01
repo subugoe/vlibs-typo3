@@ -135,5 +135,4 @@ $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserte
 $TYPO3_CONF_VARS['FE']['logfile_dir'] = '/var/log/typo3/';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 02-12-10 10:47:45
 // Updated by TYPO3 Extension Manager 28-01-11 09:35:37
-
 ?>
