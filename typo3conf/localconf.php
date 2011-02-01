@@ -128,11 +128,11 @@ $TYPO3_CONF_VARS['EXT']['extConf']['metaext'] = 'a:28:{s:14:"extconsteditor";s:1
 // Updated by TYPO3 Install Tool 23-11-10 14:57:42
 $TYPO3_CONF_VARS['EXT']['extConf']['realurl'] = 'a:5:{s:10:"configFile";s:26:"typo3conf/realurl_conf.php";s:14:"enableAutoConf";s:1:"1";s:14:"autoConfFormat";s:1:"0";s:12:"enableDevLog";s:1:"0";s:19:"enableChashUrlDebug";s:1:"0";}';	//  Modified or inserted by TYPO3 Extension Manager.
 $TYPO3_CONF_VARS['EXT']['extConf']['t3jquery'] = 'a:6:{s:15:"alwaysIntegrate";s:1:"1";s:18:"dontIntegrateOnUID";s:0:"";s:9:"configDir";s:19:"uploads/tx_t3jquery";s:13:"jQueryVersion";s:5:"1.4.4";s:15:"jQueryUiVersion";s:5:"1.8.7";s:18:"jQueryTOOLSVersion";s:0:"";}';	// Modified or inserted by TYPO3 Extension Manager. 
-$TYPO3_CONF_VARS['EXT']['extConf']['beko_debugster'] = 'a:2:{s:7:"ip_mask";s:19:"134.76.*, 127.0.0.1";s:10:"steps_back";s:1:"3";}';	//  Modified or inserted by TYPO3 Extension Manager.
+$TYPO3_CONF_VARS['EXT']['extConf']['beko_debugster'] = 'a:2:{s:7:"ip_mask";s:27:"134.76.*, 127.0.0.1, 10.0.*";s:10:"steps_back";s:1:"3";}';	// Modified or inserted by TYPO3 Extension Manager. 
 // Updated by TYPO3 Extension Manager 01-12-10 10:21:06
 $TYPO3_CONF_VARS['SYS']['enable_DLOG'] = '1';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['FE']['logfile_dir'] = '/var/log/typo3/';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 02-12-10 10:47:45
-// Updated by TYPO3 Extension Manager 28-01-11 09:35:37
+// Updated by TYPO3 Extension Manager 01-02-11 11:14:55
 ?>
