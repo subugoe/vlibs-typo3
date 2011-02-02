@@ -1,0 +1,155 @@
+2009-12-21 Francois Suter <typo3@cobweb.ch>
+
+	* Added protection against possible XSS attacks
+	* Released to TER as version 2.9.2
+
+2009-09-19 Francois Suter <typo3@cobweb.ch>
+
+	* Corrected TCA configuration so that devlog records are properly allowed anywhere in the page tree
+
+2009-09-15 Francois Suter <typo3@cobweb.ch>
+
+	* Removed some left-over debug statements (sorry!)
+	* Released to TER as version 2.9.1
+
+2009-09-09 Francois Suter <typo3@cobweb.ch>
+
+	* Added optimization option when deleting excess records from the devlog table
+	* Updated the manual
+	* Released to TER as version 2.9.0
+
+2009-08-17 Francois Suter <typo3@cobweb.ch>
+
+	* Changed engine database for devlog table to InnoDB
+
+2009-03-26 Francois Suter <typo3@cobweb.ch>
+
+	* Updated the manual
+	* Released to TER as version 2.8.0
+
+2009-03-24 Francois Suter <typo3@cobweb.ch>
+
+	* Added check for extra data type
+	* Added configuration for filtering extra data of excessive size
+
+2009-03-09 Francois Suter <typo3@cobweb.ch>
+
+	* Added checks for proper initialization of DB object on devlog call
+	* Added custom categories for extension configuration options (usable as of TYPO3 4.3)
+
+2009-03-02 Francois Suter <typo3@cobweb.ch>
+
+	* Made CSH for severity.image non translatable (thanks to Steffen Muller)
+	* Completed update of the manual
+	* Relased to TER as version 2.7.0
+
+2009-03-01 Francois Suter <typo3@cobweb.ch>
+
+	* Modified the CSH text, in particular severity levels descriptions
+	* Updated the manual
+
+2009-02-26 Francois Suter <typo3@cobweb.ch>
+
+	* Completed implementation of CSH for both log table view and TCEform single view
+	* Removed UID column in log table view
+	* Moved date column to first place and placed links to log runs on that column
+	* Changed default order in Web > List view, most recent record on top (thanks to Steffen Muller)
+	* Changed log table styles slightly to better match t3skin
+
+2009-02-24 Francois Suter <typo3@cobweb.ch>
+
+	* Added CSH to header cells in log table view (thanks to Steffen Muller)
+
+2009-02-16 Francois Suter <typo3@cobweb.ch>
+
+	* Added better display of records in TCEforms (thanks to Fabien Udriot)
+	* Added visible warning in BE module about filtered keys
+	* Added t3lib_db::sql_free_results() calls wherever relevant
+	* Added a button to clear search and all filters
+
+2008-11-07 Francois Suter <typo3@cobweb.ch>
+
+	* Added option for filtering out (extension) keys
+	* Released version 2.6.0
+
+2008-10-27 Francois Suter <typo3@cobweb.ch>
+
+	* Added option for limiting the size of the log table
+	* Added option for minimum level of severity for logging
+	* Added option for configuring autorefresh frequency
+	* Optimized hook usage by making it a (pseudo-)singleton
+
+2008-10-13 Francois Suter <typo3@cobweb.ch>
+
+	* Caught unitialized value in BE module
+
+2008-10-13 Francois Suter <typo3@cobweb.ch>
+
+	* Updated the manual
+	* Released version 2.5.0
+
+2008-10-09 Francois Suter <typo3@cobweb.ch>
+
+	* Fixed error when linking to log runs beyond the (menu) limit
+
+2008-10-08 Francois Suter <typo3@cobweb.ch>
+
+	* Added page filter
+	* Added user filter
+	* Added error message when no records are found
+	* Refactored part of the code
+
+2008-10-03 Francois Suter <typo3@cobweb.ch>
+
+	* Added handling of $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['GLOBAL']['debugData']['pid']
+
+2008-08-24 Francois Suter <typo3@cobweb.ch>
+
+	* Corrected page edit link
+	* Cleaned up some more code
+
+2008-08-22 Francois Suter <typo3@cobweb.ch>
+
+	* Added log search feature
+	* Released version 2.4.0
+
+2008-08-13 Francois Suter <typo3@cobweb.ch>
+
+	* Simplified handling of extra data
+
+2008-08-07 Francois Suter <typo3@cobweb.ch>
+
+	* Caught error when extension is not configured
+
+2008-07-22 Francois Suter <typo3@cobweb.ch>
+
+	* Corrected HTML markup error in BE module
+
+2008-04-23 Francois Suter <typo3@cobweb.ch>
+
+	* Automatically retrieve and store devLog call location (thanks to Kasper Ligaard)
+
+2008-04-23 Francois Suter <typo3@cobweb.ch>
+
+	* Added various selection options for cleaning up log entries
+	* Removed htmlspecialchars() call on log message (suggested by Ingo Renner)
+
+2008-04-15 Francois Suter <typo3@cobweb.ch>
+
+	* Added a log run browser in single log run view (thanks to Rupert Germann)
+	* Added a checkbox to automatically expand all extra data (thanks to Rupert Germann)
+	* Added extension configuration options
+
+2008-04-07 Francois Suter <typo3@cobweb.ch>
+
+	* Increased size of database field for extra data
+	* Added the possibility of viewing the deserialised extra data
+	* Added the possibility of viewing all entries and paginating through them
+	* Added filters on status and extension keys
+	* Added display of the crdate column (thanks to Stefano Cecere)
+	* Cleaned up part of the code
+	* Totally revamped manual
+
+2005-01-02
+
+	* Last version of cc_devlog by Rene Fritz
