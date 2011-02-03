@@ -18,13 +18,14 @@
 			<f:form.submit name="button" value="<f:translate key='Anzeigen'/>" />
 
 			<div class="pz2-fieldsets">
-				<f:for each="{pazpar2neuerwerbungen.subjects}" as="section">
-					<fieldset class="pz2-fieldset-<f:for each='{section.GOKs}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>-</f:if>{GOK}</f:for>">
+				<f:for each="{pazpar2neuerwerbungen.subjects}" as="section" key="sectionIndex">
+					<fieldset class="pz2-fieldset-{sectionIndex}">
 						<legend>
-							<label>
+							<label for="neuerwerbungen-group-checkbox-{sectionIndex}">
 								<f:form.checkbox name="pz2subject"
 												value="<f:for each='{section.GOKs}' as='GOK' key='GOKIndex'><f:if condition='{GOKIndex} != 0'>,</f:if>{GOK}</f:for>"
-												onclick="groupCheckboxChanged(this);"/>
+												onclick="groupCheckboxChanged(this);"
+												id="neuerwerbungen-group-checkbox-{sectionIndex}"/>
 								<f:translate key="{section.name}"/>
 							</label>
 						</legend>
