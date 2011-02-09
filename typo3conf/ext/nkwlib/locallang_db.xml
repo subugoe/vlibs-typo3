@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'nkwlib'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="flexform.options">Options</label>
+			<label index="flexform.rss">RSS</label>
+			<label index="flexform.backLink">Back Link</label>
+			<label index="flexform.title">Title</label>
+			<label index="flexform.description">Description</label>
+			<label index="flexform.yesno">Yes/No</label>
+			<label index="flexform.target">Target (Single View)</label>
+			<label index="flexform.source">Source</label>
+			<label index="flexform.showBackPID">Show Back PID Link</label>
+			<label index="flexform.text">Text</label>
+			<label index="flexform.display">Display</label>
+			<label index="flexform.display.I.0">List</label>
+			<label index="flexform.display.I.1">Data Table</label>
+			<label index="flexform.display.I.2">Dashboard</label>
+			<label index="flexform.display.I.3">RSS Feed</label>
+			<label index="flexform.display.I.4">Next</label>
+			<label index="flexform.display.I.5">Last</label>
+			<label index="flexform.display.I.6">Today</label>
+			<label index="flexform.display.I.7">Tomorrow</label>
+			<label index="flexform.displayNumber">Number of Items to display</label>
+			<label index="flexform.displayNumber.I.0">All</label>
+			<label index="flexform.displayNumber.I.1">5</label>
+			<label index="flexform.displayNumber.I.2">10</label>
+			<label index="flexform.displayNumber.I.3">25</label>
+			<label index="flexform.displayNumber.I.4">50</label>			
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="flexform.options">Optionen</label>
+			<label index="flexform.rss">RSS</label>
+			<label index="flexform.backLink">Backlink</label>
+			<label index="flexform.title">Titel</label>
+			<label index="flexform.description">Beschreibung</label>
+			<label index="flexform.yesno">Ja/Nein</label>
+			<label index="flexform.target">Ziel (Einzelansicht)</label>
+			<label index="flexform.source">Source</label>
+			<label index="flexform.showBackPID">Zeige Back PID Link</label>
+			<label index="flexform.text">Text</label>
+			<label index="flexform.display">Anzeigeart</label>
+			<label index="flexform.display.I.0">Liste</label>
+			<label index="flexform.display.I.1">Datentabelle</label>
+			<label index="flexform.display.I.2">Dashboard</label>
+			<label index="flexform.display.I.3">RSS-Feed</label>
+			<label index="flexform.display.I.4">Nächste</label>
+			<label index="flexform.display.I.5">Letzte</label>
+			<label index="flexform.display.I.6">Heute</label>
+			<label index="flexform.display.I.7">Morgen</label>
+			<label index="flexform.displayNumber">Anzahl der angezeigten Einträge</label>
+			<label index="flexform.displayNumber.I.0">Alle</label>
+			<label index="flexform.displayNumber.I.1">5</label>
+			<label index="flexform.displayNumber.I.2">10</label>
+			<label index="flexform.displayNumber.I.3">25</label>
+			<label index="flexform.displayNumber.I.4">50</label>			
+		</languageKey>
+	</data>
+</T3locallang>
