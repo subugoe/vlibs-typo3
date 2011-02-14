@@ -90,7 +90,7 @@ class Tx_Pazpar2_Domain_Model_Query extends Tx_Extbase_DomainObject_AbstractEnti
 	 * @return string
 	 */
 	public function getPazpar2BaseURL () {
-		$URL = 'http://localhost/pazpar2/search.pz2';
+		$URL = 'http://' . t3lib_div::getIndpEnv(HTTP_HOST) . '/pazpar2/search.pz2';
 		if ($this->pazpar2BaseURL) {
 			$URL = $this->pazpar2BaseURL;
 		}
