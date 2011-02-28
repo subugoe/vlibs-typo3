@@ -30,7 +30,7 @@
 /**
  * TYPO3 Extension Kickstarter
  *
- * @author	Kasper Sk�rh�j <kasperYYYY@typo3.com>
+ * @author	Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author	Ingo Renner	<ingo@typo3.org>
  */
 class tx_kickstarter_sectionbase {
@@ -82,7 +82,7 @@ class tx_kickstarter_sectionbase {
 	function renderCheckBox($prefix,$value,$defVal=0)	{
 		if (!isset($value))	$value=$defVal;
 		$onCP = $this->getOnChangeParts($prefix);
-		return $this->wopText($prefix).$onCP[0].'<input type="hidden" name="'.$this->piFieldName('wizArray_upd').$prefix.'" value="0"><input type="checkbox" class="checkbox" name="'.$this->piFieldName("wizArray_upd").$prefix.'" value="1"'.($value?' checked="checked"':'').' onclick="'.$onCP[1].'"'.$this->wop($prefix).'>';
+		return $this->wopText($prefix).$onCP[0].'<input type="hidden" name="'.$this->piFieldName('wizArray_upd').$prefix.'" value="0"><input type="checkbox" class="checkbox" id="field_'.md5($prefix).'" name="'.$this->piFieldName("wizArray_upd").$prefix.'" value="1"'.($value?' checked="checked"':'').' onclick="'.$onCP[1].'"'.$this->wop($prefix).'>';
 	}
 
 	/**
@@ -432,10 +432,14 @@ class tx_kickstarter_sectionbase {
 	 * @param	string		the string to wrap
 	 * @return	string		string wrapped in <pre> tags
 	 */
-	function preWrap($str)	{
-		$str = str_replace(chr(9),'&nbsp;&nbsp;&nbsp;&nbsp;',htmlspecialchars($str));
-		$str = '<pre>'.$str.'</pre>';
+	function preWrap($str, $ext='txt')	{
+		if ($ext == 'php') {
+			return '<p style="font-size:12px;">' . highlight_string($str, true) . '</p>';
+		} else {
+			$str = str_replace(chr(9),'&nbsp;&nbsp;&nbsp;&nbsp;',htmlspecialchars($str));
+			$str = '<pre>' . $str . '</pre>';
 		return $str;
+		}
 	}
 
 	/**
@@ -471,7 +475,7 @@ class tx_kickstarter_sectionbase {
 				if ($firstLineWithContent==-1) {
 					$firstLineWithContent=$k;
 				}
-				list($preSpace) = split('[^[:space:]]',$v,2);
+				list($preSpace) = preg_split('/[^[:space:]]/', $v, 2);
 				$min[]=count(explode(chr(9),$preSpace));
 				$lastLineWithContent=$k;
 			}
@@ -717,7 +721,7 @@ class tx_kickstarter_sectionbase {
 			?>
 		',0);
 		$this->addFileToFileArray($pathSuffix.'conf.php',trim($content));
-		$this->wizard->EM_CONF_presets['module'][]=ereg_replace("\/$","",$pathSuffix);
+		$this->wizard->EM_CONF_presets['module'][] = preg_replace('/\/$/', '', $pathSuffix);
 
 			// Add title to local lang file
 		$ll=array();

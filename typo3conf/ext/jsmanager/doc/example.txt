@@ -1,7 +1,0 @@
-plugin.tx_jsmanager_Executor.libs {
-	order = <comma-separated list of ext-keys>
-	config {
-		<special-config for js-ext> {
-		}
-	}
-}

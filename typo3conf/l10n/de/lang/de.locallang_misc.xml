@@ -59,6 +59,7 @@
 			<label index="bookmark_inactive">inaktiv</label>
 			<label index="bookmark_noWSfound">FEHLER: Keine Arbeitsumgebungen gefunden!</label>
 			<label index="bookmark_FEPreview">Vorschau im Frontend aktivieren</label>
+			<label index="bookmark_workspaceComparisonView">Vergleichsansicht aktivieren</label>
 			<label index="bookmark_workspace">Modul Arbeitsumgebungen aufrufen</label>
 			<label index="overwriteExistingFiles">Vorhandene Dateien überschreiben</label>
 			<label index="selectPosition">Position für neue Seite auswählen</label>
@@ -136,6 +137,17 @@
 			<label index="liveSearch_helpTitle">Zur Benutzung von Suchpräfixen</label>
 			<label index="liveSearch_helpDescription">In ausgewählten Tabellen suchen:</label>
 			<label index="liveSearch_helpDescriptionPages">#page:Home sucht nach allen Seiten mit dem Titel &quot;Home&quot;.</label>
+			<label index="extDirect_timeoutHeader">Verbindungsproblem</label>
+			<label index="extDirect_timeoutMessage">Bei dem Versuch eine Verbindung zum Server herzustellen ist ein Fehler aufgetreten. Bitte überprüfen Sie Ihre Netzwerkverbindung.</label>
+			<label index="viewPort_tooltipModuleMenuSplit">Ziehen Sie hier, um die Größe des Modulmenüs zu ändern</label>
+			<label index="viewPort_tooltipNavigationContainerSplitDrag">Ziehen Sie hier, um die Größe zu ändern oder doppelklicken Sie, um den Baum einzuklappen</label>
+			<label index="viewPort_tooltipDebugPanelSplitDrag">Ziehen Sie hier, um die Größe zu ändern oder klicken Sie, um das Debug-Panel zuzuklappen</label>
+			<label index="fileUpload_buttonStartUpload">Hochladen starten</label>
+			<label index="fileUpload_progressText">{2} von {1} Datei(en) hochgeladen (Geschwindigkeit: {5}/s)</label>
+			<label index="fileUpload_infoFileQueueEmpty">keine Dateien in Warteschlange</label>
+			<label index="fileUpload_infoFileQueued">Datei in Warteschlange</label>
+			<label index="fileUpload_infoFileFinished">Hochladen beendet</label>
+			<label index="fileUpload_infoFileUploading">Hochladen läuft ({0}%)</label>
 			<label index="shortcut_GLOBAL">GLOBAL</label>
 			<label index="shortcut_ALL">ALLE</label>
 			<label index="CM_editPageHeader">Bearbeite Seiten-Header</label>
@@ -280,6 +292,18 @@
 			<label index="liveSearch_helpDescriptionPages" type="integer">22137224</label>
 			<label index="liveSearch_title" type="integer">61529724</label>
 			<label index="liveSearch_helpTitle" type="integer">79756859</label>
+			<label index="bookmark_workspaceComparisonView" type="integer">36209914</label>
+			<label index="fileUpload_buttonStartUpload" type="integer">225398749</label>
+			<label index="fileUpload_progressText" type="integer">66137622</label>
+			<label index="fileUpload_infoFileQueueEmpty" type="integer">39122793</label>
+			<label index="fileUpload_infoFileQueued" type="integer">195894377</label>
+			<label index="fileUpload_infoFileFinished" type="integer">69808692</label>
+			<label index="fileUpload_infoFileUploading" type="integer">195225962</label>
+			<label index="extDirect_timeoutHeader" type="integer">179100714</label>
+			<label index="extDirect_timeoutMessage" type="integer">155571833</label>
+			<label index="viewPort_tooltipModuleMenuSplit" type="integer">66771854</label>
+			<label index="viewPort_tooltipNavigationContainerSplitDrag" type="integer">231000458</label>
+			<label index="viewPort_tooltipDebugPanelSplitDrag" type="integer">128904933</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -421,6 +445,18 @@
 			<label index="liveSearch_helpDescriptionPages">#page:Home will search for all pages with the title &quot;Home&quot;</label>
 			<label index="liveSearch_title">Short result list</label>
 			<label index="liveSearch_helpTitle">How to use advanced search tags</label>
+			<label index="bookmark_workspaceComparisonView">Enable comparison view</label>
+			<label index="fileUpload_buttonStartUpload">Start Upload</label>
+			<label index="fileUpload_progressText">{2} of {1} file(s) uploaded (Speed: {5}/s)</label>
+			<label index="fileUpload_infoFileQueueEmpty">no files queued</label>
+			<label index="fileUpload_infoFileQueued">File queued</label>
+			<label index="fileUpload_infoFileFinished">Upload finished</label>
+			<label index="fileUpload_infoFileUploading">Uploading ({0}%)</label>
+			<label index="extDirect_timeoutHeader">Connection Problem</label>
+			<label index="extDirect_timeoutMessage">Sorry, but an error occurred while connecting to the server. Please check your network connection.</label>
+			<label index="viewPort_tooltipModuleMenuSplit">Drag to resize the Modules Menu</label>
+			<label index="viewPort_tooltipNavigationContainerSplitDrag">Drag to resize or double click to collapse the tree</label>
+			<label index="viewPort_tooltipDebugPanelSplitDrag">Drag to resize or click to collapse the Debug Panel.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

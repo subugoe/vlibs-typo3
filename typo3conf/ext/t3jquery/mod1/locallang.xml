@@ -8,6 +8,7 @@
 		<languageKey index="default" type="array">
 			<label index="title">jQuery Setup</label>
 			<label index="version_in_use">Versions in use: %s</label>
+			<label index="integrate_from_cdn">You are using CDN to integrate the jQuery-Libs, there are no further settings.</label>
 			<label index="function1">Create custom jQuery JS library</label>
 			<label index="function2">Analyze .js for jQuery dependencies</label>
 			<label index="function3">Process &amp; Analyze t3jquery.txt in extensions</label>

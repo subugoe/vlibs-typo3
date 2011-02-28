@@ -24,7 +24,7 @@
 /**
  * Misc functions to access the static info tables
  *
- * $Id: class.tx_staticinfotables_div.php 29140 2010-01-20 21:50:55Z franzholz $
+ * $Id: class.tx_staticinfotables_div.php 29532 2010-01-31 07:12:55Z franzholz $
  *
  * @author	René Fritz <r.fritz@colorcube.de>
  * @package TYPO3

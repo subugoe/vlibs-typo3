@@ -31,7 +31,7 @@ Damit können Sie eine Aufzählung erstellen. Jede Zeile des Textfeldes erschein
 &lt;strong&gt;Tabelle&lt;/strong&gt;
 Bietet die Möglichkeit, &lt;em&gt;einfache&lt;/em&gt; Tabellen zu erstellen. Jede Zeile stellt eine Tabellenzeile dar und vertikale Striche ('|') trennen die Spalten.
 
-&lt;strong&gt;Dateiverweise&lt;/strong&gt;
+&lt;strong&gt;Dateilinks&lt;/strong&gt;
 Präsentiert eine Liste von Dateien zum Herunterladen. Sie können Vorschausymbole zuordnen und die Dateigröße anzeigen lassen.
 
 &lt;strong&gt;Multimedia&lt;/strong&gt;
@@ -83,7 +83,7 @@ Die verfügbaren Systemsprachen werden vom Administrator eingestellt.</label>
 
 Es gibt einige Standardimplementierungen, die vom Inhaltstyp abhängig sind:
 
-&lt;b&gt;&quot;Dateiverweise&quot;:&lt;/b&gt;
+&lt;b&gt;&quot;Dateilinks&quot;:&lt;/b&gt;
 &quot;Normal&quot; erzeugt eine Liste ohne Vorschau-Symbole.
 &quot;Layout 1&quot; fügt ein Dateisymbol links vom Link ein.
 &quot;Layout 2&quot; Fügt ein Vorschausymbol ein, falls die Datei ein Bild ist. Ein schwarzer Rahmen wird hinzugefügt.
@@ -101,7 +101,7 @@ Beachten Sie bitte ausserdem, dass der Begriff &quot;Spalte&quot; nicht zu wört
 Einige Inhaltselemente zeigen die Überschrift standardmäßig nicht an. In solchen Fällen wird das Feld &quot;Name&quot; genannt. Einer dieser Typen ist &quot;HTML&quot;.</label>
 			<label index="header_position.description">Richtet die Überschrift links, mittig oder rechts aus.</label>
 			<label index="header_link.description">Macht aus der Überschrift auch einen Link. Geben Sie eine Seitennummer, E-Mail-Adresse oder URL ein.</label>
-			<label index="header_link.syntax">Wenn Sie eine ID-Nummer, z.B. &quot;51&quot; eingeben, verweist die Überschrift auf die Seite mit der id=51 &lt;em&gt;innerhalb&lt;/em&gt; Ihres TYPO3-Web-Auftritts.
+			<label index="header_link.syntax">Wenn Sie eine ID-Nummer, z.B. &quot;51&quot; eingeben, verlinkt die Überschrift zu der Seite mit der id=51 &lt;em&gt;innerhalb&lt;/em&gt; Ihres TYPO3-Web-Auftritts.
 Wenn Sie eine E-Mail-Adresse, z.B.. &quot;name@my-domain.test&quot; eingeben, wird der Link auf diese E-Mail-Adresse zeigen.
 Wenn Sie eine URL oder Domäne eingeben, z.B. &quot;www.typo3.com&quot; oder &quot;http://www.my-domain.org&quot;, wird der Link auf diese externe Website zeigen.</label>
 			<label index="header_layout.description">Wählen Sie ein Layout für die Überschrift aus.</label>
@@ -220,7 +220,7 @@ Einzelheiten zur Syntax erhalten Sie unten über Seiteninhalt &gt; Link.</label>
 			<label index="imagecaption.details">Normalerweise wird die Bildunterschrift unter dem gesamten Bilderblock angezeigt. Die Vorlage der Website kann jedoch so programmiert werden, dass sie individuelle Bildunterschriften anzeigt, indem in den Vorlagenkonstanten &quot;styles.content.imgtext.captionSplit=1&quot; gesetzt wird. 
 In diesem Fall entspricht jede Zeile der Bildunterschrift je eines Bildes.
 
-Das Feld wird außerdem vom Inhaltstypen &quot;Dateiverweise&quot; verwendet, wobei jede Zeile der Beschreibung einer Datei in der Liste entspricht.</label>
+Das Feld wird außerdem vom Inhaltstypen &quot;Dateilinks&quot; verwendet, wobei jede Zeile der Beschreibung einer Datei in der Liste entspricht.</label>
 			<label index="imagecaption_position.description">Richtet die Bildunterschrift links, zentriert oder rechts aus.</label>
 			<label index="cols.description">Wählen Sie eine feste Anzahl an Spalten aus.</label>
 			<label index="pages.description">Seite(n) einfügen</label>

@@ -1,6 +1,7 @@
 plugin.tx_staticinfotables_pi1 {
 
    countryCode = {$plugin.tx_staticinfotables_pi1.countryCode}
+   countriesAllowed = {$plugin.tx_staticinfotables_pi1.countriesAllowed}
    countryZoneCode = {$plugin.tx_staticinfotables_pi1.countryZoneCode}
    currencyCode = {$plugin.tx_staticinfotables_pi1.currencyCode}
    languageCode = {$plugin.tx_staticinfotables_pi1.languageCode}
@@ -11,7 +12,7 @@ plugin.tx_staticinfotables_pi1 {
 ## Semi-colon (;)-separated address lines
 ## Examples of address format 1: Austria, Denmark, France, Germany, Russia
       1 = %street;%zip  %city;%countryName
-      
+
 ## Examples of address format 2: India
       2 = %street;%city %zip;%countryName
 

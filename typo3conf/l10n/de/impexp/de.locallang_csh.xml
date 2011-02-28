@@ -187,7 +187,7 @@ Stellen Sie sicher, dass Sie vor dem Import alle editierbaren Soft-References, d
 			<label index="inclRelations.description" type="integer">75889546</label>
 			<label index="inclRelations.details" type="integer">21617906</label>
 			<label index=".description" type="integer">68307774</label>
-			<label index="inclRelations.image_descr" type="integer">68907185</label>
+			<label index="inclRelations.image_descr" type="integer">58323099</label>
 			<label index="enableLogging.alttitle" type="integer">110785878</label>
 			<label index="staticRelations.description" type="integer">220143778</label>
 			<label index="staticRelations.details" type="integer">20475161</label>
@@ -210,8 +210,8 @@ Stellen Sie sicher, dass Sie vor dem Import alle editierbaren Soft-References, d
 			<label index="upload.details" type="integer">204986464</label>
 			<label index="fileFormat.description" type="integer">38635585</label>
 			<label index="import.description" type="integer">195344023</label>
-			<label index="metadata.details" type="integer">31594566</label>
-			<label index="action.description" type="integer">104527145</label>
+			<label index="metadata.details" type="integer">204938784</label>
+			<label index="action.description" type="integer">231290314</label>
 			<label index="action.image_descr" type="integer">260289010</label>
 			<label index="fileFormat.details" type="integer">92488672</label>
 			<label index="options.details" type="integer">50809709</label>
@@ -295,7 +295,7 @@ Here you see how to use the Web&gt;List module to export all records from a tabl
 &lt;b&gt;Soft References:&lt;/b&gt; Soft references are when a record contains pointers to external files or records but in fields where there are no formal relation configured. Examples of this is when a content element contains a &quot;&amp;lt;link 123&amp;gt;&quot; tag that represents a link to the page 123. This is not picked up formally as a reference, but is found anyhow as a &quot;soft reference&quot;. The same goes for &amp;lt;img&amp;gt; tags with images from eg. &quot;fileadmin/&quot;.
 By default soft references pointing to records or files will act as normal references; either including the referenced item or showing an error. However you can also choose to exclude the handling of individual soft references or maybe set the value as &quot;editable&quot; upon import. This is done with a selector box in the export preview.</label>
 			<label index=".description">Native Import/Export module for TYPO3 data. Can export single records, content of tables, single pages or whole branches of the page tree. Includes attached media like image and preserves relations between records. Exports only to TYPO3 specific format, either a binary format (.T3D) or XML. The format is meant for exchange between TYPO3 systems.</label>
-			<label index="inclRelations.image_descr">This example shows tree examples of references; a) an image attached to a content element, b) a relation to a frontend usergroup UID, and c) a soft reference found in the bodytext field of a record, here it is the link-tag pointing to the page with UID 1. 
+			<label index="inclRelations.image_descr">This example shows tree examples of references; a) an image attached to a content element, b) a relation to a frontend usergroup UID, and c) a soft reference found in the bodytext field of a record, here it is the link-tag pointing to the page with UID 1.
 Notice in the previous image how the relation to the frontend user group was lost. This has been corrected in this screenshot where the fe_group table has been selected in the list of table for which to include relations. The result is that the frontend usergroup is included as a record outside the exported pagetree. If you wanted to keep the relation but not include the usergroup you have to set &quot;fe_groups&quot; as a static table instead. See below.
 This example shows a TypoScript Template Record where multiple soft references has been found. The first one is an email address. Here it is configured to be editable. This means that upon import the user will have a chance to edit the value before the import is actually done. This is very useful when exported files are used as templates. Another example includes a PHP script which we don't want to include in the export and therefore we have selected the exclude option for the soft reference.</label>
 			<label index="enableLogging.alttitle">Enable System Logging</label>
@@ -324,10 +324,10 @@ Here you are told that this PHP file cannot be allowed - because you didn't sele
 			<label index="fileFormat.description">You can export your records to a TYPO3 specific binary format (serialized PHP array) called &quot;T3D&quot;. Alternatively you can select a plain-text XML export which potentially can be imported by other applications written to support this format. However the schema of the XML is TYPO3 specific.</label>
 			<label index="import.description">To import TYPO3 T3D/XML files into the page tree you click any page in the page tree (including the root page!), select &quot;More options&quot; (requires the extensions &quot;extra_page_cm_options&quot; to be installed) and then &quot;Import from .t3d&quot;. This will bring up the import interface where you can select a file to import or upload a new one.</label>
 			<label index="metadata.details">The meta data will help users of your exported files to know what they can expect to be inside and what things they should be aware of and take into account during import.
-The &quot;Title&quot; and &quot;Description&quot; should contain the basic information about the export. 
+The &quot;Title&quot; and &quot;Description&quot; should contain the basic information about the export.
 The &quot;Notes&quot; field can be used for additional details, especially remarks about intensions or requirements that apply.
 The thumbnail field is used for thumbnails if you need that for your export. This is very useful when export files are used as page templates where the template selector can take advantage of the thumbnail. The format should be a web-format like jpg, gif or png and the dimensions should fit exactly the final display dimensions intended; so don't upload very large images!</label>
-			<label index="action.description">Press &quot;Preview&quot; to see the content of the import file or update the preview display according to changed configurations. 
+			<label index="action.description">Press &quot;Preview&quot; to see the content of the import file or update the preview display according to changed configurations.
 Press &quot;Import&quot;/&quot;Update&quot; if you want to perform the actual import.
 
 Before importing make sure you change any editable soft references that are shown in the preview data.</label>

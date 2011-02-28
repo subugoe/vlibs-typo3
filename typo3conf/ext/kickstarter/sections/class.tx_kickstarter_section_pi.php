@@ -24,7 +24,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * @author	Kasper Sk�rh�j <kasperYYYY@typo3.com>
+ * @author	Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author	Ingo Renner	<ingo@typo3.org>
  */
 
@@ -196,7 +196,7 @@ class tx_kickstarter_section_pi extends tx_kickstarter_sectionbase {
 				$this->wizard->ext_tables[]=$this->sPS('
 					'.$this->WOPcomment('WOP:'.$WOP.'[addType]')."
 					t3lib_div::loadTCA('tt_content');
-					\$TCA['tt_content']['types']['list']['subtypes_excludelist'][\$_EXTKEY.'_pi".$k."']='layout,select_key';
+					\$TCA['tt_content']['types']['list']['subtypes_excludelist'][\$_EXTKEY.'_pi".$k."']='layout,select_key,pages';
 					".($config['apply_extended']?"\$TCA['tt_content']['types']['list']['subtypes_addlist'][\$_EXTKEY.'_pi".$k."']='".$this->wizard->_apply_extended_types[$config['apply_extended']]."';":"")."
 				");
 
@@ -253,7 +253,7 @@ class tx_kickstarter_section_pi extends tx_kickstarter_sectionbase {
 				if ($config['plus_user_ex'])	$setType='includeLib';
 			break;
 			case 'typotags':
-				$tagName = ereg_replace('[^a-z0-9_]','',strtolower($config['tag_name']));
+				$tagName = preg_replace('/[^a-z0-9_]/', '', strtolower($config['tag_name']));
 				if ($tagName)	{
 					$this->wizard->ext_localconf[]=$this->sPS('
 						'.$this->WOPcomment('WOP:'.$WOP.'[addType] / '.$WOP.'[tag_name]')."
@@ -457,7 +457,7 @@ class tx_kickstarter_section_pi extends tx_kickstarter_sectionbase {
 								'.(!$cache ? '$this->pi_USER_INT_obj = 1;	// Configuring so caching is not expected. This value means that no cHash params are ever set. We do this, because it\'s a USER_INT object!' : '').'
 								$lConf = $this->conf[\'listView.\'];	// Local settings for the listView function
 
-								if ($this->piVars[\'showUid\'])	{	// If a single element should be displayed:
+								if (is_numeric($this->piVars[\'showUid\']))	{	// If a single element should be displayed:
 									$this->internal[\'currentTable\'] = \''.$tableName.'\';
 									$this->internal[\'currentRow\'] = $this->pi_getRecord(\''.$tableName.'\',$this->piVars[\'showUid\']);
 

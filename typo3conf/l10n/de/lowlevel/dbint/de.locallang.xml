@@ -65,7 +65,7 @@
 			<label index="label">Label</label>
 			<label index="tablename">Tabellenname</label>
 			<label index="total_lost">Datensätze insgesamt/verloren</label>
-			<label index="relations">Verknüpfungen:</label>
+			<label index="relations">Verknüpfungen</label>
 			<label index="relations_description">Führt eine Analyse der Datenbank-Tabellen durch und prüft, ob Verknüpfungen zwischen Einträgen ungültig sind oder Dateien an der erwarteten Position fehlen.</label>
 			<label index="files_many_ref">Dateien, die in mehr als einem Eintrag verwendet werden:</label>
 			<label index="files_no_ref">Dateien, die in keinem Eintrag verwendet werden (bitte löschen!):</label>
@@ -74,7 +74,7 @@
 			<label index="group_db">Gruppenfelder:</label>
 			<label index="tree">Der Seitenbaum:</label>
 			<label index="tree_description">Hier werden alle Seiten im System in einem großen Seitenbaum angezeigt. Beachten Sie, dass das Ergebnis wahrscheinlich ein sehr großes Dokument ist und der Server einige Zeit brauchen kann, um es zu erstellen.</label>
-			<label index="records">Statistik der Datenbank-Einträge:</label>
+			<label index="records">Statistik der Datenbank-Einträge</label>
 			<label index="records_description">Zeigt statistische Daten zu den Einträgen in der Datenbank an. Hierzu wird der komplette Seitenbaum durchsucht, der Server wird entsprechend stark belastet!</label>
 			<label index="search">Gesamte Datenbank durchsuchen:</label>
 			<label index="search_description">Durchsucht alle Datenbank-Tabellen und Einträge nach einem Text.</label>
@@ -94,7 +94,7 @@
 			<label index="total_pages" type="integer">120516512</label>
 			<label index="deleted_pages" type="integer">251989828</label>
 			<label index="hidden_pages" type="integer">56221326</label>
-			<label index="relations" type="integer">158458960</label>
+			<label index="relations" type="integer">235968261</label>
 			<label index="relations_description" type="integer">98163255</label>
 			<label index="files_many_ref" type="integer">253873964</label>
 			<label index="files_no_ref" type="integer">51429792</label>
@@ -103,7 +103,7 @@
 			<label index="group_db" type="integer">89872761</label>
 			<label index="tree" type="integer">254322778</label>
 			<label index="tree_description" type="double">13437987</label>
-			<label index="records" type="integer">107937849</label>
+			<label index="records" type="integer">122673257</label>
 			<label index="records_description" type="integer">36151804</label>
 			<label index="search" type="integer">123541641</label>
 			<label index="search_description" type="integer">44447557</label>
@@ -179,7 +179,7 @@
 			<label index="total_pages">Total number of pages:</label>
 			<label index="deleted_pages">Marked-deleted pages:</label>
 			<label index="hidden_pages">Hidden pages:</label>
-			<label index="relations">Relations:</label>
+			<label index="relations">Relations</label>
 			<label index="relations_description">This will analyse the content of the tables and check if there are 'empty' relations between records or if files are missing from their expected position.</label>
 			<label index="files_many_ref">Files referenced from more than one record:</label>
 			<label index="files_no_ref">Files with no references at all (delete them!):</label>
@@ -188,7 +188,7 @@
 			<label index="group_db">Group fields:</label>
 			<label index="tree">The Page Tree:</label>
 			<label index="tree_description">This shows all pages in the system in one large tree. Beware that this will probably result in a very long document which will also take some time for the server to compute!</label>
-			<label index="records">Records Statistics:</label>
+			<label index="records">Records Statistics</label>
 			<label index="records_description">This shows some statistics for the records in the database. This runs through the entire page-tree and therefore it will also load the server heavily!</label>
 			<label index="search">Search whole Database</label>
 			<label index="search_description">This searches through all database tables and records for a text string.</label>

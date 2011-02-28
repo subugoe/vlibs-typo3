@@ -2,7 +2,7 @@
 # Table structure for table "static_territories"
 #
 CREATE TABLE static_territories (
-  uid int(11) unsigned DEFAULT '0' NOT NULL auto_increment,
+  uid int(11) unsigned NOT NULL auto_increment,
   pid int(11) unsigned DEFAULT '0' NOT NULL,
   tr_iso_nr int(11) unsigned DEFAULT '0' NOT NULL,
   tr_parent_iso_nr int(11) unsigned DEFAULT '0' NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE static_territories (
 # Table structure for table "static_countries"
 #
 CREATE TABLE static_countries (
-  uid int(11) unsigned DEFAULT '0' NOT NULL auto_increment,
+  uid int(11) unsigned NOT NULL auto_increment,
   pid int(11) unsigned DEFAULT '0' NOT NULL,
   deleted tinyint(4) DEFAULT '0' NOT NULL,
   cn_iso_2 char(2) DEFAULT '' NOT NULL,
@@ -44,7 +44,7 @@ CREATE TABLE static_countries (
 # Table structure for table "static_country_zones"
 #
 CREATE TABLE static_country_zones (
-  uid int(11) unsigned DEFAULT '0' NOT NULL auto_increment,
+  uid int(11) unsigned NOT NULL auto_increment,
   pid int(11) unsigned DEFAULT '0' NOT NULL,
   zn_country_iso_2 char(2) DEFAULT '' NOT NULL,
   zn_country_iso_3 char(3) DEFAULT '' NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE static_country_zones (
 # Table structure for table "static_currencies"
 #
 CREATE TABLE static_currencies (
-  uid int(11) unsigned DEFAULT '0' NOT NULL auto_increment,
+  uid int(11) unsigned NOT NULL auto_increment,
   pid int(11) unsigned DEFAULT '0' NOT NULL,
   cu_iso_3 char(3) DEFAULT '' NOT NULL,
   cu_iso_nr int(11) unsigned DEFAULT '0' NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE static_currencies (
 # Table structure for table "static_languages"
 #
 CREATE TABLE static_languages (
-  uid int(11) unsigned DEFAULT '0' NOT NULL auto_increment,
+  uid int(11) unsigned NOT NULL auto_increment,
   pid int(11) unsigned DEFAULT '0' NOT NULL,
   lg_iso_2 char(2) DEFAULT '' NOT NULL,
   lg_name_local varchar(99) DEFAULT '' NOT NULL,
@@ -109,6 +109,6 @@ CREATE TABLE tx_staticinfotables_hotlist (
   tablenames varchar(30) DEFAULT '' NOT NULL,
   application varchar(20) DEFAULT '' NOT NULL,
   sorting bigint(20) unsigned DEFAULT '0' NOT NULL,
-  KEY uid_local (uid_local),
+  KEY uid_local (uid_local)
 );
 

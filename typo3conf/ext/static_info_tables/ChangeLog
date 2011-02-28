@@ -1,3 +1,26 @@
+2011-01-25  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Added feature #9423: Add country zones for the regions and departments of France
+	* Fixed issue #12530: Erroneous country zone codes for Austria
+	* Follow-up to issue #12530: Erroneous country zone codes for Austria (remove country code)
+	* Follow-up to feature #9423: Add country zones for the regions and departments of France (remove country code)
+	* Fixed bugtracker issue #6901: Remove DEFAULT '0' from uid fields sql definition
+	* Fixed issue #12531: Remove reference to extension patch1822
+	* Updated Manual
+	* Added missing files in SVN
+	* Fixed issue #12555: Removed db_layout configuration not supported on page 0
+
+2011-01-24  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Fixed issue #12506: Add missing languages and/or missing TYPO3 language codes (Albanian, Canadian French, Filipino, Georgian, Khmer, Serbian)
+	* Fixed issue #12508: Update countries to level of ISO 3166-1:2006 - Newsletter VI-8 (2010-12-15)
+	* Fixed issue #10897: Missing (non-existent) territory for some countries
+	* Fixed bugtracker issue #8739: Swiss Currency Symbols are wrong
+
+2010-04-29  Franz Holzinger  <franz@ttproducts.de>
+
+	* new feature: countriesAllowed gives the ordered ISO-3 codes of the countries which are allowed in the select box.
+
 2010-01-31  Franz Holzinger  <franz@ttproducts.de>
 	* fix bug in getTitleFromIsoCode: SQL error due to wrong starting AND in where statement
 	* remove static_markets: New extension static_info_tables_markets

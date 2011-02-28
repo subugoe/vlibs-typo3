@@ -59,6 +59,9 @@
 			<label index="labels.depth_infi">Unendlich</label>
 			<label index="labels.allow">Erlauben</label>
 			<label index="labels.deny">Verbieten</label>
+			<label index="labels.automatic">Auto</label>
+			<label index="labels.enabled">Aktiviert</label>
+			<label index="labels.show">Anzeigen</label>
 			<label index="labels.generalTab">Allgemein</label>
 			<label index="labels.refresh">Baumansicht aktualisieren</label>
 			<label index="labels.temporaryDBmount">Temporäre Datenbankfreigabe aufheben</label>
@@ -75,8 +78,8 @@
 			<label index="labels.rootLevel">Wurzelebene</label>
 			<label index="labels.addnew">Neu hinzufügen</label>
 			<label index="labels.toggleall">Alle umschalten</label>
-			<label index="labels.selected">Ausgewählt</label>
-			<label index="labels.items">Objekte</label>
+			<label index="labels.selected">Ausgewählte Objekte</label>
+			<label index="labels.items">Verfügbare Objekte</label>
 			<label index="labels.remove_selected">Ausgewähltes Objekt löschen</label>
 			<label index="labels.move_to_top">Ausgewählte Objekte zum Anfang verschieben</label>
 			<label index="labels.move_up">Ausgewählte Objekte nach oben verschieben</label>
@@ -247,6 +250,19 @@ Die Änderungen speichern und die Anzeige aktualisieren?</label>
 			<label index="cm.copyFolder_into">Ordner kopieren in</label>
 			<label index="cm.moveFolder_into">Ordner verschieben in</label>
 			<label index="cm.createNewRelation">Neue Relation erstellen</label>
+			<label index="cm.branchActions">Teilbereichsaktionen</label>
+			<label index="cm.copyPasteActions">Seitenaktionen</label>
+			<label index="cm.collapseBranch">Teilbereich einklappen</label>
+			<label index="cm.expandBranch">Teilbereich ausklappen</label>
+			<label index="tree.defaultPageTitle">[Standard-Titel]</label>
+			<label index="tree.copyHint">Zum Kopieren 'Strg' drücken.</label>
+			<label index="tree.activeFilterMode">Filtermodus aktiv</label>
+			<label index="tree.dropToRemove">Zum Löschen hier ablegen</label>
+			<label index="tree.dropZoneElementRemoved">Zum Wiederherstellen hier klicken</label>
+			<label index="tree.dropZoneElementRestored">Seite wiederhergestellt</label>
+			<label index="tree.buttonNewNode">Neue Seiten erstellen</label>
+			<label index="tree.buttonFilter">Baum filtern</label>
+			<label index="tree.searchTermInfo">Suchbegriff eingeben</label>
 			<label index="warning.install_password">Das Installationsprogramm benutzt noch das Standardpasswort &quot;joh316&quot;. Bitte ersetzen Sie es %shier%s.</label>
 			<label index="warning.backend_admin">Der Standardbenutzer &quot;admin&quot; des Backends mit dem Passwort &quot;password&quot; ist noch vorhanden. %sÄndern Sie dieses Konto%s. Entweder indem Sie es vollständig löschen oder indem Sie Benutzername und Passwort ändern.</label>
 			<label index="warning.file_deny_pattern">Für fileDenyPattern ist nicht der Standardwert definiert: %s Wird TYPO3 mit Apache betrieben, kann ein angepasster Wert dazu führen, dass Backend- oder Frontend-Benutzer in die Lage versetzt werden, bösartige PHP-Skripte auszuführen.</label>
@@ -260,7 +276,7 @@ Die Änderungen speichern und die Anzeige aktualisieren?</label>
 			<label index="warning.backend_reference_index">Die Referenzindextabelle ist leer. Dies ist wahrscheinlich die Folge einer kürzlich erfolgten TYPO3-Aktualisierung. Der Referenzindex wurde zuletzt am %3$s aktualisiert. Bitte den Punkt %sWerkzeuge &gt; DB-Prüfung%s aufrufen und den Referenzindex aktualisieren.</label>
 			<label index="warning.memcache_not_usable">Memcache wurde konfiguriert, aber Verbindung zu Memcache ist fehlgeschlagen mit folgender/n Konfiguration(en):</label>
 			<label index="warning.file_missing">Datei fehlt!</label>
-			<label index="warning.file_missing_text">Dieses Inhaltselement verweist auf eine Datei, die nicht existiert:</label>
+			<label index="warning.file_missing_text">Dieses Inhaltselement verlinkt auf eine Datei, die nicht existiert:</label>
 			<label index="error.formProtection.tokenInvalid">Die Validierung des Sicherheitstokens dieses Formulars ist fehlgeschlagen. Bitte laden Sie das Formular erneut und schicken Sie es dann noch einmal ab.</label>
 			<label index="toolbarItems.shortcuts">Verweise</label>
 			<label index="toolbarItems.shortcut">Verweis</label>
@@ -295,6 +311,7 @@ Prüfen Sie auch folgende Punkte:
 			<label index="link.to.dblist.correctly">Bitte verlinken Sie nicht auf diese Seite. Benutzen Sie stattdessen t3lib_extMgm::createListViewLink(), um Links zu erzeugen.</label>
 			<label index="link.to.filefile.correctly">Bitte verlinken Sie nicht auf diese Seite.</label>
 			<label index="loadingIndicator">Lädt...</label>
+			<label index="csh_tooltip_loading">Lädt Hilfetext...</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -350,8 +367,8 @@ Prüfen Sie auch folgende Punkte:
 			<label index="labels.refreshList" type="integer">267625353</label>
 			<label index="labels.close" type="integer">222113377</label>
 			<label index="labels.new" type="integer">38618522</label>
-			<label index="labels.selected" type="integer">152781869</label>
-			<label index="labels.items" type="integer">165585921</label>
+			<label index="labels.selected" type="integer">119647594</label>
+			<label index="labels.items" type="integer">138035944</label>
 			<label index="labels.remove_selected" type="integer">174131744</label>
 			<label index="labels.move_to_top" type="integer">234987422</label>
 			<label index="labels.browse_file" type="integer">252183313</label>
@@ -573,7 +590,7 @@ Prüfen Sie auch folgende Punkte:
 			<label index="ExtDirect.namespaceError" type="integer">84901511</label>
 			<label index="ExtDirect.noNamespace" type="integer">30515894</label>
 			<label index="extension.not.installed" type="integer">249839602</label>
-			<label index="link.to.dblist.correctly" type="integer">53169204</label>
+			<label index="link.to.dblist.correctly" type="integer">199750276</label>
 			<label index="link.to.filefile.correctly" type="integer">2928116</label>
 			<label index="tabs.openInBrowserWindow" type="integer">142944173</label>
 			<label index="loadingIndicator" type="integer">113765784</label>
@@ -584,6 +601,23 @@ Prüfen Sie auch folgende Punkte:
 			<label index="toolbarItems.bookmarksEdit" type="integer">93197906</label>
 			<label index="toolbarItems.bookmarksDelete" type="integer">240442651</label>
 			<label index="error.formProtection.tokenInvalid" type="integer">211653039</label>
+			<label index="labels.automatic" type="integer">7049857</label>
+			<label index="labels.enabled" type="integer">861095</label>
+			<label index="labels.show" type="integer">77133724</label>
+			<label index="cm.branchActions" type="integer">257504834</label>
+			<label index="cm.copyPasteActions" type="integer">231283780</label>
+			<label index="cm.collapseBranch" type="integer">222779750</label>
+			<label index="cm.expandBranch" type="integer">14376827</label>
+			<label index="tree.defaultPageTitle" type="integer">157086783</label>
+			<label index="tree.copyHint" type="integer">23109650</label>
+			<label index="tree.activeFilterMode" type="integer">72627589</label>
+			<label index="tree.dropToRemove" type="integer">151163611</label>
+			<label index="tree.dropZoneElementRemoved" type="integer">152478294</label>
+			<label index="tree.dropZoneElementRestored" type="integer">109961606</label>
+			<label index="tree.buttonNewNode" type="integer">203564147</label>
+			<label index="tree.buttonFilter" type="integer">8245554</label>
+			<label index="tree.searchTermInfo" type="integer">249385974</label>
+			<label index="csh_tooltip_loading" type="integer">133941053</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -640,8 +674,8 @@ Do you want to continue WITHOUT saving?</label>
 			<label index="labels.refreshList">Reload list from server</label>
 			<label index="labels.close">Close</label>
 			<label index="labels.new">NEW</label>
-			<label index="labels.selected">Selected</label>
-			<label index="labels.items">Items</label>
+			<label index="labels.selected">Selected Items</label>
+			<label index="labels.items">Available Items</label>
 			<label index="labels.remove_selected">Remove selected items</label>
 			<label index="labels.move_to_top">Move selected items to top</label>
 			<label index="labels.browse_file">Browse for files</label>
@@ -870,7 +904,7 @@ Check also the following points:\n
 - javascript: method\'s name should be like: &quot;TYPO3.MyExtension.Sample.myMethod&quot;\n</label>
 			<label index="ExtDirect.noNamespace">Ext Direct error in &quot;%s&quot;: no namespace has been found.</label>
 			<label index="extension.not.installed">Extension &quot;%s&quot; is not installed.</label>
-			<label index="link.to.dblist.correctly">Please, do not link to this page. Use t3lib_extMgm::createListViewLink() for link generation.</label>
+			<label index="link.to.dblist.correctly">Please, do not link to this page. Use t3lib_BEfunc::getListViewLink() for link generation.</label>
 			<label index="link.to.filefile.correctly">Please, do not link to this page.</label>
 			<label index="tabs.openInBrowserWindow">Open In Browser Window</label>
 			<label index="loadingIndicator">Loading ...</label>
@@ -881,6 +915,23 @@ Check also the following points:\n
 			<label index="toolbarItems.bookmarksEdit">Edit bookmark</label>
 			<label index="toolbarItems.bookmarksDelete">Delete bookmark</label>
 			<label index="error.formProtection.tokenInvalid">Validating the security token of this form has failed. Please reload the form and submit it again.</label>
+			<label index="labels.automatic">Auto</label>
+			<label index="labels.enabled">Enabled</label>
+			<label index="labels.show">Show</label>
+			<label index="cm.branchActions">Branch Actions</label>
+			<label index="cm.copyPasteActions">Page Actions</label>
+			<label index="cm.collapseBranch">Collapse Branch</label>
+			<label index="cm.expandBranch">Expand Branch</label>
+			<label index="tree.defaultPageTitle">[Default Title]</label>
+			<label index="tree.copyHint">Press Ctrl to copy.</label>
+			<label index="tree.activeFilterMode">Active Filtering Mode</label>
+			<label index="tree.dropToRemove">Drop here to delete</label>
+			<label index="tree.dropZoneElementRemoved">Click here to undelete</label>
+			<label index="tree.dropZoneElementRestored">Page restored</label>
+			<label index="tree.buttonNewNode">Create new pages</label>
+			<label index="tree.buttonFilter">Filter tree</label>
+			<label index="tree.searchTermInfo">Enter search term</label>
+			<label index="csh_tooltip_loading">Loading help...</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

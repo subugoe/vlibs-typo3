@@ -24,7 +24,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * @author	Kasper Sk�rh�j <kasperYYYY@typo3.com>
+ * @author	Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author	Ingo Renner <ingo@typo3.org>
  */
 
@@ -149,25 +149,24 @@ class tx_kickstarter_section_sv extends tx_kickstarter_sectionbase {
 
 		$this->wizard->ext_localconf[]=$this->sPS('
 			'.$this->WOPcomment('WOP:'.$WOP.'[type]').'
-			t3lib_extMgm::addService($_EXTKEY,  \''.$config['type'].'\' /* sv type */,  \''.$cN.'\' /* sv key */,
-					array(
+			t3lib_extMgm::addService($_EXTKEY, \''.$config['type'].'\',  \''.$cN.'\',
+				array(
+					\'title\' => \''.addslashes($config['title']).'\','.$this->WOPcomment('	WOP:'.$WOP.'[title]').'
+					\'description\' => \''.addslashes($config['description']).'\','.$this->WOPcomment('	WOP:'.$WOP.'[description]').'
 
-						\'title\' => \''.addslashes($config['title']).'\','.$this->WOPcomment('	WOP:'.$WOP.'[title]').'
-						\'description\' => \''.addslashes($config['description']).'\','.$this->WOPcomment('	WOP:'.$WOP.'[description]').'
+					\'subtype\' => \''.$config['subtype'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[subtype]').'
 
-						\'subtype\' => \''.$config['subtype'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[subtype]').'
+					\'available\' => TRUE,
+					\'priority\' => '.$config['priority'].','.$this->WOPcomment('	WOP:'.$WOP.'[priority]').'
+					\'quality\' => '.$config['quality'].','.$this->WOPcomment('	WOP:'.$WOP.'[quality]').'
 
-						\'available\' => TRUE,
-						\'priority\' => '.$config['priority'].','.$this->WOPcomment('	WOP:'.$WOP.'[priority]').'
-						\'quality\' => '.$config['quality'].','.$this->WOPcomment('	WOP:'.$WOP.'[quality]').'
+					\'os\' => \''.$config['os'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[os]').'
+					\'exec\' => \''.$config['exec'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[exec]').'
 
-						\'os\' => \''.$config['os'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[os]').'
-						\'exec\' => \''.$config['exec'].'\','.$this->WOPcomment('	WOP:'.$WOP.'[exec]').'
-
-						\'classFile\' => t3lib_extMgm::extPath($_EXTKEY).\'sv'.$k.'/class.'.$cN.'.php\',
-						\'className\' => \''.$cN.'\',
-					)
-				);
+					\'classFile\' => t3lib_extMgm::extPath($_EXTKEY).\'sv'.$k.'/class.'.$cN.'.php\',
+					\'className\' => \''.$cN.'\',
+				)
+			);
 		');
 
 		$innerMainContent = $this->sPS('

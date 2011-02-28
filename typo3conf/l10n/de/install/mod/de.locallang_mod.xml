@@ -3,7 +3,7 @@
 	<data type="array">
 		<languageKey index="de" type="array">
 			<label index="mlang_labels_tablabel">Installations-Tool</label>
-			<label index="mlang_labels_tabdescr">Bietet einen Verweis auf das Installations-Tool. Zu beachten ist, dass das Installations-Tool (in typo3/install/) aktiviert sein muss.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</label>
+			<label index="mlang_labels_tabdescr">Bietet einen Link auf das Installations-Tool. Zu beachten ist, dass das Installations-Tool (in typo3/install/) aktiviert sein muss.&lt;br /&gt;&lt;em&gt;Zugriff nur für Administratoren!&lt;/em&gt;</label>
 			<label index="mlang_tabs_tab">Installation</label>
 			<label index="msg_error_occured">Es ist ein Fehler aufgetreten. Einzelheiten:</label>
 			<label index="msg_error_nomodregister">Kein Modulindex gefunden.</label>
