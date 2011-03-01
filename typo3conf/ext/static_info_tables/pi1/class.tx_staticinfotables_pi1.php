@@ -28,7 +28,7 @@
  *
  * Class for handling static info tables: countries, and subdivisions, currencies, languages and taxes
  *
- * $Id: class.tx_staticinfotables_pi1.php 29140 2010-01-20 21:50:55Z franzholz $
+ * $Id: class.tx_staticinfotables_pi1.php 32736 2010-04-29 10:21:33Z franzholz $
  *
  * @author	Stanislas Rolland <stanislas.rolland(arobas)sjbr.ca>
  */
@@ -300,6 +300,7 @@ class tx_staticinfotables_pi1 extends tslib_pibase {
 			$nameArray = array_merge($nameArray, $mergeArray);
 			uasort($nameArray, 'strcoll');
 		}
+
 		if(count($nameArray) > 0)	{
 			$selector .= $this->optionsConstructor($nameArray, $selectedArray, $outSelectedArray);
 			$selector .= '</select>'.chr(10);
@@ -347,6 +348,7 @@ class tx_staticinfotables_pi1 extends tslib_pibase {
 		} else {
 			$where = '1=1';
 		}
+
 		$where .= ($addWhere ? ' AND '.$addWhere : '');
 		$res = $TYPO3_DB->exec_SELECTquery(
 			$labelFields,
@@ -364,7 +366,19 @@ class tx_staticinfotables_pi1 extends tslib_pibase {
 			}
 		}
 		$TYPO3_DB->sql_free_result($res);
-		uasort($nameArray, 'strcoll');
+
+		if ($this->conf['countriesAllowed'] != '')	{
+			$countriesAllowedArray = t3lib_div::trimExplode(',', $this->conf['countriesAllowed']);
+			$newNameArray = array();
+			foreach ($countriesAllowedArray as $iso3)	{
+				if (isset($nameArray[$iso3]))	{
+					$newNameArray[$iso3] = $nameArray[$iso3];
+				}
+			}
+			$nameArray = $newNameArray;
+		} else {
+			uasort($nameArray, 'strcoll');
+		}
 		return $nameArray;
 	}
 
@@ -513,6 +527,7 @@ class tx_staticinfotables_pi1 extends tslib_pibase {
 		global $TSFE;
 
 		$options = '';
+
 		foreach($nameArray as $value => $name)	{
 
 			$options  .= '<option value="'.$value.'"';

@@ -53,6 +53,8 @@ VORSICHT: Mit dieser Option können Sie - auch aus Versehen - eine ganze Website
 			<label index="option_edit_docModuleUpload.details">Sie können immer noch den TYPO3-Dateibrowser dazu verwenden, Dateien oder Bilder anzuhängen, sollte diese Option deaktiviert sein.</label>
 			<label index="option_enableFlashUploader.alttitle">Flash-Schnittstelle zum Hochladen aktivieren</label>
 			<label index="option_enableFlashUploader.description">Mit dieser Option lässt sich eine Flash-basierte Schnittstelle aktivieren, mit der mehrere Dateien auf einmal für das Hochladen ausgewählt werden können. Achten Sie darauf, dass Ihr Browser mit einem aktuellen Flash-Plug-In ausgerüstet ist (Flash 9 oder höher), damit die Funktion ordnungsgemäß funktioniert.</label>
+			<label index="option_enableFlashUploader_choose.alttitle">Hochlademodus auswählen</label>
+			<label index="option_enableFlashUploader_choose.description">Legt die Art fest, auf die Dateien hochgeladen werden können: eine normales HTML4-Formular (&quot;klassisch&quot;), ein Flashmodul, welches mindestens Flash 9 erfordert, oder das höchst flexible Pluploader, das bei modernen Browsern mit HTML5 funktioniert, aber auch Flash nutzen kann, wenn kein HTML5 unterstützt wird, und sogar normales HTML, falls auch kein Flash verfügbar ist. Sowohl mit dem Flash-Modus als auch dem Pluploader können mehrere Dateien auf einmal ausgewählt werden.</label>
 			<label index="option_edit_showFieldHelp.alttitle">Kontextabhängige Hilfe aktivieren</label>
 			<label index="option_edit_showFieldHelp.description">Legt die Art der Darstellung der kontextabhängigen Hilfe innerhalb von TYPO3 fest. Normalerweise werden Hilfesymbole (in Form kleiner Fragezeichen) neben denjenigen Optionen angezeigt, zu denen Hilfetexte verfügbar sind. Sobald Sie auf eines dieser Symbole klicken, öffnet sich ein Hilfefenster.</label>
 			<label index="option_edit_showFieldHelp.details">Sie können mit dieser Option festlegen, dass anstelle der Hilfesymbole die Kurzform der zugehörigen Hilfetexte direkt auf allen Seiten angezeigt werden. Für TYPO3-Neulinge kann es sehr hilfreich sein, wenn Sie jederzeit eine Beschreibung der Funktionen vor sich haben.
@@ -164,6 +166,8 @@ mit meinem Benutzernamen anmeldet</label>
 			<label index="option_resizeTextareas_Flexible.description" type="integer">113992705</label>
 			<label index="option_enableInstallTool.alttitle" type="integer">164973086</label>
 			<label index="option_enableInstallTool.description" type="integer">195594798</label>
+			<label index="option_enableFlashUploader_choose.alttitle" type="integer">153779121</label>
+			<label index="option_enableFlashUploader_choose.description" type="integer">229460941</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -254,6 +258,8 @@ The default module is &quot;About Modules&quot;.</label>
 			<label index="option_resizeTextareas_Flexible.description">This option will make textareas flexible. The height will grow automatically while typing. Limit is the maximal height set (default 600).</label>
 			<label index="option_enableInstallTool.alttitle">Admin control for re-enabling Install Tool access</label>
 			<label index="option_enableInstallTool.description">By clicking this button, a file typo3conf/ENABLE_INSTALL_TOOL is created (or removed if it already exists). It unlocks the access to the Install Tool (password is still needed!) and will be removed automatically after 1 hour.</label>
+			<label index="option_enableFlashUploader_choose.alttitle">Select Uploader</label>
+			<label index="option_enableFlashUploader_choose.description">This option will let you choose which uploader should be used: a pure HTML4 upload form (&quot;Classic&quot;), a Flash-Uploader which requires Flash9+ or the most flexible Pluploader, which works with HTML5 on modern browsers, but provides fallback to Flash on non-HTML5 browsers or native HTML if not even Flash is available. Both Flash Uploader and Plupload allow you to select multiple files at once.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

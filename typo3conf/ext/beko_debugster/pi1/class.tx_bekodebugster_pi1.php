@@ -335,8 +335,8 @@ class tx_bekodebugster_pi1 extends tslib_pibase {
 	 * @param			string	css class for key
 	 * @return		string	html
 	 */
-	function switchType(&$var,$key='',$keyclass='') {
-		if (strlen($key) > 0) $key = '<td class="'.$keyclass.'">[' . $key . ']</td>'."\n";
+	function switchType(&$var,$key=null,$keyclass='') {
+		if (!is_null($key)) { $key = '<td class="'.$keyclass.'">[' . $key . ']</td>'."\n"; }
 		$type = gettype($var);
 		switch($type) {
 			case 'boolean':  $content = $this->displayBoolean($var,$key); break;

@@ -97,9 +97,59 @@
 			<label index="frac34">Bruch 3/4</label>
 			<label index="and">Logisches Und</label>
 			<label index="or">Logisches Oder</label>
+			<label index="equiv">Äquivalent</label>
+			<label index="sum">Summe</label>
+			<label index="prod">Produkt</label>
+			<label index="fnof">Funktion</label>
+			<label index="int">Integral</label>
 			<label index="Alpha">Großes griechisches alpha</label>
 			<label index="alpha">Kleines griechisches alpha</label>
 			<label index="Beta">Großes griechisches beta</label>
+			<label index="beta">Kleines griechisches beta</label>
+			<label index="Gamma">Großes griechisches gamma</label>
+			<label index="gamma">Kleines griechisches gamma</label>
+			<label index="Delta">Großes griechisches delta</label>
+			<label index="delta">Kleines griechisches delta</label>
+			<label index="Epsilon">Großes griechisches epsilon</label>
+			<label index="epsilon">Kleines griechisches epsilon</label>
+			<label index="Zeta">Großes griechisches zeta</label>
+			<label index="zeta">Kleines griechisches zeta</label>
+			<label index="Eta">Großes griechisches eta</label>
+			<label index="eta">Kleines griechisches eta</label>
+			<label index="Theta">Großes griechisches theta</label>
+			<label index="theta">Kleines griechisches theta</label>
+			<label index="Iota">Großes griechisches iota</label>
+			<label index="iota">Kleines griechisches iota</label>
+			<label index="Kappa">Großes griechisches kappa</label>
+			<label index="kappa">Kleines griechisches kappa</label>
+			<label index="Lambda">Großes griechisches lambda</label>
+			<label index="lambda">Kleines griechisches lambda</label>
+			<label index="Mu">Großes griechisches mu</label>
+			<label index="mu">Kleines griechisches mu</label>
+			<label index="Nu">Großes griechisches nu</label>
+			<label index="nu">Kleines griechisches nu</label>
+			<label index="Xi">Großes griechisches xi</label>
+			<label index="xi">Kleines griechisches xi</label>
+			<label index="Omicron">Großes griechisches omicron</label>
+			<label index="omicron">Kleines griechisches omicron</label>
+			<label index="Pi">Großes griechisches pi</label>
+			<label index="pi">Kleines griechisches pi</label>
+			<label index="Rho">Großes griechisches rho</label>
+			<label index="rho">Kleines griechisches rho</label>
+			<label index="Sigma">Großes griechisches sigma</label>
+			<label index="sigma">Kleines griechisches sigma</label>
+			<label index="Tau">Großes griechisches tau</label>
+			<label index="tau">Kleines griechisches tau</label>
+			<label index="Upsilon">Großes griechisches upsilon</label>
+			<label index="upsilon">Kleines griechisches upsilon</label>
+			<label index="Phi">Großes griechisches phi</label>
+			<label index="phi">Kleines griechisches phi</label>
+			<label index="Chi">Großes griechisches chi</label>
+			<label index="chi">Kleines griechisches chi</label>
+			<label index="Psi">Großes griechisches psi</label>
+			<label index="psi">Kleines griechisches psi</label>
+			<label index="Omega">Großes griechisches omega</label>
+			<label index="omega">Kleines griechisches omega</label>
 			<label index="clubs">Kreuz</label>
 			<label index="diams">Karo</label>
 			<label index="hearts">Herz</label>
@@ -210,6 +260,56 @@
 			<label index="Alpha" type="integer">220811456</label>
 			<label index="alpha" type="integer">81975781</label>
 			<label index="Beta" type="integer">19948961</label>
+			<label index="equiv" type="integer">184356901</label>
+			<label index="sum" type="integer">168740976</label>
+			<label index="prod" type="integer">233508945</label>
+			<label index="fnof" type="integer">140773465</label>
+			<label index="int" type="integer">82482261</label>
+			<label index="beta" type="integer">257932165</label>
+			<label index="Gamma" type="integer">50478916</label>
+			<label index="gamma" type="integer">163205411</label>
+			<label index="Delta" type="integer">81549749</label>
+			<label index="delta" type="integer">80463149</label>
+			<label index="Epsilon" type="integer">146267114</label>
+			<label index="epsilon" type="integer">9748153</label>
+			<label index="Zeta" type="integer">20312198</label>
+			<label index="zeta" type="integer">82970037</label>
+			<label index="Eta" type="integer">258875114</label>
+			<label index="eta" type="integer">195925194</label>
+			<label index="Theta" type="integer">237180496</label>
+			<label index="theta" type="integer">201591446</label>
+			<label index="Iota" type="integer">110143483</label>
+			<label index="iota" type="integer">180341096</label>
+			<label index="Kappa" type="integer">211492882</label>
+			<label index="kappa" type="integer">152146341</label>
+			<label index="Lambda" type="integer">10536251</label>
+			<label index="lambda" type="integer">104916468</label>
+			<label index="Mu" type="integer">185351347</label>
+			<label index="mu" type="integer">36744528</label>
+			<label index="Nu" type="integer">83438436</label>
+			<label index="nu" type="integer">97373270</label>
+			<label index="Xi" type="integer">263538260</label>
+			<label index="xi" type="integer">130471233</label>
+			<label index="Omicron" type="integer">100001381</label>
+			<label index="omicron" type="integer">210484993</label>
+			<label index="Pi" type="integer">247828236</label>
+			<label index="pi" type="integer">61059033</label>
+			<label index="Rho" type="integer">255566548</label>
+			<label index="rho" type="integer">247248074</label>
+			<label index="Sigma" type="integer">111066148</label>
+			<label index="sigma" type="integer">142871988</label>
+			<label index="Tau" type="integer">259732448</label>
+			<label index="tau" type="integer">159639203</label>
+			<label index="Upsilon" type="integer">209695309</label>
+			<label index="upsilon" type="integer">47714460</label>
+			<label index="Phi" type="integer">117947496</label>
+			<label index="phi" type="integer">208846630</label>
+			<label index="Chi" type="integer">199751420</label>
+			<label index="chi" type="integer">45130325</label>
+			<label index="Psi" type="integer">45253388</label>
+			<label index="psi" type="integer">79218899</label>
+			<label index="Omega" type="integer">75129917</label>
+			<label index="omega" type="integer">167289866</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -316,6 +416,56 @@
 			<label index="Alpha">Greek capital letter alpha</label>
 			<label index="alpha">Greek small letter alpha</label>
 			<label index="Beta">Greek capital letter beta</label>
+			<label index="equiv">Equivalent</label>
+			<label index="sum">Sum</label>
+			<label index="prod">Product</label>
+			<label index="fnof">Function</label>
+			<label index="int">Integral</label>
+			<label index="beta">Greek small letter beta</label>
+			<label index="Gamma">Greek capital letter gamma</label>
+			<label index="gamma">Greek small letter gamma</label>
+			<label index="Delta">Greek capital letter delta</label>
+			<label index="delta">Greek small letter delta</label>
+			<label index="Epsilon">Greek capital letter epsilon</label>
+			<label index="epsilon">Greek small letter epsilon</label>
+			<label index="Zeta">Greek capital letter zeta</label>
+			<label index="zeta">Greek small letter zeta</label>
+			<label index="Eta">Greek capital letter eta</label>
+			<label index="eta">Greek small letter eta</label>
+			<label index="Theta">Greek capital letter theta</label>
+			<label index="theta">Greek small letter theta</label>
+			<label index="Iota">Greek capital letter iota</label>
+			<label index="iota">Greek small letter iota</label>
+			<label index="Kappa">Greek capital letter kappa</label>
+			<label index="kappa">Greek small letter kappa</label>
+			<label index="Lambda">Greek capital letter lambda</label>
+			<label index="lambda">Greek small letter lambda</label>
+			<label index="Mu">Greek capital letter mu</label>
+			<label index="mu">Greek small letter mu</label>
+			<label index="Nu">Greek capital letter nu</label>
+			<label index="nu">Greek small letter nu</label>
+			<label index="Xi">Greek capital letter xi</label>
+			<label index="xi">Greek small letter xi</label>
+			<label index="Omicron">Greek capital letter omicron</label>
+			<label index="omicron">Greek small letter omicron</label>
+			<label index="Pi">Greek capital letter pi</label>
+			<label index="pi">Greek small letter pi</label>
+			<label index="Rho">Greek capital letter rho</label>
+			<label index="rho">Greek small letter rho</label>
+			<label index="Sigma">Greek capital letter sigma</label>
+			<label index="sigma">Greek small letter sigma</label>
+			<label index="Tau">Greek capital letter tau</label>
+			<label index="tau">Greek small letter tau</label>
+			<label index="Upsilon">Greek capital letter upsilon</label>
+			<label index="upsilon">Greek small letter upsilon</label>
+			<label index="Phi">Greek capital letter phi</label>
+			<label index="phi">Greek small letter phi</label>
+			<label index="Chi">Greek capital letter chi</label>
+			<label index="chi">Greek small letter chi</label>
+			<label index="Psi">Greek capital letter psi</label>
+			<label index="psi">Greek small letter psi</label>
+			<label index="Omega">Greek capital letter omega</label>
+			<label index="omega">Greek small letter omega</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -48,12 +48,12 @@ Eine weitere Verwendung wäre, wenn Sie die Seite, auf die verwiesen wird, austa
 Bitte beachten Sie: Falls der eingegebene Alias nicht eindeutig ist, so wird automatisch eine eindeutige Zahl vorangestellt.</label>
 			<label index="target.description">Das HTML-Ziel von Menüeinträgen, die auf diese Seite verweisen. Kann auch zum Öffnen einer Seite als Pop-Up verwendet werden.</label>
 			<label index="target.details">Verwenden Sie diesen Wert nur zum Übersteuern des Standard-Links, der für die meisten Seiten über das TypoScript-Template konfiguriert sein sollte.
-Über das Feld Ziel gibt es weitere Optionen.
+Über das Feld &quot;Ziel&quot; gibt es weitere Optionen.
 
-Durch Setzen eines ganzzahligen Wertes am Anfang des Felds wird dieser als Standardtyp für die Seite verwendet.
-Wenn beispielsweise über TypoScript ein RSS-Feed als typeNum=100 konfiguriert wurde, kann durch setzen des Ziels auf 100 ein RSS-Link in das Menü eingebaut werden.
+Durch Setzen eines ganzzahligen Wertes am Anfang des Feldes wird dieser als Standardtyp für die Seite verwendet.
+Wenn beispielsweise über TypoScript ein RSS-Feed als typeNum=100 konfiguriert wurde, kann durch Setzen des Ziels auf 100 ein RSS-Link in das Menü eingebaut werden.
 
-Zum Öffnen in einem Pop-Up-Fenster folgende Syntax verwenden:
+Zum Öffnen in einem Pop-Up-Fenster verwenden Sie folgende Syntax:
 400x200 - öffnet die Seite in einem Pop-Up-Fenster der Größe 400x200
 230x450:resizable=0,location=1 - öffnet die Seite in einem Pop-Up-Fenster mit den entsprechenden Parametern
 
@@ -75,8 +75,10 @@ Sie können hier eine andere Verfallszeit angeben, falls Sie dies benötigen.
 Diese Option wird sehr selten genutzt.</label>
 			<label index="no_search.description">Falls aktiviert, verhindert diese Option, dass diese Seite in eine Suche einbezogen wird.</label>
 			<label index="author.description">Geben Sie den Namen des Seitenautors ein.</label>
-			<label index="author.details">Ob der Name des Autor genutzt wird, hängt von der Vorlage des Web-Auftritts ab. Von den meisten Vorlagen wird dieser Wert nicht verwendet.
-Falls Sie TYPO3-Seiten als &quot;Artikel&quot; verwenden, können Sie dieses Feld nutzen, um den Autor des Artikels anzuzeigen.</label>
+			<label index="author.details">Ob der Name des Autor genutzt wird, hängt von der Vorlage des Web-Auftritts ab. 
+
+- Sie können es in einem Meta-Tag verwenden.
+- Wenn Sie TYPO3-Seiten als Artikel benutzen, dann können Sie dieses Feld benutzen, um den Namen des Autors des Artikels anzuzeigen.</label>
 			<label index="author_email.description">Geben Sie die E-Mail-Adresse des Autors ein.</label>
 			<label index="module.description">Definiert die Seite als Frontend-&quot;Modul&quot;.</label>
 			<label index="module.details">Im Backend gibt es ein Modul &quot;Web &gt; Erweiterungen&quot;, sowie einen Punkt &quot;Erweiterungen&quot; unter &quot;Benutzer &gt; Aufgaben&quot;. Beide Funktionen zeigen eine Liste von &quot;Erweiterungen&quot; an, auf die der Anwender Zugriff hat.
@@ -126,7 +128,7 @@ Die Beschreibung wird auch angezeigt, wenn man ein Inhaltselement vom Typ &quot;
 
 Im Gegensatz zur Beschreibung ist die Zusammenfassung nur für die Anzeige in Suchmaschinen, sondern ausschließlich zur Nutzung in eigenen Projekten bestimmt.
 
-Im Allgemeinen ermöglicht TYPO3 die Erstellung eines Inhaltselementes vom Typ &quot;Menü/Sitemap&quot;. Wenn Sie dabei den Untertyp &quot;Menü der Unterseiten (mit Zusammenfassung)&quot; auswählen, erhalten Sie einen Übersicht von Artikeln. Wenn eine Zusammenfassung verfügbar ist, wird diese statt der Beschreibung angezeigt.
+Im Allgemeinen ermöglicht TYPO3 die Erstellung eines Inhaltselementes vom Typ &quot;Sitemap&quot;. Wenn Sie dabei den Untertyp &quot;Menü der Unterseiten (mit Zusammenfassung)&quot; auswählen, erhalten Sie einen Übersicht von Artikeln. Wenn eine Zusammenfassung verfügbar ist, wird diese statt der Beschreibung angezeigt.
 
 &lt;b&gt;Hinweis:&lt;/b&gt; Es ist nicht erforderlich, den Text des Felds Beschreibung nochmals unter &lt;i&gt;Zusammenfassung&lt;/i&gt; einzugeben.
 
@@ -167,6 +169,26 @@ Wenn Sie den folgenden Text in das Feld &quot;TSconfig&quot; eingeben, wird das 
 &lt;em&gt;mod.web_layout.tt_content.colPos_list = 0,3&lt;/em&gt;
 
 (Muss in einer einzigen Zeile stehen!)</label>
+			<label index="be_layout.description">Wählen Sie ein Backend-Layout, das nur für diese Seite gilt.</label>
+			<label index="be_layout.details">Wenn Sie zusätzliche Backend-Layouts festgelegt haben, können Sie diese hier auswählen, damit das Modul &quot;Seite&quot; die Spalten dieser Seite mit dem gewählten Layout darstellt.
+
+Normalerweise sollte dieses Layout das Frontend-Layout in einer Weise wiederspiegeln, dass einfach zu erkennen ist, zu welchem Bereich auf der Seite bestimmter Inhalt gehört.
+
+Sie können nichts oder &quot;keines&quot; festlegen, um die Standardansicht der Spalten im Seitenmodul für diese Seite angezeigt zu bekommen.
+
+Wenn Sie ein Layout oder &quot;keines&quot; auswählen, überschreibt dies die Einstellungen, die hier von Seiten aus der Rootline auf die aktuelle Seite vererbt wurden.
+
+Die Einstellung wird &lt;b&gt;NICHT&lt;/b&gt; automatisch an Unterseiten vererbt - nutzen Sie das &lt;b&gt;Backend-Layout (Unterseiten dieser Seite)&lt;/b&gt;, wenn Sie eine Vererbung erreichen wollen.</label>
+			<label index="be_layout_next_level.description">Wählen Sie ein Backend-Layout, das für alle Unterseiten dieser Seite gilt.</label>
+			<label index="be_layout_next_level.details">Wenn Sie zusätzliche Backend-Layouts festgelegt haben, können Sie diese hier auswählen, damit das Modul &quot;Seite&quot; die Spalten der Unterseiten dieser Seite mit dem gewählten Layout darstellt.
+
+Normalerweise sollte dieses Layout das Frontend-Layout in einer Weise wiederspiegeln, dass einfach zu erkennen ist, zu welchem Bereich auf der Seite bestimmter Inhalt gehört.
+
+Sie können nichts oder &quot;keines&quot; festlegen, um die Standardansicht der Spalten im Seitenmodul für die Unterseiten angezeigt zu bekommen.
+
+Wenn Sie ein Layout oder &quot;keines&quot; auswählen, überschreibt dies die Einstellungen, die hier von Seiten aus der Rootline auf die aktuelle Seite vererbt wurden.
+
+Die Einstellung wird automatisch an alle Unterseiten vererbt - Sie müssen sie also nicht jedes Mal erneut setzen.</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -190,14 +212,14 @@ Wenn Sie den folgenden Text in das Feld &quot;TSconfig&quot; eingeben, wird das 
 			<label index="alias.details" type="integer">50416805</label>
 			<label index="alias.syntax" type="integer">229529597</label>
 			<label index="target.description" type="integer">242484620</label>
-			<label index="target.details" type="integer">33831291</label>
+			<label index="target.details" type="integer">183153118</label>
 			<label index="no_cache.description" type="integer">234280457</label>
 			<label index="no_cache.details" type="integer">183323316</label>
 			<label index="cache_timeout.description" type="integer">146302636</label>
 			<label index="cache_timeout.details" type="integer">129628311</label>
 			<label index="no_search.description" type="integer">174061864</label>
 			<label index="author.description" type="integer">35641560</label>
-			<label index="author.details" type="integer">63801739</label>
+			<label index="author.details" type="integer">150607128</label>
 			<label index="author_email.description" type="integer">263994700</label>
 			<label index="module.description" type="integer">122892371</label>
 			<label index="module.details" type="integer">126572114</label>
@@ -215,7 +237,7 @@ Wenn Sie den folgenden Text in das Feld &quot;TSconfig&quot; eingeben, wird das 
 			<label index="description.description" type="integer">229456529</label>
 			<label index="description.details" type="integer">35777713</label>
 			<label index="abstract.description" type="integer">59193060</label>
-			<label index="abstract.details" type="integer">198670791</label>
+			<label index="abstract.details" type="integer">60272812</label>
 			<label index="newUntil.description" type="integer">266998258</label>
 			<label index="newUntil.details" type="integer">114574224</label>
 			<label index="newUntil.syntax" type="integer">211075317</label>
@@ -234,6 +256,10 @@ Wenn Sie den folgenden Text in das Feld &quot;TSconfig&quot; eingeben, wird das 
 			<label index="title.description.+" type="integer">122833099</label>
 			<label index="TSconfig.details.+" type="integer">196409432</label>
 			<label index="l18n_cfg.details" type="integer">202212784</label>
+			<label index="be_layout.description" type="integer">199032257</label>
+			<label index="be_layout.details" type="integer">121433094</label>
+			<label index="be_layout_next_level.description" type="integer">48627208</label>
+			<label index="be_layout_next_level.details" type="integer">186088291</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -278,7 +304,7 @@ Please notice: If the entered value was not unique, it will automatically be pre
 			<label index="target.details">Set this value only to overrule the default link, which should be configured correctly for most pages in the website TypoScript template.
 There are more options with the target field
 
-Setting an integer value at the start of the field adds it as the default type for the page. 
+Setting an integer value at the start of the field adds it as the default type for the page.
 For example, if an RSS feed is configured in Typoscript as typeNum=100, setting the target to 100 could be used to add an RSS link in the menu.
 
 For open in popup use following syntax:
@@ -301,7 +327,7 @@ This option is used quite rarely.</label>
 			<label index="author.description">Enter the page authors name.</label>
 			<label index="author.details">Whether the author name is used or not depends on the setup of your TypoScript template.
 
-- You may use it in a meta-tag.			
+- You may use it in a meta-tag.
 - If you're using TYPO3 pages as 'articles' then you could use this field to display the name of the page (article) author.</label>
 			<label index="author_email.description">Enter the page authors email address.</label>
 			<label index="module.description">Define the page as a frontend 'module'.</label>
@@ -348,7 +374,7 @@ Also, the description will be displayed if you create a content element of type 
 			</label>
 			<label index="abstract.description">Enter an abstract of the contents. It may be displayed in an overview of articles.</label>
 			<label index="abstract.details">An abstract is a short description of the page content, that might be a little longer than the one in the &lt;i&gt;Description&lt;/i&gt; field.
-			
+
 Other than the description, the abstract is not meant for display in search engine result lists, but for use in your own project exclusively.
 
 By default, TYPO3 lets you create a content element of type &lt;i&gt;Sitemap&lt;/i&gt; and then choose &lt;i&gt;Menu of subpages to these pages (with abstract)&lt;/i&gt; to create an overview of articles. If an abstract is available it will be used instead of the description.
@@ -388,6 +414,27 @@ If set the page is only available in one of the translations. So any attempt to 
 
 &lt;b&gt;Hide page if no translation for current language exists&lt;/b&gt;
 If set the page access will be blocked with an error message if there is no translation in the current language. By default access to a non-translated page will just show the default language content.</label>
+			<label index="be_layout.description">Select a backend layout for this particular page only.</label>
+			<label index="be_layout.details">If you have created any additional backend layouts you can select them here to have the page module render the columns of this page with the selected layout.
+
+Usually it will reflect the frontend layout in a way so that you will be able to recognize easily to which area of the page the content belongs.
+
+You can select nothing or &quot;none&quot; to get the default column view of the page module for this page.
+
+If you select a layout or &quot;none&quot;, it will override any settings that might have been inherited from pages in the rootline of the current page.
+
+The selection is &lt;b&gt;NOT&lt;/b&gt; inherited automatically by subpages - use &lt;b&gt;Backend Layout (subpages of this page)&lt;/b&gt; if you want to acchieve this.
+</label>
+			<label index="be_layout_next_level.description">Select a backend layout for all subpages of this page.</label>
+			<label index="be_layout_next_level.details">If you have created any additional backend layouts you can select them here to have the page module render the columns of the subpages of this page with the selected layout.
+
+Usually it will reflect the frontend layout in a way so that you will be able to recognize easily to which area of the page the content belongs.
+
+You can select nothing or &quot;none&quot; to get the default column view of the page module for the subpages.
+
+If you select a layout or &quot;none&quot;, it will override any settings that might have been inherited from pages in the rootline of the current page.
+
+The selection is inherited automatically by all subpages - so you don't have to set it seperately for each of them.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

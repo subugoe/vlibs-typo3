@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2004-2007 Rupert Germann <rupi@gmx.li>
+*  (c) 2010 Dmitry Dulepov <dmitry.dulepov@typo3.org>
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -23,13 +23,13 @@
 ***************************************************************/
 
 /**
- * Class for updating tt_news content elements and category relations.
+ * Class for updating RealURL data
  *
- * $Id: class.ext_update.php 38183 2010-09-15 08:08:32Z dmitry $
+ * $Id: class.ext_update.php 42711 2011-01-27 13:04:36Z dmitry $
  *
- * @author  Rupert Germann <rupi@gmx.li>
+ * @author  Dmitry Dulepov <dmitry.dulepov@typo3.org>
  * @package TYPO3
- * @subpackage tt_news
+ * @subpackage realurl
  */
 class ext_update {
 

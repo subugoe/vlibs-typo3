@@ -39,6 +39,9 @@
  * @package		TYPO3
  * @subpackage	tx_nkwgok
  */
+
+define('NKWGOKRootNode', 'Root');
+
 class tx_nkwgok_loadxml extends tx_scheduler_Task {
 
 	/**
@@ -47,6 +50,9 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 	 */
 	public function execute() {
 		$result = False;
+
+		$hitCounts = $this->getHitCounts();
+
 		$wantedFieldNames = array('045A', '044E', '044F', '009B', '038D', '003@', '045G', 'str');
 		$dir = PATH_site . '/fileadmin/gok/';
 		$fileList = glob($dir . '*.xml');
@@ -55,20 +61,27 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 			// Empty our database table.
 			$GLOBALS['TYPO3_DB']->sql_query('TRUNCATE tx_nkwgok_data');
 
-			// Run through all files once to get a list of parent element PPNs.
+			// Run through all files once to get a child count for each parent
+			// element in the list.
 			// $parentPPNs is a dictionary whose keys are the parent element PPNs.
-			$parentPPNs = Array();
-
+			$parentPPNs = Array(NKWGOKRootNode => Array());
 			foreach ($fileList as $xmlPath) {
 				$xml = simplexml_load_file($xmlPath);
-				$parentGOKs = $xml->xpath('/RESULT/SET/SHORTTITLE/record/datafield[@tag="038D"]/subfield[@code="9"]');
-				foreach ($parentGOKs as $parentPPN) {
-					$parentPPN = trim($parentPPN);
-					if ($parentPPNs[$parentPPN]) {
-						$parentPPNs[$parentPPN]++;
+				$records = $xml->xpath('/RESULT/SET/SHORTTITLE/record');
+				foreach ($records as $record) {
+					$PPN = trim((string)$record->xpath('datafield[@tag="003@"]/subfield[@code="0"]'));
+					$myParentPPNs = $record->xpath('datafield[@tag="038D"]/subfield[@code="9"]');
+					if (count($myParentPPNs) > 0) {
+						$parentPPN = (string)$myParentPPNs[0];
+						if ($parentPPNs[$parentPPN]) {
+							$parentPPNs[$parentPPN][] = $PPN;
+						}
+						else {
+							$parentPPNs[$parentPPN] = Array($PPN);
+						}
 					}
 					else {
-						$parentPPNs[trim($parentPPN)] = 1;
+						$parentPPNs[NKWGOKRootNode][] = $PPN;
 					}
 				}
 			}
@@ -116,30 +129,65 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 									array('LKL', '+', '%3F'),
 									trim($search));
 
-					$GOKPPN = trim($GOK['003@']['0']);
-					$hasChildren = 0;
-					if ($parentPPNs[$GOKPPN]) {
-						$hasChildren = $parentPPNs[$GOKPPN];
-					}
-					$values = array(
-						'ppn' => $GOKPPN,
-						'parent' => trim($GOK['038D'][9]),
-						'hierarchy' => trim($GOK['009B']['a']),
-						'descr' => trim($GOK['044E']['a']),
-						'gok' => trim($GOK['045A']['a']),
-						'crdate' => time(),
-						'tstamp' => time(),
-						'search' => $search,
-						'childcount' => $hasChildren
-					);
+					// discard records without a PPN
+					$PPN = trim($GOK['003@']['0']);
+					if ($PPN != '') {
+						$childCount = 0;
+						if ($parentPPNs[$PPN]) {
+							$childCount = count($parentPPNs[$PPN]);
+						}
+						$parent = trim($GOK['038D'][9]);
+						if ($parent == '') {
+							$parent = NKWGOKRootNode;
+						}
+						$GOKString = trim($GOK['045A']['a']);
+						$values = array(
+							'ppn' => $PPN,
+							'parent' => $parent,
+							'hierarchy' => trim($GOK['009B']['a']),
+							'descr' => trim($GOK['044E']['a']),
+							'gok' => $GOKString,
+							'crdate' => time(),
+							'tstamp' => time(),
+							'search' => $search,
+							'childcount' => $childCount
+						);
 
-					if ($GOK['044F']['b'] == 'eng' && $GOK['044F']['a']) {
-						$values['descr_en'] = trim($GOK['044F']['a']);
-					}
+						if ($GOK['044F']['b'] == 'eng' && $GOK['044F']['a']) {
+							$values['descr_en'] = trim($GOK['044F']['a']);
+						}
 
-					$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_nkwgok_data', $values);
+						// Hit keys are lowercase.
+						// Set result count to 0 for all entries but those of 'str' type
+						// for which we use -1 to indicate the count is unknown.
+						if ($hitCounts[strtolower($GOKString)]) {
+							$values['hitcount'] = (int)$hitCounts[strtolower($GOKString)];
+						}
+						else if ($GOK['str']) {
+							$values['hitcount'] = -1;
+						}
+						else {
+							$values['hitcount'] = 0;
+						}
+
+						$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_nkwgok_data', $values);
+					}
 				} // end of loop over GOKs
 			} // end of loop over files
+
+			// Finally add the root node
+			$values = array(
+				'ppn' => NKWGOKRootNode,
+				'hierarchy' => '0',
+				'descr' => 'Göttinger Online Klassifikation (GOK)',
+				'descr_en' => 'Göttingen Online Classification (GOK)',
+				'gok' => 'XXX',
+				'crdate' => time(),
+				'tstamp' => time(),
+				'childcount' => count($parentPPNs[NKWGOKRootNode])
+			);
+
+			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_nkwgok_data', $values);
 
 			t3lib_div::devLog('Loading of GOK XML completed', 'nkwgok', 1);
 			$result = True;
@@ -150,7 +198,55 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 		return $result;
 	}
 
+
+
+	/**
+	 * Load LKL hit counts from /fileadmin/gok/hitcounts/*.xml
+	 * These files are downloaded from the Opac by the script in
+	 * nkwgok/scripts/getHitCounts.py.
+	 *
+	 * @author Sven-S. Porst
+	 * @return array keys: LKL entries, values: hit count for the entry
+	 */
+	private function getHitCounts () {
+		$hitCounts = Array();
+
+		$fileList = glob(PATH_site . '/fileadmin/gok/hitcounts/' . '*.xml');
+		foreach ($fileList as $xmlPath) {
+			$xml = simplexml_load_file($xmlPath);
+			if ($xml) {
+				$scanlines = $xml->xpath('/RESULT/SCANLIST/SCANLINE');
+				foreach ($scanlines as $scanline) {
+					$hits = Null;
+					$description = Null;
+					foreach($scanline->attributes() as $name => $value) {
+						if ($name == 'hits') {
+							// Reduce the hit count by 1 as it includes the GOK-Normsatz.
+							$hits = (int)$value - 1;
+						}
+						else if ($name == 'description') {
+							$description = (string)$value;
+						}
+					}
+					if ($hits != Null && $description) {
+						$hitCounts[$description] = $hits;
+					}
+				}
+			}
+			else {
+				t3lib_div::devLog('could not load/parse XML from ' . $xmlPath, 'nkwgok', 1);
+			}
+		} // end foreach
+
+		t3lib_div::devLog('Loaded ' . count($hitCounts) . ' hit count entries.', 'nkwgok', 1);
+
+		return $hitCounts;
+	}
+
+
 }
+
+
 
 if (defined('TYPO3_MODE')
 		&& $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nkwgok/lib/class.tx_nkwgok_loadxml.php']) {

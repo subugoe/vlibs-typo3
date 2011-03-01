@@ -1,3 +1,4 @@
+1.4.8 Bugfix: corrected display for array('' => 'somevalue') (when key === '')
 1.4.7 Bugfix: removed Fatal error: Cannot use object of type ..... as array in class.tx_bekodebugster_pi1.php  on line 119
       Bugfix: steps_back runtime config paramter was ignored
       Bugfix: removed deprecated notice. Thanks to Christian Platt for the bug report

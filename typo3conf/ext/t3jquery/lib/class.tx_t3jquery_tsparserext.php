@@ -37,22 +37,33 @@ require_once(t3lib_extMgm::extPath('t3jquery').'class.tx_t3jquery.php');
 class tx_t3jquery_tsparserext
 {
 	/**
-	 * Unsupported jQuery versions
+	 * Supported jQuery versions
 	 * @var array
 	 */
-	var $supportedUiVersion = array();
+	private $supportedUiVersion = array();
+
+	/**
+	 * Configuratio array
+	 * @var array
+	 */
+	private $confArr = array();
 
 	/**
 	 * Shows the update Message
 	 * @return	string
 	 */
-	function displayMessage(&$params, &$tsObj)
+	public function displayMessage(&$params, &$tsObj)
 	{
 		$out = '';
+		if (t3lib_div::int_from_ver(TYPO3_version) < 4003000) {
+			// 4.3.0 comes with flashmessages styles. For older versions we include the needed styles here
+			$cssPath = $GLOBALS['BACK_PATH'] . t3lib_extMgm::extRelPath('t3jquery');
+			$out .= '<link rel="stylesheet" type="text/css" href="' . $cssPath . 'compat/flashmessages.css" media="screen" />';
+		}
 		// get all supported versions from folder
 		$this->supportedUiVersion = t3lib_div::get_dirs(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/ui/"));
 		// get the conf array
-		$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
+		$this->confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
 		// if form is submited, the POST values are taken
 		$post = t3lib_div::_POST();
 		if (count($post) > 0) {
@@ -60,38 +71,74 @@ class tx_t3jquery_tsparserext
 			$jQueryVersion   = $post['data']['jQueryVersion']."-".$post['data']['jQueryUiVersion'].($post['data']['jQueryTOOLSVersion'] ? "-".$post['data']['jQueryTOOLSVersion'] : "");
 			$configDir       = $post['data']['configDir'] . (preg_match("/\/$/", $configDir) ? "" : "/");
 		} else {
-			$jQueryUiVersion = $confArr['jQueryUiVersion'];
+			$jQueryUiVersion = $this->confArr['jQueryUiVersion'];
 			$jQueryVersion   = T3JQUERYVERSION;
 			$configDir       = tx_t3jquery::getJqPath();
 		}
-		// check the actual version
-		if (! in_array($jQueryUiVersion, $this->supportedUiVersion)) {
+		if ($this->checkConfig() === false) {
 			$out .= '
-<div class="typo3-message message-information">
-	<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader') . '</div>
-	<div class="message-body">
-		' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg') . '
-	</div>
-</div>';
-		}
-		// Check if the library exists
-		if (! file_exists(PATH_site . $configDir . "jquery-".$jQueryVersion.".js")) {
-			$out .= '
-<a href="javascript:void();" onclick="top.goToModule(\'tools_txt3jqueryM1\',\'\',\'createLib=1\');this.blur();return false;">
 	<div class="typo3-message message-warning">
-		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader2') . '</div>
+		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.checkConfigHeader') . '</div>
 		<div class="message-body">
-			' . sprintf($GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg2'), $configDir."jquery-".$jQueryVersion.".js") . '
+			' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.checkConfig') . '
 		</div>
-	</div>
-</a>';
+	</div>';
+		} elseif ($this->confArr['integrateFromCDN'] || $post['data']['integrateFromCDN']) {
+			// Nothing to check
+		} else {
+			// check the actual version
+			if (! in_array($jQueryUiVersion, $this->supportedUiVersion)) {
+				$out .= '
+	<div class="typo3-message message-information">
+		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader') . '</div>
+		<div class="message-body">
+			' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg') . '
+		</div>
+	</div>';
+			}
+			// Check if the library exists
+			if (! file_exists(PATH_site . $configDir . "jquery-".$jQueryVersion.".js")) {
+				$out .= '
+	<a href="javascript:void();" onclick="top.goToModule(\'tools_txt3jqueryM1\',\'\',\'createLib=1\');this.blur();return false;">
+		<div class="typo3-message message-warning">
+			<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader2') . '</div>
+			<div class="message-body">
+				' . sprintf($GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg2'), $configDir."jquery-".$jQueryVersion.".js") . '
+			</div>
+		</div>
+	</a>';
+			}
 		}
-		if ($out && t3lib_div::int_from_ver(TYPO3_version) < 4003000) {
-			// 4.3.0 comes with flashmessages styles. For older versions we include the needed styles here
-			$cssPath = $GLOBALS['BACK_PATH'] . t3lib_extMgm::extRelPath('t3jquery');
-			$out .= '<link rel="stylesheet" type="text/css" href="' . $cssPath . 'compat/flashmessages.css" media="screen" />';
-		}
+
+		$out = '<div style="position:absolute;top:10px;right:10px; width:300px;">' . $out . '</div>';
 		return $out;
+	}
+
+
+	/**
+	 * Check the config for a gifen feature
+	 * 
+	 * @return boolean
+	 */
+	private function checkConfig()
+	{
+		$confDefault = array(
+			'alwaysIntegrate',
+			'integrateToFooter',
+			'dontIntegrateOnUID',
+			'integrateFromCDN',
+			'locationCDN',
+			'configDir',
+			'jQueryVersion',
+			'jQueryUiVersion',
+			'jQueryTOOLSVersion',
+		);
+		foreach ($confDefault as $val) {
+			if (! isset($this->confArr[$val]) && ! isset($_POST['data'][$val])) {
+				return false;
+			}
+		}
+		return true;
 	}
 }
 

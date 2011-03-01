@@ -12,6 +12,7 @@
 			<label index="hdg.lastRun">Letzte Ausführung</label>
 			<label index="hdg.schedulerUser">Backend-Benutzer für den TYPO3-Planer</label>
 			<label index="label.automatically">automatisch</label>
+			<label index="label.cachingFrameworkGarbageCollection.selectBackends">Backendtypen</label>
 			<label index="label.checkAll">Alle auswählen/abwählen</label>
 			<label index="label.class">Klasse</label>
 			<label index="label.cron">Cron</label>
@@ -49,6 +50,7 @@
 			<label index="msg.deleteSuccess">Der Task wurde erfolgreich gelöscht.</label>
 			<label index="msg.endDateSmallerThanStartDate">Das Enddatum liegt vor dem Startdatum.</label>
 			<label index="msg.executed">Ausgeführt: %s</label>
+			<label index="msg.frequencyError">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl an. Ausgabe des Cron-Parsers: %1$s [Code: %2$d].</label>
 			<label index="msg.incompleteLastRun">Die Informationen zur letzten Ausführung des Planers sind unvollständig.</label>
 			<label index="msg.infoScreenIntro">Dies ist eine Liste aller in dieser TYPO3-Installation verfügbaren Tasks. Klicken Sie auf das Symbol außen rechts, um einen neuen geplanten Task des gewählten Typs zu erstellen.</label>
 			<label index="msg.invalidFrequency">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl ein.</label>
@@ -208,6 +210,8 @@
 			<label index="msg.serverTimeHelp" type="integer">184638342</label>
 			<label index="msg.executionFailureDefault" type="integer">107816565</label>
 			<label index="msg.noTasksDefined" type="integer">27706531</label>
+			<label index="label.cachingFrameworkGarbageCollection.selectBackends" type="integer">232345547</label>
+			<label index="msg.frequencyError" type="integer">78870008</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -313,6 +317,8 @@
 			<label index="msg.serverTimeHelp">All dates and times in the Scheduler are measured according to the server's time, as the Scheduler is run purely on the server-side.</label>
 			<label index="msg.executionFailureDefault">The execution failed, but the error message could not be retrieved (it was probably too large). Sorry.</label>
 			<label index="msg.noTasksDefined">There are currently no task classes available at all. To be able to create new tasks, you must either enable the samples provided by the Scheduler or install some other extension that relies on the Scheduler.</label>
+			<label index="label.cachingFrameworkGarbageCollection.selectBackends">Backend types</label>
+			<label index="msg.frequencyError">Invalid frequency. Please enter either a number of seconds or a valid cron command. The cron parser said: %1$s [code: %2$d].</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

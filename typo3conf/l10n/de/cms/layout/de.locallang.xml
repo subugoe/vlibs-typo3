@@ -17,6 +17,7 @@
 			<label index="move_page">Seite verschieben</label>
 			<label index="deleteItem">Löschen</label>
 			<label index="deleteWarning">Diesen Datensatz tatsächlich löschen?</label>
+			<label index="recursiveDeleteWarning">Seiten mit Unterseiten können Sie nur mit dem Papierkorb wiederherstellen. Diese Seiten tatsächlich löschen?</label>
 			<label index="editColumn">Diese Spalte bearbeiten</label>
 			<label index="editPageProperties_curLang">Übersetzungseigenschaften bearbeiten</label>
 			<label index="editInRTE">In Rich-Text-Editor bearbeiten</label>
@@ -42,6 +43,7 @@
 			<label index="newPage2">Neue Seite</label>
 			<label index="noAccess">Keine Bearbeitungsberechtigung</label>
 			<label index="noAccess_msg">Sie haben keine Bearbeitungsberechtigung für den angeforderten Datensatz.</label>
+			<label index="notAssigned">Nicht zugewiesen</label>
 			<label index="undoLastChange">Letzte Änderung rückgängig/wiederherstellen (%s Schritte)</label>
 			<label index="recordHistory">Änderungsverlauf des Datensatzes anzeigen</label>
 			<label index="viewContent">Inhalt anzeigen von</label>
@@ -80,7 +82,7 @@
 			<label index="pI_hits10days">Letzte 10 Tage</label>
 			<label index="content_from_pid_title">Die Seite benutzt Inhalt von dieser Seite: %s</label>
 			<label index="goToListModule">Zum Modul Liste gehen</label>
-			<label index="goToListModuleMessage">Die aktuelle Seite ist vom Typ SysOrdner. SysOrdner enthalten gewöhnlich keine Inhaltselemente, sondern werden zum Sammeln anderer Arten von Datensätzen in einem Ordner verwendet.</label>
+			<label index="goToListModuleMessage">Die aktuelle Seite ist ein Ordner. Ordner enthalten gewöhnlich keine Inhaltselemente, sondern werden zum Sammeln anderer Arten von Datensätzen verwendet.</label>
 			<label index="editPageTitle">Seitentitel bearbeiten</label>
 			<label index="editPageTitle_curLang">Seitentitel der Übersetzung bearbeiten</label>
 			<label index="editPageHeader">Bearbeite Seiten-Header</label>
@@ -169,7 +171,9 @@
 			<label index="content_from_pid_title" type="integer">234117072</label>
 			<label index="gridView" type="integer">74422714</label>
 			<label index="goToListModule" type="integer">224766204</label>
-			<label index="goToListModuleMessage" type="integer">197488510</label>
+			<label index="goToListModuleMessage" type="integer">256644360</label>
+			<label index="notAssigned" type="integer">104696945</label>
+			<label index="recursiveDeleteWarning" type="integer">63558867</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -255,7 +259,9 @@
 			<label index="content_from_pid_title">Page uses content from this page: %s</label>
 			<label index="gridView">Grid-View</label>
 			<label index="goToListModule">Go to list module</label>
-			<label index="goToListModuleMessage">The current page is of the type &quot;Sysfolder&quot;. Sysfolders usually don't contain content elements but are used for collecting other types of records in a single folder.</label>
+			<label index="goToListModuleMessage">The current page is a folder. Folders usually don't contain content elements but are used for collecting other types of records.</label>
+			<label index="notAssigned">Not assigned</label>
+			<label index="recursiveDeleteWarning">You can recover pages with subpages only with the recycler. Are you sure you want to delete these pages?</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

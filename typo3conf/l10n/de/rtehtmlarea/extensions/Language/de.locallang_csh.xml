@@ -7,6 +7,7 @@
 			<label index="languageCombo.alttitle">Sprache des Inhalts</label>
 			<label index="languageCombo.description">Wählen Sie die Sprache der Inhalte dieses Elements.</label>
 			<label index="directionCombo.alttitle">Textrichtung</label>
+			<label index="directionCombo.description">Wählen Sie die Textrichtung im Inhalt dieses Elements aus.</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -16,6 +17,7 @@
 			<label index="languageCombo.alttitle" type="integer">125241014</label>
 			<label index="directionCombo.alttitle" type="integer">164437054</label>
 			<label index="languageCombo.description" type="integer">229241150</label>
+			<label index="directionCombo.description" type="integer">80989882</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -25,6 +27,7 @@
 			<label index="languageCombo.alttitle">Language of contents</label>
 			<label index="directionCombo.alttitle">Direction of text</label>
 			<label index="languageCombo.description">Select the language of the contents of the element.</label>
+			<label index="directionCombo.description">Select the direction of text within the contents of the element.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

@@ -15,7 +15,7 @@
 			<label index="c_size">Größe</label>
 			<label index="c_fileext">Typ</label>
 			<label index="c_tstamp">Datum</label>
-			<label index="c_rw">RW</label>
+			<label index="c_rw">LS</label>
 			<label index="c__REF_">Ref.</label>
 			<label index="files">Dateien</label>
 			<label index="temp">Temporäre Dateien</label>

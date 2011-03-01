@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallangExt>
+	<data type="array">
+		<languageKey index="de" type="array">
+			<label index="new_regular.image_descr">Die Auswahl an Datensätzen, die ein Benutzer auf dieser Seite anlegen kann. Die Auswahl hängt von den Rechten des Benutzers und vom Seitentyp ab. Zum Beispiel kann eine Seite des Typs &quot;Ordner&quot; jede Art von Datensatz enthalten, während normale Seiten nur einige Typen (wie etwa Inhaltselemente) enthalten können.</label>
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="de" type="array">
+			<label index="new_regular.image_descr" type="integer">13460409</label>
+		</languageKey>
+	</orig_hash>
+	<orig_text type="array">
+		<languageKey index="de" type="array">
+			<label index="new_regular.image_descr">The selection of records a user can create on this particular page. The selection depends on the user's permissions and the page type. For example a Folder page type can contain any kind of record while regular pages can contain only some types (like Content Elements).</label>
+		</languageKey>
+	</orig_text>
+</T3locallangExt>

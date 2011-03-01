@@ -13,7 +13,7 @@
 	<orig_hash type="array">
 		<languageKey index="de" type="array">
 			<label index="mlang_tabs_tab" type="integer">210880441</label>
-			<label index="mlang_labels_tabdescr" type="integer">199582382</label>
+			<label index="mlang_labels_tabdescr" type="integer">86061597</label>
 			<label index="mlang_labels_tablabel" type="integer">234412082</label>
 			<label index="title" type="integer">210880441</label>
 			<label index="reports_overview" type="integer">62421031</label>
@@ -23,7 +23,7 @@
 	<orig_text type="array">
 		<languageKey index="de" type="array">
 			<label index="mlang_tabs_tab">Reports</label>
-			<label index="mlang_labels_tabdescr">Collection of several system reports.</label>
+			<label index="mlang_labels_tabdescr">A collection of several system reports.</label>
 			<label index="mlang_labels_tablabel">System Reports</label>
 			<label index="title">Reports</label>
 			<label index="reports_overview">Overview</label>

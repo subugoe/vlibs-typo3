@@ -105,7 +105,7 @@ class tx_kickstarter_section_tables extends tx_kickstarter_section_fields {
 			$lines[] = '<tr><td></td></tr>';
 
 			$subContent  = '';
-			$subContent .= $this->renderCheckBox($ffPrefix.'[add_deleted]',$piConf['add_deleted'],1).'Add "Deleted" field '.$this->whatIsThis('Whole system: If a table has a deleted column, records are never really deleted, just "marked deleted" . Thus deleted records can actually be restored by clearing a deleted-flag later.\nNotice that all attached files are also not deleted from the server, so if you expect the table to hold some heavy size uploads, maybe you should not set this...') . '<BR>';
+			$subContent .= $this->renderCheckBox($ffPrefix.'[add_deleted]',$piConf['add_deleted'],1).'Add "Deleted" field '.$this->whatIsThis('Whole system: If a table has a deleted column, records are never really deleted, just "marked deleted" . Thus deleted records can actually be restored by clearing a deleted-flag later. Notice that all attached files are also not deleted from the server, so if you expect the table to hold some heavy size uploads, maybe you should not set this...') . '<BR>';
 			$subContent .= $this->renderCheckBox($ffPrefix . '[add_hidden]', $piConf['add_hidden'],1) . 'Add "Hidden" flag ' . $this->whatIsThis('Frontend: The "Hidden" flag will prevent the record from being displayed on the frontend.') . '<BR>' . $this->resImg('t_flag_hidden.png','hspace=20','','<BR><BR>');
 			$subContent .= $this->renderCheckBox($ffPrefix . '[add_starttime]', $piConf['add_starttime']) . 'Add "Starttime" ' . $this->whatIsThis('Frontend: If a "Starttime" is set, the record will not be visible on the website, before that date arrives.') . '<BR>' . $this->resImg('t_flag_starttime.png','hspace=20','','<BR><BR>');
 			$subContent .= $this->renderCheckBox($ffPrefix . '[add_endtime]', $piConf['add_endtime']) . 'Add "Endtime" ' . $this->whatIsThis('Frontend: If a "Endtime" is set, the record will be hidden from that date and into the future.') . '<BR>' . $this->resImg('t_flag_endtime.png', 'hspace=20','','<BR><BR>');
@@ -133,7 +133,7 @@ class tx_kickstarter_section_tables extends tx_kickstarter_section_fields {
 			);
 			$subContent = '<strong>"Type-field", if any:<BR></strong>'.
 					$this->renderSelectBox($ffPrefix.'[type_field]',$piConf['type_field'],$this->currentFields($optValues,$piConf['fields'])).
-					$this->whatIsThis('A "type-field" is the field in the table which determines how the form is rendered in the backend, eg. which fields are shown under which circumstances.\nFor instance the Content Element table "tt_content" has a type-field, CType. The value of this field determines if the editing form shows the bodytext field as is the case when the type is "Text" or if also the image-field should be shown as when the type is "Text w/Image"');
+					$this->whatIsThis('A "type-field" is the field in the table which determines how the form is rendered in the backend, eg. which fields are shown under which circumstances. For instance the Content Element table "tt_content" has a type-field, CType. The value of this field determines if the editing form shows the bodytext field as is the case when the type is "Text" or if also the image-field should be shown as when the type is "Text w/Image"');
 			$lines[] = '<tr'.$this->bgCol(3).'><td>'.$this->fw($subContent).'</td></tr>';
 
 				// Header field
@@ -384,7 +384,7 @@ class tx_kickstarter_section_tables extends tx_kickstarter_section_fields {
 			$DBfields[] = 't3ver_wsid int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3ver_label varchar(30) DEFAULT \'\' NOT NULL,';
 			$DBfields[] = 't3ver_state tinyint(4) DEFAULT \'0\' NOT NULL,';
-			$DBfields[] = 't3ver_stage tinyint(4) DEFAULT \'0\' NOT NULL,';
+			$DBfields[] = 't3ver_stage int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3ver_count int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3ver_tstamp int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3_origuid int(11) DEFAULT \'0\' NOT NULL,';

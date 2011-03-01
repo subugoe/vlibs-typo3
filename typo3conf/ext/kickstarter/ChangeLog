@@ -1,4 +1,76 @@
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Replaced mixed quotes with single quotes in function call.
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #16509: Convert all files to UTF-8
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Converted encoding to utf-8 and corrected Kaspers name
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #17332: Newline character after php closing tag in class.tx_kickstarter_reservedwords.php
+
+2011-01-26 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #16962: t3ver_stage should be int(11) in 4.5 (credits Tolleiv Nietsch)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #13208: Add pages to subtypes_excludelist (credits Georg Ringer)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #11645: Message text contains LINE BREAK (credits Stefano Kowalke)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #11414 : After deletion of files kickstarter recreates them always (credits Daniel Hahler)
+
+2010-12-22 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #10917: ShowUid is not checked for numeric content
+
+2010-12-22 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed wrong module template path
+
+2010-07-29 Ingo Renner	<ingo3@typo3.org>
+
+	* Added "type" as reserved word
+
+2010-01-03 Ingo Renner	<ingo3@typo3.org>
+
+	* Fixed a whitespace issue
+
+2009-12-25 Ingo Renner	<ingo3@typo3.org>
+
+	* Fixed bug #12891: kickstarter crashes with 5.3 (credits Steffen Kamper)
+	* Added feature #12775: Use label tags in the language section (credits Georg Ringer)
+	* Fixed bug #12768: extension key field not using htmlspecialchars (credits Georg Ringer)
+
+2009-02-05 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed bug #10335: Feature: highlight php code in "View result"
+
+2009-02-03 Steffen Kamper <info@sk-typo3.de>
+
+	* Fixed bug #10332: MySQL keywords are not complete
+
+2009-01-23 Peter Foerger	<pfoerger@gmail.com>
+
+	* Fixed bug #10161: 'blob' is also a reserved name/word
+
+2009-01-12 Ingo Renner	<ingo3@typo3.org>
+
+	* set the version number to 0.5.0-dev
+
 2009-01-11 Ingo Renner	<ingo3@typo3.org>
+
+	* Release of EXT:kickstarter v0.4.0
 
 	* made use of mod.php for backend modules the only available method for backend modules
 	* removed translationsas they're provided from the translation server
@@ -127,6 +199,10 @@
 2006-12-19 Peter Foerger <p.foerger@vke-design.de>
 
 	* FIX fixed bug 0004563: kickstarter uses .php instead of .xml lang files
+
+2006-12-06 Ingo Renner <typo3@ingo-renner.com>
+
+	* Release of EXT:kickstarter v0.3.8
 
 2006-12-05 Ingo Renner <typo3@ingo-renner.com>
 

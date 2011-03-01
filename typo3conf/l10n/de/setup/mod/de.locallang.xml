@@ -54,6 +54,7 @@
 			<label index="lang_ge">Georgisch</label>
 			<label index="lang_ga">Galizisch</label>
 			<label index="lang_km">Khmer</label>
+			<label index="lang_qc">Französisch (Kanada)</label>
 			<label index="default">Standard</label>
 			<label index="simulate">Backend-Benutzer simulieren</label>
 			<label index="opening">Beim Start</label>
@@ -76,6 +77,10 @@
 			<label index="edit_RTE">Rich-Text-Editor aktivieren (falls verfügbar)</label>
 			<label index="edit_docModuleUpload">Hochladen von Dateien direkt im Web-Modul</label>
 			<label index="enableFlashUploader">Flash-Schnittstelle zum Hochladen aktivieren (erfordert Flash 9+)</label>
+			<label index="enableFlashUploader_label">Hochlademodus auswählen</label>
+			<label index="enableFlashUploader.disable">Klassisches Hochladeformular</label>
+			<label index="enableFlashUploader.flash">Flash-basiertes Hochladen (Flash 9 oder höher erforderlich)</label>
+			<label index="enableFlashUploader.plupload">Plupload (HTML5, Flash, Silverlight, Formular)</label>
 			<label index="resizeTextareas">Größe von mehrzeiligen Textfeldern anpassbar machen</label>
 			<label index="resizeTextareas_MaxHeight">Maximale Höhe in der Größe anpassbarer, mehrzeiliger Textfelder in Pixel</label>
 			<label index="resizeTextareas_Flexible">Textfelder flexibel machen</label>
@@ -236,6 +241,11 @@
 			<label index="debugInWindow" type="integer">228365664</label>
 			<label index="lang_km" type="integer">167077099</label>
 			<label index="enableInstallTool.fileHasKeep" type="integer">140178423</label>
+			<label index="lang_qc" type="integer">153791426</label>
+			<label index="enableFlashUploader_label" type="integer">153779121</label>
+			<label index="enableFlashUploader.disable" type="integer">64170140</label>
+			<label index="enableFlashUploader.flash" type="integer">20032008</label>
+			<label index="enableFlashUploader.plupload" type="integer">84398802</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -355,6 +365,11 @@
 			<label index="debugInWindow">Display debug messages in a new browser window</label>
 			<label index="lang_km">Khmer</label>
 			<label index="enableInstallTool.fileHasKeep">The Install Tool file has the content &quot;KEEP_FILE&quot; and can not be deleted!</label>
+			<label index="lang_qc">French (Canada)</label>
+			<label index="enableFlashUploader_label">Select Uploader</label>
+			<label index="enableFlashUploader.disable">Classic Form Upload</label>
+			<label index="enableFlashUploader.flash">Flash Uploader (requires Flash 9+)</label>
+			<label index="enableFlashUploader.plupload">Plupload (HTML5, Flash, Silverlight, Form)</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

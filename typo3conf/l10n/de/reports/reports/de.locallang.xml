@@ -15,8 +15,6 @@
 			<label index="status_connectionFailed">Verbindung fehlgeschlagen</label>
 			<label index="status_updateComplete">Aktualisierung vollständig</label>
 			<label index="status_updateIncomplete">Aktualisierung nicht vollständig</label>
-			<label index="status_updateTaskTitle">Aktualisierung des Systemstatus</label>
-			<label index="status_updateTaskDescription">Führt eine Überprüfung des Systemstatus durch und versendet eine Mitteilung, wenn Probleme gefunden wurden.</label>
 			<label index="status_problemNotification">Ein oder mehrere Probleme in Ihrer TYPO3-Installation wurden festgestellt. Bitte prüfen Sie die %sStatusberichte%s für mehr Informationen.</label>
 			<label index="status_typo3">TYPO3-System</label>
 			<label index="status_system">System</label>
@@ -24,6 +22,7 @@
 			<label index="status_configuration">Konfiguration</label>
 			<label index="status_referenceIndex">Referenz-Index</label>
 			<label index="status_memcachedConfiguration">Memcached-Konfiguration</label>
+			<label index="status_PhpSafeMode">PHP-Safe-Mode</label>
 			<label index="status_adminUserAccount">Admin-Benutzer-Accounts</label>
 			<label index="status_encryptionKey">Verschlüsselungsschlüssel</label>
 			<label index="status_fileDenyPattern">Dateiverweigerungsmuster</label>
@@ -48,6 +47,14 @@
 			<label index="status_configuration_DeprecationLogEnabled">Das Protokoll für Aufrufe veralteter Funktionen hält fest, ob Erweiterungen alte APIs nutzen. Abhängig von den Erweiterungen, die Sie benutzen, und davon, ob diese veraltete APIs verwenden, kann das Protokoll mit der Zeit viel Platz beanspruchen. Je größer es wird, desto mehr kann es die Leistung Ihrer Installation beeinträchtigen. Es wird empfohlen, das Protokoll für Aufrufe veralteter Funktionen in Produktionsumgebungen zu deaktivieren.</label>
 			<label index="status_configuration_DeprecationLogFile">Sie können das Protokoll für Aufrufe veralteter Funktionen unter %s finden.</label>
 			<label index="status_configuration_DeprecationLogSize">Ihr Protokoll für Aufrufe veralteter Funktionen hat gegenwärtig eine Größe von %s.</label>
+			<label index="status_configuration_PhpSafeModeEnabled">Die Einstellung safe_mode &quot;On&quot; in php.ini wird seit PHP 5.2 nicht mehr empfohlen und ist seit PHP 5.3 veraltet. Sie sollte nicht mehr benutzt werden.</label>
+			<label index="status_updateTaskTitle">Aktualisierung des Systemstatus</label>
+			<label index="status_updateTaskDescription">Führt eine Überprüfung des Systemstatus durch und versendet eine Mitteilung, wenn Probleme gefunden wurden.</label>
+			<label index="status_updateTaskField_notificationEmail">E-Mail-Adresse für Bericht</label>
+			<label index="status_updateTaskField_notificationEmail_invalid">Leere oder ungültige E-Mail-Adresse.</label>
+			<label index="status_updateTask_email_subject">Systemstatus-Bericht für Seite %s</label>
+			<label index="status_updateTask_email_site">Seite</label>
+			<label index="status_updateTask_email_issues">Probleme</label>
 			<label index="status__install">Installation</label>
 		</languageKey>
 	</data>
@@ -100,6 +107,13 @@
 			<label index="status_updateTaskTitle" type="integer">119233544</label>
 			<label index="status_updateTaskDescription" type="integer">150646589</label>
 			<label index="status_problemNotification" type="integer">182597193</label>
+			<label index="status_PhpSafeMode" type="integer">67549501</label>
+			<label index="status_configuration_PhpSafeModeEnabled" type="integer">165380686</label>
+			<label index="status_updateTaskField_notificationEmail" type="integer">78218204</label>
+			<label index="status_updateTaskField_notificationEmail_invalid" type="integer">166277421</label>
+			<label index="status_updateTask_email_subject" type="integer">214972904</label>
+			<label index="status_updateTask_email_site" type="integer">175989877</label>
+			<label index="status_updateTask_email_issues" type="integer">134968971</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -151,6 +165,13 @@
 			<label index="status_updateTaskTitle">System Status Update</label>
 			<label index="status_updateTaskDescription">Runs a system status check and sends notifications if problems have been found.</label>
 			<label index="status_problemNotification">One or more problems were detected with your TYPO3 installation. Please check the %sstatus report%s for more information.</label>
+			<label index="status_PhpSafeMode">PHP safe_mode</label>
+			<label index="status_configuration_PhpSafeModeEnabled">PHP INI setting safe_mode &quot;On&quot; is discouraged since PHP 5.2 and deprecated since PHP 5.3 and should not be used anymore.</label>
+			<label index="status_updateTaskField_notificationEmail">Notification Email Address</label>
+			<label index="status_updateTaskField_notificationEmail_invalid">Empty or invalid notification email address.</label>
+			<label index="status_updateTask_email_subject">System Status Notification for site %s</label>
+			<label index="status_updateTask_email_site">Site</label>
+			<label index="status_updateTask_email_issues">Issues</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

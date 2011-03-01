@@ -29,7 +29,7 @@ require_once(t3lib_extMgm::extPath('kickstarter').'class.tx_kickstarter_sectionb
 
 
 /**
- * @author	Kasper Sk�rh�j <kasperYYYY@typo3.com>
+ * @author	Kasper Skårhøj <kasperYYYY@typo3.com>
  * @author	Ingo Renner <ingo@typo3.org>
  */
 class tx_kickstarter_section_fields extends tx_kickstarter_sectionbase {
@@ -263,7 +263,7 @@ class tx_kickstarter_section_fields extends tx_kickstarter_sectionbase {
 		foreach($GLOBALS['TCA'] as $tablename => $cols){
 			if ($tablename == $table) $passthrough = 1;
 		}
-		$fieldName = ereg_replace('[^[:alnum:]_]','',strtolower($str));
+		$fieldName = preg_replace('/[^[:alnum:]_]/', '', strtolower($str));
 		if ((!$fieldName || in_array($fieldName, $this->wizard->reservedWords) || in_array($fieldName, $this->usedNames)) && $passthrough==0)	{
 			$fieldName.=($fieldName?'_':'').t3lib_div::shortmd5(microtime());
 		}
@@ -680,7 +680,7 @@ class tx_kickstarter_section_fields extends tx_kickstarter_sectionbase {
 			# Table structure for table \''.$tableName.'\'
 			#
 			CREATE TABLE '.$tableName.' (
-		', ereg_replace(',[[:space:]]*$','',implode(chr(10),$DBfields)), '
+		', preg_replace('/,[[:space:]]*$/','',implode(chr(10),$DBfields)), '
 
 			);
 		');

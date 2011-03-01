@@ -72,6 +72,7 @@ class tx_nkwgok_pi1 extends tx_nkwgok {
 		if ($altSource) {
 			$conf['gok'] = $altSource;
 		}
+		$style = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'style', 'sDEF');
 
 		// unique expand array
 		if ($conf['getVars']['expand']) {
@@ -79,16 +80,21 @@ class tx_nkwgok_pi1 extends tx_nkwgok {
 			$conf['getVars']['expand'] = array_unique($tmpArr);
 		}
 
-		$doc = $this->GOKTree($conf);
+		$doc = Null;
+		if ($style == 'menu') {
+			$doc = $this->GOKMenus($conf);
+		}
+		else {
+			$doc = $this->GOKTree($conf);
+		}
+		
 		$content .= $doc->saveHTML();
 		return $content;
 	}
 
-
-	
-
-
 }
+
+
 
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nkwgok/pi1/class.tx_nkwgok_pi1.php']) {
 	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nkwgok/pi1/class.tx_nkwgok_pi1.php']);
