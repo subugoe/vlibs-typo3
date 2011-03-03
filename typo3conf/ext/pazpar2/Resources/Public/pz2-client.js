@@ -650,7 +650,14 @@ function display () {
 
 				var onsides = 6;
 				var pages = Math.ceil(displayHitList.length / recPerPage);
-	
+
+				var pageList = document.createElement('ol');
+				pageList.setAttribute('class', 'pz2-pages');
+				this.appendChild(pageList);
+			
+				if (pages <= 1) {
+					pageList.setAttribute('style', 'visibility:hidden;')
+				}
 				var firstClickable = ( curPage - onsides > 0 ) ? curPage - onsides : 1;
 				var lastClickable = firstClickable + 2*onsides < pages ? firstClickable + 2*onsides	: pages;
 
@@ -664,10 +671,6 @@ function display () {
 					prevLink.appendChild(document.createTextNode('«'));
 					this.appendChild(prevLink);
 				}
-		
-				var pageList = document.createElement('ol');
-				pageList.setAttribute('class', 'pz2-pages');
-				this.appendChild(pageList);	
 			
 				var dotsItem = document.createElement('li');
 				dotsItem.appendChild(document.createTextNode('…'));
@@ -705,7 +708,6 @@ function display () {
 				if (lastClickable < pages) {
 					pageList.appendChild(dotsItem);
 				}
-			
 			
 				// add record count information
 				var recordCountDiv = document.createElement('div');
@@ -1566,8 +1568,17 @@ function renderDetails(recordID) {
 	*/
 	var addZDBInfoIntoElement = function (element) {
 		// Do nothing if there are no ISSNs.
-		var ISSN = (data['md-issn']) ? data['md-issn'] : data['md-pissn'];
-		var eISSN = data['md-eissn'];
+		var ISSN;
+		if (data['md-issn'] && data['md-issn'].length > 0) {
+			ISSN = data['md-issn'][0];
+		}
+		else if (data['md-pissn'] && data['md-pissn'].length > 0) {
+			ISSN = data['md-pissn'][0];
+		}
+		var eISSN;
+		if (data['md-eissn'] && data['md-eissn'].length > 0) {
+			eISSN = data['md-eissn'][0];
+		}
 		
 		if ( !(ISSN || eISSN) ) { return; }
 
