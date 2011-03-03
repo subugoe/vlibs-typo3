@@ -68,7 +68,8 @@ var germanTerms = {
 	'Google Books Vorschau': 'Google Books Vorschau',
 	'Umschlagbild': 'Umschlagbild',
 	'Ansehen und Ausleihen bei': 'Ansehen und Ausleihen bei',
-	'keine Treffer gefunden': 'keine Treffer'
+	'keine Treffer gefunden': 'keine Treffer',
+	'Erscheint in separatem Fenster.': 'Erscheint in separatem Fenster.'
 };
 
 
@@ -113,7 +114,8 @@ var englishTerms = {
 	'Google Books Vorschau': 'Google Books Preview',
 	'Umschlagbild': 'Book Cover',
 	'Ansehen und Ausleihen bei': 'View catalogue record at',
-	'keine Treffer gefunden': 'no matching records'
+	'keine Treffer gefunden': 'no matching records',
+	'Erscheint in separatem Fenster.': 'Link opens in a new window.'
 };
 
 
@@ -250,6 +252,28 @@ function fieldContentInRecord (fieldName, record, lowerCase) {
 	}
 
 	return result;
+}
+
+
+
+/*	turnIntoNewWindowLink
+	Add a target attribute to open in our target window and add a note
+	to the title about this fact.
+	The link’s title element should be set before calling this function.
+	input:	link - DOM a element
+	output:	DOM element of the link passed in
+*/
+function turnIntoNewWindowLink (link) {
+	if (link) {
+		link.setAttribute('target', 'pz2-linkTarget');
+
+		var newTitle = localise('Erscheint in separatem Fenster.');
+		if (link.hasAttribute('title')) {
+			var oldTitle = link.getAttribute('title');
+			newTitle = oldTitle + ' (' + newTitle + ')';
+		}
+		link.setAttribute('title', newTitle);
+	}
 }
 
 
@@ -1371,6 +1395,37 @@ function renderDetails(recordID) {
 
 
 
+	/*	detailLineBasic
+		input:	titleElement - DOM element containing the title
+				dataElement - DOMElement with the information to be displayed
+				attributes - associative array if attributes added to the resulting elements (optional)
+		output: Array of DOM elements containing
+				0:	DT element with the titleElement
+				1:	DD element with the informationElement
+	*/
+	var detailLineBasic = function (titleElement, dataElement, attributes) {
+		var line;
+		if (titleElement && dataElement) {
+			var rowTitleElement = document.createElement('dt');
+			for (attributeName in attributes) {
+				rowTitleElement.setAttribute(attributeName, attributes[attributeName]);
+			}
+			rowTitleElement.appendChild(titleElement);
+
+			var rowDataElement = document.createElement('dd');
+			for (attributeName in attributes) {
+				rowDataElement.setAttribute(attributeName, attributes[attributeName]);
+			}
+			rowDataElement.appendChild(dataElement);
+			
+			line = [rowTitleElement, rowDataElement];
+		}
+		
+		return line;
+	}
+
+
+
 	/*	detailLine
 		input:	title - string with element's name
 				informationElements - array of DOM elements with the information to be displayed
@@ -1380,7 +1435,8 @@ function renderDetails(recordID) {
 						If there is more than one data item, they are wrapped in a list.
 	*/
 	var detailLine = function (title, informationElements) {
-		if (informationElements && title) {
+		var line;
+		if (title && informationElements) {
 			var headingText;	
 
 			if (informationElements.length == 1) {
@@ -1399,10 +1455,6 @@ function renderDetails(recordID) {
 			var infoItems = markupInfoItems(informationElements);
 
 			if (infoItems) { // we have information, so insert it
-				var line = [];
-
-				var rowTitle = document.createElement('dt');
-				line.push(rowTitle);
 				var labelNode = document.createTextNode(headingText + ':');
 				var acronymKey = 'detail-label-acronym-' + title;
 				if (localise(acronymKey) !== acronymKey) {
@@ -1412,11 +1464,8 @@ function renderDetails(recordID) {
 					acronymElement.appendChild(labelNode);
 					labelNode = acronymElement;
 				}
-				rowTitle.appendChild(labelNode);
 
-				var rowData = document.createElement('dd');
-				line.push(rowData);
-				rowData.appendChild(infoItems);
+				line = detailLineBasic(labelNode, infoItems);
 			}
 		}
 
@@ -1450,7 +1499,7 @@ function renderDetails(recordID) {
 	var linkForDOI = function (DOI) {
 		var linkElement = document.createElement('a');
 		linkElement.setAttribute('href', 'http://dx.doi.org/' + DOI);
-		linkElement.setAttribute('target', 'pz2-linktarget');
+		turnIntoNewWindowLink(linkElement);
 		linkElement.appendChild(document.createTextNode(DOI));
 
 		var DOISpan = document.createElement('span');
@@ -1507,7 +1556,7 @@ function renderDetails(recordID) {
 		if ( !(ISSN || eISSN) ) { return; }
 
 		var serviceID = 'sub:vlib';
-		var parameters = 'sid=' + serviceID + '&genre=article';
+		var parameters = 'sid=' + serviceID;
 
 		if ( ISSN ) {
 			parameters += '&issn=' + ISSN;
@@ -1517,35 +1566,46 @@ function renderDetails(recordID) {
 			parameters += '&eissn=' + eISSN;
 		}
 
-		// Add additional information to request to get more precise result and better display.
-		var year = data['md-date'];
-		if (year) {
-			var yearNumber = parseInt(year[0], 10);
-			parameters += '&date=' + yearNumber;
-		}
+		if (data['md-medium'] == 'article') {
+			parameters += '&genre=article';
 
-		var volume = data['md-journal-volume'];
-		if (volume) {
-			var volumeNumber = parseInt(volume, 10);
-			parameters += '&volume=' + volumeNumber;
-		}
+			// Add additional information to request to get more precise result and better display.
+			var year = data['md-date'];
+			if (year) {
+				var yearNumber = parseInt(year[0], 10);
+				parameters += '&date=' + yearNumber;
+			}
 
-		var issue = data['md-journal-issue'];
-		if (issue) {
-			var issueNumber = parseInt(issue, 10);
-			parameters += '&issue=' + issueNumber;
-		}
+			var volume = data['md-journal-volume'];
+			if (volume) {
+				var volumeNumber = parseInt(volume, 10);
+				parameters += '&volume=' + volumeNumber;
+			}
 
-		var pages = data['md-journal-pages'];
-		if (pages) {
-			parameters += '&pages=' + pages;
-		}
+			var issue = data['md-journal-issue'];
+			if (issue) {
+				var issueNumber = parseInt(issue, 10);
+				parameters += '&issue=' + issueNumber;
+			}
 
-		var title = data['md-title'];
-		if (title) {
-			parameters += '&atitle=' + encodeURI(title);
-		}
+			var pages = data['md-journal-pages'];
+			if (pages) {
+				parameters += '&pages=' + pages;
+			}
 
+			var title = data['md-title'];
+			if (title) {
+				parameters += '&atitle=' + encodeURI(title);
+			}
+		}
+		else { // it’s a journal
+			parameters += '&genre=journal';
+
+			var journalTitle = data['md-title'];
+			if (journalTitle) {
+				parameters += '&title=' + encodeURI(journalTitle);
+			}
+		}
 
 		// Run the ZDB query.
 		var ZDBURL = '/zdb/full.xml?' + parameters;
@@ -1595,19 +1655,26 @@ function renderDetails(recordID) {
 					
 					// Only display detail information if we do have access.
 					if (statusText) {
-						var statusDiv = document.createElement('div');
-						statusDiv.setAttribute('class', 'pz2-ZDBStatusInfo');
+						var statusElement = document.createElement('span');
+						statusElement.setAttribute('class', 'pz2-ZDBStatusInfo');
 
 						var accessLinkURL = $('AccessURL', ZDBResult);
 						if (accessLinkURL.length > 0) {
 							// Having an AccessURL implies this is inside ElectronicData.
-							statusDiv.appendChild(document.createTextNode(statusText));
+							statusElement.appendChild(document.createTextNode(statusText));
 							var accessLink = document.createElement('a');
-							statusDiv.appendChild(document.createTextNode(' – '));
-							statusDiv.appendChild(accessLink);
+							statusElement.appendChild(document.createTextNode(' – '));
+							statusElement.appendChild(accessLink);
 							accessLink.setAttribute('href', accessLinkURL[0].textContent);
-							accessLink.appendChild(document.createTextNode(localise('Zugriff')));
-							accessLink.setAttribute('target', 'pz2-linktarget');
+							var linkTitle = $('Title', ZDBResult);
+							if (linkTitle && linkTitle.length > 0) {
+								linkTitle = linkTitle[0].textContent;
+							}
+							else {
+								linkTitle = localise('Zugriff');
+							}
+							accessLink.appendChild(document.createTextNode(linkTitle));
+							turnIntoNewWindowLink(accessLink);
 
 							var additionals = [];
 							var ZDBAdditionals = $('Additional', ZDBResult);
@@ -1641,13 +1708,13 @@ function renderDetails(recordID) {
 							}
 
 							locationInfo.appendChild(document.createTextNode(infoText));
-							statusDiv.appendChild(locationInfo);
+							statusElement.appendChild(locationInfo);
 						}
 						else {
-							statusDiv = undefined;
+							statusElement = undefined;
 						}
 					}	
-					return statusDiv;
+					return statusElement;
 				}
 
 
@@ -1710,19 +1777,13 @@ function renderDetails(recordID) {
 									* print journal information
 				*/
 				var ZDBInformation = function (data) {
-					var container = document.createElement('div');
-					var ZDBLink = document.createElement('a');
-					container.appendChild(ZDBLink);
-					var ZDBLinkURL = 'http://services.d-nb.de/fize-service/gvr/html-service.htm?' + parameters;
-					ZDBLink.setAttribute('href', ZDBLinkURL);
-					ZDBLink.setAttribute('class', 'pz2-ZDBLink');
-					ZDBLink.setAttribute('target', 'pz2-linktarget');
-					ZDBLink.appendChild(document.createTextNode(localise('Informationen bei der Zeitschriftendatenbank')));
-					
+					var container;
+
 					var electronicInfos = ZDBInfoElement( $('ElectronicData', data) );
 					var printInfos = ZDBInfoElement( $('PrintData', data) );
 					
 					if (electronicInfos || printInfos) {
+						container = document.createElement('div');
 						appendLibraryNameFromResultDataTo(data, container);
 					}
 
@@ -1740,12 +1801,23 @@ function renderDetails(recordID) {
 						container.appendChild(printInfos);
 					}
 
-					return container
+					return container;
 				}
 
 
-				var infoBlock = [ZDBInformation(resultData)];
-				appendInfoToContainer( detailLine(localise('verfügbarkeit'), infoBlock), element);
+
+				var availabilityLabel = document.createElement('a');
+				var ZDBLinkURL = 'http://services.d-nb.de/fize-service/gvr/html-service.htm?' + parameters;
+				availabilityLabel.setAttribute('href', ZDBLinkURL);
+				availabilityLabel.setAttribute('title', localise('Informationen bei der Zeitschriftendatenbank'));
+				turnIntoNewWindowLink(availabilityLabel);
+				availabilityLabel.appendChild(document.createTextNode(localise('detail-label-verfügbarkeit') + ':'));
+
+				var infoBlock = ZDBInformation(resultData);
+
+				var infoLineElements = detailLineBasic(availabilityLabel, infoBlock, {'class':'pz2-ZDBInfo'});
+
+				appendInfoToContainer(infoLineElements, element);
 
 			}
 		);
@@ -2067,7 +2139,7 @@ function renderDetails(recordID) {
 						var link = document.createElement('a');
 						URLsContainer.appendChild(link);
 						link.setAttribute('href', linkURL);
-						link.setAttribute('target', 'pz2-linktarget');
+						turnIntoNewWindowLink(link);
 						link.appendChild(document.createTextNode(linkText));
 					}
 				}
@@ -2111,7 +2183,7 @@ function renderDetails(recordID) {
 			if (catalogueURL) {
 				var linkElement = document.createElement('a');
 				linkElement.setAttribute('href', catalogueURL);
-				linkElement.setAttribute('target', 'pz2-linktarget');
+				turnIntoNewWindowLink(linkElement);
 				linkElement.setAttribute('class', 'pz2-detail-catalogueLink')
 				var linkText = localise('Ansehen und Ausleihen bei:');
 				if (targetName) {
