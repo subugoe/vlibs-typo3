@@ -22,7 +22,6 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  * ************************************************************* */
-require_once(t3lib_extMgm::extPath('nkwlib') . 'class.tx_nkwlib.php');
 
 define('NKWGOKExtKey', 'nkwgok');
 define('NKWGOKQueryTable', 'tx_nkwgok_data');
@@ -34,7 +33,7 @@ define('NKWGOKQueryFields', 'ppn, gok, search, descr, descr_en, parent, childcou
  * @package default
  * @author Nils K. Windisch
  * */
-class tx_nkwgok extends tx_nkwlib {
+class tx_nkwgok extends tslib_pibase {
 
 	/**
 	 * @var Array
@@ -163,7 +162,7 @@ class tx_nkwgok extends tx_nkwlib {
 		$hitCount = $GOKData['hitcount'];
 		if ($hitCount != 0 ) {
 			$opacLink = $doc->createElement('a');
-			$opacLink->setAttribute('href', $this->makeOPACLink($GOKData, $language));
+			$opacLink->setAttribute('href', $this->opacGOKSearchURL($GOKData, $language));
 			$opacLink->setAttribute('title', $this->localise('Bücher zu diesem Thema im Opac anzeigen', $language) );
 			// Question: Is '_blank' a good idea?
 			$opacLink->setAttribute('target', '_blank');
@@ -197,7 +196,7 @@ class tx_nkwgok extends tx_nkwlib {
 		$opacLink = $doc->createElement('a');
 		$hitCount = $GOKData['hitcount'];
 		if ($hitCount != 0 ) {
-			$opacLink->setAttribute('href', $this->makeOPACLink($GOKData, $language));
+			$opacLink->setAttribute('href', $this->opacGOKSearchURL($GOKData, $language));
 
 			if ($hitCount > 0) {
 				// we know the number of results: display it
@@ -219,30 +218,45 @@ class tx_nkwgok extends tx_nkwlib {
 	
 	
 	/**
-	 * undocumented function
+	 * Returns URL pointing to an Opac search for the given GOK for the
+	 * current language.
 	 *
-	 * @return void
-	 * @author Nils K. Windisch
-	 * */
-	private function makeOPAClink($GOKData, $language) {
+	 * @author Sven-S. Porst
+	 * @param Array $GOKData GOK record
+	 * @param string $language ISO 639-1 language code
+	 * @return string URL
+	 */
+	private function opacGOKSearchURL($GOKData, $language) {
 		$conf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['nkwgok']);
 
-		$languageID = 0;
+		$picaLanguageCode = 'DU';
 		if ($language == 'en') {
-			$languageID= 1;
+			$picaLanguageCode = 'EN';
 		}
 
-		$defaultOpacUrl = explode(',', $conf['defaultOpacUrl']);
-		$opacUrl = $defaultOpacUrl[$languageID];
+		$GOKSearchURL = $conf['opacBaseURL'] . 'LNG=' . $picaLanguageCode 
+			. '/CMD?ACT=SRCHA&IKT=1016&SRT=YOP&TRM=' . $GOKData['search'];
 
-		$alternativeOpacUrlTrigger = explode(',', $conf['alternativeOpacUrlTrigger']);
-		if (in_array($GOKData['gok']{0}, $alternativeOpacUrlTrigger)) {
-			$alternativeOpacUrl = explode(',', $conf['alternativeOpacUrl']);
-			$opacUrl = $alternativeOpacUrl[$languageID];
+		return $GOKSearchURL;
+	}
+
+
+
+	/**
+	 * Helper function to add our default stylesheet or the one at the path
+	 * set up in Extension Manager configuration to the page’s head.
+	 * 
+	 * @author Sven-S. Porst
+	 * @return void 
+	 */
+	private function addStylesheet () {
+		$nkwgokGlobalConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['nkwgok']);
+		$cssPath = $nkwgokGlobalConf['CSSPath'];
+		if (!$cssPath) {
+			$cssPath = 'EXT:' . $this->extKey . '/res/nkwgok.css';
 		}
-
-		$URL = preg_replace('/PLACEHOLDER/', $GOKData['search'], $opacUrl);
-		return $URL;
+		
+		$GLOBALS['TSFE']->pSetup['includeCSS.'][$this->extKey] = $cssPath;
 	}
 
 
@@ -269,70 +283,13 @@ class tx_nkwgok extends tx_nkwlib {
 	public function GOKTree ($conf) {
 		$language = $GLOBALS['TSFE']->lang;
 
-		// create Document and add JavaScript
 		$doc = DOMImplementation::createDocument();
-		$scriptElement = $doc->createElement('script');
-		$doc->appendChild($scriptElement);
-		$scriptElement->setAttribute('type', 'text/javascript');
-		$extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][NKWGOKExtKey]);
-		$jQueryMarker =  $this->getJqueryMode(intval($extConf['jQueryNoConflict']));
-		$js = "
-		function swapTitles (element) {
-			var jQElement = " . $jQueryMarker . "(element);
-			var otherTitle = jQElement.attr('alttitle');
-			jQElement.attr('alttitle', jQElement.attr('title'));
-			jQElement.attr('title', otherTitle);
-		}
-		function expandGOK (id) {
-			var link = " . $jQueryMarker . "('#openCloseLink-' + id);
-			var plusMinus = $('.plusMinus', link);
-			swapTitles(link);
-			plusMinus.text('[*]');
-			var functionText = 'hideGOK(\"' + id + '\");return false;';
-		link[0].onclick = new Function(functionText);
-			" . $jQueryMarker . ".get("
-				. "'" . t3lib_div::getIndpEnv('TYPO3_SITE_URL') . "index.php',
-				{'eID': '" . NKWGOKExtKey . "', "
-				. "'tx_" . NKWGOKExtKey . "[language]': '" . $language . "', "
-				. "'tx_" . NKWGOKExtKey . "[expand]': id, "
-				. "'tx_" . NKWGOKExtKey . "[style]': '" . $conf['getVars']['style'] . "'},
-				function (html) {
-					plusMinus.text('[-]');
-					jQuery('#c' + id).append(html);
-				}
-			);
-		};
-		function hideGOK (id) {
-			" . $jQueryMarker . "('#ul-' + id).remove();
-			var link = " . $jQueryMarker . "('#openCloseLink-' + id);
-			$('.plusMinus', link).text('[+]');
-			swapTitles(link);
-			var	functionText = 'expandGOK(\"' + id + '\");return false;';
-			link[0].onclick = new Function(functionText);
-		};
-";
-		$scriptElement->appendChild($doc->createTextNode($js));
+		$this->addGOKTreeJSToElement($doc, $doc, $conf['getVars']['style'], $language);
 
-		$cssElement = $doc->createElement('style');
-		$doc->appendChild($cssElement);
-		$cssElement->setAttribute('type', 'text/css');
-		$css = '
-.gokTreeContainer a { text-decoration:none; border: 0px none; position: relative; }
-.gokTreeContainer ul { list-style-type: none; padding-left: 0em; }
-.gokTreeContainer ul ul { margin: 0em 0em 0em 1em; }
-.gokTreeContainer a:link:hover { text-decoration: underline; }
-.gokTreeContainer.newStyle a .GOKID { display:block; float:left; width: 6em; text-align: right; color: #999; padding-right:0.2em;}
-.gokTreeContainer.newStyle .GOKName { font-weight: bold; }
-.gokTreeContainer.newStyle .opacLink { font-size: 71%; font-style: italic; color: #999; }
-.gokTreeContainer.newStyle .opacLink:link:after { content: "\\002192"; padding-left: 0.2em; }
-.gokTreeContainer.newStyle .opacLink:hover { color: #333; }
-.gokTreeContainer .plusMinus, .gokTreeContainer .GOKID { font-family: monospace; }
-';
-		$cssElement->appendChild($doc->createTextNode($css));
+		$this->addStylesheet();
 
+		// Get start node.
 		$firstNodeCondition = "gok LIKE " . $GLOBALS['TYPO3_DB']->fullQuoteStr($conf['gok'], NKWGOKQueryTable);
-
-		// run query and collect result
 		$queryResult = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
 					NKWGOKQueryFields,
 					NKWGOKQueryTable,
@@ -364,6 +321,67 @@ class tx_nkwgok extends tx_nkwlib {
 		}
 
 		return $doc;
+	}
+
+
+
+	/**
+	 * Helper function to insert JavaScript for the GOK Tree into the passed
+	 * $element.
+	 *
+	 * It seems we need to pass the DOMDocument here as using $element->ownerDocument
+	 * doesn't seem to work if $element is the DOMDocument itself.
+	 *
+	 * @author Sven-S. Porst
+	 * @param DOMElement $element the <script> tag is inserted into
+	 * @param DOMDocument $doc the containing document
+	 * @param string $style the display style to use ('treeNew' or 'treeOld')
+	 * @param string $language ISO 369-1 language code
+	 */
+	private function addGOKTreeJSToElement ($element, $doc, $style, $language) {
+		$scriptElement = $doc->createElement('script');
+		$doc->appendChild($scriptElement);
+		$scriptElement->setAttribute('type', 'text/javascript');
+
+		$extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][NKWGOKExtKey]);
+		$jQueryMarker =  $this->getJqueryMode(intval($extConf['jQueryNoConflict']));
+
+		$js = "
+		function swapTitles (element) {
+			var jQElement = " . $jQueryMarker . "(element);
+			var otherTitle = jQElement.attr('alttitle');
+			jQElement.attr('alttitle', jQElement.attr('title'));
+			jQElement.attr('title', otherTitle);
+		}
+		function expandGOK (id) {
+			var link = " . $jQueryMarker . "('#openCloseLink-' + id);
+			var plusMinus = $('.plusMinus', link);
+			swapTitles(link);
+			plusMinus.text('[*]');
+			var functionText = 'hideGOK(\"' + id + '\");return false;';
+		link[0].onclick = new Function(functionText);
+			" . $jQueryMarker . ".get("
+				. "'" . t3lib_div::getIndpEnv('TYPO3_SITE_URL') . "index.php',
+				{'eID': '" . NKWGOKExtKey . "', "
+				. "'tx_" . NKWGOKExtKey . "[language]': '" . $language . "', "
+				. "'tx_" . NKWGOKExtKey . "[expand]': id, "
+				. "'tx_" . NKWGOKExtKey . "[style]': '" . $style . "'},
+				function (html) {
+					plusMinus.text('[-]');
+					jQuery('#c' + id).append(html);
+				}
+			);
+		};
+		function hideGOK (id) {
+			" . $jQueryMarker . "('#ul-' + id).remove();
+			var link = " . $jQueryMarker . "('#openCloseLink-' + id);
+			$('.plusMinus', link).text('[+]');
+			swapTitles(link);
+			var	functionText = 'expandGOK(\"' + id + '\");return false;';
+			link[0].onclick = new Function(functionText);
+		};
+";
+		$scriptElement->appendChild($doc->createTextNode($js));
 	}
 
 
@@ -491,7 +509,6 @@ class tx_nkwgok extends tx_nkwlib {
 				}
 
 				$control->appendChild($doc->createTextNode($buttonText));
-
 			}
 		}
 	}
@@ -528,12 +545,57 @@ class tx_nkwgok extends tx_nkwlib {
 	public function GOKMenus ($conf) {
 		$language = $GLOBALS['TSFE']->lang;
 
-		// create Document and add JavaScript
 		$doc = DOMImplementation::createDocument();
+		$this->addGOKMenuJSToElement($doc, $doc, $language);
 
+		$this->addStylesheet();
+
+		// Create the form and insert the first menu.
+		$form = $doc->createElement('form');
+		$doc->appendChild($form);
+		$form->setAttribute('class', 'gokMenuForm');
+		$form->setAttribute('method', 'get');
+		$form->setAttribute('action', t3lib_div::getIndpEnv('TYPO3_REQUEST_URL'));
+		$firstNodeCondition = "gok LIKE " . $GLOBALS['TYPO3_DB']->fullQuoteStr($conf['gok'], NKWGOKQueryTable);
+		// run query and collect result
+		$queryResult = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
+					NKWGOKQueryFields,
+					NKWGOKQueryTable,
+					$firstNodeCondition,
+					'',
+					'gok ASC',
+					'');
+
+		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($queryResult)) {
+			$this->appendGOKMenuChildren($row['ppn'], $doc, $form, $language, $conf['getVars'], 2);
+		}
+
+		$button = $doc->createElement('input');
+		$button->setAttribute('type', 'submit');
+		$form->appendChild($button);
+
+		return $doc;
+	}
+
+
+	
+	/**
+	 * Helper function to insert JavaScript for the GOK Menu into the passed
+	 * $element.
+	 *
+	 * It seems we need to pass the DOMDocument here as using $element->ownerDocument
+	 * doesn't seem to work if $element is the DOMDocument itself.
+	 *
+	 * @author Sven-S. Porst
+	 * @param DOMElement $element the <script> tag is inserted into
+	 * @param DOMDocument $doc the containing document
+	 * @param string $language ISO 369-1 language code
+	 */
+	private function addGOKMenuJSToElement ($element, $doc, $language) {
 		$scriptElement = $doc->createElement('script');
-		$doc->appendChild($scriptElement);
+		$element->appendChild($scriptElement);
 		$scriptElement->setAttribute('type', 'text/javascript');
+
 		$js = "
 		function GOKMenuSelectionChanged (menu) {
 			var selectedOption = menu.options[menu.selectedIndex];
@@ -568,43 +630,9 @@ class tx_nkwgok extends tx_nkwlib {
 		}
 ";
 		$scriptElement->appendChild($doc->createTextNode($js));
-
-		$cssElement = $doc->createElement('style');
-		$doc->appendChild($cssElement);
-		$cssElement->setAttribute('type', 'text/css');
-		$css = "
-.gokMenuForm select { width: 50%; display:block;}
-";
-		$cssElement->appendChild($doc->createTextNode($css));
-
-		// Create the form and insert the first menu.
-		$form = $doc->createElement('form');
-		$doc->appendChild($form);
-		$form->setAttribute('class', 'gokMenuForm');
-		$form->setAttribute('method', 'get');
-		$form->setAttribute('action', t3lib_div::getIndpEnv('TYPO3_REQUEST_URL'));
-		$firstNodeCondition = "gok LIKE " . $GLOBALS['TYPO3_DB']->fullQuoteStr($conf['gok'], NKWGOKQueryTable);
-		// run query and collect result
-		$queryResult = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
-					NKWGOKQueryFields,
-					NKWGOKQueryTable,
-					$firstNodeCondition,
-					'',
-					'gok ASC',
-					'');
-
-		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($queryResult)) {
-			$this->appendGOKMenuChildren($row['ppn'], $doc, $form, $language, $conf['getVars'], 2);
-		}
-
-		$button = $doc->createElement('input');
-		$button->setAttribute('type', 'submit');
-		$form->appendChild($button);
-
-		return $doc;
 	}
 
-
+	
 
 	/**
 	 * Looks up child elements for the given $parentPPN, creates DOM elements
