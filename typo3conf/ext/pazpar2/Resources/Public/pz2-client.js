@@ -2183,8 +2183,17 @@ function renderDetails(recordID) {
 		*/
 		var electronicURLs = function() {
 			var electronicURLs = location['md-electronic-url'];
-			var URLsContainer;
+			// remove those URLs from the list which are already present as DOI information
+			for (var DOIIndex in data['md-doi']) {
+				for (var URLIndex in electronicURLs) {
+					if (electronicURLs[URLIndex].search(data['md-doi'][DOIIndex]) != -1) {
+						electronicURLs.splice(URLIndex, 1);
+						break;
+					}
+				}
+			}
 
+			var URLsContainer;
 			if (electronicURLs && electronicURLs.length != 0) {
 				URLsContainer = document.createElement('span');
 
@@ -2201,26 +2210,19 @@ function renderDetails(recordID) {
 						linkURL = URLInfo['#text'];
 					}
 
-					// make sure the same URL isn't listed as a DOI already
-					var URLAlreadyListed = false;
-					for (var DOINumber in data['md-doi']) {
-						URLAlreadyListed |= (linkURL.search(data['md-doi'][DOINumber]) != -1);
+					if (URLsContainer.childElementCount > 0) {
+						// add , as separator if not the first element
+						URLsContainer.appendChild(document.createTextNode(', '));
 					}
-
-					if (!URLAlreadyListed) {
-						if (URLsContainer.childElementCount > 0) {
-							// add , as separator if not the first element
-							URLsContainer.appendChild(document.createTextNode(', '));
-						}
-						var link = document.createElement('a');
-						URLsContainer.appendChild(link);
-						link.setAttribute('href', linkURL);
-						turnIntoNewWindowLink(link);
-						link.appendChild(document.createTextNode(linkText));
-					}
+					var link = document.createElement('a');
+					URLsContainer.appendChild(link);
+					link.setAttribute('href', linkURL);
+					turnIntoNewWindowLink(link);
+					link.appendChild(document.createTextNode(linkText));
 				}
 				URLsContainer.appendChild(document.createTextNode('; '));
 			}
+
 			return URLsContainer;		
 		}
 
