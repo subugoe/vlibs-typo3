@@ -65,6 +65,7 @@ var germanTerms = {
 	'Umschlagbild': 'Umschlagbild',
 	'Ansehen und Ausleihen bei': 'Ansehen und Ausleihen bei',
 	'keine Treffer gefunden': 'keine Treffer',
+	'In diesem Katalog gibt es noch # weitere Treffer.': 'In diesem Katalog gibt es noch # weitere Treffer, die wir nicht herunterladen und hier anzeigen können. Bitte wählen Sie einen spezifischeren Suchbegriff, um alle Treffer sehen zu können. Oder suchen Sie direkt im Katalog.',
 	// ZDB-JOP status labels
 	'frei verfügbar': 'frei verfügbar',
 	'teilweise frei verfügbar': 'teilweise frei verfügbar',
@@ -76,8 +77,8 @@ var germanTerms = {
 	'Erscheint in separatem Fenster.': 'Erscheint in separatem Fenster.',
 	// Search Form
 	'form-extended-label-title': 'Titel',
-	'form-extended-label-person': 'Namen',
-	'form-extended-label-journal': 'Zeitschrift',
+	'form-extended-label-journalOnly': 'nur Zeitschriftentitel',
+	'form-extended-label-person': 'Person',
 	'form-extended-label-date': 'Jahr'
 };
 
@@ -120,6 +121,7 @@ var englishTerms = {
 	'Umschlagbild': 'Book Cover',
 	'Ansehen und Ausleihen bei': 'View catalogue record at',
 	'keine Treffer gefunden': 'no matching records',
+	'In diesem Katalog gibt es noch # weitere Treffer.': 'There are # additional results available in this catalogue which we cannot download and display. Please choose a more specific search query or visit the website of the catalogue itself if you require the full set of results.',
 	// ZDB-JOP status labels
 	'frei verfügbar': 'accessible for all',
 	'teilweise frei verfügbar': 'partially accessible for all',
@@ -131,8 +133,8 @@ var englishTerms = {
 	'Erscheint in separatem Fenster.': 'Link opens in a new window.',
 	// Search Form
 	'form-extended-label-title': 'Title',
-	'form-extended-label-person': 'Names',
-	'form-extended-label-journal': 'Journal',
+	'form-extended-label-journalOnly': 'journal titles only',
+	'form-extended-label-person': 'Author',
 	'form-extended-label-date': 'Year'
 };
 
@@ -201,7 +203,7 @@ var domReadyFired = false;
 var pz2Initialised = false;
 var curPage = 1;
 var recPerPage = 100;
-var fetchRecords = 500;
+var fetchRecords = 1500;
 var curDetRecId = '';
 var curDetRecData = null;
 var curSort = [];
@@ -213,11 +215,12 @@ var displaySort =  [{'fieldName': 'date', 'direction': 'descending'},
 						{'fieldName': 'author', 'direction': 'ascending'},
 						{'fieldName': 'title', 'direction': 'ascending'}];
 var displayFilter = undefined;
-var hitList = []; // local storage for the records sent from pazpar2
+var hitList = {}; // local storage for the records sent from pazpar2
 var displayHitList = []; // filtered and sorted list used for display
 var useGoogleBooks = false;
 var useZDB = false;
 var ZDBUseClientIP = true;
+var targetStatus = {};
 
 
 
@@ -651,18 +654,7 @@ function display () {
 					this.appendChild(progress[0]);
 				}
 
-				var onsides = 6;
 				var pages = Math.ceil(displayHitList.length / recPerPage);
-
-				var pageList = document.createElement('ol');
-				pageList.setAttribute('class', 'pz2-pages');
-				this.appendChild(pageList);
-			
-				if (pages <= 1) {
-					pageList.setAttribute('style', 'visibility:hidden;')
-				}
-				var firstClickable = ( curPage - onsides > 0 ) ? curPage - onsides : 1;
-				var lastClickable = firstClickable + 2*onsides < pages ? firstClickable + 2*onsides	: pages;
 
 				// create pager
 				if (curPage > 1) {
@@ -674,15 +666,19 @@ function display () {
 					prevLink.appendChild(document.createTextNode('«'));
 					this.appendChild(prevLink);
 				}
+
+				var pageList = document.createElement('ol');
+				pageList.setAttribute('class', 'pz2-pages');
+				this.appendChild(pageList);
 			
-				var dotsItem = document.createElement('li');
-				dotsItem.appendChild(document.createTextNode('…'));
-			
-				if (firstClickable > 1) {
-					pageList.appendChild(dotsItem.cloneNode());
+				if (pages <= 1) {
+					pageList.setAttribute('style', 'visibility:hidden;')
 				}
 		
-				for(var pageNumber = firstClickable; pageNumber <= lastClickable; pageNumber++) {
+				var dotsItem = document.createElement('li');
+				dotsItem.appendChild(document.createTextNode('…'));
+		
+				for(var pageNumber = 1; pageNumber <= pages; pageNumber++) {
 					var pageItem = document.createElement('li');
 					pageList.appendChild(pageItem);
 					if(pageNumber != curPage) {
@@ -706,10 +702,6 @@ function display () {
 					nextLink.setAttribute('title', localise('Nächste Trefferseite anzeigen'));
 					nextLink.appendChild(document.createTextNode('»'));
 					this.appendChild(nextLink);			
-				}
-		
-				if (lastClickable < pages) {
-					pageList.appendChild(dotsItem);
 				}
 			
 				// add record count information
@@ -877,14 +869,17 @@ function facetListForType (type, preferOriginalFacets) {
 			for (var recordIndex in displayHitList) {
 				var record = displayHitList[recordIndex];
 				var dataArray = fieldContentsInRecord(type, record);
+				var countsToIncrement = {}
 				for (var index in dataArray) {
 					var data = dataArray[index];
-					if (termArray[data]) {
-						termArray[data]++;
+					countsToIncrement[data] = true;
+				}
+
+				for (var term in countsToIncrement) {
+					if (!termArray[term]) {
+						termArray[term] = 0;
 					}
-					else {
-						termArray[data] = 1;
-					}
+					termArray[term]++;
 				}
 			}
 			
@@ -977,7 +972,16 @@ function facetListForType (type, preferOriginalFacets) {
 			var count = document.createElement('span');
 			link.appendChild(count);
 			count.setAttribute('class', 'pz2-facetCount');
-				count.appendChild(document.createTextNode(terms[i].freq));
+			count.appendChild(document.createTextNode(terms[i].freq));
+			if (type == 'xtargets' && targetStatus[facetName]) {
+				var hitOverflow = targetStatus[facetName].hits - targetStatus[facetName].records;
+				if (hitOverflow > 0) {
+					count.appendChild(document.createTextNode(' +'));
+					var titleString = localise('In diesem Katalog gibt es noch # weitere Treffer.');
+					titleString = titleString.replace('#', hitOverflow);
+					item.setAttribute('title', titleString);
+				}
+			}
 
 			// Mark facets which are currently active and add button to remove faceting.
 			if (isFilteredForType(type)) {
@@ -1053,7 +1057,7 @@ function my_onbytarget(data) {
 	thead.appendChild(tr);
 	var td = document.createElement('td');
 	tr.appendChild(td);
-	td.appendChild(document.createTextNode(localise('Datenbank URL')));
+	td.appendChild(document.createTextNode(localise('Datenbank')));
 	td = document.createElement('td');
 	tr.appendChild(td);
 	td.appendChild(document.createTextNode(localise('Treffer')));
@@ -1075,7 +1079,8 @@ function my_onbytarget(data) {
 		tbody.appendChild(tr);
 		td = document.createElement('td');
 		tr.appendChild(td);
-		td.appendChild(document.createTextNode(data[i].id));
+		td.appendChild(document.createTextNode(data[i].name));
+		td.setAttribute('title', data[i].id)
 		td = document.createElement('td');
 		tr.appendChild(td);
 		td.appendChild(document.createTextNode(data[i].hits));
@@ -1088,6 +1093,8 @@ function my_onbytarget(data) {
 		td = document.createElement('td');
 		tr.appendChild(td);
 		td.appendChild(document.createTextNode(localise(data[i].state)));
+
+		targetStatus[data[i].name] = data[i];
 	}
 }
 
@@ -1146,7 +1153,7 @@ function onSelectDidChange () {
 */
 function resetPage() {
 	curPage = 1;
-	hitList = [];
+	hitList = {};
 	displayHitList = [];
 	filterArray = {};
 	updateAndDisplay();
@@ -1160,9 +1167,41 @@ function resetPage() {
 	input:	form - DOM element of the form used to trigger the search
 */
 function triggerSearchForForm (form) {
-	if (domReadyFired && pz2Initialised) {
-		var searchTerm = $('.pz2-searchField', form).val().trim();
 
+	/*	addSearchStringForFieldToArray
+		Creates the appropriate search string for the passed field name and
+			adds it to the passed array.
+		pazpar2-style search strings are 'fieldname=searchTerm'.
+
+		inputs:	fieldName - string
+				array - array containing the search strings
+	*/
+	var addSearchStringForFieldToArray = function (fieldName, array) {
+		var searchString = $('#pz2-field-' + fieldName, form).val()
+		if (searchString && searchString != '') {
+			searchString = searchString.trim();
+			if (fieldName != 'all') {
+				if (!(fieldName == 'title' && $('#pz2-checkbox-journal:checked', form).length > 0)) {
+					searchString = fieldName + '=' + searchString;
+				}
+				else {
+					// special case for title restricted to journals only
+					searchString = 'journal=' + searchString;
+				}
+			}
+			array.push(searchString);
+		}
+	}
+
+
+	if (domReadyFired && pz2Initialised) {
+		var searchChunks = [];
+		addSearchStringForFieldToArray('all', searchChunks);
+		addSearchStringForFieldToArray('title', searchChunks);
+		addSearchStringForFieldToArray('person', searchChunks);
+		addSearchStringForFieldToArray('date', searchChunks);
+
+		var searchTerm = searchChunks.join(' and ');
 		if ( searchTerm != '' && searchTerm != curSearchTerm ) {
 			loadSelectsFromForm(form);
 			resetPage();
@@ -1183,19 +1222,26 @@ function triggerSearchForForm (form) {
 	output:	false
 */
 function addExtendedSearchForLink (event) {
-	var extendedSearchField = function (title) {
-		var myID = 'form-extended-label-' + title;
 
+	/*	extendedSearchField
+		Returns a DIV containing a label and a text field for the given field name.
+
+		input:	fieldName - string containing the field name to be used
+		output:	DOMElement - div containing the input text field and label
+	*/
+	var extendedSearchField = function (fieldName) {
+		var myID = 'pz2-field-' + fieldName;
 		var div = document.createElement('div');
 		div.setAttribute('class', 'pz2-fieldContainer');
 		var label = document.createElement('label');
 		div.appendChild(label);
 		label.setAttribute('for', myID);
-		label.appendChild(document.createTextNode(localise(myID)));
+		label.setAttribute('class', 'pz2-textFieldLabel');
+		label.appendChild(document.createTextNode(localise('form-extended-label-' + fieldName)));
 		var input = document.createElement('input');
 		div.appendChild(input);
 		input.setAttribute('type', 'text');
-		input.setAttribute('name', title);
+		input.setAttribute('name', fieldName);
 		input.setAttribute('id', myID);
 		input.setAttribute('class', 'pz2-searchField extended');
 
@@ -1209,9 +1255,19 @@ function addExtendedSearchForLink (event) {
 	jQuery(formContainer).parent('form').removeClass('pz2-basic').addClass('pz2-extended');
 
 	// append new fields
-	formContainer.appendChild(extendedSearchField('title'));
+	var titleField = extendedSearchField('title');
+	formContainer.appendChild(titleField);
+	var checkBox = document.createElement('input');
+	titleField.appendChild(checkBox);
+	checkBox.setAttribute('id', 'pz2-checkbox-journal');
+	checkBox.setAttribute('type', 'checkbox');
+	checkBox.setAttribute('name', 'journalTitle');
+	var label = document.createElement('label');
+	titleField.appendChild(label);
+	label.setAttribute('for', 'pz2-checkbox-journal');
+	label.appendChild(document.createTextNode(localise('form-extended-label-journalOnly')));
+
 	formContainer.appendChild(extendedSearchField('person'));
-	formContainer.appendChild(extendedSearchField('journal'));
 	var dateLine = extendedSearchField('date');
 	formContainer.appendChild(dateLine);
 

@@ -29,7 +29,7 @@
 	font-size: 133%;
 }
 
-.pz2-mainForm label {
+.pz2-mainForm label.pz2-textFieldLabel {
 	display: block;
 	float: left;
 	width: 6em;
@@ -46,7 +46,7 @@
 	display: inline;
 }
 
-.pz2-ranking .pz2-perPage {
+.pz2-ranking {
 	display: none;
 }
 
