@@ -2,12 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3688d155-2</SESSIONVAR>
+<SESSIONVAR name="SID">b0f4d303-3</SESSIONVAR>
 <SESSIONVAR name="SET">1</SESSIONVAR>
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
-<SET nr="1" type="0" hits="38137" first="1">
+<SET nr="1" type="0" hits="38142" first="1">
 
   <SHORTTITLE nr="1" PPN="647357631" matstring="MAA_E" matcode="Tev"
 format="text" available="no"><record><datafield tag="001A"><subfield code="0">0007:24-02-11</subfield></datafield><datafield tag="001B"><subfield code="0">0007:24-02-11</subfield><subfield code="t">10:27:16.000</subfield></datafield><datafield tag="001D"><subfield code="0">0007:24-02-11</subfield></datafield><datafield tag="002@"><subfield code="0">Tev</subfield></datafield><datafield tag="003@"><subfield code="0">647357631</subfield></datafield><datafield tag="003Z"><subfield code="0">gokz</subfield></datafield><datafield tag="009B"><subfield code="a">5</subfield></datafield><datafield tag="038D"><subfield code="9">619469463</subfield></datafield><datafield tag="044E"><subfield code="a">Filter {Maschinenbau}</subfield></datafield><datafield tag="045A"><subfield code="a">ZPK 840</subfield></datafield><datafield tag="047A"><subfield code="a">hier: Filteranlagen und Filtertechnik</subfield></datafield></record></SHORTTITLE>
