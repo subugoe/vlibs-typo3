@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f27c8d09-0</SESSIONVAR>
+<SESSIONVAR name="SID">b9e5e975-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ocd 102">ocd 102</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ocd 108">ocd 108</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="ocd 109">ocd 109</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="oce 100">oce 100</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="oce 108">oce 108</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="pbd 500">pbd 500</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pbd 510">pbd 510</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pbd 520">pbd 520</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pbd 540">pbd 540</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pbd 550">pbd 550</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="oce+108" />
+<SCANPREV term="ocd+102" />
 
 
-<SCANNEXT term="pbd+550" />
+<SCANNEXT term="pbd+500" />
 
 </RESULT>

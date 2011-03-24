@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">59dfc7dd-1</SESSIONVAR>
+<SESSIONVAR name="SID">814445c0-a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="sxv150 d1">sxv150 d1</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="sxv170 d1">sxv170 d1</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="sxv200 d1">sxv200 d1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="sxv220 d1">sxv220 d1</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="sxv340 d1">sxv340 d1</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="51" mnemonic="LKL" description="tii 300">tii 300</SCANLINE>
 
-    <SCANLINE hits="64" mnemonic="LKL" description="tii 500">tii 500</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="tii 700">tii 700</SCANLINE>
-
-    <SCANLINE hits="57" mnemonic="LKL" description="tii 800">tii 800</SCANLINE>
-
-    <SCANLINE hits="62" mnemonic="LKL" description="tii 900">tii 900</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="sxv340+d1" />
+<SCANPREV term="sxv150+d1" />
 
 
-<SCANNEXT term="tii+900" />
+<SCANNEXT term="tii+300" />
 
 </RESULT>

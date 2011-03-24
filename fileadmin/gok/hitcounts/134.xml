@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f632e3f7-2</SESSIONVAR>
+<SESSIONVAR name="SID">591df01d-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzt56 na a (fh)">pzt56 na a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzt56 na.1960-1986. m (fh)">pzt56 na.1960-1986. m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzt56 sa">pzt56 sa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzt56 sa 18 m (fh)">pzt56 sa 18 m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pzt56 sa 3 a (fh)">pzt56 sa 3 a (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pzz86 pap a (fh)">pzz86 pap a (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="pzz86 pap m">pzz86 pap m</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pzz86 pap m (fh)">pzz86 pap m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pzz86 ton k (fh)">pzz86 ton k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pzz86 tuv k (fh)">pzz86 tuv k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pzt56+sa+3+a+(fh)" />
+<SCANPREV term="pzt56+na+a+(fh)" />
 
 
-<SCANNEXT term="pzz86+tuv+k+(fh)" />
+<SCANNEXT term="pzz86+pap+a+(fh)" />
 
 </RESULT>

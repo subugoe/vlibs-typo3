@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b558d8d8-3</SESSIONVAR>
+<SESSIONVAR name="SID">e9ed87ed-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lmc 216 su f (fh)">lmc 216 su f (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lmc 225 ddr22 m (fh)">lmc 225 ddr22 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lmc 252.017">lmc 252.017</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lmc 400">lmc 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lmc 401.720">lmc 401.720</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="ln 187">ln 187</SCANLINE>
 
-    <SCANLINE hits="368" mnemonic="LKL" description="ln 190">ln 190</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="ln 2">ln 2</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ln 2 d">ln 2 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ln 2 f (fh)">ln 2 f (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lmc+401.720" />
+<SCANPREV term="lmc+216+su+f+(fh)" />
 
 
-<SCANNEXT term="ln+2+f+(fh)" />
+<SCANNEXT term="ln+187" />
 
 </RESULT>

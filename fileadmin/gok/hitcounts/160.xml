@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">608f04ea-1</SESSIONVAR>
+<SESSIONVAR name="SID">830389d0-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="vex 800">vex 800</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="vex 900">vex 900</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="vey 000">vey 000</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="vey 100">vey 100</SCANLINE>
 
     <SCANLINE hits="112" mnemonic="LKL" description="vey 110">vey 110</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vp 66 kau">vp 66 kau</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="vp 66 usa">vp 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vp 76">vp 76</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="vp 76 aust">vp 76 aust</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vp 76 aust vp 7 aust">vp 76 aust vp 7 aust</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="vey+110" />
+<SCANPREV term="vex+800" />
 
 
-<SCANNEXT term="vp+76+aust+vp+7+aust" />
+<SCANNEXT term="vp+66+kau" />
 
 </RESULT>

@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9f771273-2</SESSIONVAR>
+<SESSIONVAR name="SID">b6566339-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="pha 000">pha 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pha 100">pha 100</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pha 150">pha 150</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="pha 200">pha 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pha 210">pha 210</SCANLINE>
 
@@ -653,7 +661,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="pip 274">pip 274</SCANLINE>
 
-    <SCANLINE hits="595" mnemonic="LKL" description="pip 275">pip 275</SCANLINE>
+    <SCANLINE hits="596" mnemonic="LKL" description="pip 275">pip 275</SCANLINE>
 
     <SCANLINE hits="160" mnemonic="LKL" description="pip 280">pip 280</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="107" mnemonic="LKL" description="pjr 600">pjr 600</SCANLINE>
 
-    <SCANLINE hits="275" mnemonic="LKL" description="pjr 700">pjr 700</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="pjr 800">pjr 800</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pjr 900">pjr 900</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pjt 000">pjt 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pha+210" />
+<SCANPREV term="pha+000" />
 
 
-<SCANNEXT term="pjt+000" />
+<SCANNEXT term="pjr+600" />
 
 </RESULT>

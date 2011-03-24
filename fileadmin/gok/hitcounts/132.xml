@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">18337497-3</SESSIONVAR>
+<SESSIONVAR name="SID">d4a13f4e-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="pzd16 gb 9 lond m (fh)">pzd16 gb 9 lond m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzd16 gb 9 lond p (fh)">pzd16 gb 9 lond p (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzd16 gb 9 lond r (fh)">pzd16 gb 9 lond r (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pzd16 gb 9 manc m (fh)">pzd16 gb 9 manc m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pzd16 gb 9 oxfo 60 k (fh)">pzd16 gb 9 oxfo 60 k (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pzi46 isr.1948-1984. m (fh)">pzi46 isr.1948-1984. m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="pzi46 je 6 jen k (fh)">pzi46 je 6 jen k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pzi46 je 6 jes m (fh)">pzi46 je 6 jes m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pzi46 je k (fh)">pzi46 je k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pzi46 jo k (fh)">pzi46 jo k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pzd16+gb+9+oxfo+60+k+(fh)" />
+<SCANPREV term="pzd16+gb+9+lond+m+(fh)" />
 
 
-<SCANNEXT term="pzi46+jo+k+(fh)" />
+<SCANNEXT term="pzi46+isr.1948-1984.+m+(fh)" />
 
 </RESULT>

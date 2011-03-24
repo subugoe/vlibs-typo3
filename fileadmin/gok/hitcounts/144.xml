@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">134acfa8-2</SESSIONVAR>
+<SESSIONVAR name="SID">e4d282e4-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ra s a">ra s a</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="ra sj">ra sj</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ra sj a">ra sj a</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ra ss">ra ss</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ra st">ra st</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="rfn 600">rfn 600</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="LKL" description="rfn 650">rfn 650</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="rfn 670">rfn 670</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="rfn 680">rfn 680</SCANLINE>
-
-    <SCANLINE hits="145" mnemonic="LKL" description="rfn 800">rfn 800</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ra+st" />
+<SCANPREV term="ra+s+a" />
 
 
-<SCANNEXT term="rfn+800" />
+<SCANNEXT term="rfn+600" />
 
 </RESULT>

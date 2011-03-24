@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">684e0c6b-0</SESSIONVAR>
+<SESSIONVAR name="SID">1c82c1d6-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="uno">uno</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="uno 000">uno 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="uno m (fh)">uno m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="uno v (fh)">uno v (fh)</SCANLINE>
 
     <SCANLINE hits="55" mnemonic="LKL" description="unq 000">unq 000</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="urm 100">urm 100</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="urm 108">urm 108</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="urm 110">urm 110</SCANLINE>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="urm 113">urm 113</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="urm 115">urm 115</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="unq+000" />
+<SCANPREV term="uno" />
 
 
-<SCANNEXT term="urm+115" />
+<SCANNEXT term="urm+100" />
 
 </RESULT>

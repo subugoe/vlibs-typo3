@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">37de45df-1</SESSIONVAR>
+<SESSIONVAR name="SID">64820301-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jpd xxx">jpd xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jpd600 gul z (fh)">jpd600 gul z (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jpe">jpe</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jpe 200">jpe 200</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jpe 300">jpe 300</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="jt 539">jt 539</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="jt 540">jt 540</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jt 542">jt 542</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jt 546">jt 546</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jt 551">jt 551</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jpe+300" />
+<SCANPREV term="jpd+xxx" />
 
 
-<SCANNEXT term="jt+551" />
+<SCANNEXT term="jt+539" />
 
 </RESULT>

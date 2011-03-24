@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b5e10e86-0</SESSIONVAR>
+<SESSIONVAR name="SID">7c86af3e-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="kcu 230">kcu 230</SCANLINE>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="kcu 300">kcu 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kcu 320">kcu 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kcu 323">kcu 323</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="kcu 330">kcu 330</SCANLINE>
 
@@ -739,7 +747,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="kdb 657">kdb 657</SCANLINE>
 
-    <SCANLINE hits="110" mnemonic="LKL" description="kdb 658">kdb 658</SCANLINE>
+    <SCANLINE hits="112" mnemonic="LKL" description="kdb 658">kdb 658</SCANLINE>
 
     <SCANLINE hits="58" mnemonic="LKL" description="kdb 660">kdb 660</SCANLINE>
 
@@ -755,9 +763,9 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="kdb 666">kdb 666</SCANLINE>
 
-    <SCANLINE hits="169" mnemonic="LKL" description="kdb 667">kdb 667</SCANLINE>
+    <SCANLINE hits="171" mnemonic="LKL" description="kdb 667">kdb 667</SCANLINE>
 
-    <SCANLINE hits="56" mnemonic="LKL" description="kdb 668">kdb 668</SCANLINE>
+    <SCANLINE hits="57" mnemonic="LKL" description="kdb 668">kdb 668</SCANLINE>
 
     <SCANLINE hits="252" mnemonic="LKL" description="kdb 670">kdb 670</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="kdo 420">kdo 420</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="kdo 430">kdo 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kdo 435">kdo 435</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kdo 438">kdo 438</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kdo 439">kdo 439</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kcu+330" />
+<SCANPREV term="kcu+230" />
 
 
-<SCANNEXT term="kdo+439" />
+<SCANNEXT term="kdo+420" />
 
 </RESULT>

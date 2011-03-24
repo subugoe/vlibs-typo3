@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">51ff58b0-0</SESSIONVAR>
+<SESSIONVAR name="SID">320cf9c5-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="vbc 000">vbc 000</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="vbd">vbd</SCANLINE>
+
+    <SCANLINE hits="184" mnemonic="LKL" description="vbd 000">vbd 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="vbd 66usa p">vbd 66usa p</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="vbd 800">vbd 800</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="ve kk">ve kk</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="ve kn">ve kn</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="ve kq">ve kq</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ve ks">ve ks</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ve ks a">ve ks a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="vbd+800" />
+<SCANPREV term="vbc+000" />
 
 
-<SCANNEXT term="ve+ks+a" />
+<SCANNEXT term="ve+kk" />
 
 </RESULT>

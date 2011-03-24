@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1fa64d4e-1</SESSIONVAR>
+<SESSIONVAR name="SID">5531fc59-a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm770 d">rtm770 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm800 d">rtm800 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm830 d">rtm830 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm850 d">rtm850 d</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rtm850 d rqsd">rtm850 d rqsd</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="sgkd1">sgkd1</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="sgkzc">sgkzc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sgkzd">sgkzd</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sh">sh</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="sh 000">sh 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="rtm850+d+rqsd" />
+<SCANPREV term="rtm770+d" />
 
 
-<SCANNEXT term="sh+000" />
+<SCANNEXT term="sgkd1" />
 
 </RESULT>

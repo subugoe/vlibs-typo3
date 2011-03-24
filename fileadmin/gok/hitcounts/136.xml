@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e3b787e2-0</SESSIONVAR>
+<SESSIONVAR name="SID">0e8bc888-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="79" mnemonic="LKL" description="qer 250">qer 250</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="qer 300">qer 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qer 400">qer 400</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="qer 450">qer 450</SCANLINE>
 
     <SCANLINE hits="44" mnemonic="LKL" description="qer 500">qer 500</SCANLINE>
 
@@ -23,7 +31,7 @@
 
     <SCANLINE hits="282" mnemonic="LKL" description="qer 900">qer 900</SCANLINE>
 
-    <SCANLINE hits="173" mnemonic="LKL" description="qer 930">qer 930</SCANLINE>
+    <SCANLINE hits="174" mnemonic="LKL" description="qer 930">qer 930</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="qer 950">qer 950</SCANLINE>
 
@@ -79,7 +87,7 @@
 
     <SCANLINE hits="156" mnemonic="LKL" description="qfc 400">qfc 400</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="qfc 410">qfc 410</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="qfc 410">qfc 410</SCANLINE>
 
     <SCANLINE hits="129" mnemonic="LKL" description="qfc 420">qfc 420</SCANLINE>
 
@@ -89,7 +97,7 @@
 
     <SCANLINE hits="183" mnemonic="LKL" description="qfc 445">qfc 445</SCANLINE>
 
-    <SCANLINE hits="246" mnemonic="LKL" description="qfc 450">qfc 450</SCANLINE>
+    <SCANLINE hits="247" mnemonic="LKL" description="qfc 450">qfc 450</SCANLINE>
 
     <SCANLINE hits="58" mnemonic="LKL" description="qfc 460">qfc 460</SCANLINE>
 
@@ -417,7 +425,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="qga 002">qga 002</SCANLINE>
 
-    <SCANLINE hits="224" mnemonic="LKL" description="qga 004">qga 004</SCANLINE>
+    <SCANLINE hits="225" mnemonic="LKL" description="qga 004">qga 004</SCANLINE>
 
     <SCANLINE hits="97" mnemonic="LKL" description="qga 006">qga 006</SCANLINE>
 
@@ -649,7 +657,7 @@
 
     <SCANLINE hits="17" mnemonic="LKL" description="qgb 466">qgb 466</SCANLINE>
 
-    <SCANLINE hits="175" mnemonic="LKL" description="qgb 469">qgb 469</SCANLINE>
+    <SCANLINE hits="176" mnemonic="LKL" description="qgb 469">qgb 469</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="qgb 500">qgb 500</SCANLINE>
 
@@ -835,7 +843,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="qgb 780">qgb 780</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="qgb 781">qgb 781</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="qgb 781">qgb 781</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="qgb 783">qgb 783</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="qgb16 oe 8 k (fh)">qgb16 oe 8 k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="qgb16 oe 9 k (fh)">qgb16 oe 9 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgb16 oe 9 wie 6 i (fh)">qgb16 oe 9 wie 6 i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgb16 oe 9 wie 6 m (fh)">qgb16 oe 9 wie 6 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgb16 oe 9 wie 6 n (fh)">qgb16 oe 9 wie 6 n (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qer+500" />
+<SCANPREV term="qer+250" />
 
 
-<SCANNEXT term="qgb16+oe+9+wie+6+n+(fh)" />
+<SCANNEXT term="qgb16+oe+8+k+(fh)" />
 
 </RESULT>

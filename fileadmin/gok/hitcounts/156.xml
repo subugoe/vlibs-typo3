@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4ee914f2-3</SESSIONVAR>
+<SESSIONVAR name="SID">62d46d58-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="url 600">url 600</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="urm 000">urm 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="urm 100">urm 100</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="urm 108">urm 108</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="urm 110">urm 110</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="v 46 usa">v 46 usa</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="v 500">v 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 56sa p">v 56sa p</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="v 600">v 600</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="v 66 kan">v 66 kan</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="urm+110" />
+<SCANPREV term="url+600" />
 
 
-<SCANNEXT term="v+66+kan" />
+<SCANNEXT term="v+46+usa" />
 
 </RESULT>

@@ -2,16 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a7fbe7b1-2</SESSIONVAR>
+<SESSIONVAR name="SID">a3c216d3-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
+    <SCANLINE hits="22" mnemonic="LKL" description="jot 537">jot 537</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jot 538">jot 538</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jot 539">jot 539</SCANLINE>
+
     <SCANLINE hits="6" mnemonic="LKL" description="jot 540">jot 540</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 541">jot 541</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jot 545">jot 545</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jot 546">jot 546</SCANLINE>
 
@@ -31,7 +39,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 570">jot 570</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="jot 573">jot 573</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="jot 573">jot 573</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 574">jot 574</SCANLINE>
 
@@ -61,7 +69,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jot 640">jot 640</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 642">jot 642</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jpe">jpe</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jpe 200">jpe 200</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jpe 300">jpe 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jpe 330">jpe 330</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jpe 400">jpe 400</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jot+540" />
+<SCANPREV term="jot+537" />
 
 
-<SCANNEXT term="jpe+400" />
+<SCANNEXT term="jpe" />
 
 </RESULT>

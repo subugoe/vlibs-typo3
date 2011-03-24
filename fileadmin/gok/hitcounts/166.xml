@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">96b0439f-3</SESSIONVAR>
+<SESSIONVAR name="SID">298699b9-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xqu 55">xqu 55</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xqu 58d">xqu 58d</SCANLINE>
+
+    <SCANLINE hits="173" mnemonic="LKL" description="xqv">xqv</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="xqv 000">xqv 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="xqv 004">xqv 004</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="yeh 270">yeh 270</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="yeh 400">yeh 400</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="yeh 420">yeh 420</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="yeh 440">yeh 440</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="yeh 450">yeh 450</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="xqv+004" />
+<SCANPREV term="xqu+55" />
 
 
-<SCANNEXT term="yeh+450" />
+<SCANNEXT term="yeh+270" />
 
 </RESULT>

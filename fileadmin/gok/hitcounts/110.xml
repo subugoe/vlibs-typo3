@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6ef50649-1</SESSIONVAR>
+<SESSIONVAR name="SID">a5b03192-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="59" mnemonic="LKL" description="lqw 072">lqw 072</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqw 075">lqw 075</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 079">lqw 079</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqw 080">lqw 080</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="lqw 082">lqw 082</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="89" mnemonic="LKL" description="med 405">med 405</SCANLINE>
 
-    <SCANLINE hits="206" mnemonic="LKL" description="med 410">med 410</SCANLINE>
-
-    <SCANLINE hits="641" mnemonic="LKL" description="med 411">med 411</SCANLINE>
-
-    <SCANLINE hits="124" mnemonic="LKL" description="med 412">med 412</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="med 413">med 413</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lqw+082" />
+<SCANPREV term="lqw+072" />
 
 
-<SCANNEXT term="med+413" />
+<SCANNEXT term="med+405" />
 
 </RESULT>

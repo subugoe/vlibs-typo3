@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e432a4c1-2</SESSIONVAR>
+<SESSIONVAR name="SID">b8205757-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="qjg 120">qjg 120</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="qjg 130">qjg 130</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="qjg 140">qjg 140</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="qjg 150">qjg 150</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="qjg 160">qjg 160</SCANLINE>
 
@@ -61,7 +69,7 @@
 
     <SCANLINE hits="62" mnemonic="LKL" description="qka 426">qka 426</SCANLINE>
 
-    <SCANLINE hits="99" mnemonic="LKL" description="qka 428">qka 428</SCANLINE>
+    <SCANLINE hits="100" mnemonic="LKL" description="qka 428">qka 428</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="qka 600">qka 600</SCANLINE>
 
@@ -97,7 +105,7 @@
 
     <SCANLINE hits="34" mnemonic="LKL" description="qld 300">qld 300</SCANLINE>
 
-    <SCANLINE hits="76" mnemonic="LKL" description="qld 400">qld 400</SCANLINE>
+    <SCANLINE hits="77" mnemonic="LKL" description="qld 400">qld 400</SCANLINE>
 
     <SCANLINE hits="27" mnemonic="LKL" description="qld 500">qld 500</SCANLINE>
 
@@ -557,7 +565,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="qmi 180">qmi 180</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="qmi 300">qmi 300</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="qmi 300">qmi 300</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="qmi 400">qmi 400</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="qmu 100">qmu 100</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="qmu 300">qmu 300</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="qmv 100">qmv 100</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="qmv 200">qmv 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qmv 200 k (fh)">qmv 200 k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qjg+160" />
+<SCANPREV term="qjg+120" />
 
 
-<SCANNEXT term="qmv+200+k+(fh)" />
+<SCANNEXT term="qmu+100" />
 
 </RESULT>
