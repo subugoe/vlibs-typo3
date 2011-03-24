@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">806a2025-0</SESSIONVAR>
+<SESSIONVAR name="SID">79a10e2b-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vp 66 kan">vp 66 kan</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="vp 66 kan yb 66 kan">vp 66 kan yb 66 kan</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="vp 66 kau">vp 66 kau</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="vp 66 usa">vp 66 usa</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vp 76">vp 76</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="vu hs">vu hs</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="vu j">vu j</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vu kf a">vu kf a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vu kk">vu kk</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vu kq">vu kq</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="vp+76" />
+<SCANPREV term="vp+66+kan" />
 
 
-<SCANNEXT term="vu+kq" />
+<SCANNEXT term="vu+hs" />
 
 </RESULT>

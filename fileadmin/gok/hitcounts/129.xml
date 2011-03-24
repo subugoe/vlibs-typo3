@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d5beebc8-0</SESSIONVAR>
+<SESSIONVAR name="SID">26ba4f22-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="pyg 900">pyg 900</SCANLINE>
+
+    <SCANLINE hits="113" mnemonic="LKL" description="pyk 000">pyk 000</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="pyl 000">pyl 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pys 000">pys 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pyv 700">pyv 700</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa kf 2 c1">pz 66 usa kf 2 c1</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pz 66 usa l 66 usa">pz 66 usa l 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa ld 66 usa le 66 usa">pz 66 usa ld 66 usa le 66 usa</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="pz 66 usa le 66 usa">pz 66 usa le 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa le 66 usa li 66 usa">pz 66 usa le 66 usa li 66 usa</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pyv+700" />
+<SCANPREV term="pyg+900" />
 
 
-<SCANNEXT term="pz+66+usa+le+66+usa+li+66+usa" />
+<SCANNEXT term="pz+66+usa+kf+2+c1" />
 
 </RESULT>

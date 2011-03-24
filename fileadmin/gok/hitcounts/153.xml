@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">071b2a6a-2</SESSIONVAR>
+<SESSIONVAR name="SID">ec130a87-a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ua 460">ua 460</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ua 500">ua 500</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ua 600">ua 600</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ua 700">ua 700</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="ua 750">ua 750</SCANLINE>
 
@@ -431,7 +439,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="uca m (fh)">uca m (fh)</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="ucc 000">ucc 000</SCANLINE>
+    <SCANLINE hits="51" mnemonic="LKL" description="ucc 000">ucc 000</SCANLINE>
 
     <SCANLINE hits="40" mnemonic="LKL" description="ucc 100">ucc 100</SCANLINE>
 
@@ -873,7 +881,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ude 020">ude 020</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="ude 071">ude 071</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="ude 071">ude 071</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ude 100">ude 100</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="udg 640">udg 640</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="udg 650">udg 650</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="udg11 oe m (fh)">udg11 oe m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg16 po a">udg16 po a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="udg16 su a">udg16 su a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ua+750" />
+<SCANPREV term="ua+460" />
 
 
-<SCANNEXT term="udg16+su+a" />
+<SCANNEXT term="udg+640" />
 
 </RESULT>

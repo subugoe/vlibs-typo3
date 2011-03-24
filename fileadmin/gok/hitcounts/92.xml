@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">89e5e08f-3</SESSIONVAR>
+<SESSIONVAR name="SID">055552c5-a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kfa 570">kfa 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kfa 573">kfa 573</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kfa 578">kfa 578</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kfa 580">kfa 580</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kfa xxx">kfa xxx</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="khg 320">khg 320</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="khg 350">khg 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="khg 357">khg 357</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="khg 700">khg 700</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="khg xxx">khg xxx</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kfa+xxx" />
+<SCANPREV term="kfa+570" />
 
 
-<SCANNEXT term="khg+xxx" />
+<SCANNEXT term="khg+320" />
 
 </RESULT>

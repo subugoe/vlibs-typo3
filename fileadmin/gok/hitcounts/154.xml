@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d61ef7fc-1</SESSIONVAR>
+<SESSIONVAR name="SID">aa8ffe6f-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="udg 610">udg 610</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="udg 620">udg 620</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="udg 640">udg 640</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="udg 650">udg 650</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="udg11 oe m (fh)">udg11 oe m (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="uno m (fh)">uno m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="uno v (fh)">uno v (fh)</SCANLINE>
-
-    <SCANLINE hits="55" mnemonic="LKL" description="unq 000">unq 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="unq i (fh)">unq i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="unq k (fh)">unq k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="udg11+oe+m+(fh)" />
+<SCANPREV term="udg+610" />
 
 
-<SCANNEXT term="unq+k+(fh)" />
+<SCANNEXT term="uno+m+(fh)" />
 
 </RESULT>

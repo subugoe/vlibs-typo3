@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9a7ca53b-1</SESSIONVAR>
+<SESSIONVAR name="SID">11811783-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 nrw 1 ru k (fh)">lbm 20026 nrw 1 ru k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 nrw 6 r m (fh)">lbm 20026 nrw 6 r m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 nrw s (fh)">lbm 20026 nrw s (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 saar m (fh)">lbm 20026 saar m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 sac m (fh)">lbm 20026 sac m (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lca 42 i (fh)">lca 42 i (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lca 422 (fh)">lca 422 (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lca 432 k (fh)">lca 432 k (fh)</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="lca 460">lca 460</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lca 460.601.720">lca 460.601.720</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lbm+20026+sac+m+(fh)" />
+<SCANPREV term="lbm+20026+nrw+1+ru+k+(fh)" />
 
 
-<SCANNEXT term="lca+460.601.720" />
+<SCANNEXT term="lca+42+i+(fh)" />
 
 </RESULT>

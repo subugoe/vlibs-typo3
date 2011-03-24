@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9d11d758-2</SESSIONVAR>
+<SESSIONVAR name="SID">3356bfe1-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="71" mnemonic="LKL" description="jy 451">jy 451</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="jy 452">jy 452</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="jy 453">jy 453</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="jy 454">jy 454</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="jy 455">jy 455</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="kcb 430">kcb 430</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="kcb 431">kcb 431</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kcb 433">kcb 433</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kcb 435">kcb 435</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kcb 436">kcb 436</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jy+455" />
+<SCANPREV term="jy+451" />
 
 
-<SCANNEXT term="kcb+436" />
+<SCANNEXT term="kcb+430" />
 
 </RESULT>

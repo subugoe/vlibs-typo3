@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">11b13956-2</SESSIONVAR>
+<SESSIONVAR name="SID">fdfc947f-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qge16 it k (fh)">qge16 it k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qge16 it m (fh)">qge16 it m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qge16 mlt a (fh)">qge16 mlt a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qge16 mlt k (fh)">qge16 mlt k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="qge16 mo a (fh)">qge16 mo a (fh)</SCANLINE>
 
@@ -889,7 +897,7 @@
 
     <SCANLINE hits="53" mnemonic="LKL" description="qgl 400">qgl 400</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="qgl 420">qgl 420</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="qgl 420">qgl 420</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="qgl 450">qgl 450</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="qgm 200">qgm 200</SCANLINE>
 
-    <SCANLINE hits="82" mnemonic="LKL" description="qgm 300">qgm 300</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="qgm 400">qgm 400</SCANLINE>
-
-    <SCANLINE hits="64" mnemonic="LKL" description="qgm 500">qgm 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgm110">qgm110</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qge16+mo+a+(fh)" />
+<SCANPREV term="qge16+it+k+(fh)" />
 
 
-<SCANNEXT term="qgm110" />
+<SCANNEXT term="qgm+200" />
 
 </RESULT>

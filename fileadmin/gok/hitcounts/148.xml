@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">08741a3b-2</SESSIONVAR>
+<SESSIONVAR name="SID">1b55614c-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="sgkd">sgkd</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="sgkd sl d">sgkd sl d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="sgkd1">sgkd1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="sgkzc">sgkzc</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="sgkzd">sgkzd</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="str 300">str 300</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="str 350">str 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="str 450">str 450</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="str 500">str 500</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="str 600">str 600</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="sgkzd" />
+<SCANPREV term="sgkd" />
 
 
-<SCANNEXT term="str+600" />
+<SCANNEXT term="str+300" />
 
 </RESULT>

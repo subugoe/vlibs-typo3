@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">28fe46e5-2</SESSIONVAR>
+<SESSIONVAR name="SID">bcc59d84-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="wa c">wa c</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="wa c a">wa c a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wa ca">wa ca</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="wa cc">wa cc</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="wa d (fh)">wa d (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="wqb m (fh)">wqb m (fh)</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="LKL" description="wqd 000">wqd 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="wqd k (fh)">wqd k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wqf">wqf</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="wqf 000">wqf 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="wa+d+(fh)" />
+<SCANPREV term="wa+c" />
 
 
-<SCANNEXT term="wqf+000" />
+<SCANNEXT term="wqb+m+(fh)" />
 
 </RESULT>

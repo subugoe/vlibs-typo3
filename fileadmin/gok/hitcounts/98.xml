@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">54eaa6d5-2</SESSIONVAR>
+<SESSIONVAR name="SID">cb198ff3-a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kqa 515">kqa 515</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqa 520">kqa 520</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kqa 524">kqa 524</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqa 530">kqa 530</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kqa 531">kqa 531</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kud 700">kud 700</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="kud 710">kud 710</SCANLINE>
-
-    <SCANLINE hits="42" mnemonic="LKL" description="kud 720">kud 720</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="kud 730">kud 730</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="kud 740">kud 740</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kqa+531" />
+<SCANPREV term="kqa+515" />
 
 
-<SCANNEXT term="kud+740" />
+<SCANNEXT term="kud+700" />
 
 </RESULT>

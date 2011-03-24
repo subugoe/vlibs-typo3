@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d42bc1d4-0</SESSIONVAR>
+<SESSIONVAR name="SID">af7a6928-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nl 520">nl 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nl 530">nl 530</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nl 560">nl 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nl 580">nl 580</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="nl 590">nl 590</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="nma 460">nma 460</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="nma 470">nma 470</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nma 500">nma 500</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="nma 510">nma 510</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="nma 520">nma 520</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nl+590" />
+<SCANPREV term="nl+520" />
 
 
-<SCANNEXT term="nma+520" />
+<SCANNEXT term="nma+460" />
 
 </RESULT>

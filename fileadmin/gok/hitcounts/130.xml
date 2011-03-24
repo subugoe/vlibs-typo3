@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e07e3ef4-2</SESSIONVAR>
+<SESSIONVAR name="SID">52c3fceb-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa geh66 usa">pz 66 usa geh66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa geh66 usa od 66 usa">pz 66 usa geh66 usa od 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa kf 2 c1">pz 66 usa kf 2 c1</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="pz 66 usa l 66 usa">pz 66 usa l 66 usa</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pz 66 usa ld 66 usa le 66 usa">pz 66 usa ld 66 usa le 66 usa</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pz66usa">pz66usa</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="pz70 aust">pz70 aust</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz7aust">pz7aust</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pza 220">pza 220</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pza10 e 22.1878. s (fh)">pza10 e 22.1878. s (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pz+66+usa+ld+66+usa+le+66+usa" />
+<SCANPREV term="pz+66+usa+geh66+usa" />
 
 
-<SCANNEXT term="pza10+e+22.1878.+s+(fh)" />
+<SCANNEXT term="pz66usa" />
 
 </RESULT>

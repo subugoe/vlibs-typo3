@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6bf24ae0-0</SESSIONVAR>
+<SESSIONVAR name="SID">47169eaf-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kud 651">kud 651</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kud 655">kud 655</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kud 700">kud 700</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="kud 710">kud 710</SCANLINE>
 
     <SCANLINE hits="42" mnemonic="LKL" description="kud 720">kud 720</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 nrw s (fh)">lbm 20026 nrw s (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 saar m (fh)">lbm 20026 saar m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 sac m (fh)">lbm 20026 sac m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 schl k (fh)">lbm 20026 schl k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 schle a">lbm 20026 schle a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kud+720" />
+<SCANPREV term="kud+651" />
 
 
-<SCANNEXT term="lbm+20026+schle+a" />
+<SCANNEXT term="lbm+20026+nrw+s+(fh)" />
 
 </RESULT>

@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6ba28171-0</SESSIONVAR>
+<SESSIONVAR name="SID">aa237dca-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="str 200">str 200</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="str 250">str 250</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="str 300">str 300</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="str 350">str 350</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="str 450">str 450</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="sxv200 d1">sxv200 d1</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="sxv220 d1">sxv220 d1</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxv340 d1">sxv340 d1</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxv400 d1">sxv400 d1</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="sxvc">sxvc</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="str+450" />
+<SCANPREV term="str+200" />
 
 
-<SCANNEXT term="sxvc" />
+<SCANNEXT term="sxv200+d1" />
 
 </RESULT>

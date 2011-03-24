@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">642a1916-1</SESSIONVAR>
+<SESSIONVAR name="SID">5cb36417-b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="pjr 400">pjr 400</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="pjr 500">pjr 500</SCANLINE>
+
+    <SCANLINE hits="107" mnemonic="LKL" description="pjr 600">pjr 600</SCANLINE>
+
+    <SCANLINE hits="275" mnemonic="LKL" description="pjr 700">pjr 700</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="pjr 800">pjr 800</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnf 886">pnf 886</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="pnf 887">pnf 887</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnf 888">pnf 888</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnf 891">pnf 891</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnf 8910">pnf 8910</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pjr+800" />
+<SCANPREV term="pjr+400" />
 
 
-<SCANNEXT term="pnf+8910" />
+<SCANNEXT term="pnf+886" />
 
 </RESULT>

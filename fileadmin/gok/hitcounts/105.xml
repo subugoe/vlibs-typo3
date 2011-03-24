@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3f1341af-2</SESSIONVAR>
+<SESSIONVAR name="SID">4c583bec-d</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="li 29 hannover">li 29 hannover</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 2d">li 2d</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 3">li 3</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 300">li 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="li 300 d (fh)">li 300 d (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljf k (fh)">ljf k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ljf m (fh)">ljf m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljf n (fh)">ljf n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljg 110">ljg 110</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljj 000">ljj 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="li+300+d+(fh)" />
+<SCANPREV term="li+29+hannover" />
 
 
-<SCANNEXT term="ljj+000" />
+<SCANNEXT term="ljf+k+(fh)" />
 
 </RESULT>

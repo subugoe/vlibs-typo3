@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6327b755-0</SESSIONVAR>
+<SESSIONVAR name="SID">319c1b3c-c</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 700 k (fh)">leq 700 k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leq 700 w (fh)">leq 700 w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 70016 gb w (fh)">leq 70016 gb w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 70050 af b (fh)">leq 70050 af b (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leq 70061 nam w (fh)">leq 70061 nam w (fh)</SCANLINE>
 
@@ -447,7 +455,7 @@
 
     <SCANLINE hits="367" mnemonic="LKL" description="ley 130">ley 130</SCANLINE>
 
-    <SCANLINE hits="297" mnemonic="LKL" description="ley 140">ley 140</SCANLINE>
+    <SCANLINE hits="298" mnemonic="LKL" description="ley 140">ley 140</SCANLINE>
 
     <SCANLINE hits="38" mnemonic="LKL" description="ley 150">ley 150</SCANLINE>
 
@@ -455,7 +463,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="ley 170">ley 170</SCANLINE>
 
-    <SCANLINE hits="121" mnemonic="LKL" description="ley 180">ley 180</SCANLINE>
+    <SCANLINE hits="124" mnemonic="LKL" description="ley 180">ley 180</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="ley 190">ley 190</SCANLINE>
 
@@ -711,9 +719,9 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lfg 110">lfg 110</SCANLINE>
 
-    <SCANLINE hits="53" mnemonic="LKL" description="lfg 150">lfg 150</SCANLINE>
+    <SCANLINE hits="54" mnemonic="LKL" description="lfg 150">lfg 150</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="lfg 150 f">lfg 150 f</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="lfg 150 f">lfg 150 f</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="lfg 150 f (fh)">lfg 150 f (fh)</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lfn z 120 pz 6 kan">lfn z 120 pz 6 kan</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn210">lfn210</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfnz 10">lfnz 10</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfnz320">lfnz320</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfo 790">lfo 790</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="leq+70061+nam+w+(fh)" />
+<SCANPREV term="leq+700+k+(fh)" />
 
 
-<SCANNEXT term="lfo+790" />
+<SCANNEXT term="lfn+z+120+pz+6+kan" />
 
 </RESULT>
