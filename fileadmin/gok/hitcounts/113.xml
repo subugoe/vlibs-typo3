@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">af7a6928-c</SESSIONVAR>
+<SESSIONVAR name="SID">937a9ee2-12</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="nl 500">nl 500</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="nl 510">nl 510</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nl 51ss">nl 51ss</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="nl 520">nl 520</SCANLINE>
 
@@ -157,7 +163,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="nld 200">nld 200</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="nld 300">nld 300</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="nld 300">nld 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nld 320">nld 320</SCANLINE>
 
@@ -319,7 +325,7 @@
 
     <SCANLINE hits="81" mnemonic="LKL" description="nli">nli</SCANLINE>
 
-    <SCANLINE hits="63" mnemonic="LKL" description="nli 000">nli 000</SCANLINE>
+    <SCANLINE hits="64" mnemonic="LKL" description="nli 000">nli 000</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="nli 006 s">nli 006 s</SCANLINE>
 
@@ -775,7 +781,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="nlw 340">nlw 340</SCANLINE>
 
-    <SCANLINE hits="40" mnemonic="LKL" description="nlw 400">nlw 400</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="nlw 400">nlw 400</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="nlw 500">nlw 500</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="nma 430">nma 430</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="nma 440">nma 440</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nma 450">nma 450</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="nma 460">nma 460</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nl+520" />
+<SCANPREV term="nl+500" />
 
 
-<SCANNEXT term="nma+460" />
+<SCANNEXT term="nma+430" />
 
 </RESULT>

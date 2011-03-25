@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">fa87e58e-d</SESSIONVAR>
+<SESSIONVAR name="SID">687ad404-15</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 607">pnr 607</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6072">pnr 6072</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 608">pnr 608</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnr 6080">pnr 6080</SCANLINE>
 
@@ -731,7 +737,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnu 373">pnu 373</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="pnu 400">pnu 400</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="pnu 400">pnu 400</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pnu 421">pnu 421</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="pnw 710">pnw 710</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pnw 7100">pnw 7100</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="pnw 760">pnw 760</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnw 7600">pnw 7600</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pnr+6080" />
+<SCANPREV term="pnr+607" />
 
 
-<SCANNEXT term="pnw+7600" />
+<SCANNEXT term="pnw+710" />
 
 </RESULT>

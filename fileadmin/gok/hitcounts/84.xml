@@ -2,14 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a3c216d3-d</SESSIONVAR>
+<SESSIONVAR name="SID">4307fea7-13</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="jot 537">jot 537</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="jot 537">jot 537</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jot 538">jot 538</SCANLINE>
 
@@ -18,6 +18,8 @@
     <SCANLINE hits="6" mnemonic="LKL" description="jot 540">jot 540</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 541">jot 541</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jot 542">jot 542</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 545">jot 545</SCANLINE>
 
@@ -39,7 +41,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 570">jot 570</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="jot 573">jot 573</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="jot 573">jot 573</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 574">jot 574</SCANLINE>
 
@@ -63,13 +65,13 @@
 
     <SCANLINE hits="106" mnemonic="LKL" description="jot 636">jot 636</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="jot 637">jot 637</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="jot 637">jot 637</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jot 639">jot 639</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jot 640">jot 640</SCANLINE>
 
-    <SCANLINE hits="47" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 642">jot 642</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jpd600 gul z (fh)">jpd600 gul z (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="jpe">jpe</SCANLINE>
-
 </SCANLIST>
 
 <SCANPREV term="jot+537" />
 
 
-<SCANNEXT term="jpe" />
+<SCANNEXT term="jpd600+gul+z+(fh)" />
 
 </RESULT>

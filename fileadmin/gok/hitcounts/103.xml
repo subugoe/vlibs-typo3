@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">319c1b3c-c</SESSIONVAR>
+<SESSIONVAR name="SID">894d2045-15</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 600 w (fh)">leq 600 w (fh)</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="leq 700">leq 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leq 700 a (fh)">leq 700 a (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leq 700 k (fh)">leq 700 k (fh)</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lfn 94066 usa w (fh)">lfn 94066 usa w (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn a (fh)">lfn a (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn m (fh)">lfn m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn z 120 pz 6 kan">lfn z 120 pz 6 kan</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="leq+700+k+(fh)" />
+<SCANPREV term="leq+600+w+(fh)" />
 
 
-<SCANNEXT term="lfn+z+120+pz+6+kan" />
+<SCANNEXT term="lfn+94066+usa+w+(fh)" />
 
 </RESULT>

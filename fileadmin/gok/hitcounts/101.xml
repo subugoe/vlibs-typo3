@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">011f2b9a-a</SESSIONVAR>
+<SESSIONVAR name="SID">287b9a83-12</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 322">lca 322</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lca 350">lca 350</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 356">lca 356</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="lca 390">lca 390</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ldf 55061 nam m (fh)">ldf 55061 nam m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 55061 nam w (fh)">ldf 55061 nam w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 55066 ka k (fh)">ldf 55066 ka k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldf 55066 ka m (fh)">ldf 55066 ka m (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lca+390" />
+<SCANPREV term="lca+322" />
 
 
-<SCANNEXT term="ldf+55066+ka+m+(fh)" />
+<SCANNEXT term="ldf+55061+nam+m+(fh)" />
 
 </RESULT>

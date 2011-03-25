@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">7e1042cf-a</SESSIONVAR>
+<SESSIONVAR name="SID">1a285be3-14</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nt06 ka 540 a">nt06 ka 540 a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka 540 k (fh)">nt06 ka 540 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka 900 k (fh)">nt06 ka 900 k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka a (fh)">nt06 ka a (fh)</SCANLINE>
 
@@ -523,7 +529,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oa 60">oa 60</SCANLINE>
 
-    <SCANLINE hits="110" mnemonic="LKL" description="oa 600">oa 600</SCANLINE>
+    <SCANLINE hits="111" mnemonic="LKL" description="oa 600">oa 600</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="oa 601">oa 601</SCANLINE>
 
@@ -535,11 +541,11 @@
 
     <SCANLINE hits="38" mnemonic="LKL" description="oa 609">oa 609</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="oa 690">oa 690</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="oa 690">oa 690</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="oa 698">oa 698</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="oa 699">oa 699</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="oa 699">oa 699</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="oa 700">oa 700</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="ocd 100">ocd 100</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ocd 102">ocd 102</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="ocd 108">ocd 108</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="ocd 109">ocd 109</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nt06+ka+a+(fh)" />
+<SCANPREV term="nt06+ka+540+a" />
 
 
-<SCANNEXT term="ocd+109" />
+<SCANNEXT term="ocd+100" />
 
 </RESULT>

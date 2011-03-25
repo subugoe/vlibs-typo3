@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4c583bec-d</SESSIONVAR>
+<SESSIONVAR name="SID">b6a75608-12</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 26 niedersachsen">li 26 niedersachsen</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="li 29 bremen">li 29 bremen</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 29 goettingen">li 29 goettingen</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="li 29 hannover">li 29 hannover</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljf 80016 gr m (fh)">ljf 80016 gr m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ljf 80016 nd m (fh)">ljf 80016 nd m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljf 80066 usa m (fh)">ljf 80066 usa m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljf k (fh)">ljf k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="li+29+hannover" />
+<SCANPREV term="li+26+niedersachsen" />
 
 
-<SCANNEXT term="ljf+k+(fh)" />
+<SCANNEXT term="ljf+80016+gr+m+(fh)" />
 
 </RESULT>
