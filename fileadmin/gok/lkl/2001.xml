@@ -2,12 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">7ab89124-7</SESSIONVAR>
+<SESSIONVAR name="SID">6b30c013-12</SESSIONVAR>
 <SESSIONVAR name="SET">1</SESSIONVAR>
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
-<SET nr="1" type="0" hits="38146" first="2001">
+<SET nr="1" type="0" hits="38150" first="2001">
 
   <SHORTTITLE nr="2001" PPN="623607751" matstring="MAA_E" matcode="Tev"
 format="text" available="no"><record><datafield tag="001A"><subfield code="0">0007:14-04-10</subfield></datafield><datafield tag="001B"><subfield code="0">0007:30-04-10</subfield><subfield code="t">11:22:28.000</subfield></datafield><datafield tag="001D"><subfield code="0">0007:14-04-10</subfield></datafield><datafield tag="002@"><subfield code="0">Tev</subfield></datafield><datafield tag="003@"><subfield code="0">623607751</subfield></datafield><datafield tag="003Z"><subfield code="0">gokt000549</subfield></datafield><datafield tag="009B"><subfield code="a">3</subfield></datafield><datafield tag="038D"><subfield code="9">623607506</subfield></datafield><datafield tag="044E"><subfield code="a">Radioaktivität der Atmosphäre {Meteorologie} </subfield></datafield><datafield tag="045A"><subfield code="a">TVD 000 </subfield></datafield></record></SHORTTITLE>

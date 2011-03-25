@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4ae4f6a2-b</SESSIONVAR>
+<SESSIONVAR name="SID">175ecd8c-13</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldf 55061 nam d (fh)">ldf 55061 nam d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldf 55061 nam k (fh)">ldf 55061 nam k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ldf 55061 nam m (fh)">ldf 55061 nam m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ldf 55061 nam w (fh)">ldf 55061 nam w (fh)</SCANLINE>
 
@@ -265,7 +271,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="le 09">le 09</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="le 090">le 090</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="le 090">le 090</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="le 1 europa">le 1 europa</SCANLINE>
 
@@ -501,7 +507,7 @@
 
     <SCANLINE hits="19" mnemonic="LKL" description="lee 210">lee 210</SCANLINE>
 
-    <SCANLINE hits="120" mnemonic="LKL" description="lee 220">lee 220</SCANLINE>
+    <SCANLINE hits="121" mnemonic="LKL" description="lee 220">lee 220</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lee 500">lee 500</SCANLINE>
 
@@ -605,7 +611,7 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="lei 510">lei 510</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="lei 520">lei 520</SCANLINE>
+    <SCANLINE hits="81" mnemonic="LKL" description="lei 520">lei 520</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="lei 530">lei 530</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="leq 700 a (fh)">leq 700 a (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="leq 700 k (fh)">leq 700 k (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="leq 700 w (fh)">leq 700 w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="leq 70016 gb w (fh)">leq 70016 gb w (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ldf+55061+nam+w+(fh)" />
+<SCANPREV term="ldf+55061+nam+d+(fh)" />
 
 
-<SCANNEXT term="leq+70016+gb+w+(fh)" />
+<SCANNEXT term="leq+700+a+(fh)" />
 
 </RESULT>

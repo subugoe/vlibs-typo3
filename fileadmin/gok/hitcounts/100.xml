@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">11811783-c</SESSIONVAR>
+<SESSIONVAR name="SID">d29acb76-15</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 bay 1 fran m (fh)">lbm 20026 bay 1 fran m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 bay s (fh)">lbm 20026 bay s (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 hess m (fh)">lbm 20026 hess m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lbm 20026 nrw 1 ru k (fh)">lbm 20026 nrw 1 ru k (fh)</SCANLINE>
 
@@ -355,7 +361,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lbw86 ne m (fh)">lbw86 ne m (fh)</SCANLINE>
 
-    <SCANLINE hits="2321" mnemonic="LKL" description="lc">lc</SCANLINE>
+    <SCANLINE hits="2319" mnemonic="LKL" description="lc">lc</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="lc 000">lc 000</SCANLINE>
 
@@ -517,7 +523,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lc 16 ung lm 16 ung">lc 16 ung lm 16 ung</SCANLINE>
 
-    <SCANLINE hits="95" mnemonic="LKL" description="lc 2">lc 2</SCANLINE>
+    <SCANLINE hits="94" mnemonic="LKL" description="lc 2">lc 2</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="lc 2 d">lc 2 d</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lca 356">lca 356</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="lca 390">lca 390</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lca 42 d (fh)">lca 42 d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lca 42 i (fh)">lca 42 i (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lbm+20026+nrw+1+ru+k+(fh)" />
+<SCANPREV term="lbm+20026+bay+1+fran+m+(fh)" />
 
 
-<SCANNEXT term="lca+42+i+(fh)" />
+<SCANNEXT term="lca+356" />
 
 </RESULT>

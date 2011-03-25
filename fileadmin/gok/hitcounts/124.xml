@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">08377aaa-b</SESSIONVAR>
+<SESSIONVAR name="SID">c8755aa1-14</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnw 7000">pnw 7000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnw 7050">pnw 7050</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="pnw 710">pnw 710</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pnw 7100">pnw 7100</SCANLINE>
 
@@ -259,7 +265,7 @@
 
     <SCANLINE hits="363" mnemonic="LKL" description="pod 500">pod 500</SCANLINE>
 
-    <SCANLINE hits="171" mnemonic="LKL" description="pod 570">pod 570</SCANLINE>
+    <SCANLINE hits="172" mnemonic="LKL" description="pod 570">pod 570</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="pod 600">pod 600</SCANLINE>
 
@@ -829,7 +835,7 @@
 
     <SCANLINE hits="33" mnemonic="LKL" description="poz 260">poz 260</SCANLINE>
 
-    <SCANLINE hits="334" mnemonic="LKL" description="poz 266">poz 266</SCANLINE>
+    <SCANLINE hits="335" mnemonic="LKL" description="poz 266">poz 266</SCANLINE>
 
     <SCANLINE hits="57" mnemonic="LKL" description="poz 300">poz 300</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ppn 8210">ppn 8210</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ppnr 4900">ppnr 4900</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ppo 000">ppo 000</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ppo 100">ppo 100</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pnw+7100" />
+<SCANPREV term="pnw+7000" />
 
 
-<SCANNEXT term="ppo+100" />
+<SCANNEXT term="ppn+8210" />
 
 </RESULT>

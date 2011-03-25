@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ce558679-c</SESSIONVAR>
+<SESSIONVAR name="SID">cc35f6e9-13</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ljf 800">ljf 800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljf 80010 e d (fh)">ljf 80010 e d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljf 80016 gr m (fh)">ljf 80016 gr m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljf 80016 nd m (fh)">ljf 80016 nd m (fh)</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lmc 205 602">lmc 205 602</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lmc 216 su f (fh)">lmc 216 su f (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lmc 225 ddr22 m (fh)">lmc 225 ddr22 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lmc 252.017">lmc 252.017</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ljf+80016+nd+m+(fh)" />
+<SCANPREV term="ljf+800" />
 
 
-<SCANNEXT term="lmc+252.017" />
+<SCANNEXT term="lmc+205+602" />
 
 </RESULT>

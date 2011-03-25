@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">55d63b95-c</SESSIONVAR>
+<SESSIONVAR name="SID">8846ed7a-15</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="nqd 020">nqd 020</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="nqd 050">nqd 050</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="nqd 070">nqd 070</SCANLINE>
 
     <SCANLINE hits="42" mnemonic="LKL" description="nqd 090">nqd 090</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka 900 k (fh)">nt06 ka 900 k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka a (fh)">nt06 ka a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka k (fh)">nt06 ka k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 ka s (fh)">nt06 ka s (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nqd+090" />
+<SCANPREV term="nqd+020" />
 
 
-<SCANNEXT term="nt06+ka+s+(fh)" />
+<SCANNEXT term="nt06+ka+900+k+(fh)" />
 
 </RESULT>

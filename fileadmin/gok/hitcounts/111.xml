@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f9ffe1ff-c</SESSIONVAR>
+<SESSIONVAR name="SID">3aa81777-15</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="140" mnemonic="LKL" description="med 391">med 391</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="med 392">med 392</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="med 393">med 393</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="med 394">med 394</SCANLINE>
 
@@ -201,7 +207,7 @@
 
     <SCANLINE hits="168" mnemonic="LKL" description="med 640">med 640</SCANLINE>
 
-    <SCANLINE hits="1206" mnemonic="LKL" description="med 650">med 650</SCANLINE>
+    <SCANLINE hits="1207" mnemonic="LKL" description="med 650">med 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="med z 098">med z 098</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nja 005">nja 005</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="nja 005 s (fh)">nja 005 s (fh)</SCANLINE>
-
-    <SCANLINE hits="93" mnemonic="LKL" description="nja 010">nja 010</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nja 030">nja 030</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="med+394" />
+<SCANPREV term="med+391" />
 
 
-<SCANNEXT term="nja+030" />
+<SCANNEXT term="nja+005" />
 
 </RESULT>
