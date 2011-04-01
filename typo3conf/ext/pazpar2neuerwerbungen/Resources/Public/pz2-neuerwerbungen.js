@@ -232,9 +232,9 @@ function buildSearchQueryWithEqualsAndWildcard (form, equals, wildcard) {
 		addSearchTermsToList( jQuery('.pz2-months :selected', form)[0].value, dates, wildcard);
 		var	DTMQueryString = oredSearchQueries(dates, 'dtm', equals);
 
-		var statuses = [];
-		addSearchTermsToList('a,r', statuses, wildcard);
-		var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
+		// var statuses = [];
+		// addSearchTermsToList('a,r', statuses, wildcard);
+		// var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
 		
 		var queryString = LKLQueryString + ' and ' + DTMQueryString // + ' not ' + SLKQueryString;
 	}
