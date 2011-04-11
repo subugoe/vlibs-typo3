@@ -42,14 +42,14 @@ P0041000;3;P0041000;P0032000;Lateinamerika;lkl pbf 780
 P0042000;3;P0042000;P0032000;Australien, Neuseeland und Ozeanien;lkl pbf 900
 P0043000;2;P0043000;P0009000;Geschichtsschreibung des jüdischen Volkes;lkl pbh 000
 P0044000;2;P0044000;P0009000;Theorie und Methoden allgemein;lkl pbk 000
-P0045000;3;P0045000;P0004400;Geschichtserkenntnis;lkl pbk 100
-P0046000;3;P0046000;P0004400;Geschichtsdarstellung;lkl pbk 200
-P0047000;3;P0047000;P0004400;Geschichtspolitik;lkl pbk 700 or thm geschichtspolit?
-P0048000;3;P0048000;P0004400;Oral History;lkl pbk 800
-P0049000;3;P0049000;P0004400;Quantitative Methoden;lkl pdt 100
-P0050000;3;P0050000;P0004400;Einzelbeiträge;lkl pbk 900
-P0051000;3;P0051000;P0004400;"Geschichtsdenken (s.a. Geschichtsphilosophie; BK 08.43)";lkl pbl?
-P0052000;3;P0052000;P0004400;Erinnerungskultur und kollektives Gedächtnis;lkl pbl? and thm (memor? or erinnerung? or kollektives ged?)
+P0045000;3;P0045000;P0044000;Geschichtserkenntnis;lkl pbk 100
+P0046000;3;P0046000;P0044000;Geschichtsdarstellung;lkl pbk 200
+P0047000;3;P0047000;P0044000;Geschichtspolitik;lkl pbk 700 or thm geschichtspolit?
+P0048000;3;P0048000;P0044000;Oral History;lkl pbk 800
+P0049000;3;P0049000;P0044000;Quantitative Methoden;lkl pdt 100
+P0050000;3;P0050000;P0044000;Einzelbeiträge;lkl pbk 900
+P0051000;3;P0051000;P0044000;"Geschichtsdenken (s.a. Geschichtsphilosophie; BK 08.43)";lkl pbl?
+P0052000;3;P0052000;P0044000;Erinnerungskultur und kollektives Gedächtnis;lkl pbl? and thm (memor? or erinnerung? or kollektives ged?)
 P0053000;2;P0053000;P0009000;Geschichtswissenschaftliche Institutionen;lkl pbs?
 P0054000;3;P0054000;P0053000;Ausbildung, Beruf, Organisation;lkl pbs 000 or pbs 900
 P0055000;3;P0055000;P0053000;Museen;lkl pbs 800
