@@ -22,9 +22,9 @@
  * Restores state from cookies and kicks off the search.
  */
 function pz2neuerwerbungenDOMReady () {
-	$('.pz2-searchForm input[type="submit"]').hide();
+	jQuery('.pz2-searchForm input[type="submit"]').hide();
 	restoreCookieState ();
-	runSearchForForm ($('.pz2-searchForm')[0]);
+	runSearchForForm (jQuery('.pz2-searchForm')[0]);
 }
 
 
@@ -52,7 +52,7 @@ function restoreCookieState () {
 				var fieldNames = cookieValue.split(':');
 				for (var fieldNameIndex in fieldNames) {
 					var fieldName = fieldNames[fieldNameIndex];
-					$('.pz2-searchForm :checkbox[value="' + fieldName + '"]').attr({'checked': true});
+					jQuery('.pz2-searchForm :checkbox[value="' + fieldName + '"]').attr({'checked': true});
 				}
 				break;
 			}
@@ -73,7 +73,7 @@ function restoreCookieState () {
  */
 function saveFormStateAsCookie (form) {
 	var selectedValues = [];
-	$(':checked', form).each( function (index) {
+	jQuery(':checked', form).each( function (index) {
 			selectedValues.push(this.value);
 		}
 	)
@@ -99,7 +99,7 @@ function runSearchForForm (form) {
 	if (query) {
 		my_paz.search(query, 2000, null, null);
 
-		$('.pz2-rsslink').attr('href', RSSURL(form));
+		jQuery('.pz2-rsslink').attr('href', RSSURL(form));
 	}
 
 	saveFormStateAsCookie(form);
@@ -148,10 +148,10 @@ function groupCheckboxChanged (checkbox) {
  * input:	checkbox - DOM element of the changed checkbox
  */
 function toggleParentCheckboxOf (checkbox) {
-	var fieldset = $(checkbox).parents('fieldset')[0];
-	parentCheckbox = $('legend :checkbox', fieldset);
+	var fieldset = jQuery(checkbox).parents('fieldset')[0];
+	parentCheckbox = jQuery('legend :checkbox', fieldset);
 	
-	parentCheckbox.attr({'checked': ($('li :checkbox', fieldset).length == $('li :checked', fieldset).length)});
+	parentCheckbox.attr({'checked': (jQuery('li :checkbox', fieldset).length == jQuery('li :checked', fieldset).length)});
 }
 
 
@@ -167,8 +167,8 @@ function toggleParentCheckboxOf (checkbox) {
  * input:	checkbox - DOM element of the changed checkbox
  */
 function toggleChildCheckboxesOf (checkbox) {
-	var fieldset = $(checkbox).parents('fieldset')[0];
-	$(':checkbox', fieldset).attr({'checked': checkbox.checked});
+	var fieldset = jQuery(checkbox).parents('fieldset')[0];
+	jQuery(':checkbox', fieldset).attr({'checked': checkbox.checked});
 }
 
 
@@ -187,13 +187,13 @@ function toggleChildCheckboxesOf (checkbox) {
 function selectedGOKsInFormWithWildcard (form, wildcard) {
 	var GOKs = [];
 
-	$('fieldset', form).each( function (index) {
-			if ( $('legend>label :checked', this)[0]
-					&& $('legend>label :checked', this)[0].value !== 'CHILDREN') {
-				addSearchTermsToList($('legend>label :checked', this)[0].value, GOKs, wildcard);
+	jQuery('fieldset', form).each( function (index) {
+			if ( jQuery('legend>label :checked', this)[0]
+					&& jQuery('legend>label :checked', this)[0].value !== 'CHILDREN') {
+				addSearchTermsToList(jQuery('legend>label :checked', this)[0].value, GOKs, wildcard);
 			}
 			else {
-				$('ul :checked', this).each( function (index) {
+				jQuery('ul :checked', this).each( function (index) {
 						addSearchTermsToList(this.value, GOKs, wildcard);
 					}
 				);
@@ -229,12 +229,12 @@ function buildSearchQueryWithEqualsAndWildcard (form, equals, wildcard) {
 		var LKLQueryString = oredSearchQueries(GOKs, 'lkl', equals);
 
 		var dates = [];
-		addSearchTermsToList( $('.pz2-months :selected', form)[0].value, dates, wildcard);
+		addSearchTermsToList( jQuery('.pz2-months :selected', form)[0].value, dates, wildcard);
 		var	DTMQueryString = oredSearchQueries(dates, 'dtm', equals);
 
-		var statuses = [];
-		addSearchTermsToList('a,r', statuses, wildcard);
-		var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
+		// var statuses = [];
+		// addSearchTermsToList('a,r', statuses, wildcard);
+		// var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
 		
 		var queryString = LKLQueryString + ' and ' + DTMQueryString // + ' not ' + SLKQueryString;
 	}

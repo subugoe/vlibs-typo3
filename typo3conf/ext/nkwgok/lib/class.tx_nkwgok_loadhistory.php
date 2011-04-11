@@ -68,10 +68,23 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 	private function processCSVFile ($csvPath) {
 		$success = False;
 		$doc = Null;
-		// ini_set('auto_detect_line_endings', TRUE);
-		$fileHandle = fopen($csvPath, 'r');
+		$csvString = file_get_contents($csvPath);
+		$PPNList = Array();
+		
+		// Handle UTF-8, ISO, and Windows files. We expect the latter as the CSV is written by Excel.
+		$stringEncoding = mb_detect_encoding($csvString, Array('UTF-8', 'ISO-8859-1', 'windows-1252'));
+		if ($stringEncoding != 'UTF-8') {
+			$csvString = mb_convert_encoding($csvString, 'UTF-8', $stringEncoding);
+		}
 
-		if ($fileHandle !== False) {
+		// Put our text in a file handle, so we can use fgetcsv on it.
+		// (SLES 11 only supports PHP 5.2 and using str_getcsv requires PHP 5.3)
+		// http://php.net/manual/de/function.str-getcsv.php#100579
+		$fileHandle = fopen("php://memory", "rw");
+		if ($fileHandle) {
+			fwrite($fileHandle, $csvString);
+			fseek($fileHandle, 0);
+		
 			// Set up XML document.
 			$doc = DOMImplementation::createDocument();
 			$result = $doc->createElement('RESULT');
@@ -79,19 +92,19 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 			$set = $doc->createElement('SET');
 			$result->appendChild($set);
 
-			while (!feof($fileHandle)) {
-				$fields = fgetcsv($fileHandle, 500, ';');
-
-			if (count($fields) >= 5) {
+			while (($fields = fgetcsv($fileHandle, 4096, ';', '"')) !== false) { 
+				if (count($fields) >= 5) {
 					// GOK name is in field 5, so ignore lines with less fields.
 					$shorttitle = $doc->createElement('SHORTTITLE');
 					$set->appendChild($shorttitle);
 					$record = $doc->createElement('record');
 					$shorttitle->appendChild($record);
-					$this->appendFieldForDataTo('003@', '0', trim($fields[0]), $record, $doc);
+					$PPN = trim($fields[0]);
+					$parentPPN = trim($fields[3]);
+					$this->appendFieldForDataTo('003@', '0', $PPN, $record, $doc);
 					$this->appendFieldForDataTo('009B', 'a', trim($fields[1]), $record, $doc);
 					$this->appendFieldForDataTo('045A', 'a', trim($fields[2]), $record, $doc);
-					$this->appendFieldForDataTo('038D', '9', trim($fields[3]), $record, $doc);
+					$this->appendFieldForDataTo('038D', '9', $parentPPN, $record, $doc);
 					$this->appendFieldForDataTo('044E', 'a', trim($fields[4]), $record, $doc);
 					if (count($fields) > 5) {
 						// Search query
@@ -102,12 +115,26 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 							$this->appendFieldForDataTo('044F', 'a', trim($fields[6]), $record, $doc);
 						}
 					}
-				}
+					
+					// Warn if the parent PPN doesn’t exist yet.
+					if ($parentPPN != '' && !$PPNList[$parentPPN]) {
+						t3lib_div::devLog('loadHistory Scheduler Task: Parent PPN ' . $parentPPN . ' not defined when reading child record ' . $PPN, 'nkwgok', 2);
+					}
+
+					// Warn if there are duplicate PPNs.
+					if ($PPNList[$PPN]) {
+						t3lib_div::devLog('loadHistory Scheduler Task: Duplicate PPN ' . $PPN, 'nkwgok', 2);
+					}
+					
+					// Add current PPN to PPN list.
+					$PPNList[$PPN] = True;
+										
+				}	
 				else if (count($fields) != 0) {
-					t3lib_div::devLog('loadHistory Scheduler Task: Line "' . implode(';', $fields) . 'contains less than 5 fields.', 'nkwgok', 3);
+					t3lib_div::devLog('loadHistory Scheduler Task: Line "' . implode(';', $fields) . 'contains less than 5 fields.', 'nkwgok', 2);
 				}
 			}
-			fclose ($fileHandle);
+			fclose($fileHandle); 
 
 			// Write XML file
 			$csvPathParts = explode('/', $csvPath);
