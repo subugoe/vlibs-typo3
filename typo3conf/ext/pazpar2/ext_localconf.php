@@ -30,7 +30,7 @@ Tx_Extbase_Utility_Extension::configurePlugin (
 
 	// Array holding non-cachable controller-action-combinations
 	array(
-		'Pazpar2' => 'index'
+//		'Pazpar2' => 'index'
 	)
 
 );

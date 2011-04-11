@@ -17,6 +17,8 @@
 
 			<label index="scheduler.importAll.name">Download, convert and import LKL data</label>
 			<label index="scheduler.importAll.description">Downloads LKL Opac data, converts the CSV files with local classification information for History to Pica XML and them imports all of them into the Typo3 database (i.e. executes the three other nkwgok Scheduler tasks in the correct order).</label>
+			<label index="scheduler.loadxml.description">Scheduler task to import LKL XML data from GOK into the Typo3 database.</label>
+
 		</languageKey>
 		
 		<languageKey index="de" type="array">
