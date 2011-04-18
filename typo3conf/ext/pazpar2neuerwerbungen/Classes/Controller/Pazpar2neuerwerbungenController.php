@@ -121,8 +121,6 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$year = date('Y');
 		$month = date('n');
 		
-		$currentMonthSearchString = $this->picaSearchStringForMonth($month, $year);
-		
 		for ($i = 1; $i <= $numberOfMonths; $i++) {
 			$searchString = $this->picaSearchStringForMonth($month, $year);
 			
@@ -208,7 +206,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 		$cssTag->addAttribute('media', 'all');
 		$this->response->addAdditionalHeaderData( $cssTag->render() );
 
-		// Add pz2-neuerwerbungen.js to <head>. ***************
+		// Add pz2-neuerwerbungen.js to <head>.
 		$scriptTag = new Tx_Fluid_Core_ViewHelper_TagBuilder('script');
 		$scriptTag->addAttribute('type', 'text/javascript');
 		$scriptTag->addAttribute('src', $this->conf['pz2-neuerwerbungenJSPath']) ;
