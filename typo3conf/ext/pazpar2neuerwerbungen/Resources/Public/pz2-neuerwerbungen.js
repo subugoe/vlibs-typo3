@@ -1,14 +1,13 @@
 /*
  * pz2-neuerwerbungen.js
  *
- * 2010 by Sven-S. Porst, SUB Göttingen
+ * 2010-2011 by Sven-S. Porst, SUB Göttingen
  * porst@sub.uni-goettingen.de
  *
  * JavaScript for interactive loading and display of new acquisitions by
  * the library.
  *
- * For use with the pazpar2neuerwerbungen Typo3 extension and the
- * script its dependencies require.
+ * For use with the pazpar2neuerwerbungen Typo3 extension.
  *
  */
 
@@ -87,7 +86,7 @@ function saveFormStateAsCookie (form) {
  * runSearchForForm
  *
  * Build search query from the selected checkboxes. If it is non-empty,use it
- *	to kick off pazpar2 and set the RSS subscription URL.
+ *	to kick off pazpar2 and set the Atom subscription URL.
  *
  * input:	form - DOM form element in which to look for checked checkboxes
  */
@@ -99,7 +98,7 @@ function runSearchForForm (form) {
 	if (query) {
 		my_paz.search(query, 2000, null, null);
 
-		jQuery('.pz2-rsslink').attr('href', RSSURL(form));
+		jQuery('.pz2-atomLink').attr('href', atomURL(form));
 	}
 
 	saveFormStateAsCookie(form);
@@ -287,24 +286,28 @@ function addSearchTermsToList (termsString, list, wildcard) {
 
 
 /*
- * RSSURL
+ * atomURL
  *
- * Creates the URL to the RSS feed for the query if the form contains a selection.
- * TODO: figure out the correct URL format.
+ * Creates the URL to the Atom feed for the query if the form contains a 
+ * selection.
+ *
+ * Assumes that the script / redirect providing the Atom feed is available at
+ * ./opac.atom.
  *
  * input:	form - DOM element of the form to get the data from
- * output:	string with the URL to the RSS feed / undefined if nothing is selected
+ * output:	string with the URL to the Atom feed / undefined if nothing is selected
  */
-function RSSURL (form) {
+function atomURL (form) {
 	var searchQuery = buildSearchQueryWithEqualsAndWildcard(form, ' ', '*');
 
 	if (searchQuery) {
 		searchQuery = searchQuery.replace(/ /g, '+');
 		searchQuery = encodeURI(searchQuery);
 
-		var RSSURL = "http://k1www.gbv.de/rssopc/rss_feeds.php?HOST=opac.sub.uni-goettingen.de&INTPORT=80&EXTPORT=80&DB=1&SEARCH=00yS!t" + searchQuery + "!aY!cN.oY.vD.wD&EDOC=588692600"
+		var atomBaseURL = './opac.atom?q=';
+		var atomURL = atomBaseURL + searchQuery;
 	}
 
-return RSSURL;
+	return atomURL;
 }
  
