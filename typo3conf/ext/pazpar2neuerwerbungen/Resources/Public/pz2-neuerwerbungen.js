@@ -97,8 +97,24 @@ function runSearchForForm (form) {
 
 	if (query) {
 		my_paz.search(query, 2000, null, null);
+		
+		var myAtomURL = atomURL(form);
+		jQuery('.pz2-atomLink').show().attr('href', myAtomURL);
 
-		jQuery('.pz2-atomLink').attr('href', atomURL(form));
+		var linkElement = document.getElementById('pz2neuerwerbungen-atom-linkElement');
+		if (linkElement) {
+			
+		}
+		else {
+			linkElement = document.createElement('link');
+			linkElement.setAttribute('rel', 'alternate');
+			linkElement.setAttribute('type', 'application/atom+xml');
+			document.head.appendChild(linkElement);
+		}
+		linkElement.setAttribute('href', myAtomURL);
+	}
+	else {
+		jQuery('.pz2-atomLink').hide();
 	}
 
 	saveFormStateAsCookie(form);
@@ -304,7 +320,7 @@ function atomURL (form) {
 		searchQuery = searchQuery.replace(/ /g, '+');
 		searchQuery = encodeURI(searchQuery);
 
-		var atomBaseURL = './opac.atom?q=';
+		var atomBaseURL = document.baseURI + 'opac.atom?q=';
 		var atomURL = atomBaseURL + searchQuery;
 	}
 
