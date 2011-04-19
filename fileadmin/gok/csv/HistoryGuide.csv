@@ -1,0 +1,158 @@
+HistGuide0000;0;HistGuide0000;HistGuide;Geschichte ;PA? or 900;History 
+HistGuide0050;1;HistGuide0050;HistGuide0000;Geschichte der Geschichtsschreibung ;(PB? and not PBT?) or 907.2;History of historiography 
+HistGuide0100;1;HistGuide0100;HistGuide0000;Geschichtstheorie ;PBK?;Theory of history 
+HistGuide0150;1;HistGuide0150;HistGuide0000;Geschichtsdidaktik ;PBW? or 907.1?;Education and didactics
+HistGuide0200;1;HistGuide0200;HistGuide0000;Politische Geschichte ;PCA? or PCB?;Political history in general 
+HistGuide0250;2;HistGuide0250;HistGuide0200;Internationale Beziehungen und Diplomatiegeschichte ;327? or PFE?;International relations and diplomatic history
+HistGuide0300;2;HistGuide0300;HistGuide0200;Verfassungsgeschichte ;342?;Constitutional history 
+HistGuide0350;2;HistGuide0350;HistGuide0200;Politische Parteien ;324?;Political Parties 
+HistGuide0400;1;HistGuide0400;HistGuide0000;Kulturgeschichte ;PCD?;Cultural history in general 
+HistGuide0450;1;HistGuide0450;HistGuide0000;Sozialgeschichte ;PCL?;Social history in general 
+HistGuide0500;1;HistGuide0500;HistGuide0000;Wirtschaftsgeschichte ;PC? and not (PCB? or PCD?);Economic history in general 
+HistGuide0550;1;HistGuide0550;HistGuide0000;Historische Hilfswissenschaften ;PD? or 902?;Auxiliary sciences (all sites) 
+HistGuide0600;2;HistGuide0600;HistGuide0550;Archive und Archivführer;PDB? or PDC? ;Archives and archival inventories
+HistGuide0650;2;HistGuide0650;HistGuide0550;Paläographie, Diplomatik, Epigraphik ;PDG? or PDQ? or PDS?;Paleography, diplomacy and inscriptions 
+HistGuide0700;2;HistGuide0700;HistGuide0550;Numismatik, Siegelkunde, Heraldik ;PDL? or PDN? or PDP?;Numismatics, sigillography, heraldry
+HistGuide0750;2;HistGuide0750;HistGuide0550;Chronologie ;PDH?;Chronology 
+HistGuide0800;2;HistGuide0800;HistGuide0550;Historische Fachinformatik ;PDV?;Computing and History 
+HistGuide0850;1;HistGuide0850;HistGuide0000;Weltgeschichte ;PF?;World History 
+HistGuide0900;2;HistGuide0900;HistGuide0850;Geschichte der Entdeckungen ;PFH? or 325.3;History of the Discoveries 
+HistGuide0950;2;HistGuide0950;HistGuide0850;Erster Weltkrieg ;PFP? or 940.3? or 940.4? ;World War One 
+HistGuide1000;2;HistGuide1000;HistGuide0850;Zweiter Weltkrieg ;PFR? or 940.5?;World War Two 
+HistGuide1050;1;HistGuide1050;HistGuide0000;Europäische Geschichte in Mittelalter und Neuzeit ;PH?;History of Europe 
+HistGuide1100;2;HistGuide1100;HistGuide1050;Mittelalter ;PHE?;Middle Ages 
+HistGuide1150;2;HistGuide1150;HistGuide1050;Frühe Neuzeit ;(PHH? or 940?) and t1:0903? and not t1:09034;Early Modern Period 
+HistGuide1200;2;HistGuide1200;HistGuide1050;19. Jahrhundert ;(PHL? or PHO? or 940?) and t1:09034;19th Century 
+HistGuide1250;2;HistGuide1250;HistGuide1050;20. Jahrhundert ;(PHR? or PHU? or 940?) and (t1:0904? or t1:0905?);20th Century 
+HistGuide1300;1;HistGuide1300;HistGuide0000;Deutsche Geschichte ;(PI? or 943?) and not (943.6? or 943.7? or 943.8? or 943.9?);Germany 
+HistGuide1350;2;HistGuide1350;HistGuide1300;Mittelalter ;(PIA? or PIB? or PIC? or PID? or PIE? or 943?) and t1:090? and not (943.6? or 943.7? or 943.8? or 943.9?) ;Middle Ages 
+HistGuide1400;2;HistGuide1400;HistGuide1300;Frühe Neuzeit ;(PIF? or PIG? or PIH? or 943?) and t1:0903? and not (t1:09034 or 943.6? or 943.7? or 943.8? or 943.9?);Early Modern Period 
+HistGuide1450;2;HistGuide1450;HistGuide1300;19. Jahrhundert ;(PII? or PIJ? or PIK? or PIL? or 943?) and t1:09034 and not (943.6? or 943.7? or 943.8? or 943.9?);19th Century 
+HistGuide1500;2;HistGuide1500;HistGuide1300;20. Jahrhundert ;(PIM? or PIN? or PIO? or PIP? or PIQ? or PIR? or 943?) and (t1:0904? or t1:0905?) and not (943.6? or 943.7? or 943.8? or 943.9?);20th Century 
+HistGuide1550;1;HistGuide1550;HistGuide0000;Österreich ;PL? or 943.6? and not 943.648;Austria 
+HistGuide1600;1;HistGuide1600;HistGuide0000;Schweiz ;PK? or 943.648 or 949.4?;Switzerland and Liechtenstein 
+HistGuide1650;1;HistGuide1650;HistGuide0000;Tschechien, Slowakei, Polen, Ungarn ;(943.7? or 943.8? or 943.9?;Czechia, Slovakia, Poland, Hungary
+HistGuide1700;1;HistGuide1700;HistGuide0000;Skandinavien, Beneluxländer ;PN? or 948.? or 949.1or 949.2 or 949.35;Scandinavia, Low Countries 
+HistGuide1750;1;HistGuide1750;HistGuide0000;Großbritannien und Irland ;PO? or 941? or 942?;Great Britain and Ireland
+HistGuide1800;2;HistGuide1800;HistGuide1750;Mittelalter ;(POA? or POM? or 941? or 942?) and t1:0902?;Middle Ages 
+HistGuide1850;2;HistGuide1850;HistGuide1750;Frühe Neuzeit ;(POB? or PON? or 941? or 942?) and t1:0903? and not t1:09034;Early Modern Period
+HistGuide1900;2;HistGuide1900;HistGuide1750;19. Jahrhundert ;POD? or (941? or 942? and t1:09034);19th Century
+HistGuide1950;2;HistGuide1950;HistGuide1750;20. Jahrhundert ;(POF? or POG? or POH?) or (941? and t1:0904? or t1:0905?);20th Century 
+HistGuide2000;1;HistGuide2000;HistGuide0000;Schottland ;POP? or POQ? or POR? or POS?;Scotland 
+HistGuide2050;1;HistGuide2050;HistGuide0000;Irland ;POT? or POU? or POV? or POW? or POX? or POY? or POZ?;Ireland 
+HistGuide2100;1;HistGuide2100;HistGuide0000;Frankreich ;PP? or 944?;France 
+HistGuide2150;2;HistGuide2150;HistGuide2100;Mittelalter ;(PPA? or 944?) and t1:0902?;Middle Ages
+HistGuide2200;2;HistGuide2200;HistGuide2100;Frühe Neuzeit ;(PPE? or 944?) and t1:0903? and not t1:09034;Early Modern Period 
+HistGuide2250;2;HistGuide2250;HistGuide2100;19. Jahrhundert ;(PPH? or 944?) and t1:09034;19th Century 
+HistGuide2300;2;HistGuide2300;HistGuide2100;20. Jahrhundert ;(PPM? or PPO? or PPQ? or 944?) and t1:0904?;20th Century 
+HistGuide2350;1;HistGuide2350;HistGuide0000;Spanien und Portugal ;PPQ? or 946?;Spain and Portugal 
+HistGuide2400;1;HistGuide2400;HistGuide0000;Italien ;PR? or 945?;Italy 
+HistGuide2450;1;HistGuide2450;HistGuide0000;Osteuropa ;PT? or 947?;Eastern Europe 
+HistGuide2500;1;HistGuide2500;HistGuide0000;Asien ;PU? or 95?;History of Asia 
+HistGuide2550;1;HistGuide2550;HistGuide0000;Amerika ;PV? or 97?;History of America 
+HistGuide2600;1;HistGuide2600;HistGuide0000;Amerika insgesamt ;PVA? or PVB? or PVC? or 970?;America in general
+HistGuide2650;1;HistGuide2650;HistGuide0000;Kanada ;PVD? or 971;Canada 
+HistGuide2700;2;HistGuide2700;HistGuide2650;Quellen ;PVD 1?;Sources
+HistGuide2750;2;HistGuide2750;HistGuide2650;Politische Geschichte ;PVD 2?;History and Politics
+HistGuide2800;2;HistGuide2800;HistGuide2650;Gesellschaft, Wirtschaft, Kultur ;PVD 3? or PVD 4? or PVD 5?;Society, Economy, Culture 
+HistGuide2850;2;HistGuide2850;HistGuide2650;Regional- und Lokalgeschichte ;PVD 6? or PVD 7?;Regional and local studies 
+HistGuide2900;2;HistGuide2900;HistGuide2650;Personen ;PVD 8;Biographies 
+HistGuide2950;2;HistGuide2950;HistGuide2650;Frühe Neuzeit ;PVE? or 971.01? or 971.02?;Early Modern Period
+HistGuide3000;2;HistGuide3000;HistGuide2650;19. Jahrhundert ;PVF? or 971.03? or 971.04? or 971.05?;19th Century 
+HistGuide3050;2;HistGuide3050;HistGuide2650;20. Jahrhundert;PVG? or 971.06? or 971.07?;20th Century 
+HistGuide3100;3;HistGuide3100;HistGuide3050;Quellen ;PVG 1?;Sources
+HistGuide3150;3;HistGuide3150;HistGuide3050;Politische Geschichte ;PVG 2? or (971? and t1:0904?);History and Politics
+HistGuide3200;3;HistGuide3200;HistGuide3050;Gesellschaft, Wirtschaft, Kultur ;PVG 3? or PVG 4? or PVG 5?;Society, Economy, Culture 
+HistGuide3250;3;HistGuide3250;HistGuide3050;Regional- und Lokalgeschichte ;PVG 6? or PVG 7?;Regional and local studies 
+HistGuide3300;3;HistGuide3300;HistGuide3050;Personen ;PVG 8?;Biographies 
+HistGuide3350;1;HistGuide3350;HistGuide0000;USA;PVK? or 973?;United States of America 
+HistGuide3400;2;HistGuide3400;HistGuide3350;Quellen ;PVK 1?;Sources
+HistGuide3450;2;HistGuide3450;HistGuide3350;Politische Geschichte ;PVK 2?;History and Politics
+HistGuide3500;2;HistGuide3500;HistGuide3350;Gesellschaft ;PVK 3?;Society
+HistGuide3550;2;HistGuide3550;HistGuide3350;Wirtschaft;PVK 4?;Economy
+HistGuide3600;2;HistGuide3600;HistGuide3350;Kultur ;PVK 5?;Culture 
+HistGuide3650;2;HistGuide3650;HistGuide3350;Regional- und Lokalgeschichte ;PVK 6? or PVK 7?;Regional and local studies 
+HistGuide3700;2;HistGuide3700;HistGuide3350;Personen ;PVK 8?;Biographies 
+HistGuide3750;2;HistGuide3750;HistGuide3350;Frühe Neuzeit (bis 1776) ;PVL? or 973.1? or 973.2?;Early Modern Period (until 1776)
+HistGuide3800;3;HistGuide3800;HistGuide3750;Quellen ;PVL 1?;Sources
+HistGuide3850;3;HistGuide3850;HistGuide3750;Politische Geschichte ;PVL 2?;History and Politics
+HistGuide3900;3;HistGuide3900;HistGuide3750;Gesellschaft ;PVL 3?;Society
+HistGuide3950;3;HistGuide3950;HistGuide3750;Wirtschaft;PVL 4?;Economy
+HistGuide4000;3;HistGuide4000;HistGuide3750;Kultur ;PVL 5?;Culture 
+HistGuide4050;3;HistGuide4050;HistGuide3750;Regional- und Lokalgeschichte ;PVL 6? or PVL 7? or (974? or 975? and t1:0903?);Regional and local studies 
+HistGuide4100;3;HistGuide4100;HistGuide3750;Personen ;PVL 8?;Biographies 
+HistGuide4150;2;HistGuide4150;HistGuide3350;19. Jahrhundert (1776-1918) ;PVM? Or (973? and (t1:0934 or t1:09041 or t1:09042));19th Century (1776-1918)
+HistGuide4200;3;HistGuide4200;HistGuide4100;Quellen ;PVM 1?;Sources
+HistGuide4250;3;HistGuide4250;HistGuide4100;Politische Geschichte ;PVM 2?;History and Politics
+HistGuide4300;3;HistGuide4300;HistGuide4100;Gesellschaft ;PVM 3?;Society
+HistGuide4350;3;HistGuide4350;HistGuide4100;Wirtschaft;PVM 4?;Economy
+HistGuide4400;3;HistGuide4400;HistGuide4100;Kultur ;PVM 5?;Culture 
+HistGuide4450;3;HistGuide4450;HistGuide4100;Regional- und Lokalgeschichte ;PVM 6? or PVM 7?;Regional and local studies 
+HistGuide4500;3;HistGuide4500;HistGuide4100;Personen ;PVM 8?;Biographies 
+HistGuide4550;2;HistGuide4550;HistGuide3350;20. Jahrhundert ;PVN? or 973.9;20th Century 
+HistGuide4600;3;HistGuide4600;HistGuide4550;Quellen ;PVN 1?;Sources
+HistGuide4650;3;HistGuide4650;HistGuide4550;Politische Geschichte ;PVN 2?;History and Politics
+HistGuide4700;3;HistGuide4700;HistGuide4550;Gesellschaft ;PVN 3?;Society
+HistGuide4750;3;HistGuide4750;HistGuide4550;Wirtschaft;PVN 4?;Economy
+HistGuide4800;3;HistGuide4800;HistGuide4550;Kultur ;PVN 5?;Culture 
+HistGuide4850;3;HistGuide4850;HistGuide4550;Regional- und Lokalgeschichte ;PVN 6? or PVN 7?;Regional and local studies 
+HistGuide4900;3;HistGuide4900;HistGuide4550;Personen ;PVN 8?;Biographies 
+HistGuide4950;2;HistGuide4950;HistGuide3350;1918-1945;PVO? or 973.91?;1918-1945
+HistGuide5000;3;HistGuide5000;HistGuide4900;Quellen ;PVO 1?;Sources
+HistGuide5050;3;HistGuide5050;HistGuide4900;Politische Geschichte ;PVO 2?;History and Politics
+HistGuide5100;3;HistGuide5100;HistGuide4900;Gesellschaft ;PVO 3?;Society
+HistGuide5150;3;HistGuide5150;HistGuide4900;Wirtschaft;PVO 4?;Economy
+HistGuide5200;3;HistGuide5200;HistGuide4900;Kultur ;PVO 5?;Culture 
+HistGuide5250;3;HistGuide5250;HistGuide4900;Regional- und Lokalgeschichte ;PVO 6? or PVO 7?;Regional and local studies 
+HistGuide5300;3;HistGuide5300;HistGuide4900;Personen ;PVO 8?;Biographies 
+HistGuide5350;2;HistGuide5350;HistGuide3350;1945-;PVP? or 973.92? or 973.93?;1945-
+HistGuide5400;3;HistGuide5400;HistGuide5300;Quellen ;PVP 1?;Sources
+HistGuide5450;3;HistGuide5450;HistGuide5300;Politische Geschichte ;PVP 2?;History and Politics
+HistGuide5500;3;HistGuide5500;HistGuide5300;Gesellschaft ;PVP 3?;Society
+HistGuide5550;3;HistGuide5550;HistGuide5300;Wirtschaft;PVP 4?;Economy
+HistGuide5600;3;HistGuide5600;HistGuide5300;Kultur ;PVP 5?;Culture 
+HistGuide5650;3;HistGuide5650;HistGuide5300;Regional- und Lokalgeschichte ;PVP 6? or PVP 7?;Regional and local studies 
+HistGuide5700;3;HistGuide5700;HistGuide5300;Personen ;PVP 8?;Biographies 
+HistGuide5750;3;HistGuide5750;HistGuide5300;Regional- und Lokalgeschichte ;974? Or 975? Or 976? Or 977? Or 978? Or 979?;United States by Region 
+HistGuide5800;2;HistGuide5800;HistGuide3350;Nordoststaaten ;974?;Northeastern United States
+HistGuide5850;2;HistGuide5850;HistGuide3350;Südoststaaten ;975?;Southeastern United States
+HistGuide5900;2;HistGuide5900;HistGuide3350;Südliche zentrale Staaten ;976?;South central United States
+HistGuide5950;2;HistGuide5950;HistGuide3350;Nördliche zentrale Staaten ;977?;North central United States
+HistGuide6000;2;HistGuide6000;HistGuide3350;Westliche Staaten ;978?;Western United States
+HistGuide6050;2;HistGuide6050;HistGuide3350;Staaten des Großen Beckens und der pazifischen Gebirsketten ;979?;Great Basin and Pacific Slope region of United States
+HistGuide6100;2;HistGuide6100;HistGuide3350;Hawaii ;996.9?;Hawaii
+HistGuide6150;1;HistGuide6150;HistGuide0000;Mittel- und Lateinamerika ;PVS? or PVT? or PVU? or PVW? or PVX? or 980?;Latin America 
+HistGuide6200;1;HistGuide6200;HistGuide0000;Australien, Neuseeland, Ozeanien ;PX? or 993? or 994? or 995? or 996?;Australia, New Zealand, Oceania
+HistGuide6250;2;HistGuide6250;HistGuide6200;Australien ;PXA? or 994?;Australia 
+HistGuide6300;2;HistGuide6300;HistGuide6200;19. Jahrhundert ;PXB? ;19th Century 
+HistGuide6350;2;HistGuide6350;HistGuide6200;20. Jahrhundert ;PXC? or PXD? or PXE? ;20th Century 
+HistGuide6400;2;HistGuide6400;HistGuide6200;Neuseeland ;PXN? or PXO? or PXP? or PXR? or PXS? or 993?;New Zealand 
+HistGuide6450;2;HistGuide6450;HistGuide6200;19. Jahrhundert ;PXO? ;19th Century 
+HistGuide6500;2;HistGuide6500;HistGuide6200;20. Jahrhundert ;PXP? or PXR? or PXS? ;20th Century 
+HistGuide6550;2;HistGuide6550;HistGuide6200;Ozeanien ;PXY? or 995? or 996?;Oceania 
+HistGuide6600;1;HistGuide6600;HistGuide0000;Geschichte des jüdischen Volkes ;PY? or 909.04924;History of the Jewish People 
+HistGuide6650;2;HistGuide6650;HistGuide6600;Mitteleuropa ;909.04924 and 943?;Central Europe 
+HistGuide6700;2;HistGuide6700;HistGuide6600;Großbritannien und Irland ;909.04924 and (941? or 942?);Great Britain and Ireland
+HistGuide6750;2;HistGuide6750;HistGuide6600;Nordamerika ;909.04924 and 97?;North America
+HistGuide6800;1;HistGuide6800;HistGuide0000;Fachenyzklopädien, Nachschlagewerke, Diskussionslisten ;;Encyclopedias, Factual Reference Works, Discussion Lists
+HistGuide6850;2;HistGuide6850;HistGuide6800;Übergreifende Nachschlagewerke ;ej;General Encyclopedias
+HistGuide6900;2;HistGuide6900;HistGuide6800;Fachnachschlagewerke ;ej1;Special Encyclopedias
+HistGuide6950;2;HistGuide6950;HistGuide6800;Biographische Nachschlagewerke ;ej2;Biographical Lexica
+HistGuide7000;2;HistGuide7000;HistGuide6800;Datensammlungen ;d6;Data Collections
+HistGuide7050;2;HistGuide7050;HistGuide6800;Fachwörterbücher ;we;Dictionaries, Thesauri
+HistGuide7100;2;HistGuide7100;HistGuide6800;Ortsverzeichnisse ;oe;Gazetteers
+HistGuide7150;2;HistGuide7150;HistGuide6800;Adress- und Personenverzeichnisse ;ay?;Addresses and Personnel Directories
+HistGuide7200;2;HistGuide7200;HistGuide6800;Diskussionslisten ;dg;Discussion Lists
+HistGuide7250;1;HistGuide7250;HistGuide0000;Fachportale, bibliographische Datenbanken ;;Information Servers, Bibliographic Sources
+HistGuide7300;2;HistGuide7300;HistGuide7250;Fachportale ;ff;General Virtual Libraries
+HistGuide7350;2;HistGuide7350;HistGuide7250;Übergreifende Bibliographien ;blz6;General Bibliographies
+HistGuide7400;2;HistGuide7400;HistGuide7250;Spezialbibliographien ;bl;Special Bibliographies
+HistGuide7450;2;HistGuide7450;HistGuide7250;Bibliothekskataloge ;kb?;Library Catalogs
+HistGuide7500;1;HistGuide7500;HistGuide0000;Digitalisierte Quellen, Pulikationen, Fotos, Karten usw. ;;Digitized Primary Sources, Publications, Photos, Maps, etc. 
+HistGuide7550;2;HistGuide7550;HistGuide7500;Quellen ;q6;Primary Sources
+HistGuide7600;2;HistGuide7600;HistGuide7500;Lehrmaterialien ;te;Teaching Material
+HistGuide7650;2;HistGuide7650;HistGuide7500;Karten ;ka?;Maps
+HistGuide7700;2;HistGuide7700;HistGuide7500;Audiovisuelle Materialien ;mp or to;(Moving) Pictures, Sound
+HistGuide7750;2;HistGuide7750;HistGuide7500;Bilder, Photos ;bb;Pictures, photos
+HistGuide7800;2;HistGuide7800;HistGuide7500;Virtuelle Ausstellungen ;at;Virtual Exhibitions
+HistGuide7850;2;HistGuide7850;HistGuide7500;Software ;do;Software
