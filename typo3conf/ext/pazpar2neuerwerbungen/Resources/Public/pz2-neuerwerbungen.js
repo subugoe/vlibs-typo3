@@ -102,11 +102,9 @@ function runSearchForForm (form) {
 		jQuery('.pz2-atomLink').show().attr('href', myAtomURL);
 
 		var linkElement = document.getElementById('pz2neuerwerbungen-atom-linkElement');
-		if (linkElement) {
-			
-		}
-		else {
+		if (!linkElement) {
 			linkElement = document.createElement('link');
+			linkElement.setAttribute('id', 'pz2neuerwerbungen-atom-linkElement');
 			linkElement.setAttribute('rel', 'alternate');
 			linkElement.setAttribute('type', 'application/atom+xml');
 			document.head.appendChild(linkElement);
