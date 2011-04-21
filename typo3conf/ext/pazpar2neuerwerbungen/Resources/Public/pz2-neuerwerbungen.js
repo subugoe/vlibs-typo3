@@ -203,11 +203,12 @@ function selectedGOKsInFormWithWildcard (form, wildcard) {
 	jQuery('fieldset', form).each( function (index) {
 			if ( jQuery('legend>label :checked', this)[0]
 					&& jQuery('legend>label :checked', this)[0].value !== 'CHILDREN') {
-				addSearchTermsToList(jQuery('legend>label :checked', this)[0].value, GOKs, wildcard);
+				var searchTerms = jQuery('legend>label :checked', this)[0].value.split(',');
+				addSearchTermsToList(searchTerms, GOKs, wildcard);
 			}
 			else {
 				jQuery('ul :checked', this).each( function (index) {
-						addSearchTermsToList(this.value, GOKs, wildcard);
+						addSearchTermsToList(this.value.split(','), GOKs, wildcard);
 					}
 				);
 			}
@@ -225,8 +226,6 @@ function selectedGOKsInFormWithWildcard (form, wildcard) {
  * Builds a query string using the selected GOKs and date in the passed form.
  * Equals assignment and wildcard can be configured to yield strings that can
  *	be used as Pica Opac queries or as CCL queries.
- * An additional not (SLK A OR SLK P) condition is added to the query to avoid
- *  getting results that are not avaialable.
  * undefined is returned when there are no GOKs to search for.
  *
  * inputs:	form - DOM element of the form to get the data from
@@ -242,12 +241,9 @@ function buildSearchQueryWithEqualsAndWildcard (form, equals, wildcard) {
 		var LKLQueryString = oredSearchQueries(GOKs, 'lkl', equals);
 
 		var dates = [];
-		addSearchTermsToList( jQuery('.pz2-months :selected', form)[0].value, dates, wildcard);
+		var searchTerms = jQuery('.pz2-months :selected', form)[0].value.split(',');
+		addSearchTermsToList(searchTerms, dates, wildcard);
 		var	DTMQueryString = oredSearchQueries(dates, 'dtm', equals);
-
-		// var statuses = [];
-		// addSearchTermsToList('a,r', statuses, wildcard);
-		// var SLKQueryString = oredSearchQueries(statuses, 'slk', equals);
 		
 		var queryString = LKLQueryString + ' and ' + DTMQueryString // + ' not ' + SLKQueryString;
 	}
@@ -278,19 +274,17 @@ function oredSearchQueries (queryTerms, key, equals) {
 /*
  * addSearchTermsToList
  *
- * Helper function to add the components of a given string to a components
- *	array, potentially adding a wildcard to each in the process.
+ * Helper function adding the elements of an array to a given array,
+ *	potentially appending a wildcard to each of them in the process.
  *
- * inputs:	termsString - string containing a number of comma-separated
- *				components, each of which will be added to the list
+ * inputs:	searchTerms - array of strings which will be added to the list
  *			list - array that each component will be added to
  *			wildcard - string that is appended to each component before adding
  *				it to the list
  */
-function addSearchTermsToList (termsString, list, wildcard) {
-	var terms = termsString.split(',')
-	for (var termIndex in terms) {
-		var term = terms[termIndex];
+function addSearchTermsToList (searchTerms, list, wildcard) {
+	for (var termIndex in searchTerms) {
+		var term = searchTerms[termIndex];
 		if (term && term !== '') {
 			list.push(term + wildcard);
 		}
