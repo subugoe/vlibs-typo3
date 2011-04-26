@@ -242,7 +242,7 @@ function localise (term, externalDictionary) {
 	var localised = dictionary[languageCode][term];
 	if (localised == undefined) {
 		localised = term;
-		console.log('No localisation for: "' + term + '"');
+		// console.log('No localisation for: "' + term + '"');
 	}
 
 	return localised;
@@ -635,6 +635,11 @@ function my_onshow (data) {
 				for (var dateIndex in hit['md-date']) {
 					hit['md-filterDate'].push(hit['md-date'][dateIndex].substr(0,4));
 				}
+			}
+			// If there is no title information but series information, use the
+			// first series field for the title.
+			if (!(hit['md-title'] || hit['md-multivolume-title']) && hit['md-series-title']) {
+				hit['md-multivolume-title'] = hit['md-series-title'][0];
 			}
 			
 			hitList[hitID] = hit;

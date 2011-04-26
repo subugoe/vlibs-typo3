@@ -42,13 +42,25 @@ class Tx_Pazpar2_Domain_Model_Query extends Tx_Extbase_DomainObject_AbstractEnti
 	public function getQueryStringPerson () { return $this->queryStringPerson; }
 	public function getQueryStringDate () { return $this->queryStringDate; }
 
+	
+
+	/**
+	 * Setter for the main query string.
+	 * 
+	 * @param string $newQueryString 
+	 */
+	public function setQueryString ($newQueryString) { 
+		$this->queryString = $newQueryString;
+	}
+
+	
 	/**
 	 * Set search query elements from the request’s arguments array.
 	 * 
 	 * @param array $newArguments 
 	 */
 	public function setQueryFromArguments ($newArguments) {
-		$this->queryString = trim($newArguments['queryString']);
+		$this->setQueryString(trim($newArguments['queryString']));
 		$this->queryStringTitle = trim($newArguments['queryStringTitle']);
 		$this->querySwitchJournalOnly = ($newArguments['querySwitchJournalOnly'] != '');
 		$this->queryStringPerson = trim($newArguments['queryStringPerson']);
@@ -376,6 +388,13 @@ class Tx_Pazpar2_Domain_Model_Query extends Tx_Extbase_DomainObject_AbstractEnti
 					foreach ($hits as $hit) {
 						$myHit = $hit['ch'];
 						$key = $myHit['recid'][0]['values'][0];
+						// If there is no title information but series information, use the
+						// first series field for the title.
+						if (!(array_key_exists('md-title', $myHit) || array_key_exists('md-multivolume-title', $myHit))
+								&& array_key_exists('md-series-title', $myHit)) {
+							$myHit['md-multivolume-title'] = Array($myHit['md-series-title'][0]);
+						}
+						
 						$this->results[$key] = $myHit;
 					}
 				}

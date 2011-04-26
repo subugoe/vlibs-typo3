@@ -1,5 +1,5 @@
 # set <base> URL
-config.baseURL = http://10.0.5.99/typo3/
+config.baseURL = http://vlib.sub.uni-goettingen.de/vlib-test/
 
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">

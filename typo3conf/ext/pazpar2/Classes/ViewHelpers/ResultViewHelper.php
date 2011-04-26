@@ -245,20 +245,20 @@ private function renderDetails ($result) {
 	// duplicating persons listed in title-responsiblity already.
 	$result['md-author-clean'] = Array();
 	foreach ($result['md-author'] as $author) {
-		$nameParts = split(",", $author);
+		$nameParts = split(",", $author['values'][0]);
 		$authorName = trim($nameParts[0]);
 		foreach ($result['md-title-responsibility'] as $responsibility) {
-			if (strpos($responsibility, $authorName) === False) {
+			if (strpos($responsibility['values'][0], $authorName) === False) {
 				$result['md-author-clean'][] = $author;
 			}
 		}
 	}
 	$result['md-other-person-clean'] = Array();
 	foreach ($result['md-other-person'] as $otherPerson) {
-		$nameParts = split(",", $otherPerson);
+		$nameParts = split(",", $otherPerson['values'][0]);
 		$personName = trim($nameParts[0]);
 		foreach ($result['md-title-responsibility'] as $responsibility) {
-			if (strpos($responsibility, $personName) === False) {
+			if (strpos($responsibility['values'][0], $personName) === False) {
 				$result['md-other-person-clean'][] = $otherPerson;
 			}
 		}
@@ -635,6 +635,23 @@ private function addZDBInfoIntoElement ($container, $result) {
 
 
 /**
+ * Removes duplicate entries from an array of pazpar2 result values.
+ * 
+ * @param array $array of pazpar2 result values (each being an array with the element 'values' containing a 1-element array with the actual string
+ * @return array $array
+ */
+private function pz2ValuesUnique ($array) {
+	$newArray = Array();
+	foreach ($array as $element) {
+		$newArray[] = $element['values'][0];
+	}
+	
+	return array_unique($newArray);
+}
+
+
+
+/**
  * @param string $title name of the data field
  * @param array $result
  * @return array of DOM elements
@@ -644,11 +661,9 @@ private function DOMElementForTitle ($title, $result) {
 	$theData = Null;
 
 	if ($result['md-' . $title]) {
-		$theData = $result['md-' . $title];
-		// uniquing array elements omitted in PHP version
-
+		$theData = $this->pz2ValuesUnique($result['md-' . $title]);
 		foreach ($theData as $value) {
-			$rawDatum = $value['values'][0];
+			$rawDatum = $value;
 			$wrappedDatum = Null;
 			switch ($title) {
 				case 'doi':

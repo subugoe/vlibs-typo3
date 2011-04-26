@@ -12,7 +12,9 @@
 		<languageKey index="default" type="array">
 			<!-- <form> -->
 			<label index="Anzeigen">Anzeigen</label>
-			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Die aktuelle Liste als RSS-Feed abonnieren.</label>
+			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Diese Auswahl als Feed abonnieren.</label>
+			<label index="Results">Ergebnisse</label>
+			<label index="Status">Status</label>
 
 			<!-- PHP code -->
 			<label index="unvollständig">unvollständig</label>
@@ -63,7 +65,9 @@
 		<languageKey index="en" type="array">
 			<!-- <form> -->
 			<label index="Anezeigen">Show</label>
-			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Subscribe to the current query as RSS-feed.</label>
+			<label index="Die aktuelle Liste als RSS-Feed abonnieren.">Subscribe to these subjects as a feed.</label>
+			<label index="Results">Results</label>
+			<label index="Status">Status</label>
 
 			<!-- PHP code -->
 			<label index="unvollständig">incomplete</label>

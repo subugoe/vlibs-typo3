@@ -8,6 +8,7 @@
  * 2011 Sven-S. Porst <porst@sub.uni-goettingen.de>
  */
 
+
 /**
  * Class tx_nkwgok_loadHistory provides task procedures
  *
@@ -68,9 +69,8 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 	private function processCSVFile ($csvPath) {
 		$success = False;
 		$doc = Null;
+
 		$csvString = file_get_contents($csvPath);
-		$PPNList = Array();
-		
 		// Handle UTF-8, ISO, and Windows files. We expect the latter as the CSV is written by Excel.
 		$stringEncoding = mb_detect_encoding($csvString, Array('UTF-8', 'ISO-8859-1', 'windows-1252'));
 		if ($stringEncoding != 'UTF-8') {
@@ -92,7 +92,31 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 			$set = $doc->createElement('SET');
 			$result->appendChild($set);
 
-			while (($fields = fgetcsv($fileHandle, 4096, ';', '"')) !== false) { 
+			$PPNList = Array();
+
+
+			/* Work around PHP bug in CSV parsing: The fgetcsv function
+			 * only works correctly when the locale is _not_ en_US.UTF-8.
+			 * The PHP makers are in denial about this, which means they claim
+			 * the _intended_ behaviour of the function is to sometimes omit
+			 * the first character of a CSV field if it is not quoted and 
+			 * non-ASCII.
+			 * 
+			 * http://bugs.php.net/bug.php?id=31740
+			 * http://bugs.php.net/bug.php?id=48507
+			 * 
+			 * Problem seen, for example, in PHP 5.3 on Open Suse 11.3. 
+			 * 
+			 * To work around this, change the encoding part of the locale to
+			 * 'de_DE.UTF8' and set it back to the original value 'C' (?)
+			 * afterwards.
+			 * As locale changes seem to be in some sense 'global' to PHP, this 
+			 * has potential to cause trouble in unforeseen ways. 
+			 */
+			$oldLocale = setlocale(LC_CTYPE, Null);
+			setlocale(LC_CTYPE, 'de_DE.UTF8');
+			
+			while (($fields = fgetcsv($fileHandle, 4096, ';', '"')) !== false) {
 				if (count($fields) >= 5) {
 					// GOK name is in field 5, so ignore lines with less fields.
 					$shorttitle = $doc->createElement('SHORTTITLE');
@@ -112,7 +136,13 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 
 						if (count($fields) >6) {
 							// English GOK Name
-							$this->appendFieldForDataTo('044F', 'a', trim($fields[6]), $record, $doc);
+							$englishTitleField = $this->appendFieldForDataTo('044F', 'a', trim($fields[6]), $record, $doc);
+							if ($englishTitleField) {
+								$subfield = $doc->createElement('subfield');
+								$subfield->setAttribute('code', 'b');
+								$englishTitleField->appendChild($subfield);
+								$subfield->appendChild($doc->createTextNode('eng'));
+							}
 						}
 					}
 					
@@ -130,10 +160,14 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 					$PPNList[$PPN] = True;
 										
 				}	
-				else if (count($fields) != 0) {
+				else if (count($fields) > 1) {
 					t3lib_div::devLog('loadHistory Scheduler Task: Line "' . implode(';', $fields) . 'contains less than 5 fields.', 'nkwgok', 2);
 				}
 			}
+			
+			// Undo locale change required by fgetcsv() bug [see above].
+			setlocale(LC_CTYPE, $oldLocale);
+			
 			fclose($fileHandle); 
 
 			// Write XML file
@@ -168,8 +202,11 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 	 * @param string $content text put into the subfield
 	 * @param DOMElement $container the datafield is appended to
 	 * @param DOMDocument $doc of $container
+	 * @return DOMElement|Null The datafield tha was inserted
 	 */
 	private function appendFieldForDataTo ($fieldName, $subfieldName, $content, $container, $doc) {
+		$datafield = Null;
+		
 		if ($fieldName !== Null && $subfieldName !== Null
 				&& $content !== Null && $container !== Null && $doc !== Null) {
 			$datafield = $doc->createElement('datafield');
@@ -185,6 +222,8 @@ class tx_nkwgok_loadHistory extends tx_scheduler_Task {
 		else {
 			t3lib_div::devLog('loadHistory Scheduler Task: Some parameter was Null in appendFieldForDataTo' , 'nkwgok', 3);
 		}
+		
+		return $datafield;
 	}
 
 

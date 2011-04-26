@@ -2,6 +2,9 @@
 RewriteEngine On
 RewriteRule ^typo3$ - [L]
 RewriteRule ^typo3/.*$ - [L]
+
+RewriteRule opac.atom /demo/opac-feed/opac-feed2.php [L]
+
  
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
