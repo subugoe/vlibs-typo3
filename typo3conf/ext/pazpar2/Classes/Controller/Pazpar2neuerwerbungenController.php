@@ -3,7 +3,7 @@
  *  Copyright notice
  *
  *  © 2010-2011 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
- *  All rigs reserved
+ *  All rights reserved
  *
  *  This script is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -17,19 +17,18 @@
  * Pazpar2neuerwerbungenController.php
  *
  * Main controller for pazpar2 Neuerwerbungen plug-in,
- * a subclass of the pazpar2 plug-in.
+ * of the pazpar2 Extension.
  *
  * @author Sven-S. Porst <porst@sub-uni-goettingen.de>
  */
 
-require_once(t3lib_extMgm::extPath('pazpar2') . 'Classes/Controller/Pazpar2Controller.php');
 
 
 
 /**
  * Controller for the pazpar2 Neuerwerbungen package.
  */
-class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extends Tx_Pazpar2_Controller_Pazpar2Controller {
+class Tx_Pazpar2_Controller_Pazpar2neuerwerbungenController extends Tx_Pazpar2_Controller_Pazpar2Controller {
 
 	/**
 	 * Model object used for handling the parameters.
@@ -47,9 +46,8 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	 */
 	protected function defaultSettings () {
 		$defaults = parent::defaultSettings();
-
-		$defaults['pz2-neuerwerbungenJSPath'] = t3lib_extMgm::siteRelPath('pazpar2neuerwerbungen') . 'Resources/Public/pz2-neuerwerbungen.js';
-		$defaults['pz2-neuerwerbungenCSSPath'] = t3lib_extMgm::siteRelPath('pazpar2neuerwerbungen') . 'Resources/Public/pz2-neuerwerbungen.css';
+		$defaults['pz2-neuerwerbungenJSPath'] = t3lib_extMgm::siteRelPath('pazpar2') . 'Resources/Public/pz2-neuerwerbungen.js';
+		$defaults['pz2-neuerwerbungenCSSPath'] = t3lib_extMgm::siteRelPath('pazpar2') . 'Resources/Public/pz2-neuerwerbungen.css';
 		$defaults['subjects'] = '';
 
 		return $defaults;
@@ -61,11 +59,13 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	 * Initialiser.
 	 * 
 	 * Initialises parent class and sets up model object.
+	 *
+	 * @return void
 	 */
 	public function initializeAction() {
 		parent::initializeAction();
 		
-		$this->pz2Neuerwerbungen = new Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen;
+		$this->pz2Neuerwerbungen = t3lib_div::makeInstance('Tx_Pazpar2_Domain_Model_Pazpar2neuerwerbungen');
 		$this->pz2Neuerwerbungen->setMonths($this->monthsArray());
 	}
 	
@@ -322,7 +322,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 			$displayString = $monthName . ' ' . $year;
 
 			if ($i == 1) {
-				$displayString .= ' (' . Tx_Extbase_Utility_Localization::translate('unvollständig', 'pazpar2neuerwerbungen') . ')';
+				$displayString .= ' (' . Tx_Extbase_Utility_Localization::translate('unvollständig', 'pazpar2') . ')';
 			}
 
 			$months[$searchString] = $displayString;
@@ -362,7 +362,7 @@ class Tx_Pazpar2neuerwerbungen_Controller_Pazpar2neuerwerbungenController extend
 	 */
 	private function getSubjectsArray () {
 		$subjectsFile = 'Configuration/Subjects/' . $this->conf['subjects'] . '.php';
-		require_once(t3lib_extMgm::siteRelPath('pazpar2neuerwerbungen') . $subjectsFile);
+		require_once(t3lib_extMgm::siteRelPath('pazpar2') . $subjectsFile);
 
 		foreach ($subjectGroups as &$subjectGroup) {
 			if (!$subjectGroup['GOKs']) {

@@ -27,7 +27,7 @@
 /**
  * pazpar2 Neuerwerbungen model object.
  */
-class Tx_Pazpar2neuerwerbungen_Domain_Model_Pazpar2neuerwerbungen extends Tx_Extbase_DomainObject_AbstractEntity {
+class Tx_Pazpar2_Domain_Model_Pazpar2neuerwerbungen extends Tx_Extbase_DomainObject_AbstractEntity {
 
 
 	/**
