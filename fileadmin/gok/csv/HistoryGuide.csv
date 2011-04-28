@@ -1,14 +1,15 @@
-HistGuide0000;0;HistGuide0000;HistGuide;Geschichte ;PA? or 900;History 
+HistGuide0000;0;HistGuide0000;;Geschichte ;PA? or 900;History 
 HistGuide0050;1;HistGuide0050;HistGuide0000;Geschichte der Geschichtsschreibung ;(PB? and not PBT?) or 907.2;History of historiography 
-HistGuide0100;1;HistGuide0100;HistGuide0000;Geschichtstheorie ;PBK?;Theory of history 
-HistGuide0150;1;HistGuide0150;HistGuide0000;Geschichtsdidaktik ;PBW? or 907.1?;Education and didactics
-HistGuide0200;1;HistGuide0200;HistGuide0000;Politische Geschichte ;PCA? or PCB?;Political history in general 
-HistGuide0250;2;HistGuide0250;HistGuide0200;Internationale Beziehungen und Diplomatiegeschichte ;327? or PFE?;International relations and diplomatic history
-HistGuide0300;2;HistGuide0300;HistGuide0200;Verfassungsgeschichte ;342?;Constitutional history 
-HistGuide0350;2;HistGuide0350;HistGuide0200;Politische Parteien ;324?;Political Parties 
-HistGuide0400;1;HistGuide0400;HistGuide0000;Kulturgeschichte ;PCD?;Cultural history in general 
-HistGuide0450;1;HistGuide0450;HistGuide0000;Sozialgeschichte ;PCL?;Social history in general 
-HistGuide0500;1;HistGuide0500;HistGuide0000;Wirtschaftsgeschichte ;PC? and not (PCB? or PCD?);Economic history in general 
+HistGuide0100;2;HistGuide0100;HistGuide0050;Geschichtstheorie ;PBK?;Theory of history 
+HistGuide0150;2;HistGuide0150;HistGuide0050;Geschichtsdidaktik ;PBW? or 907.1?;Education and didactics
+HistGuide0200;1;HistGuide0200;HistGuide0000;Teilbereiche der Geschichte ;PC? ;Partial fields of history 
+HistGuide0210;2;HistGuide0210;HistGuide0200;Politische Geschichte ;PCA? or PCB?;Political history in general 
+HistGuide0250;3;HistGuide0250;HistGuide0210;Internationale Beziehungen und Diplomatiegeschichte ;327? or PFE?;International relations and diplomatic history
+HistGuide0300;3;HistGuide0300;HistGuide0210;Verfassungsgeschichte ;342?;Constitutional history 
+HistGuide0350;3;HistGuide0350;HistGuide0210;Politische Parteien ;324?;Political Parties 
+HistGuide0400;2;HistGuide0400;HistGuide0200;Kulturgeschichte ;PCD?;Cultural history in general 
+HistGuide0450;2;HistGuide0450;HistGuide0200;Sozialgeschichte ;PCL?;Social history in general 
+HistGuide0500;2;HistGuide0500;HistGuide0200;Wirtschaftsgeschichte ;PC? and not (PCB? or PCD?);Economic history in general 
 HistGuide0550;1;HistGuide0550;HistGuide0000;Historische Hilfswissenschaften ;PD? or 902?;Auxiliary sciences (all sites) 
 HistGuide0600;2;HistGuide0600;HistGuide0550;Archive und Archivführer;PDB? or PDC? ;Archives and archival inventories
 HistGuide0650;2;HistGuide0650;HistGuide0550;Paläographie, Diplomatik, Epigraphik ;PDG? or PDQ? or PDS?;Paleography, diplomacy and inscriptions 
@@ -49,7 +50,6 @@ HistGuide2350;1;HistGuide2350;HistGuide0000;Spanien und Portugal ;PPQ? or 946?;S
 HistGuide2400;1;HistGuide2400;HistGuide0000;Italien ;PR? or 945?;Italy 
 HistGuide2450;1;HistGuide2450;HistGuide0000;Osteuropa ;PT? or 947?;Eastern Europe 
 HistGuide2500;1;HistGuide2500;HistGuide0000;Asien ;PU? or 95?;History of Asia 
-HistGuide2550;1;HistGuide2550;HistGuide0000;Amerika ;PV? or 97?;History of America 
 HistGuide2600;1;HistGuide2600;HistGuide0000;Amerika insgesamt ;PVA? or PVB? or PVC? or 970?;America in general
 HistGuide2650;1;HistGuide2650;HistGuide0000;Kanada ;PVD? or 971;Canada 
 HistGuide2700;2;HistGuide2700;HistGuide2650;Quellen ;PVD 1?;Sources
