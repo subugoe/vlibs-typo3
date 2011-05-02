@@ -97,13 +97,13 @@ class tx_t3jquery_tsparserext
 	</div>';
 			}
 			// Check if the library exists
-			if (! file_exists(PATH_site . $configDir . "jquery-".$jQueryVersion.".js")) {
+			if (! file_exists(PATH_site . $configDir . tx_t3jquery::getJqName())) {
 				$out .= '
 	<a href="javascript:void();" onclick="top.goToModule(\'tools_txt3jqueryM1\',\'\',\'createLib=1\');this.blur();return false;">
 		<div class="typo3-message message-warning">
 			<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader2') . '</div>
 			<div class="message-body">
-				' . sprintf($GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg2'), $configDir."jquery-".$jQueryVersion.".js") . '
+				' . sprintf($GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsg2'), $configDir . tx_t3jquery::getJqName()) . '
 			</div>
 		</div>
 	</a>';
@@ -126,6 +126,8 @@ class tx_t3jquery_tsparserext
 			'alwaysIntegrate',
 			'integrateToFooter',
 			'dontIntegrateOnUID',
+			'dontIntegrateInRootline',
+			'jqLibFilename',
 			'integrateFromCDN',
 			'locationCDN',
 			'configDir',

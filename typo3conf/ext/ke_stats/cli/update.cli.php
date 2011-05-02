@@ -3,7 +3,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2007-2009 Christian Bülter <buelter@kennziffer.com>
+*  (c) 2007-2011 Christian Bï¿½lter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is

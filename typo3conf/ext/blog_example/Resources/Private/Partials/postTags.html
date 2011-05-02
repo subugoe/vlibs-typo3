@@ -1,3 +1,0 @@
-<f:if condition="{post.tags}">
-	Tags: <f:for each="{post.tags}" as="tag">[<f:link.action action="index" controller="Post" arguments="{blog : post.blog, tag : '{tag.name}'}">{tag.name}</f:link.action>]&nbsp;</f:for>
-</f:if>

@@ -30,6 +30,8 @@ plugin.tx_rlmplanguagedetection_pi1 {
 		lu = de
 		li = de
 		se = sv
+		ua = ru
+		by = ru
 	}
 	
 	limitToLanguages = 

@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2007-2009 Christian Bülter <buelter@kennziffer.com>
+*  (c) 2007-2011 Christian BÃ¼lter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -33,7 +33,7 @@ require_once(PATH_BE_KESTATS.'lib/class.tx_kestats_lib.php');
 /**
  * Plugin 'statistics counter' for the 'ke_stats' extension.
  *
- * @author	Christian Bülter <buelter@kennziffer.com>
+ * @author	Christian BÃ¼lter <buelter@kennziffer.com>
  * @package	TYPO3
  * @subpackage	tx_kestats
  */
@@ -102,7 +102,7 @@ class tx_kestats_pi1 extends tslib_pibase {
 			return '';
 		}
 
-			// get the data
+			// get the general data
 		$this->getData();
 
 			// the data of the counted element (in this case, the current page)
@@ -416,6 +416,8 @@ class tx_kestats_pi1 extends tslib_pibase {
 		return '';
 	}/*}}}*/
 
+
+
 	/**
 	 * initApi
 	 *
@@ -433,9 +435,14 @@ class tx_kestats_pi1 extends tslib_pibase {
 	 * @return void
 	 */
 	function initApi() {
-		// collect time data
+
+		// init
+		$this->browsers = $GLOBALS['browsers'];
+		$this->robots = $GLOBALS['robots'];
+		$this->search_engines = $GLOBALS['search_engines'];
+		$this->operating_systems = $GLOBALS['operating_systems'];
 		$this->now = time();
-		$this->getTimeData();
+		$this->getData();
 
 		// instantiate the shared library
 		$this->kestatslib = t3lib_div::makeInstance('tx_kestats_lib');

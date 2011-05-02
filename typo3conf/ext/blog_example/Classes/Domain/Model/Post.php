@@ -1,35 +1,30 @@
 <?php
 /***************************************************************
-*  Copyright notice
-*
-*  (c) 2009 Jochen Rau <jochen.rau@typoplanet.de>
-*  All rights reserved
-*
-*  This script is part of the TYPO3 project. The TYPO3 project is
-*  free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License as published by
-*  the Free Software Foundation; either version 2 of the License, or
-*  (at your option) any later version.
-*
-*  The GNU General Public License can be found at
-*  http://www.gnu.org/copyleft/gpl.html.
-*
-*  This script is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-*  GNU General Public License for more details.
-*
-*  This copyright notice MUST APPEAR in all copies of the script!
-***************************************************************/
+ *  Copyright notice
+ *
+ *  (c) 2009 Jochen Rau <jochen.rau@typoplanet.de>
+ *  (c) 2011 Bastian Waidelich <bastian@typo3.org>
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
 
 /**
  * A blog post
- *
- * @package Blog
- * @subpackage Domain
- * @version $Id:$
- * @copyright Copyright belongs to the respective authors
- * @license http://opensource.org/licenses/gpl-license.php GNU Public License, version 2
  */
 class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractEntity {
 
@@ -37,7 +32,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @var Tx_BlogExample_Domain_Model_Blog
 	 */
 	protected $blog;
-	
+
 	/**
 	 * @var string
 	 * @validate StringLength(minimum = 3, maximum = 50)
@@ -56,6 +51,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 
 	/**
 	 * @var string
+	 * @validate StringLength(minimum = 3)
 	 */
 	protected $content;
 
@@ -63,7 +59,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_BlogExample_Domain_Model_Tag>
 	 */
 	protected $tags;
-	
+
 	/**
 	 * @var Tx_Extbase_Persistence_ObjectStorage<Tx_BlogExample_Domain_Model_Comment>
 	 * @lazy
@@ -76,7 +72,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @lazy
 	 */
 	protected $relatedPosts;
-	
+
 	/**
 	 * Constructs this post
 	 */
@@ -86,7 +82,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 		$this->relatedPosts = new Tx_Extbase_Persistence_ObjectStorage();
 		$this->date = new DateTime();
 	}
-	
+
 	/**
 	 * Sets the blog this post is part of
 	 *
@@ -152,7 +148,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @return void
 	 */
 	public function setTags(Tx_Extbase_Persistence_ObjectStorage $tags) {
-		$this->tags = clone $tags;
+		$this->tags = $tags;
 	}
 
 	/**
@@ -174,7 +170,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	public function removeTag(Tx_BlogExample_Domain_Model_Tag $tag) {
 		$this->tags->detach($tag);
 	}
-	
+
 	/**
 	 * Remove all tags from this post
 	 *
@@ -186,6 +182,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 
 	/**
 	 * Getter for tags
+	 * Note: We return a clone of the tags because they must not be modified as they are Value Objects
 	 *
 	 * @return Tx_Extbase_Persistence_ObjectStorage A storage holding Tx_BlogExample_Domain_Model_Tag objects
 	 */
@@ -260,14 +257,17 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	public function removeComment(Tx_BlogExample_Domain_Model_Comment $commentToDelete) {
 		$this->comments->detach($commentToDelete);
 	}
-	
+
 	/**
 	 * Remove all comments from this post
 	 *
 	 * @return void
 	 */
 	public function removeAllComments() {
-		$this->comments = new Tx_Extbase_Persistence_ObjectStorage();
+		$comments = clone $this->comments;
+		foreach($comments as $comment) {
+			$this->comments->detach($comment);
+		}
 	}
 
 	/**
@@ -276,9 +276,9 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @return An Tx_Extbase_Persistence_ObjectStorage holding instances of Tx_BlogExample_Domain_Model_Comment
 	 */
 	public function getComments() {
-		return clone $this->comments;
+		return $this->comments;
 	}
-	
+
 	/**
 	 * Setter for the related posts
 	 *
@@ -288,7 +288,7 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	public function setRelatedPosts(Tx_Extbase_Persistence_ObjectStorage $relatedPosts) {
 		$this->relatedPosts = $relatedPosts;
 	}
-	
+
 	/**
 	 * Adds a related post
 	 *
@@ -298,14 +298,17 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	public function addRelatedPost(Tx_BlogExample_Domain_Model_Post $post) {
 		$this->relatedPosts->attach($post);
 	}
-	
+
 	/**
 	 * Remove all related posts
 	 *
 	 * @return void
 	 */
 	public function removeAllRelatedPosts() {
-		$this->relatedPosts = new Tx_Extbase_Persistence_ObjectStorage();
+		$relatedPosts = clone $this->relatedPosts;
+		foreach($relatedPosts as $relatedPost) {
+			$this->relatedPosts->detach($relatedPost);
+		}
 	}
 
 	/**
@@ -314,9 +317,9 @@ class Tx_BlogExample_Domain_Model_Post extends Tx_Extbase_DomainObject_AbstractE
 	 * @return An Tx_Extbase_Persistence_ObjectStorage holding instances of Tx_BlogExample_Domain_Model_Post
 	 */
 	public function getRelatedPosts() {
-		return clone $this->relatedPosts;
+		return $this->relatedPosts;
 	}
-	
+
 	/**
 	 * Returns this post as a formatted string
 	 *
