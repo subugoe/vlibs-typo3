@@ -37,15 +37,16 @@ TODO:
 * figure out how to make the imgParams line work (it's ineffective right now)
 */
 
-lib.language = CONTENT
-[globalVar = GP:L = 0]
-lib.language.10 = <a href="">Hallo Welt</a>
-[global]
+lib.language = TEXT
+lib.language.value = English
+lib.language.typolink.parameter.data = page:uid
+lib.language.typolink.additionalParams = &L=2
+lib.language.typolink.ATagParams = hreflang="en" lang="en" class="languageSwitcher"
 [globalVar = GP:L = 2]
-lib.language.10 = <a href="">Hello World</a>
+	lib.language.value = Deutsch
+	lib.language.typolink.additionalParams = &L=0
+	lib.language.typolink.ATagParams = hreflang="de" lang="de" class="languageSwitcher"
 [global]
-
-
 
 
 plugin.tx_rlmplanguagedetection_pi1 {
