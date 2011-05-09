@@ -42,11 +42,11 @@ body {
 	font-size: 85%;
 }
 
-#menu a {
+.mainmenu a {
 	text-decoration: none;
 }
 
-#menu a:link:hover, #menu .current a, #menu .currentParent>a {
+.mainmenu a:link:hover, .mainmenu .current a, .mainmenu .currentParent>a {
 	background: #99ffff;
 }
 
@@ -129,8 +129,13 @@ body {
 
 .languageSwitcher {
 	position: absolute;
-	top: 0px;
-	right: 0px;
+	top: 15px;
+	right: -5px;
+	text-decoration: none;
+}
+
+.languageSwitcher:hover {
+	text-decoration: underline;
 }
 
 
