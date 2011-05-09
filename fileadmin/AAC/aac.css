@@ -1,0 +1,138 @@
+/*
+	Stylesheet for Lib AAC.
+	2011 Sven-S. Porst <porst@sub.uni-goettingen.de>
+	Implementing the design by Henrik Cederblad based on the 960 grid system.
+*/
+
+@import url("grid.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	background: url(background.png) repeat-x;
+	line-height: 160%;
+	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+}
+
+#head {
+	height: 140px;
+	background: url(header.png) no-repeat;
+	text-indent: -9999em;
+}
+
+#foot {
+	text-align: center;
+	margin-top: 20px;
+	padding: 10px 0;
+}
+
+
+/*
+	MENU
+*/
+
+#menu {
+	position: relative;
+	height: 85px;
+	margin-bottom: 20px;
+	font-size: 85%;
+}
+
+#menu a {
+	text-decoration: none;
+}
+
+#menu a:link:hover, #menu .current a, #menu .currentParent>a {
+	background: #99ffff;
+}
+
+.mainmenu {
+	padding-top: 15px;
+	margin-left: -5px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.mainmenu ul {
+	list-style-type: none;
+}
+
+.mainmenu li {
+	display: inline;
+	margin-right: 1em;
+}
+
+.mainmenu li.last {
+	margin-right: 0;
+}
+
+.mainmenu li a {
+	padding: 5px;
+}
+
+.submenu {
+	position: absolute;
+	top: 45px;
+	left: 1em;
+	right: 0;
+	text-transform: none;
+}
+
+.submenu li {
+	margin: 0;
+}
+
+.submenu li:after {
+	margin: 0 0.5em;
+	content: '•';
+}
+
+.submenu li.last:after {
+	margin: 0;
+	content: '';
+}
+
+.submenu li.unlinkedParent a:after {
+	content: ':';
+}
+
+.submenu li.unlinkedParent ul a:after {
+	content: '';
+}
+
+
+
+.subsubmenu {
+	display: inline;
+	margin-left: 0.3em;
+	font-weight: normal;
+}
+
+#menu .subsubmenu li {
+	margin: 0;
+}
+
+.subsubmenu li:after {
+	content: '|';
+	margin: 0 0.3em;
+}
+
+.subsubmenu li.last:after {
+	content: '';
+}
+
+
+
+.languageSwitcher {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.languageSwitcher .currentLanguage {
+	display:none;
+}

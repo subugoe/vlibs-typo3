@@ -5,23 +5,21 @@ lib.menu {
   special.value = {$my_menu_root}
 
   1 = TMENU
-  1.wrap = <ul class="menu">|</ul>
+  1.wrap = <ul class="mainmenu">|</ul>
   1.expAll = True
   1.NO = 1
-  1.NO.wrapItemAndSub = <li>|</li>
+  1.NO.wrapItemAndSub = |*|<li>|</li>|*|<li class="last">|</li>
   1.CUR = 1
-  1.CUR.wrapItemAndSub = <li class="current">|</li>
+  1.CUR.wrapItemAndSub = |*|<li class="current"><a>|</a></li>|*|<li class="current last"><a>|</a></li>
   1.CUR.doNotLinkIt = 1
   1.ACT = 1
-  1.ACT.wrapItemAndSub = <li class="currentParent">|</li>
-  1.SPC = 1
-  1.SPC.doNotShowLink = 1
-  1.SPC.allWrap = <li class="spacer">|</li>
-  
+  1.ACT.wrapItemAndSub = |*|<li class="currentParent">|</li>|*|<li class="currentParent last">|</li>
+
   2 < .1
   2.wrap = <ul class="submenu">|</ul>
   2.IFSUB = 1
-  2.IFSUB.wrapItemAndSub = <li class="unlinkedParent">|</li>
+  2.IFSUB.wrapItemAndSub = |*|<li class="unlinkedParent">|</li>|*|<li class="unlinkedParent last">|</li>
+  2.IFSUB.stdWrap.dataWrap = |:
   2.IFSUB.doNotLinkIt = 1
 
   3 < .1

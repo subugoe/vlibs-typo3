@@ -34,6 +34,7 @@ page.1 {
 		HEADLINE.wrap = <h2>|</h2>
 
 		CONTENT < styles.content.get
+		RIGHT < styles.content.getRight
 		FOOT < lib.foot
 	}
 }
