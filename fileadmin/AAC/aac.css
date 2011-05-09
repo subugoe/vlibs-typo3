@@ -133,6 +133,19 @@ body {
 	right: 0px;
 }
 
-.languageSwitcher .currentLanguage {
-	display:none;
+
+/* style like a .grid_16 element */
+#pazpar2 {
+	display:inline;
+	float: left;
+	position: relative;
+	margin: 1em 10px;
+	width:940px;
+	
+	line-height: 125%;
+}
+
+.bodytext {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
