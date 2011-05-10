@@ -1,0 +1,170 @@
+<?php
+
+/***************************************************************
+ *  Copyright notice
+ *
+ *  (c) 2006 xxx
+ *  Contact: xxx
+ *  All rights reserved
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+ ***************************************************************/
+
+// Set configuration first
+$key = 'xxx';   // extension key
+$class = 'tx_xxx_testcase'; // class name
+$useDB = TRUE; // class name (Also loads the TYPO3 configuration files to fetch the passwords.)
+
+// Fix part to set before class definition
+error_reporting (E_ALL ^ E_NOTICE);
+if(!defined('PATH_site')) {              // If running from command line
+   tx_xxx_testcase_init($key);
+}
+require_once(t3lib_extMgm::extPath('t3unit') . 'class.tx_t3unit_testcase.php');
+
+/**
+ * Test class for tx_xxx
+ */
+class tx_xxx_testcase extends tx_t3unit_testcase  {
+
+    /****************************************************************
+     * main, setUP, tearDown
+     ****************************************************************/
+
+     public function __construct ($name) {
+          parent::__construct ($name);
+     }
+
+    /**
+     * Sets up the fixture, for example, open a network connection.
+     * This method is called before a test is executed.
+     *
+     * @access protected
+     */
+    protected function setUp() {
+    }
+
+    /**
+     * Tears down the fixture, for example, close a network connection.
+     * This method is called after a test is executed.
+     *
+     * @access protected
+     */
+    protected function tearDown() {
+    }
+
+    /**
+     * Load extension by key
+     *
+     * @access protected
+     * @par    string         extension key
+     * @return void    
+     * 
+     */
+    protected function load($key){
+        if(is_dir(PATH_site . 'typo3conf/ext/' . $key . '/')) {
+            $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath']
+                = 'typo3conf/ext/' . $key . '/';
+        }elseif(is_dir(PATH_site . 'typo3/ext/' . $key . '/')) {
+            $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath'] 
+                = 'typo3/ext/' . $key . '/';
+        }elseif(is_file(PATH_site . 'typo3/sysext/' . $key . '/')) {
+            $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath']
+                = 'typo3/sysext/' . $key . '/';
+        }else{
+            exit(chr(10) . 'Unknown installation path for ' . $key . '');
+        }
+    }
+
+    /**
+     * Runs the test methods of this class.
+     *
+     * @access public
+     * @static
+     */
+    public static function main() {
+        global $class;
+        require_once "PHPUnit2/TextUI/TestRunner.php";
+        $suite  = new PHPUnit2_Framework_TestSuite($class);
+        $result = PHPUnit2_TextUI_TestRunner::run($suite);
+    }
+
+
+}
+
+if(T3UNIT_commandline === TRUE){
+    // Fix part to set after class definition
+    if (!defined('PHPUnit2_MAIN_METHOD')) {
+        define('PHPUnit2_MAIN_METHOD', $class . '::main');
+    }
+    if (PHPUnit2_MAIN_METHOD == $class . '::main') {
+        eval($class . '::main();');
+    }
+}
+
+/****************************************************************
+ * global function
+ *
+ * rename tx_***_testcase_init to unique name to prevent conflicts
+ */ 
+
+function tx_xxx_testcase_init($key){
+    global $useDB;
+    define('T3UNIT_commandline', TRUE);  // Remember it
+    // Setup environment
+    $path = realpath($_SERVER['PWD'] .'/'. $_SERVER['SCRIPT_NAME']);
+    if(!preg_match('|(.*)(typo3conf.*)(' . $key . '/test)|', $path, $matches))
+        if(! preg_match('|(.*)(typo3/ext.*)(' . $key . '/test)|', $path, $matches))
+            if(! preg_match('|(.*)(typo3/sysext.*)(' . $key . '/test)|', $path, $matches))
+                exit(chr(10) . 'Unknown installation path' . chr(10). $path . chr(10));
+    define('PATH_site', $matches[1]);
+    define('PATH_t3lib', PATH_site . 't3lib/');
+    define('PATH_typo3conf', PATH_site . 'typo3conf/');
+    require_once(PATH_t3lib . 'class.t3lib_div.php');
+    require_once(PATH_t3lib . 'class.t3lib_extmgm.php');
+    if($useDB) {
+        require_once(PATH_t3lib.'config_default.php');
+        if (!defined ('TYPO3_db')) die ('The configuration file was not included.');
+        require_once(PATH_t3lib.'class.t3lib_db.php');
+        $GLOBALS['TYPO3_DB'] = t3lib_div::makeInstance('t3lib_DB');
+        if(! $GLOBALS['TYPO3_DB']->
+           sql_pconnect(TYPO3_db_host,TYPO3_db_username,TYPO3_db_password))
+            die('No database connection ' . mysql_error());
+        $GLOBALS['TYPO3_DB']->sql_select_db(TYPO3_db);
+    }
+
+    $GLOBALS['TYPO3_LOADED_EXT'][$key]['siteRelPath']= $matches[2] . $key . '/';
+
+    // t3unit to loaded extensions
+    $key = 't3unit';
+    if(is_dir(PATH_site . 'typo3conf/ext/' . $key . '/')) {
+        $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath']
+            = 'typo3conf/ext/' . $key . '/';
+    }elseif(is_dir(PATH_site . 'typo3/ext/' . $key . '/')) {
+        $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath'] 
+            = 'typo3/ext/' . $key . '/';
+    }elseif(is_file(PATH_site . 'typo3/sysext/' . $key . '/')) {
+        $GLOBALS['TYPO3_LOADED_EXT']['' . $key . '']['siteRelPath']
+            = 'typo3/sysext/' . $key . '/';
+    }else{
+        exit(chr(10) . 'Unknown installation path for ' . $key . '');
+    }
+}
+
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/' . $key . '/tests/class.' . $class . '.php']) {
+    include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/' . $key . '/tests/class.' . $class . '.php']);
+}
+
+?>

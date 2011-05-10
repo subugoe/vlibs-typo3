@@ -1,0 +1,25 @@
+
+      A chicken that lays eggs for you
+
+Usage: 
+
+	from within the typo3conf/ext directory: 
+
+  ./lib/tools/chicken   help 
+  ./lib/tools/chicken   extension 
+  ./lib/tools/chicken   class	   
+  ./lib/tools/chicken   gpl 
+
+Eggs:
+
+    help:         Show this help text
+    extension:    Create a new extension (with ext_emconf.php, ext_tables.php) 
+    class:        Create a new class     
+    gpl:          Show GPL license information
+
+NO WARRENTY! It's dangerous! BE CAREFULL! HAVE FUN!                Elmar
+
+MVC Chicken, Copyright (C) 2007 Elmar Hinz <elmar.hinz@team-red.net>
+MVC Chicken comes with ABSOLUTELY NO WARRANTY; for details type `chicken gpl'.
+This is free software, and you are welcome to redistribute it
+under certain conditions; type `chicken gpl' for details.

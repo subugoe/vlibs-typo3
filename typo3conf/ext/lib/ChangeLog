@@ -1,0 +1,124 @@
+30-11-05 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Version 0.1.0.
+	* Milestone -1 alpha
+	* PHP5 ready
+	* Result browser added.
+
+07-08-05 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Version 0.0.24.
+	* Milestone -2 alpha
+	* PHP5 ready
+	* Unique namings and behaviour for pathToTemplateDirectory and pathToLanguageFile 
+	* Several bug fixes
+
+07-06-04 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Version 0.0.21.
+	* Created tx_lib_formBase.
+	* Created tx_lib_formBuilder.
+	* Created tx_lib_phpFormEngine.
+	* Switched dependency of lib and div.
+
+07-01-31 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* version 0.0.20
+	* created tx_lib_captcha 
+	* created tx_lib_viewBase
+
+07-01-29 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* version 0.0.19
+	* new object tx_lib_parameters
+	* new object tx_lib_validator
+	* diverse new function to support working with forms
+
+07-01-25 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* version 0.0.18
+	* renaming tx_lib_data => tx_lib_object
+	* renaming tx_lib_pluginCommin => tx_lib_selfAwareness
+	* renaming tx_lib_phpView => tx_lib_phpTemplateEngine
+	* interface to tx_lib_ArrayObject instead of inheritance
+	* interface to tx_lib_ArrayIterator instead of inheritance
+
+07-01-23 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* version 0.0.17
+	* from monolithic view to the SPL chain
+	* removed tx_lib_view, moved functions into tx_lib_data
+	* configuration and parameters are more strictly accessed via the controller
+
+07-01-20 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* release 0.0.16
+	* refinement of action and controller finding
+	* selectHash function for tx_lib_data: query a subset of the data content
+
+07-01-11 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* release 0.0.15
+	* tx_configuration > tx_configurations
+	* var $className > var $designator
+	* tx_lib_link->prefix()  > tx_lib_link->designator()
+	* simplification: tx_lib_controller->setController implies setConfigurations and setParameters
+
+07-01-11 Elmar Hinz  <elmar.hinz@team-red.net>
+	* release 0.0.14
+	* created common view class	
+
+07-01-08 Elmar Hinz  <elmar.hinz@team-red.net>
+	* release 0.0.13
+	* added flexform rendering to configuration object
+	* added PDF slideshow as documentation
+
+07-01-05 Elmar Hinz  <elmar.hinz@team-red.net>
+	* release 0.0.12
+	* removed blocker bug of translator
+
+07-01-03 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* release 0.0.11
+	* changed the var $extKey of tx_lib_pluginCommon to $extensionKey (Please 
+			update your extensions to match this alteration)
+	* Introduced the translator class
+	* Added many getter and printer actions to tx_lib_phpView
+	* Documented the source of nearly all classes
+	* Wrote large parts of the manual in restructured text
+	* some cleanups
+
+06-12-28 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* release 0.0.10
+	* Introduced the configurator class
+	* Introduced the image class
+	* Enhanced the controller by static actions
+	* Documented the source of the configuration class
+
+06-04-06 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* T3 Loader with unit tests
+	* Pear Loader with unit tests
+	* OO Controller, that can be extended by registration
+	* Working as MVC library
+	* A lot of little changes on all files	
+
+06-03-23 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* PHP4 Version of SPL class ArrayIterator
+	* PHP4 Version of SPL class ArrayObject
+	* Begin of a MVC library
+
+06-03-17 Elmar Hinz  <elmar.hinz@team-red.net>
+	
+	* Better icon
+
+06-03-16 Elmar Hinz  <elmar.hinz@team-red.net>
+	
+	* extension renaming from ect to lib
+	
+06-03-07 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Initial release
+	  

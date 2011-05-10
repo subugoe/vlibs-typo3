@@ -1,0 +1,87 @@
+  
+  == Motivation == 
+  
+  The class tslib_pibase if the hitherto base class for extension development. 
+  
+  There are some issus with caching, cryptic names and a jungle of link
+function. 
+  The concept of a single class is well suited for the development of little
+  extensions. As a framework for bigger projects that require a separation of
+the
+  buisiness logic and presentation it has limitations. 
+  
+  lib/div is a common effort of extension developers, to give an answer to this
+  limitations. 
+  
+  Although the development of TYPO3 is called an open project in theory, the 
+  practice often differs from this. Tries to get necessery improvements the core
+  depends on the good will of little number of core developers. Even if patches
+  are provided, it usually takes far to much time until they get applied. 
+  
+  Lib/div is designed to be more open. Patches to lib/div can directly be
+applied 
+  to the subversion, but they are reviewed by the lead developer(s) before they
+  are published to TER. However everybody is free to use unreviewed sources from
+  the SVN repository.
+  
+  == Targets reached ==
+  
+  * The library works independent from tslib_pibase.
+  * The library works in PHP4 and PHP5
+  * Conceptions of PHP5 are ported back to PHP4 (autoloader, SPL)
+  * tx_div is a collection of static functions for extensions, similar to
+    t3lib_div.
+  * The lib extension contains a framework for extension development, that is
+    extensible by the use of powerfull external libraries for database access, 
+    rendering and form handling.
+  * The overall architecture follows the Model-View-Controller pattern.
+  * The interfaces of the objects participationg the request live cycle and
+    carrying the data, implement the ideas of the Standard PHP Library (SPL).
+  * The controller is extensible by other extensions by registration of
+    additional actions.
+  * Assisting objects are provided i.e. to access the configuration and the
+    parameters.
+  * A link object is provided to build valid typolinks with a simple API.
+  
+  == Object hierarchy ==
+  
+  === Objects inheritig via tx_lib_object ===
+ 
+      tx_lib_selfAwareness                    tx_lib_spl_ArrayObject 
+          |                                      |
+      tx_lib_object    <-- "implements"<--    tx_lib_spl_ArrayIterator
+          |
+          | -- tx_lib_captcha	
+          | -- tx_lib_configurations 
+          | -- tx_lib_controller 
+          | -- tx_lib_parameters
+          | -- tx_lib_translator
+          | -- tx_lib_validator 
+          | -- tx_lib_viewBase
+          |         |
+          |		  tx_lib_phpTemplateEngine
+  
+  
+  === Independent objects ===
+  
+   
+      tx_lib_image
+      tx_lib_link
+      tx_lib_pearLoader
+      tx_lib_switch
+      tx_lib_t3Loader 
+   
+  
+  == TODO ==
+  
+    * Init/fill the parameters directly in the parameters object, not in
+  the controller.
+    * Same for configuration.
+    * How to access configuration from $TSFE?
+    * How to access configuration from $this-cObj?
+    * Extending the image object.
+		* Providing a Resultbrowser
+
+
+  
+  

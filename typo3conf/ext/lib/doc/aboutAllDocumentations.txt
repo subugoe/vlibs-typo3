@@ -1,0 +1,179 @@
+
+The original place: 
+
+EXT:lib/doc/aboutAllDocumentations.txt
+
+Versionized within:
+
+https://svn.sourceforge.net/svnroot/typo3xdev/tx_lib/trunk/doc/
+
+
+==========================================================
+How to find appropriate documentations concerning lib/div?
+==========================================================
+
+The lib/div library is a work in progress, driven by the community of
+extension developrs. You can find informations about the library in
+different places. As the project is developing very rapidly it's not
+easy to keep the overview of current and good documentations. With this
+document I want to give an overview, of what documentation is known.
+
+-----------------------------
+Documentation for programmers
+-----------------------------
+
+The sourcecode first
+--------------------
+
+The sourcecode is rich documentated. Usually it gives a very good source
+for the latests informations. In doubt the sourcecode of the latest
+releases gives the ultimative answers.
+
+Example implementations are the best tutors:
+--------------------------------------------
+
+Example implementations prove that the libraries work and tell how that
+has been done.
+
+a) Apples: 
+
+    A kind of hello world programm to get started with lib/div.
+
+b) Bananas: 
+
+    A little board, that shows the fundamental principles of the
+    usage. especially the fundamentals of form controllings.
+
+c) Cherries: 
+
+    This will demonstrate the use of the form library. (Experimental)
+
+d) Elmar's FAQ: 
+
+    A very complex example that shows extended features of the usage including
+		xajax and JS libraries. (Beta)
+
+Manuals:
+--------
+
+The included manuals are the official documentations, but they are not
+always the most recent ones. Often you will find a .txt version and a
+.swx version. The .txt version is written in "restructured text" or
+"markdown" notation. .sxw files are rendered from this, so the .text
+files may contain more recent documentations.
+
+Future structure of the manuals:
+
+ * Lib/div API: The architectural design and the classes (Started)
+ * Extension developers Tutorial(s): Explaining apples, bananas, cherries ... (TODO)
+ * Template Developers Tutorial (TODO)
+ * Lib/div extension the TYPO3 conding guidelines (TODO)
+
+The current manual.sxw is still a mixture of this all.
+
+Books:
+------
+
+"TYPO3 4.0, Das Handbuch für Entwickler"
+
+This book is from 2006. The last chapter about lib/div was
+contributed by me during the early phase of development. The code has
+changed a lot since then, the fundamental architectural principles
+still keep the same.
+
+Wiki: http://wiki.typo3.org/index.php/MVC_Framework
+---------------------------------------------------
+
+A good starting place, where you actively can contribute to share your
+own experiences with other users.
+
+
+Different external blogs:
+-------------------------
+
+http://www.tugle.de/know_how/tipps/typo3_und_das_mvc_konzept.html
+http://www.camlann.de/de/typo3ecke.html
+http://t3flyers.wordpress.com
+http://www.sk-typo3.de
+
+Newsgroup: typo3.teams.extension-coordination
+---------------------------------------------
+
+If you did not found answers to your questions in the mentioned
+documents, your are invited to ask your questions in the
+extension-coordinators newsgroup. In this case the question may also be
+interesting for them.
+
+-----------------------------
+Documentation for developers:
+-----------------------------
+
+The developers contribute actively to conception, to the lib/div
+sources, to related extensions like kickstarter__mvc or to the
+documentation
+
+Newsgroup: typo3.teams.extension-coordination
+---------------------------------------------
+
+For this people the NG of ECT is the first address, to coordinate their
+work.
+
+Concept documentation:
+----------------------
+
+I will include concept papers into the documentation directory of the
+extension. The audience for this documentations are the developers of
+the ECT, but they may also give some background informations for
+programmers that want to use lib/div.
+
+Planned documents:
+
+EXT:lib/doc/conceptionAlphaPhase.txt
+EXT:lib/doc/conceptionBetaPhase.txt
+EXT:lib/doc/conceptionStablePhase.txt
+
+Alpha Phase:
+
+I will gather the ideas in this document, that guided the
+development. Based on the current expriences, I will point out what
+changes need to be done that we can move to beta.
+
+Beta Phase:
+
+Here I will sketch down a more finegrained concept of the controller,
+including hooks, subrequests to other controllers etc. things that
+should be achived during Beta Phase. Some fundamental changings will be
+done in a temporary branch of the alpha version in preperation of beta.
+
+Stable Phase:
+
+It's to early to start this documentation.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

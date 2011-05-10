@@ -1,0 +1,232 @@
+#! /usr/bin/perl -w
+
+&controller::action;
+
+package controller; {
+	use strict;
+	use vars qw($model $view);
+
+	sub action {
+		my $help = '';
+		$model = new model();
+		$view =new view();
+		&help($model->getOrientation());
+		&help($model->findTarget());
+		&{\&{$model->getAction()}}();
+	}
+
+	sub extensionAction {
+		my %map;
+		$model->map('extensionKey', $view->prompt('Please give the extension key (no underscores):'));
+		$model->map('extensionTitle', $view->prompt('Please give the extension title):'));
+		$model->map('author', $view->prompt('Please give the extension author name:'));
+		$model->map('email', $view->prompt('Please give the extension author email:'));
+		$model->map('company', $view->prompt('Please give the extension author company:'));
+		&renderAndWrite('ext_emconf.tpl', '', 'ext_emconf.php');
+		&renderAndWrite('ext_tables.tpl', '', 'ext_tables.php');
+		&renderAndWrite('setup.tpl', 'configurations/', 'setup.txt');
+		&renderAndWrite('constants.tpl', 'configurations/', 'constants.txt');
+	}
+
+	sub classAction {
+		$model->map('extensionTitle', $view->prompt('Please give the extension title):'));
+		$model->map('author', $view->prompt('Please give the extension author name:'));
+		$model->map('email', $view->prompt('Please give the extension author email:'));
+		$model->map('company', $view->prompt('Please give the extension author company:'));
+		$model->map('year',  $model->getYear());
+		&nextClassAction();
+	}
+
+	sub gplAction {
+		&help($model->loadGpl());
+	}
+
+	sub nextClassAction {
+		my $className = $view->prompt('Please give the classname: (tx_myextension_mydir_myclass)');
+		$model->map('extends', '');
+		$model->map('className', $className);
+		$model->map('xClassPath', $model->getXClassPath($className));
+		(my $extensionKey, my $directory, my $file) = $model->getClassPath($className);
+		$model->map('extensionKey', $extensionKey);
+		&renderAndWrite('class.tpl', $directory, $file);
+		my $more = $view->prompt('Do you want to create another class?');
+		if($more =~ /n/i) {
+			&help('Good by ' . $model->pam('author') . ', ' . chr(10) . chr(10) . '                  Elmar');
+		} else {
+			&nextClassAction();
+		}
+	}
+
+	sub renderAndWrite {
+		my ($template, $dir, $file) = @_;
+		if(&help($model->renderAndWrite($template, $dir, $file))) {
+			&help($model->renderAndWrite($template, $dir, $file,1));
+		}
+	}
+
+	sub help {
+		my ($text, $modifier) = @_;
+		if($text) {
+			if($modifier && $modifier eq 'yesno') {
+				return $view->yesno($text);
+			} else {
+				$view->exit($text);
+			}
+		}
+	}
+
+}
+
+package view; {
+	use strict;
+
+	sub new {
+		my $self = {};
+		bless $self, shift;
+	}
+
+	sub exit {
+		print (chr(10) . chr(10) . $_[1] . chr(10) . chr(10));
+		exit();
+	}
+
+	sub prompt {
+		print(chr(10) . $_[1]. chr(10) . chr(10));
+		chomp(my $a = <STDIN>);
+		return $a
+	}
+
+	sub yesno {
+		print(chr(10) . $_[1]. chr(10) . chr(10));
+		chomp($a = <STDIN>);
+		if($a eq 'yes' || $a eq 'y') {
+			return 1;
+		} else {
+			return 0;
+		}
+	}
+
+}
+
+package	model; {
+
+	use strict;
+	use POSIX qw(strftime);
+	use Text::Replace;
+	use File::Path;
+	use Cwd;
+
+	use vars qw(%map $templatesDirectory $target);
+
+	sub new {
+		my ($class) = @_;
+		my $self = {};
+		bless $self, $class;
+		$templatesDirectory = 'lib/tools/eggs/';
+		return $self;
+	}
+
+	sub map{
+		my($self, $key, $value) = @_;
+		$map{$key} = $value;
+	}
+
+	sub pam {
+		my($self, $key) = @_;
+		return $map{$key};
+	}
+
+	sub findTarget {
+		my @targets = qw(help extension class gpl);
+		my $help;
+
+		foreach(@targets) {
+			if($ARGV[0] && $_ eq $ARGV[0]) {
+				$target = $ARGV[0];
+			}
+		}
+
+		if(!$target || $target eq 'help'){
+			open (FILE, $templatesDirectory . 'usage.txt') || die ('Missing text file with help.');
+			$help = join('',(<FILE>));
+			close(FILE);
+		}
+		return $help;
+	}
+
+	sub getAction {
+		return $target . 'Action';
+	}
+
+	sub getClassPath {
+		my ($self, $className) = @_;
+		my $file = 'class.' . $className . '.php';
+		my @directories = split('_', $className); 
+		pop(@directories);   # remove _file 
+			shift(@directories);   # remove tx_
+			my $extensionKey = shift(@directories);
+		my $directory = join('/', @directories) ;
+		if($directory) {
+			$directory .= '/';
+		}
+		return ($extensionKey, $directory , $file);
+	}
+
+	sub getXClassPath {
+		my ($self, $className) = @_;
+		my($extensionKey, $directory, $file) = $self->getClassPath($className);
+		return 'ext/' . $extensionKey . '/' . $directory . $file;
+	}
+
+	sub getYear {
+		return strftime('%Y',localtime);
+	}
+
+	sub getOrientation {
+		my $help = '';
+		$_ = getcwd();
+		if(!/(.*)typo3conf\/ext$/) {
+			$help = "Please call this program from .../typo3conf/ext ." . chr(10) . chr(10);
+			$help .= "You are currently in: " . $_;
+		} elsif(!-d $templatesDirectory) {
+			$help = "Can't find the eggs template directory in lib."; 
+		} 
+		return $help;
+	}
+
+	sub renderAndWrite {
+		my($self, $templateFile, $directory, $file, $force) = @_; 
+		my $key = $map{'extensionKey'};
+		my $filePath = $key . '/' . $directory . $file;
+
+# Overwrite existing files?
+		if(-e $filePath && !$force){
+			return ('The file ' . $file . ' exists. Do you want to overwrite it?', 'yesno');
+		}
+
+# Create pathes
+		mkpath([$key . '/' . $directory], 1);
+
+# Render template
+		open (FILE, $templatesDirectory . $templateFile) || return ('Missing template ' . $templateFile);
+		my $template = join('',(<FILE>));
+		close(FILE);
+		Text::Replace->replace_variables(\$template, \%map);
+
+# Write template
+		open (FILE, '>' . $filePath ) || return (' Cannot open file for writing: ' . $filePath);
+		print(FILE $template);	
+		close(FILE);
+		return;
+	}
+
+	sub loadGpl{
+		open (FILE, $templatesDirectory . 'gpl.txt') || return ('Missing gpl.txt');
+		my $gpl = join('',(<FILE>));
+		close(FILE);
+		return $gpl;
+	}
+
+
+}
+
