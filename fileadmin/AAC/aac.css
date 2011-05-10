@@ -63,13 +63,13 @@ a:link, a:visited, a:active {
 }
 
 .mainmenu a:link:hover, .mainmenu a:visited:hover, .mainmenu .current a, .mainmenu .currentParent>a {
-	color: #d9dbe4;
-	background: #263476;
+	color: #000;
+	background: #d9dbe4;
 }
 
 .mainmenu {
 	padding-top: 18px;
-	margin-left: -3px;
+	margin-left: -5px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -80,7 +80,7 @@ a:link, a:visited, a:active {
 
 .mainmenu li {
 	display: inline;
-	margin-right: 1em;
+	margin-right: 0.9em;
 }
 
 .mainmenu li.last {
@@ -88,7 +88,7 @@ a:link, a:visited, a:active {
 }
 
 .mainmenu li a {
-	padding: 3px;
+	padding: 3px 5px;
 }
 
 .submenu {
@@ -124,7 +124,7 @@ a:link, a:visited, a:active {
 
 .submenu:before {
 	display: block;
-	height: 20px;
+	height: 16px;
 	width: 10px;
 	position: absolute;
 	top: -8px;
@@ -158,7 +158,7 @@ a:link, a:visited, a:active {
 .languageSwitcher {
 	position: absolute;
 	top: 19px;
-	right: -3px;
+	right: -5px;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -190,6 +190,7 @@ a:link, a:visited, a:active {
 
 #pazpar2 .pz2-mediaIcon {
 	top: -2px;
+	left: -40px;
 }
 
 #pazpar2 #pz2-termLists {
