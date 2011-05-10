@@ -7,7 +7,7 @@ class tx_libconnect_dbis_wizicon {
 
 
 		$wizardItems['plugins_tx_libconnect_dbis'] = array(
-			'icon'=>t3lib_extMgm::extRelPath('ezb_dbis').'icons/wiz_icon.gif',
+			'icon'=>t3lib_extMgm::extRelPath('libconnect').'icons/wiz_icon.gif',
 			'title'=> 'Plugin DBIS',
 			'description'=> 'Plugin zur Einbindung von DBIS',
 			'params'=>'&defVals[tt_content][CType]=list&defVals[tt_content][list_type]=libconnect_dbis'
