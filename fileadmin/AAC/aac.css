@@ -178,8 +178,20 @@ a:link, a:visited, a:active {
 	line-height: 125%;
 }
 
+#pazpar2 .pz2-prev, #pazpar2 .pz2-next {
+	color: #aaa;
+}
+
+#pazpar2 .pz2-currentPage {
+	color: #000;
+}
+
+#pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
+	border-left-color: #263476;
+}
+
 #pazpar2 .pz2-recordLink {
-	color: #808080;
+	color: #707070;
 	font-weight: normal;
 }
 
@@ -188,13 +200,14 @@ a:link, a:visited, a:active {
 	color: #263476;
 }
 
-#pazpar2 .pz2-mediaIcon {
+#pazpar2 #pz2-results .pz2-mediaIcon {
 	top: -2px;
 	left: -40px;
 }
 
-#pazpar2 #pz2-termLists {
-	font-size: 14px;
+#pazpar2 .pz2-progressIndicator {
+	background: transparent;
+	border-bottom: 1px solid #263476;
 }
 
 #pazpar2 #pz2-termLists .pz2-progressIndicator {
@@ -202,9 +215,13 @@ a:link, a:visited, a:active {
 }
 
 #pazpar2 #pz2-termLists .pz2-facetCount {
-	color: #808080;
+	color: #707070;
 	font-style: normal;
 	font-size: 100%;
+}
+
+#pazpar2 .pz2-facetCancel {
+	color: #f00;
 }
 
 #pazpar2 .pz2-details {
@@ -212,6 +229,28 @@ a:link, a:visited, a:active {
 	line-height: 14px;
 }
 
+#pazpar2 .pz2-details dt {
+	width: 160px;
+	margin-bottom: 5px;
+}
+
+#pazpar2 .pz2-details dd {
+	margin-left: 180px;
+	margin-bottom: 5px;
+}
+
+#pazpar2 .pz2-details ul {
+	list-style-type: disc;
+}
+
+#pazpar2 .pz2-details dd.pz2-googleBooks {
+	padding-top: 2px;
+}
+
+.pz2-detail-catalogueLink {
+	padding: 1px 4px;
+	background: #d9dbe4;
+}
 
 .bodytext {
 	margin-top: .5em;
