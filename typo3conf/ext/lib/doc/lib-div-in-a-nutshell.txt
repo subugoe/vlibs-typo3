@@ -1,0 +1,79 @@
+
+
+    lib/div in a nutshell
+
+
+Learn from example extensions in TER:
+=====================================
+
+1.) Hello World: apples - A very minimalistic example.
+2.) Beginners example: bananas - A workging guestbook. 
+3.) Advanced example: efaq - FAQ with many modern features.
+
+
+Understanding the SPL objects chain:
+======================================
+
+SPL (Simple PHP Library) objects have a lot in common with
+array. You process your data through the request lifecycle
+by "feeding" one SPL object as input to the next:
+
+request  >  object1  >  object2  ...  objectX  >  response 
+
+
+Understand the class hierarchy:
+===============================
+
+All classes inherit from the class tx_lib_object:
+
+                    tx_lib_object
+                         |
+          ---------------------------------
+				  	|            |               |
+  tx_lib_controller   tx_lib_model   tx_lib_view
+            |            |               |
+  yourController      yourModel      yourView	
+
+
+
+Understand the "Central Quad":
+===============================
+
+ * $controller - The controller object.
+ * $context    - Multiple context properties.
+ * $parameters - Object containing the request parameters. 
+ * $configurations - Object containing all configurations.
+
+ $configurations $context $parameters 
+               |   |       |
+                $controller
+                    |
+              $exampleObject   // Represting all "controlled" objects.
+
+
+Mind 3 central rules: 
+=====================
+
+[1] The controller is the central object. It must be set to each
+    "controlled" object of your extension, either by constructor
+		or by function or directly.
+
+		a.) By the constructor: $exampleObject = new exampleClass($this);	
+		b.) BY function: $exampleObject->controller($this); 
+		c.) Directly: $exampleObject->controller = $this; 
+
+[2] Each "controlled" object can always access the "Central Quad"
+    via the controller:
+
+		a.) $this->controller
+		b.) $this->controller->context
+		c.) $this->controller->configurations
+		d.) $this->controller->parameters
+
+[3] Remember that you can simply extend your controller by 
+    registering new actions to it from other extensions.
+
+
+
+
+

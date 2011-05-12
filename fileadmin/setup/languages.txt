@@ -37,25 +37,16 @@ TODO:
 * figure out how to make the imgParams line work (it's ineffective right now)
 */
 
-lib.language = HMENU
-lib.language {
-	special = language
-	special.value = 0,2
-	stdWrap.wrap = <ul class="languageSwitcher">|</ul>
-
-	1 = GMENU
-	1.NO {
-		wrap = <li>|</li>
-		altImgResource = fileadmin/graphics/flag_de.gif || fileadmin/graphics/flag_en.gif
-		ATagParams = hreflang="de" || hreflang="en"
-//	imgParams = alt="German" || alt="English"
-	}
-	1.ACT = 1
-	1.ACT {
-		wrap = <li class="currentLanguage">|</li>
-		altImgResource = fileadmin/graphics/flag_de.gif || fileadmin/graphics/flag_en.gif
-	}
-}
+lib.language = TEXT
+lib.language.value = English
+lib.language.typolink.parameter.data = page:uid
+lib.language.typolink.additionalParams = &L=2
+lib.language.typolink.ATagParams = hreflang="en" lang="en" class="languageSwitcher"
+[globalVar = GP:L = 2]
+	lib.language.value = Deutsch
+	lib.language.typolink.additionalParams = &L=0
+	lib.language.typolink.ATagParams = hreflang="de" lang="de" class="languageSwitcher"
+[global]
 
 
 plugin.tx_rlmplanguagedetection_pi1 {

@@ -1,0 +1,710 @@
+===================
+lib/div Library API
+===================
+
+This document describes the API of the extension library lib and the design patterns it is based on. 
+It's written for developers of modern TYPO3 extensions. Other planned documents are tutorials for 
+extension developers and for template designers as well as a document of coding guidelines. 
+
+Keywords
+========
+
+ * Extension
+ * Frontend plugin
+ * Model-View-Controller (MVC)
+ * Object Orientated Programming (OOP)
+ * Simple PHP library (SPL)
+ * Request cycle
+ * PHP templates
+ * Internationalization (i18n)
+ * Localization
+ * Caching
+ * USER
+ * USER_INT
+ * tslib_pibase replacement
+ * Extension coordination team (ECT)
+
+Abstract
+========
+
+The TYPO3 extensions lib and div in combination build a library to program TYPO3 frontend plugins
+using Model View Controller (MVC) design patterns. It can be applied alternatively to the non MVC class
+tslib_pibase. The controller can be extended by registration, so that the debatable XCLASS 
+technology can be avoided. Multiple classes to assist the deveopment of model and view are included.
+Their use is optional. They can be combined with external PHP libraries of your choice. Each class can be
+extended to match your requirements. The library is specially recommended for larger, professional projects.
+
+Architectural Design
+====================
+
+---------------------------
+Model View Controller (MVC)
+---------------------------
+
+The Model View Controller design pattern is the standard design pattern for programs with a graphical 
+user interface. It's a separation of functionality to gain flexibility and overview. The model contains
+the business logic and provides access to the data repository. The view displays the data and the user
+controlls. The controller receives the user input and controlls the resulting tasks of model and view.
+
+--------------------------
+Standard PHP Library (SPL)
+--------------------------
+
+SPL is a set of classes written as a C module for PHP. They implement the powerfull PHP5 interfaces
+ArrayAccess and Iterator. The extension lib makes some central features available also for PHP4. 
+It contains plain PHP "backports" of the central SPL classes ArrayObject and ArrayIterator. 
+Both interfaces are available in all lib/div objects by inheritance via the central class 
+tx_lib_object. The interfaces cover all tasks of handling data.
+
+----------------------------
+Request Cycle by SPL objects
+----------------------------
+
+The request cycle describest all phases of a HTTP request until the HTTP response. It can be separted
+into multiple phases that do a single task, loading or stroing data, validating, rendering, translating, etc.
+You can organize the phases of the request cycle by SPL objects. One objects for each task. The objects 
+become the task handlers of the cycle this way. This is optionally. You are free to use other design patterns 
+to handle the request cycle.
+
+You process your data through the request lifecycle by "feeding" one SPL object as input to the next. 
+A simplified schema:
+
+request  >  object1  >  object2  ...  objectX  >  response 
+
+-------------------------
+The central triad or quad 
+-------------------------
+
+When speaking of the central triad we speak of the objects controller, parameters and configurations. A forth 
+object is planned named context. Then we will speak of the central quad. 
+
+The object parameters contains all the incomming parameters of the request. The object configurations merges 
+the TS configuration with flexform configuration. The context object will give access to differnt values 
+of the context the extension lives within.
+
+The principle is, that you can access parameters, configurations and context from every involved object. 
+This is enabled by setting the controller to every object. Parameters, configurations and context are 
+accessible indirectly via the controller.
+
+$this->controller->parameters
+$this->controller->configurations
+$this->controller->context
+
+There are different alternatives to set the controller:
+
+a) Setting the controller as value:
+
+$myObject = tx_div::makeInstance('myClassname');
+$myObject->controller = $this->controller;
+
+b) Setting the controller by function:
+
+$myObject = tx_div::makeInstance('myClassname');
+$myObject->controller($this->controller);
+
+c) Setting the controller by constructor:
+
+$myClassName = tx_div::makeInstanceClassName('myClassname');
+$myObject = new $myClassName($this->controller, $dataObject);
+
+
+Class hierarchy
+===============
+
+tx_lib_object inherits from tx_lib_selfAwareness and implements tx_lib_spl_ArrayIterator.
+
+tx_lib_spl_ArrayIterator                 tx_lib_spl_ArrayObject
+ |                                             |
+tx_lib_object                implements: tx_lib_spl_ArrayIterator
+
+
+Most classes inherit directly or indirectly from the class tx_lib_object. 
+This looks by principle like this.
+
+tx_lib_object
+ |
+ + - tx_myextension_models_xyModel
+ |
+ + - tx_lib_phpTemplateEngine - tx_myextension_views_xyModel
+ |
+ + - tx_lib_controller - tx_myextension_controllers_xyController
+ |
+ + - tx_lib_parameters
+ | 
+ + - tx_lib_configurations
+
+---------------
+Data Structures
+---------------
+
+lib/div works with lists and hashes. Both can be expressed as string, as array and as object. 
+Many functions take any form of lists or hash as a parameter. The extension div provides some functions 
+for conversions an other tricks.
+
+The string form is a kind of CSV. Split characters default to ',;:': comma, semicolon, colon. 
+The results are trimmed. Alternative split characters can be  by set as a function parameter. 
+WARNING: Escaping is not support, so elements can't contain the split characters themself.
+Because of this limitation please only use this form as human written and controlled input format
+
+The list family
+---------------
+
+..........
+listString
+..........
+
+This is a CSV like string:
+
+ * Example: 'one, two, three'      
+ * Example: 'Peter Potter, Harry Hopper, Sunsan Sunny Sunday' 
+ * Example: 'alpha beta gamma' 
+
+For the third example you have to set whitespace (\s) 
+as splitting character to the functions.  
+
+.........
+listArray
+.........
+  
+This is an array with integers as keys:
+
+ * Example: array( 'red', 'yellow', 'green')
+ * Example: array( 'Peter Pottor', 'Susan Sunny Sunday') 
+ 
+..........
+listObject
+..........
+  
+This is an object of the SPL type with integers as keys to the internal values:
+ 
+ * Example: new tx_lib_object(array( 'red', 'yellow', 'green'))
+ * Example: new tx_lib_object(array('Peter Potter', 'Susan Sunny Sunday')) 
+ 
+The hash family
+---------------
+  
+..........
+hashString
+..........
+
+This is a CSV like string. Odd items are keys, even items are values.  
+ 
+ * Example: 'firstname: Peter,  surname: Potter,  email: peter@example.org'      
+ * Example: 'firstname Peter surname Potter email peter@example.org'      
+
+For the second example you have to set whitespace (\s) 
+as splitting character to the functions.  
+
+.........
+hashArray
+.........
+  
+This is an array with key value pairs:
+
+ * Example: array( 'firstname' => 'Peter', 'surname' => 'Potter')
+ 
+..........
+hashObject
+..........
+  
+This is an object of the SPL type with key value pairs:
+
+ * Example: new tx_lib_object(array( 'firstname' => 'Peter', 'surname' => 'Potter'))
+
+
+Class API in alphabetical Order
+===============================
+
+In this part you find a short description of the classes. This description is not complete. 
+The full documentation is always the documentation within the sourcecode.
+
+Official example extensions that show the usage are:
+
+apples: Most minimalistic "Hello World" example.
+bananas: A small guest book that teaches the basics.
+cherries: Will focus on form generation.
+
+------------------------
+class.tx_lib_captcha.php
+------------------------
+
+A CAPTCHA is a type of challenge-response test used in computing to determine whether the user is human. 
+"CAPTCHA" is an acronym for "Completely Automated Public Turing test to tell Computers and Humans Apart", 
+trademarked by Carnegie Mellon University. On websites captchas are used to inhibit robots from spamming
+user input forms.
+
+The captcha creates a question, an input field and an answer. The test is passed if the user sends the right 
+answer as response. The expected answere is automaically stored into the session between request and
+response. Upon creation you have to set an id. You have to provide the same id upon response, 
+to load the expected answer from the session.	
+
+The default captcha test is the function _math1Test. You can extend the class to write your own tests. 
+It is recommended to write your own individual test, to reduce the risk that people program robots, that
+can cheat the captcha.
+
+Creating a test
+---------------
+
+	$captchaClassName = tx_div::makeInstanceClassName('tx_lib_captcha');
+	$captcha = new $captchaClassName($controller, $data); 
+	$captcha->createTest('someId', 'math1'); 
+
+Checking the answer
+-------------------
+
+	$captchaClassName = tx_div::makeInstanceClassName('tx_lib_captcha');
+	$captcha = new $captchaClassName($controller); 
+	if(!$captcha->ok('sameIdAgain))
+		$this->doThis();
+	else 
+		$this->doThat();
+
+Remarks
+-------
+
+You can use $this->getClassName() as id.	
+
+The users answer is taken from $this->controller->parameters->get('captcha').
+
+Writing your own tests
+----------------------
+
+Naming pattern of test function _[name]Test where [name] is the name of the test. 
+The test must return an array with 
+
+	a) the question
+	b) an input field matching the lib standards
+	c) the expected answer
+
+See the function _math1Test() as example.
+
+-------------------------------
+class.tx_lib_configurations.php
+-------------------------------
+
+
+---------------------------
+class.tx_lib_controller.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+-------------------------
+class.tx_lib_formBase.php
+-------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+----------------------------
+class.tx_lib_formBuilder.php
+----------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+----------------------
+class.tx_lib_image.php
+----------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------
+class.tx_lib_link.php
+---------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+-----------------------
+class.tx_lib_object.php
+-----------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------------
+class.tx_lib_parameters.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------------
+class.tx_lib_pearLoader.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+------------------------------
+class.tx_lib_phpFormEngine.php
+------------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+----------------------------------
+class.tx_lib_phpTemplateEngine.php
+----------------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+------------------------------
+class.tx_lib_selfAwareness.php
+------------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------------
+class.tx_lib_smartyView.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+-----------------------
+class.tx_lib_switch.php
+-----------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+-------------------------
+class.tx_lib_t3Loader.php
+-------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------------
+class.tx_lib_translator.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+---------------------------
+class.tx_lib_validator.php
+---------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+
+-------------------------
+class.tx_lib_viewBase.php
+-------------------------
+
+Synopsis
+--------
+
+Description
+-----------
+
+Context
+-------
+
+Inheritance
+-----------
+
+Functions
+---------
+
+Examples
+--------
+
+Other
+-----
+

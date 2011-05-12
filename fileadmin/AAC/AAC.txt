@@ -4,3 +4,4 @@ config.baseURL = http://vlib.sub.uni-goettingen.de/vlib-test/
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
 
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.addAttributes.P.class = bodytext grid_12

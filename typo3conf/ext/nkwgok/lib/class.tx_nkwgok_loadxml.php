@@ -46,6 +46,8 @@
  */
 
 define('NKWGOKRootNode', 'Root');
+define('NKWGOKGOKRootNode', 'GOK-Root');
+
 
 class tx_nkwgok_loadxml extends tx_scheduler_Task {
 
@@ -58,8 +60,8 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 
 		$hitCounts = $this->getHitCounts();
 
-		$wantedFieldNames = array('045A', '044E', '044F', '009B', '038D', '003@', '045G', 'str');
-		$dir = PATH_site . 'fileadmin/gok/lkl/';
+		$wantedFieldNames = array('045A', '044E', '044F', '009B', '038D', '003@', '045G', 'str', 'tags');
+		$dir = PATH_site . 'fileadmin/gok/xml/';
 		$fileList = glob($dir . '*.xml');
 
 		if (count($fileList) > 0) {
@@ -69,7 +71,7 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 			// Run through all files once to get a child count for each parent
 			// element in the list.
 			// $parentPPNs is a dictionary whose keys are the parent element PPNs.
-			$parentPPNs = Array(NKWGOKRootNode => Array());
+			$parentPPNs = Array(NKWGOKRootNode => Array(), NKWGOKGOKRootNode => Array());
 			foreach ($fileList as $xmlPath) {
 				$xml = simplexml_load_file($xmlPath);
 				$records = $xml->xpath('/RESULT/SET/SHORTTITLE/record');
@@ -86,7 +88,13 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 						}
 					}
 					else {
-						$parentPPNs[NKWGOKRootNode][] = $PPN;
+						$fromOpac = (count($record->xpath('datafield[@tag="str"]')) == 0);
+						if ($fromOpac) {
+							$parentPPNs[NKWGOKGOKRootNode][] = $PPN;
+						}
+						else {
+							$parentPPNs[NKWGOKRootNode][] = $PPN;
+						}
 					}
 				}
 			}
@@ -115,7 +123,7 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 							foreach ($field->xpath('subfield') as $subfield) {
 								$subfieldName = (string) $subfield['code'];
 								$subfieldContent = trim((string) $subfield);
-								if ($subfieldContent) {
+								if ($subfieldContent !== Null) {
 									$GOK[$fieldName][$subfieldName] = $subfieldContent;
 								}
 							}
@@ -133,27 +141,33 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 						}
 
 						$parent = trim($GOK['038D'][9]);
-						if ($parent == '') {
-							$parent = NKWGOKRootNode;
-						}
 
 						$search = '';
-						// Determine the search query.
-						if ($GOK['str']) {
-							// History type GOK with the complete search term in the 'str/a' field.
+						if ($GOK['str']['a'] !== Null) {
+							// GOK coming from CSV file with a CCL search query in the 'str/a' field.
 							$search = $GOK['str']['a'];
-							$search = str_replace('lkl', 'LKL', $search);
-						}
-						elseif ($GOK['045G'] && $GOK['045G']['C'] == 'MSC') {
-							// Maths type GOK with an MSC type search term.
-							$search = 'MSC ' . $GOK['045G']['a'];
+							if ($parent == '') {
+								$parent = NKWGOKRootNode;
+							}
 						}
 						else {
-							// Generic GOK search, using the LKL field.
-							$search = 'LKL ' . $GOK['045A']['a'];
+							// GOK coming from standard Opac record.
+							if ($GOK['045G'] && $GOK['045G']['C'] == 'MSC') {
+								// Maths type GOK with an MSC type search term.
+								$search = 'MSC=' . $GOK['045G']['a'];
+							}
+							else if ($GOK['045A']['a']) {
+								// Generic GOK search, using the LKL field.
+								$search = 'LKL=' . $GOK['045A']['a'];
+							}
+							
+							// Set parent element to GOK-Root if it, i.e. '038D/9', is blank.
+							if ($parent == '') {
+								$parent = NKWGOKGOKRootNode;
+							}
 						}
+
 						$search = trim($search);
-						$search = urlencode($search);
 
 						$GOKString = trim($GOK['045A']['a']);
 						$values = array(
@@ -165,7 +179,8 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 							'crdate' => time(),
 							'tstamp' => time(),
 							'search' => $search,
-							'childcount' => $childCount
+							'childcount' => $childCount,
+							'tags' => $GOK['tags']['a']
 						);
 
 						if ($GOK['044F']['b'] == 'eng' && $GOK['044F']['a']) {
@@ -190,16 +205,17 @@ class tx_nkwgok_loadxml extends tx_scheduler_Task {
 				} // end of loop over GOKs
 			} // end of loop over files
 
-			// Finally add the root node
+			// Finally add the GOK root node
 			$values = array(
-				'ppn' => NKWGOKRootNode,
-				'hierarchy' => '0',
+				'ppn' => NKWGOKGOKRootNode,
+				'parent' => NKWGOKRootNode,
+				'hierarchy' => '-1',
 				'descr' => 'Göttinger Online Klassifikation (GOK)',
 				'descr_en' => 'Göttingen Online Classification (GOK)',
-				'gok' => 'XXX',
+				'gok' => NKWGOKGOKRootNode,
 				'crdate' => time(),
 				'tstamp' => time(),
-				'childcount' => count($parentPPNs[NKWGOKRootNode])
+				'childcount' => count($parentPPNs[NKWGOKGOKRootNode])
 			);
 
 			$GLOBALS['TYPO3_DB']->exec_INSERTquery('tx_nkwgok_data', $values);

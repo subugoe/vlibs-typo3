@@ -1,0 +1,254 @@
+
+= Static functions for extension development =
+
+== The functions of ''tx_div'' in alphabetic order ==
+
+=== autoLoadAll ===
+
+==== Definition ====
+
+This function walks through all directories of an extension and includes 
+all class files it findes. 
+
+==== Comment ====
+
+This is rather a quick and dirty solution for lazy file inclusion. There
+are drawbacks. Please see sourcecode comments before you use it.
+
+=== browserSession ===
+
+==== Definition ====
+
+Store data into the browser session or load it from there. 
+
+==== Comment ====
+
+The browser session lasts, while the browser is opened,  by default with a maximum of 24 hours. 
+Also see ''tx_div::userSession()'' and ''tx_div::session()''. 
+
+=== clearAllCaches ===
+
+==== Definition ====
+
+Clear all caches at once.
+
+==== Comment ====
+
+This function if for the development process only. It can be applied temporarly to
+avoid repeated cache clearing by hand.  It will be painfull for you,
+if you forget to disable it on your live server.
+
+=== db ===
+
+==== Definition ====
+
+This is an alias for the function ''tx_div::getDataBase()''.
+
+=== explode ===
+
+==== Definition ====
+
+Explode a string to an array in a typical way.
+
+==== Comment ====
+
+This is typically used to simplify user input i.e. by TypoScript.
+
+Strings are exploded by '',;:'' comma, semicolon and colon.
+The resulting tokens are trimmed. Whitespace inside the token is kept.
+The list of names: ''David Copperfiel, Mr. Wickfield, Uriah Heep'' 
+would be splitted into 3 tokens. 
+
+=== findTce ===
+
+==== Definition ====
+
+Get an instance of the TCE.   
+
+==== Comment ====
+
+Use the features of the TCE also from the frontend.
+Useful to do INSERT and UPDATE queries in full accordance 
+with the T3 constraints, but not very fast. 
+A backend user must be logged in or be faked. 
+
+=== getDataBase ===
+
+==== Definition ====
+
+Get the global TYPO3_DB object. 
+
+==== Comment ====
+
+Typically used to do SELECT queries.
+
+=== getFrontEndUser ===
+
+==== Definition ====
+
+Get the global frontend user object.
+
+=== getSiteRelativeExtensionPath ===
+
+==== Definition ====
+
+Load the site relative extension path for the given extension key.
+
+==== Comment ====
+
+That is the path to the extenion from the view point of the browser
+in opposite to the absolute path from the view point of the server file
+system.
+
+=== getValidKey ===
+
+==== Definition ====
+
+Takes the extension key with or without underscores and finds the matching
+official extension key with underscores. If the extension key is not
+loaded it returns false.
+
+==== Comment ====
+
+Helps you to find the real, valid key, if you only know the key 
+with underscores stripped. The stripped key is i.e. part of class names. 
+
+=== guessKey ===
+
+==== Definition ====
+
+Takes a string like a class name or a file path, that contains any information
+about the extension key, and tries to extract it in the official format with 
+underscores.
+
+=== getGlobal ===
+
+==== Definition ====
+
+Get the global variable of the given key.
+
+=== load ===
+
+==== Definition ====
+
+This is an alias for the function ''tx_div::loadClass()''.
+
+=== loadClass ===
+
+==== Definition ====
+
+Find and include the file for the given classname 'tx_key_path_file'.
+
+=== loadTcaAdditions ===
+
+==== Definition ====
+
+Loads TCA additions of other extensions
+
+==== Comment ====
+
+Your extension may depend on fields that are added by other
+extensions. For reasons of performance parts of the TCA are only
+loaded on demand. To ensure that the extended TCA is loaded for
+the extensions yours depends on you can apply this function.
+
+=== makeInstance ===
+
+==== Definition ====
+
+Load the class file and make an instance of the class.
+
+==== Comment ====
+
+This is an extension to t3lib_div::makeInstance(). 
+It autmatically finds and includes the required class file. 
+The XCLASS mechanisms are working.
+See ''tx_div::makeInstanceClassName()''.
+
+=== makeInstanceClassName ===
+
+==== Definition ====
+
+Load the class file and return the classname or the ux_classname.
+
+==== Comment ====
+
+See ''tx_div::makeInstance()''.
+
+=== resolvePathWithExtPrefix ===
+
+==== Definition ====
+
+Resolve extension pathes that make use of the "EXT:" prefix.  
+
+==== Comment ====
+
+The path is relative to PATH_site.
+See ''tx_div::getSiteRelativeExtensionPath()''.
+
+=== session ===
+
+==== Definition ====
+
+This is an alias for the function ''tx_div::browserSession()''.
+
+=== tce ===
+
+==== Definition ====
+
+This is an alias for the function ''tx_div::findTce()''.
+
+=== toHashArray ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a hash array. 
+
+=== toHashObject ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a hash object. 
+
+=== toHashString ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a hash string. 
+
+=== toListArray ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a list array. 
+
+=== toListObject ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a list object. 
+
+=== toListString ===
+
+==== Definition ====
+
+Takes suitable data as input and converts it to a list string. 
+
+=== user ===
+
+==== Definition ====
+
+This is an alias for the function ''tx_div::getFrontEndUser()''.
+
+=== userSession ===
+
+==== Definition ====
+
+Store data into the user session or load it from there. 
+
+==== Comment ====
+
+The user session is bound to the user account. If a frontend user logs into the
+same account on a different machine, the session data is already there. 
+Also see ''tx_div::browserSession()''. 
+

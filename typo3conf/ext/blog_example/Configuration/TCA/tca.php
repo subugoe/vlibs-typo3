@@ -98,7 +98,6 @@ $TCA['tx_blogexample_domain_model_blog'] = array(
 				'foreign_sortby' => 'sorting',
 				'maxitems'      => 999999,
 				'appearance' => array(
-					'newRecordLinkPosition' => 'bottom',
 					'collapseAll' => 1,
 					'expandSingle' => 1,
 				),
@@ -278,7 +277,6 @@ $TCA['tx_blogexample_domain_model_post'] = array(
 				'appearance' => array(
 					'useCombination' => 1,
 					'useSortable' => 1,
-					'newRecordLinkPosition' => 'bottom',
 					'collapseAll' => 1,
 					'expandSingle' => 1,
 				)
@@ -296,7 +294,6 @@ $TCA['tx_blogexample_domain_model_post'] = array(
 				'autoSizeMax' => 30,
 				'multiple' => 0,
 				'appearance' => array(
-					'newRecordLinkPosition' => 'bottom',
 					'collapseAll' => 1,
 					'expandSingle' => 1,
 				)

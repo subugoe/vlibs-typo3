@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2007-2009 Christian Bülter <buelter@kennziffer.com>
+*  (c) 2007-2011 Christian Bülter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -272,10 +272,11 @@ class  tx_kestats_module1 extends t3lib_SCbase {
 			}
 
 			$this->content .= $this->doc->startPage($LANG->getLL('title'));
-			$this->content .= $this->doc->header($LANG->getLL('title'));
+			//$this->content .= $this->doc->header($LANG->getLL('title'));
+			$this->content .= '<div class="extensiontitle"><img src="moduleicon.gif" />KE Stats</div>';
 			//$this->content .= $this->doc->spacer(5);
 			//$this->content .= $this->doc->section('',$this->doc->funcMenu($headerSection,t3lib_BEfunc::getFuncMenu($this->id,'SET[function]',$this->MOD_SETTINGS['function'],$this->MOD_MENU['function'])));
-			$this->content .= $this->doc->divider(5);
+			//$this->content .= $this->doc->divider(5);
 
 				// get the extension-manager configuration
 			$this->extConf = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['ke_stats']);
@@ -1137,7 +1138,7 @@ class  tx_kestats_module1 extends t3lib_SCbase {
 							// add this row to the result
 							$printRows[] = $printRow;
 						}
-						$content .= $this->renderTable($tableHeader,'crdate,time,duration,element_title,element_uid,element_language',$printRows,'no_line_numbers','counter','');
+						$content .= $this->renderTable($tableHeader,'date,time,duration,element_title,element_uid,element_language',$printRows,'no_line_numbers','counter','');
 						unset($printRows);
 						unset($lastRow);
 					}
@@ -1212,142 +1213,6 @@ class  tx_kestats_module1 extends t3lib_SCbase {
 		$element_type = intval($this->tabmenu->getSelectedValue('element_type'));
 
 		return $this->kestatslib->getStatResults($statType, $statCategory, $columns, $onlySum, $orderBy, $groupBy, $encode_title_to_utf8, $fromToArray, $element_language, $element_type);
-
-		// KENNZIFFER, C. B., 05.Jun.2009:
-		// Now in kestatslib ...
-		/*
-		$yearArray = $this->kestatslib->getDateArray($fromToArray['from_year'],$fromToArray['from_month'],$fromToArray['to_year'],$fromToArray['to_month']);
-
-		// read the stat data into an array
-		$lineCounter = 0;
-		foreach($yearArray as $year => $monthArray){
-			foreach($monthArray as $month => $daysPerMonth){
-
-				// if we are dealing with data of a month in the past, we may use the cache
-				if ($year < date('Y') || ($year == date('Y') && $month < date('m'))) {
-					$useCache = true;
-				} else {
-					$useCache = false;
-				}
-
-				$where_clause = 'type=\''.$statType.'\'';
-				$where_clause .= ' AND category=\''.$statCategory.'\'';
-				$where_clause .= ' AND year='.$year.'';
-				$where_clause .= ' AND month='.$month.'';
-				if (intval($this->tabmenu->getSelectedValue('element_language')) >= 0) {
-					$where_clause .= ' AND element_language='.intval($this->tabmenu->getSelectedValue('element_language')).'';
-				}
-				if (intval($this->tabmenu->getSelectedValue('element_type')) >= 0) {
-					$where_clause .= ' AND element_type='.intval($this->tabmenu->getSelectedValue('element_type')).'';
-				}
-				$where_clause .= $this->subpages_query;
-
-				if ($useCache) {
-					// is there a cache entry?
-					// if yes, use this instead of really querying the stats-table
-					$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('*',$this->tablenameCache,
-					'whereclause=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($where_clause, $this->tablenameCache)
-					. ' AND groupby=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($groupBy, $this->tablenameCache)
-					. ' AND orderby=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($orderBy, $this->tablenameCache) );
-
-					if ($GLOBALS['TYPO3_DB']->sql_num_rows($res)) {
-						$cacheRow = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res);
-						$rows = t3lib_div::xml2array($cacheRow['result']);
-
-						// found cache
-						if (!is_array($rows)) {
-
-							// cache is invalid
-							$useCache = false;
-						}
-						unset($cacheRow);
-
-					} else {
-
-						$rows = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('*',$this->tablename,$where_clause,$groupBy,$orderBy);
-
-						// write the result to the cache
-						if (count($rows)) {
-							$result = t3lib_div::array2xml($rows);
-
-							// DEBUG
-							// cache entries may get quite big ...
-							// print_r($result);
-							// echo round(strlen($result) / 1024) . ' KB';
-							$GLOBALS['TYPO3_DB']->exec_INSERTquery($this->tablenameCache,array(
-										'whereclause' => $where_clause,
-										'groupby' => $groupBy,
-										'orderby' => $orderBy,
-										'result' => $result
-										));
-						}
-					}
-				}
-
-				if (!$useCache) {
-					$rows = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('*',$this->tablename,$where_clause,$groupBy,$orderBy);
-				}
-
-				$sum = 0;
-
-				// render brackets around the year in CSV mode (otherwise excel doesn't like it)
-				$rowIndex = $GLOBALS['LANG']->getLL('month_'.$month);
-				if ($this->csvOutput) {
-					$rowIndex .= ' (' . $year . ')';
-				} else {
-					$rowIndex .= ' ' . $year;
-				}
-
-				if (!$onlySum) {
-					$lineCounter = 0;
-				}
-				if (count($rows)) {
-					foreach ($rows as $row) {
-
-						// do we want only the sum of all fields?
-						if ($onlySum) {
-							$sum += $row['counter'];
-						} else {
-
-							// check, if the title matches a title we had already before,
-							// then just increase that row.
-							// This happens for example, when we have entries for one hour, which occured on different days.
-							// In this case, we have more than one entry in the database for the same row in the result table.
-							// We always have the two columns element_title and counter.
-							// So we can access them here directly.
-							$element_already_counted = 0;
-							for ($i = 0; $i<=$lineCounter; $i++) {
-								if ($resultArray[$i]['element_title'] == $row['element_title']) {
-									$resultArray[$i]['counter'] += $row['counter'];
-									$element_already_counted = 1;
-								}
-							}
-
-							// Add all columns we want to display to the result
-							// table (this will be at least element_title and column)
-							if (!$element_already_counted) {
-								$lineCounter++;
-								// UTF-8 for search words
-								if (strtolower($GLOBALS['TYPO3_CONF_VARS']['BE']['forceCharset']) == 'utf-8' && $encode_title_to_utf8) {
-									$row['element_title'] = utf8_encode($row['element_title']);
-								}
-								foreach (explode(',',$columns) as $field) {
-									$resultArray[$lineCounter][$field] = $row[$field];
-								}
-							}
-						}
-					}
-				}
-
-				if ($onlySum) {
-					$resultArray[$lineCounter]['element_title'] = $rowIndex;
-					$resultArray[$lineCounter]['counter'] = $sum;
-					$lineCounter++;
-				}
-			}
-		}
-		return $resultArray;
-		*/
 	}/*}}}*/
 
 	/**
@@ -1440,6 +1305,17 @@ class  tx_kestats_module1 extends t3lib_SCbase {
 				$language_column = $i;
 			}
 			$i++;
+		}
+
+		// Kick out every field from the dataRows which should not be rendered
+		if (count($dataRows) > 0) {
+			foreach ($dataRows as $label => $dataRow) {
+				foreach ($dataRow as $column_name => $data) {
+					if (!in_array($column_name, $columnsArray)) {
+						unset($dataRows[$label][$column_name]);
+					}
+				}
+			}
 		}
 
 		// first we calculate the sum for each column
@@ -1719,6 +1595,13 @@ class  tx_kestats_module1 extends t3lib_SCbase {
 	 */
 	function getTableCSS() {/*{{{*/
 		return '
+
+.extensiontitle {
+	color: #7F7F7F;
+	font-weight:bold;
+	font-style:italic;
+	float:right;
+}
 
 .buttonlink {
 	float:left;

@@ -1,8 +1,8 @@
 <?php
 
 	// DO NOT REMOVE OR CHANGE THESE 3 LINES:
-define('TYPO3_MOD_PATH', 'ke_stats/mod1/');
-$BACK_PATH='';
+define('TYPO3_MOD_PATH', '../typo3conf/ext/ke_stats/mod1/');
+$BACK_PATH='../../../../typo3/';
 $MCONF['name']='web_txkestatsM1';
 
 	

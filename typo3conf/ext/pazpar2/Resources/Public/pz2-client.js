@@ -783,23 +783,23 @@ function display () {
 				var pages = Math.ceil(displayHitList.length / recPerPage);
 
 				// create pager
+				var pageNumbersContainer = document.createElement('div');
+				this.appendChild(pageNumbersContainer);
+				pageNumbersContainer.setAttribute('class', 'pz2-pageNumbers pz2-pageCount-' + pages);
+
+				var prevLink = document.createElement('a');
+				pageNumbersContainer.appendChild(prevLink);
+				prevLink.appendChild(document.createTextNode('«'));
+				prevLink.setAttribute('class', 'pz2-prev');
 				if (curPage > 1) {
-					var prevLink = document.createElement('a');
-					prevLink.setAttribute('class', 'pz2-prev');
 					prevLink.setAttribute('href', '#');
 					prevLink.setAttribute('onclick', 'pagerPrev();return false;');
 					prevLink.setAttribute('title', localise('Vorige Trefferseite anzeigen'));
-					prevLink.appendChild(document.createTextNode('«'));
-					this.appendChild(prevLink);
 				}
 
 				var pageList = document.createElement('ol');
 				pageList.setAttribute('class', 'pz2-pages');
-				this.appendChild(pageList);
-			
-				if (pages <= 1) {
-					pageList.setAttribute('style', 'visibility:hidden;')
-				}
+				pageNumbersContainer.appendChild(pageList);
 		
 				var dotsItem = document.createElement('li');
 				dotsItem.appendChild(document.createTextNode('…'));
@@ -815,21 +815,21 @@ function display () {
 						pageItem.appendChild(linkElement);
 					}
 					else {
-						pageItem.setAttribute('class', 'currentPage');
+						pageItem.setAttribute('class', 'pz2-currentPage');
 						pageItem.appendChild(document.createTextNode(pageNumber));
 					}
 				}
 
+				var nextLink = document.createElement('a');
+				pageNumbersContainer.appendChild(nextLink);
+				nextLink.appendChild(document.createTextNode('»'));
+				nextLink.setAttribute('class', 'pz2-next');
 				if (pages - curPage > 0) {
-					var nextLink = document.createElement('a');
-					nextLink.setAttribute('class', 'pz2-next');
 					nextLink.setAttribute('href', '#');
 					nextLink.setAttribute('onclick', 'pagerNext();return false;');
 					nextLink.setAttribute('title', localise('Nächste Trefferseite anzeigen'));
-					nextLink.appendChild(document.createTextNode('»'));
-					this.appendChild(nextLink);			
 				}
-			
+				
 				// add record count information
 				var recordCountDiv = document.createElement('div');
 				recordCountDiv.setAttribute('class', 'pz2-recordCount');
@@ -860,6 +860,7 @@ function display () {
 	var firstIndex = recPerPage * (curPage - 1);
 	var numberOfRecordsOnPage = Math.min(displayHitList.length - firstIndex, recPerPage);
 	OL.setAttribute('start', firstIndex + 1);
+	OL.setAttribute('class', 'pz2-resultList');
 
 	for (var i = 0; i < numberOfRecordsOnPage; i++) {
 		var hit = displayHitList[firstIndex + i];
@@ -874,6 +875,19 @@ function display () {
 		linkElement.setAttribute('class', 'pz2-recordLink');
 		linkElement.setAttribute('onclick', 'toggleDetails(this.id);return false;');
 		linkElement.setAttribute('id', 'rec_' + HTMLIDForRecordData(hit));
+
+		var iconElement = document.createElement('span');
+		linkElement.appendChild(iconElement);
+		var mediaClass = 'unknown';
+		if (hit['md-medium'].length == 1) {
+			mediaClass = hit['md-medium'][0];
+		}
+		else if (hit['md-medium'].length > 1) {
+			mediaClass = 'multiple';
+		}
+
+		iconElement.setAttribute('class', 'pz2-mediaIcon ' + mediaClass);
+		iconElement.setAttribute('title', localise(mediaClass, mediaNames));
 
 		appendInfoToContainer(titleInfo(), linkElement);
 		var authors = authorInfo();
@@ -896,7 +910,8 @@ function display () {
 				detailsDiv = renderDetails(hit.recid[0]);
 				hit.detailsDiv = detailsDiv;
 			}
-			appendInfoToContainer(detailsDiv, LI);	
+			appendInfoToContainer(detailsDiv, LI);
+			jQuery(LI).addClass('pz2-detailsVisible');
 		}
 	}
 
@@ -918,7 +933,7 @@ function my_onstat(data) {
 	// Display progress bar.
 	var progress = (data.clients - data.activeclients) / data.clients * 100;
 	var opacityValue = (progress == 100) ? 0 : 1;
-	jQuery('.pz2-pager .pz2-progressIndicator').animate({width: progress + '%', opacity: opacityValue}, 100);
+	jQuery('.pz2-pager .pz2-progressIndicator').animate({width: progress + '%', opacity: opacityValue}, 'slow');
 
 	// Write out status information.
 	var statDiv = document.getElementById('pz2-stat');
@@ -1084,6 +1099,7 @@ function facetListForType (type, preferOriginalFacets) {
 			}
 			var textSpan = document.createElement('span');
 			link.appendChild(textSpan);
+			textSpan.setAttribute('class', 'pz2-facetName');
 			textSpan.appendChild(document.createTextNode(facetDisplayName));
 
 			// Hit Count
@@ -1099,6 +1115,13 @@ function facetListForType (type, preferOriginalFacets) {
 					titleString = titleString.replace('#', hitOverflow);
 					item.setAttribute('title', titleString);
 				}
+			}
+
+			// Media icons
+			if (type === 'medium') {
+				var mediaIcon = document.createElement('span');
+				link.appendChild(mediaIcon);
+				mediaIcon.setAttribute('class', 'pz2-mediaIcon ' + facetName);
 			}
 
 			// Mark facets which are currently active and add button to remove faceting.
@@ -1171,7 +1194,7 @@ function facetListForType (type, preferOriginalFacets) {
 			'yaxis': {
 				'position': 'right',
 				'tickDecimals': 0,
-				'tickFormatter': function(val, axis) { return (val != 0) ? (val) : (''); }
+				'tickFormatter': function(val, axis) {return (val != 0) ? (val) : ('');}
 			},
 			'grid': {
 				'borderWidth': 0,
@@ -1410,6 +1433,7 @@ function resetPage() {
 	hitList = {};
 	displayHitList = [];
 	filterArray = {};
+	jQuery('.pz2-pager .pz2-progressIndicator').css({'width': 0});
 	updateAndDisplay();
 }
 
@@ -1740,21 +1764,25 @@ function toggleDetails (prefixRecId) {
 	var record = hitList[recordID];
 
 	var detRecordDivVisible = record.detailsDivVisible;
+	var parent = document.getElementById('recdiv_'+ recordIDHTML);
 
 	if (detRecordDivVisible) {
 		// Detailed record information is present: remove it
-		jQuery('#det_'+ recordIDHTML).remove();
+		jQuery('#det_'+ recordIDHTML).slideUp('fast');
 		record.detailsDivVisible = false;
+		jQuery(parent).removeClass('pz2-detailsVisible');
 	}
 	else {
 		// Detailed record information is not present: get detail view and append it
 		if (!record.detailsDiv) {
 			record.detailsDiv = renderDetails(recordID);
+			jQuery(record.detailsDiv).hide();
+			parent.appendChild(record.detailsDiv);
 		}
 
-		var parent = document.getElementById('recdiv_'+ recordIDHTML);
-		parent.appendChild(record.detailsDiv);
+		jQuery(record.detailsDiv).slideDown('fast');
 		record.detailsDivVisible = true;
+		jQuery(parent).addClass('pz2-detailsVisible');
 	}
 }
 
@@ -2315,9 +2343,9 @@ function renderDetails(recordID) {
 				var infoBlock = ZDBInformation(resultData);
 
 				var infoLineElements = detailLineBasic(availabilityLabel, infoBlock, {'class':'pz2-ZDBInfo'});
-
+				jQuery(infoLineElements).hide();
 				appendInfoToContainer(infoLineElements, element);
-
+				jQuery(infoLineElements).slideDown('fast');
 			}
 		);
 	}
@@ -2325,11 +2353,11 @@ function renderDetails(recordID) {
 
 
 
-	/*	googleBooksElement
+	/*	appendGoogleBooksElementTo
 		Figure out whether there is a Google Books Preview for the current data.
-		output:	SPAN DOM element that will contain the Google Books button and cover art.
+		input:	DL DOM element that an additional item can be appended to
 	*/
-	var googleBooksElement = function () {
+	var appendGoogleBooksElementTo = function (container) {
 		// Create list of search terms from ISBN and OCLC numbers.
 		var searchTerms = [];
 		for (locationNumber in data.location) {
@@ -2345,12 +2373,7 @@ function renderDetails(recordID) {
 			}
 		}
 
-		var booksSpan;
-
 		if (searchTerms.length > 0) {
-			booksSpan = document.createElement('span');
-			booksSpan.setAttribute('class', 'googleBooks');
-
 			// Query Google Books for the ISBN/OCLC numbers in question.
 			var googleBooksURL = 'http://books.google.com/books?bibkeys=' + searchTerms
 						+ '&jscmd=viewapi&callback=?';
@@ -2378,7 +2401,14 @@ function renderDetails(recordID) {
 
 					// Add link to Google Books if there is a selected book.
 					if (selectedBook !== undefined) {
+						var dt = document.createElement('dt');
+						var dd = document.createElement('dd');
+						jQuery([dt, dd]).addClass('pz2-googleBooks').hide();
+						container.appendChild(dt);
+						container.appendChild(dd);
+
 						var bookLink = document.createElement('a');
+						dd.appendChild(bookLink);
 						bookLink.setAttribute('href', selectedBook.preview_url);
 						bookLink.onclick = openPreview;
 
@@ -2387,25 +2417,28 @@ function renderDetails(recordID) {
 							language = 'en';
 						}
 						var buttonImageURL = 'http://www.google.com/intl/' + language + '/googlebooks/images/gbs_preview_button1.gif';
+
 						var buttonImage = document.createElement('img');
 						buttonImage.setAttribute('src', buttonImageURL);
 						buttonImage.setAttribute('alt', localise('Google Books Vorschau'));
 						bookLink.appendChild(buttonImage);
-						booksSpan.appendChild(bookLink);
 
 						if (selectedBook.thumbnail_url !== undefined) {
+							bookLink = bookLink.cloneNode(false);
+							dt.appendChild(bookLink);
 							var coverArtImage = document.createElement('img');
 							bookLink.appendChild(coverArtImage);
 							coverArtImage.setAttribute('src', selectedBook.thumbnail_url);
 							coverArtImage.setAttribute('alt', localise('Umschlagbild'));
 							coverArtImage.setAttribute('class', 'bookCover');
 						}
+
+						jQuery([dt, dd]).slideDown('fast');
 					}
 				}
 			);
 		}
-		
-		return booksSpan;
+
 
 
 		/*	openPreview
@@ -2456,26 +2489,6 @@ function renderDetails(recordID) {
 
 
 	
-	/*	extraLinks
-		Returns an array with markup for extra links and information.
-			* Google Books, if possible
-		output:	Array with DT/DD pair containing the information.
-	*/
-	var extraLinks = function () {
-		var titleElement = document.createElement('dt');
-
-		var dataElement = document.createElement('dd');
-		dataElement.setAttribute('class', 'pz2-extraLinks');
-		
-		if (useGoogleBooks) {
-			appendInfoToContainer(googleBooksElement(), dataElement);
-		}
-		
-		return [titleElement, dataElement];
-	}
-
-
-
 	/*	locationDetails
 		Returns markup for each location of the item found from the current data.
 		output:	DOM object with information about this particular copy/location of the item found
@@ -2664,12 +2677,25 @@ function renderDetails(recordID) {
 
 			var catalogueURL;			
 			if (targetURL.search(/z3950.gbv.de:20012\/subgoe_opc/) != -1) {
+				// Old GBV Z39.50 server for SUB Opac
 				catalogueURL = 'http://gso.gbv.de/DB=2.1/PPNSET?PPN=' + PPN;
 			}
+			else if (targetURL.search(/sru.gbv.de\/natliz/) != -1) {
+				// match Nationallizenzen natliz and natzlizzss on new GBV SRU server: no link
+			}
+			else if (targetURL.search(/sru.gbv.de\//) != -1) {
+				// New GBV SRU server
+				var databaseName = targetURL.match(/sru.gbv.de\/([a-zA-Z0-9-]*)/)[1];
+				var databaseID = GBVDatabaseIDs[databaseName];
+				if (databaseID) {
+					catalogueURL = 'http://gso.gbv.de/DB=' + databaseID + '/PPNSET?PPN=' + PPN;
+				}
+			}
 			else if (targetURL.search(/gso.gbv.de\/sru\/DB=1.5/) != -1) {
-				// match Nationallizenzen 1.50 and 1.55: no link
+				// match Nationallizenzen 1.50 and 1.55 on old GBV SRU server: no link
 			}
 			else if (targetURL.search(/gso.gbv.de\/sru\//) != -1) {
+				// Old GBV SRU server
 				catalogueURL = targetURL.replace(/(gso.gbv.de\/sru\/)(DB=[\.0-9]*)/,
 										'http://gso.gbv.de/$2/PPNSET?PPN=' + PPN);
 			}
@@ -2686,16 +2712,15 @@ function renderDetails(recordID) {
 			}
 			
 
-			if (catalogueURL) {
+			if (catalogueURL && targetName) {
 				var linkElement = document.createElement('a');
 				linkElement.setAttribute('href', catalogueURL);
 				turnIntoNewWindowLink(linkElement);
 				linkElement.setAttribute('class', 'pz2-detail-catalogueLink')
-				var linkText = localise('Ansehen und Ausleihen bei:');
-				if (targetName) {
-					linkText += ' ' + targetName;
-				}
-				linkElement.appendChild(document.createTextNode(linkText));
+				var linkTitle = localise('Ansehen und Ausleihen bei:') + ' ' + targetName;
+				linkElement.setAttribute('title', linkTitle);
+				// Use non-breaking spaces in target name.
+				linkElement.appendChild(document.createTextNode(targetName.replace(' ', ' ')));
 			}
 
 			return linkElement;
@@ -2742,6 +2767,9 @@ function renderDetails(recordID) {
 
 		var detailsList = document.createElement('dl');
 		detailsDiv.appendChild(detailsList);
+		var clearSpan = document.createElement('span');
+		detailsDiv.appendChild(clearSpan);
+		clearSpan.setAttribute('class', 'pz2-clear');
 
 		// create cleaned up author and other person list to avoid
 		// duplicating persons listed in title-responsiblity already.
@@ -2768,12 +2796,11 @@ function renderDetails(recordID) {
 		appendInfoToContainer( detailLineAuto('other-person-clean'), detailsList )
 		appendInfoToContainer( detailLineAuto('abstract'), detailsList )
 		appendInfoToContainer( detailLineAuto('description'), detailsList );
-	 	appendInfoToContainer( detailLineAuto('medium'), detailsList );
 		appendInfoToContainer( detailLineAuto('series-title'), detailsList );
 		appendInfoToContainer( ISSNsDetailLine(), detailsList );
 		appendInfoToContainer( detailLineAuto('doi'), detailsList );
 		appendInfoToContainer( locationDetails(), detailsList );
-		appendInfoToContainer( extraLinks(), detailsList );
+		appendGoogleBooksElementTo(detailsList);
 		if ( useZDB == true ) {
 			addZDBInfoIntoElement( detailsList );
 		}
@@ -2814,6 +2841,40 @@ function recordIDForHTMLID (HTMLID) {
 
 
 
+/* GBV Database-Names to Database-IDs
+*/
+var GBVDatabaseIDs = {
+	'wao': '1.46',
+	'natliz': '1.50',
+	'natlizzss': '1.55',
+	'gvk': '2.1',
+	'opac-de-7': '2.1', /* map Göttingen Opac to GVK */
+	'olc': '2.3',
+	'olcssg-his': '2.35',
+	'olcssg-geo': '2.38',
+	'olcssg-ast': '2.43',
+	'olcssg-ang': '2.75',
+	'olcssg-mat': '2.77',
+	'fachopac-ast': '2.112',
+	'fachopac-fin': '2.113',
+	'fachopac-geo': '2.114',
+	'fachopac-mat': '2.122',
+	'zdb-1-amb': '2.910',
+	'zdb-1-wfr': '5.1',
+	'zdb-1-dfl': '5.2',
+	'zdb-1-elw': '5.3',
+	'zdb-1-ecc': '5.4',
+	'zdb-1-eeb': '5.5',
+	'zdb-1-mml': '5.6',
+	'zdb-1-mme': '5.7',
+	'zdb-1-eai': '5.8',
+	'zdb-1-nel': '5.9',
+	'zdb-1-rth': '5.10',
+	'zdb-1-soj': '5.62',
+	'zdb-1-cup': '5.72',
+	'zdb-1-pio': '5.55'
+};
+
 
 /* Localised Media Types
 */
@@ -2829,7 +2890,8 @@ var mediaNames = {
 		'music-score': 'Noten',
 		'other': 'Andere',
 		'recording': 'Aufnahme',
-		'website': 'Website'
+		'website': 'Website',
+		'multiple': 'Verschiedene Medien'
 	},
 	
 	'en': {
@@ -2840,10 +2902,11 @@ var mediaNames = {
 		'journal': 'Journal',
 		'map': 'Map',
 		'microform': 'Microform',
-		'music-score': 'Music score',
+		'music-score': 'Music Score',
 		'other': 'Other',
 		'recording': 'Recording',
-		'website': 'Website'
+		'website': 'Website',
+		'multiple': 'Mixed Media Types'
 	}
 };
 

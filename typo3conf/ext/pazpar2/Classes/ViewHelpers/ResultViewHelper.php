@@ -3,7 +3,7 @@
  *  Copyright notice
  *
  *  © 2011 Sven-S. Porst, SUB Göttingen <porst@sub.uni-goettingen.de>
- *  All rigs reserved
+ *  All rights reserved
  *
  *  This script is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -48,6 +48,19 @@ public function render ($result) {
 	$this->doc = DOMImplementation::createDocument();
 	$li = $this->doc->createElement('li');
 	$this->doc->appendChild($li);
+
+	$iconElement = $this->doc->createElement('span');
+	$li->appendChild($iconElement);
+	$mediaClass = 'unknown';
+	if (count($result['md-medium']) == 1) {
+		$mediaClass = $result['md-medium'][0]['values'][0];
+	}
+	elseif (count($result['md-medium']) > 1) {
+		$mediaClass = 'multiple';
+	}
+
+	$iconElement->setAttribute('class', 'pz2-mediaIcon ' . $mediaClass);
+	$iconElement->setAttribute('title', Tx_Extbase_Utility_Localization::translate('media-type-' . $mediaClass, 'Pazpar2'));
 
 	// basic title/author information
 	$this->appendInfoToContainer($this->titleInfo($result), $li);
@@ -240,6 +253,9 @@ private function renderDetails ($result) {
 	
 	$detailsList = $this->doc->createElement('dl');
 	$div->appendChild($detailsList);
+	$clearSpan = $this->doc->createElement('span');
+	$div->appendChild($clearSpan);
+	$clearSpan->setAttribute('class', 'pz2-clear');
 
 	// create cleaned up author and other person list to avoid
 	// duplicating persons listed in title-responsiblity already.
@@ -268,7 +284,6 @@ private function renderDetails ($result) {
 	$this->appendInfoToContainer( $this->detailLineAuto('other-person-clean', $result), $detailsList);
 	$this->appendInfoToContainer( $this->detailLineAuto('abstract', $result), $detailsList);
 	$this->appendInfoToContainer( $this->detailLineAuto('description', $result), $detailsList);
-	$this->appendInfoToContainer( $this->detailLineAuto('medium', $result), $detailsList);
 	$this->appendInfoToContainer( $this->detailLineAuto('series-title', $result), $detailsList);
 	$this->appendInfoToContainer( $this->ISSNsDetailLine($result), $detailsList);
 	$this->appendInfoToContainer( $this->detailLineAuto('doi', $result), $detailsList);
@@ -531,6 +546,43 @@ private function electronicURLs ($location, $result) {
 
 
 /**
+ * @var array mapping GBV database names to their IDs.
+ */
+protected $GBVDatabaseIDs = array(
+	'wao' => '1.46',
+	'natliz' => '1.50',
+	'natlizzss' => '1.55',
+	'gvk' => '2.1',
+	'opac-de-7' => '2.1', /* map Göttingen Opac to GVK */
+	'olc' => '2.3',
+	'olcssg-his' => '2.35',
+	'olcssg-geo' => '2.38',
+	'olcssg-ast' => '2.43',
+	'olcssg-ang' => '2.75',
+	'olcssg-mat' => '2.77',
+	'fachopac-ast' => '2.112',
+	'fachopac-fin' => '2.113',
+	'fachopac-geo' => '2.114',
+	'fachopac-mat' => '2.122',
+	'zdb-1-amb' => '2.910',
+	'zdb-1-wfr' => '5.1',
+	'zdb-1-dfl' => '5.2',
+	'zdb-1-elw' => '5.3',
+	'zdb-1-ecc' => '5.4',
+	'zdb-1-eeb' => '5.5',
+	'zdb-1-mml' => '5.6',
+	'zdb-1-mme' => '5.7',
+	'zdb-1-eai' => '5.8',
+	'zdb-1-nel' => '5.9',
+	'zdb-1-rth' => '5.10',
+	'zdb-1-soj' => '5.62',
+	'zdb-1-cup' => '5.72',
+	'zdb-1-pio' => '5.55'
+);
+
+
+
+/**
  * Returns a link for the current record that points to the catalogue page for that item.
  * @param array $locationAll
  * @return DOMElement
@@ -540,14 +592,26 @@ private function catalogueLink ($locationAll) {
 	$targetName = $locationAll['attrs']['name'];
 	$PPN = preg_replace('/[a-zA-Z]*([0-9X]*)/', '$1', $locationAll['ch']['md-id'][0]['values'][0]);
 	$catalogueURL = Null;
+	$matches = Null;
 
 	if (preg_match('/z3950.gbv.de:20012\/subgoe_opc/', $targetURL) > 0) {
+		// Old GBV Z39.50 server
 		$catalogueURL = 'http://gso.gbv.de/DB=2.1/PPNSET?PPN=' . $PPN;
 	}
+	else if (preg_match('/sru.gbv.de\/natliz/', $targetURL) > 0) {
+		// match Nationallizenzen natliz and natlizzss on new GBV SRU server: no link
+	}
+	else if (preg_match('/sru.gbv.de\/([a-zA-Z0-9-]*)/', $targetURL, $matches) > 0) {
+		// New GBV SRU server
+		$databaseName = $matches[1];
+		$databaseID = $this->GBVDatabaseIDs[$databaseName];
+		$catalogueURL = 'http://gso.gbv.de/' . $databaseID .'/PPNSET?PPN=' . $PPN;
+	}
 	else if (preg_match('/gso.gbv.de\/sru\/DB=1.5/', $targetURL) > 0) {
-			// match Nationallizenzen 1.50 and 1.55: no link
+		// match Nationallizenzen 1.50 and 1.55 on old GBV SRU server: no link
 	}
 	else if (preg_match('/gso.gbv.de\/sru\//', $targetURL) > 0) {
+		// Old GBV SRU server
 		$catalogueURL = preg_replace('/(gso.gbv.de\/sru\/)(DB=[\.0-9]*)/', 'http://gso.gbv.de/$2/PPNSET?PPN=' . $PPN, $targetURL);
 	}
 	else if (preg_match('134.76.176.48:2020/jfm', $targetURL) > 0) {
@@ -563,16 +627,15 @@ private function catalogueLink ($locationAll) {
 	}
 
 	$linkElement = Null;
-	if ($catalogueURL) {
+	if ($catalogueURL && $targetName) {
 		$linkElement = $this->doc->createElement('a');
 		$linkElement->setAttribute('href', $catalogueURL);
 		$this->turnIntoNewWindowLink($linkElement);
 		$linkElement->setAttribute('class', 'pz2-detail-catalogueLink');
-		$linkText = Tx_Extbase_Utility_Localization::translate('Ansehen und Ausleihen bei:', 'Pazpar2');
-		if ($targetName) {
-			$linkText .= ' ' . $targetName;
-		}
-		$linkElement->appendChild($this->doc->createTextNode($linkText));
+		$linkTitle = Tx_Extbase_Utility_Localization::translate('Ansehen und Ausleihen bei:', 'Pazpar2') . ' ' . $targetName;
+		$linkElement->setAttribute('title', $linkTitle);
+		// Use non-breaking space in target name.
+		$linkElement->appendChild($this->doc->createTextNode(str_replace(' ', ' ', $targetName)));
 	}
 
 	return $linkElement;

@@ -1,0 +1,29 @@
+"NEAAC2000";1;"NEAAC2000";"NEAAC";"Englische Philologie";"lkl=IA*";;
+"NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Sprach- und Literaturwissenschaft, Allgemeines";"lkl=IA 2*";;
+"NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Sprachwissenschaft";"lkl=IA 3*";;"inline"
+"NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Anthologien";"lkl=IA 4*";;"inline"
+"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Literaturwissenschaft";"lkl=IA 5*";;
+"NEAAC2050";2;"NEAAC2050";"NEAAC2000";"Textausgaben und Sekundärliteratur";"lkl=IA 6*";;
+"NEAAC2060";2;"NEAAC2060";"NEAAC2000";"Altenglisch";"lkl=IAB*";;"inline"
+"NEAAC2070";2;"NEAAC2070";"NEAAC2000";"Mittel- und Frühneuenglisch";"lkl=IAD* or lkl=IAE*";;"inline"
+"NEAAC2080";2;"NEAAC2080";"NEAAC2000";"Schottland";"lkl=IAH*";"Scotland";"inline,break"
+"NEAAC2090";2;"NEAAC2090";"NEAAC2000";"Wales";"lkl=IAJ*";"Wales";"inline"
+"NEAAC2100";2;"NEAAC2100";"NEAAC2000";"Irland";"lkl=IAF*";"Ireland";"inline"
+;;;;;;;
+"NEAAC3000";1;"NEAAC3000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";;
+"NEAAC3010";2;"NEAAC3010";"NEAAC3000";"Sprach- und Literaturwissenschaft, Allgemeines";"lkl=IC 2*";;
+"NEAAC3020";2;"NEAAC3020";"NEAAC3000";"Sprachwissenschaft";"lkl=IC 3*";;"inline"
+"NEAAC3030";2;"NEAAC3030";"NEAAC3000";"Anthologien";"lkl=IC 4*";;"inline"
+"NEAAC3040";2;"NEAAC3040";"NEAAC3000";"Literaturwissenschaft";"lkl=IC 5*";;
+"NEAAC3050";2;"NEAAC3050";"NEAAC3000";"Textausgaben und Sekundärliteratur";"lkl=IC 6*";;
+;;;;;;;
+"NEAAC4000";1;"NEAAC4000";"NEAAC";"Globales Englisch";"lkl=IB*";"Global English";
+"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Kanada";"lkl=IBJ*";"Canada";"inline"
+"NEAAC4020";2;"NEAAC4020";"NEAAC4000";"Australien";"lkl=IBB*";"Australia";"inline"
+"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Neuseeland";"lkl=IBG*";"New Zealand";"inline"
+"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Afrika";"lkl=IBM*";"Africa";"inline,break"
+"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Karibischer Raum";"lkl=IBO*";"Caribbean";"inline"
+"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Malta";"lkl=IBK*";"Malta";"inline"
+"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Asien, Ozeanien";"lkl=IBR*";"Asia and Oceania";"inline,break"
+"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Indischer Subkontinent";"lkl=IBW*";"Indian subcontinent";"inline"
+"NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Mischsprachen";"lkl=IBY*";"Mixed languages";

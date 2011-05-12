@@ -56,12 +56,12 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 	 */
 	function main($content,$conf)	{
 		$this->conf = $conf;
-				
+
 		// Break out if language already selected
 		if (!$this->conf['dontBreakIfLanguageIsAlreadySelected'] && t3lib_div::_GP($this->conf['languageGPVar']) !== NULL) {
 			return $content;
 		}
-		
+
 		// Break out if the last page visited was also on our site:
 		$referer = t3lib_div::getIndpEnv('HTTP_REFERER');
 		if($this->conf['debug']) echo 'Referer: ' . $referer . '<br />';
@@ -74,14 +74,27 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		) {
 			return $content;
 		}
-		
+
 		// Break out if the session tells us that the user has selected language
-		if (!$this->conf['dontBreakIfLanguageAlreadySelected']) {
-			if($GLOBALS["TSFE"]->fe_user->getKey('ses','tx_rlmplanguagedetection_languageSelected') == TRUE) {
+		if (!$this->conf['dontBreakIfLanguageIsAlreadySelected']) {
+			$langSessKey = $GLOBALS["TSFE"]->fe_user->getKey(
+				'ses',
+				'tx_rlmplanguagedetection_languageSelected'
+			);
+
+			// If session key exists but no language GP var - 
+			// we should redirect client to selected language
+			if (!empty($langSessKey)) {
+				// Can redirect only in one tree method for now
+				if ($this->conf['useOneTreeMethod'] && is_numeric($langSessKey)) {
+					$this->doRedirect($langSessKey);
+					return;
+				}
+				
 				return $content;
 			}
 		}
-		
+
 		//GATHER DATA
 		
 		//Get available languages
@@ -205,41 +218,48 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		
 		IF($this->conf['debug']) print 'END result: Preferred='.$preferredLanguageOrPageUid . '<br />';
 		
-		if ($preferredLanguageOrPageUid !== FALSE) {
-			if ($this->conf['useOneTreeMethod']) {
-				$page = $GLOBALS['TSFE']->page;
-			} else {
-				$sys_page = t3lib_div::makeInstance('t3lib_pageSelect');
-				$sys_page->init(0);
-				$page = $sys_page->getPage($preferredLanguageOrPageUid);
-			}
-			$linkData = $GLOBALS['TSFE']->tmpl->linkData($page,'',0,'',array(),'&' . $this->conf['languageGPVar'] . '=' . $preferredLanguageOrPageUid . "&" . t3lib_div::getIndpEnv('QUERY_STRING'));
-			$locationURL = $this->conf['dontAddSchemeToURL'] ? $linkData['totalURL'] : t3lib_div::locationHeaderUrl($linkData['totalURL']);
-			
-			//Prefer the base URL if available
-			if(strlen($GLOBALS['TSFE']->baseUrl) > 1) {
-				$locationURL = $GLOBALS['TSFE']->baseURLWrap($linkData['totalURL']);
-			} else {
-				$locationURL = $this->conf['dontAddSchemeToURL'] ? $linkData['totalURL'] : t3lib_div::locationHeaderUrl($linkData['totalURL']);
-			}
-			
-			//Set session info
-			$GLOBALS["TSFE"]->fe_user->setKey('ses','tx_rlmplanguagedetection_languageSelected',TRUE);
-			$GLOBALS['TSFE']->storeSessionData();
-			
-			if($this->conf['debug']) echo $locationURL . '<br />';
-			if(!$this->conf['dieAtEnd'] && $preferredLanguageOrPageUid != 0) {
-					header('Location: '.$locationURL);
-					//header('Referer: '.$locationURL);
-					header('Connection: close');
-					header('X-Note: Redirect by rlmp_language_detection (' . $referer . ')');
-			}
-			
-			if($preferredLanguageOrPageUid != 0) {
-				die();
-			}
+		if ($preferredLanguageOrPageUid !== FALSE)
+			$this->doRedirect($preferredLanguageOrPageUid);
+	}
+
+	private function doRedirect($preferredLanguageOrPageUid) {
+		if ($this->conf['useOneTreeMethod']) {
+			$page = $GLOBALS['TSFE']->page;
+		} else {
+			$sys_page = t3lib_div::makeInstance('t3lib_pageSelect');
+			$sys_page->init(0);
+			$page = $sys_page->getPage($preferredLanguageOrPageUid);
 		}
-	
+		$linkData = $GLOBALS['TSFE']->tmpl->linkData($page,'',0,'',array(),'&' . $this->conf['languageGPVar'] . '=' . $preferredLanguageOrPageUid . "&" . t3lib_div::getIndpEnv('QUERY_STRING'));
+		$locationURL = $this->conf['dontAddSchemeToURL'] ? $linkData['totalURL'] : t3lib_div::locationHeaderUrl($linkData['totalURL']);
+		
+		//Prefer the base URL if available
+		if(strlen($GLOBALS['TSFE']->baseUrl) > 1) {
+			$locationURL = $GLOBALS['TSFE']->baseURLWrap($linkData['totalURL']);
+		} else {
+			$locationURL = $this->conf['dontAddSchemeToURL'] ? $linkData['totalURL'] : t3lib_div::locationHeaderUrl($linkData['totalURL']);
+		}
+		
+		//Set session info
+		//For one tree method store selected language
+		$GLOBALS["TSFE"]->fe_user->setKey(
+			'ses',
+			'tx_rlmplanguagedetection_languageSelected',
+			$this->conf['useOneTreeMethod'] ? $preferredLanguageOrPageUid : true
+		);
+		$GLOBALS['TSFE']->storeSessionData();
+		
+		if($this->conf['debug']) echo $locationURL . '<br />';
+		if(!$this->conf['dieAtEnd'] && $preferredLanguageOrPageUid != 0) {
+				header('Location: '.$locationURL);
+				//header('Referer: '.$locationURL);
+				header('Connection: close');
+				header('X-Note: Redirect by rlmp_language_detection (' . $referer . ')');
+		}
+		
+		if($preferredLanguageOrPageUid != 0) {
+			die();
+		}
 	}
 	
 
@@ -296,20 +316,20 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery (
 			'lg_iso_2',
 			'static_languages',
-			'1'
+			'1=1'
 		);
 		if (!$this->conf['useOldOneTreeConcept'] && $res) {
 				// Table and field exist so create query for the new approach:
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery (
 				'sys_language.uid, static_languages.lg_iso_2 as isocode',
 				'sys_language LEFT JOIN static_languages ON sys_language.static_lang_isocode = static_languages.uid',
-				'1' . $this->cObj->enableFields ('sys_language') . $this->cObj->enableFields ('static_languages')
+				'1=1' . $this->cObj->enableFields ('sys_language') . $this->cObj->enableFields ('static_languages')
 			);
 		} else {
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery (
 				'sys_language.uid, sys_language.title as isocode',
 				'sys_language',
-				'1' . $this->cObj->enableFields ('sys_language')
+				'1=1' . $this->cObj->enableFields ('sys_language')
 			);
 		}
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {

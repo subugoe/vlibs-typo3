@@ -1,13 +1,15 @@
-#pazpar2 {
-	margin: 1em 0em;
-}
-
 #pazpar2 a {
 	text-decoration:none;
 }
 
 #pazpar2 ol {
 	margin: 0px;
+}
+
+.pz2-clear {
+	display: block;
+	height: 0;
+	clear: both;
 }
 
 
@@ -41,11 +43,6 @@
 }
 
 
-
-.pz2-ranking {
-	display: inline;
-}
-
 .pz2-ranking {
 	display: none;
 }
@@ -59,18 +56,27 @@
 }
 
 #pz2-results {
-	margin-right: 15em;
+	margin-right: 220px;
 }
 
-#pz2-results ol {
-	padding-left: 3em;
+#pz2-results ol.pz2-resultList {
+	padding-left: 35px;
+	list-style-type: none;
 	float: left; /* required so we don't clear the sidebar/faceting when clearing our <li>s */
 }
 
-#pz2-results ol li {
+#pz2-results ol.pz2-resultList li {
 	margin-bottom: 0.5em;
-	clear: right; /* required to clear the right floated Google Books element */
+	padding-left: 5px;
+	position: relative;
+	clear: both;
+	border-left: 1px solid transparent;
 }
+
+#pz2-results ol.pz2-resultList li.pz2-detailsVisible {
+	border-left: 1px solid #eee;
+}
+
 
 #pazpar2 .pz2-JSNote {
 	margin-bottom: 1em;
@@ -86,13 +92,15 @@
 
 #pz2-termLists {
 	float:right;
-	width: 15em;
-	font-family: Optima, Tahoma, sans-serif;
-	font-size: 88%;
+	width: 200px;
 }
 
 #pz2-termLists h4 {
 	display: none;
+}
+
+.pz2-termList {
+	margin-bottom: 1em;
 }
 
 .pz2-termList h5 {
@@ -116,10 +124,19 @@
 	text-transform: capitalize;
 }
 
+.pz2-termList-medium li a span.pz2-facetName {
+	margin-left: 20px;
+	position: relative;
+}
+
+.pz2-termList-medium .pz2-mediaIcon {
+	position: absolute;
+	top: -1px;
+	left: -2px;
+}
+
 .pz2-facetCount {
 	color: #999;
-	font-size: 81%;
-	font-style: italic;
 	margin-left: 0.3em;
 }
 
@@ -164,18 +181,27 @@
 /* pager
 */
 .pz2-pager {
+	margin: 20px 0;
 	position: relative;
 	text-align: center;
 }
 
-.pz2-pager ol {
+.pz2-pager .pz2-pageNumbers {
 	position: relative;
-	list-style-type: none;
-	display: inline;
+	margin-right: 240px;
 }
 
 .pz2-next, .pz2-prev {
 	position: relative;
+}
+
+.pz2-pageCount-0 {
+	visibility: hidden;
+}
+
+.pz2-pager ol {
+	list-style-type: none;
+	display: inline;
 }
 
 .pz2-pager li {
@@ -186,14 +212,15 @@
 	padding: 0.3em;
 }
 
-.pz2-pager .currentPage {
+.pz2-pager .pz2-currentPage {
 	font-weight: bold;
 	padding: 0.3em;
 }
 
 .pz2-recordCount {
-	position: relative;
-	float: right;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 }
 
 
@@ -201,6 +228,30 @@
 
 /* item records
 */
+.pz2-mediaIcon {
+	display:block;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	left: -30px;
+	/* Media icon sprite. Position defaults to other/unknown icon. */
+	background: url(pz2-media-icons.png) transparent no-repeat;
+	background-position: 0px -40px;
+}
+
+.pz2-mediaIcon.article { background-position: 0px 0px; }
+.pz2-mediaIcon.audio-visual { background-position: -20px 0px; }
+.pz2-mediaIcon.book { background-position: -40px 0px; }
+.pz2-mediaIcon.electronic { background-position: -60px 0px; }
+.pz2-mediaIcon.journal { background-position: 0px -20px; }
+.pz2-mediaIcon.map { background-position: -20px -20px; }
+.pz2-mediaIcon.microform { background-position: -40px -20px; }
+.pz2-mediaIcon.music-score { background-position: -60px -20px; }
+.pz2-mediaIcon.recording { background-position: -20px -40px; }
+.pz2-mediaIcon.website { background-position: -40px -40px; }
+.pz2-mediaIcon.multiple { background-position: -60px -40px; }
+
+
 .pz2-title-main {
 	font-weight: bold;
 }
@@ -214,7 +265,8 @@
 }
 
 .pz2-details {
-	font-size: 71%;
+	font-size: 85%;
+	padding: 10px 0 20px 0;
 }
 
 .pz2-details dt {
@@ -229,18 +281,32 @@
 	margin-left: 10.3em;
 }
 
+.pz2-details dt, .pz2-details dd {
+	margin-bottom: 0.5em;
+}
+
 .pz2-detail-availability td a {
 	margin-bottom: 2px;
 }
 
 .pz2-detail-catalogueLink {
-	display: block;
-	font-size: 122%;
+	font-weight: bold;
+}
+
+.pz2-detail-catalogueLink:after {
+	content: '\002192';
+	margin-left: 0.2em;
 }
 
 .pz2-details ul {
 	padding-left: 2em;
 }
+
+/* Cancel the clear done for list items in the main list on lists in .pz2-details. */
+#pz2-results ol.pz2-resultList .pz2-details li {
+	clear: none;
+}
+
 
 #pz2-results .pz2-details ul li {
 	margin: 0;
@@ -261,28 +327,11 @@ a.pz2-ZDBGeneralInfo {
 	display:block;
 }
 
-dd div {
-	position: relative;
-}
-
-dl .pz2-ZDBInfo {
-	margin-top: 0.5em;
-}
-
 
 
 
 /* Google Books 
 */
-.googleBooks {
-	display: block;
-	float: right;
-}
-
-.googleBooks .bookCover {
-	margin-left: 6px;
-}
-
 #googlePreviewContainer {
 	position: absolute;
 	left: 2em;

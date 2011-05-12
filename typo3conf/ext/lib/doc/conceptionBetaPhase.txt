@@ -1,0 +1,190 @@
+== Target Overview ==
+
+=== Controller Technologies ===
+
+  * Enriched caching functionalities, time controlled, result
+    controlled, etc.
+  * Flexible implementation of the JSR 252 lifecycle
+  * Standard preprocessing and postprocessing hooks for all objects
+  * Standard usage of flexible factory methods for all objects
+  * Definition and implementation of some usefull services
+  * Concept of controller subrequests
+
+=== Forms Library Support ===
+
+  * PEAR folder extension to load libraries from different channels
+    using the PEAR installer
+  * Selecting or building a recommended library for FE forms 
+  * TCA/TS controlled automatic form objects on top of the library
+  * TCA/TS controlled automatic loader objects to query the data
+  * Extending the validator object
+
+=== Kickstarter ===
+
+  * Generating skeletons for the full create, edit, update, delete cycle
+  * In a second step based on TCA/TS controlled Forms/Data objects
+  * Third step: Rapid prototyping wizzard
+
+=== Documentation ===
+
+  * Full documentation
+  * Full sourcecode documentation
+  * Example implementations on different levels
+  * Tutorials
+
+
+== Controller Technologies ==
+
+=== The lifecycle of a request ===
+
+The typical full lifecycle of a form submit can be devided into 2 request
+chains, with a redirect in between:
+
+
+  Storing Request                     Display Request
+  ---------------                     ---------------
+
+  a.) HTTP Reqest 1                    a.) HTTP Request 2
+
+          V 
+
+  b.) Session->load()                          V
+
+          V
+
+  c.) Parameters->merge()               b.) Model->load()
+
+          V                                    V
+                            (if KO)      
+  d.) Validator->check()      >>        c.) Session->store()
+
+  (if OK) V                                    V
+
+  e.) Model->store()                    d.) Labels->load()
+
+          V                                    V
+
+  f.) HTTP Request 2 (Redirect)         e.) TemplateEngine->render()
+
+                                               V
+
+                                        f.) Translator->translate()
+
+                                               V
+
+                                        g.) HTTP Response
+
+
+To guide the request through the lifecycle is the main task of the controller.
+
+In this document I will refer to the two types of request as a forms storing or
+displaying request.
+
+=== Keeping the lifecycle objects flexible ===
+
+This lifecycle is not made of stone. It rather needs to be flexible. 
+
+  * If the validation fails we can directly shortcut to the second part of the
+    displaying request.
+  * Forms, that first collect all data into the session, before storing them
+    after the last view, can also take this shortcut.
+  * Non-form requests only need to cycle the displaying request.
+  * Often we want apply additional processings before the output, i.e.
+    highlighters or special filters.
+  * Addon extensions should be able to interlink additional filters etc.
+
+For all this we need to provide mechanisms to keep the order of the links of
+the processing chains flexible.
+
+  * Each station of the lifecycle is represented by an object.
+  * Each object implements the same extended SPL interface by inheritence from a
+    common object class.
+  * Each object can returns different result states.
+  * For each object and resultstate the successer can be defined.
+  * Preprocessing and postprocessing objects can be registered for each object.
+  * All this configuration is done within TypoScript.
+
+=== Nested subcontrollers ===
+
+A controller can do embedd requests to other controllers. A form for a families
+registration could embed any number of subforms for the name and wishes of each
+family member, similar to the IRRE forms in the backend. 
+
+Many other usecases for subcontrollers are possible. To do this in a nested way,
+so that subcontrollers can have subcontrollers themself, the call to the
+subcontroller needs to be done by the same interface as that to the parent
+controller.
+
+Apart from the redirect at the end of a forms storing request each controller
+returns a string, often of xhtml. This could be placed ito a marker within the
+rendering engine.
+
+The usage of subcontrollers within forms needs some special considerations. If
+error messages are displayed directly within the same position where the output
+of the subcontroller is done there is no problem. The XHTML is just included.
+
+If we want to display the subcontrollers error messages on top of the parent
+form, they need to be treated separately from the input boxes. Because each
+controller returns one singel string, the preferred solution is to use markers
+to separate the string into error messages and form inputs.
+
+In the storing request the subcontroller needs to be touched again. If the
+data is validated and stored with the parent data, it breaks the idea of a
+subcontroller. If the subcontroller is called to do validation and storing on
+its own, it should needs to return the result of the validation instead of
+doing a redirect.
+
+If we request that the data are only stored if parent and child controller
+validate this is the chain:
+
+
+  a.) HTTP Reqest 1
+
+          V 
+
+  b.) Session->load()
+
+          V
+
+  c.) Parameters->merge()
+
+          V             
+                            (if KO)      
+  d.) Validator->check()      >>        Redisplay
+
+  (if OK) V
+
+                            (if KO)
+  e.) Subcontroller->call()   >>        Redisplay
+
+  (if OK) V
+
+  f.) Model->store()
+
+          V 
+
+  g.) HTTP Request 2 (Redirect)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

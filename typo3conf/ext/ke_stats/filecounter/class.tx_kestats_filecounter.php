@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2010 Christian Bülter <buelter@kennziffer.com>
+*  (c) 2010-2011 Christian Bülter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -106,6 +106,7 @@ class tx_kestats_filecounter {
 		if (is_file($file)) {
 			$fileinfo = pathinfo($file);
 			$filename = $fileinfo['basename'];
+			$filepath = $fileinfo['dirname'];
 			$fileextension = strtolower($fileinfo['extension']);
 
 				// Must be set in order to use ke_stats
@@ -115,32 +116,37 @@ class tx_kestats_filecounter {
 				$keStatsObj = t3lib_div::getUserObj('EXT:ke_stats/pi1/class.tx_kestats_pi1.php:tx_kestats_pi1');
 				$keStatsObj->initApi();
 
-				$category = $this->messages['backend_tabname'];
-				$compareFieldList = 'element_uid,element_title,year,month';
-				$element_title = htmlspecialchars(strip_tags($filename));
-				$element_uid = 0;
-				$element_pid = $this->extConf['fileAccessCountOnPage'] ? intval($this->extConf['fileAccessCountOnPage']) : 0;
-				$element_language = $GLOBALS['TSFE']->sys_page->sys_language_uid;
-				$element_type = 0;
-				$stat_type = 'extension';
-				$amount = 0;
-				$parent_uid = 0;
-				$additionalData = '';
-				$counter = 1;
+					// don't count access from robots
+				if (!$keStatsObj->statData['is_robot']) {
 
-				$keStatsObj->increaseCounter(
-					$category,
-					$compareFieldList,
-					$element_title,
-					$element_uid,
-					$element_pid,
-					$element_language,
-					$element_type,
-					$stat_type,
-					$parent_uid,
-					$additionalData,
-					$counter
-				);
+					$category = $this->messages['backend_tabname'];
+					$compareFieldList = 'element_uid,element_title,year,month';
+					//$element_title = htmlspecialchars(strip_tags($filename)) . ' (' . $filepath . ')';
+					$element_title = htmlspecialchars(strip_tags($filename));
+					$element_uid = 0;
+					$element_pid = $this->extConf['fileAccessCountOnPage'] ? intval($this->extConf['fileAccessCountOnPage']) : 0;
+					$element_language = $GLOBALS['TSFE']->sys_page->sys_language_uid;
+					$element_type = 0;
+					$stat_type = 'extension';
+					$amount = 0;
+					$parent_uid = 0;
+					$additionalData = '';
+					$counter = 1;
+
+					$keStatsObj->increaseCounter(
+						$category,
+						$compareFieldList,
+						$element_title,
+						$element_uid,
+						$element_pid,
+						$element_language,
+						$element_type,
+						$stat_type,
+						$parent_uid,
+						$additionalData,
+						$counter
+					);
+				}
 				unset($keStatsObj);
 			}
 

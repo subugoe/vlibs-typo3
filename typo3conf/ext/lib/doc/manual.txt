@@ -1,0 +1,1149 @@
+===================
+The lib/div Library
+===================
+
+
+Keywords
+========
+
+ * Extension
+ * Frontend plugin
+ * Model-View-Controller (MVC)
+ * Object Orientated Programming (OOP)
+ * Simple PHP library (SPL)
+ * PHP templates
+ * Multilingualism
+ * Internationalization (i18n)
+ * Localization
+ * Caching
+ * USER
+ * USER_INT
+ * tslib_pibase replacement
+ * Extension coordination team (ECT)
+
+Abstract
+========
+
+The TYPO3 extensions lib and div in combination build a library to program TYPO3 frontend plugins
+using the Model-View-Controller (MVC) design pattern. It can be used instead of the non MVC class
+tslib_pibase. The controller can be extended by registration, so that the debatable XCLASS 
+technology can be avoided. Templating is done by simple but mighty PHP templates. 
+Internationalization and Localization are supported. The library is specially recommended for larger,
+professional projects.
+
+Introduction 
+============
+
+----------------------------------------------------------------------------
+Flexibility and clean architecture by the Model-View-Controller (MVC) design
+----------------------------------------------------------------------------
+
+The Extension "lib" works hand in hand with the Extension "div". We refer to this pair as lib/div. 
+Lib/div is primarly designed as a modern alternative to tslib_pibase as a library for plugin development.
+It is not only designed strictly object orientated. It also seperates the original features of 
+tslib_pibase following the MVC design pattern. 
+
+This means that the database queries (model) are completely separated from the output rendering (view), 
+so that we gain the flexibility to exchange or extend the one or the other. Often we can quickly ad
+lots of new features to the presentation without touching the model at all, simply by new utilizations
+of the data the model provides. 
+
+Maybe as important in practice is, that a multiheaded team can now develop the model and 
+the view logic in parallel, wich can cut the time of development into halves if time presses. 
+Using a simple mock object of the model, one team can already start to implement the view,
+while the model itself is still in development. 
+
+--------------------------
+Introduction of the family
+--------------------------
+
+We have at least 3 objects, the model, the view and the controller. The model loads the data from the database
+or from other sources and all the buisiness logic is in it. The view is only responsible for presenting the data. 
+It is mainly a template engine, but additionally handles localization of data and translation of the templates. 
+The controller coordinates the the twins model and wiew, evaluationg the incomming requests in form of parameters. 
+
+Assisting objects are objects for the configuration (TS setup), for the parameters (GET/POST),  
+for translation, for links, for images and for data transport in general. Bigger projects can additionally use 
+an object called switch to simplify the handling of multiple plugins mixed of USER an USER_INT. 
+
+--------------------------------
+Simplicity by the SPL object API 
+--------------------------------
+
+Most of this objects inherit a small set of methods of getters, setters and iterators from common parent objects.
+This methods are a basical PHP4 implementation of the Simple PHP Library (SPL) that is one reason for the
+power of PHP5. This small set of functions does most of the work so that the learing curve low and 
+you will come quickly to results.
+
+-----------------------------------------------
+We don't need XCLASS, we are flexible by design 
+-----------------------------------------------
+
+The controller works by calling action functions. It can be extended unlimitedly by other extension 
+by registering new objects as controller. The actions of the extending controllers have precedence so that
+you can not only extend but also overwrite existing functionality without using XCLASS. The controller is
+recursive. You can even extend extensions by this technology.
+
+------------------------------------
+Speed it up by sophisticated caching
+------------------------------------
+
+The provided link object makes it easier to use USER and USER_INT objects in an accurate way, so that you can optimize
+the caching behaviour of the different parts of an extension by selecting the right one for different functionality.
+
+
+---------------------------------------------
+Keeping the migration path to TYPO3 5.0 short
+---------------------------------------------
+
+Nobody knows how TYPO3 5.0 will look like in detail. But we know that it will be based on PHP 5. We assume that the
+SPL like interfaces of the objects and the modern MVC architecture will help us to shorten the migration path of
+the extensions.
+
+---------------------------
+Advantages for big projects
+---------------------------
+
+Especially big extension projects, wich work with a multiheaded team, profit from this extension by the possibiltiy
+to cleanly seperate model and view, to flexible split the controller into different actions and to optimize the
+caching behaviour. Flexibility and expandability protect your investments into the future.
+
+Audience: Extension developers
+==============================
+
+---------------------------------------------------------
+So you want to develop your first extension with lib/div? 
+---------------------------------------------------------
+
+How do you get started? There are several ways to, depending on your personal preferences. 
+
+The sources in first place
+--------------------------
+
+As an experienced OS developer you may say "The sourcecode is the documentation". 
+In fact it is for this library. For two reasons. First we usually don't use abbreviations
+but classnames and function names that are directly human understandable without further 
+explanation. Second the code is nearly fully and carefully documented with comments in JAVA style
+for each class and function. So maybe you directly want to start there. Any documentation that you miss here
+you may find there.  
+
+Learning from reallive examples
+-------------------------------
+
+Others like to learn from practical examples. That is also possible. You will find a FAQ extension
+in TER with the extension key **efaq**. The targeet of this extension is to show the full features of 
+this library within a very small extension so that it is not to diffecult to get the overview by studying 
+the sources of that extension. A second alternative with a similar target is the article extension with 
+the extension key **articles**.
+
+Other known sources of documentation
+------------------------------------
+
+Especially for german speaking readers there are other documentations available. Let me be so unpolite to 
+name the book "TYPO3 4.0" in the first place, where I (Elmar Hinz) have contributed a chapter about 
+the lib/div library in summer 2006. In the magazine T3N in december 2006 Frank Thelemann wrote a well 
+done article introducing the library with pretty illustrations. He also published a similar article online: 
+http://www.tugle.de/know_how/tipps/typo3_und_das_mvc_konzept.html. 
+Let's thank Frank for his exellent campaigns advertising the library in the name of the Extension Coordination Team.
+
+Reading this manual
+-------------------
+
+Last not least you have this manual as documentation. The matter is to complex to start 
+instantly with a hello world program. Instead we follow this roadmap:
+
+Level 1: A little theory of MVC
+  Let us start start with a short theory of the Model-View-Controller design,
+  to see if we have the same understanding of it. 
+
+Level 2: A stroll through the lib/div library
+  Now let us take a short stroll through the library, 
+  to see which of the classes is for what purpose within this design. 
+
+Level 3: Getting started
+  We show how to include the controller within a plugin to get a first output.
+
+Level 4: Enter model and view
+  Having the controller running we show, how to handle the model to the view and to use the phpTemplateEngine.
+
+Level 5: Looping lists 
+
+Level 6: Sending forms 
+
+Level 7: Extending extensions
+
+Level 8: Switching the switch 
+
+Level X: The glory details
+  After you have gained the principle overview it is time to go into the details that will be the second big part of 
+  the documentation.
+
+----------------------
+A little theory of MVC
+----------------------
+
+------------------------------------------
+A short stroll through the lib/div library
+------------------------------------------
+
+The libraries lib and div are twins. In the extension lib there are the classes with the library objects 
+that we can instantiate, while in the extension div there is only one class, a container for static functions.
+Why do we need two extensions? The reason is that this is the only way to get the pretty short names for function
+calls and classes without breaking the given rules of the TYPO3 extension manager. We can write 
+*tx_div::load('tx_lib_link')* to find and include the link class. We want the name tx_div in analogy to the 
+static class t3lib_div of the core to underline the common character. We want the short extension key *lib* 
+for the library.
+
+By rule we don't want to use abbreviations in lib/div. *lib* and *div* belong to the very few exceptions 
+and we have deliberatly decided so because the extension keys occur in nearly every id and classname.
+
+While we are visiting the classes of lib/div now, you really should open the sources to peep into them. You 
+will understand twice as mutch.
+
+Lets visit the TemplateEngine fist, because that is the class that is responsible for the actual output. We find 
+setters and getters in it for the incomming parameters and the configuration. The content data itself is 
+contained in the object variable *$array*, which is inherited from the ancestor class *tx_lib_spl_arrayObject*.
+We don't access this array directly but only by getter functions. The multiple getter function to acces the
+data are documented in detail in the template developer part of this document.
+
+After all the setters have been set from the outside controller, the controller calls the function render, 
+wich now takes up the action for a while. It works as a typical rendering engine. 
+It first loads the configured template, then it executes the template so that the data can be printed into it. 
+Next the language markers are replaced by the translations and the job is done. 
+The result is handeled to the calling controller, which gives it back to the TYPO3 framework. 
+You will deduce your own views from this class by inheritance.
+
+Now it's time to visit the controller (tx_lib_controller), as it already has stepped onto the scene. 
+The controller is instantiated and called by the outer TYPO3 framework via it's main function. 
+It works analogous to the instantiation of classical plugins of the type tslib_pibase. 
+All this is configured in the TS of the extension.
+
+The main function of the controller takes the incomming parameter *action* and calls the matching action function.
+In this function the model and the view are instantiated. You define this actions functions within your inherited
+controller classes. Model and view are configured and executed. Before the model is rendered as the last step, 
+the resulting data of the model is filled into the view. If we want to store prameters from a POST request 
+from a from, the direction of the data flow can be inverted.
+
+There isn't an explicit object for a model in the lib/div library. Typically a model would inherit from the 
+class tx_lib_object, wich is one of the most central classes within the library. It is the access point to the
+features of the SPL (Simple PHP Library) interface. Also the view, the configurator and the prameters object 
+implement the SPL interface by inheritance from tx_lib_object. 
+
+That is also the important information about the configurator object. It inherit's the SPL interface via 
+tx_lib_object. Into this datastructure the TS configuration is loaded. Like for the model there isn't a 
+dedicated parameters object. We directly use tx_lib_object as container for the prameters. 
+Configurator and prameters can be passed to the model or the view by reference. 
+
+In lib we also find a link object, an image object and some loaders. Link and image objects are used by the 
+view. The loaders are used by functions of tx_div to load and instantiate the different classes. 
+
+---------------
+Getting started
+---------------
+
+The intention of this chapter is to accompany you while you are doing your first steps with the library. 
+In all examples of this tutorial we will work with static models, because we don't need to show you 
+how to do database requests.
+
+Making an empty extension
+-------------------------
+
+We will take the extensionkey "apples" for this examples.
+We will use the kickstarter just to create an empty extension without tables or plugins. 
+We can't use the kickstarter to set up the MVC objects. 
+We still could use it to set up the database model in the backend, but we will only use a mock object in here.
+
+
+The folder and file structure of your extension
+----------------------------------------------
+
+A proposal::
+
+  apples/ext_emconf.php
+  apples/ext_icon.gif
+  apples/ext_localconf.php
+  apples/ext_tables.php
+  apples/locallang.xml
+  apples/doc/manual.sxw
+  apples/templates/example.php
+  apples/configuration/setup.txt
+  apples/configuration/class.tx_apples_configuration.php
+  apples/models/class.tx_apples_models_example.php
+  apples/views/class.tx_apples_views_example.php
+  apples/controllers/class.tx_apples_controllers_example.php
+
+The structure is not obligatory. Many things are configurable, but not all. The manual is 
+expected in this special place. It is the same with the files that are prefixed with *ext*. 
+That is also the reason why we can't store all configuration into the configuration folder. 
+But we could store the template folder into the views for example.
+
+Writing a minimal controller
+----------------------------
+
+The minimal controller implements the default action::
+
+  <?php
+
+  require_once (t3lib_extMgm::extPath('div') . 'class.tx_div.php');
+  tx_div::load('tx_lib_controller');
+
+  class tx_apples_controllers_example extends tx_lib_controller{
+    var $className = 'tx_apples_controllers_example';
+
+    function defaultAction($text, $configuration) {
+      return '<p>My default controller</p>';
+    }
+
+  }
+
+  ?>
+
+Including the controller
+------------------------
+
+It is often the most difficult point to address the controller via TS setup, 
+because TS objects are not very verbose in case of errors.
+
+..............
+ext_tables.php
+..............
+
+First we need to add the static setup file and the plugin::
+
+  <?php
+  if (!defined ('TYPO3_MODE'))  die ('Access denied.');
+
+  t3lib_extMgm::addStaticFile('apples', './configuration', 'Apple Plugin');     // ($extKey, $path, $title)
+  t3lib_extMgm::addPlugin(array('Apple plugin', 'tx_apples_example'));               // array($title, $pluginKey)
+
+  ?>
+
+With the last instruction we define a *pluginKey* the we need within the TS setup to identify the plugin. 
+It should start with the extension key to prevent conflicts with other plugins.
+
+.................
+Writing the setup
+.................
+
+We write the file configuration/setup.text::
+
+  // Include the div class 
+  includeLibs.tx_div = EXT:div/class.tx_div.php
+
+  // Include the controller class.
+  includeLibs.tx_apples_controllers_example = EXT:apples/controllers/class.tx_apples_controllers_example.php
+
+  // We don't want to cache during development, we set it to USER later.
+  plugin.tx_apples.exampleController = USER_INT
+
+  // We call the main function of the controller.
+  plugin.tx_apples.exampleController.userFunc = tx_apples_controllers_example->main
+
+  // We handle the plugin configuration to the content configuration
+  // in position of the pluginKey that we have defined in ext_tables.php for it.
+  tt_content.list.20.tx_apples_example =< plugin.tx_apples.exampleController  
+
+
+Here we:
+
+  1. include the static class tx_div because it is needed from the beginning.
+  2. include the controller file
+  3. create a USER or USER_INT object
+  4. set the class and function of that object
+  5. handle all that to the TS configuration for the page content tt_content by reference 
+
+.............................
+Including the static template
+.............................
+
+Include the statc template "Apple Plugin (apples)" into your TS setup. 
+This is a point people often forget and wonder why ...
+
+..............................
+Putting the plugin into a page
+..............................
+
+Now you can put the plugin into a page. If you are very lucky 
+you directly get the output of the default action without further debugging.
+
+--------------------
+Enter model and view
+--------------------
+
+A mock model
+------------
+
+Now create a litle mock object as model that provides the SPL API and some date we can use::
+
+  <?php
+
+  class tx_apples_models_example extends tx_lib_object {
+    var $className = 'tx_apples_models_example';
+    var $extensionKey = 'apples';
+
+    function load() {
+      $this->set('name', 'Belle de Boskoop');
+      $this->set('orign', 'Boskoop, Netherlands');
+      $this->set('use', 'cooking (traditionally: apple sauce)');
+      $this->set('comment', 'bright red, fairly large, early in season (end of august-early september)');
+      $this->set('amount', 10);
+      $this->set('price', 1.75);
+    }
+
+  }
+
+  ?>
+
+
+The PHP template
+----------------
+
+Here we use the printers as described in the chapter for template developers::
+
+  <h4>The Apple</h4>
+  <dl>
+    <dt>Name</dt>
+      <dd><?php $this->printAsText('name'); ?></dd>
+    <dt>Orign</dt>
+      <dd><?php $this->printAsText('orign'); ?></dd>
+    <dt>Use</dt>
+      <dd><?php $this->printAsText('use'); ?></dd>
+    <dt>Commment</dt> 
+      <dd><?php $this->printAsText('comment'); ?></dd>
+    <dt>Amount</dt> 
+      <dd><?php $this->printAsInteger('amount'); ?></dd>
+    <dt>Price</dt> 
+      <dd><?php $this->printAsFloat('price'); ?></dd>
+  </dl>
+
+
+The view class
+--------------
+
+In this example the view tx_apples_views_example is still very puristic for this little example. 
+We inherit all printers directly from tx_lib_TemplateEngine.
+We need to set at least the extension key::
+
+  <?php
+
+    tx_div::load('tx_lib_TemplateEngine');
+    class tx_apples_views_example extends tx_lib_TemplateEngine {
+      var $extensionKey = 'apples';
+    }
+
+  ?>
+
+
+Expanding the controller
+------------------------
+
+Here comes the important part. We define a new action within the controller,
+to handle the model and the view:: 
+
+  function exampleAction() {
+    $model = tx_div::makeInstance('tx_apples_models_example');
+    $model->load();
+    $className = tx_div::makeInstanceClassName('tx_apples_views_example');
+    $view = new $className($model);
+    $view->setConfiguration($this->configuration);
+    $templatePath = $this->configuration->get('templatePath');
+    $templateFile = $this->configuration->get('exampleTemplate');
+    $view->setTemplatePath($templatePath);
+    return $view->render($templateFile);
+  }
+
+This case is easy. We only need to fill the data of the model into the view. With the SPL API
+this is extremly comfortable. You just need to feed the complete model into the constructor 
+of the view.
+
+Here you also see examples of the usage of the static funtions *makeInstance* and *makeInstanceClassName*.   
+They work analogous to the same functions within t3lib_div, but do automatic loading of the files.
+
+
+Expanding the setup
+-------------------
+
+We still need to address the new action function. As this is a static example we can do this by 
+defining the only action within the TS setup::
+
+  plugin.tx_apples.exampleController.action = example
+
+We also need to configure the the template path and the template file::
+
+  plugin.tx_apples.exampleController.templatePath = EXT:apples/templates
+  plugin.tx_apples.exampleController.exampleTemplate = example
+
+We don't write the *.php* suffix of the template file.
+
+Did you get an apple?
+---------------------
+
+If everything went well you have successfully done your first lib/div implementation. Congratulations.
+
+
+-------------
+Looping lists 
+-------------
+
+---------------------------
+Sending forms 
+---------------------------
+
+-----------------
+The glory details
+----------------- 
+
+The hierarchy of inheritance 
+----------------------------
+
+The link object
+---------------
+
+The image object
+----------------
+
+The model 
+---------
+
+The TemplateEngine
+------------------
+
+The configurator object
+-----------------------
+
+The parameter object
+--------------------
+
+The controller object
+---------------------
+
+The controller is extendable
+----------------------------
+
+The switch (for advanced programmers only)
+------------------------------------------
+
+-------------------------
+lib/div coding guidelines
+-------------------------
+
+------------------------------------------
+Some reflections from practical experience
+------------------------------------------
+
+
+Audience: Template developers 
+=============================
+
+------------------------------------------
+The phpTemplateEngine gives you more power
+------------------------------------------
+
+The primary templating system we have choosen for lib/div is plain PHP. We work with so called PHP templates.
+This doesn't mean that you need to learn PHP before you can customize the templates. All you need to 
+know are some basics about the syntax and the names of a dozen functions. This gives you much more powers to 
+do what you really want to do than the traditional ###-templates. 
+
+There is at least one issue with the ###-templates. If you want to display a headline or something like that only
+if a list contains entries, you fist need to ask the developer to programm that for you. Now with the PHP templates
+you simply write into your template:: 
+
+<?php if($list->isNotEmpty()): ?><h1>Your Headline<h1><?php endif; ?>
+
+Often the developer has that already prepared for you, so that you just need to customize it. Doesn't look to 
+difficult and has a lot of power. Full blown template engines like Smarty use similar structures. Details will 
+follow.
+
+Translation markers are used simply by writing *%%%myButtonLabel%%%* to set a mark for the key myButtonLabel in 
+locallang.xml.
+
+----------------------------------------------------------
+Power is dangerous: restrict write access to php templates
+----------------------------------------------------------
+
+In fact with PHP templates you have the full power of the PHP language at your hand. You should handle that with
+care. Never give regular editors write access to the templates. Especially if you store customized templates within 
+fileadmin you must restrict the access to them.
+
+-----------------------------
+Her majesty itself and others
+-----------------------------
+
+The most examples work with the variable $this. This variable contains the phpTemplateEngine itself. 
+It is an object. On objects we can call our getter and printer functions, 
+to press the content out of them.  
+
+The phpTemplateEngine can contain subobjects, for example lists. 
+We can load the subobjects into variables that we define ourselves. 
+Here we define and fill the variable $listOfChildren:: 
+
+  <?php $listOfChildren = $this->get('children'); ?>
+
+We fetch the children out of her majesty with the function get.
+We will read more about the function *get()* later on.
+
+-------------------------------------
+Displaying the data that is available
+-------------------------------------
+
+The view object typically contains much more informations than you can guess from the template. But all this 
+information is available for you to display. To see all informations of the view you write into the template
+
+either::     
+
+  <?php debug($this); ?> 
+
+or::         
+
+  <?php print_r($this); ?> 
+
+One of both will work. You get a lot of information and you need to pick out the information that is important 
+for you. The relevant information is mostly in a part called "array".
+
+-------------------------------------------------------------
+Typical formatting printers are provided by phpTemplateEngine
+-------------------------------------------------------------
+
+The printer functions take at least one prameter. That is the key for the data you want to display. 
+
+printAsDate()
+-------------
+
+Prints a formatted date 
+
+::
+
+  printAsDate($key, $format = '')
+
+Examples::
+
+  <?php $this->printAsDate('date'); ?> 
+  <?php $this->printAsDate('date', '%A %e. %B %y'); ?> 
+
+Normally you will use the fist version. You can use the first format if the developer has confiugerd 
+a default format in the TS setup. The format follows the conventions of the PHP function: strftime().
+
+  See: http://php.net/strftime 
+
+
+printAsEmail()
+--------------
+
+Prints an email link 
+
+::
+
+  printAsEmail($emailKey, $labelKey = null)
+
+Examples::
+
+  <?php $this->printAsEmail('email'); ?> 
+  <?php $this->printAsEmail('email', 'author'); ?> 
+
+If only one parameter is given, the email address is also used as label.
+Else the entry of the second key is used as label if available.
+If no email address is avalable but a label, the label is printed without a link.
+
+printAsFloat()
+--------------
+
+Prints a Number with with decimals like money 
+
+::
+
+  printAsFloat($key, $format = null)
+
+Examples::
+
+  <?php $this->printAsFloat('price'); ?> 
+  <?php $this->printAsFloat('price', '.,2'); ?> 
+
+If no format is given it takes the format from the TS setup.
+If no TS setup is given the fallback is ',.2'.
+
+The format:: 
+
+  The decimal value at the end is the value of decimals.
+  The char before it is the decimal point charcter.
+  The char before it (at the beginning if any) is the thousands seperator
+   
+Examples for 1234,123456789012::
+
+ ',.2'  =>  1,234.12              // fallback
+ ',.3'  =>  1,234.123
+ '.2'   =>  1234.12
+ ' ,3'  =>  1 234.123
+ '.,12' =>  1.234,123456789012
+
+printAsInteger()
+----------------
+
+Prints a Number as simple Integer
+
+::
+
+  printAsInteger($key)
+
+Example::
+
+  <?php $this->printAsInteger('years'); ?> 
+
+printAsRaw()
+------------
+
+Prints the value directly and unaltered
+
+::
+
+  printAsRaw($key)
+
+Example::
+
+  <?php $this->printAsRaw('htmltext'); ?> 
+
+printAsRte()
+------------
+
+Prints fields edited with RTE 
+
+::
+
+  printAsRte($key)
+
+Example::
+
+  <?php $this->printAsRte('content'); ?> 
+
+By default it is parsed by the TYPO3 FE parsers using the TS setup of "lib.pareseFunc_RTE".
+The default behaviour may be changed by the programmer.
+ 
+
+printAsText()
+-------------
+
+Prints text
+
+::
+
+  printAsText($key)
+
+Example::
+
+  <?php $this->printAsText('abstract'); ?> 
+
+By default it is parsed by the TYPO3 FE parsers using the TS setup of "lib.pareseFunc".
+The default behaviour may be changed by the programmer.
+
+
+printAsTime()
+-------------
+
+Prints a formatted time 
+
+::
+
+  printAsTime($key, $format = '')
+
+Examples::
+
+  <?php $this->printAsTime('arrival'); ?> 
+  <?php $this->printAsTime('arrival', '%p %l:%M:%S'); ?> 
+
+Normally you will use the fist version. You can use the first format if the developer has confiugerd 
+a default format in the TS setup. The format follows the conventions of the PHP function: strftime().
+
+  See: http://php.net/strftime 
+
+printAsUrl()
+------------
+
+Prints an url link 
+
+::
+
+  printAsUrl($urlKey, $labelKey = null)
+
+Examples::
+
+  <?php $this->printAsUrl('homepage'); ?> 
+  <?php $this->printAsUrl('homepage', 'author'); ?> 
+
+If only one parameter is given, the url is also used as label.
+Else the entry of the second key is used as label if available.
+If no url is avalable but a label, the label is printed without a link.
+
+------------------------------------------------------------------------------
+There is a formatting getter for every formatting printer in phpTemplateEngine
+------------------------------------------------------------------------------
+
+There is a formatting getter for every formatting printer. The name is that of the printer
+without the leading "print". Formatting getters do exactly the same as the formatting printers, 
+but they don't print the output but they return it instead. 
+
+Instead of writing::
+
+  $this->printAsEmail('user_email');
+
+We can write::
+
+  print $this->asEmail('user_email');
+
+We return the output the the PHP print function and get the same effect. So you ask "What do we need
+this getters for?"  
+
+Let's explain it with an example. Maybe the programmer of the extension has provided you with a function 
+to build table rows::
+
+  $this->printTableRow($value1, $value2);
+
+You now write::
+
+  <?php $this->printTableRow('User email:', $this->asEmail('user_email')); ?>
+
+That may result in a table row like this, depending on what the programmer has done::
+
+  <tr><th>Email:</th><td><a href="mailto:user@exmaple.org">user@example.org</a><td></tr>
+
+  (Hint: We neglect the email protection of TYPO3 in this example.)
+
+You have used the output of the getter function as input of the table row function in this example.
+
+asDate()
+--------
+
+Returns a formatted date 
+
+asEmail()
+---------
+
+Retruns an email link 
+
+
+asFloat()
+---------
+
+Retruns a Number with with decimals like money 
+
+asInteger()
+-----------
+
+Retruns a Number as simple Integer
+
+asRaw()
+-------
+
+Retruns the value directly and unaltered
+
+asRte()
+-------
+
+Retruns fields edited with RTE 
+
+asText()
+--------
+
+Retruns text
+
+asTime()
+--------
+
+Retruns a formatted time 
+
+asUrl()
+-------
+
+Retruns an url link 
+
+-----------------------
+The simple getter get()
+-----------------------
+
+There is another getter. The most simple one. It is get(). 
+We typically don't use it for output, but to fetch a sublist out of our phpTemplateEngine object. 
+
+Example::
+
+  <?php $listOfChildren = $this->get('children'); ?>
+
+Here we load a list object with a list of children into a variable that we freely name $listOfChildren. 
+We will meet the get() function again in the examples below.
+
+------------------------------------------------------------
+Caprice and loopings with the templates of phpTemplateEngine
+------------------------------------------------------------
+
+Controll structures are the great benefit of PHP templates for the template developer. 
+Decide yourself by conditions if you want to output something. Iterate over list elements 
+with loops.
+
+Choice youself
+--------------
+
+Conditions start with an *if* and end with *endif*. In between you output what you like.
+
+...............................
+Conditions depending on a field
+...............................
+
+In the first example we only want to output a username if an email address is also provided::
+
+  <?php if($this->has('useremail')): ?>
+    <dl>
+      <dt><?php $this->printAsText('username'); ?></dt>
+      <dd><?php $this->printAsEmail('useremail'); ?></dd>
+    </dl>
+  <?php endif; ?>
+
+...............................
+Combining conditions with AND
+...............................
+
+Here we only want to output if both are provided::
+
+  <?php if($this->has('username') AND $this->has('useremail'): ?>
+    <dl>
+      <dt><?php $this->printAsText('username'); ?></dt>
+      <dd><?php $this->printAsEmail('useremail'); ?></dd>
+    </dl>
+  <?php endif; ?>
+
+...............................
+Combining conditions with OR 
+...............................
+
+Here we only want to output a header if at least one of two fields is provided::
+
+  <?php if($this->has('mother') OR $this->has('father'): ?>
+    <h1>The parents</h1> 
+  <?php endif; ?>
+
+.............................
+Asking if a list has elements
+.............................
+
+Here we only want to output a header if there is something in the list::
+
+  <?php $listOfChildren = $this->get('listOfChildren'); ?>
+
+  <?php if($listOfChildren->isNotEmpty()): ?>
+    <h1>The children</h1> 
+  <?php endif; ?>
+
+This example is little more complex, because we need to load the list of children
+into a variable before asking it.  We do this with the getter function get(). That
+we already know.
+
+Loop the loop
+-------------
+
+Now we loop over the list of children::
+
+  <?php $listOfChildren = $this->get('listOfChildren'); ?>
+  <?php 
+    for($listOfChildren->rewind(); $listOfChildren->valid(); $listOfChildren->next()); 
+    $child = $listOfChildren->current(); 
+  ?>
+    <p>
+      <?php $child->printAsText('name'); ?> 
+      says :  <?php $child->printAsText('sentence'); ?>
+    </p>
+  <?php endfor; ?>
+
+Wow.
+
+Here we use the for loop that starts with *for* and ends with *endfor*. 
+
+The three function calls on our list variable *rewind*, *valid*, *next* are always the same. 
+They are followed by loading the *current* element into a new variable.
+Don't worry. Just copy & paste and replace the variable names with something usefull.
+
+A complete template 
+-------------------
+::
+
+  <?php $listOfChildren = $this->get('listOfChildren'); ?>
+  <?php if($listOfChildren->isNotEmpty()): ?>
+    <h1>The children</h1> 
+  <?php endif; ?>
+  <?php if($listOfChildren->isNotEmpty()): ?>
+    <ul class="children"> 
+  <?php endif; ?>
+  <?php 
+    for($listOfChildren->rewind(); $listOfChildren->valid(); $listOfChildren->next()); 
+    $child = $listOfChildren->current(); 
+  ?>
+    <li> <?php $child->printAsText('name'); ?> says :  <?php $child->printAsText('sentence'); ?> </li>
+  <?php endfor; ?>
+  <?php if($listOfChildren->isNotEmpty()): ?>
+    </ul> 
+  <?php endif; ?>
+
+
+------------
+Translation
+------------
+
+Getting the translated texts out of the database
+------------------------------------------------
+
+This is a task for the model and it the programmer has to care that the right language texts will be available
+within your getter and printer functions. 
+
+Translating the templates
+-------------------------
+
+Now that comes into your field. There are two alternative ways to translate templates. Either you write your
+texts directly into the template and you provide an own template for every language that you want to use. The
+alternative is not to write texts within your template but only language markers. The language markers will 
+be replaced by the translations from the locallang files. As usual both has it advantages and disadvantages,
+but we don't discuss it here in depth. The typical way is to work with language markers.
+
+.....................................
+Using one templates for each language
+.....................................
+
+To do so you need an own template directory for each language. Within TS you configure the path to the 
+template directory. By conditions you can set the appropriate directory depending on the selected language. 
+See the different TS documentations to find out how you can controll the TS values by language conditions.
+
+We also can't tell you here which value of the TS you need to work on. That depends on the programmers choice.
+He needs to document that for you. 
+
+......................
+Using language markers
+......................
+
+The usage of langague markers is very easy. Typically they look like *%%%myLabel%%%*. The programmer may 
+set other markers.  
+
+The key of the marker *%%%myLabel%%%* is *myLabel*. This key must have an entry in the locallang file. Just
+as you expected. We use the full TYPO3 translation system, like it is documented in other places. 
+
+------------
+Localization
+------------
+
+Localization means at least that you want to output the names for monthes and days in the choosen language,
+that you want to set an approprite date format and maybe that you expect that timezones are handled.
+Localization also deals with measures, currencies etc.
+
+Only a part of this can be supported for different obvious reasons. For example you probably don't want,
+that meters are automatically converted into miles and vice versa. We also don't know if times of timestamps 
+should be converted to the location of the visitor or if you prefer to show the local time of an event. So most 
+of this needs to be implemented by the programmer. We can mainly assist by outputting the appropriate names of 
+monthes and days.
+
+Anyway in general we can say that the localization is controlled by the TS setup: *config.local_all*. That is
+the same for this library.
+
+The functions printAsDate() and printAsTime()
+---------------------------------------------
+
+This functions make use of the PHP function strftime_. Month and weekday names and some other details
+depend on the setting of *config.local_all*. The timezone is that, that is configured as default for the server. 
+Summertime and wintertime of that timezone are respected.
+
+.. _strftime: http://php.net/strftime/
+
+We still want to set different formats for different languages. The best way to do this is to set them in TS 
+conditioned by the language. Again the programmer needs to document the TS path where you can set them.
+
+
+Naming guidlines of the lib/div MVC framework 
+=============================================
+
+First of all this naming guidelines don't stay in contrast to the general coding
+guidelines of the TYPO3 project. Please understand them as an addon to the given 
+Guidlines. They just add some details and philosophy.  Whereever you may discover 
+conflicts you should give precedence to the general coding guidelines.
+
+Computer programms need to be readable by humans and machines. 
+If we would like to write programms that are best readable for the machine, 
+we could still do programming in machine code.  But we don't do this, 
+because human readabilty of the sourcecode is important for us,
+both for production and for documentation. Modern programming languages are
+specially invented to make sourcode human readable. We shoudn't abuse them.
+
+Best readabilty for humans is a matter, that we like to spend some thoughts in this place, 
+especially for code that is opensource. OS code is targeted to be exchanged, written and read
+by a lot of people. Good code should document itself. But that doesn't implement,
+that you shouldn't write soucecode documentation any more.
+
+To make extension development easy and intuitive, we aim to use a human grammer and 
+common terms of full length whereever possible. All throughout this library. 
+We follow this rules for the names of classes, functions and class variables. 
+Inside a function variales may be abbreviated, because the namespace of a function is so limited 
+that misunderstandings can be most likly avoided. However even within functions we perfer
+full words. We encourage the users of the library to follow the same principles, to let other
+people share the spirit that is expressed within the code.
+
+-------------
+Human Grammar
+-------------
+
+To use human grammar sounds self-evedent, but it isn't that evedent for programmers. We all observe
+programm code that is so nested and cryptical abbreviated that we wouldn't understand a single line
+even as experienced programmers. Really experienced programmers follow an other principle, KISS
+("keep it simple, stupid").
+
+In this library we build names in a way that follows the grammar of human language. We say 
+$firstNameOfUser or $usersFirstName but never $namesUserFirst. 
+Using Plural for Plurals
+When there are more then one units in something we use the plural of the unit or the 
+singular of the matching container. An array with names:
+right: $userNames  :    $userNames[] = 'Martin';
+wrong: $userName:   $userName[] = 'Maritn';
+wrong: $usersNames:   $usersNames[] = 'Maritn';
+right: $userList:   $userList[] = 'Martin';      // container
+A directory with controllers is called controllers/ not controller/
+
+------------------------------------
+Use CamelCase to reserve underscores
+------------------------------------
+
+To compose words we use CamalCase. That is not a matter of taste but has good reasons. 
+Underscores and hyphens need to be reserved for special tasks.
+
+Example autoloading of classes:
+
+  If we want to use the name of a class to locate the class automatically in the directory, 
+  we set the underscores where a directory slash will be placed in. 
+  So we automatically can load classes: tx_myextension_controllers_book  
+  from  typo3conf/ext/myextension/controllers/book.
+
+If you select names please keep in mind, that some operating systems 
+don't know the difference of uppercase and lowercase for pathes.
+
+On windows this is the same path::
+
+  tx/myextension/babel and tx/myextension/baBel 
+
+So you should only use one of the classnames::
+
+  tx_myextension_babel and  tx_myextension_baBel 
+
+--------------------
+Avoide Abbreviations
+--------------------
+
+How would you abbreviate password? PW, pwd, pass, passwd? 
+How do you abbreviate character? chr? char?
+Abbreviations will quickly lead to misunderstandings and errors,
+if multiple people work together using such abbreviations.
+
+In this library we use the full words instead of abbreviations, 
+to be human readable and to have clear method names.
+In older times programmers used abbreviations to reduce typing.
+Modern IDE like eclipse or editors like vim and emacs assist
+us with tools, that autoexpand words, so that we don't need to 
+follow the old traks where we can do better today. 
+
+To conclude, there will allways be a function name in full length of words: 
+
+unsetUserPassword();   
+setCharacter($character); 
+
+There may by additional abbreviated forms of a full name function available 
+for the convinience of the user. uup() may be available as alternative to 
+unsetUserPassword(). But you should never find an abbreviated form 
+without the full named version, that it as just an alias to. 

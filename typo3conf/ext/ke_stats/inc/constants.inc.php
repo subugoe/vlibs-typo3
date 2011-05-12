@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2007 Christian Bülter <buelter@kennziffer.com>
+*  (c) 2007-2011 Christian BÃ¼lter <buelter@kennziffer.com>
 *  All rights reserved
 *
 *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -23,7 +23,7 @@
 ***************************************************************/
 
 /**
- * @author	Christian Bülter <buelter@kennziffer.com>
+ * @author	Christian Bï¿½lter <buelter@kennziffer.com>
  * @package	TYPO3
  * @subpackage	tx_kestats
  */

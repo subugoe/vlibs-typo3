@@ -1,0 +1,79 @@
+30-11-05 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Setting it to version 0.1.0 in sync with 0.1.0 of lib.
+
+07-10-05 Franz Holzinger  <kontakt@fholzinger.com>
+
+	* added some more functions stolen from tslib_pibase: RTEcssText and getLL. So you can get now rid of tslib_pibase using tx_div_alpha for most cases instead of pi_RTEcssText and pi_getLL.
+
+07-10-03 Franz Holzinger  <kontakt@fholzinger.com>
+
+	* added function userProcess_fh001 into tx_div_alpha. The userProcess function is e.g. used with itemMarkerArrayFunc in tt_products.
+
+07-08-05 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Version 0.0.13.
+	* Milestone -1 alpha
+	* Many preparations for the action pipeline, but still half the way
+	* For this reason this version will not published to TER
+	
+07-08-05 Franz Holzinger  <kontakt@fholzinger.com>
+
+	* added all functions from fh_library into tx_div_alpha in a modified naming scheme
+
+07-08-05 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Version 0.0.12.
+	* Milestone -2 alpha
+	* First version of a documentation
+	* Added class tx_lib_alpha
+	* Added class tx_lib_ff
+	* Added functions user, getFrontendUser, getGlobal, session,
+	getBrowserSession, getUserSession
+	* Renaming function resolvePathWithEXT to resolvePathWithExtPrefix
+
+07-06-04 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Publishing version 0.0.10.
+	* Added function autoLoadAll.
+	* Added function clearAllCaches. 
+	* Switched dependencies of lib and div.
+
+07-01-29 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* publishing version 0.0.9
+	* definition of hash and list data structures
+	* functions to transform the data structures
+
+07-01-20 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* publishing version 0.0.8
+	* explode function 
+
+07-01-15 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* publishing version 0.0.7
+	* to be sure it works still synchron with lib 
+
+06-09-06 Franz Holzinger   <kontakt@fholzinger.com>
+
+	* loadTcaAdditions to add the TCA fields coming from some other extensions
+
+06-04-06 Elmar Hinz  <elmar.hinz@team-red.net>
+        
+	* Guess Key
+	* Accessing tx_lib::t3loader
+	
+06-03-23 Elmar Hinz  <elmar.hinz@team-red.net>	
+	
+	 
+	* Function loadClass
+	
+	
+06-03-17 Elmar Hinz  <elmar.hinz@team-red.net>
+
+	* Better icon
+
+06-03-16 ECT: Elmar Hinz, ....  <elmar.hinz@team-red.net>
+
+	* Initial release

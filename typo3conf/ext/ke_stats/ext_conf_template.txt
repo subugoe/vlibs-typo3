@@ -1,3 +1,6 @@
+# cat=basic//130; type=boolean; label= Use Caching in backend module: Caching speeds up displaying your statistics tables, but can lead to a really big cache table on bigger sites. If that happens, you may want to disable caching.
+enableBackendModuleCaching = 1
+
 # cat=basic//130; type=boolean; label= Enable IP-Logging: IP-Logging is disabled by default (for legal reasons).
 enableIpLogging = 0
 
