@@ -17,13 +17,13 @@
 "NEAAC3040";2;"NEAAC3040";"NEAAC3000";"Literaturwissenschaft";"lkl=IC 5*";;
 "NEAAC3050";2;"NEAAC3050";"NEAAC3000";"Textausgaben und Sekundärliteratur";"lkl=IC 6*";;
 ;;;;;;;
-"NEAAC4000";1;"NEAAC4000";"NEAAC";"Globales Englisch";"lkl=IB*";"Global English";
-"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Kanada";"lkl=IBJ*";"Canada";"inline"
-"NEAAC4020";2;"NEAAC4020";"NEAAC4000";"Australien";"lkl=IBB*";"Australia";"inline"
-"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Neuseeland";"lkl=IBG*";"New Zealand";"inline"
-"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Afrika";"lkl=IBM*";"Africa";"inline,break"
-"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Karibischer Raum";"lkl=IBO*";"Caribbean";"inline"
-"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Malta";"lkl=IBK*";"Malta";"inline"
-"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Asien, Ozeanien";"lkl=IBR*";"Asia and Oceania";"inline,break"
-"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Indischer Subkontinent";"lkl=IBW*";"Indian subcontinent";"inline"
-"NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Mischsprachen";"lkl=IBY*";"Mixed languages";
+"NEAAC1500";1;"NEAAC1500";"NEAAC";"Globales Englisch";"lkl=IB*";"Global English";
+"NEAAC1510";2;"NEAAC1510";"NEAAC1500";"Kanada";"lkl=IBJ*";"Canada";
+"NEAAC1520";2;"NEAAC1520";"NEAAC1500";"Australien";"lkl=IBB*";"Australia";
+"NEAAC1530";2;"NEAAC1530";"NEAAC1500";"Neuseeland";"lkl=IBG*";"New Zealand";
+"NEAAC1540";2;"NEAAC1540";"NEAAC1500";"Afrika";"lkl=IBM*";"Africa";
+"NEAAC1550";2;"NEAAC1550";"NEAAC1500";"Karibischer Raum";"lkl=IBO*";"Caribbean";
+"NEAAC1560";2;"NEAAC1560";"NEAAC1500";"Malta";"lkl=IBK*";"Malta";
+"NEAAC1570";2;"NEAAC1570";"NEAAC1500";"Asien, Ozeanien";"lkl=IBR*";"Asia and Oceania";
+"NEAAC1580";2;"NEAAC1580";"NEAAC1500";"Indischer Subkontinent";"lkl=IBW*";"Indian subcontinent";
+"NEAAC1590";2;"NEAAC1590";"NEAAC1500";"Mischsprachen";"lkl=IBY*";"Mixed languages";
