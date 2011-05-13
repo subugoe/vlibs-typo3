@@ -48,6 +48,7 @@ public function render ($result) {
 	$this->doc = DOMImplementation::createDocument();
 	$li = $this->doc->createElement('li');
 	$this->doc->appendChild($li);
+	$li->setAttribute('class', 'pz2-detailsVisible');
 
 	$iconElement = $this->doc->createElement('span');
 	$li->appendChild($iconElement);
@@ -634,8 +635,7 @@ private function catalogueLink ($locationAll) {
 		$linkElement->setAttribute('class', 'pz2-detail-catalogueLink');
 		$linkTitle = Tx_Extbase_Utility_Localization::translate('Ansehen und Ausleihen bei:', 'Pazpar2') . ' ' . $targetName;
 		$linkElement->setAttribute('title', $linkTitle);
-		// Use non-breaking space in target name.
-		$linkElement->appendChild($this->doc->createTextNode(str_replace(' ', ' ', $targetName)));
+		$linkElement->appendChild($this->doc->createTextNode($targetName));
 	}
 
 	return $linkElement;
