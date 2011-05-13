@@ -252,6 +252,22 @@ a:link, a:visited, a:active {
 	background: #d9dbe4;
 }
 
+#pazpar2 fieldset {
+	width: 338px; /* 340px - 2px border */
+	float: right;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d9dbe4;
+}
+
+#pazpar2 .pz2-fieldset-1 {
+	width: 218px; /* (940px - 20px) width - 2 * 360px left and right boxes - 2px border */
+}
+
+#pazpar2 .pz2-fieldset-0, #pazpar2 .pz2-fieldset-1 {
+	margin-left: 20px;
+}
+
 .bodytext {
 	margin-top: .5em;
 	margin-bottom: .5em;
