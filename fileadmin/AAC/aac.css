@@ -35,17 +35,26 @@ h2 {
 	font-size: 18px;
 }
 
+a:link, a:visited, a:active {
+	color: #263476;
+}
 
 #foot {
 	text-align: center;
 	margin-top: 20px;
 	padding: 10px 0;
+	background: #263476;
 }
 
-a:link, a:visited, a:active {
-	color: #263476;
+#foot a:link, #foot a:visited, #foot a:active {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
 }
 
+#foot a:hover {
+	text-decoration: underline;
+}
 
 /*
 	MENU
