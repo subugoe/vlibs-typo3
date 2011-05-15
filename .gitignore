@@ -1,3 +1,7 @@
 temp*
 typo3temp
 typo3conf/deprecation*
+nbproject
+.project
+.settings
+.buildpath
