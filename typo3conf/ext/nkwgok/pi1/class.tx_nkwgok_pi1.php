@@ -46,7 +46,6 @@ class tx_nkwgok_pi1 extends tx_nkwgok {
 	var $extKey = 'nkwgok';
 	var $pi_checkCHash = true;
 
-	
 	/**
 	 * Main method of the PlugIn
 	 *
@@ -64,7 +63,7 @@ class tx_nkwgok_pi1 extends tx_nkwgok {
 
 		//  get getvars
 		$conf['getVars'] = t3lib_div::_GET('tx_' . $this->extKey);
-		
+
 		// get flexform
 		$conf['gok'] = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'source', 'sDEF');
 		$altSource = trim($this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'altSource', 'sDEF'));
@@ -87,20 +86,17 @@ class tx_nkwgok_pi1 extends tx_nkwgok {
 
 		if ($style == 'menu') {
 			$doc = $this->GOKMenus($conf);
-		}
-		else {
+		} else {
 			$conf['getVars']['style'] = $style;
 			$conf['getVars']['showGOKID'] = $this->pi_getFFvalue($this->cObj->data['pi_flexform'], 'showGOKID');
 			$doc = $this->GOKTree($conf);
 		}
-		
+
 		$content .= $doc->saveHTML();
 		return $content;
 	}
 
 }
-
-
 
 if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nkwgok/pi1/class.tx_nkwgok_pi1.php']) {
 	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/nkwgok/pi1/class.tx_nkwgok_pi1.php']);
