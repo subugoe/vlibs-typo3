@@ -85,9 +85,14 @@ a:link, a:visited, a:active {
 	text-decoration: underline;
 }
 
-/*
-	MENU
-*/
+.bodytext {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+
+
+/*	Menu */
 
 #menu {
 	position: relative;
@@ -241,7 +246,6 @@ a:link, a:visited, a:active {
 }
 
 
-
 .languageSwitcher {
 	position: absolute;
 	top: 19px;
@@ -255,8 +259,9 @@ a:link, a:visited, a:active {
 }
 
 
+
 /* style like a .grid_16 element */
-#pazpar2 {
+#pazpar2, .gokContainer {
 	display: inline;
 	float: left;
 	position: relative;
@@ -265,6 +270,9 @@ a:link, a:visited, a:active {
 	line-height: 125%;
 }
 
+
+
+/* pazpar elements */
 #pazpar2 .pz2-prev, #pazpar2 .pz2-next {
 	color: #aaa;
 }
@@ -273,9 +281,13 @@ a:link, a:visited, a:active {
 	color: #000;
 }
 
-#pz2-results ol.pz2-resultList li {
-	margin-bottom: 10px !important;
+#pazpar2 #pz2-results ol.pz2-resultList li {
+	margin-bottom: 10px;
 	padding-right: 10px;
+}
+
+#pazpar2 #pz2-results ol.pz2-resultList li li {
+	margin: 0px;
 }
 
 #pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
@@ -341,7 +353,7 @@ a:link, a:visited, a:active {
 	padding-top: 2px;
 }
 
-.pz2-detail-catalogueLink {
+#pazpar2 .pz2-detail-catalogueLink {
 	padding: 1px 4px;
 	background: #d9dbe4;
 }
@@ -360,9 +372,4 @@ a:link, a:visited, a:active {
 
 #pazpar2 .pz2-fieldset-0, #pazpar2 .pz2-fieldset-1 {
 	margin-left: 20px;
-}
-
-.bodytext {
-	margin-top: .5em;
-	margin-bottom: .5em;
 }
