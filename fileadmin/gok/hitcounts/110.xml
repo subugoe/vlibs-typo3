@@ -2,12 +2,262 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b87ce52a-13</SESSIONVAR>
+<SESSIONVAR name="SID">09a1a1cf-4</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lqp 059">lqp 059</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lqp 060">lqp 060</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="lqp 061">lqp 061</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lqp 062">lqp 062</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqp 063">lqp 063</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="lqp 064">lqp 064</SCANLINE>
+
+    <SCANLINE hits="82" mnemonic="LKL" description="lqp 065">lqp 065</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="lqp 066">lqp 066</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lqp 067">lqp 067</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="lqp 068">lqp 068</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lqp 069">lqp 069</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="lqp 070">lqp 070</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="lqp 071">lqp 071</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqp 073">lqp 073</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="lqp 074">lqp 074</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqp 075">lqp 075</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqp 076">lqp 076</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lqp 078">lqp 078</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqp 079">lqp 079</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="lqp 080">lqp 080</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="lqp 081">lqp 081</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lqp 084">lqp 084</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqp 085">lqp 085</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lqp 086">lqp 086</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqp 087">lqp 087</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lqp 089">lqp 089</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="lqp 090">lqp 090</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lqp 091">lqp 091</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqp 092">lqp 092</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqp 093">lqp 093</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqp 094">lqp 094</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqp 095">lqp 095</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqp 096">lqp 096</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="lqp 099">lqp 099</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqp-065">lqp-065</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqp-067">lqp-067</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqp-067.608.020">lqp-067.608.020</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqq">lqq</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqq 3 m (fh)">lqq 3 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqq 7">lqq 7</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqq 7 i (fh)">lqq 7 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqq 72 k (fh)">lqq 72 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqqw 099">lqqw 099</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqr">lqr</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqr 0 b (fh)">lqr 0 b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 0 i">lqr 0 i</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 0 i (fh)">lqr 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 000.170">lqr 000.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 2 i (fh)">lqr 2 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 2 k (fh)">lqr 2 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 2 n (fh)">lqr 2 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr 24 m (fh)">lqr 24 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqr970">lqr970</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqro">lqro</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqs 0 i">lqs 0 i</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqs 1">lqs 1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqs 73 n (fh)">lqs 73 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqs o">lqs o</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqt">lqt</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqt 12">lqt 12</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqt 73 m (fh)">lqt 73 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqt 92 m (fh)">lqt 92 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqu 0 i (fh)">lqu 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqu 11 n (fh)">lqu 11 n (fh)</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqv">lqv</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqv 0 i (fh)">lqv 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="43" mnemonic="LKL" description="lqv 000">lqv 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 010">lqv 010</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 013">lqv 013</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 014">lqv 014</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 015">lqv 015</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqv 016">lqv 016</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqv 018">lqv 018</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lqv 019">lqv 019</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lqv 020">lqv 020</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqv 021">lqv 021</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqv 023">lqv 023</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqv 030">lqv 030</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 031">lqv 031</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="lqv 040">lqv 040</SCANLINE>
+
+    <SCANLINE hits="115" mnemonic="LKL" description="lqv 041">lqv 041</SCANLINE>
+
+    <SCANLINE hits="103" mnemonic="LKL" description="lqv 042">lqv 042</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 050">lqv 050</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqv 060">lqv 060</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="lqv 090">lqv 090</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqv 12 m (fh)">lqv 12 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqv 4 m">lqv 4 m</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqv000172">lqv000172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqw">lqw</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqw 0 i (fh)">lqw 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lqw 0 m (fh)">lqw 0 m (fh)</SCANLINE>
+
+    <SCANLINE hits="79" mnemonic="LKL" description="lqw 000">lqw 000</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lqw 010">lqw 010</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqw 011">lqw 011</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lqw 012">lqw 012</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="lqw 014">lqw 014</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lqw 015">lqw 015</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lqw 016">lqw 016</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqw 017">lqw 017</SCANLINE>
+
+    <SCANLINE hits="49" mnemonic="LKL" description="lqw 019">lqw 019</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lqw 020">lqw 020</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 021">lqw 021</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 022">lqw 022</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 023">lqw 023</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 030">lqw 030</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqw 032">lqw 032</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lqw 033">lqw 033</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqw 040">lqw 040</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 041">lqw 041</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lqw 042">lqw 042</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lqw 043">lqw 043</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="lqw 044">lqw 044</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lqw 045">lqw 045</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqw 046">lqw 046</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lqw 047">lqw 047</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lqw 048">lqw 048</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqw 049">lqw 049</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqw 050">lqw 050</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqw 051">lqw 051</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lqw 053">lqw 053</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lqw 060">lqw 060</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lqw 061">lqw 061</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lqw 062">lqw 062</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqw 063">lqw 063</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqw 064">lqw 064</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="lqw 065">lqw 065</SCANLINE>
 
@@ -57,7 +307,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lqz 000,172,0">lqz 000,172,0</SCANLINE>
 
-    <SCANLINE hits="110" mnemonic="LKL" description="lr">lr</SCANLINE>
+    <SCANLINE hits="111" mnemonic="LKL" description="lr">lr</SCANLINE>
 
     <SCANLINE hits="92" mnemonic="LKL" description="lr 000">lr 000</SCANLINE>
 
@@ -79,7 +329,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lr 2 d">lr 2 d</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lr 2 lt 2">lr 2 lt 2</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="lr 2 lt 2">lr 2 lt 2</SCANLINE>
 
     <SCANLINE hits="175" mnemonic="LKL" description="lr 200">lr 200</SCANLINE>
 
@@ -185,7 +435,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lsb">lsb</SCANLINE>
 
-    <SCANLINE hits="343" mnemonic="LKL" description="lt">lt</SCANLINE>
+    <SCANLINE hits="344" mnemonic="LKL" description="lt">lt</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="lt 000">lt 000</SCANLINE>
 
@@ -711,7 +961,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lz 0 b (fh)">lz 0 b (fh)</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="lz 000">lz 000</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="lz 000">lz 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lz 000.170">lz 000.170</SCANLINE>
 
@@ -759,261 +1009,11 @@
 
     <SCANLINE hits="51" mnemonic="LKL" description="lzg 001">lzg 001</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lzg 02 i (fh)">lzg 02 i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzg 04 i (fh)">lzg 04 i (fh)</SCANLINE>
-
-    <SCANLINE hits="157" mnemonic="LKL" description="lzg 200">lzg 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzg 254">lzg 254</SCANLINE>
-
-    <SCANLINE hits="128" mnemonic="LKL" description="lzg 300">lzg 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzg 6 n (fh)">lzg 6 n (fh)</SCANLINE>
-
-    <SCANLINE hits="235" mnemonic="LKL" description="lzg 900">lzg 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzg001.720">lzg001.720</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzh65602 (fh)">lzh65602 (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzh70 au110 (fh)">lzh70 au110 (fh)</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="lzk 000">lzk 000</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="lzk 001">lzk 001</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="lzk 200">lzk 200</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="lzk 300">lzk 300</SCANLINE>
-
-    <SCANLINE hits="76" mnemonic="LKL" description="lzk 900">lzk 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lzl46 bau m">lzl46 bau m</SCANLINE>
-
-    <SCANLINE hits="53" mnemonic="LKL" description="m">m</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="m lh">m lh</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="m pz">m pz</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="m pz pp pz 16 pe pz 16 pol">m pz pp pz 16 pe pz 16 pol</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="magha. with the commentary sarvankasha of mallinatha. edited by pandit durgaprasad and pandit sivadatta of jeypore. revised by wasudev laxman shastri fansikar.">magha. with the commentary sarvankasha of mallinatha. edited by pandit durgaprasad and pandit sivadatta of jeypore. revised by wasudev laxman shastri fansikar.</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="mathem. 73 a">mathem. 73 a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="mc">mc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="md an bs">md an bs</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="md an ssi">md an ssi</SCANLINE>
-
-    <SCANLINE hits="734" mnemonic="LKL" description="med">med</SCANLINE>
-
-    <SCANLINE hits="88" mnemonic="LKL" description="med 000">med 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="med 100">med 100</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="med 110">med 110</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="med 120">med 120</SCANLINE>
-
-    <SCANLINE hits="42" mnemonic="LKL" description="med 130">med 130</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="med 131">med 131</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="med 132">med 132</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="med 140">med 140</SCANLINE>
-
-    <SCANLINE hits="127" mnemonic="LKL" description="med 150">med 150</SCANLINE>
-
-    <SCANLINE hits="157" mnemonic="LKL" description="med 151">med 151</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="med 152">med 152</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="med 160">med 160</SCANLINE>
-
-    <SCANLINE hits="41" mnemonic="LKL" description="med 170">med 170</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 175">med 175</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="med 180">med 180</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="med 185">med 185</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="med 190">med 190</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 200">med 200</SCANLINE>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="med 201">med 201</SCANLINE>
-
-    <SCANLINE hits="166" mnemonic="LKL" description="med 202">med 202</SCANLINE>
-
-    <SCANLINE hits="274" mnemonic="LKL" description="med 203">med 203</SCANLINE>
-
-    <SCANLINE hits="417" mnemonic="LKL" description="med 204">med 204</SCANLINE>
-
-    <SCANLINE hits="68" mnemonic="LKL" description="med 205">med 205</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="med 210">med 210</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="med 214">med 214</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="med 215">med 215</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="med 216">med 216</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="med 217">med 217</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 220">med 220</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="med 221">med 221</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="med 230">med 230</SCANLINE>
-
-    <SCANLINE hits="108" mnemonic="LKL" description="med 231">med 231</SCANLINE>
-
-    <SCANLINE hits="121" mnemonic="LKL" description="med 232">med 232</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="med 240">med 240</SCANLINE>
-
-    <SCANLINE hits="222" mnemonic="LKL" description="med 241">med 241</SCANLINE>
-
-    <SCANLINE hits="84" mnemonic="LKL" description="med 242">med 242</SCANLINE>
-
-    <SCANLINE hits="154" mnemonic="LKL" description="med 243">med 243</SCANLINE>
-
-    <SCANLINE hits="310" mnemonic="LKL" description="med 250">med 250</SCANLINE>
-
-    <SCANLINE hits="60" mnemonic="LKL" description="med 260">med 260</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="med 270">med 270</SCANLINE>
-
-    <SCANLINE hits="76" mnemonic="LKL" description="med 271">med 271</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="med 272">med 272</SCANLINE>
-
-    <SCANLINE hits="109" mnemonic="LKL" description="med 273">med 273</SCANLINE>
-
-    <SCANLINE hits="87" mnemonic="LKL" description="med 275">med 275</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="med 280">med 280</SCANLINE>
-
-    <SCANLINE hits="49" mnemonic="LKL" description="med 281">med 281</SCANLINE>
-
-    <SCANLINE hits="113" mnemonic="LKL" description="med 282">med 282</SCANLINE>
-
-    <SCANLINE hits="407" mnemonic="LKL" description="med 283">med 283</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 284">med 284</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="med 290">med 290</SCANLINE>
-
-    <SCANLINE hits="245" mnemonic="LKL" description="med 291">med 291</SCANLINE>
-
-    <SCANLINE hits="84" mnemonic="LKL" description="med 292">med 292</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="med 293">med 293</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="med 294">med 294</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 300">med 300</SCANLINE>
-
-    <SCANLINE hits="382" mnemonic="LKL" description="med 301">med 301</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 302">med 302</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="med 310">med 310</SCANLINE>
-
-    <SCANLINE hits="326" mnemonic="LKL" description="med 311">med 311</SCANLINE>
-
-    <SCANLINE hits="112" mnemonic="LKL" description="med 312">med 312</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="med 320">med 320</SCANLINE>
-
-    <SCANLINE hits="173" mnemonic="LKL" description="med 321">med 321</SCANLINE>
-
-    <SCANLINE hits="178" mnemonic="LKL" description="med 322">med 322</SCANLINE>
-
-    <SCANLINE hits="84" mnemonic="LKL" description="med 323">med 323</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="med 330">med 330</SCANLINE>
-
-    <SCANLINE hits="211" mnemonic="LKL" description="med 331">med 331</SCANLINE>
-
-    <SCANLINE hits="147" mnemonic="LKL" description="med 332">med 332</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="med 333">med 333</SCANLINE>
-
-    <SCANLINE hits="403" mnemonic="LKL" description="med 334">med 334</SCANLINE>
-
-    <SCANLINE hits="51" mnemonic="LKL" description="med 335">med 335</SCANLINE>
-
-    <SCANLINE hits="54" mnemonic="LKL" description="med 336">med 336</SCANLINE>
-
-    <SCANLINE hits="59" mnemonic="LKL" description="med 337">med 337</SCANLINE>
-
-    <SCANLINE hits="43" mnemonic="LKL" description="med 338">med 338</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="med 340">med 340</SCANLINE>
-
-    <SCANLINE hits="707" mnemonic="LKL" description="med 341">med 341</SCANLINE>
-
-    <SCANLINE hits="216" mnemonic="LKL" description="med 342">med 342</SCANLINE>
-
-    <SCANLINE hits="406" mnemonic="LKL" description="med 343">med 343</SCANLINE>
-
-    <SCANLINE hits="461" mnemonic="LKL" description="med 344">med 344</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="med 350">med 350</SCANLINE>
-
-    <SCANLINE hits="275" mnemonic="LKL" description="med 351">med 351</SCANLINE>
-
-    <SCANLINE hits="365" mnemonic="LKL" description="med 352">med 352</SCANLINE>
-
-    <SCANLINE hits="278" mnemonic="LKL" description="med 353">med 353</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="med 360">med 360</SCANLINE>
-
-    <SCANLINE hits="231" mnemonic="LKL" description="med 361">med 361</SCANLINE>
-
-    <SCANLINE hits="69" mnemonic="LKL" description="med 362">med 362</SCANLINE>
-
-    <SCANLINE hits="132" mnemonic="LKL" description="med 363">med 363</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="med 370">med 370</SCANLINE>
-
-    <SCANLINE hits="293" mnemonic="LKL" description="med 371">med 371</SCANLINE>
-
-    <SCANLINE hits="150" mnemonic="LKL" description="med 372">med 372</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="med 373">med 373</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="med 374">med 374</SCANLINE>
-
-    <SCANLINE hits="89" mnemonic="LKL" description="med 375">med 375</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="med 380">med 380</SCANLINE>
-
-    <SCANLINE hits="66" mnemonic="LKL" description="med 381">med 381</SCANLINE>
-
-    <SCANLINE hits="55" mnemonic="LKL" description="med 382">med 382</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="med 390">med 390</SCANLINE>
-
-    <SCANLINE hits="140" mnemonic="LKL" description="med 391">med 391</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="med 392">med 392</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="med 393">med 393</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lqw+065" />
+<SCANPREV term="lqp+059" />
 
 
-<SCANNEXT term="med+393" />
+<SCANNEXT term="lzg+001" />
 
 </RESULT>

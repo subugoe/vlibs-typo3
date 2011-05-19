@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">7a5fe4f4-15</SESSIONVAR>
+<SESSIONVAR name="SID">087d918e-7</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="gm 774">gm 774</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gm 775">gm 775</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="gm 776">gm 776</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gm 780">gm 780</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="gm 781">gm 781</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 782">gm 782</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 783">gm 783</SCANLINE>
+
+    <SCANLINE hits="69" mnemonic="LKL" description="gm 784">gm 784</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="gm 790">gm 790</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 791">gm 791</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="gm 792">gm 792</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="gm 800">gm 800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gm 810 w (fh)">gm 810 w (fh)</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="gm 820">gm 820</SCANLINE>
 
@@ -83,7 +109,7 @@
 
     <SCANLINE hits="106" mnemonic="LKL" description="gn">gn</SCANLINE>
 
-    <SCANLINE hits="56" mnemonic="LKL" description="gn 000">gn 000</SCANLINE>
+    <SCANLINE hits="57" mnemonic="LKL" description="gn 000">gn 000</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="LKL" description="gn 100">gn 100</SCANLINE>
 
@@ -123,7 +149,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gn 31">gn 31</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="gn 350">gn 350</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="gn 350">gn 350</SCANLINE>
 
     <SCANLINE hits="90" mnemonic="LKL" description="gn 360">gn 360</SCANLINE>
 
@@ -131,9 +157,9 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gn 370">gn 370</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="gn 400">gn 400</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="gn 400">gn 400</SCANLINE>
 
-    <SCANLINE hits="176" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
+    <SCANLINE hits="183" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="gn 430">gn 430</SCANLINE>
 
@@ -193,7 +219,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="gn 733">gn 733</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="gn 736">gn 736</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="gn 736">gn 736</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gn 740">gn 740</SCANLINE>
 
@@ -225,7 +251,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gn 770">gn 770</SCANLINE>
 
-    <SCANLINE hits="56" mnemonic="LKL" description="gn 772">gn 772</SCANLINE>
+    <SCANLINE hits="57" mnemonic="LKL" description="gn 772">gn 772</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="gn 773">gn 773</SCANLINE>
 
@@ -243,7 +269,7 @@
 
     <SCANLINE hits="43" mnemonic="LKL" description="gn 784">gn 784</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="gn 790">gn 790</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="gn 790">gn 790</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="gn 791">gn 791</SCANLINE>
 
@@ -464,8 +490,6 @@
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 arch ii, 450-a">gr 2 arch ii, 450-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 arch ii, 52-a">gr 2 arch ii, 52-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 arch ii, 667-a">gr 2 arch ii, 667-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 arch iii, 6809-a">gr 2 arch iii, 6809-a</SCANLINE>
 
@@ -723,8 +747,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp v, 3405-d">gr 2 hlp v, 3405-d</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp vi, 15410">gr 2 hlp vi, 15410</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp vi, 1845-a">gr 2 hlp vi, 1845-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 1039-a">gr 2 inscr 1039-a</SCANLINE>
@@ -935,7 +957,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="gs">gs</SCANLINE>
 
-    <SCANLINE hits="3642" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
+    <SCANLINE hits="3670" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gs 100">gs 100</SCANLINE>
 
@@ -975,7 +997,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gtw">gtw</SCANLINE>
 
-    <SCANLINE hits="1171" mnemonic="LKL" description="gu">gu</SCANLINE>
+    <SCANLINE hits="1169" mnemonic="LKL" description="gu">gu</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="gu (fh)">gu (fh)</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="62" mnemonic="LKL" description="gu 600">gu 600</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gu 620">gu 620</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gu 640">gu 640</SCANLINE>
-
-    <SCANLINE hits="46" mnemonic="LKL" description="gu 650">gu 650</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="gu 700">gu 700</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="gu 800">gu 800</SCANLINE>
-
-    <SCANLINE hits="134" mnemonic="LKL" description="gu a">gu a</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="gu a (fh)">gu a (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gu b">gu b</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="gu b (fh)">gu b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gu d (fh)">gu d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gu e and (fh)">gu e and (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gm+820" />
+<SCANPREV term="gm+774" />
 
 
-<SCANNEXT term="gu+e+and+(fh)" />
+<SCANNEXT term="gu+600" />
 
 </RESULT>

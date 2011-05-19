@@ -2,12 +2,48 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">de823f72-14</SESSIONVAR>
+<SESSIONVAR name="SID">792d0120-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jck 551">jck 551</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 560">jck 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jck 570">jck 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 572">jck 572</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 578">jck 578</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 579">jck 579</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="jck 580">jck 580</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="jck 600">jck 600</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="jck 610">jck 610</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 620">jck 620</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 640">jck 640</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jck 650">jck 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jck 660">jck 660</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 664">jck 664</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jck 666">jck 666</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jck xxx">jck xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jck,3">jck,3</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jd">jd</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jd 300">jd 300</SCANLINE>
 
@@ -973,47 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jdw 300">jdw 300</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="je">je</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="je 200">je 200</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="je 300">je 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 313">je 313</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="je 317">je 317</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="je 320">je 320</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="je 321">je 321</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="je 323">je 323</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 330">je 330</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="je 335">je 335</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 337">je 337</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 338">je 338</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="je 340">je 340</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="je 350">je 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="je 352">je 352</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 353">je 353</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="je 354">je 354</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="je 370">je 370</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jd+300" />
+<SCANPREV term="jck+551" />
 
 
-<SCANNEXT term="je+370" />
+<SCANNEXT term="jdw+300" />
 
 </RESULT>

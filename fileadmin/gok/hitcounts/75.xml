@@ -2,16 +2,52 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ea609820-12</SESSIONVAR>
+<SESSIONVAR name="SID">63d0a774-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="ius">ius</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 200">ius 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 240">ius 240</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ius 300">ius 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ius 317">ius 317</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 320">ius 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 321">ius 321</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 350">ius 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 353">ius 353</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 380">ius 380</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 400">ius 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 430">ius 430</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 434">ius 434</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ius 500">ius 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 510">ius 510</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ius 530">ius 530</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ius 534">ius 534</SCANLINE>
+
     <SCANLINE hits="1" mnemonic="LKL" description="ius 535">ius 535</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ius 536">ius 536</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ius 560">ius 560</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ius 580">ius 580</SCANLINE>
 
@@ -625,7 +661,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="iz 200">iz 200</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="iz 300">iz 300</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="iz 300">iz 300</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="iz 317">iz 317</SCANLINE>
 
@@ -693,7 +729,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="iz 500">iz 500</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="iz 501">iz 501</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="iz 501">iz 501</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="iz 510">iz 510</SCANLINE>
 
@@ -973,47 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jb 340">jb 340</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jb 347">jb 347</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jb 350">jb 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jb 351">jb 351</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jb 352">jb 352</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 370">jb 370</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jb 374">jb 374</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jb 377">jb 377</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 4">jb 4</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 400">jb 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 430">jb 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 435">jb 435</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jb 438">jb 438</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jb 500">jb 500</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jb 501">jb 501</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 510">jb 510</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jb 515">jb 515</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jb 520">jb 520</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jb 522">jb 522</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ius+535" />
+<SCANPREV term="ius" />
 
 
-<SCANNEXT term="jb+522" />
+<SCANNEXT term="jb+340" />
 
 </RESULT>

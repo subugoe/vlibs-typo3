@@ -2,18 +2,48 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ef0761dd-15</SESSIONVAR>
+<SESSIONVAR name="SID">7eaac595-4</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
+    <SCANLINE hits="3" mnemonic="LKL" description="iah 553">iah 553</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="iah 555">iah 555</SCANLINE>
+
+    <SCANLINE hits="43" mnemonic="LKL" description="iah 560">iah 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iah 570">iah 570</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="iah 572">iah 572</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="iah 573">iah 573</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="iah 578">iah 578</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="iah 580">iah 580</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="iah 599">iah 599</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="iah 600">iah 600</SCANLINE>
+
+    <SCANLINE hits="542" mnemonic="LKL" description="iah 610">iah 610</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="iah 620">iah 620</SCANLINE>
+
+    <SCANLINE hits="55" mnemonic="LKL" description="iah 630">iah 630</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iah 632">iah 632</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="iah 640">iah 640</SCANLINE>
+
     <SCANLINE hits="24" mnemonic="LKL" description="iah 650">iah 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="iah 660">iah 660</SCANLINE>
 
-    <SCANLINE hits="116" mnemonic="LKL" description="iah 661">iah 661</SCANLINE>
+    <SCANLINE hits="122" mnemonic="LKL" description="iah 661">iah 661</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="iah 662">iah 662</SCANLINE>
 
@@ -21,9 +51,9 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="iah 664">iah 664</SCANLINE>
 
-    <SCANLINE hits="333" mnemonic="LKL" description="iah 665">iah 665</SCANLINE>
+    <SCANLINE hits="339" mnemonic="LKL" description="iah 665">iah 665</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="iah 666">iah 666</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="iah 666">iah 666</SCANLINE>
 
     <SCANLINE hits="51" mnemonic="LKL" description="iah 667">iah 667</SCANLINE>
 
@@ -183,7 +213,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="iaj 600">iaj 600</SCANLINE>
 
-    <SCANLINE hits="225" mnemonic="LKL" description="iaj 610">iaj 610</SCANLINE>
+    <SCANLINE hits="226" mnemonic="LKL" description="iaj 610">iaj 610</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="iaj 620">iaj 620</SCANLINE>
 
@@ -201,7 +231,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="iaj 664">iaj 664</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="LKL" description="iaj 665">iaj 665</SCANLINE>
+    <SCANLINE hits="131" mnemonic="LKL" description="iaj 665">iaj 665</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="iaj 666">iaj 666</SCANLINE>
 
@@ -335,7 +365,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="ib 534">ib 534</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="ib 535">ib 535</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="ib 535">ib 535</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="ib 536">ib 536</SCANLINE>
 
@@ -359,7 +389,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ib 553">ib 553</SCANLINE>
 
-    <SCANLINE hits="104" mnemonic="LKL" description="ib 560">ib 560</SCANLINE>
+    <SCANLINE hits="107" mnemonic="LKL" description="ib 560">ib 560</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ib 570">ib 570</SCANLINE>
 
@@ -373,7 +403,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ib 578">ib 578</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="LKL" description="ib 580">ib 580</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="ib 580">ib 580</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="ib 599">ib 599</SCANLINE>
 
@@ -549,7 +579,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibb 517">ibb 517</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ibb 520">ibb 520</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ibb 520">ibb 520</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="ibb 521">ibb 521</SCANLINE>
 
@@ -589,7 +619,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="ibb 543">ibb 543</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="ibb 544">ibb 544</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="ibb 544">ibb 544</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ibb 545">ibb 545</SCANLINE>
 
@@ -629,11 +659,11 @@
 
     <SCANLINE hits="94" mnemonic="LKL" description="ibb 600">ibb 600</SCANLINE>
 
-    <SCANLINE hits="1588" mnemonic="LKL" description="ibb 610">ibb 610</SCANLINE>
+    <SCANLINE hits="1596" mnemonic="LKL" description="ibb 610">ibb 610</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="ibb 620">ibb 620</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="ibb 620">ibb 620</SCANLINE>
 
-    <SCANLINE hits="74" mnemonic="LKL" description="ibb 630">ibb 630</SCANLINE>
+    <SCANLINE hits="75" mnemonic="LKL" description="ibb 630">ibb 630</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibb 65">ibb 65</SCANLINE>
 
@@ -649,11 +679,11 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="ibb 664">ibb 664</SCANLINE>
 
-    <SCANLINE hits="1059" mnemonic="LKL" description="ibb 665">ibb 665</SCANLINE>
+    <SCANLINE hits="1064" mnemonic="LKL" description="ibb 665">ibb 665</SCANLINE>
 
     <SCANLINE hits="72" mnemonic="LKL" description="ibb 666">ibb 666</SCANLINE>
 
-    <SCANLINE hits="100" mnemonic="LKL" description="ibb 667">ibb 667</SCANLINE>
+    <SCANLINE hits="102" mnemonic="LKL" description="ibb 667">ibb 667</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="ibb 668">ibb 668</SCANLINE>
 
@@ -841,7 +871,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="ibg 600">ibg 600</SCANLINE>
 
-    <SCANLINE hits="1049" mnemonic="LKL" description="ibg 610">ibg 610</SCANLINE>
+    <SCANLINE hits="1054" mnemonic="LKL" description="ibg 610">ibg 610</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ibg 620">ibg 620</SCANLINE>
 
@@ -855,7 +885,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ibg 660">ibg 660</SCANLINE>
 
-    <SCANLINE hits="357" mnemonic="LKL" description="ibg 661">ibg 661</SCANLINE>
+    <SCANLINE hits="358" mnemonic="LKL" description="ibg 661">ibg 661</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ibg 662">ibg 662</SCANLINE>
 
@@ -863,11 +893,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibg 664">ibg 664</SCANLINE>
 
-    <SCANLINE hits="627" mnemonic="LKL" description="ibg 665">ibg 665</SCANLINE>
+    <SCANLINE hits="630" mnemonic="LKL" description="ibg 665">ibg 665</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="ibg 666">ibg 666</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="ibg 667">ibg 667</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="ibg 667">ibg 667</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ibg 668">ibg 668</SCANLINE>
 
@@ -979,41 +1009,11 @@
 
     <SCANLINE hits="100" mnemonic="LKL" description="ibj 437">ibj 437</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ibj 438">ibj 438</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="ibj 439">ibj 439</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ibj 440">ibj 440</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="ibj 441">ibj 441</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ibj 442">ibj 442</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="ibj 443">ibj 443</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="ibj 444">ibj 444</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ibj 445">ibj 445</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ibj 446">ibj 446</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ibj 451">ibj 451</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ibj 453">ibj 453</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ibj 458">ibj 458</SCANLINE>
-
-    <SCANLINE hits="40" mnemonic="LKL" description="ibj 459">ibj 459</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ibj 460">ibj 460</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="ibj 470">ibj 470</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="iah+650" />
+<SCANPREV term="iah+553" />
 
 
-<SCANNEXT term="ibj+470" />
+<SCANNEXT term="ibj+437" />
 
 </RESULT>

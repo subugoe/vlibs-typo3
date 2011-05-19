@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">7bf3a4bf-14</SESSIONVAR>
+<SESSIONVAR name="SID">317c174c-7</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hrk 430">hrk 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hrk 435">hrk 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hrk 437">hrk 437</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hrk 438">hrk 438</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hrk 440">hrk 440</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hrk 443">hrk 443</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hrk 451">hrk 451</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hrk 459">hrk 459</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hrk 460">hrk 460</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="hrk 480">hrk 480</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="hrk 482">hrk 482</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hrk 500">hrk 500</SCANLINE>
 
@@ -83,6 +105,8 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hrm 372">hrm 372</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="hrm 375">hrm 375</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="hrm 383">hrm 383</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hrm 420">hrm 420</SCANLINE>
@@ -127,7 +151,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hrn xxx">hrn xxx</SCANLINE>
 
-    <SCANLINE hits="4014" mnemonic="LKL" description="hs">hs</SCANLINE>
+    <SCANLINE hits="4015" mnemonic="LKL" description="hs">hs</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs ,6">hs ,6</SCANLINE>
 
@@ -147,7 +171,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="hs 210">hs 210</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="hs 220">hs 220</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="hs 220">hs 220</SCANLINE>
 
     <SCANLINE hits="39" mnemonic="LKL" description="hs 230">hs 230</SCANLINE>
 
@@ -163,13 +187,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hs 3 hwk3">hs 3 hwk3</SCANLINE>
 
-    <SCANLINE hits="275" mnemonic="LKL" description="hs 300">hs 300</SCANLINE>
+    <SCANLINE hits="279" mnemonic="LKL" description="hs 300">hs 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 300 p">hs 300 p</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="hs 303">hs 303</SCANLINE>
 
-    <SCANLINE hits="75" mnemonic="LKL" description="hs 313">hs 313</SCANLINE>
+    <SCANLINE hits="76" mnemonic="LKL" description="hs 313">hs 313</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="hs 314">hs 314</SCANLINE>
 
@@ -177,7 +201,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="hs 316">hs 316</SCANLINE>
 
-    <SCANLINE hits="158" mnemonic="LKL" description="hs 317">hs 317</SCANLINE>
+    <SCANLINE hits="159" mnemonic="LKL" description="hs 317">hs 317</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="hs 318">hs 318</SCANLINE>
 
@@ -185,7 +209,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="hs 320">hs 320</SCANLINE>
 
-    <SCANLINE hits="114" mnemonic="LKL" description="hs 321">hs 321</SCANLINE>
+    <SCANLINE hits="115" mnemonic="LKL" description="hs 321">hs 321</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hs 322">hs 322</SCANLINE>
 
@@ -197,11 +221,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hs 327">hs 327</SCANLINE>
 
-    <SCANLINE hits="113" mnemonic="LKL" description="hs 330">hs 330</SCANLINE>
+    <SCANLINE hits="116" mnemonic="LKL" description="hs 330">hs 330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 330 a">hs 330 a</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="hs 331">hs 331</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="hs 331">hs 331</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="hs 332">hs 332</SCANLINE>
 
@@ -211,11 +235,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="hs 336">hs 336</SCANLINE>
 
-    <SCANLINE hits="41" mnemonic="LKL" description="hs 337">hs 337</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="hs 337">hs 337</SCANLINE>
 
     <SCANLINE hits="52" mnemonic="LKL" description="hs 338">hs 338</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="hs 340">hs 340</SCANLINE>
+    <SCANLINE hits="74" mnemonic="LKL" description="hs 340">hs 340</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="hs 342">hs 342</SCANLINE>
 
@@ -227,11 +251,11 @@
 
     <SCANLINE hits="77" mnemonic="LKL" description="hs 347">hs 347</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="hs 350">hs 350</SCANLINE>
+    <SCANLINE hits="35" mnemonic="LKL" description="hs 350">hs 350</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="hs 351">hs 351</SCANLINE>
 
-    <SCANLINE hits="233" mnemonic="LKL" description="hs 352">hs 352</SCANLINE>
+    <SCANLINE hits="235" mnemonic="LKL" description="hs 352">hs 352</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="hs 353">hs 353</SCANLINE>
 
@@ -249,13 +273,13 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="hs 360">hs 360</SCANLINE>
 
-    <SCANLINE hits="65" mnemonic="LKL" description="hs 361">hs 361</SCANLINE>
+    <SCANLINE hits="66" mnemonic="LKL" description="hs 361">hs 361</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 365">hs 365</SCANLINE>
 
     <SCANLINE hits="40" mnemonic="LKL" description="hs 366">hs 366</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="hs 370">hs 370</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="hs 370">hs 370</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="hs 372">hs 372</SCANLINE>
 
@@ -263,11 +287,11 @@
 
     <SCANLINE hits="82" mnemonic="LKL" description="hs 374">hs 374</SCANLINE>
 
-    <SCANLINE hits="61" mnemonic="LKL" description="hs 375">hs 375</SCANLINE>
+    <SCANLINE hits="62" mnemonic="LKL" description="hs 375">hs 375</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="hs 376">hs 376</SCANLINE>
 
-    <SCANLINE hits="156" mnemonic="LKL" description="hs 377">hs 377</SCANLINE>
+    <SCANLINE hits="160" mnemonic="LKL" description="hs 377">hs 377</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="hs 380">hs 380</SCANLINE>
 
@@ -329,7 +353,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="hs 447">hs 447</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="hs 448">hs 448</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="hs 448">hs 448</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="hs 449">hs 449</SCANLINE>
 
@@ -373,7 +397,7 @@
 
     <SCANLINE hits="128" mnemonic="LKL" description="hs 513">hs 513</SCANLINE>
 
-    <SCANLINE hits="180" mnemonic="LKL" description="hs 514">hs 514</SCANLINE>
+    <SCANLINE hits="181" mnemonic="LKL" description="hs 514">hs 514</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="hs 515">hs 515</SCANLINE>
 
@@ -385,19 +409,19 @@
 
     <SCANLINE hits="33" mnemonic="LKL" description="hs 520">hs 520</SCANLINE>
 
-    <SCANLINE hits="242" mnemonic="LKL" description="hs 521">hs 521</SCANLINE>
+    <SCANLINE hits="244" mnemonic="LKL" description="hs 521">hs 521</SCANLINE>
 
     <SCANLINE hits="61" mnemonic="LKL" description="hs 522">hs 522</SCANLINE>
 
     <SCANLINE hits="287" mnemonic="LKL" description="hs 523">hs 523</SCANLINE>
 
-    <SCANLINE hits="93" mnemonic="LKL" description="hs 524">hs 524</SCANLINE>
+    <SCANLINE hits="94" mnemonic="LKL" description="hs 524">hs 524</SCANLINE>
 
-    <SCANLINE hits="104" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
+    <SCANLINE hits="105" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="hs 526">hs 526</SCANLINE>
 
-    <SCANLINE hits="150" mnemonic="LKL" description="hs 527">hs 527</SCANLINE>
+    <SCANLINE hits="152" mnemonic="LKL" description="hs 527">hs 527</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="hs 529">hs 529</SCANLINE>
 
@@ -415,7 +439,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 52926 sh u (fh)">hs 52926 sh u (fh)</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="hs 530">hs 530</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="hs 530">hs 530</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="hs 531">hs 531</SCANLINE>
 
@@ -423,11 +447,11 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="hs 533">hs 533</SCANLINE>
 
-    <SCANLINE hits="203" mnemonic="LKL" description="hs 534">hs 534</SCANLINE>
+    <SCANLINE hits="204" mnemonic="LKL" description="hs 534">hs 534</SCANLINE>
 
-    <SCANLINE hits="111" mnemonic="LKL" description="hs 535">hs 535</SCANLINE>
+    <SCANLINE hits="112" mnemonic="LKL" description="hs 535">hs 535</SCANLINE>
 
-    <SCANLINE hits="245" mnemonic="LKL" description="hs 536">hs 536</SCANLINE>
+    <SCANLINE hits="244" mnemonic="LKL" description="hs 536">hs 536</SCANLINE>
 
     <SCANLINE hits="76" mnemonic="LKL" description="hs 537">hs 537</SCANLINE>
 
@@ -455,7 +479,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="hs 549">hs 549</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="hs 551">hs 551</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="hs 551">hs 551</SCANLINE>
 
     <SCANLINE hits="52" mnemonic="LKL" description="hs 552">hs 552</SCANLINE>
 
@@ -469,7 +493,7 @@
 
     <SCANLINE hits="34" mnemonic="LKL" description="hs 559">hs 559</SCANLINE>
 
-    <SCANLINE hits="777" mnemonic="LKL" description="hs 560">hs 560</SCANLINE>
+    <SCANLINE hits="779" mnemonic="LKL" description="hs 560">hs 560</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="hs 570">hs 570</SCANLINE>
 
@@ -499,7 +523,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="hs 6">hs 6</SCANLINE>
 
-    <SCANLINE hits="1535" mnemonic="LKL" description="hs 600">hs 600</SCANLINE>
+    <SCANLINE hits="1538" mnemonic="LKL" description="hs 600">hs 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 600 goet q (fh)">hs 600 goet q (fh)</SCANLINE>
 
@@ -511,7 +535,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 601">hs 601</SCANLINE>
 
-    <SCANLINE hits="4674" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
+    <SCANLINE hits="4692" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 612">hs 612</SCANLINE>
 
@@ -523,11 +547,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 622">hs 622</SCANLINE>
 
-    <SCANLINE hits="531" mnemonic="LKL" description="hs 630">hs 630</SCANLINE>
+    <SCANLINE hits="533" mnemonic="LKL" description="hs 630">hs 630</SCANLINE>
 
-    <SCANLINE hits="664" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
+    <SCANLINE hits="671" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
 
-    <SCANLINE hits="591" mnemonic="LKL" description="hs 650">hs 650</SCANLINE>
+    <SCANLINE hits="593" mnemonic="LKL" description="hs 650">hs 650</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hs 660">hs 660</SCANLINE>
 
@@ -539,11 +563,11 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="hs 665">hs 665</SCANLINE>
 
-    <SCANLINE hits="505" mnemonic="LKL" description="hs 666">hs 666</SCANLINE>
+    <SCANLINE hits="506" mnemonic="LKL" description="hs 666">hs 666</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hs 667">hs 667</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="hs 668">hs 668</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="hs 668">hs 668</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 838">hs 838</SCANLINE>
 
@@ -737,7 +761,7 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="hsa 580">hsa 580</SCANLINE>
 
-    <SCANLINE hits="136" mnemonic="LKL" description="hsa 600">hsa 600</SCANLINE>
+    <SCANLINE hits="137" mnemonic="LKL" description="hsa 600">hsa 600</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="hsa 610">hsa 610</SCANLINE>
 
@@ -873,6 +897,8 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="hsd 300">hsd 300</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="hsd 317">hsd 317</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="hsd 318">hsd 318</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hsd 320">hsd 320</SCANLINE>
@@ -969,7 +995,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hsd 460">hsd 460</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="hsd 500">hsd 500</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="hsd 500">hsd 500</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hsd 501">hsd 501</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hsd 515">hsd 515</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="hsd 516">hsd 516</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hsd 517">hsd 517</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="hsd 519">hsd 519</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hsd 520">hsd 520</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hsd 521">hsd 521</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="hsd 523">hsd 523</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hsd 524">hsd 524</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="hsd 525">hsd 525</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hsd 527">hsd 527</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hsd 530">hsd 530</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="hsd 531">hsd 531</SCANLINE>
-
-    <SCANLINE hits="51" mnemonic="LKL" description="hsd 532">hsd 532</SCANLINE>
-
-    <SCANLINE hits="57" mnemonic="LKL" description="hsd 533">hsd 533</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hrk+500" />
+<SCANPREV term="hrk+430" />
 
 
-<SCANNEXT term="hsd+533" />
+<SCANNEXT term="hsd+515" />
 
 </RESULT>

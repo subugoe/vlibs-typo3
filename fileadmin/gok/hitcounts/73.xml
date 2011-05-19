@@ -2,12 +2,42 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c780e09d-14</SESSIONVAR>
+<SESSIONVAR name="SID">8e78bb2f-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="im 300">im 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 314">im 314</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="im 317">im 317</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 319">im 319</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="im 320">im 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 321">im 321</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="im 330">im 330</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 335">im 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 337">im 337</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 340">im 340</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="im 350">im 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 352">im 352</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="im 357">im 357</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="im 358">im 358</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="im 359">im 359</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="im 370">im 370</SCANLINE>
 
@@ -223,7 +253,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="in 513">in 513</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="in 514">in 514</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="in 514">in 514</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="in 515">in 515</SCANLINE>
 
@@ -257,7 +287,7 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="in 534">in 534</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="in 535">in 535</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="in 535">in 535</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="in 536">in 536</SCANLINE>
 
@@ -313,7 +343,7 @@
 
     <SCANLINE hits="334" mnemonic="LKL" description="in 600">in 600</SCANLINE>
 
-    <SCANLINE hits="249" mnemonic="LKL" description="in 610">in 610</SCANLINE>
+    <SCANLINE hits="250" mnemonic="LKL" description="in 610">in 610</SCANLINE>
 
     <SCANLINE hits="24" mnemonic="LKL" description="in 620">in 620</SCANLINE>
 
@@ -321,7 +351,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="in 640">in 640</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="in 650">in 650</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="in 650">in 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="in 660">in 660</SCANLINE>
 
@@ -875,7 +905,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ir 316">ir 316</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="ir 317">ir 317</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="ir 317">ir 317</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ir 318">ir 318</SCANLINE>
 
@@ -889,7 +919,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ir 324">ir 324</SCANLINE>
 
-    <SCANLINE hits="78" mnemonic="LKL" description="ir 330">ir 330</SCANLINE>
+    <SCANLINE hits="79" mnemonic="LKL" description="ir 330">ir 330</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ir 331">ir 331</SCANLINE>
 
@@ -905,11 +935,11 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="ir 338">ir 338</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="ir 340">ir 340</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="ir 340">ir 340</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ir 343">ir 343</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="ir 345">ir 345</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="ir 345">ir 345</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="ir 347">ir 347</SCANLINE>
 
@@ -943,7 +973,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ir 373">ir 373</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="ir 374">ir 374</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="ir 374">ir 374</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="ir 375">ir 375</SCANLINE>
 
@@ -955,7 +985,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ir 381">ir 381</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ir 382">ir 382</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ir 382">ir 382</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ir 383">ir 383</SCANLINE>
 
@@ -979,41 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ir 435">ir 435</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ir 439">ir 439</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ir 440">ir 440</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ir 442">ir 442</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ir 446">ir 446</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ir 459">ir 459</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ir 474">ir 474</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ir 480">ir 480</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ir 5">ir 5</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ir 5 c">ir 5 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ir 5 c2">ir 5 c2</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ir 5 j 84">ir 5 j 84</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ir 5 j84">ir 5 j84</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="ir 500">ir 500</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ir 501">ir 501</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ir 510">ir 510</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="im+370" />
+<SCANPREV term="im+300" />
 
 
-<SCANNEXT term="ir+510" />
+<SCANNEXT term="ir+435" />
 
 </RESULT>

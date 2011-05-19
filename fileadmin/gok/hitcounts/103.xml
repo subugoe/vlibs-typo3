@@ -2,12 +2,278 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">894d2045-15</SESSIONVAR>
+<SESSIONVAR name="SID">4d73ddcc-6</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lek 620">lek 620</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lek 630">lek 630</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="lek 640">lek 640</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lek 650">lek 650</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lek 660">lek 660</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lek200">lek200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 100">lem 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 110">lem 110</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lem 120">lem 120</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lem 130">lem 130</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 130 d (fh)">lem 130 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 130 l (fh)">lem 130 l (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 130 m (fh)">lem 130 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 140">lem 140</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="lem 150">lem 150</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 150 d (fh)">lem 150 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 150 k (fh)">lem 150 k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lem 150 m (fh)">lem 150 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 160">lem 160</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 170">lem 170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 170 k (fh)">lem 170 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 190">lem 190</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lem 200">lem 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 208">lem 208</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lem 220">lem 220</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 220 m (fh)">lem 220 m (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 230">lem 230</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 230 a (fh)">lem 230 a (fh)</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="lem 280">lem 280</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 28005 entw m (fh)">lem 28005 entw m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 28016 gb m (fh)">lem 28016 gb m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 28066 usa m (fh)">lem 28066 usa m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 293">lem 293</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 293 m (fh)">lem 293 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 294">lem 294</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 294 (fh)">lem 294 (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 300">lem 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 310">lem 310</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lem 320">lem 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 320 m (fh)">lem 320 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 400">lem 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 440">lem 440</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 450">lem 450</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 490">lem 490</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lem 500">lem 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 500 m (fh)">lem 500 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 500 w (fh)">lem 500 w (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 600">lem 600</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 600 m (fh)">lem 600 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 600 w (fh)">lem 600 w (fh)</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="lem 640">lem 640</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 640 d (fh)">lem 640 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 640 k (fh)">lem 640 k (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 640 m (fh)">lem 640 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lem 650">lem 650</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lem 650 k (fh)">lem 650 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lem 660">lem 660</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="lem 670">lem 670</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lem 680">lem 680</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="lem 690">lem 690</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lem 700">lem 700</SCANLINE>
+
+    <SCANLINE hits="100" mnemonic="LKL" description="lem 710">lem 710</SCANLINE>
+
+    <SCANLINE hits="47" mnemonic="LKL" description="lem 720">lem 720</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="lem 730">lem 730</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lem 740">lem 740</SCANLINE>
+
+    <SCANLINE hits="77" mnemonic="LKL" description="lem 750">lem 750</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lem 760">lem 760</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="len 765">len 765</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="leo">leo</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="leo 100">leo 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 100 a (fh)">leo 100 a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 100 k (fh)">leo 100 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 120">leo 120</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="leo 130">leo 130</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leo 130 d (fh)">leo 130 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 130 k (fh)">leo 130 k (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="leo 130 m (fh)">leo 130 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 130 n (fh)">leo 130 n (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leo 140">leo 140</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 150">leo 150</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="leo 180">leo 180</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 18016 gb k (fh)">leo 18016 gb k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 18066 usa m (fh)">leo 18066 usa m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 190">leo 190</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 200">leo 200</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="leo 210">leo 210</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 210 b (fh)">leo 210 b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 210 d (fh)">leo 210 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 210 k (fh)">leo 210 k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 210 l (fh)">leo 210 l (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leo 210 m (fh)">leo 210 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 220">leo 220</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leo 300">leo 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 300 m (fh)">leo 300 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 330">leo 330</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="leo 360">leo 360</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 360 k (fh)">leo 360 k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leo 360 m (fh)">leo 360 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 360 w (fh)">leo 360 w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 370">leo 370</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 380 m (fh)">leo 380 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 390">leo 390</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 420 m (fh)">leo 420 m (fh)</SCANLINE>
+
+    <SCANLINE hits="55" mnemonic="LKL" description="leo 770">leo 770</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leo 780">leo 780</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="leo 790">leo 790</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo 796">leo 796</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leo100">leo100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leq">leq</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 10066 usa k (fh)">leq 10066 usa k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leq 150">leq 150</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 15020 d w (fh)">leq 15020 d w (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leq 200">leq 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 210">leq 210</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="leq 250">leq 250</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 250 m (fh)">leq 250 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 300">leq 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="leq 400">leq 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 400 m (fh)">leq 400 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 40066 usa v (fh)">leq 40066 usa v (fh)</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="leq 500">leq 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 500 m (fh)">leq 500 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 500 w (fh)">leq 500 w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 50016 gb m (fh)">leq 50016 gb m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 50016 su m (fh)">leq 50016 su m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 50016 su w (fh)">leq 50016 su w (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leq 50020 d w (fh)">leq 50020 d w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 50066 usa m (fh)">leq 50066 usa m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="leq 50070 au w (fh)">leq 50070 au w (fh)</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="leq 550">leq 550</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="leq 550 l (fh)">leq 550 l (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leq 550 m (fh)">leq 550 m (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="leq 600">leq 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leq 600 w (fh)">leq 600 w (fh)</SCANLINE>
 
@@ -203,7 +469,7 @@
 
     <SCANLINE hits="40" mnemonic="LKL" description="les 860">les 860</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="les 870">les 870</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="les 870">les 870</SCANLINE>
 
     <SCANLINE hits="109" mnemonic="LKL" description="les 880">les 880</SCANLINE>
 
@@ -235,7 +501,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="leu 160 m (fh)">leu 160 m (fh)</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="leu 180">leu 180</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="leu 180">leu 180</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leu 18016 est l (fh)">leu 18016 est l (fh)</SCANLINE>
 
@@ -249,15 +515,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="leu 18016 un k (fh)">leu 18016 un k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="leu 18020 ddr k (fh)">leu 18020 ddr k (fh)</SCANLINE>
-
     <SCANLINE hits="2" mnemonic="LKL" description="leu 18066 usa m (fh)">leu 18066 usa m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leu 18070 au m (fh)">leu 18070 au m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="leu 190">leu 190</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="leu 890">leu 890</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="leu 890">leu 890</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="lew">lew</SCANLINE>
 
@@ -271,9 +535,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 100 l (fh)">lew 100 l (fh)</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="lew 110">lew 110</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lew 110 k (fh)">lew 110 k (fh)</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="lew 110">lew 110</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="lew 120">lew 120</SCANLINE>
 
@@ -313,15 +575,13 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="lew 245">lew 245</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="lew 250">lew 250</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="lew 250">lew 250</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lew 25066 usa a">lew 25066 usa a</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lew 25066 usa a (fh)">lew 25066 usa a (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 25066 usa f (fh)">lew 25066 usa f (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lew 25066 usa u (fh)">lew 25066 usa u (fh)</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="lew 255">lew 255</SCANLINE>
 
@@ -345,13 +605,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="lew 310 m (fh)">lew 310 m (fh)</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="lew 320">lew 320</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="lew 320">lew 320</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 320 a">lew 320 a</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lew 320 a (fh)">lew 320 a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lew 320 m (fh)">lew 320 m (fh)</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="lew 320 w (fh)">lew 320 w (fh)</SCANLINE>
 
@@ -359,15 +617,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 330 w (fh)">lew 330 w (fh)</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="lew 340">lew 340</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="lew 340">lew 340</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 340 a">lew 340 a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 34016 oe w (fh)">lew 34016 oe w (fh)</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lew 34020 d a (fh)">lew 34020 d a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lew 34020 d m (fh)">lew 34020 d m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 34020 d u (fh)">lew 34020 d u (fh)</SCANLINE>
 
@@ -429,17 +685,17 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lew 90">lew 90</SCANLINE>
 
-    <SCANLINE hits="238" mnemonic="LKL" description="lew 900">lew 900</SCANLINE>
+    <SCANLINE hits="242" mnemonic="LKL" description="lew 900">lew 900</SCANLINE>
 
     <SCANLINE hits="90" mnemonic="LKL" description="lew 910">lew 910</SCANLINE>
 
-    <SCANLINE hits="149" mnemonic="LKL" description="lew 920">lew 920</SCANLINE>
+    <SCANLINE hits="150" mnemonic="LKL" description="lew 920">lew 920</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="lew 930">lew 930</SCANLINE>
 
     <SCANLINE hits="50" mnemonic="LKL" description="lew 940">lew 940</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="lew 950">lew 950</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="lew 950">lew 950</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="lew 960">lew 960</SCANLINE>
 
@@ -457,11 +713,11 @@
 
     <SCANLINE hits="92" mnemonic="LKL" description="ley 110">ley 110</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="ley 120">ley 120</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="ley 120">ley 120</SCANLINE>
 
-    <SCANLINE hits="367" mnemonic="LKL" description="ley 130">ley 130</SCANLINE>
+    <SCANLINE hits="369" mnemonic="LKL" description="ley 130">ley 130</SCANLINE>
 
-    <SCANLINE hits="298" mnemonic="LKL" description="ley 140">ley 140</SCANLINE>
+    <SCANLINE hits="301" mnemonic="LKL" description="ley 140">ley 140</SCANLINE>
 
     <SCANLINE hits="38" mnemonic="LKL" description="ley 150">ley 150</SCANLINE>
 
@@ -469,7 +725,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="ley 170">ley 170</SCANLINE>
 
-    <SCANLINE hits="124" mnemonic="LKL" description="ley 180">ley 180</SCANLINE>
+    <SCANLINE hits="126" mnemonic="LKL" description="ley 180">ley 180</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="ley 190">ley 190</SCANLINE>
 
@@ -551,7 +807,7 @@
 
     <SCANLINE hits="3177" mnemonic="LKL" description="lf">lf</SCANLINE>
 
-    <SCANLINE hits="215" mnemonic="LKL" description="lf 000">lf 000</SCANLINE>
+    <SCANLINE hits="217" mnemonic="LKL" description="lf 000">lf 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lf 06 usa">lf 06 usa</SCANLINE>
 
@@ -753,267 +1009,11 @@
 
     <SCANLINE hits="63" mnemonic="LKL" description="lfk 000">lfk 000</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="lfk 020">lfk 020</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="lfk 030">lfk 030</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="lfk 040">lfk 040</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 080">lfk 080</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="lfk 100">lfk 100</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="lfk 130">lfk 130</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="lfk 150">lfk 150</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 160">lfk 160</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 160 m (fh)">lfk 160 m (fh)</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="lfk 170">lfk 170</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 180">lfk 180</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="lfk 190">lfk 190</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 20 m (fh)">lfk 20 m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 210">lfk 210</SCANLINE>
-
-    <SCANLINE hits="85" mnemonic="LKL" description="lfk 230">lfk 230</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 250">lfk 250</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="lfk 260">lfk 260</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfk 260 a">lfk 260 a</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfk 270">lfk 270</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfk 280">lfk 280</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfk 290">lfk 290</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 30 m (fh)">lfk 30 m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 300">lfk 300</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfk 330">lfk 330</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfk 340">lfk 340</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfk 340 a">lfk 340 a</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfk 350">lfk 350</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfk 370">lfk 370</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfk 375">lfk 375</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 400">lfk 400</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="lfk 420">lfk 420</SCANLINE>
-
-    <SCANLINE hits="66" mnemonic="LKL" description="lfk 460">lfk 460</SCANLINE>
-
-    <SCANLINE hits="62" mnemonic="LKL" description="lfk 480">lfk 480</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 500">lfk 500</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="lfk 510">lfk 510</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfk 530">lfk 530</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="lfk 550">lfk 550</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 550 a">lfk 550 a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 590">lfk 590</SCANLINE>
-
-    <SCANLINE hits="58" mnemonic="LKL" description="lfk 600">lfk 600</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="lfk 620">lfk 620</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 653">lfk 653</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 660">lfk 660</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 665">lfk 665</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 670">lfk 670</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="lfk 690">lfk 690</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="lfk 710">lfk 710</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 720">lfk 720</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="lfk 730">lfk 730</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="lfk 740">lfk 740</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="lfk 750">lfk 750</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfk 760">lfk 760</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 780">lfk 780</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 840">lfk 840</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 860">lfk 860</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="lfk 880">lfk 880</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 890">lfk 890</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 895">lfk 895</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="lfk 920">lfk 920</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk 940">lfk 940</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 947">lfk 947</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk 94716 gb k (fh)">lfk 94716 gb k (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfk 960">lfk 960</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk i (fh)">lfk i (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfk k (fh)">lfk k (fh)</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="lfk m (fh)">lfk m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk pz">lfk pz</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk pz 16 gb">lfk pz 16 gb</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfk w (fh)">lfk w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk z 130">lfk z 130</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk z 460">lfk z 460</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk z 500">lfk z 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk z 720">lfk z 720</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk150">lfk150</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk620">lfk620</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk66 usa pz 66 usa">lfk66 usa pz 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfk740">lfk740</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfkz 460">lfkz 460</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfkz100 lfrz160">lfkz100 lfrz160</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfkz420">lfkz420</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfkz550">lfkz550</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfm">lfm</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfm 250">lfm 250</SCANLINE>
-
-    <SCANLINE hits="73" mnemonic="LKL" description="lfn">lfn</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="lfn 000">lfn 000</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="lfn 010">lfn 010</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="lfn 030">lfn 030</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="lfn 050">lfn 050</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn 075">lfn 075</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn 075 s (fh)">lfn 075 s (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn 07516 su m (fh)">lfn 07516 su m (fh)</SCANLINE>
-
-    <SCANLINE hits="60" mnemonic="LKL" description="lfn 100">lfn 100</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="lfn 120">lfn 120</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="lfn 150">lfn 150</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn 200">lfn 200</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="lfn 210">lfn 210</SCANLINE>
-
-    <SCANLINE hits="64" mnemonic="LKL" description="lfn 230">lfn 230</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfn 250">lfn 250</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfn 270">lfn 270</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lfn 290">lfn 290</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="lfn 320">lfn 320</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn 340">lfn 340</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="LKL" description="lfn 360">lfn 360</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn 370">lfn 370</SCANLINE>
-
-    <SCANLINE hits="73" mnemonic="LKL" description="lfn 400">lfn 400</SCANLINE>
-
-    <SCANLINE hits="76" mnemonic="LKL" description="lfn 420">lfn 420</SCANLINE>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="lfn 450">lfn 450</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="lfn 480">lfn 480</SCANLINE>
-
-    <SCANLINE hits="42" mnemonic="LKL" description="lfn 510">lfn 510</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfn 540">lfn 540</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="lfn 550">lfn 550</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="lfn 570">lfn 570</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfn 580">lfn 580</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="lfn 600">lfn 600</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lfn 610">lfn 610</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lfn 670">lfn 670</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="lfn 680">lfn 680</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn 700">lfn 700</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="lfn 710">lfn 710</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lfn 730">lfn 730</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="lfn 750">lfn 750</SCANLINE>
-
-    <SCANLINE hits="33" mnemonic="LKL" description="lfn 770">lfn 770</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="lfn 800">lfn 800</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="lfn 820">lfn 820</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="lfn 850">lfn 850</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="lfn 870">lfn 870</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="lfn 875">lfn 875</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lfn 94066 usa w (fh)">lfn 94066 usa w (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="leq+600+w+(fh)" />
+<SCANPREV term="lek+620" />
 
 
-<SCANNEXT term="lfn+94066+usa+w+(fh)" />
+<SCANNEXT term="lfk+000" />
 
 </RESULT>

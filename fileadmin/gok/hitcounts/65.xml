@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">265d11ae-15</SESSIONVAR>
+<SESSIONVAR name="SID">f1dfc729-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hss 579">hss 579</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="hss 580">hss 580</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 382">hst 382</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 420">hst 420</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 438">hst 438</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 500">hst 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 510">hst 510</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 519">hst 519</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 579">hst 579</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 580">hst 580</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hst 610">hst 610</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hsu 200">hsu 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hsu 300">hsu 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hsu 340">hsu 340</SCANLINE>
 
@@ -665,6 +691,8 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hw 542">hw 542</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="hw 543">hw 543</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="hw 544">hw 544</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hw 546">hw 546</SCANLINE>
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hwg 337">hwg 337</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="hwg 340">hwg 340</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 344">hwg 344</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 350">hwg 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 351">hwg 351</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hwg 352">hwg 352</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hwg 380">hwg 380</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 381">hwg 381</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 382">hwg 382</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hwg 400">hwg 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hwg 430">hwg 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hwg 431">hwg 431</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hwg 432">hwg 432</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hwg 433">hwg 433</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hwg 435">hwg 435</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hsu+340" />
+<SCANPREV term="hss+579" />
 
 
-<SCANNEXT term="hwg+435" />
+<SCANNEXT term="hwg+337" />
 
 </RESULT>

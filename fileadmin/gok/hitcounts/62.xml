@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">20313f35-13</SESSIONVAR>
+<SESSIONVAR name="SID">43c6fb88-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="hl 240">hl 240</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="hl 250">hl 250</SCANLINE>
+
+    <SCANLINE hits="52" mnemonic="LKL" description="hl 300">hl 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hl 314">hl 314</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="hl 317">hl 317</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="hl 320">hl 320</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="hl 321">hl 321</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hl 323">hl 323</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="hl 330">hl 330</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hl 331">hl 331</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="hl 332">hl 332</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="hl 335">hl 335</SCANLINE>
 
@@ -77,11 +99,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hl 438">hl 438</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="hl 439">hl 439</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="hl 439">hl 439</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hl 440">hl 440</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="hl 440">hl 440</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hl 441">hl 441</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="hl 441">hl 441</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hl 442">hl 442</SCANLINE>
 
@@ -131,7 +153,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="hl 524">hl 524</SCANLINE>
 
-    <SCANLINE hits="64" mnemonic="LKL" description="hl 525">hl 525</SCANLINE>
+    <SCANLINE hits="65" mnemonic="LKL" description="hl 525">hl 525</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hl 526">hl 526</SCANLINE>
 
@@ -397,7 +419,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="hlm 580">hlm 580</SCANLINE>
 
-    <SCANLINE hits="41" mnemonic="LKL" description="hlm 600">hlm 600</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="hlm 600">hlm 600</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="hlm 610">hlm 610</SCANLINE>
 
@@ -519,7 +541,7 @@
 
     <SCANLINE hits="29" mnemonic="LKL" description="hln 600">hln 600</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="hln 610">hln 610</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="hln 610">hln 610</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hln 630">hln 630</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hrk 437">hrk 437</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hrk 438">hrk 438</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hrk 440">hrk 440</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hrk 443">hrk 443</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hrk 451">hrk 451</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hrk 459">hrk 459</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hrk 460">hrk 460</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="hrk 480">hrk 480</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="hrk 482">hrk 482</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hrk 500">hrk 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hrk 530">hrk 530</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hrk 534">hrk 534</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hl+335" />
+<SCANPREV term="hl+240" />
 
 
-<SCANNEXT term="hrk+534" />
+<SCANNEXT term="hrk+437" />
 
 </RESULT>

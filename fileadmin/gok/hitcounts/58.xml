@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">43004167-12</SESSIONVAR>
+<SESSIONVAR name="SID">aa5ff1a7-4</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="50" mnemonic="LKL" description="gu 500">gu 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gu 60">gu 60</SCANLINE>
+
+    <SCANLINE hits="62" mnemonic="LKL" description="gu 600">gu 600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gu 620">gu 620</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gu 640">gu 640</SCANLINE>
+
+    <SCANLINE hits="46" mnemonic="LKL" description="gu 650">gu 650</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="gu 700">gu 700</SCANLINE>
+
+    <SCANLINE hits="47" mnemonic="LKL" description="gu 800">gu 800</SCANLINE>
+
+    <SCANLINE hits="134" mnemonic="LKL" description="gu a">gu a</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="gu a (fh)">gu a (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gu b">gu b</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="gu b (fh)">gu b (fh)</SCANLINE>
 
@@ -193,7 +215,7 @@
 
     <SCANLINE hits="46" mnemonic="LKL" description="gua 000">gua 000</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="gua 100">gua 100</SCANLINE>
+    <SCANLINE hits="43" mnemonic="LKL" description="gua 100">gua 100</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="gua 110">gua 110</SCANLINE>
 
@@ -233,11 +255,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gua 310 w (fh)">gua 310 w (fh)</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="gua 320">gua 320</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="gua 320">gua 320</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="gua 320 k (fh)">gua 320 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gua 320 w (fh)">gua 320 w (fh)</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="gua 330">gua 330</SCANLINE>
 
@@ -265,11 +285,9 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gua 440">gua 440</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="gua 500">gua 500</SCANLINE>
+    <SCANLINE hits="51" mnemonic="LKL" description="gua 500">gua 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gua 500 d (fh)">gua 500 d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gua 500 k (fh)">gua 500 k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gua 500 m (fh)">gua 500 m (fh)</SCANLINE>
 
@@ -297,7 +315,7 @@
 
     <SCANLINE hits="40" mnemonic="LKL" description="guc 200">guc 200</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="guc 300">guc 300</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="guc 300">guc 300</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="guc 310">guc 310</SCANLINE>
 
@@ -433,7 +451,7 @@
 
     <SCANLINE hits="39" mnemonic="LKL" description="gug 100">gug 100</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="gug 200">gug 200</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="gug 200">gug 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gug 310">gug 310</SCANLINE>
 
@@ -457,7 +475,7 @@
 
     <SCANLINE hits="54" mnemonic="LKL" description="gug 534">gug 534</SCANLINE>
 
-    <SCANLINE hits="135" mnemonic="LKL" description="gug 535">gug 535</SCANLINE>
+    <SCANLINE hits="136" mnemonic="LKL" description="gug 535">gug 535</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gug i (fh)">gug i (fh)</SCANLINE>
 
@@ -479,7 +497,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="guh 100">guh 100</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="guh 200">guh 200</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="guh 200">guh 200</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="guh 201">guh 201</SCANLINE>
 
@@ -505,7 +523,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="guh 340">guh 340</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="guh 360">guh 360</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="guh 360">guh 360</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="guh 380">guh 380</SCANLINE>
 
@@ -531,9 +549,9 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="guh 520">guh 520</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="guh 600">guh 600</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="guh 600">guh 600</SCANLINE>
 
-    <SCANLINE hits="55" mnemonic="LKL" description="guh 610">guh 610</SCANLINE>
+    <SCANLINE hits="56" mnemonic="LKL" description="guh 610">guh 610</SCANLINE>
 
     <SCANLINE hits="127" mnemonic="LKL" description="guh 620">guh 620</SCANLINE>
 
@@ -551,7 +569,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="guh 760">guh 760</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="guh 770">guh 770</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="guh 770">guh 770</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="guh 800">guh 800</SCANLINE>
 
@@ -797,7 +815,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="guh70 au c (fh)">guh70 au c (fh)</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="guk 000">guk 000</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="guk 000">guk 000</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="guk 100">guk 100</SCANLINE>
 
@@ -833,7 +851,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="guk 500">guk 500</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="guk 510">guk 510</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="guk 510">guk 510</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="guk 515">guk 515</SCANLINE>
 
@@ -913,9 +931,9 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gum 230">gum 230</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="gum 300">gum 300</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="gum 300">gum 300</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="gum 310">gum 310</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="gum 310">gum 310</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="gum 360">gum 360</SCANLINE>
 
@@ -933,7 +951,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gum 480">gum 480</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="gum 490">gum 490</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="gum 490">gum 490</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gum 499">gum 499</SCANLINE>
 
@@ -975,7 +993,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="gun 123">gun 123</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="gun 200">gun 200</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="gun 200">gun 200</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="gun 210">gun 210</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="49" mnemonic="LKL" description="gun 311">gun 311</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="gun 312">gun 312</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="gun 320">gun 320</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gun 321">gun 321</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gun 322">gun 322</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gun 323">gun 323</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="gun 400">gun 400</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gun 410">gun 410</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gun 420">gun 420</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gun 421">gun 421</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gu+b+(fh)" />
+<SCANPREV term="gu+500" />
 
 
-<SCANNEXT term="gun+421" />
+<SCANNEXT term="gun+311" />
 
 </RESULT>

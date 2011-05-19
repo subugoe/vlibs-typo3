@@ -2,12 +2,42 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">828dc01b-12</SESSIONVAR>
+<SESSIONVAR name="SID">9841e20a-7</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 380">ieh 380</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ieh 381">ieh 381</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 382">ieh 382</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 383">ieh 383</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ieh 400">ieh 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 410">ieh 410</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ieh 430">ieh 430</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ieh 431">ieh 431</SCANLINE>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="ieh 432">ieh 432</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ieh 433">ieh 433</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ieh 435">ieh 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 437">ieh 437</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 438">ieh 438</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 440">ieh 440</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ieh 444">ieh 444</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ieh 446">ieh 446</SCANLINE>
 
@@ -231,7 +261,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ieo 431">ieo 431</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="ieo 432">ieo 432</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="ieo 432">ieo 432</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ieo 433">ieo 433</SCANLINE>
 
@@ -247,7 +277,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ieo 451">ieo 451</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ieo 472">ieo 472</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ieo 472">ieo 472</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ieo 473">ieo 473</SCANLINE>
 
@@ -315,11 +345,11 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="ieo 600">ieo 600</SCANLINE>
 
-    <SCANLINE hits="141" mnemonic="LKL" description="ieo 610">ieo 610</SCANLINE>
+    <SCANLINE hits="146" mnemonic="LKL" description="ieo 610">ieo 610</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="ieo 630">ieo 630</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ieo 650">ieo 650</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ieo 650">ieo 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ieo 660">ieo 660</SCANLINE>
 
@@ -329,11 +359,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="ieo 663">ieo 663</SCANLINE>
 
-    <SCANLINE hits="81" mnemonic="LKL" description="ieo 665">ieo 665</SCANLINE>
+    <SCANLINE hits="85" mnemonic="LKL" description="ieo 665">ieo 665</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ieo 666">ieo 666</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="ieo 667">ieo 667</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="ieo 667">ieo 667</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ieo 668">ieo 668</SCANLINE>
 
@@ -343,11 +373,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="iep">iep</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ier 200">ier 200</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="ier 200">ier 200</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ier 240">ier 240</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="ier 300">ier 300</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="ier 300">ier 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ier 320">ier 320</SCANLINE>
 
@@ -549,7 +579,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ih 2c">ih 2c</SCANLINE>
 
-    <SCANLINE hits="85" mnemonic="LKL" description="ih 300">ih 300</SCANLINE>
+    <SCANLINE hits="86" mnemonic="LKL" description="ih 300">ih 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ih 313">ih 313</SCANLINE>
 
@@ -771,7 +801,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="il 3 q15">il 3 q15</SCANLINE>
 
-    <SCANLINE hits="139" mnemonic="LKL" description="il 300">il 300</SCANLINE>
+    <SCANLINE hits="140" mnemonic="LKL" description="il 300">il 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="il 303">il 303</SCANLINE>
 
@@ -785,7 +815,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="il 316">il 316</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="il 317">il 317</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="il 317">il 317</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="il 318">il 318</SCANLINE>
 
@@ -799,7 +829,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="il 327">il 327</SCANLINE>
 
-    <SCANLINE hits="94" mnemonic="LKL" description="il 330">il 330</SCANLINE>
+    <SCANLINE hits="95" mnemonic="LKL" description="il 330">il 330</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="il 331">il 331</SCANLINE>
 
@@ -829,17 +859,17 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="il 350">il 350</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="il 351">il 351</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="il 351">il 351</SCANLINE>
 
-    <SCANLINE hits="105" mnemonic="LKL" description="il 352">il 352</SCANLINE>
+    <SCANLINE hits="106" mnemonic="LKL" description="il 352">il 352</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="il 353">il 353</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="il 354">il 354</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="il 354">il 354</SCANLINE>
 
     <SCANLINE hits="40" mnemonic="LKL" description="il 355">il 355</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="il 356">il 356</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="il 356">il 356</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="il 357">il 357</SCANLINE>
 
@@ -849,7 +879,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="il 360">il 360</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="il 361">il 361</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="il 361">il 361</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="il 366">il 366</SCANLINE>
 
@@ -927,7 +957,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="il 5 c2">il 5 c2</SCANLINE>
 
-    <SCANLINE hits="115" mnemonic="LKL" description="il 500">il 500</SCANLINE>
+    <SCANLINE hits="116" mnemonic="LKL" description="il 500">il 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="il 500 a">il 500 a</SCANLINE>
 
@@ -945,7 +975,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="il 516">il 516</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="il 517">il 517</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="il 517">il 517</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="il 519">il 519</SCANLINE>
 
@@ -975,45 +1005,15 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="il 533">il 533</SCANLINE>
 
-    <SCANLINE hits="75" mnemonic="LKL" description="il 534">il 534</SCANLINE>
+    <SCANLINE hits="76" mnemonic="LKL" description="il 534">il 534</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="il 534 a">il 534 a</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="il 535">il 535</SCANLINE>
-
-    <SCANLINE hits="154" mnemonic="LKL" description="il 536">il 536</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="il 537">il 537</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="il 538">il 538</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="il 539">il 539</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="il 540">il 540</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="il 541">il 541</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="il 542">il 542</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="il 543">il 543</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="il 544">il 544</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="il 545">il 545</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="il 546">il 546</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="il 547">il 547</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="il 548">il 548</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="il 549">il 549</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ieh+446" />
+<SCANPREV term="ieh+380" />
 
 
-<SCANNEXT term="il+549" />
+<SCANNEXT term="il+534+a" />
 
 </RESULT>

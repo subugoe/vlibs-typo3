@@ -2,12 +2,48 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">942cbf15-12</SESSIONVAR>
+<SESSIONVAR name="SID">3cf4515e-5</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 350">jhe 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jhe 351">jhe 351</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="jhe 352">jhe 352</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jhe 354">jhe 354</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jhe 357">jhe 357</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jhe 358">jhe 358</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jhe 359">jhe 359</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 380">jhe 380</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jhe 381">jhe 381</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 400">jhe 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jhe 420">jhe 420</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 430">jhe 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 431">jhe 431</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jhe 432">jhe 432</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jhe 440">jhe 440</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jhe 446">jhe 446</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jhe 500">jhe 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jhe 501">jhe 501</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jhe 510">jhe 510</SCANLINE>
 
@@ -129,7 +165,7 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="jj 200">jj 200</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="jj 300">jj 300</SCANLINE>
+    <SCANLINE hits="31" mnemonic="LKL" description="jj 300">jj 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jj 319">jj 319</SCANLINE>
 
@@ -587,7 +623,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jld 240">jld 240</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="jld 300">jld 300</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="jld 300">jld 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jld 317">jld 317</SCANLINE>
 
@@ -597,7 +633,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jld 323">jld 323</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="jld 330">jld 330</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="jld 330">jld 330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jld 331">jld 331</SCANLINE>
 
@@ -660,6 +696,8 @@
     <SCANLINE hits="1" mnemonic="LKL" description="jld 435">jld 435</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jld 438">jld 438</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 439">jld 439</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jld 440">jld 440</SCANLINE>
 
@@ -763,7 +801,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="jle 332">jle 332</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jle 335">jle 335</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 335">jle 335</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jle 337">jle 337</SCANLINE>
 
@@ -807,7 +845,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jle 420">jle 420</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jle 430">jle 430</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 430">jle 430</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jle 431">jle 431</SCANLINE>
 
@@ -877,11 +915,11 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="jle 600">jle 600</SCANLINE>
 
-    <SCANLINE hits="101" mnemonic="LKL" description="jle 610">jle 610</SCANLINE>
+    <SCANLINE hits="107" mnemonic="LKL" description="jle 610">jle 610</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="jle 620">jle 620</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jle 650">jle 650</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 650">jle 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jle xxx">jle xxx</SCANLINE>
 
@@ -917,9 +955,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jlh">jlh</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="jlh 200">jlh 200</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="jlh 200">jlh 200</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="jlh 300">jlh 300</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="jlh 300">jlh 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jlh 316">jlh 316</SCANLINE>
 
@@ -939,11 +977,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="jlh 337">jlh 337</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="jlh 340">jlh 340</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="jlh 340">jlh 340</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 350">jlh 350</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="jlh 350">jlh 350</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jlh 351">jlh 351</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="jlh 351">jlh 351</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="jlh 352">jlh 352</SCANLINE>
 
@@ -954,6 +992,8 @@
     <SCANLINE hits="2" mnemonic="LKL" description="jlh 357">jlh 357</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jlh 359">jlh 359</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlh 360">jlh 360</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jlh 370">jlh 370</SCANLINE>
 
@@ -969,51 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="jlh 382">jlh 382</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jlh 400">jlh 400</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jlh 420">jlh 420</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlh 430">jlh 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlh 431">jlh 431</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlh 432">jlh 432</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 433">jlh 433</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 434">jlh 434</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlh 435">jlh 435</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 438">jlh 438</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlh 440">jlh 440</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jlh 446">jlh 446</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 453">jlh 453</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 472">jlh 472</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 480">jlh 480</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jlh 500">jlh 500</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlh 501">jlh 501</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 510">jlh 510</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 512">jlh 512</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlh 513">jlh 513</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlh 519">jlh 519</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jhe+510" />
+<SCANPREV term="jhe+350" />
 
 
-<SCANNEXT term="jlh+519" />
+<SCANNEXT term="jlh+382" />
 
 </RESULT>

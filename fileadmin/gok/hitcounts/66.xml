@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">080be4e6-13</SESSIONVAR>
+<SESSIONVAR name="SID">a9892da1-6</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="hwg 330">hwg 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hwg 335">hwg 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 337">hwg 337</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hwg 340">hwg 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 344">hwg 344</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 350">hwg 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 351">hwg 351</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hwg 352">hwg 352</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hwg 380">hwg 380</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 381">hwg 381</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hwg 382">hwg 382</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hwg 400">hwg 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hwg 430">hwg 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hwg 431">hwg 431</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="hwg 432">hwg 432</SCANLINE>
 
@@ -261,7 +289,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="hwk 640">hwk 640</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="hwk 650">hwk 650</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="hwk 650">hwk 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hwk 660">hwk 660</SCANLINE>
 
@@ -457,6 +485,8 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hws 459">hws 459</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="hws 473">hws 473</SCANLINE>
+
     <SCANLINE hits="5" mnemonic="LKL" description="hws 500">hws 500</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hws 501">hws 501</SCANLINE>
@@ -577,11 +607,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="i hs">i hs</SCANLINE>
 
-    <SCANLINE hits="3872" mnemonic="LKL" description="ia">ia</SCANLINE>
+    <SCANLINE hits="3878" mnemonic="LKL" description="ia">ia</SCANLINE>
 
-    <SCANLINE hits="145" mnemonic="LKL" description="ia 000">ia 000</SCANLINE>
+    <SCANLINE hits="144" mnemonic="LKL" description="ia 000">ia 000</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="ia 200">ia 200</SCANLINE>
+    <SCANLINE hits="82" mnemonic="LKL" description="ia 200">ia 200</SCANLINE>
 
     <SCANLINE hits="146" mnemonic="LKL" description="ia 200 a">ia 200 a</SCANLINE>
 
@@ -589,7 +619,7 @@
 
     <SCANLINE hits="134" mnemonic="LKL" description="ia 220">ia 220</SCANLINE>
 
-    <SCANLINE hits="901" mnemonic="LKL" description="ia 230">ia 230</SCANLINE>
+    <SCANLINE hits="910" mnemonic="LKL" description="ia 230">ia 230</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="LKL" description="ia 240">ia 240</SCANLINE>
 
@@ -599,7 +629,7 @@
 
     <SCANLINE hits="54" mnemonic="LKL" description="ia 270">ia 270</SCANLINE>
 
-    <SCANLINE hits="598" mnemonic="LKL" description="ia 300">ia 300</SCANLINE>
+    <SCANLINE hits="604" mnemonic="LKL" description="ia 300">ia 300</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="ia 303">ia 303</SCANLINE>
 
@@ -625,7 +655,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ia 322">ia 322</SCANLINE>
 
-    <SCANLINE hits="120" mnemonic="LKL" description="ia 323">ia 323</SCANLINE>
+    <SCANLINE hits="121" mnemonic="LKL" description="ia 323">ia 323</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="ia 324">ia 324</SCANLINE>
 
@@ -633,7 +663,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 327">ia 327</SCANLINE>
 
-    <SCANLINE hits="840" mnemonic="LKL" description="ia 330">ia 330</SCANLINE>
+    <SCANLINE hits="842" mnemonic="LKL" description="ia 330">ia 330</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ia 330 a">ia 330 a</SCANLINE>
 
@@ -655,7 +685,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="ia 342">ia 342</SCANLINE>
 
-    <SCANLINE hits="98" mnemonic="LKL" description="ia 343">ia 343</SCANLINE>
+    <SCANLINE hits="99" mnemonic="LKL" description="ia 343">ia 343</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="ia 344">ia 344</SCANLINE>
 
@@ -667,7 +697,7 @@
 
     <SCANLINE hits="92" mnemonic="LKL" description="ia 351">ia 351</SCANLINE>
 
-    <SCANLINE hits="840" mnemonic="LKL" description="ia 352">ia 352</SCANLINE>
+    <SCANLINE hits="841" mnemonic="LKL" description="ia 352">ia 352</SCANLINE>
 
     <SCANLINE hits="53" mnemonic="LKL" description="ia 353">ia 353</SCANLINE>
 
@@ -683,15 +713,15 @@
 
     <SCANLINE hits="50" mnemonic="LKL" description="ia 359">ia 359</SCANLINE>
 
-    <SCANLINE hits="920" mnemonic="LKL" description="ia 360">ia 360</SCANLINE>
+    <SCANLINE hits="922" mnemonic="LKL" description="ia 360">ia 360</SCANLINE>
 
-    <SCANLINE hits="456" mnemonic="LKL" description="ia 361">ia 361</SCANLINE>
+    <SCANLINE hits="459" mnemonic="LKL" description="ia 361">ia 361</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 362">ia 362</SCANLINE>
 
     <SCANLINE hits="90" mnemonic="LKL" description="ia 366">ia 366</SCANLINE>
 
-    <SCANLINE hits="79" mnemonic="LKL" description="ia 370">ia 370</SCANLINE>
+    <SCANLINE hits="80" mnemonic="LKL" description="ia 370">ia 370</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="ia 372">ia 372</SCANLINE>
 
@@ -699,11 +729,11 @@
 
     <SCANLINE hits="151" mnemonic="LKL" description="ia 374">ia 374</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="ia 375">ia 375</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="ia 375">ia 375</SCANLINE>
 
     <SCANLINE hits="111" mnemonic="LKL" description="ia 376">ia 376</SCANLINE>
 
-    <SCANLINE hits="2623" mnemonic="LKL" description="ia 377">ia 377</SCANLINE>
+    <SCANLINE hits="2627" mnemonic="LKL" description="ia 377">ia 377</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 38">ia 38</SCANLINE>
 
@@ -727,7 +757,7 @@
 
     <SCANLINE hits="37" mnemonic="LKL" description="ia 399">ia 399</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="ia 400">ia 400</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="ia 400">ia 400</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="ia 410">ia 410</SCANLINE>
 
@@ -737,23 +767,23 @@
 
     <SCANLINE hits="84" mnemonic="LKL" description="ia 430">ia 430</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="ia 431">ia 431</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="ia 431">ia 431</SCANLINE>
 
     <SCANLINE hits="754" mnemonic="LKL" description="ia 432">ia 432</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="ia 433">ia 433</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="ia 433">ia 433</SCANLINE>
 
-    <SCANLINE hits="145" mnemonic="LKL" description="ia 434">ia 434</SCANLINE>
+    <SCANLINE hits="147" mnemonic="LKL" description="ia 434">ia 434</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="ia 435">ia 435</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="ia 436">ia 436</SCANLINE>
 
-    <SCANLINE hits="261" mnemonic="LKL" description="ia 437">ia 437</SCANLINE>
+    <SCANLINE hits="264" mnemonic="LKL" description="ia 437">ia 437</SCANLINE>
 
     <SCANLINE hits="44" mnemonic="LKL" description="ia 438">ia 438</SCANLINE>
 
-    <SCANLINE hits="87" mnemonic="LKL" description="ia 439">ia 439</SCANLINE>
+    <SCANLINE hits="88" mnemonic="LKL" description="ia 439">ia 439</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="ia 440">ia 440</SCANLINE>
 
@@ -761,9 +791,9 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="ia 442">ia 442</SCANLINE>
 
-    <SCANLINE hits="56" mnemonic="LKL" description="ia 443">ia 443</SCANLINE>
+    <SCANLINE hits="57" mnemonic="LKL" description="ia 443">ia 443</SCANLINE>
 
-    <SCANLINE hits="150" mnemonic="LKL" description="ia 444">ia 444</SCANLINE>
+    <SCANLINE hits="152" mnemonic="LKL" description="ia 444">ia 444</SCANLINE>
 
     <SCANLINE hits="76" mnemonic="LKL" description="ia 445">ia 445</SCANLINE>
 
@@ -805,15 +835,15 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 5">ia 5</SCANLINE>
 
-    <SCANLINE hits="642" mnemonic="LKL" description="ia 500">ia 500</SCANLINE>
+    <SCANLINE hits="644" mnemonic="LKL" description="ia 500">ia 500</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ia 500 a">ia 500 a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 500 u">ia 500 u</SCANLINE>
 
-    <SCANLINE hits="148" mnemonic="LKL" description="ia 501">ia 501</SCANLINE>
+    <SCANLINE hits="150" mnemonic="LKL" description="ia 501">ia 501</SCANLINE>
 
-    <SCANLINE hits="607" mnemonic="LKL" description="ia 510">ia 510</SCANLINE>
+    <SCANLINE hits="609" mnemonic="LKL" description="ia 510">ia 510</SCANLINE>
 
     <SCANLINE hits="284" mnemonic="LKL" description="ia 512">ia 512</SCANLINE>
 
@@ -821,7 +851,7 @@
 
     <SCANLINE hits="808" mnemonic="LKL" description="ia 514">ia 514</SCANLINE>
 
-    <SCANLINE hits="211" mnemonic="LKL" description="ia 515">ia 515</SCANLINE>
+    <SCANLINE hits="212" mnemonic="LKL" description="ia 515">ia 515</SCANLINE>
 
     <SCANLINE hits="149" mnemonic="LKL" description="ia 516">ia 516</SCANLINE>
 
@@ -833,17 +863,17 @@
 
     <SCANLINE hits="358" mnemonic="LKL" description="ia 521">ia 521</SCANLINE>
 
-    <SCANLINE hits="200" mnemonic="LKL" description="ia 522">ia 522</SCANLINE>
+    <SCANLINE hits="201" mnemonic="LKL" description="ia 522">ia 522</SCANLINE>
 
     <SCANLINE hits="424" mnemonic="LKL" description="ia 523">ia 523</SCANLINE>
 
-    <SCANLINE hits="363" mnemonic="LKL" description="ia 524">ia 524</SCANLINE>
+    <SCANLINE hits="364" mnemonic="LKL" description="ia 524">ia 524</SCANLINE>
 
     <SCANLINE hits="345" mnemonic="LKL" description="ia 525">ia 525</SCANLINE>
 
     <SCANLINE hits="94" mnemonic="LKL" description="ia 526">ia 526</SCANLINE>
 
-    <SCANLINE hits="1280" mnemonic="LKL" description="ia 527">ia 527</SCANLINE>
+    <SCANLINE hits="1285" mnemonic="LKL" description="ia 527">ia 527</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="ia 529">ia 529</SCANLINE>
 
@@ -851,7 +881,7 @@
 
     <SCANLINE hits="55" mnemonic="LKL" description="ia 531">ia 531</SCANLINE>
 
-    <SCANLINE hits="1200" mnemonic="LKL" description="ia 532">ia 532</SCANLINE>
+    <SCANLINE hits="1201" mnemonic="LKL" description="ia 532">ia 532</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ia 532 q">ia 532 q</SCANLINE>
 
@@ -859,19 +889,19 @@
 
     <SCANLINE hits="71" mnemonic="LKL" description="ia 533">ia 533</SCANLINE>
 
-    <SCANLINE hits="1273" mnemonic="LKL" description="ia 534">ia 534</SCANLINE>
+    <SCANLINE hits="1279" mnemonic="LKL" description="ia 534">ia 534</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="ia 534 a">ia 534 a</SCANLINE>
 
-    <SCANLINE hits="322" mnemonic="LKL" description="ia 535">ia 535</SCANLINE>
+    <SCANLINE hits="325" mnemonic="LKL" description="ia 535">ia 535</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ia 535 a">ia 535 a</SCANLINE>
 
-    <SCANLINE hits="1207" mnemonic="LKL" description="ia 536">ia 536</SCANLINE>
+    <SCANLINE hits="1211" mnemonic="LKL" description="ia 536">ia 536</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 536 a">ia 536 a</SCANLINE>
 
-    <SCANLINE hits="95" mnemonic="LKL" description="ia 537">ia 537</SCANLINE>
+    <SCANLINE hits="97" mnemonic="LKL" description="ia 537">ia 537</SCANLINE>
 
     <SCANLINE hits="93" mnemonic="LKL" description="ia 538">ia 538</SCANLINE>
 
@@ -885,9 +915,9 @@
 
     <SCANLINE hits="173" mnemonic="LKL" description="ia 542">ia 542</SCANLINE>
 
-    <SCANLINE hits="223" mnemonic="LKL" description="ia 543">ia 543</SCANLINE>
+    <SCANLINE hits="224" mnemonic="LKL" description="ia 543">ia 543</SCANLINE>
 
-    <SCANLINE hits="651" mnemonic="LKL" description="ia 544">ia 544</SCANLINE>
+    <SCANLINE hits="653" mnemonic="LKL" description="ia 544">ia 544</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 544 a">ia 544 a</SCANLINE>
 
@@ -919,7 +949,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 559 a">ia 559 a</SCANLINE>
 
-    <SCANLINE hits="3475" mnemonic="LKL" description="ia 560">ia 560</SCANLINE>
+    <SCANLINE hits="3492" mnemonic="LKL" description="ia 560">ia 560</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 560 a">ia 560 a</SCANLINE>
 
@@ -927,11 +957,11 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="ia 570">ia 570</SCANLINE>
 
-    <SCANLINE hits="437" mnemonic="LKL" description="ia 572">ia 572</SCANLINE>
+    <SCANLINE hits="439" mnemonic="LKL" description="ia 572">ia 572</SCANLINE>
 
-    <SCANLINE hits="902" mnemonic="LKL" description="ia 573">ia 573</SCANLINE>
+    <SCANLINE hits="904" mnemonic="LKL" description="ia 573">ia 573</SCANLINE>
 
-    <SCANLINE hits="120" mnemonic="LKL" description="ia 574">ia 574</SCANLINE>
+    <SCANLINE hits="122" mnemonic="LKL" description="ia 574">ia 574</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="ia 576">ia 576</SCANLINE>
 
@@ -941,7 +971,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 579">ia 579</SCANLINE>
 
-    <SCANLINE hits="1031" mnemonic="LKL" description="ia 580">ia 580</SCANLINE>
+    <SCANLINE hits="1045" mnemonic="LKL" description="ia 580">ia 580</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ia 580 a">ia 580 a</SCANLINE>
 
@@ -951,15 +981,15 @@
 
     <SCANLINE hits="622" mnemonic="LKL" description="ia 599">ia 599</SCANLINE>
 
-    <SCANLINE hits="2666" mnemonic="LKL" description="ia 600">ia 600</SCANLINE>
+    <SCANLINE hits="2671" mnemonic="LKL" description="ia 600">ia 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 600 sha a">ia 600 sha a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 600 sha z">ia 600 sha z</SCANLINE>
 
-    <SCANLINE hits="10929" mnemonic="LKL" description="ia 610">ia 610</SCANLINE>
+    <SCANLINE hits="11010" mnemonic="LKL" description="ia 610">ia 610</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ia 6120">ia 6120</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="ia 612">ia 612</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 619">ia 619</SCANLINE>
 
@@ -969,51 +999,21 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 621">ia 621</SCANLINE>
 
-    <SCANLINE hits="1637" mnemonic="LKL" description="ia 630">ia 630</SCANLINE>
+    <SCANLINE hits="1642" mnemonic="LKL" description="ia 630">ia 630</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ia 636">ia 636</SCANLINE>
 
-    <SCANLINE hits="372" mnemonic="LKL" description="ia 640">ia 640</SCANLINE>
+    <SCANLINE hits="376" mnemonic="LKL" description="ia 640">ia 640</SCANLINE>
 
-    <SCANLINE hits="511" mnemonic="LKL" description="ia 650">ia 650</SCANLINE>
+    <SCANLINE hits="524" mnemonic="LKL" description="ia 650">ia 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ia 66">ia 66</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="ia 660">ia 660</SCANLINE>
-
-    <SCANLINE hits="1981" mnemonic="LKL" description="ia 661">ia 661</SCANLINE>
-
-    <SCANLINE hits="1513" mnemonic="LKL" description="ia 662">ia 662</SCANLINE>
-
-    <SCANLINE hits="1628" mnemonic="LKL" description="ia 663">ia 663</SCANLINE>
-
-    <SCANLINE hits="2320" mnemonic="LKL" description="ia 664">ia 664</SCANLINE>
-
-    <SCANLINE hits="6685" mnemonic="LKL" description="ia 665">ia 665</SCANLINE>
-
-    <SCANLINE hits="3404" mnemonic="LKL" description="ia 666">ia 666</SCANLINE>
-
-    <SCANLINE hits="1286" mnemonic="LKL" description="ia 667">ia 667</SCANLINE>
-
-    <SCANLINE hits="207" mnemonic="LKL" description="ia 668">ia 668</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ia 82">ia 82</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ia 900">ia 900</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ia frl 200">ia frl 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ia h5">ia h5</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ia jk">ia jk</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ia xxx">ia xxx</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hwg+432" />
+<SCANPREV term="hwg+330" />
 
 
-<SCANNEXT term="ia+xxx" />
+<SCANNEXT term="ia+66" />
 
 </RESULT>
