@@ -6,7 +6,7 @@ P0005000;2;P0005000;P0002000;Einführungen in die Alte Geschichte;lkl=pab*;Introd
 P0006000;2;P0006000;P0002000;Einführungen in die Geschichte des Mittelalters;lkl=pad*;Introductions to Medieval History
 P0007000;2;P0007000;P0002000;Einführung in die Geschichte der Neuzeit;lkl=pae*;Introductions to Modern History
 P0008000;2;P0008000;P0002000;Einführung in die Zeitgeschichte;lkl=paf*;Introductions to Contemporary History
-P0009000;1;P0009000;P0001000;Geschichtsschreibung, Geschichtstheorie, Geschichtsdidaktik;lkl=pb* not lkl=pb;Historiography, Theory of History, Education and Didactics 
+P0009000;1;P0009000;P0001000;Geschichtsschreibung, Geschichtstheorie, Geschichtsdidaktik;lkl=pb* not lkl=pb *;Historiography, Theory of History, Education and Didactics 
 P0010000;2;P0010000;P0009000;Geschichte der Geschichtsschreibung;lkl=pba 000 or lkl=pba 900;History of Historiography
 P0011000;2;P0011000;P0009000;Geschichtsschreibung in der Antike;lkl=pbb 000;Historiography in the Ancient World
 P0012000;3;P0012000;P0011000;Alter Orient;lkl=pbb 100;Ancient Orient 
