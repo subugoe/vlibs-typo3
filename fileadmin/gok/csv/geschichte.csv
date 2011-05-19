@@ -1,12 +1,12 @@
 P0001000;0;P0001000;;Geschichte;lkl=p*;History
-P0002000;1;P0002000;P0001000;Einführungen;lkl=pa* and not (lkl=pa 000 or lkl=pa 900);Introductions
+P0002000;1;P0002000;P0001000;Einführungen;lkl=pa* not (lkl=pa 000 or lkl=pa 900);Introductions
 P0003000;2;P0003000;P0002000;Einführungen in die Geschichtswissenschaft;lkl=paa 000;Introductions to History in General
 P0004000;2;P0004000;P0002000;Einführungen in Teilbereiche der Geschichtswissenschaft;lkl=paa 200;Introductions to Thematic Fields of History
 P0005000;2;P0005000;P0002000;Einführungen in die Alte Geschichte;lkl=pab*;Introductions to Ancient History
 P0006000;2;P0006000;P0002000;Einführungen in die Geschichte des Mittelalters;lkl=pad*;Introductions to Medieval History
 P0007000;2;P0007000;P0002000;Einführung in die Geschichte der Neuzeit;lkl=pae*;Introductions to Modern History
 P0008000;2;P0008000;P0002000;Einführung in die Zeitgeschichte;lkl=paf*;Introductions to Contemporary History
-P0009000;1;P0009000;P0001000;Geschichtsschreibung, Geschichtstheorie, Geschichtsdidaktik;lkl=pb* and not lkl=pb;Historiography, Theory of History, Education and Didactics 
+P0009000;1;P0009000;P0001000;Geschichtsschreibung, Geschichtstheorie, Geschichtsdidaktik;lkl=pb* not lkl=pb;Historiography, Theory of History, Education and Didactics 
 P0010000;2;P0010000;P0009000;Geschichte der Geschichtsschreibung;lkl=pba 000 or lkl=pba 900;History of Historiography
 P0011000;2;P0011000;P0009000;Geschichtsschreibung in der Antike;lkl=pbb 000;Historiography in the Ancient World
 P0012000;3;P0012000;P0011000;Alter Orient;lkl=pbb 100;Ancient Orient 
@@ -148,7 +148,7 @@ P0147000;3;P0147000;P0145000;Adel;lkl=pdi 2*;Aristocracy
 P0148000;3;P0148000;P0145000;Nichtadelige Familien und Personen - Europa;lkl=pdi 4* or lkl=pdi 5* or lkl=pdi 6* ;Non-aristocratic Families and Persons - Europe
 P0149000;3;P0149000;P0145000;Nichtadelige Familien und Personen - Asien, Amerika, Afrika, Australien, Neuseeland;lkl=pdi 7*;Non-aristocratic Families and Persons - Asia, America, Africa, Australia, New Zealand
 P0150000;3;P0150000;P0145000;Historische Namenkunde;lkl=pdi 800;Historical Onomastics
-P0151000;2;P0151000;P0092000;Heraldik;lkl=pdl* and not (lkl=pdl 600 or lkl=pdl 700);Heraldry
+P0151000;2;P0151000;P0092000;Heraldik;lkl=pdl* not (lkl=pdl 600 or lkl=pdl 700);Heraldry
 P0152000;3;P0152000;P0151000;Fahnen- und Flaggenkunde;lkl=pdl 600;Vexillology
 P0153000;3;P0153000;P0151000;Orden und Ehrenzeichen;lkl=pdl 700;Orders and Medals
 P0154000;2;P0154000;P0092000;Numismatik;lkl=pdn 000 or lkl=pdn 090 or lkl=pdn 100;Numismatics
@@ -159,19 +159,19 @@ P0158000;2;P0158000;P0092000;Sphragistik;lkl=pdp*;Sigillography
 P0159000;2;P0159000;P0092000;Diplomatik;lkl=pdq*;Diplomacy
 P0160000;2;P0160000;P0092000;Epigraphik;lkl=pds 000 or lkl=pds 090 or lkl=pds 100;Epigraphy
 P0161000;3;P0161000;P0160000;Antike Inschriften;lkl=pds 2*;Ancient Inscriptions
-P0162000;3;P0162000;P0160000;Mittelalterliche und neuzeitliche Inschriften;(lkl pds 300 or lkl=pds 400 or lkl=pds 5*) and not lkl=pds 590;Medieval and Modern Inscriptions
+P0162000;3;P0162000;P0160000;Mittelalterliche und neuzeitliche Inschriften;(lkl pds 300 or lkl=pds 400 or lkl=pds 5*) not lkl=pds 590;Medieval and Modern Inscriptions
 P0163000;4;P0163000;P0162000;Südasien;lkl=pds 590;South Asia
 P0164000;2;P0164000;P0092000;Historische Fachinformatik;lkl=pdv 000;Computing and History 
 P0165000;2;P0165000;P0092000;Historische Metrologie;lkl=pdt 500;Historical Metrology
 P0166000;1;P0166000;P0001000;Allgemeine Weltgeschichte;lkl=pf*;World History in general
-P0167000;2;P0167000;P0166000;Allgemeine Weltgeschichte (ohne Weltkriege);lkl=pf* and not (lkl=pfp* or lkl=pfr*);World History in general (without World Wars)
+P0167000;2;P0167000;P0166000;Allgemeine Weltgeschichte (ohne Weltkriege);lkl=pf* not (lkl=pfp* or lkl=pfr*);World History in general (without World Wars)
 P0168000;3;P0168000;P0167000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pf 000;Factual Reference Works, Handbooks, Comprehensive Histories
-P0169000;3;P0169000;P0167000;Politische Geschichte;lkl=pf !00 and not lkl=pf 000;Political History
+P0169000;3;P0169000;P0167000;Politische Geschichte;lkl=pf !00 not lkl=pf 000;Political History
 P0170000;3;P0170000;P0167000;Globalisierung;lkl=pf* and (sww=globalis* or sww=mondial*);Globalisiation
 P0171000;3;P0171000;P0167000;Mittelalter;lkl=pfa*;Middle Ages
 P0172000;3;P0172000;P0167000;Neuzeit 1500-1900;lkl=pfb*;Modern Period 1500-1900
 P0173000;3;P0173000;P0167000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pfb 000;Encyclopedias, Factual Reference Works, Comprehensive Histories
-P0174000;3;P0174000;P0167000;Politische Geschichte;lkl=pfb* and not lkl=pfb 000;Political History
+P0174000;3;P0174000;P0167000;Politische Geschichte;lkl=pfb* not lkl=pfb 000;Political History
 P0175000;3;P0175000;P0167000;Weltausstellungen;lkl=p* and (thm=world exposition* oder thm=weltausstellung*) ;World Exhibitions
 P0176000;3;P0176000;P0167000;20./21. Jahrhundert;lkl=pfe* ;20th/ 21th Century
 P0177000;3;P0177000;P0167000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pfe 000;Factual Reference Works, Handbooks, Comprehensive Histories
@@ -214,7 +214,7 @@ P0213000;4;P0213000;P0205000;Luftkrieg;lkl=pfp 285;Aerial War
 P0214000;3;P0214000;P0201000;Gesellschaftliche Aspekte des Krieges;lkl=pfp 300;Society and War/ Social aspects of War
 P0215000;3;P0215000;P0201000;Wirtschaftsgeschichtliche Aspekte des Krieges;lkl=pfp 400;Economy and War/ economic aspects of War
 P0216000;3;P0216000;P0201000;Kulturgeschichtliche Aspekte des Krieges;lkl=pfp 500;Culture and War/ cultural aspects of War
-P0217000;3;P0217000;P0201000;Geschichte der europäischen Länder im Krieg;lkl=pfp 6* and not lkl=pfp 660;History of European countries at War
+P0217000;3;P0217000;P0201000;Geschichte der europäischen Länder im Krieg;lkl=pfp 6* not lkl=pfp 660;History of European countries at War
 P0218000;4;P0218000;P0217000;Deutschland;lkl=pfp 610;Germany
 P0219000;4;P0219000;P0217000;Österreich-Ungarn;lkl=pfp 615;Austria-Hungary
 P0220000;4;P0220000;P0217000;Switzerland;lkl=pfp 616;Switzerland
@@ -882,7 +882,7 @@ P0882000;3;P0882000;P0880000;Politische Geschichte, Gesellschaft, Wirtschaft, Ku
 P0883000;3;P0883000;P0880000;Regionalgeschichte;lkl=pmx 600;Regional Studies
 P0884000;3;P0884000;P0880000;Stadt- und Ortsgeschichte;lkl=pmx 700;Local History
 P0885000;3;P0885000;P0880000;Personen;lkl=pmx 800;Biographies
-P0886000;1;P0886000;P0001000;Geschichte Skandinaviens;lkl=pn* and not (lkl=pns* or lkl=pnu* or lkl=pnv* or lkl=pnw* or lkl=pnx* or lkl=pny* or lkl=pnz*);History of Scandinavia
+P0886000;1;P0886000;P0001000;Geschichte Skandinaviens;lkl=pn* not (lkl=pns* or lkl=pnu* or lkl=pnv* or lkl=pnw* or lkl=pnx* or lkl=pny* or lkl=pnz*);History of Scandinavia
 P0887000;2;P0887000;P0886000;Geschichte Skandinaviens: Handbücher, Fachenzyklopädien;lkl=pn 000;History of Scandinavia: Factual Reference Works, Handbooks
 P0888000;3;P0888000;P0887000;Quellen;lkl=pn 1*;Primary Sources 
 P0889000;3;P0889000;P0887000;Politische Geschichte;lkl=pn 200 or lkl=pn 300 or lkl=pn 400 or lkl=pn 500 or lkl=pn 900;Political History
@@ -921,7 +921,7 @@ P0921000;3;P0921000;P0914000;Geschichte Norwegens in der Frühen Neuzeit (1523-18
 P0922000;3;P0922000;P0914000;Geschichte Norwegens im 19. Jahrhundert und 20. Jahrhundert;lkl=pni*;Norway in the 19th and 20th Century
 P0923000;2;P0923000;P0886000;Geschichte Schwedens;lkl=pnj* or lkl=pnk* or lkl=pnl* or lkl=pnm*;History of Sweden
 P0924000;3;P0924000;P0923000;Nachschlagewerke, Handbücher;lkl=pnj 000;Factual Reference Works, Handbooks
-P0925000;3;P0925000;P0923000;Politische Geschichte;lkl=pnj* and not lkl=pnj 000;Political History
+P0925000;3;P0925000;P0923000;Politische Geschichte;lkl=pnj* not lkl=pnj 000;Political History
 P0926000;3;P0926000;P0923000;Geschichte Schwedens im Mittelalter (bis 1523);lkl=pnk 100 or lkl=pnk 150 or lkl=pnk 200 or lkl=pnk 300 or lkl=pnk 400 or lkl=pnk 500 or lkl=pnk 600 or lkl=pnk 700 or lkl=pnk 800 or lkl=pnk 900;Sweden in the Middle Ages (Until 1523)
 P0927000;3;P0927000;P0923000;Geschichte Schwedens in der Frühen Neuzeit (1523-1818);lkl=pnl*;Sweden in the Early Modern Period (1523-1818)
 P0928000;3;P0928000;P0923000;Geschichte Schwedens im 19. Jahrhundert und 20. Jahrhundert;lkl=pnm 000;Sweden in the 19th and 20th Century
@@ -998,7 +998,7 @@ P0998000;3;P0998000;P0996000;Politische Geschichte;lkl=pnw 200 or lkl=pnw 900;Po
 P0999000;3;P0999000;P0996000;Gesellschaft, Wirtschaft, Kultur;lkl=pnw 300 or lkl=pnw 400 or lkl=pnw 500;Society, Economy, Culture
 P1000000;3;P1000000;P0996000;Regionalgeschichte, Stadt- und Ortsgeschichte;lkl=pnw 600 or lkl=pnw 700;Regional Studies, Local History
 P1001000;3;P1001000;P0996000;Personen;lkl=pnw 800;Biographies
-P1002000;2;P1002000;P0976000;Geschichte Belgiens im 19. Jahrhundert (1830-1918);lkl=pnx* and not pnx 000;Belgium in the 19th Century (1830-1918)
+P1002000;2;P1002000;P0976000;Geschichte Belgiens im 19. Jahrhundert (1830-1918);lkl=pnx* not pnx 000;Belgium in the 19th Century (1830-1918)
 P1003000;2;P1003000;P0976000;Geschichte Belgiens im 20. Jahrhundert;lkl=pny*;Belgium in the 20th Century
 P1004000;2;P1004000;P0976000;Geschichte Luxemburgs;lkl=pnz*;History of Luxemburg
 P1005000;1;P1005000;P0001000;Geschichte Großbritanniens und Irlands;lkl=po* or (ddc=941* or ddc=942*);History of Great Britain and Ireland
@@ -1161,6 +1161,7 @@ P1161000;3;P1161000;P1159000;Politische Geschichte;lkl=pop 200 or lkl=pop 900;Po
 P1162000;3;P1162000;P1159000;Gesellschaft;lkl=pop 3*;Society
 P1163000;3;P1163000;P1159000;Wirtschaft;lkl=pop 400;Economy
 P1164000;3;P1164000;P1159000;Kultur;lkl=pop 500;Culture
+
 P1165000;3;P1165000;P1159000;Regionalgeschichte(n);lkl=pop 600;Regional Studies
 P1166000;3;P1166000;P1159000;Stadt- und Ortsgeschichte;lkl=pop 700;Local History
 P1167000;2;P1167000;P1005000;Schottland im Mittelalter: Nachschlagewerke, Handbücher;lkl=poq 000;Scotland in the Middle Ages: Factual Reference Works, Handbooks
@@ -1252,7 +1253,7 @@ P1252000;3;P1252000;P1245000;Stadt- und Ortsgeschichte;lkl=poy 700;Local History
 P1253000;3;P1253000;P1245000;Personen;lkl=poy 800;Biographies
 P1254000;2;P1254000;P1005000;Irland nach 1949: Nachschlagewerke, Handbücher;lkl=poz 000;Ireland after 1949: Factual Reference Works, Handbooks
 P1255000;3;P1255000;P1254000;Quellen;lkl=poz 1*;Primary Sources 
-P1256000;3;P1256000;P1254000;Politische Geschichte;(lkl=poz 2* or lkl=poz 900) and not lkl=poz 266;Political History
+P1256000;3;P1256000;P1254000;Politische Geschichte;(lkl=poz 2* or lkl=poz 900) not lkl=poz 266;Political History
 P1257000;3;P1257000;P1254000;Nordirlandkonflikt;lkl=poz 266;Northern Ireland Conflict
 P1258000;3;P1258000;P1254000;Gesellschaft;lkl=poz 300;Society
 P1259000;3;P1259000;P1254000;Wirtschaft;lkl=poz 400;Economy
@@ -1353,7 +1354,7 @@ P1353000;3;P1353000;P1347000;Personen;lkl=pqk 800;Biographies
 P1354000;2;P1354000;P1323000;Geschichte Portugals: Nachschlagewerke, Handbücher;lkl=pqn 000;History of Portugal: Factual Reference Works, Handbooks
 P1355000;3;P1355000;P1354000;Quellen;lkl=pqn 1*;Primary Sources 
 P1356000;3;P1356000;P1354000;Politische Geschichte;lkl=pqn 200 or lkl=pqn 300 or lkl=pqn 400 or lkl=pqn 500 or lkl=pqn 900;Political History
-P1357000;2;P1357000;P1323000;Geschichte Portugals im Mittelalter;lkl=pqo* and not (lkl=pqo 1* or lkl=pqo 000);Portugal in the Middle Ages
+P1357000;2;P1357000;P1323000;Geschichte Portugals im Mittelalter;lkl=pqo* not (lkl=pqo 1* or lkl=pqo 000);Portugal in the Middle Ages
 P1358000;2;P1358000;P1323000;Geschichte Portugals in der Frühen Neuzeit;lkl=pqr*;Portugal in the Early Modern Period
 P1359000;2;P1359000;P1323000;Geschichte Portugals im 19. Jahrhundert;lkl=pqu*;Portugal in the 19th Century
 P1360000;2;P1360000;P1323000;Geschichte Portugals im 20. Jahrhundert;lkl=pqx*;Portugal in the 20th Century
@@ -1413,16 +1414,16 @@ P1413000;2;P1413000;P1412000;Nachschlagewerke, Handbücher;lkl=psb 000;Factual Re
 P1414000;3;P1414000;P1413000;Politische Geschichte;lkl=psb 100 or lkl=psb 200 or lkl=psb 900;Political History
 P1415000;2;P1415000;P1412000;Geschichte Kleinasiens unter osmanischer Herrschaft;lkl=psc*;History of Asia Minor under Ottoman rule
 P1416000;2;P1416000;P1412000;Geschichte der Türkei im 20. Jahrhundert: Nachschlagewerke, Handbücher;lkl=pse 000;Turkey in the 20th Century: Factual Reference Works, Handbooks
-P1417000;3;P1417000;P1416000;Politische Geschichte;lkl=pse* and not pse 000;Political History
+P1417000;3;P1417000;P1416000;Politische Geschichte;lkl=pse* not pse 000;Political History
 P1418000;1;P1418000;P0001000;Geschichte Griechenlands (hier auch Zypern);lkl=psg* or lkl=psh* or lkl=psk* or lkl=psl*;History of Greece (including Cyprus)
 P1419000;2;P1419000;P1418000;Nachschlagewerke, Handbücher;lkl=psg 000;Factual Reference Works, Handbooks
-P1420000;3;P1420000;P1419000;Politische Geschichte;lkl=psg* and not lkl=psg 000;Political History
+P1420000;3;P1420000;P1419000;Politische Geschichte;lkl=psg* not lkl=psg 000;Political History
 P1421000;2;P1421000;P1418000;Geschichte Griechenlands unter osmanischer Herrschaft;lkl=psh*;Greece under Ottoman Rule
 P1422000;2;P1422000;P1418000;Geschichte Griechenlands im 19. Jahrhundert;lkl=psk*;Greece in the 19th Century
 P1423000;2;P1423000;P1418000;Geschichte Griechenlands im 20. Jahrhundert;lkl=psl*;Greece in the 20th Century
 P1424000;1;P1424000;P0001000;Geschichte der Balkanstaaten (ohne Griechenland);lkl=pso* or lkl=psq* or lkl=pst* or lkl=psu* or lkl=psv* or lkl=psx* or lkl=psy* or lkl=psz*;History of the Balkan States (without Greece)
 P1425000;2;P1425000;P1424000;Nachschlagewerke, Handbücher;lkl=pso 000 or lkl=ps 000;Factual Reference Works, Handbooks
-P1426000;3;P1426000;P1425000;Politische Geschichte;lkl=pso* and not lkl=pso 000;Political History
+P1426000;3;P1426000;P1425000;Politische Geschichte;lkl=pso* not lkl=pso 000;Political History
 P1427000;2;P1427000;P1424000;Geschichte der Balkanstaaten unter osmanischer Herrschaft;lkl=psp*;The Balkan States under Ottoman Rule
 P1428000;2;P1428000;P1424000;Geschichte der Balkanstaaten im 19. und 20. Jahrhundert;lkl=psq*;The Balkan States in the 19th and 20th Century
 P1429000;2;P1429000;P1424000;Geschichte Rumänien;lkl=pss*;History of Romania
@@ -1481,9 +1482,9 @@ P1481000;4;P1481000;P1475000;Regionalgeschichte;lkl=ptm 600;Regional Studies
 P1482000;4;P1482000;P1475000;Stadt- und Ortsgeschichte;lkl=ptm 700;Local History
 P1483000;4;P1483000;P1475000;Personen;lkl=ptm 800;Biographies
 P1484000;2;P1485000;P1437000;Geschichte Weissrusslands;lkl=ptn*;History of Belarus
-P1486000;2;P1486000;P1437000;Geschichte der Ukraine;lkl=pto* and not lkl=pto 680;History of Ukraine
+P1486000;2;P1486000;P1437000;Geschichte der Ukraine;lkl=pto* not lkl=pto 680;History of Ukraine
 P1488000;2;P1488000;P1437000;Geschichte Moldawiens;lkl=pto 680;History of Moldova
-P1489000;2;P1489000;P1437000;Geschichte des Kaukasus;lkl=ptq* and not (lkl=ptq 620 or lkl=ptq 640 or or lkl=ptq 650 or lkl=ptq 660);History of the Caucasus
+P1489000;2;P1489000;P1437000;Geschichte des Kaukasus;lkl=ptq* not (lkl=ptq 620 or lkl=ptq 640 or or lkl=ptq 650 or lkl=ptq 660);History of the Caucasus
 P1491000;3;P1491000;P1489000;Nordkaukasus, Kaukasusvorland;lkl=ptq 620;Northern Caucasus,Caucasian foreland
 P1492000;3;P1492000;P1489000;Georgien;lkl=ptq 640;Georgia
 P1493000;3;P1493000;P1489000;Armenien;lkl=ptq 650;Armenia
@@ -1616,7 +1617,7 @@ P1619000;3;P1619000;P1616000;Turkmenistan;lkl=puj 650;Turkmenistan
 P1620000;3;P1620000;P1616000;Kirgistan;lkl=puj 660;Kyrgyzstan
 P1621000;3;P1621000;P1616000;Tadschikistan;lkl=puj 670;Tadzhikistan
 P1622000;2;P1622000;P1557000;Geschichte des indischen Subkontinents;lkl=puk 000;History of the Indian Subcontinent
-P1623000;3;P1623000;P1622000;Vor 711;lkl=puk 1* and not lkl=puk 125;Before 711
+P1623000;3;P1623000;P1622000;Vor 711;lkl=puk 1* not lkl=puk 125;Before 711
 P1624000;3;P1624000;P1622000;Indoeuropäische Einwanderung und Indo-Arier-Kontroverse;lkl=puk 125;Indoeuropean Immigration and Indo-Arian-Controversy
 P1625000;3;P1625000;P1622000;711-1526;lkl=puk 2*;711-1526
 P1626000;3;P1626000;P1622000;1526-1858 (Moghul-Reich);lkl=puk 3*;1526-1858 (Mughal Empire)
@@ -1681,7 +1682,7 @@ P1683000;2;P1683000;P1557000;Geschichte der Mongolei (incl. Tartaren);lkl=pux 0*
 P1684000;3;P1684000;P1683000;Bis 1634;lkl=pux 22*;Until 1634
 P1685000;3;P1685000;P1683000;1634-1945;lkl=pux 24*;1634-1945
 P1686000;3;P1686000;P1683000;1945-;lkl=pux 28*;1945-
-P1687000;2;P1687000;P1557000;Geschichte Koreas;lkl=puy 0* and not lkl=puy 05*;History of Korea
+P1687000;2;P1687000;P1557000;Geschichte Koreas;lkl=puy 0* not lkl=puy 05*;History of Korea
 P1687500;3;P1687500;P1687000;Bis 918;lkl=puy 05*;Until 918
 P1688000;3;P1688000;P1687000;Bis 1392;lkl=puy 1*;Until 1392
 P1689000;3;P1689000;P1687000;Yi-Dynastie (1392-1910);lkl=puy 2*;Yi Dynasty (1392-1910)
@@ -1721,7 +1722,7 @@ P1722000;3;P1722000;P1712000;Stadt- und Ortsgeschichte;lkl=pvd 700;Local History
 P1723000;3;P1723000;P1712000;Biographische Sammelwerke;lkl=pvd 800;Biographical Reference Works
 P1724000;2;P1724000;P1711000;Geschichte Kanadas bis 1763: Nachschlagewerke, Handbücher;lkl=pve 000;Canada until 1763: Factual Reference Works, Handbooks
 P1725000;3;P1725000;P1724000;Quellen;lkl=pve 1*;Primary Sources 
-P1726000;3;P1726000;P1724000;Politische Geschichte;(lkl=pve 2* or lkl=pve 900) and not lkl=pve 260;Political History
+P1726000;3;P1726000;P1724000;Politische Geschichte;(lkl=pve 2* or lkl=pve 900) not lkl=pve 260;Political History
 P1727000;3;P1727000;P1724000;Indianer;lkl=pve 260;Native Americans
 P1728000;3;P1728000;P1724000;Gesellschaft;lkl=pve 300;Society
 P1729000;3;P1729000;P1724000;Wirtschaft;lkl=pve 400;Economy
@@ -1770,7 +1771,7 @@ P1771000;3;P1771000;P1754000;Stadt- und Ortsgeschichte;lkl=pvg 700;Local History
 P1772000;3;P1772000;P1754000;Personen;lkl=pvg 800;Biographies
 P1773000;1;P1773000;P0001000;Geschichte der USA;(lkl=pvk* or lkl=pvl* or lkl=pvm* or lkl=pvn* or lkl=pvo* or lkl=pvp*) or (ddc=973* or ddc=974* or ddc=975* or ddc=976* or ddc=977* or ddc=978* or ddc=979*);History of the USA
 P1774000;2;P1774000;P1773000;Nachschlagewerke und Handbücher in Auswahl;lkl=pvk 000 and ((thm=handbo* or thm=compan* or thm=oxford or thm=diction* or thm=encycloped*) or tit=geschichte);Selected Reference Works and Handbooks
-P1775000;3;P1775000;P1774000;Weitere Gesamtdarstellungen;lkl=pvk 000 and not ((thm=handbo* or thm=compan* or thm=oxford or thm=diction* or thm=encycloped*) or tit=geschichte);Further Reference Works
+P1775000;3;P1775000;P1774000;Weitere Gesamtdarstellungen;lkl=pvk 000 not ((thm=handbo* or thm=compan* or thm=oxford or thm=diction* or thm=encycloped*) or tit=geschichte);Further Reference Works
 P1776000;3;P1776000;P1774000;Quellen;lkl=pvk 1* or ((kl=pvk* and (thm=sourc* or thm=quell*) or (ddc=971*  and thm=sourc*));Primary Sources 
 P1777000;3;P1777000;P1774000;Quellen: übergreifende Sammlungen;lkl=pvk 100;Primary Sources: comprehensive collections
 P1778000;3;P1778000;P1774000;Politische Geschichte;lkl=pvk 200 or ddc=973;Political History
@@ -1910,9 +1911,9 @@ P1911000;4;P1911000;P1910000;1776-1789;lkl=pvm 21* or ddc=973.3*;1776-1789
 P1912000;4;P1912000;P1910000;Amerikanische Revolution;(lkl=pvm 21* or ddc=973.3*) and (thm=american* revolution or thm=amerikanische revolution);American Revolution
 P1913000;4;P1913000;P1910000;1789-1809;lkl=pvm 220 or ddc=973.4*;1789-1809
 P1914000;4;P1914000;P1910000;1809-1845;lkl=pvm 230 or ddc=973.5*;1809-1845
-P1915000;4;P1915000;P1910000;1845-1865;(lkl=pvm 240 or (ddc=973.6* or ddc=973.7*)) and not (thm=civil war or thm=sezessionskrieg);1845-1865
+P1915000;4;P1915000;P1910000;1845-1865;(lkl=pvm 240 or (ddc=973.6* or ddc=973.7*)) not (thm=civil war or thm=sezessionskrieg);1845-1865
 P1916000;5;P1916000;P1910000;Sezessionskrieg: übergreifende Darstellungen;lkl=pvm 244 or (lkl=pvm 245 and (thm=encyloped* or thm=diction* or thm=handbook*));American Civil War: Comprehensive Histories
-P1917000;5;P1917000;P1910000;Sezessionskrieg;(lkl=pvm 245 or ddc=973.7*) and not ((thm=lincoln or thm=biograph* or thm=person*) or ddc=973.71*);American Civil War
+P1917000;5;P1917000;P1910000;Sezessionskrieg;(lkl=pvm 245 or ddc=973.7*) not ((thm=lincoln or thm=biograph* or thm=person*) or ddc=973.71*);American Civil War
 P1918000;5;P1918000;P1910000;Sezessionskrieg: Quellen;(lkl=pvm 245 or ddc=973.7*) and (thm=source* or thm=quelle*) ;American Civil War: Primary Sources 
 P1919000;5;P1919000;P1910000;Sezessionskrieg: Tagebücher, autobiographische Zeugnisse;(lkl=pvm 245 or ddc=973.7*) and (thm=diar* or thm=journal* or thm=tageb* or thm=autobiogr* or thm=memoir*);American Civil War: Journals, autobiographical Primary Sources 
 P1920000;5;P1920000;P1910000;Sezessionskrieg: Briefe;(lkl=pvm 245 or ddc=973.7*) and (thm=letter* or thm=correspond* or thm=brief*);American Civil War: Letters
@@ -2021,7 +2022,7 @@ P2022000;4;P2022000;P2021000;Kirche und Frömmigkeit;lkl=pvo 570;Church and Piety
 P2023000;3;P2023000;P2005000;Regionalgeschichte;lkl=pvo 600 or ddc=(974.42* or 975.42* or 976.42* or 977.32* or 978.32* or 979.32*);Regional Studies
 P2024000;3;P2024000;P2005000;Stadt- und Ortsgeschichte;lkl=pvo 700;Local History
 P2025000;3;P2025000;P2005000;Personen;lkl=pvo 800;Biographies
-P2026000;4;P2026000;P2025000;Roosevelt, Franklin D.;((lkl=pvo 800 or ddc=973.91*) and thm=roosevelt*) and not thm=theodore*;Roosevelt, Franklin D.
+P2026000;4;P2026000;P2025000;Roosevelt, Franklin D.;((lkl=pvo 800 or ddc=973.91*) and thm=roosevelt*) not thm=theodore*;Roosevelt, Franklin D.
 P2027000;2;P2027000;P1773000;Geschichte der USA 1945-: Nachschlagewerke, Handbücher;lkl=pvp 000;The USA 1945-: Factual Reference Works, Handbooks
 P2028000;3;P2028000;P2027000;Quellen;lkl=pvp 1* or ((ddc=973.92* or 973.93*) and thm=source*);Primary Sources 
 P2029000;3;P2029000;P2027000;Politische Geschichte;lkl=pvp 200 or lkl=pvp 900 or ddc=973.92* or ddc=973.93* ;Political History
@@ -2069,7 +2070,7 @@ P2070000;4;P2070000;P2067000;Reagan, Ronald;lkl=pvp 800 and thm=reagan;Reagan, R
 P2071000;4;P2071000;P2067000;Obama, Barack;lkl=pvp 800 and thm=obama;Obama, Barack
 P2072000;1;P2072000;P0001000;Geschichte Mittel- und Lateinamerikas;(lkl=pvs* or lkl=pvt* or lkl=pvu* or lkl=pvw* or lkl=pvx*) or ddc=98*;History of Central and Latin America
 P2073000;2;P2073000;P2072000;Geschichte Lateinamerikas;lkl=pvs 000;History of Latin America
-P2074000;3;P2074000;P2073000;Politische Geschichte;lkl=pvs 0* and not lkl=pvs 000;Political History
+P2074000;3;P2074000;P2073000;Politische Geschichte;lkl=pvs 0* not lkl=pvs 000;Political History
 P2075000;3;P2075000;P2073000;Geschichte Lateinamerikas (bis zur Unabhängigkeit);lkl=pvs 2*;Latin America (Until Independence)
 P2076000;3;P2076000;P2073000;Geschichte Lateinamerikas im 19. und 20. Jahrhundert;lkl=pvs 4*;Latin America in the 19th and 20th Century
 P2077000;3;P2077000;P2073000;Geschichte Mittelamerikas;lkl=pvt 0*;Central America
@@ -2251,11 +2252,11 @@ P2251000;3;P2251000;P2245000;Regional- und Lokalgeschichte;lkl=pxs 600 or lkl=px
 P2252000;3;P2252000;P2245000;Personen;lkl=pxs 800;Biographies
 P2253000;2;P2253000;P2164000;Papua-Neuguinea;lkl=pxx 000;Papua New Guinea
 P2254000;2;P2254000;P2164000;Ozeanien (Polynesien, Melanesien, Mikronesien);lkl=pxy*;Oceania (Polynesia, Melanesia, Micronesia)
-P2255000;1;P2255000;P0001000;Geschichte des jüdischen Volkes;lkl=py* and not lkl=pys*;History of the Jewish People
+P2255000;1;P2255000;P0001000;Geschichte des jüdischen Volkes;lkl=py* not lkl=pys*;History of the Jewish People
 P2256000;2;P2256000;P2255000;Geschichte des jüdischen Volkes;lkl=py 000 or lkl=py 090;History of the Jewish People
 P2257000;2;P2257000;P2255000;Geschichte des jüdischen Volkes in der Antike;lkl=pya 000;History of the Jewish People in the ancient world
 P2258000;2;P2258000;P2255000;Geschichte des jüdischen Volkes in Mittelalter und Neuzeit;lkl=pyc 000 or lkl=pyc 100;History of the Jewish People in Middle Ages and the Modern Period
-P2259000;3;P2259000;P2258000;Mitteleuropa, Skandinavien, Beneluxländer;lkl=pyc 2* and not lkl=pyc 240;Central Europe, Scandinavia, Low Countries
+P2259000;3;P2259000;P2258000;Mitteleuropa, Skandinavien, Beneluxländer;lkl=pyc 2* not lkl=pyc 240;Central Europe, Scandinavia, Low Countries
 P2260000;3;P2260000;P2258000;Ungarn;lkl=pyc 240;Hungary
 P2261000;3;P2261000;P2258000;Großbritannien und Irland;lkl=pyc 300;Great Britain und Ireland
 P2262000;3;P2262000;P2258000;Frankreich, Iberische Halbinsel, Italien;lkl=pyc 4*;France, Iberische Halbinsel, Italy
