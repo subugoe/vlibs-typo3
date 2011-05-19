@@ -145,7 +145,7 @@ P0144000;2;P0144000;P0092000;Chronologie;lkl=pdh*;Chronology
 P0145000;2;P0145000;P0092000;Genealogie;lkl=pdi 000 or lkl=pdi 090;Genealogy
 P0146000;3;P0146000;P0145000;Herrscherhäuser;lkl=pdi 100;Dynasties
 P0147000;3;P0147000;P0145000;Adel;lkl=pdi 2*;Aristocracy
-P0148000;3;P0148000;P0145000;Nichtadelige Familien und Personen - Europa;lkl=pdi 4* or lkl=pdi 5* or lkl=pdi 6* ;Non-aristocratic Families and Persons - Europe
+P0148000;3;P0148000;P0145000;Nichtadelige Familien und Personen - Europa;lkl=pdi 4* or lkl=pdi 5* or lkl=pdi 6*;Non-aristocratic Families and Persons - Europe
 P0149000;3;P0149000;P0145000;Nichtadelige Familien und Personen - Asien, Amerika, Afrika, Australien, Neuseeland;lkl=pdi 7*;Non-aristocratic Families and Persons - Asia, America, Africa, Australia, New Zealand
 P0150000;3;P0150000;P0145000;Historische Namenkunde;lkl=pdi 800;Historical Onomastics
 P0151000;2;P0151000;P0092000;Heraldik;lkl=pdl* not (lkl=pdl 600 or lkl=pdl 700);Heraldry
@@ -172,8 +172,8 @@ P0171000;3;P0171000;P0167000;Mittelalter;lkl=pfa*;Middle Ages
 P0172000;3;P0172000;P0167000;Neuzeit 1500-1900;lkl=pfb*;Modern Period 1500-1900
 P0173000;3;P0173000;P0167000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pfb 000;Encyclopedias, Factual Reference Works, Comprehensive Histories
 P0174000;3;P0174000;P0167000;Politische Geschichte;lkl=pfb* not lkl=pfb 000;Political History
-P0175000;3;P0175000;P0167000;Weltausstellungen;lkl=p* and (thm=world exposition* oder thm=weltausstellung*) ;World Exhibitions
-P0176000;3;P0176000;P0167000;20./21. Jahrhundert;lkl=pfe* ;20th/ 21th Century
+P0175000;3;P0175000;P0167000;Weltausstellungen;lkl=p* and (thm=world exposition* oder thm=weltausstellung*);World Exhibitions
+P0176000;3;P0176000;P0167000;20./21. Jahrhundert;lkl=pfe*;20th/ 21th Century
 P0177000;3;P0177000;P0167000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pfe 000;Factual Reference Works, Handbooks, Comprehensive Histories
 P0178000;3;P0178000;P0167000;Internationale Beziehungen;lkl=pfe 200;International Relations
 P0179000;3;P0179000;P0167000;Völkerbund, Vereinte Nationen;lkl=p* and ((thm=völkerbund or thm=vereinte nationen) or lkl=pfe 210);League of Nations, United Nations
@@ -201,7 +201,7 @@ P0200000;2;P0200000;P0166000;Kolonialismus und Imperialismus;lkl=pfm 000;Colonia
 P0201000;2;P0201000;P0166000;Geschichte des ersten Weltkrieges;lkl=pfp*;History of World War One
 P0202000;3;P0202000;P0201000;Nachschlagewerke, Handbücher, Gesamtdarstellungen;lkl=pfp 000;Factual Reference Works, Handbooks, Comprehensive Histories
 P0203000;3;P0203000;P0201000;Politische Geschichte;lkl=pfp 020;Political History
-P0204000;3;P0204000;P0201000;Quellen ;lkl=pfp 1*;Primary Sources 
+P0204000;3;P0204000;P0201000;Quellen;lkl=pfp 1*;Primary Sources 
 P0205000;3;P0205000;P0201000;Militärgeschichtliche Politische Geschichte : Allgemeines;lkl=pfp 200 or lkl=pfp 290 or lkl=pfp 600 or lkl=pfp 900;Military and Political Historyin general
 P0206000;4;P0206000;P0205000;Kriegsschauplatz im Westen;lkl=pfp 210;Western theatre
 P0207000;4;P0207000;P0205000;Kriegsschauplatz im Osten;lkl=pfp 230;Eastern theatre
@@ -544,7 +544,7 @@ P0544000;4;P0544000;P0540000;Wirtschaft;lkl=pin 400;Economy
 P0545000;4;P0545000;P0540000;Kultur;lkl=pin 500;Culture
 P0546000;4;P0546000;P0540000;Personen;lkl=pin 800;Biographies
 P0547000;3;P0547000;P0533000;Die Weimarer Republik (1918-1933): Handbücher, Nachschlagewerke;lkl=pio 000;The Weimar Republic (1918-1933): Factual Reference Works, Handbooks
-P0548000;4;P0548000;P0547000;Quellen ;lkl=pio 1*;Primary Sources
+P0548000;4;P0548000;P0547000;Quellen;lkl=pio 1*;Primary Sources
 P0549000;4;P0549000;P0547000;Politische Geschichte;lkl=pio 200 or lkl=pio 900;Political History
 P0550000;4;P0550000;P0547000;Außenpolitik;lkl=pio 220;Foreign Policy
 P0551000;4;P0551000;P0547000;Innenpolitik;lkl=pio 240;Domestic Policy
@@ -619,7 +619,7 @@ P0619000;3;P0619000;P0614000;Geschichte der Hanse;lkl=pj 740 or sww=hanse;Histor
 P0620000;3;P0620000;P0614000;Frühe Neuzeit;lkl=pj 570;Early modern period
 P0621000;3;P0621000;P0614000;19. und 20. Jahrhundert;lkl=pj 760;19th and 20th Century
 P0622000;2;P0622000;P0613000;Brandenburg, Preußen, Berlin;lkl=pja 000;Brandenburg, Prussia, Berlin
-P0623000;3;P0623000;P0622000;Quellen ;lkl=pja 1*;Primary Sources
+P0623000;3;P0623000;P0622000;Quellen;lkl=pja 1*;Primary Sources
 P0624000;3;P0624000;P0622000;Politische Geschichte;lkl=pja 200 or lkl=pja 900;Political History
 P0625000;3;P0625000;P0622000;Mittelalter;lkl=pja 220;Middle Ages
 P0626000;3;P0626000;P0622000;Frühe Neuzeit;lkl=pja 240;Early Modern Period
@@ -664,7 +664,7 @@ P0664000;3;P0664000;P0660000;Regionalgeschichte;lkl=pjl 600;Regional Studies
 P0665000;3;P0665000;P0660000;Stadt- und Ortsgeschichte;lkl=pjl 700;Local History
 P0666000;3;P0666000;P0660000;Hamburg;lkl=pjl 700 and thm=hamburg;Hamburg
 P0667000;3;P0667000;P0660000;Lübeck;lkl=pjl 700 and thm=lübeck*;Luebeck
-P0668000;3;P0668000;P0660000;Personen;lkl=pjl 800 ;Biographies
+P0668000;3;P0668000;P0660000;Personen;lkl=pjl 800;Biographies
 P0669000;2;P0669000;P0613000;Niedersachsen, Bremen;lkl=pjo 000;Lower Saxony, Bremen
 P0670000;3;P0670000;P0669000;Quellen: übergreifende Sammlungen;lkl=pjo 100;Primary Sources: comprehensive collections
 P0671000;3;P0671000;P0669000;Quellen: Spezialsammlungen;lkl=pjo 150;Primary Sources: special collections
@@ -679,7 +679,7 @@ P0679000;3;P0679000;P0669000;Regionalgeschichte;lkl=pjo 600;Regional Studies
 P0680000;3;P0680000;P0669000;Stadt- und Ortsgeschichte;lkl=pjo 700;Local History
 P0681000;3;P0681000;P0669000;Braunschweig;lkl=pjo 700 and thm=braunschweig*;Brunswick
 P0682000;3;P0682000;P0669000;Göttingen;lkl=pjo 700 and thm=götting*;Goettingen
-P0683000;3;P0683000;P0669000;Hannover;lkl=pjo 700 and thm=hannover ;Hanover
+P0683000;3;P0683000;P0669000;Hannover;lkl=pjo 700 and thm=hannover;Hanover
 P0684000;3;P0684000;P0669000;Personen;lkl=pjo 800;Biographies
 P0685000;2;P0685000;P0613000;Hessen;lkl=pjq 000;Hesse
 P0686000;3;P0686000;P0685000;Quellen;lkl=pjq 1*;Primary Sources 
@@ -819,7 +819,7 @@ P0819000;3;P0819000;P0812000;Regionalgeschichte;lkl=pmb 600;Regional Studies
 P0820000;3;P0820000;P0812000;Stadt- und Ortsgeschichte;lkl=pmb 700;Local History
 P0821000;3;P0821000;P0812000;Personen;lkl=pmb 800;Biographies
 P0822000;3;P0822000;P0812000;Einzelbeiträge;lkl=pmb 900;Miscellaneous
-P0823000;2;P0823000;P0801000;Geschichte Ungarns in der Frühen Neuzeit;lkl=pme 000 ;Hungary in the Early Modern Period
+P0823000;2;P0823000;P0801000;Geschichte Ungarns in der Frühen Neuzeit;lkl=pme 000;Hungary in the Early Modern Period
 P0824000;3;P0824000;P0823000;Quellen: übergreifende Sammlungen;lkl=pme 100;Primary Sources: comprehensive collections
 P0825000;3;P0825000;P0823000;Quellen: Spezialsammlungen;lkl=pme 150;Primary Sources: special collections
 P0826000;3;P0826000;P0823000;Politische Geschichte;lkl=pme 200;Political History
@@ -852,7 +852,7 @@ P0852000;3;P0852000;P0845000;Regionalgeschichte;lkl=pmk 600;Regional Studies
 P0853000;3;P0853000;P0845000;Stadt- und Ortsgeschichte;lkl=pmk 700;Local History
 P0854000;3;P0854000;P0845000;Personen;lkl=pmk 800;Biographies
 P0855000;3;P0855000;P0845000;Einzelbeiträge;lkl=pmk 900;Miscellaneous
-P0856000;1;P0856000;P0001000;Geschichte Tschechiens und der Slowakei;lkl=pmn* or lkl=pmo* or lkl=pmr* or lkl=pmu* or lkl=pmx* ;History of the Czech Republic and Slovakia
+P0856000;1;P0856000;P0001000;Geschichte Tschechiens und der Slowakei;lkl=pmn* or lkl=pmo* or lkl=pmr* or lkl=pmu* or lkl=pmx*;History of the Czech Republic and Slovakia
 P0857000;2;P0857000;P0856000;Nachschlagewerke, Handbücher;lkl=pmn 000;Factual Reference Works, Handbooks
 P0858000;3;P0858000;P0857000;Quellen;lkl=pmn 1*;Primary Sources 
 P0859000;3;P0859000;P0857000;Politische Geschichte, Gesellschaft, Wirtschaft, Kultur;lkl=pmn 200 or lkl=pmn 300 or lkl=pmn 400 or lkl=pmn 500 or lkl=pmn 900;Political History, Society, Economy, Culture
@@ -1310,7 +1310,7 @@ P1309000;3;P1309000;P1304000;Personen;lkl=ppm 800;Biographies
 P1310000;2;P1310000;P1264000;Geschichte Frankreichs 1918-1945: Nachschlagewerke, Handbücher;lkl=ppo 000;France 1918-1945: Factual Reference Works, Handbooks
 P1311000;3;P1311000;P1310000;Quellen;lkl=ppo 1*;Primary Sources 
 P1312000;3;P1312000;P1310000;Politische Geschichte;lkl=ppo 200 or lkl=ppo 900;Political History
-P1313000;3;P1313000;P1310000;"Frankreich unter deutscher Besatzung; Vichy-Regierung";lkl=ppo 250 ;"France during the Occupation; Vichy-regime"
+P1313000;3;P1313000;P1310000;"Frankreich unter deutscher Besatzung; Vichy-Regierung";lkl=ppo 250;"France during the Occupation; Vichy-regime"
 P1314000;3;P1314000;P1310000;Gesellschaft, Wirtschaft, Kultur;lkl=ppo 300 or lkl=ppo 400 or lkl=ppo 500;Society, Economy, Culture
 P1315000;3;P1315000;P1310000;Regional- und Lokalgeschichte;lkl=ppo 600 or lkl=ppo 700;Regional Studies and Local History
 P1316000;3;P1316000;P1310000;Personen;lkl=ppo 800;Biographies
@@ -1626,7 +1626,7 @@ P1628000;3;P1628000;P1622000;Indischer Subkontinent nach 1947;lkl=puk 5*;Indian 
 P1629000;3;P1629000;P1622000;Pakistan (1947-);lkl=puk 6*;Pakistan (1947-)
 P1630000;3;P1630000;P1622000;Himalajastaaten (Nepal, Bhutan etc.) und Tibet;lkl=puk 7*;Himalayan states (Nepal, Bhutan etc.) and Tibet
 P1631000;3;P1631000;P1622000;Bangla-Desh (1971-);lkl=puk 8*;Bangladesh (1971-)
-P1632000;3;P1632000;P1622000;Sri-Lanka;lkl=puk 9* ;Sri Lanka
+P1632000;3;P1632000;P1622000;Sri-Lanka;lkl=puk 9*;Sri Lanka
 P1633000;3;P1633000;P1622000;Bis 1948;lkl=puk 92*;Until 1948
 P1634000;3;P1634000;P1622000;1948-;lkl=puk 96*;1948-
 P1635000;2;P1635000;P1557000;Geschichte Südostasiens;lkl=pul*;History of South East Asia
@@ -1891,11 +1891,11 @@ P1891000;4;P1891000;P1889000;Massachusetts;(lkl=pvl 600 and thm=massachusetts) o
 P1892000;4;P1892000;P1889000;Rhode Island, Connecticut;(lkl=pvl 600 and (thm=rhode or thm=connecticut)) or (ddc=974.501* or ddc=974.502*);Rhode Island, Connecticut
 P1893000;4;P1893000;P1889000;New York;(lkl=pvl 600 and thm=new york) or (ddc=974.701* or ddc=974.702*);New York
 P1894000;4;P1894000;P1889000;Pennsylvania, New Jersey;(lkl=pvl 600 and (thm=pennsylvania or thm=new jersey)) or (ddc=974.801* or ddc=974.802* or ddc=974.901* or ddc=974.902*);Pennsylvania, New Jersey
-P1895000;4;P1895000;P1889000;Südoststaaten;lkl=pvl 600 and (thm=delaware or thm=maryland or thm=washington or thm=virginia or thm=carolina or thm=georgia or thm=florida) ;South-Eastern states
-P1896000;4;P1896000;P1889000;Südstaaten;lkl=pvl 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky) ;Southern states
+P1895000;4;P1895000;P1889000;Südoststaaten;lkl=pvl 600 and (thm=delaware or thm=maryland or thm=washington or thm=virginia or thm=carolina or thm=georgia or thm=florida);South-Eastern states
+P1896000;4;P1896000;P1889000;Südstaaten;lkl=pvl 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky);Southern states
 P1897000;4;P1897000;P1889000;Nordstaaten;lkl=pvl 600 and (thm=ohio or thm=indiana or thm=illinois or thm=michigan or thm=wisconsin or thm=minnesota or thm=iowa or thm=missouri);Northern states
 P1898000;4;P1898000;P1889000;Weststaaten;lkl=pvl 600 and (thm=kansas or thm=nebraska or thm=dakota or thm=montana or thm=wyoming or thm=colorado or thm=mexico);Western states
-P1899000;4;P1899000;P1889000;Südweststaaten;(lkl=pvl 600 and (thm=arizona or utah or nevada or california or oregon or idaho or washington or alaska)) or ddc=979.!01* ;South-Western states
+P1899000;4;P1899000;P1889000;Südweststaaten;(lkl=pvl 600 and (thm=arizona or utah or nevada or california or oregon or idaho or washington or alaska)) or ddc=979.!01*;South-Western states
 P1900000;3;P1900000;P1873000;Stadt- und Ortsgeschichte;lkl=pvl 700;Local History
 P1901000;3;P1901000;P1873000;Personen;lkl=pvl 800;Biographies
 P1902000;4;P1902000;P1901000;Franklin, Benjamin;(kl=pvl 800 or lkl=pvm 800) and thm=benjamin franklin;Franklin, Benjamin
@@ -1914,7 +1914,7 @@ P1914000;4;P1914000;P1910000;1809-1845;lkl=pvm 230 or ddc=973.5*;1809-1845
 P1915000;4;P1915000;P1910000;1845-1865;(lkl=pvm 240 or (ddc=973.6* or ddc=973.7*)) not (thm=civil war or thm=sezessionskrieg);1845-1865
 P1916000;5;P1916000;P1910000;Sezessionskrieg: übergreifende Darstellungen;lkl=pvm 244 or (lkl=pvm 245 and (thm=encyloped* or thm=diction* or thm=handbook*));American Civil War: Comprehensive Histories
 P1917000;5;P1917000;P1910000;Sezessionskrieg;(lkl=pvm 245 or ddc=973.7*) not ((thm=lincoln or thm=biograph* or thm=person*) or ddc=973.71*);American Civil War
-P1918000;5;P1918000;P1910000;Sezessionskrieg: Quellen;(lkl=pvm 245 or ddc=973.7*) and (thm=source* or thm=quelle*) ;American Civil War: Primary Sources 
+P1918000;5;P1918000;P1910000;Sezessionskrieg: Quellen;(lkl=pvm 245 or ddc=973.7*) and (thm=source* or thm=quelle*);American Civil War: Primary Sources 
 P1919000;5;P1919000;P1910000;Sezessionskrieg: Tagebücher, autobiographische Zeugnisse;(lkl=pvm 245 or ddc=973.7*) and (thm=diar* or thm=journal* or thm=tageb* or thm=autobiogr* or thm=memoir*);American Civil War: Journals, autobiographical Primary Sources 
 P1920000;5;P1920000;P1910000;Sezessionskrieg: Briefe;(lkl=pvm 245 or ddc=973.7*) and (thm=letter* or thm=correspond* or thm=brief*);American Civil War: Letters
 P1921000;5;P1921000;P1910000;Sezessionskrieg: Personen;(lkl=pvm 245 or ddc=973.7*) and (thm=biograph* or thm=person*);American Civil War: Biographies
@@ -1950,11 +1950,11 @@ P1950000;4;P1950000;P1948000;Massachusetts;(lkl=pvm 600 and thm=massachusetts) o
 P1951000;4;P1951000;P1948000;Rhode Island, Connecticut;(lkl=pvm 600 and (thm=rhode or thm=connecticut)) or (ddc=974.403* or ddc=974.4041* or ddc=974.503* or ddc=974.5041*);Rhode Island, Connecticut
 P1952000;4;P1952000;P1948000;New York;(lkl=pvm 600 and thm=new york) or (ddc=974.703* or ddc=974.7041*);New York
 P1953000;4;P1953000;P1948000;Pennsylvania, New Jersey;(lkl=pvm 600 and (thm=pennsylvania or thm=new jersey)) or (ddc=974.803* or ddc=974.8041* or ddc=974.903* or ddc=974.9041*);Pennsylvania, New Jersey
-P1954000;4;P1954000;P1948000;Südoststaaten;lkl=pvm 600 and (thm=delaware or thm=maryland or thm=washington or thm=virginia or thm=carolina or thm=georgia or thm=florida) ;South-Eastern states
-P1955000;4;P1955000;P1948000;Südstaaten;lkl=pvm 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky) ;Southern states
-P1956000;4;P1956000;P1948000;Nordstaaten;lkl=pvm 600 and (thm=ohio or thm=indiana or thm=illinois or thm=michigan or thm=wisconsin or thm=minnesota or thm=iowa or thm=missouri) ;Northern states
-P1957000;4;P1957000;P1948000;Weststaaten;lkl=pvm 600 and (thm=kansas or thm=nebraska or thm=dakota or thm=montana or thm=wyoming or thm=colorado or thm=mexico) ;Western states
-P1958000;4;P1958000;P1948000;Südweststaaten;lkl=pvm 600 and (thm=arizona or thm=utah or thm=nevada or thm=california or thm=oregon or thm=idaho or thm=washington or thm=alaska) ;South-Western states
+P1954000;4;P1954000;P1948000;Südoststaaten;lkl=pvm 600 and (thm=delaware or thm=maryland or thm=washington or thm=virginia or thm=carolina or thm=georgia or thm=florida);South-Eastern states
+P1955000;4;P1955000;P1948000;Südstaaten;lkl=pvm 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky);Southern states
+P1956000;4;P1956000;P1948000;Nordstaaten;lkl=pvm 600 and (thm=ohio or thm=indiana or thm=illinois or thm=michigan or thm=wisconsin or thm=minnesota or thm=iowa or thm=missouri);Northern states
+P1957000;4;P1957000;P1948000;Weststaaten;lkl=pvm 600 and (thm=kansas or thm=nebraska or thm=dakota or thm=montana or thm=wyoming or thm=colorado or thm=mexico);Western states
+P1958000;4;P1958000;P1948000;Südweststaaten;lkl=pvm 600 and (thm=arizona or thm=utah or thm=nevada or thm=california or thm=oregon or thm=idaho or thm=washington or thm=alaska);South-Western states
 P1959000;4;P1959000;P1948000;Expansion nach Westen;lkl=pvm 620;West expansion
 P1960000;3;P1960000;P1905000;Stadt- und Ortsgeschichte;lkl=pvm 700;Local History
 P1961000;3;P1961000;P1905000;Personen;lkl=pvm 800;Biographies
@@ -1965,7 +1965,7 @@ P1965000;4;P1965000;P1961000;Lee, Robert E.;lkl=pvm 800 and thm=lee;Lee, Robert 
 P1966000;4;P1966000;P1961000;Grant, Ulysses S.;lkl=pvm 800 and thm=grant;Grant, Ulysses S.
 P1967000;4;P1967000;P1961000;Douglass, Frederick;lkl=pvm 800 and thm=douglass;Douglass, Frederick
 P1968000;4;P1968000;P1961000;Roosevelt, Theodore;lkl=pvm 800 and thm=theodore roosevelt;Roosevelt, Theodore
-P1969000;4;P1969000;P1961000;Wilson, Woodrow;(lkl=pvm 800 or lkl=pvo 800) and thm=woodrow wilson ;Wilson, Woodrow
+P1969000;4;P1969000;P1961000;Wilson, Woodrow;(lkl=pvm 800 or lkl=pvo 800) and thm=woodrow wilson;Wilson, Woodrow
 P1970000;3;P1970000;P1905000;"Sonstiges; Einzelbeiträge";lkl=pvm 900;Miscellaneous
 P1971000;2;P1971000;P1773000;Geschichte der USA im 20. Jahrhundert: Handbücher, Gesamtdarstellungen;lkl=pvn 000;The USA in the 20th Century: Handbooks, Comprehensive Histories
 P1972000;3;P1972000;P1971000;Quellen;((lkl=pvn 1* or lkl=pvo 1* or lkl=pvp 1*) or ddc=973.9*) and thm=source*;Primary Sources 
@@ -1991,14 +1991,14 @@ P1991000;4;P1991000;P1988000;Filmgeschichte;lkl=pvn 5* and (thm=film* or thm=cin
 P1992000;3;P1992000;P1971000;Regionalgeschichte;lkl=pvn 600 or (ddc=974.042* or ddc=974.043* or ddc=974.044* or ddc=975.042* or ddc=975.043* or ddc=975.044* or ddc=976.04* or ddc=977.03* or ddc=978.03* or ddc=979.03*);Regional Studies
 P1993000;4;P1993000;P1992000;Maine, New Hampshire und Vermont;(lkl=pvn 600 and (thm=maine or thm=hamsphire or thm=vermont)) or (ddc=974.104* or 974.204* or 974.304*);Maine, New Hampshire and Vermont
 P1994000;4;P1994000;P1992000;Massachusetts;(lkl=pvn 600 and thm=massachusetts) or ddc=974.404*;Massachusetts
-P1995000;4;P1995000;P1992000;Rhode Island, Connecticut;(lkl=pvn 600 and (thm=rhode or thm=connecticut)) or (ddc=974.404*or ddc=974.504*) ;Rhode Island, Connecticut
-P1996000;4;P1996000;P1992000;New York;(lkl=pvn 600 and thm=new york) or (ddc=974.7042* or ddc=974.7043* or ddc=974.0744*) ;New York
-P1997000;4;P1997000;P1992000;Pennsylvania, New Jersey;(lkl=pvm 600 and (thm=pennsylvania or thm=new jersey)) or (ddc=974.803* or ddc=974.8041* or ddc=974.903* or ddc=974.9041*) ;Pennsylvania, New Jersey
+P1995000;4;P1995000;P1992000;Rhode Island, Connecticut;(lkl=pvn 600 and (thm=rhode or thm=connecticut)) or (ddc=974.404*or ddc=974.504*);Rhode Island, Connecticut
+P1996000;4;P1996000;P1992000;New York;(lkl=pvn 600 and thm=new york) or (ddc=974.7042* or ddc=974.7043* or ddc=974.0744*);New York
+P1997000;4;P1997000;P1992000;Pennsylvania, New Jersey;(lkl=pvm 600 and (thm=pennsylvania or thm=new jersey)) or (ddc=974.803* or ddc=974.8041* or ddc=974.903* or ddc=974.9041*);Pennsylvania, New Jersey
 P1998000;4;P1998000;P1992000;Südoststaaten;lkl=pvn 600 and (thm=delaware or thm=maryland or thm=washington or thm=virginia or thm=carolina or thm=georgia or thm=florida);South-Eastern states
-P1999000;4;P1999000;P1992000;Südstaaten;lkl=pvn 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky) ;Southern states
-P2000000;4;P2000000;P1992000;Nordstaaten;lkl=pvn 600 and (thm=ohio or thm=indiana or thm=illinois or thm=michigan or thm=wisconsin or thm=minnesota or thm=iowa or thm=missouri) ;Northern states
-P2001000;4;P2001000;P1992000;Weststaaten;lkl=pvn 600 and (thm=kansas or thm=nebraska or thm=dakota or thm=montana or thm=wyoming or thm=colorado or thm=mexico) ;Western states
-P2002000;4;P2002000;P1992000;Südweststaaten;lkl=pvn 600 and (thm=arizona or thm=utah or thm=nevada or thm=california or thm=oregon or thm=idaho or thm=washington or thm=alaska) ;South-Western states
+P1999000;4;P1999000;P1992000;Südstaaten;lkl=pvn 600 and (thm=alabama or thm=mississippi or thm=louisiana or thm=texas or thm=oklahoma or thm=arkansas or thm=tennessee or thm=kentucky);Southern states
+P2000000;4;P2000000;P1992000;Nordstaaten;lkl=pvn 600 and (thm=ohio or thm=indiana or thm=illinois or thm=michigan or thm=wisconsin or thm=minnesota or thm=iowa or thm=missouri);Northern states
+P2001000;4;P2001000;P1992000;Weststaaten;lkl=pvn 600 and (thm=kansas or thm=nebraska or thm=dakota or thm=montana or thm=wyoming or thm=colorado or thm=mexico);Western states
+P2002000;4;P2002000;P1992000;Südweststaaten;lkl=pvn 600 and (thm=arizona or thm=utah or thm=nevada or thm=california or thm=oregon or thm=idaho or thm=washington or thm=alaska);South-Western states
 P2003000;3;P2003000;P1971000;Stadt- und Ortsgeschichte;lkl=pvn 700;Local History
 P2004000;3;P2004000;P1971000;Personen;lkl=pvn 800;Biographies
 P2005000;2;P2005000;P1773000;Geschichte der USA 1918-1945: Nachschlagewerke, Handbücher;lkl=pvo 000;The USA 1918-1945: Factual Reference Works, Handbooks
@@ -2025,7 +2025,7 @@ P2025000;3;P2025000;P2005000;Personen;lkl=pvo 800;Biographies
 P2026000;4;P2026000;P2025000;Roosevelt, Franklin D.;((lkl=pvo 800 or ddc=973.91*) and thm=roosevelt*) not thm=theodore*;Roosevelt, Franklin D.
 P2027000;2;P2027000;P1773000;Geschichte der USA 1945-: Nachschlagewerke, Handbücher;lkl=pvp 000;The USA 1945-: Factual Reference Works, Handbooks
 P2028000;3;P2028000;P2027000;Quellen;lkl=pvp 1* or ((ddc=973.92* or 973.93*) and thm=source*);Primary Sources 
-P2029000;3;P2029000;P2027000;Politische Geschichte;lkl=pvp 200 or lkl=pvp 900 or ddc=973.92* or ddc=973.93* ;Political History
+P2029000;3;P2029000;P2027000;Politische Geschichte;lkl=pvp 200 or lkl=pvp 900 or ddc=973.92* or ddc=973.93*;Political History
 P2030000;4;P2030000;P2029000;Außenpolitik;(lkl=pvp 205 or lkl=pvp 225 or lkl=pvp 245 or lkl=pvp 285) or ((ddc=973.92* or ddc=973.93*) and thm=foreign*);Foreign Policy
 P2031000;4;P2031000;P2029000;Militärgeschichte;lkl=pvp 208;Military History
 P2032000;4;P2032000;P2029000;Innenpolitik;lkl=pvp 210;Domestic Policy
@@ -2064,7 +2064,7 @@ P2064000;4;P2064000;P2063000;Kirche und Frömmigkeit;lkl=pvp 570;Church and Piety
 P2065000;3;P2065000;P2027000;Regionalgeschichte;lkl=pvp 600;Regional Studies
 P2066000;3;P2066000;P2027000;Stadt- und Ortsgeschichte;lkl=pvp 700;Local History
 P2067000;3;P2067000;P2027000;Personen;lkl=pvp 800;Biographies
-P2068000;4;P2068000;P2067000;Kennedy, John F.;lkl=pvp 800 and thm=john f. kennedy ;Kennedy, John F.
+P2068000;4;P2068000;P2067000;Kennedy, John F.;lkl=pvp 800 and thm=john f. kennedy;Kennedy, John F.
 P2069000;4;P2069000;P2067000;King, Martin L.;lkl=pvp 800 and thm=martin l. king;King, Martin L.
 P2070000;4;P2070000;P2067000;Reagan, Ronald;lkl=pvp 800 and thm=reagan;Reagan, Ronald
 P2071000;4;P2071000;P2067000;Obama, Barack;lkl=pvp 800 and thm=obama;Obama, Barack
