@@ -31,8 +31,26 @@ h1, h2, h3, h4, h5, h6 {
 	color: #282828;
 }
 
+h1 {
+	font-size: 24px;
+}
+
 h2 {
-	font-size: 18px;
+   font-size: 20px;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 18px;
+    margin-bottom: 10px;
+}
+h1, h2 {
+	padding-bottom: 0.357em;
+	color: #475e9a;
 }
 
 a:link, a:visited, a:active {
@@ -40,16 +58,27 @@ a:link, a:visited, a:active {
 }
 
 #foot {
+	height: 50px;
+	padding: 30px 0px 0px;
+	position: relative;
+	color: #8d95b5;
+	background: transparent url(footer.png) repeat-x top;
 	text-align: center;
-	margin-top: 20px;
-	padding: 10px 0;
-	background: #263476;
+	color: #8d95b5;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+#foot .bodytext.grid_12 {
+	margin: 0;
+	display: block;
+	float: none;
+	width: 100%;
 }
 
 #foot a:link, #foot a:visited, #foot a:active {
-	color: #fff;
+	color: #d9dbe7;
 	text-decoration: none;
-	font-weight: bold;
 }
 
 #foot a:hover {
@@ -64,16 +93,30 @@ a:link, a:visited, a:active {
 	position: relative;
 	height: 85px;
 	margin-bottom: 20px;
-	font-size: 14px;
+	font-size: 12px;
 }
 
 .mainmenu a {
 	text-decoration: none;
+	border-top: 1px solid #eaecf4;
+	border-right: 2px solid transparent;
+	border-bottom: 1px solid #dadada;
+	border-left: 2px solid transparent;
+	background: url("http://cederbladdesign.com/tmp/subg/images/navbutton_gradient.png") repeat-x;
+	color: #234f8f;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
 }
 
 .mainmenu a:link:hover, .mainmenu a:visited:hover, .mainmenu .current a, .mainmenu .currentParent>a {
 	color: #000;
 	background: #d9dbe4;
+}
+
+.mainmenu a:link:hover, .mainmenu a:visited:hover {
+	background: #fff;
+	color: #474747;
 }
 
 .mainmenu {
@@ -100,6 +143,28 @@ a:link, a:visited, a:active {
 	padding: 3px 5px;
 }
 
+.mainmenu .currentParent > a {
+	color: #475c7a;
+	background: #d1d3df url(navbutton_gradient.png) repeat-x;
+	border-top: 1px solid #eaecf4;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.mainmenu .currentParent > a:hover, .mainmenu .current a:hover {
+	color: #475c7a;
+	background: #d1d3df url(navbutton_gradient.png) repeat-x;
+	border-top: 1px solid #eaecf4;
+	border-bottom: 1px solid #c4c4c4;
+	cursor: default;
+}
+
+.mainmenu .current > a, .mainmenu .current > a:hover {
+	background: #d9dbe7 url(navbutton_gradient.png) repeat-x;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #cecece;
+	color: #475c7a;
+}
+
 .submenu {
 	position: absolute;
 	top: 47px;
@@ -123,6 +188,10 @@ a:link, a:visited, a:active {
 	content: '';
 }
 
+.submenu li.unlinkedParent {
+	color: #474747;
+}
+
 .submenu li.unlinkedParent a:after {
 	content: ':';
 }
@@ -143,6 +212,15 @@ a:link, a:visited, a:active {
 	content: ' ';
 }
 
+.submenu a {
+	border-top: 1px solid #fff;
+	color: #2759a2;
+}
+
+.submenu a:link:hover, .submenu a:visited:hover {
+	background: #fff;
+	color: #000;
+}
 
 .subsubmenu {
 	display: inline;
@@ -167,7 +245,7 @@ a:link, a:visited, a:active {
 .languageSwitcher {
 	position: absolute;
 	top: 19px;
-	right: -5px;
+	right: 0px;
 	text-decoration: none;
 	font-size: 12px;
 }
@@ -195,12 +273,17 @@ a:link, a:visited, a:active {
 	color: #000;
 }
 
+#pz2-results ol.pz2-resultList li {
+	margin-bottom: 10px !important;
+	padding-right: 10px;
+}
+
 #pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
 	border-left-color: #263476;
 }
 
 #pazpar2 .pz2-recordLink {
-	color: #707070;
+	color: #7d7d7d;
 	font-weight: normal;
 }
 
@@ -219,6 +302,10 @@ a:link, a:visited, a:active {
 	border-bottom: 1px solid #263476;
 }
 
+#pazpar2 #pz2-termLists {
+	font-size: 12px;
+}
+
 #pazpar2 #pz2-termLists .pz2-progressIndicator {
 	display: none;
 }
@@ -226,7 +313,6 @@ a:link, a:visited, a:active {
 #pazpar2 #pz2-termLists .pz2-facetCount {
 	color: #707070;
 	font-style: normal;
-	font-size: 100%;
 }
 
 #pazpar2 .pz2-facetCancel {
@@ -234,8 +320,7 @@ a:link, a:visited, a:active {
 }
 
 #pazpar2 .pz2-details {
-	font-size: 12px;
-	line-height: 14px;
+	padding: 10px 0px 20px;
 }
 
 #pazpar2 .pz2-details dt {
