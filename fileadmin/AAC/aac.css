@@ -14,9 +14,9 @@
 
 body {
 	background: url(background.png) repeat-x;
-	font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
-	font-size: 14px;
-	line-height: 18px;
+	font-family: "Trebuchet MS", sans-serif;
+	font-size: 16px;
+	line-height: 133%;
 	color: #474747;
 }
 
