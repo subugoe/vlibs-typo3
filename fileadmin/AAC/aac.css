@@ -14,9 +14,9 @@
 
 body {
 	background: url(background.png) repeat-x;
-	font-family: "Trebuchet MS", sans-serif;
-	font-size: 16px;
-	line-height: 133%;
+	font-family: Tahoma, Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
 	color: #474747;
 }
 
@@ -27,8 +27,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
 	color: #282828;
+}
+
+h1, h2 {
+	font-weight: bold;
+	color: #475e9a;
+	padding-bottom: 0.357em;
 }
 
 h1 {
@@ -47,10 +52,6 @@ h3 {
     font-weight: normal;
     line-height: 18px;
     margin-bottom: 10px;
-}
-h1, h2 {
-	padding-bottom: 0.357em;
-	color: #475e9a;
 }
 
 a:link, a:visited, a:active {
@@ -103,25 +104,24 @@ a:link, a:visited, a:active {
 
 .mainmenu a {
 	text-decoration: none;
-	border-top: 1px solid #eaecf4;
-	border-right: 2px solid transparent;
-	border-bottom: 1px solid #dadada;
-	border-left: 2px solid transparent;
-	background: url("http://cederbladdesign.com/tmp/subg/images/navbutton_gradient.png") repeat-x;
 	color: #234f8f;
+	border-style: solid;
+	border-width: 1px 2px;
+	border-color: #eaecf4 transparent #dadada;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	border-radius: 7px;
 }
 
-.mainmenu a:link:hover, .mainmenu a:visited:hover, .mainmenu .current a, .mainmenu .currentParent>a {
-	color: #000;
-	background: #d9dbe4;
+.mainmenu a:link:hover, .mainmenu a:visited:hover {
+	color: #234f8f;
+	background: #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dadada;
 }
 
-.mainmenu a:link:hover, .mainmenu a:visited:hover {
-	background: #fff;
-	color: #474747;
+.mainmenu .current a, .mainmenu .currentParent>a {
+
 }
 
 .mainmenu {
@@ -149,26 +149,37 @@ a:link, a:visited, a:active {
 }
 
 .mainmenu .currentParent > a {
-	color: #475c7a;
-	background: #d1d3df url(navbutton_gradient.png) repeat-x;
+	color: #445875;
+	background: #d1d3df;
 	border-top: 1px solid #eaecf4;
 	border-bottom: 1px solid #c4c4c4;
 }
 
 .mainmenu .currentParent > a:hover, .mainmenu .current a:hover {
-	color: #475c7a;
-	background: #d1d3df url(navbutton_gradient.png) repeat-x;
+	color: #445875;
+	background: #d1d3df;
 	border-top: 1px solid #eaecf4;
 	border-bottom: 1px solid #c4c4c4;
 	cursor: default;
 }
 
-.mainmenu .current > a, .mainmenu .current > a:hover {
-	background: #d9dbe7 url(navbutton_gradient.png) repeat-x;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #cecece;
-	color: #475c7a;
+.mainmenu .current > a {
+	color: #384b66;
+	background: #d1d3df;
+	border-top: 1px solid #eaecf4;
+	border-bottom: 1px solid #c4c4c4;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px 7px 7px 7px;
 }
+
+.mainmenu .current > a:hover {
+	color: #384b66;
+	background: #d1d3df;
+	border-top: 1px solid #eaecf4;
+	border-bottom: 1px solid #cecece;
+}
+
 
 .submenu {
 	position: absolute;
@@ -218,13 +229,19 @@ a:link, a:visited, a:active {
 }
 
 .submenu a {
-	border-top: 1px solid #fff;
 	color: #2759a2;
+	border-top: 1px solid #fff;
+	border: none;
 }
 
 .submenu a:link:hover, .submenu a:visited:hover {
 	background: #fff;
-	color: #000;
+	color: #273572;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dadada;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px 7px 7px 7px;
 }
 
 .subsubmenu {
