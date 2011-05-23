@@ -13,9 +13,8 @@
 ;;;;;;;
 "NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";;"groupend"
 "NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2* or lkl=IC 3*";;
-"NEAAC5020";2;"NEAAC5020";"NEAAC5000";"Sprachwissenschaft";"lkl=IC 3*";;"inline"
 "NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4*";;"inline"
-"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";;
+"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";;"inline"
 "NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";;
 "NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";;
 ;;;;;;;
