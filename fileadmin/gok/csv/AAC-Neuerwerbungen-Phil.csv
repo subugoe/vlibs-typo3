@@ -1,29 +1,30 @@
-"NEAAC2000";1;"NEAAC2000";"NEAAC";"Englische Philologie";"lkl=IA*";;
-"NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Sprach- und Literaturwissenschaft, Allgemeines";"lkl=IA 2*";;
-"NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Sprachwissenschaft";"lkl=IA 3*";;"inline"
-"NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Anthologien";"lkl=IA 4*";;"inline"
-"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Literaturwissenschaft";"lkl=IA 5*";;
-"NEAAC2050";2;"NEAAC2050";"NEAAC2000";"Textausgaben und Sekundärliteratur";"lkl=IA 6*";;
-"NEAAC2060";2;"NEAAC2060";"NEAAC2000";"Altenglisch";"lkl=IAB*";;"inline"
-"NEAAC2070";2;"NEAAC2070";"NEAAC2000";"Mittel- und Frühneuenglisch";"lkl=IAD* or lkl=IAE*";;"inline"
-"NEAAC2080";2;"NEAAC2080";"NEAAC2000";"Schottland";"lkl=IAH*";"Scotland";"inline,break"
-"NEAAC2090";2;"NEAAC2090";"NEAAC2000";"Wales";"lkl=IAJ*";"Wales";"inline"
-"NEAAC2100";2;"NEAAC2100";"NEAAC2000";"Irland";"lkl=IAF*";"Ireland";"inline"
+"NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=IA*";;"groupstart"
+"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines";"lkl=IA 2*";;
+"NEAAC4020";2;"NEAAC4020";"NEAAC4000";"Sprachwissenschaft";"lkl=IA 3*";;"inline"
+"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4*";;"inline"
+"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";;
+"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";;
+"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610*";;
+"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB*";;"inline"
+"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=IAD*";;"inline"
+"NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Schottland";"lkl=IAH*";"Scotland";"inline,break"
+"NEAAC4100";2;"NEAAC4100";"NEAAC4000";"Wales";"lkl=IAJ*";"Wales";"inline"
+"NEAAC4110";2;"NEAAC4110";"NEAAC4000";"Irland";"lkl=IAF*";"Ireland";"inline"
 ;;;;;;;
-"NEAAC3000";1;"NEAAC3000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";;
-"NEAAC3010";2;"NEAAC3010";"NEAAC3000";"Sprach- und Literaturwissenschaft, Allgemeines";"lkl=IC 2*";;
-"NEAAC3020";2;"NEAAC3020";"NEAAC3000";"Sprachwissenschaft";"lkl=IC 3*";;"inline"
-"NEAAC3030";2;"NEAAC3030";"NEAAC3000";"Anthologien";"lkl=IC 4*";;"inline"
-"NEAAC3040";2;"NEAAC3040";"NEAAC3000";"Literaturwissenschaft";"lkl=IC 5*";;
-"NEAAC3050";2;"NEAAC3050";"NEAAC3000";"Textausgaben und Sekundärliteratur";"lkl=IC 6*";;
+"NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";;"groupend"
+"NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2* or lkl=IC 3*";;
+"NEAAC5020";2;"NEAAC5020";"NEAAC5000";"Sprachwissenschaft";"lkl=IC 3*";;"inline"
+"NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4*";;"inline"
+"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";;
+"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";;
+"NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";;
 ;;;;;;;
-"NEAAC1500";1;"NEAAC1500";"NEAAC";"Globales Englisch";"lkl=IB*";"Global English";
-"NEAAC1510";2;"NEAAC1510";"NEAAC1500";"Kanada";"lkl=IBJ*";"Canada";
-"NEAAC1520";2;"NEAAC1520";"NEAAC1500";"Australien";"lkl=IBB*";"Australia";
-"NEAAC1530";2;"NEAAC1530";"NEAAC1500";"Neuseeland";"lkl=IBG*";"New Zealand";
-"NEAAC1540";2;"NEAAC1540";"NEAAC1500";"Afrika";"lkl=IBM*";"Africa";
-"NEAAC1550";2;"NEAAC1550";"NEAAC1500";"Karibischer Raum";"lkl=IBO*";"Caribbean";
-"NEAAC1560";2;"NEAAC1560";"NEAAC1500";"Malta";"lkl=IBK*";"Malta";
-"NEAAC1570";2;"NEAAC1570";"NEAAC1500";"Asien, Ozeanien";"lkl=IBR*";"Asia and Oceania";
-"NEAAC1580";2;"NEAAC1580";"NEAAC1500";"Indischer Subkontinent";"lkl=IBW*";"Indian subcontinent";
-"NEAAC1590";2;"NEAAC1590";"NEAAC1500";"Mischsprachen";"lkl=IBY*";"Mixed languages";
+"NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=IB*";"Commonwealth";"groupstart"
+"NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Kanada";"lkl=IBJ*";"Canada";
+"NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Australien und Neuseeland";"lkl=IBB* or lkl=IBG*";"Australia and New Zealand";
+"NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Afrika, Asien, Karibik";"lkl=IBM* or lkl=IBO* or lkl=IBR*";"Africa, Asia, Caribbean";
+"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Indischer Subkontinent";"lkl=IBO*";"Indian subcontinent";
+;;;;;;;
+"NEAAC3000";1;"NEAAC3000";"NEAAC";"Keltische Philologie";"lkl=IE*";;"groupend"
+"NEAAC3100";2;"NEAAC3100";"NEAAC3000";"Sprachwissenschaft";"lkl=IE 2* or lkl=IE 3* or lkl=IE 4*";;
+"NEAAC3200";2;"NEAAC3200";"NEAAC3000";"Literaturwissenschaft";"lkl=IE 5* or lkl=IE 6*";;
