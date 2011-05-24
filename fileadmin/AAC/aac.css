@@ -120,10 +120,6 @@ a:link, a:visited, a:active {
 	border-bottom: 1px solid #dadada;
 }
 
-.mainmenu .current a, .mainmenu .currentParent>a {
-
-}
-
 .mainmenu {
 	padding-top: 18px;
 	margin-left: -5px;
@@ -160,7 +156,6 @@ a:link, a:visited, a:active {
 	background: #d1d3df;
 	border-top: 1px solid #eaecf4;
 	border-bottom: 1px solid #c4c4c4;
-	cursor: default;
 }
 
 .mainmenu .current > a {
@@ -408,6 +403,15 @@ a:link, a:visited, a:active {
 
 .tx-ezbrequest-pi1 #journalNavi {
 	float: left;
+	margin-bottom: 20px;
+}
+
+.tx-ezbrequest-pi1 #journalNavi a {
+	padding: 0 3px;
+}
+
+.tx-ezbrequest-pi1 #journalNavi .act {
+	font-weight: bold;
 }
 
 .tx-ezbrequest-pi1 #ezb_search_form fieldset {
@@ -419,6 +423,14 @@ a:link, a:visited, a:active {
 	display: none;
 }
 
+.tx-ezbrequest-pi1 #journalList {
+	clear: left;
+}
+
+.tx-ezbrequest-pi1 #journalList a img {
+	margin-right: 20px;
+}
+
 .tx-ezbrequest-pi1 #jourItem .title {
 	display: block;
 	font-size: 166%;
@@ -426,8 +438,13 @@ a:link, a:visited, a:active {
 	margin-bottom: 0.5em;
 }
 
+.tx-ezbrequest-pi1 table td {
+	vertical-align: top;
+}
+
 .tx-ezbrequest-pi1 table td b {
 	display: block;
 	text-align: right;
 	margin-right: 20px;
+	width: 180px;
 }
