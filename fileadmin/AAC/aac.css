@@ -412,6 +412,7 @@ a:link, a:visited, a:active {
 
 .tx-ezbrequest-pi1 #journalNavi .act {
 	font-weight: bold;
+	padding: 0 3px;
 }
 
 .tx-ezbrequest-pi1 #ezb_search_form fieldset {
