@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "static_info_tables_de".
 #
-# Auto generated 22-09-2010 19:02
+# Auto generated 23-05-2011 18:12
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => '(de) language pack for the Static Info Tables providing localized names for countries, currencies and so on.',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '2.0.2',
+	'version' => '2.0.3',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -27,7 +27,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'modify_tables' => 'static_countries,static_languages,static_currencies,static_territories',
 	'clearcacheonload' => 0,
 	'lockType' => '',
-	'author' => 'RenÃÂ© Fritz',
+	'author' => 'RenÃ© Fritz',
 	'author_email' => 'r.fritz@colorcube.de',
 	'author_company' => 'Colorcube - digital media lab, www.colorcube.de',
 	'CGLcompliance' => '',
@@ -43,7 +43,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:9:{s:9:"ChangeLog";s:4:"d9a8";s:20:"class.ext_update.php";s:4:"0db3";s:21:"ext_conf_template.txt";s:4:"7de5";s:12:"ext_icon.gif";s:4:"639f";s:17:"ext_localconf.php";s:4:"096d";s:14:"ext_tables.php";s:4:"ef3a";s:14:"ext_tables.sql";s:4:"152a";s:28:"ext_tables_static_update.sql";s:4:"2043";s:16:"locallang_db.xml";s:4:"c00c";}',
+	'_md5_values_when_last_written' => 'a:9:{s:9:"ChangeLog";s:4:"5bfe";s:20:"class.ext_update.php";s:4:"0db3";s:21:"ext_conf_template.txt";s:4:"7de5";s:12:"ext_icon.gif";s:4:"639f";s:17:"ext_localconf.php";s:4:"096d";s:14:"ext_tables.php";s:4:"ef3a";s:14:"ext_tables.sql";s:4:"152a";s:28:"ext_tables_static_update.sql";s:4:"b6cb";s:16:"locallang_db.xml";s:4:"c00c";}',
 );
 
 ?>

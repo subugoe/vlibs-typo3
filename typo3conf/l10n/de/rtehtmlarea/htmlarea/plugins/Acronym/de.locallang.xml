@@ -2,8 +2,9 @@
 <T3locallangExt>
 	<data type="array">
 		<languageKey index="de" type="array">
-			<label index="Insert/Modify Acronym">Akronym oder Abkürzung einfügen/bearbeiten</label>
-			<label index="Acronym-contextMenuTitle">Abkürzung einfügen/bearbeiten</label>
+			<label index="Insert/Modify Acronym">Abkürzung einfügen/bearbeiten</label>
+			<label index="Insert abbreviation">Abkürzung einfügen</label>
+			<label index="Edit abbreviation">Abkürzung bearbeiten</label>
 			<label index="Term_to_abridge">Abzukürzender Begriff</label>
 			<label index="Defined_acronym">Vordefinierte Akronyme</label>
 			<label index="Defined_abbr">Vordefinierte Abkürzungen</label>
@@ -21,19 +22,20 @@
 			<label index="Select_a_language">Eine Sprache auswählen</label>
 			<label index="Language_abbr_helpText">Die Sprache, für die die Abkürzung definiert wurde</label>
 			<label index="Language_acronym_helpText">Die Sprache, für die das Akronym definiert wurde</label>
+			<label index="Acronym-contextMenuTitle">Abkürzung einfügen/bearbeiten</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
 		<languageKey index="de" type="array">
-			<label index="Insert/Modify Acronym" type="integer">2385255</label>
+			<label index="Insert/Modify Acronym" type="integer">11412538</label>
 			<label index="Acronym-contextMenuTitle" type="integer">26462660</label>
-			<label index="Term_to_abridge" type="integer">224305925</label>
+			<label index="Term_to_abridge" type="integer">39718966</label>
 			<label index="Defined_acronym" type="integer">167542566</label>
 			<label index="Defined_abbr" type="integer">47765727</label>
 			<label index="Term" type="integer">217445129</label>
-			<label index="Unabridged_term" type="integer">237868245</label>
+			<label index="Unabridged_term" type="integer">217445129</label>
 			<label index="Select_a_term" type="integer">49671357</label>
-			<label index="Abridged_term" type="integer">251609431</label>
+			<label index="Abridged_term" type="integer">92310931</label>
 			<label index="Acronym" type="integer">151597373</label>
 			<label index="Abbreviation" type="integer">190109069</label>
 			<label index="Select_an_acronym" type="integer">155425752</label>
@@ -44,19 +46,21 @@
 			<label index="Select_a_language" type="integer">242213579</label>
 			<label index="Language_abbr_helpText" type="integer">143789</label>
 			<label index="Language_acronym_helpText" type="integer">265833598</label>
+			<label index="Insert abbreviation" type="integer">258250371</label>
+			<label index="Edit abbreviation" type="integer">91996091</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
 		<languageKey index="de" type="array">
-			<label index="Insert/Modify Acronym">Insert/Modify Acronym or Abbreviation</label>
+			<label index="Insert/Modify Acronym">Insert/edit abbreviation</label>
 			<label index="Acronym-contextMenuTitle">Insert/modify abbreviation</label>
-			<label index="Term_to_abridge">Term to abridge</label>
+			<label index="Term_to_abridge">Term to abbreviate</label>
 			<label index="Defined_acronym">Pre-defined acronyms</label>
 			<label index="Defined_abbr">Pre-defined abbreviations</label>
 			<label index="Term">Term</label>
-			<label index="Unabridged_term">Unabridged Term</label>
+			<label index="Unabridged_term">Term</label>
 			<label index="Select_a_term">Select a term</label>
-			<label index="Abridged_term">Abridged Term</label>
+			<label index="Abridged_term">Short form</label>
 			<label index="Acronym">Acronym</label>
 			<label index="Abbreviation">Abbreviation</label>
 			<label index="Select_an_acronym">Select an acronym</label>
@@ -67,6 +71,8 @@
 			<label index="Select_a_language">Select a language</label>
 			<label index="Language_abbr_helpText">This is the language for which the abbreviation is defined</label>
 			<label index="Language_acronym_helpText">This is the language for which the acronym is defined</label>
+			<label index="Insert abbreviation">Insert abbreviation</label>
+			<label index="Edit abbreviation">Edit abbreviation</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

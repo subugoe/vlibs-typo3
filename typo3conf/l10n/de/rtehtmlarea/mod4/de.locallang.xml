@@ -28,7 +28,7 @@
 			<label index="update">Aktualisieren</label>
 			<label index="magicImage">Neues Zauberbild</label>
 			<label index="plainImage">Neues normales Bild</label>
-			<label index="dragDropImage">Drag &amp; Drop</label>
+			<label index="dragDropImage">Drag and Drop</label>
 			<label index="currentImage">Aktuelles Bild</label>
 			<label index="bytes">Byte</label>
 			<label index="pixels">Pixel</label>
@@ -58,7 +58,7 @@
 			<label index="update" type="integer">6894342</label>
 			<label index="magicImage" type="integer">87595471</label>
 			<label index="plainImage" type="integer">174130358</label>
-			<label index="dragDropImage" type="integer">228115367</label>
+			<label index="dragDropImage" type="integer">164265741</label>
 			<label index="currentImage" type="integer">205301887</label>
 			<label index="bytes" type="integer">78882337</label>
 			<label index="pixels" type="integer">221878344</label>
@@ -94,7 +94,7 @@
 			<label index="update">Update</label>
 			<label index="magicImage">New Magic Image</label>
 			<label index="plainImage">New Plain Image</label>
-			<label index="dragDropImage">Drag'n'Drop</label>
+			<label index="dragDropImage">Drag and Drop</label>
 			<label index="currentImage">Current Image</label>
 			<label index="padding_top">Top padding</label>
 			<label index="padding_right">Right padding</label>

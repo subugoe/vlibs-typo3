@@ -75,6 +75,18 @@
 			<label index="grid_labelName">Name</label>
 			<label index="grid_labelColumn">Spaltennummer</label>
 			<label index="grid_labelSave">In Zelle speichern</label>
+			<label index="grid_addColumn">Spalte hinzufügen</label>
+			<label index="grid_removeColumn">Spalte entfernen</label>
+			<label index="grid_addRow">Zeile hinzufügen</label>
+			<label index="grid_removeRow">Zeile entfernen</label>
+			<label index="grid_editCell">Zelle bearbeiten</label>
+			<label index="grid_mergeCell">Mit nächster Zelle verbinden</label>
+			<label index="grid_splitCell">Zelle teilen</label>
+			<label index="grid_name">Name</label>
+			<label index="grid_column">Spaltennummer</label>
+			<label index="grid_notSet">nicht gesetzt</label>
+			<label index="grid_nameHelp">Geben Sie einen Namen für die Zelle ein.</label>
+			<label index="grid_columnHelp">Die Spaltenposition setzt fest, in welchem Bereich der Inhalt im Frontend dargestellt wird.</label>
 		</languageKey>
 	</data>
 	<orig_hash type="array">
@@ -152,6 +164,18 @@
 			<label index="grid_windowTitle" type="integer">156582309</label>
 			<label index="grid_labelColumn" type="integer">26371969</label>
 			<label index="grid_labelSave" type="integer">44708083</label>
+			<label index="grid_addColumn" type="integer">190953716</label>
+			<label index="grid_removeColumn" type="integer">5198593</label>
+			<label index="grid_addRow" type="integer">27225638</label>
+			<label index="grid_removeRow" type="integer">253938706</label>
+			<label index="grid_editCell" type="integer">228218751</label>
+			<label index="grid_mergeCell" type="integer">12596101</label>
+			<label index="grid_splitCell" type="integer">68478671</label>
+			<label index="grid_name" type="integer">77521672</label>
+			<label index="grid_column" type="integer">267768667</label>
+			<label index="grid_notSet" type="integer">222944539</label>
+			<label index="grid_nameHelp" type="integer">151031523</label>
+			<label index="grid_columnHelp" type="integer">158668489</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -229,6 +253,18 @@
 			<label index="grid_windowTitle">Set cell name and column number</label>
 			<label index="grid_labelColumn">Column Number</label>
 			<label index="grid_labelSave">Save to cell</label>
+			<label index="grid_addColumn">Add column</label>
+			<label index="grid_removeColumn">Remove column</label>
+			<label index="grid_addRow">Add row</label>
+			<label index="grid_removeRow">Remove row</label>
+			<label index="grid_editCell">Edit cell</label>
+			<label index="grid_mergeCell">Combine with next cell</label>
+			<label index="grid_splitCell">Split cell</label>
+			<label index="grid_name">Name</label>
+			<label index="grid_column">Column number</label>
+			<label index="grid_notSet">not set</label>
+			<label index="grid_nameHelp">Enter a name for the cell.</label>
+			<label index="grid_columnHelp">The column position defines in which area the content is rendered in the frontend.</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

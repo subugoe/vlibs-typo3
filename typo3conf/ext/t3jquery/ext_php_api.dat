@@ -16,7 +16,7 @@ if (t3lib_extMgm::isLoaded('t3jquery')) {
 }
 
 
-if (T3JQUERY === true) {
+if (T3JQUERY === TRUE) {
   tx_t3jquery::addJqJS();
 } else {
   // Here you add your own version of jQuery library, which is used if the
@@ -42,7 +42,7 @@ if (t3lib_extMgm::isLoaded('t3jquery')) {
 }
 
 
-if (T3JQUERY === true) {
+if (T3JQUERY === TRUE) {
   tx_t3jquery::addJqJS();
 } else {
   // Here you add your own version of jQuery library, which is used if the
@@ -56,15 +56,15 @@ Adds the jquery script tag for the page header.
 For frontend usage only.";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:91;s:13:"content_lines";i:3;s:6:"atLine";i:74;}i:5;a:7:{s:6:"header";s:23:"function getJqPath()
 	{";s:11:"parentClass";s:11:"tx_t3jquery";s:4:"cDat";a:3:{s:4:"text";s:39:"
 
-Returns the path configuration and JS";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:211;s:13:"content_lines";i:5;s:6:"atLine";i:84;}i:7;a:7:{s:6:"header";s:37:"function getJqJS($urlOnly = false)
+Returns the path configuration and JS";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:0:"";}}s:7:"content";s:0:"";s:12:"content_size";i:211;s:13:"content_lines";i:5;s:6:"atLine";i:84;}i:7;a:7:{s:6:"header";s:37:"function getJqJS($urlOnly = FALSE)
 	{";s:11:"parentClass";s:11:"tx_t3jquery";s:4:"cDat";a:3:{s:4:"text";s:56:"
 
 Get the jQuery UI script tag.
-For frontend usage only.";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"boolean";i:1;s:56:"If true, only the URL is returned, not a full script tag";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:53:"HTML Script tag to load the jQuery JavaScript library";}}s:7:"content";s:0:"";s:12:"content_size";i:147;s:13:"content_lines";i:4;s:6:"atLine";i:98;}i:9;a:4:{s:6:"header";s:39:"function getJqJSBE($urlOnly = false)
+For frontend usage only.";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"boolean";i:1;s:56:"If TRUE, only the URL is returned, not a full script tag";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:53:"HTML Script tag to load the jQuery JavaScript library";}}s:7:"content";s:0:"";s:12:"content_size";i:147;s:13:"content_lines";i:4;s:6:"atLine";i:98;}i:9;a:4:{s:6:"header";s:39:"function getJqJSBE($urlOnly = FALSE)
 	{";s:11:"parentClass";s:11:"tx_t3jquery";s:4:"cDat";a:3:{s:4:"text";s:52:"
 
 Get the jquery script tag.
-For backend usage only.";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"boolean";i:1;s:56:"If true, only the URL is returned, not a full script tag";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:53:"HTML Script tag to load the jQuery JavaScript library";}}s:6:"atLine";i:111;}i:11;a:7:{s:6:"header";s:34:"function addJS($content, $conf)
+For backend usage only.";s:5:"param";a:1:{i:0;a:2:{i:0;s:7:"boolean";i:1;s:56:"If TRUE, only the URL is returned, not a full script tag";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:53:"HTML Script tag to load the jQuery JavaScript library";}}s:6:"atLine";i:111;}i:11;a:7:{s:6:"header";s:34:"function addJS($content, $conf)
 	{";s:11:"parentClass";s:11:"tx_t3jquery";s:4:"cDat";a:3:{s:4:"text";s:423:"
 
 Function to be used from TypoScript to add Javascript after the jquery.js

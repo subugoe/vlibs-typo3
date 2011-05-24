@@ -1,0 +1,7 @@
+#
+# content here will be included after plugin activation automatically. No template inclusion necessary.
+#
+plugin.tx_libconnect {
+  ezbbibid = SUBHH
+  dbisbibid = sub_hh
+}

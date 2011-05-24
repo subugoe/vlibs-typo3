@@ -6,9 +6,7 @@
  *
  */
 
-require_once(PATH_tslib.'class.tslib_pibase.php');
-
-class EZB extends tslib_pibase {
+class EZB {
 	
 	//document search meta infos
 	private $title;
@@ -42,7 +40,7 @@ class EZB extends tslib_pibase {
 	 * @return array()
 	 */
 	public function getFachbereiche(){
-		$xml_request = simplexml_load_file( "{$this->overview_requst_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&" );
+		$xml_request = simplexml_load_file( "{$this->overview_requst_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&" );
 		$fachbereiche = array();
 		foreach ($xml_request->ezb_subject_list->subject AS $key => $value){
 			$fachbereiche[(string) $value['notation'][0]] = array('title' => (string) $value[0], 'journalcount' => (int) $value['journalcount'], 'id' => (string) $value['notation'][0], 'notation' => (string) $value['notation'][0] );
@@ -63,7 +61,7 @@ class EZB extends tslib_pibase {
 	 * @return array()
 	 */
 	public function getFachbereichJournals($jounal, $sindex = 0, $sc = 'A', $lc = 'B', $lc = ''){
-		$xml_request = simplexml_load_file( "{$this->overview_requst_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&notation={$jounal}&sc={$sc}&lc={$lc}&sindex={$sindex}&");
+		$xml_request = simplexml_load_file( "{$this->overview_requst_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&notation={$jounal}&sc={$sc}&lc={$lc}&sindex={$sindex}&");
 		$journals = array();
 
 		if( $xml_request->page_vars ){
@@ -127,7 +125,10 @@ class EZB extends tslib_pibase {
 	 * @param int Journal ID
 	 */
 	public function getJournalDetail($journalId){
-		$xml_request = simplexml_load_file( "{$this->detailview_request_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&jour_id={$journalId}");
+		
+		$url = "{$this->detailview_request_url}bibid={$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['ezbbibid']}&colors={$this->colors}&lang={$this->lang}&jour_id={$journalId}";
+		
+		$xml_request = simplexml_load_file( $url );
 		$journal = array();
 		
 		if (! is_object($xml_request->ezb_detail_about_journal->journal))
@@ -200,9 +201,6 @@ class EZB extends tslib_pibase {
 			);
 		}
 
-		
-//print_r($journal);	
-			
 		return $journal;
 
 	}
@@ -235,20 +233,12 @@ class EZB extends tslib_pibase {
             'ZD' => 'ZDB-Nummer',
 		);
 
-//print_r($form);		
-		
 		return $form;
 	}
 	
 	private function createSearchUrl($term, $searchVars/*, $lett = 'k'*/) {
 
-/* Bei der EZB gibts den Parameter "lett" gar nicht?!		
-		// Achtung!!! Wichtig: lett=k !!!
-		// Bist du Dir da sicher? ich glaube das muss fs sein.
-		// mit fs kommen immer leere ergebnisse...zumin
-		$searchUrl = $this->search_result_page . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}";
-*/
-		$searchUrl = $this->search_result_page;
+		$searchUrl = "http://ezb.uni-regensburg.de/searchres.phtml?xmloutput=1&bibid=".$GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['ezbbibid']."&colors=7&lang=de";
 
 		// urlencode termi
 		$term = rawurlencode(utf8_decode($term));
@@ -281,8 +271,6 @@ class EZB extends tslib_pibase {
 	public function search( $term, $searchVars = array() ){
 		
 		$searchUrl = $this->createSearchUrl($term, $searchVars);
-
-//echo $searchUrl;
 
 		$xml_request = simplexml_load_file( $searchUrl );
 		if (! $xml_request) 

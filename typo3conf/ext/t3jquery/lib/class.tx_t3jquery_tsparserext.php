@@ -75,7 +75,7 @@ class tx_t3jquery_tsparserext
 			$jQueryVersion   = T3JQUERYVERSION;
 			$configDir       = tx_t3jquery::getJqPath();
 		}
-		if ($this->checkConfig() === false) {
+		if ($this->checkConfig() === FALSE) {
 			$out .= '
 	<div class="typo3-message message-warning">
 		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.checkConfigHeader') . '</div>
@@ -137,7 +137,7 @@ class tx_t3jquery_tsparserext
 		);
 		foreach ($confDefault as $val) {
 			if (! isset($this->confArr[$val]) && ! isset($_POST['data'][$val])) {
-				return false;
+				return FALSE;
 			}
 		}
 		return true;

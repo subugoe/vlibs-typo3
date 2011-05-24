@@ -85,7 +85,8 @@
 			<label index="sys_workspace.stagechg_notification">E-Mail-Benachrichtigung bei Phasenänderung:</label>
 			<label index="pages">Seite</label>
 			<label index="doktype.I.0">Standard</label>
-			<label index="doktype.I.1">SysOrdner</label>
+			<label index="doktype.I.1">Ordner</label>
+			<label index="doktype.I.folder">Ordner</label>
 			<label index="doktype.I.2">Papierkorb</label>
 			<label index="title">Seitentitel:</label>
 			<label index="php_tree_stop">Seitenbaum stoppen:</label>
@@ -200,6 +201,7 @@
 			<label index="be_groups.fileoper_perms_diroper_perms_delete" type="integer">60247245</label>
 			<label index="sys_news" type="integer">208636453</label>
 			<label index="sys_news.tabs.access" type="integer">200750040</label>
+			<label index="doktype.I.folder" type="integer">185543575</label>
 		</languageKey>
 	</orig_hash>
 	<orig_text type="array">
@@ -301,6 +303,7 @@
 			<label index="be_groups.fileoper_perms_diroper_perms_delete">Directory: Delete recursively (rm -Rf)</label>
 			<label index="sys_news">System News</label>
 			<label index="sys_news.tabs.access">Access</label>
+			<label index="doktype.I.folder">Folder</label>
 		</languageKey>
 	</orig_text>
 </T3locallangExt>

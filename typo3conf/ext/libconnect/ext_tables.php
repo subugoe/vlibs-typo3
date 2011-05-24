@@ -2,6 +2,7 @@
 
 if (!defined ('TYPO3_MODE')) {	die ('Access denied.'); }
 
+t3lib_extMgm::addStaticFile($_EXTKEY, '/configurations/TS', 'libconnect');
 
 $TCA["tx_libconnect_subject"] = array(
     "ctrl" => array(

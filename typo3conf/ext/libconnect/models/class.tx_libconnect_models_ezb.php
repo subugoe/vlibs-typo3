@@ -29,7 +29,7 @@
 
 
 require_once(t3lib_extMgm::extPath('div') . 'class.tx_div.php');
-require_once(t3lib_extMgm::extPath('libconnect') . 'lib/libconnect/classes/class_EZB.php');
+require_once(t3lib_extMgm::extPath('libconnect') . 'lib/ezb_dbis/classes/class_EZB.php');
 		
 class tx_libconnect_models_ezb extends tx_lib_object {
 	
@@ -199,6 +199,7 @@ class tx_libconnect_models_ezb extends tx_lib_object {
 		$this->set('form', $form);
 		$this->set('siteUrl', $cObject->getTypolink_URL($GLOBALS['TSFE']->id));
 		$this->set('searchUrl', $cObject->getTypolink_URL($this->controller->configurations->get('searchPid')));
+		$this->set('listPid', $this->controller->configurations->get('searchPid'));
 	}
 
 	public function loadForm() {
@@ -212,6 +213,7 @@ class tx_libconnect_models_ezb extends tx_lib_object {
 		$this->set('form', $form);
 		$this->set('siteUrl', $cObject->getTypolink_URL($GLOBALS['TSFE']->id));
 		$this->set('listUrl', $cObject->getTypolink_URL($this->controller->configurations->get('listPid')));
+		$this->set('listPid', $this->controller->configurations->get('listPid'));
 	}	
 }
 ?>

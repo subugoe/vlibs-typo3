@@ -28,7 +28,7 @@
 /**
  * Class for translating page ids to/from path strings (Speaking URLs)
  *
- * $Id: class.tx_realurl_advanced.php 39751 2010-11-01 14:24:09Z dmitry $
+ * $Id: class.tx_realurl_advanced.php 47273 2011-05-04 08:18:31Z dmitry $
  *
  * @author	Martin Poelstra <martin@beryllium.net>
  * @author	Kasper Skaarhoj <kasper@typo3.com>
@@ -158,7 +158,7 @@ class tx_realurl_advanced {
 
 		// Convert a page-alias to a page-id if needed
 		$pageId = $this->resolveAlias($pageId);
-		$pageId = $this->resolveShortcuts($pageId);
+		$pageId = $this->resolveShortcuts($pageId, $mpvar);
 		if ($pageId) {
 			// Set error if applicable.
 			if ($this->isExcludedPage($pageId)) {
@@ -168,7 +168,7 @@ class tx_realurl_advanced {
 				$lang = $this->getLanguageVar($paramKeyValues);
 				$cachedPagePath = $this->getPagePathFromCache($pageId, $lang, $mpvar);
 
-				if ($cachedPagePath !== false && !$this->conf['autoUpdatePathCache']) {
+				if ($cachedPagePath !== false) {
 					$pagePath = $cachedPagePath;
 				}
 				else {
@@ -231,7 +231,7 @@ class tx_realurl_advanced {
 	 * @param int pageId
 	 * @return mixed false if not found or int
 	 */
-	protected function resolveShortcuts($pageId) {
+	protected function resolveShortcuts($pageId, &$mpvar) {
 		$disableGroupAccessCheck = ($GLOBALS['TSFE']->config['config']['typolinkLinkAccessRestrictedPages'] ? true : false);
 		$loopCount = 20; // Max 20 shortcuts, to prevent an endless loop
 		while ($pageId > 0 && $loopCount > 0) {
@@ -245,7 +245,7 @@ class tx_realurl_advanced {
 
 			if (!$this->conf['dontResolveShortcuts'] && $page['doktype'] == 4) {
 				// Shortcut
-				$pageId = $this->resolveShortcut($page, $disableGroupAccessCheck);
+				$pageId = $this->resolveShortcut($page, $disableGroupAccessCheck, array(), $mpvar);
 			}
 			else {
 				$pageId = $page['uid'];
@@ -536,7 +536,6 @@ class tx_realurl_advanced {
 				$parts = parse_url($pagePath);
 				$this->pObj->devLog('$innerSubDomain=true, showing page path parts', $parts);
 				if ($parts['host'] == '') {
-					$domain = '';
 					foreach ($newRootLine as $rl) {
 						$rows = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('domainName', 'sys_domain', 'pid=' . $rl['uid'] . ' AND redirectTo=\'\' AND hidden=0', '', 'sorting');
 						if (count($rows)) {
@@ -581,7 +580,7 @@ class tx_realurl_advanced {
 
 			// First, check for cached path of this page:
 			$cachedPagePath = false;
-			if (!$page['tx_realurl_exclude'] && !$stopUsingCache && !$this->conf['disablePathCache'] && !$this->conf['autoUpdatePathCache']) {
+			if (!$page['tx_realurl_exclude'] && !$stopUsingCache && !$this->conf['disablePathCache']) {
 
 				// Using pathq2 index!
 				list($cachedPagePath) = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('pagepath', 'tx_realurl_pathcache',
@@ -646,15 +645,10 @@ class tx_realurl_advanced {
 	 */
 	protected function pagePathtoID(&$pathParts) {
 
-		// Init:
-		$GET_VARS = '';
+		$row = $postVar = false;
 
 		// If pagePath cache is not disabled, look for entry:
 		if (!$this->conf['disablePathCache']) {
-
-			if (!isset($this->conf['firstHitPathCache'])) {
-				$this->conf['firstHitPathCache'] = ((!isset($this->pObj->extConf['postVarSets']) || count($this->pObj->extConf['postVarSets']) == 0) && (!isset($this->pObj->extConf['fixedPostVars']) || count($this->pObj->extConf['fixedPostVars']) == 0));
-			}
 
 			// Work from outside-in to look up path in cache:
 			$postVar = false;
@@ -673,15 +667,13 @@ class tx_realurl_advanced {
 						'', 'expire', '1');
 
 				// This lookup does not include language and MP var since those are supposed to be fully reflected in the built url!
-				if (is_array($row) || $this->conf['firstHitPathCache']) {
+				if (is_array($row)) {
 					break;
 				}
 
 				// If no row was found, we simply pop off one element of the path and try again until there are no more elements in the array - which means we didn't find a match!
 				$postVar = array_pop($copy_pathParts);
 			}
-		} else {
-			$row = false;
 		}
 
 		// It could be that entry point to a page but it is not in the cache. If we popped
@@ -691,10 +683,10 @@ class tx_realurl_advanced {
 		// there is a postVar 'how' on this page, the check below will not work. But it is still
 		// better than nothing.
 		if ($row && $postVar) {
-			$postVars = $this->pObj->getPostVarSetConfig($row['pid'], 'postVarSets');
+			$postVars = $this->pObj->getPostVarSetConfig($row['page_id'], 'postVarSets');
 			if (!is_array($postVars) || !isset($postVars[$postVar])) {
 				// Check fixed
-				$postVars = $this->pObj->getPostVarSetConfig($row['pid'], 'fixedPostVars');
+				$postVars = $this->pObj->getPostVarSetConfig($row['page_id'], 'fixedPostVars');
 				if (!is_array($postVars) || !isset($postVars[$postVar])) {
 					// Not a postVar, so page most likely in not in cache. Clear row.
 					// TODO It would be great to update cache in this case but usually TYPO3 is not
@@ -889,26 +881,35 @@ class tx_realurl_advanced {
 	 */
 	protected function fetchPagesForPath($url) {
 		$pages = array();
-		$pagesOverlay = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('pid', 'pages_language_overlay',
-			'hidden=0 AND deleted=0 AND tx_realurl_pathsegment=' .
-				$GLOBALS['TYPO3_DB']->fullQuoteStr($url, 'pages_language_overlay'),
-				'', '', '', 'pid');
-		if (count($pagesOverlay) > 0) {
-			$pages = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('uid,pid', 'pages',
-			'hidden=0 AND deleted=0 AND uid IN (' . implode(',', array_keys($pagesOverlay)) . ')',
-			'', '', '', 'uid');
+		$language = $this->pObj->getDetectedLanguage();
+		if ($language != 0) {
+			$pagesOverlay = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('t1.pid',
+				'pages_language_overlay t1, pages t2',
+				't1.hidden=0 AND t1.deleted=0 AND ' .
+				't2.hidden=0 AND t2.deleted=0 AND ' .
+				't1.pid=t2.uid AND ' .
+				't2.tx_realurl_pathoverride=1 AND ' .
+				($language > 0 ? 't1.sys_language_uid=' . $language . ' AND ' : '') .
+				't1.tx_realurl_pathsegment=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($url, 'pages_language_overlay'),
+				'', '', '', 'pid'
+			);
+			if (count($pagesOverlay) > 0) {
+				$pages = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('uid,pid', 'pages',
+					'hidden=0 AND deleted=0 AND uid IN (' . implode(',', array_keys($pagesOverlay)) . ')',
+					'', '', '', 'uid');
+			}
 		}
 		// $pages has strings as keys. Therefore array_merge will ensure uniqueness.
 		// Selection from 'pages' table will override selection from
 		// pages_language_overlay.
 		$pages2 = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('uid,pid', 'pages',
-			'hidden=0 AND deleted=0 AND tx_realurl_pathsegment=' .
+			'hidden=0 AND deleted=0 AND tx_realurl_pathoverride=1 AND tx_realurl_pathsegment=' .
 				$GLOBALS['TYPO3_DB']->fullQuoteStr($url, 'pages'),
 				'', '', '', 'uid');
 		if (count($pages2)) {
 			$pages = array_merge($pages, $pages2);
 		}
-		return array_unique($pages);
+		return $pages;
 	}
 
 
@@ -937,7 +938,7 @@ class tx_realurl_advanced {
 		$segment = array_shift($urlParts);
 
 		// Perform search:
-		list($uid, $row, $exclude) = $this->findPageBySegmentAndPid($startPid, $segment);
+		list($uid, $row, $exclude, $possibleMatch) = $this->findPageBySegmentAndPid($startPid, $segment);
 
 		// If a title was found...
 		if ($uid) {
@@ -955,6 +956,16 @@ class tx_realurl_advanced {
 				}
 			}
 		}
+
+			// the possible "exclude in URL segment" match must be checked if no other results in
+			// deeper tree branches were found, because we want to access this page also
+			// + Books <-- excluded in URL (= possibleMatch)
+			//   - TYPO3
+			//   - ExtJS
+		if (count($possibleMatch) > 0) {
+			return $this->processFoundPage($possibleMatch, $mpvar, $urlParts, true);
+		}
+
 		// No title, so we reached the end of the id identifying part of the path and now put back the current non-matched title segment before we return the PID:
 		array_unshift($urlParts, $segment);
 		return $currentIdMp;
@@ -1008,6 +1019,7 @@ class tx_realurl_advanced {
 
 		// page select object - used to analyse mount points.
 		$sys_page = t3lib_div::makeInstance('t3lib_pageSelect');
+		/** @var t3lib_pageSelect $sys_page */
 
 		// Build an array with encoded values from the segTitleFieldArray of the subpages
 		// First we find field values from the default language
@@ -1063,20 +1075,26 @@ class tx_realurl_advanced {
 
 		// We have to search the language overlay too, if: a) the language isn't the default (0), b) if it's not set (-1)
 		$uidTrackKeys = array_keys($uidTrack);
-		foreach ($uidTrackKeys as $l_id) {
-			$result = $GLOBALS['TYPO3_DB']->exec_SELECTquery(TX_REALURL_SEGTITLEFIELDLIST_PLO,
-					'pages_language_overlay', 'pid=' . intval($l_id) . ' AND deleted=0');
-			while (false != ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($result))) {
-				foreach ($segTitleFieldArray as $fieldName) {
-					if ($row[$fieldName]) {
-						$encodedTitle = $this->encodeTitle($row[$fieldName]);
-						if (!isset($titles[$fieldName][$encodedTitle])) {
-							$titles[$fieldName][$encodedTitle] = $l_id;
+		$language = $this->pObj->getDetectedLanguage();
+		if ($language != 0) {
+			foreach ($uidTrackKeys as $l_id) {
+				$result = $GLOBALS['TYPO3_DB']->exec_SELECTquery(TX_REALURL_SEGTITLEFIELDLIST_PLO,
+					'pages_language_overlay',
+					'pid=' . intval($l_id) . ' AND deleted=0' .
+					($language > 0 ? ' AND sys_language_uid=' . $language : '')
+				);
+				while (false != ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($result))) {
+					foreach ($segTitleFieldArray as $fieldName) {
+						if ($row[$fieldName]) {
+							$encodedTitle = $this->encodeTitle($row[$fieldName]);
+							if (!isset($titles[$fieldName][$encodedTitle])) {
+								$titles[$fieldName][$encodedTitle] = $l_id;
+							}
 						}
 					}
 				}
+				$GLOBALS['TYPO3_DB']->sql_free_result($result);
 			}
-			$GLOBALS['TYPO3_DB']->sql_free_result($result);
 		}
 
 		// Merge titles:
@@ -1090,10 +1108,14 @@ class tx_realurl_advanced {
 
 		// Return:
 		$encodedTitle = $this->encodeTitle($title);
+		$possibleMatch = array();
 		if (isset($allTitles[$encodedTitle])) {
-			return array($allTitles[$encodedTitle], $uidTrack[$allTitles[$encodedTitle]], false);
+			if (!$uidTrack[$allTitles[$encodedTitle]]['tx_realurl_exclude']) {
+				return array($allTitles[$encodedTitle], $uidTrack[$allTitles[$encodedTitle]], false, array());
+			}
+			$possibleMatch = $uidTrack[$allTitles[$encodedTitle]];
 		}
-		return array(false, false, $exclude);
+		return array(false, false, $exclude, $possibleMatch);
 	}
 
 	/*******************************
@@ -1136,10 +1158,10 @@ class tx_realurl_advanced {
 		// Strip the rest
 		if ($this->extConf['init']['enableAllUnicodeLetters']) {
 			// Warning: slow!!!
-			$processedTitle = preg_replace('/[^\p{L}0-9\\' . $space . ']/u', '', $processedTitle);
+			$processedTitle = preg_replace('/[^\p{L}0-9' . ($space ? preg_quote($space) : '') . ']/u', '', $processedTitle);
 		}
 		else {
-			$processedTitle = preg_replace('/[^a-zA-Z0-9\\' . $space . ']/', '', $processedTitle);
+			$processedTitle = preg_replace('/[^a-zA-Z0-9' . ($space ? preg_quote($space) : '') . ']/', '', $processedTitle);
 		}
 		$processedTitle = preg_replace('/\\' . $space . '{2,}/', $space, $processedTitle); // Convert multiple 'spaces' to a single one
 		$processedTitle = trim($processedTitle, $space);
@@ -1208,7 +1230,7 @@ class tx_realurl_advanced {
 	 * @param	array	$log	Internal log
 	 * @return	int	Found page id
 	 */
-	protected function resolveShortcut($page, $disableGroupAccessCheck, $log = array()) {
+	protected function resolveShortcut($page, $disableGroupAccessCheck, $log = array(), &$mpvar = null) {
 		if (isset($log[$page['uid']])) {
 			// loop detected!
 			return $page['uid'];
@@ -1221,7 +1243,8 @@ class tx_realurl_advanced {
 				$pageid = intval($page['shortcut']);
 				$page = $GLOBALS['TSFE']->sys_page->getPage($pageid, $disableGroupAccessCheck);
 				if ($page && $page['doktype'] == 4) {
-					$pageid = $this->resolveShortcut($page, $disableGroupAccessCheck, $log);
+					$mpvar = '';
+					$pageid = $this->resolveShortcut($page, $disableGroupAccessCheck, $log, $mpvar);
 				}
 			}
 		}
@@ -1231,7 +1254,15 @@ class tx_realurl_advanced {
 			if (count($rows) > 0) {
 				reset($rows);
 				$row = current($rows);
-				$pageid = ($row['doktype'] == 4 ? $this->resolveShortcut($row, $disableGroupAccessCheck, $log) : $row['uid']);
+				$pageid = ($row['doktype'] == 4 ? $this->resolveShortcut($row, $disableGroupAccessCheck, $log, $mpvar) : $row['uid']);
+			}
+
+			if (isset($row['_MP_PARAM'])) {
+				if ($mpvar) {
+					$mpvar .= ',';
+				}
+
+				$mpvar .= $row['_MP_PARAM'];
 			}
 		}
 		elseif ($page['shortcut_mode'] == 4) {
@@ -1239,7 +1270,7 @@ class tx_realurl_advanced {
 			$page = $GLOBALS['TSFE']->sys_page->getPage($page['pid'], $disableGroupAccessCheck);
 			$pageid = $page['uid'];
 			if ($page && $page['doktype'] == 4) {
-				$pageid = $this->resolveShortcut($page, $disableGroupAccessCheck, $log);
+				$pageid = $this->resolveShortcut($page, $disableGroupAccessCheck, $log, $mpvar);
 			}
 		}
 		return $pageid;

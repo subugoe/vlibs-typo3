@@ -19,12 +19,12 @@
  * ----------------------------------------------------------------------
  * 
  * examples of usage :
- * $myPacker = new JavaScriptPacker($script, 62, true, false);
+ * $myPacker = new JavaScriptPacker($script, 62, TRUE, FALSE);
  * $packed = $myPacker->pack();
  * 
  * or
  * 
- * $myPacker = new JavaScriptPacker($script, 'Normal', true, false);
+ * $myPacker = new JavaScriptPacker($script, 'Normal', TRUE, FALSE);
  * $packed = $myPacker->pack();
  * 
  * or (default values)
@@ -39,10 +39,10 @@
  *                0,10,62,95 or 'None', 'Numeric', 'Normal', 'High ASCII'.
  *                default: 62.
  * $fastDecode:   include the fast decoder in the packed result, boolean.
- *                default : true.
+ *                default : TRUE.
  * $specialChars: if you are flagged your private and local variables
  *                in the script, boolean.
- *                default: false.
+ *                default: FALSE.
  * 
  * The pack() method return the compressed JavasScript, as a string.
  * 
@@ -75,8 +75,8 @@ class JavaScriptPacker {
 	// validate parameters
 	var $_script = '';
 	var $_encoding = 62;
-	var $_fastDecode = true;
-	var $_specialChars = false;
+	var $_fastDecode = TRUE;
+	var $_specialChars = FALSE;
 	
 	var $LITERAL_ENCODING = array(
 		'None' => 0,
@@ -85,7 +85,7 @@ class JavaScriptPacker {
 		'High ASCII' => 95
 	);
 	
-	function JavaScriptPacker($_script, $_encoding = 62, $_fastDecode = true, $_specialChars = false)
+	function JavaScriptPacker($_script, $_encoding = 62, $_fastDecode = TRUE, $_specialChars = FALSE)
 	{
 		$this->_script = $_script . "\n";
 		if (array_key_exists($_encoding, $this->LITERAL_ENCODING))
@@ -243,7 +243,7 @@ class JavaScriptPacker {
 				$word = $unsorted[--$i];
 				if (isset($protected[$word]) /*!= null*/) {
 					$_sorted[$protected[$word]] = substr($word, 1);
-					$_protected[$protected[$word]] = true;
+					$_protected[$protected[$word]] = TRUE;
 					$this->_count[$word] = 0;
 				}
 			} while ($i);
@@ -343,7 +343,7 @@ class JavaScriptPacker {
 			$unpack = preg_replace($ENCODE, $inline, $unpack);
 		}
 		// pack the boot function too
-		$unpackPacker = new JavaScriptPacker($unpack, 0, false, true);
+		$unpackPacker = new JavaScriptPacker($unpack, 0, FALSE, TRUE);
 		$unpack = $unpackPacker->pack();
 		
 		// arguments
@@ -531,7 +531,7 @@ class JavaScriptPacker {
 
 
 class ParseMaster {
-	var $ignoreCase = false;
+	var $ignoreCase = FALSE;
 	var $escapeChar = '';
 	
 	// constants
@@ -644,7 +644,7 @@ class ParseMaster {
 				
 				}
 				$delete = ($this->escapeChar == '' ||
-				           strpos($arguments[$i], $this->escapeChar) === false)
+				           strpos($arguments[$i], $this->escapeChar) === FALSE)
 				        ? '' : "\x01" . $arguments[$i] . "\x01";
 				return $delete . $replacement;
 			

@@ -47,7 +47,7 @@ class DBIS{
 	 */
 	public function getDbliste( $fachgebiet, $type = false ){
 		
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&";
+		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&";
 		
 		if (is_numeric($fachgebiet)) {
 			// notation ist eine id => dbis sammlung
@@ -95,7 +95,7 @@ class DBIS{
 					'access' => $list['access_infos'][(string)$value['access_ref']]['title'],
 					'db_type_refs' => (string)$value['db_type_refs'],
 					'top_db' => (int)$value['top_db'],
-					'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&colors=&ocolors=&".  "lett={$this->lett}&titel_id={$value['title_id']}",
+					'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&".  "lett={$this->lett}&titel_id={$value['title_id']}",
 				);
 				
 				if ($db['top_db']) {
@@ -119,7 +119,7 @@ class DBIS{
 	 * @param int db id
 	 */
 	public function getDbDetails( $db_id){
-		$xml_db_details = simplexml_load_file( "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&colors={$this->colors}&ocolors={$this->ocolors}&titel_id=" . $db_id );
+		$xml_db_details = simplexml_load_file( "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&colors={$this->colors}&ocolors={$this->ocolors}&titel_id=" . $db_id );
 		$details = array();
 		
 		if (!is_object($xml_db_details->details))
@@ -193,9 +193,7 @@ class DBIS{
 			}
 		
 		}
-		
-//print_r($details);
-		
+	
 		return $details;
 	}
 	
@@ -205,7 +203,6 @@ class DBIS{
 	public function detailSucheFormFelder(){
 		
 		$url = "http://rzblx10.uni-regensburg.de/dbinfo/suche.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] . "&" . "colors={$this->colors}&ocolors={$this->ocolors}";
-//echo $url;		
 		$xml_such_form = simplexml_load_file( $url );
 		
 		foreach ($xml_such_form->dbis_search->option_list AS $key => $value){
@@ -228,16 +225,13 @@ class DBIS{
 		);
  
 		$form[zugaenge] = $zugaenge;
-		
-//print_r($form[zugaenge]);	
 	
 		return $form;
 	}
 
 	
 	private function createSearchUrl($searchVars, $lett = 'k') {
-		
-		// Achtung!!! Wichtig: lett=k !!!
+
 		$searchUrl = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}";
 	
 		foreach($searchVars as $var => $values) {
@@ -266,12 +260,10 @@ class DBIS{
 		
 		$searchUrl = '';
 		if (!$searchVars){
-			$searchUrl = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}&Suchwort={$term}";
+			$searchUrl = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}&Suchwort={$term}";
 		} else {
 			$searchUrl = $this->createSearchUrl($searchVars);
-		}
-		
-//echo $searchUrl;	
+		}	
 
 		$request = simplexml_load_file($searchUrl);
 		
@@ -321,7 +313,7 @@ class DBIS{
 						'access' => $list['access_infos'][(string)$value['access_ref']]['title'],
 						'db_type_refs' => (string)$value['db_type_refs'],
 						'top_db' => (int)$value['top_db'],
-						'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&titel_id={$value['title_id']}",
+						'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&titel_id={$value['title_id']}",
 					);
 					
 					if ($db['top_db']) {
@@ -345,8 +337,7 @@ class DBIS{
 		if (isset($request->error)) {
 			$list['error'] = (string) $request->error;
 		}
-		
-//print_r($list);		
+	
 		return array( 'page_vars' => $page_vars, /*'groups' => $access_infos,*/ 'list' => $list);
 	}
 	
@@ -390,10 +381,7 @@ class DBIS{
 	 * @return xml array
 	 */
 	public function getRequestFachliste( $request ){
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/fachliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&" . $request;
-		
-//echo $url;		
-
+		$url = "http://rzblx10.uni-regensburg.de/dbinfo/fachliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . $request;
 		$xml_request = simplexml_load_file( $url );
 		return $xml_request;
 	}
@@ -405,7 +393,7 @@ class DBIS{
 	 * @return xml array
 	 */
 	public function getRequestDbliste( $request ){
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&". $request;
+		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&". $request;
 		$xml_request = simplexml_load_file( $url );
 		return $xml_request;
 	}

@@ -1,3 +1,46 @@
+2011-05-04  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18118: Warning message related to pass-by-reference
+	* Fixed warning: missing 2nd parameter to fullQuoteStr
+	* Released version 1.11.1
+
+2011-05-03  Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Released RealURL 1.11.0
+
+2011-04-22  Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Added feature #18109: Allow per domain redirects
+
+2011-04-19	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18081: With default config RealURL accepts pages with .html suffix as long as with /
+	* Fixed bug #17944: "Excludes from speaking URL" for "Visual menu separator"
+	* Fixed bug #16001: Error in documentation: parameter condPrevValue is wrong, should be cond['prevValueInList']
+	* Fixed bug #16340: resolveShortcut fails to resolve shortcuts with a mode which leads to a mountpoint (thanks to Popy)
+	* Fixed bug #15013: problem with ExcludeFromUrl and two sequenced pages with the same page title (thanks to Stefan Galinski)
+
+2011-04-14	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18077: Wrong table column name (thanks to Juris Treibahs)
+	* Fixed bug #18047: 1.10.2 treats tx_realurl_pathsegment as entire url regardless of tx_realurl_pathoverride
+	* Fixed bug #18099: Use only detected language when decoding
+	* Fixed bug #18042: pagePath.spaceCharacter empty not supported anymore
+
+2011-03-23	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Removed autoUpdatePathCache and firstHitPathCache because they causes random hard to catch problems (404 errors and performance issues)
+	* Added "Thanks!" section to the end of the manual
+
+2011-03-22	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Added a new experimental "optional" directive
+
+2011-02-15  Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Fixed bug #17514: Wrong html breaks table layout
+	* FIxed bug #17505: array_unique in tx_realurl_advanced->fetchPagesForPath produces incorrect results
+
 2011-01-31  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 
 	* Released version 1.10.2

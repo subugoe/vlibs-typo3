@@ -1,12 +1,12 @@
 <?php
 
-class tx_ezbdbis_ezb_wizicon {
+class tx_libconnect_ezb_wizicon {
 
 	function proc($wizardItems)	{
 		global $LANG;
 
 
-		$wizardItems['plugins_tx_ezbdbis_ezb'] = array(
+		$wizardItems['plugins_tx_libconnect_ezb'] = array(
 			'icon'=>t3lib_extMgm::extRelPath('libconnect').'icons/wiz_icon.gif',
 			'title'=> 'Plugin EZB',
 			'description'=> 'Plugin zur Einbindung von EZB',
@@ -19,8 +19,8 @@ class tx_ezbdbis_ezb_wizicon {
 }
 
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/libconnect/configurations/ezb/class.tx_ezbdbis_ezb_wizicon.php'])	{
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/libconnect/configurations/ezb/class.tx_ezbdbis_ezb_wizicon.php']);
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/libconnect/configurations/ezb/class.tx_libconnect_ezb_wizicon.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/libconnect/configurations/ezb/class.tx_libconnect_ezb_wizicon.php']);
 }
 
 ?>
