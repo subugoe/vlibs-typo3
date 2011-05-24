@@ -278,7 +278,7 @@ a:link, a:visited, a:active {
 
 
 /* style like a .grid_16 element */
-#pazpar2, .gokContainer {
+#pazpar2, .gokContainer, .tx-ezbrequest-pi1 {
 	display: inline;
 	float: left;
 	position: relative;
@@ -390,4 +390,44 @@ a:link, a:visited, a:active {
 #pazpar2 .pz2-fieldset-group.index-1 {
 	width: 218px; /* (940px - 20px) width - 2 * 360px left and right boxes - 2px border */
 	margin: 0px 20px;
+}
+
+
+/* for ezbrequest */
+.tx-ezbrequest-pi1 {
+	line-height: 18px;
+}
+
+.tx-ezbrequest-pi1 a {
+	text-decoration: none;
+}
+
+.tx-ezbrequest-pi1 a:hover {
+	text-decoration: underline;
+}
+
+.tx-ezbrequest-pi1 #journalNavi {
+	float: left;
+}
+
+.tx-ezbrequest-pi1 #ezb_search_form fieldset {
+	border: 0px none;
+	text-align: right;
+}
+
+.tx-ezbrequest-pi1 #ezbSearchForm {
+	display: none;
+}
+
+.tx-ezbrequest-pi1 #jourItem .title {
+	display: block;
+	font-size: 166%;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.tx-ezbrequest-pi1 table td b {
+	display: block;
+	text-align: right;
+	margin-right: 20px;
 }
