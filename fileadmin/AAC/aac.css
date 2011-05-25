@@ -28,11 +28,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: #282828;
+	font-weight: normal;
 }
 
 h1, h2 {
-	font-weight: bold;
-	color: #475e9a;
+	color: #00247d;
 	padding-bottom: 0.357em;
 }
 
