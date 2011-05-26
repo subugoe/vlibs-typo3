@@ -14,7 +14,7 @@
 
 body {
 	background: url(background.png) repeat-x;
-	font-family: Tahoma, Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-family: "Trebuchet MS", Helvetica, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #474747;
@@ -60,6 +60,7 @@ a:link, a:visited, a:active {
 
 #foot {
 	height: 50px;
+	margin-top: 40px;
 	padding: 40px 0px 0px;
 	position: relative;
 	color: #8d95b5;
@@ -67,7 +68,6 @@ a:link, a:visited, a:active {
 	text-align: center;
 	color: #8d95b5;
 	font-size: 12px;
-	letter-spacing: 1px;
 }
 
 #foot .bodytext.grid_12 {
@@ -99,31 +99,12 @@ a:link, a:visited, a:active {
 	position: relative;
 	height: 85px;
 	margin-bottom: 20px;
-	font-size: 12px;
-}
-
-.mainmenu a {
-	text-decoration: none;
-	color: #234f8f;
-	border-style: solid;
-	border-width: 1px 2px;
-	border-color: #eaecf4 transparent #dadada;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
-}
-
-.mainmenu a:link:hover, .mainmenu a:visited:hover {
-	color: #234f8f;
-	background: #fff;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #dadada;
+	font-size: 14px;
 }
 
 .mainmenu {
 	padding-top: 18px;
 	margin-left: -5px;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 
@@ -142,6 +123,24 @@ a:link, a:visited, a:active {
 
 .mainmenu li a {
 	padding: 3px 5px;
+}
+
+.mainmenu a {
+	text-decoration: none;
+	color: #234f8f;
+	border-style: solid;
+	border-width: 1px 2px;
+	border-color: #eaecf4 transparent #dadada;
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+}
+
+.mainmenu a:link:hover, .mainmenu a:visited:hover {
+	color: #234f8f;
+	background: #fff;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #dadada;
 }
 
 .mainmenu .currentParent > a {
@@ -302,7 +301,8 @@ a:link, a:visited, a:active {
 	margin: 0px;
 }
 
-#pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
+#pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible,
+#pazpar2 #pz2-results ol.pz2-resultList li:hover {
 	border-left-color: #263476;
 }
 
@@ -332,6 +332,10 @@ a:link, a:visited, a:active {
 
 #pazpar2 #pz2-termLists .pz2-progressIndicator {
 	display: none;
+}
+
+#pazpar2 #pz2-termLists h5 {
+	color: #00247d;
 }
 
 #pazpar2 #pz2-termLists .pz2-facetCount {
