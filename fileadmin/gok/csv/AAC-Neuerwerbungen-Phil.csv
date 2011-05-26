@@ -1,7 +1,7 @@
 "NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=IA*";;"groupstart"
 "NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=IA 2* or lkl=IA 3*";;
 "NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4*";;"inline"
-"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";;
+"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";;"inline"
 "NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";;
 "NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610*";;
 "NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB*";;"inline"
