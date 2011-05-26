@@ -14,6 +14,8 @@ page {
 	stylesheet = {$my_stylesheet_file}
 	meta.description.field = description
 	meta.keywords.field = keywords
+	headerData.10 = HTML
+	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="Lib AAC" href="?type=9004">
 }
 
 
@@ -38,5 +40,3 @@ page.1 {
 		FOOT < lib.foot
 	}
 }
-
-
