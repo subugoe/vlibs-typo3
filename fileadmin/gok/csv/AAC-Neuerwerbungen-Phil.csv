@@ -1,28 +1,28 @@
-"NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=IA*";;"groupstart"
-"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=IA 2* or lkl=IA 3*";;
-"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4*";;"inline"
-"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";;"inline"
-"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";;
-"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610*";;
-"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB*";;"inline"
-"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=IAD*";;"inline"
+"NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=IA*";"British language and literature";"groupstart"
+"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=IA 2* or lkl=IA 3*";"General works and linguistics";
+"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4*";"Collections of literary texts";
+"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";"Literary criticism";
+"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";"Criticism of individual authors";
+"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610*";"Texts by individual authors";
+"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB*";"Old English";"inline"
+"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=IAD*";"Middle English";"inline"
 "NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Schottland";"lkl=IAH*";"Scotland";"inline,break"
 "NEAAC4100";2;"NEAAC4100";"NEAAC4000";"Wales";"lkl=IAJ*";"Wales";"inline"
 "NEAAC4110";2;"NEAAC4110";"NEAAC4000";"Irland";"lkl=IAF*";"Ireland";"inline"
 ;;;;;;;
-"NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";;"groupend"
-"NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2* or lkl=IC 3*";;
-"NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4*";;"inline"
-"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";;"inline"
-"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";;
-"NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";;
+"NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=IC*";"American language and literature";"groupend"
+"NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2* or lkl=IC 3*";"General works and linguistics";
+"NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4*";"Collections of literary texts";
+"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";"Literary criticism";
+"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";"Criticism of individual authors";
+"NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";"Texts by individual authors";
 ;;;;;;;
-"NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=IB*";"Commonwealth";"groupstart"
+"NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=IB*";"New literatures in English";"groupstart"
 "NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Kanada";"lkl=IBJ*";"Canada";
 "NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Australien und Neuseeland";"lkl=IBB* or lkl=IBG*";"Australia and New Zealand";
 "NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Afrika, Asien, Karibik";"lkl=IBM* or lkl=IBO* or lkl=IBR*";"Africa, Asia, Caribbean";
-"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Indischer Subkontinent";"lkl=IBO*";"Indian subcontinent";
+"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Indien";"lkl=IBO*";"India";
 ;;;;;;;
-"NEAAC3000";1;"NEAAC3000";"NEAAC";"Keltische Philologie";"lkl=IE*";;"groupend"
-"NEAAC3100";2;"NEAAC3100";"NEAAC3000";"Sprachwissenschaft";"lkl=IE 2* or lkl=IE 3* or lkl=IE 4*";;
-"NEAAC3200";2;"NEAAC3200";"NEAAC3000";"Literaturwissenschaft";"lkl=IE 5* or lkl=IE 6*";;
+"NEAAC3000";1;"NEAAC3000";"NEAAC";"Keltische Philologie";"lkl=IE*";"Celtic studies";"groupend"
+"NEAAC3100";2;"NEAAC3100";"NEAAC3000";"Sprachwissenschaft";"lkl=IE 2* or lkl=IE 3*";"Linguistics";
+"NEAAC3200";2;"NEAAC3200";"NEAAC3000";"Literaturwissenschaft";"lkl=IE 4* or lkl=IE 5* or lkl=IE 6*";"Texts and literary criticism";
