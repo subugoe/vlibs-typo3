@@ -58,6 +58,16 @@ a:link, a:visited, a:active {
 	color: #263476;
 }
 
+/* style like .grid_12 element */
+#content .csc-default {
+	display: inline;
+	float: left;
+	position: relative;
+	margin: 1em 10px;
+	width: 700px;
+	line-height: 125%;
+}
+
 #foot {
 	height: 50px;
 	margin-top: 40px;
