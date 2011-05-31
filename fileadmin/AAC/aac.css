@@ -54,8 +54,13 @@ h3 {
     margin-bottom: 10px;
 }
 
-a:link, a:visited, a:active {
+a:link, a:visited, a:active, a:hover {
 	color: #263476;
+	text-decoration: none;
+}
+
+a:active, a:hover {
+	text-decoration: underline;
 }
 
 /* style like .grid_12 element */
