@@ -405,12 +405,12 @@ ul, ol {
 }
 
 #pazpar2 .pz2-fieldset-group {
-	width: 338px; /* 340px - 2px border */
+	width: 340px;
 	float: right;
 }
 
 #pazpar2 .pz2-fieldset-group.index-1 {
-	width: 218px; /* (940px - 20px) width - 2 * 360px left and right boxes - 2px border */
+	width: 220px; /* (940px - 20px) width - 2 * 360px left and right boxes */
 	margin: 0px 20px;
 }
 
