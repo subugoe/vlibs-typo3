@@ -29,12 +29,9 @@ config {
 
 
 
-/* CREATE LANGUAGE SWITCHER
-
+/*
+CREATE LANGUAGE SWITCHER
 Store menu in lib.language
-
-TODO: 
-* figure out how to make the imgParams line work (it's ineffective right now)
 */
 
 lib.language = TEXT
