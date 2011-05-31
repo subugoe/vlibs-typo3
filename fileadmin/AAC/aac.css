@@ -298,6 +298,10 @@ a:link, a:visited, a:active {
 	color: #aaa;
 }
 
+#pazpar2 a.pz2-prev, #pazpar2 a.pz2-next {
+	color: #263476;
+}
+
 #pazpar2 .pz2-currentPage {
 	color: #000;
 }
