@@ -36,9 +36,13 @@ Store menu in lib.language
 
 lib.language = TEXT
 lib.language.value = English
-lib.language.typolink.parameter.data = page:uid
-lib.language.typolink.additionalParams = &L=2
-lib.language.typolink.ATagParams = hreflang="en" lang="en" class="languageSwitcher"
+lib.language.typolink {
+	parameter.data = page:uid
+	additionalParams = &L=2
+	ATagParams = hreflang="en" lang="en" class="languageSwitcher"
+	addQueryString = 1
+	addQueryString.exclude = id
+}
 [globalVar = GP:L = 2]
 	lib.language.value = Deutsch
 	lib.language.typolink.additionalParams = &L=0
