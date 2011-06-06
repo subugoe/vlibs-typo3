@@ -606,7 +606,10 @@ up to the middle of the page. */
 html, body {
     height: 100%;
 }
-
+#page {
+    position: relative !important;
+    min-height: 100% !important;
+}
 /* Workaronud to make footer stick to bottom! END */
 
 /* Remove input field focus outline (Google, Facebook, etc. has it also removed, so I guess it's up for personal choice. Personally, I think it's irritating.  (But ultimately, it's OK with me if you prefer to override this decision, Sven ;) */
