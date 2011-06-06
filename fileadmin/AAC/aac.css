@@ -11,10 +11,9 @@
 	padding: 0;
 }
 
-
 body {
 	background: url(background.png) repeat-x;
-	font-family: "Trebuchet MS", Helvetica, "Helvetica Neue", Arial, sans-serif;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Helvetica, "Helvetica Neue", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 18px;
 	color: #474747;
@@ -26,9 +25,10 @@ body {
 	text-indent: -9999em;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3 {
 	color: #282828;
 	font-weight: normal;
+	font-style: normal;
 }
 
 h1, h2, h3 {
@@ -37,21 +37,38 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 24px;
+	font-size: 1.786em; /*=25px*/
 }
 
 h2 {
-   font-size: 20px;
-    line-height: 24px;
+    font-size: 1.429em; /*=20px*/
+    line-height: 0.9em;
     margin-top: 10px;
     margin-bottom: 0px;
 }
 
 h3 {
-    font-size: 16px;
+	font-size: 1.286em; /*=18px*/
     font-weight: normal;
     line-height: 18px;
     margin-bottom: 10px;
+}
+
+h4, h5, h6 {
+	font-weight: bold;
+	color: #474747;
+}
+
+h4 {
+	font-size: 1.143em; /*=16px*/
+}
+
+h5 {
+	font-size: 1em; /*=12px*/
+}
+
+p {
+	font-size: 1em;
 }
 
 a:link, a:visited, a:active, a:hover {
@@ -79,7 +96,7 @@ ul, ol {
 }
 
 #foot {
-	height: 50px;
+	height: 40px;
 	margin-top: 40px;
 	padding: 40px 0px 0px;
 	position: relative;
@@ -302,13 +319,32 @@ ul, ol {
 
 
 
-/* pazpar elements */
+/* pazpar2 elements */
+#pazpar2 .pz2-searchField {
+	background-color: #f1f3f6 !important;
+}
+
+#pazpar2 .pz2-extended .pz2-searchField {
+    height: 18px;
+	width: 254px;
+}
+
+#pazpar2 .pz2-extended .pz2-submitButton {
+    height: 24px;
+}
+
+#pazpar2 .pz2-extended .pz2-extendedLink {
+	line-height: 24px;
+}
+
+
+
 #pazpar2 .pz2-prev, #pazpar2 .pz2-next {
 	color: #aaa;
 }
 
 #pazpar2 a.pz2-prev, #pazpar2 a.pz2-next {
-	color: #263476;
+	color: #00247d;
 }
 
 #pazpar2 .pz2-currentPage {
@@ -361,7 +397,7 @@ ul, ol {
 	color: #00247d;
 }
 
-#pazpar2 #pz2-termLists .pz2-facetCount {
+#pazpar2 #pz2-termLists .pz2-facetCount, #pazpar2 .pz2-recordCount {
 	color: #707070;
 	font-style: normal;
 }
@@ -477,3 +513,106 @@ ul, ol {
 	margin-right: 20px;
 	width: 180px;
 }
+
+
+
+
+/*TYPOGRAPHY EDITS BY HENRIK STARTING HERE*/
+
+/* Disclaimer Note: I'm lazily adding !important declarations everywhere, to quickly be able to adjust and overrule other existing rules. Generally, I think we need to clean up redundant rules final thing we do. */
+
+/*debug*/
+/*h2,h3,h4,h5,p {
+	border: 1px solid #eee;
+}*/
+
+
+/* ========================== */
+/* =                        = */
+/* =     AAC Typography     = */
+/* =                        = */
+/* ========================== */
+
+/* ============ */
+/*      H3      */
+/* ============ */
+h3 {
+}
+
+/* ============ */
+/*      H4      */
+/* ============ */
+
+/* ============ */
+/*      H5      */
+/* ============ */
+
+
+#pz2-termLists div.pz2-histogramContainer canvas.overlay {
+	color: #00247D !important;
+}
+
+
+
+/* ==================================== */
+/*      Navigation Menu Typography      */
+/* ==================================== */
+
+
+/* ================================== */
+/* =     Other Typography-edits     = */
+/* ================================== */
+
+/* Make recordCount same color as facetCount */
+
+
+/* NOTE: the out-commented rule right below this comment already exist in aac.css & pz2.css (redundance?) but I'm collecting it in this stylesheet for good measure. I might do the same with rules below, i.e. where the exact same rule already exist elsewhere, I'll paste them in here and comment them out, so you know what's new and not. I'll leave the choice to you to later on decide where to finally put the typography rules made in this file. Finally, the reason why I paste in and comment out already existing rules such as the one below, is because, like in this case, it's somehow related to the new rules I made here. E.g. in this case I decided the .pz2-recordCount color should be the same as in the .pz2-facetCount, therefore I'd like to see the two rules consolidated in the same place. (Hehe, long story. Hard to explain, but I prefer trying to eliminate confusion. Allright, moving on. Yes, you may, perhaps, remove this comment in production. :) */
+/*#pazpar2 #pz2-termLists .pz2-facetCount {
+    color: #707070;
+    font-style: normal;
+}*/
+
+
+/*TYPOGRAPHY EDITS BY HENRIK ENDING HERE*/
+
+
+
+
+/*FINAL FIXES BY HENRIK*/
+
+/* Search Field */
+/* Search Field END */
+
+/* Trying something slightly more visible and sort of Google-search-like */
+.pz2-recordLink:after {
+	content: ""url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAXUlEQVR42rWRsQ3AIAwEmYYJskw2oKbINpnVAUuciD4WNCmuQP+HbDmZmVPqfebjgvbujBykvJJe5TmIpCRllX4XnL0dIgEpgsUR9iXuAC2Er2MymwpIIih8AIz0AF35Ehyb88O/AAAAAElFTkSuQmCC)"" !important;
+}
+
+.pz2-recordLink:hover:after {
+	content: ""url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAJVJREFUeNpi/P//PwMIZBbP+7/v0E0GGHCyUwdRjNN7kxiQARM2xSAA5f8HyqGIM2YUzYUrvnm6kxEmoW5a/h+bTUzYFCPz0W1mYiAREKUB2RYmqBvhbkb3AzoAeRocGuhuRQbIHoc5iRFmEx4ngYOYCSliQJpAIQPHyIbANIFtQI9NJEUYNjPCkgY6QIthmCJGgAADAE9WSwtIS/Y3AAAAAElFTkSuQmCC)"" !important;
+}
+
+/* Footer */
+
+/* Footer END */
+
+/* Workaround to make footer stick to bottom */
+/* NOTE: this works Ok except for some bottom
+padding/margin in the #page which makes the footer
+go under the visible area when there's no content
+on the page. I.e. this needs to be fine-tweaked but
+I definitely like this more than the footer jumping
+up to the middle of the page. */
+html, body {
+    height: 100%;
+}
+
+/* Workaronud to make footer stick to bottom! END */
+
+/* Remove input field focus outline (Google, Facebook, etc. has it also removed, so I guess it's up for personal choice. Personally, I think it's irritating.  (But ultimately, it's OK with me if you prefer to override this decision, Sven ;) */
+input {
+	outline: none;
+}
+/* Remove input field focus outline END */
+
+/*FINAL FIXES BY HENRIK ENDING HERE*/
