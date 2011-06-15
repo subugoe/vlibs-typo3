@@ -28,42 +28,42 @@
 
 require_once(t3lib_extMgm::extPath('div') . 'class.tx_div.php');
 require_once(t3lib_extMgm::extPath('libconnect') . 'lib/ezb_dbis/classes/class_DBIS.php');
-		
+
 class tx_libconnect_models_dbis extends tx_lib_object {
-	
+
 	private $dbis_to_t3_subjects;
 	private $t3_to_dbis_subjects;
-	
+
 	public function loadTop($subject_id) {
 		$cObject = $this->findCObject();
-		
+
 		$this->loadSubjects();
 		$subject = $this->t3_to_dbis_subjects[$subject_id];
 		$dbis_id = $subject['dbis_id'];
 		$dbis = new DBIS();
 		$result = $dbis->getDbliste($dbis_id);
-		
-		foreach(array_keys($result['list']['top']) as $db) {			
+
+		foreach(array_keys($result['list']['top']) as $db) {
 			$result['list']['top'][$db]['detail_link'] = $cObject->getTypolink_URL(
-				intval($this->controller->configurations->get('detailPid')), 
+				intval($this->controller->configurations->get('detailPid')),
 				array(
 					'libconnect[titleid]' => $result['list']['top'][$db]['id'],
 				)
 			);
 		}
-		
+
 		$this->set('top', $result['list']['top']);
 	}
-	
-	public function loadOverview() {	
+
+	public function loadOverview() {
 		$this->loadSubjects();
 		$cObject = $this->findCObject();
-		
+
 		$dbis = new DBIS();
 		$list = $dbis->getFachliste();
 
 		foreach($list as $el) {
-			$subject = $this->dbis_to_t3_subjects[$el['id']];		
+			$subject = $this->dbis_to_t3_subjects[$el['id']];
 			$el['link'] = $cObject->getTypolink_URL($GLOBALS['TSFE']->id, array(
 				'libconnect[subject]' => $subject['uid']
 			));
@@ -71,37 +71,37 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 		}
 		$this->set('list', $list );
 	}
-	
+
 	public function loadList($subject_id) {
 		$cObject = $this->findCObject();
 		$this->loadSubjects();
-		
+
 		$dbis = new DBIS();
 		$subject = $this->t3_to_dbis_subjects[$subject_id];
 
 		$dbis_id = $subject['dbis_id'];
 		$result = $dbis->getDbliste($dbis_id);
-		
-		foreach(array_keys($result['list']['top']) as $db) {		
+
+		foreach(array_keys($result['list']['top']) as $db) {
 			$result['list']['top'][$db]['detail_link'] = $cObject->getTypolink_URL(
-				intval($this->controller->configurations->get('detailPid')), 
+				intval($this->controller->configurations->get('detailPid')),
 				array(
 					'libconnect[titleid]' => $result['list']['top'][$db]['id'],
 				)
 			);
 		}
-		foreach(array_keys($result['list']['groups']) as $group) {	
-			foreach(array_keys($result['list']['groups'][$group]['dbs']) as $db) {			
+		foreach(array_keys($result['list']['groups']) as $group) {
+			foreach(array_keys($result['list']['groups'][$group]['dbs']) as $db) {
 				$result['list']['groups'][$group]['dbs'][$db]['detail_link'] = $cObject->getTypolink_URL(
-					intval($this->controller->configurations->get('detailPid')), 
+					intval($this->controller->configurations->get('detailPid')),
 					array(
 						'libconnect[titleid]' => $result['list']['groups'][$group]['dbs'][$db]['id'],
 					)
 				);
 			}
 		}
-		
-		// sort groups by name 
+
+		// sort groups by name
 		$alph_sort_groups = array();
 		foreach ($result['list']['groups'] as $group) {
 			$alph_sort_groups[$group['title']] = $group;
@@ -115,55 +115,55 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 	public function loadSearch() {
 		$cObject = $this->findCObject();
 		$this->loadSubjects();
-		
+
 		$searchVars = $this->controller->parameters->get('search');
 		$term = $searchVars['sword'];
 		unset($searchVars['sword']);
-	
+
 		$dbis = new DBIS();
 		$result = $dbis->search($term, $searchVars);
-		
-		foreach(array_keys($result['list']['top']) as $db) {		
+
+		foreach(array_keys($result['list']['top']) as $db) {
 			$result['list']['top'][$db]['detail_link'] = $cObject->getTypolink_URL(
-				intval($this->controller->configurations->get('detailPid')), 
+				intval($this->controller->configurations->get('detailPid')),
 				array(
 					'libconnect[titleid]' => $result['list']['top'][$db]['id'],
 				)
 			);
 		}
-		foreach(array_keys($result['list']['groups']) as $group) {	
-			foreach(array_keys($result['list']['groups'][$group]['dbs']) as $db) {			
-				$result['list']['groups'][$group]['dbs'][$db]['detail_link'] = $cObject->getTypolink_URL(
-					intval($this->controller->configurations->get('detailPid')), 
+		foreach(array_keys($result['list']['values']) as $value) {
+			//foreach(array_keys($result['list']['groups'][$group]['dbs']) as $db) {
+				$result['list']['values'][$value]['detail_link'] = $cObject->getTypolink_URL(
+					intval($this->controller->configurations->get('detailPid')),
 					array(
-						'libconnect[titleid]' => $result['list']['groups'][$group]['dbs'][$db]['id'],
+						'libconnect[titleid]' => $result['list']['values'][$value]['id'],
 					)
 				);
-			}
+			//}
 		}
 
-		// sort groups by name 
-		$alph_sort_groups = array();
+		// sort groups by name
+		/*$alph_sort_groups = array();
 		foreach ($result['list']['groups'] as $group) {
 			$alph_sort_groups[$group['title']] = $group;
 		}
 		ksort($alph_sort_groups);
 		$result['list']['groups'] = $alph_sort_groups;
-		
+		*/
 		$this->set('list', $result['list']);
 	}
-	
+
 	public function loadDetail($title_id) {
 		$cObject = $this->findCObject();
 		$dbis = new DBIS();
 		$db = $dbis->getDbDetails($title_id);
-		
+
 		if (! $db )
 			$this->set('error', 1);
-			
+
 		$this->set('db', $db);
 	}
-	
+
 	private function loadSubjects() {
 		$this->dbis_to_t3_subjects = array();
 		$this->t3_to_dbis_subjects = array();
@@ -173,13 +173,13 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 			$this->t3_to_dbis_subjects[$row['uid']] = $row;
 		}
 	}
-	
+
 	public function loadMiniForm() {
 		$cObject = $this->findCObject();
-		
-		
+
+
 		$dbis = new DBIS();
-		$form = $dbis->detailSucheFormFelder();	
+		$form = $dbis->detailSucheFormFelder();
 		$searchVars = $this->controller->parameters->get('search');
 		$this->set('vars', $searchVars);
 		$this->set('form', $form);
@@ -190,8 +190,8 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 
 	public function loadForm() {
 		$cObject = $this->findCObject();
-		
-		
+
+
 		$dbis = new DBIS();
 		$form = $dbis->detailSucheFormFelder();
 		$searchVars = $this->controller->parameters->get('search');
@@ -201,6 +201,6 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 		$this->set('listUrl', $cObject->getTypolink_URL($this->controller->configurations->get('listPid')));
 		$this->set('listPid', $this->controller->configurations->get('listPid'));
 	}
-	
+
 }
 ?>
