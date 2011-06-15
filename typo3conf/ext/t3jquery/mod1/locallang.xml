@@ -87,7 +87,9 @@
 			<label index="jquery.component.effects.slide">The element slides in and out of the viewport.</label>
 			<label index="jquery.component.effects.transfer">Transfer effect from one element to another.</label>
 			<label index="jquery.component.easing">A jQuery plugin to give advanced easing options.</label>
+			<label index="jquery.component.mousewheel">Adds mouse wheel support for your application! Just call mousewheel to add the event and call unmousewheel to remove the event.</label>
 			<label index="jquery.component.lint">jQuery Lint works over the top of jQuery and diligently reports errors and any incorrect usage of jQuery. It will also, to some extent, offer guidance on best practices and performance concerns.</label>
+			<label index="jquery.component.mobile">Touch-Optimized Web Framework for Smartphones &amp; Tablets.</label>
 			<label index="tools.component.tabs">The most important UI widget on the web</label>
 			<label index="tools.component.tabsslideshow">Transforms tabs into a working slideshow</label>
 			<label index="tools.component.tabshistory">The ability to navigate through tabs with the browser's back and forward buttons</label>
