@@ -1,0 +1,3 @@
+[submodule "typo3conf/ext/pazpar2"]
+	path = typo3conf/ext/pazpar2
+	url = git@github.com:ssp/typo3-pazpar2.git
