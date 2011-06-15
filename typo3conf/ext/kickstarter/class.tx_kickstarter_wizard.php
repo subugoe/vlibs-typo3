@@ -140,6 +140,7 @@ class tx_kickstarter_wizard extends tx_kickstarter_compilefiles {
 			$this->options[$k] = array($v['title'],$v['description']);
 		}
 
+		$this->wizArray['save']['extension_key'] = str_replace('-','_',$this->wizArray['save']['extension_key']);
 		$saveKey = $this->saveKey = $this->wizArray['save']['extension_key']
 			= substr(
 				strtolower(trim($this->wizArray['save']['extension_key'])),

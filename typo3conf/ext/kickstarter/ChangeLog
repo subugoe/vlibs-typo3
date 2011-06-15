@@ -1,3 +1,23 @@
+2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #18157: Created Backend module use removed function t3lib_div::fixed_lgd_pre() (credits Steffen Gebert)
+
+ 2011-06-01 Peter Foerger  <pfoerger@gmail.com>
+
+	* Fixed bug #13446: Kickstarter allows hyphen in extension key (credits Matze)
+
+2011-04-10 Xavier Perseguers  <typo3@perseguers.ch>
+
+	* Fixed bug #18088: Generated extensions are not compatible with workspaces
+
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Set trunk to version 0.6.0-dev
+
+2011-01-27 Peter Foerger  <pfoerger@gmail.com>
+
+	* Release of EXT:kickstarter v0.5.0
+
 2011-01-27 Peter Foerger  <pfoerger@gmail.com>
 
 	* Replaced mixed quotes with single quotes in function call.

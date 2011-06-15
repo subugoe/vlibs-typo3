@@ -387,6 +387,7 @@ class tx_kickstarter_section_tables extends tx_kickstarter_section_fields {
 			$DBfields[] = 't3ver_stage int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3ver_count int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3ver_tstamp int(11) DEFAULT \'0\' NOT NULL,';
+			$DBfields[] = 't3ver_move_id int(11) DEFAULT \'0\' NOT NULL,';
 			$DBfields[] = 't3_origuid int(11) DEFAULT \'0\' NOT NULL,';
 
 			$columns['t3ver_label'] = trim($this->sPS('
