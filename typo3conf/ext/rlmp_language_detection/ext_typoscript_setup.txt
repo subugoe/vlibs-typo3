@@ -41,7 +41,7 @@ plugin.tx_rlmplanguagedetection_pi1 {
 	dontBreakIfLastPageWasOnSite = 0
 	
 	testOrder = browser,ip
-	
+	dieAtEnd = 0
 }
 
 # Disable USER_INT when GP:L exists, and the extension anyway isn't needed.

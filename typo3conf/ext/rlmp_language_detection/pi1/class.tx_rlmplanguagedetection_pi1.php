@@ -64,7 +64,8 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 
 		// Break out if the last page visited was also on our site:
 		$referer = t3lib_div::getIndpEnv('HTTP_REFERER');
-		if($this->conf['debug']) echo 'Referer: ' . $referer . '<br />';
+		if (TYPO3_DLOG)
+			t3lib_div::devLog('Referer: ' . $referer, $this->extKey);
 		if (!$this->conf['dontBreakIfLastPageWasOnSite'] && strlen($referer) && (
 				stripos($referer,t3lib_div::getIndpEnv('TYPO3_SITE_URL')) !== FALSE || 
 				stripos($referer, $GLOBALS['TSFE']->baseUrl) !== FALSE ||
@@ -138,11 +139,13 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 					for($j = 0; $j < count($acceptedLanguagesArr); $j++) {
 						$currentLanguage = array_values($acceptedLanguagesArr);
 						$currentLanguage = $currentLanguage[$j];
-						if($this->conf['debug']) print 'Testing language: ' . $currentLanguage . '<br />';
+						if(TYPO3_DLOG)
+							t3lib_div::devLog('Testing language: ' . $currentLanguage, $this->extKey);
 						//If the current language is available (full "US_en" type check)
 						if(isset($availableLanguagesArr[$currentLanguage])) {
 							$preferredLanguageOrPageUid = $availableLanguagesArr[$currentLanguage];
-							if($this->conf['debug']) print 'Found: ' . $preferredLanguageOrPageUid . ' (full check)<br />';
+							if(TYPO3_DLOG)
+							   t3lib_div::devLog('Found: ' . $preferredLanguageOrPageUid . ' (full check)', $this->extKey);
 							break;
 						} 
 						//Old-fashioned 2-char test ("en")
@@ -150,7 +153,8 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 							$currentLanguageShort = substr($currentLanguage,0,2);
 							if (isset($availableLanguagesArr[$currentLanguageShort])) {
 								$preferredLanguageOrPageUid = $availableLanguagesArr[$currentLanguageShort];
-								if($this->conf['debug']) print 'Found: ' . $preferredLanguageOrPageUid . ' (normal check)<br />';
+								if(TYPO3_DLOG)
+								   t3lib_div::devLog('Found: ' . $preferredLanguageOrPageUid . ' (normal check)', $this->extKey);
 								break;
 							}
 						}
@@ -161,7 +165,8 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 							foreach($values as $value) {
 								if(array_key_exists($value, $availableLanguagesArr)) {
 									$preferredLanguageOrPageUid = $availableLanguagesArr[$value];
-									if($this->conf['debug']) print 'Found: ' . $preferredLanguageOrPageUid . ' (alias check)<br />';
+									if(TYPO3_DLOG)
+										t3lib_div::devLog('Found: ' . $preferredLanguageOrPageUid . ' (alias check)', $this->extKey);
 									break 2;
 								}
 							}
@@ -173,24 +178,29 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 					if(t3lib_extMgm::isLoaded('ml_geoip')) {
 						$geoip = t3lib_div::makeInstance('tx_mlgeoip');
 						//Get country code from geoip
-						IF($this->conf['debug']) print 'IP: ' . $this->getUserIP() . '<br />';
+						if(TYPO3_DLOG)
+						   t3lib_div::devLog('IP: ' . $this->getUserIP(), $this->extKey);
 						$countryCode = strtolower($geoip->getCountryCodeByAddress($this->getUserIP()));
-						IF($this->conf['debug']) print 'GeoIP Country Code: ' . $countryCode . '<br />';
+						if(TYPO3_DLOG)
+						   t3lib_div::devLog('GeoIP Country Code: ' . $countryCode, $this->extKey);
 						unset($geoip);
 						if($countryCode) {
 							//Check for the country code in the configured list of country to languages
 							if(array_key_exists($countryCode, $this->conf['countryCodeToLanguageCode.']) && array_key_exists($this->conf['countryCodeToLanguageCode.'][$countryCode], $availableLanguagesArr)) {
-								IF($this->conf['debug']) print 'Available language found in configured: ' . $countryCode . '<br />';
+								if(TYPO3_DLOG)
+									t3lib_div::devLog('Available language found in configured: ' . $countryCode, $this->extKey);
 								$preferredLanguageOrPageUid = $availableLanguagesArr[$this->conf['countryCodeToLanguageCode.'][$countryCode]];
 							//Use the static_info_tables lg_collate_locale to attempt to find a country to language relation.
 							} elseif(t3lib_extMgm::isLoaded('static_info_tables')) {
-								IF($this->conf['debug']) print 'Checking in static_info_tables.<br />';
+								if(TYPO3_DLOG)
+									t3lib_div::devLog('Checking in static_info_tables.', $this->extKey);
 								//Get the language codes from lg_collate_locate
 								$values = $this->getLanguageCodesForCountry($countryCode);
 								foreach($values as $value) {
 									//If one of the languages exist
 									if(array_key_exists($value, $availableLanguagesArr)) {
-										IF($this->conf['debug']) print 'Found in static_info_tables: ' . $value . '<br />';
+										if(TYPO3_DLOG)
+											t3lib_div::devLog('Found in static_info_tables: ' . $value, $this->extKey);
 										$preferredLanguageOrPageUid = $availableLanguagesArr[$value];
 										break;
 									}
@@ -216,7 +226,8 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 			}
 		}
 		
-		IF($this->conf['debug']) print 'END result: Preferred='.$preferredLanguageOrPageUid . '<br />';
+		if(TYPO3_DLOG)
+			t3lib_div::devLog('END result: Preferred='.$preferredLanguageOrPageUid, $this->extKey);
 		
 		if ($preferredLanguageOrPageUid !== FALSE)
 			$this->doRedirect($preferredLanguageOrPageUid);
@@ -249,7 +260,8 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		);
 		$GLOBALS['TSFE']->storeSessionData();
 		
-		if($this->conf['debug']) echo $locationURL . '<br />';
+		if(TYPO3_DLOG)
+			t3lib_div::devLog('Location to redirect to: ' . $locationURL);
 		if(!$this->conf['dieAtEnd'] && $preferredLanguageOrPageUid != 0) {
 				header('Location: '.$locationURL);
 				//header('Referer: '.$locationURL);
