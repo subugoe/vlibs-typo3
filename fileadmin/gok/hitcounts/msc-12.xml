@@ -2,12 +2,22 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c13f5908-0</SESSIONVAR>
+<SESSIONVAR name="SID">89c6bf74-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="46" mnemonic="MSC" description="90cxx">90cxx</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="MSC" description="91-00">91-00</SCANLINE>
+
+    <SCANLINE hits="202" mnemonic="MSC" description="91-01">91-01</SCANLINE>
+
+    <SCANLINE hits="283" mnemonic="MSC" description="91-02">91-02</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="MSC" description="91-03">91-03</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="MSC" description="91-04">91-04</SCANLINE>
 
@@ -113,6 +123,8 @@
 
     <SCANLINE hits="71" mnemonic="MSC" description="91b50">91b50</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="MSC" description="91b51">91b51</SCANLINE>
+
     <SCANLINE hits="5" mnemonic="MSC" description="91b52">91b52</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="MSC" description="91b54">91b54</SCANLINE>
@@ -121,7 +133,7 @@
 
     <SCANLINE hits="125" mnemonic="MSC" description="91b62">91b62</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="MSC" description="91b64">91b64</SCANLINE>
+    <SCANLINE hits="31" mnemonic="MSC" description="91b64">91b64</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="MSC" description="91b66">91b66</SCANLINE>
 
@@ -135,7 +147,7 @@
 
     <SCANLINE hits="35" mnemonic="MSC" description="91b76">91b76</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="MSC" description="91b82">91b82</SCANLINE>
+    <SCANLINE hits="44" mnemonic="MSC" description="91b82">91b82</SCANLINE>
 
     <SCANLINE hits="84" mnemonic="MSC" description="91b84">91b84</SCANLINE>
 
@@ -205,7 +217,7 @@
 
     <SCANLINE hits="153" mnemonic="MSC" description="92-01">92-01</SCANLINE>
 
-    <SCANLINE hits="173" mnemonic="MSC" description="92-02">92-02</SCANLINE>
+    <SCANLINE hits="174" mnemonic="MSC" description="92-02">92-02</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="MSC" description="92-03">92-03</SCANLINE>
 
@@ -241,7 +253,7 @@
 
     <SCANLINE hits="41" mnemonic="MSC" description="92c15">92c15</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="MSC" description="92c17">92c17</SCANLINE>
+    <SCANLINE hits="14" mnemonic="MSC" description="92c17">92c17</SCANLINE>
 
     <SCANLINE hits="57" mnemonic="MSC" description="92c20">92c20</SCANLINE>
 
@@ -257,9 +269,9 @@
 
     <SCANLINE hits="20" mnemonic="MSC" description="92c45">92c45</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="MSC" description="92c50">92c50</SCANLINE>
+    <SCANLINE hits="87" mnemonic="MSC" description="92c50">92c50</SCANLINE>
 
-    <SCANLINE hits="82" mnemonic="MSC" description="92c55">92c55</SCANLINE>
+    <SCANLINE hits="86" mnemonic="MSC" description="92c55">92c55</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="MSC" description="92c60">92c60</SCANLINE>
 
@@ -277,7 +289,7 @@
 
     <SCANLINE hits="124" mnemonic="MSC" description="92d25">92d25</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="MSC" description="92d30">92d30</SCANLINE>
+    <SCANLINE hits="53" mnemonic="MSC" description="92d30">92d30</SCANLINE>
 
     <SCANLINE hits="80" mnemonic="MSC" description="92d40">92d40</SCANLINE>
 
@@ -473,7 +485,7 @@
 
     <SCANLINE hits="134" mnemonic="MSC" description="93e20">93e20</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="MSC" description="93e24">93e24</SCANLINE>
+    <SCANLINE hits="11" mnemonic="MSC" description="93e24">93e24</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="MSC" description="93e25">93e25</SCANLINE>
 
@@ -695,9 +707,9 @@
 
     <SCANLINE hits="1" mnemonic="MSC" description="97h60">97h60</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="MSC" description="97i10">97i10</SCANLINE>
+    <SCANLINE hits="2" mnemonic="MSC" description="97i10">97i10</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="MSC" description="97k50">97k50</SCANLINE>
+    <SCANLINE hits="2" mnemonic="MSC" description="97k50">97k50</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="MSC" description="97m50">97m50</SCANLINE>
 
@@ -719,7 +731,7 @@
 
     <SCANLINE hits="23" mnemonic="MSC" description="97u60">97u60</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="MSC" description="97u70">97u70</SCANLINE>
+    <SCANLINE hits="12" mnemonic="MSC" description="97u70">97u70</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="MSC" description="97u80">97u80</SCANLINE>
 
@@ -731,7 +743,7 @@
 
 </SCANLIST>
 
-<SCANPREV term="91-04" />
+<SCANPREV term="90cxx" />
 
 
 </RESULT>

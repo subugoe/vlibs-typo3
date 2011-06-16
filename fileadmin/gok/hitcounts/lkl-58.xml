@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">fe179468-1</SESSIONVAR>
+<SESSIONVAR name="SID">405bd413-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1169" mnemonic="LKL" description="gu">gu</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="gu (fh)">gu (fh)</SCANLINE>
 
@@ -555,7 +557,7 @@
 
     <SCANLINE hits="56" mnemonic="LKL" description="guh 610">guh 610</SCANLINE>
 
-    <SCANLINE hits="127" mnemonic="LKL" description="guh 620">guh 620</SCANLINE>
+    <SCANLINE hits="132" mnemonic="LKL" description="guh 620">guh 620</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="guh 700">guh 700</SCANLINE>
 
@@ -853,7 +855,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="guk 500">guk 500</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="guk 510">guk 510</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="guk 510">guk 510</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="guk 515">guk 515</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="gun 300">gun 300</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="gun 310">gun 310</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gu+(fh)" />
+<SCANPREV term="gu" />
 
 
-<SCANNEXT term="gun+310" />
+<SCANNEXT term="gun+300" />
 
 </RESULT>

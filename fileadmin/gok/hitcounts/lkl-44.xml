@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0652f9e5-3</SESSIONVAR>
+<SESSIONVAR name="SID">981e58a2-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -283,7 +283,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="eeg 030">eeg 030</SCANLINE>
 
-    <SCANLINE hits="68" mnemonic="LKL" description="eeg 060">eeg 060</SCANLINE>
+    <SCANLINE hits="69" mnemonic="LKL" description="eeg 060">eeg 060</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eeg 500">eeg 500</SCANLINE>
 
@@ -415,7 +415,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eegc 006">eegc 006</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="eegc 050">eegc 050</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="eegc 050">eegc 050</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eegc 070">eegc 070</SCANLINE>
 
@@ -597,7 +597,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="eegl 510">eegl 510</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="eegl 520">eegl 520</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="eegl 520">eegl 520</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="eegl 530">eegl 530</SCANLINE>
 
@@ -839,7 +839,7 @@
 
     <SCANLINE hits="36" mnemonic="LKL" description="eehb 440">eehb 440</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="eehb 470">eehb 470</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="eehb 470">eehb 470</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="eehb 480">eehb 480</SCANLINE>
 

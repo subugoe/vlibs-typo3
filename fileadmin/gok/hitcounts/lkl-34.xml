@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">451c70a7-4</SESSIONVAR>
+<SESSIONVAR name="SID">f050148a-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="ckr 920">ckr 920</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="ckr 950">ckr 950</SCANLINE>
 
@@ -89,7 +87,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cm x (fh)">cm x (fh)</SCANLINE>
 
-    <SCANLINE hits="91" mnemonic="LKL" description="cma 000">cma 000</SCANLINE>
+    <SCANLINE hits="92" mnemonic="LKL" description="cma 000">cma 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cmb 300">cmb 300</SCANLINE>
 
@@ -169,7 +167,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="coh">coh</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="coh 000">coh 000</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="coh 000">coh 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="coh 200">coh 200</SCANLINE>
 
@@ -237,7 +235,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="con">con</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="con 000">con 000</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="con 000">con 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="con e woe (fh)">con e woe (fh)</SCANLINE>
 
@@ -259,11 +257,11 @@
 
     <SCANLINE hits="39" mnemonic="LKL" description="cor 000">cor 000</SCANLINE>
 
-    <SCANLINE hits="84" mnemonic="LKL" description="cor 100">cor 100</SCANLINE>
+    <SCANLINE hits="86" mnemonic="LKL" description="cor 100">cor 100</SCANLINE>
 
     <SCANLINE hits="91" mnemonic="LKL" description="cor 200">cor 200</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="cor 300">cor 300</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="cor 300">cor 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cor 400">cor 400</SCANLINE>
 
@@ -403,7 +401,7 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="cqh">cqh</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="cqh 000">cqh 000</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="cqh 000">cqh 000</SCANLINE>
 
     <SCANLINE hits="62" mnemonic="LKL" description="cqh 100">cqh 100</SCANLINE>
 
@@ -425,7 +423,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cqh 360">cqh 360</SCANLINE>
 
-    <SCANLINE hits="143" mnemonic="LKL" description="cqh 400">cqh 400</SCANLINE>
+    <SCANLINE hits="144" mnemonic="LKL" description="cqh 400">cqh 400</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="cqh 410">cqh 410</SCANLINE>
 
@@ -455,7 +453,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="cqh 510">cqh 510</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="cqh 550">cqh 550</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="cqh 550">cqh 550</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="cqh 600">cqh 600</SCANLINE>
 
@@ -517,9 +515,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="crb">crb</SCANLINE>
 
-    <SCANLINE hits="139" mnemonic="LKL" description="crb 000">crb 000</SCANLINE>
+    <SCANLINE hits="141" mnemonic="LKL" description="crb 000">crb 000</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="crb 100">crb 100</SCANLINE>
+    <SCANLINE hits="39" mnemonic="LKL" description="crb 100">crb 100</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="crb 300">crb 300</SCANLINE>
 
@@ -543,7 +541,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cs s (fh)">cs s (fh)</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="csa 000">csa 000</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="csa 000">csa 000</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="csb 000">csb 000</SCANLINE>
 
@@ -603,7 +601,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ctb 100">ctb 100</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="ctb 200">ctb 200</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="ctb 200">ctb 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ctb k (fh)">ctb k (fh)</SCANLINE>
 
@@ -621,7 +619,7 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="cth 000">cth 000</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="ctk 000">ctk 000</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="ctk 000">ctk 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ctk i (fh)">ctk i (fh)</SCANLINE>
 
@@ -693,7 +691,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cu i (fh)">cu i (fh)</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="LKL" description="cua 000">cua 000</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="cua 000">cua 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cub">cub</SCANLINE>
 
@@ -709,7 +707,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="cue 000">cue 000</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="cue 300">cue 300</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="cue 300">cue 300</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="cue 500">cue 500</SCANLINE>
 
@@ -755,7 +753,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cv n (fh)">cv n (fh)</SCANLINE>
 
-    <SCANLINE hits="414" mnemonic="LKL" description="cva 000">cva 000</SCANLINE>
+    <SCANLINE hits="415" mnemonic="LKL" description="cva 000">cva 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cva ooo">cva ooo</SCANLINE>
 
@@ -807,7 +805,7 @@
 
     <SCANLINE hits="30" mnemonic="LKL" description="cwb 200">cwb 200</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="cwb 300">cwb 300</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="cwb 300">cwb 300</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="cwb 400">cwb 400</SCANLINE>
 
@@ -823,7 +821,7 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="cwf 000">cwf 000</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="cwf 400">cwf 400</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="cwf 400">cwf 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cwf700">cwf700</SCANLINE>
 
@@ -969,7 +967,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cz n (fh)">cz n (fh)</SCANLINE>
 
-    <SCANLINE hits="158" mnemonic="LKL" description="cza 000">cza 000</SCANLINE>
+    <SCANLINE hits="161" mnemonic="LKL" description="cza 000">cza 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cza 100">cza 100</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="d c">d c</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="d c 2">d c 2</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ckr+920" />
+<SCANPREV term="ckr+950" />
 
 
-<SCANNEXT term="d+c" />
+<SCANNEXT term="d+c+2" />
 
 </RESULT>

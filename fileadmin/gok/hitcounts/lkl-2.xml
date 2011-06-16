@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">07460044-1</SESSIONVAR>
+<SESSIONVAR name="SID">02f0746a-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="add d (fh)">add d (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="add m (fh)">add m (fh)</SCANLINE>
 
@@ -683,7 +681,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="agu 470">agu 470</SCANLINE>
 
-    <SCANLINE hits="94" mnemonic="LKL" description="agu 490">agu 490</SCANLINE>
+    <SCANLINE hits="95" mnemonic="LKL" description="agu 490">agu 490</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="agu 550">agu 550</SCANLINE>
 
@@ -729,7 +727,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ah (fh)">ah (fh)</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="ah 000">ah 000</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="ah 000">ah 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ah 100">ah 100</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="40" mnemonic="LKL" description="ahd 290">ahd 290</SCANLINE>
 
+    <SCANLINE hits="4" mnemonic="LKL" description="ahd 292">ahd 292</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="add+d+(fh)" />
+<SCANPREV term="add+m+(fh)" />
 
 
-<SCANNEXT term="ahd+290" />
+<SCANNEXT term="ahd+292" />
 
 </RESULT>

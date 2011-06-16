@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">437fc2e5-0</SESSIONVAR>
+<SESSIONVAR name="SID">083ef2f5-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="he 400">he 400</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="he 430">he 430</SCANLINE>
 
@@ -549,7 +551,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hi 370">hi 370</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hi 374">hi 374</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="hi 374">hi 374</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hi 376">hi 376</SCANLINE>
 
@@ -655,9 +657,9 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="hi 537">hi 537</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="hi 538">hi 538</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="hi 538">hi 538</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="hi 539">hi 539</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="hi 539">hi 539</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="hi 540">hi 540</SCANLINE>
 
@@ -671,7 +673,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="hi 549">hi 549</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="hi 551">hi 551</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="hi 551">hi 551</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hi 552">hi 552</SCANLINE>
 
@@ -693,7 +695,7 @@
 
     <SCANLINE hits="338" mnemonic="LKL" description="hi 600">hi 600</SCANLINE>
 
-    <SCANLINE hits="221" mnemonic="LKL" description="hi 610">hi 610</SCANLINE>
+    <SCANLINE hits="253" mnemonic="LKL" description="hi 610">hi 610</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="hi 620">hi 620</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="hl 240">hl 240</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="hl 250">hl 250</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="he+430" />
+<SCANPREV term="he+400" />
 
 
-<SCANNEXT term="hl+250" />
+<SCANNEXT term="hl+240" />
 
 </RESULT>

@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">454a95af-4</SESSIONVAR>
+<SESSIONVAR name="SID">a3acd728-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="hsd 510">hsd 510</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="hsd 512">hsd 512</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hsd 513">hsd 513</SCANLINE>
 
@@ -87,7 +91,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="hsd 600">hsd 600</SCANLINE>
 
-    <SCANLINE hits="99" mnemonic="LKL" description="hsd 610">hsd 610</SCANLINE>
+    <SCANLINE hits="101" mnemonic="LKL" description="hsd 610">hsd 610</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="hsd 620">hsd 620</SCANLINE>
 
@@ -213,7 +217,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="hsf 521">hsf 521</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="hsf 523">hsf 523</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="hsf 523">hsf 523</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hsf 525">hsf 525</SCANLINE>
 
@@ -271,7 +275,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hsf 600">hsf 600</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="hsf 610">hsf 610</SCANLINE>
+    <SCANLINE hits="28" mnemonic="LKL" description="hsf 610">hsf 610</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="hsf 620">hsf 620</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hss 579">hss 579</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="hss 580">hss 580</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hst 382">hst 382</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hsd+513" />
+<SCANPREV term="hsd+510" />
 
 
-<SCANNEXT term="hst+382" />
+<SCANNEXT term="hss+579" />
 
 </RESULT>
