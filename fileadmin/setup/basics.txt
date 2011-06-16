@@ -1,6 +1,6 @@
 // Global Settings
 config {
-	doctype = html_5
+	doctype = html5
 	renderCharset = utf-8
 
 	index_enable = 1
