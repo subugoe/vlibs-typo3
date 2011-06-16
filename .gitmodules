@@ -4,3 +4,6 @@
 [submodule "typo3conf/ext/nkwgok"]
 	path = typo3conf/ext/nkwgok
 	url = git@github.com:ssp/typo3-nkwgok.git
+[submodule "fileadmin/opac"]
+	path = fileadmin/opac
+	url = git://github.com/ssp/Opac-2-Atom.git

@@ -1,12 +1,17 @@
-# Redirects for RealURL
-RewriteEngine On
-RewriteRule ^typo3$ - [L]
-RewriteRule ^typo3/.*$ - [L]
+<IfModule mod_rewrite.c>
 
-RewriteRule opac.atom /demo/opac-feed/opac-feed2.php [L]
+	# Opac To Atom Script
+	RewriteRule opac.atom fileadmin/opac/opac-feed2.php [L]
 
- 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-l
-RewriteRule .* index.php
+
+	# Redirects for RealURL
+	RewriteEngine On
+	RewriteRule ^typo3$ - [L]
+	RewriteRule ^typo3/.*$ - [L]
+
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteRule .* index.php
+
+</IfModule>
