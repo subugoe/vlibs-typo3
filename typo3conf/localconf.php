@@ -118,7 +118,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 );
 
 
-$TYPO3_CONF_VARS['SYS']['setDBinit'] = 'SET NAMES utf-8;';	// Modified or inserted by TYPO3 Install Tool. 
+$TYPO3_CONF_VARS['SYS']['setDBinit'] = 'SET NAMES utf8;';	// Modified or inserted by TYPO3 Install Tool. 
 $TYPO3_CONF_VARS['SYS']['UTF8filesystem'] = '1';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 22-09-10 17:19:39
 $TYPO3_CONF_VARS['EXT']['extConf']['cag_linkchecker'] = 'a:1:{s:15:"setPageTSconfig";s:1:"1";}';	// Modified or inserted by TYPO3 Extension Manager. 
@@ -138,5 +138,5 @@ $TYPO3_CONF_VARS['EXT']['extConf']['devlog'] = 'a:11:{s:10:"maxLogRuns";s:2:"15"
 $TYPO3_CONF_VARS['EXT']['extConf']['nkwgok'] = 'a:2:{s:11:"opacBaseURL";s:39:"http://opac.sub.uni-goettingen.de/DB=1/";s:7:"CSSPath";s:0:"";}';	// Modified or inserted by TYPO3 Extension Manager.opac.sub.uni-goettingen.de/DB=1/";s:7:"CSSPath";s:0:"";}';	//opac.sub.uni-goettingen.de/DB=1/";s:7:"CSSPath";s:0:"";}';	//
 $TYPO3_CONF_VARS['EXT']['extConf']['smarty'] = 'a:7:{s:9:"IMPORTANT";s:1:"1";s:10:"smarty_dir";s:17:"EXT:smarty/Smarty";s:12:"template_dir";s:22:"fileadmin/admin/smarty";s:7:"caching";s:1:"0";s:16:"respect_no_cache";s:1:"0";s:13:"compile_check";s:1:"0";s:9:"debugging";s:1:"0";}';	// Modified or inserted by TYPO3 Extension Manager. 
 // Updated by TYPO3 Extension Manager 15-06-11 17:44:04
-// Updated by TYPO3 Install Tool 20-06-11 14:37:27
+// Updated by TYPO3 Install Tool 20-06-11 14:47:02
 ?>
