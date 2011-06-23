@@ -2,12 +2,62 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e4799a9a-0</SESSIONVAR>
+<SESSIONVAR name="SID">1e7b5551-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="aqd 520">aqd 520</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="aqd 540">aqd 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aqd 550">aqd 550</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="aqd 560">aqd 560</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="aqd 580">aqd 580</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="aqd 800">aqd 800</SCANLINE>
+
+    <SCANLINE hits="103" mnemonic="LKL" description="aqe 000">aqe 000</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="aqe 100">aqe 100</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="aqe 200">aqe 200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="aqe 300">aqe 300</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="aqe 400">aqe 400</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="aqe 500">aqe 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe 560">aqe 560</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aqe 600">aqe 600</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="aqe 700">aqe 700</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe 900">aqe 900</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="aqe 910">aqe 910</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aqe 920">aqe 920</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="aqe 940">aqe 940</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe 980">aqe 980</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aqe b (fh)">aqe b (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="aqe k (fh)">aqe k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe l (fh)">aqe l (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe q (fh)">aqe q (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe w (fh)">aqe w (fh)</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="aqf 000">aqf 000</SCANLINE>
 
@@ -853,7 +903,7 @@
 
     <SCANLINE hits="2709" mnemonic="LKL" description="at">at</SCANLINE>
 
-    <SCANLINE hits="75" mnemonic="LKL" description="at 000">at 000</SCANLINE>
+    <SCANLINE hits="76" mnemonic="LKL" description="at 000">at 000</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="at 100">at 100</SCANLINE>
 
@@ -959,61 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ata 280">ata 280</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ata 290">ata 290</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ata 330">ata 330</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ata 340">ata 340</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="ata 350">ata 350</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ata 370">ata 370</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ata 390">ata 390</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ata 400">ata 400</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="atb 000">atb 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="atb 100">atb 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb 300">atb 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb a (fh)">atb a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb k">atb k</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="atb k (fh)">atb k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb m (fh)">atb m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb r (fh)">atb r (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb.1500-1650. d (fh)">atb.1500-1650. d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atb.1701-1800. d (fh)">atb.1701-1800. d (fh)</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="atb16 nd a">atb16 nd a</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="atc 000">atc 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atc c">atc c</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="atd 000">atd 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="atd s (fh)">atd s (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="atd w (fh)">atd w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atd.1885-1892. m">atd.1885-1892. m</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="atd.1945-. l (fh)">atd.1945-. l (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="aqf+000" />
+<SCANPREV term="aqd+520" />
 
 
-<SCANNEXT term="atd.1945-.+l+(fh)" />
+<SCANNEXT term="ata+280" />
 
 </RESULT>

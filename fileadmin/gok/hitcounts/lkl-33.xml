@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6bec9f2a-2</SESSIONVAR>
+<SESSIONVAR name="SID">1669f832-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="cif 610">cif 610</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="cif 620">cif 620</SCANLINE>
 
@@ -93,7 +95,7 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="cig 100">cig 100</SCANLINE>
 
-    <SCANLINE hits="171" mnemonic="LKL" description="cig 200">cig 200</SCANLINE>
+    <SCANLINE hits="173" mnemonic="LKL" description="cig 200">cig 200</SCANLINE>
 
     <SCANLINE hits="50" mnemonic="LKL" description="cih">cih</SCANLINE>
 
@@ -259,9 +261,9 @@
 
     <SCANLINE hits="27" mnemonic="LKL" description="cik 120">cik 120</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="cik 121">cik 121</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="cik 121">cik 121</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="cik 122">cik 122</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="cik 122">cik 122</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="cik 123">cik 123</SCANLINE>
 
@@ -297,7 +299,7 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="cik 325">cik 325</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="cik 350">cik 350</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="cik 350">cik 350</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="cik 351">cik 351</SCANLINE>
 
@@ -597,9 +599,9 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="civ 200">civ 200</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="civ 250">civ 250</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="civ 250">civ 250</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="civ 300">civ 300</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="civ 300">civ 300</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="civ 320">civ 320</SCANLINE>
 
@@ -617,7 +619,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="civ 372">civ 372</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="civ 373">civ 373</SCANLINE>
+    <SCANLINE hits="31" mnemonic="LKL" description="civ 373">civ 373</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="civ 374">civ 374</SCANLINE>
 
@@ -653,7 +655,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="cix 300">cix 300</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="cix 320">cix 320</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="cix 320">cix 320</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="cix 325">cix 325</SCANLINE>
 
@@ -911,9 +913,9 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ckr 100">ckr 100</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="ckr 120">ckr 120</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="ckr 120">ckr 120</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="ckr 150">ckr 150</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="ckr 150">ckr 150</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ckr 158">ckr 158</SCANLINE>
 
@@ -999,7 +1001,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="ckr 850">ckr 850</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="ckr 900">ckr 900</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="ckr 900">ckr 900</SCANLINE>
 
     <SCANLINE hits="38" mnemonic="LKL" description="ckr 920">ckr 920</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ckr k (fh)">ckr k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ckr100">ckr100</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cif+620" />
+<SCANPREV term="cif+610" />
 
 
-<SCANNEXT term="ckr100" />
+<SCANNEXT term="ckr+k+(fh)" />
 
 </RESULT>

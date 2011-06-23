@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f15a2d21-3</SESSIONVAR>
+<SESSIONVAR name="SID">3789f021-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 luen">fx 29 luen</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mag">fx 29 mag</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mai">fx 29 mai</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mar">fx 29 mar</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 muen">fx 29 muen</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 muench600">fx 29 muench600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 muenchen">fx 29 muenchen</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 nuern">fx 29 nuern</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 old">fx 29 old</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 osn">fx 29 osn</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 pass">fx 29 pass</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ros">fx 29 ros</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 sie">fx 29 sie</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 soa">fx 29 soa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 tri">fx 29 tri</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 tueb">fx 29 tueb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ulm">fx 29 ulm</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ung">fx 29 ung</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wei">fx 29 wei</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wies">fx 29 wies</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wup">fx 29 wup</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 297 53">fx 297 53</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fx 46">fx 46</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fx 46 chi rsuchen">fx 46 chi rsuchen</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="fx 46 chin">fx 46 chin</SCANLINE>
 
@@ -183,7 +231,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="fya 380">fya 380</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="fya 500">fya 500</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="fya 500">fya 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="fya 500 a">fya 500 a</SCANLINE>
 
@@ -239,7 +287,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fyc">fyc</SCANLINE>
 
-    <SCANLINE hits="109" mnemonic="LKL" description="fyc 000">fyc 000</SCANLINE>
+    <SCANLINE hits="110" mnemonic="LKL" description="fyc 000">fyc 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="fyc 100">fyc 100</SCANLINE>
 
@@ -381,11 +429,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="fyl k (fh)">fyl k (fh)</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="fym 000">fym 000</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="fym 000">fym 000</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="fym 020">fym 020</SCANLINE>
 
-    <SCANLINE hits="53" mnemonic="LKL" description="fym 040">fym 040</SCANLINE>
+    <SCANLINE hits="54" mnemonic="LKL" description="fym 040">fym 040</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="fym 070">fym 070</SCANLINE>
 
@@ -515,7 +563,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="fyp 330">fyp 330</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="fyp 350">fyp 350</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="fyp 350">fyp 350</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="fyp 360">fyp 360</SCANLINE>
 
@@ -777,7 +825,7 @@
 
     <SCANLINE hits="1538" mnemonic="LKL" description="ga">ga</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="ga 100">ga 100</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="ga 100">ga 100</SCANLINE>
 
     <SCANLINE hits="85" mnemonic="LKL" description="ga 200">ga 200</SCANLINE>
 
@@ -793,7 +841,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="ga 630">ga 630</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="ga 650">ga 650</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="ga 650">ga 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ga 700">ga 700</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="252" mnemonic="LKL" description="geb 200">geb 200</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="geb 230">geb 230</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="geb 300">geb 300</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="geb 305">geb 305</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="geb 310">geb 310</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="geb 400">geb 400</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="geb 410">geb 410</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="geb 420">geb 420</SCANLINE>
-
-    <SCANLINE hits="75" mnemonic="LKL" description="geb 430">geb 430</SCANLINE>
-
-    <SCANLINE hits="61" mnemonic="LKL" description="geb 440">geb 440</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="geb 460">geb 460</SCANLINE>
-
-    <SCANLINE hits="290" mnemonic="LKL" description="geb 500">geb 500</SCANLINE>
-
-    <SCANLINE hits="136" mnemonic="LKL" description="geb 550">geb 550</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="geb 600">geb 600</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="geb 610">geb 610</SCANLINE>
-
-    <SCANLINE hits="77" mnemonic="LKL" description="geb 620">geb 620</SCANLINE>
-
-    <SCANLINE hits="121" mnemonic="LKL" description="geb 700">geb 700</SCANLINE>
-
-    <SCANLINE hits="58" mnemonic="LKL" description="geb 800">geb 800</SCANLINE>
-
-    <SCANLINE hits="50" mnemonic="LKL" description="geb 900">geb 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gec">gec</SCANLINE>
-
-    <SCANLINE hits="84" mnemonic="LKL" description="gec 100">gec 100</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="gec 100 a">gec 100 a</SCANLINE>
-
-    <SCANLINE hits="68" mnemonic="LKL" description="gec 200">gec 200</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="gec 230">gec 230</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gec 250">gec 250</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="fx+46+chin" />
+<SCANPREV term="fx+29+luen" />
 
 
-<SCANNEXT term="gec+250" />
+<SCANNEXT term="geb+200" />
 
 </RESULT>

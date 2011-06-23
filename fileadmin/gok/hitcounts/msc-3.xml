@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b8de6a51-2</SESSIONVAR>
+<SESSIONVAR name="SID">abe4f53a-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="MSC" description="14j25">14j25</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="MSC" description="14j26">14j26</SCANLINE>
 
@@ -125,7 +127,7 @@
 
     <SCANLINE hits="1" mnemonic="MSC" description="14n30">14n30</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="MSC" description="14n35">14n35</SCANLINE>
+    <SCANLINE hits="32" mnemonic="MSC" description="14n35">14n35</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="MSC" description="14n99">14n99</SCANLINE>
 
@@ -155,7 +157,7 @@
 
     <SCANLINE hits="6" mnemonic="MSC" description="14q15">14q15</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="MSC" description="14q20">14q20</SCANLINE>
+    <SCANLINE hits="16" mnemonic="MSC" description="14q20">14q20</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="MSC" description="14q99">14q99</SCANLINE>
 
@@ -183,7 +185,7 @@
 
     <SCANLINE hits="228" mnemonic="MSC" description="15-00">15-00</SCANLINE>
 
-    <SCANLINE hits="569" mnemonic="MSC" description="15-01">15-01</SCANLINE>
+    <SCANLINE hits="571" mnemonic="MSC" description="15-01">15-01</SCANLINE>
 
     <SCANLINE hits="90" mnemonic="MSC" description="15-02">15-02</SCANLINE>
 
@@ -197,11 +199,11 @@
 
     <SCANLINE hits="2" mnemonic="MSC" description="15-xx">15-xx</SCANLINE>
 
-    <SCANLINE hits="153" mnemonic="MSC" description="15a03">15a03</SCANLINE>
+    <SCANLINE hits="154" mnemonic="MSC" description="15a03">15a03</SCANLINE>
 
-    <SCANLINE hits="125" mnemonic="MSC" description="15a04">15a04</SCANLINE>
+    <SCANLINE hits="126" mnemonic="MSC" description="15a04">15a04</SCANLINE>
 
-    <SCANLINE hits="159" mnemonic="MSC" description="15a06">15a06</SCANLINE>
+    <SCANLINE hits="160" mnemonic="MSC" description="15a06">15a06</SCANLINE>
 
     <SCANLINE hits="86" mnemonic="MSC" description="15a09">15a09</SCANLINE>
 
@@ -211,9 +213,9 @@
 
     <SCANLINE hits="1" mnemonic="MSC" description="15a16">15a16</SCANLINE>
 
-    <SCANLINE hits="186" mnemonic="MSC" description="15a18">15a18</SCANLINE>
+    <SCANLINE hits="189" mnemonic="MSC" description="15a18">15a18</SCANLINE>
 
-    <SCANLINE hits="116" mnemonic="MSC" description="15a21">15a21</SCANLINE>
+    <SCANLINE hits="117" mnemonic="MSC" description="15a21">15a21</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="MSC" description="15a22">15a22</SCANLINE>
 
@@ -225,7 +227,7 @@
 
     <SCANLINE hits="8" mnemonic="MSC" description="15a29">15a29</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="MSC" description="15a30">15a30</SCANLINE>
+    <SCANLINE hits="24" mnemonic="MSC" description="15a30">15a30</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="MSC" description="15a33">15a33</SCANLINE>
 
@@ -247,9 +249,9 @@
 
     <SCANLINE hits="46" mnemonic="MSC" description="15a57">15a57</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="MSC" description="15a60">15a60</SCANLINE>
+    <SCANLINE hits="61" mnemonic="MSC" description="15a60">15a60</SCANLINE>
 
-    <SCANLINE hits="121" mnemonic="MSC" description="15a63">15a63</SCANLINE>
+    <SCANLINE hits="122" mnemonic="MSC" description="15a63">15a63</SCANLINE>
 
     <SCANLINE hits="70" mnemonic="MSC" description="15a66">15a66</SCANLINE>
 
@@ -279,7 +281,7 @@
 
     <SCANLINE hits="36" mnemonic="MSC" description="16-00">16-00</SCANLINE>
 
-    <SCANLINE hits="92" mnemonic="MSC" description="16-01">16-01</SCANLINE>
+    <SCANLINE hits="93" mnemonic="MSC" description="16-01">16-01</SCANLINE>
 
     <SCANLINE hits="168" mnemonic="MSC" description="16-02">16-02</SCANLINE>
 
@@ -353,7 +355,7 @@
 
     <SCANLINE hits="37" mnemonic="MSC" description="16g10">16g10</SCANLINE>
 
-    <SCANLINE hits="47" mnemonic="MSC" description="16g20">16g20</SCANLINE>
+    <SCANLINE hits="48" mnemonic="MSC" description="16g20">16g20</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="MSC" description="16g30">16g30</SCANLINE>
 
@@ -527,9 +529,9 @@
 
     <SCANLINE hits="26" mnemonic="MSC" description="17-00">17-00</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="MSC" description="17-01">17-01</SCANLINE>
+    <SCANLINE hits="61" mnemonic="MSC" description="17-01">17-01</SCANLINE>
 
-    <SCANLINE hits="124" mnemonic="MSC" description="17-02">17-02</SCANLINE>
+    <SCANLINE hits="125" mnemonic="MSC" description="17-02">17-02</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="MSC" description="17-03">17-03</SCANLINE>
 
@@ -577,13 +579,13 @@
 
     <SCANLINE hits="28" mnemonic="MSC" description="17b01">17b01</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="MSC" description="17b05">17b05</SCANLINE>
+    <SCANLINE hits="21" mnemonic="MSC" description="17b05">17b05</SCANLINE>
 
     <SCANLINE hits="82" mnemonic="MSC" description="17b10">17b10</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="MSC" description="17b15">17b15</SCANLINE>
 
-    <SCANLINE hits="49" mnemonic="MSC" description="17b20">17b20</SCANLINE>
+    <SCANLINE hits="50" mnemonic="MSC" description="17b20">17b20</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="MSC" description="17b22">17b22</SCANLINE>
 
@@ -631,7 +633,7 @@
 
     <SCANLINE hits="11" mnemonic="MSC" description="17b99">17b99</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="MSC" description="17bxx">17bxx</SCANLINE>
+    <SCANLINE hits="20" mnemonic="MSC" description="17bxx">17bxx</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="MSC" description="17c00">17c00</SCANLINE>
 
@@ -683,7 +685,7 @@
 
     <SCANLINE hits="61" mnemonic="MSC" description="18-01">18-01</SCANLINE>
 
-    <SCANLINE hits="71" mnemonic="MSC" description="18-02">18-02</SCANLINE>
+    <SCANLINE hits="72" mnemonic="MSC" description="18-02">18-02</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="MSC" description="18-03">18-03</SCANLINE>
 
@@ -727,7 +729,7 @@
 
     <SCANLINE hits="12" mnemonic="MSC" description="18b20">18b20</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="MSC" description="18b25">18b25</SCANLINE>
+    <SCANLINE hits="25" mnemonic="MSC" description="18b25">18b25</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="MSC" description="18b30">18b30</SCANLINE>
 
@@ -765,7 +767,7 @@
 
     <SCANLINE hits="11" mnemonic="MSC" description="18d35">18d35</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="MSC" description="18d50">18d50</SCANLINE>
+    <SCANLINE hits="14" mnemonic="MSC" description="18d50">18d50</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="MSC" description="18d99">18d99</SCANLINE>
 
@@ -801,7 +803,7 @@
 
     <SCANLINE hits="14" mnemonic="MSC" description="18f15">18f15</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="MSC" description="18f20">18f20</SCANLINE>
+    <SCANLINE hits="30" mnemonic="MSC" description="18f20">18f20</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="MSC" description="18f25">18f25</SCANLINE>
 
@@ -823,7 +825,7 @@
 
     <SCANLINE hits="7" mnemonic="MSC" description="18g25">18g25</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="MSC" description="18g30">18g30</SCANLINE>
+    <SCANLINE hits="13" mnemonic="MSC" description="18g30">18g30</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="MSC" description="18g35">18g35</SCANLINE>
 
@@ -831,7 +833,7 @@
 
     <SCANLINE hits="18" mnemonic="MSC" description="18g50">18g50</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="MSC" description="18g55">18g55</SCANLINE>
+    <SCANLINE hits="17" mnemonic="MSC" description="18g55">18g55</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="MSC" description="18g60">18g60</SCANLINE>
 
@@ -852,6 +854,8 @@
     <SCANLINE hits="3" mnemonic="MSC" description="19-xx">19-xx</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="MSC" description="19a00">19a00</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="MSC" description="19a13">19a13</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="MSC" description="19a22">19a22</SCANLINE>
 
@@ -875,7 +879,7 @@
 
     <SCANLINE hits="2" mnemonic="MSC" description="19c00">19c00</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="MSC" description="19c09">19c09</SCANLINE>
+    <SCANLINE hits="6" mnemonic="MSC" description="19c09">19c09</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="MSC" description="19c30">19c30</SCANLINE>
 
@@ -983,7 +987,7 @@
 
     <SCANLINE hits="282" mnemonic="MSC" description="20-01">20-01</SCANLINE>
 
-    <SCANLINE hits="316" mnemonic="MSC" description="20-02">20-02</SCANLINE>
+    <SCANLINE hits="317" mnemonic="MSC" description="20-02">20-02</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="MSC" description="20-03">20-03</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="7" mnemonic="MSC" description="20b05">20b05</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="MSC" description="20b07">20b07</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="MSC" description="20b10">20b10</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="14j26" />
+<SCANPREV term="14j25" />
 
 
-<SCANNEXT term="20b10" />
+<SCANNEXT term="20b05" />
 
 </RESULT>

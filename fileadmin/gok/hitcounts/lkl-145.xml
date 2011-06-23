@@ -2,12 +2,490 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9f6e32e9-3</SESSIONVAR>
+<SESSIONVAR name="SID">067d5b86-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 357">jl 357</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 358">jl 358</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jl 359">jl 359</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 370">jl 370</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 377">jl 377</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 380">jl 380</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 387">jl 387</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 394">jl 394</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 400">jl 400</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jl 420">jl 420</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 430">jl 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 431">jl 431</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jl 432">jl 432</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 434">jl 434</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 435">jl 435</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 438">jl 438</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 440">jl 440</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jl 446">jl 446</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 451">jl 451</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 472">jl 472</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jl 500">jl 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 510">jl 510</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 513">jl 513</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 514">jl 514</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 515">jl 515</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 520">jl 520</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 521">jl 521</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 527">jl 527</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 530">jl 530</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 535">jl 535</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 538">jl 538</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 540">jl 540</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jl 546">jl 546</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 570">jl 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 574">jl 574</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jl 580">jl 580</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl 600">jl 600</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jl 610">jl 610</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl xxx">jl xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jl0 352">jl0 352</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla">jla</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jla 300">jla 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla 370">jla 370</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jla 375">jla 375</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla 500">jla 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla 530">jla 530</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jla 539">jla 539</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla 600">jla 600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jla xxx">jla xxx</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlb 200">jlb 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jlb 300">jlb 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlb 320">jlb 320</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlb 350">jlb 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlb 355">jlb 355</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlb 400">jlb 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlb 430">jlb 430</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlb 431">jlb 431</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlb xxx">jlb xxx</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jlc 200">jlc 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jlc 300">jlc 300</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jlc 320">jlc 320</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="jlc 321">jlc 321</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jlc 330">jlc 330</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 331">jlc 331</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlc 335">jlc 335</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jlc 336">jlc 336</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 340">jlc 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 350">jlc 350</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="jlc 352">jlc 352</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 354">jlc 354</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlc 380">jlc 380</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jlc 381">jlc 381</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jlc 382">jlc 382</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 387">jlc 387</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 400">jlc 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlc 500">jlc 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlc xxx">jlc xxx</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jld">jld</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="jld 200">jld 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 220">jld 220</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="jld 240">jld 240</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="jld 300">jld 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 313">jld 313</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 317">jld 317</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 320">jld 320</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 321">jld 321</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 323">jld 323</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="jld 330">jld 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 331">jld 331</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 332">jld 332</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="jld 335">jld 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 336">jld 336</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 337">jld 337</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 338">jld 338</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jld 340">jld 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 344">jld 344</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 345">jld 345</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 350">jld 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 351">jld 351</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="jld 352">jld 352</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 354">jld 354</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 357">jld 357</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 358">jld 358</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jld 359">jld 359</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jld 360">jld 360</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 370">jld 370</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 373">jld 373</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 374">jld 374</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 377">jld 377</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 380">jld 380</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jld 381">jld 381</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jld 382">jld 382</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 400">jld 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 420">jld 420</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jld 430">jld 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 431">jld 431</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jld 432">jld 432</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 435">jld 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 438">jld 438</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 439">jld 439</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 440">jld 440</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="jld 446">jld 446</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 453">jld 453</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 472">jld 472</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jld 480">jld 480</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="jld 500">jld 500</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 501">jld 501</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 510">jld 510</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 513">jld 513</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 520">jld 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 521">jld 521</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 523">jld 523</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 526">jld 526</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 527">jld 527</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 530">jld 530</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 531">jld 531</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 532">jld 532</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 534">jld 534</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 535">jld 535</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 536">jld 536</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 537">jld 537</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jld 538">jld 538</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 539">jld 539</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 540">jld 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 545">jld 545</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jld 546">jld 546</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 560">jld 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 570">jld 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 578">jld 578</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jld 580">jld 580</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="jld 600">jld 600</SCANLINE>
+
+    <SCANLINE hits="72" mnemonic="LKL" description="jld 610">jld 610</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 620">jld 620</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 630">jld 630</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 640">jld 640</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jld 650">jld 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld 660">jld 660</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jld 666">jld 666</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jld xxx">jld xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle">jle</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="jle 200">jle 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 240">jle 240</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="jle 300">jle 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 317">jle 317</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 319">jle 319</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 320">jle 320</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 321">jle 321</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 323">jle 323</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="jle 330">jle 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 331">jle 331</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 332">jle 332</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 335">jle 335</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 337">jle 337</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 338">jle 338</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 340">jle 340</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 350">jle 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 351">jle 351</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="jle 352">jle 352</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 353">jle 353</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 354">jle 354</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 357">jle 357</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 358">jle 358</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 359">jle 359</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 360">jle 360</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 370">jle 370</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 374">jle 374</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 377">jle 377</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 380">jle 380</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jle 381">jle 381</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 382">jle 382</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 387">jle 387</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 400">jle 400</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jle 420">jle 420</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 430">jle 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 431">jle 431</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jle 432">jle 432</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 435">jle 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 436">jle 436</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 437">jle 437</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 438">jle 438</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 439">jle 439</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 440">jle 440</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="jle 446">jle 446</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 448">jle 448</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 453">jle 453</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 472">jle 472</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 480">jle 480</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="jle 500">jle 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 510">jle 510</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jle 513">jle 513</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 514">jle 514</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 515">jle 515</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 516">jle 516</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 517">jle 517</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 519">jle 519</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 520">jle 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 521">jle 521</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 522">jle 522</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 530">jle 530</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 531">jle 531</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jle 532">jle 532</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 535">jle 535</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 537">jle 537</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle 540">jle 540</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 546">jle 546</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jle 548">jle 548</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jle 580">jle 580</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="jle 600">jle 600</SCANLINE>
+
+    <SCANLINE hits="108" mnemonic="LKL" description="jle 610">jle 610</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="jle 620">jle 620</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jle 650">jle 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle xxx">jle xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jle374 b (fh)">jle374 b (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlf 300">jlf 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlf 320">jlf 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlf 321">jlf 321</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlf 500">jlf 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlf 520">jlf 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jlf 525">jlf 525</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jlf xxx">jlf xxx</SCANLINE>
 
@@ -531,489 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jlm 380">jlm 380</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jlm 381">jlm 381</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlm 382">jlm 382</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlm 387">jlm 387</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 394">jlm 394</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlm 400">jlm 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 430">jlm 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 431">jlm 431</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlm 432">jlm 432</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 440">jlm 440</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlm 446">jlm 446</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlm 459">jlm 459</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 500">jlm 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 530">jlm 530</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 531">jlm 531</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlm 533">jlm 533</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm 540">jlm 540</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlm 546">jlm 546</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlm xxx">jlm xxx</SCANLINE>
-
-    <SCANLINE hits="113" mnemonic="LKL" description="jln">jln</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 000">jln 000</SCANLINE>
-
-    <SCANLINE hits="49" mnemonic="LKL" description="jln 200">jln 200</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 220">jln 220</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 230">jln 230</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jln 240">jln 240</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 252">jln 252</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 260">jln 260</SCANLINE>
-
-    <SCANLINE hits="235" mnemonic="LKL" description="jln 300">jln 300</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="jln 313">jln 313</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="jln 314">jln 314</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 315">jln 315</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="jln 316">jln 316</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="jln 317">jln 317</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 318">jln 318</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="jln 319">jln 319</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="jln 320">jln 320</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="jln 321">jln 321</SCANLINE>
-
-    <SCANLINE hits="46" mnemonic="LKL" description="jln 323">jln 323</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 324">jln 324</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 325">jln 325</SCANLINE>
-
-    <SCANLINE hits="126" mnemonic="LKL" description="jln 330">jln 330</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 331">jln 331</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="jln 332">jln 332</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 333">jln 333</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="jln 335">jln 335</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 336">jln 336</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="jln 337">jln 337</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="jln 338">jln 338</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="jln 340">jln 340</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 343">jln 343</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 344">jln 344</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 345">jln 345</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="jln 347">jln 347</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="jln 350">jln 350</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="jln 351">jln 351</SCANLINE>
-
-    <SCANLINE hits="213" mnemonic="LKL" description="jln 352">jln 352</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="jln 353">jln 353</SCANLINE>
-
-    <SCANLINE hits="42" mnemonic="LKL" description="jln 354">jln 354</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="jln 355">jln 355</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 356">jln 356</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 357">jln 357</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="jln 358">jln 358</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="jln 359">jln 359</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 360">jln 360</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jln 361">jln 361</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 366">jln 366</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 370">jln 370</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="jln 372">jln 372</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="jln 373">jln 373</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 374">jln 374</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 375">jln 375</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="jln 376">jln 376</SCANLINE>
-
-    <SCANLINE hits="153" mnemonic="LKL" description="jln 377">jln 377</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="jln 380">jln 380</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="jln 381">jln 381</SCANLINE>
-
-    <SCANLINE hits="99" mnemonic="LKL" description="jln 382">jln 382</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 383">jln 383</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 385">jln 385</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 386">jln 386</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 387">jln 387</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="jln 394">jln 394</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 400">jln 400</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 420">jln 420</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 425">jln 425</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 430">jln 430</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 431">jln 431</SCANLINE>
-
-    <SCANLINE hits="69" mnemonic="LKL" description="jln 432">jln 432</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 433">jln 433</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="jln 434">jln 434</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 435">jln 435</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 436">jln 436</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="jln 437">jln 437</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 438">jln 438</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="jln 439">jln 439</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 440">jln 440</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 441">jln 441</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 442">jln 442</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 443">jln 443</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 444">jln 444</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="jln 445">jln 445</SCANLINE>
-
-    <SCANLINE hits="40" mnemonic="LKL" description="jln 446">jln 446</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 452">jln 452</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 454">jln 454</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="jln 459">jln 459</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jln 470">jln 470</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 472">jln 472</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 473">jln 473</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 474">jln 474</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="jln 480">jln 480</SCANLINE>
-
-    <SCANLINE hits="82" mnemonic="LKL" description="jln 500">jln 500</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="jln 501">jln 501</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="jln 510">jln 510</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 512">jln 512</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="jln 513">jln 513</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="jln 514">jln 514</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="jln 515">jln 515</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 516">jln 516</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 517">jln 517</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 519">jln 519</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 520">jln 520</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="jln 521">jln 521</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 522">jln 522</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jln 523">jln 523</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 524">jln 524</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="jln 525">jln 525</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 526">jln 526</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jln 527">jln 527</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 528">jln 528</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 530">jln 530</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 531">jln 531</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 532">jln 532</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="jln 533">jln 533</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="jln 534">jln 534</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 535">jln 535</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="jln 536">jln 536</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 537">jln 537</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 538">jln 538</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jln 539">jln 539</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 540">jln 540</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 541">jln 541</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jln 542">jln 542</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 543">jln 543</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 544">jln 544</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 545">jln 545</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="jln 546">jln 546</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 548">jln 548</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 549">jln 549</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 551">jln 551</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jln 554">jln 554</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 556">jln 556</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jln 559">jln 559</SCANLINE>
-
-    <SCANLINE hits="58" mnemonic="LKL" description="jln 560">jln 560</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 570">jln 570</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="jln 572">jln 572</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="jln 573">jln 573</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 575">jln 575</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jln 578">jln 578</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jln 579">jln 579</SCANLINE>
-
-    <SCANLINE hits="52" mnemonic="LKL" description="jln 580">jln 580</SCANLINE>
-
-    <SCANLINE hits="214" mnemonic="LKL" description="jln 600">jln 600</SCANLINE>
-
-    <SCANLINE hits="3150" mnemonic="LKL" description="jln 610">jln 610</SCANLINE>
-
-    <SCANLINE hits="61" mnemonic="LKL" description="jln 620">jln 620</SCANLINE>
-
-    <SCANLINE hits="57" mnemonic="LKL" description="jln 630">jln 630</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="jln 640">jln 640</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="jln 650">jln 650</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 660">jln 660</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="jln 662">jln 662</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jln 664">jln 664</SCANLINE>
-
-    <SCANLINE hits="46" mnemonic="LKL" description="jln 666">jln 666</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="jln 668">jln 668</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln 800">jln 800</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jln xxx">jln xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlnj 610">jlnj 610</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo">jlo</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jlo 200">jlo 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 220">jlo 220</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jlo 300">jlo 300</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlo 317">jlo 317</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 319">jlo 319</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 320">jlo 320</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 321">jlo 321</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jlo 330">jlo 330</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 331">jlo 331</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 332">jlo 332</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 333">jlo 333</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 335">jlo 335</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 338">jlo 338</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 340">jlo 340</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 350">jlo 350</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jlo 352">jlo 352</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jlo 354">jlo 354</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlo 357">jlo 357</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 358">jlo 358</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 359">jlo 359</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 370">jlo 370</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 372">jlo 372</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 377">jlo 377</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="jlo 380">jlo 380</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="jlo 382">jlo 382</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 387">jlo 387</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 400">jlo 400</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 430">jlo 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 431">jlo 431</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 432">jlo 432</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 433">jlo 433</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 435">jlo 435</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 437">jlo 437</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlo 438">jlo 438</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 440">jlo 440</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="jlo 446">jlo 446</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 451">jlo 451</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 472">jlo 472</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 480">jlo 480</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 500">jlo 500</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlo 501">jlo 501</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 530">jlo 530</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 531">jlo 531</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 532">jlo 532</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jlo 533">jlo 533</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 534">jlo 534</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 535">jlo 535</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 538">jlo 538</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 540">jlo 540</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="jlo 546">jlo 546</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo 570">jlo 570</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 572">jlo 572</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 580">jlo 580</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlo 600">jlo 600</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="jlo 610">jlo 610</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlo xxx">jlo xxx</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlp 200">jlp 200</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="jlp 300">jlp 300</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jlp 330">jlp 330</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlp 335">jlp 335</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlp 338">jlp 338</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlp 340">jlp 340</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlp 350">jlp 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlp 352">jlp 352</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jlp 354">jlp 354</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jlp 357">jlp 357</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jlf+xxx" />
+<SCANPREV term="jl+357" />
 
 
-<SCANNEXT term="jlp+357" />
+<SCANNEXT term="jlm+380" />
 
 </RESULT>

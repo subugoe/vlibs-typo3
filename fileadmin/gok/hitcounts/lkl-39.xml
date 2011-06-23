@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c16825df-2</SESSIONVAR>
+<SESSIONVAR name="SID">daa81128-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -115,7 +115,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ebdc 050">ebdc 050</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ebdc 100">ebdc 100</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ebdc 100">ebdc 100</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ebdc 110">ebdc 110</SCANLINE>
 
@@ -663,7 +663,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ebeq 150">ebeq 150</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="ebeq 200">ebeq 200</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="ebeq 200">ebeq 200</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ebeq 990">ebeq 990</SCANLINE>
 
@@ -699,7 +699,7 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="ebf 006">ebf 006</SCANLINE>
 
-    <SCANLINE hits="199" mnemonic="LKL" description="ebf 010">ebf 010</SCANLINE>
+    <SCANLINE hits="200" mnemonic="LKL" description="ebf 010">ebf 010</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="ebf 020">ebf 020</SCANLINE>
 
@@ -739,7 +739,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ebfa 006">ebfa 006</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="ebfa 010">ebfa 010</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="ebfa 010">ebfa 010</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="ebfa 030">ebfa 030</SCANLINE>
 
@@ -763,7 +763,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebfa 160">ebfa 160</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="ebfa 180">ebfa 180</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="ebfa 180">ebfa 180</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="ebfa 210">ebfa 210</SCANLINE>
 
@@ -853,7 +853,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebg 001">ebg 001</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="ebg 010">ebg 010</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="ebg 010">ebg 010</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="LKL" description="ebg 020">ebg 020</SCANLINE>
 
@@ -868,8 +868,6 @@
     <SCANLINE hits="4" mnemonic="LKL" description="ebga 000">ebga 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebga 001">ebga 001</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebga 010">ebga 010</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebga 020">ebga 020</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="ebgg 600">ebgg 600</SCANLINE>
 
+    <SCANLINE hits="24" mnemonic="LKL" description="ebgg 700">ebgg 700</SCANLINE>
+
 </SCANLIST>
 
 <SCANPREV term="ebcj+000" />
 
 
-<SCANNEXT term="ebgg+600" />
+<SCANNEXT term="ebgg+700" />
 
 </RESULT>

@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b2d07ef0-1</SESSIONVAR>
+<SESSIONVAR name="SID">dae68218-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c05">ams 90c10 90c05</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c05 10b05 65k05">ams 90c10 90c05 10b05 65k05</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c05 65k05">ams 90c10 90c05 65k05</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c05 90b10 65k05 05c70">ams 90c10 90c05 90b10 65k05 05c70</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c27 90c11 52a25">ams 90c10 90c27 90c11 52a25</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ams 90c10 90c27 90c35 90b05 90b10 90b35">ams 90c10 90c27 90c35 90b05 90b10 90b35</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c35 52a25 68c25">ams 90c10 90c35 52a25 68c25</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c48 05b35">ams 90c10 90c48 05b35</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c48 68c25 90-02 05b35 90b10 05c70 52a25">ams 90c10 90c48 68c25 90-02 05b35 90b10 05c70 52a25</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c10 90c50 65k05 82a99">ams 90c10 90c50 65k05 82a99</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c11 90c30">ams 90c11 90c30</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c11 90c31">ams 90c11 90c31</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15">ams 90c15</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 62g10 65c05">ams 90c15 62g10 65c05</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ams 90c15 90c11 90c31">ams 90c15 90c11 90c31</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 90c11 90c31 90c42">ams 90c15 90c11 90c31 90c42</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 90c11 90x31">ams 90c15 90c11 90x31</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 90c30 49d37 65k05 49d27">ams 90c15 90c30 49d37 65k05 49d27</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 90c30 49j52">ams 90c15 90c30 49j52</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ams 90c15 90c31">ams 90c15 90c31</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c15 90c90 90c11">ams 90c15 90c90 90c11</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c20">ams 90c20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c20 65k05 90c31 49d40">ams 90c20 65k05 90c31 49d40</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 90c20 90c30 90c31">ams 90c20 90c30 90c31</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams 90c25">ams 90c25</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 70f05 58f05 58a30 93a30">ams 93d15 70f05 58f05 58a30 93a30</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93a13 93a25 93b07 93b11 93b18 93b29 93b30 93c10 93c15 93c73 93c83 93c95 92e20">ams 93d15 93a13 93a25 93b07 93b11 93b18 93b29 93b30 93c10 93c15 93c73 93c83 93c95 92e20</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c05 93c35 93b27">ams 93d15 93c05 93c35 93b27</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ams 93d15 93c10">ams 93d15 93c10</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 17b30">ams 93d15 93c10 17b30</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 93c15 93b27">ams 93d15 93c10 93c15 93b27</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 93c15 93b40">ams 93d15 93c10 93c15 93b40</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 93c40 49a36 93b35">ams 93d15 93c10 93c40 49a36 93b35</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 93c40 93b35">ams 93d15 93c10 93c40 93b35</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93c10 93d20">ams 93d15 93c10 93d20</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ams 93d15 93c55 34h05">ams 93d15 93c55 34h05</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93d05 93c05">ams 93d15 93d05 93c05</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d15 93d22">ams 93d15 93d22</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d20 93c10 93c50">ams 93d20 93c10 93c50</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d21 93c40 93c15 34d05">ams 93d21 93c40 93c15 34d05</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d25 93c55 94g05">ams 93d25 93c55 94g05</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d30 93b07">ams 93d30 93b07</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93d99 58f05 58f10 93c15">ams 93d99 58f05 58f10 93c15</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93dxx 93cxx">ams 93dxx 93cxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 15a48 15a51">ams 93e03 15a48 15a51</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 60f10 62l20">ams 93e03 60f10 62l20</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 60f10 93e15">ams 93e03 60f10 93e15</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 60h10">ams 93e03 60h10</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 60h99">ams 93e03 60h99</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 93e03 93e12 93b30">ams 93e03 93e12 93b30</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ams+90c25" />
+<SCANPREV term="ams+90c10+90c05" />
 
 
-<SCANNEXT term="ams+93e03+93e12+93b30" />
+<SCANNEXT term="ams+93d15+70f05+58f05+58a30+93a30" />
 
 </RESULT>

@@ -2,12 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e42254a9-3</SESSIONVAR>
+<SESSIONVAR name="SID">0afe998e-1</SESSIONVAR>
 <SESSIONVAR name="SET">1</SESSIONVAR>
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
-<SET nr="1" type="0" hits="38471" first="501">
+<SET nr="1" type="0" hits="38519" first="501">
 
   <SHORTTITLE nr="501" PPN="625061225" matstring="MAA_E" matcode="Tev"
 format="text" available="no"><record><datafield tag="001A"><subfield code="0">0007:30-04-10</subfield></datafield><datafield tag="001B"><subfield code="0">0007:30-04-10</subfield><subfield code="t">11:25:31.000</subfield></datafield><datafield tag="001D"><subfield code="0">0007:30-04-10</subfield></datafield><datafield tag="002@"><subfield code="0">Tev</subfield></datafield><datafield tag="003@"><subfield code="0">625061225</subfield></datafield><datafield tag="003Z"><subfield code="0">gokv001528</subfield></datafield><datafield tag="009B"><subfield code="a">5</subfield></datafield><datafield tag="038D"><subfield code="9">625061055</subfield></datafield><datafield tag="044E"><subfield code="a">Känozoikum {Stratigraphische Paläontologie} </subfield></datafield><datafield tag="045A"><subfield code="a">VWI 000 </subfield></datafield></record></SHORTTITLE>

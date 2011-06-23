@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">bb6fe763-1</SESSIONVAR>
+<SESSIONVAR name="SID">828b3bdd-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="efdc 650">efdc 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="efdc 700">efdc 700</SCANLINE>
 
@@ -273,7 +271,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="efeh 150">efeh 150</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="efeh 200">efeh 200</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="efeh 200">efeh 200</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="efeh 250">efeh 250</SCANLINE>
 
@@ -647,21 +645,21 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="efhm 001">efhm 001</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="efhm 050">efhm 050</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="efhm 050">efhm 050</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="efhm 060">efhm 060</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="efhm 070">efhm 070</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="efhm 070">efhm 070</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="efhm 100">efhm 100</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="efhm 120">efhm 120</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="efhm 150">efhm 150</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="efhm 150">efhm 150</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="efhm 200">efhm 200</SCANLINE>
 
-    <SCANLINE hits="93" mnemonic="LKL" description="efhm 250">efhm 250</SCANLINE>
+    <SCANLINE hits="94" mnemonic="LKL" description="efhm 250">efhm 250</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="efhm 270">efhm 270</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="efie 000">efie 000</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="efie 001">efie 001</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="efdc+650" />
+<SCANPREV term="efdc+700" />
 
 
-<SCANNEXT term="efie+000" />
+<SCANNEXT term="efie+001" />
 
 </RESULT>

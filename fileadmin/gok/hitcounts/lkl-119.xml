@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">04b1a348-2</SESSIONVAR>
+<SESSIONVAR name="SID">bf0d781b-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 011">ft 011</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 014">ft 014</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 022">ft 022</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 048">ft 048</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 066">ft 066</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 16 ha">ft 16 ha</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 16 lu">ft 16 lu</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 16 lux">ft 16 lux</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 16 nd">ft 16 nd</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 16 oe">ft 16 oe</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 19 halle">ft 19 halle</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ft 25 brd">ft 25 brd</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 29 duess">ft 29 duess</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 29jena">ft 29jena</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 46 ch">ft 46 ch</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 46 ind">ft 46 ind</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 46 tue">ft 46 tue</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 66 ka ftd 66 ka">ft 66 ka ftd 66 ka</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ft 66 usa">ft 66 usa</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="ft a">ft a</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ft b">ft b</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft b (fh)">ft b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft c">ft c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft can">ft can</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ft fx">ft fx</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mai">fx 29 mai</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mar">fx 29 mar</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 muen">fx 29 muen</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 muench600">fx 29 muench600</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 muenchen">fx 29 muenchen</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 nuern">fx 29 nuern</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 old">fx 29 old</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 osn">fx 29 osn</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 pass">fx 29 pass</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ros">fx 29 ros</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 sie">fx 29 sie</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 soa">fx 29 soa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 tri">fx 29 tri</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 tueb">fx 29 tueb</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ulm">fx 29 ulm</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ung">fx 29 ung</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wei">fx 29 wei</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wies">fx 29 wies</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 wup">fx 29 wup</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 297 53">fx 297 53</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="fx 46">fx 46</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 46 chi rsuchen">fx 46 chi rsuchen</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 46 chin">fx 46 chin</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 46 china">fx 46 china</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 46 fx 26">fx 46 fx 26</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ft+fx" />
+<SCANPREV term="ft+011" />
 
 
-<SCANNEXT term="fx+46+fx+26" />
+<SCANNEXT term="fx+29+mai" />
 
 </RESULT>

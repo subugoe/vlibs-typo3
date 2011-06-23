@@ -2,58 +2,1018 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">5c2594d0-3</SESSIONVAR>
+<SESSIONVAR name="SID">c9957a9f-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="60,00 Euro zzgl. Porto">60,00 Euro zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 120 (fh)">lca 120 (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="65,00 Euro fÓr Bde 1 und 2 zzgl. Porto">65,00 Euro fÓr Bde 1 und 2 zzgl. Porto</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 121 (fh)">lca 121 (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="75,00 Euro fÓr Bde 1-3 zzgl. Porto">75,00 Euro fÓr Bde 1-3 zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 13 i (fh)">lca 13 i (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="75,00 Euro zzgl. Porto">75,00 Euro zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 13 m (fh)">lca 13 m (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LCD" description="8,00 Euro zzgl. Porto">8,00 Euro zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 131 (fh)">lca 131 (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="8,50 Euro zzgl. Porto">8,50 Euro zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 141">lca 141</SCANLINE>
 
-    <SCANLINE hits="1830" mnemonic="LCD" description="CMIS">CMIS</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 142 (fh)">lca 142 (fh)</SCANLINE>
 
-    <SCANLINE hits="6214" mnemonic="LCD" description="EDZ">EDZ</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="lca 143">lca 143</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="Kosten: 20 Euro zzgl. Porto">Kosten: 20 Euro zzgl. Porto</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 143 (fh)">lca 143 (fh)</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LCD" description="a">a</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 143 k (fh)">lca 143 k (fh)</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LCD" description="b">b</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="lca 150">lca 150</SCANLINE>
 
-    <SCANLINE hits="38618" mnemonic="LCD" description="c">c</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 151">lca 151</SCANLINE>
 
-    <SCANLINE hits="2066" mnemonic="LCD" description="d">d</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="lca 156">lca 156</SCANLINE>
 
-    <SCANLINE hits="705" mnemonic="LCD" description="e">e</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 156 (fh)">lca 156 (fh)</SCANLINE>
 
-    <SCANLINE hits="27" mnemonic="LCD" description="f">f</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 16 d (fh)">lca 16 d (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="g1">g1</SCANLINE>
+    <SCANLINE hits="96" mnemonic="LKL" description="lca 160">lca 160</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LCD" description="h">h</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="lca 161">lca 161</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LCD" description="k18">k18</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="lca 162">lca 162</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LCD" description="kwz">kwz</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 162 (fh)">lca 162 (fh)</SCANLINE>
 
-    <SCANLINE hits="219031" mnemonic="LCD" description="nl">nl</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 162.501.720">lca 162.501.720</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LCD" description="x">x</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="lca 163">lca 163</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 163 (fh)">lca 163 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 163.101.720">lca 163.101.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 164.501.720">lca 164.501.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 2 i (fh)">lca 2 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 200">lca 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 200 (fh)">lca 200 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 221">lca 221</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 223">lca 223</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 223 i (fh)">lca 223 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 223 n (fh)">lca 223 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 23 d (fh)">lca 23 d (fh)</SCANLINE>
+
+    <SCANLINE hits="72" mnemonic="LKL" description="lca 250">lca 250</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 251">lca 251</SCANLINE>
+
+    <SCANLINE hits="59" mnemonic="LKL" description="lca 252">lca 252</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lca 252 (fh)">lca 252 (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lca 254">lca 254</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 256">lca 256</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="lca 260">lca 260</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lca 261">lca 261</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 261 (fh)">lca 261 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 261.101.720">lca 261.101.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 269">lca 269</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lca 290">lca 290</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 296">lca 296</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 300">lca 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 304">lca 304</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 305">lca 305</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 322">lca 322</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lca 350">lca 350</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 356">lca 356</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lca 390">lca 390</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 42 d (fh)">lca 42 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 42 i (fh)">lca 42 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 422">lca 422</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 432 k (fh)">lca 432 k (fh)</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lca 460">lca 460</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 460.601.720">lca 460.601.720</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lca 461">lca 461</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 461.201.720">lca 461.201.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 461.920.172">lca 461.920.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 462">lca 462</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 464">lca 464</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 471 (fh)">lca 471 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 484 (fh)">lca 484 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 497">lca 497</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 5">lca 5</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 512 m (fh)">lca 512 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 513">lca 513</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 513 (fh)">lca 513 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 515 k (fh)">lca 515 k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 560">lca 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 560.801.720">lca 560.801.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 562.801.720">lca 562.801.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 563.601.720">lca 563.601.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 564">lca 564</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 616 (fh)">lca 616 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 650">lca 650</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 656">lca 656</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="lca 660">lca 660</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 660.201.720">lca 660.201.720</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 662">lca 662</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 662 (fh)">lca 662 (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lca 663">lca 663</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 663 (fh)">lca 663 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 716">lca 716</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lca 760">lca 760</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 760 (fh)">lca 760 (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 905">lca 905</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 920">lca 920</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 926">lca 926</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca00.172 lma301.720">lca00.172 lma301.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca156.130.172">lca156.130.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca161.101.720">lca161.101.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca161.401.720">lca161.401.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca162.20">lca162.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca416.013.0172">lca416.013.0172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca460.170">lca460.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca462.510.172">lca462.510.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca560.901.720">lca560.901.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca561.017.729">lca561.017.729</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca561.501.720">lca561.501.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca563.017.20">lca563.017.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca565.017.20">lca565.017.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca720.172.0">lca720.172.0</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcb">lcb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 0 d (fh)">lcb 0 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 0 f (fh)">lcb 0 f (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 00 e (fh)">lcb 00 e (fh)</SCANLINE>
+
+    <SCANLINE hits="84" mnemonic="LKL" description="lcb 000">lcb 000</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lcb 010">lcb 010</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="lcb 011">lcb 011</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="lcb 020">lcb 020</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 021">lcb 021</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcb 030">lcb 030</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcb 040">lcb 040</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcb 041">lcb 041</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 052">lcb 052</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcb 111">lcb 111</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 111 (fh)">lcb 111 (fh)</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lcb 400">lcb 400</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcb 402">lcb 402</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcb 403">lcb 403</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcb 405">lcb 405</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lcb 406">lcb 406</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcb 408">lcb 408</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcb 409">lcb 409</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcb 410">lcb 410</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcb 415">lcb 415</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcb 419">lcb 419</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcb 722">lcb 722</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="lcc">lcc</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 0 d (fh)">lcc 0 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 0 i (fh)">lcc 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="75" mnemonic="LKL" description="lcc 000">lcc 000</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcc 010">lcc 010</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lcc 011">lcc 011</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="lcc 020">lcc 020</SCANLINE>
+
+    <SCANLINE hits="74" mnemonic="LKL" description="lcc 021">lcc 021</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lcc 022">lcc 022</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 023">lcc 023</SCANLINE>
+
+    <SCANLINE hits="147" mnemonic="LKL" description="lcc 024">lcc 024</SCANLINE>
+
+    <SCANLINE hits="144" mnemonic="LKL" description="lcc 025">lcc 025</SCANLINE>
+
+    <SCANLINE hits="44" mnemonic="LKL" description="lcc 026">lcc 026</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="lcc 027">lcc 027</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 033">lcc 033</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 1">lcc 1</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="lcc 100">lcc 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 100.172.0">lcc 100.172.0</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lcc 110">lcc 110</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 112">lcc 112</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 112 d (fh)">lcc 112 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 112 m (fh)">lcc 112 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 112 n (fh)">lcc 112 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 114 m (fh)">lcc 114 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 115">lcc 115</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 116">lcc 116</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 2 d">lcc 2 d</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lcc 2 d (fh)">lcc 2 d (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcc 2 i (fh)">lcc 2 i (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 2 m (fh)">lcc 2 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 2 n (fh)">lcc 2 n (fh)</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcc 200">lcc 200</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcc 210">lcc 210</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcc 211">lcc 211</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 211 (fh)">lcc 211 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 211 m (fh)">lcc 211 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 22 d (fh)">lcc 22 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 22 i (fh)">lcc 22 i (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcc 22 k (fh)">lcc 22 k (fh)</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lcc 22 m (fh)">lcc 22 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 24 e (fh)">lcc 24 e (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 24 f (fh)">lcc 24 f (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 24 i">lcc 24 i</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcc 24 i (fh)">lcc 24 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 24 n (fh)">lcc 24 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 24 w (fh)">lcc 24 w (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 241">lcc 241</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcc 241 (fh)">lcc 241 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 242">lcc 242</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 25 i">lcc 25 i</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 25 k (fh)">lcc 25 k (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcc 25 m (fh)">lcc 25 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 25 n (fh)">lcc 25 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 253 (fh)">lcc 253 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 26 d (fh)">lcc 26 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 26 i (fh)">lcc 26 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 26 m (fh)">lcc 26 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 27 k (fh)">lcc 27 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 27 m (fh)">lcc 27 m (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcc 27 n (fh)">lcc 27 n (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 29 i (fh)">lcc 29 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 4 d">lcc 4 d</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 4 d (fh)">lcc 4 d (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 4 i (fh)">lcc 4 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 411">lcc 411</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 411 (fh)">lcc 411 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 42 m (fh)">lcc 42 m (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcc 5 d (fh)">lcc 5 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 5 f">lcc 5 f</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 5 f (fh)">lcc 5 f (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcc 5 i (fh)">lcc 5 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 5 m (fh)">lcc 5 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 5 n (fh)">lcc 5 n (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcc 6 d (fh)">lcc 6 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcc 6 i (fh)">lcc 6 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 6 k (fh)">lcc 6 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 711">lcc 711</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 722 n">lcc 722 n</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 8 i (fh)">lcc 8 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc 933">lcc 933</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc o">lcc o</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc000.170">lcc000.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc000.171">lcc000.171</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc100.170">lcc100.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcc240">lcc240</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcco">lcco</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lcd">lcd</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcd 0 b (fh)">lcd 0 b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 0 d (fh)">lcd 0 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 0 i">lcd 0 i</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 0 i (fh)">lcd 0 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 0 p (fh)">lcd 0 p (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 0 w (fh)">lcd 0 w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 00">lcd 00</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 00 d (fh)">lcd 00 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 00 f (fh)">lcd 00 f (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 00 i (fh)">lcd 00 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 00 w (fh)">lcd 00 w (fh)</SCANLINE>
+
+    <SCANLINE hits="66" mnemonic="LKL" description="lcd 000">lcd 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 000.172">lcd 000.172</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lcd 010">lcd 010</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcd 011">lcd 011</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="lcd 012">lcd 012</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lcd 013">lcd 013</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lcd 014">lcd 014</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcd 015">lcd 015</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="lcd 016">lcd 016</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 017">lcd 017</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcd 019">lcd 019</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcd 020">lcd 020</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="lcd 021">lcd 021</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lcd 024">lcd 024</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="lcd 025">lcd 025</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="lcd 026">lcd 026</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="lcd 027">lcd 027</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 028 (fh)">lcd 028 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 036">lcd 036</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 040">lcd 040</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 041">lcd 041</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 044">lcd 044</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 046">lcd 046</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 048">lcd 048</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lcd 049">lcd 049</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcd 060">lcd 060</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcd 061">lcd 061</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="lcd 062">lcd 062</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 065">lcd 065</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 077 (fh)">lcd 077 (fh)</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="lcd 080">lcd 080</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="lcd 081">lcd 081</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lcd 082">lcd 082</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="lcd 083">lcd 083</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="lcd 084">lcd 084</SCANLINE>
+
+    <SCANLINE hits="53" mnemonic="LKL" description="lcd 090">lcd 090</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="lcd 091">lcd 091</SCANLINE>
+
+    <SCANLINE hits="55" mnemonic="LKL" description="lcd 092">lcd 092</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcd 095">lcd 095</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 11 m (fh)">lcd 11 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 12 i (fh)">lcd 12 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 122 k (fh)">lcd 122 k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 13 m (fh)">lcd 13 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 16 k (fh)">lcd 16 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 19 k (fh)">lcd 19 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 19 n (fh)">lcd 19 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 212 (fh)">lcd 212 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 411">lcd 411</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 411 (fh)">lcd 411 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 430 w (fh)">lcd 430 w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 62 i (fh)">lcd 62 i (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 62 m (fh)">lcd 62 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 62 n (fh)">lcd 62 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 63 k (fh)">lcd 63 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 632 (fh)">lcd 632 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 711 f">lcd 711 f</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 734">lcd 734</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 74 m (fh)">lcd 74 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 8 d (fh)">lcd 8 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 8 f (fh)">lcd 8 f (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 8 i (fh)">lcd 8 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 812 (fh)">lcd 812 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 823">lcd 823</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 83 m (fh)">lcd 83 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 832 d (fh)">lcd 832 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 85 n (fh)">lcd 85 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 9 d (fh)">lcd 9 d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 9 f (fh)">lcd 9 f (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 9 i (fh)">lcd 9 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 9 p (fh)">lcd 9 p (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcd 905">lcd 905</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 905 (fh)">lcd 905 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 911">lcd 911</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 912 k (fh)">lcd 912 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 915">lcd 915</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 916">lcd 916</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcd 925">lcd 925</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 925 (fh)">lcd 925 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 93 d">lcd 93 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 93 f (fh)">lcd 93 f (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 93 m (fh)">lcd 93 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 94 m (fh)">lcd 94 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 966">lcd 966</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcd 97 k (fh)">lcd 97 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 97 m (fh)">lcd 97 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 982 k (fh)">lcd 982 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 990 (fh)">lcd 990 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd 991 (fh)">lcd 991 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd120.20">lcd120.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcd830.170">lcd830.170</SCANLINE>
+
+    <SCANLINE hits="83" mnemonic="LKL" description="lce">lce</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 001">lce 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 003 (fh)">lce 003 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 004 (fh)">lce 004 (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 005 (fh)">lce 005 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 008.50">lce 008.50</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 050.036">lce 050.036</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 050.410">lce 050.410</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 054 m (fh)">lce 054 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 056">lce 056</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 056 (fh)">lce 056 (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lce 1">lce 1</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 10 k (fh)">lce 10 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 103 (fh)">lce 103 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 15 a (fh)">lce 15 a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 160 (fh)">lce 160 (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="lce 2">lce 2</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 200">lce 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 202">lce 202</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 252.452">lce 252.452</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 252.453">lce 252.453</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 260 (fh)">lce 260 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 260.900 rsuchen">lce 260.900 rsuchen</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 303,205">lce 303,205</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce 516 (fh)">lce 516 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 6">lce 6</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 616 (fh)">lce 616 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 664.003">lce 664.003</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 760.107 pz 7 aust nt 06 aust">lce 760.107 pz 7 aust nt 06 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 760.230">lce 760.230</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce003,822">lce003,822</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lce1">lce1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce10 i (fh)">lce10 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce156.020">lce156.020</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce157.038">lce157.038</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 frank">lce16 frank</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 gb045 (fh)">lce16 gb045 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 gb2 i (fh)">lce16 gb2 i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 gb3 k (fh)">lce16 gb3 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 su k (fh)">lce16 su k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce16 sz i (fh)">lce16 sz i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce160.280">lce160.280</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce160.340">lce160.340</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce160.350">lce160.350</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce160.904">lce160.904</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce161.004">lce161.004</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce162.104">lce162.104</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce162.904">lce162.904</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce163.101">lce163.101</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lce163.301">lce163.301</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce163.704">lce163.704</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce163.801">lce163.801</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce20 d406 (fh)">lce20 d406 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce25 brd f (fh)">lce25 brd f (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce25 brd041 (fh)">lce25 brd041 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce25 d853 (fh)">lce25 d853 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce250.862">lce250.862</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce252.605">lce252.605</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce253.036">lce253.036</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce26 bln3 m (fh)">lce26 bln3 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce26 nrw i (fh)">lce26 nrw i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce29 0 (fh)">lce29 0 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce3">lce3</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce4">lce4</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce456.010">lce456.010</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce460.752">lce460.752</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce460.804">lce460.804</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce460.900">lce460.900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce461.300">lce461.300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce461.404">lce461.404</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce461.704">lce461.704</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce463.404">lce463.404</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce56 ruanda">lce56 ruanda</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce560.50">lce560.50</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce561.004">lce561.004</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce561.304">lce561.304</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce561.800">lce561.800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce562.003">lce562.003</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce562.904">lce562.904</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce563.104">lce563.104</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce563.401">lce563.401</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce563.701">lce563.701</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce564.400">lce564.400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce564.751">lce564.751</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce565.204">lce565.204</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce565.404">lce565.404</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce66 kan">lce66 kan</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce660.600">lce660.600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce660.700">lce660.700</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce661.104">lce661.104</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce661.204">lce661.204</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce662.304">lce662.304</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce662.501">lce662.501</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce664.204">lce664.204</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce760.104">lce760.104</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce760.204">lce760.204</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce860.804">lce860.804</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lce861.40">lce861.40</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcf 100">lcf 100</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcg">lcg</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcl">lcl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lclo">lclo</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lcm">lcm</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lco">lco</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lco 760">lco 760</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcp">lcp</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lcr">lcr</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lcs">lcs</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lcu">lcu</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lcw">lcw</SCANLINE>
+
+    <SCANLINE hits="191" mnemonic="LKL" description="ld">ld</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 0">ld 0</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="ld 000">ld 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 060">ld 060</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ld 16 finn">ld 16 finn</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 finn ld 16 udssr">ld 16 finn ld 16 udssr</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 gb lc 16 gb">ld 16 gb lc 16 gb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 gb le 16 gb">ld 16 gb le 16 gb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 ndl">ld 16 ndl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 ndl qm 16 ndl">ld 16 ndl qm 16 ndl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 16 oest">ld 16 oest</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ld 2">ld 2</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 5">ld 5</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld 66 arg">ld 66 arg</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld 66 arg lc 66 arg">ld 66 arg lc 66 arg</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ld 66 kan">ld 66 kan</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ld 66 usa">ld 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 66 usa 6 kalifornien ll 66 usa 6 kalifornien">ld 66 usa 6 kalifornien ll 66 usa 6 kalifornien</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 66 usa 9 wichita">ld 66 usa 9 wichita</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 66 usa lt 66 usa">ld 66 usa lt 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld 66 usa pz 66 usa">ld 66 usa pz 66 usa</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld 7 aust">ld 7 aust</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld 7 aust lc 7 aust">ld 7 aust lc 7 aust</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ld a (fh)">ld a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld at">ld at</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld b (fh)">ld b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld d (fh)">ld d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld e (fh)">ld e (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ld i (fh)">ld i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld k (fh)">ld k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ld n (fh)">ld n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld o">ld o</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ld q (fh)">ld q (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld s (fh)">ld s (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ld v (fh)">ld v (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld z">ld z</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ld0 300">ld0 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ld1 190">ld1 190</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="ldc">ldc</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ldc 010">ldc 010</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ldc 020">ldc 020</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ldc 030">ldc 030</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ldc 040">ldc 040</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ldc 050">ldc 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 200">ldc 200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ldc 300">ldc 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ldc 300 m (fh)">ldc 300 m (fh)</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="ldc 400">ldc 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40005 entw m (fh)">ldc 40005 entw m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40010 e k (fh)">ldc 40010 e k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40011 we m (fh)">ldc 40011 we m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 fr m (fh)">ldc 40016 fr m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 gb 6 en w (fh)">ldc 40016 gb 6 en w (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ldc 40016 gb m (fh)">ldc 40016 gb m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 gb s (fh)">ldc 40016 gb s (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 it k (fh)">ldc 40016 it k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 su m (fh)">ldc 40016 su m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40016 un d (fh)">ldc 40016 un d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40025 brd m (fh)">ldc 40025 brd m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40041 vas a (fh)">ldc 40041 vas a (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ldc 40046 ch k (fh)">ldc 40046 ch k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40046 in a (fh)">ldc 40046 in a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40046 in k (fh)">ldc 40046 in k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40046 in m (fh)">ldc 40046 in m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40046 indo k (fh)">ldc 40046 indo k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40056 aeg k (fh)">ldc 40056 aeg k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40056 aeth k (fh)">ldc 40056 aeth k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40056 ke m (fh)">ldc 40056 ke m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40061 lam d (fh)">ldc 40061 lam d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40066 ka k (fh)">ldc 40066 ka k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ldc 40066 usa a (fh)">ldc 40066 usa a (fh)</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="60,00+Euro+zzgl.+Porto" />
+<SCANPREV term="lca+120+(fh)" />
 
+
+<SCANNEXT term="ldc+40066+usa+a+(fh)" />
 
 </RESULT>

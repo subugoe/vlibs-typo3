@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0de00840-3</SESSIONVAR>
+<SESSIONVAR name="SID">dbae2020-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejaa 280">ejaa 280</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejaa 300">ejaa 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejaa 320">ejaa 320</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejaa 400">ejaa 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejaa 430">ejaa 430</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ejaa 460">ejaa 460</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejaa 560">ejaa 560</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejaa 580">ejaa 580</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejaa 600">ejaa 600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejaa-600">ejaa-600</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejab">ejab</SCANLINE>
+
+    <SCANLINE hits="94" mnemonic="LKL" description="ejab 000">ejab 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejab 000 m">ejab 000 m</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejab 001">ejab 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejab 009">ejab 009</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="ejab 050">ejab 050</SCANLINE>
+
+    <SCANLINE hits="52" mnemonic="LKL" description="ejab 060">ejab 060</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="ejab 100">ejab 100</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="ejab 120">ejab 120</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="ejab 150">ejab 150</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejab 170">ejab 170</SCANLINE>
+
+    <SCANLINE hits="57" mnemonic="LKL" description="ejab 180">ejab 180</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="ejab 200">ejab 200</SCANLINE>
+
+    <SCANLINE hits="110" mnemonic="LKL" description="ejab 220">ejab 220</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="ejab 250">ejab 250</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="ejh 001">ejh 001</SCANLINE>
 
-    <SCANLINE hits="108" mnemonic="LKL" description="ejh 010">ejh 010</SCANLINE>
-
-    <SCANLINE hits="165" mnemonic="LKL" description="ejh 020">ejh 020</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ejh 030">ejh 030</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="ejh 040">ejh 040</SCANLINE>
-
-    <SCANLINE hits="141" mnemonic="LKL" description="ejh 060">ejh 060</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejh 990">ejh 990</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejh 999">ejh 999</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejh xxx">ejh xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejh010">ejh010</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ejha 000">ejha 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejha 001">ejha 001</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejha 010">ejha 010</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejha 020">ejha 020</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejha 030">ejha 030</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejha 040">ejha 040</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejha 060">ejha 060</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="ejha 200">ejha 200</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ejha 400">ejha 400</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ejha 800">ejha 800</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ejha 900">ejha 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejha 990">ejha 990</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ejhb 000">ejhb 000</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ejhb 100">ejhb 100</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ejhb 200">ejhb 200</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ejab+250" />
+<SCANPREV term="ejaa+280" />
 
 
-<SCANNEXT term="ejhb+200" />
+<SCANNEXT term="ejh+001" />
 
 </RESULT>

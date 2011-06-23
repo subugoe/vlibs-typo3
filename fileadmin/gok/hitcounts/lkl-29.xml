@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">99ba2f7e-3</SESSIONVAR>
+<SESSIONVAR name="SID">e8f0e6f1-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="118" mnemonic="LKL" description="awp 150">awp 150</SCANLINE>
 
     <SCANLINE hits="80" mnemonic="LKL" description="awp 160">awp 160</SCANLINE>
 
@@ -143,7 +145,7 @@
 
     <SCANLINE hits="45" mnemonic="LKL" description="ax">ax</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="ax 000">ax 000</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="ax 000">ax 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ax 800">ax 800</SCANLINE>
 
@@ -631,7 +633,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="bba 100">bba 100</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="bba 110">bba 110</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="bba 110">bba 110</SCANLINE>
 
     <SCANLINE hits="137" mnemonic="LKL" description="bba 120">bba 120</SCANLINE>
 
@@ -843,7 +845,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="bx">bx</SCANLINE>
 
-    <SCANLINE hits="4211" mnemonic="LKL" description="c">c</SCANLINE>
+    <SCANLINE hits="4216" mnemonic="LKL" description="c">c</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="c (fh)">c (fh)</SCANLINE>
 
@@ -877,7 +879,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="c2h">c2h</SCANLINE>
 
-    <SCANLINE hits="136" mnemonic="LKL" description="ca">ca</SCANLINE>
+    <SCANLINE hits="137" mnemonic="LKL" description="ca">ca</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="ca 000">ca 000</SCANLINE>
 
@@ -931,7 +933,7 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="cad">cad</SCANLINE>
 
-    <SCANLINE hits="58" mnemonic="LKL" description="cad 000">cad 000</SCANLINE>
+    <SCANLINE hits="59" mnemonic="LKL" description="cad 000">cad 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cad 050">cad 050</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="cak 250">cak 250</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="cak 270">cak 270</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="awp+160" />
+<SCANPREV term="awp+150" />
 
 
-<SCANNEXT term="cak+270" />
+<SCANNEXT term="cak+250" />
 
 </RESULT>

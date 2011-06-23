@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e4ca1631-1</SESSIONVAR>
+<SESSIONVAR name="SID">b6eb956d-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -617,7 +617,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ebbk 500">ebbk 500</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="ebbk 550">ebbk 550</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="ebbk 550">ebbk 550</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ebbk 600">ebbk 600</SCANLINE>
 
@@ -637,7 +637,9 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ebbl 200">ebbl 200</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ebbl 400">ebbl 400</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ebbl 400">ebbl 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ebbl 990">ebbl 990</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebbm">ebbm</SCANLINE>
 
@@ -901,7 +903,7 @@
 
     <SCANLINE hits="49" mnemonic="LKL" description="ebc 010">ebc 010</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="ebc 020">ebc 020</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="ebc 020">ebc 020</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ebc 030">ebc 030</SCANLINE>
 
@@ -928,8 +930,6 @@
     <SCANLINE hits="1" mnemonic="LKL" description="ebca 060">ebca 060</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebca 250">ebca 250</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebcb 200">ebcb 200</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ebcb 250">ebcb 250</SCANLINE>
 

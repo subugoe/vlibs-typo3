@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">18f99865-2</SESSIONVAR>
+<SESSIONVAR name="SID">97e6e1de-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ath 000">ath 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ath46 in c (fh)">ath46 in c (fh)</SCANLINE>
 
@@ -547,7 +549,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="aw 00">aw 00</SCANLINE>
 
-    <SCANLINE hits="499" mnemonic="LKL" description="aw 000">aw 000</SCANLINE>
+    <SCANLINE hits="500" mnemonic="LKL" description="aw 000">aw 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aw 110">aw 110</SCANLINE>
 
@@ -993,7 +995,7 @@
 
     <SCANLINE hits="111" mnemonic="LKL" description="awp 100">awp 100</SCANLINE>
 
-    <SCANLINE hits="112" mnemonic="LKL" description="awp 110">awp 110</SCANLINE>
+    <SCANLINE hits="113" mnemonic="LKL" description="awp 110">awp 110</SCANLINE>
 
     <SCANLINE hits="188" mnemonic="LKL" description="awp 120">awp 120</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="awp 180">awp 180</SCANLINE>
 
-    <SCANLINE hits="480" mnemonic="LKL" description="awp 200">awp 200</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ath46+in+c+(fh)" />
+<SCANPREV term="ath+000" />
 
 
-<SCANNEXT term="awp+200" />
+<SCANNEXT term="awp+180" />
 
 </RESULT>

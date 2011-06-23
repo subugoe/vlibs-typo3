@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b77d4fac-0</SESSIONVAR>
+<SESSIONVAR name="SID">f8084e1a-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -433,19 +433,17 @@
 
     <SCANLINE hits="29" mnemonic="LKL" description="ecia 750">ecia 750</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ecia 780">ecia 780</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ecia 780">ecia 780</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ecia 80">ecia 80</SCANLINE>
 
-    <SCANLINE hits="188" mnemonic="LKL" description="ecia 800">ecia 800</SCANLINE>
+    <SCANLINE hits="189" mnemonic="LKL" description="ecia 800">ecia 800</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ecia 990">ecia 990</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="ecib 000">ecib 000</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="ecib 000">ecib 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ecib 001">ecib 001</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ecib 010">ecib 010</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="ecib 050">ecib 050</SCANLINE>
 
@@ -653,7 +651,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="edaf 001">edaf 001</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="edaf 100">edaf 100</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="edaf 100">edaf 100</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="edaf 150">edaf 150</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="edcj 170">edcj 170</SCANLINE>
 
+    <SCANLINE hits="4" mnemonic="LKL" description="edcj 180">edcj 180</SCANLINE>
+
 </SCANLIST>
 
 <SCANPREV term="ecc+001" />
 
 
-<SCANNEXT term="edcj+170" />
+<SCANNEXT term="edcj+180" />
 
 </RESULT>

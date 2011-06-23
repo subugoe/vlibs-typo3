@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b761ec28-0</SESSIONVAR>
+<SESSIONVAR name="SID">3d78285b-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -533,7 +533,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ao">ao</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="ao 000">ao 000</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="ao 000">ao 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ao c">ao c</SCANLINE>
 
@@ -563,7 +563,9 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="aoa 420">aoa 420</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aoa 440">aoa 440</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aoa 440">aoa 440</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aoa 450">aoa 450</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aoa 470">aoa 470</SCANLINE>
 
@@ -771,7 +773,7 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="apd 200">apd 200</SCANLINE>
 
-    <SCANLINE hits="87" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
+    <SCANLINE hits="90" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="apd 500">apd 500</SCANLINE>
 
@@ -803,11 +805,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="aph 650">aph 650</SCANLINE>
 
-    <SCANLINE hits="152" mnemonic="LKL" description="aph 700">aph 700</SCANLINE>
+    <SCANLINE hits="151" mnemonic="LKL" description="aph 700">aph 700</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aph 850">aph 850</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="aph 900">aph 900</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aph 900">aph 900</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="apk 000">apk 000</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqu">aqu</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aqu 000">aqu 000</SCANLINE>
-
 </SCANLIST>
 
 <SCANPREV term="ams+93e15+60h10" />
 
 
-<SCANNEXT term="aqu+000" />
+<SCANNEXT term="aqu" />
 
 </RESULT>
