@@ -513,8 +513,8 @@ a.languageSwitcher:hover {
 }
 
 #pazpar2 .pz2-detail-catalogueLink {
-	padding: 1px 16px 1px 4px;
-	background: #d9dbe4 url(arrow.gif) right center no-repeat;
+	padding: 1px 12px 1px 4px;
+	background: #d9dbe4 url(arrow.png) right center no-repeat;
 }
 
 #pazpar2 .pz2-detail-catalogueLink:after {
