@@ -104,16 +104,10 @@ h3 {
 }
 
 h4, h5, h6 {
+	font-size: 100%;
 	font-weight: bold;
 	color: #474747;
-}
-
-h4 {
-	font-size: 1.143em; /*=16px*/
-}
-
-h5 {
-	font-size: 1em; /*=12px*/
+	margin: 0.5em 0em;
 }
 
 p {
