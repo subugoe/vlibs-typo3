@@ -1,0 +1,226 @@
+/**
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/SyntaxHighlighter
+ *
+ * SyntaxHighlighter is donationware. If you are using it, please donate.
+ * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ *
+ * @version
+ * 3.0.83 (July 02 2010)
+ * 
+ * @copyright
+ * Copyright (C) 2004-2010 Alex Gorbatchev.
+ *
+ * @license
+ * Dual licensed under the MIT and GPL licenses.
+ */
+.SyntaxHighlighter a,
+.SyntaxHighlighter div,
+.SyntaxHighlighter code,
+.SyntaxHighlighter table,
+.SyntaxHighlighter table td,
+.SyntaxHighlighter table tr,
+.SyntaxHighlighter table tbody,
+.SyntaxHighlighter table thead,
+.SyntaxHighlighter table caption,
+.SyntaxHighlighter textarea {
+  -moz-border-radius: 0 0 0 0 !important;
+  -webkit-border-radius: 0 0 0 0 !important;
+  background: none !important;
+  border: 0 !important;
+  bottom: auto !important;
+  float: none !important;
+  height: auto !important;
+  left: auto !important;
+  line-height: 1.1em !important;
+  margin: 0 !important;
+  outline: 0 !important;
+  overflow: visible !important;
+  padding: 0 !important;
+  position: static !important;
+  right: auto !important;
+  text-align: left !important;
+  top: auto !important;
+  vertical-align: baseline !important;
+  width: auto !important;
+  box-sizing: content-box !important;
+  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  font-size: 1em !important;
+  min-height: inherit !important;
+  min-height: auto !important;
+}
+
+.SyntaxHighlighter {
+  width: 100% !important;
+  margin: 1em 0 1em 0 !important;
+  position: relative !important;
+  overflow: auto !important;
+  font-size: 1em !important;
+}
+.SyntaxHighlighter.source {
+  overflow: hidden !important;
+}
+.SyntaxHighlighter .bold {
+  font-weight: bold !important;
+}
+.SyntaxHighlighter .italic {
+  font-style: italic !important;
+}
+.SyntaxHighlighter .line {
+  white-space: pre !important;
+}
+.SyntaxHighlighter table {
+  width: 100% !important;
+}
+.SyntaxHighlighter table caption {
+  text-align: left !important;
+  padding: .5em 0 0.5em 1em !important;
+}
+.SyntaxHighlighter table td.code {
+  width: 100% !important;
+}
+.SyntaxHighlighter table td.code .container {
+  position: relative !important;
+}
+.SyntaxHighlighter table td.code .container textarea {
+  box-sizing: border-box !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  background: white !important;
+  padding-left: 1em !important;
+  overflow: hidden !important;
+  white-space: pre !important;
+}
+.SyntaxHighlighter table td.gutter .line {
+  text-align: right !important;
+  padding: 0 0.5em 0 1em !important;
+}
+.SyntaxHighlighter table td.code .line {
+  padding: 0 1em !important;
+}
+.SyntaxHighlighter.nogutter td.code .container textarea, .SyntaxHighlighter.nogutter td.code .line {
+  padding-left: 0em !important;
+}
+.SyntaxHighlighter.show {
+  display: block !important;
+}
+.SyntaxHighlighter.collapsed table {
+  display: none !important;
+}
+.SyntaxHighlighter.collapsed .toolbar {
+  padding: 0.1em 0.8em 0em 0.8em !important;
+  font-size: 1em !important;
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+}
+.SyntaxHighlighter.collapsed .toolbar span {
+  display: inline !important;
+  margin-right: 1em !important;
+}
+.SyntaxHighlighter.collapsed .toolbar span a {
+  padding: 0 !important;
+  display: none !important;
+}
+.SyntaxHighlighter.collapsed .toolbar span a.expandSource {
+  display: inline !important;
+}
+.SyntaxHighlighter .toolbar {
+  position: absolute !important;
+  right: 1px !important;
+  top: 1px !important;
+  width: 11px !important;
+  height: 11px !important;
+  font-size: 10px !important;
+  z-index: 10 !important;
+}
+.SyntaxHighlighter .toolbar span.title {
+  display: inline !important;
+}
+.SyntaxHighlighter .toolbar a {
+  display: block !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  padding-top: 1px !important;
+}
+.SyntaxHighlighter .toolbar a.expandSource {
+  display: none !important;
+}
+.SyntaxHighlighter.ie {
+  font-size: .9em !important;
+  padding: 1px 0 1px 0 !important;
+}
+.SyntaxHighlighter.ie .toolbar {
+  line-height: 8px !important;
+}
+.SyntaxHighlighter.ie .toolbar a {
+  padding-top: 0px !important;
+}
+.SyntaxHighlighter.printing .line.alt1 .content,
+.SyntaxHighlighter.printing .line.alt2 .content,
+.SyntaxHighlighter.printing .line.highlighted .number,
+.SyntaxHighlighter.printing .line.highlighted.alt1 .content,
+.SyntaxHighlighter.printing .line.highlighted.alt2 .content {
+  background: none !important;
+}
+.SyntaxHighlighter.printing .line .number {
+  color: #bbbbbb !important;
+}
+.SyntaxHighlighter.printing .line .content {
+  color: black !important;
+}
+.SyntaxHighlighter.printing .toolbar {
+  display: none !important;
+}
+.SyntaxHighlighter.printing a {
+  text-decoration: none !important;
+}
+.SyntaxHighlighter.printing .plain, .SyntaxHighlighter.printing .plain a {
+  color: black !important;
+}
+.SyntaxHighlighter.printing .comments, .SyntaxHighlighter.printing .comments a {
+  color: #008200 !important;
+}
+.SyntaxHighlighter.printing .string, .SyntaxHighlighter.printing .string a {
+  color: blue !important;
+}
+.SyntaxHighlighter.printing .keyword {
+  color: #006699 !important;
+  font-weight: bold !important;
+}
+.SyntaxHighlighter.printing .preprocessor {
+  color: gray !important;
+}
+.SyntaxHighlighter.printing .variable {
+  color: #aa7700 !important;
+}
+.SyntaxHighlighter.printing .value {
+  color: #009900 !important;
+}
+.SyntaxHighlighter.printing .functions {
+  color: #ff1493 !important;
+}
+.SyntaxHighlighter.printing .constants {
+  color: #0066cc !important;
+}
+.SyntaxHighlighter.printing .script {
+  font-weight: bold !important;
+}
+.SyntaxHighlighter.printing .color1, .SyntaxHighlighter.printing .color1 a {
+  color: gray !important;
+}
+.SyntaxHighlighter.printing .color2, .SyntaxHighlighter.printing .color2 a {
+  color: #ff1493 !important;
+}
+.SyntaxHighlighter.printing .color3, .SyntaxHighlighter.printing .color3 a {
+  color: red !important;
+}
+.SyntaxHighlighter.printing .break, .SyntaxHighlighter.printing .break a {
+  color: black !important;
+}

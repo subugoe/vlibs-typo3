@@ -1,0 +1,70 @@
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.5.0
+
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Updated functions in tx_cpsdevlib_extmgm to avoid parameter $pObj (now functions can be used in TYPO3 < 4.4 as well)
+	* Updated manual
+
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.4.2
+
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Fixed autoload function for TYPO3 < 4.3 support
+
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added function tx_cpsdevlib_div::queryStringToArray
+
+2011-06-09 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.3.1
+
+2011-06-09 Nicole Cordes  <cordes@cps-it.de>
+
+	* Fixed tx_cpsdevlib_debug::debugOutput to evaluate $TYPO3_CONF_VARS['SYS']['displayErrors'] the correct way
+
+2011-06-09 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.3.0
+
+2011-06-09 Nicole Cordes  <cordes@cps-it.de>
+
+	* Deleted function tx_cpsdevlib_debug::var_dump
+	* Added function tx_cpsdevlib_debug::debugOutput with SyntaxHighlighter
+	* Added function tx_cpsdevlib_extmgm::addCssFile
+	* Added function tx_cpsdevlib_extmgm::addCssInline
+	* Added function tx_cpsdevlib_extmgm::addJavascriptFile
+	* Added function tx_cpsdevlib_extmgm::addJavascriptInline
+	* Added function tx_cpsdevlib_parser::nl2SQL
+
+2011-06-08 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.2.0
+
+2011-06-08 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added function tx_cpsdevlib_debug::var_dump to output variables in addiction to $TYPO3_CONF_VARS['SYS']['displayErrors']
+
+2011-04-15 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.1.1
+
+2011-04-15 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added function tx_cpsdevlib_div::callHookObjects to call Hooks from any extension
+
+2011-04-14 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.1.0
+
+2011-04-14 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added manual
+
+2011-04-11 Nicole Cordes  <cordes@cps-it.de>
+
+	* Initial release
