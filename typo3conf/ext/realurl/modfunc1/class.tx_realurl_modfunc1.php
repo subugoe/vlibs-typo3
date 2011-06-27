@@ -25,7 +25,7 @@
 /**
  * Speaking Url management extension
  *
- * $Id: class.tx_realurl_modfunc1.php 46898 2011-04-22 10:04:30Z dmitry $
+ * $Id: class.tx_realurl_modfunc1.php 48752 2011-06-16 08:26:22Z dmitry $
  *
  * @author	Kasper Skaarhoj <kasperYYYY@typo3.com>
  */
@@ -1178,7 +1178,7 @@ class tx_realurl_modfunc1 extends t3lib_extobjbase {
 				$field_alias = $aliasRecord['field_alias'];
 
 					// Compile Row:
-				$output = '
+				$output .= '
 					<tr class="bgColor'.($cc%2 ? '-20':'-10').'">
 						'.implode('
 						',$tCells).'
