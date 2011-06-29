@@ -107,8 +107,12 @@ h4, h5, h6 {
 	font-size: 100%;
 	font-weight: bold;
 	color: #474747;
+}
+
+h4 {
 	margin: 0.5em 0em;
 }
+
 
 p {
 	font-size: 1em;
