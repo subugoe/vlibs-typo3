@@ -522,7 +522,7 @@ a.languageSwitcher:hover {
 
 #pazpar2 .pz2-detail-catalogueLink:after {
 	margin: 0;
-	content: none;
+	content: '';
 }
 
 #pazpar2 fieldset {
