@@ -1,0 +1,12 @@
+2011-05-05 Nicole Cordes  <cordes@cps-it.de>
+
+	* Changed dependency to minor realurl version
+	* Added suggestion to install extension 404 Page not found handling (pagenotfoundhandling)
+
+2011-05-04 Vladimir Falcon Piva  <falcon@cps-it.de>
+
+	* Fixed call old error handler
+
+2011-05-04 Vladimir Falcon Piva  <falcon@cps-it.de>
+
+	* Initial release
