@@ -1,4 +1,5 @@
 temp*
-typo3temp
 typo3conf/deprecation*
+/typo3temp/*
+!/typo3temp/dummy*
 /.git-rewrite/
