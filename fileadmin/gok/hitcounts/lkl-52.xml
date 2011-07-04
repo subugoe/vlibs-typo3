@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6ef1b33e-3</SESSIONVAR>
+<SESSIONVAR name="SID">6e6e98a2-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejhu 200">ejhu 200</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="ejhu 300">ejhu 300</SCANLINE>
 
@@ -889,9 +891,9 @@
 
     <SCANLINE hits="819" mnemonic="LKL" description="fl">fl</SCANLINE>
 
-    <SCANLINE hits="234" mnemonic="LKL" description="fl 000">fl 000</SCANLINE>
+    <SCANLINE hits="235" mnemonic="LKL" description="fl 000">fl 000</SCANLINE>
 
-    <SCANLINE hits="383" mnemonic="LKL" description="fl 050">fl 050</SCANLINE>
+    <SCANLINE hits="384" mnemonic="LKL" description="fl 050">fl 050</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="fl 060">fl 060</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="fmb 300">fmb 300</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="fmb 400">fmb 400</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ejhu+300" />
+<SCANPREV term="ejhu+200" />
 
 
-<SCANNEXT term="fmb+400" />
+<SCANNEXT term="fmb+300" />
 
 </RESULT>

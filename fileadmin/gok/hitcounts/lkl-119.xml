@@ -2,12 +2,186 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">bf0d781b-1</SESSIONVAR>
+<SESSIONVAR name="SID">41c63e5c-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="fsb 100">fsb 100</SCANLINE>
+
+    <SCANLINE hits="54" mnemonic="LKL" description="fsb 200">fsb 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsb 288">fsb 288</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="fsb 300">fsb 300</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="fsb 600">fsb 600</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="fsb 700">fsb 700</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="fsc">fsc</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="fsc 000">fsc 000</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="fsc 100">fsc 100</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="fsc 200">fsc 200</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="fsc 300">fsc 300</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="fsc 500">fsc 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsc 66 usa">fsc 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsc 700">fsc 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fsc 900">fsc 900</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="fsc m (fh)">fsc m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fse">fse</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="fse 000">fse 000</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="fse 300">fse 300</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fse 400">fse 400</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="fse 600">fse 600</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="fse 800">fse 800</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fsf">fsf</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="fsf 000">fsf 000</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="fsf 100">fsf 100</SCANLINE>
+
+    <SCANLINE hits="152" mnemonic="LKL" description="fsf 200">fsf 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsf 200 v">fsf 200 v</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="fsf 300">fsf 300</SCANLINE>
+
+    <SCANLINE hits="61" mnemonic="LKL" description="fsf 400">fsf 400</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="fsf 500">fsf 500</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fsf 600">fsf 600</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="fsf 800">fsf 800</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="fsf m (fh)">fsf m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsg 000">fsg 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsg 500">fsg 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsh">fsh</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsi 000">fsi 000</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="fsj">fsj</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="fsj 000">fsj 000</SCANLINE>
+
+    <SCANLINE hits="114" mnemonic="LKL" description="fsj 100">fsj 100</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="fsj 200">fsj 200</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="fsj 250">fsj 250</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fsj 290">fsj 290</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="fsj 300">fsj 300</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="fsj 400">fsj 400</SCANLINE>
+
+    <SCANLINE hits="130" mnemonic="LKL" description="fsj 500">fsj 500</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="fsj 600">fsj 600</SCANLINE>
+
+    <SCANLINE hits="60" mnemonic="LKL" description="fsj 700">fsj 700</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="fsj 900">fsj 900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsj c">fsj c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsj16 su m (fh)">fsj16 su m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsj400 fsj25 brd 39 os">fsj400 fsj25 brd 39 os</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fsk">fsk</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="fsk 000">fsk 000</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="fsk 100">fsk 100</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="fsk 200">fsk 200</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="fsk 300">fsk 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fsk 400">fsk 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fsk 500">fsk 500</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="fsk 600">fsk 600</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="fsk 700">fsk 700</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="fsk 800">fsk 800</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="fsk 900">fsk 900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsk m (fh)">fsk m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsk6 ung">fsk6 ung</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="fsl 000">fsl 000</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="fsl 100">fsl 100</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="fsl 200">fsl 200</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="fsl 300">fsl 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="fsl 500">fsl 500</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="fsl 900">fsl 900</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="fsm">fsm</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsr">fsr</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fss">fss</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsv m (fh)">fsv m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsw 000">fsw 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsy 000">fsy 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="fsy 100">fsy 100</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fsy 200">fsy 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsy 300">fsy 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsy 400">fsy 400</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="fsy 500">fsy 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="fsy 600">fsy 600</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="fsy 700">fsy 700</SCANLINE>
+
+    <SCANLINE hits="1743" mnemonic="LKL" description="ft">ft</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft 00">ft 00</SCANLINE>
+
+    <SCANLINE hits="2247" mnemonic="LKL" description="ft 000">ft 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ft 011">ft 011</SCANLINE>
 
@@ -407,7 +581,7 @@
 
     <SCANLINE hits="52" mnemonic="LKL" description="fth 300">fth 300</SCANLINE>
 
-    <SCANLINE hits="429" mnemonic="LKL" description="fth 400">fth 400</SCANLINE>
+    <SCANLINE hits="433" mnemonic="LKL" description="fth 400">fth 400</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="fth 500">fth 500</SCANLINE>
 
@@ -835,185 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fx 000">fx 000</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="fx 10">fx 10</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 100">fx 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 15">fx 15</SCANLINE>
-
-    <SCANLINE hits="49" mnemonic="LKL" description="fx 16">fx 16</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 aust">fx 16 aust</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="fx 16 bel">fx 16 bel</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 bul">fx 16 bul</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 eng">fx 16 eng</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 fia">fx 16 fia</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="fx 16 fin">fx 16 fin</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 finn">fx 16 finn</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 finn.">fx 16 finn.</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16 fra">fx 16 fra</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 fra pz 61 karibik">fx 16 fra pz 61 karibik</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 fx 0">fx 16 fx 0</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="fx 16 gb">fx 16 gb</SCANLINE>
-
-    <SCANLINE hits="71" mnemonic="LKL" description="fx 16 gro">fx 16 gro</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 gro77">fx 16 gro77</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 irl">fx 16 irl</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="fx 16 ita">fx 16 ita</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 ital.">fx 16 ital.</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 jug">fx 16 jug</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16 nie">fx 16 nie</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16 oest">fx 16 oest</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 oester">fx 16 oester</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="fx 16 pol">fx 16 pol</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 pol.">fx 16 pol.</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 por">fx 16 por</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 rsuchen">fx 16 rsuchen</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16 schwe">fx 16 schwe</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="fx 16 schweiz">fx 16 schweiz</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 sow">fx 16 sow</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="fx 16 spa">fx 16 spa</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="fx 16 tsch">fx 16 tsch</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="fx 16 ung">fx 16 ung</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16 ung l 16 ung">fx 16 ung l 16 ung</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16 ung ret">fx 16 ung ret</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16gro">fx 16gro</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16oest">fx 16oest</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 16schwe">fx 16schwe</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 16ung">fx 16ung</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 19 han">fx 19 han</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="fx 20">fx 20</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 20 fx 21">fx 20 fx 21</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 20 z0">fx 20 z0</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 20 z212">fx 20 z212</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 21">fx 21</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 21 bad">fx 21 bad</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 21 hes">fx 21 hes</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 21 wes">fx 21 wes</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 22">fx 22</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 23">fx 23</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="fx 26">fx 26</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 26 524">fx 26 524</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 26 gro">fx 26 gro</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 26 z 548">fx 26 z 548</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 27">fx 27</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 27 nie">fx 27 nie</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="fx 28">fx 28</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="fx 29">fx 29</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 bam">fx 29 bam</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 bay">fx 29 bay</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ber">fx 29 ber</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ber.-100">fx 29 ber.-100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 ber400">fx 29 ber400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 bremen">fx 29 bremen</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 dar">fx 29 dar</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 dui">fx 29 dui</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 eich">fx 29 eich</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="fx 29 erf">fx 29 erf</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 freiburg.-400-">fx 29 freiburg.-400-</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 goet.-200">fx 29 goet.-200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 goet400">fx 29 goet400</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="fx 29 goett">fx 29 goett</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 hag">fx 29 hag</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 ham">fx 29 ham</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 han">fx 29 han</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 hild">fx 29 hild</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 karlsruhe">fx 29 karlsruhe</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 koeln">fx 29 koeln</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 koeth">fx 29 koeth</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 kon">fx 29 kon</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 konst">fx 29 konst</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fx 29 lei">fx 29 lei</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 luen">fx 29 luen</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mag">fx 29 mag</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 29 mai">fx 29 mai</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ft+011" />
+<SCANPREV term="fsb+100" />
 
 
-<SCANNEXT term="fx+29+mai" />
+<SCANNEXT term="fx+000" />
 
 </RESULT>

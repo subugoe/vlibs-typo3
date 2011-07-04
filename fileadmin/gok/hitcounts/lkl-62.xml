@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2e5797a8-2</SESSIONVAR>
+<SESSIONVAR name="SID">946e6e1d-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hl 2 c1">hl 2 c1</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="hl 200">hl 200</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hl 210">hl 210</SCANLINE>
 
@@ -237,7 +241,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="hl 640">hl 640</SCANLINE>
 
-    <SCANLINE hits="292" mnemonic="LKL" description="hl 650">hl 650</SCANLINE>
+    <SCANLINE hits="293" mnemonic="LKL" description="hl 650">hl 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hl 660">hl 660</SCANLINE>
 
@@ -637,7 +641,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hp 2 c2 ph 05 roemisches reich pz 16 byzanz pz 56 aegypten kem2 c2">hp 2 c2 ph 05 roemisches reich pz 16 byzanz pz 56 aegypten kem2 c2</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="hp 200">hp 200</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="hp 200">hp 200</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="hp 400">hp 400</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hrk 387">hrk 387</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hrk 400">hrk 400</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="hrk 420">hrk 420</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hl+210" />
+<SCANPREV term="hl+2+c1" />
 
 
-<SCANNEXT term="hrk+420" />
+<SCANNEXT term="hrk+387" />
 
 </RESULT>

@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0ae903f5-1</SESSIONVAR>
+<SESSIONVAR name="SID">d777b9c2-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aqr 900">aqr 900</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="aqt 000">aqt 000</SCANLINE>
 
@@ -111,9 +113,9 @@
 
     <SCANLINE hits="34" mnemonic="LKL" description="arb 200">arb 200</SCANLINE>
 
-    <SCANLINE hits="178" mnemonic="LKL" description="arb 300">arb 300</SCANLINE>
+    <SCANLINE hits="179" mnemonic="LKL" description="arb 300">arb 300</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="arb 500">arb 500</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="arb 500">arb 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="arb p">arb p</SCANLINE>
 
@@ -213,7 +215,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="arh">arh</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="arh 000">arh 000</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="arh 000">arh 000</SCANLINE>
 
     <SCANLINE hits="240" mnemonic="LKL" description="arh 100">arh 100</SCANLINE>
 
@@ -469,7 +471,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="arn 630">arn 630</SCANLINE>
 
-    <SCANLINE hits="89" mnemonic="LKL" description="arn 700">arn 700</SCANLINE>
+    <SCANLINE hits="90" mnemonic="LKL" description="arn 700">arn 700</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="arn 720">arn 720</SCANLINE>
 
@@ -675,7 +677,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="asb 200">asb 200</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="asb 500">asb 500</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="asb 500">asb 500</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="asc 000">asc 000</SCANLINE>
 
@@ -721,7 +723,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="asf16 sz w (fh)">asf16 sz w (fh)</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="ash 000">ash 000</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="ash 000">ash 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ash46 in 9 kalk w (fh)">ash46 in 9 kalk w (fh)</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ath46 in c (fh)">ath46 in c (fh)</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="atk 000">atk 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="aqt+000" />
+<SCANPREV term="aqr+900" />
 
 
-<SCANNEXT term="atk+000" />
+<SCANNEXT term="ath46+in+c+(fh)" />
 
 </RESULT>

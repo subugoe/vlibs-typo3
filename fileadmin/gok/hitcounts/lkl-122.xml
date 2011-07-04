@@ -2,12 +2,186 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4f10cf98-2</SESSIONVAR>
+<SESSIONVAR name="SID">8fcb59d0-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 hoffmann">ges.med.37 hoffmann</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 jung">ges.med.37 jung</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 tuerkheim">ges.med.37 tuerkheim</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 urda">ges.med.37 urda</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.46">ges.med.46</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ges.med.5">ges.med.5</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ges.med.52">ges.med.52</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.53">ges.med.53</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.64">ges.med.64</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.73">ges.med.73</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="ges.med.8">ges.med.8</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ges.med.88">ges.med.88</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.90 schmerz">ges.med.90 schmerz</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gesch.5">gesch.5</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gesch.53">gesch.53</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="get 100">get 100</SCANLINE>
+
+    <SCANLINE hits="180" mnemonic="LKL" description="get 200">get 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="geu">geu</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="gew">gew</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gewaesserschutz">gewaesserschutz</SCANLINE>
+
+    <SCANLINE hits="59" mnemonic="LKL" description="gex">gex</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gez">gez</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gez 36">gez 36</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gez962">gez962</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gf 000">gf 000</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="gg">gg</SCANLINE>
+
+    <SCANLINE hits="60" mnemonic="LKL" description="gg 100">gg 100</SCANLINE>
+
+    <SCANLINE hits="118" mnemonic="LKL" description="gg 200">gg 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gg 200 b">gg 200 b</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gg 200 c">gg 200 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gg 20020 d b">gg 20020 d b</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="gg 202">gg 202</SCANLINE>
+
+    <SCANLINE hits="85" mnemonic="LKL" description="gg 210">gg 210</SCANLINE>
+
+    <SCANLINE hits="83" mnemonic="LKL" description="gg 220">gg 220</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="gg 230">gg 230</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="gg 240">gg 240</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="gg 250">gg 250</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="gg 252">gg 252</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="gg 254">gg 254</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="gg 260">gg 260</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="gg 270">gg 270</SCANLINE>
+
+    <SCANLINE hits="201" mnemonic="LKL" description="gg 300">gg 300</SCANLINE>
+
+    <SCANLINE hits="181" mnemonic="LKL" description="gg 500">gg 500</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="gg 600">gg 600</SCANLINE>
+
+    <SCANLINE hits="112" mnemonic="LKL" description="gg 700">gg 700</SCANLINE>
+
+    <SCANLINE hits="67" mnemonic="LKL" description="gg 800">gg 800</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="gg 805">gg 805</SCANLINE>
+
+    <SCANLINE hits="78" mnemonic="LKL" description="gg 810">gg 810</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="gg 820">gg 820</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gg. chr. knapp. herausgegeben von carl thilo">gg. chr. knapp. herausgegeben von carl thilo</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ggb 902">ggb 902</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ggc">ggc</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ggh 410">ggh 410</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ggh 480">ggh 480</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ggo">ggo</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="gh">gh</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gh 000">gh 000</SCANLINE>
+
+    <SCANLINE hits="8306" mnemonic="LKL" description="gh 300">gh 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gh 500">gh 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gh duq">gh duq</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gi 539">gi 539</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gik ge h lb">gik ge h lb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gjad 300">gjad 300</SCANLINE>
+
+    <SCANLINE hits="192" mnemonic="LKL" description="gk">gk</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gk 000">gk 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gka">gka</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gkh">gkh</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gkp lj">gkp lj</SCANLINE>
+
+    <SCANLINE hits="280" mnemonic="LKL" description="gm">gm</SCANLINE>
+
+    <SCANLINE hits="48" mnemonic="LKL" description="gm 000">gm 000</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="gm 100">gm 100</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="gm 130">gm 130</SCANLINE>
+
+    <SCANLINE hits="30" mnemonic="LKL" description="gm 170">gm 170</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="gm 200">gm 200</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="gm 220">gm 220</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gm 221">gm 221</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gm 221 w (fh)">gm 221 w (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 230">gm 230</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="gm 250">gm 250</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="gm 300">gm 300</SCANLINE>
+
+    <SCANLINE hits="90" mnemonic="LKL" description="gm 350">gm 350</SCANLINE>
+
+    <SCANLINE hits="155" mnemonic="LKL" description="gm 360">gm 360</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 400">gm 400</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="gm 410">gm 410</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="gm 420">gm 420</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="gm 431">gm 431</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gm 431 m (fh)">gm 431 m (fh)</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="gm 440">gm 440</SCANLINE>
 
@@ -109,7 +283,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gm 759">gm 759</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="gm 760">gm 760</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 760">gm 760</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="gm 761">gm 761</SCANLINE>
 
@@ -131,7 +305,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="gm 776">gm 776</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="gm 780">gm 780</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="gm 780">gm 780</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="gm 781">gm 781</SCANLINE>
 
@@ -273,7 +447,7 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="gn 400">gn 400</SCANLINE>
 
-    <SCANLINE hits="191" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
+    <SCANLINE hits="192" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="gn 430">gn 430</SCANLINE>
 
@@ -373,7 +547,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="gn 776">gn 776</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="gn 780">gn 780</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="gn 780">gn 780</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="gn 781">gn 781</SCANLINE>
 
@@ -835,185 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 2485-a">gr 2 h subs 2485-a</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="gr 2 h subs 2500-a">gr 2 h subs 2500-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 3855-a">gr 2 h subs 3855-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 3855-b">gr 2 h subs 3855-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 5391-a">gr 2 h subs 5391-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 7424-b">gr 2 h subs 7424-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h thur i, 16-a">gr 2 h thur i, 16-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h thur ii, 7686-a">gr 2 h thur ii, 7686-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hll xi, 5900-a">gr 2 hll xi, 5900-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp iv, 14675-a">gr 2 hlp iv, 14675-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp iv, 6455-a">gr 2 hlp iv, 6455-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp v, 3405-b">gr 2 hlp v, 3405-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp v, 3405-c">gr 2 hlp v, 3405-c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp v, 3405-d">gr 2 hlp v, 3405-d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 hlp vi, 1845-a">gr 2 hlp vi, 1845-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 1039-a">gr 2 inscr 1039-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 164-a">gr 2 inscr 164-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 3084-a">gr 2 inscr 3084-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 3404-a">gr 2 inscr 3404-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 inscr 967c-a">gr 2 inscr 967c-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 itin i, 4377-a">gr 2 itin i, 4377-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 itin i, 823-a">gr 2 itin i, 823-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 itin i, 823-b">gr 2 itin i, 823-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 j canon 265-a">gr 2 j canon 265-a</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="gr 2 j canon 265-b">gr 2 j canon 265-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 j canon 265-c">gr 2 j canon 265-c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 j germ i, 4936-a">gr 2 j germ i, 4936-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 j syst 5711-a">gr 2 j syst 5711-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 ling ix, 3961-a">gr 2 ling ix, 3961-a</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gr 2 ling v, 3686">gr 2 ling v, 3686</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 ling v, 434-a">gr 2 ling v, 434-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 1436-a">gr 2 m arch i, 1436-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 1485-a">gr 2 m arch i, 1485-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 2299-a">gr 2 m arch i, 2299-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 2307-a">gr 2 m arch i, 2307-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 3270-a">gr 2 m arch i, 3270-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 3437-a">gr 2 m arch i, 3437-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 3944-a">gr 2 m arch i, 3944-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 4413-a">gr 2 m arch i, 4413-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 4609-a">gr 2 m arch i, 4609-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 4828-a">gr 2 m arch i, 4828-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 4887-a">gr 2 m arch i, 4887-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 m arch i, 692-a">gr 2 m arch i, 692-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 math ii, 1560-a">gr 2 math ii, 1560-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-a">gr 2 med chir ii, 6115-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-b">gr 2 med chir ii, 6115-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-c">gr 2 med chir ii, 6115-c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-d">gr 2 med chir ii, 6115-d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-e">gr 2 med chir ii, 6115-e</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-f">gr 2 med chir ii, 6115-f</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir ii, 6115-g">gr 2 med chir ii, 6115-g</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62099-a">gr 2 med chir iv, 62099-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62099-b">gr 2 med chir iv, 62099-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62099-c">gr 2 med chir iv, 62099-c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62099-d">gr 2 med chir iv, 62099-d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62296-a">gr 2 med chir iv, 62296-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med chir iv, 62296-b">gr 2 med chir iv, 62296-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-a">gr 2 med pract 243075-a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gr 2 med pract 243075-b">gr 2 med pract 243075-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-c">gr 2 med pract 243075-c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-d">gr 2 med pract 243075-d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-e">gr 2 med pract 243075-e</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-f">gr 2 med pract 243075-f</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-g">gr 2 med pract 243075-g</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-h">gr 2 med pract 243075-h</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-i">gr 2 med pract 243075-i</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-j">gr 2 med pract 243075-j</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-k">gr 2 med pract 243075-k</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-l">gr 2 med pract 243075-l</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-m">gr 2 med pract 243075-m</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-n">gr 2 med pract 243075-n</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-o">gr 2 med pract 243075-o</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-p">gr 2 med pract 243075-p</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-q">gr 2 med pract 243075-q</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-r">gr 2 med pract 243075-r</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-s">gr 2 med pract 243075-s</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-t">gr 2 med pract 243075-t</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 med pract 243075-u">gr 2 med pract 243075-u</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 merc 459-j">gr 2 merc 459-j</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 merc 5121-a">gr 2 merc 5121-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min ii, 3566-a">gr 2 min ii, 3566-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min ii, 4589">gr 2 min ii, 4589</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min ii, 6076-a">gr 2 min ii, 6076-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min ii, 7715-a">gr 2 min ii, 7715-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min ii, 8710-a">gr 2 min ii, 8710-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 min iii, 6353-a">gr 2 min iii, 6353-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 num 1340-a">gr 2 num 1340-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 num 2469-a">gr 2 num 2469-a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gm+440" />
+<SCANPREV term="ges.med.37+hoffmann" />
 
 
-<SCANNEXT term="gr+2+num+2469-a" />
+<SCANNEXT term="gr+2+h+subs+2485-a" />
 
 </RESULT>

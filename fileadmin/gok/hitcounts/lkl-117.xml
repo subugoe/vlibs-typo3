@@ -2,12 +2,186 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1a831a5c-3</SESSIONVAR>
+<SESSIONVAR name="SID">f6b6d267-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ejde 100">ejde 100</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ejde 110">ejde 110</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ejde 120">ejde 120</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="ejde 150">ejde 150</SCANLINE>
+
+    <SCANLINE hits="59" mnemonic="LKL" description="ejde 200">ejde 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejde 220">ejde 220</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejde 230">ejde 230</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejde 240">ejde 240</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejde 250">ejde 250</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejde 300">ejde 300</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejde 350">ejde 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejde 990">ejde 990</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejdg 550">ejdg 550</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejdi 500">ejdi 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejdk 150">ejdk 150</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejdk 200">ejdk 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejdl 100">ejdl 100</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eje">eje</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="eje 000">eje 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="eje 001">eje 001</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="eje 010">eje 010</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eje 020">eje 020</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="eje 030">eje 030</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="eje 060">eje 060</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="eje 990">eje 990</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eje m">eje m</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eje m (fh)">eje m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eje xxx">eje xxx</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ejea">ejea</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejea 00">ejea 00</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="ejea 000">ejea 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejea 001">ejea 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejea 006">ejea 006</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejea 020">ejea 020</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ejea 050">ejea 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejea 060">ejea 060</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="ejea 080">ejea 080</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="ejea 110">ejea 110</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="ejea 120">ejea 120</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejea 130">ejea 130</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejea 140">ejea 140</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="ejea 150">ejea 150</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="ejea 170">ejea 170</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ejea 200">ejea 200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejea 240">ejea 240</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejea 290">ejea 290</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejea 400">ejea 400</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejea 450">ejea 450</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejea 500">ejea 500</SCANLINE>
+
+    <SCANLINE hits="69" mnemonic="LKL" description="ejea 600">ejea 600</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejea 620">ejea 620</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ejea 990">ejea 990</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejeb">ejeb</SCANLINE>
+
+    <SCANLINE hits="56" mnemonic="LKL" description="ejeb 000">ejeb 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejeb 001">ejeb 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejeb 006">ejeb 006</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="ejeb 050">ejeb 050</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejeb 100">ejeb 100</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejeb 150">ejeb 150</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejeb 200">ejeb 200</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ejeb 250">ejeb 250</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejeb 270">ejeb 270</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejeb 500">ejeb 500</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ejeb 600">ejeb 600</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejeb 700">ejeb 700</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejeb 750">ejeb 750</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejeb m (fh)">ejeb m (fh)</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="ejec 000">ejec 000</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="ejec 050">ejec 050</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejec 100">ejec 100</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejec 120">ejec 120</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="ejec 150">ejec 150</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejec 300">ejec 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejec 400">ejec 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejec 650">ejec 650</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ejec 990">ejec 990</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejed">ejed</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ejed 000">ejed 000</SCANLINE>
+
+    <SCANLINE hits="44" mnemonic="LKL" description="ejed 050">ejed 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejed 200">ejed 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejed d">ejed d</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejen 300">ejen 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejer 990">ejer 990</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejfa 400">ejfa 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejfb 500">ejfb 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejfd 150">ejfd 150</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejga 170">ejga 170</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ejgt 100">ejgt 100</SCANLINE>
 
@@ -835,185 +1009,11 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="fha 300">fha 300</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="fha 300 m (fh)">fha 300 m (fh)</SCANLINE>
-
-    <SCANLINE hits="70" mnemonic="LKL" description="fha 500">fha 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fha 550">fha 550</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fha b (fh)">fha b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fha i (fh)">fha i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fha q (fh)">fha q (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhb 00">fhb 00</SCANLINE>
-
-    <SCANLINE hits="217" mnemonic="LKL" description="fhb 000">fhb 000</SCANLINE>
-
-    <SCANLINE hits="76" mnemonic="LKL" description="fhb 100">fhb 100</SCANLINE>
-
-    <SCANLINE hits="75" mnemonic="LKL" description="fhb 200">fhb 200</SCANLINE>
-
-    <SCANLINE hits="73" mnemonic="LKL" description="fhb 300">fhb 300</SCANLINE>
-
-    <SCANLINE hits="109" mnemonic="LKL" description="fhb 400">fhb 400</SCANLINE>
-
-    <SCANLINE hits="71" mnemonic="LKL" description="fhb 500">fhb 500</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="fhb 600">fhb 600</SCANLINE>
-
-    <SCANLINE hits="210" mnemonic="LKL" description="fhb 700">fhb 700</SCANLINE>
-
-    <SCANLINE hits="64" mnemonic="LKL" description="fhb 800">fhb 800</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="fhb 900">fhb 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhb e (fh)">fhb e (fh)</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="fhc 000">fhc 000</SCANLINE>
-
-    <SCANLINE hits="90" mnemonic="LKL" description="fhc 200">fhc 200</SCANLINE>
-
-    <SCANLINE hits="145" mnemonic="LKL" description="fhc 300">fhc 300</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="fhc 400">fhc 400</SCANLINE>
-
-    <SCANLINE hits="327" mnemonic="LKL" description="fhd 000">fhd 000</SCANLINE>
-
-    <SCANLINE hits="126" mnemonic="LKL" description="fhd 100">fhd 100</SCANLINE>
-
-    <SCANLINE hits="128" mnemonic="LKL" description="fhd 200">fhd 200</SCANLINE>
-
-    <SCANLINE hits="103" mnemonic="LKL" description="fhd 250">fhd 250</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="fhd 300">fhd 300</SCANLINE>
-
-    <SCANLINE hits="104" mnemonic="LKL" description="fhd 400">fhd 400</SCANLINE>
-
-    <SCANLINE hits="75" mnemonic="LKL" description="fhd 450">fhd 450</SCANLINE>
-
-    <SCANLINE hits="57" mnemonic="LKL" description="fhd 500">fhd 500</SCANLINE>
-
-    <SCANLINE hits="115" mnemonic="LKL" description="fhd 600">fhd 600</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="fhd 700">fhd 700</SCANLINE>
-
-    <SCANLINE hits="82" mnemonic="LKL" description="fhd 800">fhd 800</SCANLINE>
-
-    <SCANLINE hits="78" mnemonic="LKL" description="fhd 900">fhd 900</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="fhd 950">fhd 950</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="fhd 980">fhd 980</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhd q (fh)">fhd q (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhe">fhe</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhe l (fh)">fhe l (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fhe m (fh)">fhe m (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="fhf">fhf</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fhj">fhj</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fho">fho</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="fi 000">fi 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fid">fid</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fid 29 dres">fid 29 dres</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fjf">fjf</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fjf260 c">fjf260 c</SCANLINE>
-
-    <SCANLINE hits="900" mnemonic="LKL" description="fk">fk</SCANLINE>
-
-    <SCANLINE hits="124" mnemonic="LKL" description="fk 000">fk 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fk 230">fk 230</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fk a">fk a</SCANLINE>
-
-    <SCANLINE hits="129" mnemonic="LKL" description="fk j">fk j</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fk xxx">fk xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fk.">fk.</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fkb">fkb</SCANLINE>
-
-    <SCANLINE hits="152" mnemonic="LKL" description="fkb 000">fkb 000</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="fkb 100">fkb 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fkc 00">fkc 00</SCANLINE>
-
-    <SCANLINE hits="172" mnemonic="LKL" description="fkc 000">fkc 000</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="fkd">fkd</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="fkd 000">fkd 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fkd 300">fkd 300</SCANLINE>
-
-    <SCANLINE hits="33" mnemonic="LKL" description="fke">fke</SCANLINE>
-
-    <SCANLINE hits="337" mnemonic="LKL" description="fke 000">fke 000</SCANLINE>
-
-    <SCANLINE hits="65" mnemonic="LKL" description="fke 200">fke 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fke 400">fke 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fke 600">fke 600</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fke 70 au">fke 70 au</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fkf 000">fkf 000</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="fkg 000">fkg 000</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="fkh 000">fkh 000</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="fkh 100">fkh 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fkj 000">fkj 000</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="fkk 000">fkk 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="fkl 000">fkl 000</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="fkn 000">fkn 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fkp 400">fkp 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fkt 000">fkt 000</SCANLINE>
-
-    <SCANLINE hits="430" mnemonic="LKL" description="fkw 000">fkw 000</SCANLINE>
-
-    <SCANLINE hits="819" mnemonic="LKL" description="fl">fl</SCANLINE>
-
-    <SCANLINE hits="234" mnemonic="LKL" description="fl 000">fl 000</SCANLINE>
-
-    <SCANLINE hits="383" mnemonic="LKL" description="fl 050">fl 050</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fl 060">fl 060</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fl 16 fi">fl 16 fi</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="fl 55">fl 55</SCANLINE>
-
-    <SCANLINE hits="147" mnemonic="LKL" description="fl a">fl a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ejgt+100" />
+<SCANPREV term="ejde+100" />
 
 
-<SCANNEXT term="fl+a" />
+<SCANNEXT term="fha+300" />
 
 </RESULT>

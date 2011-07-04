@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3d78285b-3</SESSIONVAR>
+<SESSIONVAR name="SID">a19f7d21-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -399,7 +399,7 @@
 
     <SCANLINE hits="51" mnemonic="LKL" description="an">an</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="an 000">an 000</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="an 000">an 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="an d">an d</SCANLINE>
 
@@ -543,7 +543,7 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="aoa 150">aoa 150</SCANLINE>
 
-    <SCANLINE hits="188" mnemonic="LKL" description="aoa 180">aoa 180</SCANLINE>
+    <SCANLINE hits="192" mnemonic="LKL" description="aoa 180">aoa 180</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aoa 200">aoa 200</SCANLINE>
 
@@ -579,7 +579,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aob">aob</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aob 000">aob 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="aob 000">aob 000</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="aob 150">aob 150</SCANLINE>
 
@@ -687,9 +687,9 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="aoe 700">aoe 700</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aog 000">aog 000</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aog 000">aog 000</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aog 100">aog 100</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="aog 100">aog 100</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="aog 200">aog 200</SCANLINE>
 
@@ -698,6 +698,8 @@
     <SCANLINE hits="2" mnemonic="LKL" description="aog 500">aog 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="aog 600">aog 600</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="aog 700">aog 700</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="aoj 000">aoj 000</SCANLINE>
 
@@ -741,7 +743,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="ap">ap</SCANLINE>
 
-    <SCANLINE hits="165" mnemonic="LKL" description="ap 000">ap 000</SCANLINE>
+    <SCANLINE hits="166" mnemonic="LKL" description="ap 000">ap 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ap ey">ap ey</SCANLINE>
 
@@ -773,11 +775,11 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="apd 200">apd 200</SCANLINE>
 
-    <SCANLINE hits="90" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
+    <SCANLINE hits="102" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="apd 500">apd 500</SCANLINE>
 
-    <SCANLINE hits="181" mnemonic="LKL" description="apd 600">apd 600</SCANLINE>
+    <SCANLINE hits="225" mnemonic="LKL" description="apd 600">apd 600</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="apd 700">apd 700</SCANLINE>
 
@@ -997,7 +999,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="aqr 100">aqr 100</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="aqr 500">aqr 500</SCANLINE>
+    <SCANLINE hits="35" mnemonic="LKL" description="aqr 500">aqr 500</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="aqr 800">aqr 800</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqt 200">aqt 200</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aqu">aqu</SCANLINE>
-
 </SCANLIST>
 
 <SCANPREV term="ams+93e15+60h10" />
 
 
-<SCANNEXT term="aqu" />
+<SCANNEXT term="aqt+200" />
 
 </RESULT>

@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e2de9229-1</SESSIONVAR>
+<SESSIONVAR name="SID">c76ba12e-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="28" mnemonic="MSC" description="90c60">90c60</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="MSC" description="90c70">90c70</SCANLINE>
 
@@ -19,7 +21,7 @@
 
     <SCANLINE hits="13" mnemonic="MSC" description="91-00">91-00</SCANLINE>
 
-    <SCANLINE hits="204" mnemonic="MSC" description="91-01">91-01</SCANLINE>
+    <SCANLINE hits="206" mnemonic="MSC" description="91-01">91-01</SCANLINE>
 
     <SCANLINE hits="285" mnemonic="MSC" description="91-02">91-02</SCANLINE>
 
@@ -115,7 +117,7 @@
 
     <SCANLINE hits="292" mnemonic="MSC" description="91b28">91b28</SCANLINE>
 
-    <SCANLINE hits="92" mnemonic="MSC" description="91b30">91b30</SCANLINE>
+    <SCANLINE hits="93" mnemonic="MSC" description="91b30">91b30</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="MSC" description="91b32">91b32</SCANLINE>
 
@@ -153,7 +155,7 @@
 
     <SCANLINE hits="35" mnemonic="MSC" description="91b76">91b76</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="MSC" description="91b82">91b82</SCANLINE>
+    <SCANLINE hits="45" mnemonic="MSC" description="91b82">91b82</SCANLINE>
 
     <SCANLINE hits="84" mnemonic="MSC" description="91b84">91b84</SCANLINE>
 
@@ -751,7 +753,7 @@
 
 </SCANLIST>
 
-<SCANPREV term="90c70" />
+<SCANPREV term="90c60" />
 
 
 </RESULT>

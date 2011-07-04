@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">cd14b883-2</SESSIONVAR>
+<SESSIONVAR name="SID">12a589a7-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="41" mnemonic="LKL" description="gun 210">gun 210</SCANLINE>
+
+    <SCANLINE hits="52" mnemonic="LKL" description="gun 220">gun 220</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="gun 230">gun 230</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gy seyf k (fh)">gy seyf k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gy sibe a (fh)">gy sibe a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy sibe k (fh)">gy sibe k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gun+230" />
+<SCANPREV term="gun+210" />
 
 
-<SCANNEXT term="gy+sibe+k+(fh)" />
+<SCANNEXT term="gy+seyf+k+(fh)" />
 
 </RESULT>

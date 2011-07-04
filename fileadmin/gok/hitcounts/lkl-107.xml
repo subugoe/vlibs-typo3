@@ -2,12 +2,186 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8d26ddbc-2</SESSIONVAR>
+<SESSIONVAR name="SID">9e02901f-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="edba 100">edba 100</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edba 150">edba 150</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="edba 200">edba 200</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="edba 250">edba 250</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edba 300">edba 300</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edbb 000">edbb 000</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="edbb 050">edbb 050</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edbb 100">edbb 100</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edbb 150">edbb 150</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="edbb 200">edbb 200</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edbb 250">edbb 250</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edbb 300">edbb 300</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="edbb 350">edbb 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edbb 360">edbb 360</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edbb 500">edbb 500</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edbc 000">edbc 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edbc 020">edbc 020</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="edbc 050">edbc 050</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="edbc 100">edbc 100</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="edbc 120">edbc 120</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="edbc 150">edbc 150</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edbc 200">edbc 200</SCANLINE>
+
+    <SCANLINE hits="65" mnemonic="LKL" description="edbc 250">edbc 250</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="edbc 350">edbc 350</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edbc 400">edbc 400</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="edbc 450">edbc 450</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edbc 990">edbc 990</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edbc 99ss">edbc 99ss</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edbd 050">edbd 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edbd 150">edbd 150</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edbf 250">edbf 250</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="edc 000">edc 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edc 001">edc 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edc 006">edc 006</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="edc 010">edc 010</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="edc 020">edc 020</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edc 030">edc 030</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="edc 060">edc 060</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edc 350">edc 350</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edc m (fh)">edc m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edc xxx">edc xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edc- 000">edc- 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edca">edca</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="edca 000">edca 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edca 010">edca 010</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edca 020">edca 020</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edca 050">edca 050</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="edca 070">edca 070</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edca 100">edca 100</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="edca 150">edca 150</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edca 170">edca 170</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edca 180">edca 180</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edca 200">edca 200</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edca 220">edca 220</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="edca 250">edca 250</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edca 260">edca 260</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="edca 270">edca 270</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edca 300">edca 300</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="edca 350">edca 350</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edca 360">edca 360</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="edca 370">edca 370</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edca 400">edca 400</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edca 450">edca 450</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edca 550">edca 550</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edca 700">edca 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edca 990">edca 990</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edcb 000">edcb 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edcb 050">edcb 050</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="edcb 100">edcb 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edcb 150">edcb 150</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="edcb 200">edcb 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edcb 250">edcb 250</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edcb 300">edcb 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edcb 550">edcb 550</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="edcc 000">edcc 000</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="edcc 050">edcc 050</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="edcc 100">edcc 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edcc 110">edcc 110</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="edcc 120">edcc 120</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edcc 150">edcc 150</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="edcc 160">edcc 160</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="edcc 170">edcc 170</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="edcc 180">edcc 180</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="edcc 250">edcc 250</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="edcc 300">edcc 300</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="edcc 350">edcc 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="edcc 360">edcc 360</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="edcc 370">edcc 370</SCANLINE>
 
@@ -593,7 +767,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="edeb 400">edeb 400</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="edeb 450">edeb 450</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="edeb 450">edeb 450</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="edeb 600">edeb 600</SCANLINE>
 
@@ -835,185 +1009,11 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="edem 500">edem 500</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="edem 550">edem 550</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edem 600">edem 600</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edeq 000">edeq 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edeq 350">edeq 350</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edf">edf</SCANLINE>
-
-    <SCANLINE hits="227" mnemonic="LKL" description="edf 000">edf 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edf 001">edf 001</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edf 006">edf 006</SCANLINE>
-
-    <SCANLINE hits="99" mnemonic="LKL" description="edf 010">edf 010</SCANLINE>
-
-    <SCANLINE hits="173" mnemonic="LKL" description="edf 020">edf 020</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edf 040">edf 040</SCANLINE>
-
-    <SCANLINE hits="139" mnemonic="LKL" description="edf 060">edf 060</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf 220">edf 220</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf 322">edf 322</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf 350">edf 350</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="edf 990">edf 990</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf 999">edf 999</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf j">edf j</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edf j (fh)">edf j (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf xxx">edf xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edf-">edf-</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edf- 000">edf- 000</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="edfa">edfa</SCANLINE>
-
-    <SCANLINE hits="41" mnemonic="LKL" description="edfa 000">edfa 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfa 001">edfa 001</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="edfa 010">edfa 010</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="edfa 020">edfa 020</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="edfa 040">edfa 040</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="edfa 050">edfa 050</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfa 060">edfa 060</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="edfa 070">edfa 070</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="edfa 080">edfa 080</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfa 100">edfa 100</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="edfa 150">edfa 150</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfa 170">edfa 170</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edfa 200">edfa 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfa 22">edfa 22</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="edfa 220">edfa 220</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edfa 250">edfa 250</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edfa 270">edfa 270</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="edfa 300">edfa 300</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="edfa 350">edfa 350</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="edfa 400">edfa 400</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="edfa 990">edfa 990</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfb">edfb</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="edfb 000">edfb 000</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="edfb 050">edfb 050</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="edfb 100">edfb 100</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edfb 150">edfb 150</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="edfb 200">edfb 200</SCANLINE>
-
-    <SCANLINE hits="73" mnemonic="LKL" description="edfb 250">edfb 250</SCANLINE>
-
-    <SCANLINE hits="46" mnemonic="LKL" description="edfb 270">edfb 270</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="edfb 300">edfb 300</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="edfb 320">edfb 320</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="edfb 330">edfb 330</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfb 340">edfb 340</SCANLINE>
-
-    <SCANLINE hits="50" mnemonic="LKL" description="edfb 350">edfb 350</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="edfb 370">edfb 370</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edfb 380">edfb 380</SCANLINE>
-
-    <SCANLINE hits="192" mnemonic="LKL" description="edfb 400">edfb 400</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="edfb 410">edfb 410</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edfb 420">edfb 420</SCANLINE>
-
-    <SCANLINE hits="70" mnemonic="LKL" description="edfb 450">edfb 450</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="edfb 500">edfb 500</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="edfb 600">edfb 600</SCANLINE>
-
-    <SCANLINE hits="103" mnemonic="LKL" description="edfb 650">edfb 650</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfb 680">edfb 680</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edfb 990">edfb 990</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfc">edfc</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfc 000">edfc 000</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="edfc 050">edfc 050</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edfc 100">edfc 100</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="edfc 150">edfc 150</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="edfc 200">edfc 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfc 230">edfc 230</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfc 280">edfc 280</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfc 350">edfc 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfc 550">edfc 550</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfc 990">edfc 990</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfd">edfd</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="edfd 000">edfd 000</SCANLINE>
-
-    <SCANLINE hits="72" mnemonic="LKL" description="edfd 050">edfd 050</SCANLINE>
-
-    <SCANLINE hits="51" mnemonic="LKL" description="edfd 100">edfd 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edfd 200">edfd 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edfd 400">edfd 400</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="edfd 990">edfd 990</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edfe 000">edfe 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="edcc+370" />
+<SCANPREV term="edba+100" />
 
 
-<SCANNEXT term="edfe+000" />
+<SCANNEXT term="edem+500" />
 
 </RESULT>

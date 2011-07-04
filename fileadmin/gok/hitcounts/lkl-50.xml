@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6a259d96-2</SESSIONVAR>
+<SESSIONVAR name="SID">db1213dc-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ehgm 500">ehgm 500</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ehgm 600">ehgm 600</SCANLINE>
 
@@ -253,7 +255,7 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="eib 010">eib 010</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="eib 020">eib 020</SCANLINE>
+    <SCANLINE hits="34" mnemonic="LKL" description="eib 020">eib 020</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eib 030">eib 030</SCANLINE>
 
@@ -547,7 +549,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="eicb 430">eicb 430</SCANLINE>
 
-    <SCANLINE hits="65" mnemonic="LKL" description="eicb 440">eicb 440</SCANLINE>
+    <SCANLINE hits="69" mnemonic="LKL" description="eicb 440">eicb 440</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eicb 450">eicb 450</SCANLINE>
 
@@ -585,7 +587,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="eicc 430">eicc 430</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="eicc 440">eicc 440</SCANLINE>
+    <SCANLINE hits="36" mnemonic="LKL" description="eicc 440">eicc 440</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="eicc 450">eicc 450</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="ejac 290">ejac 290</SCANLINE>
 
-    <SCANLINE hits="96" mnemonic="LKL" description="ejac 300">ejac 300</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ehgm+600" />
+<SCANPREV term="ehgm+500" />
 
 
-<SCANNEXT term="ejac+300" />
+<SCANNEXT term="ejac+290" />
 
 </RESULT>
