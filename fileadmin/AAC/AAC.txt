@@ -1,0 +1,5 @@
+# set <base> URL
+config.baseURL = http://vlib.sub.uni-goettingen.de/vlib-test/
+
+# load basic config
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
