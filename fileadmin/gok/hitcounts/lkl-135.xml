@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">22230a73-1</SESSIONVAR>
+<SESSIONVAR name="SID">7640920a-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ibr xxx">ibr xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ibt 663">ibt 663</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ibu 500">ibu 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ibu 534">ibu 534</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ibw">ibw</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ibw 000">ibw 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ibw 200">ibw 200</SCANLINE>
 
@@ -313,7 +325,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ic 347">ic 347</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ic 350">ic 350</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="ic 350">ic 350</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ic 351">ic 351</SCANLINE>
 
@@ -561,7 +573,7 @@
 
     <SCANLINE hits="249" mnemonic="LKL" description="ic 543">ic 543</SCANLINE>
 
-    <SCANLINE hits="503" mnemonic="LKL" description="ic 544">ic 544</SCANLINE>
+    <SCANLINE hits="504" mnemonic="LKL" description="ic 544">ic 544</SCANLINE>
 
     <SCANLINE hits="71" mnemonic="LKL" description="ic 545">ic 545</SCANLINE>
 
@@ -593,11 +605,11 @@
 
     <SCANLINE hits="168" mnemonic="LKL" description="ic 570">ic 570</SCANLINE>
 
-    <SCANLINE hits="397" mnemonic="LKL" description="ic 572">ic 572</SCANLINE>
+    <SCANLINE hits="398" mnemonic="LKL" description="ic 572">ic 572</SCANLINE>
 
     <SCANLINE hits="963" mnemonic="LKL" description="ic 573">ic 573</SCANLINE>
 
-    <SCANLINE hits="1414" mnemonic="LKL" description="ic 574">ic 574</SCANLINE>
+    <SCANLINE hits="1415" mnemonic="LKL" description="ic 574">ic 574</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ic 575">ic 575</SCANLINE>
 
@@ -627,7 +639,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ic 61">ic 61</SCANLINE>
 
-    <SCANLINE hits="14930" mnemonic="LKL" description="ic 610">ic 610</SCANLINE>
+    <SCANLINE hits="14932" mnemonic="LKL" description="ic 610">ic 610</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ic 617">ic 617</SCANLINE>
 
@@ -661,11 +673,11 @@
 
     <SCANLINE hits="330" mnemonic="LKL" description="ic 664">ic 664</SCANLINE>
 
-    <SCANLINE hits="9726" mnemonic="LKL" description="ic 665">ic 665</SCANLINE>
+    <SCANLINE hits="9728" mnemonic="LKL" description="ic 665">ic 665</SCANLINE>
 
     <SCANLINE hits="2984" mnemonic="LKL" description="ic 666">ic 666</SCANLINE>
 
-    <SCANLINE hits="1774" mnemonic="LKL" description="ic 667">ic 667</SCANLINE>
+    <SCANLINE hits="1775" mnemonic="LKL" description="ic 667">ic 667</SCANLINE>
 
     <SCANLINE hits="194" mnemonic="LKL" description="ic 668">ic 668</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="iec 660">iec 660</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="iec 661">iec 661</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="iec 665">iec 665</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="iec 666">iec 666</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="iec xxx">iec xxx</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="ief">ief</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ief 000">ief 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ibw+200" />
+<SCANPREV term="ibr+xxx" />
 
 
-<SCANNEXT term="ief+000" />
+<SCANNEXT term="iec+660" />
 
 </RESULT>

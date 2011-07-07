@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">31afcfbb-1</SESSIONVAR>
+<SESSIONVAR name="SID">2f4a7824-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybp k (fh)">ybp k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybp m (fh)">ybp m (fh)</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="ybt 000">ybt 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybt c">ybt c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybt lg">ybt lg</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybt m (fh)">ybt m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ybt ru">ybt ru</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="yc">yc</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="yc 000">yc 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yc a">yc a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yc m (fh)">yc m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yc q (fh)">yc q (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ycd 000">ycd 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yck 000">yck 000</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ycs 000">ycs 000</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ycw 000">ycw 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yd">yd</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="yd 000">yd 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yd b (fh)">yd b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yd k (fh)">yd k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yd16 rus m (fh)">yd16 rus m (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="yde 000">yde 000</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="ydk 000">ydk 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ydk k">ydk k</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ydk k (fh)">ydk k (fh)</SCANLINE>
 
@@ -209,7 +257,7 @@
 
     <SCANLINE hits="43" mnemonic="LKL" description="yfl 000">yfl 000</SCANLINE>
 
-    <SCANLINE hits="105" mnemonic="LKL" description="yfp 000">yfp 000</SCANLINE>
+    <SCANLINE hits="106" mnemonic="LKL" description="yfp 000">yfp 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="yfp k">yfp k</SCANLINE>
 
@@ -522,6 +570,8 @@
     <SCANLINE hits="3" mnemonic="LKL" description="ykd 100">ykd 100</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ykd 300">ykd 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ykd 400">ykd 400</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ykd 600">ykd 600</SCANLINE>
 
@@ -959,61 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="yo k">yo k</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="yo k (fh)">yo k (fh)</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="yo m (fh)">yo m (fh)</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="yo n (fh)">yo n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yo-yy">yo-yy</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="yo-yz">yo-yz</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yo20 d a (fh)">yo20 d a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yo26 hes a (fh)">yo26 hes a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yo26 rpf a (fh)">yo26 rpf a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yop">yop</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yoq m (fh)">yoq m (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="yp">yp</SCANLINE>
-
-    <SCANLINE hits="50" mnemonic="LKL" description="yp 000">yp 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yp a 000">yp a 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yp m (fh)">yp m (fh)</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ypa">ypa</SCANLINE>
-
-    <SCANLINE hits="168" mnemonic="LKL" description="ypa 000">ypa 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ypa m (fh)">ypa m (fh)</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="ypg">ypg</SCANLINE>
-
-    <SCANLINE hits="53" mnemonic="LKL" description="ypg 000">ypg 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ypg m (fh)">ypg m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ypk">ypk</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="ypk 000">ypk 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ypk m (fh)">ypk m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ypo">ypo</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="ypp 000">ypp 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ydk+k+(fh)" />
+<SCANPREV term="ybp+k+(fh)" />
 
 
-<SCANNEXT term="ypp+000" />
+<SCANNEXT term="yo+k" />
 
 </RESULT>

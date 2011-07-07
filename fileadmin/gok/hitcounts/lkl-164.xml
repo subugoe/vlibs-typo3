@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">fadcf870-0</SESSIONVAR>
+<SESSIONVAR name="SID">5ecb6045-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 515">kqm 515</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqm 530">kqm 530</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqm 535">kqm 535</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 538">kqm 538</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqm 540">kqm 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 548">kqm 548</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kqm 551">kqm 551</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqm 570">kqm 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 574">kqm 574</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 600">kqm 600</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="kqm 700">kqm 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqm 720">kqm 720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqm 720 b (fh)">kqm 720 b (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kqm 720 z (fh)">kqm 720 z (fh)</SCANLINE>
 
@@ -583,7 +609,7 @@
 
     <SCANLINE hits="76" mnemonic="LKL" description="ktf 580">ktf 580</SCANLINE>
 
-    <SCANLINE hits="1646" mnemonic="LKL" description="ktf 600">ktf 600</SCANLINE>
+    <SCANLINE hits="1651" mnemonic="LKL" description="ktf 600">ktf 600</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ktf 610">ktf 610</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="kulte heidenthums">kulte heidenthums</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="kurzlq">kurzlq</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="kv">kv</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kv 2 c1">kv 2 c1</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="kv 200">kv 200</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kv 240">kv 240</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="kv 300">kv 300</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kv 320">kv 320</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kv 321">kv 321</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kv 323">kv 323</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kv 330">kv 330</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kv 331">kv 331</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kv 335">kv 335</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kv 337">kv 337</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kqm+720+z+(fh)" />
+<SCANPREV term="kqm+515" />
 
 
-<SCANNEXT term="kv+337" />
+<SCANNEXT term="kulte+heidenthums" />
 
 </RESULT>

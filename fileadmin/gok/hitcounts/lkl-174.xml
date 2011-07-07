@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a17903d1-2</SESSIONVAR>
+<SESSIONVAR name="SID">bf777ac5-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ln 66 usa lw 66 usa">ln 66 usa lw 66 usa</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ln 66 usa lw 66 usa pz 66 usa">ln 66 usa lw 66 usa pz 66 usa</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ln 66 usa nt 06 usa">ln 66 usa nt 06 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln 7">ln 7</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln 7 aust">ln 7 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln 916 gb 422 (fh)">ln 916 gb 422 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln n">ln n</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln033">ln033</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln16 po d (fh)">ln16 po d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln16 un f (fh)">ln16 un f (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln191">ln191</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln223.402">ln223.402</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ln46 kos224 (fh)">ln46 kos224 (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lnc 400">lnc 400</SCANLINE>
 
@@ -21,7 +47,7 @@
 
     <SCANLINE hits="1216" mnemonic="LKL" description="lo">lo</SCANLINE>
 
-    <SCANLINE hits="2355" mnemonic="LKL" description="lo 000">lo 000</SCANLINE>
+    <SCANLINE hits="2356" mnemonic="LKL" description="lo 000">lo 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="lo 000.172">lo 000.172</SCANLINE>
 
@@ -463,7 +489,7 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="lp 022">lp 022</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="lp 023">lp 023</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="lp 023">lp 023</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="lp 030">lp 030</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lqb 5 n (fh)">lqb 5 n (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 5 w (fh)">lqb 5 w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 50 n (fh)">lqb 50 n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 52 k (fh)">lqb 52 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 5916 fr w (fh)">lqb 5916 fr w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 5966 usa m (fh)">lqb 5966 usa m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb 5966 usa w (fh)">lqb 5966 usa w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb00 220 (fh)">lqb00 220 (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb100.170">lqb100.170</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqb130.20 ret">lqb130.20 ret</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqc 0 a (fh)">lqc 0 a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqc 0 u (fh)">lqc 0 u (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqc 146 hong 0 (fh)">lqc 146 hong 0 (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lqc 216 it0 (fh)">lqc 216 it0 (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lnc+400" />
+<SCANPREV term="ln+66+usa+lw+66+usa" />
 
 
-<SCANNEXT term="lqc+216+it0+(fh)" />
+<SCANNEXT term="lqb+5+n+(fh)" />
 
 </RESULT>

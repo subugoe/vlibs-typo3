@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">42a0debb-0</SESSIONVAR>
+<SESSIONVAR name="SID">184138fe-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h l bi v, 648-a">gr 2 h l bi v, 648-a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h l bi vii, 5552-a">gr 2 h l bi vii, 5552-a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h nat iii, 6935-a">gr 2 h nat iii, 6935-a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h russ 3607-a">gr 2 h russ 3607-a</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gr 2 h sax pr 3588-a">gr 2 h sax pr 3588-a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h sax pr 3725-a">gr 2 h sax pr 3725-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 2337-a">gr 2 h subs 2337-a</SCANLINE>
 
@@ -251,7 +263,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="gs">gs</SCANLINE>
 
-    <SCANLINE hits="3714" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
+    <SCANLINE hits="3716" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gs 100">gs 100</SCANLINE>
 
@@ -821,7 +833,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="guh 450">guh 450</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="guh 460">guh 460</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="guh 460">guh 460</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="guh 470">guh 470</SCANLINE>
 
@@ -837,9 +849,9 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="guh 600">guh 600</SCANLINE>
 
-    <SCANLINE hits="59" mnemonic="LKL" description="guh 610">guh 610</SCANLINE>
+    <SCANLINE hits="60" mnemonic="LKL" description="guh 610">guh 610</SCANLINE>
 
-    <SCANLINE hits="137" mnemonic="LKL" description="guh 620">guh 620</SCANLINE>
+    <SCANLINE hits="142" mnemonic="LKL" description="guh 620">guh 620</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="guh 700">guh 700</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="guh25 ddr m (fh)">guh25 ddr m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="guh25 ddr u (fh)">guh25 ddr u (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="guh26 bay k (fh)">guh26 bay k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="guh26 rhei d (fh)">guh26 rhei d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="guh26 thuer k (fh)">guh26 thuer k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="guh41 soas (fh)">guh41 soas (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="guh46 ch a (fh)">guh46 ch a (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gr+2+h+subs+2337-a" />
+<SCANPREV term="gr+2+h+l+bi+v,+648-a" />
 
 
-<SCANNEXT term="guh46+ch+a+(fh)" />
+<SCANNEXT term="guh25+ddr+m+(fh)" />
 
 </RESULT>

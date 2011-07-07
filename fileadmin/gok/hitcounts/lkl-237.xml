@@ -2,12 +2,66 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">fc03e6e6-1</SESSIONVAR>
+<SESSIONVAR name="SID">c04c8d19-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="zy">zy</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="zy 000">zy 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zy a 1">zy a 1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zy a 1 ra qa 1">zy a 1 ra qa 1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zy c">zy c</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zy c zyk800 c">zy c zyk800 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zyd">zyd</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="zye">zye</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="zye 000">zye 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zye 300">zye 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zye 380">zye 380</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zye 440">zye 440</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zye k (fh)">zye k (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="zyec">zyec</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zyed">zyed</SCANLINE>
+
+    <SCANLINE hits="52" mnemonic="LKL" description="zyk">zyk</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="zyk 000">zyk 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zyk 200">zyk 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zyk 800">zyk 800</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zyk 820">zyk 820</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zyk b (fh)">zyk b (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="zyk k (fh)">zyk k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zyk200 c">zyk200 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zyk200 d">zyk200 d</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="zyk620 d">zyk620 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zyk660 c">zyk660 c</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zyk740 c zyk820 c">zyk740 c zyk820 c</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zyk800 c">zyk800 c</SCANLINE>
 
@@ -67,7 +121,7 @@
 
 </SCANLIST>
 
-<SCANPREV term="zyk800+c" />
+<SCANPREV term="zy" />
 
 
 </RESULT>

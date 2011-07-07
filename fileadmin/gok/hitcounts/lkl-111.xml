@@ -2,12 +2,22 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a906860e-0</SESSIONVAR>
+<SESSIONVAR name="SID">264c8c64-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efca 300">efca 300</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="efca 350">efca 350</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="efca 370">efca 370</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="efca 380">efca 380</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efca 390">efca 390</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="efca 400">efca 400</SCANLINE>
 
@@ -999,21 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="efhq 050">efhq 050</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="efhq 100">efhq 100</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="efhq 150">efhq 150</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="efhq 250">efhq 250</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="efhq 350">efhq 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="efhq 370">efhq 370</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="efca+400" />
+<SCANPREV term="efca+300" />
 
 
-<SCANNEXT term="efhq+370" />
+<SCANNEXT term="efhq+050" />
 
 </RESULT>

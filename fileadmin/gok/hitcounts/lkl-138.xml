@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2bf9da57-0</SESSIONVAR>
+<SESSIONVAR name="SID">1d8e275e-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ilp 394">ilp 394</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ilp 400">ilp 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ilp 420">ilp 420</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ilp 500">ilp 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ilp 510">ilp 510</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ilp 513">ilp 513</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ilp 520">ilp 520</SCANLINE>
 
@@ -577,7 +589,7 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="in 534">in 534</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="in 535">in 535</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="in 535">in 535</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="in 536">in 536</SCANLINE>
 
@@ -641,7 +653,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="in 640">in 640</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="in 650">in 650</SCANLINE>
+    <SCANLINE hits="70" mnemonic="LKL" description="in 650">in 650</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="in 660">in 660</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ip 560">ip 560</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ip 570">ip 570</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ip 572">ip 572</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ip 580">ip 580</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ip 600">ip 600</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ip 610">ip 610</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ip xxx">ip xxx</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ilp+520" />
+<SCANPREV term="ilp+394" />
 
 
-<SCANNEXT term="ip+xxx" />
+<SCANNEXT term="ip+560" />
 
 </RESULT>

@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f6e2324b-0</SESSIONVAR>
+<SESSIONVAR name="SID">c7a0be72-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 760">gm 760</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="gm 761">gm 761</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gm 762">gm 762</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="gm 763">gm 763</SCANLINE>
 
@@ -167,7 +173,7 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="gn 400">gn 400</SCANLINE>
 
-    <SCANLINE hits="192" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
+    <SCANLINE hits="193" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="gn 430">gn 430</SCANLINE>
 
@@ -177,7 +183,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gn 440">gn 440</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="gn 450">gn 450</SCANLINE>
+    <SCANLINE hits="55" mnemonic="LKL" description="gn 450">gn 450</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="gn 500">gn 500</SCANLINE>
 
@@ -623,8 +629,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 geogr 251 verlust-a">gr 2 geogr 251 verlust-a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 geogr 256 verlust-b">gr 2 geogr 256 verlust-b</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h afr 1370-a">gr 2 h afr 1370-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h am i, 726-a">gr 2 h am i, 726-a</SCANLINE>
@@ -965,7 +969,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="gs">gs</SCANLINE>
 
-    <SCANLINE hits="3714" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
+    <SCANLINE hits="3716" mnemonic="LKL" description="gs 000">gs 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gs 100">gs 100</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gtw">gtw</SCANLINE>
 
-    <SCANLINE hits="1169" mnemonic="LKL" description="gu">gu</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="gu (fh)">gu (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gm+763" />
+<SCANPREV term="gm+760" />
 
 
-<SCANNEXT term="gu+(fh)" />
+<SCANNEXT term="gtw" />
 
 </RESULT>

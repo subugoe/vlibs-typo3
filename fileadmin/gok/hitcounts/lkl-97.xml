@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c73e1375-2</SESSIONVAR>
+<SESSIONVAR name="SID">bb8c09fb-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="cgd 465">cgd 465</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="cgd 490">cgd 490</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="cgd 500">cgd 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="cgd 501">cgd 501</SCANLINE>
 
@@ -45,7 +51,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="cgd 555">cgd 555</SCANLINE>
 
-    <SCANLINE hits="101" mnemonic="LKL" description="cgd 560">cgd 560</SCANLINE>
+    <SCANLINE hits="102" mnemonic="LKL" description="cgd 560">cgd 560</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cgd 580">cgd 580</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ci 546">ci 546</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ci 549">ci 549</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ci 552">ci 552</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ci 555">ci 555</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cgd+501" />
+<SCANPREV term="cgd+465" />
 
 
-<SCANNEXT term="ci+555" />
+<SCANNEXT term="ci+546" />
 
 </RESULT>

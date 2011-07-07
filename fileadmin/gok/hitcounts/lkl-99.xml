@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">40667b5b-1</SESSIONVAR>
+<SESSIONVAR name="SID">d95fa2d0-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="cix571">cix571</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="cix574">cix574</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="cix629">cix629</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="cix638">cix638</SCANLINE>
 
@@ -161,9 +167,9 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="ckl 150">ckl 150</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="ckl 300">ckl 300</SCANLINE>
+    <SCANLINE hits="74" mnemonic="LKL" description="ckl 300">ckl 300</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="ckl 310">ckl 310</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="ckl 310">ckl 310</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="ckl 330">ckl 330</SCANLINE>
 
@@ -183,7 +189,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ckn">ckn</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ckn 000">ckn 000</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ckn 000">ckn 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ckn 100">ckn 100</SCANLINE>
 
@@ -197,7 +203,7 @@
 
     <SCANLINE hits="83" mnemonic="LKL" description="ckr">ckr</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="ckr 000">ckr 000</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="ckr 000">ckr 000</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ckr 100">ckr 100</SCANLINE>
 
@@ -833,7 +839,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="csd">csd</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="csd 000">csd 000</SCANLINE>
+    <SCANLINE hits="85" mnemonic="LKL" description="csd 000">csd 000</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="csd 100">csd 100</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cuk">cuk</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="cuk 000">cuk 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="cuk 200">cuk 200</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="cuk 250">cuk 250</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cix638" />
+<SCANPREV term="cix571" />
 
 
-<SCANNEXT term="cuk+250" />
+<SCANNEXT term="cuk" />
 
 </RESULT>

@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4013d4c9-2</SESSIONVAR>
+<SESSIONVAR name="SID">d2eb695d-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ams 52b70 57m20">ams 52b70 57m20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 52c07 52b40">ams 52c07 52b40</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ams 52c15 30c62 30g25">ams 52c15 30c62 30g25</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams 52c15 30c62 30g25 60j15">ams 52c15 30c62 30g25 60j15</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams 57r20 17b99 17b56 58a12 53c05 22e15 22e46 57r30 57r22">ams 57r20 17b99 17b56 58a12 53c05 22e15 22e46 57r30 57r22</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 57r20 32s20 32s25">ams 57r20 32s20 32s25</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 57r20 55r40 32l05">ams 57r20 55r40 32l05</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ams 57r22">ams 57r22</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ams+52c15+30c62+30g25+60j15" />
+<SCANPREV term="ams+52b70+57m20" />
 
 
-<SCANNEXT term="ams+57r22" />
+<SCANNEXT term="ams+57r20+17b99+17b56+58a12+53c05+22e15+22e46+57r30+57r22" />
 
 </RESULT>

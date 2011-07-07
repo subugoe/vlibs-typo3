@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ca234f75-0</SESSIONVAR>
+<SESSIONVAR name="SID">dbd70470-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="typ 000">typ 000</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="tyq 000">tyq 000</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="tyr 000">tyr 000</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="tys 000">tys 000</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="tyt 000">tyt 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="tyu 000">tyu 000</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="tyv 000">tyv 000</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="tyv 100">tyv 100</SCANLINE>
+
+    <SCANLINE hits="53" mnemonic="LKL" description="tyv 200">tyv 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="tyv 200 k (fh)">tyv 200 k (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="tyw 000">tyw 000</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="tyx 000">tyx 000</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="tyy 000">tyy 000</SCANLINE>
+
+    <SCANLINE hits="81" mnemonic="LKL" description="tyy 100">tyy 100</SCANLINE>
+
+    <SCANLINE hits="56" mnemonic="LKL" description="tyy 200">tyy 200</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="tyz 000">tyz 000</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="tyz 100">tyz 100</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="tyz 200">tyz 200</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="tyz 300">tyz 300</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="tyz 400">tyz 400</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="u">u</SCANLINE>
+
+    <SCANLINE hits="88" mnemonic="LKL" description="ua">ua</SCANLINE>
+
+    <SCANLINE hits="94" mnemonic="LKL" description="ua 000">ua 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ua 06 oest nt 06 oest">ua 06 oest nt 06 oest</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ua 100">ua 100</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="udf 150">udf 150</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="udf 200">udf 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udf 220">udf 220</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udf 250">udf 250</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="udf 500">udf 500</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udf 600">udf 600</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="udf16 ts a">udf16 ts a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udf16 un a">udf16 un a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 000">udg 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="udg 020">udg 020</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 030">udg 030</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="udg 040">udg 040</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 050">udg 050</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="udg 100">udg 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 110">udg 110</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="udg 120">udg 120</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="udg 130">udg 130</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="udg 140">udg 140</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="udg 150">udg 150</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 200">udg 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 210">udg 210</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="udg 220">udg 220</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="udg 230">udg 230</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="udg 240">udg 240</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="udg 250">udg 250</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ua+100" />
+<SCANPREV term="typ+000" />
 
 
-<SCANNEXT term="udg+250" />
+<SCANNEXT term="udf+150" />
 
 </RESULT>

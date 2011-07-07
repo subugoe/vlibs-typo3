@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">67282ae9-0</SESSIONVAR>
+<SESSIONVAR name="SID">1ac02704-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hsa 520">hsa 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hsa 521">hsa 521</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="hsa 523">hsa 523</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hsa 524">hsa 524</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hsa 525">hsa 525</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="hsa 527">hsa 527</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hsa 528">hsa 528</SCANLINE>
 
@@ -327,7 +339,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="hsd 531">hsd 531</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="hsd 532">hsd 532</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="hsd 532">hsd 532</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="LKL" description="hsd 533">hsd 533</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="hsn 578">hsn 578</SCANLINE>
 
-    <SCANLINE hits="57" mnemonic="LKL" description="hsn 580">hsn 580</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="hsn 600">hsn 600</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="hsn 610">hsn 610</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="hsn 620">hsn 620</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hsn 630">hsn 630</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hsn 650">hsn 650</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hsa+528" />
+<SCANPREV term="hsa+520" />
 
 
-<SCANNEXT term="hsn+650" />
+<SCANNEXT term="hsn+578" />
 
 </RESULT>

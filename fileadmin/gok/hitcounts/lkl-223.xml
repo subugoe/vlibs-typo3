@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c9cc81ed-3</SESSIONVAR>
+<SESSIONVAR name="SID">3f3cef1f-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="449" mnemonic="LKL" description="v 000">v 000</SCANLINE>
+
+    <SCANLINE hits="98" mnemonic="LKL" description="v 100">v 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="v 16 belg">v 16 belg</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 d">v 16 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 daen">v 16 daen</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 deutsches reich ve 16 deutsches reich">v 16 deutsches reich ve 16 deutsches reich</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="v 16 frank">v 16 frank</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 frank vu 16 frank">v 16 frank vu 16 frank</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="v 16 gb">v 16 gb</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="v 16 gb ve 16 gb">v 16 gb ve 16 gb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 gb vs 16 gb">v 16 gb vs 16 gb</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 ir">v 16 ir</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="v 16 irl ve 16 irl">v 16 irl ve 16 irl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 it">v 16 it</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 it vu 16 it">v 16 it vu 16 it</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="v 16 ndl">v 16 ndl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 nor ve 16 nor">v 16 nor ve 16 nor</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 pol">v 16 pol</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 pol ve 16 pol">v 16 pol ve 16 pol</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 port ve 16 port">v 16 port ve 16 port</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 schwd ve 16 schwd">v 16 schwd ve 16 schwd</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="v 16 udssr">v 16 udssr</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="v 16 udssr ve 16 udssr">v 16 udssr ve 16 udssr</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="v 16 udssr ve 16 udssr vf 16 udssr">v 16 udssr ve 16 udssr vf 16 udssr</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="v 16 ung ve 16 ung vu 16 ung">v 16 ung ve 16 ung vu 16 ung</SCANLINE>
 
@@ -47,11 +95,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="v 46 usa">v 46 usa</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="v 500">v 500</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="v 500">v 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="v 56sa p">v 56sa p</SCANLINE>
 
-    <SCANLINE hits="67" mnemonic="LKL" description="v 600">v 600</SCANLINE>
+    <SCANLINE hits="70" mnemonic="LKL" description="v 600">v 600</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="v 66 kan">v 66 kan</SCANLINE>
 
@@ -177,7 +225,7 @@
 
     <SCANLINE hits="45" mnemonic="LKL" description="va">va</SCANLINE>
 
-    <SCANLINE hits="135" mnemonic="LKL" description="va 000">va 000</SCANLINE>
+    <SCANLINE hits="136" mnemonic="LKL" description="va 000">va 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="va 16 udssr ve 16 udssr">va 16 udssr ve 16 udssr</SCANLINE>
 
@@ -285,7 +333,7 @@
 
     <SCANLINE hits="329" mnemonic="LKL" description="vae 130">vae 130</SCANLINE>
 
-    <SCANLINE hits="229" mnemonic="LKL" description="vae 140">vae 140</SCANLINE>
+    <SCANLINE hits="230" mnemonic="LKL" description="vae 140">vae 140</SCANLINE>
 
     <SCANLINE hits="191" mnemonic="LKL" description="vae 150">vae 150</SCANLINE>
 
@@ -301,7 +349,7 @@
 
     <SCANLINE hits="106" mnemonic="LKL" description="vae 300">vae 300</SCANLINE>
 
-    <SCANLINE hits="361" mnemonic="LKL" description="vae 400">vae 400</SCANLINE>
+    <SCANLINE hits="362" mnemonic="LKL" description="vae 400">vae 400</SCANLINE>
 
     <SCANLINE hits="395" mnemonic="LKL" description="vae 500">vae 500</SCANLINE>
 
@@ -315,9 +363,9 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="vae 800">vae 800</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="vae 810">vae 810</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="vae 810">vae 810</SCANLINE>
 
-    <SCANLINE hits="201" mnemonic="LKL" description="vae 811">vae 811</SCANLINE>
+    <SCANLINE hits="202" mnemonic="LKL" description="vae 811">vae 811</SCANLINE>
 
     <SCANLINE hits="84" mnemonic="LKL" description="vae 812">vae 812</SCANLINE>
 
@@ -379,7 +427,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vae7 aust">vae7 aust</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="vaea 000">vaea 000</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="vaea 000">vaea 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vaeb 000">vaeb 000</SCANLINE>
 
@@ -409,7 +457,7 @@
 
     <SCANLINE hits="75" mnemonic="LKL" description="vag 300">vag 300</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="vag 400">vag 400</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="vag 400">vag 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vag 46 tuerk">vag 46 tuerk</SCANLINE>
 
@@ -535,7 +583,7 @@
 
     <SCANLINE hits="52" mnemonic="LKL" description="van 400">van 400</SCANLINE>
 
-    <SCANLINE hits="63" mnemonic="LKL" description="van 500">van 500</SCANLINE>
+    <SCANLINE hits="65" mnemonic="LKL" description="van 500">van 500</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="van 600">van 600</SCANLINE>
 
@@ -723,7 +771,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="vaq 924">vaq 924</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="vaq 933">vaq 933</SCANLINE>
+    <SCANLINE hits="35" mnemonic="LKL" description="vaq 933">vaq 933</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="vaq 950">vaq 950</SCANLINE>
 
@@ -823,7 +871,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="var 970">var 970</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="var 980">var 980</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="var 980">var 980</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="var 990">var 990</SCANLINE>
 
@@ -895,7 +943,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="vat 200">vat 200</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="vat 210">vat 210</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="vat 210">vat 210</SCANLINE>
 
     <SCANLINE hits="93" mnemonic="LKL" description="vat 220">vat 220</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vat16 udssr">vat16 udssr</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="vau">vau</SCANLINE>
-
-    <SCANLINE hits="64" mnemonic="LKL" description="vau 000">vau 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau 71">vau 71</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau a">vau a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau c">vau c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau hs">vau hs</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau rr">vau rr</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau ru">vau ru</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau2 d vat2 d">vau2 d vat2 d</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vau56 sau">vau56 sau</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau66 usa vbz66 usa">vau66 usa vbz66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vau94">vau94</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vav">vav</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vav ab">vav ab</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vav ab a">vav ab a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vav cc">vav cc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vav jf a">vav jf a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vav lg">vav lg</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vav ru">vav ru</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vaw">vaw</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vaw rr">vaw rr</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vaw66 kan">vaw66 kan</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vax">vax</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vax 00">vax 00</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="v+16+ung+ve+16+ung+vu+16+ung" />
+<SCANPREV term="v+000" />
 
 
-<SCANNEXT term="vax+00" />
+<SCANNEXT term="vat16+udssr" />
 
 </RESULT>

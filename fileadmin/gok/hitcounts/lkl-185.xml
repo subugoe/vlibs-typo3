@@ -2,12 +2,42 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">514a7897-1</SESSIONVAR>
+<SESSIONVAR name="SID">bb1a4b60-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="108" mnemonic="LKL" description="ped 290">ped 290</SCANLINE>
+
+    <SCANLINE hits="43" mnemonic="LKL" description="ped 400">ped 400</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="ped 490">ped 490</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ped 500">ped 500</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="ped 600">ped 600</SCANLINE>
+
+    <SCANLINE hits="50" mnemonic="LKL" description="ped 690">ped 690</SCANLINE>
+
+    <SCANLINE hits="46" mnemonic="LKL" description="ped 700">ped 700</SCANLINE>
+
+    <SCANLINE hits="164" mnemonic="LKL" description="ped 790">ped 790</SCANLINE>
+
+    <SCANLINE hits="82" mnemonic="LKL" description="ped 800">ped 800</SCANLINE>
+
+    <SCANLINE hits="237" mnemonic="LKL" description="ped 890">ped 890</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="pee 000">pee 000</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="pee 090">pee 090</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="pee 200">pee 200</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="pee 290">pee 290</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="pee 400">pee 400</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="pee 490">pee 490</SCANLINE>
 
@@ -16,6 +46,8 @@
     <SCANLINE hits="10" mnemonic="LKL" description="pee 690">pee 690</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pee 700">pee 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pee 790">pee 790</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="pee 800">pee 800</SCANLINE>
 
@@ -47,7 +79,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="peg">peg</SCANLINE>
 
-    <SCANLINE hits="166" mnemonic="LKL" description="peg 000">peg 000</SCANLINE>
+    <SCANLINE hits="168" mnemonic="LKL" description="peg 000">peg 000</SCANLINE>
 
     <SCANLINE hits="194" mnemonic="LKL" description="peg 090">peg 090</SCANLINE>
 
@@ -71,7 +103,7 @@
 
     <SCANLINE hits="119" mnemonic="LKL" description="peg 800">peg 800</SCANLINE>
 
-    <SCANLINE hits="343" mnemonic="LKL" description="peg 890">peg 890</SCANLINE>
+    <SCANLINE hits="344" mnemonic="LKL" description="peg 890">peg 890</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="peh 000">peh 000</SCANLINE>
 
@@ -225,7 +257,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="pes 200">pes 200</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="pes 300">pes 300</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="pes 300">pes 300</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="pes 400">pes 400</SCANLINE>
 
@@ -257,7 +289,7 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="pey 000">pey 000</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="LKL" description="pf 000">pf 000</SCANLINE>
+    <SCANLINE hits="139" mnemonic="LKL" description="pf 000">pf 000</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="pf 100">pf 100</SCANLINE>
 
@@ -337,7 +369,7 @@
 
     <SCANLINE hits="97" mnemonic="LKL" description="pfg 300">pfg 300</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="pfg 500">pfg 500</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="pfg 500">pfg 500</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pfg 600">pfg 600</SCANLINE>
 
@@ -375,7 +407,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="pfl 000">pfl 000</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="pfl 900">pfl 900</SCANLINE>
+    <SCANLINE hits="43" mnemonic="LKL" description="pfl 900">pfl 900</SCANLINE>
 
     <SCANLINE hits="156" mnemonic="LKL" description="pfm 000">pfm 000</SCANLINE>
 
@@ -511,7 +543,7 @@
 
     <SCANLINE hits="39" mnemonic="LKL" description="pfr 290">pfr 290</SCANLINE>
 
-    <SCANLINE hits="111" mnemonic="LKL" description="pfr 300">pfr 300</SCANLINE>
+    <SCANLINE hits="112" mnemonic="LKL" description="pfr 300">pfr 300</SCANLINE>
 
     <SCANLINE hits="24" mnemonic="LKL" description="pfr 400">pfr 400</SCANLINE>
 
@@ -529,7 +561,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="pfr 625">pfr 625</SCANLINE>
 
-    <SCANLINE hits="306" mnemonic="LKL" description="pfr 630">pfr 630</SCANLINE>
+    <SCANLINE hits="307" mnemonic="LKL" description="pfr 630">pfr 630</SCANLINE>
 
     <SCANLINE hits="169" mnemonic="LKL" description="pfr 638">pfr 638</SCANLINE>
 
@@ -575,7 +607,7 @@
 
     <SCANLINE hits="45" mnemonic="LKL" description="pfr 900">pfr 900</SCANLINE>
 
-    <SCANLINE hits="120" mnemonic="LKL" description="pg 000">pg 000</SCANLINE>
+    <SCANLINE hits="124" mnemonic="LKL" description="pg 000">pg 000</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="pg 100">pg 100</SCANLINE>
 
@@ -593,17 +625,17 @@
 
     <SCANLINE hits="34" mnemonic="LKL" description="pg 900">pg 900</SCANLINE>
 
-    <SCANLINE hits="182" mnemonic="LKL" description="pgb 000">pgb 000</SCANLINE>
+    <SCANLINE hits="189" mnemonic="LKL" description="pgb 000">pgb 000</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="pgb 100">pgb 100</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="pgb 150">pgb 150</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="pgb 200">pgb 200</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="pgb 200">pgb 200</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="pgb 210">pgb 210</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="pgb 210">pgb 210</SCANLINE>
 
-    <SCANLINE hits="24" mnemonic="LKL" description="pgb 230">pgb 230</SCANLINE>
+    <SCANLINE hits="28" mnemonic="LKL" description="pgb 230">pgb 230</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="pgb 250">pgb 250</SCANLINE>
 
@@ -611,9 +643,9 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="pgb 270">pgb 270</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="pgb 280">pgb 280</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="pgb 280">pgb 280</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="pgb 300">pgb 300</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="pgb 300">pgb 300</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="pgb 400">pgb 400</SCANLINE>
 
@@ -647,7 +679,7 @@
 
     <SCANLINE hits="44" mnemonic="LKL" description="pgc 500">pgc 500</SCANLINE>
 
-    <SCANLINE hits="109" mnemonic="LKL" description="pgd 000">pgd 000</SCANLINE>
+    <SCANLINE hits="112" mnemonic="LKL" description="pgd 000">pgd 000</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="pgd 100">pgd 100</SCANLINE>
 
@@ -669,23 +701,23 @@
 
     <SCANLINE hits="38" mnemonic="LKL" description="pgd 600">pgd 600</SCANLINE>
 
-    <SCANLINE hits="59" mnemonic="LKL" description="pgd 700">pgd 700</SCANLINE>
+    <SCANLINE hits="62" mnemonic="LKL" description="pgd 700">pgd 700</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="pgd 800">pgd 800</SCANLINE>
 
-    <SCANLINE hits="357" mnemonic="LKL" description="pge 000">pge 000</SCANLINE>
+    <SCANLINE hits="366" mnemonic="LKL" description="pge 000">pge 000</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pge 001">pge 001</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="pge 001">pge 001</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="pge 002">pge 002</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="pge 002">pge 002</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="pge 003">pge 003</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="pge 003">pge 003</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="pge 004">pge 004</SCANLINE>
 
     <SCANLINE hits="330" mnemonic="LKL" description="pge 005">pge 005</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="pge 006">pge 006</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="pge 006">pge 006</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pge 007">pge 007</SCANLINE>
 
@@ -695,23 +727,25 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="pge 202">pge 202</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pge 204">pge 204</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="pge 204">pge 204</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pge 208">pge 208</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="pge 400">pge 400</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="pge 400">pge 400</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="pge 402">pge 402</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="pge 402">pge 402</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="pge 403">pge 403</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pge 405">pge 405</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="pge 406">pge 406</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="pge 406">pge 406</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pge 407">pge 407</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="pge 408">pge 408</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="pge 500">pge 500</SCANLINE>
+    <SCANLINE hits="75" mnemonic="LKL" description="pge 500">pge 500</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="pge 502">pge 502</SCANLINE>
 
@@ -723,27 +757,29 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="pge 506">pge 506</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="pge 507">pge 507</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="pge 507">pge 507</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="pge 508">pge 508</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="pge 508">pge 508</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="pge 600">pge 600</SCANLINE>
+    <SCANLINE hits="64" mnemonic="LKL" description="pge 600">pge 600</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="pge 602">pge 602</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="pge 602">pge 602</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="pge 603">pge 603</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="pge 603">pge 603</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="pge 604">pge 604</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="pge 604">pge 604</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="pge 605">pge 605</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="pge 606">pge 606</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="pge 606">pge 606</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="pge 607">pge 607</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="pge 607">pge 607</SCANLINE>
 
     <SCANLINE hits="19" mnemonic="LKL" description="pge 608">pge 608</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="pge 900">pge 900</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pge 901">pge 901</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pge 904">pge 904</SCANLINE>
 
@@ -817,7 +853,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="pgj 200">pgj 200</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="pgj 210">pgj 210</SCANLINE>
+    <SCANLINE hits="34" mnemonic="LKL" description="pgj 210">pgj 210</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="pgj 220">pgj 220</SCANLINE>
 
@@ -833,7 +869,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="pgj 300">pgj 300</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="pgj 400">pgj 400</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="pgj 400">pgj 400</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="pgj 500">pgj 500</SCANLINE>
 
@@ -849,7 +885,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pgo">pgo</SCANLINE>
 
-    <SCANLINE hits="65" mnemonic="LKL" description="pgo 000">pgo 000</SCANLINE>
+    <SCANLINE hits="66" mnemonic="LKL" description="pgo 000">pgo 000</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="pgo 100">pgo 100</SCANLINE>
 
@@ -857,11 +893,11 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="pgo 200">pgo 200</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="pgo 300">pgo 300</SCANLINE>
+    <SCANLINE hits="59" mnemonic="LKL" description="pgo 300">pgo 300</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="pgo 400">pgo 400</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="pgo 400">pgo 400</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="pgo 500">pgo 500</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="pgo 500">pgo 500</SCANLINE>
 
     <SCANLINE hits="34" mnemonic="LKL" description="pgo 600">pgo 600</SCANLINE>
 
@@ -913,7 +949,7 @@
 
     <SCANLINE hits="27" mnemonic="LKL" description="pgs 700">pgs 700</SCANLINE>
 
-    <SCANLINE hits="74" mnemonic="LKL" description="pgs 800">pgs 800</SCANLINE>
+    <SCANLINE hits="75" mnemonic="LKL" description="pgs 800">pgs 800</SCANLINE>
 
     <SCANLINE hits="27" mnemonic="LKL" description="pgs 900">pgs 900</SCANLINE>
 
@@ -921,7 +957,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pgx">pgx</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="pgx 000">pgx 000</SCANLINE>
+    <SCANLINE hits="55" mnemonic="LKL" description="pgx 000">pgx 000</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="pgx 100">pgx 100</SCANLINE>
 
@@ -973,47 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ph 56 aeg">ph 56 aeg</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ph 600">ph 600</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ph 680">ph 680</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="ph 700">ph 700</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ph 800">ph 800</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="ph 900">ph 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph e gra (fh)">ph e gra (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph m (fh)">ph m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph41orient">ph41orient</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph46 hur (fh)">ph46 hur (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph46 nab k (fh)">ph46 nab k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph46 phoe d (fh)">ph46 phoe d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph56 aeg k (fh)">ph56 aeg k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ph56 kar m (fh)">ph56 kar m (fh)</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="pha 000">pha 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pha 100">pha 100</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="pha 150">pha 150</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="pha 200">pha 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pha 210">pha 210</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pee+490" />
+<SCANPREV term="ped+290" />
 
 
-<SCANNEXT term="pha+210" />
+<SCANNEXT term="ph+56+aeg" />
 
 </RESULT>

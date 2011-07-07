@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9e36182b-2</SESSIONVAR>
+<SESSIONVAR name="SID">95cb39ca-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ebbp 700">ebbp 700</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ebbp 810">ebbp 810</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ebbp 820">ebbp 820</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ebbp 830">ebbp 830</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ebbp 990">ebbp 990</SCANLINE>
 
@@ -749,11 +757,11 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="ebeh 150">ebeh 150</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="ebeh 200">ebeh 200</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="ebeh 200">ebeh 200</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="ebeh 250">ebeh 250</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="ebeh 300">ebeh 300</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="ebeh 300">ebeh 300</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="ebeh 350">ebeh 350</SCANLINE>
 
@@ -763,7 +771,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="ebeh 420">ebeh 420</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="ebeh 450">ebeh 450</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="ebeh 450">ebeh 450</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="ebeh 500">ebeh 500</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ebf 150">ebf 150</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ebf 990">ebf 990</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebf i (fh)">ebf i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebf q (fh)">ebf q (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebf xxx">ebf xxx</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ebbp+990" />
+<SCANPREV term="ebbp+700" />
 
 
-<SCANNEXT term="ebf+xxx" />
+<SCANNEXT term="ebf+150" />
 
 </RESULT>

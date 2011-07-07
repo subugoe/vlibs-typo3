@@ -2,12 +2,44 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e2c54479-0</SESSIONVAR>
+<SESSIONVAR name="SID">50b60d14-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="474">474</SCANLINE>
+
+    <SCANLINE hits="196" mnemonic="HSS" description="48">48</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="4804">4804</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="4815">4815</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="HSS" description="481939">481939</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="481944">481944</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="481965">481965</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="481969">481969</SCANLINE>
+
+    <SCANLINE hits="205" mnemonic="HSS" description="49">49</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="491">491</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="491969">491969</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="HSS" description="4950">4950</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="4972">4972</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="4maerz">4maerz</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="HSS" description="4nov">4nov</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="HSS" description="4zaehnigen">4zaehnigen</SCANLINE>
 
     <SCANLINE hits="2128" mnemonic="HSS" description="5">5</SCANLINE>
 
@@ -243,7 +275,7 @@
 
     <SCANLINE hits="2" mnemonic="HSS" description="564">564</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="HSS" description="57">57</SCANLINE>
+    <SCANLINE hits="27" mnemonic="HSS" description="57">57</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="HSS" description="571786">571786</SCANLINE>
 
@@ -977,43 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="HSS" description="8111939">8111939</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="HSS" description="8111958">8111958</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111962">8111962</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111963">8111963</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111967">8111967</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111969">8111969</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111971">8111971</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="HSS" description="8111974">8111974</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8111991">8111991</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="HSS" description="811968">811968</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="HSS" description="811970">811970</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="HSS" description="811972">811972</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="811976">811976</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="HSS" description="811986">811986</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8121934">8121934</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="HSS" description="8121937">8121937</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="HSS" description="8121939">8121939</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="5" />
+<SCANPREV term="474" />
 
 
-<SCANNEXT term="8121939" />
+<SCANNEXT term="8111939" />
 
 </RESULT>

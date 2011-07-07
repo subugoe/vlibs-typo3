@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8b358cca-2</SESSIONVAR>
+<SESSIONVAR name="SID">53e3730b-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh25 brd k (fh)">guh25 brd k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh25 brd l (fh)">guh25 brd l (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh25 ddr m (fh)">guh25 ddr m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh25 ddr u (fh)">guh25 ddr u (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh26 bay k (fh)">guh26 bay k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="guh26 rhei d (fh)">guh26 rhei d (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="guh26 thuer k (fh)">guh26 thuer k (fh)</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gy leo m (fh)">gy leo m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gy lesu a (fh)">gy lesu a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy lige a (fh)">gy lige a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy lige l (fh)">gy lige l (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy liszt a (fh)">gy liszt a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy liszt d (fh)">gy liszt d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy liszt k (fh)">gy liszt k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="guh26+thuer+k+(fh)" />
+<SCANPREV term="guh25+brd+k+(fh)" />
 
 
-<SCANNEXT term="gy+liszt+k+(fh)" />
+<SCANNEXT term="gy+leo+m+(fh)" />
 
 </RESULT>
