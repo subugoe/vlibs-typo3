@@ -18,7 +18,7 @@ $TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfi
 $TYPO3_CONF_VARS['SYS']['encryptionKey'] = 'eff43017a2a82314f23139d9daf0e129a20af589316ec80bd0084f268b67125e5a14a2b2a9e0527657b4059ebd41f44e';	// Modified or inserted by TYPO3 Install Tool. 
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.5';	// Modified or inserted by TYPO3 Install Tool. 
 $typo_db_username = 'root';	//  Modified or inserted by TYPO3 Install Tool.
-$typo_db_password = 'DB4Typo3';	//  Modified or inserted by TYPO3 Install Tool.
+$typo_db_password = '';	//  Modified or inserted by TYPO3 Install Tool.
 $typo_db_host = 'localhost';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['EXTCONF']['dbal']['handlerCfg'] = array('_DEFAULT' => array('type' => 'adodb','config' => array('driver' => '',)));;	// Modified or inserted by TYPO3 Install Tool. 
 // Updated by TYPO3 Install Tool 08-09-10 12:44:18
