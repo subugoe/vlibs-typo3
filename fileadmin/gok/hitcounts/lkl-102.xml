@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b3d8960d-3</SESSIONVAR>
+<SESSIONVAR name="SID">5dbc7f39-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="dok">dok</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="dok 000">dok 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="dok l">dok l</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="dok l (fh)">dok l (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dq">dq</SCANLINE>
 
@@ -251,7 +259,7 @@
 
     <SCANLINE hits="164" mnemonic="LKL" description="eaa 010">eaa 010</SCANLINE>
 
-    <SCANLINE hits="4443" mnemonic="LKL" description="eaa 020">eaa 020</SCANLINE>
+    <SCANLINE hits="4451" mnemonic="LKL" description="eaa 020">eaa 020</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaa 200">eaa 200</SCANLINE>
 
@@ -421,7 +429,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaab 252">eaab 252</SCANLINE>
 
-    <SCANLINE hits="145" mnemonic="LKL" description="eaab 300">eaab 300</SCANLINE>
+    <SCANLINE hits="144" mnemonic="LKL" description="eaab 300">eaab 300</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eaab 500">eaab 500</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="eaec a (fh)">eaec a (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="eaec i (fh)">eaec i (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="eaee 050">eaee 050</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="eaf">eaf</SCANLINE>
-
-    <SCANLINE hits="192" mnemonic="LKL" description="eaf 000">eaf 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="dq" />
+<SCANPREV term="dok" />
 
 
-<SCANNEXT term="eaf+000" />
+<SCANNEXT term="eaec+a+(fh)" />
 
 </RESULT>

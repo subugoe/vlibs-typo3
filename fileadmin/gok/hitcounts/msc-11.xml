@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">997bd6e3-2</SESSIONVAR>
+<SESSIONVAR name="SID">0a7dc2d8-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="MSC" description="76d09">76d09</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="MSC" description="76d10">76d10</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="MSC" description="76d17">76d17</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="MSC" description="76d25">76d25</SCANLINE>
 
@@ -259,7 +265,7 @@
 
     <SCANLINE hits="1" mnemonic="MSC" description="78m05">78m05</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="MSC" description="78m10">78m10</SCANLINE>
+    <SCANLINE hits="25" mnemonic="MSC" description="78m10">78m10</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="MSC" description="78m15">78m15</SCANLINE>
 
@@ -311,7 +317,7 @@
 
     <SCANLINE hits="26" mnemonic="MSC" description="80a17">80a17</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="MSC" description="80a20">80a20</SCANLINE>
+    <SCANLINE hits="129" mnemonic="MSC" description="80a20">80a20</SCANLINE>
 
     <SCANLINE hits="74" mnemonic="MSC" description="80a22">80a22</SCANLINE>
 
@@ -441,7 +447,7 @@
 
     <SCANLINE hits="107" mnemonic="MSC" description="81r50">81r50</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="MSC" description="81r60">81r60</SCANLINE>
+    <SCANLINE hits="13" mnemonic="MSC" description="81r60">81r60</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="MSC" description="81r99">81r99</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="66" mnemonic="MSC" description="90c59">90c59</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="MSC" description="90c60">90c60</SCANLINE>
-
-    <SCANLINE hits="48" mnemonic="MSC" description="90c70">90c70</SCANLINE>
-
-    <SCANLINE hits="147" mnemonic="MSC" description="90c90">90c90</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="76d25" />
+<SCANPREV term="76d09" />
 
 
-<SCANNEXT term="90c90" />
+<SCANNEXT term="90c59" />
 
 </RESULT>

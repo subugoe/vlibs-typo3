@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d64aa332-0</SESSIONVAR>
+<SESSIONVAR name="SID">f5373391-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="83" mnemonic="LKL" description="cbk 300">cbk 300</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="cbk 310">cbk 310</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="cbk 320">cbk 320</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="cbk 330">cbk 330</SCANLINE>
 
@@ -43,7 +49,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="cbk 640">cbk 640</SCANLINE>
 
-    <SCANLINE hits="156" mnemonic="LKL" description="cbk 650">cbk 650</SCANLINE>
+    <SCANLINE hits="209" mnemonic="LKL" description="cbk 650">cbk 650</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="cbk 700">cbk 700</SCANLINE>
 
@@ -73,7 +79,7 @@
 
     <SCANLINE hits="60" mnemonic="LKL" description="cbm 000">cbm 000</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="cbm 100">cbm 100</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="cbm 100">cbm 100</SCANLINE>
 
     <SCANLINE hits="71" mnemonic="LKL" description="cbm 200">cbm 200</SCANLINE>
 
@@ -579,7 +585,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="cde 722">cde 722</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="cde 723">cde 723</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="cde 723">cde 723</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="cde 724">cde 724</SCANLINE>
 
@@ -889,9 +895,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="cgb 100">cgb 100</SCANLINE>
 
-    <SCANLINE hits="57" mnemonic="LKL" description="cgb 200">cgb 200</SCANLINE>
+    <SCANLINE hits="58" mnemonic="LKL" description="cgb 200">cgb 200</SCANLINE>
 
-    <SCANLINE hits="62" mnemonic="LKL" description="cgb 220">cgb 220</SCANLINE>
+    <SCANLINE hits="64" mnemonic="LKL" description="cgb 220">cgb 220</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="cgb 225">cgb 225</SCANLINE>
 
@@ -975,7 +981,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="cgd 404">cgd 404</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="cgd 407">cgd 407</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="cgd 407">cgd 407</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="cgd 408">cgd 408</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="cgd 500">cgd 500</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="cgd 501">cgd 501</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="cgd 502">cgd 502</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="cgd 503">cgd 503</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cbk+330" />
+<SCANPREV term="cbk+300" />
 
 
-<SCANNEXT term="cgd+503" />
+<SCANNEXT term="cgd+500" />
 
 </RESULT>

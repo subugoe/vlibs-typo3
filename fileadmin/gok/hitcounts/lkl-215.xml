@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">abeeb836-0</SESSIONVAR>
+<SESSIONVAR name="SID">906a1c1a-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stl 510">stl 510</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 530">stl 530</SCANLINE>
+
+    <SCANLINE hits="53" mnemonic="LKL" description="stl 650">stl 650</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stl 680">stl 680</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 690">stl 690</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="stl 700">stl 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 710">stl 710</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="stl 720">stl 720</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stl 730">stl 730</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 760">stl 760</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl100 c">stl100 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stl100 d">stl100 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stl450 c">stl450 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stl650 c">stl650 c</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stm">stm</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="stm 000">stm 000</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="stm 200">stm 200</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="stm 220">stm 220</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="stm 250">stm 250</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="stm 300">stm 300</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="stm 350">stm 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stm 400">stm 400</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="stm 450">stm 450</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stm c">stm c</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="stm250 a1">stm250 a1</SCANLINE>
 
@@ -737,7 +785,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="sxc">sxc</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="sxc 000">sxc 000</SCANLINE>
+    <SCANLINE hits="46" mnemonic="LKL" description="sxc 000">sxc 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="sxc 1">sxc 1</SCANLINE>
 
@@ -853,7 +901,7 @@
 
     <SCANLINE hits="28" mnemonic="LKL" description="sxl 420">sxl 420</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="sxl 440">sxl 440</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="sxl 440">sxl 440</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="sxl 500">sxl 500</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="sxp 440">sxp 440</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="sxp 460">sxp 460</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="sxp 480">sxp 480</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxp 76">sxp 76</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="sxp 900">sxp 900</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxp300 c">sxp300 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxp460 d">sxp460 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxs">sxs</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="sxs 000">sxs 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxsc">sxsc</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="sxt">sxt</SCANLINE>
-
-    <SCANLINE hits="51" mnemonic="LKL" description="sxt 000">sxt 000</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="sxt 100">sxt 100</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="sxt 150">sxt 150</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="sxt 200">sxt 200</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="sxt 250">sxt 250</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="sxt 300">sxt 300</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sxt 350">sxt 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sxt 900">sxt 900</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxt a">sxt a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxt150 d1">sxt150 d1</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxt300 a1">sxt300 a1</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="sxtc">sxtc</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="sxu">sxu</SCANLINE>
-
-    <SCANLINE hits="416" mnemonic="LKL" description="sxu 000">sxu 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="stm250+a1" />
+<SCANPREV term="stl+510" />
 
 
-<SCANNEXT term="sxu+000" />
+<SCANNEXT term="sxp+440" />
 
 </RESULT>

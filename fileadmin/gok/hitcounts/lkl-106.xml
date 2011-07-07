@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f1a72294-3</SESSIONVAR>
+<SESSIONVAR name="SID">8d94c1ef-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ecac 120">ecac 120</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ecac 150">ecac 150</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="ecac 200">ecac 200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ecac 250">ecac 250</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="ecac 300">ecac 300</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="edba 020">edba 020</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="edba 050">edba 050</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="edba 100">edba 100</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="edba 150">edba 150</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="edba 200">edba 200</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ecac+300" />
+<SCANPREV term="ecac+120" />
 
 
-<SCANNEXT term="edba+200" />
+<SCANNEXT term="edba+020" />
 
 </RESULT>

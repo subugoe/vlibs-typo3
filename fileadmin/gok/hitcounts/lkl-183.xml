@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">21fd887a-2</SESSIONVAR>
+<SESSIONVAR name="SID">196094d2-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="oce 108">oce 108</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="oce 109">oce 109</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="oce 200">oce 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="oce 209">oce 209</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="oce 300">oce 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="oce 302">oce 302</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="oce 308">oce 308</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="oce 309">oce 309</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ocf 100">ocf 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ocf 101">ocf 101</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ocf 102">ocf 102</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="ocf 108">ocf 108</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="ocf 109">ocf 109</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ocf 300">ocf 300</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="ocf 308">ocf 308</SCANLINE>
 
@@ -39,7 +67,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oci 303">oci 303</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="oci 309">oci 309</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="oci 309">oci 309</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="oci 400">oci 400</SCANLINE>
 
@@ -335,6 +363,8 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="oke 200">oke 200</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="oke 208">oke 208</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="oke 209">oke 209</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="oke 300">oke 300</SCANLINE>
@@ -343,7 +373,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="okf 000">okf 000</SCANLINE>
 
-    <SCANLINE hits="113" mnemonic="LKL" description="okf 100">okf 100</SCANLINE>
+    <SCANLINE hits="112" mnemonic="LKL" description="okf 100">okf 100</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="okf 101">okf 101</SCANLINE>
 
@@ -361,7 +391,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="okg 000">okg 000</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="okg 100">okg 100</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="okg 100">okg 100</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="okg 101">okg 101</SCANLINE>
 
@@ -371,7 +401,7 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="okg 108">okg 108</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="okg 109">okg 109</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="okg 109">okg 109</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="okg 385 k (fh)">okg 385 k (fh)</SCANLINE>
 
@@ -387,7 +417,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oki 109">oki 109</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="oki 200">oki 200</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="oki 200">oki 200</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="oki 205">oki 205</SCANLINE>
 
@@ -867,7 +897,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pa66 usa w (fh)">pa66 usa w (fh)</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="paa 000">paa 000</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="paa 000">paa 000</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="paa 200">paa 200</SCANLINE>
 
@@ -979,41 +1009,11 @@
 
     <SCANLINE hits="30" mnemonic="LKL" description="pbd 300">pbd 300</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="pbd 400">pbd 400</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pbd 440">pbd 440</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="pbd 470">pbd 470</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="pbd 500">pbd 500</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pbd 510">pbd 510</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pbd 520">pbd 520</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pbd 540">pbd 540</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pbd 550">pbd 550</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="pbd 560">pbd 560</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pbe">pbe</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="pbe 000">pbe 000</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="pbe 100">pbe 100</SCANLINE>
-
-    <SCANLINE hits="59" mnemonic="LKL" description="pbe 200">pbe 200</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pbe 250">pbe 250</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pbe 270">pbe 270</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ocf+308" />
+<SCANPREV term="oce+108" />
 
 
-<SCANNEXT term="pbe+270" />
+<SCANNEXT term="pbd+300" />
 
 </RESULT>

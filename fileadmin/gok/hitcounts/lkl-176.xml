@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">33c2003d-0</SESSIONVAR>
+<SESSIONVAR name="SID">668e5bce-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="92" mnemonic="LKL" description="lr 000">lr 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 000.170">lr 000.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 000170">lr 000170</SCANLINE>
+
+    <SCANLINE hits="142" mnemonic="LKL" description="lr 001">lr 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 11 nordsee">lr 11 nordsee</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 16 belg">lr 16 belg</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 16 gb 9 cambridge">lr 16 gb 9 cambridge</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lr 16 tsche">lr 16 tsche</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="lr 2">lr 2</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 2 d">lr 2 d</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lr 2 lt 2">lr 2 lt 2</SCANLINE>
+
+    <SCANLINE hits="175" mnemonic="LKL" description="lr 200">lr 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lr 26 brd">lr 26 brd</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lr 29 berlin">lr 29 berlin</SCANLINE>
 
@@ -733,7 +759,7 @@
 
     <SCANLINE hits="738" mnemonic="LKL" description="med">med</SCANLINE>
 
-    <SCANLINE hits="113" mnemonic="LKL" description="med 000">med 000</SCANLINE>
+    <SCANLINE hits="115" mnemonic="LKL" description="med 000">med 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="med 100">med 100</SCANLINE>
 
@@ -741,7 +767,7 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="med 120">med 120</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="med 130">med 130</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="med 130">med 130</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="med 131">med 131</SCANLINE>
 
@@ -773,7 +799,7 @@
 
     <SCANLINE hits="166" mnemonic="LKL" description="med 202">med 202</SCANLINE>
 
-    <SCANLINE hits="279" mnemonic="LKL" description="med 203">med 203</SCANLINE>
+    <SCANLINE hits="280" mnemonic="LKL" description="med 203">med 203</SCANLINE>
 
     <SCANLINE hits="426" mnemonic="LKL" description="med 204">med 204</SCANLINE>
 
@@ -881,7 +907,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="med 340">med 340</SCANLINE>
 
-    <SCANLINE hits="714" mnemonic="LKL" description="med 341">med 341</SCANLINE>
+    <SCANLINE hits="716" mnemonic="LKL" description="med 341">med 341</SCANLINE>
 
     <SCANLINE hits="216" mnemonic="LKL" description="med 342">med 342</SCANLINE>
 
@@ -965,7 +991,7 @@
 
     <SCANLINE hits="83" mnemonic="LKL" description="med 423">med 423</SCANLINE>
 
-    <SCANLINE hits="1083" mnemonic="LKL" description="med 424">med 424</SCANLINE>
+    <SCANLINE hits="1085" mnemonic="LKL" description="med 424">med 424</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="med 425">med 425</SCANLINE>
 
@@ -981,39 +1007,13 @@
 
     <SCANLINE hits="67" mnemonic="LKL" description="med 434">med 434</SCANLINE>
 
-    <SCANLINE hits="236" mnemonic="LKL" description="med 440">med 440</SCANLINE>
-
-    <SCANLINE hits="72" mnemonic="LKL" description="med 441">med 441</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="med 442">med 442</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="med 443">med 443</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="med 444">med 444</SCANLINE>
-
-    <SCANLINE hits="72" mnemonic="LKL" description="med 445">med 445</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="med 446">med 446</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="med 447">med 447</SCANLINE>
-
-    <SCANLINE hits="61" mnemonic="LKL" description="med 448">med 448</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="med 450">med 450</SCANLINE>
-
-    <SCANLINE hits="632" mnemonic="LKL" description="med 451">med 451</SCANLINE>
-
-    <SCANLINE hits="229" mnemonic="LKL" description="med 452">med 452</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="med 453">med 453</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="med 460">med 460</SCANLINE>
+    <SCANLINE hits="238" mnemonic="LKL" description="med 440">med 440</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="lr+29+berlin" />
+<SCANPREV term="lr+000" />
 
 
-<SCANNEXT term="med+460" />
+<SCANNEXT term="med+440" />
 
 </RESULT>

@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1a4942f3-0</SESSIONVAR>
+<SESSIONVAR name="SID">7256be00-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jwl xxx">jwl xxx</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jwm 200">jwm 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jwm 240">jwm 240</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jwm 300">jwm 300</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jwm 330">jwm 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jwm 350">jwm 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jwm 357">jwm 357</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jwm 400">jwm 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jwm 430">jwm 430</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jwm 435">jwm 435</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kba 380">kba 380</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="kba 400">kba 400</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kba 410">kba 410</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kba 430">kba 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kba 431">kba 431</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kba 433">kba 433</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kba 435">kba 435</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="kba 439">kba 439</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kba 440">kba 440</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="kba 448">kba 448</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jwm+435" />
+<SCANPREV term="jwl+xxx" />
 
 
-<SCANNEXT term="kba+448" />
+<SCANNEXT term="kba+380" />
 
 </RESULT>

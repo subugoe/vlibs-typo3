@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9c0c5305-3</SESSIONVAR>
+<SESSIONVAR name="SID">bfa5c031-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="iec 610">iec 610</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iec 650">iec 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iec 660">iec 660</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="iec 661">iec 661</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="iec 665">iec 665</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="iec 666">iec 666</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="iec xxx">iec xxx</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="ih 539">ih 539</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ih 540">ih 540</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ih 542">ih 542</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ih 546">ih 546</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ih 551">ih 551</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="ih 560">ih 560</SCANLINE>
-
-    <SCANLINE hits="40" mnemonic="LKL" description="ih 580">ih 580</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="iec+xxx" />
+<SCANPREV term="iec+610" />
 
 
-<SCANNEXT term="ih+580" />
+<SCANNEXT term="ih+539" />
 
 </RESULT>

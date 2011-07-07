@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c8b62101-3</SESSIONVAR>
+<SESSIONVAR name="SID">bff1052e-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jtm 331">jtm 331</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jtm 332">jtm 332</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jtm 333">jtm 333</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jtm 335">jtm 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jtm 337">jtm 337</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jtm 340">jtm 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jtm 344">jtm 344</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jtm 347">jtm 347</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jtm 350">jtm 350</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="jtm 352">jtm 352</SCANLINE>
 
@@ -321,7 +339,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jtn 631">jtn 631</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="jtn 632">jtn 632</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="jtn 632">jtn 632</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jtn 635">jtn 635</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jwm 240">jwm 240</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="jwm 300">jwm 300</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="jwm 330">jwm 330</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jwm 350">jwm 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jwm 357">jwm 357</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jwm 400">jwm 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jwm 430">jwm 430</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jwm 435">jwm 435</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="jwm 438">jwm 438</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jwm 440">jwm 440</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jtm+352" />
+<SCANPREV term="jtm+331" />
 
 
-<SCANNEXT term="jwm+440" />
+<SCANNEXT term="jwm+240" />
 
 </RESULT>

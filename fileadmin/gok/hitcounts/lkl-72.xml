@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">594d78ee-1</SESSIONVAR>
+<SESSIONVAR name="SID">f15a1907-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh nab 2 (fh)">alh nab 2 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh nali (fh)">alh nali (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh napo (fh)">alh napo (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="alh nash (fh)">alh nash (fh)</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="alh waug 2 (fh)">alh waug 2 (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="alh web, j. (fh)">alh web, j. (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="alh weber, ado (fh)">alh weber, ado (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="alh weber, alf (fh)">alh weber, alf (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="alh+nash+(fh)" />
+<SCANPREV term="alh+nab+2+(fh)" />
 
 
-<SCANNEXT term="alh+weber,+alf+(fh)" />
+<SCANNEXT term="alh+waug+2+(fh)" />
 
 </RESULT>

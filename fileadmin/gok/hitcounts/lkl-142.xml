@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">cd5d22c6-0</SESSIONVAR>
+<SESSIONVAR name="SID">a9e00dbc-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jcg 336">jcg 336</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jcg 337">jcg 337</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jcg 338">jcg 338</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="jcg 340">jcg 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jcg 342">jcg 342</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jcg 344">jcg 344</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jcg 345">jcg 345</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="jdh 521">jdh 521</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="jdh 522">jdh 522</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jdh 523">jdh 523</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jdh 524">jdh 524</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="jdh 525">jdh 525</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="jdh 527">jdh 527</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jdh 530">jdh 530</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jcg+345" />
+<SCANPREV term="jcg+336" />
 
 
-<SCANNEXT term="jdh+530" />
+<SCANNEXT term="jdh+521" />
 
 </RESULT>

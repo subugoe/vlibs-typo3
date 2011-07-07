@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">99a14da4-1</SESSIONVAR>
+<SESSIONVAR name="SID">1f1ddc66-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlv 665">jlv 665</SCANLINE>
+
+    <SCANLINE hits="225" mnemonic="LKL" description="jlv 666">jlv 666</SCANLINE>
+
+    <SCANLINE hits="81" mnemonic="LKL" description="jlv 668">jlv 668</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlv xxx">jlv xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlv330">jlv330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jlv600">jlv600</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jlx">jlx</SCANLINE>
 
@@ -639,7 +651,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jod 433">jod 433</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jod 500">jod 500</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="jod 500">jod 500</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jod 501">jod 501</SCANLINE>
 
@@ -781,7 +793,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jog 320">jog 320</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="jog 330">jog 330</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="jog 330">jog 330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jog 331">jog 331</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="joj 376">joj 376</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="joj 377">joj 377</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="joj 380">joj 380</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="joj 381">joj 381</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="joj 383">joj 383</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="joj 387">joj 387</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="joj 400">joj 400</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jlx" />
+<SCANPREV term="jlv+665" />
 
 
-<SCANNEXT term="joj+400" />
+<SCANNEXT term="joj+376" />
 
 </RESULT>

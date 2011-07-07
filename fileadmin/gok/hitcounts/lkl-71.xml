@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2e7e9eb0-2</SESSIONVAR>
+<SESSIONVAR name="SID">9118ce1b-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh goet 10 (fh)">alh goet 10 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh goet 11 (fh)">alh goet 11 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="alh goet 12">alh goet 12</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="alh goet 12 (fh)">alh goet 12 (fh)</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="alh napo (fh)">alh napo (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="alh nash (fh)">alh nash (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="alh naum (fh)">alh naum (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="alh nehr (fh)">alh nehr (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="alh+goet+12+(fh)" />
+<SCANPREV term="alh+goet+10+(fh)" />
 
 
-<SCANNEXT term="alh+nehr+(fh)" />
+<SCANNEXT term="alh+napo+(fh)" />
 
 </RESULT>

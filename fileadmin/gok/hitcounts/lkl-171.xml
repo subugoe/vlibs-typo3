@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">5fa55d84-3</SESSIONVAR>
+<SESSIONVAR name="SID">4ce2dcbf-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 47016 gb k (fh)">li 47016 gb k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 47016 gb w (fh)">li 47016 gb w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 47016 oe k (fh)">li 47016 oe k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 47016 sw k (fh)">li 47016 sw k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 47016 sz i (fh)">li 47016 sz i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 50 d (fh)">li 50 d (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="li 50 m (fh)">li 50 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 500">li 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="li 56 sau">li 56 sau</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 6">li 6</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 61">li 61</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 61 nordamerika">li 61 nordamerika</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 61 nordamerika pz 66 usa">li 61 nordamerika pz 66 usa</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="li 650">li 650</SCANLINE>
 
@@ -883,11 +909,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 80046 ja m (fh)">lje 80046 ja m (fh)</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="lje 880">lje 880</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="lje 880">lje 880</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 88016 sz k (fh)">lje 88016 sz k (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="lje 88020 d k (fh)">lje 88020 d k (fh)</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lje 88020 d k (fh)">lje 88020 d k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 88026 nrw l (fh)">lje 88026 nrw l (fh)</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 gr m (fh)">ljk 60016 gr m (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 oe l (fh)">ljk 60016 oe l (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 oe n (fh)">ljk 60016 oe n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 oe p (fh)">ljk 60016 oe p (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 sz l (fh)">ljk 60016 sz l (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60016 sz s (fh)">ljk 60016 sz s (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ljk 60020 d k (fh)">ljk 60020 d k (fh)</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ljk 60020 d m (fh)">ljk 60020 d m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ljk 60026 bay d (fh)">ljk 60026 bay d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60026 nrw 1 ru w (fh)">ljk 60026 nrw 1 ru w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60026 nrw k (fh)">ljk 60026 nrw k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60026 nrw n (fh)">ljk 60026 nrw n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60030 nds m (fh)">ljk 60030 nds m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60046 hong k (fh)">ljk 60046 hong k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="li+650" />
+<SCANPREV term="li+47016+gb+k+(fh)" />
 
 
-<SCANNEXT term="ljk+60046+hong+k+(fh)" />
+<SCANNEXT term="ljk+60016+gr+m+(fh)" />
 
 </RESULT>
