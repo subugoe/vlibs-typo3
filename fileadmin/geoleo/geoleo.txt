@@ -1,0 +1,5 @@
+# set <base> URL
+config.baseURL = http://10.0.5.99/geoleo/
+
+# load basic config
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
