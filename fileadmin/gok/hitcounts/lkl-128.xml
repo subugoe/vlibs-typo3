@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9d5a7ed8-1</SESSIONVAR>
+<SESSIONVAR name="SID">547cd3f9-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hpg 480">hpg 480</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hpg 500">hpg 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hpg 540">hpg 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="hpg 549">hpg 549</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="hpg 555">hpg 555</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hpg xxx">hpg xxx</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hpj 00">hpj 00</SCANLINE>
 
@@ -451,7 +463,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 2 hw 2">hs 2 hw 2</SCANLINE>
 
-    <SCANLINE hits="174" mnemonic="LKL" description="hs 200">hs 200</SCANLINE>
+    <SCANLINE hits="173" mnemonic="LKL" description="hs 200">hs 200</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="hs 200 a">hs 200 a</SCANLINE>
 
@@ -707,7 +719,7 @@
 
     <SCANLINE hits="95" mnemonic="LKL" description="hs 524">hs 524</SCANLINE>
 
-    <SCANLINE hits="105" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
+    <SCANLINE hits="106" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="hs 526">hs 526</SCANLINE>
 
@@ -825,7 +837,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 601">hs 601</SCANLINE>
 
-    <SCANLINE hits="4696" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
+    <SCANLINE hits="4697" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 612">hs 612</SCANLINE>
 
@@ -839,7 +851,7 @@
 
     <SCANLINE hits="535" mnemonic="LKL" description="hs 630">hs 630</SCANLINE>
 
-    <SCANLINE hits="672" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
+    <SCANLINE hits="671" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
 
     <SCANLINE hits="596" mnemonic="LKL" description="hs 650">hs 650</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="hsa 523">hsa 523</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hsa 524">hsa 524</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hsa 525">hsa 525</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="hsa 527">hsa 527</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hsa 528">hsa 528</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hsa 530">hsa 530</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="hsa 531">hsa 531</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hpj+00" />
+<SCANPREV term="hpg+480" />
 
 
-<SCANNEXT term="hsa+531" />
+<SCANNEXT term="hsa+523" />
 
 </RESULT>

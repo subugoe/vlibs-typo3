@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">68770138-2</SESSIONVAR>
+<SESSIONVAR name="SID">2ad250e5-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="knj 373">knj 373</SCANLINE>
+
+    <SCANLINE hits="42" mnemonic="LKL" description="knj 374">knj 374</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="knj 375">knj 375</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="knj 376">knj 376</SCANLINE>
+
+    <SCANLINE hits="47" mnemonic="LKL" description="knj 377">knj 377</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="knj 380">knj 380</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="knj 381">knj 381</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="knj 382">knj 382</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="knj 383">knj 383</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="knj 387">knj 387</SCANLINE>
+
+    <SCANLINE hits="126" mnemonic="LKL" description="knj 400">knj 400</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="knj 410">knj 410</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="knj 420">knj 420</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="knj 425">knj 425</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="kqm 535">kqm 535</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="kqm 538">kqm 538</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 540">kqm 540</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kqm 548">kqm 548</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kqm 551">kqm 551</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 570">kqm 570</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kqm 574">kqm 574</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kqm 600">kqm 600</SCANLINE>
-
-    <SCANLINE hits="68" mnemonic="LKL" description="kqm 700">kqm 700</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kqm 720">kqm 720</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 720 b (fh)">kqm 720 b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 720 z (fh)">kqm 720 z (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 770 k (fh)">kqm 770 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kqm 770 z (fh)">kqm 770 z (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="knj+425" />
+<SCANPREV term="knj+373" />
 
 
-<SCANNEXT term="kqm+770+z+(fh)" />
+<SCANNEXT term="kqm+535" />
 
 </RESULT>

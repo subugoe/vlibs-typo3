@@ -2,12 +2,48 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">fc102d02-1</SESSIONVAR>
+<SESSIONVAR name="SID">dcc77837-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 858">pnf 858</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 861">pnf 861</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 867">pnf 867</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 8670">pnf 8670</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="pnf 868">pnf 868</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 8684">pnf 8684</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pnf 869">pnf 869</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 8690">pnf 8690</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pnf 870">pnf 870</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 873">pnf 873</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 874">pnf 874</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 8745">pnf 8745</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 876">pnf 876</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 882">pnf 882</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 886">pnf 886</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pnf 887">pnf 887</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnf 888">pnf 888</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="pnf 891">pnf 891</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnf 8936">pnf 8936</SCANLINE>
 
@@ -973,47 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="pnr 604">pnr 604</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="pnr 6040">pnr 6040</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6060">pnr 6060</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6067">pnr 6067</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 607">pnr 607</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6072">pnr 6072</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 608">pnr 608</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6080">pnr 6080</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 612">pnr 612</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnr 6120">pnr 6120</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 613">pnr 613</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6140">pnr 6140</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 615">pnr 615</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 617">pnr 617</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6245">pnr 6245</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 626">pnr 626</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnr 630">pnr 630</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6300">pnr 6300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnr 635">pnr 635</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pnf+8936" />
+<SCANPREV term="pnf+858" />
 
 
-<SCANNEXT term="pnr+635" />
+<SCANNEXT term="pnr+604" />
 
 </RESULT>

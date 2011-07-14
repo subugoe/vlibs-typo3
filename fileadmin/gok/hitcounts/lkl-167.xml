@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">5a1ad88f-0</SESSIONVAR>
+<SESSIONVAR name="SID">97c09214-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 460.601.720">lca 460.601.720</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lca 461">lca 461</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 461.201.720">lca 461.201.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 461.920.172">lca 461.920.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 462">lca 462</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 464">lca 464</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 471 (fh)">lca 471 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 484 (fh)">lca 484 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 497">lca 497</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 5">lca 5</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 512 m (fh)">lca 512 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 513">lca 513</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 513 (fh)">lca 513 (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lca 515 k (fh)">lca 515 k (fh)</SCANLINE>
 
@@ -911,7 +937,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="ldf 100">ldf 100</SCANLINE>
 
-    <SCANLINE hits="61" mnemonic="LKL" description="ldf 110">ldf 110</SCANLINE>
+    <SCANLINE hits="62" mnemonic="LKL" description="ldf 110">ldf 110</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ldf 120">ldf 120</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ldf 60 d (fh)">ldf 60 d (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 60 m (fh)">ldf 60 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 60 n (fh)">ldf 60 n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 600">ldf 600</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="ldf 650">ldf 650</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ldf 65010 e m (fh)">ldf 65010 e m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65011 oe w (fh)">ldf 65011 oe w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65011 ska d (fh)">ldf 65011 ska d (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65011 ska w (fh)">ldf 65011 ska w (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldf 65016 fr m (fh)">ldf 65016 fr m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65016 gb 6 sco k (fh)">ldf 65016 gb 6 sco k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldf 65016 gb m (fh)">ldf 65016 gb m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65016 ir k (fh)">ldf 65016 ir k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldf 65016 it m (fh)">ldf 65016 it m (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lca+515+k+(fh)" />
+<SCANPREV term="lca+460.601.720" />
 
 
-<SCANNEXT term="ldf+65016+it+m+(fh)" />
+<SCANNEXT term="ldf+60+d+(fh)" />
 
 </RESULT>

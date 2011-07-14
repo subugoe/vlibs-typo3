@@ -2,12 +2,22 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d55d2b21-2</SESSIONVAR>
+<SESSIONVAR name="SID">70b8bb11-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="efhq 000">efhq 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="efhq 040">efhq 040</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="efhq 050">efhq 050</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="efhq 100">efhq 100</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="efhq 150">efhq 150</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="efhq 250">efhq 250</SCANLINE>
 
@@ -999,21 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="egap 200">egap 200</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="egaz 000">egaz 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egb 000">egb 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egb 010">egb 010</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egba 010">egba 010</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egba 360">egba 360</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="efhq+250" />
+<SCANPREV term="efhq+000" />
 
 
-<SCANNEXT term="egba+360" />
+<SCANNEXT term="egap+200" />
 
 </RESULT>

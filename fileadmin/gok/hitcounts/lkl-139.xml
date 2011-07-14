@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a1d90c1e-1</SESSIONVAR>
+<SESSIONVAR name="SID">3a9f86d7-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ip 386">ip 386</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ip 500">ip 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ip 560">ip 560</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ip 570">ip 570</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ip 572">ip 572</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ip 580">ip 580</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ip 600">ip 600</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="iu 347">iu 347</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="iu 350">iu 350</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="iu 352">iu 352</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="iu 353">iu 353</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="iu 370">iu 370</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="iu 375">iu 375</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="iu 380">iu 380</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ip+600" />
+<SCANPREV term="ip+386" />
 
 
-<SCANNEXT term="iu+380" />
+<SCANNEXT term="iu+347" />
 
 </RESULT>

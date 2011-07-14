@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d1609db1-0</SESSIONVAR>
+<SESSIONVAR name="SID">e7c4e6d8-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="cuh 100">cuh 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="cuh 320">cuh 320</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="cuk">cuk</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="cuk 000">cuk 000</SCANLINE>
 
@@ -891,7 +897,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct c 21a">deduct c 21a</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="deduct c 36a">deduct c 36a</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="deduct c 36a">deduct c 36a</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="deduct c 3a">deduct c 3a</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="deduct e 55a-e">deduct e 55a-e</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct e 55a-f">deduct e 55a-f</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct e 57a-a">deduct e 57a-a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct e 57a-b">deduct e 57a-b</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cuk+000" />
+<SCANPREV term="cuh+100" />
 
 
-<SCANNEXT term="deduct+e+57a-b" />
+<SCANNEXT term="deduct+e+55a-e" />
 
 </RESULT>

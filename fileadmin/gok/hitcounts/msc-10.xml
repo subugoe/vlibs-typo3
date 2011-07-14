@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d251f0ff-0</SESSIONVAR>
+<SESSIONVAR name="SID">de55ea25-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="8" mnemonic="MSC" description="65l07">65l07</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="MSC" description="65l08">65l08</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="MSC" description="65l09">65l09</SCANLINE>
 
     <SCANLINE hits="67" mnemonic="MSC" description="65l10">65l10</SCANLINE>
 
@@ -29,7 +35,7 @@
 
     <SCANLINE hits="25" mnemonic="MSC" description="65l99">65l99</SCANLINE>
 
-    <SCANLINE hits="134" mnemonic="MSC" description="65lxx">65lxx</SCANLINE>
+    <SCANLINE hits="132" mnemonic="MSC" description="65lxx">65lxx</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="MSC" description="65m00">65m00</SCANLINE>
 
@@ -71,7 +77,7 @@
 
     <SCANLINE hits="1" mnemonic="MSC" description="65n08">65n08</SCANLINE>
 
-    <SCANLINE hits="102" mnemonic="MSC" description="65n12">65n12</SCANLINE>
+    <SCANLINE hits="103" mnemonic="MSC" description="65n12">65n12</SCANLINE>
 
     <SCANLINE hits="134" mnemonic="MSC" description="65n15">65n15</SCANLINE>
 
@@ -81,9 +87,9 @@
 
     <SCANLINE hits="42" mnemonic="MSC" description="65n25">65n25</SCANLINE>
 
-    <SCANLINE hits="503" mnemonic="MSC" description="65n30">65n30</SCANLINE>
+    <SCANLINE hits="505" mnemonic="MSC" description="65n30">65n30</SCANLINE>
 
-    <SCANLINE hits="58" mnemonic="MSC" description="65n35">65n35</SCANLINE>
+    <SCANLINE hits="59" mnemonic="MSC" description="65n35">65n35</SCANLINE>
 
     <SCANLINE hits="102" mnemonic="MSC" description="65n38">65n38</SCANLINE>
 
@@ -97,7 +103,7 @@
 
     <SCANLINE hits="58" mnemonic="MSC" description="65n99">65n99</SCANLINE>
 
-    <SCANLINE hits="99" mnemonic="MSC" description="65nxx">65nxx</SCANLINE>
+    <SCANLINE hits="96" mnemonic="MSC" description="65nxx">65nxx</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="MSC" description="65p00">65p00</SCANLINE>
 
@@ -143,7 +149,7 @@
 
     <SCANLINE hits="68" mnemonic="MSC" description="65y00">65y00</SCANLINE>
 
-    <SCANLINE hits="175" mnemonic="MSC" description="65y05">65y05</SCANLINE>
+    <SCANLINE hits="173" mnemonic="MSC" description="65y05">65y05</SCANLINE>
 
     <SCANLINE hits="47" mnemonic="MSC" description="65y10">65y10</SCANLINE>
 
@@ -155,11 +161,11 @@
 
     <SCANLINE hits="15" mnemonic="MSC" description="65yxx">65yxx</SCANLINE>
 
-    <SCANLINE hits="101" mnemonic="MSC" description="65z05">65z05</SCANLINE>
+    <SCANLINE hits="100" mnemonic="MSC" description="65z05">65z05</SCANLINE>
 
     <SCANLINE hits="158" mnemonic="MSC" description="68-00">68-00</SCANLINE>
 
-    <SCANLINE hits="2210" mnemonic="MSC" description="68-01">68-01</SCANLINE>
+    <SCANLINE hits="2211" mnemonic="MSC" description="68-01">68-01</SCANLINE>
 
     <SCANLINE hits="891" mnemonic="MSC" description="68-02">68-02</SCANLINE>
 
@@ -199,7 +205,7 @@
 
     <SCANLINE hits="270" mnemonic="MSC" description="68n01">68n01</SCANLINE>
 
-    <SCANLINE hits="465" mnemonic="MSC" description="68n15">68n15</SCANLINE>
+    <SCANLINE hits="466" mnemonic="MSC" description="68n15">68n15</SCANLINE>
 
     <SCANLINE hits="127" mnemonic="MSC" description="68n17">68n17</SCANLINE>
 
@@ -763,7 +769,7 @@
 
     <SCANLINE hits="46" mnemonic="MSC" description="74h45">74h45</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="MSC" description="74h50">74h50</SCANLINE>
+    <SCANLINE hits="10" mnemonic="MSC" description="74h50">74h50</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="MSC" description="74h55">74h55</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="MSC" description="76d17">76d17</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="MSC" description="76d25">76d25</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="MSC" description="76d27">76d27</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="MSC" description="76d33">76d33</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="65l10" />
+<SCANPREV term="65l07" />
 
 
-<SCANNEXT term="76d33" />
+<SCANNEXT term="76d17" />
 
 </RESULT>

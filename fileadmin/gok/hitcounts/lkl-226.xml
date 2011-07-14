@@ -2,12 +2,60 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e62a5895-1</SESSIONVAR>
+<SESSIONVAR name="SID">4e64a87a-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vev 264">vev 264</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vev 265">vev 265</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="vev 266">vev 266</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="vev 267">vev 267</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="vev 268">vev 268</SCANLINE>
+
+    <SCANLINE hits="47" mnemonic="LKL" description="vev 270">vev 270</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="vev 271">vev 271</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="vev 272">vev 272</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="vev 273">vev 273</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="vev 274">vev 274</SCANLINE>
+
+    <SCANLINE hits="41" mnemonic="LKL" description="vev 275">vev 275</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="vev 276">vev 276</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="vev 277">vev 277</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="vev 278">vev 278</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="vev 280">vev 280</SCANLINE>
+
+    <SCANLINE hits="61" mnemonic="LKL" description="vev 281">vev 281</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="vev 282">vev 282</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="vev 283">vev 283</SCANLINE>
+
+    <SCANLINE hits="92" mnemonic="LKL" description="vev 284">vev 284</SCANLINE>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="vev 285">vev 285</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="vev 300">vev 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vev 400">vev 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vev 410">vev 410</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="vev 420">vev 420</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="vev 430">vev 430</SCANLINE>
 
@@ -77,7 +125,7 @@
 
     <SCANLINE hits="656" mnemonic="LKL" description="vf">vf</SCANLINE>
 
-    <SCANLINE hits="159" mnemonic="LKL" description="vf 000">vf 000</SCANLINE>
+    <SCANLINE hits="160" mnemonic="LKL" description="vf 000">vf 000</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="vf 100">vf 100</SCANLINE>
 
@@ -121,7 +169,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="vf 7 aust">vf 7 aust</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="vf 700">vf 700</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="vf 700">vf 700</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="vf a">vf a</SCANLINE>
 
@@ -379,7 +427,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="vi 00">vi 00</SCANLINE>
 
-    <SCANLINE hits="122" mnemonic="LKL" description="vi 000">vi 000</SCANLINE>
+    <SCANLINE hits="123" mnemonic="LKL" description="vi 000">vi 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vi 66 usa">vi 66 usa</SCANLINE>
 
@@ -467,7 +515,7 @@
 
     <SCANLINE hits="38" mnemonic="LKL" description="vjb 312">vjb 312</SCANLINE>
 
-    <SCANLINE hits="40" mnemonic="LKL" description="vjb 313">vjb 313</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="vjb 313">vjb 313</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="vjb 320">vjb 320</SCANLINE>
 
@@ -537,7 +585,7 @@
 
     <SCANLINE hits="17" mnemonic="LKL" description="vjf">vjf</SCANLINE>
 
-    <SCANLINE hits="690" mnemonic="LKL" description="vjf 000">vjf 000</SCANLINE>
+    <SCANLINE hits="692" mnemonic="LKL" description="vjf 000">vjf 000</SCANLINE>
 
     <SCANLINE hits="24" mnemonic="LKL" description="vjg 000">vjg 000</SCANLINE>
 
@@ -561,7 +609,7 @@
 
     <SCANLINE hits="51" mnemonic="LKL" description="vjh 000">vjh 000</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="vjh 100">vjh 100</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="vjh 100">vjh 100</SCANLINE>
 
     <SCANLINE hits="53" mnemonic="LKL" description="vjh 200">vjh 200</SCANLINE>
 
@@ -591,7 +639,7 @@
 
     <SCANLINE hits="239" mnemonic="LKL" description="vk">vk</SCANLINE>
 
-    <SCANLINE hits="83" mnemonic="LKL" description="vk 000">vk 000</SCANLINE>
+    <SCANLINE hits="84" mnemonic="LKL" description="vk 000">vk 000</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="vk 100">vk 100</SCANLINE>
 
@@ -851,7 +899,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vn 46 jap vp 46 jap">vn 46 jap vp 46 jap</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="vn 500">vn 500</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="vn 500">vn 500</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="vn 600">vn 600</SCANLINE>
 
@@ -877,7 +925,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="vo">vo</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="vo 000">vo 000</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="vo 000">vo 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vo c">vo c</SCANLINE>
 
@@ -931,7 +979,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="voe 100">voe 100</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="voe 200">voe 200</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="voe 200">voe 200</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="vof 000">vof 000</SCANLINE>
 
@@ -961,59 +1009,11 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="voi 220">voi 220</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="voi 230">voi 230</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="voi 240">voi 240</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="voi 250">voi 250</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="voi 280">voi 280</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="voi 300">voi 300</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="voi 400">voi 400</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="voj 000">voj 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vok">vok</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="vok 000">vok 000</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="vol 000">vol 000</SCANLINE>
-
-    <SCANLINE hits="81" mnemonic="LKL" description="vom 000">vom 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vom architekten albrecht haupt">vom architekten albrecht haupt</SCANLINE>
-
-    <SCANLINE hits="197" mnemonic="LKL" description="von 000">von 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von christiano chemnitio">von christiano chemnitio</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von fs an bs">von fs an bs</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von fs an du">von fs an du</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von ober-tribunal-rathe f. h. sonnenschmidt">von ober-tribunal-rathe f. h. sonnenschmidt</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von ref sg an ssi">von ref sg an ssi</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von sue an fs">von sue an fs</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="von tim an bs">von tim an bs</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="voo">voo</SCANLINE>
-
-    <SCANLINE hits="146" mnemonic="LKL" description="voo 000">voo 000</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="vop">vop</SCANLINE>
-
-    <SCANLINE hits="196" mnemonic="LKL" description="vop 000">vop 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="vev+430" />
+<SCANPREV term="vev+264" />
 
 
-<SCANNEXT term="vop+000" />
+<SCANNEXT term="voi+220" />
 
 </RESULT>

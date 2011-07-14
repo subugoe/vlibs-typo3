@@ -2,12 +2,20 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">5f442500-0</SESSIONVAR>
+<SESSIONVAR name="SID">cd3052f3-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="eaea 720">eaea 720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaea 990">eaea 990</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="eaec a (fh)">eaec a (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="eaec i (fh)">eaec i (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaee 050">eaee 050</SCANLINE>
 
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ebbp 820">ebbp 820</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ebbp 830">ebbp 830</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ebbp 990">ebbp 990</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ebbr">ebbr</SCANLINE>
-
-    <SCANLINE hits="41" mnemonic="LKL" description="ebbr 000">ebbr 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="eaee+050" />
+<SCANPREV term="eaea+720" />
 
 
-<SCANNEXT term="ebbr+000" />
+<SCANNEXT term="ebbp+820" />
 
 </RESULT>

@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0306fdcd-0</SESSIONVAR>
+<SESSIONVAR name="SID">2305bd08-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="ehej 100">ehej 100</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="ehej 150">ehej 150</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ehej 200">ehej 200</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ehej 300">ehej 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ehek 000">ehek 000</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ehek 050">ehek 050</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="ehek 100">ehek 100</SCANLINE>
 
@@ -429,7 +441,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ehim 000">ehim 000</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="ehim 100">ehim 100</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="ehim 100">ehim 100</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ehim 150">ehim 150</SCANLINE>
 
@@ -659,7 +671,7 @@
 
     <SCANLINE hits="56" mnemonic="LKL" description="eibr 500">eibr 500</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="eibr 600">eibr 600</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="eibr 600">eibr 600</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="eibs 000">eibs 000</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="eieg 600">eieg 600</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="eiej 100">eiej 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="eiej 150">eiej 150</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="eif 000">eif 000</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="eif 030">eif 030</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="eif 060">eif 060</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="eif 080">eif 080</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ehek+100" />
+<SCANPREV term="ehej+100" />
 
 
-<SCANNEXT term="eif+080" />
+<SCANNEXT term="eieg+600" />
 
 </RESULT>

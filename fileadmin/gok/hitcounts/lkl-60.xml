@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">61975ae0-3</SESSIONVAR>
+<SESSIONVAR name="SID">ca250876-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gy schum,c. u (fh)">gy schum,c. u (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gy senf m (fh)">gy senf m (fh)</SCANLINE>
 
@@ -247,7 +249,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="h 220">h 220</SCANLINE>
 
-    <SCANLINE hits="71" mnemonic="LKL" description="h 230">h 230</SCANLINE>
+    <SCANLINE hits="70" mnemonic="LKL" description="h 230">h 230</SCANLINE>
 
     <SCANLINE hits="50" mnemonic="LKL" description="h 240">h 240</SCANLINE>
 
@@ -333,7 +335,7 @@
 
     <SCANLINE hits="316" mnemonic="LKL" description="h 316">h 316</SCANLINE>
 
-    <SCANLINE hits="355" mnemonic="LKL" description="h 317">h 317</SCANLINE>
+    <SCANLINE hits="356" mnemonic="LKL" description="h 317">h 317</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="h 317 j">h 317 j</SCANLINE>
 
@@ -615,7 +617,7 @@
 
     <SCANLINE hits="49" mnemonic="LKL" description="h 533">h 533</SCANLINE>
 
-    <SCANLINE hits="170" mnemonic="LKL" description="h 534">h 534</SCANLINE>
+    <SCANLINE hits="171" mnemonic="LKL" description="h 534">h 534</SCANLINE>
 
     <SCANLINE hits="71" mnemonic="LKL" description="h 535">h 535</SCANLINE>
 
@@ -639,7 +641,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="h 543">h 543</SCANLINE>
 
-    <SCANLINE hits="107" mnemonic="LKL" description="h 544">h 544</SCANLINE>
+    <SCANLINE hits="108" mnemonic="LKL" description="h 544">h 544</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="LKL" description="h 545">h 545</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="he 387">he 387</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="he 400">he 400</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="gy+senf+m+(fh)" />
+<SCANPREV term="gy+schum,c.+u+(fh)" />
 
 
-<SCANNEXT term="he+400" />
+<SCANNEXT term="he+387" />
 
 </RESULT>

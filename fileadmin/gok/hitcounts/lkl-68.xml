@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0abe7043-1</SESSIONVAR>
+<SESSIONVAR name="SID">bf66e829-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="agx 000">agx 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="agz 000">agz 000</SCANLINE>
 
     <SCANLINE hits="3116" mnemonic="LKL" description="ah">ah</SCANLINE>
 
@@ -899,7 +903,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="aj">aj</SCANLINE>
 
-    <SCANLINE hits="157" mnemonic="LKL" description="aj 000">aj 000</SCANLINE>
+    <SCANLINE hits="156" mnemonic="LKL" description="aj 000">aj 000</SCANLINE>
 
     <SCANLINE hits="94" mnemonic="LKL" description="aj 100">aj 100</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="akd 2.1911- .">akd 2.1911- .</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="akd 2.1911-1965. (fh)">akd 2.1911-1965. (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="akd 2.1931- .">akd 2.1931- .</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ah" />
+<SCANPREV term="agx+000" />
 
 
-<SCANNEXT term="akd+2.1931-+." />
+<SCANNEXT term="akd+2.1911-+." />
 
 </RESULT>

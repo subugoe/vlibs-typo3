@@ -2,12 +2,26 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8fcb59d0-3</SESSIONVAR>
+<SESSIONVAR name="SID">dc7c1c32-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="52" mnemonic="LKL" description="gep 500">gep 500</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="gep 900">gep 900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gepa">gepa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="geq">geq</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ges">ges</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37">ges.med.37</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 czerny">ges.med.37 czerny</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ges.med.37 hoffmann">ges.med.37 hoffmann</SCANLINE>
 
@@ -123,7 +137,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gh 000">gh 000</SCANLINE>
 
-    <SCANLINE hits="8306" mnemonic="LKL" description="gh 300">gh 300</SCANLINE>
+    <SCANLINE hits="8308" mnemonic="LKL" description="gh 300">gh 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gh 500">gh 500</SCANLINE>
 
@@ -149,11 +163,11 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="gm 000">gm 000</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="gm 100">gm 100</SCANLINE>
+    <SCANLINE hits="39" mnemonic="LKL" description="gm 100">gm 100</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="gm 130">gm 130</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="gm 170">gm 170</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="gm 170">gm 170</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="gm 200">gm 200</SCANLINE>
 
@@ -189,7 +203,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="gm 480">gm 480</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="gm 500">gm 500</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="gm 500">gm 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gm 511">gm 511</SCANLINE>
 
@@ -447,7 +461,7 @@
 
     <SCANLINE hits="48" mnemonic="LKL" description="gn 400">gn 400</SCANLINE>
 
-    <SCANLINE hits="192" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
+    <SCANLINE hits="193" mnemonic="LKL" description="gn 410">gn 410</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="gn 430">gn 430</SCANLINE>
 
@@ -457,7 +471,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gn 440">gn 440</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="gn 450">gn 450</SCANLINE>
+    <SCANLINE hits="55" mnemonic="LKL" description="gn 450">gn 450</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="gn 500">gn 500</SCANLINE>
 
@@ -903,8 +917,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 geogr 251 verlust-a">gr 2 geogr 251 verlust-a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 geogr 256 verlust-b">gr 2 geogr 256 verlust-b</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h afr 1370-a">gr 2 h afr 1370-a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h am i, 726-a">gr 2 h am i, 726-a</SCANLINE>
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h nat iii, 6935-a">gr 2 h nat iii, 6935-a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h russ 3607-a">gr 2 h russ 3607-a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gr 2 h sax pr 3588-a">gr 2 h sax pr 3588-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h sax pr 3725-a">gr 2 h sax pr 3725-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 2337-a">gr 2 h subs 2337-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 2426-a">gr 2 h subs 2426-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gr 2 h subs 2485-a">gr 2 h subs 2485-a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ges.med.37+hoffmann" />
+<SCANPREV term="gep+500" />
 
 
-<SCANNEXT term="gr+2+h+subs+2485-a" />
+<SCANNEXT term="gr+2+h+nat+iii,+6935-a" />
 
 </RESULT>

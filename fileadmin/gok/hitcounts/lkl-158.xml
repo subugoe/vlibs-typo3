@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b8b28865-1</SESSIONVAR>
+<SESSIONVAR name="SID">caba4cd8-29</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kg 332">kg 332</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="kg 335">kg 335</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kg 337">kg 337</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kg 340">kg 340</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kg 344">kg 344</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kg 350">kg 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kg 351">kg 351</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="kg 352">kg 352</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kg 353">kg 353</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kg 357">kg 357</SCANLINE>
 
@@ -961,6 +979,8 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="kia 648">kia 648</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="kia 651">kia 651</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="kia 659">kia 659</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kia xxx">kia xxx</SCANLINE>
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="kit 340">kit 340</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="kit 350">kit 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kit 400">kit 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kit 500">kit 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kit 530">kit 530</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kit 534">kit 534</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kit 600">kit 600</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kit xxx">kit xxx</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="kj">kj</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="kj 200">kj 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kj 220">kj 220</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kg+357" />
+<SCANPREV term="kg+332" />
 
 
-<SCANNEXT term="kj+220" />
+<SCANNEXT term="kit+340" />
 
 </RESULT>

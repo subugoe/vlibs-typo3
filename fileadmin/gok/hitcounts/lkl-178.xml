@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">88691282-3</SESSIONVAR>
+<SESSIONVAR name="SID">b0f1c2b3-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="nja 150">nja 150</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="nja 155">nja 155</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="nja 165">nja 165</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="nja 190">nja 190</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nja 200">nja 200</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="nja 210">nja 210</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nja 220">nja 220</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nja 240">nja 240</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nja 255">nja 255</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nja 260">nja 260</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="nja 265">nja 265</SCANLINE>
+
+    <SCANLINE hits="93" mnemonic="LKL" description="nja 300">nja 300</SCANLINE>
+
+    <SCANLINE hits="30" mnemonic="LKL" description="nja 305">nja 305</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="nja 310">nja 310</SCANLINE>
 
@@ -49,7 +75,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="nja 457">nja 457</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="nja 458">nja 458</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="nja 458">nja 458</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="nja 460">nja 460</SCANLINE>
 
@@ -163,7 +189,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nja 805">nja 805</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="nja 815">nja 815</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="nja 815">nja 815</SCANLINE>
 
     <SCANLINE hits="51" mnemonic="LKL" description="nja 850">nja 850</SCANLINE>
 
@@ -267,11 +293,11 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="njb 460">njb 460</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="njb 470">njb 470</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="njb 470">njb 470</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="njb 480">njb 480</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="njb 490">njb 490</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="njb 490">njb 490</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="njb 510">njb 510</SCANLINE>
 
@@ -411,11 +437,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nje 80 k (fh)">nje 80 k (fh)</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="nje 800">nje 800</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="nje 800">nje 800</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="nje 850">nje 850</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="nje 900">nje 900</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="nje 900">nje 900</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nje 900 internetrecht">nje 900 internetrecht</SCANLINE>
 
@@ -469,7 +495,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="njg 250">njg 250</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="njg 300">njg 300</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="njg 300">njg 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="njg 350">njg 350</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="nl k (fh)">nl k (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="nl m (fh)">nl m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nl ooo">nl ooo</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="nla 000">nla 000</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="nla 002">nla 002</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nla 300">nla 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nla i (fh)">nla i (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="nla k (fh)">nla k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nla m (fh)">nla m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nla q">nla q</SCANLINE>
-
-    <SCANLINE hits="217" mnemonic="LKL" description="nlb">nlb</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="nlb 000">nlb 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="nlb 002">nlb 002</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nlb 003">nlb 003</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nja+310" />
+<SCANPREV term="nja+150" />
 
 
-<SCANNEXT term="nlb+003" />
+<SCANNEXT term="nl+k+(fh)" />
 
 </RESULT>

@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f6b6d267-1</SESSIONVAR>
+<SESSIONVAR name="SID">6c8401cf-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejdd 520">ejdd 520</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ejdd 990">ejdd 990</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejde">ejde</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="ejde 000">ejde 000</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="ejde 030">ejde 030</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ejde 050">ejde 050</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="ejde 100">ejde 100</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="106" mnemonic="LKL" description="fh 000">fh 000</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="fh0 00 - fhc 400">fh0 00 - fhc 400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fh000 - fhc400">fh000 - fhc400</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fha">fha</SCANLINE>
-
-    <SCANLINE hits="136" mnemonic="LKL" description="fha 100">fha 100</SCANLINE>
-
-    <SCANLINE hits="107" mnemonic="LKL" description="fha 200">fha 200</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="fha 300">fha 300</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ejde+100" />
+<SCANPREV term="ejdd+520" />
 
 
-<SCANNEXT term="fha+300" />
+<SCANNEXT term="fh+000" />
 
 </RESULT>

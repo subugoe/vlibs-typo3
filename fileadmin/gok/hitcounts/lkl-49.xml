@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a838cb5d-0</SESSIONVAR>
+<SESSIONVAR name="SID">70e5c8b9-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="egip 00">egip 00</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="egip 000">egip 000</SCANLINE>
 
@@ -701,6 +703,8 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="eheh 450">eheh 450</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="eheh 500">eheh 500</SCANLINE>
+
     <SCANLINE hits="4" mnemonic="LKL" description="eheh 550">eheh 550</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="eheh 600">eheh 600</SCANLINE>
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ehgm 500">ehgm 500</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="ehgm 600">ehgm 600</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ehgm 990">ehgm 990</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="egip+000" />
+<SCANPREV term="egip+00" />
 
 
-<SCANNEXT term="ehgm+990" />
+<SCANNEXT term="ehgm+500" />
 
 </RESULT>

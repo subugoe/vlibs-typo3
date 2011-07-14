@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6325dbcd-2</SESSIONVAR>
+<SESSIONVAR name="SID">926f1fcd-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hi 660">hi 660</SCANLINE>
+
+    <SCANLINE hits="67" mnemonic="LKL" description="hi 662">hi 662</SCANLINE>
+
+    <SCANLINE hits="80" mnemonic="LKL" description="hi 664">hi 664</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="hi 666">hi 666</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="hi 668">hi 668</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hi xxx">hi xxx</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="hib 200">hib 200</SCANLINE>
 
@@ -523,7 +535,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hl 660">hl 660</SCANLINE>
 
-    <SCANLINE hits="122" mnemonic="LKL" description="hl 662">hl 662</SCANLINE>
+    <SCANLINE hits="123" mnemonic="LKL" description="hl 662">hl 662</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="hl 664">hl 664</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hpg 540">hpg 540</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="hpg 549">hpg 549</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="hpg 555">hpg 555</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hpg xxx">hpg xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hpj 00">hpj 00</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="hpj 000">hpj 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="hpj 357">hpj 357</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hib+200" />
+<SCANPREV term="hi+660" />
 
 
-<SCANNEXT term="hpj+357" />
+<SCANNEXT term="hpg+540" />
 
 </RESULT>

@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9f68211a-2</SESSIONVAR>
+<SESSIONVAR name="SID">decf7add-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hrk 378">hrk 378</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="hrk 380">hrk 380</SCANLINE>
 
@@ -173,7 +175,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 2 hw 2">hs 2 hw 2</SCANLINE>
 
-    <SCANLINE hits="174" mnemonic="LKL" description="hs 200">hs 200</SCANLINE>
+    <SCANLINE hits="173" mnemonic="LKL" description="hs 200">hs 200</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="hs 200 a">hs 200 a</SCANLINE>
 
@@ -429,7 +431,7 @@
 
     <SCANLINE hits="95" mnemonic="LKL" description="hs 524">hs 524</SCANLINE>
 
-    <SCANLINE hits="105" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
+    <SCANLINE hits="106" mnemonic="LKL" description="hs 525">hs 525</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="hs 526">hs 526</SCANLINE>
 
@@ -547,7 +549,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 601">hs 601</SCANLINE>
 
-    <SCANLINE hits="4696" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
+    <SCANLINE hits="4697" mnemonic="LKL" description="hs 610">hs 610</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="hs 612">hs 612</SCANLINE>
 
@@ -561,7 +563,7 @@
 
     <SCANLINE hits="535" mnemonic="LKL" description="hs 630">hs 630</SCANLINE>
 
-    <SCANLINE hits="672" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
+    <SCANLINE hits="671" mnemonic="LKL" description="hs 640">hs 640</SCANLINE>
 
     <SCANLINE hits="596" mnemonic="LKL" description="hs 650">hs 650</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hsd 460">hsd 460</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="hsd 500">hsd 500</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="hrk+380" />
+<SCANPREV term="hrk+378" />
 
 
-<SCANNEXT term="hsd+500" />
+<SCANNEXT term="hsd+460" />
 
 </RESULT>

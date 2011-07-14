@@ -2,12 +2,24 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a25ce579-2</SESSIONVAR>
+<SESSIONVAR name="SID">b57170e2-2b</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="iz 357">iz 357</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="iz 358">iz 358</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="iz 359">iz 359</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iz 370">iz 370</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="iz 374">iz 374</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="iz 377">iz 377</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="iz 380">iz 380</SCANLINE>
 
@@ -997,23 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jcg 338">jcg 338</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="jcg 340">jcg 340</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jcg 342">jcg 342</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jcg 344">jcg 344</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jcg 345">jcg 345</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jcg 350">jcg 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jcg 351">jcg 351</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="iz+380" />
+<SCANPREV term="iz+357" />
 
 
-<SCANNEXT term="jcg+351" />
+<SCANNEXT term="jcg+338" />
 
 </RESULT>

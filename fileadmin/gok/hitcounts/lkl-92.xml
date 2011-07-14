@@ -2,12 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">90c6c835-1</SESSIONVAR>
+<SESSIONVAR name="SID">8aaeeca1-2a</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="aop 000">aop 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="aos 000">aos 000</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="aos 100">aos 100</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aos 400">aos 400</SCANLINE>
 
@@ -585,7 +591,7 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="arl 380">arl 380</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="arl 390">arl 390</SCANLINE>
+    <SCANLINE hits="69" mnemonic="LKL" description="arl 390">arl 390</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="arl 400">arl 400</SCANLINE>
 
@@ -931,7 +937,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="asa 390">asa 390</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="asa 400">asa 400</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="asa 400">asa 400</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="asa 410">asa 410</SCANLINE>
 
@@ -1003,17 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="asf16 sz w (fh)">asf16 sz w (fh)</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ash 000">ash 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ash46 in 9 kalk w (fh)">ash46 in 9 kalk w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ash46 ja u (fh)">ash46 ja u (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="aos+400" />
+<SCANPREV term="aop+000" />
 
 
-<SCANNEXT term="ash46+ja+u+(fh)" />
+<SCANNEXT term="asf16+sz+w+(fh)" />
 
 </RESULT>

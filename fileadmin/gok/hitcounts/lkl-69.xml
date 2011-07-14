@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3353ad15-3</SESSIONVAR>
+<SESSIONVAR name="SID">2865d600-28</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="akd 2.1700-1892. (fh)">akd 2.1700-1892. (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="akd 2.1750-1910. (fh)">akd 2.1750-1910. (fh)</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="akd 2.1911- .">akd 2.1911- .</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="alh asim">alh asim</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="alh atat 2">alh atat 2</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="alh atw">alh atw</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="akd+2.1911-+." />
+<SCANPREV term="akd+2.1700-1892.+(fh)" />
 
 
-<SCANNEXT term="alh+atw" />
+<SCANNEXT term="alh+asim" />
 
 </RESULT>
