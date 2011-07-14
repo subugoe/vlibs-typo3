@@ -7,3 +7,6 @@
 [submodule "fileadmin/opac"]
 	path = fileadmin/opac
 	url = git://github.com/ssp/Opac-2-Atom.git
+[submodule "typo3conf/ext/ezbrequest"]
+	path = typo3conf/ext/ezbrequest
+	url = git@github.com:ssp/typo3-ezbrequest.git
