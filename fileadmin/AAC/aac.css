@@ -128,7 +128,7 @@ li {
 	margin: 3px 0;
 }
 
-a:link, a:visited, a:active, a:hover {
+a:link, a:visited, a:link:active, a:link:hover {
 	color: #263476;
 	font-weight: bold;
 	text-decoration: none;
