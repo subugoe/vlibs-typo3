@@ -1,6 +1,6 @@
 <?php
 	// Auto load extension classes
-	$extensionPath = t3lib_extMgm::extPath('cps_devlib');
+	$extensionPath = t3lib_extMgm::extPath('cps_devlib') . 'lib/';
 
 	$autoloadFiles = array(
 		'tx_cpsdevlib_db' => $extensionPath.'class.tx_cpsdevlib_db.php',

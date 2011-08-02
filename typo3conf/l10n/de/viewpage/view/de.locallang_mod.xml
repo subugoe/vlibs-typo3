@@ -1,21 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_labels_tablabel">Seite anzeigen</label>
-			<label index="mlang_labels_tabdescr">Zeigt die aktuelle Seite an und lässt Sie den Inhalt direkt bearbeiten.</label>
-			<label index="mlang_tabs_tab">Anzeigen</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_labels_tablabel" type="integer">258274582</label>
-			<label index="mlang_labels_tabdescr" type="integer">73324107</label>
-			<label index="mlang_tabs_tab" type="integer">70589694</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="mlang_labels_tablabel">Seite anzeigen</label>
+      <label index="mlang_labels_tabdescr">Zeigt die aktuelle Seite an und lässt Sie den Inhalt direkt bearbeiten.</label>
+      <label index="mlang_tabs_tab">Anzeigen</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

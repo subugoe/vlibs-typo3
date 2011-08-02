@@ -1,228 +1,114 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="title">jQuery-Konfiguration</label>
-			<label index="function1">Erstellung einer individuellen jQuery-JS-Bibliothek</label>
-			<label index="function2">JS-Analyse auf jQuery-Abhängigkeiten</label>
-			<label index="function3">JS-Analyse von t3jquery.txt in Extensions</label>
-			<label index="function4">Komprimieren eigener JS-Dateien</label>
-			<label index="function5">Anzeige der class.t3jquery.php-API</label>
-			<label index="jquery.analyze.dependencies">jQuery-Abhängigkeiten in folgender Datei:</label>
-			<label index="jquery.analyze.none">Keine</label>
-			<label index="jquery.analyze.packed">Datei endet nicht auf .js oder ist bereits komprimiert!</label>
-			<label index="jquery.button.check">Analysieren</label>
-			<label index="jquery.button.compress">Komprimieren</label>
-			<label index="jquery.button.create">jQuery-Bibliothek erstellen</label>
-			<label index="jquery.button.mergejq">Vereinigen &amp; Benützen</label>
-			<label index="jquery.button.selectall">Alles auswählen</label>
-			<label index="jquery.button.selectnone">Auswahl löschen</label>
-			<label index="jquery.button.usejq">Benützen</label>
-			<label index="jquery.compress.compress">Hier das &lt;em&gt;unkomprimierte&lt;/em&gt; JavaScript einfügen:</label>
-			<label index="jquery.compress.decompress">Die &lt;em&gt;komprimierte&lt;/em&gt; Version:</label>
-			<label index="jquery.compress.description">Durch dieses Modul wird die Möglichkeit zur Verfügung gestellt, eigene JavaScript-Dateien zu komprimieren. Verwendet wird &lt;a href=&quot;http://joliclic.free.fr/php/javascript-packer/en/&quot; target=&quot;_blank&quot;&gt;die PHP5-version&lt;/a&gt; von &lt;a href=&quot;http://dean.edwards.name/packer/&quot; target=&quot;_blank&quot;&gt;Dean Edwards Packer&lt;/a&gt; oder &lt;a href=&quot;http://www.crockford.com/javascript/jsmin.html&quot; target=&quot;_blank&quot;&gt;JSMin&lt;/a&gt;.</label>
-			<label index="jquery.compress.nomunge">Nur verkleinern:</label>
-			<label index="jquery.compress.nomunge.yes">Ja</label>
-			<label index="jquery.compress.nomunge.no">Nein</label>
-			<label index="jquery.compression">Kompressionsstufe auswählen</label>
-			<label index="jquery.compression.jsmin.description">Säubert Kommentare und Leerzeichen, Kompression mit &lt;a href=&quot;http://www.crockford.com/javascript/jsmin.html&quot; target=&quot;_blank&quot;&gt;JSMin&lt;/a&gt;.</label>
-			<label index="jquery.compression.jsmin.name">JsMin-Komprimierung</label>
-			<label index="jquery.compression.nodocs.description">Unkomprimiert, löscht lediglich die Dokumentation.</label>
-			<label index="jquery.compression.nodocs.name">Ohne Dokumentation</label>
-			<label index="jquery.compression.none.description">Unkomprimiert, inklusive Dokumentation. Empfehlenswert während der Entwicklung.</label>
-			<label index="jquery.compression.none.name">Keine Komprimierung</label>
-			<label index="jquery.compression.packer.description">Verwendet &lt;a href=&quot;http://joliclic.free.fr/php/javascript-packer/en/&quot; target=&quot;_blank&quot;&gt;die PHP5-Version&lt;/a&gt; von &lt;a href=&quot;http://dean.edwards.name/packer/&quot; target=&quot;_blank&quot;&gt;Dean Edwards Packer&lt;/a&gt;.</label>
-			<label index="jquery.compression.packer.name">Packer-Komprimierung</label>
-			<label index="jquery.extension.dependencies">jQuery-Abhängikeiten in den Extenions gefunden:</label>
-			<label index="jquery.extension.description">Extensions auswählen, die auf jQuery-Abhängigkeiten geprüft werden sollen.</label>
-			<label index="jquery.extension.extkey">Extension-Key:</label>
-			<label index="jquery.extension.title">Titel:</label>
-			<label index="jquery.extension.version">Version:</label>
-			<label index="jquery.header1">Benötigte Komponenten auswählen:</label>
-			<label index="jquery.header2">Benötigten Komponenten finden</label>
-			<label index="jquery.header3">Vorhandene Extensions analysieren</label>
-			<label index="jquery.header4">Komprimieren eigener JS-Dateien</label>
-			<label index="jquery.header5">Anzeige der class.t3jquery.php-API</label>
-			<label index="jquery.packito.description">Unkomprimiertes JavaScript auswählen, das auf jQuery-Abhängigkeiten geprüft werden soll.</label>
-			<label index="jquery.packito.local">oder lokale Datei:</label>
-			<label index="jquery.packito.note">&lt;em&gt;Achtung: Nur Dateien mit &lt;strong&gt;.js&lt;/strong&gt; werden akzeptiert.&lt;br /&gt; Extension-Verzeichnisse können mit EXT: abgerufen werden. zB. EXT:t3jquery/res/jqconfig.js&lt;/em&gt;</label>
-			<label index="jquery.packito.remote">Datei am Server:</label>
-			<label index="jquery.component.jquery">jQuery, für UI-Kern erforderlich.</label>
-			<label index="jquery.component.uicore">Die Basis des jQuery-UI. Erforderlich für alle Interaktionen und Widgets.</label>
-			<label index="jquery.component.widget">Widget, für alle Widgets erforderlich.</label>
-			<label index="jquery.component.mouse">Mouse, für alle Interaktionen mit der Maus erforderlich.</label>
-			<label index="jquery.component.draggable">Macht alle Elemente einer Seite ziehbar.</label>
-			<label index="jquery.component.droppable">Generierte Ziele für ziehbare Elemente.</label>
-			<label index="jquery.component.resizable">Macht alle Elemente einer Seite in der Größe veränderbar.</label>
-			<label index="jquery.component.selectable">Macht eine Liste mit Elementen durch die Maus auswählbar, indem man einen Rahmen aufzieht oder darauf klickt.</label>
-			<label index="jquery.component.sortable">Macht eine Liste mit Einträgen sortierbar.</label>
-			<label index="jquery.component.accordion">Erzeugt ein Akkordeon-Navigationswidget.</label>
-			<label index="jquery.component.dialog">Öffnet vorhandenes Markup in einem ziehbaren und in der Größe veränderbaren Dialog.</label>
-			<label index="jquery.component.slider">Ein flexible Regler mit Begrenzungen auf dem mit der Tastatur zugegriffen werden kann.</label>
-			<label index="jquery.component.tabs">Transformiert ein Set mit Containerelementen in eine Tabstruktur.</label>
-			<label index="jquery.component.progressbar">Ein Statusindikator. Er kann für den Ladefortschritt oder als Prozentindikator benutzt werden.</label>
-			<label index="jquery.component.effects.blind">Blendet das Element aus.</label>
-			<label index="jquery.component.effects.bounce">Das Element hüpft n-mal horizontal oder vertikal.</label>
-			<label index="jquery.component.effects.clip">Schaltet ein Element, wie einen alten Fernsehr, an und aus.</label>
-			<label index="jquery.component.effects.explode">Das Element explodiert nach allen Richtungen in n Stücken. Es kann auch wieder implodieren.</label>
-			<label index="jquery.component.effects.fade">Das Element wird ein- oder ausgeblendet.</label>
-			<label index="jquery.component.effects.fold">Faltet das Element erst horizontal und dann vertikal.</label>
-			<label index="jquery.component.effects.highlight">Hebt den Hintergrund des Elements in einer definierten Farbe für eine bestimmte Zeit hervor.</label>
-			<label index="jquery.component.effects.pulsate">Das Element pulsiert n-mal durch Veränderung der Transparenz.</label>
-			<label index="jquery.component.effects.scale">Beliebige Elemente und ihren Inhalt wachsen oder schrumpfen lassen und wiederherstellen.</label>
-			<label index="jquery.component.effects.shake">Bewegt das Element n-mal horizontal oder vertikal hin und her (Schütteleffekt).</label>
-			<label index="jquery.component.effects.slide">Das Element wird in den sichtbaren Fensterbereich hinein und heraus bewegt.</label>
-			<label index="jquery.component.effects.transfer">Übergangseffekt von einem Element zu einem anderen.</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="title" type="integer">264141208</label>
-			<label index="function1" type="integer">170814537</label>
-			<label index="function2" type="integer">40151155</label>
-			<label index="function3" type="integer">57397242</label>
-			<label index="function4" type="integer">198428636</label>
-			<label index="function5" type="integer">224692306</label>
-			<label index="jquery.analyze.dependencies" type="integer">61561076</label>
-			<label index="jquery.analyze.none" type="integer">112064895</label>
-			<label index="jquery.analyze.packed" type="integer">94040222</label>
-			<label index="jquery.button.check" type="integer">6340397</label>
-			<label index="jquery.button.compress" type="integer">150622159</label>
-			<label index="jquery.button.create" type="integer">192649134</label>
-			<label index="jquery.button.mergejq" type="integer">225911371</label>
-			<label index="jquery.button.selectall" type="integer">79961611</label>
-			<label index="jquery.button.selectnone" type="integer">86916322</label>
-			<label index="jquery.button.usejq" type="integer">181958704</label>
-			<label index="jquery.compress.compress" type="integer">213169123</label>
-			<label index="jquery.compress.decompress" type="integer">164315866</label>
-			<label index="jquery.compress.description" type="integer">140820377</label>
-			<label index="jquery.compress.nomunge" type="integer">134738124</label>
-			<label index="jquery.compress.nomunge.yes" type="integer">154974727</label>
-			<label index="jquery.compress.nomunge.no" type="integer">196073266</label>
-			<label index="jquery.compression" type="integer">108692643</label>
-			<label index="jquery.compression.jsmin.description" type="integer">155692379</label>
-			<label index="jquery.compression.jsmin.name" type="integer">138633150</label>
-			<label index="jquery.compression.nodocs.description" type="integer">151048399</label>
-			<label index="jquery.compression.nodocs.name" type="integer">57587904</label>
-			<label index="jquery.compression.none.description" type="integer">156018644</label>
-			<label index="jquery.compression.none.name" type="integer">119477683</label>
-			<label index="jquery.compression.packer.description" type="integer">258740738</label>
-			<label index="jquery.compression.packer.name" type="integer">257992568</label>
-			<label index="jquery.extension.dependencies" type="integer">186100032</label>
-			<label index="jquery.extension.description" type="integer">177037950</label>
-			<label index="jquery.extension.extkey" type="integer">81025106</label>
-			<label index="jquery.extension.title" type="integer">85903807</label>
-			<label index="jquery.extension.version" type="integer">164794579</label>
-			<label index="jquery.header1" type="integer">20723488</label>
-			<label index="jquery.header2" type="integer">182730985</label>
-			<label index="jquery.header3" type="integer">182730985</label>
-			<label index="jquery.header4" type="integer">198428636</label>
-			<label index="jquery.header5" type="integer">224692306</label>
-			<label index="jquery.packito.description" type="integer">125997629</label>
-			<label index="jquery.packito.local" type="integer">267640505</label>
-			<label index="jquery.packito.note" type="integer">202999232</label>
-			<label index="jquery.packito.remote" type="integer">105099384</label>
-			<label index="jquery.component.jquery" type="integer">235071587</label>
-			<label index="jquery.component.uicore" type="integer">240618404</label>
-			<label index="jquery.component.widget" type="integer">197501580</label>
-			<label index="jquery.component.mouse" type="integer">107799841</label>
-			<label index="jquery.component.draggable" type="integer">147359814</label>
-			<label index="jquery.component.droppable" type="integer">13528160</label>
-			<label index="jquery.component.resizable" type="integer">89362461</label>
-			<label index="jquery.component.effects.scale" type="integer">142620225</label>
-			<label index="jquery.component.effects.shake" type="integer">190174649</label>
-			<label index="jquery.component.effects.slide" type="integer">216913641</label>
-			<label index="jquery.component.effects.transfer" type="integer">238361804</label>
-			<label index="jquery.component.selectable" type="integer">69060818</label>
-			<label index="jquery.component.sortable" type="integer">27378117</label>
-			<label index="jquery.component.accordion" type="integer">20729940</label>
-			<label index="jquery.component.dialog" type="integer">262050126</label>
-			<label index="jquery.component.slider" type="integer">59538908</label>
-			<label index="jquery.component.tabs" type="integer">144964158</label>
-			<label index="jquery.component.progressbar" type="integer">169540720</label>
-			<label index="jquery.component.effects.blind" type="integer">126491245</label>
-			<label index="jquery.component.effects.explode" type="integer">200931815</label>
-			<label index="jquery.component.effects.fade" type="integer">17629371</label>
-			<label index="jquery.component.effects.fold" type="integer">188727132</label>
-			<label index="jquery.component.effects.highlight" type="integer">53020198</label>
-			<label index="jquery.component.effects.pulsate" type="integer">174059834</label>
-			<label index="jquery.component.effects.bounce" type="integer">4535340</label>
-			<label index="jquery.component.effects.clip" type="integer">12729958</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="title">jQuery Setup</label>
-			<label index="function1">Create custom jQuery JS library</label>
-			<label index="function2">Analyze .js for jQuery dependencies</label>
-			<label index="function3">Process &amp; Analyze t3jquery.txt in extensions</label>
-			<label index="function4">Compress your own javascript file</label>
-			<label index="function5">Display class.t3jquery.php API</label>
-			<label index="jquery.analyze.dependencies">jQuery dependencies found in file:</label>
-			<label index="jquery.analyze.none">None</label>
-			<label index="jquery.analyze.packed">File is either not ending in .js or file is compressed with Packer!</label>
-			<label index="jquery.button.check">Check</label>
-			<label index="jquery.button.compress">Compress</label>
-			<label index="jquery.button.create">Create jQuery Library</label>
-			<label index="jquery.button.mergejq">Merge &amp; Use</label>
-			<label index="jquery.button.selectall">Select all</label>
-			<label index="jquery.button.selectnone">Deselect all</label>
-			<label index="jquery.button.usejq">Use</label>
-			<label index="jquery.compress.compress">Paste in your UNCOMPRESSED javascript into this field:</label>
-			<label index="jquery.compress.decompress">A COMPRESSED version of your javascript will appear in this field.</label>
-			<label index="jquery.compress.description">This module can be used for compressing your own javascript file(s), using the same compression (Packer or JsMin) used for compressing the jQuery library.</label>
-			<label index="jquery.compress.nomunge">Minify only:</label>
-			<label index="jquery.compress.nomunge.yes">Yes</label>
-			<label index="jquery.compress.nomunge.no">No</label>
-			<label index="jquery.compression">Choose compression type</label>
-			<label index="jquery.compression.jsmin.description">Cleans comments and whitespace, Compression by &lt;a href=&quot;http://www.crockford.com/javascript/jsmin.html&quot;&gt;JSMin&lt;/a&gt;.</label>
-			<label index="jquery.compression.jsmin.name">JsMin Compression</label>
-			<label index="jquery.compression.nodocs.description">Uncompressed, removes only documentation</label>
-			<label index="jquery.compression.nodocs.name">No Documentation</label>
-			<label index="jquery.compression.none.description">Full Source, includes documentation. Recommended while testing &amp; building.</label>
-			<label index="jquery.compression.none.name">No Compression</label>
-			<label index="jquery.compression.packer.description">Uses &lt;a href=&quot;http://joliclic.free.fr/php/javascript-packer/en/&quot; target=&quot;_blank&quot;&gt;the php5 version&lt;/a&gt; of &lt;a href=&quot;http://dean.edwards.name/packer/&quot; target=&quot;_blank&quot;&gt;Dean Edwards Packer&lt;/a&gt;.</label>
-			<label index="jquery.compression.packer.name">Packer Compression</label>
-			<label index="jquery.extension.dependencies">jQuery dependencies found selected extensions:</label>
-			<label index="jquery.extension.description">Select the extensions you want processed and checked for jQuery dependencies.</label>
-			<label index="jquery.extension.extkey">Extension Key:</label>
-			<label index="jquery.extension.title">Title:</label>
-			<label index="jquery.extension.version">Version:</label>
-			<label index="jquery.header1">Choose the jQuery Components you need:</label>
-			<label index="jquery.header2">Find the jQuery Components you need</label>
-			<label index="jquery.header3">Find the jQuery Components you need</label>
-			<label index="jquery.header4">Compress your own javascript file</label>
-			<label index="jquery.header5">Display class.t3jquery.php API</label>
-			<label index="jquery.packito.description">Select the uncompressed Javascript file you want to check for jQuery dependencies.</label>
-			<label index="jquery.packito.local">or Local file:</label>
-			<label index="jquery.packito.note">&lt;em&gt;Note: Only files with the extension &lt;strong&gt;.js&lt;/strong&gt; is accepted.&lt;br /&gt; Local extension dirs can be accessed using EXT:. ie. EXT:t3jquery/res/jqconfig.js&lt;/em&gt;</label>
-			<label index="jquery.packito.remote">Remote file:</label>
-			<label index="jquery.component.jquery">The jQuery, required for UI Core.</label>
-			<label index="jquery.component.uicore">The core of jQuery UI, required for all interactions and widgets.</label>
-			<label index="jquery.component.widget">The Widget, required for all widgets.</label>
-			<label index="jquery.component.mouse">The Mouse, for all interactions with mouse.</label>
-			<label index="jquery.component.draggable">Makes any element on the page draggable.</label>
-			<label index="jquery.component.droppable">Generated drop targets for draggable elements.</label>
-			<label index="jquery.component.resizable">Makes any element on the page resizable.</label>
-			<label index="jquery.component.effects.scale">Grow or shrink any element and it's content and restore it again.</label>
-			<label index="jquery.component.effects.shake">Shakes the element horizontally or vertically n times.</label>
-			<label index="jquery.component.effects.slide">The element slides in and out of the viewport.</label>
-			<label index="jquery.component.effects.transfer">Transfer effect from one element to another.</label>
-			<label index="jquery.component.selectable">Makes a list of elements mouse selectable by dragging a box or clicking on them.</label>
-			<label index="jquery.component.sortable">Makes a list of items sortable.</label>
-			<label index="jquery.component.accordion">Creates an accordion navigation widget.</label>
-			<label index="jquery.component.dialog">Opens existing markup in a draggable and resizable dialog.</label>
-			<label index="jquery.component.slider">A flexible slider with ranges and accessibility via keyboard.</label>
-			<label index="jquery.component.tabs">Transforms a set of container elements into a tab structure.</label>
-			<label index="jquery.component.progressbar">A status indicator that can be used for a loading state and standard percentage indicators.</label>
-			<label index="jquery.component.effects.blind">Blinds the element.</label>
-			<label index="jquery.component.effects.explode">The element explodes in all directions into n pieces. Also supports imploding again.</label>
-			<label index="jquery.component.effects.fade">The element will fades the element in or out.</label>
-			<label index="jquery.component.effects.fold">Folds the element first horizontally and then vertically.</label>
-			<label index="jquery.component.effects.highlight">Highlights the background of the element in a defined color for a custom duration.</label>
-			<label index="jquery.component.effects.pulsate">The element pulsates n times by changing the opacity to zero and back.</label>
-			<label index="jquery.component.effects.bounce">Bounces an element horizontally or vertically n-times.</label>
-			<label index="jquery.component.effects.clip">Clips the element on and off like an old TV.</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="title">jQuery-Konfiguration</label>
+      <label index="version_in_use"/>
+      <label index="integrate_from_cdn"/>
+      <label index="function1">Erstellung einer individuellen jQuery-JS-Bibliothek</label>
+      <label index="function2">JS-Analyse auf jQuery-Abhängigkeiten</label>
+      <label index="function3">JS-Analyse von t3jquery.txt in Extensions</label>
+      <label index="function4">Komprimieren eigener JS-Dateien</label>
+      <label index="function5">Anzeige der class.t3jquery.php-API</label>
+      <label index="jquery.analyze.dependencies">jQuery-Abhängigkeiten in folgender Datei:</label>
+      <label index="jquery.analyze.none">Keine</label>
+      <label index="jquery.analyze.packed">Datei endet nicht auf .js oder ist bereits komprimiert!</label>
+      <label index="jquery.button.check">Analysieren</label>
+      <label index="jquery.button.compress">Komprimieren</label>
+      <label index="jquery.button.create">jQuery-Bibliothek erstellen</label>
+      <label index="jquery.button.mergejq">Vereinigen &amp; Benützen</label>
+      <label index="jquery.button.selectall">Alles auswählen</label>
+      <label index="jquery.button.selectnone">Auswahl löschen</label>
+      <label index="jquery.button.usejq">Benützen</label>
+      <label index="jquery.compress.compress">Hier das &lt;em&gt;unkomprimierte&lt;/em&gt; JavaScript einfügen:</label>
+      <label index="jquery.compress.decompress">Die &lt;em&gt;komprimierte&lt;/em&gt; Version:</label>
+      <label index="jquery.compress.description">Durch dieses Modul wird die Möglichkeit zur Verfügung gestellt, eigene JavaScript-Dateien zu komprimieren. Verwendet wird &lt;a href="http://joliclic.free.fr/php/javascript-packer/en/" target="_blank"&gt;die PHP5-version&lt;/a&gt; von &lt;a href="http://dean.edwards.name/packer/" target="_blank"&gt;Dean Edwards Packer&lt;/a&gt; oder &lt;a href="http://www.crockford.com/javascript/jsmin.html" target="_blank"&gt;JSMin&lt;/a&gt;.</label>
+      <label index="jquery.compress.nomunge">Nur verkleinern:</label>
+      <label index="jquery.compress.nomunge.yes">Ja</label>
+      <label index="jquery.compress.nomunge.no">Nein</label>
+      <label index="jquery.compression">Kompressionsstufe auswählen</label>
+      <label index="jquery.compression.jsmin.description">Säubert Kommentare und Leerzeichen, Kompression mit &lt;a href="http://www.crockford.com/javascript/jsmin.html" target="_blank"&gt;JSMin&lt;/a&gt;.</label>
+      <label index="jquery.compression.jsmin.name">JsMin-Komprimierung</label>
+      <label index="jquery.compression.nodocs.description">Unkomprimiert, löscht lediglich die Dokumentation.</label>
+      <label index="jquery.compression.nodocs.name">Ohne Dokumentation</label>
+      <label index="jquery.compression.none.description">Unkomprimiert, inklusive Dokumentation. Empfehlenswert während der Entwicklung.</label>
+      <label index="jquery.compression.none.name">Keine Komprimierung</label>
+      <label index="jquery.compression.packer.description">Verwendet &lt;a href="http://joliclic.free.fr/php/javascript-packer/en/" target="_blank"&gt;die PHP5-Version&lt;/a&gt; von &lt;a href="http://dean.edwards.name/packer/" target="_blank"&gt;Dean Edwards Packer&lt;/a&gt;.</label>
+      <label index="jquery.compression.packer.name">Packer-Komprimierung</label>
+      <label index="jquery.extension.dependencies">jQuery-Abhängikeiten in den Extenions gefunden:</label>
+      <label index="jquery.extension.description">Extensions auswählen, die auf jQuery-Abhängigkeiten geprüft werden sollen.</label>
+      <label index="jquery.extension.extkey">Extension-Key:</label>
+      <label index="jquery.extension.title">Titel:</label>
+      <label index="jquery.extension.version">Version:</label>
+      <label index="jquery.header1">Benötigte Komponenten auswählen:</label>
+      <label index="jquery.header2">Benötigten Komponenten finden</label>
+      <label index="jquery.header3">Vorhandene Extensions analysieren</label>
+      <label index="jquery.header4">Komprimieren eigener JS-Dateien</label>
+      <label index="jquery.header5">Anzeige der class.t3jquery.php-API</label>
+      <label index="jquery.packito.description">Unkomprimiertes JavaScript auswählen, das auf jQuery-Abhängigkeiten geprüft werden soll.</label>
+      <label index="jquery.packito.local">oder lokale Datei:</label>
+      <label index="jquery.packito.note">&lt;em&gt;Achtung: Nur Dateien mit &lt;strong&gt;.js&lt;/strong&gt; werden akzeptiert.&lt;br /&gt; Extension-Verzeichnisse können mit EXT: abgerufen werden. zB. EXT:t3jquery/res/jqconfig.js&lt;/em&gt;</label>
+      <label index="jquery.packito.remote">Datei am Server:</label>
+      <label index="jquery.component.jquery">jQuery, für UI-Kern erforderlich.</label>
+      <label index="jquery.component.noConflict"/>
+      <label index="jquery.component.uicore">Die Basis des jQuery-UI. Erforderlich für alle Interaktionen und Widgets.</label>
+      <label index="jquery.component.widget">Widget, für alle Widgets erforderlich.</label>
+      <label index="jquery.component.mouse">Mouse, für alle Interaktionen mit der Maus erforderlich.</label>
+      <label index="jquery.component.position"/>
+      <label index="jquery.component.draggable">Macht alle Elemente einer Seite ziehbar.</label>
+      <label index="jquery.component.droppable">Generierte Ziele für ziehbare Elemente.</label>
+      <label index="jquery.component.resizable">Macht alle Elemente einer Seite in der Größe veränderbar.</label>
+      <label index="jquery.component.selectable">Macht eine Liste mit Elementen durch die Maus auswählbar, indem man einen Rahmen aufzieht oder darauf klickt.</label>
+      <label index="jquery.component.sortable">Macht eine Liste mit Einträgen sortierbar.</label>
+      <label index="jquery.component.accordion">Erzeugt ein Akkordeon-Navigationswidget.</label>
+      <label index="jquery.component.autocomplete"/>
+      <label index="jquery.component.button"/>
+      <label index="jquery.component.dialog">Öffnet vorhandenes Markup in einem ziehbaren und in der Größe veränderbaren Dialog.</label>
+      <label index="jquery.component.slider">Ein flexible Regler mit Begrenzungen auf dem mit der Tastatur zugegriffen werden kann.</label>
+      <label index="jquery.component.tabs">Transformiert ein Set mit Containerelementen in eine Tabstruktur.</label>
+      <label index="jquery.component.datepicker"/>
+      <label index="jquery.component.progressbar">Ein Statusindikator. Er kann für den Ladefortschritt oder als Prozentindikator benutzt werden.</label>
+      <label index="jquery.component.effects.core"/>
+      <label index="jquery.component.effects.blind">Blendet das Element aus.</label>
+      <label index="jquery.component.effects.bounce">Das Element hüpft n-mal horizontal oder vertikal.</label>
+      <label index="jquery.component.effects.clip">Schaltet ein Element, wie einen alten Fernsehr, an und aus.</label>
+      <label index="jquery.component.effects.drop"/>
+      <label index="jquery.component.effects.explode">Das Element explodiert nach allen Richtungen in n Stücken. Es kann auch wieder implodieren.</label>
+      <label index="jquery.component.effects.fade">Das Element wird ein- oder ausgeblendet.</label>
+      <label index="jquery.component.effects.fold">Faltet das Element erst horizontal und dann vertikal.</label>
+      <label index="jquery.component.effects.highlight">Hebt den Hintergrund des Elements in einer definierten Farbe für eine bestimmte Zeit hervor.</label>
+      <label index="jquery.component.effects.pulsate">Das Element pulsiert n-mal durch Veränderung der Transparenz.</label>
+      <label index="jquery.component.effects.scale">Beliebige Elemente und ihren Inhalt wachsen oder schrumpfen lassen und wiederherstellen.</label>
+      <label index="jquery.component.effects.shake">Bewegt das Element n-mal horizontal oder vertikal hin und her (Schütteleffekt).</label>
+      <label index="jquery.component.effects.slide">Das Element wird in den sichtbaren Fensterbereich hinein und heraus bewegt.</label>
+      <label index="jquery.component.effects.transfer">Übergangseffekt von einem Element zu einem anderen.</label>
+      <label index="jquery.component.easing"/>
+      <label index="jquery.component.lint"/>
+      <label index="tools.component.tabs"/>
+      <label index="tools.component.tabsslideshow"/>
+      <label index="tools.component.tabshistory"/>
+      <label index="tools.component.tooltip"/>
+      <label index="tools.component.tooltipslide"/>
+      <label index="tools.component.tooltipdynamic"/>
+      <label index="tools.component.scrollable"/>
+      <label index="tools.component.scrollablecircular"/>
+      <label index="tools.component.scrollableautoscroll"/>
+      <label index="tools.component.scrollablenavigator"/>
+      <label index="tools.component.scrollablemousewheel"/>
+      <label index="tools.component.overlay"/>
+      <label index="tools.component.overlaygallery"/>
+      <label index="tools.component.overlayapple"/>
+      <label index="tools.component.formdateinput"/>
+      <label index="tools.component.formrangeinput"/>
+      <label index="tools.component.formvalidator"/>
+      <label index="tools.component.flashembed"/>
+      <label index="tools.component.history"/>
+      <label index="tools.component.expose"/>
+      <label index="tools.component.mousewheel"/>
+      <label index="tools.component.flowplayer"/>
+      <label index="tools.component.flowplayercontrolbar"/>
+      <label index="tools.component.flowplayerplaylist"/>
+      <label index="tools.component.flowplayerembedding"/>
+    </languageKey>
+  </data>
 </T3locallangExt>

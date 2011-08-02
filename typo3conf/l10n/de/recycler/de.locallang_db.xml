@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="moduleFunction.tx_recycler_modfunc1">Papierkorb</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="moduleFunction.tx_recycler_modfunc1" type="integer">184146156</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="moduleFunction.tx_recycler_modfunc1">Recycler</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="moduleFunction.tx_recycler_modfunc1">Papierkorb</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

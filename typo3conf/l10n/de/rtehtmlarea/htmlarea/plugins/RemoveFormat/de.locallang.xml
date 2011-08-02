@@ -1,60 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="RemoveFormatTooltip">Formatierung entfernen</label>
-			<label index="Cleaning Area">Bereich</label>
-			<label index="Selection">Ausgewählter Text</label>
-			<label index="All">Gesamt</label>
-			<label index="Remove formatting">Formatierung entfernen</label>
-			<label index="Cleaning options">Art der Formatierung(en), die entfernt werden soll(en)</label>
-			<label index="Formatting:">HTML-Formatierung:</label>
-			<label index="MS Word Formatting:">MS-Word-Formatierung:</label>
-			<label index="Typographical punctuation:">Typographische Zeichen:</label>
-			<label index="Spaces">Geschützte Leerzeichen:</label>
-			<label index="Images:">Bilder:</label>
-			<label index="All HTML:">Alle HTML-Tags:</label>
-			<label index="Select the type of formatting you wish to remove.">Wählen Sie die Art der Formatierung(en), die entfernt werden soll(en).</label>
-			<label index="OK">OK</label>
-			<label index="Cancel">Abbrechen</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="RemoveFormatTooltip" type="integer">48553192</label>
-			<label index="Cleaning Area" type="integer">111670107</label>
-			<label index="Selection" type="integer">207853076</label>
-			<label index="All" type="integer">186422474</label>
-			<label index="Remove formatting" type="integer">48553192</label>
-			<label index="Cleaning options" type="integer">26182946</label>
-			<label index="Formatting:" type="integer">110174194</label>
-			<label index="MS Word Formatting:" type="integer">145309621</label>
-			<label index="Images:" type="integer">160221445</label>
-			<label index="All HTML:" type="integer">60736661</label>
-			<label index="Select the type of formatting you wish to remove." type="integer">262275308</label>
-			<label index="OK" type="integer">235577377</label>
-			<label index="Cancel" type="integer">245659783</label>
-			<label index="Spaces" type="integer">117618338</label>
-			<label index="Typographical punctuation:" type="integer">145651037</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="MS Word Formatting:">MS Word Format:</label>
-			<label index="All HTML:">All HTML tags:</label>
-			<label index="RemoveFormatTooltip">Remove format</label>
-			<label index="Cleaning Area">Cleaning Area</label>
-			<label index="Selection">Selected text</label>
-			<label index="All">All</label>
-			<label index="Remove formatting">Remove format</label>
-			<label index="Cleaning options">Type(s) of format to remove</label>
-			<label index="Formatting:">HTML Format:</label>
-			<label index="Images:">Images:</label>
-			<label index="Select the type of formatting you wish to remove.">Select the type(s) of format to remove.</label>
-			<label index="OK">OK</label>
-			<label index="Cancel">Cancel</label>
-			<label index="Spaces">Non-breaking spaces:</label>
-			<label index="Typographical punctuation:">Typographical punctuation:</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="RemoveFormatTooltip">Formatierung entfernen</label>
+      <label index="Cleaning Area">Bereich</label>
+      <label index="Selection">Ausgewählter Text</label>
+      <label index="All">Gesamt</label>
+      <label index="Remove formatting">Formatierung entfernen</label>
+      <label index="Cleaning options">Art der Formatierung(en), die entfernt werden soll(en)</label>
+      <label index="Formatting:">HTML-Formatierung:</label>
+      <label index="MS Word Formatting:">MS-Word-Formatierung:</label>
+      <label index="Typographical punctuation:">Typographische Zeichen:</label>
+      <label index="Spaces">Geschützte Leerzeichen:</label>
+      <label index="Images:">Bilder:</label>
+      <label index="All HTML:">Alle HTML-Tags:</label>
+      <label index="Select the type of formatting you wish to remove.">Wählen Sie die Art der Formatierung(en), die entfernt werden soll(en).</label>
+      <label index="OK">OK</label>
+      <label index="Cancel">Abbrechen</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

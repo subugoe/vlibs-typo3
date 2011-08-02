@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:35:48 UTC 2011" product-name="lang">
+    <header/>
+    <body>
+      <trans-unit id="new_regular.image_descr" approved="yes">
+        <source>The selection of records a user can create on this particular page. The selection depends on the user's permissions and the page type. For example a Folder page type can contain any kind of record while regular pages can contain only some types (like Content Elements).</source>
+        <target state="translated">Die Auswahl an Datensätzen, die ein Benutzer auf dieser Seite anlegen kann. Die Auswahl hängt von den Rechten des Benutzers und vom Seitentyp ab. Zum Beispiel kann eine Seite des Typs "Ordner" jede Art von Datensatz enthalten, während normale Seiten nur einige Typen (wie etwa Inhaltselemente) enthalten können.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

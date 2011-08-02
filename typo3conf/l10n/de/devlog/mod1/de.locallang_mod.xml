@@ -1,24 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_tabs_tab">Entwicklerprotokoll</label>
-			<label index="mlang_labels_tabdescr">Anzeige von Einträgen, die in das Entwicklerprotokoll über t3lib_div::devLog() geschrieben wurden.</label>
-			<label index="mlang_labels_tablabel">Entwicklerprotokoll</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_tabs_tab" type="integer">23177575</label>
-			<label index="mlang_labels_tabdescr" type="integer">24474975</label>
-			<label index="mlang_labels_tablabel" type="integer">23177575</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_tabs_tab">Developer Log</label>
-			<label index="mlang_labels_tabdescr">View entries written to the Developer Log using t3lib_div::devLog().</label>
-			<label index="mlang_labels_tablabel">Developer Log</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="mlang_tabs_tab">Entwicklerprotokoll</label>
+      <label index="mlang_labels_tabdescr">Anzeige von Einträgen, die in das Entwicklerprotokoll über t3lib_div::devLog() geschrieben wurden.</label>
+      <label index="mlang_labels_tablabel">Entwicklerprotokoll</label>
+    </languageKey>
+  </data>
 </T3locallangExt>
