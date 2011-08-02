@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">155c7b02-28</SESSIONVAR>
+<SESSIONVAR name="SID">bbe90cc9-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa q (fh)">eaa q (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa u (fh)">eaa u (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa x (fh)">eaa x (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="eaa xxx">eaa xxx</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="eaa-">eaa-</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eaa- 000">eaa- 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 it a">eaa16 it a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 ru a (fh)">eaa16 ru a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 su a">eaa16 su a</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eaa16 su a (fh)">eaa16 su a (fh)</SCANLINE>
 
@@ -95,7 +113,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="eaaa 69">eaaa 69</SCANLINE>
 
-    <SCANLINE hits="1400" mnemonic="LKL" description="eaaa 690">eaaa 690</SCANLINE>
+    <SCANLINE hits="1399" mnemonic="LKL" description="eaaa 690">eaaa 690</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="eaaa 700">eaaa 700</SCANLINE>
 
@@ -137,11 +155,11 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="eaab 200">eaab 200</SCANLINE>
 
-    <SCANLINE hits="545" mnemonic="LKL" description="eaab 250">eaab 250</SCANLINE>
+    <SCANLINE hits="546" mnemonic="LKL" description="eaab 250">eaab 250</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaab 252">eaab 252</SCANLINE>
 
-    <SCANLINE hits="144" mnemonic="LKL" description="eaab 300">eaab 300</SCANLINE>
+    <SCANLINE hits="145" mnemonic="LKL" description="eaab 300">eaab 300</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eaab 500">eaab 500</SCANLINE>
 
@@ -513,7 +531,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="eadd 100">eadd 100</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="eadd 150">eadd 150</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="eadd 150">eadd 150</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="eadd 200">eadd 200</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaga 010">eaga 010</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="eaga 050">eaga 050</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="eaga 060">eaga 060</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="eaga 070">eaga 070</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="eaga 080">eaga 080</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="eaga 100">eaga 100</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="eaga 110">eaga 110</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="eaga 120">eaga 120</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="eaga 150">eaga 150</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="eaga 260">eaga 260</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="eaa16+su+a+(fh)" />
+<SCANPREV term="eaa+q+(fh)" />
 
 
-<SCANNEXT term="eaga+260" />
+<SCANNEXT term="eaga+010" />
 
 </RESULT>

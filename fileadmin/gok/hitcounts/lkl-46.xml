@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f6a58c1f-2a</SESSIONVAR>
+<SESSIONVAR name="SID">8e7bd890-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="efdc 300">efdc 300</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="efdc 350">efdc 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efdc 380">efdc 380</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="efdc 400">efdc 400</SCANLINE>
+
+    <SCANLINE hits="69" mnemonic="LKL" description="efdc 420">efdc 420</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="efdc 430">efdc 430</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="efdc 440">efdc 440</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="efdc 450">efdc 450</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="efdc 500">efdc 500</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="efdc 550">efdc 550</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efdc 560">efdc 560</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="efdc 600">efdc 600</SCANLINE>
 
@@ -357,7 +379,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="effm 350">effm 350</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="effn 000">effn 000</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="effn 000">effn 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="effn 070">effn 070</SCANLINE>
 
@@ -791,7 +813,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="efhr 550">efhr 550</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="efhr 560">efhr 560</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="efhr 560">efhr 560</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="efhr 570">efhr 570</SCANLINE>
 
@@ -841,7 +863,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="efhs 990">efhs 990</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="efht 000">efht 000</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="efht 000">efht 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="efht 010">efht 010</SCANLINE>
 
@@ -871,7 +893,7 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="efi 010">efi 010</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="efi 020">efi 020</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="efi 020">efi 020</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="efi 030">efi 030</SCANLINE>
 
@@ -941,7 +963,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="efib 300">efib 300</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="efib 320">efib 320</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="efib 320">efib 320</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="efib 340">efib 340</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="efid 050">efid 050</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="efid 100">efid 100</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="efid 150">efid 150</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="efid 190">efid 190</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="efid 200">efid 200</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="efid 250">efid 250</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="efid 270">efid 270</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="efid 290">efid 290</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="efid 300">efid 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="efid 990">efid 990</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="efid xx0">efid xx0</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="efie">efie</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="efdc+600" />
+<SCANPREV term="efdc+300" />
 
 
-<SCANNEXT term="efie" />
+<SCANNEXT term="efid+050" />
 
 </RESULT>
