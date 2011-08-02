@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ea0eb59b-28</SESSIONVAR>
+<SESSIONVAR name="SID">0def62f2-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="ebcf 100">ebcf 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ebcf 106">ebcf 106</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="ebcf 120">ebcf 120</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ebcf 200">ebcf 200</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ebcg 000">ebcg 000</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ebcg 050">ebcg 050</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ebch 000">ebch 000</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="ebch 050">ebch 050</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ebch 100">ebch 100</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ebch 250">ebch 250</SCANLINE>
 
@@ -257,7 +275,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ebe 001">ebe 001</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="ebe 010">ebe 010</SCANLINE>
+    <SCANLINE hits="51" mnemonic="LKL" description="ebe 010">ebe 010</SCANLINE>
 
     <SCANLINE hits="87" mnemonic="LKL" description="ebe 020">ebe 020</SCANLINE>
 
@@ -495,7 +513,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="ebeh 600">ebeh 600</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="ebeh 700">ebeh 700</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="ebeh 700">ebeh 700</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ebeh 810">ebeh 810</SCANLINE>
 
@@ -523,7 +541,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="ebej 260">ebej 260</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="ebej 270">ebej 270</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="ebej 270">ebej 270</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="ebej 280">ebej 280</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ebge 600">ebge 600</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ebge 650">ebge 650</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ebge 700">ebge 700</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ebge 990">ebge 990</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="ebgg 000">ebgg 000</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="ebgg 100">ebgg 100</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="ebgg 200">ebgg 200</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="ebgg 300">ebgg 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ebgg 500">ebgg 500</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="ebgg 600">ebgg 600</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ebch+250" />
+<SCANPREV term="ebcf+100" />
 
 
-<SCANNEXT term="ebgg+600" />
+<SCANNEXT term="ebge+600" />
 
 </RESULT>

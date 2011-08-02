@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b2b2d718-2b</SESSIONVAR>
+<SESSIONVAR name="SID">3c104317-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -137,7 +137,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="awwd 500">awwd 500</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="awx 000">awx 000</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="awx 000">awx 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="awx 400">awx 400</SCANLINE>
 
@@ -575,7 +575,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="bac">bac</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="bac 100">bac 100</SCANLINE>
+    <SCANLINE hits="46" mnemonic="LKL" description="bac 100">bac 100</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="bac 110">bac 110</SCANLINE>
 
@@ -617,7 +617,7 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="bb 130">bb 130</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="bb 140">bb 140</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="bb 140">bb 140</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="bb 160">bb 160</SCANLINE>
 
@@ -757,7 +757,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="bc 110">bc 110</SCANLINE>
 
-    <SCANLINE hits="75" mnemonic="LKL" description="bc 120">bc 120</SCANLINE>
+    <SCANLINE hits="76" mnemonic="LKL" description="bc 120">bc 120</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="bc 120 a">bc 120 a</SCANLINE>
 
@@ -883,7 +883,7 @@
 
     <SCANLINE hits="137" mnemonic="LKL" description="ca">ca</SCANLINE>
 
-    <SCANLINE hits="27" mnemonic="LKL" description="ca 000">ca 000</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="ca 000">ca 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ca a">ca a</SCANLINE>
 
@@ -921,7 +921,7 @@
 
     <SCANLINE hits="37" mnemonic="LKL" description="caa 650">caa 650</SCANLINE>
 
-    <SCANLINE hits="140" mnemonic="LKL" description="caa 670">caa 670</SCANLINE>
+    <SCANLINE hits="142" mnemonic="LKL" description="caa 670">caa 670</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="caa 675">caa 675</SCANLINE>
 
@@ -935,7 +935,7 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="cad">cad</SCANLINE>
 
-    <SCANLINE hits="61" mnemonic="LKL" description="cad 000">cad 000</SCANLINE>
+    <SCANLINE hits="62" mnemonic="LKL" description="cad 000">cad 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cad 050">cad 050</SCANLINE>
 
@@ -975,7 +975,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="cak">cak</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="cak 000">cak 000</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="cak 000">cak 000</SCANLINE>
 
     <SCANLINE hits="27" mnemonic="LKL" description="cak 010">cak 010</SCANLINE>
 
@@ -991,9 +991,9 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cak 10 k (fh)">cak 10 k (fh)</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="cak 100">cak 100</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="cak 100">cak 100</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="cak 160">cak 160</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="cak 160">cak 160</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cak 20 b (fh)">cak 20 b (fh)</SCANLINE>
 

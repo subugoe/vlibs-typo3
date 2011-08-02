@@ -1,80 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index=".alttitle">Entwicklerprotokoll</label>
-			<label index=".description">Die Erweiterung Entwicklerprotokoll (devlog) stellt Protokollierungsfunktionen zur Verfügung. Sie hängt sich in t3lib_div::devlog() ein, um devlog-Ereignisse abzufangen. Ein BE-Modul bietet eine Übersicht der protokollierten Ereignisse. Weitere Informationen entnehmen Sie bitte der Anleitung der Extension, die bei typo3.org erhältlich ist.</label>
-			<label index="crdate.alttitle">Log-Laufzeit</label>
-			<label index="crdate.description">Datum und Zeit, zu denen der Protokolleintrag erstellt wurde.</label>
-			<label index="crdate.details">Alle zur Ausführung des Codes gehörigen Einträge erhalten die gleiche Angabe zu Datum und Zeit. Dadurch es ist möglich, diese im BE-Modul als zusammengehörige Gruppe zu betrachten. Eine solche Gruppe wird &quot;Log Run&quot; genannt.</label>
-			<label index="msg.alttitle">Protokollmeldung</label>
-			<label index="msg.description">Die Hauptmeldung des Protokolleintrags.</label>
-			<label index="severity.alttitle">Schwere</label>
-			<label index="severity.description">Die Bezeichnung Schwere gibt an, wie ernst das protokollierte Ereignis ist.</label>
-			<label index="extkey.alttitle">Erweiterung</label>
-			<label index="extkey.description">Die Komponente, die das Ereignis ausgelöst hat.</label>
-			<label index="location.alttitle">Aufrufort</label>
-			<label index="location.description">Die Klasse, aus der der devLog()-Aufruf erfolgte, einschließlich Zeilennummer.</label>
-			<label index="pid.alttitle">Seite</label>
-			<label index="pid.description">Die Seite, die beim Auftreten des Ereignisses gerade verarbeitet wurde (falls vorhanden). Auch die Seite, auf der der Datensatz gespeichert ist.</label>
-			<label index="pid.details">Ereignisse können auch über das Modul Web&gt;Liste als Seitendatensätze gesucht werden. Nicht in einem Seitenkontext ausgelöste Ereignisse werden in der Wurzel des Seitenbaums gespeichert.</label>
-			<label index="cruser_id.alttitle">Benutzer</label>
-			<label index="cruser_id.description">Der BE-Benutzer, der im Backend angemeldet war, als das Ereignis ausgelöst wurde (falls vorhanden).</label>
-			<label index="cruser_id.details">Dieses Feld ist hilfreich, wenn mehrere BE-Benutzer Ereignisse zur selben Zeit, auf den selben Seiten oder mit den selben Komponenten auslösen.</label>
-			<label index="data_var.alttitle">Zusatzdaten</label>
-			<label index="data_var.description">Über Zusatzdaten kann ein Array mit detaillierten Informationen über die Umstände des Ereignisses zur Verfügung gestellt werden.</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index=".alttitle" type="integer">23177575</label>
-			<label index="crdate.alttitle" type="integer">237820338</label>
-			<label index="crdate.description" type="integer">18331821</label>
-			<label index="crdate.details" type="integer">53472599</label>
-			<label index="msg.alttitle" type="integer">177741734</label>
-			<label index="msg.description" type="integer">105066865</label>
-			<label index="severity.alttitle" type="integer">511125</label>
-			<label index="severity.description" type="integer">96141974</label>
-			<label index="extkey.alttitle" type="integer">104746642</label>
-			<label index="extkey.description" type="integer">119064334</label>
-			<label index="location.alttitle" type="integer">104297508</label>
-			<label index="location.description" type="integer">184657730</label>
-			<label index="pid.alttitle" type="integer">26464201</label>
-			<label index="pid.description" type="integer">76575522</label>
-			<label index="pid.details" type="integer">157034303</label>
-			<label index="cruser_id.alttitle" type="integer">150585321</label>
-			<label index="cruser_id.description" type="integer">214135782</label>
-			<label index="cruser_id.details" type="integer">70210511</label>
-			<label index="data_var.alttitle" type="integer">70292128</label>
-			<label index="data_var.description" type="integer">106617980</label>
-			<label index=".description" type="integer">80742795</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index=".alttitle">Developer Log</label>
-			<label index="crdate.alttitle">Log run time</label>
-			<label index="crdate.description">This is the date and time at which the log entry was created.</label>
-			<label index="crdate.details">
-				All entries corresponding to the code execution are marked with the same date and time. This makes it possible to view them as a consistent group in the BE module. Such a group is called a &quot;log run&quot;
-			</label>
-			<label index="msg.alttitle">Log message</label>
-			<label index="msg.description">The main message of the log entry.</label>
-			<label index="severity.alttitle">Severity</label>
-			<label index="severity.description">The severity gives you an impression of how serious the logged event is.</label>
-			<label index="extkey.alttitle">Extension</label>
-			<label index="extkey.description">The component which triggered the event</label>
-			<label index="location.alttitle">Call location</label>
-			<label index="location.description">The class from which the devLog() call was made, with the line number.</label>
-			<label index="pid.alttitle">Page</label>
-			<label index="pid.description">The title of the page which was being processed when the event happened (if any). It's also the page where the record is stored.</label>
-			<label index="pid.details">Events can also be found as page records in the web-&gt;list module. Note that events not triggered within a page context are stored at the root of the page tree.</label>
-			<label index="cruser_id.alttitle">User</label>
-			<label index="cruser_id.description">The BE user which was logged in the backend and triggered the event (if any).</label>
-			<label index="cruser_id.details">This field is useful, if multiple BE users are triggering events at the same time, on the same pages or with the same components.</label>
-			<label index="data_var.alttitle">Extra data</label>
-			<label index="data_var.description">Extra data can provide an array with detailed information about the circumstances of the event.</label>
-			<label index=".description">The Developer Log extension (devlog) provides logging functionality. It hooks into t3lib_div::devlog() to catch devlog events. A BE module gives an overview of the logged events. For more information read the extension manual, which can be found on typo3.org.</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index=".alttitle">Entwicklerprotokoll</label>
+      <label index=".description">Die Erweiterung Entwicklerprotokoll (devlog) stellt Protokollierungsfunktionen zur Verfügung. Sie hängt sich in t3lib_div::devlog() ein, um devlog-Ereignisse abzufangen. Ein BE-Modul bietet eine Übersicht der protokollierten Ereignisse. Weitere Informationen entnehmen Sie bitte der Anleitung der Extension, die bei typo3.org erhältlich ist.</label>
+      <label index=".syntax"/>
+      <label index="crdate.alttitle">Log-Laufzeit</label>
+      <label index="crdate.description">Datum und Zeit, zu denen der Protokolleintrag erstellt wurde.</label>
+      <label index="crdate.details">Alle zur Ausführung des Codes gehörigen Einträge erhalten die gleiche Angabe zu Datum und Zeit. Dadurch es ist möglich, diese im BE-Modul als zusammengehörige Gruppe zu betrachten. Eine solche Gruppe wird "Log Run" genannt.</label>
+      <label index="msg.alttitle">Protokollmeldung</label>
+      <label index="msg.description">Die Hauptmeldung des Protokolleintrags.</label>
+      <label index="severity.alttitle">Schwere</label>
+      <label index="severity.description">Die Bezeichnung Schwere gibt an, wie ernst das protokollierte Ereignis ist.</label>
+      <label index="severity.details"/>
+      <label index="_severity.image"/>
+      <label index="extkey.alttitle">Erweiterung</label>
+      <label index="extkey.description">Die Komponente, die das Ereignis ausgelöst hat.</label>
+      <label index="extkey.details"/>
+      <label index="location.alttitle">Aufrufort</label>
+      <label index="location.description">Die Klasse, aus der der devLog()-Aufruf erfolgte, einschließlich Zeilennummer.</label>
+      <label index="pid.alttitle">Seite</label>
+      <label index="pid.description">Die Seite, die beim Auftreten des Ereignisses gerade verarbeitet wurde (falls vorhanden). Auch die Seite, auf der der Datensatz gespeichert ist.</label>
+      <label index="pid.details">Ereignisse können auch über das Modul Web&gt;Liste als Seitendatensätze gesucht werden. Nicht in einem Seitenkontext ausgelöste Ereignisse werden in der Wurzel des Seitenbaums gespeichert.</label>
+      <label index="cruser_id.alttitle">Benutzer</label>
+      <label index="cruser_id.description">Der BE-Benutzer, der im Backend angemeldet war, als das Ereignis ausgelöst wurde (falls vorhanden).</label>
+      <label index="cruser_id.details">Dieses Feld ist hilfreich, wenn mehrere BE-Benutzer Ereignisse zur selben Zeit, auf den selben Seiten oder mit den selben Komponenten auslösen.</label>
+      <label index="data_var.alttitle">Zusatzdaten</label>
+      <label index="data_var.description">Über Zusatzdaten kann ein Array mit detaillierten Informationen über die Umstände des Ereignisses zur Verfügung gestellt werden.</label>
+      <label index="data_var.details"/>
+    </languageKey>
+  </data>
 </T3locallangExt>

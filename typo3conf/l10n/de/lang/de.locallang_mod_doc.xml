@@ -1,21 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_labels_tablabel">Bearbeiten von Datensätzen und Dokumenten</label>
-			<label index="mlang_tabs_tab">Dokumente</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_labels_tablabel" type="integer">39334020</label>
-			<label index="mlang_tabs_tab" type="integer">128223969</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="mlang_labels_tablabel">Editing of records and documents</label>
-			<label index="mlang_tabs_tab">Doc</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="mlang_labels_tablabel">Bearbeiten von Datensätzen und Dokumenten</label>
+      <label index="mlang_tabs_tab">Dokumente</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

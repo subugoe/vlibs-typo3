@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">78d8d3f4-29</SESSIONVAR>
+<SESSIONVAR name="SID">5eaf3f3b-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="efic 500">efic 500</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="efid 000">efid 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efid 050">efid 050</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="efid 100">efid 100</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="efid 150">efid 150</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="efid 190">efid 190</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="efid 200">efid 200</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="efid 250">efid 250</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="efid 270">efid 270</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="efid 290">efid 290</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="efid 300">efid 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="efid 990">efid 990</SCANLINE>
 
@@ -765,7 +787,7 @@
 
     <SCANLINE hits="46" mnemonic="LKL" description="egc 060">egc 060</SCANLINE>
 
-    <SCANLINE hits="120" mnemonic="LKL" description="egc 070">egc 070</SCANLINE>
+    <SCANLINE hits="122" mnemonic="LKL" description="egc 070">egc 070</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="egc 090">egc 090</SCANLINE>
 
@@ -955,11 +977,11 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="egcg">egcg</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="egcg 000">egcg 000</SCANLINE>
+    <SCANLINE hits="36" mnemonic="LKL" description="egcg 000">egcg 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="egcg 020">egcg 020</SCANLINE>
 
-    <SCANLINE hits="136" mnemonic="LKL" description="egcg 050">egcg 050</SCANLINE>
+    <SCANLINE hits="138" mnemonic="LKL" description="egcg 050">egcg 050</SCANLINE>
 
     <SCANLINE hits="89" mnemonic="LKL" description="egcg 070">egcg 070</SCANLINE>
 
@@ -973,7 +995,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="egcg 190">egcg 190</SCANLINE>
 
-    <SCANLINE hits="143" mnemonic="LKL" description="egcg 200">egcg 200</SCANLINE>
+    <SCANLINE hits="145" mnemonic="LKL" description="egcg 200">egcg 200</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="egcg 250">egcg 250</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="egcg 990">egcg 990</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="egcg a (fh)">egcg a (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="egch">egch</SCANLINE>
-
-    <SCANLINE hits="61" mnemonic="LKL" description="egch 000">egch 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egch 001">egch 001</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egch 010">egch 010</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="egch 050">egch 050</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egch 060">egch 060</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="egch 070">egch 070</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="egch 100">egch 100</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="egch 110">egch 110</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="egch 120">egch 120</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="efid+990" />
+<SCANPREV term="efic+500" />
 
 
-<SCANNEXT term="egch+120" />
+<SCANNEXT term="egcg+990" />
 
 </RESULT>

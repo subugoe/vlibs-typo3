@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:38:25 UTC 2011" product-name="rtehtmlarea">
+    <header/>
+    <body>
+      <trans-unit id="frame-frame1" approved="yes">
+        <source>Frame with grey background</source>
+        <target state="translated">Rahmen mit grauen Hintergrund</target>
+      </trans-unit>
+      <trans-unit id="frame-frame2" approved="yes">
+        <source>Frame with yellow background</source>
+        <target state="translated">Rahmen mit gelbem Hintergrund</target>
+      </trans-unit>
+      <trans-unit id="important" approved="yes">
+        <source>Important</source>
+        <target state="translated">Wichtig</target>
+      </trans-unit>
+      <trans-unit id="name-of-person" approved="yes">
+        <source>Name of person</source>
+        <target state="translated">Name der Person</target>
+      </trans-unit>
+      <trans-unit id="detail" approved="yes">
+        <source>Detail</source>
+        <target state="translated">Detail</target>
+      </trans-unit>
+      <trans-unit id="component-items" approved="yes">
+        <source>Component items</source>
+        <target state="translated">Komponenten</target>
+      </trans-unit>
+      <trans-unit id="action-items" approved="yes">
+        <source>Action items</source>
+        <target state="translated">Befehle</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

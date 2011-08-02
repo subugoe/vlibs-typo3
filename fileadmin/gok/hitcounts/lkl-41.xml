@@ -2,12 +2,32 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a583ea70-29</SESSIONVAR>
+<SESSIONVAR name="SID">f868b572-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ecan 100">ecan 100</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ecan 200">ecan 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ecan 250">ecan 250</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ecao 000">ecao 000</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ecap 050">ecap 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ecb 000">ecb 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ecb 010">ecb 010</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ecba 020">ecba 020</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ecbc 450">ecbc 450</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ecc">ecc</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="ecc 000">ecc 000</SCANLINE>
 
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="edch 150">edch 150</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="edch 200">edch 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edch 250">edch 250</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="edch 300">edch 300</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="edch 500">edch 500</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edch020">edch020</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="edch350">edch350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edcj 000">edcj 000</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="edcj 050">edcj 050</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="edcj 150">edcj 150</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="edcj 170">edcj 170</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ecc+000" />
+<SCANPREV term="ecan+100" />
 
 
-<SCANNEXT term="edcj+170" />
+<SCANNEXT term="edch+150" />
 
 </RESULT>

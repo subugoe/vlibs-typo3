@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">acfe76c6-2a</SESSIONVAR>
+<SESSIONVAR name="SID">f5846613-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="czd300 cim475">czd300 cim475</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="czd300 cit220">czd300 cit220</SCANLINE>
+
+    <SCANLINE hits="104" mnemonic="LKL" description="czh">czh</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="czh 225">czh 225</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="czh2080 8 z theol 221">czh2080 8 z theol 221</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="czh225">czh225</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="czh600">czh600</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="czh625">czh625</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="czk">czk</SCANLINE>
 
     <SCANLINE hits="1684" mnemonic="LKL" description="d">d</SCANLINE>
 
@@ -89,7 +107,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="dbf 600">dbf 600</SCANLINE>
 
-    <SCANLINE hits="195" mnemonic="LKL" description="dbh 000">dbh 000</SCANLINE>
+    <SCANLINE hits="197" mnemonic="LKL" description="dbh 000">dbh 000</SCANLINE>
 
     <SCANLINE hits="39" mnemonic="LKL" description="dbh 100">dbh 100</SCANLINE>
 
@@ -105,11 +123,11 @@
 
     <SCANLINE hits="44" mnemonic="LKL" description="dbh 160">dbh 160</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="dbh 170">dbh 170</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="dbh 170">dbh 170</SCANLINE>
 
     <SCANLINE hits="125" mnemonic="LKL" description="dbh 300">dbh 300</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="dbh 600">dbh 600</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="dbh 600">dbh 600</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="LKL" description="dbk 000">dbk 000</SCANLINE>
 
@@ -179,7 +197,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="dc66 usa m (fh)">dc66 usa m (fh)</SCANLINE>
 
-    <SCANLINE hits="61" mnemonic="LKL" description="dcb 000">dcb 000</SCANLINE>
+    <SCANLINE hits="63" mnemonic="LKL" description="dcb 000">dcb 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="dcb 030">dcb 030</SCANLINE>
 
@@ -195,7 +213,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="dcb 200">dcb 200</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="dcb 210">dcb 210</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="dcb 210">dcb 210</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="dcb 220">dcb 220</SCANLINE>
 
@@ -207,19 +225,19 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="dcb 310">dcb 310</SCANLINE>
 
-    <SCANLINE hits="408" mnemonic="LKL" description="dcb 600">dcb 600</SCANLINE>
+    <SCANLINE hits="410" mnemonic="LKL" description="dcb 600">dcb 600</SCANLINE>
 
-    <SCANLINE hits="166" mnemonic="LKL" description="dce 000">dce 000</SCANLINE>
+    <SCANLINE hits="168" mnemonic="LKL" description="dce 000">dce 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dce 500">dce 500</SCANLINE>
 
-    <SCANLINE hits="231" mnemonic="LKL" description="dce 600">dce 600</SCANLINE>
+    <SCANLINE hits="232" mnemonic="LKL" description="dce 600">dce 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dce 6000">dce 6000</SCANLINE>
 
     <SCANLINE hits="52" mnemonic="LKL" description="dch">dch</SCANLINE>
 
-    <SCANLINE hits="96" mnemonic="LKL" description="dch 000">dch 000</SCANLINE>
+    <SCANLINE hits="97" mnemonic="LKL" description="dch 000">dch 000</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="dch 010">dch 010</SCANLINE>
 
@@ -227,13 +245,13 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="dch 150">dch 150</SCANLINE>
 
-    <SCANLINE hits="266" mnemonic="LKL" description="dch 200">dch 200</SCANLINE>
+    <SCANLINE hits="271" mnemonic="LKL" description="dch 200">dch 200</SCANLINE>
 
     <SCANLINE hits="319" mnemonic="LKL" description="dch 300">dch 300</SCANLINE>
 
     <SCANLINE hits="291" mnemonic="LKL" description="dch 400">dch 400</SCANLINE>
 
-    <SCANLINE hits="3401" mnemonic="LKL" description="dch 600">dch 600</SCANLINE>
+    <SCANLINE hits="3416" mnemonic="LKL" description="dch 600">dch 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dch.410">dch.410</SCANLINE>
 
@@ -357,17 +375,19 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct a 91a">deduct a 91a</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct b 104a">deduct b 104a</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 102a">deduct b 102a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 104a">deduct b 104a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct b 113a">deduct b 113a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 116a">deduct b 116a</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="deduct b 116a">deduct b 116a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct b 120a">deduct b 120a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct b 121a">deduct b 121a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 121b">deduct b 121b</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 121d">deduct b 121d</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct b 122b">deduct b 122b</SCANLINE>
 
@@ -562,8 +582,6 @@
     <SCANLINE hits="3" mnemonic="LKL" description="deduct b 66a">deduct b 66a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct b 70a">deduct b 70a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct b 81a">deduct b 81a</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="deduct b 93a">deduct b 93a</SCANLINE>
 
@@ -991,29 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="deduct l 11a">deduct l 11a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 129a">deduct l 129a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 129b">deduct l 129b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 132b">deduct l 132b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 137a">deduct l 137a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 141a">deduct l 141a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 15a">deduct l 15a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 165a">deduct l 165a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 22a">deduct l 22a</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="deduct l 35a">deduct l 35a</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="d" />
+<SCANPREV term="czd300+cim475" />
 
 
-<SCANNEXT term="deduct+l+35a" />
+<SCANNEXT term="deduct+l+11a" />
 
 </RESULT>

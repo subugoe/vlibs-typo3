@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">da42006d-29</SESSIONVAR>
+<SESSIONVAR name="SID">6c11d060-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eehj 200">eehj 200</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="eehj 250">eehj 250</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="eehj 300">eehj 300</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="eehj 350">eehj 350</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="eehj 400">eehj 400</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="eehl 000">eehl 000</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eehl 100">eehl 100</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="eehl 150">eehl 150</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="eehl 200">eehl 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="eehl 250">eehl 250</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="eehl 300">eehl 300</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="eehl 400">eehl 400</SCANLINE>
 
@@ -905,7 +927,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="efda 500">efda 500</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="efda 550">efda 550</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="efda 550">efda 550</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="efda 555">efda 555</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="efdc 380">efdc 380</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="efdc 400">efdc 400</SCANLINE>
-
-    <SCANLINE hits="69" mnemonic="LKL" description="efdc 420">efdc 420</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="efdc 430">efdc 430</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="efdc 440">efdc 440</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="efdc 450">efdc 450</SCANLINE>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="efdc 500">efdc 500</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="efdc 550">efdc 550</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="efdc 560">efdc 560</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="efdc 600">efdc 600</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="efdc 650">efdc 650</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="efdc 700">efdc 700</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="eehl+400" />
+<SCANPREV term="eehj+200" />
 
 
-<SCANNEXT term="efdc+700" />
+<SCANNEXT term="efdc+380" />
 
 </RESULT>

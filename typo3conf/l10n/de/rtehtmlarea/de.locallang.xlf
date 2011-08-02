@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:38:24 UTC 2011" product-name="rtehtmlarea">
+    <header/>
+    <body>
+      <trans-unit id="Please wait" approved="yes">
+        <source>The editor is being loaded. Please wait...</source>
+        <target state="translated">Der Editor wird geladen. Bitte warten...</target>
+      </trans-unit>
+      <trans-unit id="Normal" approved="yes">
+        <source>Normal</source>
+        <target state="translated">Normal</target>
+      </trans-unit>
+      <trans-unit id="Heading 1" approved="yes">
+        <source>Heading 1</source>
+        <target state="translated">Überschrift 1</target>
+      </trans-unit>
+      <trans-unit id="Heading 2" approved="yes">
+        <source>Heading 2</source>
+        <target state="translated">Überschrift 2</target>
+      </trans-unit>
+      <trans-unit id="Heading 3" approved="yes">
+        <source>Heading 3</source>
+        <target state="translated">Überschrift 3</target>
+      </trans-unit>
+      <trans-unit id="Heading 4" approved="yes">
+        <source>Heading 4</source>
+        <target state="translated">Überschrift 4</target>
+      </trans-unit>
+      <trans-unit id="Heading 5" approved="yes">
+        <source>Heading 5</source>
+        <target state="translated">Überschrift 5</target>
+      </trans-unit>
+      <trans-unit id="Heading 6" approved="yes">
+        <source>Heading 6</source>
+        <target state="translated">Überschrift 6</target>
+      </trans-unit>
+      <trans-unit id="Preformatted" approved="yes">
+        <source>Preformatted</source>
+        <target state="translated">Vorformatiert</target>
+      </trans-unit>
+      <trans-unit id="Address" approved="yes">
+        <source>Address</source>
+        <target state="translated">Adresse</target>
+      </trans-unit>
+      <trans-unit id="No font" approved="yes">
+        <source>No font</source>
+        <target state="translated">Keine Schriftart</target>
+      </trans-unit>
+      <trans-unit id="No size" approved="yes">
+        <source>No font size</source>
+        <target state="translated">Keine Schriftgröße</target>
+      </trans-unit>
+      <trans-unit id="rteSettings" approved="yes">
+        <source>Rich Text Editor</source>
+        <target state="translated">Rich-Text-Editor</target>
+      </trans-unit>
+      <trans-unit id="rteWidth" approved="yes">
+        <source>Width of the RTE in pixels or percentage</source>
+        <target state="translated">Breite des RTE in Pixel oder Prozent</target>
+      </trans-unit>
+      <trans-unit id="rteHeight" approved="yes">
+        <source>Height of the RTE in pixels</source>
+        <target state="translated">Höhe des RTE in Pixel oder Prozent</target>
+      </trans-unit>
+      <trans-unit id="rteResize" approved="yes">
+        <source>Make RTE resizable</source>
+        <target state="translated">Größe des RTE veränderlich machen</target>
+      </trans-unit>
+      <trans-unit id="rteMaxHeight" approved="yes">
+        <source>Maximal height of resizable RTE in pixels</source>
+        <target state="translated">Maximale Höhe des in der Größe veränderlichen RTE</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

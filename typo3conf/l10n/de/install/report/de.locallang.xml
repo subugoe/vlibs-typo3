@@ -1,51 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="status_fileSystem">Dateisystem</label>
-			<label index="status_writable">Beschreibbar</label>
-			<label index="status_missingDirectory">Benötigtes Verzeichnis fehlt</label>
-			<label index="status_nonExistingDirectory">Verzeichnis fehlt</label>
-			<label index="status_recommendedWritableDirectory">Verzeichnis sollte beschreibbar sein</label>
-			<label index="status_requiredWritableDirectory">Verzeichnis nicht beschreibbar</label>
-			<label index="status_directoryDoesNotExist">%s existiert nicht.</label>
-			<label index="status_directoryDoesNotExistCouldNotCreate">%s existiert nicht und konnte nicht erstellt werden.</label>
-			<label index="status_directoryShouldAlsoBeWritable">Beachten Sie auch, dass das Verzeichnis beschreibbar sein sollte, wenn es existieren würde.</label>
-			<label index="status_directoryShouldBeWritable">%s sollte beschreibbar sein.</label>
-			<label index="status_directoryMustBeWritable">%s muss beschreibbar sein.</label>
-			<label index="status_remainingUpdates">Verbleibende Aktualisierungen</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="status_fileSystem" type="integer">113377861</label>
-			<label index="status_writable" type="integer">169415974</label>
-			<label index="status_missingDirectory" type="integer">84391744</label>
-			<label index="status_nonExistingDirectory" type="integer">124198708</label>
-			<label index="status_recommendedWritableDirectory" type="integer">145124103</label>
-			<label index="status_requiredWritableDirectory" type="integer">47323395</label>
-			<label index="status_directoryDoesNotExist" type="integer">209200974</label>
-			<label index="status_directoryDoesNotExistCouldNotCreate" type="integer">55023449</label>
-			<label index="status_directoryShouldAlsoBeWritable" type="integer">108282721</label>
-			<label index="status_directoryShouldBeWritable" type="integer">101372026</label>
-			<label index="status_directoryMustBeWritable" type="integer">19280381</label>
-			<label index="status_remainingUpdates" type="integer">18204435</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="status_fileSystem">File System</label>
-			<label index="status_writable">Writable</label>
-			<label index="status_missingDirectory">Required Directory Missing</label>
-			<label index="status_nonExistingDirectory">Directory not existing</label>
-			<label index="status_recommendedWritableDirectory">Directory should be writable</label>
-			<label index="status_requiredWritableDirectory">Directory not writable</label>
-			<label index="status_directoryDoesNotExist">%s does not exist.</label>
-			<label index="status_directoryDoesNotExistCouldNotCreate">%s does not exist and could not be created.</label>
-			<label index="status_directoryShouldAlsoBeWritable">Also note that it should be writable, if it did exist.</label>
-			<label index="status_directoryShouldBeWritable">%s should be writable.</label>
-			<label index="status_directoryMustBeWritable">%s must be writable.</label>
-			<label index="status_remainingUpdates">Remaining Updates</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="status_fileSystem">Dateisystem</label>
+      <label index="status_writable">Beschreibbar</label>
+      <label index="status_missingDirectory">Benötigtes Verzeichnis fehlt</label>
+      <label index="status_nonExistingDirectory">Verzeichnis fehlt</label>
+      <label index="status_recommendedWritableDirectory">Verzeichnis sollte beschreibbar sein</label>
+      <label index="status_requiredWritableDirectory">Verzeichnis nicht beschreibbar</label>
+      <label index="status_directoryDoesNotExist">%s existiert nicht.</label>
+      <label index="status_directoryDoesNotExistCouldNotCreate">%s existiert nicht und konnte nicht erstellt werden.</label>
+      <label index="status_directoryShouldAlsoBeWritable">Beachten Sie auch, dass das Verzeichnis beschreibbar sein sollte, wenn es existieren würde.</label>
+      <label index="status_directoryShouldBeWritable">%s sollte beschreibbar sein.</label>
+      <label index="status_directoryMustBeWritable">%s muss beschreibbar sein.</label>
+      <label index="status_remainingUpdates">Verbleibende Aktualisierungen</label>
+    </languageKey>
+  </data>
 </T3locallangExt>
