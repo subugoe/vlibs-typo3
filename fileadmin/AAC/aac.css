@@ -335,7 +335,7 @@ body.literatureguide #head {
 	content: ' ';
 }
 
-.submenu li a {
+.submenu li a:link {
 	font-weight: normal;
 	color: #2759a2;
 	border-top: 1px solid #fff;
@@ -489,6 +489,10 @@ a.languageSwitcher:hover {
 	font-style: normal;
 }
 
+#pazpar2 .pz2-termList a:link:hover {
+	font-weight: normal;
+}
+
 #pazpar2 .pz2-facetCancel {
 	color: #f00;
 }
@@ -523,6 +527,10 @@ a.languageSwitcher:hover {
 #pazpar2 .pz2-detail-catalogueLink:after {
 	margin: 0;
 	content: '';
+}
+
+#pazpar2 .pz2-atomLink:hover {
+	text-decoration: none;
 }
 
 #pazpar2 fieldset {
