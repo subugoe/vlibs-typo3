@@ -148,7 +148,7 @@ abbr, acronym {
 /* PAGE */
 #page {
     position: relative;
-    min-height: 100%;
+    min-height: 700px;
 	margin-bottom: -120px; /* compensate the height of #foot */
 	padding-bottom: 120px;
 }
