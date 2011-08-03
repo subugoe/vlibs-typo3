@@ -2,18 +2,18 @@
 "NEAAC1010";2;"NEAAC1010";"NEAAC1000";"Geschichtsschreibung und -theorie";"lkl=PB*";"Historiography and Theory";
 "NEAAC1020";2;"NEAAC1020";"NEAAC1000";"Historische Hilfswissenschaften";"lkl=PD*";"Auxiliary Sciences";
 "NEAAC1030";2;"NEAAC1030";"NEAAC1000";"Weltgeschichte (Entdeckungen; Weltkriege etc.)";"lkl=PF*";"World History (European expansion; World Wars etc.)";
-"NEAAC1040";2;"NEAAC1040";"NEAAC1000";"England (epochenübergreifend)";"lkl=POA 000 or lkl=POB 000 or lkl=POD 000 or lkl=POF 000 or lkl=POG 000 or lkl=POH 000 or lkl=POL 000 or lkl=POM 000 or lkl=PON 000 or lkl=POO 000 or lkl=PO 1 or PO 2 or lkl=PO 3 or lkl=PO 4 or lkl=PO 5 or lkl=PO 6 or lkl=PO 7 or lkl=PO 8 or lkl=PO 9 or lkl=POL";"England (epoch spanning)";
+"NEAAC1040";2;"NEAAC1040";"NEAAC1000";"England (epochenÃ¼bergreifend)";"lkl=POA 000 or lkl=POB 000 or lkl=POD 000 or lkl=POF 000 or lkl=POG 000 or lkl=POH 000 or lkl=POL 000 or lkl=POM 000 or lkl=PON 000 or lkl=POO 000 or lkl=PO 1 or PO 2 or lkl=PO 3 or lkl=PO 4 or lkl=PO 5 or lkl=PO 6 or lkl=PO 7 or lkl=PO 8 or lkl=PO 9 or lkl=POL";"England (epoch spanning)";
 "NEAAC1050";2;"NEAAC1050";"NEAAC1000";"- Mittelalter";"lkl=POA* or lkl=POM*";"- Middle Ages";"inline"
-"NEAAC1060";2;"NEAAC1060";"NEAAC1000";"- Frühe Neuzeit";"lkl=POB* or lkl=PON*";"- Early Modern Period";"inline"
+"NEAAC1060";2;"NEAAC1060";"NEAAC1000";"- FrÃ¼he Neuzeit";"lkl=POB* or lkl=PON*";"- Early Modern Period";"inline"
 "NEAAC1070";2;"NEAAC1070";"NEAAC1000";"- 19. Jahrhundert";"lkl=POD* or lkl=POO*";"- 19th Century";"inline,break"
 "NEAAC1080";2;"NEAAC1080";"NEAAC1000";"- 20. Jahrhundert";"lkl=POF* or lkl=POG* or lkl=POH* or lkl=POO*";"- 20th Century";"inline"
 "NEAAC1090";2;"NEAAC1090";"NEAAC1000";"Schottland";"lkl=POP* or lkl=POQ* or lkl=POQ* or lkl=POS*";"Scotland";"inline,break"
 "NEAAC1100";2;"NEAAC1100";"NEAAC1000";"Irland";"lkl=POT* or lkl=POV* or lkl=POR* or lkl=POS*";"Ireland";"inline"
-"NEAAC1110";2;"NEAAC1110";"NEAAC1000";"U.S.A. (epochenübergreifend)";"lkl=PVK*";"U.S.A. (epoch-spanning)";
-"NEAAC1120";2;"NEAAC1120";"NEAAC1000";"- Frühe Neuzeit";"lkl=PVL*";"- Early Modern Period";"inline"
+"NEAAC1110";2;"NEAAC1110";"NEAAC1000";"U.S.A. (epochenÃ¼bergreifend)";"lkl=PVK*";"U.S.A. (epoch-spanning)";
+"NEAAC1120";2;"NEAAC1120";"NEAAC1000";"- FrÃ¼he Neuzeit";"lkl=PVL*";"- Early Modern Period";"inline"
 "NEAAC1130";2;"NEAAC1130";"NEAAC1000";"- 1776-1918";"lkl=PVM*";"- 1776-1918";"inline"
 "NEAAC1140";2;"NEAAC1140";"NEAAC1000";"- 20. Jahrhundert";"lkl=PVN* or lkl=PVO* or lkl=PVP*";"- 20th Century";"inline,break"
 "NEAAC1150";2;"NEAAC1150";"NEAAC1000";"Kanada";"lkl=PVD* or lkl=PVE* or lkl=PVF* or lkl=PVG*";"Canada";"inline,break"
 "NEAAC1160";2;"NEAAC1160";"NEAAC1000";"Australien";"lkl=PXB* or lkl=PXC* or lkl=PXD* or lkl=PXE*";"Australia";"inline"
 "NEAAC1170";2;"NEAAC1170";"NEAAC1000";"Neuseeland";"lkl=PXN* or lkl=PXO* or lkl=PXP* or lkl=PXR* or lkl=PXS*";"New Zealand";"inline"
-"NEAAC1180";2;"NEAAC1180";"NEAAC1000";"Jüdisches Volk im angloamerikanischen Raum";"lkl=PYC 300 or lkl=PYD 300 or lkl=PYE 300 or lkl=PYF 300 or lkl=PYG 300 or lkl=PYC 7* or lkl=PYE 7* or lkl=PYF 7* or lkl=PYG 7*";"History of the Jewish People in the Anglo-American Regions";
+"NEAAC1180";2;"NEAAC1180";"NEAAC1000";"JÃ¼disches Volk im angloamerikanischen Raum";"lkl=PYC 300 or lkl=PYD 300 or lkl=PYE 300 or lkl=PYF 300 or lkl=PYG 300 or lkl=PYC 7* or lkl=PYE 7* or lkl=PYF 7* or lkl=PYG 7*";"History of the Jewish People in the Anglo-American Regions";

@@ -2,7 +2,7 @@
 "NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=IA 2* or lkl=IA 3*";"General works and linguistics";
 "NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4*";"Collections of literary texts";
 "NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5*";"Literary criticism";
-"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekund‰rliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";"Criticism of individual authors";
+"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekund√§rliteratur zu einzelnen Autoren";"lkl=IA 6* not lkl=IA 610";"Criticism of individual authors";
 "NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610*";"Texts by individual authors";
 "NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB*";"Old English";"inline"
 "NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=IAD*";"Middle English";"inline"
@@ -14,7 +14,7 @@
 "NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2* or lkl=IC 3*";"General works and linguistics";
 "NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4*";"Collections of literary texts";
 "NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5*";"Literary criticism";
-"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekund‰rliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";"Criticism of individual authors";
+"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekund√§rliteratur zu einzelnen Autoren";"lkl=IC 6* not lkl=IC 610";"Criticism of individual authors";
 "NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";"Texts by individual authors";
 ;;;;;;;
 "NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=IB*";"New literatures in English";"groupstart"
