@@ -1,1 +1,1 @@
-0-55/5 * * * *		/usr/bin/php -f $HOME/htdocs/cms/typo3/cli_dispatch.phpsh scheduler
+0-55/5 * * * *		/usr/bin/php -f /srv/www/vlib1/htdocs/typo3/cli_dispatch.phpsh scheduler
