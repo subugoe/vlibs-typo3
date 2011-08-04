@@ -571,12 +571,12 @@ a.languageSwitcher:hover {
 	line-height: 18px;
 }
 
-.tx-ezbrequest-pi1 a {
+.tx-ezbrequest-pi1 a:link {
 	text-decoration: none;
 	font-weight: normal;
 }
 
-.tx-ezbrequest-pi1 a:hover {
+.tx-ezbrequest-pi1 a:link:hover {
 	text-decoration: underline;
 }
 
@@ -585,7 +585,7 @@ a.languageSwitcher:hover {
 	margin-bottom: 20px;
 }
 
-.tx-ezbrequest-pi1 #journalNavi a {
+.tx-ezbrequest-pi1 #journalNavi a:link {
 	padding: 0 3px;
 }
 
@@ -601,6 +601,35 @@ a.languageSwitcher:hover {
 
 .tx-ezbrequest-pi1 #ezbSearchForm {
 	display: none;
+}
+
+.tx-ezbrequest-pi1 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tx-ezbrequest-pi1 #journalNavi .alphabetMenu li {
+	display: inline;
+}
+
+.tx-ezbrequest-pi1 #journalList li {
+	position: relative;
+	margin-left: 50px;
+}
+
+.tx-ezbrequest-pi1 #journalList li span.ampel {
+	position: absolute;
+	left: -50px;
+	top: 0.2em;
+}
+
+.tx-ezbrequest-pi1 ul.firstlist {
+	margin-bottom: 1em;
+}
+
+.tx-ezbrequest-pi1 ul.nextlist {
+	margin-top: 1em;
 }
 
 .tx-ezbrequest-pi1 #journalList {
