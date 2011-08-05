@@ -6,8 +6,14 @@
 
 /* 
 	STYLES FROM 960 GRID SYSTEM
-	* style #content .csc-default like .grid_12 so text doesn't run too wide
-	* style #pazpar2, .gokContainer, .tx-ezbrequest-pi like .grid_16 to get the full width
+	* style .csc-default like .grid_12 so text doesn't run too wide
+		for the TYPO3 appearance setting 'Default Frame'
+	* style .csc-frame-frame1 like .grid_4 to have a narrow column with the
+		TYPO3 appearance setting 'Frame 1'
+	* style .csc-frame-frame2 like .grid_8 to have a medium column with the
+		TYPO3 appearance setting 'Frame 2'
+	* style #pazpar2, .gokContainer, .tx-ezbrequest-pi like .grid_16 to get
+		the full width, select the appearance setting 'No Frame' for that
 */
 .container_16 {
 	margin-left: auto;
@@ -17,6 +23,7 @@
 
 .grid_4, .grid_8, .grid_12, .grid_16,
 #content .csc-default,
+#content .csc-frame-frame1,
 #content .csc-frame-frame2,
 #pazpar2,
 .gokContainer,
@@ -40,7 +47,8 @@
 	margin-right: 0;
 }
 
-.container_16 .grid_4 {
+.container_16 .grid_4,
+#content .csc-frame-frame1 {
 	width: 220px;
 }
 
