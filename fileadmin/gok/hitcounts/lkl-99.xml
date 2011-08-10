@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a343a08e-2</SESSIONVAR>
+<SESSIONVAR name="SID">6dd41aa9-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqs 430">kqs 430</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 431">kqs 431</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqs 435">kqs 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 438">kqs 438</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqs 440">kqs 440</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kqs 446">kqs 446</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 480">kqs 480</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kqs 500">kqs 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqs 540">kqs 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 546">kqs 546</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 548">kqs 548</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kqs 558">kqs 558</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kqs 570">kqs 570</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kqs 574">kqs 574</SCANLINE>
 
@@ -523,7 +549,7 @@
 
     <SCANLINE hits="76" mnemonic="LKL" description="ktf 580">ktf 580</SCANLINE>
 
-    <SCANLINE hits="1668" mnemonic="LKL" description="ktf 600">ktf 600</SCANLINE>
+    <SCANLINE hits="1669" mnemonic="LKL" description="ktf 600">ktf 600</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ktf 610">ktf 610</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kvf">kvf</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="kvf 200">kvf 200</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="kvf 300">kvf 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 317">kvf 317</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 320">kvf 320</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 321">kvf 321</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 325">kvf 325</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="kvf 330">kvf 330</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kvf 335">kvf 335</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 337">kvf 337</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kvf 340">kvf 340</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kvf 350">kvf 350</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="kvf 352">kvf 352</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kvf 370">kvf 370</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kqs+574" />
+<SCANPREV term="kqs+430" />
 
 
-<SCANNEXT term="kvf+370" />
+<SCANNEXT term="kvf" />
 
 </RESULT>

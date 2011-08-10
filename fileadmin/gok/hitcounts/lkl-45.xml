@@ -2,16 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6c11d060-2</SESSIONVAR>
+<SESSIONVAR name="SID">c2da4da2-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="eehj 200">eehj 200</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="eehj 250">eehj 250</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eehj 300">eehj 300</SCANLINE>
 
@@ -283,7 +279,7 @@
 
     <SCANLINE hits="44" mnemonic="LKL" description="eejj 520">eejj 520</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="eejj 530">eejj 530</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="eejj 530">eejj 530</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="eejj 550">eejj 550</SCANLINE>
 
@@ -295,7 +291,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="eejk 100">eejk 100</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="eejk 150">eejk 150</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="eejk 150">eejk 150</SCANLINE>
 
     <SCANLINE hits="90" mnemonic="LKL" description="eejk 200">eejk 200</SCANLINE>
 
@@ -311,7 +307,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="eejk 350">eejk 350</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="eejk 400">eejk 400</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="eejk 400">eejk 400</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="eejk 450">eejk 450</SCANLINE>
 
@@ -1009,11 +1005,15 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="efdc 380">efdc 380</SCANLINE>
 
+    <SCANLINE hits="28" mnemonic="LKL" description="efdc 400">efdc 400</SCANLINE>
+
+    <SCANLINE hits="69" mnemonic="LKL" description="efdc 420">efdc 420</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="eehj+200" />
+<SCANPREV term="eehj+300" />
 
 
-<SCANNEXT term="efdc+380" />
+<SCANNEXT term="efdc+420" />
 
 </RESULT>

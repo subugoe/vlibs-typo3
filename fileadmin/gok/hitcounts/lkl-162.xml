@@ -2,12 +2,52 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f7875ed2-3</SESSIONVAR>
+<SESSIONVAR name="SID">7b861449-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="53" mnemonic="LKL" description="vobd 000">vobd 000</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="voe 000">voe 000</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="voe 100">voe 100</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="voe 200">voe 200</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="vof 000">vof 000</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="voh 000">voh 000</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="voh 100">voh 100</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="voh 200">voh 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="voi 000">voi 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="voi 100">voi 100</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="voi 110">voi 110</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="voi 120">voi 120</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="voi 130">voi 130</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="voi 140">voi 140</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="voi 150">voi 150</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="voi 200">voi 200</SCANLINE>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="voi 210">voi 210</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="voi 220">voi 220</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="voi 230">voi 230</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="voi 240">voi 240</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="voi 250">voi 250</SCANLINE>
 
@@ -153,7 +193,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="vpf 000">vpf 000</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="vpg 000">vpg 000</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="vpg 000">vpg 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="vph 000">vph 000</SCANLINE>
 
@@ -383,7 +423,7 @@
 
     <SCANLINE hits="97" mnemonic="LKL" description="vre 100">vre 100</SCANLINE>
 
-    <SCANLINE hits="136" mnemonic="LKL" description="vre 110">vre 110</SCANLINE>
+    <SCANLINE hits="138" mnemonic="LKL" description="vre 110">vre 110</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="vre 120">vre 120</SCANLINE>
 
@@ -411,11 +451,11 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="vre 500">vre 500</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="vre 510">vre 510</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="vre 510">vre 510</SCANLINE>
 
     <SCANLINE hits="148" mnemonic="LKL" description="vre 600">vre 600</SCANLINE>
 
-    <SCANLINE hits="27" mnemonic="LKL" description="vre 700">vre 700</SCANLINE>
+    <SCANLINE hits="28" mnemonic="LKL" description="vre 700">vre 700</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="vre j">vre j</SCANLINE>
 
@@ -819,6 +859,8 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="vtg 210">vtg 210</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="vtg 240">vtg 240</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="vtg 250">vtg 250</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vtg 294">vtg 294</SCANLINE>
@@ -855,7 +897,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="vtj 300">vtj 300</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="vtk 000">vtk 000</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="vtk 000">vtk 000</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="vtl 000">vtl 000</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="vtv">vtv</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="vtv 000">vtv 000</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="vtv 100">vtv 100</SCANLINE>
-
-    <SCANLINE hits="97" mnemonic="LKL" description="vtv 200">vtv 200</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vtv 218">vtv 218</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vtv 220">vtv 220</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vtv 223">vtv 223</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vtv 230">vtv 230</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vtv 270">vtv 270</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vtv 271">vtv 271</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vtv 272">vtv 272</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="vtv 273">vtv 273</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="vtv 274">vtv 274</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="vtv 276">vtv 276</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="vtv 277">vtv 277</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="vtv 278">vtv 278</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vtv 280">vtv 280</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="vtv 281">vtv 281</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vtv 283">vtv 283</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vtv 284">vtv 284</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vtv 300">vtv 300</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="vtw 000">vtw 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="voi+250" />
+<SCANPREV term="vobd+000" />
 
 
-<SCANNEXT term="vtw+000" />
+<SCANNEXT term="vtv" />
 
 </RESULT>

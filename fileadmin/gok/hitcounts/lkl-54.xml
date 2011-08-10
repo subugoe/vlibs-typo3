@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4a785c4b-3</SESSIONVAR>
+<SESSIONVAR name="SID">c38303e7-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ft05 entw m (fh)">ft05 entw m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ft10 e i (fh)">ft10 e i (fh)</SCANLINE>
 
@@ -195,7 +193,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ft70 au m (fh)">ft70 au m (fh)</SCANLINE>
 
-    <SCANLINE hits="57" mnemonic="LKL" description="fta 000">fta 000</SCANLINE>
+    <SCANLINE hits="58" mnemonic="LKL" description="fta 000">fta 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="fta 200">fta 200</SCANLINE>
 
@@ -747,7 +745,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="fvw 000">fvw 000</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="fwd 000">fwd 000</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="fwd 000">fwd 000</SCANLINE>
 
     <SCANLINE hits="63" mnemonic="LKL" description="fwh 000">fwh 000</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fx 66 z 68">fx 66 z 68</SCANLINE>
 
+    <SCANLINE hits="3" mnemonic="LKL" description="fx 67">fx 67</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ft05+entw+m+(fh)" />
+<SCANPREV term="ft10+e+i+(fh)" />
 
 
-<SCANNEXT term="fx+66+z+68" />
+<SCANNEXT term="fx+67" />
 
 </RESULT>

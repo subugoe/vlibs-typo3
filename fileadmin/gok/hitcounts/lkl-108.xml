@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d5c9efb5-3</SESSIONVAR>
+<SESSIONVAR name="SID">37a55210-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lmd 012">lmd 012</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lmd 020">lmd 020</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="lmd 022">lmd 022</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lmd 023">lmd 023</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lmd 030">lmd 030</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lmd 031">lmd 031</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="lmd 032">lmd 032</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="lmd 033">lmd 033</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lmd 050">lmd 050</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lmd 051">lmd 051</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="lmd 052">lmd 052</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="lmd 060">lmd 060</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="lmd 061">lmd 061</SCANLINE>
+
+    <SCANLINE hits="38" mnemonic="LKL" description="lmd 062">lmd 062</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="lmd 065">lmd 065</SCANLINE>
 
@@ -275,7 +303,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lme 99">lme 99</SCANLINE>
 
-    <SCANLINE hits="382" mnemonic="LKL" description="lme 990">lme 990</SCANLINE>
+    <SCANLINE hits="383" mnemonic="LKL" description="lme 990">lme 990</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lme,500">lme,500</SCANLINE>
 
@@ -633,13 +661,13 @@
 
     <SCANLINE hits="40" mnemonic="LKL" description="lmg 231">lmg 231</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="lmg 232">lmg 232</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="lmg 232">lmg 232</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="lmg 233">lmg 233</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lmg 234">lmg 234</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="lmg 236">lmg 236</SCANLINE>
+    <SCANLINE hits="36" mnemonic="LKL" description="lmg 236">lmg 236</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="lmg 237">lmg 237</SCANLINE>
 
@@ -649,7 +677,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lmg 24 k (fh)">lmg 24 k (fh)</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="lmg 240">lmg 240</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="lmg 240">lmg 240</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="lmg 241">lmg 241</SCANLINE>
 
@@ -865,7 +893,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ln 186">ln 186</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="ln 187">ln 187</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="ln 187">ln 187</SCANLINE>
 
     <SCANLINE hits="368" mnemonic="LKL" description="ln 190">ln 190</SCANLINE>
 
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lo 16 bulg">lo 16 bulg</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="lo 16 finn">lo 16 finn</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 finn lc 16 finn">lo 16 finn lc 16 finn</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 frank">lo 16 frank</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lo 16 gb">lo 16 gb</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 gb lc 16 gb">lo 16 gb lc 16 gb</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 gb lo 66 kan lo 66 usa">lo 16 gb lo 66 kan lo 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 jug">lo 16 jug</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 schwz">lo 16 schwz</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lo 16 udssr">lo 16 udssr</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 udssr pz 16 udssr">lo 16 udssr pz 16 udssr</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lo 16 ung">lo 16 ung</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 16 ung lo 2 d pz 16 ung">lo 16 ung lo 2 d pz 16 ung</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lo 161.601">lo 161.601</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="lo 2">lo 2</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lmd+065" />
+<SCANPREV term="lmd+012" />
 
 
-<SCANNEXT term="lo+2" />
+<SCANNEXT term="lo+16+bulg" />
 
 </RESULT>

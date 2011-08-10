@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6db68a0a-2</SESSIONVAR>
+<SESSIONVAR name="SID">bf94a7ab-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="iah 517">iah 517</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="iah 519">iah 519</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibj 340">ibj 340</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="ibj 350">ibj 350</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="iah+517" />
+<SCANPREV term="iah+519" />
 
 
-<SCANNEXT term="ibj+340" />
+<SCANNEXT term="ibj+350" />
 
 </RESULT>

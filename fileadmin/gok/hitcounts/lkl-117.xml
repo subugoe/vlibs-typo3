@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">31e0ea5e-0</SESSIONVAR>
+<SESSIONVAR name="SID">39be1cf6-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp b">nt06 sp b</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp b (fh)">nt06 sp b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 050 k (fh)">nt06 su 050 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 050 m (fh)">nt06 su 050 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 055 s (fh)">nt06 su 055 s (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 360 k (fh)">nt06 su 360 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 360 s (fh)">nt06 su 360 s (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nt06 su b (fh)">nt06 su b (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nt06 su k (fh)">nt06 su k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su m (fh)">nt06 su m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su n">nt06 su n</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su n (fh)">nt06 su n (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nt06 sw a">nt06 sw a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sw b (fh)">nt06 sw b (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt06 sz 050 k (fh)">nt06 sz 050 k (fh)</SCANLINE>
 
@@ -241,13 +269,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="o 000">o 000</SCANLINE>
 
-    <SCANLINE hits="137" mnemonic="LKL" description="o 100">o 100</SCANLINE>
+    <SCANLINE hits="138" mnemonic="LKL" description="o 100">o 100</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="o 100 a">o 100 a</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="o 103">o 103</SCANLINE>
 
-    <SCANLINE hits="151" mnemonic="LKL" description="o 200">o 200</SCANLINE>
+    <SCANLINE hits="153" mnemonic="LKL" description="o 200">o 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="o 208">o 208</SCANLINE>
 
@@ -261,7 +289,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="o 246">o 246</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="o 260">o 260</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="o 260">o 260</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="o 270">o 270</SCANLINE>
 
@@ -271,7 +299,7 @@
 
     <SCANLINE hits="19" mnemonic="LKL" description="o 300">o 300</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="o 310">o 310</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="o 310">o 310</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="o 320">o 320</SCANLINE>
 
@@ -393,7 +421,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="oa 408">oa 408</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="oa 409">oa 409</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="oa 409">oa 409</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="oa 50">oa 50</SCANLINE>
 
@@ -473,13 +501,13 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="ob">ob</SCANLINE>
 
-    <SCANLINE hits="1018" mnemonic="LKL" description="ob 100">ob 100</SCANLINE>
+    <SCANLINE hits="1025" mnemonic="LKL" description="ob 100">ob 100</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="ob 101">ob 101</SCANLINE>
 
-    <SCANLINE hits="545" mnemonic="LKL" description="ob 102">ob 102</SCANLINE>
+    <SCANLINE hits="554" mnemonic="LKL" description="ob 102">ob 102</SCANLINE>
 
-    <SCANLINE hits="212" mnemonic="LKL" description="ob 103">ob 103</SCANLINE>
+    <SCANLINE hits="215" mnemonic="LKL" description="ob 103">ob 103</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="ob 105">ob 105</SCANLINE>
 
@@ -499,9 +527,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ob 305">ob 305</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="ob 308">ob 308</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="ob 308">ob 308</SCANLINE>
 
-    <SCANLINE hits="202" mnemonic="LKL" description="ob 309">ob 309</SCANLINE>
+    <SCANLINE hits="205" mnemonic="LKL" description="ob 309">ob 309</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="ob 400">ob 400</SCANLINE>
 
@@ -509,9 +537,9 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ob 402">ob 402</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="ob 408">ob 408</SCANLINE>
+    <SCANLINE hits="39" mnemonic="LKL" description="ob 408">ob 408</SCANLINE>
 
-    <SCANLINE hits="1065" mnemonic="LKL" description="ob 409">ob 409</SCANLINE>
+    <SCANLINE hits="1063" mnemonic="LKL" description="ob 409">ob 409</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ob 45">ob 45</SCANLINE>
 
@@ -521,7 +549,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="ob 508">ob 508</SCANLINE>
 
-    <SCANLINE hits="78" mnemonic="LKL" description="ob 509">ob 509</SCANLINE>
+    <SCANLINE hits="79" mnemonic="LKL" description="ob 509">ob 509</SCANLINE>
 
     <SCANLINE hits="50" mnemonic="LKL" description="ob 800">ob 800</SCANLINE>
 
@@ -531,7 +559,7 @@
 
     <SCANLINE hits="57" mnemonic="LKL" description="ob 808">ob 808</SCANLINE>
 
-    <SCANLINE hits="121" mnemonic="LKL" description="ob 809">ob 809</SCANLINE>
+    <SCANLINE hits="122" mnemonic="LKL" description="ob 809">ob 809</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ob 900">ob 900</SCANLINE>
 
@@ -697,7 +725,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oc 333">oc 333</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="oc 338">oc 338</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="oc 338">oc 338</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="oc 339">oc 339</SCANLINE>
 
@@ -865,13 +893,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oc 553">oc 553</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="oc 558">oc 558</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="oc 558">oc 558</SCANLINE>
 
     <SCANLINE hits="49" mnemonic="LKL" description="oc 559">oc 559</SCANLINE>
 
     <SCANLINE hits="24" mnemonic="LKL" description="oc 560">oc 560</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="oc 562">oc 562</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="oc 562">oc 562</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="oc 563">oc 563</SCANLINE>
 
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="oci 408">oci 408</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="oci 409">oci 409</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ocj 100">ocj 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ocj 208">ocj 208</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ocj 209">ocj 209</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="oco 100">oco 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="oco 109">oco 109</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="oco 200">oco 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="oco 202">oco 202</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="oco 209">oco 209</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="oco 300">oco 300</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="oco 400">oco 400</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="oco 408">oco 408</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="oco 409">oco 409</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="oco 600">oco 600</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nt06+sz+050+k+(fh)" />
+<SCANPREV term="nt06+sp+b" />
 
 
-<SCANNEXT term="oco+600" />
+<SCANNEXT term="oci+408" />
 
 </RESULT>

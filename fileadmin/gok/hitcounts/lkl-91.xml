@@ -2,12 +2,22 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">cca072e8-0</SESSIONVAR>
+<SESSIONVAR name="SID">06aff423-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kdb 521">kdb 521</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="kdb 522">kdb 522</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="kdb 523">kdb 523</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="kdb 524">kdb 524</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="kdb 525">kdb 525</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kdb 527">kdb 527</SCANLINE>
 
@@ -663,9 +673,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="keb">keb</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="keb 200">keb 200</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="keb 200">keb 200</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="keb 300">keb 300</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="keb 300">keb 300</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="keb 317">keb 317</SCANLINE>
 
@@ -727,7 +737,7 @@
 
     <SCANLINE hits="36" mnemonic="LKL" description="kem">kem</SCANLINE>
 
-    <SCANLINE hits="405" mnemonic="LKL" description="kem 200">kem 200</SCANLINE>
+    <SCANLINE hits="411" mnemonic="LKL" description="kem 200">kem 200</SCANLINE>
 
     <SCANLINE hits="38" mnemonic="LKL" description="kem 200 a">kem 200 a</SCANLINE>
 
@@ -735,11 +745,13 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="kem 230">kem 230</SCANLINE>
 
-    <SCANLINE hits="55" mnemonic="LKL" description="kem 240">kem 240</SCANLINE>
+    <SCANLINE hits="56" mnemonic="LKL" description="kem 240">kem 240</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="kem 250">kem 250</SCANLINE>
 
-    <SCANLINE hits="108" mnemonic="LKL" description="kem 300">kem 300</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="kem 260">kem 260</SCANLINE>
+
+    <SCANLINE hits="109" mnemonic="LKL" description="kem 300">kem 300</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kem 313">kem 313</SCANLINE>
 
@@ -757,9 +769,9 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="kem 327">kem 327</SCANLINE>
 
-    <SCANLINE hits="89" mnemonic="LKL" description="kem 330">kem 330</SCANLINE>
+    <SCANLINE hits="92" mnemonic="LKL" description="kem 330">kem 330</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="kem 331">kem 331</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="kem 331">kem 331</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="kem 332">kem 332</SCANLINE>
 
@@ -767,17 +779,17 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="kem 335">kem 335</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="kem 336">kem 336</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="kem 336">kem 336</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="kem 337">kem 337</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="kem 337">kem 337</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="kem 338">kem 338</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="kem 338">kem 338</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="kem 340">kem 340</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kem 343">kem 343</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="kem 344">kem 344</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="kem 344">kem 344</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kem 345">kem 345</SCANLINE>
 
@@ -787,7 +799,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="kem 351">kem 351</SCANLINE>
 
-    <SCANLINE hits="59" mnemonic="LKL" description="kem 352">kem 352</SCANLINE>
+    <SCANLINE hits="60" mnemonic="LKL" description="kem 352">kem 352</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="kem 353">kem 353</SCANLINE>
 
@@ -797,21 +809,23 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="kem 357">kem 357</SCANLINE>
 
-    <SCANLINE hits="47" mnemonic="LKL" description="kem 358">kem 358</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="kem 358">kem 358</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="kem 359">kem 359</SCANLINE>
+    <SCANLINE hits="39" mnemonic="LKL" description="kem 359">kem 359</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="kem 360">kem 360</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kem 366">kem 366</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kem 370">kem 370</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kem 373">kem 373</SCANLINE>
 
-    <SCANLINE hits="83" mnemonic="LKL" description="kem 374">kem 374</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="kem 374">kem 374</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="kem 375">kem 375</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="kem 380">kem 380</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="kem 380">kem 380</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="kem 382">kem 382</SCANLINE>
 
@@ -927,7 +941,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="kem 600">kem 600</SCANLINE>
 
-    <SCANLINE hits="285" mnemonic="LKL" description="kem 610">kem 610</SCANLINE>
+    <SCANLINE hits="288" mnemonic="LKL" description="kem 610">kem 610</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="kem 620">kem 620</SCANLINE>
 
@@ -949,7 +963,7 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="kem 638">kem 638</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="kem 639">kem 639</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="kem 639">kem 639</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="kem 640">kem 640</SCANLINE>
 
@@ -959,11 +973,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="kem 645">kem 645</SCANLINE>
 
-    <SCANLINE hits="108" mnemonic="LKL" description="kem 648">kem 648</SCANLINE>
+    <SCANLINE hits="110" mnemonic="LKL" description="kem 648">kem 648</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="kem 649">kem 649</SCANLINE>
 
-    <SCANLINE hits="350" mnemonic="LKL" description="kem 651">kem 651</SCANLINE>
+    <SCANLINE hits="355" mnemonic="LKL" description="kem 651">kem 651</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="kem 652">kem 652</SCANLINE>
 
@@ -973,9 +987,9 @@
 
     <SCANLINE hits="30" mnemonic="LKL" description="kem 655">kem 655</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="kem 658">kem 658</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="kem 658">kem 658</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="kem 659">kem 659</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="kem 659">kem 659</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kem 670">kem 670</SCANLINE>
 
@@ -983,7 +997,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kem 679">kem 679</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="kem 690">kem 690</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="kem 690">kem 690</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kem xxx">kem xxx</SCANLINE>
 
@@ -995,25 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="kem2 d1">kem2 d1</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="kem2 u">kem2 u</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ken">ken</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="keo">keo</SCANLINE>
-
-    <SCANLINE hits="83" mnemonic="LKL" description="keo 200">keo 200</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="keo 230">keo 230</SCANLINE>
-
-    <SCANLINE hits="23" mnemonic="LKL" description="keo 300">keo 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="keo 320">keo 320</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kdb+527" />
+<SCANPREV term="kdb+521" />
 
 
-<SCANNEXT term="keo+320" />
+<SCANNEXT term="kem2+d1" />
 
 </RESULT>

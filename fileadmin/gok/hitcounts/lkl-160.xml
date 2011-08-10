@@ -2,12 +2,52 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8f56b630-1</SESSIONVAR>
+<SESSIONVAR name="SID">a1aa04ba-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 66 usa2080 8 z nat 2785">ve 66 usa2080 8 z nat 2785</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ve 66 venez">ve 66 venez</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ve 7 aust">ve 7 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 7 aust ts 7 aust">ve 7 aust ts 7 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 7 aust vt 7 aust">ve 7 aust vt 7 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 70 an">ve 70 an</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 70 au vt 70 au">ve 70 au vt 70 au</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76">ve 76</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ve 76 aust">ve 76 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76 aust vt 76 aust">ve 76 aust vt 76 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76 aust vt 76 aust vh 76 aust">ve 76 aust vt 76 aust vh 76 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76 austr.">ve 76 austr.</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76 australien">ve 76 australien</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 76 victoria">ve 76 victoria</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 86 fid">ve 86 fid</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ve 86 neus">ve 86 neus</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ve 86 papua">ve 86 papua</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ve 91 groenland">ve 91 groenland</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="ve 92">ve 92</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ve 92 spol">ve 92 spol</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ve 92 toh92">ve 92 toh92</SCANLINE>
 
@@ -407,7 +447,7 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="veb 216">veb 216</SCANLINE>
 
-    <SCANLINE hits="82" mnemonic="LKL" description="veb 217">veb 217</SCANLINE>
+    <SCANLINE hits="83" mnemonic="LKL" description="veb 217">veb 217</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="veb 218">veb 218</SCANLINE>
 
@@ -421,7 +461,7 @@
 
     <SCANLINE hits="37" mnemonic="LKL" description="veb 260">veb 260</SCANLINE>
 
-    <SCANLINE hits="139" mnemonic="LKL" description="veb 270">veb 270</SCANLINE>
+    <SCANLINE hits="140" mnemonic="LKL" description="veb 270">veb 270</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="veb 275">veb 275</SCANLINE>
 
@@ -499,7 +539,7 @@
 
     <SCANLINE hits="81" mnemonic="LKL" description="ved 300">ved 300</SCANLINE>
 
-    <SCANLINE hits="124" mnemonic="LKL" description="ved 400">ved 400</SCANLINE>
+    <SCANLINE hits="126" mnemonic="LKL" description="ved 400">ved 400</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="ved 500">ved 500</SCANLINE>
 
@@ -649,7 +689,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="vej 000">vej 000</SCANLINE>
 
-    <SCANLINE hits="126" mnemonic="LKL" description="vej 100">vej 100</SCANLINE>
+    <SCANLINE hits="127" mnemonic="LKL" description="vej 100">vej 100</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="vej 200">vej 200</SCANLINE>
 
@@ -799,7 +839,7 @@
 
     <SCANLINE hits="47" mnemonic="LKL" description="ver 000">ver 000</SCANLINE>
 
-    <SCANLINE hits="114" mnemonic="LKL" description="ver 100">ver 100</SCANLINE>
+    <SCANLINE hits="115" mnemonic="LKL" description="ver 100">ver 100</SCANLINE>
 
     <SCANLINE hits="58" mnemonic="LKL" description="ver 200">ver 200</SCANLINE>
 
@@ -817,7 +857,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ves">ves</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="ves 000">ves 000</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="ves 000">ves 000</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ves 100">ves 100</SCANLINE>
 
@@ -833,7 +873,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="ves 700">ves 700</SCANLINE>
 
-    <SCANLINE hits="71" mnemonic="LKL" description="ves 800">ves 800</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="ves 800">ves 800</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ves p">ves p</SCANLINE>
 
@@ -969,51 +1009,11 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="vev 252">vev 252</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="vev 253">vev 253</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="vev 254">vev 254</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vev 255">vev 255</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="vev 256">vev 256</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="vev 257">vev 257</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vev 258">vev 258</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="vev 259">vev 259</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="vev 260">vev 260</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="vev 261">vev 261</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="vev 262">vev 262</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="vev 263">vev 263</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vev 264">vev 264</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vev 265">vev 265</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="vev 266">vev 266</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="vev 267">vev 267</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="vev 268">vev 268</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="vev 270">vev 270</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="vev 271">vev 271</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="vev 272">vev 272</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="vev 273">vev 273</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ve+92+toh92" />
+<SCANPREV term="ve+66+usa2080+8+z+nat+2785" />
 
 
-<SCANNEXT term="vev+273" />
+<SCANNEXT term="vev+252" />
 
 </RESULT>

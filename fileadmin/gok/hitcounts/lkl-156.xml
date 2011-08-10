@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">794569f7-1</SESSIONVAR>
+<SESSIONVAR name="SID">566daf0c-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un lg a">un lg a</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="un ly">un ly</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="un m (fh)">un m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un mo">un mo</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un ng">un ng</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un os">un os</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="un ou">un ou</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un qll">un qll</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="un rr">un rr</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="un ru">un ru</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un rv">un rv</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un tm">un tm</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un to">un to</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="un uo">un uo</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="un v (fh)">un v (fh)</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="una 100">una 100</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="una 200">una 200</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="una 250">una 250</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="una 300">una 300</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="unb 000">unb 000</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="unb 100">unb 100</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="unb k">unb k</SCANLINE>
 
@@ -131,11 +173,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqa 000">uqa 000</SCANLINE>
 
-    <SCANLINE hits="1350" mnemonic="LKL" description="uqa 300">uqa 300</SCANLINE>
+    <SCANLINE hits="1352" mnemonic="LKL" description="uqa 300">uqa 300</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="uqa 400">uqa 400</SCANLINE>
 
-    <SCANLINE hits="959" mnemonic="LKL" description="uqa 500">uqa 500</SCANLINE>
+    <SCANLINE hits="965" mnemonic="LKL" description="uqa 500">uqa 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqb 000">uqb 000</SCANLINE>
 
@@ -151,7 +193,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="uqc 160">uqc 160</SCANLINE>
 
-    <SCANLINE hits="530" mnemonic="LKL" description="uqc 180">uqc 180</SCANLINE>
+    <SCANLINE hits="531" mnemonic="LKL" description="uqc 180">uqc 180</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqc 187">uqc 187</SCANLINE>
 
@@ -165,7 +207,7 @@
 
     <SCANLINE hits="140" mnemonic="LKL" description="uqc 430">uqc 430</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="uqc 450">uqc 450</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="uqc 450">uqc 450</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqc 490">uqc 490</SCANLINE>
 
@@ -175,7 +217,7 @@
 
     <SCANLINE hits="62" mnemonic="LKL" description="uqc 620">uqc 620</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="uqc 700">uqc 700</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="uqc 700">uqc 700</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="uqc 720">uqc 720</SCANLINE>
 
@@ -185,7 +227,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="uqc 800">uqc 800</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="uqd 000">uqd 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="uqd 000">uqd 000</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="uqd 100">uqd 100</SCANLINE>
 
@@ -217,25 +259,25 @@
 
     <SCANLINE hits="50" mnemonic="LKL" description="uqf 300">uqf 300</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="uqf 600">uqf 600</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="uqf 600">uqf 600</SCANLINE>
 
     <SCANLINE hits="44" mnemonic="LKL" description="uqf 630">uqf 630</SCANLINE>
 
-    <SCANLINE hits="263" mnemonic="LKL" description="uqf 660">uqf 660</SCANLINE>
+    <SCANLINE hits="264" mnemonic="LKL" description="uqf 660">uqf 660</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqf630">uqf630</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="uqg 000">uqg 000</SCANLINE>
 
-    <SCANLINE hits="7724" mnemonic="LKL" description="uqg 100">uqg 100</SCANLINE>
+    <SCANLINE hits="7725" mnemonic="LKL" description="uqg 100">uqg 100</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uqg 109">uqg 109</SCANLINE>
 
     <SCANLINE hits="34" mnemonic="LKL" description="uqg 220">uqg 220</SCANLINE>
 
-    <SCANLINE hits="245" mnemonic="LKL" description="uqg 240">uqg 240</SCANLINE>
+    <SCANLINE hits="246" mnemonic="LKL" description="uqg 240">uqg 240</SCANLINE>
 
-    <SCANLINE hits="157" mnemonic="LKL" description="uqg 350">uqg 350</SCANLINE>
+    <SCANLINE hits="158" mnemonic="LKL" description="uqg 350">uqg 350</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="uqg 400">uqg 400</SCANLINE>
 
@@ -249,7 +291,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="uqg 660">uqg 660</SCANLINE>
 
-    <SCANLINE hits="128" mnemonic="LKL" description="uqg 664">uqg 664</SCANLINE>
+    <SCANLINE hits="127" mnemonic="LKL" description="uqg 664">uqg 664</SCANLINE>
 
     <SCANLINE hits="93" mnemonic="LKL" description="uqg 700">uqg 700</SCANLINE>
 
@@ -379,13 +421,13 @@
 
     <SCANLINE hits="17" mnemonic="LKL" description="uqp 150">uqp 150</SCANLINE>
 
-    <SCANLINE hits="285" mnemonic="LKL" description="uqp 200">uqp 200</SCANLINE>
+    <SCANLINE hits="286" mnemonic="LKL" description="uqp 200">uqp 200</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="uqp 300">uqp 300</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="uqp 330">uqp 330</SCANLINE>
 
-    <SCANLINE hits="81" mnemonic="LKL" description="uqp 350">uqp 350</SCANLINE>
+    <SCANLINE hits="80" mnemonic="LKL" description="uqp 350">uqp 350</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="uqp 500">uqp 500</SCANLINE>
 
@@ -407,13 +449,13 @@
 
     <SCANLINE hits="62" mnemonic="LKL" description="uqq 410">uqq 410</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="uqq 430">uqq 430</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="uqq 430">uqq 430</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="uqq 435">uqq 435</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="uqq 435">uqq 435</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="LKL" description="uqq 440">uqq 440</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="LKL" description="uqq 450">uqq 450</SCANLINE>
+    <SCANLINE hits="131" mnemonic="LKL" description="uqq 450">uqq 450</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="uqq 500">uqq 500</SCANLINE>
 
@@ -433,7 +475,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="uqr 100">uqr 100</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="uqr 130">uqr 130</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="uqr 130">uqr 130</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="uqr 160">uqr 160</SCANLINE>
 
@@ -457,7 +499,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="uqs 200">uqs 200</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="uqs 230">uqs 230</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="uqs 230">uqs 230</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="uqs 290">uqs 290</SCANLINE>
 
@@ -465,11 +507,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="uqs 420">uqs 420</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="uqs 500">uqs 500</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="uqs 500">uqs 500</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="uqt 000">uqt 000</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="uqt 100">uqt 100</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="uqt 100">uqt 100</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="uqt 200">uqt 200</SCANLINE>
 
@@ -503,7 +545,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="uqt 640">uqt 640</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="uqt 650">uqt 650</SCANLINE>
+    <SCANLINE hits="48" mnemonic="LKL" description="uqt 650">uqt 650</SCANLINE>
 
     <SCANLINE hits="27" mnemonic="LKL" description="uqt 700">uqt 700</SCANLINE>
 
@@ -513,7 +555,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ur 000">ur 000</SCANLINE>
 
-    <SCANLINE hits="742" mnemonic="LKL" description="ur 100">ur 100</SCANLINE>
+    <SCANLINE hits="744" mnemonic="LKL" description="ur 100">ur 100</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="ur 120">ur 120</SCANLINE>
 
@@ -715,7 +757,7 @@
 
     <SCANLINE hits="36" mnemonic="LKL" description="urb 972">urb 972</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="urb 973">urb 973</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="urb 973">urb 973</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="urb 974">urb 974</SCANLINE>
 
@@ -749,7 +791,7 @@
 
     <SCANLINE hits="123" mnemonic="LKL" description="urd 120">urd 120</SCANLINE>
 
-    <SCANLINE hits="81" mnemonic="LKL" description="urd 140">urd 140</SCANLINE>
+    <SCANLINE hits="82" mnemonic="LKL" description="urd 140">urd 140</SCANLINE>
 
     <SCANLINE hits="22" mnemonic="LKL" description="urd 160">urd 160</SCANLINE>
 
@@ -829,7 +871,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ure 248">ure 248</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="ure 300">ure 300</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="ure 300">ure 300</SCANLINE>
 
     <SCANLINE hits="100" mnemonic="LKL" description="ure 320">ure 320</SCANLINE>
 
@@ -837,15 +879,15 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="ure 340">ure 340</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="ure 350">ure 350</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="ure 350">ure 350</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="ure 400">ure 400</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="ure 400">ure 400</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="ure 420">ure 420</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="ure 440">ure 440</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="ure 500">ure 500</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="ure 500">ure 500</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ure 550">ure 550</SCANLINE>
 
@@ -892,8 +934,6 @@
     <SCANLINE hits="320" mnemonic="LKL" description="urg 250">urg 250</SCANLINE>
 
     <SCANLINE hits="55" mnemonic="LKL" description="urg 300">urg 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="urg 32">urg 32</SCANLINE>
 
     <SCANLINE hits="39" mnemonic="LKL" description="urg 320">urg 320</SCANLINE>
 
@@ -965,55 +1005,15 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="urg 890">urg 890</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="urh 000">urh 000</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="urh 000">urh 000</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="urh 500">urh 500</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="uri 000">uri 000</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="uri 050">uri 050</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="uri 100">uri 100</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="uri 150">uri 150</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="uri 200">uri 200</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="uri 300">uri 300</SCANLINE>
-
-    <SCANLINE hits="113" mnemonic="LKL" description="uri 400">uri 400</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="uri 450">uri 450</SCANLINE>
-
-    <SCANLINE hits="43" mnemonic="LKL" description="uri 500">uri 500</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="uri 600">uri 600</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="uri 620">uri 620</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="uri 630">uri 630</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="uri 640">uri 640</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="uri 650">uri 650</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="uri 660">uri 660</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="uri 680">uri 680</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="uri 700">uri 700</SCANLINE>
-
-    <SCANLINE hits="66" mnemonic="LKL" description="uri 800">uri 800</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="uri 900">uri 900</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="urj 000">urj 000</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="urh 500">urh 500</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="unb+k" />
+<SCANPREV term="un+lg+a" />
 
 
-<SCANNEXT term="urj+000" />
+<SCANNEXT term="urh+500" />
 
 </RESULT>

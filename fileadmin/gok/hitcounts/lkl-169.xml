@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">bbb5fb8d-0</SESSIONVAR>
+<SESSIONVAR name="SID">f7857024-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ynw">ynw</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="ynw 000">ynw 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ynw h (fh)">ynw h (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ynw k (fh)">ynw k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ynw m (fh)">ynw m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ynx">ynx</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ynx 000">ynx 000</SCANLINE>
+
+    <SCANLINE hits="714" mnemonic="LKL" description="yo">yo</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo 00">yo 00</SCANLINE>
+
+    <SCANLINE hits="654" mnemonic="LKL" description="yo 000">yo 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="yo a">yo a</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo a (fh)">yo a (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo b">yo b</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="yo b (fh)">yo b (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="yo c (fh)">yo c (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="yo g">yo g</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo g (fh)">yo g (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="yo i (fh)">yo i (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo k">yo k</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="yo k (fh)">yo k (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="yo m (fh)">yo m (fh)</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="yo n (fh)">yo n (fh)</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="zae">zae</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="zae 000">zae 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zae c">zae c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zae jf">zae jf</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="zaec">zaec</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="zaf">zaf</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="zaf 000">zaf 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="zaf b (fh)">zaf b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zaf c (fh)">zaf c (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zaf k (fh)">zaf k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zafc">zafc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zah">zah</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zahlr. ill">zahlr. ill</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zahnh.37 tuerkheim">zahnh.37 tuerkheim</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zai 000">zai 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zaj">zaj</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="zaj 000">zaj 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zak">zak</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="zak 000">zak 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zakd">zakd</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zam">zam</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zao">zao</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="yo+n+(fh)" />
+<SCANPREV term="ynw" />
 
 
-<SCANNEXT term="zao" />
+<SCANNEXT term="zae" />
 
 </RESULT>

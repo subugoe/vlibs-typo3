@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ee552fbb-3</SESSIONVAR>
+<SESSIONVAR name="SID">0a771e02-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb 480">nlb 480</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="nlb 540">nlb 540</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nlb 560">nlb 560</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nlb 580">nlb 580</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb 60">nlb 60</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb 60 m (fh)">nlb 60 m (fh)</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="nlb 660">nlb 660</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nlb 720">nlb 720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb 740">nlb 740</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nlb 760">nlb 760</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb i (fh)">nlb i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlb s (fh)">nlb s (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nlbz40">nlbz40</SCANLINE>
+
+    <SCANLINE hits="62" mnemonic="LKL" description="nld">nld</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="nld 000">nld 000</SCANLINE>
 
@@ -897,7 +925,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nma 680">nma 680</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="nma 690">nma 690</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="nma 690">nma 690</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="nma 700">nma 700</SCANLINE>
 
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nmd 40 s (fh)">nmd 40 s (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="nmd 60 s (fh)">nmd 60 s (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nmd 80 s (fh)">nmd 80 s (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nmd m (fh)">nmd m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nmn 320">nmn 320</SCANLINE>
-
-    <SCANLINE hits="78" mnemonic="LKL" description="nn">nn</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="nn 000">nn 000</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="nn 002">nn 002</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nn 002 q">nn 002 q</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="nn 002 q (fh)">nn 002 q (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nn 003">nn 003</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="nn 004">nn 004</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nn 004 s (fh)">nn 004 s (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nn 005">nn 005</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nn 006">nn 006</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nld+000" />
+<SCANPREV term="nlb+480" />
 
 
-<SCANNEXT term="nn+006" />
+<SCANNEXT term="nmd+40+s+(fh)" />
 
 </RESULT>

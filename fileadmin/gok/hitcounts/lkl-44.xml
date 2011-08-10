@@ -2,16 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">84f6e26a-0</SESSIONVAR>
+<SESSIONVAR name="SID">3dcd2784-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="eecc 300">eecc 300</SCANLINE>
-
-    <SCANLINE hits="72" mnemonic="LKL" description="eecc 400">eecc 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eecc 500">eecc 500</SCANLINE>
 
@@ -935,7 +931,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eehf 000">eehf 000</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="eehf 050">eehf 050</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="eehf 050">eehf 050</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eehg">eehg</SCANLINE>
 
@@ -1009,11 +1005,15 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="eehj 300">eehj 300</SCANLINE>
 
+    <SCANLINE hits="25" mnemonic="LKL" description="eehj 350">eehj 350</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="eehj 400">eehj 400</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="eecc+300" />
+<SCANPREV term="eecc+500" />
 
 
-<SCANNEXT term="eehj+300" />
+<SCANNEXT term="eehj+400" />
 
 </RESULT>

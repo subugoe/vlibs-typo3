@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1b1d06db-2</SESSIONVAR>
+<SESSIONVAR name="SID">57b5add2-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jlo 580">jlo 580</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jlo 600">jlo 600</SCANLINE>
 
@@ -459,7 +457,7 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="jlv 230">jlv 230</SCANLINE>
 
-    <SCANLINE hits="85" mnemonic="LKL" description="jlv 240">jlv 240</SCANLINE>
+    <SCANLINE hits="86" mnemonic="LKL" description="jlv 240">jlv 240</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="jlv 260">jlv 260</SCANLINE>
 
@@ -553,7 +551,7 @@
 
     <SCANLINE hits="27" mnemonic="LKL" description="jlv 360">jlv 360</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="jlv 361">jlv 361</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="jlv 361">jlv 361</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="jlv 366">jlv 366</SCANLINE>
 
@@ -571,7 +569,7 @@
 
     <SCANLINE hits="50" mnemonic="LKL" description="jlv 377">jlv 377</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="jlv 380">jlv 380</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="jlv 380">jlv 380</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="jlv 381">jlv 381</SCANLINE>
 
@@ -639,7 +637,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jlv 458">jlv 458</SCANLINE>
 
-    <SCANLINE hits="180" mnemonic="LKL" description="jlv 459">jlv 459</SCANLINE>
+    <SCANLINE hits="181" mnemonic="LKL" description="jlv 459">jlv 459</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="jlv 470">jlv 470</SCANLINE>
 
@@ -651,13 +649,13 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="jlv 476">jlv 476</SCANLINE>
 
-    <SCANLINE hits="163" mnemonic="LKL" description="jlv 480">jlv 480</SCANLINE>
+    <SCANLINE hits="164" mnemonic="LKL" description="jlv 480">jlv 480</SCANLINE>
 
     <SCANLINE hits="305" mnemonic="LKL" description="jlv 500">jlv 500</SCANLINE>
 
     <SCANLINE hits="27" mnemonic="LKL" description="jlv 501">jlv 501</SCANLINE>
 
-    <SCANLINE hits="222" mnemonic="LKL" description="jlv 510">jlv 510</SCANLINE>
+    <SCANLINE hits="224" mnemonic="LKL" description="jlv 510">jlv 510</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="jlv 512">jlv 512</SCANLINE>
 
@@ -755,13 +753,13 @@
 
     <SCANLINE hits="143" mnemonic="LKL" description="jlv 579">jlv 579</SCANLINE>
 
-    <SCANLINE hits="222" mnemonic="LKL" description="jlv 580">jlv 580</SCANLINE>
+    <SCANLINE hits="223" mnemonic="LKL" description="jlv 580">jlv 580</SCANLINE>
 
-    <SCANLINE hits="1512" mnemonic="LKL" description="jlv 600">jlv 600</SCANLINE>
+    <SCANLINE hits="1514" mnemonic="LKL" description="jlv 600">jlv 600</SCANLINE>
 
-    <SCANLINE hits="4671" mnemonic="LKL" description="jlv 610">jlv 610</SCANLINE>
+    <SCANLINE hits="4673" mnemonic="LKL" description="jlv 610">jlv 610</SCANLINE>
 
-    <SCANLINE hits="453" mnemonic="LKL" description="jlv 620">jlv 620</SCANLINE>
+    <SCANLINE hits="455" mnemonic="LKL" description="jlv 620">jlv 620</SCANLINE>
 
     <SCANLINE hits="200" mnemonic="LKL" description="jlv 630">jlv 630</SCANLINE>
 
@@ -987,7 +985,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jn 324">jn 324</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="jn 330">jn 330</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="jn 330">jn 330</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jn 331">jn 331</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="jn 353">jn 353</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="jn 355">jn 355</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="jlo+580" />
+<SCANPREV term="jlo+600" />
 
 
-<SCANNEXT term="jn+353" />
+<SCANNEXT term="jn+355" />
 
 </RESULT>

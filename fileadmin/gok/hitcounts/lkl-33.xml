@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">4d4d267d-1</SESSIONVAR>
+<SESSIONVAR name="SID">abd6b15b-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="cif 297">cif 297</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="cif 300">cif 300</SCANLINE>
 
     <SCANLINE hits="32" mnemonic="LKL" description="cif 310">cif 310</SCANLINE>
 
@@ -203,7 +207,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cih 76">cih 76</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="cih 775">cih 775</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="cih 775">cih 775</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="cih 775 29 ci y">cih 775 29 ci y</SCANLINE>
 
@@ -229,7 +233,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="cih 818">cih 818</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="cih 820">cih 820</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="cih 820">cih 820</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="cih 850">cih 850</SCANLINE>
 
@@ -299,9 +303,9 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="cik 153">cik 153</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="cik 154">cik 154</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="cik 154">cik 154</SCANLINE>
 
-    <SCANLINE hits="153" mnemonic="LKL" description="cik 155">cik 155</SCANLINE>
+    <SCANLINE hits="154" mnemonic="LKL" description="cik 155">cik 155</SCANLINE>
 
     <SCANLINE hits="58" mnemonic="LKL" description="cik 156">cik 156</SCANLINE>
 
@@ -639,7 +643,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="civ 372">civ 372</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="civ 373">civ 373</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="civ 373">civ 373</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="civ 374">civ 374</SCANLINE>
 
@@ -675,7 +679,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="cix 300">cix 300</SCANLINE>
 
-    <SCANLINE hits="63" mnemonic="LKL" description="cix 320">cix 320</SCANLINE>
+    <SCANLINE hits="65" mnemonic="LKL" description="cix 320">cix 320</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="cix 325">cix 325</SCANLINE>
 
@@ -889,11 +893,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ckl 000">ckl 000</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="ckl 100">ckl 100</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="ckl 100">ckl 100</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="ckl 150">ckl 150</SCANLINE>
 
-    <SCANLINE hits="89" mnemonic="LKL" description="ckl 300">ckl 300</SCANLINE>
+    <SCANLINE hits="90" mnemonic="LKL" description="ckl 300">ckl 300</SCANLINE>
 
     <SCANLINE hits="33" mnemonic="LKL" description="ckl 310">ckl 310</SCANLINE>
 
@@ -929,7 +933,7 @@
 
     <SCANLINE hits="83" mnemonic="LKL" description="ckr">ckr</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="ckr 000">ckr 000</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="ckr 000">ckr 000</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ckr 100">ckr 100</SCANLINE>
 
@@ -1005,15 +1009,11 @@
 
     <SCANLINE hits="50" mnemonic="LKL" description="ckr 710">ckr 710</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="ckr 720">ckr 720</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ckr 750">ckr 750</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="cif+310" />
+<SCANPREV term="cif+297" />
 
 
-<SCANNEXT term="ckr+750" />
+<SCANNEXT term="ckr+710" />
 
 </RESULT>

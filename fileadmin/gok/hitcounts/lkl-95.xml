@@ -2,12 +2,32 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a5e8ebe7-1</SESSIONVAR>
+<SESSIONVAR name="SID">3416740d-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="kju 646">kju 646</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kju 656">kju 656</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kju xxx">kju xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kju2 c1">kju2 c1</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="kjw 200">kjw 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kjw 230">kjw 230</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="kjw 300">kjw 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kjw 320">kjw 320</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="kjw 330">kjw 330</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kjw 331">kjw 331</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kjw 340">kjw 340</SCANLINE>
 
@@ -335,7 +355,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kk 318">kk 318</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="kk 319">kk 319</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="kk 319">kk 319</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="kk 320">kk 320</SCANLINE>
 
@@ -719,7 +739,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="kkd 578">kkd 578</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="kkd 580">kkd 580</SCANLINE>
+    <SCANLINE hits="71" mnemonic="LKL" description="kkd 580">kkd 580</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kkd 590">kkd 590</SCANLINE>
 
@@ -727,7 +747,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kkd 601">kkd 601</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="kkd 603">kkd 603</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="kkd 603">kkd 603</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="kkd 604">kkd 604</SCANLINE>
 
@@ -823,9 +843,9 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="kkd 661">kkd 661</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="kkd 662">kkd 662</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="kkd 662">kkd 662</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="kkd 670">kkd 670</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="kkd 670">kkd 670</SCANLINE>
 
     <SCANLINE hits="32" mnemonic="LKL" description="kkd 671">kkd 671</SCANLINE>
 
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="kkk 352">kkk 352</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="kkk 357">kkk 357</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kkk 380">kkk 380</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kkk 381">kkk 381</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="kkk 400">kkk 400</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="kkk 425">kkk 425</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kkk 430">kkk 430</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kkk 431">kkk 431</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kkk 440">kkk 440</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kkk 448">kkk 448</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kkk 451">kkk 451</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kjw+340" />
+<SCANPREV term="kju+646" />
 
 
-<SCANNEXT term="kkk+451" />
+<SCANNEXT term="kkk+352" />
 
 </RESULT>

@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">533e1095-1</SESSIONVAR>
+<SESSIONVAR name="SID">caf8de91-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rtj500d">rtj500d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtk 000">rtk 000</SCANLINE>
+
+    <SCANLINE hits="148" mnemonic="LKL" description="rtm">rtm</SCANLINE>
+
+    <SCANLINE hits="500" mnemonic="LKL" description="rtm 000">rtm 000</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="rtm 100">rtm 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm 100 d">rtm 100 d</SCANLINE>
+
+    <SCANLINE hits="62" mnemonic="LKL" description="rtm 120">rtm 120</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rtm 120 d">rtm 120 d</SCANLINE>
+
+    <SCANLINE hits="76" mnemonic="LKL" description="rtm 200">rtm 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm 200 d tec d">rtm 200 d tec d</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="rtm 220">rtm 220</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="rtm 240">rtm 240</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="rtm 260">rtm 260</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="rtm 280">rtm 280</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="rtm 300">rtm 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rtm 300 d">rtm 300 d</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="rtm 320">rtm 320</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="rtm 330">rtm 330</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="rtm 400">rtm 400</SCANLINE>
+
+    <SCANLINE hits="41" mnemonic="LKL" description="rtm 600">rtm 600</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="rtm 610">rtm 610</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="rtm 630">rtm 630</SCANLINE>
 
@@ -463,7 +505,7 @@
 
     <SCANLINE hits="72" mnemonic="LKL" description="rvq">rvq</SCANLINE>
 
-    <SCANLINE hits="391" mnemonic="LKL" description="rvq 000">rvq 000</SCANLINE>
+    <SCANLINE hits="392" mnemonic="LKL" description="rvq 000">rvq 000</SCANLINE>
 
     <SCANLINE hits="38" mnemonic="LKL" description="rvq 100">rvq 100</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="sek">sek</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="sek 100 d">sek 100 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sel c sef c">sel c sef c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sex.32">sex.32</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sex.90">sex.90</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sex.90 intersexualitaet">sex.90 intersexualitaet</SCANLINE>
-
-    <SCANLINE hits="58" mnemonic="LKL" description="sf">sf</SCANLINE>
-
-    <SCANLINE hits="226" mnemonic="LKL" description="sf 000">sf 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sf a1">sf a1</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="sf c">sf c</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sf d1">sf d1</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sf f2">sf f2</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sf g 66">sf g 66</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sf k">sf k</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sfc">sfc</SCANLINE>
-
-    <SCANLINE hits="89" mnemonic="LKL" description="sfc 000">sfc 000</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="sfc 100">sfc 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sfc100 d">sfc100 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sfc100d">sfc100d</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="sg">sg</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="sg 000">sg 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sg c">sg c</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="rtm+630" />
+<SCANPREV term="rtj500d" />
 
 
-<SCANNEXT term="sg+c" />
+<SCANNEXT term="sek" />
 
 </RESULT>

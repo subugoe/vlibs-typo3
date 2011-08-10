@@ -2,20 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">016b6e68-2</SESSIONVAR>
+<SESSIONVAR name="SID">a95b1864-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
+    <SCANLINE hits="36" mnemonic="LKL" description="pbe 560">pbe 560</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="pbe 600">pbe 600</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pbe 650">pbe 650</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pbe 700">pbe 700</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="pbe 720">pbe 720</SCANLINE>
+
+    <SCANLINE hits="54" mnemonic="LKL" description="pbe 750">pbe 750</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="pbe 780">pbe 780</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pbe 800">pbe 800</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pbe 900">pbe 900</SCANLINE>
+
+    <SCANLINE hits="48" mnemonic="LKL" description="pbf 000">pbf 000</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="pbf 090">pbf 090</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="pbf 100">pbf 100</SCANLINE>
+
+    <SCANLINE hits="301" mnemonic="LKL" description="pbf 200">pbf 200</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="pbf 208">pbf 208</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="pbf 250">pbf 250</SCANLINE>
+
     <SCANLINE hits="3" mnemonic="LKL" description="pbf 270">pbf 270</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="pbf 280">pbf 280</SCANLINE>
 
-    <SCANLINE hits="149" mnemonic="LKL" description="pbf 300">pbf 300</SCANLINE>
+    <SCANLINE hits="151" mnemonic="LKL" description="pbf 300">pbf 300</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="pbf 400">pbf 400</SCANLINE>
+    <SCANLINE hits="46" mnemonic="LKL" description="pbf 400">pbf 400</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="pbf 470">pbf 470</SCANLINE>
 
@@ -263,7 +293,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="pcb 260">pcb 260</SCANLINE>
 
-    <SCANLINE hits="49" mnemonic="LKL" description="pcb 900">pcb 900</SCANLINE>
+    <SCANLINE hits="50" mnemonic="LKL" description="pcb 900">pcb 900</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pcc 800">pcc 800</SCANLINE>
 
@@ -273,7 +303,7 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="pcd 500">pcd 500</SCANLINE>
 
-    <SCANLINE hits="430" mnemonic="LKL" description="pcd 900">pcd 900</SCANLINE>
+    <SCANLINE hits="431" mnemonic="LKL" description="pcd 900">pcd 900</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pch 600">pch 600</SCANLINE>
 
@@ -325,11 +355,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pcr 600">pcr 600</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="pcs 000">pcs 000</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="pcs 000">pcs 000</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="pcs 500">pcs 500</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="pcs 900">pcs 900</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="pcs 900">pcs 900</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="pct 000">pct 000</SCANLINE>
 
@@ -431,7 +461,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="pdc 295">pdc 295</SCANLINE>
 
-    <SCANLINE hits="139" mnemonic="LKL" description="pdc 300">pdc 300</SCANLINE>
+    <SCANLINE hits="140" mnemonic="LKL" description="pdc 300">pdc 300</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="pdc 400">pdc 400</SCANLINE>
 
@@ -719,7 +749,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="pdn 580">pdn 580</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="pdn 584">pdn 584</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="pdn 584">pdn 584</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pdn 587">pdn 587</SCANLINE>
 
@@ -895,7 +925,7 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="pec 490">pec 490</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="pec 500">pec 500</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="pec 500">pec 500</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="pec 600">pec 600</SCANLINE>
 
@@ -979,41 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="pef 600">pef 600</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="pef 690">pef 690</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pef 700">pef 700</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pef 800">pef 800</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pef 890">pef 890</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pef890">pef890</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="peg">peg</SCANLINE>
-
-    <SCANLINE hits="168" mnemonic="LKL" description="peg 000">peg 000</SCANLINE>
-
-    <SCANLINE hits="194" mnemonic="LKL" description="peg 090">peg 090</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="peg 100">peg 100</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="peg 200">peg 200</SCANLINE>
-
-    <SCANLINE hits="103" mnemonic="LKL" description="peg 290">peg 290</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="peg 400">peg 400</SCANLINE>
-
-    <SCANLINE hits="40" mnemonic="LKL" description="peg 490">peg 490</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="peg 600">peg 600</SCANLINE>
-
-    <SCANLINE hits="62" mnemonic="LKL" description="peg 690">peg 690</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pbf+270" />
+<SCANPREV term="pbe+560" />
 
 
-<SCANNEXT term="peg+690" />
+<SCANNEXT term="pef+600" />
 
 </RESULT>

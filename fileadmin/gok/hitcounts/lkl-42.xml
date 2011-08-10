@@ -2,16 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2858ad07-2</SESSIONVAR>
+<SESSIONVAR name="SID">c08e0ce5-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edch 050">edch 050</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edch 100">edch 100</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="edch 150">edch 150</SCANLINE>
 
@@ -423,7 +419,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="edea 060">edea 060</SCANLINE>
 
-    <SCANLINE hits="58" mnemonic="LKL" description="edea 090">edea 090</SCANLINE>
+    <SCANLINE hits="61" mnemonic="LKL" description="edea 090">edea 090</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="edea 120">edea 120</SCANLINE>
 
@@ -1005,15 +1001,19 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="edfj 500">edfj 500</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="edfj 550">edfj 550</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="edfj 550">edfj 550</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="LKL" description="edfj 600">edfj 600</SCANLINE>
+    <SCANLINE hits="131" mnemonic="LKL" description="edfj 600">edfj 600</SCANLINE>
+
+    <SCANLINE hits="78" mnemonic="LKL" description="edfj 650">edfj 650</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="edfj 670">edfj 670</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="edch+050" />
+<SCANPREV term="edch+150" />
 
 
-<SCANNEXT term="edfj+600" />
+<SCANNEXT term="edfj+670" />
 
 </RESULT>

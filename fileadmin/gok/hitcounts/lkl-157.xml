@@ -2,12 +2,52 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d7eaccbe-2</SESSIONVAR>
+<SESSIONVAR name="SID">6d515515-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="urg 890">urg 890</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="urh 000">urh 000</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="urh 500">urh 500</SCANLINE>
+
+    <SCANLINE hits="63" mnemonic="LKL" description="uri 000">uri 000</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="uri 050">uri 050</SCANLINE>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="uri 100">uri 100</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="uri 150">uri 150</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="uri 200">uri 200</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="uri 300">uri 300</SCANLINE>
+
+    <SCANLINE hits="113" mnemonic="LKL" description="uri 400">uri 400</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="uri 450">uri 450</SCANLINE>
+
+    <SCANLINE hits="43" mnemonic="LKL" description="uri 500">uri 500</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="uri 600">uri 600</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="uri 620">uri 620</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="uri 630">uri 630</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="uri 640">uri 640</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="uri 650">uri 650</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="uri 660">uri 660</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="uri 680">uri 680</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="uri 700">uri 700</SCANLINE>
 
     <SCANLINE hits="66" mnemonic="LKL" description="uri 800">uri 800</SCANLINE>
 
@@ -61,7 +101,7 @@
 
     <SCANLINE hits="154" mnemonic="LKL" description="url 100">url 100</SCANLINE>
 
-    <SCANLINE hits="66" mnemonic="LKL" description="url 150">url 150</SCANLINE>
+    <SCANLINE hits="65" mnemonic="LKL" description="url 150">url 150</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="url 200">url 200</SCANLINE>
 
@@ -101,7 +141,7 @@
 
     <SCANLINE hits="47" mnemonic="LKL" description="urm 500">urm 500</SCANLINE>
 
-    <SCANLINE hits="87" mnemonic="LKL" description="urn 000">urn 000</SCANLINE>
+    <SCANLINE hits="88" mnemonic="LKL" description="urn 000">urn 000</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="uro 000">uro 000</SCANLINE>
 
@@ -741,7 +781,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="uub">uub</SCANLINE>
 
-    <SCANLINE hits="99" mnemonic="LKL" description="uub 000">uub 000</SCANLINE>
+    <SCANLINE hits="100" mnemonic="LKL" description="uub 000">uub 000</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="uub 100">uub 100</SCANLINE>
 
@@ -907,7 +947,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="uwk v (fh)">uwk v (fh)</SCANLINE>
 
-    <SCANLINE hits="38" mnemonic="LKL" description="uwl 000">uwl 000</SCANLINE>
+    <SCANLINE hits="39" mnemonic="LKL" description="uwl 000">uwl 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="uwl a (fh)">uwl a (fh)</SCANLINE>
 
@@ -969,51 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="uyf 000">uyf 000</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="uyg 000">uyg 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uyg16 po k (fh)">uyg16 po k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uyg16 su v (fh)">uyg16 su v (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uyg16 un k (fh)">uyg16 un k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uyw60 usa a (fh)">uyw60 usa a (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="uyw66 ka a">uyw66 ka a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uyw66 usa a (fh)">uyw66 usa a (fh)</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="uyz70 au a">uyz70 au a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="uz">uz</SCANLINE>
-
-    <SCANLINE hits="3399" mnemonic="LKL" description="v">v</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 0">v 0</SCANLINE>
-
-    <SCANLINE hits="449" mnemonic="LKL" description="v 000">v 000</SCANLINE>
-
-    <SCANLINE hits="98" mnemonic="LKL" description="v 100">v 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="v 16 belg">v 16 belg</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 16 d">v 16 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 16 daen">v 16 daen</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 16 deutsches reich ve 16 deutsches reich">v 16 deutsches reich ve 16 deutsches reich</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="v 16 frank">v 16 frank</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="v 16 frank vu 16 frank">v 16 frank vu 16 frank</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="v 16 gb">v 16 gb</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="uri+800" />
+<SCANPREV term="urg+890" />
 
 
-<SCANNEXT term="v+16+gb" />
+<SCANNEXT term="uyf+000" />
 
 </RESULT>

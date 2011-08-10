@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3630ad1c-2</SESSIONVAR>
+<SESSIONVAR name="SID">0da13c75-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 300 k (fh)">ljl 300 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 300 m (fh)">ljl 300 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 30016 gb m (fh)">ljl 30016 gb m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ljl 400">ljl 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 450">ljl 450</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ljl 450 m (fh)">ljl 450 m (fh)</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ljl 500">ljl 500</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ljl 500 m (fh)">ljl 500 m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 700">ljl 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ljl 750">ljl 750</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 750 k (fh)">ljl 750 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 750 m (fh)">ljl 750 m (fh)</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="ljl 800">ljl 800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 80010 e d (fh)">ljl 80010 e d (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljl 80010 e w (fh)">ljl 80010 e w (fh)</SCANLINE>
 
@@ -195,7 +223,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ll 7 aust">ll 7 aust</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="ll 700">ll 700</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="ll 700">ll 700</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ll 70010 e m (fh)">ll 70010 e m (fh)</SCANLINE>
 
@@ -209,7 +237,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ll 70020 d k (fh)">ll 70020 d k (fh)</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="ll 70020 d m (fh)">ll 70020 d m (fh)</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="ll 70020 d m (fh)">ll 70020 d m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ll 70020 d w (fh)">ll 70020 d w (fh)</SCANLINE>
 
@@ -317,7 +345,7 @@
 
     <SCANLINE hits="44" mnemonic="LKL" description="lm 070">lm 070</SCANLINE>
 
-    <SCANLINE hits="73" mnemonic="LKL" description="lm 080">lm 080</SCANLINE>
+    <SCANLINE hits="74" mnemonic="LKL" description="lm 080">lm 080</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="lm 081">lm 081</SCANLINE>
 
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="lmd 022">lmd 022</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="lmd 023">lmd 023</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lmd 030">lmd 030</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="lmd 031">lmd 031</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="lmd 032">lmd 032</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="lmd 033">lmd 033</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lmd 050">lmd 050</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lmd 051">lmd 051</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lmd 052">lmd 052</SCANLINE>
-
-    <SCANLINE hits="34" mnemonic="LKL" description="lmd 060">lmd 060</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="lmd 061">lmd 061</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="lmd 062">lmd 062</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lmd 065">lmd 065</SCANLINE>
-
-    <SCANLINE hits="27" mnemonic="LKL" description="lmd 090">lmd 090</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lmd 1 f (fh)">lmd 1 f (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ljl+80010+e+w+(fh)" />
+<SCANPREV term="ljl+300+k+(fh)" />
 
 
-<SCANNEXT term="lmd+1+f+(fh)" />
+<SCANNEXT term="lmd+022" />
 
 </RESULT>

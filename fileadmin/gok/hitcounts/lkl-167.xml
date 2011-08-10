@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">bfe20f5c-0</SESSIONVAR>
+<SESSIONVAR name="SID">1bfd8c7c-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="xfa">xfa</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="xfu">xfu</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="xha">xha</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="xhi">xhi</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xhq">xhq</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="xhr">xhr</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="xia">xia</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="xil">xil</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xil 000">xil 000</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="xj">xj</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xj a">xj a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xj c">xj c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xjs">xjs</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xjt">xjt</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="xk">xk</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="xka">xka</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="xkw">xkw</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xl 000">xl 000</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="xlv">xlv</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="xlv a">xlv a</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="xma">xma</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="xmb">xmb</SCANLINE>
 
@@ -895,7 +937,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="xzm">xzm</SCANLINE>
 
-    <SCANLINE hits="1695" mnemonic="LKL" description="y">y</SCANLINE>
+    <SCANLINE hits="1697" mnemonic="LKL" description="y">y</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="y 2 a">y 2 a</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="yb b (fh)">yb b (fh)</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="yb k (fh)">yb k (fh)</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="yb m (fh)">yb m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yb n (fh)">yb n (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="yba 000">yba 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="yba k (fh)">yba k (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="yba m (fh)">yba m (fh)</SCANLINE>
-
-    <SCANLINE hits="50" mnemonic="LKL" description="ybh 000">ybh 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ybh k (fh)">ybh k (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ybh m (fh)">ybh m (fh)</SCANLINE>
-
-    <SCANLINE hits="36" mnemonic="LKL" description="ybl 000">ybl 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybl k (fh)">ybl k (fh)</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="ybl m (fh)">ybl m (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ybp 000">ybp 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybp k (fh)">ybp k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybp m (fh)">ybp m (fh)</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="ybt 000">ybt 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybt c">ybt c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybt lg">ybt lg</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybt m (fh)">ybt m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ybt ru">ybt ru</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="yc">yc</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="xmb" />
+<SCANPREV term="xfa" />
 
 
-<SCANNEXT term="yc" />
+<SCANNEXT term="yb+b+(fh)" />
 
 </RESULT>

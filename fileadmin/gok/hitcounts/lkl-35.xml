@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">f5846613-3</SESSIONVAR>
+<SESSIONVAR name="SID">3e2cc816-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="czd100">czd100</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="czd300">czd300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="czd300 cim475">czd300 cim475</SCANLINE>
 
@@ -29,7 +33,7 @@
 
     <SCANLINE hits="1684" mnemonic="LKL" description="d">d</SCANLINE>
 
-    <SCANLINE hits="245" mnemonic="LKL" description="d 000">d 000</SCANLINE>
+    <SCANLINE hits="246" mnemonic="LKL" description="d 000">d 000</SCANLINE>
 
     <SCANLINE hits="69" mnemonic="LKL" description="d a">d a</SCANLINE>
 
@@ -83,7 +87,7 @@
 
     <SCANLINE hits="19" mnemonic="LKL" description="db 000">db 000</SCANLINE>
 
-    <SCANLINE hits="92" mnemonic="LKL" description="dbb 000">dbb 000</SCANLINE>
+    <SCANLINE hits="91" mnemonic="LKL" description="dbb 000">dbb 000</SCANLINE>
 
     <SCANLINE hits="56" mnemonic="LKL" description="dbb 010">dbb 010</SCANLINE>
 
@@ -127,7 +131,7 @@
 
     <SCANLINE hits="125" mnemonic="LKL" description="dbh 300">dbh 300</SCANLINE>
 
-    <SCANLINE hits="49" mnemonic="LKL" description="dbh 600">dbh 600</SCANLINE>
+    <SCANLINE hits="50" mnemonic="LKL" description="dbh 600">dbh 600</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="LKL" description="dbk 000">dbk 000</SCANLINE>
 
@@ -247,7 +251,7 @@
 
     <SCANLINE hits="271" mnemonic="LKL" description="dch 200">dch 200</SCANLINE>
 
-    <SCANLINE hits="319" mnemonic="LKL" description="dch 300">dch 300</SCANLINE>
+    <SCANLINE hits="320" mnemonic="LKL" description="dch 300">dch 300</SCANLINE>
 
     <SCANLINE hits="291" mnemonic="LKL" description="dch 400">dch 400</SCANLINE>
 
@@ -711,12 +715,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct d 87a">deduct d 87a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct e 22h-a">deduct e 22h-a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct e 22h-b">deduct e 22h-b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct e 22h-c">deduct e 22h-c</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="deduct e 22h-d">deduct e 22h-d</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct e 22h-k">deduct e 22h-k</SCANLINE>
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="deduct l 11a">deduct l 11a</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 129a">deduct l 129a</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="czd300+cim475" />
+<SCANPREV term="czd100" />
 
 
-<SCANNEXT term="deduct+l+11a" />
+<SCANNEXT term="deduct+l+129a" />
 
 </RESULT>

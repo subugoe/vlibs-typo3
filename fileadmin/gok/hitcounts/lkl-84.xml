@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0ae11d44-2</SESSIONVAR>
+<SESSIONVAR name="SID">5d3fb7f4-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="jos 431">jos 431</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="jos 432">jos 432</SCANLINE>
 
@@ -365,7 +367,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jot 640">jot 640</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
+    <SCANLINE hits="59" mnemonic="LKL" description="jot 641">jot 641</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="jot 642">jot 642</SCANLINE>
 
@@ -483,7 +485,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jox 340">jox 340</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jox 347">jox 347</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="jox 347">jox 347</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jox 350">jox 350</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="63" mnemonic="LKL" description="jpc 600">jpc 600</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="LKL" description="jpc 610">jpc 610</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jos+432" />
+<SCANPREV term="jos+431" />
 
 
-<SCANNEXT term="jpc+610" />
+<SCANNEXT term="jpc+600" />
 
 </RESULT>

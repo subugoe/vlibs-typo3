@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">9828ffc0-2</SESSIONVAR>
+<SESSIONVAR name="SID">1fee03cf-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="rpg 000">rpg 000</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="rpg 200">rpg 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpg 400">rpg 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpg200 c rqp800 c">rpg200 c rqp800 c</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpga rqpa">rpga rqpa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpgd">rpgd</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="rpi">rpi</SCANLINE>
+
+    <SCANLINE hits="145" mnemonic="LKL" description="rpi 000">rpi 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpi 200">rpi 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpi 530">rpi 530</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="rpi d">rpi d</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpi d (fh)">rpi d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpi k (fh)">rpi k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpia">rpia</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpid">rpid</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpl">rpl</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="rpl 000">rpl 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rpl d (fh)">rpl d (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rplc">rplc</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rpn">rpn</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="rpn 000">rpn 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rpnd">rpnd</SCANLINE>
 
@@ -293,7 +335,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="rqp 480">rqp 480</SCANLINE>
 
-    <SCANLINE hits="282" mnemonic="LKL" description="rqp 600">rqp 600</SCANLINE>
+    <SCANLINE hits="284" mnemonic="LKL" description="rqp 600">rqp 600</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="rqp 600 d">rqp 600 d</SCANLINE>
 
@@ -365,7 +407,7 @@
 
     <SCANLINE hits="57" mnemonic="LKL" description="rr">rr</SCANLINE>
 
-    <SCANLINE hits="257" mnemonic="LKL" description="rr 000">rr 000</SCANLINE>
+    <SCANLINE hits="258" mnemonic="LKL" description="rr 000">rr 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="rr a">rr a</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="148" mnemonic="LKL" description="rtm">rtm</SCANLINE>
 
-    <SCANLINE hits="500" mnemonic="LKL" description="rtm 000">rtm 000</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="rtm 100">rtm 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rtm 100 d">rtm 100 d</SCANLINE>
-
-    <SCANLINE hits="62" mnemonic="LKL" description="rtm 120">rtm 120</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="rtm 120 d">rtm 120 d</SCANLINE>
-
-    <SCANLINE hits="76" mnemonic="LKL" description="rtm 200">rtm 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rtm 200 d tec d">rtm 200 d tec d</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="rtm 220">rtm 220</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="rtm 240">rtm 240</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="rtm 260">rtm 260</SCANLINE>
-
-    <SCANLINE hits="29" mnemonic="LKL" description="rtm 280">rtm 280</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="rtm 300">rtm 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rtm 300 d">rtm 300 d</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="rtm 320">rtm 320</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="rtm 330">rtm 330</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="rtm 400">rtm 400</SCANLINE>
-
-    <SCANLINE hits="41" mnemonic="LKL" description="rtm 600">rtm 600</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="rtm 610">rtm 610</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="rtm 630">rtm 630</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="rtm 650">rtm 650</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="rtm 655">rtm 655</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="rpnd" />
+<SCANPREV term="rpg+000" />
 
 
-<SCANNEXT term="rtm+655" />
+<SCANNEXT term="rtm" />
 
 </RESULT>

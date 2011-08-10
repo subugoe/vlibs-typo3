@@ -2,12 +2,54 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0985ccf3-3</SESSIONVAR>
+<SESSIONVAR name="SID">cb0faed5-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stk 350">stk 350</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stk 400">stk 400</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="stk 500">stk 500</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stk 550">stk 550</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="stk 600">stk 600</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="stl">stl</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="stl 000">stl 000</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="stl 100">stl 100</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="stl 150">stl 150</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="stl 200">stl 200</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="stl 250">stl 250</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stl 300">stl 300</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="stl 350">stl 350</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stl 400">stl 400</SCANLINE>
+
+    <SCANLINE hits="90" mnemonic="LKL" description="stl 450">stl 450</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stl 510">stl 510</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 530">stl 530</SCANLINE>
+
+    <SCANLINE hits="53" mnemonic="LKL" description="stl 650">stl 650</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stl 680">stl 680</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stl 690">stl 690</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="stl 700">stl 700</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="stl 710">stl 710</SCANLINE>
 
@@ -305,7 +347,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="suh 900 d">suh 900 d</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="suh 920">suh 920</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="suh 920">suh 920</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="suh200 c">suh200 c</SCANLINE>
 
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="sxn 120">sxn 120</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="sxn 140">sxn 140</SCANLINE>
-
-    <SCANLINE hits="30" mnemonic="LKL" description="sxn 200">sxn 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxn a">sxn a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxn100 a1">sxn100 a1</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxn100 c">sxn100 c</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="sxn200 c">sxn200 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxn200 d">sxn200 d</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="sxp">sxp</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="sxp 000">sxp 000</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="sxp 100">sxp 100</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="sxp 200">sxp 200</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="sxp 300">sxp 300</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="sxp 400">sxp 400</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="sxp 420">sxp 420</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxp 440">sxp 440</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="sxp 460">sxp 460</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="sxp 480">sxp 480</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxp 76">sxp 76</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="sxp 900">sxp 900</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxp300 c">sxp300 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxp460 d">sxp460 d</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="stl+710" />
+<SCANPREV term="stk+350" />
 
 
-<SCANNEXT term="sxp460+d" />
+<SCANNEXT term="sxn+120" />
 
 </RESULT>

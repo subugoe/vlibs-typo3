@@ -2,12 +2,56 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a7226ae7-2</SESSIONVAR>
+<SESSIONVAR name="SID">a3ea90be-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qur 710">qur 710</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="qur 735">qur 735</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qur 740">qur 740</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qur 745">qur 745</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qur 750">qur 750</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qur 753">qur 753</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="qur 755">qur 755</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qur 760">qur 760</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="qur 765">qur 765</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qur 770">qur 770</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="qur 775">qur 775</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="qur 780">qur 780</SCANLINE>
+
+    <SCANLINE hits="101" mnemonic="LKL" description="qus 100">qus 100</SCANLINE>
+
+    <SCANLINE hits="16" mnemonic="LKL" description="qus 200">qus 200</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="qus 300">qus 300</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="qus 400">qus 400</SCANLINE>
+
+    <SCANLINE hits="44" mnemonic="LKL" description="qus 500">qus 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qut 000">qut 000</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="qut 100">qut 100</SCANLINE>
+
+    <SCANLINE hits="67" mnemonic="LKL" description="qut 200">qut 200</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qut 225">qut 225</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="qut 300">qut 300</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="qut 325">qut 325</SCANLINE>
 
@@ -469,7 +513,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="qvi 100">qvi 100</SCANLINE>
 
-    <SCANLINE hits="1205" mnemonic="LKL" description="qvi 200">qvi 200</SCANLINE>
+    <SCANLINE hits="1210" mnemonic="LKL" description="qvi 200">qvi 200</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="qvi 300">qvi 300</SCANLINE>
 
@@ -849,8 +893,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ra agr">ra agr</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ra ak">ra ak</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="ra at">ra at</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ra axu">ra axu</SCANLINE>
@@ -967,53 +1009,11 @@
 
     <SCANLINE hits="36" mnemonic="LKL" description="ra ld">ra ld</SCANLINE>
 
-    <SCANLINE hits="91" mnemonic="LKL" description="ra lg">ra lg</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra lg a">ra lg a</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="ra lw">ra lw</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ra ly">ra ly</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ra m (fh)">ra m (fh)</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ra mh">ra mh</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra mm">ra mm</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra mm a">ra mm a</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="ra mo">ra mo</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra mr">ra mr</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ra mt">ra mt</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ra mv">ra mv</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra mv a">ra mv a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra n">ra n</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ra nc">ra nc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra nc ra vc">ra nc ra vc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra nc ra ve">ra nc ra ve</SCANLINE>
-
-    <SCANLINE hits="32" mnemonic="LKL" description="ra ng">ra ng</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra ng a">ra ng a</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="ra nk">ra nk</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ra nw">ra nw</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qut+325" />
+<SCANPREV term="qur+710" />
 
 
-<SCANNEXT term="ra+nw" />
+<SCANNEXT term="ra+ld" />
 
 </RESULT>

@@ -2,12 +2,40 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0bfca1b9-2</SESSIONVAR>
+<SESSIONVAR name="SID">10819076-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lqd 027">lqd 027</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="lqd 028">lqd 028</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="lqd 029">lqd 029</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="lqd 030">lqd 030</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="lqd 031">lqd 031</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqd 032">lqd 032</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="lqd 033">lqd 033</SCANLINE>
+
+    <SCANLINE hits="63" mnemonic="LKL" description="lqd 034">lqd 034</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqd 035">lqd 035</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="lqd 036">lqd 036</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="lqd 037">lqd 037</SCANLINE>
+
+    <SCANLINE hits="49" mnemonic="LKL" description="lqd 038">lqd 038</SCANLINE>
+
+    <SCANLINE hits="203" mnemonic="LKL" description="lqd 039">lqd 039</SCANLINE>
+
+    <SCANLINE hits="74" mnemonic="LKL" description="lqd 040">lqd 040</SCANLINE>
 
     <SCANLINE hits="43" mnemonic="LKL" description="lqd 041">lqd 041</SCANLINE>
 
@@ -981,39 +1009,11 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ls 000">ls 000</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="ls 001">ls 001</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 1">ls 1</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ls 16 gb">ls 16 gb</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 16 ung">ls 16 ung</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ls 2">ls 2</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -a">ls 2 th bib 32443 2 -a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -b">ls 2 th bib 32443 2 -b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -c">ls 2 th bib 32443 2 -c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -d">ls 2 th bib 32443 2 -d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -f">ls 2 th bib 32443 2 -f</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -g">ls 2 th bib 32443 2 -g</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -h">ls 2 th bib 32443 2 -h</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -i">ls 2 th bib 32443 2 -i</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ls 2 th bib 32443 2 -k">ls 2 th bib 32443 2 -k</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lqd+041" />
+<SCANPREV term="lqd+027" />
 
 
-<SCANNEXT term="ls+2+th+bib+32443+2+-k" />
+<SCANNEXT term="ls+000" />
 
 </RESULT>
