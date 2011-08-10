@@ -1,0 +1,7 @@
+# configure pazpar2:
+# * listen to nkwgok changes
+plugin.tx_pazpar2.settings.triggeredByNKWGOKMenu = 1
+
+# * hide the extended search link
+plugin.tx_pazpar2.settings.allowExtendedSearch = 0
+
