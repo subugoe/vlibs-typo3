@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2959aca3-29</SESSIONVAR>
+<SESSIONVAR name="SID">4a785c4b-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft05 entw m (fh)">ft05 entw m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft10 e i (fh)">ft10 e i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft10 e m (fh)">ft10 e m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft10 e w">ft10 e w</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ft10 e w (fh)">ft10 e w (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ft15 eg c (fh)">ft15 eg c (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft15 eg i (fh)">ft15 eg i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft15 eg l (fh)">ft15 eg l (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft16 be i (fh)">ft16 be i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft16 d x (fh)">ft16 d x (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ft16 fr">ft16 fr</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ft16 fr m (fh)">ft16 fr m (fh)</SCANLINE>
 
@@ -235,7 +257,7 @@
 
     <SCANLINE hits="18" mnemonic="LKL" description="ftc 400">ftc 400</SCANLINE>
 
-    <SCANLINE hits="183" mnemonic="LKL" description="ftc 500">ftc 500</SCANLINE>
+    <SCANLINE hits="184" mnemonic="LKL" description="ftc 500">ftc 500</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="ftc 600">ftc 600</SCANLINE>
 
@@ -243,7 +265,7 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="ftc 800">ftc 800</SCANLINE>
 
-    <SCANLINE hits="178" mnemonic="LKL" description="ftc 900">ftc 900</SCANLINE>
+    <SCANLINE hits="179" mnemonic="LKL" description="ftc 900">ftc 900</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ftc 950">ftc 950</SCANLINE>
 
@@ -305,7 +327,7 @@
 
     <SCANLINE hits="52" mnemonic="LKL" description="fth 300">fth 300</SCANLINE>
 
-    <SCANLINE hits="432" mnemonic="LKL" description="fth 400">fth 400</SCANLINE>
+    <SCANLINE hits="434" mnemonic="LKL" description="fth 400">fth 400</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="fth 500">fth 500</SCANLINE>
 
@@ -601,7 +623,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ftu 800">ftu 800</SCANLINE>
 
-    <SCANLINE hits="244" mnemonic="LKL" description="ftw 000">ftw 000</SCANLINE>
+    <SCANLINE hits="247" mnemonic="LKL" description="ftw 000">ftw 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ftw 010">ftw 010</SCANLINE>
 
@@ -649,7 +671,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fu xxx">fu xxx</SCANLINE>
 
-    <SCANLINE hits="117" mnemonic="LKL" description="fud 000">fud 000</SCANLINE>
+    <SCANLINE hits="118" mnemonic="LKL" description="fud 000">fud 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="fue 000">fue 000</SCANLINE>
 
@@ -697,7 +719,7 @@
 
     <SCANLINE hits="63" mnemonic="LKL" description="fve 000">fve 000</SCANLINE>
 
-    <SCANLINE hits="188" mnemonic="LKL" description="fvo 000">fvo 000</SCANLINE>
+    <SCANLINE hits="191" mnemonic="LKL" description="fvo 000">fvo 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="fvo m (fh)">fvo m (fh)</SCANLINE>
 
@@ -717,7 +739,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="fvu 400">fvu 400</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="fvu 500">fvu 500</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="fvu 500">fvu 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="fvu 600">fvu 600</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="fx 66 z 68">fx 66 z 68</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="fx 67">fx 67</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="fx 68">fx 68</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 68 c 7">fx 68 c 7</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 68 ft 66 usa">fx 68 ft 66 usa</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx 68 z7">fx 68 z7</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="fx 69">fx 69</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="fx 70">fx 70</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="fx g6">fx g6</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx ita">fx ita</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="fx16">fx16</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="fx16 gro, z4-6">fx16 gro, z4-6</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ft16+fr+m+(fh)" />
+<SCANPREV term="ft05+entw+m+(fh)" />
 
 
-<SCANNEXT term="fx16+gro,+z4-6" />
+<SCANNEXT term="fx+66+z+68" />
 
 </RESULT>

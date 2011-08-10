@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:38:23 UTC 2011" product-name="rtehtmlarea">
+    <header/>
+    <body>
+      <trans-unit id="Type_of_abridged_form" approved="yes">
+        <source>Acronym or Abbreviation?</source>
+        <target state="translated">Akronym oder Abkürzung?</target>
+      </trans-unit>
+      <trans-unit id="Term_to_abridge" approved="yes">
+        <source>Term to abridge</source>
+        <target state="translated">Abzukürzender Begriff</target>
+      </trans-unit>
+      <trans-unit id="Defined_term" approved="yes">
+        <source>Pre-defined Acronyms and Abbreviations</source>
+        <target state="translated">Vordefinierte Akronyme oder Abkürzungen</target>
+      </trans-unit>
+      <trans-unit id="Term" approved="yes">
+        <source>Term:</source>
+        <target state="translated">Begriff:</target>
+      </trans-unit>
+      <trans-unit id="Unabridged_term" approved="yes">
+        <source>Unabridged Term:</source>
+        <target state="translated">Voll ausgeschriebener Begriff:</target>
+      </trans-unit>
+      <trans-unit id="Select_a_term" approved="yes">
+        <source>Select a term</source>
+        <target state="translated">Einen Begriff auswählen</target>
+      </trans-unit>
+      <trans-unit id="Abridged_term" approved="yes">
+        <source>Abridged Term:</source>
+        <target state="translated">Abgekürzter Begriff:</target>
+      </trans-unit>
+      <trans-unit id="Acronym" approved="yes">
+        <source>Acronym</source>
+        <target state="translated">Akronym</target>
+      </trans-unit>
+      <trans-unit id="Abbreviation" approved="yes">
+        <source>Abbreviation</source>
+        <target state="translated">Abkürzung</target>
+      </trans-unit>
+      <trans-unit id="Select_an_acronym" approved="yes">
+        <source>Select an acronym or abbreviation</source>
+        <target state="translated">Ein Akronym oder eine Abkürzung auswählen</target>
+      </trans-unit>
+      <trans-unit id="Use_this_term" approved="yes">
+        <source>Use this term:</source>
+        <target state="translated">Diesen Begriff verwenden:</target>
+      </trans-unit>
+      <trans-unit id="Use_this_term_explain" approved="yes">
+        <source>Associate this term to the current selection</source>
+        <target state="translated">Diesen Begriff der derzeitigen Auswahl zuweisen</target>
+      </trans-unit>
+      <trans-unit id="OK" approved="yes">
+        <source>OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="Delete" approved="yes">
+        <source>Delete</source>
+        <target state="translated">Löschen</target>
+      </trans-unit>
+      <trans-unit id="Cancel" approved="yes">
+        <source>Cancel</source>
+        <target state="translated">Abbrechen</target>
+      </trans-unit>
+      <trans-unit id="Language" approved="yes">
+        <source>Language:</source>
+        <target state="translated">Sprache:</target>
+      </trans-unit>
+      <trans-unit id="Select_a_language" approved="yes">
+        <source>Select a language</source>
+        <target state="translated">Eine Sprache auswählen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

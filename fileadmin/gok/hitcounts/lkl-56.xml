@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2d0daf13-2a</SESSIONVAR>
+<SESSIONVAR name="SID">5e956863-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="108" mnemonic="LKL" description="gec 560">gec 560</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="gec 580">gec 580</SCANLINE>
+
+    <SCANLINE hits="662" mnemonic="LKL" description="gec 700">gec 700</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="gec 810">gec 810</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ged">ged</SCANLINE>
+
+    <SCANLINE hits="30" mnemonic="LKL" description="ged 100">ged 100</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="ged 110">ged 110</SCANLINE>
+
+    <SCANLINE hits="121" mnemonic="LKL" description="ged 120">ged 120</SCANLINE>
+
+    <SCANLINE hits="409" mnemonic="LKL" description="ged 130">ged 130</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ged 230">ged 230</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="ged 300">ged 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ged 305">ged 305</SCANLINE>
 
@@ -17,11 +39,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="ged 322">ged 322</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ged 326">ged 326</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ged 326">ged 326</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="ged 328">ged 328</SCANLINE>
 
-    <SCANLINE hits="152" mnemonic="LKL" description="ged 330">ged 330</SCANLINE>
+    <SCANLINE hits="155" mnemonic="LKL" description="ged 330">ged 330</SCANLINE>
 
     <SCANLINE hits="100" mnemonic="LKL" description="ged 333">ged 333</SCANLINE>
 
@@ -59,11 +81,11 @@
 
     <SCANLINE hits="41" mnemonic="LKL" description="ged 378">ged 378</SCANLINE>
 
-    <SCANLINE hits="672" mnemonic="LKL" description="ged 380">ged 380</SCANLINE>
+    <SCANLINE hits="673" mnemonic="LKL" description="ged 380">ged 380</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ged 380 a">ged 380 a</SCANLINE>
 
-    <SCANLINE hits="1630" mnemonic="LKL" description="ged 500">ged 500</SCANLINE>
+    <SCANLINE hits="1631" mnemonic="LKL" description="ged 500">ged 500</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="ged 50011 oe a">ged 50011 oe a</SCANLINE>
 
@@ -73,7 +95,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ged 50020 d s">ged 50020 d s</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="ged 510">ged 510</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ged 510">ged 510</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ged 530">ged 530</SCANLINE>
 
@@ -113,7 +135,7 @@
 
     <SCANLINE hits="374" mnemonic="LKL" description="geg 330">geg 330</SCANLINE>
 
-    <SCANLINE hits="467" mnemonic="LKL" description="geg 333">geg 333</SCANLINE>
+    <SCANLINE hits="469" mnemonic="LKL" description="geg 333">geg 333</SCANLINE>
 
     <SCANLINE hits="55" mnemonic="LKL" description="geg 336">geg 336</SCANLINE>
 
@@ -123,23 +145,23 @@
 
     <SCANLINE hits="127" mnemonic="LKL" description="geg 342">geg 342</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="LKL" description="geg 346">geg 346</SCANLINE>
+    <SCANLINE hits="61" mnemonic="LKL" description="geg 346">geg 346</SCANLINE>
 
-    <SCANLINE hits="118" mnemonic="LKL" description="geg 348">geg 348</SCANLINE>
+    <SCANLINE hits="119" mnemonic="LKL" description="geg 348">geg 348</SCANLINE>
 
-    <SCANLINE hits="297" mnemonic="LKL" description="geg 350">geg 350</SCANLINE>
+    <SCANLINE hits="298" mnemonic="LKL" description="geg 350">geg 350</SCANLINE>
 
-    <SCANLINE hits="733" mnemonic="LKL" description="geg 352">geg 352</SCANLINE>
+    <SCANLINE hits="735" mnemonic="LKL" description="geg 352">geg 352</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="geg 353">geg 353</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="geg 354">geg 354</SCANLINE>
 
-    <SCANLINE hits="192" mnemonic="LKL" description="geg 356">geg 356</SCANLINE>
+    <SCANLINE hits="195" mnemonic="LKL" description="geg 356">geg 356</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="geg 360">geg 360</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="geg 364">geg 364</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="geg 364">geg 364</SCANLINE>
 
     <SCANLINE hits="39" mnemonic="LKL" description="geg 368">geg 368</SCANLINE>
 
@@ -151,15 +173,15 @@
 
     <SCANLINE hits="287" mnemonic="LKL" description="geg 380">geg 380</SCANLINE>
 
-    <SCANLINE hits="57" mnemonic="LKL" description="geg 382">geg 382</SCANLINE>
+    <SCANLINE hits="58" mnemonic="LKL" description="geg 382">geg 382</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="geg 384">geg 384</SCANLINE>
 
-    <SCANLINE hits="406" mnemonic="LKL" description="geg 390">geg 390</SCANLINE>
+    <SCANLINE hits="408" mnemonic="LKL" description="geg 390">geg 390</SCANLINE>
 
-    <SCANLINE hits="935" mnemonic="LKL" description="geg 500">geg 500</SCANLINE>
+    <SCANLINE hits="937" mnemonic="LKL" description="geg 500">geg 500</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="geg 510">geg 510</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="geg 510">geg 510</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="geg 530">geg 530</SCANLINE>
 
@@ -177,9 +199,9 @@
 
     <SCANLINE hits="272" mnemonic="LKL" description="geg 702">geg 702</SCANLINE>
 
-    <SCANLINE hits="236" mnemonic="LKL" description="geg 704">geg 704</SCANLINE>
+    <SCANLINE hits="237" mnemonic="LKL" description="geg 704">geg 704</SCANLINE>
 
-    <SCANLINE hits="90" mnemonic="LKL" description="geg 706">geg 706</SCANLINE>
+    <SCANLINE hits="92" mnemonic="LKL" description="geg 706">geg 706</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="geg 707">geg 707</SCANLINE>
 
@@ -199,7 +221,7 @@
 
     <SCANLINE hits="46" mnemonic="LKL" description="geh">geh</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="geh 100">geh 100</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="geh 100">geh 100</SCANLINE>
 
     <SCANLINE hits="492" mnemonic="LKL" description="geh 110">geh 110</SCANLINE>
 
@@ -289,11 +311,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="geh 772">geh 772</SCANLINE>
 
-    <SCANLINE hits="46" mnemonic="LKL" description="geh 800">geh 800</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="geh 800">geh 800</SCANLINE>
 
     <SCANLINE hits="477" mnemonic="LKL" description="geh 805">geh 805</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="geh 810">geh 810</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="geh 810">geh 810</SCANLINE>
 
     <SCANLINE hits="84" mnemonic="LKL" description="geh 820">geh 820</SCANLINE>
 
@@ -327,13 +349,13 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="gek 322">gek 322</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="gek 326">gek 326</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="gek 326">gek 326</SCANLINE>
 
     <SCANLINE hits="127" mnemonic="LKL" description="gek 328">gek 328</SCANLINE>
 
     <SCANLINE hits="86" mnemonic="LKL" description="gek 330">gek 330</SCANLINE>
 
-    <SCANLINE hits="61" mnemonic="LKL" description="gek 333">gek 333</SCANLINE>
+    <SCANLINE hits="62" mnemonic="LKL" description="gek 333">gek 333</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="gek 336">gek 336</SCANLINE>
 
@@ -344,6 +366,8 @@
     <SCANLINE hits="67" mnemonic="LKL" description="gek 350">gek 350</SCANLINE>
 
     <SCANLINE hits="164" mnemonic="LKL" description="gek 352">gek 352</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="gek 354">gek 354</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="gek 356">gek 356</SCANLINE>
 
@@ -373,9 +397,9 @@
 
     <SCANLINE hits="33" mnemonic="LKL" description="gek 702">gek 702</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="gek 704">gek 704</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="gek 704">gek 704</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="gek 706">gek 706</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="gek 706">gek 706</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="gek 708">gek 708</SCANLINE>
 
@@ -411,11 +435,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="gel">gel</SCANLINE>
 
-    <SCANLINE hits="71" mnemonic="LKL" description="gel 100">gel 100</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="gel 100">gel 100</SCANLINE>
 
     <SCANLINE hits="69" mnemonic="LKL" description="gel 110">gel 110</SCANLINE>
 
-    <SCANLINE hits="97" mnemonic="LKL" description="gel 130">gel 130</SCANLINE>
+    <SCANLINE hits="99" mnemonic="LKL" description="gel 130">gel 130</SCANLINE>
 
     <SCANLINE hits="89" mnemonic="LKL" description="gel 150">gel 150</SCANLINE>
 
@@ -441,9 +465,9 @@
 
     <SCANLINE hits="104" mnemonic="LKL" description="gel 330">gel 330</SCANLINE>
 
-    <SCANLINE hits="118" mnemonic="LKL" description="gel 333">gel 333</SCANLINE>
+    <SCANLINE hits="119" mnemonic="LKL" description="gel 333">gel 333</SCANLINE>
 
-    <SCANLINE hits="84" mnemonic="LKL" description="gel 336">gel 336</SCANLINE>
+    <SCANLINE hits="85" mnemonic="LKL" description="gel 336">gel 336</SCANLINE>
 
     <SCANLINE hits="25" mnemonic="LKL" description="gel 338">gel 338</SCANLINE>
 
@@ -469,7 +493,7 @@
 
     <SCANLINE hits="2144" mnemonic="LKL" description="gel 500">gel 500</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="gel 510">gel 510</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="gel 510">gel 510</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="gel 530">gel 530</SCANLINE>
 
@@ -485,7 +509,7 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="gel 652">gel 652</SCANLINE>
 
-    <SCANLINE hits="64" mnemonic="LKL" description="gel 654">gel 654</SCANLINE>
+    <SCANLINE hits="65" mnemonic="LKL" description="gel 654">gel 654</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="gel 656">gel 656</SCANLINE>
 
@@ -503,7 +527,7 @@
 
     <SCANLINE hits="30" mnemonic="LKL" description="gel 705">gel 705</SCANLINE>
 
-    <SCANLINE hits="682" mnemonic="LKL" description="gel 710">gel 710</SCANLINE>
+    <SCANLINE hits="686" mnemonic="LKL" description="gel 710">gel 710</SCANLINE>
 
     <SCANLINE hits="133" mnemonic="LKL" description="gel 720">gel 720</SCANLINE>
 
@@ -513,7 +537,7 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="gel 730">gel 730</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="gel 732">gel 732</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="gel 732">gel 732</SCANLINE>
 
     <SCANLINE hits="199" mnemonic="LKL" description="gel 734">gel 734</SCANLINE>
 
@@ -605,19 +629,19 @@
 
     <SCANLINE hits="433" mnemonic="LKL" description="gem 500">gem 500</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="gem 510">gem 510</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="gem 510">gem 510</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="gem 530">gem 530</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="gem 550">gem 550</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="gem 550">gem 550</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="gem 600">gem 600</SCANLINE>
 
-    <SCANLINE hits="238" mnemonic="LKL" description="gem 602">gem 602</SCANLINE>
+    <SCANLINE hits="239" mnemonic="LKL" description="gem 602">gem 602</SCANLINE>
 
     <SCANLINE hits="78" mnemonic="LKL" description="gem 604">gem 604</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="gem 605">gem 605</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="gem 605">gem 605</SCANLINE>
 
     <SCANLINE hits="123" mnemonic="LKL" description="gem 606">gem 606</SCANLINE>
 
@@ -671,13 +695,13 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="gen 100">gen 100</SCANLINE>
 
-    <SCANLINE hits="981" mnemonic="LKL" description="gen 200">gen 200</SCANLINE>
+    <SCANLINE hits="985" mnemonic="LKL" description="gen 200">gen 200</SCANLINE>
 
     <SCANLINE hits="63" mnemonic="LKL" description="gen 250">gen 250</SCANLINE>
 
     <SCANLINE hits="299" mnemonic="LKL" description="gen 300">gen 300</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="gen 350">gen 350</SCANLINE>
+    <SCANLINE hits="50" mnemonic="LKL" description="gen 350">gen 350</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gen 370">gen 370</SCANLINE>
 
@@ -807,17 +831,17 @@
 
     <SCANLINE hits="28" mnemonic="LKL" description="gg 254">gg 254</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="gg 260">gg 260</SCANLINE>
+    <SCANLINE hits="21" mnemonic="LKL" description="gg 260">gg 260</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="gg 270">gg 270</SCANLINE>
 
     <SCANLINE hits="201" mnemonic="LKL" description="gg 300">gg 300</SCANLINE>
 
-    <SCANLINE hits="181" mnemonic="LKL" description="gg 500">gg 500</SCANLINE>
+    <SCANLINE hits="183" mnemonic="LKL" description="gg 500">gg 500</SCANLINE>
 
     <SCANLINE hits="32" mnemonic="LKL" description="gg 600">gg 600</SCANLINE>
 
-    <SCANLINE hits="112" mnemonic="LKL" description="gg 700">gg 700</SCANLINE>
+    <SCANLINE hits="113" mnemonic="LKL" description="gg 700">gg 700</SCANLINE>
 
     <SCANLINE hits="67" mnemonic="LKL" description="gg 800">gg 800</SCANLINE>
 
@@ -843,7 +867,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="gh 000">gh 000</SCANLINE>
 
-    <SCANLINE hits="8308" mnemonic="LKL" description="gh 300">gh 300</SCANLINE>
+    <SCANLINE hits="8330" mnemonic="LKL" description="gh 300">gh 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gh 500">gh 500</SCANLINE>
 
@@ -865,7 +889,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="gkp lj">gkp lj</SCANLINE>
 
-    <SCANLINE hits="280" mnemonic="LKL" description="gm">gm</SCANLINE>
+    <SCANLINE hits="281" mnemonic="LKL" description="gm">gm</SCANLINE>
 
     <SCANLINE hits="48" mnemonic="LKL" description="gm 000">gm 000</SCANLINE>
 
@@ -985,35 +1009,11 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="gm 746">gm 746</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="gm 750">gm 750</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="gm 751">gm 751</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="gm 752">gm 752</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gm 753">gm 753</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gm 754">gm 754</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="gm 755">gm 755</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="gm 756">gm 756</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="gm 758">gm 758</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gm 759">gm 759</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gm 760">gm 760</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="gm 761">gm 761</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="gm 762">gm 762</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ged+305" />
+<SCANPREV term="gec+560" />
 
 
-<SCANNEXT term="gm+762" />
+<SCANNEXT term="gm+746" />
 
 </RESULT>

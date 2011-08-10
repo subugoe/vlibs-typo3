@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:35:24 UTC 2011" product-name="install">
+    <header/>
+    <body>
+      <trans-unit id="status_fileSystem" approved="yes">
+        <source>File System</source>
+        <target state="translated">Dateisystem</target>
+      </trans-unit>
+      <trans-unit id="status_writable" approved="yes">
+        <source>Writable</source>
+        <target state="translated">Beschreibbar</target>
+      </trans-unit>
+      <trans-unit id="status_missingDirectory" approved="yes">
+        <source>Required Directory Missing</source>
+        <target state="translated">Benötigtes Verzeichnis fehlt</target>
+      </trans-unit>
+      <trans-unit id="status_nonExistingDirectory" approved="yes">
+        <source>Directory not existing</source>
+        <target state="translated">Verzeichnis fehlt</target>
+      </trans-unit>
+      <trans-unit id="status_recommendedWritableDirectory" approved="yes">
+        <source>Directory should be writable</source>
+        <target state="translated">Verzeichnis sollte beschreibbar sein</target>
+      </trans-unit>
+      <trans-unit id="status_requiredWritableDirectory" approved="yes">
+        <source>Directory not writable</source>
+        <target state="translated">Verzeichnis nicht beschreibbar</target>
+      </trans-unit>
+      <trans-unit id="status_directoryDoesNotExist" approved="yes">
+        <source>%s does not exist.</source>
+        <target state="translated">%s existiert nicht.</target>
+      </trans-unit>
+      <trans-unit id="status_directoryDoesNotExistCouldNotCreate" approved="yes">
+        <source>%s does not exist and could not be created.</source>
+        <target state="translated">%s existiert nicht und konnte nicht erstellt werden.</target>
+      </trans-unit>
+      <trans-unit id="status_directoryShouldAlsoBeWritable" approved="yes">
+        <source>Also note that it should be writable, if it did exist.</source>
+        <target state="translated">Beachten Sie auch, dass das Verzeichnis beschreibbar sein sollte, wenn es existieren würde.</target>
+      </trans-unit>
+      <trans-unit id="status_directoryShouldBeWritable" approved="yes">
+        <source>%s should be writable.</source>
+        <target state="translated">%s sollte beschreibbar sein.</target>
+      </trans-unit>
+      <trans-unit id="status_directoryMustBeWritable" approved="yes">
+        <source>%s must be writable.</source>
+        <target state="translated">%s muss beschreibbar sein.</target>
+      </trans-unit>
+      <trans-unit id="status_remainingUpdates" approved="yes">
+        <source>Remaining Updates</source>
+        <target state="translated">Verbleibende Aktualisierungen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

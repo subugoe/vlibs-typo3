@@ -1,25 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="noTitle">Kein Titel</label>
-			<label index="expand">Kategorie erweitern</label>
-			<label index="noTextSelection">Fehler: Kein Text zum Umbrechen ausgewählt.</label>
-			<label index="pixels">Bildpunkte</label>
-			<label index="filesize">Dateigröße</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="noTitle" type="integer">184697729</label>
-			<label index="expand" type="integer">211276000</label>
-			<label index="noTextSelection" type="integer">183962</label>
-			<label index="pixels" type="integer">205336413</label>
-			<label index="filesize" type="integer">186172059</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="noTitle">Kein Titel</label>
+      <label index="expand">Kategorie erweitern</label>
+      <label index="noTextSelection">Fehler: Kein Text zum Umbrechen ausgewählt.</label>
+      <label index="pixels">Bildpunkte</label>
+      <label index="filesize">Dateigröße</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

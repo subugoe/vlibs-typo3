@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:38:27 UTC 2011" product-name="rtehtmlarea">
+    <header/>
+    <body>
+      <trans-unit id="PasteToggleTooltip" approved="yes">
+        <source>Toggle paste behaviour</source>
+        <target state="translated">Einfügemodus umschalten</target>
+      </trans-unit>
+      <trans-unit id="plainText" approved="yes">
+        <source>Paste as plain text</source>
+        <target state="translated">Als einfachen Text einfügen</target>
+      </trans-unit>
+      <trans-unit id="pasteStructure" approved="yes">
+        <source>Paste structure only</source>
+        <target state="translated">Nur Struktur einfügen</target>
+      </trans-unit>
+      <trans-unit id="pasteFormat" approved="yes">
+        <source>Paste structure and basic format</source>
+        <target state="translated">Struktur und grundlegende Formatierung einfügen</target>
+      </trans-unit>
+      <trans-unit id="PasteBehaviourTooltip" approved="yes">
+        <source>Select alternate paste behaviour</source>
+        <target state="translated">Alternativen Einfügemodus auswählen</target>
+      </trans-unit>
+      <trans-unit id="Paste-as-Plain-Text" approved="yes">
+        <source>Paste as plain text</source>
+        <target state="translated">Als einfachen Text einfügen</target>
+      </trans-unit>
+      <trans-unit id="Access-to-clipboard-denied" approved="yes">
+        <source>Content could not be pasted as plain text because permission to access the clipboard was denied.</source>
+        <target state="translated">Der Inhalt konnte nicht als einfacher Text eingefügt werden, weil der Zugriff auf die Zwischenablage verboten wurde.</target>
+      </trans-unit>
+      <trans-unit id="enableplainText" approved="yes">
+        <source>Enable paste as plain text</source>
+        <target state="translated">Einfügen als einfachen Text aktivieren</target>
+      </trans-unit>
+      <trans-unit id="enablepasteStructure" approved="yes">
+        <source>Enable paste structure only</source>
+        <target state="translated">Einfügen nur als Struktur aktivieren</target>
+      </trans-unit>
+      <trans-unit id="enablepasteFormat" approved="yes">
+        <source>Enable paste structure and basic format</source>
+        <target state="translated">Einfügen als Struktur und grundlegende Formatierung aktivieren</target>
+      </trans-unit>
+      <trans-unit id="disableplainText" approved="yes">
+        <source>Disable paste as plain text</source>
+        <target state="translated">Einfügen als einfachen Text deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="disablepasteStructure" approved="yes">
+        <source>Disable paste structure only</source>
+        <target state="translated">Einfügen nur als Struktur deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="disablepasteFormat" approved="yes">
+        <source>Disable paste structure and basic format</source>
+        <target state="translated">Einfügen als Struktur und grundlegende Formatierung deaktivieren</target>
+      </trans-unit>
+      <trans-unit id="pasteInPastingPad" approved="yes">
+        <source>Paste the content into this pasting pad and click OK.</source>
+        <target state="translated">Inhalt in dieses Einfügefeld einfügen und OK drücken.</target>
+      </trans-unit>
+      <trans-unit id="rteCleanPasteBehaviour" approved="yes">
+        <source>Clean paste behaviour</source>
+        <target state="translated">Modus für sauberes Einfügen</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

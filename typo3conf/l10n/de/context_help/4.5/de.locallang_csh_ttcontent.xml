@@ -1,15 +1,145 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index=".description"/>
+      <label index=".details"/>
+      <label index="_.seeAlso"/>
+      <label index="_.image"/>
+      <label index=".image_descr"/>
+      <label index="CType.description"/>
+      <label index="CType.details"/>
+      <label index="_CType.seeAlso"/>
+      <label index="_CType.image"/>
+      <label index="hidden.description"/>
+      <label index="_hidden.seeAlso"/>
+      <label index="starttime.description"/>
+      <label index="_starttime.seeAlso"/>
+      <label index="endtime.description"/>
+      <label index="_endtime.seeAlso"/>
+      <label index="fe_group.description"/>
+      <label index="fe_group.details"/>
+      <label index="_fe_group.seeAlso"/>
+      <label index="sys_language_uid.description"/>
+      <label index="sys_language_uid.details"/>
+      <label index="_sys_language_uid.seeAlso"/>
+      <label index="layout.description"/>
+      <label index="layout.details"/>
+      <label index="colPos.description"/>
+      <label index="colPos.details"/>
+      <label index="_colPos.seeAlso"/>
+      <label index="date.description"/>
+      <label index="header.description"/>
+      <label index="header.details"/>
+      <label index="_header.seeAlso"/>
+      <label index="_header.image"/>
+      <label index="header_position.description"/>
+      <label index="_header_position.seeAlso"/>
+      <label index="header_link.description"/>
+      <label index="header_link.syntax"/>
+      <label index="_header_link.seeAlso"/>
+      <label index="header_layout.description"/>
+      <label index="header_layout.details"/>
+      <label index="_header_layout.seeAlso"/>
+      <label index="subheader.description"/>
+      <label index="subheader.details"/>
+      <label index="_subheader.seeAlso"/>
+      <label index="bodytext.description"/>
+      <label index="bodytext.details"/>
+      <label index="_bodytext.seeAlso"/>
+      <label index="text_align.description"/>
+      <label index="text_align.details"/>
+      <label index="_text_align.seeAlso"/>
+      <label index="text_face.description"/>
+      <label index="text_face.details"/>
+      <label index="_text_face.seeAlso"/>
+      <label index="text_size.description"/>
+      <label index="text_size.details"/>
+      <label index="_text_size.seeAlso"/>
+      <label index="text_color.description"/>
+      <label index="text_color.details"/>
+      <label index="_text_color.seeAlso"/>
+      <label index="text_properties.description"/>
+      <label index="text_properties.details"/>
+      <label index="_text_properties.seeAlso"/>
+      <label index="image.description"/>
+      <label index="image.details"/>
+      <label index="_image.seeAlso"/>
+      <label index="_image.image"/>
+      <label index="image.image_descr"/>
+      <label index="imagewidth.description"/>
+      <label index="imagewidth.details"/>
+      <label index="_imagewidth.seeAlso"/>
+      <label index="imageheight.description"/>
+      <label index="_imageheight.seeAlso"/>
+      <label index="imageorient.description"/>
+      <label index="imageorient.details"/>
+      <label index="imageborder.description"/>
+      <label index="_imageborder.seeAlso"/>
+      <label index="image_noRows.description"/>
+      <label index="image_noRows.details"/>
+      <label index="_image_noRows.seeAlso"/>
+      <label index="image_link.description"/>
+      <label index="image_link.details"/>
+      <label index="_image_link.seeAlso"/>
+      <label index="image_zoom.description"/>
+      <label index="image_zoom.details"/>
+      <label index="_image_zoom.seeAlso"/>
+      <label index="image_effects.description"/>
+      <label index="_image_effects.seeAlso"/>
+      <label index="image_frames.description"/>
+      <label index="_image_frames.seeAlso"/>
+      <label index="image_compression.description"/>
+      <label index="_image_compression.seeAlso"/>
+      <label index="imagecols.description"/>
+      <label index="_imagecols.seeAlso"/>
+      <label index="imagecaption.description"/>
+      <label index="imagecaption.details"/>
+      <label index="_imagecaption.seeAlso"/>
+      <label index="imagecaption_position.description"/>
+      <label index="_imagecaption_position.seeAlso"/>
+      <label index="cols.description"/>
+      <label index="pages.description"/>
+      <label index="pages.details"/>
+      <label index="_pages.seeAlso"/>
+      <label index="recursive.description"/>
+      <label index="recursive.details"/>
+      <label index="_recursive.seeAlso"/>
+      <label index="menu_type.description"/>
+      <label index="menu_type.details"/>
+      <label index="_menu_type.seeAlso"/>
+      <label index="list_type.description"/>
+      <label index="list_type.details"/>
+      <label index="_list_type.seeAlso"/>
+      <label index="_list_type.image"/>
+      <label index="select_key.description"/>
+      <label index="select_key.details"/>
+      <label index="_select_key.seeAlso"/>
+      <label index="table_bgColor.description"/>
+      <label index="table_border.description"/>
+      <label index="table_cellspacing.description"/>
+      <label index="table_cellspacing.details"/>
+      <label index="table_cellpadding.description"/>
+      <label index="table_cellpadding.details"/>
+      <label index="media.description"/>
+      <label index="multimedia.description"/>
+      <label index="filelink_size.description"/>
+      <label index="records.description"/>
+      <label index="spaceBefore.description"/>
+      <label index="_spaceBefore.seeAlso"/>
+      <label index="spaceAfter.description"/>
+      <label index="_spaceAfter.seeAlso"/>
+      <label index="section_frame.description"/>
+      <label index="_section_frame.seeAlso"/>
+      <label index="sectionIndex.description"/>
+      <label index="sectionIndex.details"/>
+      <label index="_sectionIndex.seeAlso"/>
+      <label index="linkToTop.description"/>
+      <label index="rte_enabled.description"/>
+      <label index="_rte_enabled.seeAlso"/>
+      <label index="pi_flexform.description"/>
+      <label index="pi_flexform.details"/>
+      <label index="_pi_flexform.seeAlso"/>
+    </languageKey>
+  </data>
 </T3locallangExt>

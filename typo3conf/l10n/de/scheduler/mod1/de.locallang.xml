@@ -1,324 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="action.add">Task hinzufügen</label>
-			<label index="action.edit">Task bearbeiten</label>
-			<label index="button.cancel">Abbrechen</label>
-			<label index="function.scheduler">Geplante Tasks</label>
-			<label index="function.check">Konfiguration prüfen</label>
-			<label index="function.info">Informationen</label>
-			<label index="hdg.cliScript">CLI-Skript</label>
-			<label index="hdg.lastRun">Letzte Ausführung</label>
-			<label index="hdg.schedulerUser">Backend-Benutzer für den TYPO3-Planer</label>
-			<label index="label.automatically">automatisch</label>
-			<label index="label.cachingFrameworkGarbageCollection.selectBackends">Backendtypen</label>
-			<label index="label.checkAll">Alle auswählen/abwählen</label>
-			<label index="label.class">Klasse</label>
-			<label index="label.cron">Cron</label>
-			<label index="label.defType">Definitionstyp</label>
-			<label index="label.defType.interval">Interval</label>
-			<label index="label.defType.cron">Cron-Befehl</label>
-			<label index="label.description">Beschreibung</label>
-			<label index="label.email">E-Mail</label>
-			<label index="label.end">Ende (HH:MM TT-MM-JJJJ)</label>
-			<label index="label.executeSelected">Ausgewählte Tasks ausführen</label>
-			<label index="label.extension">Erweiterung</label>
-			<label index="label.frequency">Häufigkeit</label>
-			<label index="label.frequency.long">Häufigkeit (Sekunden oder Cron-Befehl)</label>
-			<label index="label.id">ID</label>
-			<label index="label.lastExecution">Letzte Ausführung</label>
-			<label index="label.manual">manuell</label>
-			<label index="label.manually">manuell</label>
-			<label index="label.name">Name</label>
-			<label index="label.nextExecution">Nächste Ausführung</label>
-			<label index="label.parallel">Parallele Ausführung</label>
-			<label index="label.parallel.long">Parallele Ausführung erlauben</label>
-			<label index="label.serverTime">Serverzeit</label>
-			<label index="label.sleepTime">Pause</label>
-			<label index="label.start">Start (HH:MM TT-MM-JJJJ)</label>
-			<label index="label.type">Typ</label>
-			<label index="label.type.recurring">wiederkehrend</label>
-			<label index="label.type.single">einmalig</label>
-			<label index="msg.addError">Der Task konnte nicht hinzugefügt werden.</label>
-			<label index="msg.addSuccess">Der Task wurde erfolgreich hinzugefügt.</label>
-			<label index="msg.cliScript">Der Befehl, um den Planer von der Kommandozeile auszuführen lautet: &lt;strong&gt;&quot;%s scheduler&quot;&lt;/strong&gt;.</label>
-			<label index="msg.cliScriptExecutable">Der Webserver-Benutzer darf dieses Skript ausführen.</label>
-			<label index="msg.cliScriptNotExecutable">Der Webserver-Benutzer darf dieses Skript nicht ausführen.</label>
-			<label index="msg.delete">Diesen Task tatsächlich löschen?</label>
-			<label index="msg.deleteError">Der Task konnte nicht gelöscht werden.</label>
-			<label index="msg.deleteSuccess">Der Task wurde erfolgreich gelöscht.</label>
-			<label index="msg.endDateSmallerThanStartDate">Das Enddatum liegt vor dem Startdatum.</label>
-			<label index="msg.executed">Ausgeführt: %s</label>
-			<label index="msg.frequencyError">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl an. Ausgabe des Cron-Parsers: %1$s [Code: %2$d].</label>
-			<label index="msg.incompleteLastRun">Die Informationen zur letzten Ausführung des Planers sind unvollständig.</label>
-			<label index="msg.infoScreenIntro">Dies ist eine Liste aller in dieser TYPO3-Installation verfügbaren Tasks. Klicken Sie auf das Symbol außen rechts, um einen neuen geplanten Task des gewählten Typs zu erstellen.</label>
-			<label index="msg.invalidFrequency">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl ein.</label>
-			<label index="msg.invalidSleepTime">Bitte geben Sie eine Pause von mindestens null Sekunden an.</label>
-			<label index="msg.lastRun">Der Planer wurde zuletzt gestartet (%1$s) am %2$s um %3$s und endete am %4$s um %5$s.</label>
-			<label index="msg.maynotDeleteRunningTask">Ein laufender Task kann nicht gelöscht werden.</label>
-			<label index="msg.maynotEditRunningTask">Ein laufender Task kann nicht bearbeitet werden.</label>
-			<label index="msg.maynotStopNonRunningTask">Dieser Task läuft nicht. Es gibt keine abzuwählenden Ausführungen.</label>
-			<label index="msg.noEmail">Bitte geben Sie eine E-Mail-Adresse an.</label>
-			<label index="msg.noFrequency">Bitte geben Sie als Häufigkeit entweder ein Interval oder einen Cron-Befehl an.</label>
-			<label index="msg.noLastRun">Der Planer wurde noch nie ausgeführt oder die Informationen über die letzte Ausführung sind verloren gegangen.</label>
-			<label index="msg.noTasksDefined">Gegenwärtig sind keine Taskklassen verfügbar. Um neue Task erstellen zu können, müssen Sie entweder die mit dem Planer mitgelieferten Beispiele aktivieren oder eine Erweiterung installieren, die den Planer verwendet.</label>
-			<label index="msg.noTaskClassFound">Die ausgewählte Taskklasse konnte nicht gefunden werden. Sie sollten sich an den Entwickler des Tasks wenden.</label>
-			<label index="msg.noTasks">Noch keine Tasks angelegt.</label>
-			<label index="msg.notExecuted">Nicht ausgeführt: %s</label>
-			<label index="msg.executionFailed">Die Ausführung von Task &quot;%1$s&quot; ist fehlgeschlagen mit folgender Meldung: %2$s.</label>
-			<label index="msg.executionFailureDefault">Die Ausführung ist fehlgeschlagen, ohne dass die Fehlermeldung erfasst werden konnte (wahrscheinlich war sie zu groß). Entschuldigung.</label>
-			<label index="msg.executionFailureReport">Ausführung fehlgeschlagen: %1$d, %2$s</label>
-			<label index="msg.noStartDate">Bitte setzen Sie ein Startdatum.</label>
-			<label index="msg.invalidStartDate">Das Startdatum ist ungültig.</label>
-			<label index="msg.invalidEndDate">Das Enddatum ist ungültig.</label>
-			<label index="msg.invalidTaskClass">Die Klasse %s des registrierten Tasks konnte nicht gefunden werden. Sie sollten die Erweiterung, die den Task zur Verfügung stellt, neuinstallieren oder den Task löschen.</label>
-			<label index="msg.invalidTaskClassEdit">Der aktuelle Task (%s) konnte nicht gefunden werden. Ändern Sie ihn unten oder löschen Sie ihn.</label>
-			<label index="msg.schedulerSetupCheck">Diese Seite zeigt Ihnen, ob die Voraussetzungen, um den Planer mit einem Cron-Job auszuführen, erfüllt sind. Zudem zeigt sie Informationen zur letzten Ausführung des Planers.</label>
-			<label index="msg.schedulerUser">Der Backend-Benutzer &quot;_cli_scheduler&quot; wird vom CLI-Skript benutzt, um sich bei TYPO3 anzumelden. Dieser Benutzer darf keine Administratorrechte haben. Das Passwort dieses Benutzers ist nicht wichtig, sollte aber auf einen sicheren Wert gesetzt werden.</label>
-			<label index="msg.schedulerUserFound">Der Backend-Benutzer &quot;_cli_scheduler&quot; wurde gefunden.</label>
-			<label index="msg.schedulerUserFoundButDisabled">Der Backend-Benutzer &quot;_cli_scheduler&quot; existiert, ist aber derzeit deaktiviert.</label>
-			<label index="msg.schedulerUserMissing">Der Backend-Benutzer &quot;_cli_scheduler&quot; wurde nicht gefunden. &lt;a href=&quot;%s&quot; title=&quot;Klicken Sie, um den fehlenden Benutzer zu erstellen.&quot;&gt;Den Benutzer jetzt erstellen.&lt;/a&gt;</label>
-			<label index="msg.serverTime">Die aktuelle Serverzeit ist %s.</label>
-			<label index="msg.serverTimeHelp">Alle Daten und Zeiten im Planer werden an der Serverzeit gemessen, weil der Planer ausschließlich auf der Serverseite läuft.</label>
-			<label index="msg.stop">Diesen Task tatsächlich als nicht-laufend markieren? Beachten Sie, dass dies nicht das eigentliche Skript beendet. (Wenn Sie unsicher sind, konsultieren Sie bitte das Handbuch.)</label>
-			<label index="msg.stopError">Der Task konnte nicht als nicht-laufend markiert werden.</label>
-			<label index="msg.stopSuccess">Der Task wurde erfolgreich als nicht-laufend markiert.</label>
-			<label index="msg.taskNotFound">Der angeforderte Task (UID: %d) wurde nicht gefunden.</label>
-			<label index="msg.updateSuccess">Der Task wurde erfolgreich aktualisiert.</label>
-			<label index="msg.updateError">Der Task konnte nicht aktualisiert werden.</label>
-			<label index="msg.userCreated">Der Benutzer &quot;_cli_scheduler&quot; wurde erfolgreich erstellt.</label>
-			<label index="msg.userExists">Der Benutzer &quot;_cli_scheduler&quot; existiert bereits. Er wurde daher nicht erstellt.</label>
-			<label index="msg.userNotCreated">Der Benutzer &quot;_cli_scheduler&quot; konnte nicht erstellt werden.</label>
-			<label index="none">Keine</label>
-			<label index="status">Status</label>
-			<label index="status.legend">Status-Legende</label>
-			<label index="status.legend.disabled">Deaktiviert, wird nicht ausgeführt, es sei denn manuell</label>
-			<label index="status.legend.failure">Fehler! Während der letzten Ausführung ist ein Fehler aufgetreten (halten Sie den Mauszeiger auf das Symbol, um Details anzuzeigen)</label>
-			<label index="status.legend.late">Verspätet, wird bei nächster Ausführung laufen</label>
-			<label index="status.legend.running">Läuft gerade</label>
-			<label index="status.legend.scheduled">Geplant, wird bei nächstmöglicher Ausführung laufen</label>
-			<label index="status.disabled">deaktiviert</label>
-			<label index="status.failure">Fehler</label>
-			<label index="status.late">verspätet</label>
-			<label index="status.running">läuft</label>
-			<label index="status.scheduled">geplant</label>
-			<label index="task">Task</label>
-			<label index="title">Administrationsmodul des TYPO3-Planers</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="action.add" type="integer">252353973</label>
-			<label index="action.edit" type="integer">205805194</label>
-			<label index="button.cancel" type="integer">245659783</label>
-			<label index="function.scheduler" type="integer">232038597</label>
-			<label index="hdg.schedulerUser" type="integer">149968660</label>
-			<label index="label.automatically" type="integer">192454454</label>
-			<label index="label.email" type="integer">216575645</label>
-			<label index="label.end" type="integer">144135612</label>
-			<label index="label.name" type="integer">77521672</label>
-			<label index="label.start" type="integer">227926082</label>
-			<label index="status.scheduled" type="integer">104376025</label>
-			<label index="task" type="integer">246330127</label>
-			<label index="function.info" type="integer">176340495</label>
-			<label index="hdg.cliScript" type="integer">224544060</label>
-			<label index="hdg.lastRun" type="integer">204573475</label>
-			<label index="label.cron" type="integer">28808155</label>
-			<label index="label.defType.interval" type="integer">219602177</label>
-			<label index="label.defType.cron" type="integer">245701184</label>
-			<label index="label.description" type="integer">190479069</label>
-			<label index="label.executeSelected" type="integer">264476135</label>
-			<label index="label.frequency" type="integer">131021139</label>
-			<label index="label.frequency.long" type="integer">150054744</label>
-			<label index="label.id" type="integer">191990494</label>
-			<label index="label.lastExecution" type="integer">224385109</label>
-			<label index="label.nextExecution" type="integer">44695400</label>
-			<label index="label.sleepTime" type="integer">117377126</label>
-			<label index="label.type" type="integer">169845367</label>
-			<label index="msg.addError" type="integer">136010050</label>
-			<label index="msg.addSuccess" type="integer">66094031</label>
-			<label index="msg.cliScriptExecutable" type="integer">124543867</label>
-			<label index="msg.cliScriptNotExecutable" type="integer">17611547</label>
-			<label index="msg.deleteError" type="integer">194692682</label>
-			<label index="msg.deleteSuccess" type="integer">183962725</label>
-			<label index="msg.endDateSmallerThanStartDate" type="integer">255202176</label>
-			<label index="msg.executed" type="integer">133523239</label>
-			<label index="msg.incompleteLastRun" type="integer">110116340</label>
-			<label index="msg.infoScreenIntro" type="integer">200852737</label>
-			<label index="msg.invalidFrequency" type="integer">84935442</label>
-			<label index="msg.invalidSleepTime" type="integer">77873515</label>
-			<label index="msg.lastRun" type="integer">18929508</label>
-			<label index="msg.noTasks" type="integer">247533398</label>
-			<label index="msg.notExecuted" type="integer">42569552</label>
-			<label index="msg.executionFailed" type="integer">186359940</label>
-			<label index="msg.executionFailureReport" type="integer">109458512</label>
-			<label index="msg.noStartDate" type="integer">151643536</label>
-			<label index="msg.invalidStartDate" type="integer">70347760</label>
-			<label index="msg.invalidEndDate" type="integer">53755407</label>
-			<label index="status" type="integer">247806604</label>
-			<label index="title" type="integer">188808447</label>
-			<label index="label.extension" type="integer">104746642</label>
-			<label index="function.check" type="integer">258510405</label>
-			<label index="label.class" type="integer">163414322</label>
-			<label index="label.defType" type="integer">168415807</label>
-			<label index="label.parallel" type="integer">208270599</label>
-			<label index="label.parallel.long" type="integer">148875168</label>
-			<label index="label.type.recurring" type="integer">92471137</label>
-			<label index="label.type.single" type="integer">107716962</label>
-			<label index="msg.delete" type="integer">238928620</label>
-			<label index="msg.cliScript" type="integer">143107354</label>
-			<label index="msg.noEmail" type="integer">151269298</label>
-			<label index="msg.noLastRun" type="integer">249945458</label>
-			<label index="msg.noTaskClassFound" type="integer">55464025</label>
-			<label index="msg.invalidTaskClass" type="integer">244016725</label>
-			<label index="msg.invalidTaskClassEdit" type="integer">263486459</label>
-			<label index="msg.schedulerUserFound" type="integer">21405295</label>
-			<label index="msg.schedulerUserFoundButDisabled" type="integer">223994627</label>
-			<label index="msg.schedulerUserMissing" type="integer">231727919</label>
-			<label index="label.checkAll" type="integer">32450981</label>
-			<label index="status.legend" type="integer">152578557</label>
-			<label index="status.legend.disabled" type="integer">69706091</label>
-			<label index="msg.schedulerSetupCheck" type="integer">105768933</label>
-			<label index="msg.schedulerUser" type="integer">118182069</label>
-			<label index="msg.noFrequency" type="integer">218358950</label>
-			<label index="msg.updateSuccess" type="integer">247708850</label>
-			<label index="msg.updateError" type="integer">25403006</label>
-			<label index="msg.userCreated" type="integer">218150517</label>
-			<label index="msg.userExists" type="integer">14355068</label>
-			<label index="msg.userNotCreated" type="integer">10265988</label>
-			<label index="status.disabled" type="integer">7712317</label>
-			<label index="msg.maynotDeleteRunningTask" type="integer">209186003</label>
-			<label index="msg.maynotEditRunningTask" type="integer">113605382</label>
-			<label index="msg.maynotStopNonRunningTask" type="integer">215628851</label>
-			<label index="status.legend.failure" type="integer">193297326</label>
-			<label index="status.legend.late" type="integer">208730049</label>
-			<label index="status.legend.running" type="integer">111567105</label>
-			<label index="status.legend.scheduled" type="integer">242881179</label>
-			<label index="status.failure" type="integer">65939710</label>
-			<label index="status.late" type="integer">254568248</label>
-			<label index="status.running" type="integer">122749404</label>
-			<label index="msg.stop" type="integer">46025573</label>
-			<label index="msg.stopError" type="integer">145570071</label>
-			<label index="msg.stopSuccess" type="integer">105127369</label>
-			<label index="msg.taskNotFound" type="integer">267777408</label>
-			<label index="label.manual" type="integer">236691797</label>
-			<label index="label.manually" type="integer">68807153</label>
-			<label index="none" type="integer">112064895</label>
-			<label index="label.serverTime" type="integer">55285323</label>
-			<label index="msg.serverTime" type="integer">242229963</label>
-			<label index="msg.serverTimeHelp" type="integer">184638342</label>
-			<label index="msg.executionFailureDefault" type="integer">107816565</label>
-			<label index="msg.noTasksDefined" type="integer">27706531</label>
-			<label index="label.cachingFrameworkGarbageCollection.selectBackends" type="integer">232345547</label>
-			<label index="msg.frequencyError" type="integer">78870008</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="action.add">Add task</label>
-			<label index="action.edit">Edit task</label>
-			<label index="button.cancel">Cancel</label>
-			<label index="function.scheduler">Scheduled tasks</label>
-			<label index="hdg.schedulerUser">TYPO3 Scheduler backend user</label>
-			<label index="label.automatically">automatically</label>
-			<label index="label.email">Email</label>
-			<label index="label.end">End (HH:MM DD-MM-YYYY)</label>
-			<label index="label.name">Name</label>
-			<label index="label.start">Start (HH:MM DD-MM-YYYY)</label>
-			<label index="status.scheduled">scheduled</label>
-			<label index="task">Task</label>
-			<label index="function.info">Information</label>
-			<label index="hdg.cliScript">CLI script</label>
-			<label index="hdg.lastRun">Last run</label>
-			<label index="label.cron">Cron</label>
-			<label index="label.defType.interval">Interval</label>
-			<label index="label.defType.cron">Cron command</label>
-			<label index="label.description">Description</label>
-			<label index="label.executeSelected">Execute selected tasks</label>
-			<label index="label.frequency">Frequency</label>
-			<label index="label.frequency.long">Frequency (seconds or cron command)</label>
-			<label index="label.id">ID</label>
-			<label index="label.lastExecution">Last Execution</label>
-			<label index="label.nextExecution">Next Execution</label>
-			<label index="label.sleepTime">Sleep time</label>
-			<label index="label.type">Type</label>
-			<label index="msg.addError">The task could not be added.</label>
-			<label index="msg.addSuccess">The task was added successfully.</label>
-			<label index="msg.cliScriptExecutable">The webserver user is allowed execute this script.</label>
-			<label index="msg.cliScriptNotExecutable">The webserver user is not allowed to execute this script.</label>
-			<label index="msg.deleteError">The task could not be deleted.</label>
-			<label index="msg.deleteSuccess">The task was successfully deleted.</label>
-			<label index="msg.endDateSmallerThanStartDate">The end date is before the start date.</label>
-			<label index="msg.executed">Executed: %s</label>
-			<label index="msg.incompleteLastRun">The information about the last execution of the Scheduler is incomplete.</label>
-			<label index="msg.infoScreenIntro">This is the list of all available tasks in this TYPO3 installation. Click on the icon at the far right to directly create a new scheduled task of the chosen type.</label>
-			<label index="msg.invalidFrequency">Invalid frequency. Please enter either a number of seconds or a valid cron command.</label>
-			<label index="msg.invalidSleepTime">Please enter a sleep time greater or equal to 0 (zero).</label>
-			<label index="msg.lastRun">The Scheduler was last started (%1$s) on %2$s at %3$s and ended on %4$s at %5$s.</label>
-			<label index="msg.noTasks">No tasks defined yet.</label>
-			<label index="msg.notExecuted">Not executed: %s</label>
-			<label index="msg.executionFailed">Execution of task &quot;%1$s&quot; failed with the following message: %2$s</label>
-			<label index="msg.executionFailureReport">Execution failed: %1$d, %2$s</label>
-			<label index="msg.noStartDate">Please define a start date.</label>
-			<label index="msg.invalidStartDate">Start date is invalid.</label>
-			<label index="msg.invalidEndDate">End date is invalid.</label>
-			<label index="status">Status</label>
-			<label index="title">TYPO3 Scheduler administration module</label>
-			<label index="label.extension">Extension</label>
-			<label index="function.check">Setup check</label>
-			<label index="label.class">Class</label>
-			<label index="label.defType">Definition type</label>
-			<label index="label.parallel">Parallel Execution</label>
-			<label index="label.parallel.long">Allow Parallel Execution</label>
-			<label index="label.type.recurring">Recurring</label>
-			<label index="label.type.single">Single</label>
-			<label index="msg.delete">Are you sure you want to delete this task?</label>
-			<label index="msg.cliScript">The script to execute the Scheduler from the command line is: &lt;strong&gt;&quot;%s scheduler&quot;&lt;/strong&gt;.</label>
-			<label index="msg.noEmail">Please enter an email address.</label>
-			<label index="msg.noLastRun">The Scheduler has never yet run or the information about the last run has been lost.</label>
-			<label index="msg.noTaskClassFound">The selected task class could not be found. You should probably contact the task's developers.</label>
-			<label index="msg.invalidTaskClass">Class %s of the registered task could not be found. You should re-install the extension that provided it or simply delete this task.</label>
-			<label index="msg.invalidTaskClassEdit">The current class (%s) could not be found. Change it below or consider deleting this task altogether.</label>
-			<label index="msg.schedulerUserFound">The backend user &quot;_cli_scheduler&quot; was found.</label>
-			<label index="msg.schedulerUserFoundButDisabled">The backend user &quot;_cli_scheduler&quot; exists but is currently disabled.</label>
-			<label index="msg.schedulerUserMissing">The backend user &quot;_cli_scheduler&quot; was not found. &lt;a href=&quot;%s&quot; title=&quot;Click to create the missing user&quot;&gt;Create the user now&lt;/a&gt;.</label>
-			<label index="label.checkAll">Check/uncheck all</label>
-			<label index="status.legend">Status Legend</label>
-			<label index="status.legend.disabled">Disabled, will not be executed, except manually</label>
-			<label index="msg.schedulerSetupCheck">This screen checks if the requisites for running the Scheduler as a cron job are fulfilled. It also displays information about the last run of the Scheduler.</label>
-			<label index="msg.schedulerUser">The backend user &quot;_cli_scheduler&quot; is used by the CLI-script to log into TYPO3. This user may not have administrator privileges. The user's password is not important but should be set to a secure value for security reasons.</label>
-			<label index="msg.noFrequency">No frequency was defined, either as an interval or as a cron command.</label>
-			<label index="msg.updateSuccess">The task was updated successfully.</label>
-			<label index="msg.updateError">The task could not be updated.</label>
-			<label index="msg.userCreated">The &quot;_cli_scheduler&quot; user was created successfully.</label>
-			<label index="msg.userExists">The &quot;_cli_scheduler&quot; user already exists. It was not created.</label>
-			<label index="msg.userNotCreated">The creation of the &quot;_cli_scheduler&quot; user failed.</label>
-			<label index="status.disabled">disabled</label>
-			<label index="msg.maynotDeleteRunningTask">A running task may not be deleted.</label>
-			<label index="msg.maynotEditRunningTask">A running task may not be edited.</label>
-			<label index="msg.maynotStopNonRunningTask">The task is not running. There are no executions to unmark.</label>
-			<label index="status.legend.failure">Failure! An error occured during the last execution (move over bullet for more details)</label>
-			<label index="status.legend.late">Late, will run with next execution</label>
-			<label index="status.legend.running">Currently running</label>
-			<label index="status.legend.scheduled">Scheduled, will run on next possible execution</label>
-			<label index="status.failure">failure</label>
-			<label index="status.late">late</label>
-			<label index="status.running">running</label>
-			<label index="msg.stop">Are you sure you want to mark this task as not running? Note that this will not stop the actual script (if unsure please refer to the manual).</label>
-			<label index="msg.stopError">The task could not be marked as non-running.</label>
-			<label index="msg.stopSuccess">The task was successfully marked as non-running.</label>
-			<label index="msg.taskNotFound">The requested task (UID: %d) was not found.</label>
-			<label index="label.manual">Manual</label>
-			<label index="label.manually">manually</label>
-			<label index="none">None</label>
-			<label index="label.serverTime">Server time</label>
-			<label index="msg.serverTime">Current server time is %s.</label>
-			<label index="msg.serverTimeHelp">All dates and times in the Scheduler are measured according to the server's time, as the Scheduler is run purely on the server-side.</label>
-			<label index="msg.executionFailureDefault">The execution failed, but the error message could not be retrieved (it was probably too large). Sorry.</label>
-			<label index="msg.noTasksDefined">There are currently no task classes available at all. To be able to create new tasks, you must either enable the samples provided by the Scheduler or install some other extension that relies on the Scheduler.</label>
-			<label index="label.cachingFrameworkGarbageCollection.selectBackends">Backend types</label>
-			<label index="msg.frequencyError">Invalid frequency. Please enter either a number of seconds or a valid cron command. The cron parser said: %1$s [code: %2$d].</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="action.add">Task hinzufügen</label>
+      <label index="action.edit">Task bearbeiten</label>
+      <label index="button.cancel">Abbrechen</label>
+      <label index="function.scheduler">Geplante Tasks</label>
+      <label index="function.check">Konfiguration prüfen</label>
+      <label index="function.info">Informationen</label>
+      <label index="hdg.cliScript">CLI-Skript</label>
+      <label index="hdg.lastRun">Letzte Ausführung</label>
+      <label index="hdg.schedulerUser">Backend-Benutzer für den TYPO3-Planer</label>
+      <label index="label.automatically">automatisch</label>
+      <label index="label.cachingFrameworkGarbageCollection.selectBackends">Backendtypen</label>
+      <label index="label.recyclerGarbageCollection.numberOfDays">Anzahl Tage bis zum Löschen der Dateien</label>
+      <label index="label.checkAll">Alle auswählen/abwählen</label>
+      <label index="label.class">Klasse</label>
+      <label index="label.cron">Cron</label>
+      <label index="label.defType">Definitionstyp</label>
+      <label index="label.defType.interval">Interval</label>
+      <label index="label.defType.cron">Cron-Befehl</label>
+      <label index="label.description">Beschreibung</label>
+      <label index="label.email">E-Mail</label>
+      <label index="label.end">Ende (HH:MM TT-MM-JJJJ)</label>
+      <label index="label.executeSelected">Ausgewählte Tasks ausführen</label>
+      <label index="label.extension">Erweiterung</label>
+      <label index="label.frequency">Häufigkeit</label>
+      <label index="label.frequency.long">Häufigkeit (Sekunden oder Cron-Befehl)</label>
+      <label index="label.id">ID</label>
+      <label index="label.lastExecution">Letzte Ausführung</label>
+      <label index="label.manual">manuell</label>
+      <label index="label.manually">manuell</label>
+      <label index="label.name">Name</label>
+      <label index="label.nextExecution">Nächste Ausführung</label>
+      <label index="label.parallel">Parallele Ausführung</label>
+      <label index="label.parallel.long">Parallele Ausführung erlauben</label>
+      <label index="label.serverTime">Serverzeit</label>
+      <label index="label.sleepTime">Pause</label>
+      <label index="label.start">Start (HH:MM TT-MM-JJJJ)</label>
+      <label index="label.tableGarbageCollection.allTables">Alle verfügbaren Tabellen bereinigen</label>
+      <label index="label.tableGarbageCollection.table">Zu bereinigende Tabelle</label>
+      <label index="label.tableGarbageCollection.additionalInformationTable">Tabelle: %s</label>
+      <label index="label.tableGarbageCollection.additionalInformationAllTables">Alle Tabellen</label>
+      <label index="label.tableGarbageCollection.numberOfDays">Einträge löschen, die älter sind als die angegebene Anzahl Tage</label>
+      <label index="label.type">Typ</label>
+      <label index="label.type.recurring">wiederkehrend</label>
+      <label index="label.type.single">einmalig</label>
+      <label index="msg.addError">Der Task konnte nicht hinzugefügt werden.</label>
+      <label index="msg.addSuccess">Der Task wurde erfolgreich hinzugefügt.</label>
+      <label index="msg.cliScript">Der Befehl, um den Planer von der Kommandozeile auszuführen lautet: &lt;strong&gt;"%s scheduler"&lt;/strong&gt;.</label>
+      <label index="msg.cliScriptExecutable">Der Webserver-Benutzer darf dieses Skript ausführen.</label>
+      <label index="msg.cliScriptNotExecutable">Der Webserver-Benutzer darf dieses Skript nicht ausführen.</label>
+      <label index="msg.delete">Diesen Task tatsächlich löschen?</label>
+      <label index="msg.deleteError">Der Task konnte nicht gelöscht werden.</label>
+      <label index="msg.deleteSuccess">Der Task wurde erfolgreich gelöscht.</label>
+      <label index="msg.endDateSmallerThanStartDate">Das Enddatum liegt vor dem Startdatum.</label>
+      <label index="msg.executed">Ausgeführt: %s</label>
+      <label index="msg.frequencyError">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl an. Ausgabe des Cron-Parsers: %1$s [Code: %2$d].</label>
+      <label index="msg.incompleteLastRun">Die Informationen zur letzten Ausführung des Planers sind unvollständig.</label>
+      <label index="msg.infoScreenIntro">Dies ist eine Liste aller in dieser TYPO3-Installation verfügbaren Tasks. Klicken Sie auf das Symbol außen rechts, um einen neuen geplanten Task des gewählten Typs zu erstellen.</label>
+      <label index="msg.invalidFrequency">Ungültige Häufigkeit. Bitte geben Sie entweder eine Anzahl Sekunden oder einen gültigen Cron-Befehl ein.</label>
+      <label index="msg.invalidSleepTime">Bitte geben Sie eine Pause von mindestens null Sekunden an.</label>
+      <label index="msg.lastRun">Der Planer wurde zuletzt gestartet (%1$s) am %2$s um %3$s und endete am %4$s um %5$s.</label>
+      <label index="msg.maynotDeleteRunningTask">Ein laufender Task kann nicht gelöscht werden.</label>
+      <label index="msg.maynotEditRunningTask">Ein laufender Task kann nicht bearbeitet werden.</label>
+      <label index="msg.maynotStopNonRunningTask">Dieser Task läuft nicht. Es gibt keine abzuwählenden Ausführungen.</label>
+      <label index="msg.noEmail">Bitte geben Sie eine E-Mail-Adresse an.</label>
+      <label index="msg.noFrequency">Bitte geben Sie als Häufigkeit entweder ein Interval oder einen Cron-Befehl an.</label>
+      <label index="msg.noLastRun">Der Planer wurde noch nie ausgeführt oder die Informationen über die letzte Ausführung sind verloren gegangen.</label>
+      <label index="msg.noTasksDefined">Gegenwärtig sind keine Taskklassen verfügbar. Um neue Task erstellen zu können, müssen Sie entweder die mit dem Planer mitgelieferten Beispiele aktivieren oder eine Erweiterung installieren, die den Planer verwendet.</label>
+      <label index="msg.noTaskClassFound">Die ausgewählte Taskklasse konnte nicht gefunden werden. Sie sollten sich an den Entwickler des Tasks wenden.</label>
+      <label index="msg.noTasks">Noch keine Tasks angelegt.</label>
+      <label index="msg.notExecuted">Nicht ausgeführt: %s</label>
+      <label index="msg.executionFailed">Die Ausführung von Task "%1$s" ist fehlgeschlagen mit folgender Meldung: %2$s.</label>
+      <label index="msg.executionFailureDefault">Die Ausführung ist fehlgeschlagen, ohne dass die Fehlermeldung erfasst werden konnte (wahrscheinlich war sie zu groß). Entschuldigung.</label>
+      <label index="msg.executionFailureReport">Ausführung fehlgeschlagen: %1$d, %2$s</label>
+      <label index="msg.noStartDate">Bitte setzen Sie ein Startdatum.</label>
+      <label index="msg.invalidStartDate">Das Startdatum ist ungültig.</label>
+      <label index="msg.invalidEndDate">Das Enddatum ist ungültig.</label>
+      <label index="msg.invalidNumberOfDays">Anzahl an Tagen ist ungültig.</label>
+      <label index="msg.invalidTaskClass">Die Klasse %s des registrierten Tasks konnte nicht gefunden werden. Sie sollten die Erweiterung, die den Task zur Verfügung stellt, neuinstallieren oder den Task löschen.</label>
+      <label index="msg.invalidTaskClassEdit">Der aktuelle Task (%s) konnte nicht gefunden werden. Ändern Sie ihn unten oder löschen Sie ihn.</label>
+      <label index="msg.schedulerSetupCheck">Diese Seite zeigt Ihnen, ob die Voraussetzungen, um den Planer mit einem Cron-Job auszuführen, erfüllt sind. Zudem zeigt sie Informationen zur letzten Ausführung des Planers.</label>
+      <label index="msg.schedulerUser">Der Backend-Benutzer "_cli_scheduler" wird vom CLI-Skript benutzt, um sich bei TYPO3 anzumelden. Dieser Benutzer darf keine Administratorrechte haben. Das Passwort dieses Benutzers ist nicht wichtig, sollte aber auf einen sicheren Wert gesetzt werden.</label>
+      <label index="msg.schedulerUserFound">Der Backend-Benutzer "_cli_scheduler" wurde gefunden.</label>
+      <label index="msg.schedulerUserFoundButDisabled">Der Backend-Benutzer "_cli_scheduler" existiert, ist aber derzeit deaktiviert.</label>
+      <label index="msg.schedulerUserMissing">Der Backend-Benutzer "_cli_scheduler" wurde nicht gefunden. &lt;a href="%s" title="Klicken Sie, um den fehlenden Benutzer zu erstellen."&gt;Den Benutzer jetzt erstellen.&lt;/a&gt;</label>
+      <label index="msg.serverTime">Die aktuelle Serverzeit ist %s.</label>
+      <label index="msg.serverTimeHelp">Alle Daten und Zeiten im Planer werden an der Serverzeit gemessen, weil der Planer ausschließlich auf der Serverseite läuft.</label>
+      <label index="msg.stop">Diesen Task tatsächlich als nicht-laufend markieren? Beachten Sie, dass dies nicht das eigentliche Skript beendet. (Wenn Sie unsicher sind, konsultieren Sie bitte das Handbuch.)</label>
+      <label index="msg.stopError">Der Task konnte nicht als nicht-laufend markiert werden.</label>
+      <label index="msg.stopSuccess">Der Task wurde erfolgreich als nicht-laufend markiert.</label>
+      <label index="msg.taskNotFound">Der angeforderte Task (UID: %d) wurde nicht gefunden.</label>
+      <label index="msg.updateSuccess">Der Task wurde erfolgreich aktualisiert.</label>
+      <label index="msg.updateError">Der Task konnte nicht aktualisiert werden.</label>
+      <label index="msg.userCreated">Der Benutzer "_cli_scheduler" wurde erfolgreich erstellt.</label>
+      <label index="msg.userExists">Der Benutzer "_cli_scheduler" existiert bereits. Er wurde daher nicht erstellt.</label>
+      <label index="msg.userNotCreated">Der Benutzer "_cli_scheduler" konnte nicht erstellt werden.</label>
+      <label index="none">Keine</label>
+      <label index="status">Status</label>
+      <label index="status.legend">Status-Legende</label>
+      <label index="status.legend.disabled">Deaktiviert, wird nicht ausgeführt, es sei denn manuell</label>
+      <label index="status.legend.failure">Fehler! Während der letzten Ausführung ist ein Fehler aufgetreten (halten Sie den Mauszeiger auf das Symbol, um Details anzuzeigen)</label>
+      <label index="status.legend.late">Verspätet, wird bei nächster Ausführung laufen</label>
+      <label index="status.legend.running">Läuft gerade</label>
+      <label index="status.legend.scheduled">Geplant, wird bei nächstmöglicher Ausführung laufen</label>
+      <label index="status.disabled">deaktiviert</label>
+      <label index="status.failure">Fehler</label>
+      <label index="status.late">verspätet</label>
+      <label index="status.running">läuft</label>
+      <label index="status.scheduled">geplant</label>
+      <label index="task">Task</label>
+      <label index="title">Administrationsmodul des TYPO3-Planers</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

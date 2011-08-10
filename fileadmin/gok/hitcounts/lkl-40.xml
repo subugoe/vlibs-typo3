@@ -2,12 +2,30 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1b3a1a00-2a</SESSIONVAR>
+<SESSIONVAR name="SID">3f7c2edf-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="ebge 450">ebge 450</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ebge 500">ebge 500</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ebge 600">ebge 600</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ebge 650">ebge 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ebge 700">ebge 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ebge 990">ebge 990</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="ebgg 000">ebgg 000</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="ebgg 100">ebgg 100</SCANLINE>
+
+    <SCANLINE hits="39" mnemonic="LKL" description="ebgg 200">ebgg 200</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="ebgg 300">ebgg 300</SCANLINE>
 
@@ -651,6 +669,8 @@
 
     <SCANLINE hits="42" mnemonic="LKL" description="eca 060">eca 060</SCANLINE>
 
+    <SCANLINE hits="3" mnemonic="LKL" description="eca 990">eca 990</SCANLINE>
+
     <SCANLINE hits="1" mnemonic="LKL" description="eca 999">eca 999</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eca h (fh)">eca h (fh)</SCANLINE>
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ecan 250">ecan 250</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ecao 000">ecao 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ecap 050">ecap 050</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ecb 000">ecb 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ecb 010">ecb 010</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ecba 020">ecba 020</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ecbc 450">ecbc 450</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ecc">ecc</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="ecc 000">ecc 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ecc 001">ecc 001</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="ecc 010">ecc 010</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ebgg+300" />
+<SCANPREV term="ebge+450" />
 
 
-<SCANNEXT term="ecc+010" />
+<SCANNEXT term="ecan+250" />
 
 </RESULT>

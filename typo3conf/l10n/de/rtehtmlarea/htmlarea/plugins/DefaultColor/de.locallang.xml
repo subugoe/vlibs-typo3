@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="Invalid color code">Ungültiger Farbwert</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="Invalid color code" type="integer">259008655</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="Invalid color code">Invalid color code</label>
-		</languageKey>
-	</orig_text>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="Invalid color code">Ungültiger Farbwert</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

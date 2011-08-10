@@ -43,3 +43,6 @@ page.1 {
 		FOOT < lib.foot
 	}
 }
+
+# don’t use cssstyledcontent’s default CSS
+plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >

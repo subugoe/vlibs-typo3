@@ -1,7 +1,18 @@
+2011-07-04 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_stopdc 0.2.0
+
+2011-06-27 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added manual
+	* Added suggestion to install extension Stop Duplicate Content (cps_stopdc)
+	* Changed status to stable
+	* Fixed problem with automatic overwriting pageNotFound_handling on clear cache
+
 2011-05-05 Nicole Cordes  <cordes@cps-it.de>
 
-	* Changed dependency to minor realurl version
 	* Added suggestion to install extension 404 Page not found handling (pagenotfoundhandling)
+	* Changed dependency to minor realurl version
 
 2011-05-04 Vladimir Falcon Piva  <falcon@cps-it.de>
 

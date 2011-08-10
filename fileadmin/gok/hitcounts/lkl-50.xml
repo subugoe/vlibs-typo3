@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ac361f2f-29</SESSIONVAR>
+<SESSIONVAR name="SID">2a132c3c-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="23" mnemonic="LKL" description="ehgm 100">ehgm 100</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="ehgm 120">ehgm 120</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ehgm 150">ehgm 150</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="ehgm 200">ehgm 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ehgm 220">ehgm 220</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ehgm 230">ehgm 230</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ehgm 250">ehgm 250</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ehgm 270">ehgm 270</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="ehgm 280">ehgm 280</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ehgm 300">ehgm 300</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="ehgm 350">ehgm 350</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ehgm 400">ehgm 400</SCANLINE>
 
@@ -403,7 +425,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eibt">eibt</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="eibt 000">eibt 000</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="eibt 000">eibt 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eibt 001">eibt 001</SCANLINE>
 
@@ -987,33 +1009,11 @@
 
     <SCANLINE hits="53" mnemonic="LKL" description="ejac 060">ejac 060</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="ejac 080">ejac 080</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ejac 090">ejac 090</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ejac 0ss0">ejac 0ss0</SCANLINE>
-
-    <SCANLINE hits="63" mnemonic="LKL" description="ejac 100">ejac 100</SCANLINE>
-
-    <SCANLINE hits="83" mnemonic="LKL" description="ejac 110">ejac 110</SCANLINE>
-
-    <SCANLINE hits="110" mnemonic="LKL" description="ejac 150">ejac 150</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="ejac 200">ejac 200</SCANLINE>
-
-    <SCANLINE hits="19" mnemonic="LKL" description="ejac 220">ejac 220</SCANLINE>
-
-    <SCANLINE hits="62" mnemonic="LKL" description="ejac 250">ejac 250</SCANLINE>
-
-    <SCANLINE hits="35" mnemonic="LKL" description="ejac 260">ejac 260</SCANLINE>
-
-    <SCANLINE hits="144" mnemonic="LKL" description="ejac 270">ejac 270</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ehgm+400" />
+<SCANPREV term="ehgm+100" />
 
 
-<SCANNEXT term="ejac+270" />
+<SCANNEXT term="ejac+060" />
 
 </RESULT>
