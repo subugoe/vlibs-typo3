@@ -451,6 +451,10 @@ a.languageSwitcher:hover {
 	color: #000;
 }
 
+#pazpar2 #pz2-results {
+	margin-right: 240px;
+}
+
 #pazpar2 #pz2-results ol.pz2-resultList li {
 	margin-bottom: 10px;
 	padding-right: 10px;
