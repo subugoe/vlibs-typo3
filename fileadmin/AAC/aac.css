@@ -165,6 +165,16 @@ abbr, acronym {
 	cursor: help;
 }
 
+/* Make elements invisible without really removing them,
+so they remain available to screen readers. */
+.invisible {
+	position: absolute;
+	left: -9999em;
+	top: auto;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+}
 
 
 /* PAGE */
