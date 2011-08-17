@@ -21,28 +21,22 @@ page {
 	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/AAC/favicon.ico" type="image/ico">
 }
 
+lib.content < styles.content.get
 
-page.1 = TEMPLATE
+page.1 = FLUIDTEMPLATE
 page.1 {
-	template = FILE
-	template.file = {$my_template_file}
-	
-	workOnSubpart = DOCUMENT
-	
-	marks {
-		HEAD < lib.head
-		LANGUAGE < lib.language
-		MENU < lib.menu
-		
-		HEADLINE = TEXT
-		HEADLINE.field = subtitle // title
-		HEADLINE.wrap = <h2>|</h2>
+	file = fileadmin/templates/page.html
+	partialRootPath = fileadmin/templates/partials/
+	layoutRootPath = fileadmin/templates/layouts/
 
-		CONTENT < styles.content.get
-		RIGHT < styles.content.getRight
-		FOOT < lib.foot
-	}
+	variables {
+		pageTitle = TEXT
+		pageTitle.data = page:title
+		headline = TEXT
+		headline.field = subtitle // title
+    }
 }
+
 
 # don’t use cssstyledcontent’s default CSS
 plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >
