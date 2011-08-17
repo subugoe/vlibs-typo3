@@ -179,7 +179,7 @@ abbr, acronym {
 /* HEAD */
 #head {
 	height: 140px;
-	background: url(header.png) no-repeat;
+	background: #eaecf4 url(header.png) no-repeat;
 	text-indent: -9999em;
 }
 
@@ -207,7 +207,7 @@ body.literatureguide #head {
 	position: relative;
 	font-size: 86%;
 	color: #8d95b5;
-	background: transparent url(footer.png) repeat-x top;
+	background: #263476 url(footer.png) repeat-x top;
 }
 
 #foot p {
