@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels</description>
+	</meta>
+
+	<data type="array">
+
+		<languageKey index="default" type="array">
+			<label index="Zum Seiteninhalt springen">Zum Seiteninhalt springen</label>
+			<label index="Menü">Menü</label>
+			<label index="Menü überspringen">überspringen</label>
+			<label index="Sprachwechsel">Sprachwechsel</label>
+			<label index="Informationen zur Lib AAC">Informationen zur Lib AAC</label>
+		</languageKey>
+
+		<languageKey index="en" type="array">
+			<label index="Zum Seiteninhalt springen">Jump to main content</label>
+			<label index="Menü">Menu</label>
+			<label index="Menü überspringen">Skip</label>
+			<label index="Sprachwechsel">Switch Language</label>
+			<label index="Informationen zur Lib AAC">Information about Lib AAC</label>
+		</languageKey>
+
+	</data>
+</T3locallang>
