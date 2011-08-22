@@ -3,7 +3,7 @@ lib.menu = HMENU
 lib.menu {
   special = directory
   special.value = {$my_menu_root}
-  excludeUidList = 48,50,52,53
+  excludeUidList = 48,50,52,53,60,63,64
 
   1 = TMENU
   1.wrap = <ul class="mainmenu">|</ul>
