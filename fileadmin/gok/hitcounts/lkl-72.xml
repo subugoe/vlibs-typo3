@@ -2,18 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">d2cc9b11-0</SESSIONVAR>
+<SESSIONVAR name="SID">0ab64012-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="il 444">il 444</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="il 459">il 459</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="il 480">il 480</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="il 5">il 5</SCANLINE>
 
@@ -23,7 +17,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="il 5 c2">il 5 c2</SCANLINE>
 
-    <SCANLINE hits="116" mnemonic="LKL" description="il 500">il 500</SCANLINE>
+    <SCANLINE hits="117" mnemonic="LKL" description="il 500">il 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="il 500 a">il 500 a</SCANLINE>
 
@@ -77,9 +71,9 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="il 535">il 535</SCANLINE>
 
-    <SCANLINE hits="155" mnemonic="LKL" description="il 536">il 536</SCANLINE>
+    <SCANLINE hits="156" mnemonic="LKL" description="il 536">il 536</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="il 537">il 537</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="il 537">il 537</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="il 538">il 538</SCANLINE>
 
@@ -105,7 +99,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="il 549">il 549</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="il 551">il 551</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="il 551">il 551</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="il 552">il 552</SCANLINE>
 
@@ -149,11 +143,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="il 6 s2">il 6 s2</SCANLINE>
 
-    <SCANLINE hits="1024" mnemonic="LKL" description="il 600">il 600</SCANLINE>
+    <SCANLINE hits="1025" mnemonic="LKL" description="il 600">il 600</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="il 600 sta m (fh)">il 600 sta m (fh)</SCANLINE>
 
-    <SCANLINE hits="403" mnemonic="LKL" description="il 610">il 610</SCANLINE>
+    <SCANLINE hits="404" mnemonic="LKL" description="il 610">il 610</SCANLINE>
 
     <SCANLINE hits="59" mnemonic="LKL" description="il 620">il 620</SCANLINE>
 
@@ -1009,11 +1003,17 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ilv 200">ilv 200</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="ilv 300">ilv 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ilv 314">ilv 314</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="ilv 347">ilv 347</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="il+444" />
+<SCANPREV term="il+5" />
 
 
-<SCANNEXT term="ilv+200" />
+<SCANNEXT term="ilv+347" />
 
 </RESULT>

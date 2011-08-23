@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2858ad07-2</SESSIONVAR>
+<SESSIONVAR name="SID">0930fcc2-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="edch 050">edch 050</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="edch 100">edch 100</SCANLINE>
 
@@ -251,7 +249,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="edda 990">edda 990</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="eddb 000">eddb 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="eddb 000">eddb 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eddb 010">eddb 010</SCANLINE>
 
@@ -423,7 +421,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="edea 060">edea 060</SCANLINE>
 
-    <SCANLINE hits="58" mnemonic="LKL" description="edea 090">edea 090</SCANLINE>
+    <SCANLINE hits="61" mnemonic="LKL" description="edea 090">edea 090</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="edea 120">edea 120</SCANLINE>
 
@@ -735,7 +733,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="edem 100">edem 100</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="edem 150">edem 150</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="edem 150">edem 150</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="edem 300">edem 300</SCANLINE>
 
@@ -765,9 +763,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="edf 006">edf 006</SCANLINE>
 
-    <SCANLINE hits="99" mnemonic="LKL" description="edf 010">edf 010</SCANLINE>
+    <SCANLINE hits="100" mnemonic="LKL" description="edf 010">edf 010</SCANLINE>
 
-    <SCANLINE hits="175" mnemonic="LKL" description="edf 020">edf 020</SCANLINE>
+    <SCANLINE hits="177" mnemonic="LKL" description="edf 020">edf 020</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="edf 040">edf 040</SCANLINE>
 
@@ -839,7 +837,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="edfb">edfb</SCANLINE>
 
-    <SCANLINE hits="28" mnemonic="LKL" description="edfb 000">edfb 000</SCANLINE>
+    <SCANLINE hits="29" mnemonic="LKL" description="edfb 000">edfb 000</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="edfb 050">edfb 050</SCANLINE>
 
@@ -875,7 +873,7 @@
 
     <SCANLINE hits="70" mnemonic="LKL" description="edfb 450">edfb 450</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="edfb 500">edfb 500</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="edfb 500">edfb 500</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="edfb 600">edfb 600</SCANLINE>
 
@@ -973,7 +971,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="edfj">edfj</SCANLINE>
 
-    <SCANLINE hits="47" mnemonic="LKL" description="edfj 000">edfj 000</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="edfj 000">edfj 000</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="edfj 001">edfj 001</SCANLINE>
 
@@ -991,7 +989,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="edfj 170">edfj 170</SCANLINE>
 
-    <SCANLINE hits="62" mnemonic="LKL" description="edfj 200">edfj 200</SCANLINE>
+    <SCANLINE hits="63" mnemonic="LKL" description="edfj 200">edfj 200</SCANLINE>
 
     <SCANLINE hits="114" mnemonic="LKL" description="edfj 250">edfj 250</SCANLINE>
 
@@ -1005,15 +1003,17 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="edfj 500">edfj 500</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="edfj 550">edfj 550</SCANLINE>
+    <SCANLINE hits="50" mnemonic="LKL" description="edfj 550">edfj 550</SCANLINE>
 
-    <SCANLINE hits="130" mnemonic="LKL" description="edfj 600">edfj 600</SCANLINE>
+    <SCANLINE hits="131" mnemonic="LKL" description="edfj 600">edfj 600</SCANLINE>
+
+    <SCANLINE hits="78" mnemonic="LKL" description="edfj 650">edfj 650</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="edch+050" />
+<SCANPREV term="edch+100" />
 
 
-<SCANNEXT term="edfj+600" />
+<SCANNEXT term="edfj+650" />
 
 </RESULT>

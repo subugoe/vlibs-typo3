@@ -2,12 +2,16 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">a4a3f6b5-0</SESSIONVAR>
+<SESSIONVAR name="SID">ca0012e2-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="jpc 574">jpc 574</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jpc 578">jpc 578</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="jpc 580">jpc 580</SCANLINE>
 
@@ -19,7 +23,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="jpc 625">jpc 625</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="jpc 630">jpc 630</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="jpc 630">jpc 630</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="jpc 631">jpc 631</SCANLINE>
 
@@ -55,7 +59,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpc 647">jpc 647</SCANLINE>
 
-    <SCANLINE hits="137" mnemonic="LKL" description="jpc 648">jpc 648</SCANLINE>
+    <SCANLINE hits="138" mnemonic="LKL" description="jpc 648">jpc 648</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jpc 6483">jpc 6483</SCANLINE>
 
@@ -181,7 +185,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="jpd 400">jpd 400</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="jpd 420">jpd 420</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="jpd 420">jpd 420</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jpd 425">jpd 425</SCANLINE>
 
@@ -189,7 +193,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="jpd 431">jpd 431</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="jpd 432">jpd 432</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="jpd 432">jpd 432</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="jpd 433">jpd 433</SCANLINE>
 
@@ -211,7 +215,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpd 446">jpd 446</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jpd 448">jpd 448</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="jpd 448">jpd 448</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jpd 449">jpd 449</SCANLINE>
 
@@ -221,7 +225,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="jpd 458">jpd 458</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jpd 459">jpd 459</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="jpd 459">jpd 459</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpd 472">jpd 472</SCANLINE>
 
@@ -235,7 +239,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpd 514">jpd 514</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="jpd 519">jpd 519</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="jpd 519">jpd 519</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jpd 520">jpd 520</SCANLINE>
 
@@ -283,7 +287,7 @@
 
     <SCANLINE hits="28" mnemonic="LKL" description="jpd 580">jpd 580</SCANLINE>
 
-    <SCANLINE hits="349" mnemonic="LKL" description="jpd 600">jpd 600</SCANLINE>
+    <SCANLINE hits="356" mnemonic="LKL" description="jpd 600">jpd 600</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpd 610">jpd 610</SCANLINE>
 
@@ -293,13 +297,13 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="jpd 631">jpd 631</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="jpd 632">jpd 632</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="jpd 632">jpd 632</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jpd 633">jpd 633</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jpd 635">jpd 635</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="jpd 636">jpd 636</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="jpd 636">jpd 636</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jpd 637">jpd 637</SCANLINE>
 
@@ -977,6 +981,12 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="jps 300">jps 300</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="jps 330">jps 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jps 331">jps 331</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="jps 332">jps 332</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="jps 400">jps 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jps xxx">jps xxx</SCANLINE>
@@ -989,7 +999,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="jpu">jpu</SCANLINE>
 
-    <SCANLINE hits="65" mnemonic="LKL" description="jpu 200">jpu 200</SCANLINE>
+    <SCANLINE hits="66" mnemonic="LKL" description="jpu 200">jpu 200</SCANLINE>
 
     <SCANLINE hits="49" mnemonic="LKL" description="jpu 300">jpu 300</SCANLINE>
 
@@ -999,21 +1009,11 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="jpu 321">jpu 321</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jpu 322">jpu 322</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="jpu 323">jpu 323</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="jpu 330">jpu 330</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jpu 331">jpu 331</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="jpu 335">jpu 335</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jpc+580" />
+<SCANPREV term="jpc+574" />
 
 
-<SCANNEXT term="jpu+335" />
+<SCANNEXT term="jpu+321" />
 
 </RESULT>

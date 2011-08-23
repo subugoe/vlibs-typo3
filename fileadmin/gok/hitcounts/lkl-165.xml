@@ -2,12 +2,94 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b7779e19-1</SESSIONVAR>
+<SESSIONVAR name="SID">328a5787-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="wnt">wnt</SCANLINE>
+
+    <SCANLINE hits="58" mnemonic="LKL" description="wnt 000">wnt 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wnu">wnu</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wnu 100">wnu 100</SCANLINE>
+
+    <SCANLINE hits="244" mnemonic="LKL" description="wo">wo</SCANLINE>
+
+    <SCANLINE hits="61" mnemonic="LKL" description="wo 000">wo 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo c (fh)">wo c (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo c 200">wo c 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo go">wo go</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo jk">wo jk</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="wo k (fh)">wo k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo ld">wo ld</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo lg">wo lg</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo m (fh)">wo m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="wo q (fh)">wo q (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo ru">wo ru</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wo16 gb a (fh)">wo16 gb a (fh)</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="wod">wod</SCANLINE>
+
+    <SCANLINE hits="117" mnemonic="LKL" description="wod 000">wod 000</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="wod c">wod c</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="wod k (fh)">wod k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wod ly">wod ly</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="wod m (fh)">wod m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wod01 trop m (fh)">wod01 trop m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wod10 e k (fh)">wod10 e k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wod10 e m (fh)">wod10 e m (fh)</SCANLINE>
+
+    <SCANLINE hits="60" mnemonic="LKL" description="woh">woh</SCANLINE>
+
+    <SCANLINE hits="93" mnemonic="LKL" description="woh 000">woh 000</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="woh 200">woh 200</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="woh 300">woh 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="woh 300 k">woh 300 k</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="woh 500">woh 500</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="woh 700">woh 700</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="woh ab">woh ab</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="woh c">woh c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="woh cc">woh cc</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="woh hj">woh hj</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="woh hn">woh hn</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="woh hs">woh hs</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="woh i (fh)">woh i (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="woh jk">woh jk</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="woh js">woh js</SCANLINE>
 
@@ -59,7 +141,7 @@
 
     <SCANLINE hits="225" mnemonic="LKL" description="wq">wq</SCANLINE>
 
-    <SCANLINE hits="241" mnemonic="LKL" description="wq 000">wq 000</SCANLINE>
+    <SCANLINE hits="245" mnemonic="LKL" description="wq 000">wq 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="wq 820">wq 820</SCANLINE>
 
@@ -541,7 +623,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="wvc">wvc</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="wvc 000">wvc 000</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="wvc 000">wvc 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="wvc 200">wvc 200</SCANLINE>
 
@@ -555,7 +637,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="wvc h (fh)">wvc h (fh)</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="wvc k (fh)">wvc k (fh)</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="wvc k (fh)">wvc k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="wvc m (fh)">wvc m (fh)</SCANLINE>
 
@@ -927,93 +1009,11 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="wwj">wwj</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="wwj 000">wwj 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwj a (fh)">wwj a (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wwj b (fh)">wwj b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwj16 ir m (fh)">wwj16 ir m (fh)</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="wwk 000">wwk 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wwk k (fh)">wwk k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwk m (fh)">wwk m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwk11 me g (fh)">wwk11 me g (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwk16 it k (fh)">wwk16 it k (fh)</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="wwl 000">wwl 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwl k (fh)">wwl k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwl11 me k (fh)">wwl11 me k (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="wwm">wwm</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwm 00">wwm 00</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="wwm 000">wwm 000</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="wwm k (fh)">wwm k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwm m (fh)">wwm m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwn">wwn</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="wwn 000">wwn 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwo">wwo</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="wwo 000">wwo 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwo h (fh)">wwo h (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwo k (fh)">wwo k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwo16 gb k (fh)">wwo16 gb k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wwp 000">wwp 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwr">wwr</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="wwr 000">wwr 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwr a (fh)">wwr a (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="wwr k (fh)">wwr k (fh)</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="wwr m (fh)">wwr m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwr n (fh)">wwr n (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wws">wws</SCANLINE>
-
-    <SCANLINE hits="96" mnemonic="LKL" description="wws 000">wws 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wws k (fh)">wws k (fh)</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="wws m (fh)">wws m (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="wwt">wwt</SCANLINE>
-
-    <SCANLINE hits="68" mnemonic="LKL" description="wwt 000">wwt 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="wwt k (fh)">wwt k (fh)</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="wwt m (fh)">wwt m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="wwt n (fh)">wwt n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="www 000">www 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="woh+js" />
+<SCANPREV term="wnt" />
 
 
-<SCANNEXT term="www+000" />
+<SCANNEXT term="wwj" />
 
 </RESULT>

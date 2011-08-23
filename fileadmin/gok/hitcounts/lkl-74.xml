@@ -2,24 +2,18 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">983dad5e-1</SESSIONVAR>
+<SESSIONVAR name="SID">032fcbce-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ir 343">ir 343</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="ir 345">ir 345</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ir 347">ir 347</SCANLINE>
-
     <SCANLINE hits="4" mnemonic="LKL" description="ir 350">ir 350</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="ir 351">ir 351</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="ir 352">ir 352</SCANLINE>
+    <SCANLINE hits="55" mnemonic="LKL" description="ir 352">ir 352</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="ir 353">ir 353</SCANLINE>
 
@@ -593,7 +587,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="it 374">it 374</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="it 375">it 375</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="it 375">it 375</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="it 377">it 377</SCANLINE>
 
@@ -1009,11 +1003,17 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="iue 666">iue 666</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="iue xxx">iue xxx</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="iuf">iuf</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="iuf 300">iuf 300</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ir+343" />
+<SCANPREV term="ir+350" />
 
 
-<SCANNEXT term="iue+666" />
+<SCANNEXT term="iuf+300" />
 
 </RESULT>

@@ -2,12 +2,58 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">2e402a09-1</SESSIONVAR>
+<SESSIONVAR name="SID">6dcb8e37-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 660.201.720">lca 660.201.720</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lca 662">lca 662</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="lca 663">lca 663</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 663 (fh)">lca 663 (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 716">lca 716</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="lca 760">lca 760</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 760 (fh)">lca 760 (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="lca 905">lca 905</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 920">lca 920</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca 926">lca 926</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca00.172 lma301.720">lca00.172 lma301.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca156.130.172">lca156.130.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca161.101.720">lca161.101.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca161.401.720">lca161.401.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca162.20">lca162.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca416.013.0172">lca416.013.0172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca460.170">lca460.170</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca462.510.172">lca462.510.172</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca560.901.720">lca560.901.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca561.017.729">lca561.017.729</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca561.501.720">lca561.501.720</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca563.017.20">lca563.017.20</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="lca565.017.20">lca565.017.20</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lca720.172.0">lca720.172.0</SCANLINE>
 
@@ -491,7 +537,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lce 6">lce 6</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lce 616 (fh)">lce 616 (fh)</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="lce 616">lce 616</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lce 664.003">lce 664.003</SCANLINE>
 
@@ -663,7 +709,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ld 0">ld 0</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="ld 000">ld 000</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="ld 000">ld 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ld 060">ld 060</SCANLINE>
 
@@ -839,7 +885,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ldf 080">ldf 080</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="ldf 090">ldf 090</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="ldf 090">ldf 090</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="ldf 100">ldf 100</SCANLINE>
 
@@ -847,7 +893,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="ldf 120">ldf 120</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="ldf 130">ldf 130</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="ldf 130">ldf 130</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ldf 150">ldf 150</SCANLINE>
 
@@ -963,57 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ldf 65066 ka m (fh)">ldf 65066 ka m (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ldf 65066 mex m (fh)">ldf 65066 mex m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf 65066 usa w (fh)">ldf 65066 usa w (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldf b (fh)">ldf b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi">ldi</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 107">ldi 107</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="ldi 140">ldi 140</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="ldi 150">ldi 150</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldi 170">ldi 170</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldi 180">ldi 180</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="ldi 190">ldi 190</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 200">ldi 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 200 a (fh)">ldi 200 a (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 300 m (fh)">ldi 300 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50 a (fh)">ldi 50 a (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ldi 50 k (fh)">ldi 50 k (fh)</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="ldi 500">ldi 500</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="ldi 50020 d k (fh)">ldi 50020 d k (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ldi 50020 d m (fh)">ldi 50020 d m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50041 pal k (fh)">ldi 50041 pal k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50041 soas k (fh)">ldi 50041 soas k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50046 isr k (fh)">ldi 50046 isr k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50046 vi k (fh)">ldi 50046 vi k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ldi 50066 usa k (fh)">ldi 50066 usa k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="lca720.172.0" />
+<SCANPREV term="lca+660.201.720" />
 
 
-<SCANNEXT term="ldi+50066+usa+k+(fh)" />
+<SCANNEXT term="ldf+65066+ka+m+(fh)" />
 
 </RESULT>
