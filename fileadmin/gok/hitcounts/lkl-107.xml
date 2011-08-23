@@ -2,12 +2,32 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0da13c75-3</SESSIONVAR>
+<SESSIONVAR name="SID">698b15b1-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ljl 060">ljl 060</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ljl 100">ljl 100</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ljl 100 d (fh)">ljl 100 d (fh)</SCANLINE>
+
+    <SCANLINE hits="62" mnemonic="LKL" description="ljl 110">ljl 110</SCANLINE>
+
+    <SCANLINE hits="14" mnemonic="LKL" description="ljl 120">ljl 120</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="ljl 130">ljl 130</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="ljl 140">ljl 140</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="ljl 150">ljl 150</SCANLINE>
+
+    <SCANLINE hits="32" mnemonic="LKL" description="ljl 160">ljl 160</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="ljl 300">ljl 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljl 300 k (fh)">ljl 300 k (fh)</SCANLINE>
 
@@ -301,7 +321,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="lm 013">lm 013</SCANLINE>
 
-    <SCANLINE hits="70" mnemonic="LKL" description="lm 020">lm 020</SCANLINE>
+    <SCANLINE hits="71" mnemonic="LKL" description="lm 020">lm 020</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="lm 022">lm 022</SCANLINE>
 
@@ -723,7 +743,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="lmb 125">lmb 125</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="lmb 126">lmb 126</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="lmb 126">lmb 126</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="lmb 127">lmb 127</SCANLINE>
 
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lmc12">lmc12</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="lmc16 po2 m (fh)">lmc16 po2 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lmc25 brd 222 (fh)">lmc25 brd 222 (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lmd">lmd</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lmd 00 i (fh)">lmd 00 i (fh)</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="lmd 000">lmd 000</SCANLINE>
-
-    <SCANLINE hits="39" mnemonic="LKL" description="lmd 010">lmd 010</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lmd 011">lmd 011</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="lmd 012">lmd 012</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="lmd 020">lmd 020</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="lmd 022">lmd 022</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ljl+300+k+(fh)" />
+<SCANPREV term="ljl+060" />
 
 
-<SCANNEXT term="lmd+022" />
+<SCANNEXT term="lmc12" />
 
 </RESULT>

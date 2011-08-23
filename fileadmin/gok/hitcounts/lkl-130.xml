@@ -2,12 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">c0c7ec40-3</SESSIONVAR>
+<SESSIONVAR name="SID">9556e6c8-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pxo 900">pxo 900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pxp 000">pxp 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pxp 100">pxp 100</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="pxp 150">pxp 150</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="pxp 200">pxp 200</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="pxp 300">pxp 300</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="pxp 400">pxp 400</SCANLINE>
+
+    <SCANLINE hits="18" mnemonic="LKL" description="pxp 500">pxp 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pxp 570">pxp 570</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="pxp 600">pxp 600</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="pxp 700">pxp 700</SCANLINE>
+
+    <SCANLINE hits="28" mnemonic="LKL" description="pxp 800">pxp 800</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="pxp 900">pxp 900</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pxr 000">pxr 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pxr 100">pxr 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pxr 150">pxr 150</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="pxr 200">pxr 200</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="pxr 300">pxr 300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pxr 400">pxr 400</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="pxr 500">pxr 500</SCANLINE>
 
@@ -205,7 +243,7 @@
 
     <SCANLINE hits="68" mnemonic="LKL" description="pyg 300">pyg 300</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="pyg 400">pyg 400</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="pyg 400">pyg 400</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="pyg 470">pyg 470</SCANLINE>
 
@@ -229,7 +267,7 @@
 
     <SCANLINE hits="34" mnemonic="LKL" description="pyg 720">pyg 720</SCANLINE>
 
-    <SCANLINE hits="275" mnemonic="LKL" description="pyg 750">pyg 750</SCANLINE>
+    <SCANLINE hits="276" mnemonic="LKL" description="pyg 750">pyg 750</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="pyg 780">pyg 780</SCANLINE>
 
@@ -971,49 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pz 41 naher osten">pz 41 naher osten</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pz 41 orient">pz 41 orient</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 41 ostas pz 7 aust pz 8 ozean">pz 41 ostas pz 7 aust pz 8 ozean</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pz 41 ostasien">pz 41 ostasien</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pz 41 suedasien">pz 41 suedasien</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 41 suedasien pz 41 suedostasien">pz 41 suedasien pz 41 suedostasien</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 41 suedostas qa rr">pz 41 suedostas qa rr</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pz 41 suedostasien">pz 41 suedostasien</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 41 suedostasien pz 46 china">pz 41 suedostasien pz 46 china</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 43 armenien">pz 43 armenien</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 43 kurd">pz 43 kurd</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 arabische welt">pz 45 arabische welt</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 aseam">pz 45 aseam</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 ind">pz 45 ind</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 mittlerer osten">pz 45 mittlerer osten</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 palaestina">pz 45 palaestina</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pz 45 palaestina pz 46 isr">pz 45 palaestina pz 46 isr</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45 palestina">pz 45 palestina</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 45palaest">pz 45palaest</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pz 46 afg">pz 46 afg</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pxr+500" />
+<SCANPREV term="pxo+900" />
 
 
-<SCANNEXT term="pz+46+afg" />
+<SCANNEXT term="pz+41+naher+osten" />
 
 </RESULT>

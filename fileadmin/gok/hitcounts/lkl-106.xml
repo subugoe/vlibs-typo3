@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">b9cea3ea-3</SESSIONVAR>
+<SESSIONVAR name="SID">5bc1884a-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="155" mnemonic="LKL" description="li 66 usa">li 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 66 usa lc 66 usa">li 66 usa lc 66 usa</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 66 usa li 66 kan pz 66 kan pz 66 usa">li 66 usa li 66 kan pz 66 kan pz 66 usa</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="li 66 usa nt 06 usa">li 66 usa nt 06 usa</SCANLINE>
+
+    <SCANLINE hits="55" mnemonic="LKL" description="li 66 usa pz 66 usa">li 66 usa pz 66 usa</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="li 7">li 7</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 7 aust">li 7 aust</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 83050 af k (fh)">li 83050 af k (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="li 880">li 880</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="li 88066 usa k (fh)">li 88066 usa k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 88066 usa m (fh)">li 88066 usa m (fh)</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="li 88066 usa w (fh)">li 88066 usa w (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="li 96070 au d (fh)">li 96070 au d (fh)</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="li 96070 au w (fh)">li 96070 au w (fh)</SCANLINE>
 
@@ -53,7 +79,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="lic 150">lic 150</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="lic 160">lic 160</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="lic 160">lic 160</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lic 170">lic 170</SCANLINE>
 
@@ -71,9 +97,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lic 25015 eg k (fh)">lic 25015 eg k (fh)</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="lic 450">lic 450</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lic 45020 d d (fh)">lic 45020 d d (fh)</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="lic 450">lic 450</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lic 45020 d m (fh)">lic 45020 d m (fh)</SCANLINE>
 
@@ -109,7 +133,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lid 222">lid 222</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="lid 230">lid 230</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="lid 230">lid 230</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="lid 240">lid 240</SCANLINE>
 
@@ -529,7 +553,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="lit 400">lit 400</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="lit 410">lit 410</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="lit 410">lit 410</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="lit 430">lit 430</SCANLINE>
 
@@ -609,7 +633,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="lix 490">lix 490</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="lix 500">lix 500</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="lix 500">lix 500</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lix 520">lix 520</SCANLINE>
 
@@ -619,7 +643,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="lix 560">lix 560</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="lix 570">lix 570</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="lix 570">lix 570</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lix 6010 e k (fh)">lix 6010 e k (fh)</SCANLINE>
 
@@ -827,13 +851,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 500 k (fh)">lje 500 k (fh)</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="lje 550">lje 550</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="lje 550">lje 550</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 55020 ddr d (fh)">lje 55020 ddr d (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="lje 55029 muenc m (fh)">lje 55029 muenc m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lje 55030 nds m (fh)">lje 55030 nds m (fh)</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="lje 55066 usa k (fh)">lje 55066 usa k (fh)</SCANLINE>
 
@@ -925,7 +947,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ljk 400">ljk 400</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="ljk 600">ljk 600</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="ljk 600">ljk 600</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ljk 60010 e d (fh)">ljk 60010 e d (fh)</SCANLINE>
 
@@ -961,8 +983,6 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljk 60026 nrw n (fh)">ljk 60026 nrw n (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="ljk 60030 nds m (fh)">ljk 60030 nds m (fh)</SCANLINE>
-
     <SCANLINE hits="1" mnemonic="LKL" description="ljk 60046 hong k (fh)">ljk 60046 hong k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljk 60066 usa a (fh)">ljk 60066 usa a (fh)</SCANLINE>
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ljl 100 d (fh)">ljl 100 d (fh)</SCANLINE>
 
-    <SCANLINE hits="62" mnemonic="LKL" description="ljl 110">ljl 110</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="ljl 120">ljl 120</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="ljl 130">ljl 130</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="ljl 140">ljl 140</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="ljl 150">ljl 150</SCANLINE>
-
-    <SCANLINE hits="31" mnemonic="LKL" description="ljl 160">ljl 160</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="ljl 300">ljl 300</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljl 300 k (fh)">ljl 300 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljl 300 m (fh)">ljl 300 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ljl 30016 gb m (fh)">ljl 30016 gb m (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="li+96070+au+w+(fh)" />
+<SCANPREV term="li+66+usa" />
 
 
-<SCANNEXT term="ljl+30016+gb+m+(fh)" />
+<SCANNEXT term="ljl+100+d+(fh)" />
 
 </RESULT>

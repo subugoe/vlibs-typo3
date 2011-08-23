@@ -2,12 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">875e1e67-1</SESSIONVAR>
+<SESSIONVAR name="SID">95a556cd-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 be a (fh)">qgd16 be a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 be k (fh)">qgd16 be k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 be m (fh)">qgd16 be m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 be p (fh)">qgd16 be p (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qgd16 fr 1 b (fh)">qgd16 fr 1 b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 1 cha k (fh)">qgd16 fr 1 cha k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="qgd16 fr 1 k (fh)">qgd16 fr 1 k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="qgd16 fr 1 m (fh)">qgd16 fr 1 m (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qgd16 fr 1 n (fh)">qgd16 fr 1 n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 1 sw a (fh)">qgd16 fr 1 sw a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 4 k (fh)">qgd16 fr 4 k (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qgd16 fr 5 k (fh)">qgd16 fr 5 k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 bre k (fh)">qgd16 fr 6 bre k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 bre n (fh)">qgd16 fr 6 bre n (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 brg k (fh)">qgd16 fr 6 brg k (fh)</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qgd16 fr 6 els a">qgd16 fr 6 els a</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qgd16 fr 6 els k (fh)">qgd16 fr 6 els k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 kor m (fh)">qgd16 fr 6 kor m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 lotr k (fh)">qgd16 fr 6 lotr k (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="qgd16 fr 6 ly k (fh)">qgd16 fr 6 ly k (fh)</SCANLINE>
 
@@ -143,7 +181,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="qge 220">qge 220</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="qge 221">qge 221</SCANLINE>
+    <SCANLINE hits="57" mnemonic="LKL" description="qge 221">qge 221</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="qge 225">qge 225</SCANLINE>
 
@@ -331,7 +369,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="qgf 390">qgf 390</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="qgf 400">qgf 400</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="qgf 400">qgf 400</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="qgf 500">qgf 500</SCANLINE>
 
@@ -859,7 +897,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="qgj 025">qgj 025</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="qgj 030">qgj 030</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="qgj 030">qgj 030</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="qgj 035">qgj 035</SCANLINE>
 
@@ -867,13 +905,13 @@
 
     <SCANLINE hits="82" mnemonic="LKL" description="qgj 100">qgj 100</SCANLINE>
 
-    <SCANLINE hits="136" mnemonic="LKL" description="qgj 120">qgj 120</SCANLINE>
+    <SCANLINE hits="137" mnemonic="LKL" description="qgj 120">qgj 120</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="qgj 150">qgj 150</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="qgj 170">qgj 170</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="qgj 190">qgj 190</SCANLINE>
+    <SCANLINE hits="31" mnemonic="LKL" description="qgj 190">qgj 190</SCANLINE>
 
     <SCANLINE hits="34" mnemonic="LKL" description="qgj 200">qgj 200</SCANLINE>
 
@@ -971,49 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="qgj46 pa k (fh)">qgj46 pa k (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj46 sas 6 kasch 4 m (fh)">qgj46 sas 6 kasch 4 m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj46 srl 1 k (fh)">qgj46 srl 1 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj46 srl 3 k (fh)">qgj46 srl 3 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj46 srl 7 k (fh)">qgj46 srl 7 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj46 srl a (fh)">qgj46 srl a (fh)</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="qgj46 srl k (fh)">qgj46 srl k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qgj95 inoz a (fh)">qgj95 inoz a (fh)</SCANLINE>
-
-    <SCANLINE hits="78" mnemonic="LKL" description="qgk">qgk</SCANLINE>
-
-    <SCANLINE hits="26" mnemonic="LKL" description="qgk 000">qgk 000</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="qgk 020">qgk 020</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="qgk 025">qgk 025</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="qgk 030">qgk 030</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="qgk 035">qgk 035</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qgk 050">qgk 050</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="qgk 100">qgk 100</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="qgk 200">qgk 200</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="qgk 300">qgk 300</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="qgk 400">qgk 400</SCANLINE>
-
-    <SCANLINE hits="37" mnemonic="LKL" description="qgk 500">qgk 500</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qgd16+fr+6+ly+k+(fh)" />
+<SCANPREV term="qgd16+be+a+(fh)" />
 
 
-<SCANNEXT term="qgk+500" />
+<SCANNEXT term="qgj46+pa+k+(fh)" />
 
 </RESULT>

@@ -2,12 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">946c2e62-3</SESSIONVAR>
+<SESSIONVAR name="SID">8d09c1ee-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vtq 300">vtq 300</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="vtr 000">vtr 000</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="vtr 100">vtr 100</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="vtr 200">vtr 200</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="vtr 300">vtr 300</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="vtr 400">vtr 400</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="vts 000">vts 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="vts 100">vts 100</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="vts 200">vts 200</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="vts 300">vts 300</SCANLINE>
+
+    <SCANLINE hits="11" mnemonic="LKL" description="vts 400">vts 400</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="vts 500">vts 500</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vts 600">vts 600</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="vts 700">vts 700</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="vts 800">vts 800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="vtt">vtt</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="vtt 000">vtt 000</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="vtt 100">vtt 100</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="vtt 200">vtt 200</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="vtt 500">vtt 500</SCANLINE>
 
@@ -37,7 +75,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="vtv 273">vtv 273</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="vtv 274">vtv 274</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="vtv 274">vtv 274</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="vtv 276">vtv 276</SCANLINE>
 
@@ -81,7 +119,7 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="vtz 000">vtz 000</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="vtz 100">vtz 100</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="vtz 100">vtz 100</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="vtz 200">vtz 200</SCANLINE>
 
@@ -155,7 +193,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vu vz">vu vz</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="vua 000">vua 000</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="vua 000">vua 000</SCANLINE>
 
     <SCANLINE hits="99" mnemonic="LKL" description="vv">vv</SCANLINE>
 
@@ -195,7 +233,7 @@
 
     <SCANLINE hits="173" mnemonic="LKL" description="vva 500">vva 500</SCANLINE>
 
-    <SCANLINE hits="95" mnemonic="LKL" description="vva 510">vva 510</SCANLINE>
+    <SCANLINE hits="96" mnemonic="LKL" description="vva 510">vva 510</SCANLINE>
 
     <SCANLINE hits="57" mnemonic="LKL" description="vva 520">vva 520</SCANLINE>
 
@@ -363,7 +401,7 @@
 
     <SCANLINE hits="154" mnemonic="LKL" description="vxu 700">vxu 700</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="vxu 800">vxu 800</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="vxu 800">vxu 800</SCANLINE>
 
     <SCANLINE hits="105" mnemonic="LKL" description="vxu 900">vxu 900</SCANLINE>
 
@@ -433,7 +471,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="vyb 540">vyb 540</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="vyb 600">vyb 600</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="vyb 600">vyb 600</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="vyb 610">vyb 610</SCANLINE>
 
@@ -445,7 +483,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="vyb 623">vyb 623</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="vyb 624">vyb 624</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="vyb 624">vyb 624</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="vyb 625">vyb 625</SCANLINE>
 
@@ -575,7 +613,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="vz uc">vz uc</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="vza 000">vza 000</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="vza 000">vza 000</SCANLINE>
 
     <SCANLINE hits="11" mnemonic="LKL" description="vzb 000">vzb 000</SCANLINE>
 
@@ -661,7 +699,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="vzb 260">vzb 260</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="vzb 270">vzb 270</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="vzb 270">vzb 270</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="vzb 280">vzb 280</SCANLINE>
 
@@ -706,6 +744,8 @@
     <SCANLINE hits="1" mnemonic="LKL" description="vzd 140">vzd 140</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="vzd 200">vzd 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="vzd 500">vzd 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="vzd k (fh)">vzd k (fh)</SCANLINE>
 
@@ -969,51 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="vzv 250">vzv 250</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 257">vzv 257</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vzv 259">vzv 259</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vzv 260">vzv 260</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 261">vzv 261</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vzv 265">vzv 265</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vzv 268">vzv 268</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 270">vzv 270</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 271">vzv 271</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 272">vzv 272</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vzv 273">vzv 273</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vzv 274">vzv 274</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="vzv 275">vzv 275</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 276">vzv 276</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 277">vzv 277</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="vzv 278">vzv 278</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="vzv 280">vzv 280</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="vzv 281">vzv 281</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 283">vzv 283</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="vzv 284">vzv 284</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="vzv 285">vzv 285</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="vtt+500" />
+<SCANPREV term="vtq+300" />
 
 
-<SCANNEXT term="vzv+285" />
+<SCANNEXT term="vzv+250" />
 
 </RESULT>

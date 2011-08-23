@@ -2,12 +2,26 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e205b89e-0</SESSIONVAR>
+<SESSIONVAR name="SID">762915b6-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kja 430">kja 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kja 435">kja 435</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kja 439">kja 439</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kja 500">kja 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kja 510">kja 510</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kja 515">kja 515</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kja 520">kja 520</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kja 530">kja 530</SCANLINE>
 
@@ -41,7 +55,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="kja 638">kja 638</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="kja 639">kja 639</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="kja 639">kja 639</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kja 640">kja 640</SCANLINE>
 
@@ -123,7 +137,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kjd 320">kjd 320</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="kjd 330">kjd 330</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="kjd 330">kjd 330</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kjd 331">kjd 331</SCANLINE>
 
@@ -455,13 +469,13 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="kjq 340">kjq 340</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="kjq 343">kjq 343</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="kjq 343">kjq 343</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kjq 350">kjq 350</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="kjq 351">kjq 351</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="kjq 351">kjq 351</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="kjq 352">kjq 352</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="kjq 352">kjq 352</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="kjq 353">kjq 353</SCANLINE>
 
@@ -673,7 +687,7 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="kjq 648">kjq 648</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="kjq 649">kjq 649</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="kjq 649">kjq 649</SCANLINE>
 
     <SCANLINE hits="89" mnemonic="LKL" description="kjq 650">kjq 650</SCANLINE>
 
@@ -681,13 +695,13 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="kjq 655">kjq 655</SCANLINE>
 
-    <SCANLINE hits="183" mnemonic="LKL" description="kjq 656">kjq 656</SCANLINE>
+    <SCANLINE hits="184" mnemonic="LKL" description="kjq 656">kjq 656</SCANLINE>
 
     <SCANLINE hits="7" mnemonic="LKL" description="kjq 657">kjq 657</SCANLINE>
 
     <SCANLINE hits="194" mnemonic="LKL" description="kjq 658">kjq 658</SCANLINE>
 
-    <SCANLINE hits="118" mnemonic="LKL" description="kjq 660">kjq 660</SCANLINE>
+    <SCANLINE hits="117" mnemonic="LKL" description="kjq 660">kjq 660</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kjq 663">kjq 663</SCANLINE>
 
@@ -703,9 +717,9 @@
 
     <SCANLINE hits="77" mnemonic="LKL" description="kjq 670">kjq 670</SCANLINE>
 
-    <SCANLINE hits="201" mnemonic="LKL" description="kjq 673">kjq 673</SCANLINE>
+    <SCANLINE hits="202" mnemonic="LKL" description="kjq 673">kjq 673</SCANLINE>
 
-    <SCANLINE hits="128" mnemonic="LKL" description="kjq 674">kjq 674</SCANLINE>
+    <SCANLINE hits="124" mnemonic="LKL" description="kjq 674">kjq 674</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="kjq 675">kjq 675</SCANLINE>
 
@@ -761,7 +775,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="kjs 260">kjs 260</SCANLINE>
 
-    <SCANLINE hits="41" mnemonic="LKL" description="kjs 300">kjs 300</SCANLINE>
+    <SCANLINE hits="42" mnemonic="LKL" description="kjs 300">kjs 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kjs 317">kjs 317</SCANLINE>
 
@@ -783,7 +797,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="kjs 351">kjs 351</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="kjs 352">kjs 352</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="kjs 352">kjs 352</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kjs 353">kjs 353</SCANLINE>
 
@@ -803,7 +817,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="kjs 381">kjs 381</SCANLINE>
 
-    <SCANLINE hits="40" mnemonic="LKL" description="kjs 382">kjs 382</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="kjs 382">kjs 382</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="kjs 383">kjs 383</SCANLINE>
 
@@ -887,11 +901,11 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="kjs 632">kjs 632</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="kjs 633">kjs 633</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="kjs 633">kjs 633</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="kjs 634">kjs 634</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="kjs 635">kjs 635</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="kjs 635">kjs 635</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="kjs 636">kjs 636</SCANLINE>
 
@@ -927,7 +941,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kjs 672">kjs 672</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="kjs 700">kjs 700</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="kjs 700">kjs 700</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kjs xxx">kjs xxx</SCANLINE>
 
@@ -995,25 +1009,11 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="kju 632">kju 632</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="kju 633">kju 633</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kju 635">kju 635</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kju 639">kju 639</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kju 640">kju 640</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="kju 646">kju 646</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="kju 656">kju 656</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="kju xxx">kju xxx</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kja+530" />
+<SCANPREV term="kja+430" />
 
 
-<SCANNEXT term="kju+xxx" />
+<SCANNEXT term="kju+632" />
 
 </RESULT>

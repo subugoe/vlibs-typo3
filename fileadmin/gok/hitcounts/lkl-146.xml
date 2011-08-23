@@ -2,12 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">87da758f-0</SESSIONVAR>
+<SESSIONVAR name="SID">5c67fbac-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="rdt 000">rdt 000</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="rdv">rdv</SCANLINE>
+
+    <SCANLINE hits="72" mnemonic="LKL" description="rdv 000">rdv 000</SCANLINE>
+
+    <SCANLINE hits="59" mnemonic="LKL" description="rdv 100">rdv 100</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="rdv 200">rdv 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv 240">rdv 240</SCANLINE>
+
+    <SCANLINE hits="29" mnemonic="LKL" description="rdv 400">rdv 400</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="rdv 420">rdv 420</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv 420 d">rdv 420 d</SCANLINE>
+
+    <SCANLINE hits="20" mnemonic="LKL" description="rdv 440">rdv 440</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="rdv d (fh)">rdv d (fh)</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="rdv k (fh)">rdv k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv y (fh)">rdv y (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv100 c">rdv100 c</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="rdv100 d">rdv100 d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv400 c">rdv400 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv400cl">rdv400cl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv400d">rdv400d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="rdv420 d">rdv420 d</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="rdvc">rdvc</SCANLINE>
 
@@ -43,7 +81,7 @@
 
     <SCANLINE hits="86" mnemonic="LKL" description="rf">rf</SCANLINE>
 
-    <SCANLINE hits="298" mnemonic="LKL" description="rf 000">rf 000</SCANLINE>
+    <SCANLINE hits="299" mnemonic="LKL" description="rf 000">rf 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rf a">rf a</SCANLINE>
 
@@ -157,13 +195,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="rfn 00">rfn 00</SCANLINE>
 
-    <SCANLINE hits="592" mnemonic="LKL" description="rfn 000">rfn 000</SCANLINE>
+    <SCANLINE hits="593" mnemonic="LKL" description="rfn 000">rfn 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rfn 100">rfn 100</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="rfn 150">rfn 150</SCANLINE>
 
-    <SCANLINE hits="152" mnemonic="LKL" description="rfn 200">rfn 200</SCANLINE>
+    <SCANLINE hits="154" mnemonic="LKL" description="rfn 200">rfn 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rfn 200 d">rfn 200 d</SCANLINE>
 
@@ -441,7 +479,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="rjkd rjm300 d">rjkd rjm300 d</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="rjl 000">rjl 000</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="rjl 000">rjl 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="rjl 170">rjl 170</SCANLINE>
 
@@ -745,7 +783,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="rnl">rnl</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="rnl 000">rnl 000</SCANLINE>
+    <SCANLINE hits="81" mnemonic="LKL" description="rnl 000">rnl 000</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="rnl 200">rnl 200</SCANLINE>
 
@@ -823,7 +861,7 @@
 
     <SCANLINE hits="61" mnemonic="LKL" description="ro">ro</SCANLINE>
 
-    <SCANLINE hits="329" mnemonic="LKL" description="ro 000">ro 000</SCANLINE>
+    <SCANLINE hits="330" mnemonic="LKL" description="ro 000">ro 000</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="ro c">ro c</SCANLINE>
 
@@ -971,49 +1009,11 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="rpc 320">rpc 320</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="rpc 340">rpc 340</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="rpc 360">rpc 360</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="rpc 380">rpc 380</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="rpc 385">rpc 385</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="rpc 390">rpc 390</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="rpc 394">rpc 394</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="rpc a">rpc a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rpc200 d rvc800 d">rpc200 d rvc800 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rpcc">rpcc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rpcz d">rpcz d</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="rpd 000">rpd 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="rpe">rpe</SCANLINE>
-
-    <SCANLINE hits="120" mnemonic="LKL" description="rpe 000">rpe 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="rpe d">rpe d</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="rpf 000">rpf 000</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="rpg">rpg</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="rpg 000">rpg 000</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="rpg 200">rpg 200</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="rpg 400">rpg 400</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="rdvc" />
+<SCANPREV term="rdt+000" />
 
 
-<SCANNEXT term="rpg+400" />
+<SCANNEXT term="rpc+320" />
 
 </RESULT>

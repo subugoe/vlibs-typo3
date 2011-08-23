@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">92985232-1</SESSIONVAR>
+<SESSIONVAR name="SID">b3e2efc9-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ejac 010">ejac 010</SCANLINE>
 
     <SCANLINE hits="54" mnemonic="LKL" description="ejac 050">ejac 050</SCANLINE>
 
@@ -179,7 +181,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ejb 040">ejb 040</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="ejb 060">ejb 060</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="ejb 060">ejb 060</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ejb 080">ejb 080</SCANLINE>
 
@@ -189,7 +191,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ejb xxx">ejb xxx</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="ejba 000">ejba 000</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="ejba 000">ejba 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ejba 010">ejba 010</SCANLINE>
 
@@ -381,7 +383,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ejcb 030">ejcb 030</SCANLINE>
 
-    <SCANLINE hits="37" mnemonic="LKL" description="ejcb 050">ejcb 050</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="ejcb 050">ejcb 050</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ejcb 060">ejcb 060</SCANLINE>
 
@@ -677,13 +679,13 @@
 
     <SCANLINE hits="13" mnemonic="LKL" description="ejdc 400">ejdc 400</SCANLINE>
 
-    <SCANLINE hits="30" mnemonic="LKL" description="ejdc 420">ejdc 420</SCANLINE>
+    <SCANLINE hits="31" mnemonic="LKL" description="ejdc 420">ejdc 420</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ejdc 450">ejdc 450</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ejdc 500">ejdc 500</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="ejdc 550">ejdc 550</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="ejdc 550">ejdc 550</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="ejdc 570">ejdc 570</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ejhc 990">ejhc 990</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="ejhd 000">ejhd 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="ejac+050" />
+<SCANPREV term="ejac+010" />
 
 
-<SCANNEXT term="ejhd+000" />
+<SCANNEXT term="ejhc+990" />
 
 </RESULT>

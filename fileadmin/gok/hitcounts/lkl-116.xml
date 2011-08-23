@@ -2,12 +2,34 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e3851d28-3</SESSIONVAR>
+<SESSIONVAR name="SID">69d380a4-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="24" mnemonic="LKL" description="nqg 200">nqg 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nqg 200 a">nqg 200 a</SCANLINE>
+
+    <SCANLINE hits="72" mnemonic="LKL" description="nqg 200 r">nqg 200 r</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="nqg 220">nqg 220</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="nqg 230">nqg 230</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nqg 240">nqg 240</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nqg 270">nqg 270</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="nqg 290">nqg 290</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nqg 300">nqg 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="nqg 320">nqg 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nqg 330">nqg 330</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="nqg 350">nqg 350</SCANLINE>
 
@@ -151,7 +173,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="nr 000">nr 000</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="nr 020">nr 020</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="nr 020">nr 020</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nr a (fh)">nr a (fh)</SCANLINE>
 
@@ -309,7 +331,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="nt 030">nt 030</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="nt 035">nt 035</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="nt 035">nt 035</SCANLINE>
 
     <SCANLINE hits="102" mnemonic="LKL" description="nt 040">nt 040</SCANLINE>
 
@@ -501,11 +523,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 094">nt 094</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="nt 110">nt 110</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="nt 110">nt 110</SCANLINE>
 
     <SCANLINE hits="29" mnemonic="LKL" description="nt 130">nt 130</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="nt 150">nt 150</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="nt 150">nt 150</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 16 gb">nt 16 gb</SCANLINE>
 
@@ -518,6 +540,8 @@
     <SCANLINE hits="1" mnemonic="LKL" description="nt 185">nt 185</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="nt 186">nt 186</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nt 190">nt 190</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 192">nt 192</SCANLINE>
 
@@ -543,7 +567,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="nt 295">nt 295</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="nt 300">nt 300</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="nt 300">nt 300</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="nt 310">nt 310</SCANLINE>
 
@@ -555,17 +579,19 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="nt 350">nt 350</SCANLINE>
 
-    <SCANLINE hits="362" mnemonic="LKL" description="nt 360">nt 360</SCANLINE>
+    <SCANLINE hits="370" mnemonic="LKL" description="nt 360">nt 360</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt 365">nt 365</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="nt 370">nt 370</SCANLINE>
+    <SCANLINE hits="37" mnemonic="LKL" description="nt 370">nt 370</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="nt 371">nt 371</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="nt 372">nt 372</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="nt 373">nt 373</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="nt 374">nt 374</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="nt 374">nt 374</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="nt 375">nt 375</SCANLINE>
 
@@ -621,7 +647,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 480">nt 480</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="nt 490">nt 490</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="nt 490">nt 490</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 495">nt 495</SCANLINE>
 
@@ -633,7 +659,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="nt 512">nt 512</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="nt 515">nt 515</SCANLINE>
+    <SCANLINE hits="51" mnemonic="LKL" description="nt 515">nt 515</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 520">nt 520</SCANLINE>
 
@@ -641,7 +667,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="nt 545">nt 545</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="nt 555">nt 555</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="nt 555">nt 555</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt 56 sau">nt 56 sau</SCANLINE>
 
@@ -651,7 +677,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 580">nt 580</SCANLINE>
 
-    <SCANLINE hits="40" mnemonic="LKL" description="nt 590">nt 590</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="nt 590">nt 590</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt 6 aust">nt 6 aust</SCANLINE>
 
@@ -659,7 +685,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="nt 600">nt 600</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="nt 610">nt 610</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="nt 610">nt 610</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 625">nt 625</SCANLINE>
 
@@ -695,7 +721,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 660">nt 660</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="nt 670">nt 670</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="nt 670">nt 670</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 680">nt 680</SCANLINE>
 
@@ -725,7 +751,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="nt 770">nt 770</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="nt 775">nt 775</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="nt 775">nt 775</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="nt 780">nt 780</SCANLINE>
 
@@ -733,7 +759,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="nt 790">nt 790</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="nt 800">nt 800</SCANLINE>
+    <SCANLINE hits="23" mnemonic="LKL" description="nt 800">nt 800</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="nt 810">nt 810</SCANLINE>
 
@@ -753,7 +779,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="nt 896">nt 896</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="nt 900">nt 900</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="nt 900">nt 900</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="nt 940">nt 940</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="nt06 oe n (fh)">nt06 oe n (fh)</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 oe r (fh)">nt06 oe r (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 oe u (fh)">nt06 oe u (fh)</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="nt06 oe900 s (fh)">nt06 oe900 s (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 oest">nt06 oest</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 po 055 s (fh)">nt06 po 055 s (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="nt06 po a">nt06 po a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 po b (fh)">nt06 po b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp 170 k (fh)">nt06 sp 170 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp 170 s (fh)">nt06 sp 170 s (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp 730 k (fh)">nt06 sp 730 k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp b">nt06 sp b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 sp b (fh)">nt06 sp b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="nt06 su 050 k (fh)">nt06 su 050 k (fh)</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="nqg+350" />
+<SCANPREV term="nqg+200" />
 
 
-<SCANNEXT term="nt06+su+050+k+(fh)" />
+<SCANNEXT term="nt06+oe+n+(fh)" />
 
 </RESULT>

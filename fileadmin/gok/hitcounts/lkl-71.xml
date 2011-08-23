@@ -2,18 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">1903c48b-3</SESSIONVAR>
+<SESSIONVAR name="SID">63d794ed-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ief xxx">ief xxx</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ieg">ieg</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ieg 330">ieg 330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ieg 331">ieg 331</SCANLINE>
 
@@ -919,7 +913,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="il 351">il 351</SCANLINE>
 
-    <SCANLINE hits="106" mnemonic="LKL" description="il 352">il 352</SCANLINE>
+    <SCANLINE hits="107" mnemonic="LKL" description="il 352">il 352</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="il 353">il 353</SCANLINE>
 
@@ -999,6 +993,8 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="il 440">il 440</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="il 441">il 441</SCANLINE>
+
     <SCANLINE hits="2" mnemonic="LKL" description="il 442">il 442</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="il 444">il 444</SCANLINE>
@@ -1009,11 +1005,15 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="il 5">il 5</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="il 5 c">il 5 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="il 5 c1">il 5 c1</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ief+xxx" />
+<SCANPREV term="ieg+331" />
 
 
-<SCANNEXT term="il+5" />
+<SCANNEXT term="il+5+c1" />
 
 </RESULT>

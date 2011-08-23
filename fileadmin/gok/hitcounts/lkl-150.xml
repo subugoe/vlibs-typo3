@@ -2,12 +2,50 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">cb0faed5-3</SESSIONVAR>
+<SESSIONVAR name="SID">7a0a0693-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="sti 450">sti 450</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stj">stj</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="stj 000">stj 000</SCANLINE>
+
+    <SCANLINE hits="25" mnemonic="LKL" description="stj 200">stj 200</SCANLINE>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="stj 220">stj 220</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stj 230">stj 230</SCANLINE>
+
+    <SCANLINE hits="17" mnemonic="LKL" description="stj 250">stj 250</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="stj 300">stj 300</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="stj 400">stj 400</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stj 450">stj 450</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="stj 500">stj 500</SCANLINE>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="stj 550">stj 550</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="stj 600">stj 600</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="stj 650">stj 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="stjc">stjc</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="stk 000">stk 000</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="stk 200">stk 200</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="stk 250">stk 250</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="stk 300">stk 300</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="stk 350">stk 350</SCANLINE>
 
@@ -735,7 +773,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="sx 0,00">sx 0,00</SCANLINE>
 
-    <SCANLINE hits="788" mnemonic="LKL" description="sx 000">sx 000</SCANLINE>
+    <SCANLINE hits="789" mnemonic="LKL" description="sx 000">sx 000</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="sx a">sx a</SCANLINE>
 
@@ -971,49 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="sxl400 d1">sxl400 d1</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl400 sxn100">sxl400 sxn100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl400 zc">sxl400 zc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl400d">sxl400d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl400q srf260d">sxl400q srf260d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl420 c">sxl420 c</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxl420 d">sxl420 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl440 c">sxl440 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxl440 d1">sxl440 d1</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxl900 d1">sxl900 d1</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxla1">sxla1</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="sxlc">sxlc</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="sxld1">sxld1</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="sxn">sxn</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="sxn 000">sxn 000</SCANLINE>
-
-    <SCANLINE hits="100" mnemonic="LKL" description="sxn 100">sxn 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxn 100 c">sxn 100 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxn 100 d">sxn 100 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="sxn 100 z">sxn 100 z</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="sxn 120">sxn 120</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="stk+350" />
+<SCANPREV term="sti+450" />
 
 
-<SCANNEXT term="sxn+120" />
+<SCANNEXT term="sxl400+d1" />
 
 </RESULT>

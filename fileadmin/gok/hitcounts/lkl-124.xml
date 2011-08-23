@@ -2,12 +2,38 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">81377c08-0</SESSIONVAR>
+<SESSIONVAR name="SID">0402c0a9-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 612">pnr 612</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pnr 6120">pnr 6120</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 613">pnr 613</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6140">pnr 6140</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 615">pnr 615</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 617">pnr 617</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6245">pnr 6245</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 626">pnr 626</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pnr 630">pnr 630</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6300">pnr 6300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 635">pnr 635</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="pnr 636">pnr 636</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pnr 6363">pnr 6363</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pnr 6395">pnr 6395</SCANLINE>
 
@@ -695,7 +721,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnu 3205">pnu 3205</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="pnu 3275">pnu 3275</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="pnu 327">pnu 327</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnu 340">pnu 340</SCANLINE>
 
@@ -793,9 +819,9 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="pnw 2312">pnw 2312</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="pnw 233">pnw 233</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="pnw 233">pnw 233</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="pnw 2330">pnw 2330</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="pnw 2330">pnw 2330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnw 2335">pnw 2335</SCANLINE>
 
@@ -865,11 +891,11 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="pnw 2676">pnw 2676</SCANLINE>
 
-    <SCANLINE hits="280" mnemonic="LKL" description="pnw 270">pnw 270</SCANLINE>
+    <SCANLINE hits="281" mnemonic="LKL" description="pnw 270">pnw 270</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnw 2701">pnw 2701</SCANLINE>
 
-    <SCANLINE hits="255" mnemonic="LKL" description="pnw 2706">pnw 2706</SCANLINE>
+    <SCANLINE hits="254" mnemonic="LKL" description="pnw 2706">pnw 2706</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="pnw 2707">pnw 2707</SCANLINE>
 
@@ -983,37 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pnw 790">pnw 790</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="pnw 800">pnw 800</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnw 805">pnw 805</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="pnw 810">pnw 810</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnw 8100">pnw 8100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnw 815">pnw 815</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnw 820">pnw 820</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnw 823">pnw 823</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pnw 8250">pnw 8250</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnw 8260">pnw 8260</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pnw 829">pnw 829</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnw 8290">pnw 8290</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pnw 8295">pnw 8295</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pnw 830">pnw 830</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pnr+6395" />
+<SCANPREV term="pnr+612" />
 
 
-<SCANNEXT term="pnw+830" />
+<SCANNEXT term="pnw+790" />
 
 </RESULT>

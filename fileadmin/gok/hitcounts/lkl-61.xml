@@ -2,18 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">bfdb363f-3</SESSIONVAR>
+<SESSIONVAR name="SID">f0d2dce9-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="he 321">he 321</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="he 325">he 325</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="he 330">he 330</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="he 335">he 335</SCANLINE>
 
@@ -469,7 +463,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hh 558">hh 558</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="hh 559">hh 559</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="hh 559">hh 559</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="hh 560">hh 560</SCANLINE>
 
@@ -713,7 +707,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="hi 552">hi 552</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="hi 554">hi 554</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="hi 554">hi 554</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="hi 555">hi 555</SCANLINE>
 
@@ -815,7 +809,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="him 351">him 351</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="him 357">him 357</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="him 357">him 357</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="him 359">him 359</SCANLINE>
 
@@ -1009,11 +1003,17 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="hin2 c">hin2 c</SCANLINE>
 
+    <SCANLINE hits="3" mnemonic="LKL" description="hin2 c1">hin2 c1</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hin3 z88 c2">hin3 z88 c2</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="hin4 t1">hin4 t1</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="he+321" />
+<SCANPREV term="he+335" />
 
 
-<SCANNEXT term="hin2+c" />
+<SCANNEXT term="hin4+t1" />
 
 </RESULT>

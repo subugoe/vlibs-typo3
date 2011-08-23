@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">74928af8-3</SESSIONVAR>
+<SESSIONVAR name="SID">645d2014-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="kbi 200">kbi 200</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kbi 400">kbi 400</SCANLINE>
 
@@ -270,6 +272,10 @@
     <SCANLINE hits="8" mnemonic="LKL" description="kca 400">kca 400</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kca 430">kca 430</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kca 431">kca 431</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kca 433">kca 433</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="kca 435">kca 435</SCANLINE>
 
@@ -737,6 +743,8 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="kce 532">kce 532</SCANLINE>
 
+    <SCANLINE hits="2" mnemonic="LKL" description="kce 533">kce 533</SCANLINE>
+
     <SCANLINE hits="1" mnemonic="LKL" description="kce 535">kce 535</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="kce 538">kce 538</SCANLINE>
@@ -1001,19 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="kcg 545">kcg 545</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="kcg 546">kcg 546</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="kcg 548">kcg 548</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="kcg 549">kcg 549</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="kcg 551">kcg 551</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kbi+400" />
+<SCANPREV term="kbi+200" />
 
 
-<SCANNEXT term="kcg+551" />
+<SCANNEXT term="kcg+545" />
 
 </RESULT>

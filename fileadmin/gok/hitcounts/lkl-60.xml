@@ -2,18 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8c5b60cf-1</SESSIONVAR>
+<SESSIONVAR name="SID">529a9e1b-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy schu l (fh)">gy schu l (fh)</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="gy schu m (fh)">gy schu m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="gy schue a (fh)">gy schue a (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="gy schue f (fh)">gy schue f (fh)</SCANLINE>
 
@@ -263,7 +257,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="h 2 c2">h 2 c2</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="h 200">h 200</SCANLINE>
+    <SCANLINE hits="81" mnemonic="LKL" description="h 200">h 200</SCANLINE>
 
     <SCANLINE hits="109" mnemonic="LKL" description="h 200 a">h 200 a</SCANLINE>
 
@@ -325,7 +319,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="h 30">h 30</SCANLINE>
 
-    <SCANLINE hits="672" mnemonic="LKL" description="h 300">h 300</SCANLINE>
+    <SCANLINE hits="673" mnemonic="LKL" description="h 300">h 300</SCANLINE>
 
     <SCANLINE hits="163" mnemonic="LKL" description="h 300 a">h 300 a</SCANLINE>
 
@@ -365,9 +359,9 @@
 
     <SCANLINE hits="117" mnemonic="LKL" description="h 319">h 319</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="h 320">h 320</SCANLINE>
+    <SCANLINE hits="47" mnemonic="LKL" description="h 320">h 320</SCANLINE>
 
-    <SCANLINE hits="110" mnemonic="LKL" description="h 321">h 321</SCANLINE>
+    <SCANLINE hits="111" mnemonic="LKL" description="h 321">h 321</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="h 322">h 322</SCANLINE>
 
@@ -453,7 +447,7 @@
 
     <SCANLINE hits="61" mnemonic="LKL" description="h 375">h 375</SCANLINE>
 
-    <SCANLINE hits="147" mnemonic="LKL" description="h 376">h 376</SCANLINE>
+    <SCANLINE hits="148" mnemonic="LKL" description="h 376">h 376</SCANLINE>
 
     <SCANLINE hits="267" mnemonic="LKL" description="h 377">h 377</SCANLINE>
 
@@ -467,7 +461,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="h 385">h 385</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="h 387">h 387</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="h 387">h 387</SCANLINE>
 
     <SCANLINE hits="26" mnemonic="LKL" description="h 390">h 390</SCANLINE>
 
@@ -593,7 +587,7 @@
 
     <SCANLINE hits="431" mnemonic="LKL" description="h 510">h 510</SCANLINE>
 
-    <SCANLINE hits="261" mnemonic="LKL" description="h 512">h 512</SCANLINE>
+    <SCANLINE hits="262" mnemonic="LKL" description="h 512">h 512</SCANLINE>
 
     <SCANLINE hits="188" mnemonic="LKL" description="h 513">h 513</SCANLINE>
 
@@ -887,7 +881,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="hc 320">hc 320</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="hc 321">hc 321</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="hc 321">hc 321</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="hc 323">hc 323</SCANLINE>
 
@@ -1001,7 +995,7 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="he 319">he 319</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="he 320">he 320</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="he 320">he 320</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="he 321">he 321</SCANLINE>
 
@@ -1009,11 +1003,17 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="he 330">he 330</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="he 335">he 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="he 337">he 337</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="he 350">he 350</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="gy+schu+l+(fh)" />
+<SCANPREV term="gy+schue+f+(fh)" />
 
 
-<SCANNEXT term="he+330" />
+<SCANNEXT term="he+350" />
 
 </RESULT>

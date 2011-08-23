@@ -2,7 +2,7 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">8d34fd72-3</SESSIONVAR>
+<SESSIONVAR name="SID">a2494caa-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
@@ -397,7 +397,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="agc">agc</SCANLINE>
 
-    <SCANLINE hits="405" mnemonic="LKL" description="agc 000">agc 000</SCANLINE>
+    <SCANLINE hits="406" mnemonic="LKL" description="agc 000">agc 000</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="agc 100">agc 100</SCANLINE>
 
@@ -433,11 +433,11 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="agd 500">agd 500</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="agd 550">agd 550</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="agd 550">agd 550</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="age">age</SCANLINE>
 
-    <SCANLINE hits="118" mnemonic="LKL" description="age 000">age 000</SCANLINE>
+    <SCANLINE hits="119" mnemonic="LKL" description="age 000">age 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="age d (fh)">age d (fh)</SCANLINE>
 
@@ -477,7 +477,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="agl">agl</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="agl 000">agl 000</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="agl 000">agl 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="agl m (fh)">agl m (fh)</SCANLINE>
 
@@ -759,7 +759,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="aha (fh)">aha (fh)</SCANLINE>
 
-    <SCANLINE hits="239" mnemonic="LKL" description="aha 000">aha 000</SCANLINE>
+    <SCANLINE hits="240" mnemonic="LKL" description="aha 000">aha 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aha 010">aha 010</SCANLINE>
 
@@ -771,7 +771,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aha 109">aha 109</SCANLINE>
 
-    <SCANLINE hits="97" mnemonic="LKL" description="aha 200">aha 200</SCANLINE>
+    <SCANLINE hits="98" mnemonic="LKL" description="aha 200">aha 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aha 240">aha 240</SCANLINE>
 
@@ -905,13 +905,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ahc 20">ahc 20</SCANLINE>
 
-    <SCANLINE hits="1155" mnemonic="LKL" description="ahc 200">ahc 200</SCANLINE>
+    <SCANLINE hits="1158" mnemonic="LKL" description="ahc 200">ahc 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ahc 200 d">ahc 200 d</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ahc 200 d ahk 500 d">ahc 200 d ahk 500 d</SCANLINE>
 
-    <SCANLINE hits="62" mnemonic="LKL" description="ahc 210">ahc 210</SCANLINE>
+    <SCANLINE hits="64" mnemonic="LKL" description="ahc 210">ahc 210</SCANLINE>
 
     <SCANLINE hits="35" mnemonic="LKL" description="ahc 220">ahc 220</SCANLINE>
 
@@ -919,7 +919,7 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="ahc 230">ahc 230</SCANLINE>
 
-    <SCANLINE hits="151" mnemonic="LKL" description="ahc 240">ahc 240</SCANLINE>
+    <SCANLINE hits="153" mnemonic="LKL" description="ahc 240">ahc 240</SCANLINE>
 
     <SCANLINE hits="21" mnemonic="LKL" description="ahc 250">ahc 250</SCANLINE>
 
@@ -957,7 +957,7 @@
 
     <SCANLINE hits="228" mnemonic="LKL" description="ahd 100">ahd 100</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="ahd 110">ahd 110</SCANLINE>
+    <SCANLINE hits="34" mnemonic="LKL" description="ahd 110">ahd 110</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ahd 110 d">ahd 110 d</SCANLINE>
 
@@ -977,7 +977,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ahd 2 k (fh)">ahd 2 k (fh)</SCANLINE>
 
-    <SCANLINE hits="484" mnemonic="LKL" description="ahd 200">ahd 200</SCANLINE>
+    <SCANLINE hits="486" mnemonic="LKL" description="ahd 200">ahd 200</SCANLINE>
 
     <SCANLINE hits="46" mnemonic="LKL" description="ahd 210">ahd 210</SCANLINE>
 
@@ -999,7 +999,7 @@
 
     <SCANLINE hits="31" mnemonic="LKL" description="ahd 250">ahd 250</SCANLINE>
 
-    <SCANLINE hits="22" mnemonic="LKL" description="ahd 260">ahd 260</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="ahd 260">ahd 260</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="ahd 270">ahd 270</SCANLINE>
 

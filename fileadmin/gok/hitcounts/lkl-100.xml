@@ -2,12 +2,32 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">16ee19b9-0</SESSIONVAR>
+<SESSIONVAR name="SID">24a42048-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kv 370">kv 370</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kv 376">kv 376</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kv 380">kv 380</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kv 383">kv 383</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kv 500">kv 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kv 530">kv 530</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="kv 531">kv 531</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kv 533">kv 533</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kv 534">kv 534</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="kv 539">kv 539</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="kv 700">kv 700</SCANLINE>
 
@@ -989,31 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="lbo 130">lbo 130</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="lbo 140">lbo 140</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lbo 145">lbo 145</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 14516 fr m (fh)">lbo 14516 fr m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 15016 fr m (fh)">lbo 15016 fr m (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 220">lbo 220</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 230">lbo 230</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="lbo 350">lbo 350</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="lbo 35016 gb k (fh)">lbo 35016 gb k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 35016 gb n (fh)">lbo 35016 gb n (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="lbo 410">lbo 410</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="kv+700" />
+<SCANPREV term="kv+370" />
 
 
-<SCANNEXT term="lbo+410" />
+<SCANNEXT term="lbo+130" />
 
 </RESULT>

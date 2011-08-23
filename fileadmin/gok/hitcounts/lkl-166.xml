@@ -2,12 +2,52 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">0560afd7-1</SESSIONVAR>
+<SESSIONVAR name="SID">a9022a62-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwi16 gb m (fh)">wwi16 gb m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwi25 brd k (fh)">wwi25 brd k (fh)</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="wwj">wwj</SCANLINE>
+
+    <SCANLINE hits="37" mnemonic="LKL" description="wwj 000">wwj 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwj a (fh)">wwj a (fh)</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="wwj b (fh)">wwj b (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwj16 ir m (fh)">wwj16 ir m (fh)</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="wwk 000">wwk 000</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="wwk k (fh)">wwk k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwk m (fh)">wwk m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwk11 me g (fh)">wwk11 me g (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwk16 it k (fh)">wwk16 it k (fh)</SCANLINE>
+
+    <SCANLINE hits="15" mnemonic="LKL" description="wwl 000">wwl 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwl k (fh)">wwl k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwl11 me k (fh)">wwl11 me k (fh)</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="wwm">wwm</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwm 00">wwm 00</SCANLINE>
+
+    <SCANLINE hits="13" mnemonic="LKL" description="wwm 000">wwm 000</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="wwm k (fh)">wwm k (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="wwm m (fh)">wwm m (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="wwn">wwn</SCANLINE>
 
@@ -945,7 +985,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="wzu n (fh)">wzu n (fh)</SCANLINE>
 
-    <SCANLINE hits="14942" mnemonic="LKL" description="x">x</SCANLINE>
+    <SCANLINE hits="14941" mnemonic="LKL" description="x">x</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="x wvr">x wvr</SCANLINE>
 
@@ -969,51 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="xa hs">xa hs</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="xa422">xa422</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="xai">xai</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="xb">xb</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="xba">xba</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="xbf">xbf</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="xbf692m">xbf692m</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="xbp">xbp</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="xc">xc</SCANLINE>
-
-    <SCANLINE hits="21" mnemonic="LKL" description="xca">xca</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="xcn">xcn</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="xcn a">xcn a</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="xda">xda</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="xda a">xda a</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="xdn">xdn</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="xe">xe</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="xe a">xe a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="xez">xez</SCANLINE>
-
-    <SCANLINE hits="15" mnemonic="LKL" description="xfa">xfa</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="xfu">xfu</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="xha">xha</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="wwn" />
+<SCANPREV term="wwi16+gb+m+(fh)" />
 
 
-<SCANNEXT term="xha" />
+<SCANNEXT term="xa+hs" />
 
 </RESULT>

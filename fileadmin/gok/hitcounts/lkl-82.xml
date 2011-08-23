@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">e7528855-1</SESSIONVAR>
+<SESSIONVAR name="SID">17c11a13-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="12" mnemonic="LKL" description="jn 351">jn 351</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jn 352">jn 352</SCANLINE>
 
@@ -99,7 +101,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jo 250">jo 250</SCANLINE>
 
-    <SCANLINE hits="105" mnemonic="LKL" description="jo 300">jo 300</SCANLINE>
+    <SCANLINE hits="106" mnemonic="LKL" description="jo 300">jo 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jo 306">jo 306</SCANLINE>
 
@@ -117,7 +119,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="jo 327">jo 327</SCANLINE>
 
-    <SCANLINE hits="35" mnemonic="LKL" description="jo 330">jo 330</SCANLINE>
+    <SCANLINE hits="36" mnemonic="LKL" description="jo 330">jo 330</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jo 331">jo 331</SCANLINE>
 
@@ -723,7 +725,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="joj 240">joj 240</SCANLINE>
 
-    <SCANLINE hits="140" mnemonic="LKL" description="joj 300">joj 300</SCANLINE>
+    <SCANLINE hits="141" mnemonic="LKL" description="joj 300">joj 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="joj 303">joj 303</SCANLINE>
 
@@ -731,7 +733,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="joj 319">joj 319</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="joj 320">joj 320</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="joj 320">joj 320</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="joj 321">joj 321</SCANLINE>
 
@@ -739,7 +741,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="joj 324">joj 324</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="joj 330">joj 330</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="joj 330">joj 330</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="joj 331">joj 331</SCANLINE>
 
@@ -771,7 +773,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="joj 354">joj 354</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="joj 357">joj 357</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="joj 357">joj 357</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="joj 358">joj 358</SCANLINE>
 
@@ -811,7 +813,7 @@
 
     <SCANLINE hits="17" mnemonic="LKL" description="joj 431">joj 431</SCANLINE>
 
-    <SCANLINE hits="51" mnemonic="LKL" description="joj 432">joj 432</SCANLINE>
+    <SCANLINE hits="52" mnemonic="LKL" description="joj 432">joj 432</SCANLINE>
 
     <SCANLINE hits="15" mnemonic="LKL" description="joj 433">joj 433</SCANLINE>
 
@@ -921,7 +923,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="joj 572">joj 572</SCANLINE>
 
-    <SCANLINE hits="48" mnemonic="LKL" description="joj 580">joj 580</SCANLINE>
+    <SCANLINE hits="49" mnemonic="LKL" description="joj 580">joj 580</SCANLINE>
 
     <SCANLINE hits="253" mnemonic="LKL" description="joj 600">joj 600</SCANLINE>
 
@@ -935,7 +937,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="joj 631">joj 631</SCANLINE>
 
-    <SCANLINE hits="172" mnemonic="LKL" description="joj 632">joj 632</SCANLINE>
+    <SCANLINE hits="175" mnemonic="LKL" description="joj 632">joj 632</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="joj 633">joj 633</SCANLINE>
 
@@ -943,7 +945,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="joj 635">joj 635</SCANLINE>
 
-    <SCANLINE hits="89" mnemonic="LKL" description="joj 636">joj 636</SCANLINE>
+    <SCANLINE hits="92" mnemonic="LKL" description="joj 636">joj 636</SCANLINE>
 
     <SCANLINE hits="91" mnemonic="LKL" description="joj 637">joj 637</SCANLINE>
 
@@ -953,7 +955,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="joj 640">joj 640</SCANLINE>
 
-    <SCANLINE hits="41" mnemonic="LKL" description="joj 641">joj 641</SCANLINE>
+    <SCANLINE hits="42" mnemonic="LKL" description="joj 641">joj 641</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="joj 642">joj 642</SCANLINE>
 
@@ -965,9 +967,9 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="joj 646">joj 646</SCANLINE>
 
-    <SCANLINE hits="52" mnemonic="LKL" description="joj 648">joj 648</SCANLINE>
+    <SCANLINE hits="54" mnemonic="LKL" description="joj 648">joj 648</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="joj 649">joj 649</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="joj 649">joj 649</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="joj 651">joj 651</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jok 240">jok 240</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="jok 300">jok 300</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jn+352" />
+<SCANPREV term="jn+351" />
 
 
-<SCANNEXT term="jok+300" />
+<SCANNEXT term="jok+240" />
 
 </RESULT>

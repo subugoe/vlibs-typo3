@@ -2,12 +2,14 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">5d3fb7f4-1</SESSIONVAR>
+<SESSIONVAR name="SID">e4fd67e4-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="jos 430">jos 430</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="jos 431">jos 431</SCANLINE>
 
@@ -95,7 +97,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="jos 632">jos 632</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="jos 634">jos 634</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="jos 634">jos 634</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="jos xxx">jos xxx</SCANLINE>
 
@@ -171,7 +173,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jot 356">jot 356</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="jot 357">jot 357</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="jot 357">jot 357</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="jot 358">jot 358</SCANLINE>
 
@@ -881,7 +883,7 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="jpc 431">jpc 431</SCANLINE>
 
-    <SCANLINE hits="132" mnemonic="LKL" description="jpc 432">jpc 432</SCANLINE>
+    <SCANLINE hits="133" mnemonic="LKL" description="jpc 432">jpc 432</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="jpc 433">jpc 433</SCANLINE>
 
@@ -903,7 +905,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="jpc 442">jpc 442</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="jpc 445">jpc 445</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="jpc 445">jpc 445</SCANLINE>
 
     <SCANLINE hits="12" mnemonic="LKL" description="jpc 446">jpc 446</SCANLINE>
 
@@ -1007,13 +1009,11 @@
 
     <SCANLINE hits="26" mnemonic="LKL" description="jpc 580">jpc 580</SCANLINE>
 
-    <SCANLINE hits="63" mnemonic="LKL" description="jpc 600">jpc 600</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="jos+431" />
+<SCANPREV term="jos+430" />
 
 
-<SCANNEXT term="jpc+600" />
+<SCANNEXT term="jpc+580" />
 
 </RESULT>
