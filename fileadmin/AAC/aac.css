@@ -165,8 +165,11 @@ abbr, acronym {
 	cursor: help;
 }
 
-/* Make elements invisible without really removing them,
-so they remain available to screen readers. */
+/*
+Make elements invisible without really removing them,
+so they remain available to screen readers. Make links inside those elements
+visible when they're tabbed to.
+*/
 .invisible {
 	position: absolute;
 	left: -9999em;
@@ -174,6 +177,16 @@ so they remain available to screen readers. */
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
+}
+
+.invisible a:focus, .invisible a:active {
+	display: block;
+	position: absolute;
+	left: 10000em;
+	top: 1em;
+	width: auto;
+	height: auto;
+	white-space: nowrap;
 }
 
 
