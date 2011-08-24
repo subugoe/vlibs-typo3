@@ -1,8 +1,8 @@
 # set <base> URL
-[globalVar = TSFE:page|tx_https_is_https = 0]
-   config.baseURL = http
-[else]
+[globalString =_SERVER|HTTPS=on]
    config.baseURL = https
+[else]
+   config.baseURL = http
 [global]
 config.baseURL := appendString(://vlib-aac.sub.uni-goettingen.de/)
 
