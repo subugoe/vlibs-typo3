@@ -523,6 +523,7 @@ a.languageSwitcher:hover {
 
 #pazpar2 #pz2-termLists {
 	font-size: 12px;
+	width: 220px;
 }
 
 #pazpar2 #pz2-termLists li  {
