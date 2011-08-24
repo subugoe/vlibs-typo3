@@ -1,5 +1,10 @@
 # set <base> URL
-config.baseURL = http://vlib.sub.uni-goettingen.de/vlib-test/
+[globalVar = TSFE:page|tx_https_is_https = 0]
+   config.baseURL = http
+[else]
+   config.baseURL = https
+[global]
+config.baseURL := appendString(://vlib-aac.sub.uni-goettingen.de/)
 
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
