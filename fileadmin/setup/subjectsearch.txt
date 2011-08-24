@@ -10,10 +10,10 @@ plugin.tx_pazpar2.settings.allowExtendedSearch = 0
 page.CSS_inlineStyle (
 .pz2-mainForm {
   position: absolute;
-  top: -61px;
+  top: -49px;
   right: 0px;
 }
 .pz2-mainForm input.pz2-searchField {
-  width: 350px;
+  width: 250px;
 }
 )
