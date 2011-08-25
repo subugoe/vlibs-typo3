@@ -2,20 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6cc64885-1</SESSIONVAR>
+<SESSIONVAR name="SID">bf36bc0f-1</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ibj 331">ibj 331</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ibj 333">ibj 333</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ibj 340">ibj 340</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="ibj 350">ibj 350</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ibj 352">ibj 352</SCANLINE>
 
@@ -401,7 +393,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibm 559">ibm 559</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="ibm 560">ibm 560</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="ibm 560">ibm 560</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ibm 570">ibm 570</SCANLINE>
 
@@ -783,13 +775,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibw 250">ibw 250</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="ibw 300">ibw 300</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="ibw 300">ibw 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ibw 303">ibw 303</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="ibw 317">ibw 317</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="ibw 319">ibw 319</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="ibw 319">ibw 319</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ibw 320">ibw 320</SCANLINE>
 
@@ -959,7 +951,7 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="ibw 600">ibw 600</SCANLINE>
 
-    <SCANLINE hits="324" mnemonic="LKL" description="ibw 610">ibw 610</SCANLINE>
+    <SCANLINE hits="325" mnemonic="LKL" description="ibw 610">ibw 610</SCANLINE>
 
     <SCANLINE hits="10" mnemonic="LKL" description="ibw 620">ibw 620</SCANLINE>
 
@@ -1009,11 +1001,19 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="iby 430">iby 430</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="iby xxx">iby xxx</SCANLINE>
+
+    <SCANLINE hits="2575" mnemonic="LKL" description="ic">ic</SCANLINE>
+
+    <SCANLINE hits="88" mnemonic="LKL" description="ic 000">ic 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="ic 17">ic 17</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ibj+331" />
+<SCANPREV term="ibj+352" />
 
 
-<SCANNEXT term="iby+430" />
+<SCANNEXT term="ic+17" />
 
 </RESULT>

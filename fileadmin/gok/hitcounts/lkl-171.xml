@@ -2,12 +2,94 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">30c8b9ee-0</SESSIONVAR>
+<SESSIONVAR name="SID">4a08d355-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme ld">zme ld</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme ld z">zme ld z</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme lg">zme lg</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme lg a">zme lg a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme ru">zme ru</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme260 c">zme260 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zme280 d">zme280 d</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmea">zmea</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmea zu a">zmea zu a</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="zmec">zmec</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmec s c su">zmec s c su</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmec s c su s c su">zmec s c su s c su</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmec sgc200 c">zmec sgc200 c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmec sz c">zmec sz c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmec zle200 c rvsc">zmec zle200 c rvsc</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="zmec zm c rvsc">zmec zm c rvsc</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmec zm d rvsd">zmec zm d rvsd</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="zmec zu c">zmec zu c</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="zmed">zmed</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmed zu d">zmed zu d</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmevc">zmevc</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmevc zu vc">zmevc zu vc</SCANLINE>
+
+    <SCANLINE hits="26" mnemonic="LKL" description="zmg">zmg</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zmg 000">zmg 000</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zmg 060">zmg 060</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zmg 200">zmg 200</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmg 220">zmg 220</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmg 240">zmg 240</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zmg 280">zmg 280</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="zmg 440">zmg 440</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="zmg 620">zmg 620</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmg a">zmg a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmg c">zmg c</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmg cl">zmg cl</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmg420 c zmg440 c">zmg420 c zmg440 c</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmg440 c">zmg440 c</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="zmgc">zmgc</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="zmi">zmi</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmi 000">zmi 000</SCANLINE>
+
+    <SCANLINE hits="10" mnemonic="LKL" description="zmi 100">zmi 100</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zmi 120">zmi 120</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="zmi 160">zmi 160</SCANLINE>
 
@@ -16,6 +98,8 @@
     <SCANLINE hits="3" mnemonic="LKL" description="zmi 300">zmi 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zmi 400">zmi 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="zmi 420">zmi 420</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zmi 425">zmi 425</SCANLINE>
 
@@ -363,13 +447,15 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="zre 200">zre 200</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="zre 220">zre 220</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="zre 220">zre 220</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zre 240">zre 240</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zre 320">zre 320</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zre 330">zre 330</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zre 360">zre 360</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zre 420">zre 420</SCANLINE>
 
@@ -391,11 +477,13 @@
 
     <SCANLINE hits="8" mnemonic="LKL" description="zrg">zrg</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="zrg 000">zrg 000</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="zrg 000">zrg 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zrg 200">zrg 200</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zrg 320">zrg 320</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="zrg 330">zrg 330</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zrg 500">zrg 500</SCANLINE>
 
@@ -473,7 +561,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="zrs 330">zrs 330</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="zrs 340">zrs 340</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="zrs 340">zrs 340</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zrs 380">zrs 380</SCANLINE>
 
@@ -649,7 +737,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="zto 350">zto 350</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="zto 500">zto 500</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="zto 500">zto 500</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="zto 900">zto 900</SCANLINE>
 
@@ -675,7 +763,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="ztp 400">ztp 400</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="ztp 600">ztp 600</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="ztp 600">ztp 600</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="ztp 700">ztp 700</SCANLINE>
 
@@ -743,7 +831,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="zu 200">zu 200</SCANLINE>
 
-    <SCANLINE hits="55" mnemonic="LKL" description="zu 400">zu 400</SCANLINE>
+    <SCANLINE hits="58" mnemonic="LKL" description="zu 400">zu 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="zu 500">zu 500</SCANLINE>
 
@@ -751,7 +839,7 @@
 
     <SCANLINE hits="17" mnemonic="LKL" description="zu 700">zu 700</SCANLINE>
 
-    <SCANLINE hits="68" mnemonic="LKL" description="zu 800">zu 800</SCANLINE>
+    <SCANLINE hits="69" mnemonic="LKL" description="zu 800">zu 800</SCANLINE>
 
     <SCANLINE hits="28" mnemonic="LKL" description="zu c">zu c</SCANLINE>
 
@@ -791,7 +879,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="zug 150">zug 150</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="zug 200 werkzeuge und maschinen">zug 200 werkzeuge und maschinen</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="zug 200">zug 200</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zug 280">zug 280</SCANLINE>
 
@@ -843,7 +931,7 @@
 
     <SCANLINE hits="10" mnemonic="LKL" description="zus 380">zus 380</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="zus 500">zus 500</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="zus 500">zus 500</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zus 510">zus 510</SCANLINE>
 
@@ -855,7 +943,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="zus 570">zus 570</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="zus 580">zus 580</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="zus 580">zus 580</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="zus 600">zus 600</SCANLINE>
 
@@ -863,7 +951,7 @@
 
     <SCANLINE hits="6" mnemonic="LKL" description="zus 700">zus 700</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="zus 780">zus 780</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="zus 780">zus 780</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="zus 800">zus 800</SCANLINE>
 
@@ -891,7 +979,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="zux 500">zux 500</SCANLINE>
 
-    <SCANLINE hits="29" mnemonic="LKL" description="zux 550">zux 550</SCANLINE>
+    <SCANLINE hits="30" mnemonic="LKL" description="zux 550">zux 550</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="zuy 000">zuy 000</SCANLINE>
 
@@ -901,7 +989,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="zuy 200">zuy 200</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="zuz 000">zuz 000</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="zuz 000">zuz 000</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="zv">zv</SCANLINE>
 
@@ -921,99 +1009,11 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="zwe">zwe</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="zwe 000">zwe 000</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="zwe 200">zwe 200</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="zwe 300">zwe 300</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="zwe 400">zwe 400</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="zwe 600">zwe 600</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe a">zwe a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe b (fh)">zwe b (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe c">zwe c</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="zwe k (fh)">zwe k (fh)</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe300 d">zwe300 d</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe420 c">zwe420 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwe600 c">zwe600 c</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="zwec">zwec</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwec zwkc">zwec zwkc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwed">zwed</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="zwg">zwg</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwg a">zwg a</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="zwk">zwk</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="zwk 000">zwk 000</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="zwk 200">zwk 200</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="zwk 300">zwk 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwk a">zwk a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwk200 c">zwk200 c</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwk300 a">zwk300 a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwk300 c">zwk300 c</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwk300 d">zwk300 d</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zwkc">zwkc</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwkd">zwkd</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwp">zwp</SCANLINE>
-
-    <SCANLINE hits="40" mnemonic="LKL" description="zwp 000">zwp 000</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="zwp 200">zwp 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zwu">zwu</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zx">zx</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="zxe">zxe</SCANLINE>
-
-    <SCANLINE hits="46" mnemonic="LKL" description="zxh">zxh</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="zxm">zxm</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="zy">zy</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="zy 000">zy 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zy a 1">zy a 1</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zy a 1 ra qa 1">zy a 1 ra qa 1</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zy c">zy c</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="zy c zyk800 c">zy c zyk800 c</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="zyd">zyd</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="zye">zye</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="zmi+160" />
+<SCANPREV term="zme+ld" />
 
 
-<SCANNEXT term="zye" />
+<SCANNEXT term="zwe" />
 
 </RESULT>

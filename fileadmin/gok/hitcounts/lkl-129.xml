@@ -2,24 +2,106 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">50b35ba1-0</SESSIONVAR>
+<SESSIONVAR name="SID">476209f0-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
 
+    <SCANLINE hits="219" mnemonic="LKL" description="pvg 600">pvg 600</SCANLINE>
+
+    <SCANLINE hits="94" mnemonic="LKL" description="pvg 700">pvg 700</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pvg 750">pvg 750</SCANLINE>
+
+    <SCANLINE hits="296" mnemonic="LKL" description="pvg 800">pvg 800</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="pvg 900">pvg 900</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="pvk">pvk</SCANLINE>
+
+    <SCANLINE hits="389" mnemonic="LKL" description="pvk 000">pvk 000</SCANLINE>
+
+    <SCANLINE hits="98" mnemonic="LKL" description="pvk 100">pvk 100</SCANLINE>
+
+    <SCANLINE hits="113" mnemonic="LKL" description="pvk 150">pvk 150</SCANLINE>
+
+    <SCANLINE hits="335" mnemonic="LKL" description="pvk 200">pvk 200</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pvk 205">pvk 205</SCANLINE>
+
+    <SCANLINE hits="173" mnemonic="LKL" description="pvk 220">pvk 220</SCANLINE>
+
+    <SCANLINE hits="89" mnemonic="LKL" description="pvk 240">pvk 240</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pvk 245">pvk 245</SCANLINE>
+
+    <SCANLINE hits="148" mnemonic="LKL" description="pvk 250">pvk 250</SCANLINE>
+
+    <SCANLINE hits="248" mnemonic="LKL" description="pvk 260">pvk 260</SCANLINE>
+
+    <SCANLINE hits="27" mnemonic="LKL" description="pvk 270">pvk 270</SCANLINE>
+
+    <SCANLINE hits="396" mnemonic="LKL" description="pvk 300">pvk 300</SCANLINE>
+
+    <SCANLINE hits="485" mnemonic="LKL" description="pvk 360">pvk 360</SCANLINE>
+
+    <SCANLINE hits="333" mnemonic="LKL" description="pvk 370">pvk 370</SCANLINE>
+
+    <SCANLINE hits="190" mnemonic="LKL" description="pvk 380">pvk 380</SCANLINE>
+
+    <SCANLINE hits="171" mnemonic="LKL" description="pvk 400">pvk 400</SCANLINE>
+
+    <SCANLINE hits="457" mnemonic="LKL" description="pvk 500">pvk 500</SCANLINE>
+
+    <SCANLINE hits="341" mnemonic="LKL" description="pvk 570">pvk 570</SCANLINE>
+
+    <SCANLINE hits="1164" mnemonic="LKL" description="pvk 600">pvk 600</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="pvk 620">pvk 620</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="pvk 660">pvk 660</SCANLINE>
+
+    <SCANLINE hits="486" mnemonic="LKL" description="pvk 700">pvk 700</SCANLINE>
+
+    <SCANLINE hits="180" mnemonic="LKL" description="pvk 800">pvk 800</SCANLINE>
+
+    <SCANLINE hits="191" mnemonic="LKL" description="pvk 900">pvk 900</SCANLINE>
+
+    <SCANLINE hits="31" mnemonic="LKL" description="pvl 000">pvl 000</SCANLINE>
+
+    <SCANLINE hits="45" mnemonic="LKL" description="pvl 100">pvl 100</SCANLINE>
+
+    <SCANLINE hits="146" mnemonic="LKL" description="pvl 150">pvl 150</SCANLINE>
+
+    <SCANLINE hits="78" mnemonic="LKL" description="pvl 200">pvl 200</SCANLINE>
+
+    <SCANLINE hits="40" mnemonic="LKL" description="pvl 220">pvl 220</SCANLINE>
+
+    <SCANLINE hits="104" mnemonic="LKL" description="pvl 240">pvl 240</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pvl 250">pvl 250</SCANLINE>
+
+    <SCANLINE hits="290" mnemonic="LKL" description="pvl 260">pvl 260</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="pvl 270">pvl 270</SCANLINE>
+
+    <SCANLINE hits="149" mnemonic="LKL" description="pvl 300">pvl 300</SCANLINE>
+
+    <SCANLINE hits="104" mnemonic="LKL" description="pvl 360">pvl 360</SCANLINE>
+
     <SCANLINE hits="70" mnemonic="LKL" description="pvl 370">pvl 370</SCANLINE>
 
     <SCANLINE hits="45" mnemonic="LKL" description="pvl 380">pvl 380</SCANLINE>
 
-    <SCANLINE hits="57" mnemonic="LKL" description="pvl 400">pvl 400</SCANLINE>
+    <SCANLINE hits="58" mnemonic="LKL" description="pvl 400">pvl 400</SCANLINE>
 
     <SCANLINE hits="142" mnemonic="LKL" description="pvl 500">pvl 500</SCANLINE>
 
-    <SCANLINE hits="173" mnemonic="LKL" description="pvl 570">pvl 570</SCANLINE>
+    <SCANLINE hits="176" mnemonic="LKL" description="pvl 570">pvl 570</SCANLINE>
 
-    <SCANLINE hits="405" mnemonic="LKL" description="pvl 600">pvl 600</SCANLINE>
+    <SCANLINE hits="406" mnemonic="LKL" description="pvl 600">pvl 600</SCANLINE>
 
     <SCANLINE hits="169" mnemonic="LKL" description="pvl 700">pvl 700</SCANLINE>
 
@@ -33,41 +115,41 @@
 
     <SCANLINE hits="121" mnemonic="LKL" description="pvm 100">pvm 100</SCANLINE>
 
-    <SCANLINE hits="546" mnemonic="LKL" description="pvm 150">pvm 150</SCANLINE>
+    <SCANLINE hits="551" mnemonic="LKL" description="pvm 150">pvm 150</SCANLINE>
 
-    <SCANLINE hits="310" mnemonic="LKL" description="pvm 200">pvm 200</SCANLINE>
+    <SCANLINE hits="313" mnemonic="LKL" description="pvm 200">pvm 200</SCANLINE>
 
-    <SCANLINE hits="251" mnemonic="LKL" description="pvm 210">pvm 210</SCANLINE>
+    <SCANLINE hits="252" mnemonic="LKL" description="pvm 210">pvm 210</SCANLINE>
 
-    <SCANLINE hits="271" mnemonic="LKL" description="pvm 215">pvm 215</SCANLINE>
+    <SCANLINE hits="273" mnemonic="LKL" description="pvm 215">pvm 215</SCANLINE>
 
-    <SCANLINE hits="173" mnemonic="LKL" description="pvm 220">pvm 220</SCANLINE>
+    <SCANLINE hits="174" mnemonic="LKL" description="pvm 220">pvm 220</SCANLINE>
 
     <SCANLINE hits="153" mnemonic="LKL" description="pvm 230">pvm 230</SCANLINE>
 
-    <SCANLINE hits="224" mnemonic="LKL" description="pvm 240">pvm 240</SCANLINE>
+    <SCANLINE hits="227" mnemonic="LKL" description="pvm 240">pvm 240</SCANLINE>
 
     <SCANLINE hits="14" mnemonic="LKL" description="pvm 244">pvm 244</SCANLINE>
 
-    <SCANLINE hits="2222" mnemonic="LKL" description="pvm 245">pvm 245</SCANLINE>
+    <SCANLINE hits="2232" mnemonic="LKL" description="pvm 245">pvm 245</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pvm 247">pvm 247</SCANLINE>
 
-    <SCANLINE hits="348" mnemonic="LKL" description="pvm 248">pvm 248</SCANLINE>
+    <SCANLINE hits="350" mnemonic="LKL" description="pvm 248">pvm 248</SCANLINE>
 
-    <SCANLINE hits="238" mnemonic="LKL" description="pvm 250">pvm 250</SCANLINE>
+    <SCANLINE hits="240" mnemonic="LKL" description="pvm 250">pvm 250</SCANLINE>
 
-    <SCANLINE hits="581" mnemonic="LKL" description="pvm 260">pvm 260</SCANLINE>
+    <SCANLINE hits="585" mnemonic="LKL" description="pvm 260">pvm 260</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pvm 270">pvm 270</SCANLINE>
 
-    <SCANLINE hits="734" mnemonic="LKL" description="pvm 300">pvm 300</SCANLINE>
+    <SCANLINE hits="739" mnemonic="LKL" description="pvm 300">pvm 300</SCANLINE>
 
-    <SCANLINE hits="1186" mnemonic="LKL" description="pvm 360">pvm 360</SCANLINE>
+    <SCANLINE hits="1190" mnemonic="LKL" description="pvm 360">pvm 360</SCANLINE>
 
-    <SCANLINE hits="449" mnemonic="LKL" description="pvm 370">pvm 370</SCANLINE>
+    <SCANLINE hits="452" mnemonic="LKL" description="pvm 370">pvm 370</SCANLINE>
 
-    <SCANLINE hits="500" mnemonic="LKL" description="pvm 380">pvm 380</SCANLINE>
+    <SCANLINE hits="502" mnemonic="LKL" description="pvm 380">pvm 380</SCANLINE>
 
     <SCANLINE hits="326" mnemonic="LKL" description="pvm 400">pvm 400</SCANLINE>
 
@@ -75,19 +157,19 @@
 
     <SCANLINE hits="111" mnemonic="LKL" description="pvm 440">pvm 440</SCANLINE>
 
-    <SCANLINE hits="616" mnemonic="LKL" description="pvm 500">pvm 500</SCANLINE>
+    <SCANLINE hits="621" mnemonic="LKL" description="pvm 500">pvm 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pvm 520">pvm 520</SCANLINE>
 
     <SCANLINE hits="477" mnemonic="LKL" description="pvm 570">pvm 570</SCANLINE>
 
-    <SCANLINE hits="1763" mnemonic="LKL" description="pvm 600">pvm 600</SCANLINE>
+    <SCANLINE hits="1766" mnemonic="LKL" description="pvm 600">pvm 600</SCANLINE>
 
-    <SCANLINE hits="253" mnemonic="LKL" description="pvm 620">pvm 620</SCANLINE>
+    <SCANLINE hits="255" mnemonic="LKL" description="pvm 620">pvm 620</SCANLINE>
 
-    <SCANLINE hits="772" mnemonic="LKL" description="pvm 700">pvm 700</SCANLINE>
+    <SCANLINE hits="777" mnemonic="LKL" description="pvm 700">pvm 700</SCANLINE>
 
-    <SCANLINE hits="3387" mnemonic="LKL" description="pvm 800">pvm 800</SCANLINE>
+    <SCANLINE hits="3404" mnemonic="LKL" description="pvm 800">pvm 800</SCANLINE>
 
     <SCANLINE hits="85" mnemonic="LKL" description="pvm 900">pvm 900</SCANLINE>
 
@@ -99,35 +181,35 @@
 
     <SCANLINE hits="124" mnemonic="LKL" description="pvn 200">pvn 200</SCANLINE>
 
-    <SCANLINE hits="203" mnemonic="LKL" description="pvn 205">pvn 205</SCANLINE>
+    <SCANLINE hits="204" mnemonic="LKL" description="pvn 205">pvn 205</SCANLINE>
 
     <SCANLINE hits="68" mnemonic="LKL" description="pvn 210">pvn 210</SCANLINE>
 
-    <SCANLINE hits="103" mnemonic="LKL" description="pvn 250">pvn 250</SCANLINE>
+    <SCANLINE hits="104" mnemonic="LKL" description="pvn 250">pvn 250</SCANLINE>
 
     <SCANLINE hits="58" mnemonic="LKL" description="pvn 260">pvn 260</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="pvn 270">pvn 270</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="pvn 270">pvn 270</SCANLINE>
 
     <SCANLINE hits="438" mnemonic="LKL" description="pvn 300">pvn 300</SCANLINE>
 
-    <SCANLINE hits="333" mnemonic="LKL" description="pvn 360">pvn 360</SCANLINE>
+    <SCANLINE hits="336" mnemonic="LKL" description="pvn 360">pvn 360</SCANLINE>
 
     <SCANLINE hits="129" mnemonic="LKL" description="pvn 370">pvn 370</SCANLINE>
 
     <SCANLINE hits="146" mnemonic="LKL" description="pvn 380">pvn 380</SCANLINE>
 
-    <SCANLINE hits="232" mnemonic="LKL" description="pvn 400">pvn 400</SCANLINE>
+    <SCANLINE hits="233" mnemonic="LKL" description="pvn 400">pvn 400</SCANLINE>
 
-    <SCANLINE hits="425" mnemonic="LKL" description="pvn 500">pvn 500</SCANLINE>
+    <SCANLINE hits="424" mnemonic="LKL" description="pvn 500">pvn 500</SCANLINE>
 
     <SCANLINE hits="116" mnemonic="LKL" description="pvn 570">pvn 570</SCANLINE>
 
-    <SCANLINE hits="343" mnemonic="LKL" description="pvn 600">pvn 600</SCANLINE>
+    <SCANLINE hits="344" mnemonic="LKL" description="pvn 600">pvn 600</SCANLINE>
 
-    <SCANLINE hits="310" mnemonic="LKL" description="pvn 700">pvn 700</SCANLINE>
+    <SCANLINE hits="311" mnemonic="LKL" description="pvn 700">pvn 700</SCANLINE>
 
-    <SCANLINE hits="779" mnemonic="LKL" description="pvn 800">pvn 800</SCANLINE>
+    <SCANLINE hits="782" mnemonic="LKL" description="pvn 800">pvn 800</SCANLINE>
 
     <SCANLINE hits="36" mnemonic="LKL" description="pvn 900">pvn 900</SCANLINE>
 
@@ -137,29 +219,29 @@
 
     <SCANLINE hits="23" mnemonic="LKL" description="pvo 100">pvo 100</SCANLINE>
 
-    <SCANLINE hits="81" mnemonic="LKL" description="pvo 150">pvo 150</SCANLINE>
+    <SCANLINE hits="83" mnemonic="LKL" description="pvo 150">pvo 150</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="pvo 200">pvo 200</SCANLINE>
+    <SCANLINE hits="81" mnemonic="LKL" description="pvo 200">pvo 200</SCANLINE>
 
-    <SCANLINE hits="220" mnemonic="LKL" description="pvo 205">pvo 205</SCANLINE>
+    <SCANLINE hits="221" mnemonic="LKL" description="pvo 205">pvo 205</SCANLINE>
 
-    <SCANLINE hits="80" mnemonic="LKL" description="pvo 210">pvo 210</SCANLINE>
+    <SCANLINE hits="81" mnemonic="LKL" description="pvo 210">pvo 210</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pvo 240">pvo 240</SCANLINE>
 
-    <SCANLINE hits="86" mnemonic="LKL" description="pvo 250">pvo 250</SCANLINE>
+    <SCANLINE hits="87" mnemonic="LKL" description="pvo 250">pvo 250</SCANLINE>
 
     <SCANLINE hits="46" mnemonic="LKL" description="pvo 260">pvo 260</SCANLINE>
 
     <SCANLINE hits="13" mnemonic="LKL" description="pvo 270">pvo 270</SCANLINE>
 
-    <SCANLINE hits="263" mnemonic="LKL" description="pvo 300">pvo 300</SCANLINE>
+    <SCANLINE hits="264" mnemonic="LKL" description="pvo 300">pvo 300</SCANLINE>
 
     <SCANLINE hits="238" mnemonic="LKL" description="pvo 360">pvo 360</SCANLINE>
 
     <SCANLINE hits="193" mnemonic="LKL" description="pvo 370">pvo 370</SCANLINE>
 
-    <SCANLINE hits="134" mnemonic="LKL" description="pvo 380">pvo 380</SCANLINE>
+    <SCANLINE hits="135" mnemonic="LKL" description="pvo 380">pvo 380</SCANLINE>
 
     <SCANLINE hits="116" mnemonic="LKL" description="pvo 400">pvo 400</SCANLINE>
 
@@ -173,17 +255,17 @@
 
     <SCANLINE hits="63" mnemonic="LKL" description="pvo 570">pvo 570</SCANLINE>
 
-    <SCANLINE hits="285" mnemonic="LKL" description="pvo 600">pvo 600</SCANLINE>
+    <SCANLINE hits="286" mnemonic="LKL" description="pvo 600">pvo 600</SCANLINE>
 
     <SCANLINE hits="266" mnemonic="LKL" description="pvo 700">pvo 700</SCANLINE>
 
-    <SCANLINE hits="631" mnemonic="LKL" description="pvo 800">pvo 800</SCANLINE>
+    <SCANLINE hits="632" mnemonic="LKL" description="pvo 800">pvo 800</SCANLINE>
 
     <SCANLINE hits="23" mnemonic="LKL" description="pvo 900">pvo 900</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pvp">pvp</SCANLINE>
 
-    <SCANLINE hits="94" mnemonic="LKL" description="pvp 000">pvp 000</SCANLINE>
+    <SCANLINE hits="95" mnemonic="LKL" description="pvp 000">pvp 000</SCANLINE>
 
     <SCANLINE hits="111" mnemonic="LKL" description="pvp 100">pvp 100</SCANLINE>
 
@@ -191,11 +273,11 @@
 
     <SCANLINE hits="243" mnemonic="LKL" description="pvp 200">pvp 200</SCANLINE>
 
-    <SCANLINE hits="742" mnemonic="LKL" description="pvp 205">pvp 205</SCANLINE>
+    <SCANLINE hits="749" mnemonic="LKL" description="pvp 205">pvp 205</SCANLINE>
 
-    <SCANLINE hits="320" mnemonic="LKL" description="pvp 208">pvp 208</SCANLINE>
+    <SCANLINE hits="321" mnemonic="LKL" description="pvp 208">pvp 208</SCANLINE>
 
-    <SCANLINE hits="177" mnemonic="LKL" description="pvp 210">pvp 210</SCANLINE>
+    <SCANLINE hits="178" mnemonic="LKL" description="pvp 210">pvp 210</SCANLINE>
 
     <SCANLINE hits="155" mnemonic="LKL" description="pvp 217">pvp 217</SCANLINE>
 
@@ -207,41 +289,41 @@
 
     <SCANLINE hits="58" mnemonic="LKL" description="pvp 230">pvp 230</SCANLINE>
 
-    <SCANLINE hits="385" mnemonic="LKL" description="pvp 240">pvp 240</SCANLINE>
+    <SCANLINE hits="386" mnemonic="LKL" description="pvp 240">pvp 240</SCANLINE>
 
-    <SCANLINE hits="831" mnemonic="LKL" description="pvp 245">pvp 245</SCANLINE>
+    <SCANLINE hits="832" mnemonic="LKL" description="pvp 245">pvp 245</SCANLINE>
 
-    <SCANLINE hits="717" mnemonic="LKL" description="pvp 247">pvp 247</SCANLINE>
+    <SCANLINE hits="720" mnemonic="LKL" description="pvp 247">pvp 247</SCANLINE>
 
     <SCANLINE hits="152" mnemonic="LKL" description="pvp 248">pvp 248</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="pvp 249">pvp 249</SCANLINE>
 
-    <SCANLINE hits="443" mnemonic="LKL" description="pvp 250">pvp 250</SCANLINE>
+    <SCANLINE hits="445" mnemonic="LKL" description="pvp 250">pvp 250</SCANLINE>
 
     <SCANLINE hits="130" mnemonic="LKL" description="pvp 260">pvp 260</SCANLINE>
 
-    <SCANLINE hits="332" mnemonic="LKL" description="pvp 280">pvp 280</SCANLINE>
+    <SCANLINE hits="335" mnemonic="LKL" description="pvp 280">pvp 280</SCANLINE>
 
-    <SCANLINE hits="575" mnemonic="LKL" description="pvp 285">pvp 285</SCANLINE>
+    <SCANLINE hits="580" mnemonic="LKL" description="pvp 285">pvp 285</SCANLINE>
 
     <SCANLINE hits="538" mnemonic="LKL" description="pvp 287">pvp 287</SCANLINE>
 
-    <SCANLINE hits="496" mnemonic="LKL" description="pvp 288">pvp 288</SCANLINE>
+    <SCANLINE hits="497" mnemonic="LKL" description="pvp 288">pvp 288</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="pvp 289">pvp 289</SCANLINE>
+    <SCANLINE hits="34" mnemonic="LKL" description="pvp 289">pvp 289</SCANLINE>
 
-    <SCANLINE hits="222" mnemonic="LKL" description="pvp 290">pvp 290</SCANLINE>
+    <SCANLINE hits="230" mnemonic="LKL" description="pvp 290">pvp 290</SCANLINE>
 
-    <SCANLINE hits="1023" mnemonic="LKL" description="pvp 300">pvp 300</SCANLINE>
+    <SCANLINE hits="1033" mnemonic="LKL" description="pvp 300">pvp 300</SCANLINE>
 
-    <SCANLINE hits="899" mnemonic="LKL" description="pvp 360">pvp 360</SCANLINE>
+    <SCANLINE hits="906" mnemonic="LKL" description="pvp 360">pvp 360</SCANLINE>
 
-    <SCANLINE hits="548" mnemonic="LKL" description="pvp 370">pvp 370</SCANLINE>
+    <SCANLINE hits="550" mnemonic="LKL" description="pvp 370">pvp 370</SCANLINE>
 
-    <SCANLINE hits="190" mnemonic="LKL" description="pvp 380">pvp 380</SCANLINE>
+    <SCANLINE hits="191" mnemonic="LKL" description="pvp 380">pvp 380</SCANLINE>
 
-    <SCANLINE hits="325" mnemonic="LKL" description="pvp 400">pvp 400</SCANLINE>
+    <SCANLINE hits="326" mnemonic="LKL" description="pvp 400">pvp 400</SCANLINE>
 
     <SCANLINE hits="20" mnemonic="LKL" description="pvp 420">pvp 420</SCANLINE>
 
@@ -249,15 +331,15 @@
 
     <SCANLINE hits="20" mnemonic="LKL" description="pvp 460">pvp 460</SCANLINE>
 
-    <SCANLINE hits="591" mnemonic="LKL" description="pvp 500">pvp 500</SCANLINE>
+    <SCANLINE hits="596" mnemonic="LKL" description="pvp 500">pvp 500</SCANLINE>
 
-    <SCANLINE hits="347" mnemonic="LKL" description="pvp 570">pvp 570</SCANLINE>
+    <SCANLINE hits="348" mnemonic="LKL" description="pvp 570">pvp 570</SCANLINE>
 
     <SCANLINE hits="631" mnemonic="LKL" description="pvp 600">pvp 600</SCANLINE>
 
-    <SCANLINE hits="502" mnemonic="LKL" description="pvp 700">pvp 700</SCANLINE>
+    <SCANLINE hits="504" mnemonic="LKL" description="pvp 700">pvp 700</SCANLINE>
 
-    <SCANLINE hits="1939" mnemonic="LKL" description="pvp 800">pvp 800</SCANLINE>
+    <SCANLINE hits="1948" mnemonic="LKL" description="pvp 800">pvp 800</SCANLINE>
 
     <SCANLINE hits="229" mnemonic="LKL" description="pvp 900">pvp 900</SCANLINE>
 
@@ -351,7 +433,7 @@
 
     <SCANLINE hits="35" mnemonic="LKL" description="pvu 020">pvu 020</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="pvu 040">pvu 040</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="pvu 040">pvu 040</SCANLINE>
 
     <SCANLINE hits="75" mnemonic="LKL" description="pvu 060">pvu 060</SCANLINE>
 
@@ -369,7 +451,7 @@
 
     <SCANLINE hits="24" mnemonic="LKL" description="pvu 220">pvu 220</SCANLINE>
 
-    <SCANLINE hits="104" mnemonic="LKL" description="pvu 240">pvu 240</SCANLINE>
+    <SCANLINE hits="105" mnemonic="LKL" description="pvu 240">pvu 240</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="pvu 245">pvu 245</SCANLINE>
 
@@ -479,7 +561,7 @@
 
     <SCANLINE hits="29" mnemonic="LKL" description="pw 150">pw 150</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="pw 200">pw 200</SCANLINE>
+    <SCANLINE hits="43" mnemonic="LKL" description="pw 200">pw 200</SCANLINE>
 
     <SCANLINE hits="18" mnemonic="LKL" description="pw 300">pw 300</SCANLINE>
 
@@ -507,7 +589,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pwb20 d m (fh)">pwb20 d m (fh)</SCANLINE>
 
-    <SCANLINE hits="44" mnemonic="LKL" description="pwc 000">pwc 000</SCANLINE>
+    <SCANLINE hits="45" mnemonic="LKL" description="pwc 000">pwc 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pwc 200">pwc 200</SCANLINE>
 
@@ -531,7 +613,7 @@
 
     <SCANLINE hits="14" mnemonic="LKL" description="pwd 270">pwd 270</SCANLINE>
 
-    <SCANLINE hits="98" mnemonic="LKL" description="pwe 000">pwe 000</SCANLINE>
+    <SCANLINE hits="99" mnemonic="LKL" description="pwe 000">pwe 000</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="pwe 100">pwe 100</SCANLINE>
 
@@ -553,9 +635,9 @@
 
     <SCANLINE hits="21" mnemonic="LKL" description="pwe 230">pwe 230</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="pwe 240">pwe 240</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="pwe 240">pwe 240</SCANLINE>
 
-    <SCANLINE hits="53" mnemonic="LKL" description="pwe 250">pwe 250</SCANLINE>
+    <SCANLINE hits="54" mnemonic="LKL" description="pwe 250">pwe 250</SCANLINE>
 
     <SCANLINE hits="80" mnemonic="LKL" description="pwe 260">pwe 260</SCANLINE>
 
@@ -637,7 +719,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="pwm 190">pwm 190</SCANLINE>
 
-    <SCANLINE hits="77" mnemonic="LKL" description="pwm 200">pwm 200</SCANLINE>
+    <SCANLINE hits="78" mnemonic="LKL" description="pwm 200">pwm 200</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="pwm 300">pwm 300</SCANLINE>
 
@@ -713,7 +795,7 @@
 
     <SCANLINE hits="25" mnemonic="LKL" description="pwr 950">pwr 950</SCANLINE>
 
-    <SCANLINE hits="206" mnemonic="LKL" description="pws 000">pws 000</SCANLINE>
+    <SCANLINE hits="207" mnemonic="LKL" description="pws 000">pws 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="pws 100">pws 100</SCANLINE>
 
@@ -757,7 +839,7 @@
 
     <SCANLINE hits="33" mnemonic="LKL" description="pxa 400">pxa 400</SCANLINE>
 
-    <SCANLINE hits="71" mnemonic="LKL" description="pxa 500">pxa 500</SCANLINE>
+    <SCANLINE hits="72" mnemonic="LKL" description="pxa 500">pxa 500</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="pxa 570">pxa 570</SCANLINE>
 
@@ -783,7 +865,7 @@
 
     <SCANLINE hits="19" mnemonic="LKL" description="pxb 400">pxb 400</SCANLINE>
 
-    <SCANLINE hits="50" mnemonic="LKL" description="pxb 500">pxb 500</SCANLINE>
+    <SCANLINE hits="51" mnemonic="LKL" description="pxb 500">pxb 500</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="pxb 570">pxb 570</SCANLINE>
 
@@ -791,7 +873,7 @@
 
     <SCANLINE hits="52" mnemonic="LKL" description="pxb 700">pxb 700</SCANLINE>
 
-    <SCANLINE hits="198" mnemonic="LKL" description="pxb 800">pxb 800</SCANLINE>
+    <SCANLINE hits="199" mnemonic="LKL" description="pxb 800">pxb 800</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="pxb 900">pxb 900</SCANLINE>
 
@@ -849,7 +931,7 @@
 
     <SCANLINE hits="15" mnemonic="LKL" description="pxe 150">pxe 150</SCANLINE>
 
-    <SCANLINE hits="303" mnemonic="LKL" description="pxe 200">pxe 200</SCANLINE>
+    <SCANLINE hits="305" mnemonic="LKL" description="pxe 200">pxe 200</SCANLINE>
 
     <SCANLINE hits="159" mnemonic="LKL" description="pxe 300">pxe 300</SCANLINE>
 
@@ -863,7 +945,7 @@
 
     <SCANLINE hits="38" mnemonic="LKL" description="pxe 600">pxe 600</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="pxe 700">pxe 700</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="pxe 700">pxe 700</SCANLINE>
 
     <SCANLINE hits="134" mnemonic="LKL" description="pxe 800">pxe 800</SCANLINE>
 
@@ -927,93 +1009,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="pxp 100">pxp 100</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="pxp 150">pxp 150</SCANLINE>
-
-    <SCANLINE hits="17" mnemonic="LKL" description="pxp 200">pxp 200</SCANLINE>
-
-    <SCANLINE hits="20" mnemonic="LKL" description="pxp 300">pxp 300</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="pxp 400">pxp 400</SCANLINE>
-
-    <SCANLINE hits="18" mnemonic="LKL" description="pxp 500">pxp 500</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pxp 570">pxp 570</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pxp 600">pxp 600</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="pxp 700">pxp 700</SCANLINE>
-
-    <SCANLINE hits="28" mnemonic="LKL" description="pxp 800">pxp 800</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pxp 900">pxp 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pxr 000">pxr 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pxr 100">pxr 100</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pxr 150">pxr 150</SCANLINE>
-
-    <SCANLINE hits="10" mnemonic="LKL" description="pxr 200">pxr 200</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="pxr 300">pxr 300</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pxr 400">pxr 400</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pxr 500">pxr 500</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pxr 600">pxr 600</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pxr 700">pxr 700</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="pxr 800">pxr 800</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pxs 000">pxs 000</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="pxs 100">pxs 100</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="pxs 150">pxs 150</SCANLINE>
-
-    <SCANLINE hits="96" mnemonic="LKL" description="pxs 200">pxs 200</SCANLINE>
-
-    <SCANLINE hits="56" mnemonic="LKL" description="pxs 300">pxs 300</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="pxs 400">pxs 400</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="pxs 500">pxs 500</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="pxs 600">pxs 600</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pxs 700">pxs 700</SCANLINE>
-
-    <SCANLINE hits="41" mnemonic="LKL" description="pxs 800">pxs 800</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="pxs 900">pxs 900</SCANLINE>
-
-    <SCANLINE hits="22" mnemonic="LKL" description="pxx 000">pxx 000</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pxx 200">pxx 200</SCANLINE>
-
-    <SCANLINE hits="90" mnemonic="LKL" description="pxy 000">pxy 000</SCANLINE>
-
-    <SCANLINE hits="11" mnemonic="LKL" description="pxy 200">pxy 200</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="pxy 300">pxy 300</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="pxy 500">pxy 500</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="pxy 800">pxy 800</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="pxy 900">pxy 900</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="py">py</SCANLINE>
-
-    <SCANLINE hits="38" mnemonic="LKL" description="py 000">py 000</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="pvl+370" />
+<SCANPREV term="pvg+600" />
 
 
-<SCANNEXT term="py+000" />
+<SCANNEXT term="pxp+100" />
 
 </RESULT>

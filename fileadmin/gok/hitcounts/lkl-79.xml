@@ -2,18 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">3fcc23f6-2</SESSIONVAR>
+<SESSIONVAR name="SID">3524540f-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jh 335">jh 335</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="jh 350">jh 350</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="jh 351">jh 351</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jh 355">jh 355</SCANLINE>
 
@@ -237,7 +231,7 @@
 
     <SCANLINE hits="22" mnemonic="LKL" description="jj 200">jj 200</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="jj 300">jj 300</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="jj 300">jj 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jj 319">jj 319</SCANLINE>
 
@@ -250,6 +244,10 @@
     <SCANLINE hits="1" mnemonic="LKL" description="jj 327">jj 327</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="jj 330">jj 330</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="jj 335">jj 335</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jj 337">jj 337</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jj 340">jj 340</SCANLINE>
 
@@ -397,7 +395,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jjm 260">jjm 260</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="jjm 300">jjm 300</SCANLINE>
+    <SCANLINE hits="26" mnemonic="LKL" description="jjm 300">jjm 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jjm 317">jjm 317</SCANLINE>
 
@@ -422,6 +420,8 @@
     <SCANLINE hits="2" mnemonic="LKL" description="jjm 340">jjm 340</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jjm 350">jjm 350</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="jjm 351">jjm 351</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="jjm 352">jjm 352</SCANLINE>
 
@@ -495,7 +495,7 @@
 
     <SCANLINE hits="9" mnemonic="LKL" description="jl 240">jl 240</SCANLINE>
 
-    <SCANLINE hits="72" mnemonic="LKL" description="jl 300">jl 300</SCANLINE>
+    <SCANLINE hits="73" mnemonic="LKL" description="jl 300">jl 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jl 315">jl 315</SCANLINE>
 
@@ -675,7 +675,7 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="jlc 350">jlc 350</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="jlc 352">jlc 352</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="jlc 352">jlc 352</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="jlc 354">jlc 354</SCANLINE>
 
@@ -1011,7 +1011,7 @@
 
 </SCANLIST>
 
-<SCANPREV term="jh+335" />
+<SCANPREV term="jh+355" />
 
 
 <SCANNEXT term="jle374+b+(fh)" />

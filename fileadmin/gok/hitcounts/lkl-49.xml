@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">ee85f4c5-3</SESSIONVAR>
+<SESSIONVAR name="SID">4779177c-0</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="egin 050">egin 050</SCANLINE>
 
     <SCANLINE hits="17" mnemonic="LKL" description="egin 150">egin 150</SCANLINE>
 
@@ -169,7 +167,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="egiu 001">egiu 001</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="egiu 010">egiu 010</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="egiu 010">egiu 010</SCANLINE>
 
     <SCANLINE hits="37" mnemonic="LKL" description="egiu 050">egiu 050</SCANLINE>
 
@@ -199,7 +197,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="egiw 050">egiw 050</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="egiw 100">egiw 100</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="egiw 100">egiw 100</SCANLINE>
 
     <SCANLINE hits="6" mnemonic="LKL" description="egiw 150">egiw 150</SCANLINE>
 
@@ -207,7 +205,7 @@
 
     <SCANLINE hits="16" mnemonic="LKL" description="egiw 250">egiw 250</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="egiw 300">egiw 300</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="egiw 300">egiw 300</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="egiw 350">egiw 350</SCANLINE>
 
@@ -335,7 +333,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ehag 450">ehag 450</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="ehag 650">ehag 650</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="ehag 650">ehag 650</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="ehag 750">ehag 750</SCANLINE>
 
@@ -413,7 +411,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ehas 100">ehas 100</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ehas 150">ehas 150</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="ehas 150">ehas 150</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="ehbb 240">ehbb 240</SCANLINE>
 
@@ -771,7 +769,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ehem 050">ehem 050</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="ehem 100">ehem 100</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="ehem 100">ehem 100</SCANLINE>
 
     <SCANLINE hits="16" mnemonic="LKL" description="ehem 150">ehem 150</SCANLINE>
 
@@ -829,9 +827,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ehes 000">ehes 000</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="ehes 050">ehes 050</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="ehes 050">ehes 050</SCANLINE>
 
-    <SCANLINE hits="31" mnemonic="LKL" description="ehes 100">ehes 100</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="ehes 100">ehes 100</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ehes 150">ehes 150</SCANLINE>
 
@@ -863,7 +861,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="ehg 010">ehg 010</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="ehg 020">ehg 020</SCANLINE>
+    <SCANLINE hits="27" mnemonic="LKL" description="ehg 020">ehg 020</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ehg 040">ehg 040</SCANLINE>
 
@@ -975,7 +973,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="ehgf 200">ehgf 200</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="ehgf 250">ehgf 250</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="ehgf 250">ehgf 250</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ehgf 300">ehgf 300</SCANLINE>
 
@@ -1009,11 +1007,13 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="ehgm 150">ehgm 150</SCANLINE>
 
+    <SCANLINE hits="7" mnemonic="LKL" description="ehgm 200">ehgm 200</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="egin+050" />
+<SCANPREV term="egin+150" />
 
 
-<SCANNEXT term="ehgm+150" />
+<SCANNEXT term="ehgm+200" />
 
 </RESULT>

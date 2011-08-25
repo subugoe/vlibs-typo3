@@ -2,12 +2,94 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">6681c345-0</SESSIONVAR>
+<SESSIONVAR name="SID">dd2fe508-3</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml 690">qml 690</SCANLINE>
+
+    <SCANLINE hits="33" mnemonic="LKL" description="qml 700">qml 700</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml 80">qml 80</SCANLINE>
+
+    <SCANLINE hits="603" mnemonic="LKL" description="qml 800">qml 800</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml 820">qml 820</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml m (fh)">qml m (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml qml 400">qml qml 400</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qml300">qml300</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qml500">qml500</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="qmm">qmm</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="qmm 000">qmm 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 050">qmm 050</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 08">qmm 08</SCANLINE>
+
+    <SCANLINE hits="377" mnemonic="LKL" description="qmm 100">qmm 100</SCANLINE>
+
+    <SCANLINE hits="665" mnemonic="LKL" description="qmm 200">qmm 200</SCANLINE>
+
+    <SCANLINE hits="35" mnemonic="LKL" description="qmm 210">qmm 210</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="qmm 220">qmm 220</SCANLINE>
+
+    <SCANLINE hits="9" mnemonic="LKL" description="qmm 230">qmm 230</SCANLINE>
+
+    <SCANLINE hits="36" mnemonic="LKL" description="qmm 240">qmm 240</SCANLINE>
+
+    <SCANLINE hits="22" mnemonic="LKL" description="qmm 300">qmm 300</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 310">qmm 310</SCANLINE>
+
+    <SCANLINE hits="125" mnemonic="LKL" description="qmm 400">qmm 400</SCANLINE>
+
+    <SCANLINE hits="345" mnemonic="LKL" description="qmm 500">qmm 500</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 60">qmm 60</SCANLINE>
+
+    <SCANLINE hits="373" mnemonic="LKL" description="qmm 600">qmm 600</SCANLINE>
+
+    <SCANLINE hits="341" mnemonic="LKL" description="qmm 610">qmm 610</SCANLINE>
+
+    <SCANLINE hits="19" mnemonic="LKL" description="qmm 612">qmm 612</SCANLINE>
+
+    <SCANLINE hits="34" mnemonic="LKL" description="qmm 614">qmm 614</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="qmm 616">qmm 616</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 620">qmm 620</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 620 k (fh)">qmm 620 k (fh)</SCANLINE>
+
+    <SCANLINE hits="165" mnemonic="LKL" description="qmm 630">qmm 630</SCANLINE>
+
+    <SCANLINE hits="7" mnemonic="LKL" description="qmm 632">qmm 632</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="qmm 634">qmm 634</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="qmm 636">qmm 636</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 639">qmm 639</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 640">qmm 640</SCANLINE>
+
+    <SCANLINE hits="229" mnemonic="LKL" description="qmm 650">qmm 650</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 670">qmm 670</SCANLINE>
+
+    <SCANLINE hits="485" mnemonic="LKL" description="qmm 690">qmm 690</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="qmm 700">qmm 700</SCANLINE>
 
     <SCANLINE hits="4" mnemonic="LKL" description="qmm 800">qmm 800</SCANLINE>
 
@@ -475,7 +557,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="qu 000">qu 000</SCANLINE>
 
-    <SCANLINE hits="159" mnemonic="LKL" description="qu 100">qu 100</SCANLINE>
+    <SCANLINE hits="161" mnemonic="LKL" description="qu 100">qu 100</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="qu 16 pol">qu 16 pol</SCANLINE>
 
@@ -559,7 +641,7 @@
 
     <SCANLINE hits="103" mnemonic="LKL" description="qua 750">qua 750</SCANLINE>
 
-    <SCANLINE hits="423" mnemonic="LKL" description="qub 100">qub 100</SCANLINE>
+    <SCANLINE hits="424" mnemonic="LKL" description="qub 100">qub 100</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="qub 120">qub 120</SCANLINE>
 
@@ -581,7 +663,7 @@
 
     <SCANLINE hits="5" mnemonic="LKL" description="qub 410">qub 410</SCANLINE>
 
-    <SCANLINE hits="62" mnemonic="LKL" description="qub 500">qub 500</SCANLINE>
+    <SCANLINE hits="63" mnemonic="LKL" description="qub 500">qub 500</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="qub 560">qub 560</SCANLINE>
 
@@ -739,7 +821,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="quf 700 a (fh)">quf 700 a (fh)</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="LKL" description="qug 100">qug 100</SCANLINE>
+    <SCANLINE hits="61" mnemonic="LKL" description="qug 100">qug 100</SCANLINE>
 
     <SCANLINE hits="101" mnemonic="LKL" description="qug 200">qug 200</SCANLINE>
 
@@ -757,7 +839,7 @@
 
     <SCANLINE hits="50" mnemonic="LKL" description="quh 100">quh 100</SCANLINE>
 
-    <SCANLINE hits="60" mnemonic="LKL" description="quh 200">quh 200</SCANLINE>
+    <SCANLINE hits="61" mnemonic="LKL" description="quh 200">quh 200</SCANLINE>
 
     <SCANLINE hits="31" mnemonic="LKL" description="quh 300">quh 300</SCANLINE>
 
@@ -779,7 +861,7 @@
 
     <SCANLINE hits="112" mnemonic="LKL" description="quj 100">quj 100</SCANLINE>
 
-    <SCANLINE hits="103" mnemonic="LKL" description="quj 200">quj 200</SCANLINE>
+    <SCANLINE hits="104" mnemonic="LKL" description="quj 200">quj 200</SCANLINE>
 
     <SCANLINE hits="30" mnemonic="LKL" description="quj 220">quj 220</SCANLINE>
 
@@ -927,93 +1009,11 @@
 
     <SCANLINE hits="32" mnemonic="LKL" description="qup 100">qup 100</SCANLINE>
 
-    <SCANLINE hits="69" mnemonic="LKL" description="quq 100">quq 100</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="quq 200">quq 200</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="quq 320">quq 320</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="quq 900">quq 900</SCANLINE>
-
-    <SCANLINE hits="57" mnemonic="LKL" description="qur 100">qur 100</SCANLINE>
-
-    <SCANLINE hits="24" mnemonic="LKL" description="qur 200">qur 200</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="qur 250">qur 250</SCANLINE>
-
-    <SCANLINE hits="5" mnemonic="LKL" description="qur 300">qur 300</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="qur 350">qur 350</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="qur 400">qur 400</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="qur 450">qur 450</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="qur 500">qur 500</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="qur 550">qur 550</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="qur 600">qur 600</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qur 700">qur 700</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="qur 705">qur 705</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qur 710">qur 710</SCANLINE>
-
-    <SCANLINE hits="25" mnemonic="LKL" description="qur 735">qur 735</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="qur 740">qur 740</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qur 745">qur 745</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="qur 750">qur 750</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="qur 753">qur 753</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="qur 755">qur 755</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qur 760">qur 760</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="qur 765">qur 765</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qur 770">qur 770</SCANLINE>
-
-    <SCANLINE hits="12" mnemonic="LKL" description="qur 775">qur 775</SCANLINE>
-
-    <SCANLINE hits="68" mnemonic="LKL" description="qur 780">qur 780</SCANLINE>
-
-    <SCANLINE hits="100" mnemonic="LKL" description="qus 100">qus 100</SCANLINE>
-
-    <SCANLINE hits="16" mnemonic="LKL" description="qus 200">qus 200</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="qus 300">qus 300</SCANLINE>
-
-    <SCANLINE hits="13" mnemonic="LKL" description="qus 400">qus 400</SCANLINE>
-
-    <SCANLINE hits="44" mnemonic="LKL" description="qus 500">qus 500</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="qut 000">qut 000</SCANLINE>
-
-    <SCANLINE hits="58" mnemonic="LKL" description="qut 100">qut 100</SCANLINE>
-
-    <SCANLINE hits="67" mnemonic="LKL" description="qut 200">qut 200</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="qut 225">qut 225</SCANLINE>
-
-    <SCANLINE hits="6" mnemonic="LKL" description="qut 300">qut 300</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="qut 325">qut 325</SCANLINE>
-
-    <SCANLINE hits="89" mnemonic="LKL" description="qut 400">qut 400</SCANLINE>
-
-    <SCANLINE hits="47" mnemonic="LKL" description="qut 425">qut 425</SCANLINE>
-
 </SCANLIST>
 
-<SCANPREV term="qmm+800" />
+<SCANPREV term="qml+690" />
 
 
-<SCANNEXT term="qut+425" />
+<SCANNEXT term="qup+100" />
 
 </RESULT>
