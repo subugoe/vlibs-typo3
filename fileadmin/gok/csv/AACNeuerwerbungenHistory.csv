@@ -2,7 +2,7 @@
 "NEAAC1010";2;"NEAAC1010";"NEAAC1000";"Geschichtsschreibung und -theorie";"lkl=PB?";"Historiography and Theory";
 "NEAAC1020";2;"NEAAC1020";"NEAAC1000";"Historische Hilfswissenschaften";"lkl=PD?";"Auxiliary Sciences";
 "NEAAC1030";2;"NEAAC1030";"NEAAC1000";"Weltgeschichte (Entdeckungen; Weltkriege etc.)";"lkl=PF?";"World History (European expansion; World Wars etc.)";
-"NEAAC1040";2;"NEAAC1040";"NEAAC1000";"England (epochenübergreifend)";"lkl=POA 000 or lkl=POB 000 or lkl=POD 000 or lkl=POF 000 or lkl=POG 000 or lkl=POH 000 or lkl=POL 000 or lkl=POM 000 or lkl=PON 000 or lkl=POO 000 or lkl=PO 1 or PO 2 or lkl=PO 3 or lkl=PO 4 or lkl=PO 5 or lkl=PO 6 or lkl=PO 7 or lkl=PO 8 or lkl=PO 9 or lkl=POL";"England (epoch spanning)";
+"NEAAC1040";2;"NEAAC1040";"NEAAC1000";"England (epochenübergreifend)";"lkl=POA 000 or lkl=POB 000 or lkl=POD 000 or lkl=POF 000 or lkl=POG 000 or lkl=POH 000 or lkl=POL 000 or lkl=POM 000 or lkl=PON 000 or lkl=POO 000 or lkl=PO 1? or lkl=PO 2? or lkl=PO 3? or lkl=PO 4? or lkl=PO 5? or lkl=PO 6? or lkl=PO 7? or lkl=PO 8? or lkl=PO 9? or lkl=POL?";"England (epoch spanning)";
 "NEAAC1050";2;"NEAAC1050";"NEAAC1000";"- Mittelalter";"lkl=POA? or lkl=POM?";"- Middle Ages";"inline"
 "NEAAC1060";2;"NEAAC1060";"NEAAC1000";"- Frühe Neuzeit";"lkl=POB? or lkl=PON?";"- Early Modern Period";"inline"
 "NEAAC1070";2;"NEAAC1070";"NEAAC1000";"- 19. Jahrhundert";"lkl=POD? or lkl=POO?";"- 19th Century";"inline,break"
