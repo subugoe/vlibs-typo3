@@ -1,7 +1,6 @@
 User-agent: *
-Disallow: /typo3/
 
-# hide pages that cause EZB searches
+# Disallow pages that cause EZB searches
 Disallow: /zeitschriften/zeitschrift/
 Disallow: /zeitschriften/suche/
 Disallow: /en/journals/journal/
@@ -11,5 +10,8 @@ Disallow: /nationallizenzen/suche/
 Disallow: /en/nationallizenzen/journal/
 Disallow: /en/nationallizenzen/search/
 
-# hide test path
+# Disallow test path
 Disallow: /pazpar2/
+
+# Disallow TYPO3 backend
+Disallow: /typo3/
