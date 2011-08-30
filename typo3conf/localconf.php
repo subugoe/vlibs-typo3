@@ -22,6 +22,7 @@ $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserte
 
 $TYPO3_CONF_VARS['FE']['logfile_dir'] = '/var/log/typo3/';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['FE']['addRootLineFields'].= ',tx_realurl_pathsegment';
+$TYPO3_CONF_VARS['FE']['pageNotFound_handling'] = 'error';	// Modified or inserted by TYPO3 Install Tool.
 
 $TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,reports,realurl,cag_linkchecker,static_info_tables,cshmanual,recycler,fluid,beko_debugster,scheduler,t3editor,devlog,pazpar2,t3jquery,ezbrequest,kickstarter,filelist,info,nkwgok,perm';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
 $TYPO3_CONF_VARS['EXT']['extList_FE'] = 'extbase,css_styled_content,version,install,rtehtmlarea,t3skin,realurl,cag_linkchecker,static_info_tables,fluid,beko_debugster,devlog,pazpar2,t3jquery,ezbrequest,kickstarter,nkwgok';	// Modified or inserted by TYPO3 Extension Manager.
@@ -31,7 +32,7 @@ $TYPO3_CONF_VARS['EXTCONF']['dbal']['handlerCfg'] = array('_DEFAULT' => array('t
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 	'init' => array (
 		'appendMissingSlash' => 'ifNotFile',
-		'postVarSet_failureMode' => 'redirect_goodUpperDir',
+		'postVarSet_failureMode' => '',
 		'emptyUrlReturnValue' => TRUE,
 		'respectSimulateStaticURLs' => 1,
 		'enableCHashCache' => 1,
