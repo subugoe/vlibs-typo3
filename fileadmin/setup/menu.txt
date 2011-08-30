@@ -8,6 +8,7 @@ lib.menu {
   1 = TMENU
   1.wrap = <ul class="mainmenu">|</ul>
   1.expAll = True
+  1.noBlur =  1
   1.NO = 1
   1.NO.wrapItemAndSub = |*|<li>|</li>|*|<li class="last">|</li>
   1.CUR = 1
