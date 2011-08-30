@@ -1,28 +1,28 @@
-"NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=IA?";"British language and literature";"groupstart"
-"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=IA 2? or lkl=IA 3?";"General works and linguistics";
-"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=IA 4?";"Collections of literary texts";
-"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=IA 5?";"Literary criticism";
-"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IA 6? not lkl=IA 610";"Criticism of individual authors";
-"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=IA 610?";"Texts by individual authors";
-"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=IAB?";"Old English";"inline"
-"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=IAD?";"Middle English";"inline"
-"NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Schottland";"lkl=IAH?";"Scotland";"inline,break"
-"NEAAC4100";2;"NEAAC4100";"NEAAC4000";"Wales";"lkl=IAJ?";"Wales";"inline"
-"NEAAC4110";2;"NEAAC4110";"NEAAC4000";"Irland";"lkl=IAF?";"Ireland";"inline"
+"NEAAC4000";1;"NEAAC4000";"NEAAC";"Englische Philologie";"lkl=ia?";"British language and literature";"groupstart"
+"NEAAC4010";2;"NEAAC4010";"NEAAC4000";"Allgemeines und Sprachwissenschaft";"lkl=ia 2? or lkl=ia 3?";"General works and linguistics";
+"NEAAC4030";2;"NEAAC4030";"NEAAC4000";"Textsammlungen";"lkl=ia 4?";"Collections of literary texts";
+"NEAAC4040";2;"NEAAC4040";"NEAAC4000";"Literaturwissenschaft";"lkl=ia 5?";"Literary criticism";
+"NEAAC4050";2;"NEAAC4050";"NEAAC4000";"Sekundärliteratur zu einzelnen Autoren";"lkl=ia 6? not lkl=ia 610";"Criticism of individual authors";
+"NEAAC4060";2;"NEAAC4060";"NEAAC4000";"Texte einzelner Autoren";"lkl=ia 610?";"Texts by individual authors";
+"NEAAC4070";2;"NEAAC4070";"NEAAC4000";"Altenglisch";"lkl=iab?";"Old English";"inline"
+"NEAAC4080";2;"NEAAC4080";"NEAAC4000";"Mittelenglisch";"lkl=iad?";"Middle English";"inline"
+"NEAAC4090";2;"NEAAC4090";"NEAAC4000";"Schottland";"lkl=iah?";"Scotland";"inline,break"
+"NEAAC4100";2;"NEAAC4100";"NEAAC4000";"Wales";"lkl=iaj?";"Wales";"inline"
+"NEAAC4110";2;"NEAAC4110";"NEAAC4000";"Irland";"lkl=iaf?";"Ireland";"inline"
 ;;;;;;;
-"NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=IC?";"American language and literature";"groupend"
-"NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=IC 2? or lkl=IC 3?";"General works and linguistics";
-"NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=IC 4?";"Collections of literary texts";
-"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=IC 5?";"Literary criticism";
-"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=IC 6? not lkl=IC 610";"Criticism of individual authors";
-"NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=IC 610";"Texts by individual authors";
+"NEAAC5000";1;"NEAAC5000";"NEAAC";"Amerikanische Philologie";"lkl=ic?";"American language and literature";"groupend"
+"NEAAC5010";2;"NEAAC5010";"NEAAC5000";"Allgemeines und Sprachwissenschaft";"lkl=ic 2? or lkl=ic 3?";"General works and linguistics";
+"NEAAC5030";2;"NEAAC5030";"NEAAC5000";"Textsammlungen";"lkl=ic 4?";"Collections of literary texts";
+"NEAAC5040";2;"NEAAC5040";"NEAAC5000";"Literaturwissenschaft";"lkl=ic 5?";"Literary criticism";
+"NEAAC5050";2;"NEAAC5050";"NEAAC5000";"Sekundärliteratur zu einzelnen Autoren";"lkl=ic 6? not lkl=ic 610";"Criticism of individual authors";
+"NEAAC5060";2;"NEAAC5060";"NEAAC5000";"Texte einzelner Autoren";"lkl=ic 610";"Texts by individual authors";
 ;;;;;;;
-"NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=IB?";"New literatures in English";"groupstart"
-"NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Kanada";"lkl=IBJ?";"Canada";
-"NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Australien und Neuseeland";"lkl=IBB? or lkl=IBG?";"Australia and New Zealand";
-"NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Afrika, Asien, Karibik";"lkl=IBM? or lkl=IBR? or lkl=IBO?";"Africa, Asia, Caribbean";
-"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Indien";"lkl=IBW?";"India";
+"NEAAC2000";1;"NEAAC2000";"NEAAC";"Commonwealth";"lkl=ib?";"New literatures in English";"groupstart"
+"NEAAC2010";2;"NEAAC2010";"NEAAC2000";"Kanada";"lkl=ibj?";"Canada";
+"NEAAC2020";2;"NEAAC2020";"NEAAC2000";"Australien und Neuseeland";"lkl=ibb? or lkl=ibg?";"Australia and New Zealand";
+"NEAAC2030";2;"NEAAC2030";"NEAAC2000";"Afrika, Asien, Karibik";"lkl=ibm? or lkl=ibr? or lkl=ibo?";"Africa, Asia, Caribbean";
+"NEAAC2040";2;"NEAAC2040";"NEAAC2000";"Indien";"lkl=ibw?";"India";
 ;;;;;;;
-"NEAAC3000";1;"NEAAC3000";"NEAAC";"Keltische Philologie";"lkl=IE?";"Celtic studies";"groupend"
-"NEAAC3100";2;"NEAAC3100";"NEAAC3000";"Sprachwissenschaft";"lkl=IE 2? or lkl=IE 3? or lkl=IEC 2? or lkl=IEC 3? or lkl=IEF 2? or lkl=IEF 3? or lkl=IEH 2? or lkl=IEH 3? or lkl=IEK 2? or lkl=IEK 3? or lkl=IEM 2? or lkl=IEM 3? or lkl=IEO 2? or lkl=IEO 3? or lkl=IER 2? or lkl=IER 3? or lkl=IET 2? or lkl=IET 3?";"Linguistics";
-"NEAAC3200";2;"NEAAC3200";"NEAAC3000";"Literaturwissenschaft";"lkl=IE 4? or lkl=IE 5? or lkl=IE 6? or lkl=IEC 4? or lkl=IEC 5? or lkl=IEC 6? or lkl=IEF 4? or lkl=IEF 5? or lkl=IEF 6? or lkl=IEH 4? or lkl=IEH 5? or lkl=IEH 6? or lkl=IEK 4? or lkl=IEK 5? or lkl=IEK 6? or lkl=IEM 4? or lkl=IEM 5? or lkl=IEM 6? or lkl=IEO 4? or lkl=IEO 5? or lkl=IEO 6? or lkl=IER 4? or lkl=IER 5? or lkl=IER 6? or lkl=IET 4? or lkl=IET 5? or lkl=IET 6?";"Texts and literary criticism";
+"NEAAC3000";1;"NEAAC3000";"NEAAC";"Keltische Philologie";"lkl=ie?";"Celtic studies";"groupend"
+"NEAAC3100";2;"NEAAC3100";"NEAAC3000";"Sprachwissenschaft";"lkl=ie 2? or lkl=ie 3? or lkl=iec 2? or lkl=iec 3? or lkl=ief 2? or lkl=ief 3? or lkl=ieh 2? or lkl=ieh 3? or lkl=iek 2? or lkl=iek 3? or lkl=iem 2? or lkl=iem 3? or lkl=ieo 2? or lkl=ieo 3? or lkl=ier 2? or lkl=ier 3? or lkl=iet 2? or lkl=iet 3?";"Linguistics";
+"NEAAC3200";2;"NEAAC3200";"NEAAC3000";"Literaturwissenschaft";"lkl=ie 4? or lkl=ie 5? or lkl=ie 6? or lkl=iec 4? or lkl=iec 5? or lkl=iec 6? or lkl=ief 4? or lkl=ief 5? or lkl=ief 6? or lkl=ieh 4? or lkl=ieh 5? or lkl=ieh 6? or lkl=iek 4? or lkl=iek 5? or lkl=iek 6? or lkl=iem 4? or lkl=iem 5? or lkl=iem 6? or lkl=ieo 4? or lkl=ieo 5? or lkl=ieo 6? or lkl=ier 4? or lkl=ier 5? or lkl=ier 6? or lkl=iet 4? or lkl=iet 5? or lkl=iet 6?";"Texts and literary criticism";
