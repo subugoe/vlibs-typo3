@@ -606,6 +606,10 @@ a.languageSwitcher:hover {
 	margin-bottom: 0.5em;
 }
 
+#pazpar2 fieldset legend {
+	color: #263476;
+}
+
 #pazpar2 .pz2-fieldset-group {
 	width: 340px;
 	float: right;
