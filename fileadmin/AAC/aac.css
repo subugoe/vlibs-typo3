@@ -59,7 +59,8 @@
 
 .container_16 .grid_12,
 #content .csc-default,
-.container_16 .pz2-JSNote {
+.container_16 .pz2-JSNote,
+.container_16 #pz2-results {
 	width: 700px;
 }
 
