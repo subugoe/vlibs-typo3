@@ -487,7 +487,7 @@ a.languageSwitcher:hover {
 }
 
 #pazpar2 #pz2-results {
-	margin-right: 240px;
+	margin: 0px;
 }
 
 #pazpar2 #pz2-results ol.pz2-resultList li {
@@ -529,7 +529,7 @@ a.languageSwitcher:hover {
 
 #pazpar2 #pz2-results .pz2-mediaIcon {
 	top: -2px;
-	left: -40px;
+	left: -38px;
 }
 
 #pazpar2 .pz2-progressIndicator {
