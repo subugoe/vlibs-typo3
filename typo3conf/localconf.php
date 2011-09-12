@@ -121,5 +121,4 @@ $TYPO3_CONF_VARS['GFX']['im_combine_filename'] = '';	//  Modified or inserted by
 $TYPO3_CONF_VARS['GFX']['im_path'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 
-// Updated by TYPO3 Extension Manager 12-09-11 11:18:05
 ?>
