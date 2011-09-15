@@ -109,6 +109,31 @@
 						</config>
 					</TCEforms>
 				</searchPid>				
+				
+				<sortParameter>
+					<TCEforms>
+						<exclude>1</exclude>
+						<label>Sortierung</label>
+						<displayCond><![CDATA[FIELD:defaultAction:=:displayList]]></displayCond>
+						<config>
+							<type>select</type>
+							<items type="array">
+								<numIndex index="0" type="array">
+									<numIndex index="0">Datenbanktyp</numIndex>
+									<numIndex index="1">type</numIndex>
+								</numIndex>
+								<numIndex index="1" type="array">
+									<numIndex index="0">Alphabetisch</numIndex>
+									<numIndex index="1">alph</numIndex>
+								</numIndex>
+								<numIndex index="2" type="array">
+									<numIndex index="0">Zugangsart</numIndex>
+									<numIndex index="1">access</numIndex>
+								</numIndex>															
+							</items>
+						</config>
+					</TCEforms>
+				</sortParameter>		
 			</el>
 		</ROOT>
 

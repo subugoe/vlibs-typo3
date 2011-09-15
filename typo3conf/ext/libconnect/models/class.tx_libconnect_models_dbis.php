@@ -80,7 +80,8 @@ class tx_libconnect_models_dbis extends tx_lib_object {
 		$subject = $this->t3_to_dbis_subjects[$subject_id];
 
 		$dbis_id = $subject['dbis_id'];
-		$result = $dbis->getDbliste($dbis_id);
+		$sort = $this->controller->configurations->get('sortParameter');
+		$result = $dbis->getDbliste($dbis_id, $sort);
 
 		foreach(array_keys($result['list']['top']) as $db) {
 			$result['list']['top'][$db]['detail_link'] = $cObject->getTypolink_URL(

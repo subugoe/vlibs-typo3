@@ -45,9 +45,9 @@ class DBIS{
 	 * @param int $fachgebiet
 	 * @return array
 	 */
-	public function getDbliste( $fachgebiet, $type = false ){
-
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&";
+	public function getDbliste( $fachgebiet, $sort = "type" ){
+		$sortlist = array();
+		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&sort=".$sort."&";
 
 		if (is_numeric($fachgebiet)) {
 			// notation ist eine id => dbis sammlung
@@ -57,7 +57,6 @@ class DBIS{
 			$url .= 'lett=c&collid=' . $fachgebiet;
 		}
 
-//echo $url;
 
 		$xml_fachgebiet_db = simplexml_load_file( $url );
 
@@ -72,16 +71,22 @@ class DBIS{
 				'id' => $id,
 				'title' => (string)$value->db_access,
 				'description' => (string)$value->db_access_short_text,
-			);
-		}
-		foreach ($xml_fachgebiet_db->list_dbs->db_type_infos->db_type_info as $value){
-			$id = (string) $value->attributes()->db_type_id;
-			$title = (string) $value->db_type;
-			$list['groups'][$id] = array(
-				'id' => $id,
-				'title' => $title,
 				'dbs' => array()
 			);
+		}
+		if($sort=='access'){
+			$list['groups']=&$list['access_infos'];
+		}else{
+
+			foreach ($xml_fachgebiet_db->list_dbs->db_type_infos->db_type_info as $value){
+				$id = (string) $value->attributes()->db_type_id;
+				$title = (string) $value->db_type;
+				$list['groups'][$id] = array(
+					'id' => $id,
+					'title' => $title,
+					'dbs' => array()
+				);
+			}
 		}
 
 		foreach ($xml_fachgebiet_db->list_dbs->dbs as $dbs){
@@ -101,15 +106,32 @@ class DBIS{
 				if ($db['top_db']) {
 					$list['top'][]  = $db;
 				} else {
-					foreach(explode(' ', $db['db_type_refs']) as $ref) {
-						$list['groups'][$ref]['dbs'][] = $db;
+					if($sort=="alph"){
+						$list['groups']['Treffer']['dbs'][] = $db;
+						$sortlist['Treffer']=$db['Treffer'];
+					}elseif($sort=='access'){
+						$list['access_infos'][$db['access_ref']]['dbs'][] = $db;
+						$sortlist[$db['access']]=$db['access_ref'];
+					}else{
+						foreach(explode(' ', $db['db_type_refs']) as $ref) {
+							$list['groups'][$ref]['dbs'][] = $db;
+							$sortlist[$db['access']]=$db['access_ref'];
+						}
 					}
 				}
-
 
 			}
 
 		}
+
+		if(!empty($sortlist)&&($sort=='access')){
+			natsort($sortlist);
+			foreach($sortlist as $value =>$key){
+				$list['alphasort'][$value]=$key;
+			}
+		}
+
+		$list['alphasort']=$sortlist;
 
 		return array( 'groups' => $access_infos, 'list' => $list);
 	}
@@ -342,7 +364,7 @@ class DBIS{
 		}
 
 		setlocale(LC_COLLATE, "de_DE.UTF-8");
-		uksort($sort);
+		uasort($sort);
 		$list['alphasort']=$sort;
 
 		return array( 'page_vars' => $page_vars, /*'groups' => $access_infos,*/ 'list' => $list);

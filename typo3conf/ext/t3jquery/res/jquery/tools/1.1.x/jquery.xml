@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <t3jquery>
 	<version type="array">
-		<act>1.2.6-dev</act>
-		<cdn>1.2.5</cdn>
+		<act>1.1.2</act>
+		<cdn>1.1.2</cdn>
 	</version>
 	<groups type="array">
 		<numIndex index="1" type="array">
@@ -28,6 +28,16 @@
 					<depends>ToolsTabs</depends>
 					<sources type="array">
 						<numIndex index="1">.slideshow(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="3" type="array">
+					<name>ToolsTabsHistory</name>
+					<label>History plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.tabshistory</detail>
+					<file>TOOLS:tools.tabs.history.js</file>
+					<depends>ToolsTabs</depends>
+					<sources type="array">
+						<numIndex index="1">.history(</numIndex>
 					</sources>
 				</numIndex>
 			</files>
@@ -80,6 +90,16 @@
 					</sources>
 				</numIndex>
 				<numIndex index="2" type="array">
+					<name>ToolsScrollableCircular</name>
+					<label>Circular plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.scrollablecircular</detail>
+					<file>TOOLS:tools.scrollable.circular.js</file>
+					<depends>ToolsScrollable</depends>
+					<sources type="array">
+						<numIndex index="1">.circular(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="3" type="array">
 					<name>ToolsScrollableAutoscroll</name>
 					<label>Autoscroll plugin</label>
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.scrollableautoscroll</detail>
@@ -89,7 +109,7 @@
 						<numIndex index="1">.autoscroll(</numIndex>
 					</sources>
 				</numIndex>
-				<numIndex index="3" type="array">
+				<numIndex index="4" type="array">
 					<name>ToolsScrollableNavigator</name>
 					<label>Navigator plugin</label>
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.scrollablenavigator</detail>
@@ -97,6 +117,16 @@
 					<depends>ToolsScrollable</depends>
 					<sources type="array">
 						<numIndex index="1">.navigator(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="5" type="array">
+					<name>ToolsScrollableMousewheel</name>
+					<label>Mousewheel plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.scrollablemousewheel</detail>
+					<file>TOOLS:tools.scrollable.mousewheel.js</file>
+					<depends>ToolsScrollable</depends>
+					<sources type="array">
+						<numIndex index="1">.mousewheel(</numIndex>
 					</sources>
 				</numIndex>
 			</files>
@@ -116,6 +146,16 @@
 					</sources>
 				</numIndex>
 				<numIndex index="2" type="array">
+					<name>ToolsOverlayGallery</name>
+					<label>Gallery plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.overlaygallery</detail>
+					<file>TOOLS:tools.overlay.gallery.js</file>
+					<depends>ToolsOverlay</depends>
+					<sources type="array">
+						<numIndex index="1">.gallery(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="3" type="array">
 					<name>ToolsOverlayApple</name>
 					<label>Apple effect</label>
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.overlayapple</detail>
@@ -131,44 +171,24 @@
 			</files>
 		</numIndex>
 		<numIndex index="5" type="array">
-			<name>jQuery TOOLS Form</name>
-			<label>jQuery TOOLS Form</label>
+			<name>jQuery TOOLS Expose</name>
+			<label>jQuery TOOLS Expose</label>
 			<files type="array">
 				<numIndex index="1" type="array">
-					<name>ToolsFormDateinput</name>
-					<label>Dateinput</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.formdateinput</detail>
-					<file>TOOLS:form.dateinput.js</file>
+					<name>ToolsExpose</name>
+					<label>Expose</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.expose</detail>
+					<file>TOOLS:tools.expose.js</file>
 					<depends>jQuery</depends>
 					<sources type="array">
-						<numIndex index="1">.dateinput(</numIndex>
-					</sources>
-				</numIndex>
-				<numIndex index="2" type="array">
-					<name>ToolsFormRangeinput</name>
-					<label>Rangeinput</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.formrangeinput</detail>
-					<file>TOOLS:form.rangeinput.js</file>
-					<depends>jQuery</depends>
-					<sources type="array">
-						<numIndex index="1">.rangeinput(</numIndex>
-					</sources>
-				</numIndex>
-				<numIndex index="3" type="array">
-					<name>ToolsFormValidator</name>
-					<label>Validator</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.formvalidator</detail>
-					<file>TOOLS:form.validator.js</file>
-					<depends>jQuery</depends>
-					<sources type="array">
-						<numIndex index="1">.validator(</numIndex>
+						<numIndex index="1">.expose(</numIndex>
 					</sources>
 				</numIndex>
 			</files>
 		</numIndex>
 		<numIndex index="6" type="array">
-			<name>jQuery TOOLS Toolbox</name>
-			<label>jQuery TOOLS Toolbox</label>
+			<name>jQuery TOOLS Flashembed</name>
+			<label>jQuery TOOLS Flashembed</label>
 			<files type="array">
 				<numIndex index="1" type="array">
 					<name>ToolsFlashembed</name>
@@ -179,36 +199,6 @@
 					<sources type="array">
 						<numIndex index="1">flashembed(</numIndex>
 						<numIndex index="2">flashembed.</numIndex>
-					</sources>
-				</numIndex>
-				<numIndex index="2" type="array">
-					<name>ToolsHistory</name>
-					<label>History</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.history</detail>
-					<file>TOOLS:tools.history.js</file>
-					<depends>jQuery</depends>
-					<sources type="array">
-						<numIndex index="1">.history(</numIndex>
-					</sources>
-				</numIndex>
-				<numIndex index="3" type="array">
-					<name>ToolsExpose</name>
-					<label>Expose</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.expose</detail>
-					<file>TOOLS:tools.expose.js</file>
-					<depends>jQuery</depends>
-					<sources type="array">
-						<numIndex index="1">flashembed(</numIndex>
-					</sources>
-				</numIndex>
-				<numIndex index="4" type="array">
-					<name>ToolsMousewheel</name>
-					<label>Mousewheel</label>
-					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.mousewheel</detail>
-					<file>TOOLS:tools.mousewheel.js</file>
-					<depends>jQuery</depends>
-					<sources type="array">
-						<numIndex index="1">.wheel(</numIndex>
 					</sources>
 				</numIndex>
 			</files>
@@ -227,6 +217,37 @@
 						<numIndex index="1">$f(</numIndex>
 						<numIndex index="2">.flowplayer(</numIndex>
 						<numIndex index="3">flowplayer(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="2" type="array">
+					<name>ToolsFlowplayerControlbar</name>
+					<label>Controlbar plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.flowplayercontrolbar</detail>
+					<file>TOOLS:flowplayer.controls.js</file>
+					<depends>ToolsFlowplayer</depends>
+					<sources type="array">
+						<numIndex index="1">.controls(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="3" type="array">
+					<name>ToolsFlowplayerPlaylist</name>
+					<label>Playlist plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.flowplayerplaylist</detail>
+					<file>TOOLS:flowplayer.playlist.js</file>
+					<depends>ToolsFlowplayer</depends>
+					<sources type="array">
+						<numIndex index="1">.playlist(</numIndex>
+					</sources>
+				</numIndex>
+				<numIndex index="4" type="array">
+					<name>ToolsFlowplayerEmbedding</name>
+					<label>Embedding plugin</label>
+					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.flowplayerembedding</detail>
+					<file>TOOLS:flowplayer.embed.js</file>
+					<depends>ToolsFlowplayer</depends>
+					<sources type="array">
+						<numIndex index="1">.embed(</numIndex>
+						<numIndex index="2">.getEmbedCode(</numIndex>
 					</sources>
 				</numIndex>
 			</files>
