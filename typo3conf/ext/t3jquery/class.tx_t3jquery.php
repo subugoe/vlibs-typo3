@@ -149,6 +149,22 @@ class tx_t3jquery
 			t3lib_div::devLog('jQuery TOOLS Version \''.$confArr['jQueryTOOLSVersion'].'\' not in CDN', 't3jquery', 1);
 			$confArr['jQueryTOOLSVersion'] = '1.2.5';
 		}
+		$temp_config = array();
+		// CDN version for jQuery (t3jquery 2.0.0)
+		if (preg_match("/x$/", $confArr['jQueryVersion'])) {
+			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryConfiguration();
+			$confArr['jQueryVersion'] = $temp_config['version']['cdn'];
+		}
+		// CDN version for jQueryUI (t3jquery 2.0.0)
+		if (preg_match("/x$/", $confArr['jQueryUiVersion'])) {
+			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryUiConfiguration();
+			$confArr['jQueryUiVersion'] = $temp_config['version']['cdn'];
+		}
+		// CDN version for TOOLS (t3jquery 2.0.0)
+		if (preg_match("/x$/", $confArr['jQueryTOOLSVersion'])) {
+			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration();
+			$confArr['jQueryTOOLSVersion'] = $temp_config['version']['cdn'];
+		}
 		switch ($confArr['locationCDN']) {
 			case 'google' : {
 				// in jQuery TOOLS jQuery is included
@@ -219,6 +235,39 @@ class tx_t3jquery
 				break;
 			}
 		}
+	}
+
+	/**
+	* Returns the configuration of jQuery UI
+	* @return array
+	*/
+	function getJqueryConfiguration()
+	{
+		$confArr = tx_t3jquery::getConf();
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/core/'.$confArr['jQueryVersion'].'/jquery.xml')));
+		return $configuration;
+	}
+
+	/**
+	 * Returns the configuration of jQuery UI
+	 * @return array
+	 */
+	function getJqueryUiConfiguration()
+	{
+		$confArr = tx_t3jquery::getConf();
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/ui/'.$confArr['jQueryUiVersion'].'/jquery.xml')));
+		return $configuration;
+	}
+
+	/**
+	 * Returns the configuration of jQuery UI
+	 * @return array
+	 */
+	function getJqueryToolsConfiguration()
+	{
+		$confArr = tx_t3jquery::getConf();
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$confArr['jQueryTOOLSVersion'].'/jquery.xml')));
+		return $configuration;
 	}
 
 	/**
@@ -339,7 +388,10 @@ class tx_t3jquery
 		if (! isset($confArr['jqLibFilename'])) {
 			$confArr['jqLibFilename'] = 'jquery-###VERSION###.js';
 		}
-		$filename = str_replace(array('###VERSION###'), array(T3JQUERYVERSION), $confArr['jqLibFilename']);
+		$nameArr = array(
+			'###VERSION###' => T3JQUERYVERSION,
+		);
+		$filename = str_replace(array_keys($nameArr), array_values($nameArr), $confArr['jqLibFilename']);
 		return $filename;
 	}
 

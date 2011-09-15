@@ -110,7 +110,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 
 $TYPO3_CONF_VARS['EXT']['extConf']['cag_linkchecker'] = 'a:1:{s:15:"setPageTSconfig";s:1:"1";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['EXT']['extConf']['realurl'] = 'a:5:{s:10:"configFile";s:26:"typo3conf/realurl_conf.php";s:14:"enableAutoConf";s:1:"1";s:14:"autoConfFormat";s:1:"0";s:12:"enableDevLog";s:1:"0";s:19:"enableChashUrlDebug";s:1:"0";}';	//  Modified or inserted by TYPO3 Extension Manager.
-$TYPO3_CONF_VARS['EXT']['extConf']['t3jquery'] = 'a:11:{s:15:"alwaysIntegrate";s:1:"1";s:18:"dontIntegrateOnUID";s:0:"";s:9:"configDir";s:19:"uploads/tx_t3jquery";s:13:"jQueryVersion";s:5:"1.6.2";s:15:"jQueryUiVersion";s:6:"1.8.16";s:18:"jQueryTOOLSVersion";s:0:"";s:17:"integrateToFooter";s:1:"0";s:23:"dontIntegrateInRootline";s:0:"";s:13:"jqLibFilename";s:23:"jquery-###VERSION###.js";s:16:"integrateFromCDN";s:1:"0";s:11:"locationCDN";s:6:"google";}';	// Modified or inserted by TYPO3 Extension Manager. 
+$TYPO3_CONF_VARS['EXT']['extConf']['t3jquery'] = 'a:11:{s:15:"alwaysIntegrate";s:1:"1";s:18:"dontIntegrateOnUID";s:0:"";s:9:"configDir";s:19:"uploads/tx_t3jquery";s:13:"jQueryVersion";s:5:"1.6.x";s:15:"jQueryUiVersion";s:0:"";s:18:"jQueryTOOLSVersion";s:0:"";s:17:"integrateToFooter";s:1:"0";s:23:"dontIntegrateInRootline";s:0:"";s:13:"jqLibFilename";s:23:"jquery-###VERSION###.js";s:16:"integrateFromCDN";s:1:"0";s:11:"locationCDN";s:6:"google";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['EXT']['extConf']['beko_debugster'] = 'a:2:{s:7:"ip_mask";s:38:"134.76.*, 127.0.0.1, 10.0.*, 192.168.*";s:10:"steps_back";s:1:"3";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['EXT']['extConf']['nkwgok'] = 'a:2:{s:11:"opacBaseURL";s:39:"http://opac.sub.uni-goettingen.de/DB=1/";s:7:"CSSPath";s:0:"";}';	// Modified or inserted by TYPO3 Extension Manager.opac.sub.uni-goettingen.de/DB=1/";s:7:"CSSPath";s:0:"";}';	//
 $TYPO3_CONF_VARS['EXT']['extConf']['devlog'] = 'a:11:{s:10:"maxLogRuns";s:2:"15";s:14:"entriesPerPage";s:2:"25";s:7:"maxRows";s:4:"1000";s:8:"optimize";s:1:"0";s:8:"dumpSize";s:7:"1000000";s:11:"minLogLevel";s:1:"0";s:11:"excludeKeys";s:0:"";s:14:"highlightStyle";s:60:"padding: 2px; background-color: #fc3; border: 1px solid #666";s:16:"refreshFrequency";s:1:"2";s:13:"prototypePath";s:0:"";s:11:"autoCleanup";s:1:"0";}';	// Modified or inserted by TYPO3 Extension Manager.
@@ -121,4 +121,5 @@ $TYPO3_CONF_VARS['GFX']['im_combine_filename'] = '';	//  Modified or inserted by
 $TYPO3_CONF_VARS['GFX']['im_path'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 
+// Updated by TYPO3 Extension Manager 15-09-11 18:44:30
 ?>

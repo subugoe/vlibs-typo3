@@ -83,9 +83,12 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 {
 	var $pageinfo;
 	var $extKey = 't3jquery';
-	var $jQueryVersion      = '1.6.2';
-	var $jQueryUiVersion    = '1.8.16';
-	var $jQueryTOOLSVersion = '1.2.5';
+	var $jQueryVersion      = '1.6.x';
+	var $jQueryUiVersion    = '1.8.x';
+	var $jQueryTOOLSVersion = '1.2.x';
+	var $jQueryConfig      = array();
+	var $jQueryUiConfig    = array();
+	var $jQueryTOOLSConfig = array();
 	var $LANG = NULL;
 	var $confArray = array();
 	var $configDir = NULL;
@@ -104,24 +107,24 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 		$this->jQueryUiVersion    = $this->confArray['jQueryUiVersion'];
 		$this->jQueryTOOLSVersion = $this->confArray['jQueryTOOLSVersion'];
 		// get the XML-Config from jQuery
-		$jQuery = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/jquery.xml')));
-		if (count($jQuery['groups']) > 0) {
-			$this->configXML = $jQuery;
+		$this->jQueryConfig = tx_t3jquery::getJqueryConfiguration();
+		if (count($this->jQueryConfig['groups']) > 0) {
+			$this->configXML['groups'] = $this->jQueryConfig['groups'];
 		}
 		// Get the XML-Config from jQuery UI
 		if ($this->jQueryUiVersion) {
-			$jQueryUI = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/ui/'.$this->jQueryUiVersion.'/jquery.xml')));
-			if (count($jQueryUI['groups']) > 0) {
-				foreach ($jQueryUI['groups'] as $group) {
+			$this->jQueryUiConfig = tx_t3jquery::getJqueryUiConfiguration();
+			if (count($this->jQueryUiConfig['groups']) > 0) {
+				foreach ($this->jQueryUiConfig['groups'] as $group) {
 					$this->configXML['groups'][] = $group;
 				}
 			}
 		}
 		// Get the XML-Config from jQuery TOOLS
 		if ($this->jQueryTOOLSVersion) {
-			$jQueryTOOLS = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$this->jQueryTOOLSVersion.'/jquery.xml')));
-			if (count($jQueryTOOLS['groups']) > 0) {
-				foreach ($jQueryTOOLS['groups'] as $group) {
+			$this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration();
+			if (count($this->jQueryTOOLSConfig['groups']) > 0) {
+				foreach ($this->jQueryTOOLSConfig['groups'] as $group) {
 					$this->configXML['groups'][] = $group;
 				}
 			}
@@ -226,7 +229,7 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			// JavaScript (jQuery subscripts is used, as no compressed lib exists yet or might not include the supparts needed.)
 
 			$this->doc->JScode = '
-<script type="text/javascript" src="../res/jquery/jquery-' . $this->jQueryVersion . '.js"></script>
+<script type="text/javascript" src="../res/jquery/core/' . $this->jQueryVersion . '/jquery.js"></script>
 <script type="text/javascript" src="../res/jqconfig.js"></script>
 <script language="javascript" type="text/javascript">
 	script_ended = 0;
@@ -268,13 +271,13 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			// output the used versions
 			$temp_version = array();
 			if ($this->jQueryVersion) {
-				$temp_version[] = "jQuery {$this->jQueryVersion}";
+				$temp_version[] = "jQuery {$this->jQueryConfig['version']['act']}";
 			}
 			if ($this->jQueryUiVersion) {
-				$temp_version[] = "UI {$this->jQueryUiVersion}";
+				$temp_version[] = "UI {$this->jQueryUiConfig['version']['act']}";
 			}
 			if ($this->jQueryTOOLSVersion) {
-				$temp_version[] = "Tools {$this->jQueryTOOLSVersion}";
+				$temp_version[] = "Tools {$this->jQueryTOOLSConfig['version']['act']}";
 			}
 			$this->content .= $this->doc->section(
 				'',
@@ -782,13 +785,13 @@ jQuery(document).ready(function() {
 		foreach ($this->jQueryConfig['files'] as $scriptPart) {
 			$temp_script = NULL;
 			if ($scriptPart == 'jquery.js') { // add core
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/jquery-{$this->jQueryVersion}.js";
-			} elseif ($scriptPart == 'jquery-noConflict.js') { // add noConflict mode
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/jquery-noConflict.js";
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/core/{$this->jQueryVersion}/jquery.js";
+			} elseif ($scriptPart == 'jquery.noConflict.js') { // add noConflict mode
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/plugins/jquery.noConflict.js";
 			} elseif ($scriptPart == 'jquery-easing.js') { // Easing is in effects.core.js, nothing to do
 				$temp_script = NULL;
 			} elseif (in_array($scriptPart, array('jquery.mousewheel.js', 'jquery.lint.js', 'jquery.mobile.js'))) { // add plugins
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/".$scriptPart;
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/plugins/".$scriptPart;
 			} elseif (preg_match("/^TOOLS\:(.*)/", $scriptPart, $reg)) { // add TOOLS
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/tools/{$this->jQueryTOOLSVersion}/ui/{$reg[1]}";
 			} else { // add UI
@@ -1004,13 +1007,13 @@ jQuery(document).ready(function() {
 							foreach ($group['files'] as $file) {
 								// if UI Tab and the Tools Tab is selected, the UI Tabs will win...
 								$notChecked = FALSE;
-								if (preg_match("/^ToolsTabs/", $file['name']) && in_array('ui/ui.tabs.js', $formVars['files'])) {
+								if (preg_match("/^ToolsTabs/", $file['name']) && in_array('ui/jquery.ui.tabs.js', $formVars['files'])) {
 									$notChecked = TRUE;
 								}
 								$out .= '
 		<tr class="check">
 			<td class="check">
-				<input type="checkbox" id="'.$file['name'].'" deps="'.$file['depends'].'" dist="'.$file['disturbing'].'" name="files[]" value="'.$file['file'].'"'.(in_array($file['file'], $formVars['files']) && !$notChecked ? ' checked="checked"':'').' />
+				<input type="checkbox" id="'.$file['name'].'" deps="'.$file['depends'].'" dist="'.$file['disturbing'].'" name="files[]" value="'.$file['file'].'"'.(in_array($file['file'], $formVars['files']) && !$notChecked ? ' checked="checked"' : '').' />
 			</td>
 			<td class="name" style="width:100px;"><label for="'.$file['name'].'">'.$file['label'].'</label></td>
 			<td class="description">

@@ -47,7 +47,9 @@
 		{if count($group.dbs)}
 			<div class="accordion-fce-wrapper">
 				<div class="accordion-fce">
-					<h2>{$group.title} ({$group.dbs|@count})</h2>
+					<h2>{if !(isset($group.title))}
+						Gesamtangebot {else}{$group.title}
+					{/if}  ({$group.dbs|@count})</h2>
 
 					<div class="accordion-content clearfix">
 					<ul class="dbis-dblist">

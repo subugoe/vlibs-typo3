@@ -30,31 +30,30 @@ require_once(t3lib_extMgm::extPath('div') . 'class.tx_div.php');
 
 
 class tx_libconnect_controllers_dbis extends tx_lib_controller {
-	
-	public function displayTopAction() {	
-		
+
+	public function displayTopAction() {
+
 		$model = $this->makeInstance('tx_libconnect_models_dbis');
 		$model->loadTop($this->configurations->get('subject'));
-		
+
 		$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 		$view->setTemplatePath($this->configurations->get('templatePath'));
 		$output = $view->render("dbis_toplist.tpl");
 		return $output;
 	}
-	
-	public function displayListAction() {	
-		
+
+	public function displayListAction() {
 		$model = $this->makeInstance('tx_libconnect_models_dbis');
-		
+
 		if ($this->parameters->get('subject')) {
-			
+
 			$model->loadList($this->parameters->get('subject'));
 			$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 			$view->setTemplatePath($this->configurations->get('templatePath'));
 			$output = $view->render("dbis_list.tpl");
 
 		} else if ($this->parameters->get('search')) {
-			
+
 			$model->loadSearch();
 			$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 			$view->setTemplatePath($this->configurations->get('templatePath'));
@@ -66,38 +65,38 @@ class tx_libconnect_controllers_dbis extends tx_lib_controller {
 			$view->setTemplatePath($this->configurations->get('templatePath'));
 			$output = $view->render("dbis_overview.tpl");
 		}
-		
+
 		return $output;
 	}
-	
+
 	public function displayDetailAction() {
-		
-		if (! $this->parameters->get('titleid')) {			
+
+		if (! $this->parameters->get('titleid')) {
 			return "<b>Error in DBIS displayDetailAction: No title id</b>";
 		}
-			
-		$model = $this->makeInstance('tx_libconnect_models_dbis');	
+
+		$model = $this->makeInstance('tx_libconnect_models_dbis');
 		$model->loadDetail(intval($this->parameters->get('titleid')));
-		
+
 		$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 		$view->setTemplatePath($this->configurations->get('templatePath'));
 		return $view->render("dbis_detail.tpl");
-		
+
 	}
-	
+
 	public function displayMiniFormAction() {
-		$model = $this->makeInstance('tx_libconnect_models_dbis');	
+		$model = $this->makeInstance('tx_libconnect_models_dbis');
 		$model->loadMiniForm();
-		
+
 		$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 		$view->setTemplatePath($this->configurations->get('templatePath'));
 		return $view->render("dbis_miniform.tpl");
 	}
 
 	public function displayFormAction() {
-		$model = $this->makeInstance('tx_libconnect_models_dbis');	
+		$model = $this->makeInstance('tx_libconnect_models_dbis');
 		$model->loadForm();
-		
+
 		$view = $this->makeInstance('tx_libconnect_views_smarty', $model);
 		$view->setTemplatePath($this->configurations->get('templatePath'));
 		return $view->render("dbis_form.tpl");
