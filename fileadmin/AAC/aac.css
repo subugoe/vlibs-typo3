@@ -116,6 +116,23 @@ h1, h2, h3 {
 
 h1 {
 	font-size: 1.786em; /*=25px*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 76px;
+	width: 308px;
+	padding: 0px;
+	background: transparent url(header_titles.png) 0px 0px no-repeat;
+}
+
+body.historyguide h1 {
+	background-position: 0px -77px;
+	width: 263px;
+}
+
+body.literatureguide h1 {
+	background-position: 0px -154px;
+	width: 263px;
 }
 
 h2 {
@@ -211,14 +228,6 @@ visible when they're tabbed to.
 	height: 140px;
 	background: #eaecf4 url(header.png) no-repeat;
 	text-indent: -9999em;
-}
-
-body.historyguide #head {
-	background-image: url(header_history_guide.png);
-}
-
-body.literatureguide #head {
-	background-image: url(header_literature_guide.png);
 }
 
 #head a {
