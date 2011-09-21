@@ -11,7 +11,7 @@ plugin.tx_libconnect.configurations {
 	templatePath = EXT:libconnect/templates
 	pathToTemplateDirectory = EXT:libconnect/templates
 	pathToLanguageFile = EXT:libconnect/locallang_db.xml
-} 
+}
 
 plugin.tx_libconnect.dbis_controller = USER_INT
 plugin.tx_libconnect.dbis_controller {
@@ -19,7 +19,7 @@ plugin.tx_libconnect.dbis_controller {
 	userFunc 	= tx_libconnect_controllers_dbis->main
 	configurations < plugin.tx_libconnect.configurations
 	configurations {
-		
+
 	}
 }
 tt_content.list.20.libconnect_dbis =< plugin.tx_libconnect.dbis_controller
@@ -30,7 +30,15 @@ plugin.tx_libconnect.ezb_controller {
 	userFunc 	= tx_libconnect_controllers_ezb->main
 	configurations < plugin.tx_libconnect.configurations
 	configurations {
-		
+
 	}
 }
 tt_content.list.20.libconnect_ezb =< plugin.tx_libconnect.ezb_controller
+
+#
+# load custom css files.
+#
+page.includeCSS {
+	tx_libconnect_ezb = EXT:libconnect/templates/styles/ezb.css
+	tx_libconnect_dbis = EXT:libconnect/templates/styles/dbis.css
+}

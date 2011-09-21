@@ -1,5 +1,8 @@
   # cat=basic; type=string; label=List of IPs: IPs that can see the debugster output. Separate multiple values with commas, wildcards are allowed: e.g. 192.168.*, 127.0.0.1
 ip_mask = *
 
+  # cat=basic; type=boolean; label=Use devIpMask:Use devIpMask from Install Tool (notice: overrules above setting)
+useDevIpMask = 1
+
   # cat=basic; type=string; label=Depth of Backtrace: How many steps of the backtrace are displayed in the debugster title. Hint: Move with mouse over the filename to display the complete path.
 steps_back = 3

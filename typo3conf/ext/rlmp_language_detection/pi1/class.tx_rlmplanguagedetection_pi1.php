@@ -261,7 +261,7 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		$GLOBALS['TSFE']->storeSessionData();
 		
 		if(TYPO3_DLOG)
-			t3lib_div::devLog('Location to redirect to: ' . $locationURL);
+			t3lib_div::devLog('Location to redirect to: ' . $locationUR, $this->extKey);
 		if(!$this->conf['dieAtEnd'] && $preferredLanguageOrPageUid != 0) {
 				header('Location: '.$locationURL);
 				//header('Referer: '.$locationURL);

@@ -61,7 +61,14 @@ class tx_t3jquery_tsparserext
 			$out .= '<link rel="stylesheet" type="text/css" href="' . $cssPath . 'compat/flashmessages.css" media="screen" />';
 		}
 		// get all supported versions from folder
-		$this->supportedUiVersion = t3lib_div::get_dirs(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/ui/"));
+		$supportedUiVersions = t3lib_div::get_dirs(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/ui/"));
+		if (is_array($supportedUiVersions)) {
+			foreach ($supportedUiVersions as $supportedUiVersion) {
+				if (file_exists(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/ui/").$supportedUiVersion.'/jquery.xml')) {
+					$this->supportedUiVersion[] = $supportedUiVersion;
+				}
+			}
+		}
 		// get the conf array
 		$this->confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
 		// if form is submited, the POST values are taken

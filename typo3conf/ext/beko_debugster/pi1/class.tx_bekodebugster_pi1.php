@@ -89,6 +89,7 @@ class tx_bekodebugster_pi1 extends tslib_pibase {
 	function __construct(&$var,&$conf) {
 		$extConf = isset($GLOBALS["TYPO3_CONF_VARS"]["EXT"]["extConf"]["beko_debugster"]) ? unserialize($GLOBALS["TYPO3_CONF_VARS"]["EXT"]["extConf"]["beko_debugster"]) : array();
 		$ip = isset($extConf['ip_mask']) ? $extConf['ip_mask'] : '*';
+		if ($extConf['useDevIpMask']) { $ip = $GLOBALS["TYPO3_CONF_VARS"]['SYS']['devIPmask']; }
 		
 		/* EDIT START hostname-resolver, possible hostname-entry will be parsed to an IP */
 		
@@ -451,7 +452,7 @@ class tx_bekodebugster_pi1 extends tslib_pibase {
 	function displayArray(&$var,$key) {
 		$count = count($var);
 		if ($count == 0) {
-			$array_content = 'EMPTY';
+			$array_content = '<tr><td>EMPTY</td></tr>';
 		} else {
 			$i = 0;
 			foreach ($var as $valkey => $value) {
@@ -567,7 +568,7 @@ class tx_bekodebugster_pi1 extends tslib_pibase {
 		if ($this->conf['wide'] === true) {
 			$css_width = 'width: 100%;';
 		}
-		return  $content .= '<style>
+		return  $content .= '<style type="text/css">
 	table.colorDebugMain {
 		font-family: "Courier New", Monospace, sans;
 		font-size: 13px;
