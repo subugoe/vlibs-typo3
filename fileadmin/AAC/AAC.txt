@@ -12,5 +12,5 @@ config.baseURL := appendString(://10.0.5.99/aac/)
 # Piwik user statistics
 config.tx_piwik {
 	piwik_idsite = 111
-	piwik_host = piwik.gwdg.de/
+	piwik_host = http://piwik.gwdg.de/
 }
