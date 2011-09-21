@@ -1,11 +1,11 @@
-lib.menu = HMENU
+lib.bottommenu = HMENU
 
-lib.menu {
+lib.bottommenu {
   special = directory
-  special.value = {$my_menu_root}
+  special.value = {$my_bottommenu_root}
 
   1 = TMENU
-  1.wrap = <ul class="mainmenu">|</ul>
+  1.wrap = <ul class="bottommenu">|</ul>
   1.expAll = True
   1.NO = 1
   1.NO.wrapItemAndSub = |*|<li>|</li>|*|<li class="last">|</li>
