@@ -4,7 +4,13 @@
 [else]
    config.baseURL = http
 [global]
-config.baseURL := appendString(://vlib-aac.sub.uni-goettingen.de/)
+config.baseURL := appendString(://10.0.5.99/aac/)
 
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
+
+# Piwik user statistics
+config.tx_piwik {
+	piwik_idsite = 111
+	piwik_host = piwik.gwdg.de/
+}
