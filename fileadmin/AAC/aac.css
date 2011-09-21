@@ -302,8 +302,9 @@ visible when they're tabbed to.
 	font-weight: bold;
 	text-decoration: none;
 	color: #234f8f;
+	margin: 0px 1px;
 	border-style: solid;
-	border-width: 1px 2px;
+	border-width: 1px 1px;
 	border-color: #eaecf4 transparent #dadada;
 	-webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
