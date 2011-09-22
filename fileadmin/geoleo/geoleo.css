@@ -50,7 +50,6 @@ ul.bottommenu li {
 
 #foot {
 	border-top: 1px solid #eee;
-
 }
 
 
@@ -97,7 +96,6 @@ visible when they're tabbed to.
 
 
 
-
 /*  ===  ===  ===  ===  ===
 
 # Typography CSS
@@ -108,32 +106,41 @@ Author: Henrik Cederblad (Cederblad Design)
 
 Entity:             Size:            Leading (line-height):
 
-* Base (body)       12px             10px / 0.833em
+* Base (body)       12px             10px / 0.833
 
-* Heading 1         18px / 1.200em   16px / 1.333em
-* Heading 2         16px / 1.333em   14px / 1.167em
-* Heading 3         14px / 1.167em   12px / 1.000em
-* Paragraph         12px / 1.000em   10px / 0.833em
-* Heading 4         12px / 1.000em   12px / 1.000em
-* Heading 5         10px / 0.833em   12px / 1.000em
+* Heading 1         20px / 1.667em   16px / 1.333
+* Heading 2         16px / 1.333em   14px / 1.167
+* Heading 3         14px / 1.167em   12px / 1.000
+* Paragraph         12px / 1.000em   10px / 0.833
+* Heading 4         12px / 1.000em   12px / 1.000
+
+### Notes:
+
+1. Omit units when declaring line-heights as to not break inheritance of relative line-height (see: "Unitless line-heights"; http://j.mp/r8zR7X)
 
 ===  ===  ===  ===  ===  */
 
 
-/*
+/* @group global base values
 ## Global base values
 
+* base font stack (based on: http://www.awayback.com/revised-font-stack/)
 * base font size
 * base line height
-* base font stack (based on: http://www.awayback.com/revised-font-stack/)
+* margins
+* paddings
 * base weight
+* letter spacing
 * base color
 */
 body {
-    font-size: 12px;
-    line-height: 16px;
     font-family: Verdana, Geneva, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
     font-weight: normal;
+    letter-spacing: normal;
     color: black;
 }
 
@@ -145,51 +152,75 @@ Everything that deviates from base values goes below …
 _N.B. Ok to use inherit if same as base value, for easier reading._
 */
 h1 {
-    font-size: 1.2em;
-    line-height: 1.333em;
     font-family: inherit;
+    font-size: 1.6666666666666667em;
+    line-height: 0.9;
+    margin: 0;
+    margin-bottom: 0.9em;
     font-weight: inherit;
+    letter-spacing: inherit;
     color: #ac3381;
 }
 
 h2 {
-    font-size: 1.333em;
-    line-height: 1.167em;
     font-family: inherit;
+    font-size: 1.5em;
+    line-height: 1;
+    margin: 0;
+    margin-bottom: 1em;
     font-weight: inherit;
+    letter-spacing: inherit;
     color: #ac3381;
 }
 
 h3 {
-    font-size: 1.167em;
-    line-height: 1.000em;
     font-family: inherit;
-    font-weight: bold;
-    color: #ac3381;
-}
-
-h4 {
-    font-size: 1.000em;
-    line-height: 1.000em;
-    font-family: inherit;
-    font-weight: bold;
-    color: #ac3381;
-}
-
-h5 {
-    font-size: 0.833em;
-    line-height: 1.000em;
-    font-family: inherit;
-    font-weight: bold;
-    color: #ac3381;
-}
-
-p {
-    font-size: 1.000em;
-    line-height: 0.833em;
-    font-family: inherit;
+    font-size: 1.3333333333333333em;
+    line-height: 1.125;
+    margin: 0;
+    margin-bottom: 1.125em;
     font-weight: inherit;
+    letter-spacing: inherit;
+    color: #ac3381;
+}
+
+h4, h5, h6 {
+    font-family: inherit;
+    font-size: 1.1666666666666667em;
+    line-height: 1.2857142857142858;
+    margin: 0;
+    margin-bottom: 1.2857142857142858em;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #ac3381;
+}
+
+p, ul, blockquote, pre, td, th, label {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 0;
+    margin-bottom: 1.5em;
+    font-weight: inherit;
+    letter-spacing: inherit;
     color: inherit;
+}
+
+p.small {
+    font-family: inherit;
+    font-size: 0.8333333333333334em;
+    line-height: 1.8;
+    margin: 0;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    margin: 0;
+    margin-bottom: 1.8em;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 1.5em;
 }
 
 
@@ -202,8 +233,8 @@ p {
 2.  http://www.jan-quickels.de/tools-web-typography/ (calculation tool)
 3.  http://pxtoem.com/ (calculation tool)
 4.  http://www.alistapart.com/articles/settingtypeontheweb (baseline grid)
+5.  http://topfunky.com/baseline-rhythm-calculator/ (baseline rhythm calculator)
 */
-
 
 
 
