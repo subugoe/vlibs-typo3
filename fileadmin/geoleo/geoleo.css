@@ -48,6 +48,18 @@ ul.bottommenu li {
 	padding: 0 10px;
 }
 
+#head p.bodytext {
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	margin: 0px;
+	padding: 0px;
+	text-indent: -9999em;
+	height: 84px;
+	width: 240px;
+	background: transparent url(logo.png) no-repeat 0px 0px;
+}
+
 #foot {
 	border-top: 1px solid #eee;
 }
