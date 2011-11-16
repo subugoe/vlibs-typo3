@@ -568,8 +568,9 @@ a.languageSwitcher:hover {
 	font-weight: normal;
 }
 
-#pazpar2 .pz2-facetCancel {
+#pazpar2 .pz2-facetCancel, #pazpar2 .pz2-termList .pz2-facetCancel:link:hover {
 	color: #f00;
+	font-weight: bold;
 }
 
 #pazpar2 .pz2-details {
