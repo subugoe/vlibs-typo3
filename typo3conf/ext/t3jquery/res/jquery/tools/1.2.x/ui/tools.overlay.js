@@ -1,18 +1,18 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 Overlay - Overlay base. Extend it.
+ * jQuery Tools @VERSION Overlay - Overlay base. Extend it.
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
  * http://flowplayer.org/tools/overlay/
  *
  * Since: March 2008
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) { 
 
 	// static constructs
-	$.tools = $.tools || {version: '1.2.5'};
+	$.tools = $.tools || {version: '@VERSION'};
 	
 	$.tools.overlay = {
 		
@@ -88,7 +88,7 @@
 			maskConf.closeOnClick = maskConf.closeOnEsc = false;
 		}			 
 		 
-		// get overlay and triggerr
+		// get overlay and trigger
 		var jq = conf.target || trigger.attr("rel");
 		overlay = jq ? $(jq) : null || trigger;	
 		

@@ -83,9 +83,10 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 {
 	var $pageinfo;
 	var $extKey = 't3jquery';
-	var $jQueryVersion      = '1.6.x';
-	var $jQueryUiVersion    = '1.8.x';
-	var $jQueryTOOLSVersion = '1.2.x';
+	var $jQueryVersionOrig      = '1.7.x';
+	var $jQueryUiVersionOrig    = '1.8.x';
+	var $jQueryTOOLSVersionOrig = '1.2.x';
+	var $jQueryOriginalVersions = array();
 	var $jQueryConfig      = array();
 	var $jQueryUiConfig    = array();
 	var $jQueryTOOLSConfig = array();
@@ -93,6 +94,7 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 	var $confArray = array();
 	var $configDir = NULL;
 	var $configXML = array();
+	var $missingComponents = array();
 
 	/**
 	 * Initializes the Module
@@ -102,31 +104,47 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 	{
 		// get extension configuration
 		$this->confArray = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$this->extKey]);
-		// define the used jQuery UI Version
-		$this->jQueryVersion      = $this->confArray['jQueryVersion'];
-		$this->jQueryUiVersion    = $this->confArray['jQueryUiVersion'];
-		$this->jQueryTOOLSVersion = $this->confArray['jQueryTOOLSVersion'];
+
+		$this->configXML['groups'] = array();
+		$this->configXML['groups_missing'] = array();
 		// get the XML-Config from jQuery
-		$this->jQueryConfig = tx_t3jquery::getJqueryConfiguration();
+		if ($this->confArray['jQueryVersion']) {
+			$version = $this->confArray['jQueryVersion'];
+			$array_name = 'groups';
+		} else {
+			$version = $this->jQueryVersionOrig;
+			$array_name = 'groups_missing';
+		}
+		$this->jQueryConfig = tx_t3jquery::getJqueryConfiguration($version);
 		if (count($this->jQueryConfig['groups']) > 0) {
-			$this->configXML['groups'] = $this->jQueryConfig['groups'];
+			$this->configXML[$array_name] = $this->jQueryConfig['groups'];
 		}
 		// Get the XML-Config from jQuery UI
-		if ($this->jQueryUiVersion) {
-			$this->jQueryUiConfig = tx_t3jquery::getJqueryUiConfiguration();
-			if (count($this->jQueryUiConfig['groups']) > 0) {
-				foreach ($this->jQueryUiConfig['groups'] as $group) {
-					$this->configXML['groups'][] = $group;
-				}
+		if ($this->confArray['jQueryUiVersion']) {
+			$version = $this->confArray['jQueryUiVersion'];
+			$array_name = 'groups';
+		} else {
+			$version = $this->jQueryVersionOrig;
+			$array_name = 'groups_missing';
+		}
+		$this->jQueryUiConfig = tx_t3jquery::getJqueryUiConfiguration($version);
+		if (count($this->jQueryUiConfig['groups']) > 0) {
+			foreach ($this->jQueryUiConfig['groups'] as $group) {
+				$this->configXML[$array_name][] = $group;
 			}
 		}
 		// Get the XML-Config from jQuery TOOLS
-		if ($this->jQueryTOOLSVersion) {
-			$this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration();
-			if (count($this->jQueryTOOLSConfig['groups']) > 0) {
-				foreach ($this->jQueryTOOLSConfig['groups'] as $group) {
-					$this->configXML['groups'][] = $group;
-				}
+		if ($this->confArray['jQueryTOOLSVersion']) {
+			$version = $this->confArray['jQueryTOOLSVersion'];
+			$array_name = 'groups';
+		} else {
+			$version = $this->jQueryTOOLSVersionOrig;
+			$array_name = 'groups_missing';
+		}
+		$this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration($version);
+		if (count($this->jQueryTOOLSConfig['groups']) > 0) {
+			foreach ($this->jQueryTOOLSConfig['groups'] as $group) {
+				$this->configXML[$array_name][] = $group;
 			}
 		}
 		// Define the language object
@@ -206,14 +224,14 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 
 			// output the used versions
 			$temp_version = array();
-			if ($this->jQueryVersion) {
-				$temp_version[] = "jQuery {$this->jQueryVersion}";
+			if ($this->confArray['jQueryVersion']) {
+				$temp_version[] = "jQuery {$this->confArray['jQueryVersion']}";
 			}
-			if ($this->jQueryUiVersion) {
-				$temp_version[] = "UI {$this->jQueryUiVersion}";
+			if ($this->confArray['jQueryUiVersion']) {
+				$temp_version[] = "UI {$this->confArray['jQueryUiVersion']}";
 			}
-			if ($this->jQueryTOOLSVersion) {
-				$temp_version[] = "Tools {$this->jQueryTOOLSVersion}";
+			if ($this->confArray['jQueryTOOLSVersion']) {
+				$temp_version[] = "Tools {$this->confArray['jQueryTOOLSVersion']}";
 			}
 			$this->content .= $this->doc->section(
 				sprintf($this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:version_in_use'), implode(" / ", $temp_version))
@@ -229,7 +247,7 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			// JavaScript (jQuery subscripts is used, as no compressed lib exists yet or might not include the supparts needed.)
 
 			$this->doc->JScode = '
-<script type="text/javascript" src="../res/jquery/core/' . $this->jQueryVersion . '/jquery.js"></script>
+<script type="text/javascript" src="../res/jquery/core/' . $this->confArray['jQueryVersion'] . '/jquery.js"></script>
 <script type="text/javascript" src="../res/jqconfig.js"></script>
 <script language="javascript" type="text/javascript">
 	script_ended = 0;
@@ -270,13 +288,13 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 
 			// output the used versions
 			$temp_version = array();
-			if ($this->jQueryVersion) {
+			if ($this->confArray['jQueryVersion']) {
 				$temp_version[] = "jQuery {$this->jQueryConfig['version']['act']}";
 			}
-			if ($this->jQueryUiVersion) {
+			if ($this->confArray['jQueryUiVersion']) {
 				$temp_version[] = "UI {$this->jQueryUiConfig['version']['act']}";
 			}
-			if ($this->jQueryTOOLSVersion) {
+			if ($this->confArray['jQueryTOOLSVersion']) {
 				$temp_version[] = "Tools {$this->jQueryTOOLSConfig['version']['act']}";
 			}
 			$this->content .= $this->doc->section(
@@ -359,6 +377,14 @@ jQuery(document).ready(function() {
 				if ($file) {
 					$fileName = $_FILES['js_local']['name'] ? $_FILES['js_local']['name'] : ($_POST['js_remote'] ? $_POST['js_remote'] : $file );
 					$dep = $this->analyzeJS($file);
+
+					// show the missing dependencies
+					$content = $this->displayMissingLibrary();
+					if ($content) {
+						$this->content .= $this->doc->section('', $content, 0, 1);
+					}
+
+					// show the dependencies
 					$content = $this->displayDependencies($dep);
 					if (count($dep) == 0) {
 						$content .= '<p>&nbsp;</p><p>'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.analyze.packed').'</p>';
@@ -375,8 +401,16 @@ jQuery(document).ready(function() {
 				if ($files) {
 					$dep = Array();
 					foreach ($files as $file) {
-						$dep = $this->processT3jqueryTxt(t3lib_div::getFileAbsFileName($file),$dep);
+						$dep = $this->processT3jqueryTxt(t3lib_div::getFileAbsFileName($file), $dep);
 					}
+
+					// show the missing dependencies
+					$content = $this->displayMissingLibrary();
+					if ($content) {
+						$this->content .= $this->doc->section('', $content, 0, 1);
+					}
+
+					// show the dependencies
 					$content = $this->displayDependencies($dep);
 					$this->content .= $this->doc->section($this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.extension.dependencies'), $content, 0, 1);
 				}
@@ -418,14 +452,56 @@ jQuery(document).ready(function() {
 		if ($path_info['extension'] == 'js') {
 			$fileData = t3lib_div::getURL($file);
 			if (substr($fileData, 0, 23) != 'eval(function(p,a,c,k,e') {
-				$pack = new analyzeJqJS('', $fileData);
-				$requires = $pack->dependencies;
+				$pack = new analyzeJqJS('', $fileData, $this->configXML['groups']);
+				$requires = $pack->getDependencies();
 				foreach ($requires as $file => $lib) {
 					$dependencies[$lib][$file] = 1;
 				}
 			}
 		}
 		return $dependencies;
+	}
+
+
+	/**
+	 * Shows the missing controlls (if UI or TOOLS not selected but needed)
+	 * 
+	 * @return string
+	 */
+	function displayMissingLibrary()
+	{
+		$content = array();
+		$match = array();
+		if (count($this->configXML['groups_missing']) > 0) {
+			// every group in the config
+			foreach ($this->configXML['groups_missing'] as $group) {
+				// every file in this group
+				if (count($group['files']) > 0) {
+					foreach ($group['files'] as $file) {
+						if (in_array($file['name'], $this->missingComponents)) {
+							if (preg_match("/^ui\//", $file['file'])) {
+								$content['UI'] = $this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.extension.missingLibrary.ui');
+							}
+							if (preg_match("/^TOOLS\:/", $file['file'])) {
+								$content['TOOLS'] = $this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.extension.missingLibrary.tools');
+							}
+						}
+					}
+				}
+			}
+		}
+		if (count($content) > 0) {
+			return '
+			<div class="typo3-message message-warning">
+				<div class="message-header">' . $this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.extension.missingLibrary') . '</div>
+				<div class="message-body">
+					' . implode('<br />', $content) . '<br />' . 
+					'<a href="javascript:void();" onclick="top.goToModule(\'tools_em\',\'\',\'\');this.blur();return false;">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.extension.em').'</a>
+				</div>
+			</div>';
+		} else {
+			return NULL;
+		}
 	}
 
 	/**
@@ -440,20 +516,22 @@ jQuery(document).ready(function() {
 		$prevlib = '';
 		$jqconfig = array();
 		$JQconf = $this->loadJqConf();
-		foreach ($requires as $lib => $files) {
-			foreach ($files as $file => $flag) {
-				if ($flag) {
-					if ($lib != $prevlib) {
-						$dependencies .= '<dt><h2>'.$lib.'</h2></dt>';
-						$prevlib = $lib;
+		if (count($requires) > 0) {
+			foreach ($requires as $lib => $files) {
+				foreach ($files as $file => $flag) {
+					if ($flag) {
+						if ($lib != $prevlib) {
+							$dependencies .= '<dt><h2>'.$lib.'</h2></dt>';
+							$prevlib = $lib;
+						}
+						$new_file = $this->matchJqFile($file);
+						if (! in_array($new_file, $JQconf['files'])) {
+							$dependencies .= '<dd><strong>'.$file.'</strong></dd>';
+						} else {
+							$dependencies .= '<dd>'.$file.'</dd>';
+						}
+						$jqconfig[] = $new_file;
 					}
-					$new_file = $this->matchJqFile($file);
-					if (! in_array($new_file, $JQconf['files'])) {
-						$dependencies .= '<dd><strong>'.$file.'</strong></dd>';
-					} else {
-						$dependencies .= '<dd>'.$file.'</dd>';
-					}
-					$jqconfig[] = $new_file;
 				}
 			}
 		}
@@ -478,21 +556,17 @@ jQuery(document).ready(function() {
 	function matchJqFile($component="")
 	{
 		$match = array();
-		if (count($this->configXML) > 0) {
-			foreach ($this->configXML as $groups) {
-				// every group in the config
-				if (count($groups) > 0) {
-					foreach ($groups as $group) {
-						// every file in this group
-						if (count($group['files']) > 0) {
-							foreach ($group['files'] as $file) {
-								$match[$file['name']] = $file['file'];
-								// Every language file
-								if (count($file['languages']) > 0) {
-									foreach ($file['languages'] as $language) {
-										$match[$language['name']] = $language['file'];
-									}
-								}
+		if (count($this->configXML['groups']) > 0) {
+			// every group in the config
+			foreach ($this->configXML['groups'] as $group) {
+				// every file in this group
+				if (count($group['files']) > 0) {
+					foreach ($group['files'] as $file) {
+						$match[$file['name']] = $file['file'];
+						// Every language file
+						if (count($file['languages']) > 0) {
+							foreach ($file['languages'] as $language) {
+								$match[$language['name']] = $language['file'];
 							}
 						}
 					}
@@ -568,7 +642,8 @@ jQuery(document).ready(function() {
 	 * @param	string	$compressed
 	 * @return	string
 	 */
-	function makeCompressForm($compressed) {
+	function makeCompressForm($compressed)
+	{
 		$out = '
 <br /><p>'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compress.description').'</p><br />
 <table border="0" cellspacing="1" cellpadding="2">
@@ -618,21 +693,17 @@ jQuery(document).ready(function() {
 	function processT3jqueryTxt($t3jqfile, $dep=array())
 	{
 		$components = array();
-		if (count($this->configXML) > 0) {
-			foreach ($this->configXML as $groups) {
-				// every group in the config
-				if (count($groups) > 0) {
-					foreach ($groups as $group) {
-						// every file in this group
-						if (count($group['files']) > 0) {
-							foreach ($group['files'] as $file) {
-								$components[$file['name']] = $group['name'];
-								// Every language file
-								if (count($file['languages']) > 0) {
-									foreach ($file['languages'] as $language) {
-										$components[$language['name']] = $group['name'];
-									}
-								}
+		if (count($this->configXML['groups']) > 0) {
+			// every group in the config
+			foreach ($this->configXML['groups'] as $group) {
+				// every file in this group
+				if (count($group['files']) > 0) {
+					foreach ($group['files'] as $file) {
+						$components[$file['name']] = $group['name'];
+						// Every language file
+						if (count($file['languages']) > 0) {
+							foreach ($file['languages'] as $language) {
+								$components[$language['name']] = $group['name'];
 							}
 						}
 					}
@@ -660,6 +731,8 @@ jQuery(document).ready(function() {
 					foreach ($params as $component) {
 						if (array_key_exists(trim($component), $components)) {
 							$dep[$components[trim($component)]][trim($component)] = 1;
+						} else {
+							$this->missingComponents[] = $component;
 						}
 						if (preg_match("/^Datepicker\-(.*)/i", $component, $preg)) {
 							$dep[$components['Datepicker']]['Datepicker'] = 1;
@@ -785,17 +858,17 @@ jQuery(document).ready(function() {
 		foreach ($this->jQueryConfig['files'] as $scriptPart) {
 			$temp_script = NULL;
 			if ($scriptPart == 'jquery.js') { // add core
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/core/{$this->jQueryVersion}/jquery.js";
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/core/{$this->confArray['jQueryVersion']}/jquery.js";
 			} elseif ($scriptPart == 'jquery.noConflict.js') { // add noConflict mode
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/plugins/jquery.noConflict.js";
 			} elseif ($scriptPart == 'jquery-easing.js') { // Easing is in effects.core.js, nothing to do
 				$temp_script = NULL;
-			} elseif (in_array($scriptPart, array('jquery.mousewheel.js', 'jquery.lint.js', 'jquery.mobile.js'))) { // add plugins
+			} elseif (in_array($scriptPart, array('jquery.mousewheel.js', 'jquery.lint.js', 'jquery.mobile.js', 'jquery.cookie.js'))) { // add plugins
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/plugins/".$scriptPart;
 			} elseif (preg_match("/^TOOLS\:(.*)/", $scriptPart, $reg)) { // add TOOLS
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/tools/{$this->jQueryTOOLSVersion}/ui/{$reg[1]}";
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/tools/{$this->confArray['jQueryTOOLSVersion']}/ui/{$reg[1]}";
 			} else { // add UI
-				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/ui/{$this->jQueryUiVersion}/{$scriptPart}";
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/ui/{$this->confArray['jQueryUiVersion']}/{$scriptPart}";
 			}
 			if (file_exists($temp_script)) {
 				$script .= t3lib_div::getURL($temp_script);
@@ -995,22 +1068,20 @@ jQuery(document).ready(function() {
 		$out = '
 <div class="">
 	<table id="download">';
-		if (count($this->configXML) > 0) {
-			foreach ($this->configXML as $groups) {
-				// every group in the config
-				if (count($groups) > 0) {
-					foreach ($groups as $group) {
-						$out .= '
+		if (count($this->configXML['groups']) > 0) {
+			// every group in the config
+			foreach ($this->configXML['groups'] as $group) {
+				$out .= '
 		<tr><th colspan="3"><h3>'.$group['name'].'</h3></th></tr>';
-						// every file in this group
-						if (count($group['files']) > 0) {
-							foreach ($group['files'] as $file) {
-								// if UI Tab and the Tools Tab is selected, the UI Tabs will win...
-								$notChecked = FALSE;
-								if (preg_match("/^ToolsTabs/", $file['name']) && in_array('ui/jquery.ui.tabs.js', $formVars['files'])) {
-									$notChecked = TRUE;
-								}
-								$out .= '
+				// every file in this group
+				if (count($group['files']) > 0) {
+					foreach ($group['files'] as $file) {
+						// if UI Tab and the Tools Tab is selected, the UI Tabs will win...
+						$notChecked = FALSE;
+						if (preg_match("/^ToolsTabs/", $file['name']) && in_array('ui/jquery.ui.tabs.js', $formVars['files'])) {
+							$notChecked = TRUE;
+						}
+						$out .= '
 		<tr class="check">
 			<td class="check">
 				<input type="checkbox" id="'.$file['name'].'" deps="'.$file['depends'].'" dist="'.$file['disturbing'].'" name="files[]" value="'.$file['file'].'"'.(in_array($file['file'], $formVars['files']) && !$notChecked ? ' checked="checked"' : '').' />
@@ -1020,24 +1091,22 @@ jQuery(document).ready(function() {
 				<p>'.$this->LANG->sL($file['detail']).'</p>
 			</td>
 		</tr>';
-								// Every language file
-								if (count($file['languages']) > 0) {
-									$datepicker_langs = NULL;
-									foreach ($file['languages'] as $language) {
-										$datepicker_langs .= '
+						// Every language file
+						if (count($file['languages']) > 0) {
+							$datepicker_langs = NULL;
+							foreach ($file['languages'] as $language) {
+								$datepicker_langs .= '
 				<div style="width:150px;float:left;">
 					<input type="checkbox" id="'.$language["name"].'" deps="'.$file['name'].'" name="files[]" value="'.$language["file"].'"'.(in_array($language["file"], $formVars['files'])?' checked="1"':'').' />
 					<label for="'.$language["name"].'">'.$language["label"].'</label>
 				</div>';
-									}
-									$out .= '
+							}
+							$out .= '
 		<tr class="check">
 			<td class="check"></td>
 			<td class="name">Languages</td>
 			<td class="description">'.$datepicker_langs.'</td>
 		</tr>';
-								}
-							}
 						}
 					}
 				}

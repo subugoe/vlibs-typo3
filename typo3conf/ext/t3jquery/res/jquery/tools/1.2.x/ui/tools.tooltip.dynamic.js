@@ -1,13 +1,13 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 / Tooltip Dynamic Positioning
+ * jQuery Tools @VERSION / Tooltip Dynamic Positioning
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
  * http://flowplayer.org/tools/tooltip/dynamic.html
  *
  * Since: July 2009
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) { 
 
@@ -65,7 +65,9 @@
 		
 		conf = $.extend({}, t.dynamic.conf, conf);
 		
-		var cls = conf.classNames.split(/\s/), orig;	
+		var confOrigin = $.extend(true,{},conf),
+		    cls = conf.classNames.split(/\s/), 
+		    orig;
 			
 		this.each(function() {		
 				
@@ -102,8 +104,10 @@
 					left: pos.left 
 				}).show(); 
 				
-				// now let's see for hidden edges
-				var crop = getCropping(tip);		
+				var conf = $.extend(true,{},confOrigin),
+				
+				    // now let's see for hidden edges
+				    crop = getCropping(tip);		
 								
 				// possibly alter the configuration
 				if (!isVisible(crop)) {

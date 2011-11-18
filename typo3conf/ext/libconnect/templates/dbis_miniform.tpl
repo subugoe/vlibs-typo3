@@ -7,7 +7,8 @@
 
 	<form action="{$siteUrl}" method="get">
 	<input type="hidden" name="id" value="{$listPid}" />
-		<input type="text" name="libconnect[search][sword]" size="20" value="{$vars.sword}" />
+		<label for="libconnect_dbis_minisuche" class="hiddendebis">Name der Bibliothek</label>
+		<input id="libconnect_dbis_minisuche" type="text" name="libconnect[search][sword]" size="20" value="{$vars.sword}" />
 		<input type="submit" value="Suchen" />
 
 		<p><a href="{$searchUrl}">Erweiterte Suche</a></p>
@@ -30,6 +31,7 @@
 		<form action="{$siteUrl}" method="get">
 
 		<p>
+			<label for="libconnect_dbis_suche" class="hiddendebis">Zugang w&auml;hlen</label>
 			<select name="libconnect[search][zugaenge]" style="width: 180px; padding: 0.06em">
 			{foreach name=zugaenge from=$form.zugaenge item=value key=key}
 			{if $key < 1000}

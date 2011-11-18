@@ -1,3 +1,19 @@
+2011-10-27 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.7.0
+
+2011-10-27 Nicole Cordes  <cordes@cps-it.de>
+
+	* Fixed function call tx_cpsdevlib_div::toListArray with strings not regarding $useTrim and $removeEmptyValues
+	* Added function tx_cpsdevlib_div::toIntListArray
+	* Added function tx_cpsdevlib_div::toIntListString
+	* Changed folder structure to kind of mvc
+	* Added some tests for tx_cpsdevlib_div
+
+2011-10-24 Nicole Cordes  <cordes@cps-it.de>
+
+	* Defined functions as "public static" and reformatted code
+
 2011-07-19 Nicole Cordes  <cordes@cps-it.de>
 
 	* Release of cps_devlib 0.6.0
@@ -26,11 +42,15 @@
 
 2011-06-23 Nicole Cordes  <cordes@cps-it.de>
 
-	* Release of cps_devlib 0.4.2
+	* Release of cps_devlib 0.4.1
 
 2011-06-23 Nicole Cordes  <cordes@cps-it.de>
 
 	* Fixed autoload function for TYPO3 < 4.3 support
+
+2011-06-23 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.4.0
 
 2011-06-23 Nicole Cordes  <cordes@cps-it.de>
 

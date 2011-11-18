@@ -106,8 +106,8 @@ class tx_t3jquery
 					}
 				}
 				if (isset($params['jsFiles'])) {
-					foreach ($params['jsFiles'] as $file => $param) {
-						$block .= '<script type="text/javascript" src="'.$file.'"></script>';
+					foreach ($params['jsFiles'] as $key => $param) {
+						$block .= '<script type="text/javascript" src="'.$param['file'].'"></script>';
 					}
 				}
 			} else {
@@ -184,7 +184,9 @@ class tx_t3jquery
 					);
 				}
 				if ($confArr['jQueryUiVersion'] != '') {
-					$params['jsFiles']['https://ajax.googleapis.com/ajax/libs/jqueryui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js'] = array(
+					$jsFile = 'https://ajax.googleapis.com/ajax/libs/jqueryui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js';
+					$params['jsFiles'][$jsFile] = array(
+						'file'       => $jsFile,
 						'type'       => 'text/javascript',
 						'section'    => self::getSection(),
 						'forceOnTop' => TRUE,
@@ -222,7 +224,9 @@ class tx_t3jquery
 						t3lib_div::devLog('jQuery UI \''.$confArr['jQueryUiVersion'].'\' not in MSN-CDN', 't3jquery', 1);
 						$confArr['jQueryUiVersion'] = '1.8.5';
 					}
-					$params['jsFiles']['http://ajax.aspnetcdn.com/ajax/jquery.ui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js'] = array(
+					$jsFile = 'http://ajax.aspnetcdn.com/ajax/jquery.ui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js';
+					$params['jsFiles'][$jsFile] = array(
+						'file'       => $jsFile,
 						'type'       => 'text/javascript',
 						'section'    => self::getSection(),
 						'forceOnTop' => TRUE,
@@ -241,10 +245,13 @@ class tx_t3jquery
 	* Returns the configuration of jQuery UI
 	* @return array
 	*/
-	function getJqueryConfiguration()
+	function getJqueryConfiguration($version=NULL)
 	{
-		$confArr = tx_t3jquery::getConf();
-		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/core/'.$confArr['jQueryVersion'].'/jquery.xml')));
+		if ($version === NULL) {
+			$confArr = tx_t3jquery::getConf();
+			$version = $confArr['jQueryVersion'];
+		}
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/core/'.$version.'/jquery.xml')));
 		return $configuration;
 	}
 
@@ -252,10 +259,13 @@ class tx_t3jquery
 	 * Returns the configuration of jQuery UI
 	 * @return array
 	 */
-	function getJqueryUiConfiguration()
+	function getJqueryUiConfiguration($version=NULL)
 	{
-		$confArr = tx_t3jquery::getConf();
-		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/ui/'.$confArr['jQueryUiVersion'].'/jquery.xml')));
+		if ($version === NULL) {
+			$confArr = tx_t3jquery::getConf();
+			$version = $confArr['jQueryUiVersion'];
+		}
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/ui/'.$version.'/jquery.xml')));
 		return $configuration;
 	}
 
@@ -263,10 +273,13 @@ class tx_t3jquery
 	 * Returns the configuration of jQuery UI
 	 * @return array
 	 */
-	function getJqueryToolsConfiguration()
+	function getJqueryToolsConfiguration($version=NULL)
 	{
-		$confArr = tx_t3jquery::getConf();
-		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$confArr['jQueryTOOLSVersion'].'/jquery.xml')));
+		if ($version === NULL) {
+			$confArr = tx_t3jquery::getConf();
+			$version = $confArr['jQueryTOOLSVersion'];
+		}
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$version.'/jquery.xml')));
 		return $configuration;
 	}
 
