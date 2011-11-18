@@ -39,6 +39,10 @@
 			<label index="jquery.compression.none.name">No Compression</label>
 			<label index="jquery.compression.packer.description">Uses &lt;a href=&quot;http://joliclic.free.fr/php/javascript-packer/en/&quot; target=&quot;_blank&quot;&gt;the php5 version&lt;/a&gt; of &lt;a href=&quot;http://dean.edwards.name/packer/&quot; target=&quot;_blank&quot;&gt;Dean Edwards Packer&lt;/a&gt;.</label>
 			<label index="jquery.compression.packer.name">Packer Compression</label>
+			<label index="jquery.extension.missingLibrary">jQuery Library missing:</label>
+			<label index="jquery.extension.missingLibrary.ui">Some of your extensions require jQuery-UI. You need to add this manually in the extension-manager.</label>
+			<label index="jquery.extension.missingLibrary.tools">Some of your extensions require jQuery-TOOLS. You need to add this manually in the extension-manager.</label>
+			<label index="jquery.extension.em">Click here</label>
 			<label index="jquery.extension.dependencies">jQuery dependencies found selected extensions:</label>
 			<label index="jquery.extension.description">Select the extensions you want processed and checked for jQuery dependencies.</label>
 			<label index="jquery.extension.extkey">Extension Key:</label>
@@ -90,6 +94,7 @@
 			<label index="jquery.component.mousewheel">Adds mouse wheel support for your application! Just call mousewheel to add the event and call unmousewheel to remove the event.</label>
 			<label index="jquery.component.lint">jQuery Lint works over the top of jQuery and diligently reports errors and any incorrect usage of jQuery. It will also, to some extent, offer guidance on best practices and performance concerns.</label>
 			<label index="jquery.component.mobile">Touch-Optimized Web Framework for Smartphones &amp; Tablets.</label>
+			<label index="jquery.component.cookie">A simple, lightweight jQuery plugin for reading, writing and deleting cookies</label>
 			<label index="tools.component.tabs">The most important UI widget on the web</label>
 			<label index="tools.component.tabsslideshow">Transforms tabs into a working slideshow</label>
 			<label index="tools.component.tabshistory">The ability to navigate through tabs with the browser's back and forward buttons</label>

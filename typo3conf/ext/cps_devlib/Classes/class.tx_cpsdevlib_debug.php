@@ -1,56 +1,56 @@
 <?php
 /***************************************************************
-*  Copyright notice
-*
-*  (c) 2011 Nicole Cordes <cordes@cps-it.de>
-*  All rights reserved
-*
-*  This script is part of the TYPO3 project. The TYPO3 project is
-*  free software; you can redistribute it and/or modify
-*  it under the terms of the GNU General Public License as published by
-*  the Free Software Foundation; either version 2 of the License, or
-*  (at your option) any later version.
-*
-*  The GNU General Public License can be found at
-*  http://www.gnu.org/copyleft/gpl.html.
-*  A copy is found in the textfile GPL.txt and important notices to the license
-*  from the author is found in LICENSE.txt distributed with these scripts.
-*
-*
-*  This script is distributed in the hope that it will be useful,
-*  but WITHOUT ANY WARRANTY; without even the implied warranty of
-*  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-*  GNU General Public License for more details.
-*
-*  This copyright notice MUST APPEAR in all copies of the script!
-***************************************************************/
+ *  Copyright notice
+ *
+ *  (c) 2011 Nicole Cordes <cordes@cps-it.de>
+ *  All rights reserved
+ *
+ *  This script is part of the TYPO3 project. The TYPO3 project is
+ *  free software; you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation; either version 2 of the License, or
+ *  (at your option) any later version.
+ *
+ *  The GNU General Public License can be found at
+ *  http://www.gnu.org/copyleft/gpl.html.
+ *  A copy is found in the textfile GPL.txt and important notices to the license
+ *  from the author is found in LICENSE.txt distributed with these scripts.
+ *
+ *
+ *  This script is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ *  GNU General Public License for more details.
+ *
+ *  This copyright notice MUST APPEAR in all copies of the script!
+ ***************************************************************/
 
 class tx_cpsdevlib_debug {
 
 	/**
-	*	Returns human readable variable information output by print_r function
-	*	Depending on TYPO3_CONF_VARS['SYS']['displayErrors'] and checks TYPO3_CONF_VARS['SYS']['devIPmask'] if needed to
-	*
-	*	@param	mixed					$theData: Variable to dump (if allowed)
-	*	@param	string				$codeClass: Class to use for pre-tag with SyntaxHighlighter
-	*	@param	string				$blockTitle: Display a title above block
-	*	@param	boolean				$useSyntaxHighlighter: Add some JavaScript to turn on SyntaxHighlighter
-	*	@param	array					$shAdditionalConfig: Manual configuration of SyntaxHighlighter e.g. to add custom brushes
-	*	@param	string				$additionalWrap:	Wrap output if not using SyntaxHighlighter
-	*	@return	string				The dumped variable
-	*
-	*/
-	function debugOutput($theData, $codeClass = 'plain', $blockTitle = '', $useSyntaxHighlighter = true, $shAdditionalConfig = array(), $additionalWrap = '<pre>|</pre>') {
+	 * Returns human readable variable information output by print_r function
+	 * Depending on TYPO3_CONF_VARS['SYS']['displayErrors'] and checks TYPO3_CONF_VARS['SYS']['devIPmask'] if needed to
+	 *
+	 * @param mixed $theData: Variable to dump (if allowed)
+	 * @param string $codeClass: Class to use for pre-tag with SyntaxHighlighter
+	 * @param string $blockTitle: Display a title above block
+	 * @param boolean $useSyntaxHighlighter: Add some JavaScript to turn on SyntaxHighlighter
+	 * @param array $shAdditionalConfig: Manual configuration of SyntaxHighlighter e.g. to add custom brushes
+	 * @param string $additionalWrap:	Wrap output if not using SyntaxHighlighter
+	 * @return string The dumped variable
+	 *
+	 */
+	public static function debugOutput($theData, $codeClass = 'plain', $blockTitle = '', $useSyntaxHighlighter = true, $shAdditionalConfig = array(), $additionalWrap = '<pre>|</pre>') {
 		global $TYPO3_CONF_VARS;
 
 		$result = '';
 
 		// If displayErrors is turned on
-		if (($displayErrors = intval($TYPO3_CONF_VARS['SYS']['displayErrors'])) != '-1')	{
+		if (($displayErrors = intval($TYPO3_CONF_VARS['SYS']['displayErrors'])) != '-1') {
 
 			// Check for development IP mask if configured
-			if ($displayErrors == 2)	{
-				if (t3lib_div::cmpIP(t3lib_div::getIndpEnv('REMOTE_ADDR'), $TYPO3_CONF_VARS['SYS']['devIPmask']))	{
+			if ($displayErrors == 2) {
+				if (t3lib_div::cmpIP(t3lib_div::getIndpEnv('REMOTE_ADDR'), $TYPO3_CONF_VARS['SYS']['devIPmask'])) {
 					$displayErrors = 1;
 				} else {
 					$displayErrors = 0;
@@ -75,11 +75,11 @@ class tx_cpsdevlib_debug {
 				// Clean output buffer
 				ob_end_clean();
 
-		    // Style output with SyntaxHighlighter
+				// Style output with SyntaxHighlighter
 				if ($useSyntaxHighlighter) {
 
 					$shBasicConfig = array(
-						'baseUrl' => '/' . t3lib_extMgm::siteRelPath('cps_devlib') . 'res/',
+						'baseUrl' => '/' . t3lib_extMgm::siteRelPath('cps_devlib') . 'Resources/',
 						'scripts' => 'scripts/',
 						'styles' => 'styles/',
 						'theme' => 'Default',
@@ -254,4 +254,5 @@ class tx_cpsdevlib_debug {
 		return $result;
 	}
 }
+
 ?>

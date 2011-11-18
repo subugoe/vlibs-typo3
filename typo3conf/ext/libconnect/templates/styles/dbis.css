@@ -45,3 +45,7 @@
 	margin: 0 !important;
 	padding: 0 0 0.2em 2.3em !important;
 }
+
+.hiddendebis, #extSearchForm-wrapper .hiddendebis{
+	display:none;
+}

@@ -1,19 +1,19 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 History "Back button for AJAX apps"
+ * jQuery Tools @VERSION History "Back button for AJAX apps"
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
  * http://flowplayer.org/tools/toolbox/history.html
  * 
  * Since: Mar 2010
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) {
 		
 	var hash, iframe, links, inited;		
 	
-	$.tools = $.tools || {version: '1.2.5'};
+	$.tools = $.tools || {version: '@VERSION'};
 	
 	$.tools.history = {
 	
@@ -27,14 +27,14 @@
 				// create iframe that is constantly checked for hash changes
 				if (!iframe) {
 					iframe = $("<iframe/>").attr("src", "javascript:false;").hide().get(0);
-					$("body").append(iframe);
+					$("body").prepend(iframe);
 									
 					setInterval(function() {
 						var idoc = iframe.contentWindow.document, 
 							 h = idoc.location.hash;
 					
 						if (hash !== h) {						
-							$.event.trigger("hash", h);
+							$(window).trigger("hash", h);
 						}
 					}, 100);
 					
@@ -47,7 +47,7 @@
 				setInterval(function() {
 					var h = location.hash;
 					if (h !== hash) {
-						$.event.trigger("hash", h);
+						$(window).trigger("hash", h);
 					}						
 				}, 100);
 			}

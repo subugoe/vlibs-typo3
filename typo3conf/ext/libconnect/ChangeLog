@@ -3,6 +3,24 @@
 * - TW: Torsten Witt torsten.witt@sub.uni-hamburg.de
 *
 **/
+2.2.4
+	- Fehler in Funktion getBibid der Klasse EZB entfernt
+2.2.3
+	- kleines Bugfix
+2.2.2
+	- Formulare enthalten nun Labels
+2.2.01
+	TW:
+		- Die konfigurierte ID der Bibliothek konnte bei der Suche nicht gelesen werden.
+		- Einige andere Bugfixes
+			- falscher Zugriff auf Sortierung
+			- Zugriff auf nicht existenten Arrayindex
+			- Zugriff auf nicht existierende Nodes
+				- Core: Error handler (FE): PHP Warning: EZB::getJournalDetail() [<a href='ezb.getjournaldetail'>ezb.getjournaldetail</a>]: Node no longer exists 
+			- es werden nun Defaultwerte für die IDs zu EZB und DBIS geladen
+		- Optimierunge
+			- die ID der Bibliothek wird nun in externe Funktion ermittelt
+			- ID der Bibliothek wird nicht mehr innerhalb von Schleifen ermittelt
 2.1.00
 	TW:
 		- Feature:

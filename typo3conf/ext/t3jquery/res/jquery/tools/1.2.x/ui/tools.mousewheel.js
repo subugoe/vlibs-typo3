@@ -1,6 +1,6 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 Mousewheel
+ * jQuery Tools @VERSION Mousewheel
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
@@ -11,7 +11,7 @@
  * http://threedubmedia.com 
  *
  * Since: Mar 2010
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) { 
 	

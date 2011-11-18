@@ -47,7 +47,8 @@ class DBIS{
 	 */
 	public function getDbliste( $fachgebiet, $sort = "type" ){
 		$sortlist = array();
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&sort=".$sort."&";
+		$bibid = $this->getBibid();
+		$url = 'http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id='. $bibid .'&' . "colors={$this->colors}&ocolors={$this->ocolors}&sort=".$sort."&";
 
 		if (is_numeric($fachgebiet)) {
 			// notation ist eine id => dbis sammlung
@@ -100,7 +101,7 @@ class DBIS{
 					'access' => $list['access_infos'][(string)$value['access_ref']]['title'],
 					'db_type_refs' => (string)$value['db_type_refs'],
 					'top_db' => (int)$value['top_db'],
-					'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&".  "lett={$this->lett}&titel_id={$value['title_id']}",
+					'link' => 'http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id='. $bibid .'&colors=&ocolors=&'.  "lett={$this->lett}&titel_id={$value['title_id']}",
 				);
 
 				if ($db['top_db']) {
@@ -141,7 +142,9 @@ class DBIS{
 	 * @param int db id
 	 */
 	public function getDbDetails( $db_id){
-		$xml_db_details = simplexml_load_file( "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&colors={$this->colors}&ocolors={$this->ocolors}&titel_id=" . $db_id );
+		$bibid = $this->getBibid();
+	
+		$xml_db_details = simplexml_load_file( 'http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id='. $bibid ."&colors=&ocolors=&". "lett={$this->lett}&colors={$this->colors}&ocolors={$this->ocolors}&titel_id=" . $db_id );
 		$details = array();
 
 		if (!is_object($xml_db_details->details))
@@ -223,8 +226,8 @@ class DBIS{
 	 * Detailsuche Formular ausgeben
 	 */
 	public function detailSucheFormFelder(){
-
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/suche.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] . "&" . "colors={$this->colors}&ocolors={$this->ocolors}";
+		$bibid = $this->getBibid();
+		$url = 'http://rzblx10.uni-regensburg.de/dbinfo/suche.php?xmloutput=1&bib_id='. $bibid . '&' . "colors={$this->colors}&ocolors={$this->ocolors}";
 		$xml_such_form = simplexml_load_file( $url );
 
 		foreach ($xml_such_form->dbis_search->option_list AS $key => $value){
@@ -253,8 +256,9 @@ class DBIS{
 
 
 	private function createSearchUrl($searchVars, $lett = 'k') {
-
-		$searchUrl = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_ezbdbis.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}";
+		$bibid = $this->getBibid();
+	
+		$searchUrl = 'http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id='. $bibid .'&' . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}";
 
 		foreach($searchVars as $var => $values) {
 
@@ -276,13 +280,13 @@ class DBIS{
 	 * @param such String
 	 */
 	public function search($term, $searchVars = false, $lett = 'fs'){
-
+		$bibid = $this->getBibid();
 		// encode term
 		$term = rawurlencode(utf8_decode($term));
 
 		$searchUrl = '';
 		if (!$searchVars){
-			$searchUrl = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}&Suchwort={$term}";
+			$searchUrl = 'http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id='. $bibid .'&' . "colors={$this->colors}&ocolors={$this->ocolors}&lett={$lett}&Suchwort={$term}";
 		} else {
 			$searchUrl = $this->createSearchUrl($searchVars);
 		}
@@ -337,7 +341,7 @@ class DBIS{
 						'access' => $list['access_infos'][(string)$value['access_ref']]['title'],
 						'db_type_refs' => (string)$value['db_type_refs'],
 						'top_db' => (int)$value['top_db'],
-						'link' => "http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&colors=&ocolors=&". "lett={$this->lett}&titel_id={$value['title_id']}",
+						'link' => 'http://rzblx10.uni-regensburg.de/dbinfo/detail.php?xmloutput=1&bib_id='. $bibid .'&colors=&ocolors=&'. "lett={$this->lett}&titel_id={$value['title_id']}",
 					);
 
 					if ($db['top_db']) {
@@ -363,8 +367,9 @@ class DBIS{
 			$list['error'] = (string) $request->error;
 		}
 
-		setlocale(LC_COLLATE, "de_DE.UTF-8");
-		uasort($sort);
+		//setlocale(LC_COLLATE, "de_DE.UTF-8");
+		
+		//asort($sort, SORT_LOCALE_STRING);
 		$list['alphasort']=$sort;
 
 		return array( 'page_vars' => $page_vars, /*'groups' => $access_infos,*/ 'list' => $list);
@@ -410,7 +415,8 @@ class DBIS{
 	 * @return xml array
 	 */
 	public function getRequestFachliste( $request ){
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/fachliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&" . $request;
+		$bibid = $this->getBibid();
+		$url = 'http://rzblx10.uni-regensburg.de/dbinfo/fachliste.php?xmloutput=1&bib_id='. $bibid .'&' . $request;
 		$xml_request = simplexml_load_file( $url );
 		return $xml_request;
 	}
@@ -422,9 +428,18 @@ class DBIS{
 	 * @return xml array
 	 */
 	public function getRequestDbliste( $request ){
-		$url = "http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id=". $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'] ."&". $request;
+		$bibid = $this->getBibid();
+		$url = 'http://rzblx10.uni-regensburg.de/dbinfo/dbliste.php?xmloutput=1&bib_id='. $bibid .'&'. $request;
 		$xml_request = simplexml_load_file( $url );
 		return $xml_request;
 	}
-
+	
+	private function getBibid(){
+		$bibid = $GLOBALS['TSFE']->tmpl->setup['plugin.']['tx_libconnect.']['dbisbibid'];
+		
+		if(empty($bibid)){
+			$bibid = 'sub_hh';
+		}
+		return $bibid;
+	}
 }
