@@ -122,5 +122,4 @@ $TYPO3_CONF_VARS['GFX']['im_path'] = '';	//  Modified or inserted by TYPO3 Insta
 $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 Install Tool.
 
 $TYPO3_CONF_VARS['EXT']['extConf']['piwik'] = 'a:1:{s:20:"showFaultyConfigHelp";s:1:"1";}';	// Modified or inserted by TYPO3 Extension Manager. 
-// Updated by TYPO3 Extension Manager 18-11-11 10:41:48
 ?>
