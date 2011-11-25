@@ -1,11 +1,7 @@
-#page {
-	background: #f6f6f6;
-}
 
 #head {
 	height: 150px;
 	position: relative;
-	background: #eee;
 }
 
 #menu {
@@ -17,7 +13,7 @@
 ul.mainmenu {
 	position: absolute;
 	right: 0px;
-	top: 80px;
+	top: 50px;
 }
 
 ul.mainmenu li {
@@ -27,31 +23,47 @@ ul.mainmenu li {
 }
 
 ul.mainmenu li a {
-	background: #bbb;
-	padding: 10px;
+	background: #6c564c;
+	padding: 8px 10px;
+	color: white;
+	-webkit-border-radius: 2px;
 }
 
-.languageSwitcher {
+ul.mainmenu li a:hover {
+	text-decoration: none;
+}
+
+ul.mainmenu li.current a {
+	background: #482e2a;
+}
+
+a.languageSwitcher {
 	position: absolute;
-	top: 20px;
-	right: 0px
+	top: 10px;
+	right: 0px;
+	color: #464646;
 }
 
 ul.bottommenu {
+	margin-top: 20px;
 	text-align: right;
 }
 
 ul.bottommenu li {
 	display: inline;
 	list-style-type: none;
-	margin: 0 0 0 10px;
-	padding: 0 10px;
+	margin: 0 0 0 8px;
+	padding: 0 6px;
+}
+
+ul.bottommenu li a {
+	color: #464646;
 }
 
 #head p.bodytext {
 	position: absolute;
 	top: 20px;
-	left: 10px;
+	left: 0px;
 	margin: 0px;
 	padding: 0px;
 	text-indent: -9999em;
@@ -60,22 +72,15 @@ ul.bottommenu li {
 	background: transparent url(logo.png) no-repeat 0px 0px;
 }
 
-#foot {
-	border-top: 1px solid #eee;
-}
-
 
 a {
 	text-decoration: none;
+	color: #039;
 }
 
 
 a:hover {
 	text-decoration: underline;
-}
-
-#pazpar2 .pz2-searchForm, #pazpar2 .pz2-JSNote {
-	padding: 0 180px;
 }
 
 #pazpar2 #pz2-field-all {
@@ -182,7 +187,10 @@ h2 {
     margin-bottom: 1em;
     font-weight: inherit;
     letter-spacing: inherit;
-    color: #ac3381;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #482e2a;
 }
 
 h3 {
@@ -193,7 +201,6 @@ h3 {
     margin-bottom: 1.125em;
     font-weight: inherit;
     letter-spacing: inherit;
-    color: #ac3381;
 }
 
 h4, h5, h6 {
@@ -204,7 +211,6 @@ h4, h5, h6 {
     margin-bottom: 1.2857142857142858em;
     font-weight: inherit;
     letter-spacing: inherit;
-    color: #ac3381;
 }
 
 p, ul, blockquote, pre, td, th, label {
@@ -234,6 +240,11 @@ table {
     border-collapse: collapse;
     margin-bottom: 1.5em;
 }
+
+#pazpar2 .pz2-searchField input {
+	background: #f8f5f3;
+}
+
 
 
 /*
@@ -716,3 +727,71 @@ body {
 }
 
 /* ************************************************************************************** */
+
+
+/*
+Sticky Footer Solution
+by Steve Hatcher
+http://stever.ca
+http://www.cssstickyfooter.com
+*/
+
+* {margin:0;padding:0;}
+
+/* must declare 0 margins on everything, also for main layout components use padding, not
+vertical margins (top and bottom) to add spacing, else those margins get added to total height
+and your footer gets pushed down a bit more, creating vertical scroll bars in the browser */
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background: url(bg1.png) repeat;
+}
+
+#page {
+	background: url(header_bg.png) repeat-x top center;
+	min-height: 100%;
+}
+
+#head {
+	background: url(head1.png) no-repeat top center;
+}
+
+#content {
+	overflow:auto;
+	margin-top: 30px;
+	padding-bottom: 60px;
+}  /* must be same height as the footer */
+
+#foot {
+	position: relative;
+	margin-top: -60px; /* negative value of footer height */
+	height: 60px;
+	clear:both;
+	background: url(footer_bg.png) repeat-x top center;
+}
+
+/*Opera Fix*/
+body:before {/* thanks to Maleika (Kohoutec)*/
+content:"";
+height:100%;
+float:left;
+width:0;
+margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+}
+
+
+
+/* IMPORTANT
+
+You also need to include this conditional style in the <head> of your HTML file to feed this style to IE 6 and lower and 8 and higher.
+
+<!--[if !IE 7]>
+	<style type="text/css">
+		#wrap {display:table;height:100%}
+	</style>
+<![endif]-->
+
+*/
