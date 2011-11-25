@@ -1,13 +1,13 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 / Tooltip Slide Effect
+ * jQuery Tools @VERSION / Tooltip Slide Effect
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
  * http://flowplayer.org/tools/tooltip/slide.html
  *
  * Since: September 2009
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) { 
 

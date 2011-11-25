@@ -1,10 +1,11 @@
-<form name="extSearchForm" action="{$listUrl}" method="get" class="e-search">
+<form id="e-search" name="extSearchForm" action="{$listUrl}" method="get" class="e-search">
 
 <input type="hidden" name="id" value="{$listPid}" />
   <fieldset>
     <legend>Erweiterte Suche nach Zeitschriften</legend> 
 
 	{section name=jq_type loop=4}
+		<label for="jq_type{$smarty.section.jq_type.iteration}" class="hiddenezb">Feldangabe</label>
     	<select name="libconnect[search][jq_type{$smarty.section.jq_type.iteration}]" id="jq_type{$smarty.section.jq_type.iteration}">
     	
     		{foreach name=jq_type_foreach from=$form.jq_type key=key item=value}
@@ -12,15 +13,18 @@
     		{/foreach}
     	
 		</select>
-		 
+		
+		<label for="jq_term{$smarty.section.jq_type.iteration}" class="hiddenezb">Suchbegriff</label> 
 		<input type="text" size="30" class="dbis-input" name="libconnect[search][jq_term{$smarty.section.jq_type.iteration}]" id="jq_term{$smarty.section.jq_type.iteration}" value="" />
-
+		
+		<label for="jq_bool{$smarty.section.jq_type.iteration}" class="hiddenezb">Verkn&uuml;pfung</label> 
 	    <select name="libconnect[search][jq_bool{$smarty.section.jq_type.iteration}]" id="jq_bool{$smarty.section.jq_type.iteration}">
 	      	{foreach name=jq_bool_foreach from=$form.jq_bool key=key item=value}
 	      		<option value="{$key}">{$value}</option>
 			{/foreach}
 	    </select>
 	
+		<label for="jq_not{$smarty.section.jq_type.iteration}" class="hiddenezb">Negator</label> 
 	    <select name="libconnect[search][jq_not{$smarty.section.jq_type.iteration}]" id="jq_not{$smarty.section.jq_type.iteration}">
 	      	{foreach name=jq_not_foreach from=$form.jq_not key=key item=value}
 	      		<option value="{$key}">{$value}</option>

@@ -34,144 +34,43 @@
  */
 class analyzeJqJS
 {
-	var $version = '0.2';
-	var $dependencies = array();
-	var $jQuery = array(
-		'Core' => array(
-			'jQuery' => array(
-				'Deps' => array(),
-				'Source' => array('jQuery(', '$('),
-			),
-			'Core' => array(
-				'Deps' => array('jQuery' => 'Core'),
-				'Source' => array(),
-			),
-		),
-		'Interactions' => array(
-			'Draggable' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.draggable('),
-			),
-			'Droppable' => array(
-				'Deps' => array('Core' => 'Core', 'Draggable' => 'Interactions'),
-				'Source' => array('.droppable('),
-			),
-			'Resizable' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.resizable('),
-			),
-			'Selectable' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.selectable('),
-			),
-			'Sortable' => array(
-				'Deps' => array('Core' => 'Core', 'Draggable' => 'Interactions'),
-				'Source' => array('.sortable('),
-			),
-		),
-		'Widgets' => array(
-			'Accordion' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.accordion('),
-			),
-			'Dialog' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.dialog('),
-			),
-			'Slider' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.slider('),
-			),
-			'Tabs' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.tabs('),
-			),
-			'Datepicker' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.datepicker('),
-			),
-			'Progressbar' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.progressbar('),
-			),
-		),
-		'Effects' => array(
-			'EffectsCore' => array(
-				'Deps' => array('Core' => 'Core'),
-				'Source' => array('.effect('),
-			),
-			'EffectsBlind' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("blind"', '.show("blind"', '.hide("blind"'),
-			),
-			'EffectsBounce' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("bounce"', '.show("bounce"', '.hide("bounce"'),
-			),
-			'EffectsClip' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("clip"', '.show("clip"', '.hide("clip"'),
-			),
-			'EffectsDrop' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("drop"', '.show("drop"', '.hide("drop"'),
-			),
-			'EffectsExplode' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("explode"', '.show("explode"', '.hide("explode"'),
-			),
-			'EffectsFold' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("fold"', '.show("fold"', '.hide("fold"'),
-			),
-			'EffectsHighlight' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("highlight"', '.show("highlight"', '.hide("highlight"'),
-			),
-			'EffectsPulsate' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("pulsate"', '.show("pulsate"', '.hide("pulsate"'),
-			),
-			'EffectsScale' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("scale"', '.show("scale"', '.hide("scale"'),
-			),
-			'EffectsShake' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("shake"', '.show("shake"', '.hide("shake"'),
-			),
-			'EffectsSlide' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("slide"', '.show("slide"', '.hide("slide"'),
-			),
-			'EffectsTransfer' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('.effect("transfer"', '.show("transfer"', '.hide("transfer"'),
-			),
-			'Easing' => array(
-				'Deps' => array('Core' => 'Core', 'EffectsCore' => 'Effects'),
-				'Source' => array('easing:'),
-			),
-		),
-	);
+	private $version = '0.2';
+	private $dependencies = array();
+	private $configXML = array();
 
 	/**
 	 * Analyze a given JS script
 	 * @param $file
 	 * @param $string
+	 * @param $config
 	 * @return void
 	 */
-	function analyzeJqJS($file='', $string=FALSE)
-	{
-		if ($string || $string = t3lib_div::getURL($file)) {
+	public function __construct($inputFile='', $string=FALSE, $config=array()) {
+		$this->configXML = $config;
+		if ($string || $string = t3lib_div::getURL($inputFile)) {
 			// we just look for double quote
 			$string = str_replace("'", '"', $string);
 			$result = array();
-			foreach ($this->jQuery as $dir => $files) {
-				foreach ($files as $file => $info) {
-					if ($this->contains($string, $info['Source']) === TRUE) {
-						$result = array_merge($result, $info['Deps']);
-						$result = array_merge($result, array($file => $dir));
+			$components = array();
+			if (count($this->configXML) > 0) {
+				// build the components array
+				foreach ($this->configXML as $group) {
+					if (count($group['files']) > 0) {
+						foreach ($group['files'] as $file) {
+							$components[$file['name']] = $file;
+							$components[$file['name']]['groupname'] = $group['name'];
+						}
+					}
+				}
+				// search for 
+				foreach ($this->configXML as $group) {
+					if (count($group['files']) > 0) {
+						foreach ($group['files'] as $file) {
+							if ($this->contains($string, $file['sources']) === TRUE) {
+								$result = array_merge($result, array($components[$file['depends']]['name'] => $components[$file['depends']]['groupname']));
+								$result = array_merge($result, array($file['name'] => $components[$file['name']]['groupname']));
+							}
+						}
 					}
 				}
 			}
@@ -180,11 +79,11 @@ class analyzeJqJS
 	}
 
 	/**
+	 * Returns if the component needed
 	 * 
-	 * 
+	 * @return boolean
 	 */
-	function contains($fileData, $array=array())
-	{
+	private function contains($fileData, $array=array()) {
 		if (!is_array($array)) {
 			return FALSE;
 		}
@@ -194,6 +93,15 @@ class analyzeJqJS
 			}
 		}
 		return FALSE;
+	}
+
+	/**
+	 * Returns all dependencies
+	 * 
+	 * @return array
+	 */
+	public function getDependencies() {
+		return $this->dependencies;
 	}
 }
 

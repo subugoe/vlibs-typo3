@@ -1,18 +1,18 @@
 /**
  * @license 
- * jQuery Tools 1.2.5 / Expose - Dim the lights
+ * jQuery Tools @VERSION / Expose - Dim the lights
  * 
  * NO COPYRIGHTS OR LICENSES. DO WHAT YOU LIKE.
  * 
  * http://flowplayer.org/tools/toolbox/expose.html
  *
  * Since: Mar 2010
- * Date:    Wed Sep 22 06:02:10 2010 +0000 
+ * Date: @DATE 
  */
 (function($) { 	
 
 	// static constructs
-	$.tools = $.tools || {version: '1.2.5'};
+	$.tools = $.tools || {version: '@VERSION'};
 	
 	var tool;
 	
