@@ -567,7 +567,7 @@ a.languageSwitcher:hover {
 }
 
 #pazpar2 .pz2-accessNote,
-#pazpar2 .pz2-showAll a {
+#pazpar2 .pz2-facet-showAll a {
 	color: #707070;
 }
 
