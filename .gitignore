@@ -6,3 +6,5 @@ typo3conf/deprecation*
 /.git-rewrite/
 typo3conf/ext/bsbezb/*
 /nbproject/private/
+fileadmin/gok/xml/*
+fileadmin/gok/hitcounts/*
