@@ -217,9 +217,7 @@ visible when they're tabbed to.
 /* PAGE */
 #page {
     position: relative;
-    min-height: 700px;
-	margin-bottom: -120px; /* compensate the height of #foot */
-	padding-bottom: 120px;
+    min-height: 100%;
 }
 
 
@@ -236,13 +234,20 @@ visible when they're tabbed to.
 }
 
 
+/* CONTENT */
+#content {
+	overflow: auto;
+	padding-bottom: 80px;
+}
+
 
 /* FOOT */
 #foot {
-	height: 40px;
-	margin-top: 40px;
-	padding: 40px 0px 0px;
+	height: 80px;
+	margin-top: -80px;
+	padding: 0px;
 	position: relative;
+	clear: both;
 	font-size: 86%;
 	color: #8d95b5;
 	background: #263476 url(footer.png) repeat-x top;
@@ -252,7 +257,7 @@ visible when they're tabbed to.
 	display: block;
 	width: 940px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 40px 10px 0px 10px;
 }
 
 #foot a:link, #foot a:visited, #foot a:active {
@@ -785,4 +790,14 @@ a.languageSwitcher:hover {
 
 .tx-ezbrequest-pi1 input.submStartSmall:active {
 	background-image: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small_click.png);
+}
+
+
+/* Opera Fix for CSS Sticky footer */
+body:before {/* thanks to Maleika (Kohoutec)*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
