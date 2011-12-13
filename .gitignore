@@ -5,3 +5,5 @@ typo3conf/deprecation*
 !/typo3temp/dummy*
 /.git-rewrite/
 typo3conf/ext/bsbezb/*
+fileadmin/gok/xml/*
+fileadmin/gok/hitcounts/*
