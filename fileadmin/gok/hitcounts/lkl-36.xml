@@ -2,54 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">690b75c8-0</SESSIONVAR>
+<SESSIONVAR name="SID">d1390896-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 107a">deduct l 107a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 112a">deduct l 112a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 11a">deduct l 11a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 129a">deduct l 129a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 129b">deduct l 129b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 132b">deduct l 132b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 137a">deduct l 137a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 141a">deduct l 141a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 15a">deduct l 15a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 165a">deduct l 165a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 22a">deduct l 22a</SCANLINE>
-
-    <SCANLINE hits="3" mnemonic="LKL" description="deduct l 35a">deduct l 35a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 3a">deduct l 3a</SCANLINE>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct l 47a">deduct l 47a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 50a">deduct l 50a</SCANLINE>
-
-    <SCANLINE hits="4" mnemonic="LKL" description="deduct l 55bb">deduct l 55bb</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 60a">deduct l 60a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 67a">deduct l 67a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 76b">deduct l 76b</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 85a">deduct l 85a</SCANLINE>
-
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct l 86a">deduct l 86a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct l 94a">deduct l 94a</SCANLINE>
 
@@ -149,7 +107,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct o 12a">deduct o 12a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct o 15a">deduct o 15a</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="deduct o 15a">deduct o 15a</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="deduct o 30a">deduct o 30a</SCANLINE>
 
@@ -265,7 +223,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct r 5a">deduct r 5a</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="deduct r 64a">deduct r 64a</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="deduct r 64a">deduct r 64a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct r 81a-a">deduct r 81a-a</SCANLINE>
 
@@ -387,7 +345,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct w 13c">deduct w 13c</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="deduct w 146b">deduct w 146b</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="deduct w 146b">deduct w 146b</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="deduct w 160a">deduct w 160a</SCANLINE>
 
@@ -431,7 +389,7 @@
 
     <SCANLINE hits="3" mnemonic="LKL" description="deduct w 73c">deduct w 73c</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="deduct w 97a">deduct w 97a</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="deduct w 97a">deduct w 97a</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="deduct y 19a-a">deduct y 19a-a</SCANLINE>
 
@@ -443,7 +401,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="df">df</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="df 000">df 000</SCANLINE>
+    <SCANLINE hits="41" mnemonic="LKL" description="df 000">df 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dfk">dfk</SCANLINE>
 
@@ -451,7 +409,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="dh">dh</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="dh 000">dh 000</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="dh 000">dh 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dh m (fh)">dh m (fh)</SCANLINE>
 
@@ -461,7 +419,7 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="di">di</SCANLINE>
 
-    <SCANLINE hits="219" mnemonic="LKL" description="di 000">di 000</SCANLINE>
+    <SCANLINE hits="222" mnemonic="LKL" description="di 000">di 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="di 300 m (fh)">di 300 m (fh)</SCANLINE>
 
@@ -485,7 +443,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="diagn.90 harnuntersuchung">diagn.90 harnuntersuchung</SCANLINE>
 
-    <SCANLINE hits="118" mnemonic="LKL" description="dic 000">dic 000</SCANLINE>
+    <SCANLINE hits="117" mnemonic="LKL" description="dic 000">dic 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="die polnischen koalitionskabinette 1989 - 1996">die polnischen koalitionskabinette 1989 - 1996</SCANLINE>
 
@@ -507,7 +465,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="dk 00">dk 00</SCANLINE>
 
-    <SCANLINE hits="258" mnemonic="LKL" description="dk 000">dk 000</SCANLINE>
+    <SCANLINE hits="260" mnemonic="LKL" description="dk 000">dk 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="dk 016">dk 016</SCANLINE>
 
@@ -673,7 +631,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="dn 00">dn 00</SCANLINE>
 
-    <SCANLINE hits="266" mnemonic="LKL" description="dn 000">dn 000</SCANLINE>
+    <SCANLINE hits="270" mnemonic="LKL" description="dn 000">dn 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dn a (fh)">dn a (fh)</SCANLINE>
 
@@ -693,9 +651,9 @@
 
     <SCANLINE hits="11" mnemonic="LKL" description="do">do</SCANLINE>
 
-    <SCANLINE hits="139" mnemonic="LKL" description="do 000">do 000</SCANLINE>
+    <SCANLINE hits="141" mnemonic="LKL" description="do 000">do 000</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="do b (fh)">do b (fh)</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="do b (fh)">do b (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="do f (fh)">do f (fh)</SCANLINE>
 
@@ -719,7 +677,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="doe">doe</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="doe 000">doe 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="doe 000">doe 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="doh 111">doh 111</SCANLINE>
 
@@ -751,7 +709,7 @@
 
     <SCANLINE hits="12" mnemonic="LKL" description="dr">dr</SCANLINE>
 
-    <SCANLINE hits="550" mnemonic="LKL" description="dr 000">dr 000</SCANLINE>
+    <SCANLINE hits="556" mnemonic="LKL" description="dr 000">dr 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="dr m (fh)">dr m (fh)</SCANLINE>
 
@@ -785,7 +743,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ds 00">ds 00</SCANLINE>
 
-    <SCANLINE hits="214" mnemonic="LKL" description="ds 000">ds 000</SCANLINE>
+    <SCANLINE hits="213" mnemonic="LKL" description="ds 000">ds 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ds k (fh)">ds k (fh)</SCANLINE>
 
@@ -799,9 +757,9 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="ds x (fh)">ds x (fh)</SCANLINE>
 
-    <SCANLINE hits="320" mnemonic="LKL" description="dt 000">dt 000</SCANLINE>
+    <SCANLINE hits="321" mnemonic="LKL" description="dt 000">dt 000</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="du 000">du 000</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="du 000">du 000</SCANLINE>
 
     <SCANLINE hits="8" mnemonic="LKL" description="dx">dx</SCANLINE>
 
@@ -967,9 +925,11 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="e x (fh)">e x (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="e xxx">e xxx</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="e xxx">e xxx</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="e.">e.</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="e03">e03</SCANLINE>
 
     <SCANLINE hits="96" mnemonic="LKL" description="ea">ea</SCANLINE>
 
@@ -977,15 +937,15 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaa (fh)">eaa (fh)</SCANLINE>
 
-    <SCANLINE hits="200" mnemonic="LKL" description="eaa 000">eaa 000</SCANLINE>
+    <SCANLINE hits="199" mnemonic="LKL" description="eaa 000">eaa 000</SCANLINE>
 
-    <SCANLINE hits="164" mnemonic="LKL" description="eaa 010">eaa 010</SCANLINE>
+    <SCANLINE hits="163" mnemonic="LKL" description="eaa 010">eaa 010</SCANLINE>
 
-    <SCANLINE hits="4453" mnemonic="LKL" description="eaa 020">eaa 020</SCANLINE>
+    <SCANLINE hits="4516" mnemonic="LKL" description="eaa 020">eaa 020</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaa 200">eaa 200</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="eaa 990">eaa 990</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="eaa 990">eaa 990</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="eaa 999">eaa 999</SCANLINE>
 
@@ -1007,13 +967,53 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="eaa x (fh)">eaa x (fh)</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="eaa xxx">eaa xxx</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa xxx">eaa xxx</SCANLINE>
+
+    <SCANLINE hits="6" mnemonic="LKL" description="eaa-">eaa-</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eaa- 000">eaa- 000</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 it a">eaa16 it a</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 ru a (fh)">eaa16 ru a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa16 su a">eaa16 su a</SCANLINE>
+
+    <SCANLINE hits="4" mnemonic="LKL" description="eaa16 su a (fh)">eaa16 su a (fh)</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaa46 ch a (fh)">eaa46 ch a (fh)</SCANLINE>
+
+    <SCANLINE hits="77" mnemonic="LKL" description="eaaa">eaaa</SCANLINE>
+
+    <SCANLINE hits="118" mnemonic="LKL" description="eaaa 000">eaaa 000</SCANLINE>
+
+    <SCANLINE hits="8" mnemonic="LKL" description="eaaa 001">eaaa 001</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaaa 002">eaaa 002</SCANLINE>
+
+    <SCANLINE hits="3" mnemonic="LKL" description="eaaa 004">eaaa 004</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaaa 007">eaaa 007</SCANLINE>
+
+    <SCANLINE hits="5" mnemonic="LKL" description="eaaa 010">eaaa 010</SCANLINE>
+
+    <SCANLINE hits="21" mnemonic="LKL" description="eaaa 020">eaaa 020</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaaa 05">eaaa 05</SCANLINE>
+
+    <SCANLINE hits="286" mnemonic="LKL" description="eaaa 050">eaaa 050</SCANLINE>
+
+    <SCANLINE hits="310" mnemonic="LKL" description="eaaa 060">eaaa 060</SCANLINE>
+
+    <SCANLINE hits="2" mnemonic="LKL" description="eaaa 066">eaaa 066</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="eaaa 068">eaaa 068</SCANLINE>
 
 </SCANLIST>
 
-<SCANPREV term="deduct+l+107a" />
+<SCANPREV term="deduct+l+94a" />
 
 
-<SCANNEXT term="eaa+xxx" />
+<SCANNEXT term="eaaa+068" />
 
 </RESULT>

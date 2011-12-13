@@ -2,14 +2,12 @@
 <RESULT>
 <SESSION><SESSIONVAR name="LNG">DU</SESSIONVAR>
 <SESSIONVAR name="DB">1</SESSIONVAR>
-<SESSIONVAR name="SID">16be9512-2</SESSIONVAR>
+<SESSIONVAR name="SID">a7e15fa7-2</SESSIONVAR>
 
 
 <SESSIONVAR name="TITLE">G%26ouml%3Bttinger+Universit%26auml%3Btskatalog+(GUK)</SESSIONVAR>
 </SESSION>
 <SCANLIST>
-
-    <SCANLINE hits="2" mnemonic="LKL" description="ams 93e15 60h10">ams 93e15 60h10</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams 93e15 60h10 93c05 60f10">ams 93e15 60h10 93c05 60f10</SCANLINE>
 
@@ -393,13 +391,13 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ams stationary">ams stationary</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="amt 000">amt 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="amt 000">amt 000</SCANLINE>
 
     <SCANLINE hits="9" mnemonic="LKL" description="amu 000">amu 000</SCANLINE>
 
     <SCANLINE hits="51" mnemonic="LKL" description="an">an</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="an 000">an 000</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="an 000">an 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="an d">an d</SCANLINE>
 
@@ -417,7 +415,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="anb16 gb 9 lond 3 (fh)">anb16 gb 9 lond 3 (fh)</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="and 000">and 000</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="and 000">and 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="and 61 nam">and 61 nam</SCANLINE>
 
@@ -425,7 +423,7 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="and61 nam (fh)">and61 nam (fh)</SCANLINE>
 
-    <SCANLINE hits="17" mnemonic="LKL" description="ane 000">ane 000</SCANLINE>
+    <SCANLINE hits="16" mnemonic="LKL" description="ane 000">ane 000</SCANLINE>
 
     <SCANLINE hits="41" mnemonic="LKL" description="ane 16 dae">ane 16 dae</SCANLINE>
 
@@ -533,201 +531,197 @@
 
     <SCANLINE hits="4" mnemonic="LKL" description="ao">ao</SCANLINE>
 
-    <SCANLINE hits="21" mnemonic="LKL" description="ao 000">ao 000</SCANLINE>
+    <SCANLINE hits="20" mnemonic="LKL" description="ao 000">ao 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="ao c">ao c</SCANLINE>
 
-    <SCANLINE hits="20" mnemonic="LKL" description="aoa 000">aoa 000</SCANLINE>
+    <SCANLINE hits="19" mnemonic="LKL" description="aoa 000">aoa 000</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="aoa 100">aoa 100</SCANLINE>
+    <SCANLINE hits="42" mnemonic="LKL" description="aoa 100">aoa 100</SCANLINE>
 
-    <SCANLINE hits="42" mnemonic="LKL" description="aoa 150">aoa 150</SCANLINE>
+    <SCANLINE hits="40" mnemonic="LKL" description="aoa 150">aoa 150</SCANLINE>
 
-    <SCANLINE hits="193" mnemonic="LKL" description="aoa 180">aoa 180</SCANLINE>
+    <SCANLINE hits="196" mnemonic="LKL" description="aoa 180">aoa 180</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 200">aoa 200</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 200">aoa 200</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aoa 300">aoa 300</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aoa 300">aoa 300</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="aoa 340">aoa 340</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aoa 340">aoa 340</SCANLINE>
 
-    <SCANLINE hits="54" mnemonic="LKL" description="aoa 350">aoa 350</SCANLINE>
+    <SCANLINE hits="53" mnemonic="LKL" description="aoa 350">aoa 350</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoa 360">aoa 360</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoa 360">aoa 360</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 380">aoa 380</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 380">aoa 380</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoa 400">aoa 400</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoa 400">aoa 400</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="aoa 410">aoa 410</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="aoa 410">aoa 410</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="aoa 420">aoa 420</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="aoa 420">aoa 420</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aoa 440">aoa 440</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aoa 440">aoa 440</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 450">aoa 450</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 450">aoa 450</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 470">aoa 470</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 470">aoa 470</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoa 500">aoa 500</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoa 500">aoa 500</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 530">aoa 530</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 530">aoa 530</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoa 560">aoa 560</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoa 560">aoa 560</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aoa09 wash (fh)">aoa09 wash (fh)</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aob">aob</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="aob 000">aob 000</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aob 000">aob 000</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aob 150">aob 150</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aob 150">aob 150</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aob 200">aob 200</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aob 200">aob 200</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="aob 300">aob 300</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="aob 300">aob 300</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aob 400">aob 400</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aob 400">aob 400</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aob 500">aob 500</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aob 500">aob 500</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aob 600">aob 600</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aob 600">aob 600</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aob 620">aob 620</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aob 620">aob 620</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aob 640">aob 640</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="aob 640">aob 640</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aob 660">aob 660</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aob 660">aob 660</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aoc 150">aoc 150</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aod 000">aod 000</SCANLINE>
-
-    <SCANLINE hits="14" mnemonic="LKL" description="aod 100">aod 100</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="aod 100">aod 100</SCANLINE>
 
     <SCANLINE hits="46" mnemonic="LKL" description="aod 150">aod 150</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aod 22066 usa">aod 22066 usa</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aod 250">aod 250</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aod 250">aod 250</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aod 300">aod 300</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aod 300">aod 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aod 340">aod 340</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aod 350">aod 350</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aod 350">aod 350</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aod 400">aod 400</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aod 400">aod 400</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aod 500">aod 500</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aod 500">aod 500</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aod 550">aod 550</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aod 550">aod 550</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="aod 650">aod 650</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="aod 650">aod 650</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aod 710">aod 710</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aod 850">aod 850</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aod 850">aod 850</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aod 900">aod 900</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aod 900">aod 900</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="aoe 000">aoe 000</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="aoe 000">aoe 000</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="aoe 100">aoe 100</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aoe 100">aoe 100</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="aoe 200">aoe 200</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="aoe 200">aoe 200</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aoe 207">aoe 207</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aoe 210">aoe 210</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aoe 210">aoe 210</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="aoe 230">aoe 230</SCANLINE>
 
-    <SCANLINE hits="34" mnemonic="LKL" description="aoe 240">aoe 240</SCANLINE>
+    <SCANLINE hits="33" mnemonic="LKL" description="aoe 240">aoe 240</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="aoe 250">aoe 250</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aoe 250">aoe 250</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="aoe 260">aoe 260</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aoe 260">aoe 260</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="aoe 270">aoe 270</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="aoe 270">aoe 270</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aoe 280">aoe 280</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aoe 280">aoe 280</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoe 290">aoe 290</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoe 290">aoe 290</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoe 300">aoe 300</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoe 300">aoe 300</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aoe 320">aoe 320</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aoe 320">aoe 320</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aoe 330">aoe 330</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aoe 330">aoe 330</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoe 340">aoe 340</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoe 340">aoe 340</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aoe 360">aoe 360</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aoe 360">aoe 360</SCANLINE>
 
-    <SCANLINE hits="14" mnemonic="LKL" description="aoe 370">aoe 370</SCANLINE>
+    <SCANLINE hits="13" mnemonic="LKL" description="aoe 370">aoe 370</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aoe 400">aoe 400</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aoe 400">aoe 400</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoe 410">aoe 410</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoe 410">aoe 410</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoe 420">aoe 420</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoe 420">aoe 420</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aoe 430">aoe 430</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aoe 430">aoe 430</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aoe 450">aoe 450</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aoe 460">aoe 460</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aoe 460">aoe 460</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="aoe 480">aoe 480</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aoe 480">aoe 480</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aoe 490">aoe 490</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aoe 490">aoe 490</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="aoe 500">aoe 500</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="aoe 500">aoe 500</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aoe 700">aoe 700</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aoe 700">aoe 700</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aog 000">aog 000</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aog 000">aog 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="aog 100">aog 100</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="aog 100">aog 100</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aog 200">aog 200</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aog 200">aog 200</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="aog 400">aog 400</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="aog 400">aog 400</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aog 500">aog 500</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aog 500">aog 500</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aog 600">aog 600</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aog 600">aog 600</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aog 700">aog 700</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aog 700">aog 700</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="aoj 000">aoj 000</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="aoj 000">aoj 000</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aok 000">aok 000</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="aok 000">aok 000</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="aok 100">aok 100</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="aok 100">aok 100</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aok 130">aok 130</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aok 130">aok 130</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="aok 150">aok 150</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aok 150">aok 150</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aok 200">aok 200</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aok 200">aok 200</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="aok 300">aok 300</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="aok 300">aok 300</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aok 800">aok 800</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aok 800">aok 800</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="aop 000">aop 000</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="aop 000">aop 000</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aos 000">aos 000</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aos 000">aos 000</SCANLINE>
-
-    <SCANLINE hits="7" mnemonic="LKL" description="aos 100">aos 100</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="aos 100">aos 100</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aos 400">aos 400</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="aos 500">aos 500</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aos 500">aos 500</SCANLINE>
 
-    <SCANLINE hits="25" mnemonic="LKL" description="aot 000">aot 000</SCANLINE>
+    <SCANLINE hits="24" mnemonic="LKL" description="aot 000">aot 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aot 100">aot 100</SCANLINE>
 
@@ -747,107 +741,105 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="ap ey">ap ey</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="apa 000">apa 000</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="apa 000">apa 000</SCANLINE>
 
-    <SCANLINE hits="15" mnemonic="LKL" description="apa 200">apa 200</SCANLINE>
+    <SCANLINE hits="14" mnemonic="LKL" description="apa 200">apa 200</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="apa 400">apa 400</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="apa 400">apa 400</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="apa 600">apa 600</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="apa 600">apa 600</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="apa 700">apa 700</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="apa 700">apa 700</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="apa 800">apa 800</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="apa 800">apa 800</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="apc 000">apc 000</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="apc 000">apc 000</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="apc 100">apc 100</SCANLINE>
 
-    <SCANLINE hits="47" mnemonic="LKL" description="apc 200">apc 200</SCANLINE>
+    <SCANLINE hits="46" mnemonic="LKL" description="apc 200">apc 200</SCANLINE>
 
-    <SCANLINE hits="95" mnemonic="LKL" description="apc 400">apc 400</SCANLINE>
+    <SCANLINE hits="94" mnemonic="LKL" description="apc 400">apc 400</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="apc 600">apc 600</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="apc 600">apc 600</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="apc 800">apc 800</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="apc 800">apc 800</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="apd 000">apd 000</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="apd 000">apd 000</SCANLINE>
 
-    <SCANLINE hits="43" mnemonic="LKL" description="apd 200">apd 200</SCANLINE>
+    <SCANLINE hits="42" mnemonic="LKL" description="apd 200">apd 200</SCANLINE>
 
-    <SCANLINE hits="104" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
+    <SCANLINE hits="103" mnemonic="LKL" description="apd 400">apd 400</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="apd 500">apd 500</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="apd 500">apd 500</SCANLINE>
 
-    <SCANLINE hits="226" mnemonic="LKL" description="apd 600">apd 600</SCANLINE>
+    <SCANLINE hits="225" mnemonic="LKL" description="apd 600">apd 600</SCANLINE>
 
-    <SCANLINE hits="23" mnemonic="LKL" description="apd 700">apd 700</SCANLINE>
+    <SCANLINE hits="22" mnemonic="LKL" description="apd 700">apd 700</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="apd 800">apd 800</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="apd 800">apd 800</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="apg 000">apg 000</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aph 000">aph 000</SCANLINE>
-
-    <SCANLINE hits="9" mnemonic="LKL" description="aph 100">aph 100</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aph 100">aph 100</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aph 150">aph 150</SCANLINE>
 
-    <SCANLINE hits="19" mnemonic="LKL" description="aph 200">aph 200</SCANLINE>
+    <SCANLINE hits="18" mnemonic="LKL" description="aph 200">aph 200</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aph 300">aph 300</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aph 300">aph 300</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aph 400">aph 400</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aph 400">aph 400</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aph 450">aph 450</SCANLINE>
 
-    <SCANLINE hits="39" mnemonic="LKL" description="aph 500">aph 500</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="aph 500">aph 500</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aph 600">aph 600</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aph 600">aph 600</SCANLINE>
 
     <SCANLINE hits="5" mnemonic="LKL" description="aph 650">aph 650</SCANLINE>
 
-    <SCANLINE hits="151" mnemonic="LKL" description="aph 700">aph 700</SCANLINE>
+    <SCANLINE hits="150" mnemonic="LKL" description="aph 700">aph 700</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aph 850">aph 850</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="aph 900">aph 900</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="aph 900">aph 900</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="apk 000">apk 000</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="apk 000">apk 000</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="apk 100">apk 100</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="apk 100">apk 100</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="apk 150">apk 150</SCANLINE>
+    <SCANLINE hits="35" mnemonic="LKL" description="apk 150">apk 150</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="apk 200">apk 200</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="apk 200">apk 200</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="apk 250">apk 250</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="apk 250">apk 250</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="apk 300">apk 300</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="apk 300">apk 300</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="apk 350">apk 350</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="apk 350">apk 350</SCANLINE>
 
-    <SCANLINE hits="6" mnemonic="LKL" description="apk 400">apk 400</SCANLINE>
+    <SCANLINE hits="5" mnemonic="LKL" description="apk 400">apk 400</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="apk 500">apk 500</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="apk 500">apk 500</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="apk 550">apk 550</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="apk 550">apk 550</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="apk 650">apk 650</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="apk 650">apk 650</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="apm 000">apm 000</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="apm 000">apm 000</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="apn 000">apn 000</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="apn 000">apn 000</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="apo 000">apo 000</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="apo 000">apo 000</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="app 000">app 000</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="app 000">app 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="apr 540">apr 540</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aps 00">aps 00</SCANLINE>
 
-    <SCANLINE hits="16" mnemonic="LKL" description="aps 000">aps 000</SCANLINE>
+    <SCANLINE hits="15" mnemonic="LKL" description="aps 000">aps 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aps 700">aps 700</SCANLINE>
 
@@ -857,7 +849,7 @@
 
     <SCANLINE hits="7" mnemonic="LKL" description="aq (fh)">aq (fh)</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="aq 000">aq 000</SCANLINE>
+    <SCANLINE hits="35" mnemonic="LKL" description="aq 000">aq 000</SCANLINE>
 
     <SCANLINE hits="2" mnemonic="LKL" description="aq h (fh)">aq h (fh)</SCANLINE>
 
@@ -873,67 +865,65 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqa 00">aqa 00</SCANLINE>
 
-    <SCANLINE hits="45" mnemonic="LKL" description="aqa 000">aqa 000</SCANLINE>
+    <SCANLINE hits="44" mnemonic="LKL" description="aqa 000">aqa 000</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="aqa 100">aqa 100</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aqa 100">aqa 100</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aqa 200">aqa 200</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aqa 200">aqa 200</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqa 300">aqa 300</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqa 300">aqa 300</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqa h (fh)">aqa h (fh)</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqb 000">aqb 000</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqb 000">aqb 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqc 000">aqc 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqd 0">aqd 0</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aqd 000">aqd 000</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aqd 000">aqd 000</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aqd 100">aqd 100</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aqd 100">aqd 100</SCANLINE>
 
-    <SCANLINE hits="78" mnemonic="LKL" description="aqd 300">aqd 300</SCANLINE>
+    <SCANLINE hits="77" mnemonic="LKL" description="aqd 300">aqd 300</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aqd 500">aqd 500</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aqd 500">aqd 500</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aqd 520">aqd 520</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aqd 520">aqd 520</SCANLINE>
 
-    <SCANLINE hits="18" mnemonic="LKL" description="aqd 540">aqd 540</SCANLINE>
+    <SCANLINE hits="17" mnemonic="LKL" description="aqd 540">aqd 540</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aqd 550">aqd 550</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aqd 550">aqd 550</SCANLINE>
 
-    <SCANLINE hits="9" mnemonic="LKL" description="aqd 560">aqd 560</SCANLINE>
+    <SCANLINE hits="8" mnemonic="LKL" description="aqd 560">aqd 560</SCANLINE>
 
-    <SCANLINE hits="11" mnemonic="LKL" description="aqd 580">aqd 580</SCANLINE>
+    <SCANLINE hits="10" mnemonic="LKL" description="aqd 580">aqd 580</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aqd 800">aqd 800</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aqd 800">aqd 800</SCANLINE>
 
-    <SCANLINE hits="103" mnemonic="LKL" description="aqe 000">aqe 000</SCANLINE>
+    <SCANLINE hits="102" mnemonic="LKL" description="aqe 000">aqe 000</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="aqe 100">aqe 100</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="aqe 100">aqe 100</SCANLINE>
 
-    <SCANLINE hits="7" mnemonic="LKL" description="aqe 200">aqe 200</SCANLINE>
+    <SCANLINE hits="6" mnemonic="LKL" description="aqe 200">aqe 200</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqe 300">aqe 300</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqe 300">aqe 300</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aqe 400">aqe 400</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aqe 400">aqe 400</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqe 500">aqe 500</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqe 500">aqe 500</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqe 560">aqe 560</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aqe 600">aqe 600</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe 600">aqe 600</SCANLINE>
 
-    <SCANLINE hits="12" mnemonic="LKL" description="aqe 700">aqe 700</SCANLINE>
+    <SCANLINE hits="11" mnemonic="LKL" description="aqe 700">aqe 700</SCANLINE>
 
-    <SCANLINE hits="1" mnemonic="LKL" description="aqe 900">aqe 900</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aqe 910">aqe 910</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aqe 910">aqe 910</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aqe 920">aqe 920</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aqe 920">aqe 920</SCANLINE>
-
-    <SCANLINE hits="8" mnemonic="LKL" description="aqe 940">aqe 940</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aqe 940">aqe 940</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqe 980">aqe 980</SCANLINE>
 
@@ -947,11 +937,11 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqe w (fh)">aqe w (fh)</SCANLINE>
 
-    <SCANLINE hits="33" mnemonic="LKL" description="aqf 000">aqf 000</SCANLINE>
+    <SCANLINE hits="32" mnemonic="LKL" description="aqf 000">aqf 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqf 400">aqf 400</SCANLINE>
 
-    <SCANLINE hits="32" mnemonic="LKL" description="aqg 000">aqg 000</SCANLINE>
+    <SCANLINE hits="31" mnemonic="LKL" description="aqg 000">aqg 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqg b (fh)">aqg b (fh)</SCANLINE>
 
@@ -961,13 +951,13 @@
 
     <SCANLINE hits="2" mnemonic="LKL" description="aqh 000">aqh 000</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqh 200">aqh 200</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqh 200">aqh 200</SCANLINE>
 
-    <SCANLINE hits="5" mnemonic="LKL" description="aqh 350">aqh 350</SCANLINE>
+    <SCANLINE hits="4" mnemonic="LKL" description="aqh 350">aqh 350</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqh 600">aqh 600</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqh 600">aqh 600</SCANLINE>
 
-    <SCANLINE hits="8" mnemonic="LKL" description="aqh 900">aqh 900</SCANLINE>
+    <SCANLINE hits="7" mnemonic="LKL" description="aqh 900">aqh 900</SCANLINE>
 
     <SCANLINE hits="3" mnemonic="LKL" description="aqm 100">aqm 100</SCANLINE>
 
@@ -991,29 +981,39 @@
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqm m (fh)">aqm m (fh)</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aqn 000">aqn 000</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aqn 000">aqn 000</SCANLINE>
 
-    <SCANLINE hits="3" mnemonic="LKL" description="aqo 000">aqo 000</SCANLINE>
+    <SCANLINE hits="2" mnemonic="LKL" description="aqo 000">aqo 000</SCANLINE>
 
-    <SCANLINE hits="26" mnemonic="LKL" description="aqr 000">aqr 000</SCANLINE>
+    <SCANLINE hits="25" mnemonic="LKL" description="aqr 000">aqr 000</SCANLINE>
 
-    <SCANLINE hits="4" mnemonic="LKL" description="aqr 100">aqr 100</SCANLINE>
+    <SCANLINE hits="3" mnemonic="LKL" description="aqr 100">aqr 100</SCANLINE>
 
-    <SCANLINE hits="36" mnemonic="LKL" description="aqr 500">aqr 500</SCANLINE>
+    <SCANLINE hits="38" mnemonic="LKL" description="aqr 500">aqr 500</SCANLINE>
 
-    <SCANLINE hits="13" mnemonic="LKL" description="aqr 800">aqr 800</SCANLINE>
+    <SCANLINE hits="12" mnemonic="LKL" description="aqr 800">aqr 800</SCANLINE>
 
-    <SCANLINE hits="2" mnemonic="LKL" description="aqr 900">aqr 900</SCANLINE>
+    <SCANLINE hits="1" mnemonic="LKL" description="aqr 900">aqr 900</SCANLINE>
 
-    <SCANLINE hits="10" mnemonic="LKL" description="aqt 000">aqt 000</SCANLINE>
+    <SCANLINE hits="9" mnemonic="LKL" description="aqt 000">aqt 000</SCANLINE>
 
     <SCANLINE hits="1" mnemonic="LKL" description="aqt 200">aqt 200</SCANLINE>
 
+    <SCANLINE hits="1" mnemonic="LKL" description="aqu">aqu</SCANLINE>
+
+    <SCANLINE hits="1" mnemonic="LKL" description="aqu 000">aqu 000</SCANLINE>
+
+    <SCANLINE hits="68" mnemonic="LKL" description="ar">ar</SCANLINE>
+
+    <SCANLINE hits="145" mnemonic="LKL" description="ar 000">ar 000</SCANLINE>
+
+    <SCANLINE hits="66" mnemonic="LKL" description="ar 100">ar 100</SCANLINE>
+
 </SCANLIST>
 
-<SCANPREV term="ams+93e15+60h10" />
+<SCANPREV term="ams+93e15+60h10+93c05+60f10" />
 
 
-<SCANNEXT term="aqt+200" />
+<SCANNEXT term="ar+100" />
 
 </RESULT>
