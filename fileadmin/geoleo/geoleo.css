@@ -45,7 +45,7 @@ a.languageSwitcher {
 }
 
 ul.bottommenu {
-	margin-top: 20px;
+	margin-top: 60px;
 	text-align: right;
 }
 
@@ -56,20 +56,24 @@ ul.bottommenu li {
 	padding: 0 6px;
 }
 
+ul.bottommenu li.current {
+	font-weight: bold;
+}
+
 ul.bottommenu li a {
 	color: #464646;
 }
 
 #head p.bodytext {
 	position: absolute;
-	top: 20px;
-	left: 0px;
+	top: 0px;
+	left: -5px;
 	margin: 0px;
 	padding: 0px;
 	text-indent: -9999em;
-	height: 84px;
+	height: 100px;
 	width: 240px;
-	background: transparent url(logo.png) no-repeat 0px 0px;
+	background: transparent url(logo_separate.png) no-repeat 0px 0px;
 }
 
 
@@ -79,7 +83,7 @@ a {
 }
 
 
-a:hover {
+a:link:hover {
 	text-decoration: underline;
 }
 
@@ -189,8 +193,8 @@ h2 {
     letter-spacing: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: #482e2a;
+h1, h2, h3, h4, h5, h6, .pz2-details dt {
+	color: #6c564c;
 }
 
 h3 {
@@ -199,7 +203,7 @@ h3 {
     line-height: 1.125;
     margin: 0;
     margin-bottom: 1.125em;
-    font-weight: inherit;
+    font-weight: bold;
     letter-spacing: inherit;
 }
 
@@ -209,7 +213,7 @@ h4, h5, h6 {
     line-height: 1.2857142857142858;
     margin: 0;
     margin-bottom: 1.2857142857142858em;
-    font-weight: inherit;
+    font-weight: bold;
     letter-spacing: inherit;
 }
 
@@ -245,6 +249,255 @@ table {
 	background: #f8f5f3;
 }
 
+#pazpar2 .pz2-mediaIcon {
+	background-image: url(geo-leo_mediatype_icons_v100_trsp.png);
+}
+
+#pazpar2 a.pz2-recordLink {
+	color: #464646;
+}
+
+#pazpar2 .pz2-title-main {
+	color: #039;
+}
+
+#pazpar2 .pz2-recordLink:after {
+	position: relative;
+	bottom: -1px;
+	content: url(magnifier.png);
+}
+
+#pazpar2 .pz2-recordLink:hover:after {
+	content: url(magnifier_hover.png);
+}
+
+#pazpar2 .pz2-detail-catalogueLink {
+	padding: 1px 12px 1px 4px;
+	background: #d9dbe4 url(arrow.png) right center no-repeat;
+}
+
+#pazpar2 .pz2-detail-catalogueLink:after {
+	margin: 0;
+	content: '';
+}
+
+#pazpar2 .pz2-termList-xtargets a {
+	color: #6c564c;
+}
+
+#pazpar2 .pz2-facetName {
+	color: #039;
+}
+
+#pazpar2 #pz2-results ol.pz2-resultList li {
+	margin-bottom: 10px;
+	padding-right: 10px;
+}
+
+#pazpar2 .pz2-progressIndicator {
+	background: transparent;
+	border-bottom: 1px solid #6c564c;
+}
+
+#pazpar2 .pz2-termList .pz2-progressIndicator {
+	display: none;
+}
+
+#pazpar2 .pz2-recordCount {
+	color: #464646;
+}
+
+#pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
+	border-left-color: #6c564c;
+}
+
+#pazpar2 #pz2-results .pz2-extraLinks ul li input,
+#pazpar2 #pz2-results .pz2-extraLinks ul li a {
+	color: #999;
+}
+
+#pazpar2 #pz2-results .pz2-extraLinks:hover ul li input,
+#pazpar2 #pz2-results .pz2-extraLinks:hover ul li a {
+	color: #6c564c;
+}
+
+#pz2-results .pz2-extraLinks ul li input:hover,
+#pz2-results .pz2-extraLinks ul li a:hover {
+	text-decoration: underline;
+}
+
+#pazpar2 .pz2-details {
+	padding: 10px 0px 20px;
+}
+
+#pazpar2 .pz2-details dt {
+	width: 160px;
+	margin-bottom: 5px;
+}
+
+#pazpar2 .pz2-details dd {
+	margin-left: 180px;
+	margin-bottom: 5px;
+}
+
+#pazpar2 .pz2-details ul {
+	list-style-type: disc;
+}
+
+#pazpar2 .pz2-details dd.pz2-googleBooks {
+	padding-top: 2px;
+}
+
+#pazpar2,
+.gokContainer,
+.tx-ezbrequest-pi1 {
+	margin: 1em 10px;
+}
+
+#pazpar2 #pz2-results {
+	margin: 0px;
+}
+
+#pazpar2 .pz2-resultList .pz2-mediaIcon {
+	top: -2px;
+}
+
+
+/* OVERRIDE EZBREQUEST STYLING */
+.tx-ezbrequest-pi1 {
+	line-height: 18px;
+}
+
+.tx-ezbrequest-pi1 a:link {
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.tx-ezbrequest-pi1 a:link:hover {
+	text-decoration: underline;
+}
+
+.tx-ezbrequest-pi1 #journalNavi {
+	float: left;
+	margin-bottom: 20px;
+}
+
+.tx-ezbrequest-pi1 #journalNavi a:link {
+	padding: 0 3px;
+}
+
+.tx-ezbrequest-pi1 #journalNavi .act {
+	font-weight: bold;
+	padding: 0 3px;
+}
+
+.tx-ezbrequest-pi1 #ezb_search_form fieldset {
+	border: 0px none;
+	text-align: right;
+}
+
+.tx-ezbrequest-pi1 #ezbSearchForm {
+	display: none;
+}
+
+.tx-ezbrequest-pi1 ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tx-ezbrequest-pi1 #journalNavi .alphabetMenu li {
+	display: inline;
+}
+
+.tx-ezbrequest-pi1 #journalList li {
+	position: relative;
+	margin-left: 50px;
+}
+
+.tx-ezbrequest-pi1 #journalList li span.ampel {
+	position: absolute;
+	left: -50px;
+	top: 0.2em;
+}
+
+.tx-ezbrequest-pi1 ul.firstlist {
+	margin-bottom: 1em;
+}
+
+.tx-ezbrequest-pi1 ul.nextlist {
+	margin-top: 1em;
+}
+
+.tx-ezbrequest-pi1 #journalList {
+	clear: left;
+}
+
+.tx-ezbrequest-pi1 #journalList a img {
+	margin-right: 20px;
+	border: 0px none;
+}
+
+.tx-ezbrequest-pi1 #jourItem .title {
+	display: block;
+	font-size: 166%;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.tx-ezbrequest-pi1 table td {
+	vertical-align: top;
+}
+
+.tx-ezbrequest-pi1 table td b {
+	display: block;
+	text-align: right;
+	margin-right: 20px;
+	width: 180px;
+}
+
+.tx-ezbrequest-pi1 fieldset {
+	margin-right: 10px;
+	text-align: right;
+}
+
+/* style like .pz2-searchField */
+.tx-ezbrequest-pi1 input.iputStartSmall {
+	margin: 0px 6px 2px 0px;
+	padding: 2px;
+	color: #333333;
+	background: #f3f5f9;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #b3b3b3 #d2d2d2 #d2d2d2 #b3b3b3;
+	width: 220px;
+}
+
+/* style like .pz2-submitButton */
+.tx-ezbrequest-pi1 input.submStartSmall {
+	height: 23px;
+	background: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small.png) repeat-x scroll 0 100% #f3f6fb;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #d4d4d4 #b4b4b4 #b4b4b4 #d4d4d4;
+	border-radius: 3px 3px 3px 3px;
+	border-right: 1px solid #b4b4b4;
+	color: #555555;
+	font-weight: bold;
+	line-height: 100%;
+	padding: 3px 12px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.75);
+	text-transform: uppercase;
+}
+
+.tx-ezbrequest-pi1 input.submStartSmall:active {
+	background-image: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small_click.png);
+}
+
+
+
 
 
 /*
@@ -263,85 +516,30 @@ table {
 
 
 
-/*
-	Variable Grid System.
-	Learn more ~ http://www.spry-soft.com/grids/
-	Based on 960 Grid System - http://960.gs/
-
-	Licensed under GPL and MIT.
-*/
-
-/*
-  Forces backgrounds to span full width,
-  even if there is horizontal scrolling.
-  Increase this if your layout is wider.
-
-  Note: IE6 works fine without this fix.
-*/
-
-body {
-  min-width: 960px;
-}
-
-/* Containers
-----------------------------------------------------------------------------------------------------*/
 .container_16 {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
 }
 
-/* Grid >> Global
-----------------------------------------------------------------------------------------------------*/
-
-
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12,
-.grid_13,
-.grid_14,
-.grid_15,
-.grid_16 {
-	display:inline;
+.grid_4, .grid_8, .grid_12, .grid_16,
+#content .csc-default,
+#content .csc-frame-frame1,
+#content .csc-frame-frame2,
+#pazpar2,
+.container_16 #pz2-results,
+.gokContainer,
+.tx-ezbrequest-pi1 {
+	display: inline;
 	float: left;
 	position: relative;
-	margin-left: 5px;
-	margin-right: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
-
-
-.push_1, .pull_1,
-.push_2, .pull_2,
-.push_3, .pull_3,
-.push_4, .pull_4,
-.push_5, .pull_5,
-.push_6, .pull_6,
-.push_7, .pull_7,
-.push_8, .pull_8,
-.push_9, .pull_9,
-.push_10, .pull_10,
-.push_11, .pull_11,
-.push_12, .pull_12,
-.push_13, .pull_13,
-.push_14, .pull_14,
-.push_15, .pull_15,
-.push_16, .pull_16 {
-	position:relative;
+.push_4, .pull_4, .push_8, .pull_8, .push_12, .pull_12, .push_16, .pull_16 {
+	position: relative;
 }
-
-
-/* Grid >> Children (Alpha ~ First, Omega ~ Last)
-----------------------------------------------------------------------------------------------------*/
 
 .alpha {
 	margin-left: 0;
@@ -351,346 +549,33 @@ body {
 	margin-right: 0;
 }
 
-/* Grid >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_16 .grid_1 {
-	width:50px;
-}
-
-.container_16 .grid_2 {
-	width:110px;
-}
-
-.container_16 .grid_3 {
-	width:170px;
-}
-
-.container_16 .grid_4 {
-	width:230px;
-}
-
-.container_16 .grid_5 {
-	width:290px;
-}
-
-.container_16 .grid_6 {
-	width:350px;
-}
-
-.container_16 .grid_7 {
-	width:410px;
-}
-
-.container_16 .grid_8 {
-	width:470px;
-}
-
-.container_16 .grid_9 {
-	width:530px;
-}
-
-.container_16 .grid_10 {
-	width:590px;
-}
-
-.container_16 .grid_11 {
-	width:650px;
-}
-
-.container_16 .grid_12 {
-	width:710px;
-}
-
-.container_16 .grid_13 {
-	width:770px;
-}
-
-.container_16 .grid_14 {
-	width:830px;
-}
-
-.container_16 .grid_15 {
-	width:890px;
-}
-
-.container_16 .grid_16 {
-	width:950px;
-}
-
-
-
-
-/* Prefix Extra Space >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_16 .prefix_1 {
-	padding-left:60px;
-}
-
-.container_16 .prefix_2 {
-	padding-left:120px;
-}
-
-.container_16 .prefix_3 {
-	padding-left:180px;
-}
-
-.container_16 .prefix_4 {
-	padding-left:240px;
-}
-
-.container_16 .prefix_5 {
-	padding-left:300px;
-}
-
-.container_16 .prefix_6 {
-	padding-left:360px;
-}
-
-.container_16 .prefix_7 {
-	padding-left:420px;
-}
-
-.container_16 .prefix_8 {
-	padding-left:480px;
-}
-
-.container_16 .prefix_9 {
-	padding-left:540px;
-}
-
-.container_16 .prefix_10 {
-	padding-left:600px;
-}
-
-.container_16 .prefix_11 {
-	padding-left:660px;
-}
-
-.container_16 .prefix_12 {
-	padding-left:720px;
-}
-
-.container_16 .prefix_13 {
-	padding-left:780px;
-}
-
-.container_16 .prefix_14 {
-	padding-left:840px;
-}
-
-.container_16 .prefix_15 {
-	padding-left:900px;
-}
-
-
-
-/* Suffix Extra Space >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_16 .suffix_1 {
-	padding-right:60px;
-}
-
-.container_16 .suffix_2 {
-	padding-right:120px;
-}
-
-.container_16 .suffix_3 {
-	padding-right:180px;
-}
-
-.container_16 .suffix_4 {
-	padding-right:240px;
-}
-
-.container_16 .suffix_5 {
-	padding-right:300px;
-}
-
-.container_16 .suffix_6 {
-	padding-right:360px;
+.container_16 .grid_4,
+#content .csc-frame-frame1 {
+	width: 220px;
 }
 
-.container_16 .suffix_7 {
-	padding-right:420px;
+.container_16 .grid_8,
+#content .csc-frame-frame2 {
+	width: 460px;
 }
 
-.container_16 .suffix_8 {
-	padding-right:480px;
+.container_16 .grid_12,
+#content .csc-default,
+.container_16 .pz2-JSNote,
+.container_16 #pz2-results {
+	width: 700px;
 }
 
-.container_16 .suffix_9 {
-	padding-right:540px;
+* html .container_16 #pz2-results {
+	width: 690px;
 }
 
-.container_16 .suffix_10 {
-	padding-right:600px;
+.container_16 .grid_16,
+#pazpar2,
+.gokContainer,
+.tx-ezbrequest-pi1 {
+	width: 940px;
 }
-
-.container_16 .suffix_11 {
-	padding-right:660px;
-}
-
-.container_16 .suffix_12 {
-	padding-right:720px;
-}
-
-.container_16 .suffix_13 {
-	padding-right:780px;
-}
-
-.container_16 .suffix_14 {
-	padding-right:840px;
-}
-
-.container_16 .suffix_15 {
-	padding-right:900px;
-}
-
-
-
-/* Push Space >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_16 .push_1 {
-	left:60px;
-}
-
-.container_16 .push_2 {
-	left:120px;
-}
-
-.container_16 .push_3 {
-	left:180px;
-}
-
-.container_16 .push_4 {
-	left:240px;
-}
-
-.container_16 .push_5 {
-	left:300px;
-}
-
-.container_16 .push_6 {
-	left:360px;
-}
-
-.container_16 .push_7 {
-	left:420px;
-}
-
-.container_16 .push_8 {
-	left:480px;
-}
-
-.container_16 .push_9 {
-	left:540px;
-}
-
-.container_16 .push_10 {
-	left:600px;
-}
-
-.container_16 .push_11 {
-	left:660px;
-}
-
-.container_16 .push_12 {
-	left:720px;
-}
-
-.container_16 .push_13 {
-	left:780px;
-}
-
-.container_16 .push_14 {
-	left:840px;
-}
-
-.container_16 .push_15 {
-	left:900px;
-}
-
-
-
-/* Pull Space >> 16 Columns
-----------------------------------------------------------------------------------------------------*/
-
-
-.container_16 .pull_1 {
-	left:-60px;
-}
-
-.container_16 .pull_2 {
-	left:-120px;
-}
-
-.container_16 .pull_3 {
-	left:-180px;
-}
-
-.container_16 .pull_4 {
-	left:-240px;
-}
-
-.container_16 .pull_5 {
-	left:-300px;
-}
-
-.container_16 .pull_6 {
-	left:-360px;
-}
-
-.container_16 .pull_7 {
-	left:-420px;
-}
-
-.container_16 .pull_8 {
-	left:-480px;
-}
-
-.container_16 .pull_9 {
-	left:-540px;
-}
-
-.container_16 .pull_10 {
-	left:-600px;
-}
-
-.container_16 .pull_11 {
-	left:-660px;
-}
-
-.container_16 .pull_12 {
-	left:-720px;
-}
-
-.container_16 .pull_13 {
-	left:-780px;
-}
-
-.container_16 .pull_14 {
-	left:-840px;
-}
-
-.container_16 .pull_15 {
-	left:-900px;
-}
-
-
-
-
-/* `Clear Floated Elements
-----------------------------------------------------------------------------------------------------*/
-
-/* http://sonspring.com/journal/clearing-floats */
 
 .clear {
   clear: both;
@@ -701,32 +586,7 @@ body {
   height: 0;
 }
 
-/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
 
-.clearfix:before,
-.clearfix:after {
-  content: '\0020';
-  display: block;
-  overflow: hidden;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-}
-
-.clearfix:after {
-  clear: both;
-}
-
-/*
-  The following zoom:1 rule is specifically for IE6 + IE7.
-  Move to separate stylesheet if invalid CSS is a problem.
-*/
-
-.clearfix {
-  zoom: 1;
-}
-
-/* ************************************************************************************** */
 
 
 /*
@@ -751,35 +611,35 @@ body {
 }
 
 #page {
-	background: url(header_bg.png) repeat-x top center;
+	background: url(header_repeat.png) repeat-x top center;
 	min-height: 100%;
 }
 
 #head {
-	background: url(head1.png) no-repeat top center;
+	background: url(header_wo_logo.png) no-repeat top center;
 }
 
 #content {
 	overflow:auto;
 	margin-top: 30px;
-	padding-bottom: 60px;
+	padding-bottom: 100px;
 }  /* must be same height as the footer */
 
 #foot {
 	position: relative;
-	margin-top: -60px; /* negative value of footer height */
-	height: 60px;
+	margin-top: -100px; /* negative value of footer height */
+	height: 100px;
 	clear:both;
-	background: url(footer_bg.png) repeat-x top center;
+	background: url(footer_bg.png) repeat-x bottom center;
 }
 
 /*Opera Fix*/
 body:before {/* thanks to Maleika (Kohoutec)*/
-content:"";
-height:100%;
-float:left;
-width:0;
-margin-top:-32767px;/* thank you Erik J - negate effect of float*/
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/* thank you Erik J - negate effect of float*/
 }
 
 
