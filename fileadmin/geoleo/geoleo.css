@@ -269,7 +269,7 @@ table {
 
 #pazpar2 .pz2-detail-catalogueLink {
 	padding: 1px 12px 1px 4px;
-	background: #d9dbe4 url(arrow.png) right center no-repeat;
+	background: #d9dbe4 url(arrow_single_right.png) right center no-repeat;
 }
 
 #pazpar2 .pz2-detail-catalogueLink:after {
@@ -301,6 +301,32 @@ table {
 
 #pazpar2 .pz2-recordCount {
 	color: #464646;
+}
+
+#pazpar2 .pz2-prev,
+#pazpar2 .pz2-next {
+	display: inline-block;
+	height: 12px;
+	width: 16px;
+	text-indent: -9999em;
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+
+#pazpar2 .pz2-prev {
+	background-image: url(arrow_double_left_inactive.png);
+}
+
+#pazpar2 a.pz2-prev {
+	background-image: url(arrow_double_left_active.png);
+}
+
+#pazpar2 .pz2-next {
+	background-image: url(arrow_double_right_inactive.png);
+}
+
+#pazpar2 a.pz2-next {
+	background-image: url(arrow_double_right_active.png);
 }
 
 #pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
