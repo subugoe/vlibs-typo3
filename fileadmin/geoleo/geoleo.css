@@ -241,10 +241,6 @@ table {
     margin-bottom: 1.5em;
 }
 
-#pazpar2 .pz2-searchField input {
-	background: #f8f5f3;
-}
-
 #pazpar2 .pz2-mediaIcon {
 	background-image: url(geo-leo_mediatype_icons_v103_trsp.png);
 }
@@ -402,7 +398,7 @@ table {
 }
 
 #pazpar2 .pz2-searchField {
-	background-color: #f1f3f6;
+	background-color: #f8f5f3;
 }
 
 #pazpar2 .pz2-extended .pz2-searchField {
