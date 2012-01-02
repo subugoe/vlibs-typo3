@@ -668,7 +668,7 @@ body {
 }
 
 #page {
-	background: url(header_repeat.png) repeat-x top center;
+	background: url(header_repeat.png) repeat-x 64% 0%;
 	min-height: 100%;
 }
 
