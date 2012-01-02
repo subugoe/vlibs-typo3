@@ -16,9 +16,9 @@ page {
 	meta.description.field = description
 	meta.keywords.field = keywords
 	headerData.10 = HTML
-	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="Lib AAC" href="?type=9004">
+	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="GEO-LEO" href="?type=9004">
 	headerData.20 = HTML
-	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/AAC/favicon.ico" type="image/ico">
+	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/geoleo/favicon.ico" type="image/ico">
 }
 
 lib.content < styles.content.get
