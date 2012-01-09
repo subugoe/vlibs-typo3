@@ -1,0 +1,13 @@
+# SVG color version caveats
+
+Henrik Cederblad
+2012-01-04
+
+
+As per Illustrator's rendering of SVG, the gradients in the color version of provided SVGs is slightly different than in the other rendered formats. I.e. this doesn't apply to the black & white version, *only* the color SVG version.
+
+Although I still consider this provided color SVG to stay true to the intended design, this may or may not be an issue. Consider using any of the other vector formats provided.
+
+At the time of this writing, I'm not exactly sure what's causing this, but I suspect it might be due to opacity masks used in the Illustrator CS5 project, which doesn't "sing" very well in SVG.
+
+The best I could do to stay true to the intended design (see PNG formats), was to remove one or two such opacity layers prior to exporting the color SVG.
