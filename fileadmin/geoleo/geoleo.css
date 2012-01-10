@@ -363,8 +363,8 @@ li {
 	content: '';
 }
 
-#pazpar2 .pz2-termList-xtargets a {
-	color: #6c564c;
+#pazpar2 .pz2-termList li {
+	margin: 0;
 }
 
 #pazpar2 .pz2-facetName {
