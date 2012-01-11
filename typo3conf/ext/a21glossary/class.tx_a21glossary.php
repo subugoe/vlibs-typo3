@@ -41,6 +41,7 @@ class tx_a21glossary {
 	protected $replaceMarkers2 = array();
 
 	// debug flags
+	protected $debug = FALSE;
 	protected $debugInfo = FALSE;
 	protected $debugMarkers = FALSE;
 	protected $debugNonCaching = FALSE;
@@ -141,8 +142,10 @@ class tx_a21glossary {
 
 		if (t3lib_div::inList($conf['excludePages'], $id)) {
 			if ($conf['excludePages.'][$id]) {
+				// disable glossary only for certain glossary types
 				$conf['excludeTypes'] .= ',' . $conf['excludePages.'][$id];
 			} else {
+				// disable glossary completly on current page: stop glossary rendering immediately
 				return $content;
 			}
 		}
@@ -157,8 +160,7 @@ class tx_a21glossary {
 
 			$cObj = t3lib_div::makeInstance('tslib_cObj');
 
-			// sort entries from z-a to replace more special words with
-			// the same beginnng first eg. aminoacid before amino
+			// sort entries from z-a to replace more special words with the same beginnng first eg. aminoacid before amino
 			krsort($items);
 
 			// move entries with differing shortcut to end of array to prevent double replacement
@@ -583,51 +585,58 @@ class tx_a21glossary {
 
 		if ($GLOBALS['TSFE']->beUserLogin) {
 
-			if( count($conf) || count($this->piVars) ) {
-				$GLOBALS['TSFE']->set_no_cache();
-				t3lib_div::debug($this->piVars,'A21 Glossary: Enabled Debug Options');
-			}
-
 			if (intval($conf['trail'])		|| intval($this->piVars['trail'])) {
+				$this->debug = 1;
 				$this->debugTrail = 1;
 			}
 			if (intval($conf['info'])		|| intval($this->piVars['info'])) {
+				$this->debug = 1;
 				$this->debugInfo = 1;
 			}
 			if (intval($conf['markers'])	|| intval($this->piVars['markers'])) {
+				$this->debug = 1;
 				$this->debugMarkers = 1;
 				$this->debugNonCaching = 1;
 			}
 			if (intval($conf['conf'])		|| intval($this->piVars['conf'])) {
+				$this->debug = 1;
 				$this->debugConf = 1;
 			}
 			if (intval($conf['noncaching'])	|| intval($this->piVars['noncaching'])) {
+				$this->debug = 1;
 				$this->debugNonCaching = 1;
 			}
 			if (intval($conf['regexp'])		|| intval($this->piVars['regexp'])) {
+				$this->debug = 1;
 				$this->debugRegExp = 1;
 			}
 			if (intval($conf['highlight'])	|| intval($this->piVars['highlight'])) {
+				$this->debug = 1;
 				$this->debugHighlight =' style="border:2px solid green; background-color:#00FF00;"';
 			}
 			if (intval($conf['output'])		|| intval($this->piVars['output'])) {
+				$this->debug = 1;
 				$this->debugOutput = 1;
 			}
 			if (intval($conf['input'])		|| intval($this->piVars['input'])) {
 				$this->debugInput = 1;
 			}
 			if (intval($conf['query'])		|| intval($this->piVars['query'])) {
+				$this->debug = 1;
 				$this->debugQuery = 1;
 				$GLOBALS['TYPO3_DB']->debugOutput = TRUE;
 				$GLOBALS['TYPO3_DB']->store_lastBuiltQuery = TRUE;
 			}
 			if (intval($conf['items'])		|| intval($this->piVars['items'])) {
+				$this->debug = 1;
 				$this->debugItems = 1;
 			}
 			if (intval($conf['keep'])		|| intval($this->piVars['keep'])) {
+				$this->debug = 1;
 				$this->keepMarkers = 1;
 			}
 			if (intval($conf['demo'])		|| intval($this->piVars['demo'])) {
+				$this->debug = 1;
 				$this->demoContent = '
 					<h2 class="csc-firstHeader">A21 Glossary Demo Content</h2>
 					<h3>Uppercase vs. Lowercase</h3>
@@ -651,6 +660,11 @@ class tx_a21glossary {
 					'longversion'=>'et cetera demo item',
 					'shorttype'=>'abbr'
 				);
+			}
+
+			if($this->debug == 1) {
+				$GLOBALS['TSFE']->set_no_cache();
+				t3lib_div::debug($this->piVars,'A21 Glossary (tx_a21glossary): PiVars');
 			}
 		}
 

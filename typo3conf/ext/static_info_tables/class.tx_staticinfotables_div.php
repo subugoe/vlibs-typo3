@@ -24,7 +24,7 @@
 /**
  * Misc functions to access the static info tables
  *
- * $Id: class.tx_staticinfotables_div.php 29532 2010-01-31 07:12:55Z franzholz $
+ * $Id: class.tx_staticinfotables_div.php 55589 2011-12-17 00:31:56Z stan $
  *
  * @author	René Fritz <r.fritz@colorcube.de>
  * @package TYPO3
@@ -56,6 +56,7 @@
  */
 class tx_staticinfotables_div {
 
+	private static $cache = array();
 
 	/**
 	 * Returns a label field for the current language
@@ -118,7 +119,11 @@ class tx_staticinfotables_div {
 	 */
 	function isoCodeType ($isoCode) {
 		$type = '';
-		if (t3lib_div::testInt($isoCode)) {
+			// t3lib_utility_Math was introduced in TYPO3 4.6
+		$isoCodeAsInteger = class_exists('t3lib_utility_Math')
+			? t3lib_utility_Math::canBeInterpretedAsInteger($isoCode)
+			: t3lib_div::testInt($isoCode);
+		if ($isoCodeAsInteger) {
 			$type = 'nr';
 		} elseif (strlen($isoCode) == 2) {
 			$type = '2';
@@ -179,30 +184,44 @@ class tx_staticinfotables_div {
 	 * @return	string		'DE', 'EN', 'DK', ...
 	 */
 	function getCurrentLanguage () {
-		global $LANG, $TSFE, $TYPO3_DB;
 
- 		if (is_object($TSFE)) {
-			$langCodeT3 = $TSFE->lang;
-			$csConvObj = $TSFE->csConvObj;
- 		} elseif (is_object($LANG)) {
- 			$langCodeT3 = $LANG->lang;
- 			$csConvObj = $LANG->csConvObj;
+ 		if (is_object($GLOBALS['TSFE'])) {
+			$langCodeT3 = $GLOBALS['TSFE']->lang;
+			$csConvObj = $GLOBALS['TSFE']->csConvObj;
+ 		} elseif (is_object($GLOBALS['LANG'])) {
+ 			$langCodeT3 = $GLOBALS['LANG']->lang;
+ 			$csConvObj = $GLOBALS['LANG']->csConvObj;
 		} else {
 			return 'EN';
 		}
+		if ($langCodeT3 === 'default') {
+			return 'EN';
+		}
+			// Return cached value if any
+		if (isset(self::$cache['getCurrentLanguage'][$langCodeT3])) {	
+			return self::$cache['getCurrentLanguage'][$langCodeT3];
+		}
 
-		$res = $TYPO3_DB->exec_SELECTquery(
+		$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
 			'lg_iso_2,lg_country_iso_2',
 			'static_languages',
-			'lg_typo3='.$TYPO3_DB->fullQuoteStr($langCodeT3,'static_languages')
+			'lg_typo3=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($langCodeT3, 'static_languages')
 		);
-		while ($row = $TYPO3_DB->sql_fetch_assoc($res)) {
-			$lang = $row['lg_iso_2'].($row['lg_country_iso_2']?'_'.$row['lg_country_iso_2']:'');
+		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
+			$lang = $row['lg_iso_2'] . ($row['lg_country_iso_2'] ? '_' . $row['lg_country_iso_2'] : '');
 		}
-		$TYPO3_DB->sql_free_result($res);
+		$GLOBALS['TYPO3_DB']->sql_free_result($res);
 
-		$rc = $lang ? $lang : $csConvObj->conv_case('utf-8',$langCodeT3,'toUpper');
-		return $rc;
+		$lang = $lang ? $lang : $csConvObj->conv_case('utf-8', $langCodeT3, 'toUpper');
+
+			// Initialize cache array
+		if (!is_array(self::$cache['getCurrentLanguage'])) {
+			self::$cache['getCurrentLanguage'] = array();
+		}
+			// Cache retrieved value
+		self::$cache['getCurrentLanguage'][$langCodeT3] = $lang;
+
+		return $lang;
 	}
 
 

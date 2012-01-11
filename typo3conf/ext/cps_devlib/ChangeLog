@@ -1,10 +1,33 @@
+2011-12-13 Nicole Cordes  <cordes@cps-it.de>
+
+	* Release of cps_devlib 0.8.0
+
+2011-12-13 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added function tx_cpsdevlib_extmgm::getLanguage
+	* Added function tx_cpsdevlib_itemsprocfuncs::sortItemsByLabel
+	* Updated manual
+
+2011-11-04 Nicole Cordes  <cordes@cps-it.de>
+
+	* Added support for arrays in function tx_cpsdevlib_div::queryStringToArray
+
+2011-10-30 Nicole Cordes  <cordes@cps-it.de>
+
+	* Fixed function tx_cpsdevlib_div::removeArrayValues handling integers as empty
+	* Fixed function tx_cpsdevlib_div::queryStringToArray splitting comma separated string $altSeparators only with commas
+
+2011-10-28 Nicole Cordes  <cordes@cps-it.de>
+
+	* Fixed function tx_cpsdevlib_div::toListArray called with string not regarding $theLimit
+
 2011-10-27 Nicole Cordes  <cordes@cps-it.de>
 
 	* Release of cps_devlib 0.7.0
 
 2011-10-27 Nicole Cordes  <cordes@cps-it.de>
 
-	* Fixed function call tx_cpsdevlib_div::toListArray with strings not regarding $useTrim and $removeEmptyValues
+	* Fixed function tx_cpsdevlib_div::toListArray called with string not regarding $useTrim and $removeEmptyValues
 	* Added function tx_cpsdevlib_div::toIntListArray
 	* Added function tx_cpsdevlib_div::toIntListString
 	* Changed folder structure to kind of mvc

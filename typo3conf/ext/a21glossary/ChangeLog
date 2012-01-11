@@ -3,6 +3,32 @@
 
 Please Note: Clear all Caches yourself after installing this extension
 
+
+
+11-12-08 (0.9.4) Ronny Vorpahl <vorpahl@artplan21.de>
+
+	* [BUGFIX] #31929: FE-plugin ignores storage page configuration
+		* Thanks to Michael Schreiner for the solution
+	* [BUGFIX] #31930: Debug options are activated on glossary detail page (if logged into Typo3-Backend)
+		* thanks to Michael Schreiner for the hint
+	* Synced both typoscript configurations (old+new) as far as possible
+		* they differ only in css/wraps/list-styling - no behavioral differences
+
+	* TER upload
+
+11-11-21 (0.9.3) Oliver Hader <oliver.hader@typo3.org>
+
+	* added a second (more accessible) typoscript-configuration in folder "Configuration"
+		* glossary elements are wrapped with correct CSS classes with extension prefixes
+	* consistent usage of LL-XML in TCA
+	* moved Tca.php from root folder to "Configuration"
+
+
+11-11-04 (0.9.2) Oliver Hader <oliver.hader@typo3.org>
+
+	* [BUGFIX] #31571: Wraps produce incorrect nested paragraph tags
+
+
 11-11-03 (0.9.1) Ronny Vorpahl <vorpahl@artplan21.de>
 
 	* Thanks to Xaver Maierhofer: changed <p class=back" -> <p class="back" in constants.txt
@@ -12,7 +38,6 @@ Please Note: Clear all Caches yourself after installing this extension
 11-11-01 (0.9.0) Ronny Vorpahl <vorpahl@artplan21.de>
 
 	* committed to TER
-
 
 11-11-01 (0.8.4) Ronny Vorpahl <vorpahl@artplan21.de>
 
@@ -29,7 +54,6 @@ Please Note: Clear all Caches yourself after installing this extension
 		53530	2011-10-28 18:08	Oliver Hader	[BUGFIX] Constant storagePage can be a list
 		53529	2011-10-28 18:03	Oliver Hader	[BUGFIX] #31386: Wrong RTE configuration in TCA
 		53527	2011-10-28 17:44	Oliver Hader	[BUG] #31383: PHP warning if processed before caching
-
 
 11-10-05 (0.8.3) Ronny Vorpahl <vorpahl@artplan21.de>
 
