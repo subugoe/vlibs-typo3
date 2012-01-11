@@ -1,5 +1,5 @@
 
-# global a21glossary configuration - Default Output (Old)
+# global a21glossary configuration - Accessible Output (Recommended)
 config.tx_a21glossary {
 
 	# This is just an override - you can set this globally using the extension manager
@@ -37,14 +37,13 @@ config.tx_a21glossary {
 			if.isFalse.field = link
 		}
 		useCacheHash = 1
-		ATagParams = class="glossary"
+		ATagParams = class="tx-glossary"
 
 		{$a21glossary.commentAnchor} additionalParams >
 		{$a21glossary.commentAnchor} additionalParams.field = uid
 		{$a21glossary.commentAnchor} additionalParams.wrap = #tx_a21glossary_|
 	}
 
-	# EXAMPLE how to simply disable the glossary
 	#noglossary = 1
 
 	# EXAMPLE you can set them using get params - see README.txt or manual
@@ -73,71 +72,62 @@ tx_a21glossary_main {
 
 	10 = TEXT
 	10 {
-		if.isTrue.field = short
 		field = short
-		wrap = {$a21glossary.shortWrap}
+		if.isTrue.field = short
+		outerWrap = {$a21glossary.termWrap}
+		outerWrap.insertData = 1
+
 	}
 
-	20 = COA
-	20 {
-		wrap = {$a21glossary.restWrap}
+	{$a21glossary.commentAnchor} 20 = TEXT
+	{$a21glossary.commentAnchor} 20.field = uid
+	{$a21glossary.commentAnchor} 20.wrap = <dt><a class="tx-glossary-link hidden" name="tx_a21glossary_|"><!-- --></a></dt>
 
-		{$a21glossary.commentAnchor} 5 = TEXT
-		{$a21glossary.commentAnchor} 5.field = uid
-		{$a21glossary.commentAnchor} 5.wrap = <a class="glossary hidden" name="tx_a21glossary_|"><!-- --></a>
+	30 = CASE
+	30 {
+		key.field = shorttype
 
-		10 = COA
-		10 {
-			10 = CASE
-			10 {
-				key.field = shorttype
-
-				stdWrap {
-					if.isTrue.field = shorttype
-					required = 1
-					wrap = {$a21glossary.typeWrap}
-				}
-
-				acronym = TEXT
-				acronym {
-					data = LLL:EXT:a21glossary/locallang.xml:label_acronym
-					override = {$a21glossary.acronym_label}
-					wrap = {$a21glossary.labelWrap}
-				}
-
-				abbr = TEXT
-				abbr {
-					data = LLL:EXT:a21glossary/locallang.xml:label_abbreviation
-					override = {$a21glossary.abbreviation_label}
-					wrap = {$a21glossary.labelWrap}
-				}
-
-				dfn = TEXT
-				dfn {
-					data = LLL:EXT:a21glossary/locallang.xml:label_definition
-					override = {$a21glossary.definition_label}
-					wrap = {$a21glossary.labelWrap}
-				}
-			}
-
-			20 = TEXT
-			20 {
-				if.isTrue.field = longversion
-				field = longversion
-				wrap = {$a21glossary.longWrap}
-			}
-
-			wrap = {$a21glossary.abstractWrap}
+		stdWrap {
+			if.isTrue.field = shorttype
+			required = 1
+			outerWrap = {$a21glossary.labelWrap}
+			outerWrap.insertData = 1
 		}
 
-
-		30 = TEXT
-		30 {
-			if.isTrue.field = description
-			field = description
-			parseFunc = < lib.parseFunc_RTE
-			wrap = {$a21glossary.descriptionWrap}
+		acronym = TEXT
+		acronym {
+			data = LLL:EXT:a21glossary/locallang.xml:label_acronym
+			override = {$a21glossary.acronym_label}
 		}
+
+		abbr = TEXT
+		abbr {
+			data = LLL:EXT:a21glossary/locallang.xml:label_abbreviation
+			override = {$a21glossary.abbreviation_label}
+		}
+
+		dfn = TEXT
+		dfn {
+			data = LLL:EXT:a21glossary/locallang.xml:label_definition
+			override = {$a21glossary.definition_label}
+		}
+	}
+
+	40 = TEXT
+	40 {
+		field = longversion
+		required = 1
+		outerWrap = {$a21glossary.abstractWrap}
+		outerWrap.insertData = 1
+	}
+
+	50 = TEXT
+	50 {
+		field = description
+		required = 1
+		parseFunc = < lib.parseFunc_RTE
+		outerWrap = {$a21glossary.descriptionWrap}
+		outerWrap.insertData = 1
 	}
 }
 
@@ -177,18 +167,18 @@ plugin.tx_a21glossary {
 		}
 	}
 
-
 	# Add CSS configuration
 	_CSS_DEFAULT_STYLE (
 		acronym, dfn, abbr, span.abbr { border-bottom: 1px dotted black; cursor: help; }
-		dl.glossary dt { font-weight: bold; margin: 0 0 3px 0; font-style: normal; }
-		dl.glossary dd { margin: 0 0 15px 20px; }
-		dl.glossary .description { margin: 0; padding: 0; }
-		dl.glossary .type { font-style: italic; padding: 0 3px 0 0; }
+		.tx-glossary-list dt { font-weight: bold; margin: 0 0 3px 0; font-style: normal; }
+		.tx-glossary-list dd { margin: 0 0 15px 20px; }
+		.tx-glossary-list dd.tx-glossary-abstract { margin: 0; padding: 0; }
+		.tx-glossary-list dd.tx-glossary-description { margin: 0; padding: 0; }
 	)
 }
 
 tt_content.list.20.a21glossary < plugin.tx_a21glossary
+
 
 # EXAMPLE HOW THE GLOSSARY CAN BE USED IF NOT GLOBALLY ENABLED
 #includeLibs.a21glossary = EXT:a21glossary/class.tx_a21glossary.php

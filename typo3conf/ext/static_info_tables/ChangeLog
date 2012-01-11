@@ -1,3 +1,19 @@
+2011-12-16  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Fixed issue #32614: Errors in names of two provinces of Italy
+	* Fixed issue #32094: Usage of deprecated testInt method (Thanks to Stefan Galinski)
+	* Fixed issue #29241: NZ static currencies thousands decimal
+	* Fixed issue #28830: cn_short_local for Czech Republic misses an accent mark
+	* Added feature #32635: Update countries to level of ISO 3166-1:2006 - Newsletter VI-9 (2011-06-12)
+	* Added feature #32636: Update countries to level of ISO 3166-1:2006 - Newsletter VI-10 (2011-08-09)
+	* Added feature #32637: Update countries to level of ISO 3166-1:2006 - Newsletter VI-11 (2011-11-08)
+	* Added feature #28104: Polish country zones (Thanks to Tomasz Krawczyk)
+	* Fixed issue #27646: Territory of United Arab Emirates
+	* Follow-up to feature #28104: Polish country zones
+	* Fixed issue #13284: tx_staticinfotables_div::getCurrentLanguage should return 'EN' if language is 'default' (Thanks to Robert Heel)
+	* Fixed issue #28483: tx_staticinfotables_div::getCurrentLanguage issues repetitive SQL queries (Thanks to Raphaël Riel)
+	* Updated version to 2.3.0
+
 2011-01-25  Stanislas Rolland  <typo3@sjbr.ca>
 
 	* Added feature #9423: Add country zones for the regions and departments of France
@@ -9,6 +25,7 @@
 	* Updated Manual
 	* Added missing files in SVN
 	* Fixed issue #12555: Removed db_layout configuration not supported on page 0
+	* Updated version to 2.2
 
 2011-01-24  Stanislas Rolland  <typo3@sjbr.ca>
 

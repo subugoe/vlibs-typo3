@@ -46,6 +46,42 @@ class tx_cpsdevlib_div {
 	}
 
 	/**
+	 * Edit array values with multiple functions
+	 *
+	 * @param array $theArray: Array to edit
+	 * @param boolean $useTrim: If true use trim function for each value
+	 * @param boolean $removeEmptyValues: If true remove empty array items
+	 * @param integer $theLimit: Defines limited array count
+	 * @return array The edited array
+	 *
+	 */
+	public static function removeArrayValues($theArray, $useTrim = true, $removeEmptyValues = true, $theLimit = 0) {
+		$result = $theArray;
+
+		if ($useTrim) $result = array_map('trim', $result);
+
+		if ($removeEmptyValues) {
+			$tempArray = array();
+			foreach ($result as $value) {
+				if ($value) {
+					$tempArray[] = $value;
+				}
+			}
+			$result = $tempArray;
+		}
+
+		if ($theLimit != 0) {
+			if ($theLimit < 0) {
+				$result = array_slice($result, $theLimit);
+			} elseif (count($result) > $theLimit) {
+				$result = array_slice($result, 0, $theLimit);
+			}
+		}
+
+		return $result;
+	}
+
+	/**
 	 * Splits the given string by delimeters. If set trim results and remove empty values.
 	 *
 	 * @param string $theString: String to split
@@ -65,38 +101,41 @@ class tx_cpsdevlib_div {
 	}
 
 	/**
-	 * Converts the given string (query string) in an array.
+	 * Converts the given mixed data into a list (array).
 	 *
-	 * @param string $theString: String to convert
-	 * @param mixed	 $removeKeys: Mixed data to convert to array. Values are removed from query array
-	 * @param string $theSeparator: Seperator to split key/value pairs
-	 * @param string $equalChar: Character to split key from value
-	 * @param string $altSeparators: Comma separated list for alternative separators
-	 * @return array The converted array
+	 * @param mixed $theData: Data to convert to list
+	 * @param string $theDelims: Character(s) used to split first argument
+	 * @param boolean $useTrim: If set trim function is used to each array item
+	 * @param boolean $removeEmptyValues: If set all empty items are removed
+	 * @param boolean $useArrayKeys: If set array keys are used to get list
+	 * @param integer $theLimit: Defines the size of returned array
+	 * @return array An array list (one-dimensional)
 	 *
 	 */
-	public static function queryStringToArray($theString, $removeKeys = '', $theSeparator = '&', $equalChar = '=', $altSeparators = '&amp;') {
+	public static function toListArray($theData, $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $useArrayKeys = false, $theLimit = 0) {
 
-		$result = array();
-
-		$removeKeys = self::toListArray($removeKeys);
-
-		if ($theString != '') {
-			$altSeparatorList = self::toListArray($altSeparators);
-			foreach ($altSeparatorList as $altSeparator) {
-				$theString = str_replace($altSeparator, $theSeparator, $theString);
-			}
-
-			$pairArray = explode($theSeparator, $theString);
-			foreach ($pairArray as $key => $value) {
-				$tempArray = explode($equalChar, $value);
-				if (!in_array($tempArray[0], $removeKeys)) {
-					$result[$tempArray[0]] = $tempArray[1];
+		if (is_string($theData)) {
+			return self::explode($theData, $theDelims, $useTrim, $removeEmptyValues, $theLimit);
+		} elseif (is_array($theData)) {
+			$result = array();
+			foreach ($theData as $key => $value) {
+				if (is_array($value)) {
+					$result[] = $key;
+					$result = array_merge($result, self::toListArray($value, $theDelims, $useTrim, $removeEmptyValues, $useArrayKeys));
+				} else {
+					if ($useArrayKeys) {
+						$result[] = $key;
+					} else {
+						$result[] = $value;
+					}
 				}
 			}
+			$result = self::removeArrayValues($result, $useTrim, $removeEmptyValues, $theLimit);
+
+			return $result;
 		}
 
-		return $result;
+		return array();
 	}
 
 	/**
@@ -122,56 +161,56 @@ class tx_cpsdevlib_div {
 	}
 
 	/**
-	 * Converts the given mixed data into a list (array).
+	 * Converts the given string (query string) in an array.
 	 *
-	 * @param mixed $theData: Data to convert to list
-	 * @param string $theDelims: Character(s) used to split first argument
-	 * @param boolean $useTrim: If set trim function is used to each array item
-	 * @param boolean $removeEmptyValues: If set all empty items are removed
-	 * @param boolean $useArrayKeys: If set array keys are used to get list
-	 * @param integer $theLimit: Defines the size of returned array
-	 * @return array An array list (one-dimensional)
+	 * @param string $theString: String to convert
+	 * @param mixed $removeKeys: Mixed data to convert to array. Values are removed from query array
+	 * @param string $theSeparator: Separator to split key/value pairs
+	 * @param string $equalChar: Character to split key from value
+	 * @param string $altSeparators: Comma separated list for alternative separators
+	 * @return array The converted array
 	 *
 	 */
-	public static function toListArray($theData, $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $useArrayKeys = false, $theLimit = 0) {
+	public static function queryStringToArray($theString, $removeKeys = '', $theSeparator = '&', $equalChar = '=', $altSeparators = '&amp;') {
 
-		if (is_string($theData)) {
-			return self::explode($theData, $theDelims, $useTrim, $removeEmptyValues);
-		} elseif (is_array($theData)) {
-			$result = array();
-			foreach ($theData as $key => $value) {
-				if (is_array($value)) {
-					$result[] = $key;
-					$result = array_merge($result, self::toListArray($value, $theDelims, $useTrim, $removeEmptyValues, $useArrayKeys));
-				} else {
-					if ($useArrayKeys) {
-						$result[] = $key;
+		$result = array();
+
+		if ($theString != '') {
+			// Generate an array with removeKeys values
+			$removeKeys = self::toListArray($removeKeys);
+
+			// Replace alternative separators
+			$altSeparatorList = self::toListArray($altSeparators, ',', false, false, false, 0);
+			foreach ($altSeparatorList as $altSeparator) {
+				$theString = str_replace($altSeparator, $theSeparator, $theString);
+			}
+			unset($altSeparator);
+
+			// Explode string to pairs
+			$pairedArray = explode($theSeparator, $theString);
+			foreach ($pairedArray as $key => $value) {
+				// Explode pair to key and value
+				list($k, $v) = explode($equalChar, $value);
+				// If not in removeKeys
+				if (!in_array($k, $removeKeys)) {
+					// Check for array in key
+					if (strpos($k, '[') === false) {
+						$result[$k] = $v;
 					} else {
-						$result[] = $value;
+						list($array, $arrayKey) = explode('[', $k);
+						if (!is_array($result[$array])) {
+							$result[$array] = array();
+						}
+						$result[$array][substr($arrayKey, 0, -1)] = $v;
+						unset($array, $arrayKey);
 					}
 				}
+				unset($k, $v);
 			}
-			$result = self::removeArrayValues($result, $useTrim, $removeEmptyValues, $theLimit);
-
-			return $result;
+			unset($key, $value);
 		}
 
-		return array();
-	}
-
-	/**
-	 * Converts the given mixed data to a list with integer values. If array you can use array keys for list.
-	 * @param mixed $theData: Data to convert to list
-	 * @param string $theGlue: Character(s) used to join list
-	 * @param string $theDelims: Character(s) used to split first argument
-	 * @param bool $useTrim: If set trim function is used to each array item
-	 * @param bool $removeEmptyValues: If set all empty items are removed
-	 * @param bool $useArrayKeys: If set array keys are used to get list
-	 * @param int $theLimit: Defines the size of returned list
-	 * @return string A list of integer values joined by second argument
-	 */
-	public static function toIntListString($theData, $theGlue = ',', $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $useArrayKeys = false, $theLimit = 0) {
-		return implode($theGlue, self::toIntListArray($theData, $theDelims, $useTrim, $removeEmptyValues, $useArrayKeys, $theLimit));
+		return $result;
 	}
 
 	/**
@@ -191,41 +230,19 @@ class tx_cpsdevlib_div {
 		return implode($theGlue, self::toListArray($theData, $theDelims, $useTrim, $removeEmptyValues, $useArrayKeys, $theLimit));
 	}
 
-
 	/**
-	 * Edit array values with multiple functions
-	 *
-	 * @param array $theArray: Array to edit
-	 * @param boolean $useTrim: If true use trim function for each value
-	 * @param boolean $removeEmptyValues: If true remove empty array items
-	 * @param integer $theLimit: Defines limited array count
-	 * @return array The edited array
-	 *
+	 * Converts the given mixed data to a list with integer values. If array you can use array keys for list.
+	 * @param mixed $theData: Data to convert to list
+	 * @param string $theGlue: Character(s) used to join list
+	 * @param string $theDelims: Character(s) used to split first argument
+	 * @param bool $useTrim: If set trim function is used to each array item
+	 * @param bool $removeEmptyValues: If set all empty items are removed
+	 * @param bool $useArrayKeys: If set array keys are used to get list
+	 * @param int $theLimit: Defines the size of returned list
+	 * @return string A list of integer values joined by second argument
 	 */
-	public static function removeArrayValues($theArray, $useTrim = true, $removeEmptyValues = true, $theLimit = 0) {
-		$result = $theArray;
-
-		if ($useTrim) $result = array_map('trim', $result);
-
-		if ($removeEmptyValues) {
-			$tempArray = array();
-			foreach ($result as $value) {
-				if ($value != '') {
-					$tempArray[] = $value;
-				}
-			}
-			$result = $tempArray;
-		}
-
-		if ($theLimit != 0) {
-			if ($theLimit < 0) {
-				$result = array_slice($result, $theLimit);
-			} elseif (count($result) > $theLimit) {
-				$result = array_slice($result, 0, $theLimit);
-			}
-		}
-
-		return $result;
+	public static function toIntListString($theData, $theGlue = ',', $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $useArrayKeys = false, $theLimit = 0) {
+		return implode($theGlue, self::toIntListArray($theData, $theDelims, $useTrim, $removeEmptyValues, $useArrayKeys, $theLimit));
 	}
 }
 
