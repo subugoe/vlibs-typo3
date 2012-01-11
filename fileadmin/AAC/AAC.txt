@@ -1,10 +1,10 @@
 # set <base> URL
 [globalString =_SERVER|HTTPS=on]
-   config.absRefPrefix = https
+   config.baseURL = https
 [else]
-   config.absRefPrefix = http
+   config.baseURL = http
 [global]
-config.absRefPrefix := appendString(://10.0.5.99/aac/)
+config.baseURL := appendString(://10.0.5.99/aac/)
 
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
