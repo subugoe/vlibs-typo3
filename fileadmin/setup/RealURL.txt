@@ -13,7 +13,4 @@ config {
 	# allowed range for linkVars
 	uniqueLinkVars = 1
 	linkVars = L(0,2)
-
-	# put URL before links to local anchors to work with <base> tag
-	prefixLocalAnchors = all 
 }
