@@ -320,7 +320,8 @@ visible when they're tabbed to.
 	border-width: 1px 0px;
 }
 
-.mainmenu a:link:hover, .mainmenu a:visited:hover {
+.mainmenu a:link:hover,
+.mainmenu a:visited:hover {
 	color: #234f8f;
 	background: #fff;
 	border-top: 1px solid #fff;
@@ -334,14 +335,18 @@ visible when they're tabbed to.
 	border-bottom: 1px solid #c4c4c4;
 }
 
-.mainmenu .currentParent > a:hover, .mainmenu .current a:hover {
+.mainmenu .currentParent > a:hover,
+.mainmenu .current a:hover {
 	color: #445875;
 	background: #d1d3df;
 	border-top: 1px solid #eaecf4;
 	border-bottom: 1px solid #c4c4c4;
 }
 
-.mainmenu .current > a {
+.mainmenu .current > a,
+body.homepage .mainmenu > li.first > a,
+body.homepage .submenu > li.first > a {
+	font-weight: bold;
 	color: #384b66;
 	background: #d1d3df;
 	border-top: 1px solid #eaecf4;
