@@ -51,7 +51,7 @@ body:before {
 #head {
 	height: 150px;
 	position: relative;
-	background: url(header_wo_logo.png) no-repeat top center;
+	background: url(header.png) no-repeat top center;
 }
 
 #menu {
