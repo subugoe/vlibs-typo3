@@ -400,11 +400,11 @@ li {
 }
 
 #pazpar2 .pz2-prev {
-	background-position: -16px 100%;
+	background-position: -15px 100%;
 }
 
 #pazpar2 a.pz2-prev {
-	background-position: 0px 100%;
+	background-position: 1px 100%;
 }
 
 #pazpar2 .pz2-next {
