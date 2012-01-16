@@ -13,7 +13,7 @@
 			<label index="Menü">Menü</label>
 			<label index="Menü überspringen">überspringen</label>
 			<label index="Sprachwechsel">Sprachwechsel</label>
-			<label index="Informationen zur Lib AAC">Informationen zur Lib AAC</label>
+			<label index="Informationen zur Lib AAC">Informationen zu GEO-LEO</label>
 		</languageKey>
 
 		<languageKey index="en" type="array">
@@ -21,7 +21,7 @@
 			<label index="Menü">Menu</label>
 			<label index="Menü überspringen">Skip</label>
 			<label index="Sprachwechsel">Switch Language</label>
-			<label index="Informationen zur Lib AAC">Information about Lib AAC</label>
+			<label index="Informationen zur Lib AAC">Information about GEO-LEO</label>
 		</languageKey>
 
 	</data>
