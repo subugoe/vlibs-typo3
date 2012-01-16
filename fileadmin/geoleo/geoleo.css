@@ -187,7 +187,8 @@ li {
 	text-decoration: none;
 }
 
-#menu ul.mainmenu li.current a {
+#menu ul.mainmenu li.current a,
+.homepage #menu ul.mainmenu li.first a {
 	background: #482e2a;
 }
 
