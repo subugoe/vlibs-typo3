@@ -1,7 +1,22 @@
 # configure pazpar2:
-# * listen to nkwgok changes
-plugin.tx_pazpar2.settings.triggeredByNKWGOKMenu = 1
+plugin.tx_pazpar2.settings {
+	# listen to nkwgok changes
+	triggeredByNKWGOKMenu = 1
+	# hide the extended search link
+	allowExtendedSearch = 0
+	# use placeholder text 2 'additional search term'
+	mainSearchFieldPlaceholder = 2
+}
 
-# * hide the extended search link
-plugin.tx_pazpar2.settings.allowExtendedSearch = 0
-
+# add CSS rules to reposition the search form
+page.CSS_inlineStyle (
+	.pz2-mainForm {
+		position: absolute;
+		top: -50px;
+		right: 0px;
+	}
+	.pz2-mainForm input.pz2-searchField {
+		width: 250px;
+		height: 16px;
+	}
+)
