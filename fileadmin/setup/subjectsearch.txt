@@ -10,12 +10,13 @@ plugin.tx_pazpar2.settings {
 
 # add CSS rules to reposition the search form
 page.CSS_inlineStyle (
-.pz2-mainForm {
-  position: absolute;
-  top: -49px;
-  right: 0px;
-}
-.pz2-mainForm input.pz2-searchField {
-  width: 250px;
-}
+	.pz2-mainForm {
+		position: absolute;
+		top: -50px;
+		right: 0px;
+	}
+	.pz2-mainForm input.pz2-searchField {
+		width: 250px;
+		height: 16px;
+	}
 )
