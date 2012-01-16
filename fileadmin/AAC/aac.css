@@ -673,11 +673,14 @@ a.languageSwitcher:hover {
 	border-width: 1px;
 	border-color: #b3b3b3 #d2d2d2 #d2d2d2 #b3b3b3;
 	width: 220px;
+	height: 18px;
 }
 
 /* style like .pz2-submitButton */
 .tx-ezbrequest-pi1 input.submStartSmall {
-	height: 23px;
+	position: relative;
+	top: -1px;
+	height: 24px;
 	background: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small.png) repeat-x scroll 0 100% #f3f6fb;
 	border-style: solid;
 	border-width: 1px;
