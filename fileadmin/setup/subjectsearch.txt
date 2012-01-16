@@ -12,7 +12,7 @@ plugin.tx_pazpar2.settings {
 page.CSS_inlineStyle (
 	.pz2-mainForm {
 		position: absolute;
-		top: -50px;
+		top: -46px;
 		right: 0px;
 	}
 	.pz2-mainForm input.pz2-searchField {
