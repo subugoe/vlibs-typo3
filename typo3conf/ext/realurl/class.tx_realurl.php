@@ -28,7 +28,7 @@
 /**
  * Class for creating and parsing Speaking Urls
  *
- * $Id: class.tx_realurl.php 48650 2011-06-13 09:14:34Z dmitry $
+ * $Id: class.tx_realurl.php 55784 2011-12-21 13:35:08Z dmitry $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  * @author	Dmitry Dulepov <dmitry@typo3.org>
@@ -374,27 +374,38 @@ class tx_realurl {
 	 * @return	void
 	 */
 	public function encodeSpURL_urlPrepend(&$parameters, &$pObj) {
-		if (isset($parameters['finalTagParts']['url']) && isset($this->urlPrepend[$parameters['finalTagParts']['url']])) {
-			$urlKey = $url = $parameters['finalTagParts']['url'];
+		if (isset($parameters['finalTagParts']['url'])) {
 
-			// Remove absRefPrefix if necessary
-			$absRefPrefixLength = strlen($GLOBALS['TSFE']->absRefPrefix);
-			if ($absRefPrefixLength != 0 && substr($url, 0, $absRefPrefixLength) == $GLOBALS['TSFE']->absRefPrefix) {
-				$url = substr($url, $absRefPrefixLength);
+			// We must check for absolute URLs here because typolink can force
+			// absolute URLs for pages with restricted access. It prepends
+			// current host always. See http://bugs.typo3.org/view.php?id=18200
+			$testUrl = $parameters['finalTagParts']['url'];
+			if (preg_match('/^https?:\/\/[^\/]+\//', $testUrl)) {
+				$testUrl = preg_replace('/https?:\/\/[^\/]+(.+)$/', '\1', $testUrl);
 			}
 
-			$url = $this->urlPrepend[$urlKey] . ($url{0} != '/' ? '/' : '') . $url;
+			if (isset($this->urlPrepend[$testUrl])) {
+				$urlKey = $url = $testUrl;
 
-			unset($this->urlPrepend[$parameters['finalTagParts']['url']]);
+				// Remove absRefPrefix if necessary
+				$absRefPrefixLength = strlen($GLOBALS['TSFE']->absRefPrefix);
+				if ($absRefPrefixLength != 0 && substr($url, 0, $absRefPrefixLength) == $GLOBALS['TSFE']->absRefPrefix) {
+					$url = substr($url, $absRefPrefixLength);
+				}
 
-			// Adjust the URL:
-			$parameters['finalTag'] = str_replace(
-				'"' . $parameters['finalTagParts']['url'] . '"',
-				'"' . $url . '"',
-				$parameters['finalTag']
-			);
-			$parameters['finalTagParts']['url'] = $url;
-			$pObj->lastTypoLinkUrl = $url;
+				$url = $this->urlPrepend[$urlKey] . ($url{0} != '/' ? '/' : '') . $url;
+
+				unset($this->urlPrepend[$testUrl]);
+
+				// Adjust the URL:
+				$parameters['finalTag'] = str_replace(
+					'"' . htmlspecialchars($parameters['finalTagParts']['url']) . '"',
+					'"' . htmlspecialchars($url) . '"',
+					$parameters['finalTag']
+				);
+				$parameters['finalTagParts']['url'] = $url;
+				$pObj->lastTypoLinkUrl = $url;
+			}
 		}
 	}
 
@@ -694,7 +705,7 @@ class tx_realurl {
 							} elseif (isset($setup['valueDefault'])) {
 								$prevVal = $setup['valueDefault'];
 								$pathParts[] = rawurlencode($setup['valueDefault']);
-								$this->cHashParameters[$GETvar] = $setup['valueDefault'];
+								$this->cHashParameters[$GETvar] = $setup['valueMap'][$setup['valueDefault']];
 								$this->rebuildCHash |= !$parameterSet;
 							} else {
 								$prevVal = $GETvarVal;
@@ -782,7 +793,7 @@ class tx_realurl {
 				$GLOBALS['TSFE']->applicationData['tx_realurl']['_CACHE'][$hash] = $setEncodedURL;
 
 				// If the page id is NOT an integer, it's an alias we have to look up:
-				if (!t3lib_div::testInt($this->encodePageId)) {
+				if (!self::testInt($this->encodePageId)) {
 					$this->encodePageId = $this->pageAliasToID($this->encodePageId);
 				}
 
@@ -980,7 +991,7 @@ class tx_realurl {
 
 			// If the URL is a single script like "123.1.html" it might be an "old" simulateStaticDocument request. If this is the case and support for this is configured, do NOT try and resolve it as a Speaking URL
 			$fI = t3lib_div::split_fileref($speakingURIpath);
-			if (!t3lib_div::testInt($this->pObj->id) && $fI['path'] == '' && $this->extConf['fileName']['defaultToHTMLsuffixOnPrev'] && $this->extConf['init']['respectSimulateStaticURLs']) {
+			if (!self::testInt($this->pObj->id) && $fI['path'] == '' && $this->extConf['fileName']['defaultToHTMLsuffixOnPrev'] && $this->extConf['init']['respectSimulateStaticURLs']) {
 				// If page ID does not exist yet and page is on the root level and both
 				// respectSimulateStaticURLs and defaultToHTMLsuffixOnPrev are set, than
 				// ignore respectSimulateStaticURLs and attempt to resolve page id.
@@ -1040,7 +1051,7 @@ class tx_realurl {
 	 * @see decodeSpURL_doDecode()
 	 */
 	protected function decodeSpURL_checkRedirects($speakingURIpath) {
-		$speakingURIpath = trim($speakingURIpath);
+		$speakingURIpath = strtolower(trim($speakingURIpath));
 
 		if (isset($this->extConf['redirects'][$speakingURIpath])) {
 			$url = $this->extConf['redirects'][$speakingURIpath];
@@ -1143,11 +1154,11 @@ class tx_realurl {
 		$pre_GET_VARS = $this->decodeSpURL_settingPreVars($pathParts, $this->extConf['preVars']);
 		if (isset($this->extConf['pagePath']['languageGetVar'])) {
 			$languageGetVar = $this->extConf['pagePath']['languageGetVar'];
-			if (isset($pre_GET_VARS[$languageGetVar]) && t3lib_div::testInt($pre_GET_VARS[$languageGetVar])) {
+			if (isset($pre_GET_VARS[$languageGetVar]) && self::testInt($pre_GET_VARS[$languageGetVar])) {
 				// Language from URL
 				$this->detectedLanguage = $pre_GET_VARS[$languageGetVar];
 			}
-			elseif (isset($_GET[$languageGetVar]) && t3lib_div::testInt($_GET[$languageGetVar])) {
+			elseif (isset($_GET[$languageGetVar]) && self::testInt($_GET[$languageGetVar])) {
 				// This is for _DOMAINS feature
 				$this->detectedLanguage = $_GET[$languageGetVar];
 			}
@@ -1584,7 +1595,7 @@ class tx_realurl {
 							} elseif (is_array($setup['lookUpTable'])) {
 								$temp = $value;
 								$value = $this->lookUpTranslation($setup['lookUpTable'], $value, TRUE);
-								if ($setup['lookUpTable']['enable404forInvalidAlias'] && !t3lib_div::testInt($value) && !strcmp($value, $temp)) {
+								if ($setup['lookUpTable']['enable404forInvalidAlias'] && !self::testInt($value) && !strcmp($value, $temp)) {
 									$this->decodeSpURL_throw404('Couldn\'t map alias "' . $value . '" to an ID');
 								}
 							} elseif (isset($setup['valueDefault'])) { // If no matching value and a default value is given, set that:
@@ -2173,7 +2184,7 @@ class tx_realurl {
 	public function getPostVarSetConfig($page_id, $mainCat = 'postVarSets') {
 
 		// If the page id is NOT an integer, it's an alias we have to look up:
-		if (!t3lib_div::testInt($page_id)) {
+		if (!self::testInt($page_id)) {
 			$page_id = $this->pageAliasToID($page_id);
 		}
 
@@ -2681,6 +2692,27 @@ class tx_realurl {
 	 */
 	public function getDetectedLanguage() {
 		return intval($this->detectedLanguage);
+	}
+
+	/**
+	 * Tests if the value represents an integer number.
+	 *
+	 * @param mixed $value
+	 * @return bool
+	 */
+	static public function testInt($value) {
+		static $useOldGoodTestInt = null;
+
+		if (is_null($useOldGoodTestInt)) {
+			$useOldGoodTestInt = !class_exists('t3lib_utility_Math');
+		}
+		if ($useOldGoodTestInt) {
+			$result = t3lib_div::testInt($value);
+		}
+		else {
+			$result = t3lib_utility_Math::canBeInterpretedAsInteger($value);
+		}
+		return $result;
 	}
 }
 

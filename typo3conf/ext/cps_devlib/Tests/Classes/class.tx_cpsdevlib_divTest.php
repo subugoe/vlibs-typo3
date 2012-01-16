@@ -2,7 +2,8 @@
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2011 Nicole Cordes <cordes@cps-it.de>
+ *  (c) 2011 Nicole Cordes <cordes
+ * @cps-it.de>
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -27,170 +28,204 @@
 
 class tx_cpsdevlib_divTest extends Tx_Phpunit_TestCase {
 
-	/**
-	 * @test
-	 */
-	public function checkRemoveArrayValues() {
-		$testArray = array(' Lorem ', 'ipsum', '', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$expectedResultArray = array(' Lorem ', 'ipsum', '', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::removeArrayValues($testArray, false, false, 0);
+	private $fixture;
 
-		$this->assertEquals($expectedResultArray, $actualResultArray);
+	/**
+	 * Set up fixture structures
+	 */
+	public function setUp() {
+		$this->fixture = array(
+			'testArray' => array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', '', 0, 'elitr ', ' sed', ' diam', ' 0 '),
+			'testString' => ' Lorem , -24,ipsum,0. dolor&sit ,amet,24: consetetur -sadipscing+,0,elitr : sed; diam+ 0 ',
+			'testQueryString' => 'tx_cpsdevlib_pi1[listid]=5&tx_cpsdevlib_pi1[pageid]=1&id=10&amp;L=3&amp;no_cache=1',
+		);
+	}
+
+	/**
+	 * Unset all fixtures
+	 */
+	public function tearDown() {
+		unset($this->fixture);
+	}
+
+	/*
+	 #####################################################################################################
+	 #                                                                                                   #
+	 # Tests for removeArrayValues($theArray, $useTrim = true, $removeEmptyValues = true, $theLimit = 0) #
+	 #                                                                                                   #
+	 #####################################################################################################
+	 */
+
+	/**
+	 * Data provider for removeArrayValues
+	 *
+	 * @return array
+	 */
+	public function testRemoveArrayValuesDataProvider() {
+		$theLimit = 12;
+
+		return array(
+			'array values stay the same' => array(false, false, 0, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', '', 0, 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array with trimmed values' => array(true, false, 0, array('Lorem', '', '24', 'ipsum', '0', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', '', 0, 'elitr', 'sed', 'diam', '0')),
+			'array without empty values' => array(false, true, 0, array(' Lorem ', ' ', '24', 'ipsum', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array values with limit greater zero' => array(false, false, $theLimit, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', '')),
+			'array values with limit lower zero' => array(false, false, -5, array(0, 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array with trimmed but without empty values' => array(true, true, 0, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+			'array with trimmed and limited values' => array(true, false, $theLimit, array('Lorem', '', '24', 'ipsum', '0', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', '')),
+			'array values trimmed but without empty values limited' => array(true, true, $theLimit, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+		);
 	}
 
 	/**
 	 * @test
+	 * @dataProvider testRemoveArrayValuesDataProvider
+	 * @param boolean $useTrim
+	 * @param boolean $removeEmptyValues
+	 * @param integer $theLimit
+	 * @param array $expectedReturnArray
 	 */
-	public function checkRemoveArrayValuesAndUseTrim() {
-		$testArray = array(' Lorem ', 'ipsum', '', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$expectedResultArray = array('Lorem', 'ipsum', '', 'dolor', 'sit', 'amet', 'consetetur', 'sadipscing', 'elitr', '', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::removeArrayValues($testArray, true, false, 0);
+	public function checkRemoveArrayValues($useTrim, $removeEmptyValues, $theLimit, $expectedReturnArray) {
+		$this->assertEquals($expectedReturnArray, tx_cpsdevlib_div::removeArrayValues($this->fixture['testArray'], $useTrim, $removeEmptyValues, $theLimit));
+	}
 
-		$this->assertEquals($expectedResultArray, $actualResultArray);
+	/*
+	 #########################################################################################################################
+	 #                                                                                                                       #
+	 # Tests for explode($theString, $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $theLimit = 0) #
+	 #                                                                                                                       #
+	 #########################################################################################################################
+	 */
+
+	/**
+	 * Data provider for removeArrayValues
+	 *
+	 * @return array
+	 */
+	public function testExplodeDataProvider() {
+		$theDelims = ',;\.:\-\+&\/';
+		$theLimit = 12;
+
+		return array(
+			'string to array' => array($theDelims, false, false, 0, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', '24', ' consetetur ', 'sadipscing', '', '0', 'elitr ', ' sed', ' diam', ' 0 ')),
+			'string to array with trimmed values' => array($theDelims, true, false, 0, array('Lorem', '', '24', 'ipsum', '0',  'dolor', 'sit', 'amet', '24', 'consetetur', 'sadipscing', '', '0', 'elitr', 'sed', 'diam', '0')),
+			'string to array without empty values' => array($theDelims, false, true, 0, array(' Lorem ', ' ', '24', 'ipsum', ' dolor', 'sit ', 'amet', '24', ' consetetur ', 'sadipscing', 'elitr ', ' sed', ' diam', ' 0 ')),
+			'string to array with limited values greater zero' => array($theDelims, false, false, $theLimit, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', '24', ' consetetur ', 'sadipscing', '')),
+			'string to array with limited values lower zero' => array($theDelims, false, false, -5, array('0', 'elitr ', ' sed', ' diam', ' 0 ')),
+			'string to array with trimmed and without empty values' => array($theDelims, true, true, 0, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', '24', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+			'string to array with trimmed and limited values' => array($theDelims, true, false, $theLimit, array('Lorem', '', '24', 'ipsum', '0', 'dolor', 'sit', 'amet', '24', 'consetetur', 'sadipscing', '')),
+			'string to array with trimmed and without empty values limited' => array($theDelims, true, true, $theLimit, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', '24', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+		);
 	}
 
 	/**
 	 * @test
+	 * @depends checkRemoveArrayValues
+	 * @dataProvider testExplodeDataProvider
+	 * @param string $theDelims
+	 * @param boolean $useTrim
+	 * @param boolean $removeEmptyValues
+	 * @param integer $theLimit
+	 * @param array $expectedReturnArray
 	 */
-	public function checkRemoveArrayValuesAndRemoveEmptyValues() {
-		$testArray = array(' Lorem ', 'ipsum', '', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$expectedResultArray = array(' Lorem ', 'ipsum', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::removeArrayValues($testArray, false, true, 0);
+	public function checkExplode($theDelims, $useTrim, $removeEmptyValues, $theLimit, $expectedReturnArray) {
+		$this->assertEquals($expectedReturnArray, tx_cpsdevlib_div::explode($this->fixture['testString'], $theDelims, $useTrim, $removeEmptyValues, $theLimit));
+	}
 
-		$this->assertEquals($expectedResultArray, $actualResultArray);
+	/*
+	 ##################################################################################################################################################
+	 #                                                                                                                                                #
+	 # Tests for toListArray($theData, $theDelims = ',;\.:\-\+&\/', $useTrim = true, $removeEmptyValues = true, $useArrayKeys = false, $theLimit = 0) #
+	 #                                                                                                                                                #
+	 ##################################################################################################################################################
+	 */
+
+	/**
+	 * Data provider for toListArray
+	 *
+	 * @return array
+	 */
+	public function testArrayToListArrayDataProvider() {
+		$theLimit = 12;
+
+		return array(
+			'array values stay the same' => array(false, false, false, 0, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', '', 0, 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array with trimmed values' => array(true, false, false, 0, array('Lorem', '', '24', 'ipsum', '0', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', '', 0, 'elitr', 'sed', 'diam', '0')),
+			'array without empty values' => array(false, true, false, 0, array(' Lorem ', ' ', '24', 'ipsum', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array with keys as values' => array(false, false, true, 0, array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)),
+			'array with limited values greater zero' => array(false, false, false, $theLimit, array(' Lorem ', ' ', '24', 'ipsum', '0', ' dolor', 'sit ', 'amet', 24, ' consetetur ', 'sadipscing', '')),
+			'array with limited values lower zero' => array(false, false, false, -5, array(0, 'elitr ', ' sed', ' diam', ' 0 ')),
+			'array with trimmed but without empty values' => array(true, true, false, 0, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+			'array with trimmed keys as values' => array(true, false, true, 0, array(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)),
+			'array with trimmed values limited' => array(true, false, false, $theLimit, array('Lorem', '', '24', 'ipsum', '0', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', '')),
+			'array with trimmed keys as values without empty ones' => array(true, true, true, 0, array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)),
+			'array with trimmed but without empty values limited' => array(true, true, false, $theLimit, array('Lorem', '24', 'ipsum', 'dolor', 'sit', 'amet', 24, 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam')),
+			'array with trimmed keys as values without empty ones limited' => array(true, true, true, $theLimit, array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)),
+		);
 	}
 
 	/**
 	 * @test
+	 * @depends checkRemoveArrayValues
+	 * @dataProvider testArrayToListArrayDataProvider
+	 * @param boolean $useTrim
+	 * @param boolean $removeEmptyValues
+	 * @param boolean $useArrayKeys
+	 * @param integer $theLimit
+	 * @param array $expectedReturnArray
 	 */
-	public function checkRemoveArrayValuesAndUseTrimAndRemoveEmptyValues() {
-		$testArray = array(' Lorem ', 'ipsum', '', ' dolor', 'sit ', 'amet', ' consetetur ', 'sadipscing', 'elitr', ' ', 'sed', 'diam');
-		$expectedResultArray = array('Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::removeArrayValues($testArray, true, true, 0);
-
-		$this->assertEquals($expectedResultArray, $actualResultArray);
+	public function checkArrayToListArray($useTrim, $removeEmptyValues, $useArrayKeys, $theLimit, $expectedReturnArray) {
+		$this->assertEquals($expectedReturnArray, tx_cpsdevlib_div::toListArray($this->fixture['testArray'], '', $useTrim, $removeEmptyValues, $useArrayKeys, $theLimit));
 	}
 
 	/**
 	 * @test
+	 * @depends checkExplode
+	 * @dataProvider testExplodeDataProvider
+	 * @param string $theDelims
+	 * @param boolean $useTrim
+	 * @param boolean $removeEmptyValues
+	 * @param integer $theLimit
+	 * @param array $expectedReturnArray
 	 */
-	public function checkStringToListArray() {
-		$testString = 'Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam';
-		$expectedResultArray = array('Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::toListArray($testString, ' ', false, false, false, 0);
+	public function checkStringToListArray($theDelims, $useTrim, $removeEmptyValues, $theLimit, $expectedReturnArray) {
+		$this->assertEquals($expectedReturnArray, tx_cpsdevlib_div::toListArray($this->fixture['testString'], $theDelims, $useTrim, $removeEmptyValues, false, $theLimit));
+	}
 
-		$this->assertEquals($expectedResultArray, $actualResultArray);
+	/*
+	 ###############################################################################################################################
+	 #                                                                                                                             #
+	 # Tests for queryStringToArray($theString, $removeKeys = '', $theSeparator = '&', $equalChar = '=', $altSeparators = '&amp;') #
+	 #                                                                                                                             #
+	 ###############################################################################################################################
+	 */
+
+	/**
+	 * Data provider for removeArrayValues
+	 *
+	 * @return array
+	 */
+	public function testQueryStringToArrayDataProvider() {
+		return array(
+			'Split query string to array' => array('', '&', '=', '&amp;', array('tx_cpsdevlib_pi1' => array('listid' => '5', 'pageid' => '1'), 'id' => '10', 'L' => '3', 'no_cache' => '1')),
+			'Remove keys from array' => array('id,tx_cpsdevlib_pi1[pageid]', '&', '=', '&amp;', array('tx_cpsdevlib_pi1' => array('listid' => '5'), 'L' => '3', 'no_cache' => '1')),
+			'Change separator' => array('', ',', '=', '&amp;', array('tx_cpsdevlib_pi1' => array('listid' => '5', 'pageid' => '1'), 'id' => '10', 'L' => '3', 'no_cache' => '1')),
+			'Change equal character' => array('', '&', '%3D', '&amp;', array('tx_cpsdevlib_pi1' => array('listid' => '5', 'pageid' => '1'), 'id' => '10', 'L' => '3', 'no_cache' => '1')),
+			'Change alternative separator' => array('', '&', '=', '%26', array('tx_cpsdevlib_pi1' => array('listid' => '5', 'pageid' => '1'), 'id' => '10', 'L' => '3', 'no_cache' => '1')),
+		);
 	}
 
 	/**
 	 * @test
+	 * @depends checkStringToListArray
+	 * @dataProvider testQueryStringToArrayDataProvider
+	 * @param string $removeKeys
+	 * @param string $theSeparator
+	 * @param string $equalChar
+	 * @param string $altSeparators
+	 * @param array $expectedReturnArray
 	 */
-	public function checkStringToListArrayAndUseTrim() {
-		$testString = 'Lorem, ipsum, dolor, sit, amet, consetetur, sadipscing, elitr, sed, diam';
-		$expectedResultArray = array('Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::toListArray($testString, ',', true, false, false, 0);
-
-		$this->assertEquals($expectedResultArray, $actualResultArray);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToListArrayAndRemoveEmptyValues() {
-		$testString = 'Lorem,,ipsum,,dolor,sit,amet,consetetur,sadipscing,elitr,,sed,diam';
-		$expectedResultArray = array('Lorem', 'ipsum', 'dolor', 'sit', 'amet', 'consetetur', 'sadipscing', 'elitr', 'sed', 'diam');
-		$actualResultArray = tx_cpsdevlib_div::toListArray($testString, ',', false, true, false, 0);
-
-		$this->assertEquals($expectedResultArray, $actualResultArray);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToListString() {
-		$testString = 'Lorem ipsum dolor sit amet consetetur sadipscing elitr sed diam';
-		$expectedResultString = 'Lorem,ipsum,dolor,sit,amet,consetetur,sadipscing,elitr,sed,diam';
-		$actualResultString = tx_cpsdevlib_div::toListString($testString, ',', ' ', false, false, false, false);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToListStringAndUseTrim() {
-		$testString = 'Lorem - ipsum - dolor - sit - amet - consetetur - sadipscing - elitr - sed - diam';
-		$expectedResultString = 'Lorem,ipsum,dolor,sit,amet,consetetur,sadipscing,elitr,sed,diam';
-		$actualResultString = tx_cpsdevlib_div::toListString($testString, ',', '-', true, false, false, false);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToListStringAndRemoveEmptyValues() {
-		$testString = 'Lorem,,ipsum,,dolor,sit,amet,consetetur,sadipscing,elitr,,sed,diam';
-		$expectedResultString = 'Lorem,ipsum,dolor,sit,amet,consetetur,sadipscing,elitr,sed,diam';
-		$actualResultString = tx_cpsdevlib_div::toListString($testString, ',', ',', false, true, false, false);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToIntListArray() {
-		$testString = '1a,2,3xyz,4,5,,6 AND 1=1';
-		$expectedResultArray = array(1,2,3,4,5,0,6);
-		$actualResultArray = tx_cpsdevlib_div::toIntListArray($testString, ',', false, false, false, 0);
-
-		$this->assertEquals($expectedResultArray, $actualResultArray);
-
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToIntListString() {
-		$testString = '1a,2,3xyz,4,5,,6 AND 1=1';
-		$expectedResultString = '1,2,3,4,5,0,6';
-		$actualResultString = tx_cpsdevlib_div::toIntListString($testString, ',', ',', false, false, false, 0);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToIntListStringAndUseTrim() {
-		$testString = '1a, 2, 3xyz, 4, 5, , 6 AND 1=1';
-		$expectedResultString = '1,2,3,4,5,0,6';
-		$actualResultString = tx_cpsdevlib_div::toIntListString($testString, ',', ',', true, false, false, 0);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToIntListStringAndRemoveEmptyValues() {
-		$testString = '1a,2,,3xyz,4,5,,6 AND 1=1';
-		$expectedResultString = '1,2,3,4,5,6';
-		$actualResultString = tx_cpsdevlib_div::toIntListString($testString, ',', ',', false, true, false, 0);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
-	}
-
-	/**
-	 * @test
-	 */
-	public function checkStringToIntListStringAndUseTrimAndRemoveEmptyValues() {
-		$testString = '1a, 2, , 3xyz, 4, 5, , 6 AND 1=2';
-		$expectedResultString = '1,2,3,4,5,6';
-		$actualResultString = tx_cpsdevlib_div::toIntListString($testString, ',', ',', true, true, false, 0);
-
-		$this->assertEquals($expectedResultString, $actualResultString);
+	public function checkQueryStringToArray($removeKeys, $theSeparator, $equalChar, $altSeparators, $expectedReturnArray) {
+		$this->assertEquals($expectedReturnArray, tx_cpsdevlib_div::queryStringToArray(str_replace('+', $altSeparators, str_replace('=', $equalChar, str_replace('&', $theSeparator, str_replace('&amp;', '+', $this->fixture['testQueryString'])))), $removeKeys, $theSeparator, $equalChar, $altSeparators));
 	}
 }
 

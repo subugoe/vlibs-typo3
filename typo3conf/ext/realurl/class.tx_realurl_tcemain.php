@@ -25,7 +25,7 @@
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
 /**
- * $Id: class.tx_realurl_tcemain.php 37245 2010-08-25 12:39:13Z dmitry $
+ * $Id: class.tx_realurl_tcemain.php 54048 2011-11-11 13:26:21Z dmitry $
  */
 
 /**
@@ -289,7 +289,7 @@ class tx_realurl_tcemain {
 	 * @todo Handle changes to tx_realurl_exclude recursively
 	 */
 	protected function processContentUpdates($status, $tableName, $recordId, array $databaseData) {
-		if ($status == 'update' && t3lib_div::testInt($recordId)) {
+		if ($status == 'update' && tx_realurl::testInt($recordId)) {
 			list($pageId, $languageId) = $this->getPageData($tableName, $recordId);
 			$this->fetchRealURLConfiguration($pageId);
 			if ($this->shouldFixCaches($tableName, $databaseData)) {

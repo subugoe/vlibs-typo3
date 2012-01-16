@@ -8,7 +8,7 @@ lib.menu {
   1.wrap = <ul class="mainmenu">|</ul>
   1.expAll = True
   1.NO = 1
-  1.NO.wrapItemAndSub = |*|<li>|</li>|*|<li class="last">|</li>
+  1.NO.wrapItemAndSub = <li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
   1.CUR = 1
   1.CUR.wrapItemAndSub = |*|<li class="current"><a>|</a></li>|*|<li class="current last"><a>|</a></li>
   1.CUR.doNotLinkIt = 1

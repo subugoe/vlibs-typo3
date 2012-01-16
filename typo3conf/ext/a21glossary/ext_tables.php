@@ -1,17 +1,19 @@
 <?php
+
 if (!defined('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-t3lib_extMgm::addStaticFile($_EXTKEY, 'static/', 'A21 Glossary');
+t3lib_extMgm::addStaticFile($_EXTKEY, 'static/', 'A21 Glossary - Default Output (Old)');
+t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/Accessibility/', 'A21 Glossary - Accessible Output (Recommended)');
 
-t3lib_extMgm::addPlugin(array('LLL:EXT:a21glossary/locallang_db.php:tx_a21glossary_main', 'a21glossary'));
+t3lib_extMgm::addPlugin(array('LLL:EXT:a21glossary/locallang_db.xml:tx_a21glossary_main', 'a21glossary'));
 t3lib_extMgm::allowTableOnStandardPages('tx_a21glossary_main');
 t3lib_extMgm::addToInsertRecords('tx_a21glossary_main');
 
 $TCA['tx_a21glossary_main'] = array(
 	'ctrl' => array(
-		'title' => 'LLL:EXT:a21glossary/locallang_db.php:tx_a21glossary_main',
+		'title' => 'LLL:EXT:a21glossary/locallang_db.xml:tx_a21glossary_main',
 		'label' => 'short',
 		'tstamp' => 'tstamp',
 		'crdate' => 'crdate',
@@ -28,7 +30,7 @@ $TCA['tx_a21glossary_main'] = array(
 			'endtime' => 'endtime',
 			'fe_group' => 'fe_group'
 		),
-		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY) . 'tca.php',
+		'dynamicConfigFile' => t3lib_extMgm::extPath($_EXTKEY) . 'Configuration/Tca.php',
 		'iconfile' => t3lib_extMgm::extRelPath($_EXTKEY) . 'icon_tx_a21glossary_main.gif',
 	),
 	'feInterface' => array(

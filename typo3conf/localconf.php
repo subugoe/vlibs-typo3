@@ -36,10 +36,10 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'emptyUrlReturnValue' => TRUE,
 		'respectSimulateStaticURLs' => 1,
 		'enableCHashCache' => 1,
-		'enableUrlDecodeCache' => 1,
-		'enableUrlEncodeCache' => 1,
+		'enableUrlDecodeCache' => 0,
+		'enableUrlEncodeCache' => 0,
 	),
-	'redirects' => array (),
+	//'redirects' => array (),
 	'preVars' => array (
 		array (
 			'GETvar' => 'L',
@@ -64,48 +64,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'languageGetVar' => 'L',
 		'expireDays' => 3,
 		'rootpage_id' => '12',
-	),
-/*	'fileName' => array (
-		'index' => array (
-			'index.html' => array (
-				'keyValues' => array (
-					'type' => 1,
-				),
-			),
-			'atom.xml' => array (
-				'keyValues' => array (
-					'type' => 35,
-				),
-			),
-		),
-		'_DEFAULT' => array(
-			'keyValues' => array( )
-		),
-	),
-*/
-	'postVarSets' => array(
-		'_DEFAULT' => array (
-			'artikel' => array(
-				array(
-					'GETvar' => 'tx_ttnews[tt_news]',
-				),
-				array(
-					'GETvar' => 'tx_ttnews[backPid]',
-				),
-			),
-			'kategorie' => array(
-				array(
-					'GETvar' => 'tx_ttnews[cat]',
-				),
-			),
-			'eintrag' => array(
-				array(
-					'GETvar' => 'tx_ttnews[pointer]',
-				),
-			),
-		),
-	),
-
+	)
 );
 
 $TYPO3_CONF_VARS['EXT']['extConf']['cag_linkchecker'] = 'a:1:{s:15:"setPageTSconfig";s:1:"1";}';	// Modified or inserted by TYPO3 Extension Manager.

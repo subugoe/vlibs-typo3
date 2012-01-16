@@ -1,3 +1,29 @@
+2011-12-21  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fix: BE module for redirects is case-insensitive but FE handling is case-sensitive
+	* Released RealURL 1.12.0
+
+2011-11-30  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Feature: allow redirects for various domains
+	* Fixed bug #18354: Wrong cHash when valueDefault and enableCHashCache is used (thanks to Helmut Hummel)
+
+2011-11-17  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Manual update: prefer absRefPrefix to baseUrl from now on
+
+2011-11-11  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+    * Fixed bug #18322: Deprecated function call to t3lib_div::testInt()
+
+2011-10-27  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Added t3lib_div::loadTCA('pages') to ext_tables.php
+
+2011-06-29	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18200: Multiple issues with _DOMAINS feature
+
 2011-06-16	Dmitry Dulepov	<dmitry.dulepov@gmail.com>
 
 	* Fixed bug #18170: Unique Aliases not shown correctly (thanks to Joachim Streit)

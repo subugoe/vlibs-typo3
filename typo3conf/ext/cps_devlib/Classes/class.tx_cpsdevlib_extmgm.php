@@ -350,6 +350,36 @@ class tx_cpsdevlib_extmgm {
 
 		return $result;
 	}
+
+	/**
+	 * Get proper language for frontend and backend
+	 *
+	 * @param string $default: Default language key to return if nothing else was found
+	 * @static
+	 * @return string
+	 */
+	public static function getLanguage($default='default') {
+		switch (TYPO3_MODE) {
+			case 'BE':
+
+				// Return language or default
+				if ($GLOBALS['LANG'] instanceof language) {
+					$lang = strtolower($GLOBALS['LANG']->lang);
+					return ($lang == 'default') ? $default : $lang;
+				}
+				break;
+
+			case 'FE':
+
+				// Return language or default
+				if ($GLOBALS['TSFE'] instanceof tslib_fe) {
+					return $GLOBALS['TSFE']->lang;
+				}
+				break;
+		}
+
+		return $default;
+	}
 }
 
 ?>
