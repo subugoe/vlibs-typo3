@@ -9,11 +9,4 @@ config {
 	
 	# enable Real URL
 	tx_realurl_enable = 1
-
-	# allowed range for linkVars
-	uniqueLinkVars = 1
-	linkVars = L(0,2)
-
-	# put URL before links to local anchors to work with <base> tag
-	prefixLocalAnchors = all 
 }

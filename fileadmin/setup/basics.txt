@@ -6,12 +6,14 @@ config {
 	index_enable = 1
 	index_external = 1
 
-	inlineStyle2TempFile = 0
 	removeDefaultJS = 1
+	admPanel = 1
+
 	noPageTitle = 2
+	linkVars = L(0,2)
+	uniqueLinkVars = 1
 }
 
-config.admPanel = 1
 
 page = PAGE
 page {
