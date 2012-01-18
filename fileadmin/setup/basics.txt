@@ -10,6 +10,8 @@ config {
 	admPanel = 1
 
 	noPageTitle = 2
+	linkVars = L(0,2)
+	uniqueLinkVars = 1
 }
 
 page = PAGE

@@ -9,8 +9,4 @@ config {
 	
 	# enable Real URL
 	tx_realurl_enable = 1
-
-	# allowed range for linkVars
-	uniqueLinkVars = 1
-	linkVars = L(0,2)
 }
