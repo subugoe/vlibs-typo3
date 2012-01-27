@@ -209,19 +209,6 @@ li {
 	text-align: right;
 }
 
-#bottommenu ul.bottommenu li {
-	display: inline;
-	list-style-type: none;
-	margin: 0 0 0 8px;
-	padding: 4px 1px 2px 27px;
-	background: url(content_separator.png) 0% 50% no-repeat;
-}
-
-#bottommenu ul.bottommenu li.first {
-	padding-left: 6px;
-	background: transparent;
-}
-
 #bottommenu ul.bottommenu li.current {
 	font-weight: bold;
 }
