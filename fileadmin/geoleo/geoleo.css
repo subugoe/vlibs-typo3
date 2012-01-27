@@ -209,6 +209,13 @@ li {
 	text-align: right;
 }
 
+#bottommenu ul.bottommenu li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 0 0 8px;
+	padding: 0 6px;
+}
+
 #bottommenu ul.bottommenu li.current {
 	font-weight: bold;
 }
