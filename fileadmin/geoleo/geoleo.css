@@ -88,6 +88,10 @@ a:link:hover {
 	text-decoration: underline;
 }
 
+a:link:visited {
+	color: #ac3381;
+}
+
 /* brownish highlight colour */
 h1, h2, h3, h4, h5, h6, .pz2-details dt {
 	color: #6c564c;
