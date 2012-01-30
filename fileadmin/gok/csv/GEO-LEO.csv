@@ -1,6 +1,6 @@
 PPN;level;GOK;parent;DE;query;EN;
 GEOLEO;0;GEOLEO;Root;System Erde und Weltall;lkl=T 000;GEO-LEO;
-GEOLEO00020;1;GEOLEO00020;GEOLEO;Geographie;(lkl=QA* or QB* or QC* or QD* or QE* or QF* or QG* or QH* or QI* or QJ* or QK* or QL*) and (fbg=DK 91*);Geography;
+GEOLEO00020;1;GEOLEO00020;GEOLEO;Geographie;(lkl=QA* or lkl=QB* or lkl=QC* or lkl=QD* or lkl=QE* or lkl=QF* or lkl=QG* or lkl=QH* or lkl=QI* or lkl=QJ* or lkl=QK* or lkl=QL*) and (fbg=DK 91*);Geography;
 GEOLEO00030;1;GEOLEO00030;GEOLEO;Karten;(lkl=UQ* or lkl=UR*) or (fbg=DK 912*);Maps;
 GEOLEO00025;1;GEOLEO00025;GEOLEO;Kartographie;(lkl=UT* or lkl=UU* or lkl=UW* or lkl=UY*);;
 GEOLEO00060;2;GEOLEO00060;GEOLEO00020;Geschichte der Geographie;lkl=QA 100 or ((fbg=DK 911*) and (fbg=DK 93/99));History of Geography;
@@ -1368,7 +1368,7 @@ GEOLEO13730;6;GEOLEO13730;GEOLEO13710;Ozeanien {Reisebeschreibungen};lkl=QLH 300
 GEOLEO13740;5;GEOLEO13740;GEOLEO13470;Polargebiete {Reisebeschreibungen};lkl=QLI 000 or ((fbg=DK 919.8* or fbg=DK 919.9*) and (fbg=DK 910.4));Polar Zone {Itinerary};
 GEOLEO13750;6;GEOLEO13750;GEOLEO13740;Nordpolargebiet {Reisebeschreibungen};lkl=QLI 100 or ((fbg=DK 919.8*) and (fbg=DK 910.4));Arctic Zone {Itinerary};
 GEOLEO13760;6;GEOLEO13760;GEOLEO13740;Südpolargebiet {Reisebeschreibungen};lkl=QLI 300 or ((fbg=DK 919.9*) and (fbg=DK 910.4));Antarctic Zone {Itinerary};
-GEOLEO52260;1;GEOLEO52260;GEOLEO;Astronomie, Astrophysik, Weltraumforschung;lkl=T* not (TM* or Tn* or TQ* or TS* or TT* or TU* or TV* or TY*);Astronomie;
+GEOLEO52260;1;GEOLEO52260;GEOLEO;Astronomie, Astrophysik, Weltraumforschung;lkl=T* not (lkl=TM* or lkl=TN* or lkl=TQ* or lkl=TS* or lkl=TT* or lkl=TU* or lkl=TV* or lkl=TY*);Astronomie;
 GEOLEO52270;2;GEOLEO52270;GEOLEO52260;Astronomie;lkl=TA 000 or (fbg=DK 520);Astronomy and allied sciences;
 GEOLEO52380;3;GEOLEO52380;GEOLEO52270;Theoretische Grundlagen, Philosophie;lkl=TA 100 or (fbg=DK 521.9);Theoretical fundamentals;
 GEOLEO52390;3;GEOLEO52390;GEOLEO52270;Wissenschaftsorganisation und -pflege;lkl=TA 200;Scientific organzation and development;
@@ -1639,7 +1639,7 @@ GEOLEO54660;4;GEOLEO54660;GEOLEO54440;UFOs;lkl=TJQ 400;UFOs;
 GEOLEO54450;3;GEOLEO54450;GEOLEO52360;Raumfahrtmedizin;lkl=TJS 000;Space medicine;
 GEOLEO54460;3;GEOLEO54460;GEOLEO52360;Astrogeologie;lkl=TJU 000;Astrogeology;
 GEOLEO52370;2;GEOLEO52370;GEOLEO52260;Astrologie (Antike);lkl=TL 000;Astrology (Ancient world);
-GEOLEO21780;1;GEOLEO21780;GEOLEO;Geophysik;(lkl=TM* or TN* or TO* or TS*)  000 or (fbg=DK 550.3);Geophysics;
+GEOLEO21780;1;GEOLEO21780;GEOLEO;Geophysik;(lkl=TM* or lkl=TN* or lkl=TO* or lkl=TS*) or (fbg=DK 550.3);Geophysics;
 GEOLEO21785;2;GEOLEO21785;GEOLEO21780;Geophysik ;lkl=TM 000 or (fbg=DK 550.3);Geophysics;
 GEOLEO21790;2;GEOLEO21790;GEOLEO21780;Theoretische Grundlagen {Geophysik};lkl=TM 100 or ((fbg=DK 550.3) and (fbg=DK 001.5*));Theoretical Fundamentals {Geophysics};
 GEOLEO21800;2;GEOLEO21800;GEOLEO21780;Wissenschaftsorganisation und -pflege {Geophysik};lkl=TM 200 or ((fbg=DK 550.3) and (fbg=DK 061));Scientific Organization and Development {Geophysics};
@@ -1876,7 +1876,7 @@ GEOLEO22825;4;GEOLEO22825;GEOLEO22780;Indischer Ozean {Geophysik}  ;lkl=TSZ 200 
 GEOLEO22830;4;GEOLEO22830;GEOLEO22780;Pazifischer Ozean {Geophysik}  ;lkl=TSZ 300 or ((fbg=DK 550.3* or fbg=DK 550.83*) and (fbg=DK 551.46*));Pacific Ocean {Geophysics};
 GEOLEO22834;4;GEOLEO22834;GEOLEO22780;Nordpolarmeer {Geophysik}  ;lkl=TSZ 400;Arctic Ocean {Geophysics};
 GEOLEO22838;4;GEOLEO22838;GEOLEO22780;Südpolarmeer {Geophysik}  ;lkl=TSZ 500;Antarctic Ocean {Geophysics};
-GEOLEO22920;1;GEOLEO22920;GEOLEO;Meteorologie und Klimatologie;(lkl=TT* or TU* or TV* or TY*) or (fbg=DK 551.5);Meteorology and Climatology;
+GEOLEO22920;1;GEOLEO22920;GEOLEO;Meteorologie und Klimatologie;(lkl=TT* or lkl=TU* or lkl=TV* or lkl=TY*) or (fbg=DK 551.5);Meteorology and Climatology;
 GEOLEO22925;2;GEOLEO22925;GEOLEO22920;Meteorologie und Klimatologie;lkl=TT 000 or (fbg=DK 551.5);Meteorology and Climatology;
 GEOLEO22930;2;GEOLEO22930;GEOLEO22920;Theoretische Grundlagen {Meteorologie und Klimatologie};lkl=TT 100 or ((fbg=DK 551.5*) and (fbg=DK 001.5*));Theoretical Fundamentals {Meteorology and Climatology};
 GEOLEO22940;2;GEOLEO22940;GEOLEO22920;Wissenschaftsorganisation und -pflege {Meteorologie und Klimatologie};lkl=TT 200 or ((fbg=DK 551.5*) and (fbg=DK 061));Scientific Organization and Development {Meteorology and Climatology};
@@ -2106,7 +2106,7 @@ GEOLEO25140;4;GEOLEO25140;GEOLEO25120;Indischer Ozean {Meteorologie und Klimatol
 GEOLEO25150;4;GEOLEO25150;GEOLEO25120;Pazifischer Ozean {Meteorologie und Klimatologie};lkl=TYZ 300 or ((fbg=DK 551.5*) and (fbg=DK 551.46*));Pacific Ocean {Meteorology and Climatology};
 GEOLEO25160;4;GEOLEO25160;GEOLEO25120;Nordpolarmeer {Meteorologie und Klimatologie};lkl=TYZ 400 or ((fbg=DK 551.5*) and (fbg=DK 551.46*));Arctic Ocean {Meteorology and Climatology};
 GEOLEO25170;4;GEOLEO25170;GEOLEO25120;Südpolarmeer {Meteorologie und Klimatologie};lkl=TYZ 500 or ((fbg=DK 551.5*) and (fbg=DK 551.46*));Antarctic Ocean {Meteorology and Climatology};
-GEOLEO25220;1;GEOLEO25220;GEOLEO;Hydrologie ;(lkl=UA* or UB* or  UC* or UD*) or (fbg=DK 556*);Hydrology in General;
+GEOLEO25220;1;GEOLEO25220;GEOLEO;Hydrologie ;(lkl=UA* or lkl=UB* or lkl=UC* or lkl=UD*) or (fbg=DK 556*);Hydrology in General;
 GEOLEO25222;2;GEOLEO25222;GEOLEO25220;Hydrologie Allgemein;lkl=UA 000 or (fbg=DK 556*);Hydrology in General;
 GEOLEO25230;3;GEOLEO25230;GEOLEO25220;Praktische Hydrologie;lkl=UA 100 or (fbg=DK 556*);Practical Hydrology;
 GEOLEO25240;4;GEOLEO25240;GEOLEO25230;Methodische Anleitungen {Hydrologie};lkl=UA 200 or ((fbg=DK 001.8) and (fbg=DK 556*));Methodical Manuals {Hydrology};
@@ -2645,7 +2645,7 @@ GEOLEO30560;4;GEOLEO30560;GEOLEO30410;Ozeanien {Hydrologie};lkl=UDY 600 or ((fbg
 GEOLEO30570;3;GEOLEO30570;GEOLEO26610;Polargebiete {Hydrologie};lkl=UDZ 000 or ((fbg=DK 919.9* or fbg=DK 919.8*) and (fbg=DK 556*));Polar Zone {Hydrology};
 GEOLEO30580;4;GEOLEO30580;GEOLEO30570;Arktis {Hydrologie};lkl=UDZ 200 or ((fbg=DK 556*) and (fbg=DK 919.8*));Arctic {Hydrology};
 GEOLEO30590;4;GEOLEO30590;GEOLEO30570;Antarktis {Hydrologie};lkl=UDZ 300 or ((fbg=DK 556*) and (fbg=DK 919.9*));Antarctica {Hydrology};
-GEOLEO30600;1;GEOLEO30600;GEOLEO;Ozeanologie;(lkl=UG* or UH*or UK*) or (fbg=DK 551.46*);Oceanography;
+GEOLEO30600;1;GEOLEO30600;GEOLEO;Ozeanologie;(lkl=UG* or lkl=UH* or lkl=UK*) or (fbg=DK 551.46*);Oceanography;
 GEOLEO30605;2;GEOLEO30605;GEOLEO30600;Ozeanologie Allgemein;lkl=UG 000 or (fbg=DK 551.46*);Oceanography;
 GEOLEO30610;3;GEOLEO30610;GEOLEO30600;Geschichte der Ozeanologie;lkl=UGB 100 or ((fbg=DK 551.46) and (fbg=DK 93/99));History of Oceanography;
 GEOLEO30620;3;GEOLEO30620;GEOLEO30600;Theoretische Grundlagen der Ozeanologie;lkl=UGB 200 or ((fbg=DK 551.46*) and (fbg=DK 001.5) or (fbg=DK 551.46.0*));Theoretical Fundamentals {Oceanography};
@@ -2813,7 +2813,7 @@ GEOLEO32230;4;GEOLEO32230;GEOLEO31580;Südpolarmeer;lkl=UKG 000 or ((fbg=DK 551.
 GEOLEO32240;5;GEOLEO32240;GEOLEO32230;Expeditionsberichte {Regionale Ozeanologie, Südpolarmeer};lkl=UKG 100 or ((fbg=DK 551.46.07 or fbg=DK 910.4*) and (fbg=DK 919.9*));Expedition Reports {Regional Oceanography, Antarctic Ocean};
 GEOLEO32250;5;GEOLEO32250;GEOLEO32230;Teilfragen {Regionale Ozeanologie, Südpolarmeer};lkl=UKG 200 or ((fbg=DK 551.46*) and (fbg=DK 919.9*));Particular Questions {Regional Oceanography, Antarctic Ocean};
 GEOLEO32260;5;GEOLEO32260;GEOLEO32230;Teilregionen {Regionale Ozeanologie, Südpolarmeer};lkl=UKG 300 or ((fbg=DK 551.46*) and (fbg=DK 919.9*));Particular Regions {Regional Oceanography, Antartic Ocean};
-GEOLEO32270;1;GEOLEO32270;GEOLEO;Geodäsie;(lkl=UN* or UP*) or (fbg=DK 528*);Geodesy;
+GEOLEO32270;1;GEOLEO32270;GEOLEO;Geodäsie;(lkl=UN* or lkl=UP*) or (fbg=DK 528*);Geodesy;
 GEOLEO32275;2;GEOLEO32275;GEOLEO32270;Geodäsie;lkl=UN 000 or (fbg=DK 528*);Geodesy;
 GEOLEO32280;3;GEOLEO32280;GEOLEO32270;Geschichte der Geodäsie;lkl=UNA 100 or ((fbg=DK 528*) and (fbg=DK 93/99));History of Geodesy;
 GEOLEO32290;3;GEOLEO32290;GEOLEO32270;Beruf und Ausbildung in der Geodäsie;lkl=UNA 200 or ((fbg=DK 528*) and (fbg=DK 377*));Profession and Education in Geodesy;
