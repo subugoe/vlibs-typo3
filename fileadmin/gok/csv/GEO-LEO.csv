@@ -4729,8 +4729,8 @@ GEOLEO43370;3;GEOLEO43370;GEOLEO43200;Allgemeine Lagerstättentypen;lkl=VQD 000 
 GEOLEO43380;4;GEOLEO43380;GEOLEO43370;Magmatische Lagerstätten;lkl=VQD 100 or ((fbg=DK 553.06? or fbg=DK 553.21) not (fbg=DK 553.068?));Magmatic Deposits;
 GEOLEO43390;4;GEOLEO43390;GEOLEO43370;Metamorphe Lagerstätten;lkl=VQD 200 or (fbg=DK 553.23?);Metamorphic Deposits;
 GEOLEO43400;4;GEOLEO43400;GEOLEO43370;Metasomatische Lagerstätten;lkl=VQD 300 or (fbg=DK 553.22 or fbg=DK 553.065 or fbg=DK 553.24? or fbg=DK 549(234.563));Metasomatic Deposits;
-GEOLEO43410;4;GEOLEO43410;GEOLEO43370;Sedimentäre Lagerstätten;lkl=VQD 400 or (fbg=DK 553.068?);Sedimentary Deposit;
-GEOLEO43350;3;GEOLEO43350;GEOLEO43200;Tektonik von Lagerstätten;lkl=VQE 000 or ((fbg=DK 551.24?) and (fbg=DK 553?));Structure of Mineral Deposits;
+GEOLEO43405;4;GEOLEO43405;GEOLEO43370;Sedimentäre Lagerstätten;lkl=VQD 400 or (fbg=DK 553.068?);Sedimentary Deposit;
+GEOLEO43410;3;GEOLEO43410;GEOLEO43200;Tektonik von Lagerstätten;lkl=VQE 000 or ((fbg=DK 551.24?) and (fbg=DK 553?));Structure of Mineral Deposits;
 GEOLEO43420;3;GEOLEO43420;GEOLEO43200;Spezielle Lagerstättenkunde;lkl=VR 000 or (fbg=DK 553.3/.9?);Special Geology of Mineral Deposits;
 GEOLEO43430;4;GEOLEO43430;GEOLEO43420;Lagerstättenkunde der Metalle;lkl=VRA 000 or (fbg=DK 553.3? or fbg=DK 553.4?);Geology of Ore Deposits;
 GEOLEO43440;5;GEOLEO43440;GEOLEO43430;Eisen- und Stahlmetalle {Lagerstättenkunde};lkl=VRA 100 or (fbg=DK 553.3? or fbg=DK 553.4?);Iron and Steelmetals {Geology of Ore Deposits};
@@ -5087,7 +5087,7 @@ GEOLEO62720;3;GEOLEO62720;GEOLEO46060;Theoretische Grundlagen. Philosophie;lkl=V
 GEOLEO62730;3;GEOLEO62730;GEOLEO46060;Wissenschaftsorganisation und -Pflege;lkl=VU 200 or ((fbg=DK 550.7) and (fbg=DK 061));Scientific Organization and Development {Geobiology};
 GEOLEO62740;3;GEOLEO62740;GEOLEO46060;Arbeitstechnik. Arbeitsmittel;lkl=VU 300 or ((fbg=DK 550.7?) and (fbg=DK 001.8);Methods and Tools {Geobiology};
 GEOLEO62750;3;GEOLEO62750;GEOLEO46060;Geschichte der Geobiologie;lkl=VU 400 or ((fbg=DK550.7?) and (fbg=DK 93/99));History of Geobiology;
-GEOLEO62760;4;GEOLEO62760;GEOLEO62750;Biographien {Geobiologie};lkl=VU 450 or ((fbg=DK550.7?) and (fbg=DK 93/99));Biographies {Geobiology};
+GEOLEO62755;4;GEOLEO62755;GEOLEO62750;Biographien {Geobiologie};lkl=VU 450 or ((fbg=DK550.7?) and (fbg=DK 93/99));Biographies {Geobiology};
 GEOLEO62760;3;GEOLEO62760;GEOLEO46060;Festschriften {Geobiologie};lkl=VU 500 or (fbg=DK 550.7);Festschrift {Geobiology};
 GEOLEO62770;3;GEOLEO62770;GEOLEO46060;Grenzgebiete. Beziehungen. Einflüsse. Wirkungen;lkl=VU 600 or (fbg=DK 550.7);Scientific Borders, Relationen, Influences, and Effects {Geobiology};
 GEOLEO62780;3;GEOLEO62780;GEOLEO46060;Teilgebiete {Geobiologie};lkl=VUA 000 or (fbg=DK 550.7?);Branches of Geobiology;
