@@ -1,5 +1,5 @@
 PPN;level;GOK;parent;DE;query;EN;
-GEOLEO;0;GEOLEO;Root;System Erde und Weltall;lkl=T 000;GEO-LEO;
+GEOLEO;0;GEOLEO;Root;GEO-LEO;lkl=T 000;GEO-LEO;
 GEOLEO00020;1;GEOLEO00020;GEOLEO;Geographie;(lkl=QA? or lkl=QB? or lkl=QC? or lkl=QD? or lkl=QE? or lkl=QF? or lkl=QG? or lkl=QH? or lkl=QI? or lkl=QJ? or lkl=QK? or lkl=QL?) and (fbg=DK 91?);Geography;
 GEOLEO00030;1;GEOLEO00030;GEOLEO;Karten;(lkl=UQ? or lkl=UR?) or (fbg=DK 912?);Maps;
 GEOLEO00025;1;GEOLEO00025;GEOLEO;Kartographie;(lkl=UT? or lkl=UU? or lkl=UW? or lkl=UY?);;
