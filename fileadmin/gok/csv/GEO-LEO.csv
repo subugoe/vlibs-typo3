@@ -159,12 +159,12 @@ GEOLEO01620;3;GEOLEO01620;GEOLEO01570;Ländliche Siedlungen {Siedlungsgeographie
 GEOLEO01630;4;GEOLEO01630;GEOLEO01620;Haus- und Hofformen {Siedlungsgeographie};lkl=QEN 210 or (fbg=DK 911.373*);House and Farm Types {Urban Geography};
 GEOLEO01640;4;GEOLEO01640;GEOLEO01620;Dorf- und Flurformen {Siedlungsgeographie};lkl=QEN 220 or (fbg=DK 911.373*);Village and Fields Types {Urban Geography};
 GEOLEO01650;4;GEOLEO01650;GEOLEO01620;Strukturveränderungen ländlicher Siedlungen {Siedlungsgeographie};lkl=QEN 230 or (fbg=DK 911.373*);Structural Changes in Rural Settlements {Urban Geography};
-GEOLEO01660;4;GEOLEO01660;GEOLEO01620;Ländliche Planung {Flurbereinigung, Dorfentwicklung}: {Siedlungsgeographie};lkl=QEN 240 or (fbg=DK 911.373*);Rural Planning {Village Development, Land Consolidation} : {Urban Geography};
-GEOLEO01670;3;GEOLEO01670;GEOLEO01570;Zwischen Stadt und Land stehende Siedlungen {Siedlungsgeographie};lkl=QEN 300 or (fbg=DK 911.374*);Communities between Cities and Rural Communities {Quasi-Towns}: {Urban Geography};
+GEOLEO01660;4;GEOLEO01660;GEOLEO01620;Ländliche Planung (Flurbereinigung, Dorfentwicklung) {Siedlungsgeographie};lkl=QEN 240 or (fbg=DK 911.373*);Rural Planning (Village Development, Land Consolidation) {Urban Geography};
+GEOLEO01670;3;GEOLEO01670;GEOLEO01570;Zwischen Stadt und Land stehende Siedlungen {Siedlungsgeographie};lkl=QEN 300 or (fbg=DK 911.374*);Communities between Cities and Rural Communities (Quasi-Towns) {Urban Geography};
 GEOLEO01680;3;GEOLEO01680;GEOLEO01570;Stadtgeographie;lkl=QEN 400 or (fbg=DK 911.375*);Urban Geography {Cities};
 GEOLEO01690;4;GEOLEO01690;GEOLEO01680;Geographischer Stadtbegriff;lkl=QEN 410 or ((fbg=DK 911.375*) and (fbg=DK 801.3*));Geographical City Concept, City Idea {Urban Geography};
 GEOLEO01700;4;GEOLEO01700;GEOLEO01680;Historische Stadtgeographie, Stadtgeschichte;lkl=QEN 420 or ((fbg=DK 911.375*) and (fbg=DK 93/99));Historical Town Planning, Town History {Urban Geography};
-GEOLEO01710;4;GEOLEO01710;GEOLEO01680;Quantitative Stadtgeographie {Stadtmodelle, EDV-gestützte Informationsmodelle};lkl=QEN 430 or (fbg=DK 911.375.3*);Quantitative Urban Geography {Town Models, Computer Modeling};
+GEOLEO01710;4;GEOLEO01710;GEOLEO01680;Quantitative Stadtgeographie (Stadtmodelle, EDV-gestützte Informationsmodelle);lkl=QEN 430 or (fbg=DK 911.375.3*);Quantitative Urban Geography {Town Models, Computer Modeling};
 GEOLEO01720;4;GEOLEO01720;GEOLEO01680;Physiognomie von Städten {Siedlungsgeographie};lkl=QEN 440 or (fbg=DK 911.375.5*);Physiognomy of Towns {Urban Geography};
 GEOLEO01730;4;GEOLEO01730;GEOLEO01680;Allgemeine Funktionen und Raumbeziehungen {Siedlungsgeographie};lkl=QEN 450 or (fbg=DK 911.375.4*);General Functions and Relations {Urban Geography};
 GEOLEO01740;4;GEOLEO01740;GEOLEO01680;Stadtökologie {Siedlungsgeographie};lkl=QEN 455 or (fbg=DK 911.375*);City Ecology {Urban Geography};
@@ -203,7 +203,7 @@ GEOLEO02070;4;GEOLEO02070;GEOLEO02020;Industriegeographie;lkl=QER 500 or ((fbg=Q
 GEOLEO02080;4;GEOLEO02080;GEOLEO02020;Geographie des tertiären Sektors;lkl=QER 600 or ((fbg=QR 500) and (fbg=DK 911*));Geography of the Tertiary Sector;
 GEOLEO02090;4;GEOLEO02090;GEOLEO02020;Geographie der technischen Infrastruktur;lkl=QER 700 or (fbg=QD 200 or fbg=QY 000);Geography of Technical Infrastructure;
 GEOLEO02100;5;GEOLEO02100;GEOLEO02090;Geographie der Informationsvermittlung;lkl=QER 710 or ((fbg=DK 027.021) and (fbg=DK 911*) or (fbg=QR 700));Geography of Information Services;
-GEOLEO02110;5;GEOLEO02110;GEOLEO02090;Entsorgung {Abfall, Abwasser}, Umwelttechnik {Wirtschaftsgeographie};lkl=QER 730 or ((fbg=DK 628*) and (fbg=DK 911*));Waste Disposal, Environmental Engineering {Economic Geography};
+GEOLEO02110;5;GEOLEO02110;GEOLEO02090;Entsorgung (Abfall, Abwasser), Umwelttechnik {Wirtschaftsgeographie};lkl=QER 730 or ((fbg=DK 628*) and (fbg=DK 911*));Waste Disposal, Environmental Engineering {Economic Geography};
 GEOLEO02120;4;GEOLEO02120;GEOLEO02020;Verkehrsgeographie;lkl=QER 800 or ((fbg=DK 656) and (fbg=DK 911*));Traffic Geography;
 GEOLEO02130;4;GEOLEO02130;GEOLEO02020;Fremdenverkehrsgeographie;lkl=QER 900 or ((fbg=QQ 920) and (fbg=DK 911*));Tourism Geography;
 GEOLEO02140;3;GEOLEO02140;GEOLEO02000;Internationale Wirtschaftsbeziehungen {Wirtschaftsgeographie};lkl=QER 930 or (fbg=QM 000 or fbg=QM 000);International Economic Relations {Economic Geography};
@@ -315,7 +315,7 @@ GEOLEO03200;4;GEOLEO03200;GEOLEO03190;Physische Geographie Europas;lkl=QGA 002 o
 GEOLEO03210;4;GEOLEO03210;GEOLEO03190;Kulturgeographie Europas;lkl=QGA 004 or ((fbg=DK 914) and (fbg=DK 911.3*));Cultural Geography of Europe;
 GEOLEO03220;4;GEOLEO03220;GEOLEO03190;Angewandte Geographie Europas;lkl=QGA 006 or ((fbg=DK 914) and (fbg=DK 911*));Applied Geography of Europe;
 GEOLEO03230;4;GEOLEO03230;GEOLEO03190;Teilfragen zu Europa {Geographie};lkl=QGA 008 or ((fbg=DK 914) and (fbg=DK 911*));Particular Questions to Europe;
-GEOLEO03240;4;GEOLEO03240;GEOLEO03190;Westeuropa im Sinn von Kapitalistisches Europa {Geographie};lkl=QGA 100 or ((fbg=DK 914.4* or fbg=DK 914.93* or fbg=DK 914.92* or fbg=DK 914.359* or fbg=DK 914.1* or fbg=DK 914.2*) and (fbg=DK 911*));Western Europe {means: Capitalist Countries} {Geography};
+GEOLEO03240;4;GEOLEO03240;GEOLEO03190;Westeuropa im Sinn von Kapitalistisches Europa {Geographie};lkl=QGA 100 or ((fbg=DK 914.4* or fbg=DK 914.93* or fbg=DK 914.92* or fbg=DK 914.359* or fbg=DK 914.1* or fbg=DK 914.2*) and (fbg=DK 911*));Western Europe (means: Capitalist Countries) {Geography};
 GEOLEO03250;4;GEOLEO03250;GEOLEO03190;Europäische Gemeinschaft {Geographie};lkl=QGA 200 or ((fbg=DK 914) and (fbg=DK 911*));European Community {Geography};
 GEOLEO03260;4;GEOLEO03260;GEOLEO03190;Mitteleuropa {Geographie};lkl=QGB 000 or ((fbg=DK 914.3* or fbg=DK 914.94* or fbg=DK 914.971.2*) and (fbg=DK 911*));Central Europe {Geography};
 GEOLEO03270;5;GEOLEO03270;GEOLEO03260;Deutschland {Geographie};lkl=QGB 100 or ((fbg=DK 914.30* or fbg=DK 914.321) and (fbg=DK 911*));Germany {Geography};
@@ -347,7 +347,7 @@ GEOLEO03520;8;GEOLEO03520;GEOLEO03490;Ems-Hunte-Geest {Geographie};lkl=QGB 234 o
 GEOLEO03530;8;GEOLEO03530;GEOLEO03490;Weser-Aller-Flachland {Geographie};lkl=QGB 235 or ((fbg=DK 914.30SH/HH or fbg=DK 914.30NI/HB or fbg=DK 914.30NW) and (fbg=DK 911*));Weser-Aller-Flachland, Weser-Aller-Lowland {Geography};
 GEOLEO03540;8;GEOLEO03540;GEOLEO03490;Lüneburger Heide {Geographie};lkl=QGB 236 or ((fbg=DK 914.30SH/HH or fbg=DK 914.30NI/HB or fbg=DK 914.30NW) and (fbg=DK 911*));Lüneburg Heath {Geography};
 GEOLEO03550;7;GEOLEO03550;GEOLEO03360;Mittelelbisches Tiefland {Geographie};lkl=QGB 240 or ((fbg=DK 914.30SN or fbg=DK 914.30SA) and (fbg=DK 911*));Mittelelbisches Tiefland, Central Elbe Lowland {Geography};
-GEOLEO03560;8;GEOLEO03560;GEOLEO03550;Mittelelbe-Niederung {Geographie};lkl=QGB 242 or ((fbg=DK 914.30SN or fbg=DK 914.30SA) and (fbg=DK 911*));Mittelelbe-Niederung {Central Elbe Low} {Geography};
+GEOLEO03560;8;GEOLEO03560;GEOLEO03550;Mittelelbe-Niederung {Geographie};lkl=QGB 242 or ((fbg=DK 914.30SN or fbg=DK 914.30SA) and (fbg=DK 911*));Mittelelbe-Niederung (Central Elbe Low) {Geography};
 GEOLEO03570;8;GEOLEO03570;GEOLEO03550;Altmark {Geographie};lkl=QGB 243 or ((fbg=DK 911*) and (fbg=DK 914.30SA));Altmark {Geography};
 GEOLEO03580;8;GEOLEO03580;GEOLEO03550;Magdeburger Börde {Geographie};lkl=QGB 244 or ((fbg=DK 911*) and (fbg=DK 914.30SA));Magdeburger Boerde {Geography};
 GEOLEO03590;8;GEOLEO03590;GEOLEO03550;Sächsische Tieflandsbucht {Geographie};lkl=QGB 245 or ((fbg=DK 914.30SN or fbg=DK 914.321) and (fbg=DK 911*));Saechsische Tieflandsbucht, Saxonian Lowland {Geography};
@@ -702,7 +702,7 @@ GEOLEO07070;5;GEOLEO07070;GEOLEO06920;Bulgarien {Geographie};lkl=QGF 500 or ((fb
 GEOLEO07080;6;GEOLEO07080;GEOLEO07070;Teilfragen zu Bulgarien {Geographie};lkl=QGF 520 or ((fbg=DK 914.972*) and (fbg=DK 911*));Particular Questions of Bulgaria {Geography};
 GEOLEO07090;6;GEOLEO07090;GEOLEO07070;Teilräume von Bulgarien {Geographie};lkl=QGF 550 or ((fbg=DK 914.972*) and (fbg=DK 911*));Particular Regions of Bulgaria {Geography};
 GEOLEO07100;7;GEOLEO07100;GEOLEO07090;Einzelne Orte Bulgariens {Geographie};lkl=QGF 590 or ((fbg=DK 914.961*) and (fbg=DK 911*));Particular Locations of Bulgaria {Geography};
-GEOLEO07110;4;GEOLEO07110;GEOLEO03190;Osteuropa und asiatischer Teil der ehemaligen UDSSR {Geographie};lkl=QGG 000 or ((fbg=DK 915.7* or fbg=DK 914.7*) and (fbg=DK 911*));Eastern Europe and Asian Part of the Former USSR {Soviet Union} {Geography};
+GEOLEO07110;4;GEOLEO07110;GEOLEO03190;Osteuropa und asiatischer Teil der ehemaligen UDSSR {Geographie};lkl=QGG 000 or ((fbg=DK 915.7* or fbg=DK 914.7*) and (fbg=DK 911*));Eastern Europe and Asian Part of the Former USSR (Soviet Union) {Geography};
 GEOLEO07120;5;GEOLEO07120;GEOLEO07110;Physische Geographie Osteuropas;lkl=QGG 010 or ((fbg=DK 915.7* or fbg=DK 914.7*) and (fbg=DK 911.2*));Physical Geography of Eastern Europe and Asian Part of the Former USSR;
 GEOLEO07130;5;GEOLEO07130;GEOLEO07110;Kulturgeographie Osteuropas;lkl=QGG 020 or ((fbg=DK 915.7* or fbg=DK 914.7*) and (fbg=DK 911.3*));Cultural Geography of Eastern Europe and Asian Part of the Former USSR;
 GEOLEO07140;5;GEOLEO07140;GEOLEO07110;Angewandte Geographie Osteuropas {Geographie};lkl=QGG 030 or ((fbg=DK 915.7* or fbg=DK 914.7*) and (fbg=DK 911*));Applied Geography of Eastern Europe and Asian Part of the Former USSR;
@@ -721,7 +721,7 @@ GEOLEO07260;7;GEOLEO07260;GEOLEO07250;Teilräume der ehemaligen Tschechoslowakei
 GEOLEO07270;7;GEOLEO07270;GEOLEO07250;Tschechische Republik mit Sudetenland {Geographie};lkl=QGG 340 or ((fbg=DK 914.371* or fbg=DK 914.372*) and (fbg=DK 911*));Czech Republic and the Sudetes {Geography};
 GEOLEO07280;7;GEOLEO07280;GEOLEO07250;Slowakei {Geographie};lkl=QGG 360 or ((fbg=DK 914.376*) and (fbg=DK 911*));Slovakia {Geography};
 GEOLEO07290;7;GEOLEO07290;GEOLEO07250;Einzelne Orte der ehemaligen Tschechoslowakei {Geographie};lkl=QGG 390 or ((fbg=DK 914.376*) and (fbg=DK 911*));Particular Locations of Former Czechoslovakia {Geography};
-GEOLEO07300;5;GEOLEO07300;GEOLEO07110;Ehemalige UDSSR {Geographie};lkl=QGG 400 or ((fbg=DK 914.470* or fbg=DK 915.7*) and (fbg=DK 911*));Former USSR {Soviet Union} {Geography};
+GEOLEO07300;5;GEOLEO07300;GEOLEO07110;Ehemalige UDSSR {Geographie};lkl=QGG 400 or ((fbg=DK 914.470* or fbg=DK 915.7*) and (fbg=DK 911*));Former USSR (Soviet Union) {Geography};
 GEOLEO07310;6;GEOLEO07310;GEOLEO07300;Physische Geographie der ehemaligen UDSSR;lkl=QGG 410 or ((fbg=DK 914.470* or fbg=DK 915.7*) and (fbg=DK 911.2*));Physical Geography of Former USSR;
 GEOLEO07320;6;GEOLEO07320;GEOLEO07300;Kulturgeographie der ehemaligen UDSSR;lkl=QGG 420 or ((fbg=DK 914.470* or fbg=DK 915.7*) and (fbg=DK 911.3*));Cultural Geography of Former USSR;
 GEOLEO07330;6;GEOLEO07330;GEOLEO07300;Angewandte Geographie der ehemaligen UDSSR;lkl=QGG 430 or ((fbg=DK 914.470* or fbg=DK 915.7*) and (fbg=DK 911*));Applied Geography of Former USSR;
@@ -1100,7 +1100,7 @@ GEOLEO11050;7;GEOLEO11050;GEOLEO10990;Nevada {Geographie};lkl=QGW 920 or ((fbg=D
 GEOLEO11060;7;GEOLEO11060;GEOLEO10990;New Mexico {Geographie};lkl=QGW 930 or ((fbg=DK 917.89*) and (fbg=DK 911*));New Mexico {Geography};
 GEOLEO11070;7;GEOLEO11070;GEOLEO10990;Arizona {Geographie};lkl=QGW 940 or ((fbg=DK 917.91*) and (fbg=DK 911*));Arizona {Geography};
 GEOLEO11080;6;GEOLEO11080;GEOLEO10330;Pazifische Staaten {Geographie};lkl=QGW 950 or ((fbg=DK 917.9*) and (fbg=DK 911*));Pacific Countries {Geography};
-GEOLEO11090;7;GEOLEO11090;GEOLEO11080;Washington {State} {Geographie};lkl=QGW 960 or ((fbg=DK 917.97*) and (fbg=DK 911*));Washington {State} {Geography};
+GEOLEO11090;7;GEOLEO11090;GEOLEO11080;Washington (State) {Geographie};lkl=QGW 960 or ((fbg=DK 917.97*) and (fbg=DK 911*));Washington (State) {Geography};
 GEOLEO11100;7;GEOLEO11100;GEOLEO11080;Oregon {Geographie};lkl=QGW 970 or ((fbg=DK 917.95*) and (fbg=DK 911*));Oregon {Geography};
 GEOLEO11110;7;GEOLEO11110;GEOLEO11080;Kalifornien {Geographie};lkl=QGW 980 or ((fbg=DK 917.94*) and (fbg=DK 911*));California {Geography};
 GEOLEO11120;6;GEOLEO11120;GEOLEO10330;Alaska und Hawaii {Geographie};lkl=QGW 990 or ((fbg=DK 917.98*) and (fbg=DK 911*));Alaska and Hawaii {Geography};
@@ -2169,10 +2169,10 @@ GEOLEO25800;7;GEOLEO25800;GEOLEO25770;Wassergüte der Flüsse {Hydrologie};lkl=U
 GEOLEO25810;7;GEOLEO25810;GEOLEO25770;Verunreinigung der Flüsse {Hydrologie};lkl=UBC 308 or (fbg=DK 504.45.054);River Pollution {Hydrology};
 GEOLEO25820;6;GEOLEO25820;GEOLEO25640;Ökologie der Flüsse {Hydrologie};lkl=UBC 350 or ((fbg=DK 504.45*) and (fbg=DK 556.53*));River Ecology {Hydrology};
 GEOLEO25830;6;GEOLEO25830;GEOLEO25640;Flußmorphologie {Hydrologie};lkl=UBC 400 or ((fbg=DK 551.312.3) and (fbg=DK 556.53* or fbg=DK 556.537 or fbg=DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1 DK 551.435.1));River Morphology {Hydrology};
-GEOLEO25840;7;GEOLEO25840;GEOLEO25830;Praktische Fragen {Meß -, Modellsysteme} {Hydrologie, Flüsse};lkl=UBC 402 or (fbg=DK 556.537);Measurement and Modeling Systems {Hydrology, Rivers};
+GEOLEO25840;7;GEOLEO25840;GEOLEO25830;Praktische Fragen (Meß -, Modellsysteme) {Hydrologie, Flüsse};lkl=UBC 402 or (fbg=DK 556.537);Measurement and Modeling Systems {Hydrology, Rivers};
 GEOLEO25850;7;GEOLEO25850;GEOLEO25830;Fluviatile Erosion {Hydrologie, Flüsse};lkl=UBC 404 or (fbg=DK 551.435.1*);Fluvial Erosion {Hydrology, Rivers};
 GEOLEO25860;7;GEOLEO25860;GEOLEO25830;Fluviatile Akkumulation/Sedimentation {Hydrologie, Flüsse};lkl=UBC 406 or ((fbg=DK 556.53*) and (fbg=DK 551.3.051) or (fbg=DK 551.312.3*));Fluvial Accumulation and Sedimentation {Hydrology, Rivers};
-GEOLEO25870;7;GEOLEO25870;GEOLEO25830;Geschiebe- und Schwebstoff-Führung {Hydrologie, Flüsse};lkl=UBC 408 or ((fbg=DK 556.53*) and (fbg=DK 551.3.051) or (fbg=DK 556.537));Sediment Load {Debris, Suspension...} {Hydrology, Rivers};
+GEOLEO25870;7;GEOLEO25870;GEOLEO25830;Geschiebe- und Schwebstoff-Führung {Hydrologie, Flüsse};lkl=UBC 408 or ((fbg=DK 556.53*) and (fbg=DK 551.3.051) or (fbg=DK 556.537));Sediment Load (Debris, Suspension…) {Hydrology, Rivers};
 GEOLEO25880;6;GEOLEO25880;GEOLEO25640;Flußgebiete {Hydrologie};lkl=UBC 600 or (fbg=DK 556.51 or fbg=DK 556.52);River Basin {Hydrology};
 GEOLEO25890;6;GEOLEO25890;GEOLEO25640;Flußmündungen, Ästuare, Deltas, Fjorde {Hydrologie};lkl=UBC 700 or (fbg=DK 551.435.42 or fbg=DK 551.468.2 or fbg=DK 556.54);River Mouth, Estuary, Delta, Fjord {Hydrology};
 GEOLEO25900;6;GEOLEO25900;GEOLEO25640;Flußtypen {Hydrologie};lkl=UBC 800 or (fbg=DK 556.53);River Types {Hydrology};
@@ -4411,7 +4411,7 @@ GEOLEO40210;6;GEOLEO40210;GEOLEO40140;Gerüstsilikate {Mineralogie};lkl=VHB 870 
 GEOLEO40220;5;GEOLEO40220;GEOLEO40060;Organische Substanzen {Mineralogie};lkl=VHB 900 or (fbg=DK 549.8*);Organic Matter {Mineralogy};
 GEOLEO40230;5;GEOLEO40230;GEOLEO40060;Sonstige Mineralarten im Allgemeinen;lkl=VHC 000 or (fbg=DK 549*);Other Groups {Mineralogy};
 GEOLEO40240;6;GEOLEO40240;GEOLEO40230;Erzminerale {Mineralogie};lkl=VHC 100 or (fbg=DK 549.2* or fbg=DK 549.3* or fbg=DK 549.5* or fbg=DK 549.641* or fbg=DK 549.73* or fbg=DK 549.742.114 or fbg=DK 549.743*);Ore Minerals {Mineralogy};
-GEOLEO40250;7;GEOLEO40250;GEOLEO40240;Untersuchungsverfahren und Ergebnisse { {Mineralogie: Erzminerale};lkl=VHC 110 or (fbg=DK 553.08*);Investigation Methods and Results {Mineralogy: Ore Minerals};
+GEOLEO40250;7;GEOLEO40250;GEOLEO40240;Untersuchungsverfahren und Ergebnisse {Mineralogie: Erzminerale};lkl=VHC 110 or (fbg=DK 553.08*);Investigation Methods and Results {Mineralogy: Ore Minerals};
 GEOLEO40260;7;GEOLEO40260;GEOLEO40240;Struktur und Textur von Erzen {Mineralogie};lkl=VHC 120 or (fbg=DK 622.02* or fbg=DK 553.085 or fbg=DK 553.086);Structure and Texture of Ore {Mineralogy};
 GEOLEO40270;7;GEOLEO40270;GEOLEO40240;Regionale Vorkommen von Erzmineralen {Mineralogie};lkl=VHC 130 or ((fbg=DK 91*) not (fbg=DK 910*) not (fbg=DK 911*) not (fbg=DK 912*) and (fbg=DK 553.04 or fbg=DK 553.3* or fbg=DK 553.4*));Regional Appearance of Ore Minerals {Mineralogy};
 GEOLEO40280;6;GEOLEO40280;GEOLEO40230;Schwerminerale {Mineralogie};lkl=VHC 200 or (fbg=DK 553.068.5);Heavy Minerals {Mineralogy};
