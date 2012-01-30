@@ -1,6 +1,6 @@
 PPN;level;GOK;parent;DE;query;EN;
 GEOLEO;0;GEOLEO;Root;GEO-LEO;lkl=T 000;GEO-LEO;
-GEOLEO00020;1;GEOLEO00020;GEOLEO;Geographie;(lkl=QA? or lkl=QB? or lkl=QC? or lkl=QD? or lkl=QE? or lkl=QF? or lkl=QG? or lkl=QH? or lkl=QI? or lkl=QJ? or lkl=QK? or lkl=QL?) and (fbg=DK 91?);Geography;
+GEOLEO00020;1;GEOLEO00020;GEOLEO;Geographie;(lkl=QA? or lkl=QB? or lkl=QC? or lkl=QD? or lkl=QE? or lkl=QF? or lkl=QG? or lkl=QH? or lkl=QI? or lkl=QJ? or lkl=QK? or lkl=QL?) or (fbg=DK 91?);Geography;
 GEOLEO00030;1;GEOLEO00030;GEOLEO;Karten;(lkl=UQ? or lkl=UR?) or (fbg=DK 912?);Maps;
 GEOLEO00025;1;GEOLEO00025;GEOLEO;Kartographie;(lkl=UT? or lkl=UU? or lkl=UW? or lkl=UY?);;
 GEOLEO00060;2;GEOLEO00060;GEOLEO00020;Geschichte der Geographie;lkl=QA 100 or ((fbg=DK 911?) and (fbg=DK 93/99));History of Geography;
@@ -1456,7 +1456,7 @@ GEOLEO53180;5;GEOLEO53180;GEOLEO53100;Sonnenfackeln;lkl=TGC 540 or (fbg=DK 523.7
 GEOLEO53190;5;GEOLEO53190;GEOLEO53100;Eruptionen, Flares;lkl=TGC 560 or (fbg=DK 523.75);Solar eruptions and flares;
 GEOLEO53200;5;GEOLEO53200;GEOLEO53100;Protuberanzen;lkl=TGC 580 or (fbg=DK 523.75);Solar prominences;
 GEOLEO53140;4;GEOLEO53140;GEOLEO53030;Helioseismologie, Sonnenschwingungen;lkl=TGC 600;Helioseismology, pulsations, and shock waves;
-GEOLEO53120;4;GEOLEO53120;GEOLEO53030;Aufbau der Sonne;lkl=TGC 700 or (fbg=DK 523.74 or fbg=DK 523.75 or or fbg=DK 523.76);Solar structure;
+GEOLEO53120;4;GEOLEO53120;GEOLEO53030;Aufbau der Sonne;lkl=TGC 700 or (fbg=DK 523.74 or fbg=DK 523.75 or fbg=DK 523.76);Solar structure;
 GEOLEO53210;5;GEOLEO53210;GEOLEO53120;Sonneninneres;lkl=TGC 720 or (fbg=DK 523.76);Solar interior;
 GEOLEO53220;5;GEOLEO53220;GEOLEO53120;Sonnenatmosphäre;lkl=TGC 740;Solar atmosphere;
 GEOLEO53230;6;GEOLEO53230;GEOLEO53220;Photosphäre;lkl=TGC 745 or (fbg=DK 523.74);Photosphere;
@@ -1716,8 +1716,8 @@ GEOLEO22440;4;GEOLEO22440;GEOLEO22330;Seismische Verfahren zur Feststellung von 
 GEOLEO22445;4;GEOLEO22445;GEOLEO22330;Auswertung und Darstellung seismischer Daten {Geophysik};lkl=TQC 800 or (fbg=DK 550.834? or fbg=DK 550.832.4);Seismic Data Interpretation {Geophysics};
 GEOLEO22450;3;GEOLEO22450;GEOLEO22300;Elektrische Verfahren {Geophysik};lkl=TQD 000 or (fbg=DK 550.837? or fbg=DK 550.832.7);Electrical Methods {Geophysics};
 GEOLEO22452;4;GEOLEO22452;GEOLEO22450;Radiointerferometrie {Geophysik};lkl=TQD 400 or (fbg=DK 550.837.4);Radiointerferometry {Geophysics};
-GEOLEO22456;4;GEOLEO22456;GEOLEO22450;Magnetotellurik {Geophysik};lkl=TQD 500or (fbg=DK 550.837.73?);Magnetotellurics {Geophysics};
-GEOLEO22458;4;GEOLEO22458;GEOLEO22450;Georadar {Geophysik};lkl=TQD 800or (fbg=DK 550.837.6);Ground Penetrating Radar {Geophysics};
+GEOLEO22456;4;GEOLEO22456;GEOLEO22450;Magnetotellurik {Geophysik};lkl=TQD 500 or (fbg=DK 550.837.73?);Magnetotellurics {Geophysics};
+GEOLEO22458;4;GEOLEO22458;GEOLEO22450;Georadar {Geophysik};lkl=TQD 800 or (fbg=DK 550.837.6);Ground Penetrating Radar {Geophysics};
 GEOLEO22460;3;GEOLEO22460;GEOLEO22300;Isotopengeophysik;lkl=TQE 000 or (fbg=DK 550.835?);Isotope Geophysics {Geophysics};
 GEOLEO22470;3;GEOLEO22470;GEOLEO22300;Geothermische Verfahren {Geophysik};lkl=TQF 000 or (fbg=DK 550.836 or fbg=DK 550.832.6);Geothermal Methods {Geophysics};
 GEOLEO22480;3;GEOLEO22480;GEOLEO22300;Geophysikalische Bohrlochmessungen;lkl=TQG 000 or (fbg=DK 550.832?);Well Logging {Geophysics};
@@ -1836,7 +1836,7 @@ GEOLEO22638;5;GEOLEO22638;GEOLEO22630;Indonesien {Geophysik};lkl=TSJ 300;Indones
 GEOLEO22640;4;GEOLEO22640;GEOLEO22610;Zentralasien. Hochasien {Geophysik};lkl=TSK 000 or ((fbg=DK 915.75? or fbg=DK 915.74? or fbg=DK 915.81? or fbg=DK 915.17? or fbg=DK 915.15?) and (fbg=DK 550.3? or fbg=DK 550.83?));Central Asia {Geophysics};
 GEOLEO22650;4;GEOLEO22650;GEOLEO22610;Ostasien {Geophysik};lkl=TSL 000 or ((fbg=DK 915.1? or fbg=DK 915.2?) and (fbg=DK 915?));East Asia {Geophysics};
 GEOLEO22900;5;GEOLEO22900;GEOLEO22650;China {Geophysik};lkl=TSL 100 or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 915.10?));China {Geophysics};
-GEOLEO22902;5;GEOLEO22902;GEOLEO22650;Taiwan {Geophysik};lkl=TSL 200or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 915.29?));Taiwan {Geophysics};
+GEOLEO22902;5;GEOLEO22902;GEOLEO22650;Taiwan {Geophysik};lkl=TSL 200 or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 915.29?));Taiwan {Geophysics};
 GEOLEO22906;5;GEOLEO22906;GEOLEO22650;Korea {Geophysik};lkl=TSL 400 or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 915.19?));Korea {Geophysics};
 GEOLEO22908;5;GEOLEO22908;GEOLEO22650;Japan {Geophysik};lkl=TSL 500 or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 915.2?));Japan {Geophysics};
 GEOLEO22660;3;GEOLEO22660;GEOLEO22530;Afrika insgesamt {Geophysik};lkl=TSM 000 or ((fbg=DK 550.3? or fbg=DK 550.83?) and (fbg=DK 916?));Africa as a Whole {Geophysics};
@@ -1991,7 +1991,7 @@ GEOLEO23990;5;GEOLEO23990;GEOLEO23970;Wolken {Meteorologie};lkl=TVL 320 or (fbg=
 GEOLEO24000;5;GEOLEO24000;GEOLEO23970;Niederschläge insgesamt {Meteorologie};lkl=TVL 330 or (fbg=DK 551.577?);Precipitation in General {Meteorology};
 GEOLEO24010;5;GEOLEO24010;GEOLEO23970;Besondere Niederschlagsarten {Meteorologie};lkl=TVL 340 or (fbg=DK 551.578?);Special Types of Precipitation {Meteorology};
 GEOLEO24020;6;GEOLEO24020;GEOLEO24010;Regen, Sprühregen, Nieseln {Meteorologie};lkl=TVL 341 or (fbg=DK 551.578.1);Rainfall, Drizzly, and Sprinkle {Meteorology};
-GEOLEO24030;6;GEOLEO24030;GEOLEO24010;Schnee, Graupeln, Eisnadeln {Meteorologie};lkl=TVL 342 or (fbg=DK 551.578.4 ?);Snowfall, Soft Hail, and Frazil Ice {Meteorology};
+GEOLEO24030;6;GEOLEO24030;GEOLEO24010;Schnee, Graupeln, Eisnadeln {Meteorologie};lkl=TVL 342 or (fbg=DK 551.578.4?);Snowfall, Soft Hail, and Frazil Ice {Meteorology};
 GEOLEO24040;6;GEOLEO24040;GEOLEO24010;Hagel {Meteorologie};lkl=TVL 343 or (fbg=DK 551.578.7);Hail {Meteorology};
 GEOLEO24050;5;GEOLEO24050;GEOLEO23970;Dürren {Meteorologie};lkl=TVL 350 or (fbg=DK 551.577.3);Drought {Meteorology};
 GEOLEO24060;4;GEOLEO24060;GEOLEO23940;Hydrometeorologie;lkl=TVL 400 or (fbg=DK 551.579?);Hydrometeorology;
@@ -5085,7 +5085,7 @@ GEOLEO46059;5;GEOLEO46059;GEOLEO46050;Südpolarmeer {Rohstoffgeologie};lkl=VTZ 5
 GEOLEO46060;2;GEOLEO46060;GEOLEO00040;Geobiologie;lkl=VU 000 or (fbg=DK 550.7);Geobiology as a Whole;
 GEOLEO62720;3;GEOLEO62720;GEOLEO46060;Theoretische Grundlagen. Philosophie;lkl=VU 100 or ((fbg=DK 550.7) and (fbg=DK 001.5?));Theoretical Fundamentals and Philosophy {Geobiology};
 GEOLEO62730;3;GEOLEO62730;GEOLEO46060;Wissenschaftsorganisation und -Pflege;lkl=VU 200 or ((fbg=DK 550.7) and (fbg=DK 061));Scientific Organization and Development {Geobiology};
-GEOLEO62740;3;GEOLEO62740;GEOLEO46060;Arbeitstechnik. Arbeitsmittel;lkl=VU 300 or ((fbg=DK 550.7?) and (fbg=DK 001.8);Methods and Tools {Geobiology};
+GEOLEO62740;3;GEOLEO62740;GEOLEO46060;Arbeitstechnik. Arbeitsmittel;lkl=VU 300 or ((fbg=DK 550.7?) and (fbg=DK 001.8));Methods and Tools {Geobiology};
 GEOLEO62750;3;GEOLEO62750;GEOLEO46060;Geschichte der Geobiologie;lkl=VU 400 or ((fbg=DK550.7?) and (fbg=DK 93/99));History of Geobiology;
 GEOLEO62755;4;GEOLEO62755;GEOLEO62750;Biographien {Geobiologie};lkl=VU 450 or ((fbg=DK550.7?) and (fbg=DK 93/99));Biographies {Geobiology};
 GEOLEO62760;3;GEOLEO62760;GEOLEO46060;Festschriften {Geobiologie};lkl=VU 500 or (fbg=DK 550.7);Festschrift {Geobiology};
@@ -5632,7 +5632,7 @@ GEOLEO51240;5;GEOLEO51240;GEOLEO51190;Indischer Ozean {Paläontologie};lkl=VZZ 2
 GEOLEO51250;5;GEOLEO51250;GEOLEO51190;Pazifischer Ozean {Paläontologie};lkl=VZZ 300 or ((fbg=DK 56?) and (fbg=DK 913(265?));Pacific Ocean {Paleontology};
 GEOLEO51260;5;GEOLEO51260;GEOLEO51190;Nordpolarmeer {Paläontologie};lkl=VZZ 400 or ((fbg=DK 56?) and (fbg=DK 913(268?));Arctic Ocean {Paleontology};
 GEOLEO51270;5;GEOLEO51270;GEOLEO51190;Südpolarmeer {Paläontologie};lkl=VZZ 500 or ((fbg=DK 56?) and (fbg=DK 913(269?));Antarctic Ocean {Paleontology};
-GEOLEO00050;1;GEOLEO00050;GEOLEO;Montanwissenschaften;lkl=ZU? Or ZM?;Mining;
+GEOLEO00050;1;GEOLEO00050;GEOLEO;Montanwissenschaften;lkl=ZU? Or lkl=ZM?;Mining;
 GEOLEO60000;2;GEOLEO60000;GEOLEO00050;Metallurgie, Metallhüttenkunde;lkl=ZME 000 or (fbg=DK 669?);Metallurgy;
 GEOLEO60010;3;GEOLEO60010;GEOLEO60000;Metallgewinnung {Technik: Metallurgie};lkl=ZME 200 or (fbg=DK 621.357? or fbg=DK 669.053? or fbg=DK 669.061? or fbg=DK 669.054? or (fbg=DK 628.477 and fbg=DK 669?) or (fbg=DK 504? and fbg=DK 669?));Extractive Metallurgy;
 GEOLEO60020;4;GEOLEO60020;GEOLEO60010;Elektrometallurgie {Technik: Metallurgie};lkl=ZME 220 or (fbg=DK 621.357?);Electrical Metallurgy;
