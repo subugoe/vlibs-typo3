@@ -11,7 +11,7 @@ lib.menu {
   1.NO = 1
   1.NO.wrapItemAndSub = <li class="first">|</li>|*|<li>|</li>|*|<li class="last">|</li>
   1.CUR = 1
-  1.CUR.wrapItemAndSub = <li class="first current">|</li>|*|<li class="current"><a>|</a></li>|*|<li class="current last"><a>|</a></li>
+  1.CUR.wrapItemAndSub = <li class="first current"><a>|</a></li>|*|<li class="current"><a>|</a></li>|*|<li class="current last"><a>|</a></li>
   1.CUR.doNotLinkIt = 1
   1.ACT = 1
   1.ACT.wrapItemAndSub = <li class="first currentParent">|</li>|*|<li class="currentParent">|</li>|*|<li class="currentParent last">|</li>
