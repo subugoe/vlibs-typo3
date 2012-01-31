@@ -63,7 +63,7 @@ $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 		'segTitleFieldList' => 'tx_realurl_pathsegment,nav_title,title',
 		'languageGetVar' => 'L',
 		'expireDays' => 3,
-		'rootpage_id' => '12',
+		'rootpage_id' => '2',
 	)
 );
 
