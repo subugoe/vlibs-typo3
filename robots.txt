@@ -10,8 +10,12 @@ Disallow: /nationallizenzen/suche/
 Disallow: /en/nationallizenzen/journal/
 Disallow: /en/nationallizenzen/search/
 
-# Disallow test path
+# Disallow pazpar2 proxy
 Disallow: /pazpar2/
+
+# Disallow ZDB proxy
+Disallow: /zdb/
+Disallow: /zdb-local/
 
 # Disallow TYPO3 backend
 Disallow: /typo3/
