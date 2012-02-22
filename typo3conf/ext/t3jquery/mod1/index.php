@@ -1121,17 +1121,17 @@ jQuery(document).ready(function() {
 <table id="download-options">
 	<tr class="radio">
 		<td class="check">
-			<input type="radio" id="compression_packer" name="compression" value="packer" '.($formVars['compression'] == 'packer' || ! $formVars['compression'] ? 'checked="checked"' : '').' />
-		</td>
-		<td class="name"><label for="compression_packer">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.packer.name').'</label></td>
-		<td class="description">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.packer.description').'</td>
-	</tr>
-	<tr class="radio">
-		<td class="check">
-			<input type="radio" id="compression_jsmin" name="compression" value="jsmin" '.($formVars['compression'] == 'jsmin' ? 'checked="checked"' : '').' />
+			<input type="radio" id="compression_jsmin" name="compression" value="jsmin" '.($formVars['compression'] == 'jsmin' || ! $formVars['compression'] ? 'checked="checked"' : '').' />
 		</td>
 		<td class="name"><label for="compression_jsmin">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.jsmin.name').'</label></td>
 		<td class="description">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.jsmin.description').'</td>
+	</tr>
+	<tr class="radio">
+		<td class="check">
+			<input type="radio" id="compression_packer" name="compression" value="packer" '.($formVars['compression'] == 'packer' ? 'checked="checked"' : '').' />
+		</td>
+		<td class="name"><label for="compression_packer">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.packer.name').'</label></td>
+		<td class="description">'.$this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:jquery.compression.packer.description').'</td>
 	</tr>
 	<tr class="radio">
 		<td class="check">
