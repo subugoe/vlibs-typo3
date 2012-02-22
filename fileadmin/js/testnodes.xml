@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<nodes>
+
+	<li><a class="plus" href="#">00</a> Foundations
+	  <ul id="00">
+		<li><a class="plus" href="recherche">00-XX</a><a href="#">General</a>
+		</li>
+		<li><a  class="plus" href="recherche">05-XX</a><a href="#">Combinatorics</a></li>
+	  </ul>
+	</li>
+	<li><a class="plus" href="#">01-XX</a> Algebra
+		<ul  id="01-XX">
+			<li><a class="plus" href="#">11-00</a> Number theory
+			<ul  id="11-00">
+				<li>11-00 Number theory</li>
+				<li>14-XX<a href="#">Algebraic geometry</a></li>
+		</ul>
+		</li>
+		<li><a href="#">14-XX</a>Algebraic geometry</li>
+	</ul>
+	</li>
+	<li><a class="plus" href="#">11-00</a> Number theory
+		<ul  id="11-01">
+			<li><a href="recherche">11-01</a>General reference works (handbooks, dictionaries, bibliographies, etc.)</li>
+			<li><a href="recherche">11-02</a>some text</li>
+		
+		<li>11Axx Elementary number theory</li>
+		</ul>
+	</li>
+	<li><a class="plus" href="#">14-XX Algebraic geometry</a>
+		<ul  id="14-XX">
+		<li><a href="recherche">11Hxx</a><span>Geometry of numbers</span></li>
+		<li><a href="recherche">01A05</a><span>General histories, source books</span></li>
+	</ul>
+	</li>
+	<li><a class="plus" href="#">02-XX</a>Analysis
+		<ul  id="02-XX">
+		<li><a href="recherche">22-XX</a><span>Topological groups, Lie groups</span></li>
+		<li><a href="recherche">30-XX</a><span>Functions of a complex variable</span></li>
+	</ul>
+	</li>
+	<li>
+		<a class="plus" href="#">03</a> Geometry
+	  <ul id="03">
+		<li><a class="plus" href="#">52-00</a><span>Convex and discrete geometry</span></li>
+		<li><a href="recherche">54-XX</a><span>Differential geometry</span></li>
+		<li><a class="plus" href="#">54-XX</a><span>General topology</span></li>
+		<li><a href="recherche">55-XX</a><span>Algebraic topology</span></li>
+	</ul>
+	</li>
+</nodes>

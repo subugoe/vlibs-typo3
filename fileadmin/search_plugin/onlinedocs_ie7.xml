@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>ViFaMATH Online Documents Search</ShortName> 
+    <Description>Search in online Documents of the virtual library of mathematics</Description> 
+    <InputEncoding>UTF-8</InputEncoding> 
+    <Image height="16" width="16" type="image/png">http://vifamath.de/fileadmin/search_plugin/vifamath.png</Image>
+    <Url type="text/html" template="http://vifamath.de/online-dokumente/ergebnisse/?query={searchTerms}&amp;request=wait&amp;searchField=any&amp;domain=Dome&amp;dbgroup=journal&amp;frame=VifaXML&amp;from_splug=true"/> 
+  </OpenSearchDescription>

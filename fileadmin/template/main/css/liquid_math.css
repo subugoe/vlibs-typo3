@@ -1,0 +1,554 @@
+/* reset all styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+/* general settings */
+h1,h2,h3,h4,h5,h6 { 
+
+  	font-family:"times new roman",times,serif; 
+
+  	font-weight:bold; 
+
+  	color: #182e7a;
+
+
+  	margin: 0 0 0.25em 0; 
+
+  }
+
+
+
+  h1 { font-size: 200% }                        /* 24px */
+
+  h2 { font-size: 200%; color:#182E7A}          /* 24px */
+
+  h3 { font-size: 150% }                        /* 18px */
+
+  h4 { font-size: 133.33% }                     /* 16px */
+
+  h5 { font-size: 116.67% }                     /* 14px */
+
+  h6 { font-size: 116.67%; font-style:italic }  /* 14px */
+
+
+
+/*   */
+
+body
+
+{
+	
+
+	margin: 0 auto;
+
+	padding: 0;
+
+	color: #444;
+
+	background: #fff;
+
+	font: 85%/1.4 arial, helvetica, sans-serif;
+
+}
+
+
+#container { 
+	margin: auto;
+	width: 99%;
+
+	min-width: 500px;
+
+	}
+
+#header {
+
+	
+	height: 120px;
+
+
+	background: url(/fileadmin/template/vifamath/banner.jpg) repeat-y 0;
+
+	background-color: #c9cdff;
+
+	margin: 0;
+
+	min-width: 500px;
+
+	/*max-width: 1000px;*/
+
+}
+
+
+#quicksearch {
+
+margin-right: 15px;
+text-align: right;
+padding: 20px 10px;
+
+}
+
+#searchform {
+
+
+	
+
+}
+#head_navigation {
+text-align: right;
+margin-right: 15px;
+	padding: 15px 10px;
+
+}
+
+#teaser { height: 30px;
+	  padding-left: 1%;
+	  margin: 0;
+	
+
+	}
+.breadcrumb {
+float: left;
+
+}
+.langMenu {
+float:right;
+right: 1%;
+}
+
+
+
+#left {
+	float:left;
+
+	width: 11em;
+	
+
+}
+
+#left-content { margin: 10px;
+		padding-left: 1%;
+		font-size: 0.7em;
+		
+		}
+
+#left-menu {	
+		
+
+		margin: 0;
+
+		padding: 0px 5px 5px 2px;
+
+
+}
+
+#left-menu ul {
+
+	margin: 0;
+
+	padding: 0;
+
+	overflow: hidden;
+
+	list-style-type: none;
+
+}
+
+
+
+#left-menu ul a {
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	font-size: 0.8em;
+
+	text-decoration: none;
+
+	display: block;
+
+}
+
+
+
+#left-menu ul li {
+
+	display: block;
+
+	padding: 0;
+
+	margin: 0;
+
+	background: #f1f1f1;
+
+}
+
+
+
+
+#left-menu li.left-level-1-no, #left-menu li.left-level-1-act {
+
+	height: auto;
+
+	text-decoration: none;
+
+	display: block;
+
+	padding: 3px 6px 3px 5px;
+
+	background: #3388dd;
+
+	color: #FFFFFF;
+
+	border-top-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-top-style: solid;
+
+	border-bottom-style: solid;
+
+	border-top-color: #FFFFFF;
+
+	border-bottom-color: #FFFFFF;
+	
+	font-size: 0.875em;
+
+}
+
+
+
+#left-menu li.left-level-2-no a {
+
+	height: auto;
+
+	text-decoration: none;
+
+	display: block;
+
+	padding: 3px 6px 3px 10px;
+
+	background: #f1f1f1;
+
+	color: #330099;
+
+	border-top-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-top-style: solid;
+
+	border-bottom-style: solid;
+
+	border-top-color: #FFFFFF;
+
+	border-bottom-color: #FFFFFF;
+
+}
+
+
+
+#left-menu li.left-level-2-no a:hover {
+
+	height: auto;
+
+	text-decoration: none;
+
+	display: block;
+
+	padding: 3px 6px 3px 10px;
+
+	/*background: #2e6399;*/
+
+	color: #330099;
+
+	background-color: #cccccc;
+
+	border-top-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-top-style: solid;
+
+	border-bottom-style: solid;
+
+	border-top-color: #FFFFFF;
+
+	border-bottom-color: #FFFFFF;
+
+}
+
+#left-menu li.left-level-2-act a {
+	height: auto;
+
+	text-decoration: none;
+
+	display: block;
+
+	padding: 3px 6px 3px 10px;
+
+	/*background: #2e6399;*/
+
+	font-weight: bold;
+
+	color: #330099;
+
+	border-top-width: 1px;
+
+	border-bottom-width: 1px;
+
+	border-top-style: solid;
+
+	border-bottom-style: solid;
+
+	border-top-color: #FFFFFF;
+
+	border-bottom-color: #FFFFFF;
+
+}
+
+#main-content {
+
+
+	float: left;
+
+	width: 70%;
+
+	margin: 0 4% 0 4%;
+
+	/*display: inline;*/
+
+	padding-bottom: 1em;
+
+
+
+}
+	
+
+}
+
+
+#footer {
+	
+}
+
+#footer-box {}
+
+#footer-text {text-align: center;}
+
+.cleaner {
+	clear:both;
+
+	height: 1px;
+
+	font-size: 1px;
+
+	line-height: 0px;
+
+	display: block;
+
+	/*visibility: hidden;*/
+
+	border: 0; 
+
+	padding: 0;
+
+	margin: -1.0em 0 0 0;
+
+	background: transparent;
+border: 1px #646464 solid;
+}
+
+#head_navigation a {
+
+text-decoration: none;
+
+
+
+font-size: 80%;
+
+
+
+margin-right: 0px;
+
+
+
+margin-bottom: 1px;
+
+
+
+margin-left: 0px;
+
+
+
+padding-top: 0px;
+
+
+
+padding-right: 3px;
+
+
+
+padding-bottom: 0px;
+
+
+
+padding-left: 3px;
+
+
+
+border-top-width: 1px;
+
+
+
+border-right-width: 1px;
+
+
+
+border-bottom-width: 1px;
+
+
+
+border-left-width: 1px;
+
+
+
+border-top-style: solid;
+
+
+
+border-right-style: solid;
+
+
+
+border-bottom-style: solid;
+
+
+
+border-left-style: solid;
+
+
+
+border-top-color: #999999;
+
+
+
+border-right-color: #999999;
+
+
+
+border-bottom-color: #999999;
+
+
+
+border-left-color: #999999;
+
+
+
+margin-top: 10px;
+
+
+
+background-color: #fff;
+
+
+
+color: #330099;
+
+
+
+}
+
+
+
+
+
+#head_navigation a:hover {
+
+
+
+background-color:#3388dd;
+
+
+
+color: #fff;
+
+
+
+text-decoration: none;
+
+}
+tx-ezbrequest-pi1 {
+
+	color: #182e7a;
+
+}
+
+
+
+#journal_list a{
+
+	font-size:0.8em;
+
+	color: #666;
+	
+	text-decoration: none;
+
+}
+
+	
+
+#jourItem {
+
+	font-size: 0.9em;
+
+}
+
+
+.clear {clear: both;}
+
+#main-content div {
+padding-bottom: 5px;
+}
+

@@ -1,0 +1,323 @@
+/* 
+	SSG-FI Cascading Style Sheet
+	validated as CSS by
+	http://jigsaw.w3.org/css-validator/validator-uri.html
+	Version 0.4, Alexander Huber (SSG-FI)
+*/
+
+
+BODY	{background-color: #FFFFFF ;
+	margin-left: 5pt;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+DIV	{font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.fuss	{color: black;
+	font-weight: normal;
+	font-size: 8pt;
+	font-family: arial, helvetica, sans-serif;
+	text-align: center}
+
+
+/* Überschriften */
+
+H1	{color: #006699;
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+H2	{font-size: 12pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+H3	{font-size: 12pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+H4	{font-size: 11pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+
+/* Dokumentauszeichungen */
+
+.colag	{background-color:#fcecd2;
+         margin-left: 0em }
+
+#red	{color:red; }
+#white	{color:white; }
+#gray	{color:#bbbbbb; }
+#bold	{font-weight:bold; }
+
+.blau	{color: #006699}
+.rot	{color: #CC3300}
+
+.justme	{font-size:10pt;
+	line-height:11pt; 
+	text-align:justify ;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.left{
+	text-align:left;
+	vertical-align:top;
+}
+
+.right{
+	text-align:right;
+	vertical-align:top;
+}
+
+.center{
+	text-align:center;
+	vertical-align:top;
+}
+
+.small	{font-size:8pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.normal	{font-size:10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.large	{font-size:11pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.Large	{font-size:12pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.LARGE	{font-size:14pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.fuss	{font-size: 8pt;
+	text-align: center;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.unter	{font-size: 11pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+
+ADDRESS	{font-style: italic ;
+		font-weight: normal;
+		font-size: 10pt;
+		font-family: Arial, Helvetica, Sans-Serif }
+
+XP	{color: black;
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+P	{
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+B	{
+	font-weight: bold;}
+	
+/* 	font-size: 10pt;font-family: Arial, Helvetica, Sans-Serif  */
+
+/* Listen */
+
+INPUT	{font-size: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+TEXTAREA	{font-size: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+SELECT	{font-size: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+OPTION	{font-size: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.Range {font-size: 10pt;
+	border-style: none;
+	background-color: #FFFFFF;
+	color: #993333}
+
+DL	{font-size: 10pt;
+	margin-left: 5pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+UL	{font-size: 10pt;
+	margin-top: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+DIR	{font-size: 10pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+OL	{font-size: 10pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+LI	{font-size: 10pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+PRE	{font-size: 10pt;
+	font-family: Arial, Helvetica, Sans-Serif }
+ 
+uebersicht	{font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+
+.open {
+	color: #006699;
+	list-style-type: none;
+}
+	
+.navi{
+	list-style-type: none;
+/*
+	border-style: solid;
+	border-width: thin; 
+*/
+	margin: 1pt 0pt 0pt 0pt;
+	padding-left: .7em;
+}
+
+.list{
+	list-style-type: none;
+	margin: 0pt;
+	padding-left: 1.9em;
+}
+
+.closed {
+	color: #006699;
+	list-style-type: none;
+}
+	
+.none {
+	color: #006699;
+	list-style-type: none;
+}
+
+/* Navigation */
+
+.zurueck	{
+	font-weight: normal;
+	font-size: 8pt;
+	text-align: center ;
+	font-family: Arial, Helvetica, Sans-Serif
+}
+
+
+/* Absätze */
+
+.text	{font-weight: normal;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+.ind0 {text-indent: 0pt; Margin-top:0pt}
+.ind1 {text-indent: 10pt; Margin-top:0pt}
+.ind2 {text-indent: 20pt; Margin-top:0pt}
+.ind3 {text-indent: 30pt; Margin-top:0pt}
+.ind4 {text-indent: 40pt; Margin-top:0pt}
+.ind5 {text-indent: 50pt; Margin-top:0pt}
+.ind6 {text-indent: 60pt; Margin-top:0pt}
+
+.right {text-align: right;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.left {text-align: left;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.center	{text-align: center;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.justify {text-align: justify;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+
+
+/* Zeichen */
+
+.gesperrt	{letter-spacing: 0.2em ;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+.kapital	{text-transform: capitalize ;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+TT	{font-weight: normal;
+	font-family: "courier new", courier, monospace }
+	
+I	{font-weight: normal;
+	font-style: italic;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+EM	{font-weight: normal;
+	font-size: 10pt;
+	font-style: italic ;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+B	{font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+	
+STRONG	{font-weight: bold;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+
+/* Tabellen */
+
+TABLE	{padding-left: 5pt;
+	font-size: 10pt;
+	font-family: arial, helvetica, sans-serif }
+
+TR	{background-color: #FFFFFF}
+
+TH	{text-align: left;
+	vertical-align: top;
+	font-size: 10pt;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+TH.HEAD	{padding-top: 0pt;
+	font-size: 10pt;
+	background-color: #DDDDDD }
+
+.HEAD	{padding-top: 0pt;
+	font-size: 10pt;
+	background-color: #DDDDDD }
+
+TD	{color: black;
+	font-weight: normal;
+	font-size: 10pt;
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, Sans-Serif }
+
+TH.center	{text-align: center}
+
+.t1	{font-weight: bold}
+
+.t2	{color: black;
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: arial, helvetica, sans-serif }
+	
+.t3	{color: black;
+	font-weight: normal;
+	font-size: 10pt;
+	font-family: arial, helvetica, sans-serif }
+
+	/* Für TeX */
+TEX	{letter-spacing: -0.1em }
+SPAN.tex	{letter-spacing: -0.1em }
+LOW {vertical-align: -20%}
+SPAN.low {vertical-align: -20%}
+
+A:link	{color:#993333; text-decoration:none; }
+A:visited	{color:#666666; text-decoration:none; }
+/* A:visited	{color:#000066; text-decoration:none; }*/
+A:active	{text-decoration:none; }
+A:hover	{color:#CC0033; }
+A.external:hover	{color:#3300FF; }

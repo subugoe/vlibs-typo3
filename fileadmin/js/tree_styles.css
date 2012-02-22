@@ -1,0 +1,42 @@
+#tree {
+font-size: 0.9em;
+}
+
+#tree ul {
+	font: tahoma; font-weight: bold;
+	margin-left: 1.5em;
+}
+#tree ul li span.verbal {
+	text-decoration: none;  font: tahoma; font-weight: normal; color: #4d87c7;
+}
+
+#tree ul a.plus, #tree ul a.minus{
+	text-decoration: none;  font: tahoma; color: #182e7a; font-weight: bold;
+}
+
+ #tree ul a.leaf {
+	font: tahoma; 
+	font-weight: bold;
+	color: #585858;
+}
+
+ #tree ul li a.docs {
+	font: tahoma; 
+	font-weight: normal;
+	color: #585858;
+}
+
+li 
+
+{
+
+margin-left: 1.5em;
+
+line-height: 1.5em;
+
+}
+
+#msc-search {
+	position: fixed;
+	top: 150px;
+}

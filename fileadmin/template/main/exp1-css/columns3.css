@@ -1,0 +1,183 @@
+
+#left-menu-box {
+
+	margin: 0;
+
+	padding: 6px 6px 0 6px;
+
+}
+
+
+
+#middle-marker-box, #right-marker-box {
+
+	margin: 6px;
+
+	padding: 0;
+
+}
+
+
+
+#left-marker-box  {
+
+	margin: 0 6px;
+
+	padding: 0;
+
+}
+
+
+
+#left-marker, #middle-marker, #right-marker {
+
+	margin: 0;
+
+	padding: 6px;
+
+}
+
+
+
+#left, #middle, #right, #inner-content-wrapper {
+
+	position: relative;
+
+	overflow: visible;
+
+}
+
+
+
+#inner-content-wrapper {
+
+	float: left;
+
+	margin: 0;
+
+	width: 756px;
+
+}
+
+
+
+#left {
+
+	float: left;
+
+	width: 150px;
+
+	z-index: 4;
+
+	background: #FFFFFF;
+
+}
+
+
+
+#left-content {
+
+/*	position: relative;
+
+	z-index: 5;*/
+
+	width: 150px;
+
+}
+
+
+
+#middle {
+
+	float: right;
+
+	width: 570px;
+
+	z-index: 2;
+
+	background: #FFFFFF;
+
+}
+
+
+
+#middle-content {
+
+/*	position: relative;
+
+	z-index: 3;*/
+
+	width: 560px;
+
+}
+
+
+
+#right {
+
+	float: right;
+
+	width: 252px;
+
+	z-index: 6;
+
+	background: #FFFFFF;
+
+}
+
+
+
+#right-content {
+
+/*	position: relative;
+
+	z-index: 7;*/
+
+	width: 252px;
+
+}
+
+
+
+#header, #outer-wrapper, #footer {
+
+	width: 1008px;
+
+}
+
+
+
+#header-img {
+
+	width: 996px;
+
+}
+
+
+
+.cleaner {
+
+	clear:both;
+
+/*	float: left;*/
+
+	height: 1px;
+
+	font-size: 1px;
+
+	line-height: 0px;
+
+	display: block;
+
+	visibility: hidden;
+
+	border: 0; 
+
+	padding: 0;
+
+	margin: -1.0em 0 0 0;
+
+	background: transparent;
+
+}
+

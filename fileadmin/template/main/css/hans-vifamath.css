@@ -1,0 +1,165 @@
+/* 
+   ViFaMATH Cascading Style Sheet for HANS db
+   yet to be validated as CSS by
+   http://jigsaw.w3.org/css-validator/validator-uri.html
+   
+   derived from:  http://www.sub.uni-goettingen.de/hans/css/hans-subg.css
+		SSG-FI Cascading Style Sheet
+		validated as CSS by
+		http://jigsaw.w3.org/css-validator/validator-uri.html
+		Version 0.4, Alexander Huber (SSG-FI)
+*/
+
+
+	/* HANS */
+/* $Id: hans-vifamath.css 427 2007-07-27 14:16:37Z vifamath $ */
+
+div.hans_record, div.hans_record div, div.hans_record div p { 
+/*
+	font-size: 11px;
+*/
+}
+
+div.hans_record { 
+	border-top: 1px solid black;
+	padding-top: 12px;
+	padding-bottom: 12px;
+}
+
+
+p.hans_hangindent {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	/* text-indent: -20px; */
+}
+
+p.hans_indent {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+}
+
+p.hans_noindent {
+  	margin-top: 0px; 
+  	margin-bottom: 0px; 
+  	margin-left: 0px; 
+  	text-indent: 0px; 
+}
+
+p.hans_halfhangindent {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 40px;
+	/* text-indent: -20px; */
+}
+
+p.hans_right {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: right;
+}
+
+span.hans_wendung {
+/*  font-style: italic; */
+	font-style: oblique;
+/*  	letter-spacing: 0.1em; */
+}
+
+span.hans_strong {
+	font-style: bold;
+}
+
+div.hans_superkopf {
+	margin-right: 80px;
+}
+div.hans_record div.hans_superkopf {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+div.hans_signatur {
+/*	margin-bottom: -4px; */
+	margin-right: 10px;
+	text-align: right;
+}
+div.hans_signatur p:first-child {
+/* CSS2 */
+	font-weight: bold;
+}
+div.hans_signatur span.hans_wendung {
+	letter-spacing: 0em;
+	font-weight: normal;
+/*	  display: none; */
+}
+
+/* yes: kein p im Kopf */
+div.hans_kopf:first-line {
+	font-weight: bold;
+}
+
+div.hans_vorlage {
+}
+div.hans_datierung {
+/*  text-indent: 18px; */
+}
+div.hans_quelle {
+	margin-top: 2px;
+}
+
+div.hans_fussnot {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+div.hans_record div.hans_fussnot p {
+	margin-top: 4px;
+}
+div.hans_record div.hans_fussnot p.hans_indent {
+	margin-top: 0px;
+}
+
+div.hans_fussnum {
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+div.hans_fussnum p {
+	margin-top: 2px;
+}
+
+div.hans_unterstract {
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+div.hans_record div.hans_unterstract p {
+	margin-bottom: 4px;
+/* text-align: justify; */
+	font-size: 10px;
+}
+
+div.hans_inhklass {
+	margin-top: 2px;
+}
+
+div.hans_inhschlag {
+	margin-top: 8px;
+}
+div.hans_inhschlag p.hans_halfhangindent {
+	margin-top: 2px;
+	margin-left: 60px;
+	/* text-indent: -20px; */
+}
+
+div.hans_inhquel {
+	margin-top: 2px;
+}
+
+div.hans_linkperkwww p.hans_halfhangindent {
+	margin-top: 2px;
+	margin-left: 60px;
+	/* text-indent: -30px; */
+	display: list-item;
+	list-style-type: square;
+	list-style-position: inside;
+}

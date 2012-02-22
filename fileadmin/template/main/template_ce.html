@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet href="#internalStyle" type="text/css"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Base template, header, menu, content and footer.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<style type="text/css" id="internalStyle">
+		/*<![CDATA[*/
+		BODY {	margin: 0 0 0 0; background-color: white; }
+		/*]]>*/
+	</style>
+	<link href="res/stylesheet.css" rel="stylesheet" type="text/css" />
+	
+	
+	<style type="text/css" id="internalStyle2">
+		/*<![CDATA[*/
+		.columnBackground { background-color: #cceeff; }
+		.moreInfo { text-align: right; font-weight: bold; }
+		
+		DIV.linkList { margin-top: 20px; background-color: #eeeeee; padding: 2 2 2 5; }
+		DIV.linkList .boldHeader { font-weight: bold; }
+		
+		/*]]>*/
+	</style>	
+
+	<link href="res/stylesheet_movies.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+	<table border="1" cellpadding="0" cellspacing="0">
+
+		<!-- Header image row: -->
+	<tr>
+		<td colspan="2" id="header_1"><img src="images/headerimage.jpg" width="600" height="100" alt="" border="0" /></td>
+	</tr>
+	<tr>
+
+		<!-- Menu table cell: -->
+		<td id="menu_1">
+			<div class="menu1-level1-no"><a href="#">Menu item 1</a></div>
+			<div class="menu1-level1-no"><a href="#">Menu item 2</a></div>
+			<div class="menu1-level1-act"><a href="#">Menu item 3 (act)</a></div>
+			<div class="menu1-level2-no"><a href="#">Level 2 item</a></div>
+			<div class="menu1-level2-no"><a href="#">Level 2 item</a></div>
+			<div class="menu1-level2-act"><a href="#">Level 2 item (act)</a></div>
+			<div class="menu1-level1-no"><a href="#">Menu item 2</a></div>
+		</td>
+
+		<!-- Page Content Area table cell: -->
+		<td id="content">
+		
+
+		
+			<!--
+				Header/Text/Image/Link block:
+			-->
+			<h3 style="background-color: #ffcc33;">Header/Text/Image/Link block:</h3>
+			<div style="border:2px dotted #666666;" id="block_htil">
+			
+				<h2>This is the header.</h2>
+				<img src="images/33139.jpg" width="200" height="150" border="0" align="right" style="margin-left: 10px; margin-right: 5px; " alt="" />
+				<p>Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal. <br />Filii Ham Chus et Mesraim Phut et Chanaan filii autem Chus Saba et Evila Sabatha et Rechma et Sabathaca porro filii Rechma Saba et Dadan Chus autem genuit Nemrod iste coepit esse potens in terra Mesraim vero genuit Ludim et Anamim et Laabim et Nepthuim Phethrosim quoque et Chasluim de quibus egressi sunt Philisthim et Capthurim Chanaan vero genuit Sidonem primogenitum et Heth Iebuseum quoque et Amorreum et Gergeseum Evheumque et Aruceum et Asineum Aradium quoque et Samareum et Ematheum filii Sem Aelam et Assur et Arfaxad et Lud et Aram et Us et Hul et Gothor et Mosoch Arfaxad autem genuit Sala qui et ipse genuit Heber porro Heber nati sunt duo filii nomen uni Phaleg quia in diebus eius divisa est terra et nomen fratris eius Iectan Iectan autem genuit Helmodad et Saleph et Asermoth et Iare Aduram quoque et Uzal et Decla Ebal etiam et Abimahel et Saba necnon et Ophir et Evila et Iobab omnes isti filii Iectan Sem Arfaxad Sale Heber Phaleg Raau Serug Nahor Thare Abram iste est Abraham filii autem Abraham Isaac et Ismahel et hae generationes eorum primogenitus Ismahelis Nabaioth et Cedar et Adbeel et Mabsam.</p>
+				<p class="moreInfo"><a href="#" target="_top">Read more information</a></p>
+			</div>
+			
+		
+		
+			<!--
+				Two column view:
+			-->
+			<h3 style="background-color: #ffcc33;">Two column view:</h3>
+			<div style="border:2px dotted #666666;" id="block_2col1">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td valign="top"><p>First column here... Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal</p></td>
+						<td><img src="../../clear.gif" width="10" height="1" alt="" /></td>
+						<td valign="top"><p>Second column here... Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal</p></td>
+					</tr>
+				</table>
+			</div>
+		
+			<!--
+				Two column view, alternative style
+			-->
+			<h3 style="background-color: #ffcc33;">Two column view, alternative style:</h3>
+			<div style="border:2px dotted #666666;" id="block_2col2">
+				<table border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td class="columnBackground" valign="top"><p>First column here... Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal</p></td>
+						<td><img src="../../clear.gif" width="10" height="1" alt="" /></td>
+						<td class="columnBackground" valign="top"><p>Second column here... Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal</p></td>
+					</tr>
+				</table>
+			</div>
+			
+			
+			
+			<!--
+				Header/Text/2xImage/XxLinks block:
+			-->
+			<h3 style="background-color: #ffcc33;">Header/Text/2xImage/XxLinks block:</h3>
+			<div style="border:2px dotted #666666;" id="block_ht2ixl">
+			
+				<img src="images/header_image.gif" width="385" height="25" border="0" alt="">
+				<p>Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal. <br />Filii Ham Chus et Mesraim Phut et Chanaan filii autem Chus Saba et Evila Sabatha et Rechma et Sabathaca porro filii Rechma Saba et Dadan Chus autem genuit Nemrod iste coepit esse potens in terra Mesraim vero genuit Ludim et Anamim et Laabim et Nepthuim Phethrosim quoque et Chasluim de quibus egressi sunt Philisthim et Capthurim Chanaan vero genuit Sidonem primogenitum et Heth Iebuseum quoque et Amorreum et Gergeseum Evheumque et Aruceum et Asineum Aradium quoque et Samareum et Ematheum filii Sem Aelam et Assur et Arfaxad et Lud et Aram et Us et Hul et Gothor et Mosoch Arfaxad autem genuit Sala qui et ipse genuit Heber porro Heber nati sunt duo filii nomen uni Phaleg quia in diebus eius divisa est terra et nomen fratris eius Iectan Iectan autem genuit Helmodad et Saleph et Asermoth et Iare Aduram quoque et Uzal et Decla Ebal etiam et Abimahel et Saba necnon et Ophir et Evila et Iobab omnes isti filii Iectan Sem Arfaxad Sale Heber Phaleg Raau Serug Nahor Thare Abram iste est Abraham filii autem Abraham Isaac et Ismahel et hae generationes eorum primogenitus Ismahelis Nabaioth et Cedar et Adbeel et Mabsam.</p>
+				
+				<table border="0" cellpadding="0" cellspacing="0">
+					<tr>
+						<td><img src="images/33139.jpg" width="200" height="150" border="0" alt="" /></td>
+						<td><img src="../../clear.gif" width="10" height="1" alt="" /></td>
+						<td><img src="images/gangsters3.jpg" width="200" height="150" border="0" alt="" /></td>
+					</tr>
+				</table>
+				
+
+				<div class="linkList">
+					<p class="boldHeader">Links to this:</p>
+					<p><img src="res/bullet1_h.gif" width="9" height="9" border="0" alt=""><a href="#" target="_top">Read more information</a></p>
+					<p><img src="res/bullet1_h.gif" width="9" height="9" border="0" alt=""><a href="#" target="_top">Read more information</a></p>
+					<p class="boldHeader">Links to that:</p>
+					<p><img src="res/bullet1_h.gif" width="9" height="9" border="0" alt=""><a href="#" target="_top">Read more information</a></p>
+				</div>
+			</div>
+			
+				
+			<!--
+				Header/Text/2xImage/XxLinks block:
+			-->
+			<h3 style="background-color: #ffcc33;">Movie list block:</h3>
+			<div style="border:2px dotted #666666;" id="block_ml">
+			
+				<h1>Movie listing</h1>
+				<p><em>This is a listing of shots from gangster movies:</em></p>
+				
+				<table border="0" cellpadding="0" cellspacing="0" class="movietable">
+					<tr class="header">
+						<td>Image:</td>
+						<td>Text:</td>
+					</tr>
+					<tr class="spacer">
+						<td colspan="2"><img src="../../clear.gif" width="1" height="10" alt="" /></td>
+					</tr>
+					<tr class="listcontent">
+						<td><img src="images/movie1.jpg" width="130" height="85" border="0" alt="" /></td>
+						<td>
+							<p class="movieheader">Movie #1</p>
+							<p>Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal.</p>
+							<p><a href="#">More details about movie</a></p>
+						</td>
+					</tr>
+					<tr class="spacer">
+						<td colspan="2"><img src="../../clear.gif" width="1" height="10" alt="" /></td>
+					</tr>
+					<tr class="listcontent">
+						<td><img src="images/movie2.jpg" width="130" height="85" border="0" alt="" /></td>
+						<td>
+							<p class="movieheader">Movie #2</p>
+							<p>Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal.</p>
+							<p><a href="#">More details about movie</a></p>
+						</td>
+					</tr>
+					<tr class="spacer">
+						<td colspan="2"><img src="../../clear.gif" width="1" height="10" alt="" /></td>
+					</tr>
+					<tr class="listcontent">
+						<td><img src="images/movie3.jpg" width="130" height="85" border="0" alt="" /></td>
+						<td>
+							<p class="movieheader">Movie #3</p>
+							<p>Adam Seth Enos Cainan Malelehel Iared Enoch Matusale Lamech Noe Sem Ham et Iafeth filii Iafeth Gomer Magog Madai et Iavan Thubal.</p>
+							<p><a href="#">More details about movie</a></p>
+						</td>
+					</tr>
+				</table>
+			</div>			
+			
+		</td>
+	</tr>
+
+		<!-- Footer row: -->
+	<tr>
+		<td colspan="2" id="footer">
+			<p>Main Dish &amp; Son inc. * 12345 Tricky Road, suite 9998 * Boston</p>
+		</td>
+	</tr>
+	</table>
+</body>
+</html>

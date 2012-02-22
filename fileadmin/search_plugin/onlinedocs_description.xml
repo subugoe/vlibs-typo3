@@ -1,0 +1,17 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Vifamath Online Documents</ShortName>
+<Description>Search in Online Documents of the virtual library for mathematics</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">http://vifamath.de/fileadmin/images/favicon.ico</Image>
+<Url type="text/html" method="GET" template="http://vifamath.de/online-dokumente/ergebnisse/">
+    <Param name="request" value="wait"/>
+  <Param name="query" value="{searchTerms}"/>
+  <Param name="searchField" value="any"/>
+  <Param name="dbgroup" value="journals"/>
+  <Param name="domain" value="Dome"/>
+  <Param name="frame" value="VifaXML"/>
+
+</Url>
+</OpenSearchDescription>
+

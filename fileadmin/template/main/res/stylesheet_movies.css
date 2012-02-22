@@ -1,0 +1,5 @@
+
+TABLE.movietable TR.header { font-family: verdana; font-size: 12px; background-color: #cceecc; font-weight: bold; }
+TABLE.movietable TR.listcontent TD { padding-right: 10px; }
+TABLE.movietable TR TD { vertical-align: top; }
+TABLE.movietable TR TD P.movieheader { background-color: #ff6666; font-weight: bold; padding-left: 2px; }

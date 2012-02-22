@@ -1,0 +1,17 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+<ShortName>Vifamath Catalogues</ShortName>
+<Description>Search in the Catalogues of the virtual library for mathematics</Description>
+<InputEncoding>UTF-8</InputEncoding>
+<Image width="16" height="16" type="image/x-icon">http://vifamath.de/fileadmin/images/favicon.ico</Image>
+<Url type="text/html" method="GET" template="http://vifamath.de/kataloge-reviews/ergebnisse/">
+  <Param name="request" value="wait"/>
+  <Param name="query" value="{searchTerms}"/>
+  <Param name="searchField" value="any"/>
+  <Param name="dbgroup" value="mathLibCatalogues"/>
+  <Param name="domain" value="Dome"/>
+  <Param name="frame" value="VifaXML"/>
+</Url>
+<moz:SearchForm>http://vifamath.de/kataloge-reviews/</moz:SearchForm>
+</OpenSearchDescription>
+

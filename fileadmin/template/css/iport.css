@@ -1,0 +1,220 @@
+/************************************************************************
+   css style file to format iport output 
+
+   svn keywords :
+   $Date: 2008-02-24 14:45:51 +0100 (So, 24 Feb 2008) $
+   $Revision: 637 $
+   $Id: iport.css 637 2008-02-24 13:45:51Z armbrecht $
+   $HeadURL: file:///home/vifamath/svn_repositories/vifamath_wwwroot/branches/testserver/htdocs/css/iport.css $
+************************************************************************/ 
+
+.iPortContentData {
+border: 0;
+background-color: transparent;
+}
+#iport_context_title {
+	font-size: 100%;
+}
+
+#iport_left_nav {
+	margin-top: 15px;
+	line-height: 200%;
+	display: block;
+}
+
+#iport_motd {
+	background-color: yellow;
+	display: block;
+}
+
+#iport_left_nav a.buttonlink {
+	font-size: 85%;
+	text-decoration: none;
+	padding: 0px 3px 0px 3px;
+	margin: 5em 1em 5em 0px;
+	/*border: 1px solid #999;*/
+	background-color: #e0e0e0;
+	color: #000;
+	overflow: hidden;
+}
+
+#iport_left_nav a.buttonlink:hover {
+	text-decoration: none;
+	border-color: #999;
+/*	border-width: 2px 1px 1px 2px; */
+}
+
+#iport_content {
+	color: #000;
+	margin: 0px 0px 0px 3px;
+}
+
+
+#iport_content a {
+	text-decoration: none;
+	padding: 0px 1px 0px 1px;
+	border: none;
+	/* color: blue; */
+	/* color: #38d; */
+	color: #0f1eb7;
+}
+
+#iport_content a:hover {
+	text-decoration: underline;
+}
+
+#iport_content a:visited {
+	/* color: #5500aa; */
+	/* color: #38d; */
+	color: #0f1eb7;
+}
+
+#iport_content a.external_link {
+	text-decoration: none;
+	border: none;
+	color: #a52a2a; /* a brown red*/
+	font-style: normal;
+}
+
+#iport_content a.external_link:hover {
+	text-decoration: underline;
+}
+
+#iport_content a.external_link:visited {
+	text-decoration: none;
+	/* color: #a52a2a;  */
+	color: #ff8484;
+}
+
+#iport_content a.buttonlink {
+	text-decoration: none;
+	padding: 0px 10px 0px 3px;
+	margin: 5em 1em 5em 0px;
+	color: #0f1eb7;
+}
+
+#iport_content a.buttonlink:hover {
+	text-decoration: underline;
+}
+
+#iport_top_nav a {
+	font-size: 85%;
+	text-decoration: none;
+	padding: 0px 3px 2px 3px;
+	/* background-color: #e0e0e0; */
+	/* color: blue; */
+	color: #38d;
+	/* display: inline; */
+}
+
+#iport_goto_form {
+	margin: 10px 0px 10px 0px;
+	padding-top: 5px;
+}
+
+#iport_goto_form input.button:hover {
+	cursor: pointer;
+}
+
+#iport_search_button {
+	cursor:pointer;
+}
+
+.iport_db_infobutton {
+	cursor: pointer;
+}
+
+.iport_logo {
+	font-size: 70%;
+	float: right;
+	text-align: right;
+}
+
+/* classes by iPort */
+.iport_db_description2 {
+	display: none;
+	font-size: 80%;
+	color:#104E8B;
+}
+
+.iport_db_description {
+position: absolute;
+max-width:300px;
+left: 275px;
+border-right: 3px solid #c4c4c4;
+border-bottom: 3px solid #c4c4c4;
+border-left: 1px solid #c4c4c4;
+border-top: 1px solid #c4c4c4;
+padding-top: 8px;
+padding-left:10px;
+padding-right:10px;
+padding-bottom:12px;
+background-color: lightyellow;
+z-index: 100;
+color: #006;
+font-size:0.9em;
+
+}
+
+
+.iport_sfxlink {
+	vertical-align: middle;
+}
+
+.iport_dbgroup {
+	/* actually this is a table */
+	vertical-align: top;
+}
+
+.navPipe {
+	display: none;
+	/* color: #fff; */
+}
+
+.motd {
+	font-size: 120%;
+	/* color: red; */
+}
+
+.recno {
+	padding: 5px 0px 0px 0px;
+	line-height: 110%;
+	color: #000;
+}
+
+.datahead {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
+.data {
+	text-decoration: none;
+	padding: 5px 0px 0px 0px;
+	border: none;
+	color: #000;
+	line-height: 110%;
+}
+
+td.data {
+	vertical-align: middle;
+}
+
+.dbhits {
+	line-height: 110%;
+	padding: 5px 0px 0px 0px;
+	color: #000;
+}
+
+td.dbhits {
+	vertical-align: middle;
+}
+a {
+text-decoration: none; 
+color: #4169e1;
+}
+
+em a {
+color: #182a7a;
+text-decoration: none;
+}

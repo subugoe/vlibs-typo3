@@ -1,0 +1,680 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<TITLE>Direct Mail subscription Template</TITLE>
+</head>
+<body>
+
+
+
+
+<br />
+<br />
+<br />
+<H1>DIRECT MAIL SUBSCRIPTION/ADMINISTRATION TEMPLATES</H1>
+<h2>EXAMPLE</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>	Form for creation of a new newsletter recipient:</em>
+<br />
+<br />
+
+
+
+<!-- ###TEMPLATE_CREATE### begin
+	Form for creation of a new newsletter recipient
+-->
+<form name="tt_address_form" method="post" action="###FORM_URL###">
+###GW1B###Subscribe to our newletter###GW1E###<br />
+<br />
+###GW2B###
+
+
+<b>Your name:</b><br />
+<!--###SUB_REQUIRED_FIELD_name### begin
+	This is shown only if the form is submitted and the field is configured to be "required" and at the same time not filled in.
+	The syntax is of the comment 'name' is: 	SUB_REQUIRED_FIELD_[enter-the-field-name-here]
+-->
+	<font color=red><strong>You must fill in this field!</strong></font><br />
+<!--###SUB_REQUIRED_FIELD_name### end -->
+<input type="text" name="FE[tt_address][name]"/>
+<br />
+
+
+
+<br />
+<b>Email:</b><br />
+<!--###SUB_REQUIRED_FIELD_email### begin
+	Same as above...
+	EVAL_ERROR_FIELD_email is in addition an error message defined in TypoScript in case an email address does not verify to be of correct syntax.
+-->
+	<font color=red><strong>You must fill in this field!</strong></font><br />
+	###EVAL_ERROR_FIELD_email###<br />
+<!--###SUB_REQUIRED_FIELD_email### end-->
+<input type="text" name="FE[tt_address][email]"/>
+<br />
+
+<!-- ###CE_CATLIST### -->
+
+<!--
+<br />
+<b>Select Special Categories:</b><br />
+<table>
+<tr>
+	<td>###GW2B###Food###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][0]"></td>
+</tr>
+<tr>
+	<td>###GW2B###Books###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][1]"></td>
+</tr>
+<tr>
+	<td>###GW2B###Sport###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][2]"></td>
+</tr>
+<tr>
+	<td>###GW2B###Religion###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][3]"></td>
+</tr>
+</table>
+   -->
+
+<!--
+<br />
+<b>HTML emails?</b><br />
+<input type="checkbox" name="FE[tt_address][module_sys_dmail_html]" value=1>
+<br />
+-->
+
+
+<input type="submit" name="whatever" value="Subscribe" class="submStartSmall"/>
+<!--<input type="submit" name="whatever" value="Cancel" onClick="document.forms[0].action='###BACK_URL###';"/>-->
+###HIDDENFIELDS###
+</form>
+<br />
+If you are already subscribed, you may <a href="###FORM_URL###&cmd=infomail&backURL=###FORM_URL_ENC###">unsubscribe or edit your profile.</a>
+<br />  ###GW2E###
+<!-- ###TEMPLATE_CREATE### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>	This is the code shown when a new newsletter recipient is created:</em>
+<br />
+<br />
+
+
+<!-- ###TEMPLATE_CREATE_SAVED### begin
+	This is the code shown when a new newsletter recipient is created.
+
+	You can use the newly created record as markers on the format ###FIELD_[fieldname]###
+-->
+###GW1B###Subscription received.###GW1E###<br />
+<br />
+###GW2B###
+You're now subscribed to our newsletter. An email has been sent to your email address, ###FIELD_email###, with a link to the administration of your profile.<br />Please notice that your subscription is not active until you've clicked a link in that email!
+###GW2E###
+<!-- ###TEMPLATE_CREATE_SAVED### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>	This is the form used to edit the existing users.</em>
+<br />
+<br />
+
+
+<!-- ###TEMPLATE_EDIT### begin
+	This is the form used to edit the existing users.
+	
+	The form works with non-logged in users based on email-verification	
+-->
+<form name="tt_address_form" method="post" action="###FORM_URL###">
+###GW1B###Edit profile###GW1E###<br />
+<br />
+###GW2B###
+
+
+<!-- ###SUB_REQUIRED_FIELDS_WARNING### begin 
+	This is a general warning about incorrectly filled in fields.
+-->
+<B>Some of the required fields are not correctly filled in! Please do that!</B><br />
+<br />
+<!-- ###SUB_REQUIRED_FIELDS_WARNING### end -->
+
+
+
+
+<b>Your name:</b><br />
+<!--###SUB_REQUIRED_FIELD_name### begin
+	This is shown only if the form is submitted and the field is configured to be "required" and at the same time not filled in.
+	The syntax is of the comment 'name' is: 	SUB_REQUIRED_FIELD_[enter-the-field-name-here]
+-->
+	<font color=red><strong>You must fill in this field!</strong></font><br />
+<!--###SUB_REQUIRED_FIELD_name### end -->
+<input type="text" name="FE[tt_address][name]"/>
+<br />
+
+
+
+
+<br />
+<b>Email:</b><br />
+<!--###SUB_REQUIRED_FIELD_email### begin
+	Same as above...
+	EVAL_ERROR_FIELD_email is in addition an error message defined in TypoScript in case an email address does not verify to be of correct syntax.
+-->
+	<font color=red><strong>You must fill in this field!</strong></font><br />
+	###EVAL_ERROR_FIELD_email###<br />
+<!--###SUB_REQUIRED_FIELD_email### end-->
+<input type="text" name="FE[tt_address][email]"/>
+<br />
+
+
+
+
+<br />
+
+<!--
+<b>Select Special Categories:</b><br />
+<table>
+<tr>
+	<td>###GW2B###Food###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][0]"/></td>
+</tr>
+<tr>
+	<td>###GW2B###Books###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][1]"/></td>
+</tr>
+<tr>
+	<td>###GW2B###Sport###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][2]"/></td>
+</tr>
+<tr>
+	<td>###GW2B###Religion###GW2E###</td><td><input type="checkbox" name="FE[tt_address][module_sys_dmail_category][3]"/></td>
+</tr>
+</table>
+-->
+
+<!--
+<br />
+<b>HTML emails?</b><br />
+<input type="checkbox" name="FE[tt_address][module_sys_dmail_html]" value="1"/>
+<br />
+-->
+
+
+	###HIDDENFIELDS###
+	<input type="Submit" name="whatever" value="Update"/>
+</form>
+<br />
+Click here to <a href="###FORM_URL###&rU=###REC_UID###&aC=###AUTH_CODE###&cmd=delete"><strong>delete (!)</strong></a> your registration!
+###GW2E###
+<br />
+<!-- ###TEMPLATE_EDIT### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>	This is displayed when a user has updated his profile:</em>
+<br />
+<br />
+
+
+<!-- ###TEMPLATE_EDIT_SAVED### begin
+	This is displayed when a user has updated his profile:
+
+	You can use the newly updated record as markers on the format ###FIELD_[fieldname]###
+-->
+
+###GW1B###Profile changed###GW1E###<br />
+<br />
+###GW2B###
+
+You've updated your profile. <br />
+<br />
+The new information is:<br />
+<br />
+<b>Name:</b> ###FIELD_name###<br />
+<b>Email:</b> ###FIELD_email###<br />
+<br />
+
+<a href="###FORM_URL###&cmd=edit&rU=###FIELD_uid###&aC=###AUTH_CODE###">Go back to edit.</a>
+###GW2E###
+<!-- ###TEMPLATE_EDIT_SAVED### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>		This form is used to send the infomails.</em>
+<br />
+<br />
+
+
+
+<!-- ###TEMPLATE_INFOMAIL### begin
+	This form is used to send the infomails.
+	You could also use this as a "did you forget your password?" service form.
+-->
+###GW1B###Do you wish to edit your profile?###GW1E###<br />
+<br />
+###GW2B###
+Enter the email address <em>by which you're registered</em> here, and a link to the administration will be sent to your account:<br />
+
+<form name="tt_address_form" method="post" action="###FORM_URL###">
+<input type="text" name="fetch"/><br />
+<input type="submit" name="whatever" class="submStartSmall" value="Send"/>
+	###HIDDENFIELDS###
+</form>
+###GW2E###
+<!-- ###TEMPLATE_INFOMAIL### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>		This template is the response page when a users has requested his password send to his email.</em>
+<br />
+<br />
+
+<!-- ###TEMPLATE_INFOMAIL_SENT### begin
+	This template is the response page when a users has requested his password send to his email.
+-->
+###GW1B###An email has been sent to your account with the required information###GW1E###<br />
+<br />
+###GW2B###
+
+<a href="###BACK_URL###"><strong>Go back...</strong></a><br />
+###GW2E###
+
+<!-- ###TEMPLATE_INFOMAIL_SENT### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>		This template is the response page when a users has delete his subscription.</em>
+<br />
+<br />
+
+<!-- ###TEMPLATE_DELETE_SAVED### begin
+	This is the message displayed if you have just deleted your subscription
+-->
+###GW1B###You're now unsubscribed!###GW1E###<br />
+<br />
+###GW2B###
+
+Name: ###FIELD_name###<br />
+Email: ###FIELD_email###<br />
+
+###GW2E###
+<!-- ###TEMPLATE_DELETE_SAVED### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<h2>'Setfixed' templates:</h2>
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>This template is the response page when a users has clicked a setfixed link.</em>
+<br />
+<br />
+<!-- ###TEMPLATE_SETFIXED_OK### begin
+	This is the message displayed if you have just deleted your subscription
+-->
+###GW1B###Your subscription was approved###GW1E###<br />
+<br />
+###GW2B###
+
+Name: ###FIELD_name###<br />
+Email: ###FIELD_email###
+
+###GW2E###
+<!-- ###TEMPLATE_SETFIXED_OK### end-->
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>This template is the response page when a users has clicked a setfixed link.</em>
+<br />
+<br />
+<!-- ###TEMPLATE_SETFIXED_OK_DELETE### begin
+	This is the message displayed if you have just deleted your subscription
+-->
+###GW1B###Your subscription was DELETED!###GW1E###<br />
+<br />
+###GW2B###
+Name: ###FIELD_name###<br />
+Email: ###FIELD_email###
+###GW2E###
+<!-- ###TEMPLATE_SETFIXED_OK_DELETE### end-->
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>This template is the response page when a users has clicked a setfixed link.</em>
+<br />
+<br />
+<!-- ###TEMPLATE_SETFIXED_FAILED### begin
+	This is the message displayed if you have just deleted your subscription
+-->
+
+###GW1B###Sorry, setting subscription options failed!###GW1E###<br />
+<br />
+###GW2B###
+May happen if you click the setfixed link a second time (if the record has changed since the setfixed link was generated this error will happen!)
+###GW2E###
+<!-- ###TEMPLATE_SETFIXED_FAILED### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>	Authentication failed message.</em>
+<br />
+<br />
+
+<!-- ###TEMPLATE_AUTH### begin
+	Authentication failed message
+-->
+###GW1B###Authentication failed!###GW1E###<br />
+<br />
+###GW2B###
+For some reason the authentication failed. 
+###GW2E###
+<!-- ###TEMPLATE_AUTH### end-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<H1>EMAIL TEMPLATES:</H1>
+In these plain text email templates the first line with content is used as subject in the mails.<br />
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>This template is used to notify a person by email that he is subscribed to the newsletter.<br />
+You can use the newly created record as markers on the format ###FIELD_[fieldname]###
+</em>
+<br />
+<br />
+
+
+<pre>
+<!-- ###EMAIL_TEMPLATE_CREATE_SAVED### begin
+	This template is used to notify a person by email that he is subscribed to the newsletter.
+	You can use the newly created record as markers on the format ###FIELD_[fieldname]###
+-->
+<!--###SUB_RECORD###-->
+VifaMATH Newsletter
+
+Dear ###FIELD_name###
+
+You're now subscribed to the VifaMATH  newsletter.
+
+IMPORTANT:
+
+Before your subscriptions is fully enabled, you must click this link:
+###THIS_URL######FORM_URL######SYS_SETFIXED_approve###
+
+If you cannot accept the subscription (eg. if somebody else subscribed you!) just click this link and you're deleted from the database:
+###THIS_URL######FORM_URL######SYS_SETFIXED_DELETE###
+
+<!--
+If you wish to edit your personal data, click this link:
+###THIS_URL######FORM_URL###?cmd=edit&aC=###SYS_AUTHCODE###&rU=###FIELD_uid###
+-->
+<!--###SUB_RECORD###-->
+<!-- ###EMAIL_TEMPLATE_CREATE_SAVED### end-->
+</pre>
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>This is the template used for the administrator notifycation email upon a new subscription.<br />
+You can use the newly created record as markers on the format ###FIELD_[fieldname]###
+</em>
+<br />
+<br />
+
+
+<pre>
+<!-- ###EMAIL_TEMPLATE_CREATE_SAVED-ADMIN### begin
+ 	This is the template used for the administrator notifycation email upon a new subscription.
+	You can use the newly created record as markers on the format ###FIELD_[fieldname]###
+-->
+<!--###SUB_RECORD###-->
+Admin: New subscription
+
+Name: ###FIELD_name###
+Email: ###FIELD_email###
+<!--###SUB_RECORD###-->
+<!-- ###EMAIL_TEMPLATE_CREATE_SAVED-ADMIN### end-->
+</pre>
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>The template for forgotten passwords (infomail 'FORGOTPASSWORD' template!)</em>
+<br />
+<br />
+<pre>
+<!-- ###EMAIL_TEMPLATE_FORGOTPASSWORD### begin
+	The template for forgotten passwords (infomail 'FORGOTPASSWORD' template!)
+-->
+<!--###SUB_RECORD###-->
+VifaMATH Newsletter, Admin link
+
+Dear ###FIELD_name###
+
+Click here to edit your personal data
+###THIS_URL######FORM_URL###&cmd=edit&aC=###SYS_AUTHCODE###&rU=###FIELD_uid###
+
+Click here to DELETE (!) your subscription
+###THIS_URL######FORM_URL###&cmd=delete&aC=###SYS_AUTHCODE###&rU=###FIELD_uid###
+<!--###SUB_RECORD###-->
+<!-- ###EMAIL_TEMPLATE_FORGOTPASSWORD### end-->
+</pre>
+
+
+
+
+
+<br /><br /><br /><br /><HR><br /><br /><br />
+<em>Template used if the infomail was empty!</em>
+<br />
+<br />
+<pre>
+<!-- ###EMAIL_TEMPLATE_NORECORD### begin
+	Template used if the infomail was empty!
+-->
+Record not found.
+
+You have requested information about a subscription, but nothing was found.
+
+Sorry.
+
+<!-- ###EMAIL_TEMPLATE_NORECORD### end-->
+</pre>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

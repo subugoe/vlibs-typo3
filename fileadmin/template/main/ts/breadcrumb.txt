@@ -1,0 +1,24 @@
+###breadcrumb object
+
+temp.breadcrumb = HMENU
+#temp.breadcrumb.stdWrap.wrap = <ul id="breadcrumb">|</ul>
+temp.breadcrumb {
+
+	special = rootline
+	spacial.range = 0/-1
+	1 = TMENU
+	1 {
+	wrap = <ul id="breadcrumb">|</ul>
+	NO {
+		wrapItemAndSub = <li>|&nbsp;&gt;</li>
+	}
+	ACT < .NO	
+	ACT = 1
+	ACT {
+		wrapItemAndSub = <li><span id="breadSel"> | </li>
+	}
+
+	
+
+
+}

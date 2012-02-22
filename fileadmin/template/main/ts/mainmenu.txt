@@ -1,0 +1,36 @@
+# menue content object:
+# Menu 1 cObject
+temp.menue = HMENU
+temp.menue.wrap = <ul id="menuMain"> | </ul>
+
+#first level menu
+temp.menue.1 = TMENU
+temp.menue.1 {
+	noBlur = 1
+	entryLevel = 0
+	expAll = 1
+	#Normal state properties
+	NO.doNotLinkIt = 1
+	NO.allWrap = <li class="left-level-1-no"> | </li>
+	NO.stdWrap.htmlSpecialChars = 1
+	#enable active state and set properties:
+	ACT = 1
+	ACT.doNotLinkIt = 1
+	ACT.stdWrap.htmlSpecialChars = 1
+	ACT.allWrap = <li class="left-level-1-act"> | </li>
+}
+
+#second level menu-object
+temp.menue.2 = TMENU
+temp.menue.2 {
+	noBlur = 1
+	#Normal state properties
+	NO.allWrap = <li class="left-level-2-no"> | </li>
+	NO.stdWrap.htmlSpecialChars = 1
+	#enable active state and set properties:
+	ACT = 1
+	ACT.stdWrap.htmlSpecialChars = 1
+	ACT.allWrap = <li class="left-level-2-act"> | </li>
+
+}
+

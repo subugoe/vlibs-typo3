@@ -1,0 +1,114 @@
+body
+{
+font: x-small sans-serif;
+text-align:center;
+width: 100%;
+height: 100%;
+/*Zum Ausgleichen unterschiedlicher Schriftgrößen auf WIN/MAC Pt.1*/
+color:#192d57;
+background: #b9c9e9 url(../images/backgrounds/bg_body.jpg) repeat-x;
+}
+
+#mainContainer
+{
+margin:0px auto;
+text-align:left;
+height:auto;
+width: 96%;
+font-size: 12px;
+font-family: trebuchet ms, verdana, sans-serif;
+/*Zum Ausgleichen unterschiedlicher Schriftgrößen auf WIN/MAC Pt.2*/
+padding: 0;
+background-color:transparent;
+background-image:url(../images/backgrounds/bg_html.jpg);
+background-repeat: no-repeat;
+}
+
+#mittelLeiste
+{
+clear: both;
+float: left;
+width: 100%;
+min-width: 950px;
+height: 19px;
+text-align: right;
+padding: 2px 0 0 0;
+background-color: transparent;
+font-size: 97%;
+}
+
+#cSearch
+{
+float: left;
+width:50%;
+display: inline;
+border-top: 1px solid #f0f0f0;
+/*border: 1px solid red;*/
+}
+
+#cSearch input.iputStart
+{
+background: #fff url(../images/backgrounds/bg_search_input.jpg) repeat-x;
+border: 1px solid #aaa;
+width: 61%;
+color: #695a5c;
+padding: 0.2em 0.5em;
+}
+
+#cSearch input.submStart
+{
+background: #9fb900 url(../images/backgrounds/bg_search_submit.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #fff;
+width: 22%;
+margin-left:2%;
+display: inline;
+padding: 0.1em 0.8em;
+}
+
+#cLogos a
+{
+width:16.5%;
+height: 51px;
+text-align: center;
+display: block;
+float: left;
+}
+
+#iport_goto_form
+{
+width: 60%;
+}
+
+input.iputGoto
+{
+float: left;
+width: 20%;
+}
+
+input.submGoto
+{
+float: left;
+width: 20%;
+}
+
+input.iputStartSmall
+{
+background: #fff url(../images/backgrounds/bg_search_input.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #695a5c;
+width: 30%;
+padding: 0.2em 0.8em;
+margin:1em 0 2em 0;
+}
+
+input.submStartSmall
+{
+background: #9fb900 url(../images/backgrounds/bg_search_submit.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #fff;
+width: 12%;
+margin:1em 0 2em 1em;
+display: inline;
+padding: 0.1em 0.8em;
+}

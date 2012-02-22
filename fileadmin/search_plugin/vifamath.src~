@@ -1,0 +1,35 @@
+# Mozilla search plug-in for ViFaMATH by Marianna Muehlhoelzer, SUB, mmuehlh@sub.uni-goettingen.de
+# Version 1
+
+<search
+   version="7.1"
+   name="ViFaMATH"
+   description="ViFaMATH Simple Search"
+   method="get"
+   action="http://vifamath.sub.uni-goettingen.de/search.html"
+   searchform="http://vifamath.sub.uni-goettingen.de/search.html"
+   queryEncoding="utf-8"
+   queryCharset="utf-8"
+>
+<input type="hidden" name="from_splug" value="true">
+<input type="hidden" name="request" value="search_results">
+<input type="hidden" name="domain" value="Dome">
+<input type="hidden" name="dbgroup" value="vifamath">
+<input type="hidden" name="lang" value="de">
+<input type="hidden" name="numrec" value="10">
+<input type="text" name="query" user>
+
+<interpret
+ resultListStart="<!-- RESULT LIST START -->"
+ resultListEnd="<!-- RESULT LIST END -->"
+ resultItemStart="<!-- RESULT ITEM START -->"
+ resultItemEnd="<!-- RESULT ITEM END -->"
+>
+
+<browser
+ alsomatch="http://vifamath.sub.uni-goettingen.de/www-docs/search_plugin/vifamath.src"
+	update="http://mycroft.mozdev.org/update.php/id0/vifamath.src" 
+	updateIcon="http://mycroft.mozdev.org/update.php/id0/vifamath.png"
+ updateCheckDays="7"
+>
+</search>

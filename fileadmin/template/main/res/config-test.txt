@@ -1,0 +1,12 @@
+#####testing configuration properties
+
+config {
+
+	debug = 1
+	doctype = xhtml_strict
+	
+	simulateStaticDocuments = 1
+	simulateStaticDocuments_noTypeIfNoTitle = 1
+	simulateStaticDocuments_addTitle = 10
+	
+}

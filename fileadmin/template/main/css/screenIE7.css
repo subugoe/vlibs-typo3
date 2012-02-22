@@ -1,0 +1,50 @@
+#contentContainer
+{
+float: left;
+width: 100%;
+min-width: 950px;
+padding: 2.5em 0 0 0;
+font-size: 85%;
+margin-bottom: 30px;
+}
+
+h1.welcome
+{
+width: 76%;
+font-family: georgia, verdana, sans-serif;
+padding: 1em 0 1.6em 0;
+color: #fff;
+font-weight: normal;
+font-size: 1.70em;
+letter-spacing:0.18em;
+}
+
+#mittelLeiste
+{
+clear: both;
+float: left;
+width: 100%;
+min-width: 950px;
+height: 19px;
+text-align: right;
+padding: 3px 0 0 0;
+background-color: transparent;
+font-size: 95%;
+}
+
+#iport_goto_form
+{
+width: 30%;
+}
+
+input.iputGoto
+{
+float: left;
+width: 50%;
+}
+
+input.submGoto
+{
+float: left;
+width: 10%;
+}

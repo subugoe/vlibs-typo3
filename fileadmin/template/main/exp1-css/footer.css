@@ -1,0 +1,26 @@
+#footer {
+	position: relative;
+	left: 0;
+	height: auto;
+	clear: both;
+	background: #FFFFFF;
+}
+
+#footer-box {
+	position: relative;
+	margin: 0;
+	padding: 6px;
+}
+
+#footer-text {
+	margin: 0;
+	padding: 6px;
+	background: #FFFFFF;
+	text-align: center;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #ededed;
+	font-size: 9px;
+	line-height: normal;
+	color: #666666;
+}

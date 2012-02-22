@@ -1,0 +1,483 @@
+a
+{
+color: #930;
+}
+
+body
+{
+color:#192d57;
+background: #dae1f4 url(../images/backgrounds/bg_body.jpg) repeat-x;
+}
+
+strong {
+background: #b5c7e7;
+}
+
+
+#mainContainer
+{
+background-color:transparent;
+background-image:url(../images/backgrounds/bg_html.jpg);
+background-repeat: no-repeat;
+}
+
+/*Oberer Bereich */
+
+#kopfleiste
+{
+background: url(../images/backgrounds/bg_body.jpg) repeat-x;
+}
+
+ul#menuService
+{
+color: #484848;
+}
+
+ul#menuService li
+{
+color: #484848;
+}
+
+ul#menuService li a
+{
+color: #484848;
+border-right: 1px solid #f0f0f0;
+}
+
+ul#menuService li.sprachAnzeige
+{
+color: #484848;
+}
+
+ul#menuService li a#languageGER
+{
+color: #484848;
+border: none;
+}
+
+ul#menuService li a#languageENG
+{
+color: #484848;
+border: none;
+}
+
+#mittelLeiste
+{
+background-color: transparent;
+}
+
+.SieSindHier
+{
+/*Platzhalter, falls Farbe geändert wird*/
+}
+
+ul#breadcrumb
+{
+
+}
+
+ul#breadcrumb li
+{
+color: #fff;
+}
+
+
+
+ul#breadcrumb li a, ul#breadcrumb a
+{
+color:#192d57;
+}
+
+ul#breadcrumb li a:hover
+{
+color: #fff;
+}
+
+ul#breadcrumb li #breadSel
+{
+color: #fff;
+}
+
+ul#features
+{
+
+}
+
+ul#features li
+{
+}
+
+ul#features li a
+{
+border-right: 1px solid #f0f0f0;
+color:#192d57;
+}
+
+ul#features ol li a
+{
+border: none;
+}
+
+ul#features li a:hover
+{
+color: #fff;
+}
+/* Ende Oberer Bereich */
+
+/* Content Bereich*/
+
+#contentContainer
+{
+}
+
+h1.welcome
+{
+color: #fff;
+}
+
+ul#menuMain
+{
+border-bottom: 1px solid #f0f0f0;
+}
+
+ul#menuMain .menuPraefix
+{
+
+}
+
+ul#menuMain li
+{
+
+}
+
+ul#menuMain li a
+{
+border-top: 1px solid #f0f0f0;
+color:#192d57;
+
+}
+
+ul#menuMain li a:hover
+{
+color: #fff;
+border-top: 1px solid #f0f0f0;
+background-color: #b3c3e5;
+/* Angaben für die Farbe(n) geändert*/
+}
+
+#menuMain li#allsearch a:hover
+{
+background-color:transparent;
+
+}
+
+img#allsearch {
+position:absolute;
+top:570px;
+left: 132px;
+}
+
+ul#menuMain li.trenner
+{
+border-top: 1px solid #f0f0f0;
+}
+
+#cSearch
+{
+border-top: 1px solid #f0f0f0;
+}
+
+#cSearch h2
+{
+
+}
+
+#cSearch form
+{
+background-color: #b5c5e6;
+/* Angaben für die Farbe(n) geändert*/
+}
+
+#cInhalt
+{
+
+}
+
+#cText
+{
+border-top: 1px solid #f0f0f0;
+border-bottom: 1px solid #f0f0f0;
+}
+
+
+a.iconHelpline
+{
+
+}
+
+h1.standard
+{
+color: #fff;
+}
+
+h2.searchingIn
+{
+color: #192d57;
+}
+
+span.neuesFenster
+{
+color: #000;
+}
+
+td.data a.external_link {
+color: #930;
+}
+
+a.external-link-new-window
+{
+color: #930;
+background: url(../images/icon_ext_url.png) center right no-repeat;
+padding: 0 20px 0 0;
+line-height: 20px;
+}
+
+td.data a.external-link[href $=".pdf"], td.data a.external_link[href $=".PDF"],td.data a.external-link-new-window[href $=".pdf"], a.external-link-new-window[href $=".PDF"] {
+background: url(../images/pdf.png) bottom right no-repeat;
+padding: 5px 20px 0 0;
+line-height: 20px;
+} 
+
+td.data a.external-link[href $=".dvi.gz"], td.data a.external-link[href $=".dvi"], td.data a.external-link-new-window[href $=".dvi.gz"], a.external-link-new-window[href $=".dvi"]{
+background: url(../images/dvi.png) center right no-repeat;
+padding: 1.7px 25px 0 0;
+line-height: 20px;
+}
+
+td.data a.external-link[href $=".ps.gz"],td.data a.external-link[href $=".ps"], td.data a.external_link[href $=".ps"], a.external-link-new-window[href $=".ps"], td.data a.external_link[href $=".ps.gz"], a.external-link-new-window[href $=".ps.gz"]{
+background: url(../images/ps.png) bottom right no-repeat;
+padding: 5px 20px 0 0;
+line-height: 20px;
+}
+
+td.data a.external-link[href $=".djvu"],td.data a.external_link[href $=".djvu"], a.external-link-new-window[href $=".djvu"]{
+background: url(../images/doc_djvu.png) bottom right no-repeat;
+padding: 5px 20px 0 0;
+line-height: 20px;
+}
+
+td.data  a.external-link[href $=".txt"], td.data a.external-link[href $=".txt"], a.external-link-new-window[href $=".txt"]{
+background: url(../images/text.png) center right no-repeat;
+padding: 5px 20px 0 0;
+line-height: 20px;
+}
+
+td.data  a.external-link[href $=".html"], td.data a.external-link[href $=".html"], a.external-link-new-window[href $=".html"], td.data  a.external-link[href $=".htm"], td.data a.external-link[href $=".htm"], a.external-link-new-window[href $=".htm"]{
+background: url(../images/html.png) center right no-repeat;
+padding: 5px 20px 0 0;
+line-height: 20px;
+}
+
+
+input.iputStart, #mailformname, #mailformtitle, #mailformauthor, #mailformmail, #mailformmsc, #mailformmscverbal, #mailformkeywords, #mailformurl
+{
+background: #fff url(../images/backgrounds/bg_search_input.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #695a5c;
+}
+
+input.submStart, .csc-mailform-submit
+{
+background: #9fb900 url(../images/backgrounds/bg_search_submit.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #fff;
+}
+
+input.iputStartSmall
+{
+background: #fff url(../images/backgrounds/bg_search_input.jpg) repeat-x;
+border: 1px solid #aaa;
+}
+
+input.submStartSmall
+{
+background: #9fb900 url(../images/backgrounds/bg_search_submit.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #fff;
+}
+
+input.iputGoto
+{
+background: #fff url(../images/backgrounds/bg_search_input.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #695a5c;
+}
+
+input.submGoto
+{
+background: #9fb900 url(../images/backgrounds/bg_search_submit.jpg) repeat-x;
+border: 1px solid #aaa;
+color: #fff;
+}
+
+#cSearch a#advancedLink
+{
+border-top: 2px solid #dae1f3;
+/* Angaben für Border-Farbe geändert*/
+background-color: #b5c5e6;
+/* Angaben für die Farbe(n) geändert*/
+}
+
+p
+{
+
+}
+
+#cNews
+{
+border: 8px solid #e5eaf7;
+background: #c8d4ee url(../images/backgrounds/bg_newsContainer.jpg) repeat-x;
+}
+
+h2.csc-firstHeader
+{
+color: #f7e2a0;
+}
+
+.newsTeaser
+{
+border-top: 1px solid #fff;
+}
+
+.newsTeaser h3
+{
+color: #fff;
+}
+
+.newsTeaser p.bodytext
+{
+
+}
+
+.newsTeaser a
+{
+color: #f7e2a0;
+}
+/* Ende Content Bereich*/
+
+/* Abschluss unten*/
+#iport_left_nav
+{
+
+}
+
+a.buttonlink
+{
+border-right: 1px solid #f0f0f0;
+
+}
+
+#cLogos
+{
+border-top: 1px solid #fff;
+
+}
+
+#cLogos a
+{
+}
+
+a.logo_dfg
+{
+background: transparent url(../images/logos/logo_dfg_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_dfg
+{
+background: transparent url(../images/logos/logo_dfg_1.jpg) no-repeat center center;
+}
+
+a.logo_gau
+{
+background: transparent url(../images/logos/logo_gau_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_gau
+{
+background: transparent url(../images/logos/logo_gau_1.jpg) no-repeat center center;
+}
+
+a.logo_sub
+{
+background: transparent url(../images/logos/logo_sub_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_sub
+{
+background: transparent url(../images/logos/logo_sub_1.jpg) no-repeat center center;
+}
+
+a.logo_tib
+{
+background: transparent url(../images/logos/logo_tib_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_tib
+{
+background: transparent url(../images/logos/logo_tib_1.jpg) no-repeat center center;
+}
+
+a.logo_fiz
+{
+background: transparent url(../images/logos/logo_fiz_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_fiz
+{
+background: transparent url(../images/logos/logo_fiz_1.jpg) no-repeat center center;
+}
+
+a.logo_math
+{
+background: transparent url(../images/logos/logo_math_0.jpg) no-repeat center center;
+}
+
+a:hover.logo_math
+{
+background: transparent url(../images/logos/logo_math_1.jpg) no-repeat center center;
+}
+
+.tabs {
+}
+
+.tabs ul {
+}
+
+.tabs li {
+}
+
+.tabs a, .advTabs a, .tabs span {
+color: #192d57;
+background-color: #b5c5e6;
+border-right:1px solid #c1d0ed;
+}
+
+.currentTab, a.currentTab {
+color: #005;
+}
+
+.first, .second, .advFirst {
+background-color: #b5c5e6;
+border-bottom: 1px  solid #c1d0ed;
+}
+
+.dbGroup {
+
+}
+
+#catalogues, #onlineDocs, #internet, #historicalMath {
+
+}
+
+
+

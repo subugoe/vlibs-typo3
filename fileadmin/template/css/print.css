@@ -1,0 +1,415 @@
+/*diese beiden importierten CSS-Dateien
+werden unten mit den Farb-/Größenwerten für den Ausdruck überschrieben.
+Container, die im Ausdruck nicht ausgegeben werden sollen, wurden mit "display:none;" markiert.
+*/
+
+/* Normalisiert margin, padding */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,blockquote,th,td,p
+{
+margin:0;
+padding:0;
+}
+
+img
+{
+border:none;
+display: none;
+}
+
+html
+{
+height: 101%;
+}
+
+h1.standard {
+color: #000;
+padding-bottom: 0.5em;
+}
+
+a
+{
+text-decoration:none;
+}
+
+body
+{
+width: 100%;
+height: 100%;
+text-align: left;
+}
+
+.intro {
+display: none;
+}
+
+#accesskeys 
+{
+display: none;
+}
+
+#mainContainer
+{
+margin:0px auto;
+height:auto;
+width: auto;
+max-width: 80%;
+min-width: 950px;
+padding: 0 2%;
+color: #000;
+font-size: 12pt;
+}
+
+/*Oberer Bereich */
+
+#kopfleiste
+{
+display: none;
+}
+
+#logoleiste
+{
+display: none;
+}
+
+#aktionsbild
+{
+display: none;
+}
+
+ul#menuService
+{
+display: none;
+}
+
+
+#mittelLeiste
+{
+display: none;
+}
+
+.SieSindHier
+{
+display: none;
+}
+
+ul#breadcrumb
+{
+display: none;
+}
+
+ul#breadcrumb li
+{
+display: none;
+}
+
+ul#breadcrumb li a
+{
+display: none;
+}
+
+ul#breadcrumb li a:hover
+{
+
+}
+
+ul#breadcrumb li #breadSel a
+{
+display: inline;
+padding: 0px 5px 0px 5px;
+}
+
+ul#features
+{
+display: none;
+width: auto;
+}
+
+/* Ende Oberer Bereich */
+
+/* Content Bereich*/
+
+#contentContainer
+{
+float: left;
+width: 100%;
+min-width: 950px;
+padding: 4em 0 0 0;
+margin-bottom: 30px;
+}
+
+h1.welcome
+{
+padding: 0;
+margin: 0;
+color: #000;
+font-size: 14pt;
+border: none;
+}
+
+ul#menuMain
+{
+display: none;
+}
+
+
+#cSearch
+{
+float: left;
+width:52%;
+margin: 0;
+min-width: 500px;
+max-width: 1200px;
+display: inline;
+}
+
+#cSearch h2
+{
+padding: 0;
+color: #000;
+font-size: 14pt;
+margin: 0;
+}
+
+div .cIconsetTop, #right, #dbcard{
+display: none;
+}
+
+div .cIconsetBottom {
+display: none;
+}
+
+.cIconsetVerbal {
+display: none;
+}
+
+#cSearch form
+{
+display: none;
+}
+
+#cInhalt
+{
+float: left;
+width:100%;
+margin: 0;
+display: inline;
+position: relative;
+}
+
+#cText
+{
+float: left;
+width: 99%;
+padding: 0 0 0 0;
+position: relative;
+border: none;
+}
+
+#iport_content
+{
+position: relative;
+}
+
+.cIconsetTop
+{
+display: none;
+}
+
+.cIconsetBottom
+{
+display: none;
+}
+
+h1.standard
+{
+width: 100%;
+padding: 0;
+font-weight: bold;
+font-size: 15pt;
+margin-left: 0%;
+border: none;
+}
+
+h2.woGesucht
+{
+width: 100%;
+font-size: 12pt;
+padding: 0;
+color:#000;
+margin-left: 0%;
+margin-top: 0;
+}
+
+table#recordtable
+{
+border-collapse:collapse;
+width: 100%;
+border-spacing: 0;
+}
+
+table#recordtable caption
+{
+padding: 1.3em 0;
+text-align: left;
+font-size: 12pt;
+}
+
+td.recno
+{
+padding: 1em 0;
+vertical-align:top;
+border: none;
+}
+
+td.data
+{
+padding: 1em 0;
+vertical-align:top;
+color: #000;
+border: none;
+}
+
+td.data a.normal_Link
+{
+color: #000;
+}
+
+span.neuesFenster
+{
+color: #000;
+}
+
+td.data a.external_link
+{
+color: #000;
+}
+
+fieldset
+{
+display: none;
+}
+
+input.iputStart
+{
+float: left;
+width: 65%;
+padding: 0.2em 0.8em;
+margin-left:20px;
+}
+
+input.submStart
+{
+float: right;
+width: 15%;
+min-width: 64px;
+margin:0 20px;
+display: inline;
+padding: 0.1em 0.8em;
+}
+
+input.iputStartSmall
+{
+width: 30%;
+padding: 0.2em 0.8em;
+margin:1em 0 2em 0;
+}
+
+input.submStartSmall
+{
+width: 5%;
+min-width: 64px;
+margin:1em 0 2em 1em;
+display: inline;
+padding: 0.1em 0.8em;
+}
+
+#iport_goto_form, #notify, #gen
+{
+display: none;
+}
+
+input.iputGoto
+{
+width: 30%;
+padding: 0.2em 0.2em;
+margin:1em 0 0 1em;
+}
+
+input.submGoto
+{
+width: 10%;
+min-width: 64px;
+margin:1em 0 1em 0em;
+display: inline;
+padding: 0.1em 0.2em;
+}
+
+#cSearch a#advancedLink
+{
+display: block;
+padding: 1em 0em;
+padding: 1em 2em 1em 3.7em;
+}
+
+p
+{
+margin: 1em 0;
+}
+
+#cNews
+{
+float: right;
+width: 17%;
+max-width: 190px;
+height: 40em;
+display: inline;
+margin-top: -57px;
+padding: 0.9em;
+}
+
+h1.csc-firstHeader
+{
+margin-bottom: 15px;
+}
+
+.newsTeaser
+{
+padding: 1em 0 1.5em 0;
+}
+
+.newsTeaser h2
+{
+margin-bottom: 5px;
+}
+
+.newsTeaser p.bodytext
+{
+
+}
+
+.newsTeaser a
+{
+
+}
+/* Ende Content Bereich*/
+
+/* Abschluss unten*/
+#iport_left_nav
+{
+display: none;
+}
+
+#sponsorleiste
+{
+display: none;
+clear: both;
+width: 100%;
+}
+
+.csc-linkToTop {
+display:none;
+}
+
+.close {
+display: none;
+}

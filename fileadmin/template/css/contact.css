@@ -1,0 +1,8 @@
+/*
+   Format for fields in contact.html and contact_error.html
+*/
+
+.field	{
+	/* display: block; */
+	font-weight: bold;
+}

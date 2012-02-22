@@ -1,0 +1,212 @@
+﻿/*
+
+   Containing structures
+
+*/
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #e9e6ff;
+	color: #fff;
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 101%;
+	text-align: center;/*fuer IE_quirks*/
+}
+
+/* mainboxes */
+#wrapper {
+	position: relative;
+	margin: 0px 5%;
+	background-color: #fff;
+	color: #000;
+	text-align: left;/*Aufheben von IE_quirks im BODY*/
+	background-image: url(/images/content_background.jpg); 
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border-right: 1px solid #e9e6ff; /*Hack für Internet Explorer*/
+	height:100%;
+}
+
+#header  {
+	margin: 0px 0px 0px 0px;
+	border: 0 none;
+	/* 
+     * background-image: url(/images/banner.jpg);
+	 * background-repeat: repeat-y;
+     */
+	background-color: #c9cdff;
+	color: #000;
+	height: 120px;
+}
+
+#container {
+	display: block;
+	float: right;
+	text-align: right;
+	border: 0 none;
+	position: relative;
+	top: 20px;
+	right: 20px;
+}
+
+#quicksearch {
+	margin: 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+
+#head_navigation {
+	clear: both;
+	text-align: left;
+	margin: 20px 10px 10px 10px; 
+}
+
+#menue {
+	float: left;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	background-color: #fff;
+	color: #000;
+	margin: 0px;
+	padding: 0px;
+	clear: both;
+	overflow: auto;
+}
+
+.blank {
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+	background-color: #fff;
+	width: 10px;
+	height: 15px;
+}
+
+#top_blank {
+	position: relative;
+	top: 0;
+	left: 180px; /*same as menue-width, IE shows as extra paragraph */
+	visibility: hidden;
+}
+
+#bottom_blank {
+	position: relative;
+	bottom: 0;
+	left: 180px; /*same as menue-width, IE shows as extra paragraph */
+}
+
+#content {/* margin-left as much as menue width*/
+	background-color: transparent;
+	color: #000;
+	padding: 5px 20px 20px 20px ;
+	margin: 0px 0px 0px 185px;
+	min-height: 380px;
+	border-left: 1px solid #006;
+	clear: right;
+}
+
+/* ---- */
+.breaker {
+	clear: both;
+}
+
+#menue a  {
+
+	text-decoration: none;
+
+	display: block;
+
+	font-size: 95%; /* related to p.fontsize */
+
+}
+
+#menue div.menu1-level1-no a {
+
+	text-decoration: none;
+
+	margin: 1px 0px 1px 0px;
+
+	padding: 0px 3px 0px 3px;
+
+	border: 1px solid #999;
+
+	margin-top: 10px;
+
+	width: 155px;
+
+}
+
+#menue a.top_nav:link {
+
+	background-color: #38d;
+
+	color: #fff;
+
+}
+
+#menue a.top_nav:visited {
+
+	background-color: #38d;
+
+	color: #fff;
+
+}
+
+#menue a.top_nav:hover {
+
+	background-color: #f0f0f0;
+
+	color: #309;
+
+}
+
+#menue div.menu1-level1-act {
+
+	background-color: #999;
+
+	color: #fff;
+
+}
+
+#menue div.menu1-level2-no {
+
+	text-indent: 4px; /* same indent as top_nav */
+
+	width: 163px;
+
+}
+
+#menue a.sub_nav:link {
+
+	/* color: #309; */
+
+	color: #0f1eb7;
+
+}
+
+#menue a.sub_nav:visited {
+
+	color: #0f1eb7;
+
+	/* color: #309; */
+
+}
+
+#menue a.sub_nav:hover {
+
+	color: #309;
+
+	background-color:#ccc;
+
+}
+
+#menue div.menu1-level2-act {
+
+	color: #6c3;
+
+}

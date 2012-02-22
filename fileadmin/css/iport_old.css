@@ -1,0 +1,197 @@
+/* default styles for extension "tx_metasuchexml_pi1" */
+	.tx-metasuchexml-pi1 {
+	margin-left: 10px;
+	font-size: 0.9em;
+	}
+
+		.content a:link, .content a:visited, .content a:hover, .content a:active {
+		border-bottom-style: solid;
+		border-bottom-width: 1px;
+		border-bottom-color: #336699;
+		}
+		
+		/**  iPort Gruppenueberschrift **/
+		.bar {
+			font-weight: bold;
+		}
+		
+		/**  iPort Hoehe  **/
+		.iPortHeight {
+			margin-top: -16px;
+		}
+		
+		/**  iPort Content Data  **/
+		.iPortContentData {
+			background-color: transparent;
+			padding: 5px;
+			/*border: 1px solid #999999;*/
+		}
+		
+		/**  iPort Content Data Datem **/
+		.data {
+			height: 20px;
+			padding-right: 20px;
+			line-height: 17px;
+		}
+		
+		/**  iPort Content Data Treffermenge **/
+		.dbhits {
+			font-weight: bold;
+		}
+		
+		/**  iPort Search databaseName **/
+		.databaseName {
+			font-weight: bold;
+		}
+		
+		/**  iPort Content Intro **/
+		.intro {
+			font-weight: normal;
+			margin-top: 10px;
+		}
+		
+		/**  iPort Content fieldName **/
+		.fieldName {
+			font-weight: bold;
+			padding-right: 20px;
+		}
+		
+		/**  iPort Content fieldData **/
+		.fieldData {
+			
+		}
+		
+		/**  iPort Content Titelfeld **/
+		.title {
+			font-weight: bold;
+			font-size: 12px;
+		}
+		
+		/**  iPort Content Record Nummer **/
+		.recno {
+			font-weight: bold;
+			height: 20px;
+			padding-top: 3px
+		}
+		
+		/**  iPort Side Navigation Bar **/
+		.iPortSideNavBar {
+			
+			font-weight: bold;
+			background-color:  #C8DBDF;
+			padding: 0px;
+			border-top: 1px solid #999999;
+			border-right: 1px solid #999999;
+			border-left: 1px solid #999999;
+		}
+		
+		.iPortSideNavBar a {
+			color: #003366;
+			text-decoration: none;
+		}
+		.iPortSideNavBar a:hover {
+			color: #ff0000;
+			text-decoration: none;
+		}
+		.iPortTopNavBar {
+			width: 140px;
+			font-weight: bold;
+			background-color:  #C8DBDF;
+			padding: 5px;
+			border-top: 1px solid #999999;
+			border-right: 1px solid #999999;
+		}
+		.iPortTopNavBar a {
+			color: #003366;
+			text-decoration: none;
+		}
+		.iPortTopNavBar a:hover {
+			color: #ff0000;
+			text-decoration: none;
+		}
+		
+		/**  iPort Side Navigation Bar: gesamter Naviblock **/
+		.btnBlck {
+			float: left;
+			width: 33%;
+			padding-bottom: 0px;
+		}
+		
+		/**  iPort Side Navigation Bar: Titel des Naviblocks **/
+		.btnTtl {
+			font-weight: bold;
+			margin-top: 0px;
+			margin-bottom: 0px
+		}
+		
+		/**  iPort Side Navigation Bar: einzelner Navipunkt**/
+		.btn {
+			float: left;
+			margin-top: 8px;
+			padding-bottom: 5px;
+			padding-left: 3px;
+			padding-right: 3px;
+			visibility: hidden;
+		}
+		.btn a:link, .btn a:visited, .btn a:hover, .btn a:active {
+			border-bottom-style: none;
+			visibility: visible;
+		}
+		.footnote {
+			font-weight: bold;
+			padding-left: 20px;
+			padding-bottom: 3px;
+			background-image: url(Image_Archive/da_info.gif);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: left top;
+		}
+		/**  iPort System-R�ckmeldungen **/
+		div#feedback {
+			font-weight: bold;
+			margin-bottom: 15px;
+			padding-left: 20px;
+			padding-bottom: 3px;
+			background-image: url(Image_Archive/da_info.gif);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: left top;
+		}
+		/** Katalogdurchlauf in execute.php **/
+		.karussell {
+			padding-left: 150px;
+		}
+		/** Nutch-Target-Highlighting I **/
+		.highlight {
+			font-weight: bold;
+			background-color: #ffffb7;
+		}
+		/** Nutch-Target-Highlighting II **/
+		.ellipsis {
+			font-weight: bold;
+		}
+		/** Suchschlitzformatierung **/
+		.forminput {
+		
+		}
+		/**  iPort Bottom Navigation Bar **/
+		.iPortBottomNavBar {
+			font-weight: bold;
+			background-color:  #C8DBDF;
+			padding: 0px;
+			border-right: 1px solid #999999;
+			border-left: 1px solid #999999;
+			border-bottom: 1px solid #999999;
+		}
+		/**  iPort Wartebildschirm **/
+		.iPortWait {
+			height: 250px;
+			vertical-align: middle;
+			text-align: center;
+			background-color: #F5F7F8;
+			padding: 5px;
+			border: 1px solid #999999;
+		}
+		#search p {
+			margin-top: 2%;
+		}

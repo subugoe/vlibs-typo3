@@ -1,0 +1,300 @@
+/* default styles for extension "tx_metasuchexml_pi1" */
+	.tx-metasuchexml-pi1 {
+
+	}
+
+#error {
+padding: 1em 0;
+}
+
+#error p {
+font-size: 1.2em;
+padding:1em 0;
+font-weight: bold;
+color: #777;
+}
+#tm {
+float: right;
+padding: 5em 0 0 0;
+}
+#gen {
+width: 50%;
+padding-bottom: 1.5em;
+
+}
+
+.genText table td {
+padding: 0 0.3em;
+} 
+
+img#vzg {
+height: 15px;
+}
+
+.name  {
+font-weight: bold;
+}
+		#iportContent {
+
+			position: relative;
+		}
+		
+	
+		#iportContent  p.intro span.queryterm {
+
+			background: url(../images/tag-i.gif) center right no-repeat;
+padding: 0 10px 0 5px;
+line-height: 1em;
+
+		}
+
+	       #iportContent  p.intro i {
+
+			font-style:italic;
+                }
+
+
+		#iportContent table {
+			width: 70%;
+		}
+
+		#iportContent .dbhits { 
+			padding: 1em 0;
+			border-bottom: 1px solid #91a7ce;
+			color: #000;
+			width: 25%;
+			vertical-align:top;
+		}
+
+		#iportContent .datahead {
+			border-bottom: 1px solid #91a7ce;
+		}
+
+		td.data, td.recno {
+			border-bottom: 1px solid #91a7ce;			
+			padding: 1em 0;
+			vertical-align:top;
+		}
+		/*
+		td.data a {
+			font-size: 1.2em;
+			font-weight: bolder;
+			}*/	
+		td.preview {
+			border-top: 5px solid #dae1f4;
+                        border-bottom: 1px solid #91a7ce;
+                        padding-bottom: 0.5em;	
+		}			
+
+		td.fieldname {
+			padding: 1em 0;
+                        color: #000;
+                        width: 25%;
+                        vertical-align:top;
+		}
+		#recordtable, #recordlisttable
+		{
+			float: left;
+			border-collapse:collapse;
+			width: 70%;
+			border-spacing: 0;
+			color: #192d57;
+		}
+
+		#recordtable .title{
+			font-weight: bold;
+		}	
+		#recordtable .name {
+			
+			color: #192d57;
+			font-weight: bold;
+			padding-right: 0.4em;
+		}
+
+		#recordtable caption
+		{
+			padding: 1.3em 0;
+		}
+	
+		#recordtable table.fullRecord{
+			width: 100%;
+		}	
+
+		#right {
+
+			float: right;
+			width: 25%;
+			display: inline;
+			top: 8%;
+			right: 1px;
+			padding: 0;
+
+		}
+		
+		#dbcard {
+			border: 3px solid #c1d0ed;
+			padding:2px;
+			background: #b5c7e7;
+		}
+		#dbcard td.data, td.dbhits{
+			border: 0;
+			padding: 2px;
+		}
+		#facetcard {
+                        border: 3px solid #c1d0ed;
+                        padding: 0.5em 1em ;
+                        background: #b5c7e7;
+                }
+
+		#facetcard a, #facetcard form {
+			padding: 0.5em 2em;
+		}
+		img.doctype {
+			vertical-align: bottom;
+			padding-right: 0.4em;
+		}
+
+
+		.cIconsetTop
+		{
+			float: right;
+			text-align: right;
+			width: 50%;
+			height:auto;
+			position: absolute;
+			top: -2.9em;
+			right: 0;
+			display: inline;
+		}
+
+.cIconsetBottom
+{
+float: right;
+text-align: right;
+width: 50%;
+height:auto;
+margin-top: -1.9em;
+display: inline;
+}
+
+.cIconsetTop img, .cIconsetBottom img
+{
+display: inline;
+padding: 0 0 0 0.7em;
+}
+
+.cIconsetVerbal {
+color:#92a9db;
+}
+
+
+.cIconsetVerbal a {
+color:#192d57;
+}
+		#gotoForm
+		{
+			padding: 1em 0 0 0;
+			clear: both;
+			width: 80%;
+		}
+
+		#newForm {
+			clear: both;
+			padding: 1em 0 0 0;
+		}
+
+
+		.abstrCont, .abstr {
+			display: none;
+		}
+
+		#tooltip {
+			position: absolute;
+			margin-left:2em;
+			width: 20em;
+			padding: 1em;
+			z-index:100;
+			background: #c1d0ed;
+			border: 2px #adbfe4 solid;
+			text-align: left;
+		}
+
+		.cIconsetVerbal {
+			font-size: 105%;
+			float: left;
+			width: auto;
+			padding: 1em 0;
+		}
+
+		.fieldName {
+			font-weight: bold;
+			padding: 0 1em 0 0;
+			vertical-align: top;
+		}
+		.fieldData {
+			vertical-align: top;	 
+		}
+
+		/**  iPort System-Rückmeldungen **/
+		div#feedback {
+			font-weight: bold;
+			margin-bottom: 15px;
+			padding-left: 20px;
+			padding-bottom: 3px;
+			background-image: url(Image_Archive/da_info.gif);
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-position: left top;
+		}
+		/** Katalogdurchlauf in execute.php **/
+		.karussell {
+			padding-left: 150px;
+		}
+		/** Nutch-Target-Highlighting I **/
+		.highlight {
+			font-weight: bold;
+			background-color: #ffffb7;
+		}
+		/** Nutch-Target-Highlighting II **/
+		.ellipsis {
+			font-weight: bold;
+		}
+		/** Suchschlitzformatierung **/
+		.forminput {
+		
+		}
+		/**  iPort Wartebildschirm **/
+		.iPortWait {
+			height: 250px;
+			vertical-align: middle;
+			text-align: center;
+			background-color: #F5F7F8;
+			padding: 5px;
+		}
+.store {
+display:none;
+}
+
+.abstrCont img{
+vertical-align: bottom;
+padding: 0  0.5em 0.2em 0.2em;
+}
+
+.status {
+color: #336633;
+}
+
+a.close {
+font-weight: bold;
+font-size: 1.2em;
+vertical-align: top;
+padding:0.5em;
+}
+
+.save {
+padding-left: 0.2em;
+}
+
+.order {
+padding: 0 0.7em;
+}

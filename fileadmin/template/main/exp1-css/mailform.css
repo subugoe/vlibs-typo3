@@ -1,0 +1,46 @@
+SELECT {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #EDEFF1;
+	border: 0px solid #CCCCCC;
+}
+
+TEXTAREA {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	border:0px solid #CCCCCC;
+	color: #000000;
+	font-weight : normal;
+	background-color: #EDEFF1;
+}
+
+INPUT {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+/*	background-color:#CCCCCC;*/
+	border: 1px solid #666666;
+}
+
+BUTTON {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid #EDEFF1;
+}
+
+.csc-mailform {
+	width: 300px;
+	border: 0px none;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	padding-left: 36px;
+}
+
+.csc-mailform-field {
+	margin-bottom: 6px;
+	line-height: 18px;
+}

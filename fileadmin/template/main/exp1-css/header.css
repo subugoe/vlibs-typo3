@@ -1,0 +1,126 @@
+#container {
+
+	display: block;
+
+	float: right;
+
+	text-align: right;
+
+	border: 0 none;
+
+	position: relative;
+
+	top: 8px;
+
+	right: 20px;
+
+}
+
+
+
+tx-iportquicksearch-pi1 {
+
+	float: right;
+
+	margin: 10px;
+
+	text-align: left;
+
+	vertical-align: middle;
+
+}
+
+#header  {
+
+	margin: 0px 0px 0px 0px;
+
+	border: 0 none;
+
+	 
+
+     	background-image: url(../images/banner.jpg);
+
+	 background-repeat: repeat-y;
+
+    
+
+	background-color: #c9cdff;
+
+	color: #000;
+
+	height: 120px;
+
+}
+
+#head_navigation {
+
+	float: right;
+
+	text-align: left;
+
+	margin: 20px 10px 10px 10px; 
+
+}
+
+#header-img {
+
+	position: absolute;
+
+	left: 6px;
+
+	top: 6px;
+
+	height: 120px;
+
+	background: #3F;
+
+}
+
+#head_navigation a {
+
+	text-decoration: none;
+
+	font-size: 80%;
+
+	margin: 1px 0px 1px 0px;
+
+	padding: 0px 3px 0px 3px;
+
+	border: 1px solid #999;
+
+	margin-top: 10px;
+
+}
+
+#head_navigation a:link {
+
+	background-color: #fafafa;
+
+	color: #0f1eb7;
+
+}
+
+#head_navigation a:visited {
+
+	background-color: #fafafa;
+
+	color: #0f1eb7;
+
+}
+
+#head_navigation a:hover {
+
+	background-color: #38d;
+
+	color: #fff;
+
+}
+
+#head_navigation a:active {
+
+	background-color: #999;
+
+	color: #fff;
+
+}
+

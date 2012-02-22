@@ -1,0 +1,11 @@
+
+###teaser object
+
+temp.teaser = COA
+
+temp.teaser {
+
+	10 < temp.breadcrumb
+	20 < temp.langmenu
+
+}

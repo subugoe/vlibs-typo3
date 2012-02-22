@@ -1,0 +1,379 @@
+body
+{
+/*Zum Ausgleichen unterschiedlicher Schriftgrößen auf WIN/MAC/
+/*Setzt Schrift für alle Browser auf kleinste Einstellung*/
+font: x-small sans-serif;
+text-align:center;
+}
+
+#mainContainer
+{
+text-align:left;
+/*Setzt Schrift für alle Browser auf gleichgroße Einstellung*/
+font-size: 127%;
+font-family: trebuchet ms, verdana, sans-serif;
+}
+
+/*Oberer Bereich */
+
+#kopfleiste
+{
+
+}
+
+#logoleiste
+{
+
+}
+
+#aktionsbild
+{
+
+}
+
+ul#menuService
+{
+list-style-type: none;
+font-size: 95%;
+}
+
+ul#menuService li
+{
+
+}
+
+ul#menuService li a
+{
+
+}
+
+ul#menuService li.sprachAnzeige
+{
+
+}
+
+ul#menuService li a#languageGER
+{
+
+}
+
+ul#menuService li a#languageENG
+{
+
+}
+
+#mittelLeiste
+{
+text-align: right;
+font-size: 96%;
+
+}
+
+.SieSindHier
+{
+letter-spacing: 0.1em;
+}
+
+ul#breadcrumb
+{
+list-style-type: none;
+}
+
+ul#breadcrumb li
+{
+text-transform: uppercase;
+padding: 0 0.5em;
+letter-spacing: 0.1em;
+}
+
+ul#breadcrumb li span {
+}
+
+ul#breadcrumb li a, ul#breadcrumb a
+{
+text-transform: uppercase;
+}
+
+ul#breadcrumb li a:hover
+{
+
+}
+
+ul#breadcrumb li #breadSel
+{
+text-transform: uppercase;
+line-height: 0.75em;
+letter-spacing: 0.1em;
+}
+
+ul#features
+{
+list-style-type: none;
+text-align: right;
+}
+
+ul#features li
+{
+
+}
+
+ul#features li a
+{
+/*line-height: 0.75em;*/
+letter-spacing: 0.1em;
+}
+
+
+ul#features ol li a
+{
+
+}
+
+ul#features img
+{
+}
+
+
+ul#features li a:hover
+{
+}
+/* Ende Oberer Bereich */
+
+/* Content Bereich*/
+
+#contentContainer
+{
+font-size: 90%;
+}
+
+h1.welcome
+{
+font-family: georgia, verdana, sans-serif;
+font-weight: normal;
+font-size: 1.69em;
+letter-spacing:0.149em;
+}
+
+ul#menuMain
+{
+list-style-type: none;
+font-size: 108%;
+}
+
+ul#menuMain .menuPraefix
+{
+font-size: 1.6em;
+}
+
+ul#menuMain li
+{
+
+}
+
+ul#menuMain li a
+{
+line-height: 0.75em;
+letter-spacing: 0.1em;
+}
+
+ul#menuMain li a:hover
+{
+line-height: 0.75em;
+letter-spacing: 0.1em;
+}
+
+ul#menuMain li.trenner
+{
+line-height: 0.75em;
+letter-spacing: 0.1em;
+border-top: 1px solid #f0f0f0;
+}
+
+#cSearch
+{
+font-size: 105%;
+}
+
+#cSearch h2
+{
+font-size: 120%;
+font-family: georgia, sans-serif;
+font-weight: normal;
+letter-spacing:0.1em;
+}
+
+#cSearch form
+{
+
+}
+
+#cInhalt
+{
+
+}
+
+#cText
+{
+font-size: 110%;
+}
+
+
+h1.standard
+{
+font-family: georgia, verdana, sans-serif;
+font-weight: normal;
+font-size: 1.69em;
+letter-spacing:0.149em;
+}
+
+h2.searchingIn
+{
+font-family: georgia, verdana, sans-serif;
+font-weight: normal;
+color: #192d57;
+font-size: 1.29em;
+letter-spacing:0.1em;
+}
+
+
+span.neuesFenster
+{
+
+}
+
+td.data a.external_link
+{
+
+}
+
+input.iputStart
+{
+
+}
+
+input.submStart
+{
+
+}
+
+input.iputStartSmall
+{
+
+}
+
+input.submStartSmall
+{
+
+}
+
+#iport_goto_form
+{
+
+}
+
+input.iputGoto
+{
+
+}
+
+input.submGoto
+{
+
+}
+
+#cSearch a#advancedLink
+{
+
+}
+
+p
+{
+line-height: 1.5em;
+}
+
+#cNews
+{
+
+}
+
+h2.csc-firstHeader
+{
+font-size: 180%;
+font-weight: normal;
+font-family: georgia, sans-serif;
+}
+
+.newsTeaser
+{
+
+}
+
+.newsTeaser h2
+{
+font-family: georgia, verdana, sans-serif;
+font-size:125%;
+}
+
+.newsTeaser p.bodytext
+{
+font-size: 110%;
+}
+
+.newsTeaser a
+{
+font-weight: bold;
+}
+/* Ende Content Bereich*/
+
+/* Abschluss unten*/
+#iport_left_nav
+{
+font-size: 105%;
+}
+
+a.buttonlink
+{
+
+}
+
+.tabs {
+}
+
+.tabs ul {
+}
+
+.tabs li {
+}
+
+.tabs a {
+}
+
+.currentTab, a.currentTab {
+font-weight: bold;
+}
+
+
+.first, .advFirst {
+font-size:93%;
+line-height:1.4em;
+}
+
+#catalogues, #onlineDocs, #internet, #historicalMath {
+
+}
+
+.dbGroup {
+font-weight: bold;
+}
+
+#all, #no {
+font-size: 1.6em;
+}
+
+span.aboText {
+font-size: 1.2em;
+}
+
+div .showResultsWrap, div .browseLinksWrap {
+font-size: 1.2em;
+}

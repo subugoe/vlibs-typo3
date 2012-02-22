@@ -1,0 +1,286 @@
+/* default styles for extension "tx_browsing_pi1" */
+	.tx-browsing-pi1 {
+
+	}
+
+#browsingNavi {
+padding: 0.5em 0  0 0.5em;
+}
+
+#browsingNavi a {
+padding: 0 0.4em;
+}
+
+
+#tree {
+    margin-top: 0.5em;
+    width: 860px;
+}
+
+#tree ul{
+    padding-bottom: 2em;
+}
+
+#tree li, ul{
+    list-style: none;
+}
+
+#level0 {
+     margin-right: 4px;
+     margin-left: 0px;
+     width: 18%;
+     float: left;
+     padding-right: 1%;
+     
+}
+#level0 li {
+     padding-bottom: 0.5em;
+     padding-top: 0.5em;        
+     border-bottom: 1px dotted #192d57;
+}
+#level0 li a {
+	color: #192d57;
+}
+
+#level1, #level2, #level3 {
+     margin-right: 4px;
+     margin-left: 0px;
+     width: 20%;
+     float: left;
+     padding-left: 0px;
+     border-left: 1px solid #192d57;
+     margin-right: 1%;
+     
+}
+
+
+#level1 li, #level2 li, #level3 li {
+         
+        padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	padding-left: 0.3em;
+        border-bottom: 1px dotted #192d57;
+}
+#level1 li a.search, #level2 li a.search, #level3 li a.search {
+	color: #000;	
+	font-size: 0.8em;
+	font-style: italic;
+}
+#level1 li a, #level2 li a, #level3 li a  {
+	color: #192d57;
+}
+
+
+#level4 {
+     margin-left: 0px;
+     width: 30%;
+     float: left;
+
+
+margin-right: 1%;
+
+}
+
+
+#level4 li {
+
+         padding-top: 0.5em;
+        padding-bottom: 0.5em;
+         border-bottom: 1px dotted #192d57;
+}
+#level4 li a.search {
+        color: #000;
+        font-size: 0.8em;
+        font-style: italic;
+}
+#level4 li a  {
+        color: #192d57;
+}
+
+
+#level5 {
+     margin-left: 0px;
+     width: 45%;
+     float: left;
+
+
+padding-left: 2px;
+border-left: 1px solid #192d57;
+margin-right: 1%;
+
+}
+
+
+#level5 li {
+
+         padding-top: 0.5em;
+        padding-bottom: 0.5em;
+         border-bottom: 1px dotted #192d57;
+}
+#level5 li a.search {
+        color: #000;
+        font-size: 0.8em;
+        font-style: italic;
+}
+#level5 li a  {
+        color: #192d57;
+}
+
+
+#cat {color: #f7e7a0; font-weight: bold;}
+
+.active {background: #b5c7e7;font-weight: bold;}
+#tree li ul li.msc {color: #f7e7a0;font-weight: bold;}
+
+#browse-search {
+
+     float: right;
+     text-align: right;
+     width: 70%;
+     position: relative;
+
+     top: -2.5em;
+<!-- top: -3em; -->
+     right: 0pt;
+     display: inline;
+}
+
+#cat {
+position:relative;
+top: -0.9em;
+}
+/*#searchMsc {
+position: absolute;
+right: 0;
+}
+*/
+#tree {
+    margin-top: 0.5em;
+    width: 860px;
+}
+
+#tree ul{
+    padding-bottom: 2em;
+}
+
+#tree li, ul{
+    list-style: none;
+}
+
+#level0 {
+     margin-right: 4px;
+     margin-left: 0px;
+     width: 18%;
+     float: left;
+     padding-right: 1%;
+     
+}
+#level0 li {
+     padding-bottom: 0.5em;
+     padding-top: 0.5em;        
+     border-bottom: 1px dotted #192d57;
+}
+#level0 li a {
+	color: #192d57;
+}
+
+#level1, #level2, #level3 {
+     margin-right: 4px;
+     margin-left: 0px;
+     width: 20%;
+     float: left;
+     padding-left: 0px;
+     border-left: 1px solid #192d57;
+     margin-right: 1%;
+     
+}
+
+
+#level1 li, #level2 li, #level3 li {
+         
+         padding: 0.5em 0 0.5em 0.5em;
+}
+#level1 li a.search, #level2 li a.search, #level3 li a.search {
+	color: #000;	
+	font-size: 0.8em;
+	font-style: italic;
+}
+#level1 li a, #level2 li a, #level3 li a  {
+	color: #192d57;
+	padding-left: 5px;
+}
+
+
+#level4 {
+     margin-left: 0px;
+     width: 30%;
+     float: left;
+
+
+margin-right: 1%;
+
+}
+
+
+#level4 li {
+
+         padding-top: 0.5em;
+        padding-bottom: 0.5em;
+         border-bottom: 1px dotted #192d57;
+}
+#level4 li a.search {
+        color: #000;
+        font-size: 0.8em;
+        font-style: italic;
+}
+#level4 li a  {
+        color: #192d57;
+}
+
+
+#level5 {
+     margin-left: 0px;
+     width: 45%;
+     float: left;
+
+
+padding-left: 2px;
+border-left: 1px solid #192d57;
+margin-right: 1%;
+
+}
+
+
+#level5 li {
+
+         padding-top: 0.5em;
+        padding-bottom: 0.5em;
+         border-bottom: 1px dotted #192d57;
+}
+#level5 li a.search {
+        color: #000;
+        font-size: 0.8em;
+        font-style: italic;
+}
+#level5 li a  {
+        color: #192d57;
+	padding-left: 5px;
+}
+
+
+#cat {color: #f7e7a0; font-weight: bold;}
+
+.active {background: #b5c7e7;font-weight: bold;}
+#tree li ul li.msc {color: #f7e7a0;font-weight: bold;}
+
+
+#mscSubmit {
+
+padding: 0pt;
+margin: 0pt;
+
+}
+/*#searchMsc {
+padding-top: 2.1em;
+}*/
+  

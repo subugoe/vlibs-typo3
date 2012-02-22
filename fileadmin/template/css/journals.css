@@ -1,0 +1,36 @@
+/* 
+ *  special formatting for journal catalogue
+ */
+
+#content {
+	color: black;
+}
+
+#content p {
+	line-height: 120%;
+	margin-bottom: 1px;
+/* 	margin-bottom:5px; */
+	text-align: justify;
+}
+
+#content .range {
+	font-size: 100%;
+	padding: 0px 8px 0px 8px;
+	font-weight: normal;
+	border-style: none;
+	background-color: #e8e8e8;
+	color: #0f1eb7;
+}
+
+#content .range:hover {
+	text-decoration: none; 
+	cursor: pointer;
+	background-color: #999;
+	color: #fff;
+}
+
+#search_button:hover {
+	cursor: pointer;
+	background-color: #999;
+	color: #fff;
+}
