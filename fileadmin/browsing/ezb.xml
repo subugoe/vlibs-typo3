@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<ezb_page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://ezb.uni-regensburg.de/ezeit/vascoda/vifa/vifaxml/ezb_page_xmloutput.xsd" lang="de" colors="7">
+<library bibid="SUBGO" href="http://www.sub.uni-goettingen.de/">Staats- und Universitätsbibliothek Göttingen</library>
+
+<page_name>detail.phtml</page_name>
+<page_vars>
+  <jour_id value="108761"/>
+</page_vars>
+<ezb_detail_about_journal>
+
+
+<journal jourid="108761">
+<title>Abhandlungen aus dem Mathematischen Seminar der Universität Hamburg</title>
+
+<journal_color color_code="2" color="yellow"/>
+
+<detail>
+        <publisher>Springer</publisher>
+            <E_ISSNs>
+		<E_ISSN>0025-5858</E_ISSN>
+            </E_ISSNs>	    
+            <P_ISSNs>
+		<P_ISSN>1865-8784</P_ISSN>
+
+	    </P_ISSNs>
+            <ZDB_number url="http://dispatch.opac.ddb.de/DB=1.1/SRT=YOP/CMD?ACT=SRCHA&amp;IKT=8506&amp;TRM=2044664-0">2044664-0</ZDB_number>
+        <subjects>
+            <subject>Mathematik</subject>
+      </subjects>
+    
+        <keywords>
+	    	    <keyword>Allgemeine mathematische Zeitschriften</keyword>
+
+	        </keywords>
+        
+                              <homepages>
+      	<homepage url="http%3A%2F%2Fwww.springerlink.com%2Fcontent%2F0025-5858">http://www.springerlink.com/content/0025-5858</homepage>
+          </homepages>
+    
+    
+            <first_fulltext_issue>
+	    	    	    <first_date>2008</first_date>    </first_fulltext_issue>
+                
+        <appearence>Volltext, Online und Druckausgabe</appearence>
+
+            <costs>kostenlos mit Druckausgabe</costs>
+    
+        
+        <remarks>kostenlos mit Druckausgabe: Nur für den laufenden Jahrgang. Zugriff auf den vorigen Jahrgang endet 60 Tage nach Erscheinen des letzten Heftes. Zugriff auf (neuere) backfiles kostenpflichtig (20% Aufschlag auf den Listenpreis, Enhanced Access Program) oder im Rahmen eines E-only-Abos (zum Listenpreis).</remarks>
+    </detail>
+    
+<periods>
+<period>
+<journal_color color="yellow" /> 
+<label>
+        	    NDS-Konsortium
+	 
+                	
+</label>
+
+<readme_link url="http://nds-konsortium.sub.uni-goettingen.de/readme.html#nds_springer"/>
+<warpto_link url="http%3A%2F%2Fwww.springerlink.com%2Fcontent%2F0025-5858" />
+</period>
+</periods>
+
+<where_link />
+
+
+</journal>
+
+</ezb_detail_about_journal>
+
+
+</ezb_page>
+
