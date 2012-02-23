@@ -1,11 +1,15 @@
-"NEE";"NE";"Mathematik";"lkl=e?";"Mathematics"
-"NEE01010";"NEE01000";"Allgemeines";"msc=00?";"General"
-"NEE01020";"NEE01000";"Geschichte und Grundlagen";"msc=01? or msc=02?";"History and Foundations"
-"NEE01030";"NEE01000";"Algebra";"msc=05? or msc=1? or msc=20? or msc=22?";"Algebra"
-"NEE01040";"NEE01000";"Analysis";"msc=26? or msc=28? or msc=3? or msc=4?";"Analysis"
-"NEE01050";"NEE01000";"Geometrie und Topologie";"msc=5?";"Geometry and Topology"
-"NEE01060";"NEE01000";"Wahrscheinlichkeitsrechnung und Statistik";"msc=60? or msc=62?";"Probability and Statistics"
-"NEE01070";"NEE01000";"Numerik";"msc=65?";"Numerical Analysis"
-"NEE01080";"NEE01000";"Informatik";"msc=68?";"Computer Science"
-"NEE01090";"NEE01000";"Angewandte Mathematik";"msc=7? or msc=8? or msc=90? or msc=91? or msc=92? or msc=93? or msc=94";"Applied Mathematics"
-"NEE01100";"NEE01000";"Mathematikdidaktik";"msc=97?";"Mathematics education"
+"NEE";"NE";"Mathematik";;;
+"NEE01000";"NEE";"Gesamte Mathematik";"(msc=0? or msc=1? or msc=2? or msc=3? or msc=4? or msc=5? or msc=6? or msc=7? or msc=8? or msc=9?)";"Mathematics";
+;;;;;
+"NEE01110";"NEE01000";"Algebra";"(msc=05? or msc=1? or msc=20? or msc=22?)";"Algebra";"inline"
+"NEE01120";"NEE01000";"Analysis";"(msc=26? or msc=28? or msc=3? or msc=4?)";"Analysis";"inline"
+"NEE01130";"NEE01000";"Geometrie und Topologie";"(msc=5?)";"Geometry and Topology";"inline"
+;;;;;
+"NEE01210";"NEE01000";"Wahrscheinlichkeitsrechnung und Statistik";"(msc=60? or msc=62?)";"Probability and Statistics";"inline,break"
+"NEE01220";"NEE01000";"Numerik";"(msc=65?)";"Numerical Analysis";"inline"
+"NEE01230";"NEE01000";"Informatik";"(msc=68?)";"Computer Science";"inline"
+"NEE01240";"NEE01000";"Angewandte Mathematik";"(msc=7? or msc=8? or msc=90? or msc=91? or msc=92? or msc=93? or msc=94)";"Applied Mathematics";"inline"
+;;;;;
+"NEE01310";"NEE01000";"Mathematikdidaktik";"(msc=97?)";"Mathematics education";"inline,break"
+"NEE01320";"NEE01000";"Geschichte und Grundlagen";"(msc=01? or msc=02?)";"History and Foundations";"inline"
+"NEE01330";"NEE01000";"Allgemeines";"(msc=00?)";"General";"inline"
