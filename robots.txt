@@ -1,0 +1,21 @@
+User-agent: *
+
+# Disallow pages that cause EZB searches
+Disallow: /zeitschriften/zeitschrift/
+Disallow: /zeitschriften/suche/
+Disallow: /en/journals/journal/
+Disallow: /en/journals/search/
+Disallow: /nationallizenzen/zeitschrift/
+Disallow: /nationallizenzen/suche/
+Disallow: /en/nationallizenzen/journal/
+Disallow: /en/nationallizenzen/search/
+
+# Disallow pazpar2 proxy
+Disallow: /pazpar2/
+
+# Disallow ZDB proxy
+Disallow: /zdb/
+Disallow: /zdb-local/
+
+# Disallow TYPO3 backend
+Disallow: /typo3/
