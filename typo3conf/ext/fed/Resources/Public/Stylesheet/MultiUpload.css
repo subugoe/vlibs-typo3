@@ -1,0 +1,11 @@
+.fed-plupload { margin-bottom: 8px; }
+.fed-plupload td,
+.fed-plupload table { border-spacing: 0px !important; border-collapse: collapse !important; }
+.plupload_filelist_footer .plupload_file_size,
+.plupload_filelist_footer .plupload_file_status { display: none !important; }
+.plupload_buttons { white-space: nowrap; }
+.plupload_container { padding: 0px; }
+.plupload_file_name { overflow: visible; }
+.plupload_file_action { display: table-cell; width: 25px; }
+.plupload_header_content,
+.plupload_header_content_list { padding-left: 8px; background-image: none !important; min-height: 58px; }

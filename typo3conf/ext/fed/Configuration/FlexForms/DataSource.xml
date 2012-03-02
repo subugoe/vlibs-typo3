@@ -1,0 +1,49 @@
+<T3DataStructure>
+	<meta>
+	    <langDisable>1</langDisable>
+	</meta>
+	  <ROOT>
+	    <type>array</type>
+	    <el>
+	      <sources>
+			<TCEforms>
+				<label>Data Sources</label>
+				<config>
+					<type>select</type>
+					<foreign_table>tx_fed_domain_model_datasource</foreign_table>
+	            <minitems>0</minitems>
+	            <maxitems>100</maxitems>
+	            <multiple>1</multiple>
+	            <size>10</size>
+	            <autoSizeMax>30</autoSizeMax>
+	            <itemListStyle>Width:250px</itemListStyle>
+				</config>
+			</TCEforms>
+	      </sources>
+		  <templateFile>
+	      <TCEforms>
+	      	<label>Fluid Template File</label>
+	      	<config>
+		      	<type>group</type>
+		      	<internal_type>file</internal_type>
+				<allowed>html</allowed>
+				<disallowed>php</disallowed>
+		      	<minitems>0</minitems>
+		      	<maxitems>1</maxitems>
+		      	<size>1</size>
+		      	<multiple>0</multiple>
+	      	</config>
+	      </TCEforms>
+	      </templateFile>
+		  <templateSource>
+	      	<TCEforms>
+	      	<label>Fluid Template Source Code</label>
+	      	<config>
+		      	<type>user</type>
+		      	<userFunc>Tx_Fed_Configuration_Wizard_FlexFormCodeEditor->renderField</userFunc>
+	      	</config>
+	      	</TCEforms>
+	      </templateSource>
+	    </el>
+	  </ROOT>
+</T3DataStructure>

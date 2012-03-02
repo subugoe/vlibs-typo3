@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the Fluid Extbase Development Framework extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_fed">FED</label>
+			<label index="tx_fed_file">File resource object</label>
+			<label index="tx_fed_file.filename">Filename</label>
+			<label index="tx_fed_file.size">Filesize</label>
+			<label index="tx_fed_file.modified">Modified</label>
+			<label index="tx_fed_file.created">Created</label>
+			<label index="tx_fed_domain_model_datasource">Data Source for Fluid Display</label>
+			<label index="tx_fed_domain_model_datasource.name">Name of this data source</label>
+			<label index="tx_fed_domain_model_datasource.description">Description of this data source</label>
+			<label index="tx_fed_domain_model_datasource.query">If specified, SQL Query is used to collect data</label>
+			<label index="tx_fed_domain_model_datasource.func">If specified, func is called to collect data</label>
+			<label index="tx_fed_domain_model_datasource.url">If specified, data is read from this url - remember to specify method</label>
+			<label index="tx_fed_domain_model_datasource.url_method">Method used to read url data</label>
+			<label index="tx_fed_domain_model_datasource.template_file">Fluid template file to use when rendering this DataSource</label>
+			<label index="tx_fed_domain_model_datasource.template_source">Optional Fluid template source code to use for rendering</label>
+			<label index="task.action">CommandController Command</label>
+			<label index="task.name">Extbase CommandController Task</label>
+			<label index="task.description">Allows Extbase CommandController commands to be configured and executed through the scheduler framework.</label>
+
+			<!-- FCE field and element labels -->
+			<label index="fce.selection">Select Fluid FCE type</label>
+			<label index="fce.elements.layout.columns.label">Layout: Columns</label>
+			<label index="fce.elements.layout.columns.description">Divides content elements into columns, the number and widths of which can be configured.</label>
+			<label index="fce.elements.layout.columns.fields.class">Column layout</label>
+			<label index="fce.elements.layout.columns.areas.column.1">Column 1</label>
+			<label index="fce.elements.layout.columns.areas.column.2">Column 2</label>
+			<label index="fce.elements.layout.columns.areas.column.3">Column 3</label>
+
+			<label index="fce.elements.layout.contentrandomizer.label">Layout: Content Randomizer</label>
+			<label index="fce.elements.layout.contentrandomizer.description">Displays child content elements in a random fashion. Has option to define how many elements to select at random.</label>
+			<label index="fce.elements.layout.contentrandomizer.fields.limit">Number of random content elements to display</label>
+			<label index="fce.elements.layout.contentrandomizer.areas.content">Content to be randomized</label>
+
+			<label index="fce.elements.layout.jQueryAccordion.label">Layout: JQuery Accordion</label>
+			<label index="fce.elements.layout.jQueryAccordion.description">Allows other content elements to be inserted into a jQuery Accordion widget.</label>
+
+			<label index="fce.elements.layout.jQueryTabs.label">Layout: JQuery Tabs</label>
+			<label index="fce.elements.layout.jQueryTabs.description">Allows other content elements to be inserted into a jQuery Tabs widget.</label>
+
+			<label index="fce.elements.navigation.redirect.label">Naviation: Redirect</label>
+			<label index="fce.elements.navigation.redirect.description">Allows a timeout-based redirection to a target page, showing a message and counting down before redirecting.</label>
+
+			<label index="fce.elements.navigation.breadCrumb.label">Naviation: Bread Crumb menu</label>
+			<label index="fce.elements.navigation.breadCrumb.description">Renders a page root line in the shape of a breadcrumb menu. Allows configuring the starting point and entryLevel.</label>
+
+			<label index="fce.elements.resource.script.label">Resource: Script as content element</label>
+			<label index="fce.elements.resource.script.description">Allows JavaScript code to be added to the page header through this content element.</label>
+
+			<label index="fce.elements.resource.style.label">Resource: Style as content element</label>
+			<label index="fce.elements.resource.style.description">Allows CSS styles to be added to the page header through this content element.</label>
+
+			<label index="fce.elements.resource.social.label">Resource: Social Bookmarks</label>
+			<label index="fce.elements.resource.social.description">Adds selected social bookmarks to your page - choose from FaceBook like, share and comment, Disqus, Twitter and Google+.</label>
+
+			<label index="fce.elements.display.addressandmap.label">Display: Geocoded Address and Map</label>
+			<label index="fce.elements.display.addressandmap.description">Displays a Google Map with a marker for one address. Supports any content element as address and as infowindow content in the Google Map.</label>
+			<label index="fce.elements.display.addressandmap.fields.groups.options">Options</label>
+			<label index="fce.elements.display.addressandmap.fields.groups.map">Map options</label>
+			<label index="fce.elements.display.addressandmap.fields.groups.address">Address options</label>
+			<label index="fce.elements.display.addressandmap.fields.jQuery">Load jQuery - in case your page does not include it. Uses Google's CDN Service.</label>
+			<label index="fce.elements.display.addressandmap.fields.displayHeaders">Display headers above address and map</label>
+			<label index="fce.elements.display.addressandmap.fields.displayAddress">Display the address</label>
+			<label index="fce.elements.display.addressandmap.fields.displayMap">Display the map</label>
+			<label index="fce.elements.display.addressandmap.fields.map.mapPosition">Map placement/position</label>
+			<label index="fce.elements.display.addressandmap.fields.map.scaleControl">Enable scale controls in map</label>
+			<label index="fce.elements.display.addressandmap.fields.map.zoomControl">Enable zoom controls in map</label>
+			<label index="fce.elements.display.addressandmap.fields.map.panControl">Enable pan controls in map</label>
+			<label index="fce.elements.display.addressandmap.fields.map.mapTypeControl">Enable map type controls in map</label>
+			<label index="fce.elements.display.addressandmap.fields.map.zoom">Zoom level on map - 1 to 20</label>
+			<label index="fce.elements.display.addressandmap.fields.map.width">Width of map element, fx '500px' or '100%'</label>
+			<label index="fce.elements.display.addressandmap.fields.map.height">Height of map element, fx '400px' or '50%'</label>
+			<label index="fce.elements.display.addressandmap.fields.map.mapTypeId">Type of map display</label>
+			<label index="fce.elements.display.addressandmap.fields.map.markerIcon">Optional marker icon file</label>
+			<label index="fce.elements.display.addressandmap.fields.address">Address to display</label>
+			<label index="fce.elements.display.addressandmap.areas.addressContent">Content under address</label>
+			<label index="fce.elements.display.addressandmap.areas.infoboxContent">InfoWindow Content</label>
+
+			<label index="fce.elements.display.filelist.label">Display: Customizable File List</label>
+			<label index="fce.elements.display.filelist.description">Displays fully customizable list of files, with optional columns for file size, type, ctime etc. Can create a DataTable jQuery sortable table.</label>
+		</languageKey>
+	</data>
+</T3locallang>

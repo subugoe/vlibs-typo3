@@ -1,0 +1,52 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:layout name="Widget/RecordSelector" />
+
+<f:section name="Search">
+	<div class="record-selector-search">
+		<input type="text" id="{id}search" />
+		<f:if condition="{allowAdd}">
+			<button type="button" class="button add" id="{id}button">{buttonLabel}</button>
+		</f:if>
+	</div>
+</f:section>
+
+<f:section name="List">
+	<div class="record-selector-list-selector" id="{id}list">
+		<button type="button" class="button list" id="{id}listbutton">{listButtonLabel}</button>
+		<div class="list-element">...</div>
+	</div>
+</f:section>
+
+<f:section name="Content">
+	<div class="record-selector-content">
+		<f:renderChildren />
+	</div>
+</f:section>
+
+<f:section name="Selections">
+	<f:if condition="{multiple}">
+		<f:then>
+			<div class="selections">
+				<f:form.hidden name="{name}" value="0" />
+				<f:if condition="{listLabel}">
+					<p><strong>{listLabel}</strong></p>
+				</f:if>
+				<ul class="selection-list">
+					<f:for each="{values}" as="value">
+						<li data-id="{value.uid}">
+							<fed:data.var name="value.{searchProperty}" /> <a href="javascript:;"><f:image src="{f:uri.resource(path: 'Icons/Delete.png')}" alt="del" /></a>
+							<f:form.hidden name="{name}[]" value="{value.uid}" />
+						</li>
+					</f:for>
+				</ul>
+				<f:if condition="{listHelp}">
+					<p><fed:raw>{listHelp}</fed:raw></p>
+				</f:if>
+			</div>
+		</f:then>
+		<f:else>
+			<f:form.hidden name="{name}" value="{values.uid}" id="{id}field" />
+		</f:else>
+	</f:if>
+</f:section>

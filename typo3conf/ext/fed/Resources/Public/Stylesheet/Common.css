@@ -1,0 +1,60 @@
+
+
+
+.fed-sprite {
+	display: inline !important;
+}
+
+
+/*
+ * RECORD SELECTOR STYLINGS
+ */
+
+.record-selector {
+	border: 1px solid #ddd;
+	background: #fafafa;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 5px;
+	width: 300px;
+}
+
+.record-selector .list-container {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background: #fff;
+	max-height: 200px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.record-selector .record-selector-header {
+	font-weight: bold;
+}
+
+.record-selector .list-container .list-item {
+	padding: 0 0 0 10px;
+	cursor: pointer;
+}
+
+
+.record-selector .record-selector-search {
+	font-size: 90%;
+	margin-bottom: 10px;
+}
+
+.record-selector .record-selector-search input {
+	border: 1px solid #999;
+	padding: 1px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.record-selector .record-selector-search input:hover,
+.record-selector .record-selector-search input:focus { border-color: #000; }
+
+.record-selector .record-selector-list { margin-top: 10px; }

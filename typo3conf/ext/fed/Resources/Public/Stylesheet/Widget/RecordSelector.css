@@ -1,0 +1,65 @@
+
+.record-selector button {
+	cursor: pointer;
+}
+
+.record-selector .record-selector-list-selector .list-element,
+.record-selector .selections {
+	border: 1px solid #CACAC9;
+	background-color: #F7F7F5;
+	padding: 10px;
+	margin-top: 12px !important;
+	margin-bottom: 12px !important;
+}
+
+.record-selector .selections img {
+	margin: 0px 0px -3px 5px;
+}
+
+.record-selector .selections li,
+.record-selector .selections ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.record-selector .selections li {
+	list-style: square;
+	margin-left: 20px;
+}
+
+.record-selector .selections ul {
+	margin: 1em 0px 1em 0px;
+}
+
+.record-selector-list-selector .list-element {
+	display: none;
+	max-height: 150px;
+	overflow-y: scroll;
+}
+
+.record-selector .list-element ul {
+	margin: 0px;
+}
+
+.record-selector .list-element li {
+	display: block;
+	padding: 4px;
+	cursor: pointer;
+	float: left;
+	width: 30%;
+	border: 1px solid transparent;
+}
+
+.record-selector .list-element li:hover {
+	border: 1px solid #aaaaaa;
+	background-color: #F0F0EE;
+}
+
+.record-selector p {
+	margin: 0px 0px 0.2em 0px;
+}
+
+.record-selector-list-selector {
+	margin: 1em 0px 1em 0px;
+}
