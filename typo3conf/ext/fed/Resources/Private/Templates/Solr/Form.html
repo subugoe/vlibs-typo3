@@ -1,0 +1,61 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:layout name="Plugin/Default" />
+
+<f:section name="Configuration">
+	<flux:flexform id="ajax-solr" label="AJAX Solr Search">
+		<flux:flexform.sheet name="behaviour" label="Behaviour">
+			<flux:flexform.field.checkbox name="settings.flexform.options.auto" label="Automatic DHTML search - enabling this removes search buttons and searches on keypress instead" requestUpdate="TRUE" />
+			<f:if condition="{settings.flexform.options.auto} < 1">
+				<flux:flexform.field.checkbox name="settings.flexform.options.useLinksAsButtons" label="Use links instead of buttons for interaction" />
+			</f:if>
+			<flux:flexform.field.select name="settings.flexform.options.facet" label="Faceting of results" commaSeparatedItems="on,off" />
+			<flux:flexform.field.group name="settings.flexform.options.pageUid" label="Optional page to use as communication endpoint with typeNum parameter, if empty uses root page" internalType="db" allowed="pages" />
+		</flux:flexform.sheet>
+		<flux:flexform.sheet name="display" label="Display">
+			<flux:flexform.field.select name="settings.flexform.options.resultsPerPage" label="Initial results per page"
+				commaSeparatedItems="{fed:typoscript(path: 'plugin.tx_solr.search.results.resultsPerPageSwitchOptions')}" />
+			<flux:flexform.field.input name="settings.flexform.options.crop" label="Crop result body to maximum length" default="150" />
+			<flux:flexform.field.checkbox name="settings.flexform.options.paginate" label="Paginate results" />
+			<flux:flexform.field.checkbox name="settings.flexform.options.showScorebar" label="Show score bars" />
+			<flux:flexform.field.checkbox name="settings.flexform.options.showScorePercentage" label="Show score percentages" />
+			<flux:flexform.field.checkbox name="settings.flexform.options.showResultNumbers" label="Show result number for each result" requestUpdate="TRUE" />
+			<f:if condition="{settings.flexform.options.showResultNumbers}">
+				<flux:flexform.field.input name="settings.flexform.options.beforeResultNumber" label="Text/character to display on left side of result number" />
+			</f:if>
+			<f:if condition="{settings.flexform.options.paginate}">
+				<flux:flexform.field.select name="settings.flexform.options.onionSkinNumbers" label="Limit page selection numbers to this amount on both sides of current page"
+					commaSeparatedItems="1,2,3,4,5,6,7,8,9,10" />
+			</f:if>
+		</flux:flexform.sheet>
+	</flux:flexform>
+</f:section>
+
+<f:section name="Preview">
+	<fed:data.var name="booleans" type="array"><fed:explode>auto,paginate,showScorebar,showScorePercentage</fed:explode></fed:data.var>
+	<span class="exampleContent">
+		<table class="typo3-dblist">
+			<tbody>
+			<f:for each="{fed:explode(content: 'auto,onionSkinNumbers,paginate,resultsPerPage,showScorebar,showScorePercentage')}" as="optionName" iteration="iteration">
+				<tr class="{f:if(condition: iteration.isOdd, then: 'bgColor3', else: 'bCcolor4')}">
+					<td style="font-weight:bold;width:40%;">{optionName}</td>
+					<td>
+						<fed:contains haystack="{booleans}" needle="{optionName}">
+							<f:then>
+								<f:if condition="{fed:data.var(name: 'settings.flexform.options.{optionName}')}" then="Yes" else="No" />
+							</f:then>
+							<f:else>
+								<fed:data.var name="settings.flexform.options.{optionName}" />
+							</f:else>
+						</fed:contains>
+					</td>
+				</tr>
+			</f:for>
+			</tbody>
+		</table>
+	</span>
+</f:section>
+
+<f:section name="Main">
+	<fed:widget.solr options="{settings.flexform.options}" />
+</f:section>

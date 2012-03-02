@@ -1,0 +1,23 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:layout name="Default" />
+
+<div class="fed-solr">
+<table cellspacing="0" cellpadding="0">
+	<tr>
+		<td class="left">
+			<f:render section="search" />
+			<f:render section="count" />
+			<f:render section="limit" />
+			<f:render section="faceting" />
+		</td>
+		<td class="right">
+
+			<f:render section="paginate" />
+			<f:render section="results" />
+			<f:render section="paginate" />
+			<fed:comment><f:render section="debug" /></fed:comment>
+		</td>
+	</tr>
+</table>
+</div>

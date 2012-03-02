@@ -1,0 +1,7 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:for each="{files}" as="file" >
+	<a href="{file.relativePath}" rel="lightbox" title="{file.filename}">
+		<f:image src="{file.relativePath}" alt="{file.filename}" width="{arguments.thumbnailWidth}" />
+	</a>
+</f:for>

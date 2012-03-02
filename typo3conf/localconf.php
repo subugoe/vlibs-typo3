@@ -26,8 +26,8 @@ $TYPO3_CONF_VARS['SYS']['sitename'] = 'VLib-Test';	//  Modified or inserted by T
 $TYPO3_CONF_VARS['FE']['addRootLineFields'].= ',tx_realurl_pathsegment';
 $TYPO3_CONF_VARS['FE']['pageNotFound_handling'] = '404/';	// Modified or inserted by TYPO3 Install Tool.
 
-$TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,reports,realurl,static_info_tables,cshmanual,recycler,fluid,beko_debugster,scheduler,t3editor,devlog,t3jquery,ezbrequest,filelist,info,nkwgok,perm,rlmp_language_detection,pazpar2,piwik,func,about,feedit,opendocs,workspaces,rsaauth,saltedpasswords,xmlinclude,linkvalidator';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
-$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'extbase,css_styled_content,version,install,rtehtmlarea,t3skin,realurl,static_info_tables,fluid,beko_debugster,devlog,t3jquery,ezbrequest,nkwgok,rlmp_language_detection,pazpar2,piwik,feedit,workspaces,rsaauth,saltedpasswords,xmlinclude';	// Modified or inserted by TYPO3 Extension Manager.
+$TYPO3_CONF_VARS['EXT']['extList'] = 'extbase,css_styled_content,version,tsconfig_help,context_help,extra_page_cm_options,impexp,sys_note,tstemplate,tstemplate_ceditor,tstemplate_info,tstemplate_objbrowser,tstemplate_analyzer,func_wizards,wizard_crpages,wizard_sortpages,lowlevel,install,belog,beuser,aboutmodules,setup,taskcenter,info_pagetsconfig,viewpage,rtehtmlarea,t3skin,reports,realurl,static_info_tables,cshmanual,recycler,fluid,beko_debugster,scheduler,t3editor,devlog,t3jquery,ezbrequest,filelist,info,nkwgok,perm,rlmp_language_detection,pazpar2,piwik,func,about,feedit,opendocs,workspaces,rsaauth,saltedpasswords,linkvalidator,xmlinclude,fed,flux';	// Modified or inserted by TYPO3 Extension Manager. Modified or inserted by TYPO3 Core Update Manager. 
+$TYPO3_CONF_VARS['EXT']['extList_FE'] = 'extbase,css_styled_content,version,install,rtehtmlarea,t3skin,realurl,static_info_tables,fluid,beko_debugster,devlog,t3jquery,ezbrequest,nkwgok,rlmp_language_detection,pazpar2,piwik,feedit,workspaces,rsaauth,saltedpasswords,xmlinclude,fed,flux';	// Modified or inserted by TYPO3 Extension Manager.
 
 $TYPO3_CONF_VARS['EXTCONF']['realurl']['_DEFAULT'] = array(
 	'init' => array (
@@ -94,5 +94,6 @@ $TYPO3_CONF_VARS['INSTALL']['wizardDone']['tx_coreupdates_installsysexts'] = '1'
 // Updated by TYPO3 Upgrade Wizard 11-01-12 09:23:00
 $TYPO3_CONF_VARS['EXT']['extConf']['em'] = 'a:1:{s:17:"selectedLanguages";s:2:"de";}';	//  Modified or inserted by TYPO3 Extension Manager.
 $TYPO3_CONF_VARS['EXT']['extConf']['lang'] = 'a:0:{}';	//  Modified or inserted by TYPO3 Extension Manager.
-// Updated by TYPO3 Extension Manager 28-02-12 16:11:52
+$TYPO3_CONF_VARS['EXT']['extConf']['fed'] = 'a:8:{s:29:"enableBackendRecordController";s:1:"0";s:26:"enableFluidContentElements";s:1:"0";s:24:"enableFluidPageTemplates";s:1:"0";s:18:"enableSolrFeatures";s:1:"0";s:21:"enableFrontendPlugins";s:1:"0";s:30:"enableIntegratedBackendLayouts";s:1:"0";s:28:"increaseExtbaseCacheLifetime";s:1:"1";s:31:"enableFallbackFluidPageTemplate";s:1:"0";}';	// Modified or inserted by TYPO3 Extension Manager. 
+// Updated by TYPO3 Extension Manager 01-03-12 11:46:24
 ?>
