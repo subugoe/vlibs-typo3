@@ -1,0 +1,26 @@
+.fed-solr { margin-top: 24px; }
+.fed.solr table { width: 100%; }
+.fed-solr table td { vertical-align: top; }
+.fed-solr td.left { padding-right: 6px; width: 250px; }
+.fed-solr td.right { padding-left: 6px; width: 974px; border-top: green; }
+
+.solr-search input { width: 240px; margin-bottom: 6px; font-size: 24px; padding: 6px; border: 1px solid silver; }
+
+.solr-results { border-bottom: 1px solid silver; margin-bottom: 6px; }
+.solr-results table { width: 100%; }
+.solr-results td { vertical-align: top; }
+.solr-results td.facets { text-align: right; font-style: italic; }
+.solr-results .score { font-style: italic; color: silver; }
+.solr-results td.teaser { padding-bottom: 5px; }
+.solr-paginate { font-weight: bold; font-size: 19px; }
+.solr-paginate a { border: 1px solid transparent; }
+.solr-paginate a.active { font-weight: bold; background-color: #005888; color: white; border: 1px solid #003366; }
+.solr-paginate a:hover { border: 1px solid #000066; text-decoration: none !important; color: white; background-color: #003366; }
+.solr-paginate { padding-bottom: 6px; }
+.solr-results td.title, .solr-results td.facets {
+	border-top: 1px solid silver;
+	padding-top: 6px;
+}
+.solr-paginate a { display: inline-block; padding: 3px 6px 1px 6px; margin-left: 2px; }
+.solr-faceting h3 { margin-top: 12px; }
+.solr-faceting li.active { font-weight: bold; text-decoration: underline; }

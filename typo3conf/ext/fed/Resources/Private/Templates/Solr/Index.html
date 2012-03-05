@@ -1,0 +1,69 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:layout name="Default" />
+
+
+
+<f:section name="main">
+	Main SOLR Template Section. If you want no layout, simply insert your Fluid
+	template code in this section (and remove the others, if you wish - they
+	will remain inactive until a Layout is implemented).
+</f:section>
+
+<f:section name="search">
+	<div class="solr-search">
+		<input name="q" type="text" class="solr-search" value="{q}" tabindex="1" />
+	</div>
+</f:section>
+
+
+<f:section name="faceting">
+	<div class="solr-faceting">
+
+	</div>
+</f:section>
+
+
+<f:section name="results">
+	<div class="solr-results">
+		<table cellspacing="0" cellpadding="0">
+			<thead></thead>
+			<tbody>
+
+			</tbody>
+		</table>
+	</div>
+</f:section>
+
+
+<f:section name="limit">
+	<div class="solr-limit">
+		Show <select class="solr-limit-field">
+		<f:for each="{fed:data.func(func: 'explode', arguments: {0: ', ', 1: search.results.resultsPerPageSwitchOptions})}" as="limit">
+			<option>{limit}</option>
+		</f:for>
+		</select> results per page
+	</div>
+</f:section>
+
+
+<f:section name="paginate">
+	<div class="solr-paginate">
+
+	</div>
+</f:section>
+
+
+<f:section name="count">
+	<div class="solr-stats">
+
+	</div>
+</f:section>
+
+
+
+<f:section name="debug">
+	<div class="solr-debug">
+
+	</div>
+</f:section>

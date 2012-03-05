@@ -1,172 +1,0 @@
-9
-
-dir
-40534
-https://svn.typo3.org/TYPO3v4/Extensions/extbase_kickstarter/trunk/Resources/Public/jsDomainModeling/wireit/lib/yui
-https://svn.typo3.org/TYPO3v4/Extensions
-
-
-
-2009-08-16T16:58:01.563745Z
-23408
-ingmars
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-735d13b6-9817-0410-8766-e36946ffe9aa
-
-logger
-dir
-
-animation
-dir
-
-selector
-dir
-
-datatable
-dir
-
-profiler
-dir
-
-paginator
-dir
-
-charts
-dir
-
-fonts
-dir
-
-element
-dir
-
-stylesheet
-dir
-
-yuiloader-dom-event
-dir
-
-datasource
-dir
-
-connection
-dir
-
-assets
-dir
-
-dragdrop
-dir
-
-profilerviewer
-dir
-
-menu
-dir
-
-yuitest
-dir
-
-grids
-dir
-
-json
-dir
-
-cookie
-dir
-
-colorpicker
-dir
-
-layout
-dir
-
-get
-dir
-
-dom
-dir
-
-reset-fonts-grids
-dir
-
-yahoo
-dir
-
-event
-dir
-
-container
-dir
-
-reset
-dir
-
-slider
-dir
-
-editor
-dir
-
-treeview
-dir
-
-yuiloader
-dir
-
-history
-dir
-
-autocomplete
-dir
-
-resize
-dir
-
-tabview
-dir
-
-imageloader
-dir
-
-calendar
-dir
-
-reset-fonts
-dir
-
-base
-dir
-
-button
-dir
-
-uploader
-dir
-
-utilities
-dir
-
-yahoo-dom-event
-dir
-
-imagecropper
-dir
-
-carousel
-dir
-

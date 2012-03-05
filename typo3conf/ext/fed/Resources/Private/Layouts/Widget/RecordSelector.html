@@ -1,0 +1,39 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+
+<f:layout name="RecordSelector" />
+
+<fed:script src="{f:uri.resource(path: 'Javascript/Widget/RecordSelector.js', extensionName: 'fed')}" />
+<fed:style href="{f:uri.resource(path: 'Stylesheet/Widget/RecordSelector.css', extensionName: 'fed')}" />
+<fed:script>
+jQuery(document).ready(function() {
+	var selector{id} = new recordSelector(
+		'{id}',
+		'{name}',
+		<f:if condition="{multiple}" then="{multiple}" else="false" />,
+		'<f:image src="{f:uri.resource(path: 'Icons/Delete.png', extensionName: 'fed')}" alt="del" />', '{searchProperty}',
+		'<fed:raw>{allUrl}</fed:raw>');
+	jQuery("#{id}search").autocomplete(<fed:raw>{</fed:raw>
+		source: "{f:widget.uri(action:'search', ajax: 1)}",
+		minLength: 2,
+		autoFocus: true,
+		select: selector{id}.onSelect,
+		close: selector{id}.onClose
+	});
+});
+</fed:script>
+
+<div class="record-selector" id="{id}">
+	<f:if condition="{sections}">
+		<f:then>
+			<f:for each="{sections}" as="sectionName">
+				<f:render section="{sectionName}" />
+			</f:for>
+		</f:then>
+		<f:else>
+			<f:render section="Content" />
+			<f:render section="Search" />
+			<f:render section="List" />
+			<f:render section="Selections" />
+		</f:else>
+	</f:if>
+</div>

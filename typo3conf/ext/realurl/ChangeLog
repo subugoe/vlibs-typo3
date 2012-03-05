@@ -1,3 +1,12 @@
+2012-02-17  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Released version 1.12.1
+
+2012-02-02  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18447: Many domains in the same installation is not supported by the _DOMAINS
+	* Fixed bug #18448: cHash calculation sometimes wrong
+
 2011-12-21  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 
 	* Fix: BE module for redirects is case-insensitive but FE handling is case-sensitive
@@ -14,7 +23,7 @@
 
 2011-11-11  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 
-    * Fixed bug #18322: Deprecated function call to t3lib_div::testInt()
+	* Fixed bug #18322: Deprecated function call to t3lib_div::testInt()
 
 2011-10-27  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 

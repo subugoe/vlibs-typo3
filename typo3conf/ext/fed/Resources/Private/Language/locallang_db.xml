@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'fed'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_fed_domain_model_datasource">Data Source</label>
+			<label index="tx_fed_domain_model_datasource.name">Name</label>
+			<label index="tx_fed_domain_model_datasource.description">Description</label>
+			<label index="tx_fed_domain_model_datasource.query">Query</label>
+			<label index="tx_fed_domain_model_datasource.func">Func</label>
+			<label index="tx_fed_domain_model_datasource.url">Url</label>
+			<label index="tx_fed_domain_model_datasource.url_method">Url Method</label>
+			<label index="tx_fed_domain_model_datasource.template_file">Template File</label>
+			<label index="tx_fed_domain_model_datasource.template_source">Template Source</label>
+			<label index="tt_content.tx_fed_fcecontentarea">FED FCE Content area position, $contentArea:$ttContentUid</label>
+			<label index="tt_content.tx_fed_fcefile">Fluid Content Element</label>
+			<label index="tt_content.pi_flexform">Element Configuration</label>
+			<label index="pages.tx_fed_page_controller_action">Page Layout - this page</label>
+			<label index="pages.tx_fed_page_controller_action_sub">Page Layout - subpages</label>
+			<label index="pages.tx_fed_page_format">Page Format</label>
+			<label index="pages.tx_fed_page_flexform">Page Configuration</label>
+		</languageKey>
+	</data>
+</T3locallang>

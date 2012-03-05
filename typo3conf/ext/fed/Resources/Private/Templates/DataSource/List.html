@@ -1,0 +1,51 @@
+<f:layout name="Default" />
+
+This Template is responsible for creating a table of domain objects.
+
+
+If you modify this template, do not forget to change the overwrite settings 
+in /Configuration/Kickstarter/settings.yaml:
+  Resources:
+    Private: 
+      Templates:
+        List.html: keep
+
+Otherwise your changes will be overwritten the next time you save the extension in the kickstarter
+
+<f:section name="main">
+<h1>Listing for DataSource</h1>
+
+<f:flashMessages />
+
+<table  class="tx_fed" >
+	<tr>
+		<th><f:translate key="tx_fed_domain_model_datasource.name" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.description" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.query" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.func" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.url" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.url_method" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.template_file" /></th>
+		<th><f:translate key="tx_fed_domain_model_datasource.template_source" /></th>
+		<th> </th>
+		<th> </th>
+	</tr>
+
+	<f:for each="{dataSources}" as="dataSource">
+		<tr>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.name}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.description}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.query}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.func}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.url}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.urlMethod}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.templateFile}</f:link.action></td>
+			<td><f:link.action action="show" arguments="{dataSource : dataSource}"> {dataSource.templateSource}</f:link.action></td>
+			<td><f:link.action action="edit" arguments="{dataSource : dataSource}">Edit</f:link.action></td>
+			<td><f:link.action action="delete" arguments="{dataSource : dataSource}">Delete</f:link.action></td>
+		</tr>
+	</f:for>
+</table>
+
+<f:link.action action="new">New DataSource</f:link.action>
+</f:section>

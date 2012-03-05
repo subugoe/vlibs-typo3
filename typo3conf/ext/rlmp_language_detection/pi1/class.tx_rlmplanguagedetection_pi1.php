@@ -56,6 +56,7 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 	 */
 	function main($content,$conf)	{
 		$this->conf = $conf;
+		$this->cookieLifetime = intval($conf['cookieLifetime']);
 
 		// Break out if language already selected
 		if (!$this->conf['dontBreakIfLanguageIsAlreadySelected'] && t3lib_div::_GP($this->conf['languageGPVar']) !== NULL) {
@@ -78,20 +79,25 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 
 		// Break out if the session tells us that the user has selected language
 		if (!$this->conf['dontBreakIfLanguageIsAlreadySelected']) {
-			$langSessKey = $GLOBALS["TSFE"]->fe_user->getKey(
-				'ses',
-				'tx_rlmplanguagedetection_languageSelected'
-			);
+			if ($this->cookieLifetime) {
+				// read from browser-cookie
+				$langSessKey = $_COOKIE[$this->extKey . '_languageSelected'];		
+			} else {
+				$langSessKey = $GLOBALS["TSFE"]->fe_user->getKey(
+					'ses',
+					$this->extKey . '_languageSelected'
+				);
+			}
 
 			// If session key exists but no language GP var - 
 			// we should redirect client to selected language
-			if (!empty($langSessKey)) {
+			if (isset($langSessKey)) {
 				// Can redirect only in one tree method for now
 				if ($this->conf['useOneTreeMethod'] && is_numeric($langSessKey)) {
 					$this->doRedirect($langSessKey);
 					return;
 				}
-				
+
 				return $content;
 			}
 		}
@@ -253,15 +259,23 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		
 		//Set session info
 		//For one tree method store selected language
-		$GLOBALS["TSFE"]->fe_user->setKey(
-			'ses',
-			'tx_rlmplanguagedetection_languageSelected',
-			$this->conf['useOneTreeMethod'] ? $preferredLanguageOrPageUid : true
-		);
-		$GLOBALS['TSFE']->storeSessionData();
-		
+		if ($this->cookieLifetime) {
+			setcookie(
+				$this->extKey . '_languageSelected',
+				$this->conf['useOneTreeMethod'] ? $preferredLanguageOrPageUid : true,
+				$this->cookieLifetime + time()
+			);
+		} else {
+			$GLOBALS["TSFE"]->fe_user->setKey(
+				'ses',
+				$this->extKey . '_languageSelected',
+				$this->conf['useOneTreeMethod'] ? $preferredLanguageOrPageUid : true
+			);
+			$GLOBALS['TSFE']->storeSessionData();
+		}
+
 		if(TYPO3_DLOG)
-			t3lib_div::devLog('Location to redirect to: ' . $locationUR, $this->extKey);
+			t3lib_div::devLog('Location to redirect to: ' . $locationURL);
 		if(!$this->conf['dieAtEnd'] && $preferredLanguageOrPageUid != 0) {
 				header('Location: '.$locationURL);
 				//header('Referer: '.$locationURL);
@@ -318,7 +332,7 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 		$availableLanguages = array();
 		
 		if (strlen($this->conf['defaultLang'])) {
-			$availableLanguages[trim(strtolower($this->conf['defaultLang']))] = 0;
+			$availableLanguages[0] = trim(strtolower($this->conf['defaultLang']));
 		}
 	
 			// Two options: prior TYPO3 3.6.0 the title of the sys_language entry must be one of the two-letter iso codes in order
@@ -345,7 +359,9 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 			);
 		}
 		while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
-			$availableLanguages[trim(strtolower($row['isocode']))] = $row['uid'];
+			if (TYPO3_DLOG && !$row['isocode'])
+				t3lib_div::devLog('No ISO-code given for language with UID ' . $row['uid']);
+			$availableLanguages[$row['uid']] = trim(strtolower($row['isocode']));
 		}
 		
 		// Get the isocodes associated with the available sys_languade uid's
@@ -353,13 +369,14 @@ class tx_rlmplanguagedetection_pi1 extends tslib_pibase {
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery(
 				'sys_language.uid, static_languages.lg_iso_2 as isocode, static_languages.lg_country_iso_2',
 				'sys_language LEFT JOIN static_languages ON sys_language.static_lang_isocode=static_languages.uid',
-				'sys_language.uid IN('.implode(',',$availableLanguages).')'.
+				'sys_language.uid IN('.implode(',',array_keys($availableLanguages)).')'.
 					$this->cObj->enableFields('sys_language').
 					$this->cObj->enableFields('static_languages')
 				);
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))	{
-				$availableLanguages[trim(strtolower($row['isocode'] . ($row['lg_country_iso_2']? '-' . $row['lg_country_iso_2'] : '')))] = $row['uid'];
+				$tmpLanguages[trim(strtolower($row['isocode'] . ($row['lg_country_iso_2']? '-' . $row['lg_country_iso_2'] : '')))] = $row['uid'];
 			}
+			$availableLanguages = $tmpLanguages;
 		}
 		
 		//Remove all languages except limitToLanguages
