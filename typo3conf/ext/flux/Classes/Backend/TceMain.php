@@ -69,17 +69,6 @@ class Tx_Flux_Backend_TceMain {
 	 * @return	void
 	 */
 	public function processCmdmap_preProcess(&$command, $table, $id, &$relativeTo, t3lib_TCEmain &$reference) {
-	}
-
-	/**
-	 * @param	string		$command: The TCEmain operation status, fx. 'update'
-	 * @param	string		$table: The table TCEmain is currently processing
-	 * @param	string		$id: The records id (if any)
-	 * @param	array		$relativeTo: Filled if command is relative to another element
-	 * @param	object		$reference: Reference to the parent object (TCEmain)
-	 * @return	void
-	 */
-	public function processCmdmap_postProcess(&$command, $table, $id, $relativeTo, t3lib_TCEmain &$reference) {
 		$pid = FALSE;
 		if ($table === 'tt_content') {
 			switch ($command) {
@@ -103,14 +92,27 @@ class Tx_Flux_Backend_TceMain {
 					}
 					$data = array('tx_flux_column' => $area);
 					if ($pid !== FALSE && $pid !== 0) {
-						$data['sorting'] = -1;
+						$data['sorting'] = -99999;
 						$data['pid'] = $pid;
+					} else {
+						$data['pid'] = t3lib_div::_GET('id');
 					}
 					$GLOBALS['TYPO3_DB']->exec_UPDATEquery($table, "uid = '" . $id . "'", $data);
 					break;
 				default:
 			}
 		}
+	}
+
+	/**
+	 * @param	string		$command: The TCEmain operation status, fx. 'update'
+	 * @param	string		$table: The table TCEmain is currently processing
+	 * @param	string		$id: The records id (if any)
+	 * @param	array		$relativeTo: Filled if command is relative to another element
+	 * @param	object		$reference: Reference to the parent object (TCEmain)
+	 * @return	void
+	 */
+	public function processCmdmap_postProcess(&$command, $table, $id, $relativeTo, t3lib_TCEmain &$reference) {
 	}
 
 	/**
@@ -121,7 +123,7 @@ class Tx_Flux_Backend_TceMain {
 	 * @return	void
 	 */
 	public function processDatamap_preProcessFieldArray(array &$incomingFieldArray, $table, $id, t3lib_TCEmain &$reference) {
-		if ($table === 'tt_content' && $id) {
+		if ($table === 'tt_content' && $id && is_array($incomingFieldArray['pi_flexform']['data'])) {
 			foreach ((array) $incomingFieldArray['pi_flexform']['data']['options']['lDEF'] as $key=>$value) {
 				if (strpos($key, 'tt_content') === 0) {
 					$realKey = array_pop(explode('.', $key));

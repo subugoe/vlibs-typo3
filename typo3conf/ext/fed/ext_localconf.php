@@ -98,18 +98,18 @@ if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableFluidPageTempl
 		page.5.extensionName = Fed
 		page.5.pluginName = API
 		page.10 >
-	', TRUE);
+	');
 	if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableFallbackFluidPageTemplate']) {
 		t3lib_extMgm::addTypoScript($_EXTKEY,'setup',
 			'[GLOBAL]
 			plugin.tx_fed.page.fed {
-				enable = 0
+				enable = 1
 				templateRootPath = EXT:fed/Resources/Private/Templates/
 				layoutRootPath = EXT:fed/Resources/Private/Layouts/
 				partialRootPath = EXT:fed/Resources/Private/Partials/
 			}
 			plugin.tx_fed.settings.templates.fallbackFluidPageTemplate = EXT:fed/Resources/Private/Templates/Page/Render.html
-		', TRUE);
+		');
 	}
 	$GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] .= ($GLOBALS['TYPO3_CONF_VARS']['FE']['addRootLineFields'] == '' ? '' : ',') . 'tx_fed_page_controller_action,tx_fed_page_controller_action_sub,tx_fed_page_flexform,';
 }
