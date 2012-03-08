@@ -73,7 +73,12 @@ class Tx_Fed_Controller_PageController extends Tx_Fed_Core_AbstractController {
 		$flexformData = $this->flexform->convertFlexFormContentToArray($flexFormSource);
 		$view->setLayoutRootPath($paths['layoutRootPath']);
 		$view->setPartialRootPath($paths['partialRootPath']);
-		$view->setTemplatePathAndFilename($paths['templateRootPath'] . 'Page/' . $action . '.html');
+		$templatePathAndFilename = $paths['templateRootPath'] . 'Page/' . $action . '.html';
+		if (file_exists($templatePathAndFilename) === FALSE && $GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableFallbackFluidPageTemplate']) {
+			$templatePathAndFilename = $this->settings['templates']['fallbackFluidPageTemplate'];
+		}
+		$templatePathAndFilename = Tx_Fed_Utility_Path::translatePath($templatePathAndFilename);
+		$view->setTemplatePathAndFilename($templatePathAndFilename);
 		$view->assignMultiple($flexformData);
 		$view->assign('page', $GLOBALS['TSFE']->page);
 		$view->assign('user', $GLOBALS['TSFE']->fe_user->user);
@@ -85,7 +90,7 @@ class Tx_Fed_Controller_PageController extends Tx_Fed_Core_AbstractController {
 	 * @return string
 	 */
 	public function renderAction() {
-		return $this->view->render($action);
+		return $this->view->render();
 	}
 
 }

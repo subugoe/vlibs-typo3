@@ -37,11 +37,17 @@ require_once(t3lib_extMgm::extPath('t3jquery').'class.tx_t3jquery.php');
 class tx_t3jquery_tsparserext
 {
 	/**
-	 * Supported jQuery versions
+	 * Supported jQuery UI-Versions
 	 * @var array
 	 */
 	private $supportedUiVersion = array();
 
+	/**
+	 * Supported jQuery Tools-Versions
+	 * @var array
+	 */
+	private $supportedToolsVersion = array();
+	
 	/**
 	 * Configuratio array
 	 * @var array
@@ -60,7 +66,7 @@ class tx_t3jquery_tsparserext
 			$cssPath = $GLOBALS['BACK_PATH'] . t3lib_extMgm::extRelPath('t3jquery');
 			$out .= '<link rel="stylesheet" type="text/css" href="' . $cssPath . 'compat/flashmessages.css" media="screen" />';
 		}
-		// get all supported versions from folder
+		// get all supported UI-Versions from folder
 		$supportedUiVersions = t3lib_div::get_dirs(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/ui/"));
 		if (is_array($supportedUiVersions)) {
 			foreach ($supportedUiVersions as $supportedUiVersion) {
@@ -69,18 +75,31 @@ class tx_t3jquery_tsparserext
 				}
 			}
 		}
+
+		// get all supported TOOLS-Versions from folder
+		$supportedToolsVersions = t3lib_div::get_dirs(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/tools/"));
+		if (is_array($supportedToolsVersions)) {
+			foreach ($supportedToolsVersions as $supportedToolsVersion) {
+				if (file_exists(t3lib_div::getFileAbsFileName("EXT:t3jquery/res/jquery/tools/").$supportedToolsVersion.'/jquery.xml')) {
+					$this->supportedToolsVersion[] = $supportedToolsVersion;
+				}
+			}
+		}
+
 		// get the conf array
 		$this->confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
 		// if form is submited, the POST values are taken
 		$post = t3lib_div::_POST();
 		if (count($post) > 0) {
-			$jQueryUiVersion = $post['data']['jQueryUiVersion'];
-			$jQueryVersion   = $post['data']['jQueryVersion']."-".$post['data']['jQueryUiVersion'].($post['data']['jQueryTOOLSVersion'] ? "-".$post['data']['jQueryTOOLSVersion'] : "");
-			$configDir       = $post['data']['configDir'] . (preg_match("/\/$/", $configDir) ? "" : "/");
+			$jQueryUiVersion    = $post['data']['jQueryUiVersion'];
+			$jQueryToolsVersion = $post['data']['jQueryTOOLSVersion'];
+			$jQueryVersion      = $post['data']['jQueryVersion']."-".$post['data']['jQueryUiVersion'].($post['data']['jQueryTOOLSVersion'] ? "-".$post['data']['jQueryTOOLSVersion'] : "");
+			$configDir          = $post['data']['configDir'] . (preg_match("/\/$/", $configDir) ? "" : "/");
 		} else {
-			$jQueryUiVersion = $this->confArr['jQueryUiVersion'];
-			$jQueryVersion   = T3JQUERYVERSION;
-			$configDir       = tx_t3jquery::getJqPath();
+			$jQueryUiVersion    = $this->confArr['jQueryUiVersion'];
+			$jQueryToolsVersion = $this->confArr['jQueryTOOLSVersion'];
+			$jQueryVersion      = T3JQUERYVERSION;
+			$configDir          = tx_t3jquery::getJqPath();
 		}
 		if ($this->checkConfig() === FALSE) {
 			$out .= '
@@ -94,7 +113,10 @@ class tx_t3jquery_tsparserext
 			// Nothing to check
 		} else {
 			// check the actual version
-			if (! in_array($jQueryUiVersion, $this->supportedUiVersion)) {
+			if (
+				$jQueryUiVersion && ! in_array($jQueryUiVersion, $this->supportedUiVersion) ||
+				$jQueryToolsVersion && ! in_array($jQueryToolsVersion, $this->supportedToolsVersion)
+			) {
 				$out .= '
 	<div class="typo3-message message-information">
 		<div class="message-header">' . $GLOBALS['LANG']->sL('LLL:EXT:t3jquery/locallang.xml:extmng.updatermsgHeader') . '</div>

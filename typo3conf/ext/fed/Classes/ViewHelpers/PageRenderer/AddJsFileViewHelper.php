@@ -47,7 +47,6 @@ class Tx_Fed_ViewHelpers_PageRenderer_AddJsFileViewHelper extends Tx_Fed_ViewHel
 	 * @param string $file
 	 */
 	public function render($file=NULL) {
-		xdebug_break();
 		if ($this->isCached()) {
 			$this->pageRenderer->addJsFile(
 				$file,

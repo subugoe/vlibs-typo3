@@ -12,7 +12,7 @@
 			<label index="extmng.checkConfig">You have to use the "Update"-Button below to ensure proper working for all functions in this extension.</label>
 
 			<label index="extmng.updatermsgHeader">Important!</label>
-			<label index="extmng.updatermsg">The version you are using, is no longer supportet by T3 jQuery, please change to a supportet version and create your library again!</label>
+			<label index="extmng.updatermsg">The version you are using, is no longer supported by T3 jQuery, please change to a supported version and create your library again!</label>
 
 			<label index="extmng.updatermsgHeader2">Warning!</label>
 			<label index="extmng.updatermsg2">The jQuery library '%s' was not found, please choose the version of your library and create it with the needed components!</label>
