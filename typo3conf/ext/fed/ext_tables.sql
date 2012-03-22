@@ -47,7 +47,6 @@ CREATE TABLE tx_fed_domain_model_datasource (
 # Table structure for table 'tt_content'
 #
 CREATE TABLE tt_content (
-	tx_fed_fcecontentarea varchar(255) DEFAULT '' NOT NULL,
 	tx_fed_fcefile varchar(255) DEFAULT '' NOT NULL
 );
 

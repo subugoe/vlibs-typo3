@@ -22,8 +22,7 @@ if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableSolrFeatures']
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
 	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended,tx_fed_fcecontentarea
+	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access
 	';
 }
 
@@ -81,8 +80,7 @@ if (TYPO3_MODE == 'BE') {
 		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
 		--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
 		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-		--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended,tx_fed_fcecontentarea
+		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access
 		 ';
 	}
 
@@ -128,8 +126,7 @@ if (TYPO3_MODE == 'BE') {
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
 	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended,tx_fed_fcecontentarea
+	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access
 	';
 	$TCA['tt_content']['types']['fed_datasource']['showitem'] = '
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
@@ -139,8 +136,7 @@ if (TYPO3_MODE == 'BE') {
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.frames;frames,
 	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.access,
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.visibility;visibility,
-	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access,
-	--div--;LLL:EXT:cms/locallang_ttc.xml:tabs.extended,tx_fed_fcecontentarea
+	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.access;access
 	';
 
 	t3lib_extMgm::addLLrefForTCAdescr('tx_fed_domain_model_datasource', 'EXT:fed/Resources/Private/Language/locallang_csh_tx_fed_domain_model_datasource.xml');
@@ -171,12 +167,6 @@ if (TYPO3_MODE == 'BE') {
 
 
 	t3lib_extMgm::addTCAcolumns('tt_content', array(
-		'tx_fed_fcecontentarea' => Array (
-			'exclude' => 1,
-			'config' => Array (
-				'type' => 'passthrough',
-			)
-		),
 		'tx_fed_fcefile' => Array (
 			'exclude' => 1,
 			'label' => 'LLL:EXT:fed/Resources/Private/Language/locallang_db.xml:tt_content.tx_fed_fcefile',

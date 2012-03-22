@@ -36,11 +36,6 @@ class Tx_Fed_Domain_Model_ContentElement extends Tx_Extbase_DomainObject_Abstrac
 	/**
 	 * @var string
 	 */
-	protected $txFedFcecontentarea;
-
-	/**
-	 * @var string
-	 */
 	protected $txFedFcefile;
 
 	/**
@@ -273,20 +268,6 @@ class Tx_Fed_Domain_Model_ContentElement extends Tx_Extbase_DomainObject_Abstrac
 	 */
 	public function __construct() {
 
-	}
-
-	/**
-	 * @param string $area
-	 */
-	public function setTxFedFcecontentarea($area) {
-		$this->txFedFcecontentarea = $area;
-	}
-
-	/**
-	 * @return string
-	 */
-	public function getTxFedFcecontentarea() {
-		return $this->txFedFcecontentarea;
 	}
 
 	/**
