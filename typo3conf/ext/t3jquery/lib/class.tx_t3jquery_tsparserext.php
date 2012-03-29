@@ -154,6 +154,7 @@ class tx_t3jquery_tsparserext
 		$confDefault = array(
 			'alwaysIntegrate',
 			'integrateToFooter',
+			'enableStyleStatic',
 			'dontIntegrateOnUID',
 			'dontIntegrateInRootline',
 			'jqLibFilename',

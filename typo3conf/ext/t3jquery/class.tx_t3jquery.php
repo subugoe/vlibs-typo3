@@ -35,6 +35,9 @@ if ($_POST['data']['jQueryVersion']) {
 	if ($_POST['data']['jQueryTOOLSVersion']) {
 		$t3jqueryversion .= '-' . $_POST['data']['jQueryTOOLSVersion'];
 	}
+	if ($_POST['data']['jQueryBootstrapVersion']) {
+		$t3jqueryversion .= '-' . $_POST['data']['jQueryBootstrapVersion'];
+	}
 } else {
 	$t3jqueryversion = $confArr['jQueryVersion'];
 	if ($confArr['jQueryUiVersion']) {
@@ -42,6 +45,9 @@ if ($_POST['data']['jQueryVersion']) {
 	}
 	if ($confArr['jQueryTOOLSVersion']) {
 		$t3jqueryversion .= '-' . $confArr['jQueryTOOLSVersion'];
+	}
+	if ($confArr['jQueryBootstrapVersion']) {
+		$t3jqueryversion .= '-' . $confArr['jQueryBootstrapVersion'];
 	}
 }
 define('T3JQUERYVERSION', $t3jqueryversion);
@@ -165,6 +171,11 @@ class tx_t3jquery
 			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration();
 			$confArr['jQueryTOOLSVersion'] = $temp_config['version']['cdn'];
 		}
+		// CDN version for Bootstrap (t3jquery 2.0.0)
+		if (preg_match("/x$/", $confArr['jQueryBootstrapVersion'])) {
+			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryBootstrapConfiguration();
+			$confArr['jQueryBootstrapVersion'] = $temp_config['version']['cdn'];
+		}
 		switch ($confArr['locationCDN']) {
 			case 'google' : {
 				// in jQuery TOOLS jQuery is included
@@ -190,6 +201,15 @@ class tx_t3jquery
 						'type'       => 'text/javascript',
 						'section'    => self::getSection(),
 						'forceOnTop' => TRUE,
+					);
+				}
+				if ($confArr['jQueryBootstrapVersion'] != '') {
+					$jsFile = 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$confArr['jQueryBootstrapVersion'].'/bootstrap.min.js';
+					$params['jsFiles'][$jsFile] = array(
+							'file'       => $jsFile,
+							'type'       => 'text/javascript',
+							'section'    => self::getSection(),
+							'forceOnTop' => TRUE,
 					);
 				}
 				break;
@@ -232,6 +252,15 @@ class tx_t3jquery
 						'forceOnTop' => TRUE,
 					);
 				}
+				if ($confArr['jQueryBootstrapVersion'] != '') {
+					$jsFile = 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$confArr['jQueryBootstrapVersion'].'/bootstrap.min.js';
+					$params['jsFiles'][$jsFile] = array(
+							'file'       => $jsFile,
+							'type'       => 'text/javascript',
+							'section'    => self::getSection(),
+							'forceOnTop' => TRUE,
+					);
+				}
 				break;
 			}
 			default : {
@@ -270,7 +299,7 @@ class tx_t3jquery
 	}
 
 	/**
-	 * Returns the configuration of jQuery UI
+	 * Returns the configuration of jQuery TOOLS
 	 * @return array
 	 */
 	function getJqueryToolsConfiguration($version=NULL)
@@ -280,6 +309,20 @@ class tx_t3jquery
 			$version = $confArr['jQueryTOOLSVersion'];
 		}
 		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$version.'/jquery.xml')));
+		return $configuration;
+	}
+
+	/**
+	 * Returns the configuration of jQuery Bootstrap
+	 * @return array
+	 */
+	function getJqueryBootstrapConfiguration($version=NULL)
+	{
+		if ($version === NULL) {
+			$confArr = tx_t3jquery::getConf();
+			$version = $confArr['jQueryBootstrapVersion'];
+		}
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/bootstrap/'.$version.'/jquery.xml')));
 		return $configuration;
 	}
 
@@ -430,7 +473,7 @@ class tx_t3jquery
 	 * page.10 = USER
 	 * page.10.userFunc = tx_t3jquery->addJS
 	 * page.10.jsfile = fileadmin/testscript.js
-	 * page.10.jsurl = https://ssl.google-analytics.com/urchin.js
+	 * page.10.jsurl = http://www.example.com/script.js
 	 * page.10.jsdata = alert('Hello World!');
 	 * page.10.forceOnTop = 0
 	 * page.10.compress = 0
@@ -454,7 +497,7 @@ class tx_t3jquery
 		}
 		// If the jQuery lib is not added to page yet, add it!
 		tx_t3jquery::addJqJS();
-		// where should be he data stored (footer or header) / Fix moveJsFromHeaderToFooter (add all scripts to the footer)
+		// where should be the data stored (footer or header) / Fix moveJsFromHeaderToFooter (add all scripts to the footer)
 		$conf['tofooter'] = ($conf['tofooter'] || $GLOBALS['TSFE']->config['config']['moveJsFromHeaderToFooter'] ? 'footer' : 'header');
 		$conf['compress'] = ($conf['compress'] || $conf['jsminify']);
 		$conf['type']     = $conf['type'] ? $conf['type'] : 'text/javascript';
@@ -493,7 +536,7 @@ class tx_t3jquery
 	 * Add JS-File to the HTML
 	 * 
 	 * @param string $file
-	 * @param boolean $conf
+	 * @param array $conf
 	 * @return void
 	 */
 	function addJsFile($file, $conf=array())
@@ -520,7 +563,7 @@ class tx_t3jquery
 	 * 
 	 * @param string $name
 	 * @param string $block
-	 * @param boolean $conf
+	 * @param array $conf
 	 * @return void
 	 */
 	function addJsInlineCode($name, $block, $conf=array())

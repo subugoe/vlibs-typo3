@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "rlmp_language_detection".
 #
-# Auto generated 28-02-2012 16:13
+# Auto generated 29-03-2012 13:49
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'This plugin detects the visitor\'s preferred language and sets the local configuration for TYPO3\'s language engine accordingly. Both, one-tree and multiple tree concepts, are supported. It can also select from a list of similar languages if the user\'s preferred language does not exist.',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '2.3.0',
+	'version' => '2.3.1',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -42,7 +42,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:5:{s:12:"ext_icon.gif";s:4:"184c";s:17:"ext_localconf.php";s:4:"bddb";s:24:"ext_typoscript_setup.txt";s:4:"935c";s:14:"doc/manual.sxw";s:4:"58cb";s:42:"pi1/class.tx_rlmplanguagedetection_pi1.php";s:4:"b8d5";}',
+	'_md5_values_when_last_written' => 'a:5:{s:12:"ext_icon.gif";s:4:"184c";s:17:"ext_localconf.php";s:4:"bddb";s:24:"ext_typoscript_setup.txt";s:4:"935c";s:14:"doc/manual.sxw";s:4:"1a0f";s:42:"pi1/class.tx_rlmplanguagedetection_pi1.php";s:4:"62e0";}',
 );
 
 ?>
