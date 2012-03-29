@@ -42,6 +42,7 @@
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.tooltip</detail>
 					<file>TOOLS:tools.tooltip.js</file>
 					<depends>jQuery</depends>
+					<disturbing>BootstrapTooltip</disturbing>
 					<sources type="array">
 						<numIndex index="1">.tooltip(</numIndex>
 					</sources>

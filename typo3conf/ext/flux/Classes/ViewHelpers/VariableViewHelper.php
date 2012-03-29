@@ -1,9 +1,8 @@
 <?php
-
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2011 Claus Due <claus@wildside.dk>, Wildside A/S
+ *  (c) 2012 Claus Due <claus@wildside.dk>, Wildside A/S
  *
  *  All rights reserved
  *
@@ -25,31 +24,25 @@
  * ************************************************************* */
 
 /**
- * Hook class utilized to select tt_content (and other) records. Patched to
- * prevent content elements nested in FCEs to appear twice.
+ * Fetches a single variable from the template variables
  *
- * @package Fed
- * @subpackage Backend
+ * @package Flux
+ * @subpackage ViewHelpers
  */
-class Tx_Flux_Backend_MakeQueryArray {
+class Tx_Flux_ViewHelpers_VariableViewHelper extends Tx_Flux_Core_ViewHelper_AbstractFlexformViewHelper {
 
 	/**
-	 * Hook methods: This method is called when querying for tt_content records
-	 *
-	 * @param string $queryParts
-	 * @param mixed $reference
-	 * @param string $table
-	 * @param integer $id
-	 * @param string $addWhere
-	 * @param array $fieldList
-	 * @param array $_params
+	 * @param string $name
 	 */
-	public function makeQueryArray_post(&$queryParts, &$reference, $table, $id, &$addWhere, &$fieldList, &$_params) {
-		if (get_class($reference) === 'tx_cms_layout' && $table === 'tt_content') {
-			$queryParts['WHERE'] .= " AND tt_content.tx_flux_column = ''";
+	public function render($name) {
+		if (strpos($name, '.') === FALSE) {
+			return $this->templateVariableContainer->get($name);
+		} else {
+			$parts = explode('.', $name);
+			return Tx_Extbase_Reflection_ObjectAccess::getPropertyPath($this->templateVariableContainer->get(array_shift($parts)), implode('.', $parts));
 		}
-
 	}
 
 }
+
 ?>

@@ -125,6 +125,7 @@
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:jquery.component.button</detail>
 					<file>ui/jquery.ui.button.js</file>
 					<depends>Core,Widget</depends>
+					<disturbing>BootstrapButton</disturbing>
 					<sources type="array">
 						<numIndex index="1">.button(</numIndex>
 					</sources>

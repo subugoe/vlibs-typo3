@@ -339,7 +339,9 @@ class Tx_Flux_Service_FlexForm implements t3lib_Singleton {
 						'fields' => array()
 					);
 				}
-				array_push($sheets[$groupKey]['fields'], $field);
+				if ($field['section'] === NULL) {
+					array_push($sheets[$groupKey]['fields'], $field);
+				}
 			}
 			$flexformTemplateFile = t3lib_extMgm::extPath('flux', 'Resources/Private/Partials/AutoFlexForm.xml');
 			$template = $this->objectManager->get('Tx_Fluid_View_StandaloneView');
