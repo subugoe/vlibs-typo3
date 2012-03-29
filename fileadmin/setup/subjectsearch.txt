@@ -20,3 +20,6 @@ page.CSS_inlineStyle (
 		height: 16px;
 	}
 )
+
+# We want no inline child elements in the subject menus
+plugin.tx_nkwgok_pi1.menuInlineThreshold = 0
