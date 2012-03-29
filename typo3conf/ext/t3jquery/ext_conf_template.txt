@@ -4,6 +4,9 @@ alwaysIntegrate =
 # cat=basic/enable/20; type=boolean; label=Integrate jQuery to footer: If set, the generated library will be inserted into the footer section
 integrateToFooter = 
 
+# cat=basic/enable/60; type=boolean; label=Styles for frontend: If set, you get some static to include default styles
+enableStyleStatic = 0
+
 # cat=basic/enable/30; type=string; label=Don't integrate: UID's where the library won't be integrated even if alwaysIntegrate is set
 dontIntegrateOnUID = 
 
@@ -28,6 +31,9 @@ jQueryUiVersion = 1.8.x
 
 # cat=basic/typo/30; type=options[,1.2.x,1.1.x]; label=jQuery TOOLS Version: Defines the jQuery TOOLS Version
 jQueryTOOLSVersion = 
+
+# cat=basic/typo/40; type=options[,2.0.x]; label=jQuery Bootstrap Version: Defines the jQuery Bootstrap Version
+jQueryBootstrapVersion = 
 
 
 
