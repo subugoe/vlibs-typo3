@@ -61,6 +61,7 @@ body:before {
 }
 
 #content {
+	position: relative;
 	overflow:auto;
 	margin-top: 30px;
 	padding-bottom: 100px; /* padding-bottom must be same height as #foot */
