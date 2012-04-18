@@ -1,6 +1,6 @@
 
 # Redirect e-docs path to e-docs subdomain
-RedirectMatch 301 e-docs(.*) http://e-docs.geo-leo.de/
+RedirectMatch 301 geo-leo-e-docs(.*) http://e-docs.geo-leo.de/
 
 
 <IfModule mod_rewrite.c>
