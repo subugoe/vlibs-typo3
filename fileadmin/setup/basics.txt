@@ -45,5 +45,17 @@ page.1 {
 }
 
 
+# configure pazpar2 placeholder strings
+plugin.tx_pazpar2._LOCAL_LANG.de {
+  form-main-placeholder = z.B. Granit oder Vulkan*
+  form-extended-placeholder-person = z.B. Lincoln oder Wilde, Oscar
+}
+
+plugin.tx_pazpar2._LOCAL_LANG.en {
+  form-main-placeholder = e.g. rocket or arctic*
+  form-extended-placeholder-person = e.g. Lincoln or Wilde, Oscar
+}
+
+
 # don’t use cssstyledcontent’s default CSS
 plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >
