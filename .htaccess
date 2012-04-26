@@ -6,6 +6,12 @@ RedirectMatch 301 geo-leo-e-docs(.*) http://e-docs.geo-leo.de/
 <IfModule mod_rewrite.c>
 	RewriteEngine On
 
+	# Ensure canonical host name
+	RewriteCond %{HTTP_HOST} !^geo-leo\.de [NC]
+	RewriteCond %{HTTP_HOST} !^10.0.* [NC]
+	RewriteCond %{HTTP_HOST} !^$
+	RewriteRule ^/?(.*) http://geo-leo.de/$1 [L,R,NE]
+
 	# Opac To Atom Script
 	RewriteRule opac.atom fileadmin/opac/opac-feed2.php [L]
 
