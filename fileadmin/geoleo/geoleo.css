@@ -137,6 +137,10 @@ ul, ol {
 	padding-left: 2em;
 }
 
+ul ul, ol ol, ul ol, ol ul {
+	margin: 0.5em 0;
+}
+
 li {
 	margin-bottom: 0.3em;
 }
