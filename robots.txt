@@ -1,14 +1,10 @@
 User-agent: *
 
 # Disallow pages that cause EZB searches
-Disallow: /zeitschriften/zeitschrift/
-Disallow: /zeitschriften/suche/
-Disallow: /en/journals/journal/
-Disallow: /en/journals/search/
-Disallow: /nationallizenzen/zeitschrift/
-Disallow: /nationallizenzen/suche/
-Disallow: /en/nationallizenzen/journal/
-Disallow: /en/nationallizenzen/search/
+Disallow: /e-zeitschriften/
+Disallow: /en/e-journals/
+Disallow: /nationallizenzen/
+Disallow: /en/nationallizenzen/
 
 # Disallow pazpar2 proxy
 Disallow: /pazpar2/
