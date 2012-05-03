@@ -1,0 +1,16 @@
+plugin.tx_pazpar2.settings.termLists >
+
+plugin.tx_pazpar2.settings.termLists {
+	source-type {
+		maxFetch = 6
+		minDisplay = 1
+	}
+	country {
+		maxFetch = 6
+		minDisplay = 1
+	}
+	language {
+		maxFetch = 6
+		minDisplay = 1
+	}
+}
