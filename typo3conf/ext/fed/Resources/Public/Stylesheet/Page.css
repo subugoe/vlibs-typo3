@@ -1,0 +1,177 @@
+/* COMMON */
+html, body {
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana,arial,system;
+	font-size: 13px;
+	background-color: #F8F8F8;
+}
+
+.right {
+	float: right;
+}
+
+.breadcrumb {
+	border-bottom: 1px solid #DDD;
+	padding-bottom: 16px;
+}
+
+.breadcrumb br {
+	clear: both !important;
+}
+
+.breadcrumb ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: square;
+	clear: both;
+}
+
+.breadcrumb li {
+	float: left;
+	margin-right: 16px;
+}
+
+.breadcrumb a {
+	color: #666666;
+	text-decoration: none;
+}
+
+.breadcrumb a:hover {
+	text-decoration: underline;
+}
+
+/* HEADER */
+#top-section {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 15000;
+}
+
+#header {
+	font-size: 22px;
+	font-weight: lighter;
+	letter-spacing: 0.05em;
+	color: #FFFFFF;
+	padding: 9px 9px 11px 16px;
+	background-color: #3F3F3F;
+	background-image: url(/typo3/sysext/t3skin/images/backgrounds/topbar.png);
+	background-position: left;
+	background-repeat: repeat-x;
+}
+
+/* MENU */
+#menu {
+	color: #FFFFFF;
+	padding: 1px 16px 3px 10px;
+	background-color: #585858;
+}
+
+#menu br {
+	clear: both !important;
+}
+
+#menu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu li {
+	padding-left: 0px;
+	padding-right: 16px;
+	margin-left: 0px;
+	float: left;
+}
+
+#menu a {
+	color: #DDD;
+	text-decoration: none;
+	padding: 0px 6px 0px 6px;
+}
+
+#menu a.active {
+	color: #FFFFFF;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+/* SUBMENU */
+#submenu {
+	background-color: #DDD;
+	border-right: 1px solid #414141;
+	padding: 16px;
+	float: left;
+	width: 170px;
+	margin-right: 12px;
+	padding-top: 100px;
+	height: 100%;
+	min-height: 500px;
+	position: absolute;
+	top: 0px;
+}
+
+#submenu br {
+	clear: both !important;
+}
+
+
+#submenu ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#submenu li {
+	padding-left: 0px;
+	padding-right: 16px;
+	margin-left: 16px;
+}
+
+#submenu a {
+	color: #333333;
+	text-decoration: none;
+	display: block;
+	padding: 0px 6px 0px 6px;
+}
+
+#submenu a.current {
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#submenu a:hover {
+	text-decoration: underline;
+}
+
+/* SUBTITLE */
+#subtitle {
+	color: #DDD;
+	font-style: italic;
+	padding: 6px 3px 13px 16px;
+	background-color: #585858;
+	box-shadow: inset -1px -1px 3px #414141;
+}
+
+/* BODY */
+#body {
+	margin-top: 112px;
+	margin-left: 220px;
+}
+
+/* FOOTER */
+#footer {
+	margin-left: 220px;
+	border-top: 1px solid #A2AAB8;
+	padding: 0px 16px 0px 0px;
+	width: 100%;
+	background-color: #F8F8F8;
+}
+
+/* HELP */
+#help {
+
+}

@@ -1,0 +1,139 @@
+
+.fed-solr-paginate {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	clear: both;
+}
+
+.fed-solr-paginate .navigation {
+	text-align: center;
+}
+
+.fed-solr-paginate .statistics {
+	color: silver;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.fed-solr-result {
+	margin-bottom: 0.5em;
+}
+
+.fed-solr-paginate a {
+	margin: 0px 0.5em 0px 0.5em;
+	text-align: center;
+}
+
+.fed-solr-result .result-number {
+	width: 28px;
+	display: block;
+	float: left;
+	color: grey;
+	background-color: #FAFAFA;
+	text-align: right;
+	margin-right: 0.5em;
+	border: 1px solid silver;
+	border-radius: 4px;
+	font-size: 90%;
+}
+
+.fed-solr-result .title {
+	font-size: 125% !important;
+	color: #454545;
+	display: block;
+	margin-top: -1px;
+}
+
+.fed-solr-result .score {
+	float: right;
+}
+
+.fed-solr-result .result-number, .fed-solr-result .title {
+	padding: 3px 3px 3px 0px;
+}
+
+.fed-solr-result .content {
+	margin-top: 0.2em;
+}
+
+.fed-solr-result {
+	border-top: 1px solid #EBEBEB;
+	padding: 8px 0px 3px 0px;
+}
+
+.fed-solr-result dt {
+	color: silver;
+	font-style: italic;
+	float: right;
+	margin-right: 0.5em;
+}
+
+.fed-solr-results {
+	margin-top: 0.5em;
+	border-bottom: 1px solid #EBEBEB;
+	clear: both;
+}
+
+.fed-solr-paginate-number {
+	width: 30px;
+}
+
+.fed-solr-paginate-number.active {
+	text-decoration: underline !important;
+}
+
+.fed-solr-statistics {
+	color: silver;
+	text-align: center;
+	padding: 0.5em;
+	clear: both;
+}
+
+.fed-solr-facets {
+	clear: both;
+}
+
+.fed-solr-facets ul {
+	margin-left: 16px;
+	margin-top: 0px;
+}
+
+.fed-solr-facet.active {
+	font-weight: bold !important;
+}
+
+.fed-solr-facet-group {
+	float: left;
+	margin-right: 2em;
+	margin-bottom: 0.5em;
+}
+
+.fed-solr-errors {
+	color: red;
+	border: 1px solid red;
+	padding: 10px;
+}
+
+.fed-solr-scorebar {
+	float: right;
+	background-color: #BBBBBB;
+	border: 1px solid #454545;
+	border-radius: 4px;
+}
+
+
+.fed-solr-scorebar-fill {
+	border-radius: 4px;
+	float: left;
+	text-align: left;
+	color: #FFFFFF;
+	background-color: #454545;
+	margin: -1px;
+}
+
+.fed-solr-scorebar .percent {
+	display: block;
+	padding: 2px;
+	font-size: 75% !important;
+	text-align: center;
+}

@@ -1,8 +1,0 @@
-mod.cag_linkchecker {
-
-	searchFields {
-		pages = media
-		tt_content = bodytext, header_link
-		tt_news = bodytext, links
-	}
-}

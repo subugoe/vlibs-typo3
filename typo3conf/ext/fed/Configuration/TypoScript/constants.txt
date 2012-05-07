@@ -1,0 +1,14 @@
+plugin.tx_fed {
+	view {
+		# cat=plugin.tx_fed/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:fed/Resources/Private/Templates/
+		# cat=plugin.tx_fed/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:fed/Resources/Private/Partials/
+		# cat=plugin.tx_fed/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:fed/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_fed//a; type=int+; label=Default storage PID
+		storagePid = 
+	}
+}

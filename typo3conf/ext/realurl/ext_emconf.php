@@ -3,7 +3,7 @@
 ########################################################################
 # Extension Manager/Repository config file for ext "realurl".
 #
-# Auto generated 22-02-2012 16:29
+# Auto generated 28-02-2012 16:13
 #
 # Manual updates:
 # Only the data in the array - everything else is removed by next

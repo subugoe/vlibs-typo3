@@ -1,0 +1,29 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+<T3DataStructure>
+	<meta>
+	    <langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<f:for each="{groups}" as="sheet">
+		<{sheet.name}>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>{sheet.label}</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+			<f:for each="{sheet.fields}" as="field" iteration="iteration">
+				<f:if condition="{field.enabled}">
+					<{field.name}>
+					<TCEforms>
+						<fed:flexform.renderField config="{field}" />
+					</TCEforms>
+					</{field.name}>
+				</f:if>
+			</f:for>
+				</el>
+			</ROOT>
+		</{sheet.name}>
+		</f:for>
+	</sheets>
+</T3DataStructure>

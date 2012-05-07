@@ -1,0 +1,122 @@
+{namespace fed=Tx_Fed_ViewHelpers}
+{namespace flux=Tx_Flux_ViewHelpers}
+
+<f:layout name="Page" />
+
+<f:section name="Configuration">
+	<flux:flexform id="DemoPage" label="Fallback website template">
+		<flux:flexform.sheet name="help" label="Help">
+			<flux:flexform.field.checkbox name="hideHelp" label="Hide help messages in the frontend" />
+		</flux:flexform.sheet>
+		<flux:flexform.sheet name="jQuery" label="jQuery">
+			<flux:flexform.field.checkbox name="includeJQuery" label="Use jQuery" />
+			<flux:flexform.field.input name="themeUrl" label="JQueryUI Theme url" default="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/themes/black-tie/jquery-ui.css" />
+		</flux:flexform.sheet>
+		<flux:flexform.sheet name="content" label="Shared content">
+			<flux:flexform.field.group internalType="db" allowed="pages" maxItems="1" name="footerContentPageUid" label="Page containing content elements for footer" />
+		</flux:flexform.sheet>
+	</flux:flexform>
+</f:section>
+
+<f:section name="Resources">
+	<fed:comment>
+		This section contains necessary resources - styles, scripts etc.
+	</fed:comment>
+	<f:if condition="{includeJQuery}">
+		<fed:jQuery.cdn jQueryVersion="1" jQueryUIVersion="1" jQueryUITheme="{themeUrl}" />
+	</f:if>
+	<fed:style href="{f:uri.resource(path: 'Stylesheet/Page.css')}" />
+	<fed:page.head.title>FED: {page.title}</fed:page.head.title>
+</f:section>
+
+<f:section name="Header">
+	<a href="/">
+		<img src="typo3/gfx/typo3logo_mini.png" alt="Logo" />
+	</a>
+</f:section>
+
+<f:section name="Menu">
+	<f:if condition="{hideHelp} == 0">
+		<div class="right">
+			Documentation: <a href="http://fedext.net">http://fedext.net</a>
+		</div>
+	</f:if>
+	<fed:page.menu entryLevel="0" />
+	<br />
+</f:section>
+
+<f:section name="Subtitle">
+	<f:if condition="{page.subtitle}">
+		<f:then>{page.subtitle}</f:then>
+		<f:else>If the page record had a subtitle it would be displayed here</f:else>
+	</f:if>
+</f:section>
+
+<f:section name="Submenu">
+	<h3>Submenu</h3>
+	<fed:page.menu entryLevel="1" />
+	<br />
+	<h4>Left content area</h4>
+	<p>Uses content sliding to fetch content up along the rootline</p>
+	<fed:page.renderContent column="1" slide="-1" />
+</f:section>
+
+<f:section name="Body">
+	<div class="breadcrumb">
+		<fed:page.breadCrumb entryLevel="1">
+			<f:for each="{rootLine}" as="row" iteration="iteration">
+				&rsaquo;
+				<f:if condition="{iteration.isLast} == 0">
+					<f:then>
+						<f:link.page pageUid="{row.uid}">{row.title}</f:link.page>
+					</f:then>
+					<f:else>
+						{row.title}
+					</f:else>
+				</f:if>
+			</f:for>
+		</fed:page.breadCrumb>
+		<br />
+	</div>
+	<fed:page.renderContent column="0" />
+	<f:if condition="{hideHelp} == 0">
+		<div id="help">
+			<h3>Help</h3>
+			<p>This is the default page template. It is being used because no other extensions
+				have provided page template files which you could select and no TypoScript which
+				points to a page template file location exists.</p>
+			<p>The file being rendered is located at EXT:fed/Resources/Private/Templates/Page/Render.html,
+				the template contains a special page configuration section which provides the settings
+				you see when editing a page in the backend. The page template file uses the Fluid layout
+				EXT:fed/Resources/Private/Templates/Layouts/Page.html</p>
+			<p>You can take a look at that page template file as a reference for creating your own
+				page templates. Extended information about creating and configuring page templates
+				can be found at the FED documentation web site</p>
+			<h3>Tips</h3>
+			<ol>
+				<li>To get started quickly you can copy the default page template and its layout, placing
+					them in a new extension or in fileadmin. Then have a look at the documentation web site
+					for the necessary TypoScript to have TYPO3 recognize the page templates.</li>
+				<li>To remove this help text change the settings in the top page level. You will find the
+					switch when editing a page's properties, under the tab "Page Template"</li>
+				<li>If you are seeing double page content output, remove all TypoScript PAGE definitions.</li>
+				<li>The content of the footer is placed on a page outside the rootline. This page is then
+					referenced through page template settings - all content elements on that page are then
+					rendered in the footer element</li>
+				<li>If your menus look incorrect you may need to adjust the "entryLevel" attributes in
+					the template file</li>
+				<li>FED is capable of rendering pages and content with an extremely limited set of TypoScript
+					and supporting extensions. To increase performance, remove any PAGE and MENU TypoScript
+					definitions and use the fed:page.menu and fed:page.breadCrumb ViewHelpers to render
+					menus and root line.</li>
+			</ol>
+			<p><a href="http://fedext.net">http://fedext.net</a></p>
+		</div>
+	</f:if>
+</f:section>
+
+<f:section name="Footer">
+	<div class="content-elements">
+		<fed:page.renderContent column="0" pageUid="{footerContentPageUid}" />
+	</div>
+</f:section>

@@ -107,5 +107,4 @@ $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 I
 $TYPO3_CONF_VARS['INSTALL']['wizardDone']['tx_coreupdates_installsysexts'] = '1';	//  Modified or inserted by TYPO3 Upgrade Wizard.
 // Updated by TYPO3 Upgrade Wizard 11-01-12 09:23:00
 $TYPO3_CONF_VARS['EXT']['extConf']['em'] = 'a:1:{s:17:"selectedLanguages";s:2:"de";}';	//  Modified or inserted by TYPO3 Extension Manager.
-// Updated by TYPO3 Extension Manager 23-02-12 12:21:11
 ?>
