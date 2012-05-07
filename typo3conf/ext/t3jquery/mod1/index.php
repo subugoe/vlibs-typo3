@@ -61,9 +61,9 @@ $BE_USER->modAccess($MCONF, 1);	// This checks permissions and exits if the user
 // DEFAULT initialization of a module [END]
 
 if (intval(PHP_VERSION) < 5) {
-	require_once('class.JavaScriptPacker.php');
+	require_once('class.JavaScriptPacker.php4');
 } else {
-	require_once('class.JavaScriptPacker_php5.php');
+	require_once('class.JavaScriptPacker.php');
 }
 require_once('class.analyzeJqJS.php');
 if (t3lib_extMgm::isLoaded('extdeveval')) {
@@ -83,9 +83,10 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 {
 	var $pageinfo;
 	var $extKey = 't3jquery';
-	var $jQueryVersionOrig      = '1.7.x';
-	var $jQueryUiVersionOrig    = '1.8.x';
-	var $jQueryTOOLSVersionOrig = '1.2.x';
+	var $jQueryVersionOrig          = '1.7.x';
+	var $jQueryUiVersionOrig        = '1.8.x';
+	var $jQueryTOOLSVersionOrig     = '1.2.x';
+	var $jQueryBootstrapVersionOrig = '2.0.x';
 	var $jQueryOriginalVersions = array();
 	var $jQueryConfig      = array();
 	var $jQueryUiConfig    = array();
@@ -144,6 +145,20 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 		$this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration($version);
 		if (count($this->jQueryTOOLSConfig['groups']) > 0) {
 			foreach ($this->jQueryTOOLSConfig['groups'] as $group) {
+				$this->configXML[$array_name][] = $group;
+			}
+		}
+		// Get the XML-Config from jQuery Bootstrap
+		if ($this->confArray['jQueryBootstrapVersion']) {
+			$version = $this->confArray['jQueryBootstrapVersion'];
+			$array_name = 'groups';
+		} else {
+			$version = $this->jQueryBootstrapVersionOrig;
+			$array_name = 'groups_missing';
+		}
+		$this->jQueryBootstrapConfig = tx_t3jquery::getJqueryBootstrapConfiguration($version);
+		if (count($this->jQueryBootstrapConfig['groups']) > 0) {
+			foreach ($this->jQueryBootstrapConfig['groups'] as $group) {
 				$this->configXML[$array_name][] = $group;
 			}
 		}
@@ -233,6 +248,9 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			if ($this->confArray['jQueryTOOLSVersion']) {
 				$temp_version[] = "Tools {$this->confArray['jQueryTOOLSVersion']}";
 			}
+			if ($this->confArray['jQueryBootstrapVersion']) {
+				$temp_version[] = "Bootstrap {$this->confArray['jQueryBootstrapVersion']}";
+			}
 			$this->content .= $this->doc->section(
 				sprintf($this->LANG->sL('LLL:EXT:t3jquery/mod1/locallang.xml:version_in_use'), implode(" / ", $temp_version))
 			);
@@ -269,14 +287,14 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			// Use button from the Analyzer has been pressed
 			if ($_POST['usejq'] && $_POST['dependencies']) {
 				$temp = array();
-				$temp['files'] = unserialize(urldecode($_POST['dependencies']));
+				$temp['files'] = $this->safe_unserialize(urldecode($_POST['dependencies']));
 				$this->saveJqConf($temp);
 				$this->MOD_SETTINGS['function'] = 1;
 			}
 			// Merge&Use button from the Analyzer has been pressed
 			if ($_POST['mergejq'] && $_POST['dependencies']) {
 				$temp = array();
-				$temp['files'] = $this->mergeJqConf(unserialize(urldecode($_POST['dependencies'])));
+				$temp['files'] = $this->mergeJqConf($this->safe_unserialize(urldecode($_POST['dependencies'])));
 				$this->saveJqConf($temp);
 				$this->MOD_SETTINGS['function'] = 1;
 			}
@@ -296,6 +314,9 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			}
 			if ($this->confArray['jQueryTOOLSVersion']) {
 				$temp_version[] = "Tools {$this->jQueryTOOLSConfig['version']['act']}";
+			}
+			if ($this->confArray['jQueryBootstrapVersion']) {
+				$temp_version[] = "Bootstrap {$this->jQueryBootstrapConfig['version']['act']}";
 			}
 			$this->content .= $this->doc->section(
 				'',
@@ -814,7 +835,7 @@ jQuery(document).ready(function() {
 			case 0 : {
 				$t1 = microtime(TRUE);
 
-				$packer = new JavaScriptPacker($script, 'Normal', TRUE, FALSE);
+				$packer = new JavaScriptPacker($script, 'None', TRUE, FALSE);
 				$script = $packer->pack();
 
 				$t2 = microtime(TRUE);
@@ -855,6 +876,8 @@ jQuery(document).ready(function() {
 	{
 		$out = array();
 		$script = '';
+		$script_bs = NULL;
+		$compression = $_POST['compression'];
 		foreach ($this->jQueryConfig['files'] as $scriptPart) {
 			$temp_script = NULL;
 			if ($scriptPart == 'jquery.js') { // add core
@@ -867,6 +890,18 @@ jQuery(document).ready(function() {
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/plugins/".$scriptPart;
 			} elseif (preg_match("/^TOOLS\:(.*)/", $scriptPart, $reg)) { // add TOOLS
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/tools/{$this->confArray['jQueryTOOLSVersion']}/ui/{$reg[1]}";
+			} elseif (preg_match("/^Bootstrap\:(.*)/", $scriptPart, $reg)) { // add Bootstrap
+				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/bootstrap/{$this->confArray['jQueryBootstrapVersion']}/ui/{$reg[1]}";
+				if ($compression == 'jsmin') {
+					if (file_exists($temp_script)) {
+						$script_bs .= t3lib_div::getURL($temp_script);
+					} else {
+						if ($temp_script) {
+							t3lib_div::devLog("File '{$temp_script}' not found!", 't3jquery', 3);
+						}
+					}
+					$temp_script = NULL;
+				}
 			} else { // add UI
 				$temp_script = t3lib_extMgm::extPath($this->extKey)."res/jquery/ui/{$this->confArray['jQueryUiVersion']}/{$scriptPart}";
 			}
@@ -881,11 +916,11 @@ jQuery(document).ready(function() {
 		$sizeBefore = strlen($script);
 		// get the license from script
 		$license = $this->getLicense($script);
-		switch((string)$_POST['compression']) {
+		switch((string)$compression) {
 			case 'packer' : {
 				$t1 = microtime(TRUE);
 
-				$packer = new JavaScriptPacker($script, 'Normal', TRUE, FALSE);
+				$packer = new JavaScriptPacker($script, 'None', TRUE, FALSE);
 				$script = $packer->pack();
 
 				$t2 = microtime(TRUE);
@@ -898,7 +933,8 @@ jQuery(document).ready(function() {
 
 				try {
 					$error = '';
-					$script = t3lib_div::minifyJavaScript($script, $error);
+					$script_bs = $this->getNoDocs($script_bs, TRUE);
+					$script = t3lib_div::minifyJavaScript($script, $error).$script_bs;
 					if ($error != '') {
 						throw new Exception($error);
 					}
@@ -914,47 +950,7 @@ jQuery(document).ready(function() {
 			case 'nodocs' : {
 				$t1 = microtime(TRUE);
 
-				// workaround for "*/*" in jQuery 1.4.4
-				$script = str_replace("*/*", "*|/|*", $script);
-				// Workaround for /^\/\// in jQuery 1.5.0
-				$script = str_replace("/^\\/\\//", "/^\\/\\/|/", $script);
-				// Workaround for "//" in jQuery 1.5.0
-				$script = str_replace('"//"', '"|/|/"', $script);
-				/* Workaround for "http://" in flashembed */
-				$script = str_replace("URL = 'http://", "URL = 'http:\/\/", $script);
-				$script = str_replace('expressInstall:"http://', 'expressInstall:"http:\/\/', $script);
-				$script = str_replace('document.all,j="http://', 'document.all,j="http:\/\/', $script);
-
-				/* Workaround internal for jQuery 1.5.0 */
-				$script = str_replace("/* internal */", "", $script);
-
-				// Remove comments
-				$script = preg_replace('#/\*.*?/\*#',                    "", $script); // remove "/* SINGLE LINE */" comments
-				$script = preg_replace('#(\/\/.*)#',                     "", $script); // remove "//" comments
-				$script = preg_replace('#/\*(?:[^*]*(?:\*(?!/))*)*\*/#', "", $script); // remove "/* MULTI LINE */" comments
-
-				// Remove empty lines
-				$new_script = array();
-				$lines = explode(LF, $script);
-				if (count($lines) > 0) {
-					foreach ($lines as $line) {
-						if (! preg_match('/^[ \t]*$/', $line)) {
-							$new_script[] = str_replace(array("\n", "\r"), "", $line);
-						}
-					}
-				}
-				$script = implode(LF, $new_script);
-
-				// restore "*/*" for jQuery 1.4.4
-				$script = str_replace("*|/|*", "*/*", $script);
-				// restore "/^\/\//" for jQuery 1.5.0
-				$script = str_replace("/^\\/\\/|/", "/^\\/\\//", $script);
-				// restore "//" in jQuery 1.5.0
-				$script = str_replace('"|/|/"', '"//"', $script);
-				/* restore "http://" in flashembed */
-				$script = str_replace("URL = 'http://", "URL = 'http:\/\/", $script);
-				$script = str_replace('expressInstall:"http:\/\/', 'expressInstall:"http://', $script);
-				$script = str_replace('document.all,j="http:\/\/', 'document.all,j="http://', $script);
+				$script = $this->getNoDocs($script);
 
 				$t2 = microtime(TRUE);
 				$time = sprintf('%.4f', ($t2 - $t1) );
@@ -992,6 +988,62 @@ jQuery(document).ready(function() {
 		$license = array();
 		preg_match_all("#/\*!(?:[^*]*(?:\*(?!/))*)*\*/#", $script, $license);
 		return implode("\n", $license[0]);
+	}
+
+	/**
+	 * Removes all Documentation
+	 * 
+	 * @param $script string
+	 * @return string
+	 */
+	function getNoDocs($script=NULL, $removeWhitespaces=FALSE)
+	{
+		// workaround for "*/*" in jQuery 1.4.4
+		$script = str_replace("*/*", "*|/|*", $script);
+		// Workaround for /^\/\// in jQuery 1.5.0
+		$script = str_replace("/^\\/\\//", "/^\\/\\/|/", $script);
+		// Workaround for "//" in jQuery 1.5.0
+		$script = str_replace('"//"', '"|/|/"', $script);
+		/* Workaround for "http://" in flashembed */
+		$script = str_replace("URL = 'http://", "URL = 'http:\/\/", $script);
+		$script = str_replace('expressInstall:"http://', 'expressInstall:"http:\/\/', $script);
+		$script = str_replace('document.all,j="http://', 'document.all,j="http:\/\/', $script);
+	
+		/* Workaround internal for jQuery 1.5.0 */
+		$script = str_replace("/* internal */", "", $script);
+	
+		// Remove comments
+		$script = preg_replace('#/\*.*?/\*#',                    "", $script); // remove "/* SINGLE LINE */" comments
+		$script = preg_replace('#(\/\/.*)#',                     "", $script); // remove "//" comments
+		$script = preg_replace('#/\*(?:[^*]*(?:\*(?!/))*)*\*/#', "", $script); // remove "/* MULTI LINE */" comments
+	
+		// Remove empty lines
+		$new_script = array();
+		$lines = explode(LF, $script);
+		if (count($lines) > 0) {
+			foreach ($lines as $line) {
+				if (! preg_match('/^[ \t]*$/', $line)) {
+					if ($removeWhitespaces === TRUE) {
+						$line = trim($line);
+					}
+					$new_script[] = str_replace(array("\n", "\r"), "", $line);
+				}
+			}
+		}
+		$script = implode(LF, $new_script);
+	
+		// restore "*/*" for jQuery 1.4.4
+		$script = str_replace("*|/|*", "*/*", $script);
+		// restore "/^\/\//" for jQuery 1.5.0
+		$script = str_replace("/^\\/\\/|/", "/^\\/\\//", $script);
+		// restore "//" in jQuery 1.5.0
+		$script = str_replace('"|/|/"', '"//"', $script);
+		/* restore "http://" in flashembed */
+		$script = str_replace("URL = 'http://", "URL = 'http:\/\/", $script);
+		$script = str_replace('expressInstall:"http:\/\/', 'expressInstall:"http://', $script);
+		$script = str_replace('document.all,j="http:\/\/', 'document.all,j="http://', $script);
+	
+		return $script;
 	}
 
 	/**
@@ -1079,6 +1131,9 @@ jQuery(document).ready(function() {
 						// if UI Tab and the Tools Tab is selected, the UI Tabs will win...
 						$notChecked = FALSE;
 						if (preg_match("/^ToolsTabs/", $file['name']) && in_array('ui/jquery.ui.tabs.js', $formVars['files'])) {
+							$notChecked = TRUE;
+						}
+						if (preg_match("/^BootstrapButton/", $file['name']) && in_array('ui/jquery.ui.button.js', $formVars['files'])) {
 							$notChecked = TRUE;
 						}
 						$out .= '
@@ -1234,6 +1289,30 @@ jQuery(document).ready(function() {
 			}
 		}
 		return $result;
+	}
+
+	/**
+	* mixed safe_unserialize(string $serialized)
+	* Safely unserialize, that is only unserialize string, numbers and arrays, not objects
+	*
+	* @license Public Domain
+	* @author dcz (at) phpbb-seo (dot) com
+	*/
+	function safe_unserialize($serialized) {
+		// unserialize will return false for object declared with small cap o
+		// as well as if there is any ws between O and :
+		if (is_string($serialized) && strpos($serialized, "\0") === false) {
+			if (strpos($serialized, 'O:') === false) {
+				// the easy case, nothing to worry about
+				// let unserialize do the job
+				return @unserialize($serialized);
+			} else if (!preg_match('/(^|;|{|})O:[0-9]+:"/', $serialized)) {
+				// in case we did have a string with O: in it,
+				// but it was not a true serialized object
+				return @unserialize($serialized);
+			}
+		}
+		return false;
 	}
 }
 

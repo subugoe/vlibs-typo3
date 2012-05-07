@@ -44,6 +44,8 @@
       *   Fixes this bug: http://flowplayer.org/tools/forum/25/72029
       */
       function scroll(){        
+      	// Fixes https://github.com/jquerytools/jquerytools/issues/591
+        if (timer) clearTimeout(timer); // reset timeout, especially for onSeek event
         timer = setTimeout(function(){
           api.next();
         }, opts.interval);
@@ -57,14 +59,13 @@
 				if (timer) { return; }
 				
 				stopped = false;
-				
-        root.bind('onSeek', scroll);
-        scroll();
+				root.on('onSeek', scroll);
+				scroll();
 			};	
 
 			api.pause = function() {
 				timer = clearTimeout(timer);  // clear any queued items immediately
-        root.unbind('onSeek', scroll);
+				root.off('onSeek', scroll);
 			};
 			
 			// resume playing if not stopped

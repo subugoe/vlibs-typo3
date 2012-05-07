@@ -35,6 +35,9 @@ if ($_POST['data']['jQueryVersion']) {
 	if ($_POST['data']['jQueryTOOLSVersion']) {
 		$t3jqueryversion .= '-' . $_POST['data']['jQueryTOOLSVersion'];
 	}
+	if ($_POST['data']['jQueryBootstrapVersion']) {
+		$t3jqueryversion .= '-' . $_POST['data']['jQueryBootstrapVersion'];
+	}
 } else {
 	$t3jqueryversion = $confArr['jQueryVersion'];
 	if ($confArr['jQueryUiVersion']) {
@@ -42,6 +45,9 @@ if ($_POST['data']['jQueryVersion']) {
 	}
 	if ($confArr['jQueryTOOLSVersion']) {
 		$t3jqueryversion .= '-' . $confArr['jQueryTOOLSVersion'];
+	}
+	if ($confArr['jQueryBootstrapVersion']) {
+		$t3jqueryversion .= '-' . $confArr['jQueryBootstrapVersion'];
 	}
 }
 define('T3JQUERYVERSION', $t3jqueryversion);
@@ -91,7 +97,7 @@ class tx_t3jquery
 	 */
 	function addJqJS()
 	{
-		if (t3lib_div::int_from_ver(TYPO3_version) >= 4003000) {
+		if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) >= 4003000) {
 			$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_pagerenderer.php']['render-preProcess']['t3jquery'] = 'EXT:t3jquery/class.tx_t3jquery.php:&tx_t3jquery->addJqJsByHook';
 		} else {
 			$confArr = tx_t3jquery::getConf();
@@ -165,31 +171,53 @@ class tx_t3jquery
 			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryToolsConfiguration();
 			$confArr['jQueryTOOLSVersion'] = $temp_config['version']['cdn'];
 		}
+		// CDN version for Bootstrap (t3jquery 2.0.0)
+		if (preg_match("/x$/", $confArr['jQueryBootstrapVersion'])) {
+			$temp_config = $this->jQueryTOOLSConfig = tx_t3jquery::getJqueryBootstrapConfiguration();
+			$confArr['jQueryBootstrapVersion'] = $temp_config['version']['cdn'];
+		}
 		switch ($confArr['locationCDN']) {
 			case 'google' : {
 				// in jQuery TOOLS jQuery is included
 				if ($confArr['jQueryTOOLSVersion'] != '') {
 					$params['jsLibs']['jQueryTOOLS'] = array(
-						'file'       => 'http://cdn.jquerytools.org/'.$confArr['jQueryTOOLSVersion'].'/jquery.tools.min.js',
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => 'http://cdn.jquerytools.org/'.$confArr['jQueryTOOLSVersion'].'/jquery.tools.min.js',
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				} else {
 					$params['jsLibs']['jQuery'] = array(
-						'file'       => 'https://ajax.googleapis.com/ajax/libs/jquery/'.$confArr['jQueryVersion'].'/jquery.min.js',
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => 'https://ajax.googleapis.com/ajax/libs/jquery/'.$confArr['jQueryVersion'].'/jquery.min.js',
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				}
 				if ($confArr['jQueryUiVersion'] != '') {
 					$jsFile = 'https://ajax.googleapis.com/ajax/libs/jqueryui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js';
 					$params['jsFiles'][$jsFile] = array(
-						'file'       => $jsFile,
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => $jsFile,
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
+					);
+				}
+				if ($confArr['jQueryBootstrapVersion'] != '') {
+					$jsFile = 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$confArr['jQueryBootstrapVersion'].'/bootstrap.min.js';
+					$params['jsFiles'][$jsFile] = array(
+						'file'                     => $jsFile,
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				}
 				break;
@@ -198,13 +226,15 @@ class tx_t3jquery
 				// in jQuery TOOLS jQuery is included
 				if ($confArr['jQueryTOOLSVersion'] != '') {
 					$params['jsLibs']['jQueryTOOLS'] = array(
-						'file'       => 'http://cdn.jquerytools.org/'.$confArr['jQueryTOOLSVersion'].'/jquery.tools.min.js',
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => 'http://cdn.jquerytools.org/'.$confArr['jQueryTOOLSVersion'].'/jquery.tools.min.js',
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				} else {
-					if (t3lib_div::int_from_ver($confArr['jQueryVersion']) < 1003002) {
+					if (t3lib_utility_VersionNumber::convertVersionNumberToInteger($confArr['jQueryVersion']) < 1003002) {
 						t3lib_div::devLog('jQuery \''.$confArr['jQueryVersion'].'\' not in MSN-CDN', 't3jquery', 1);
 						$confArr['jQueryVersion'] = '1.3.2';
 					}
@@ -213,23 +243,38 @@ class tx_t3jquery
 						$confArr['jQueryVersion'] = substr($confArr['jQueryVersion'], 0, -2);
 					}
 					$params['jsLibs']['jQuery'] = array(
-						'file'       => 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-'.$confArr['jQueryVersion'].'.min.js',
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => 'http://ajax.aspnetcdn.com/ajax/jquery/jquery-'.$confArr['jQueryVersion'].'.min.js',
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				}
 				if ($confArr['jQueryUiVersion'] != '') {
-					if (t3lib_div::int_from_ver($confArr['jQueryUiVersion']) < 1008005) {
+					if (t3lib_utility_VersionNumber::convertVersionNumberToInteger($confArr['jQueryUiVersion']) < 1008005) {
 						t3lib_div::devLog('jQuery UI \''.$confArr['jQueryUiVersion'].'\' not in MSN-CDN', 't3jquery', 1);
 						$confArr['jQueryUiVersion'] = '1.8.5';
 					}
 					$jsFile = 'http://ajax.aspnetcdn.com/ajax/jquery.ui/'.$confArr['jQueryUiVersion'].'/jquery-ui.min.js';
 					$params['jsFiles'][$jsFile] = array(
-						'file'       => $jsFile,
-						'type'       => 'text/javascript',
-						'section'    => self::getSection(),
-						'forceOnTop' => TRUE,
+						'file'                     => $jsFile,
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
+					);
+				}
+				if ($confArr['jQueryBootstrapVersion'] != '') {
+					$jsFile = 'http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/'.$confArr['jQueryBootstrapVersion'].'/bootstrap.min.js';
+					$params['jsFiles'][$jsFile] = array(
+						'file'                     => $jsFile,
+						'type'                     => 'text/javascript',
+						'section'                  => self::getSection(),
+						'forceOnTop'               => TRUE,
+						'disableCompression'       => FALSE,
+						'excludeFromConcatenation' => TRUE
 					);
 				}
 				break;
@@ -270,7 +315,7 @@ class tx_t3jquery
 	}
 
 	/**
-	 * Returns the configuration of jQuery UI
+	 * Returns the configuration of jQuery TOOLS
 	 * @return array
 	 */
 	function getJqueryToolsConfiguration($version=NULL)
@@ -280,6 +325,20 @@ class tx_t3jquery
 			$version = $confArr['jQueryTOOLSVersion'];
 		}
 		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/tools/'.$version.'/jquery.xml')));
+		return $configuration;
+	}
+
+	/**
+	 * Returns the configuration of jQuery Bootstrap
+	 * @return array
+	 */
+	function getJqueryBootstrapConfiguration($version=NULL)
+	{
+		if ($version === NULL) {
+			$confArr = tx_t3jquery::getConf();
+			$version = $confArr['jQueryBootstrapVersion'];
+		}
+		$configuration = t3lib_div::xml2array(t3lib_div::getUrl(t3lib_div::getFileAbsFileName('EXT:t3jquery/res/jquery/bootstrap/'.$version.'/jquery.xml')));
 		return $configuration;
 	}
 
@@ -430,7 +489,7 @@ class tx_t3jquery
 	 * page.10 = USER
 	 * page.10.userFunc = tx_t3jquery->addJS
 	 * page.10.jsfile = fileadmin/testscript.js
-	 * page.10.jsurl = https://ssl.google-analytics.com/urchin.js
+	 * page.10.jsurl = http://www.example.com/script.js
 	 * page.10.jsdata = alert('Hello World!');
 	 * page.10.forceOnTop = 0
 	 * page.10.compress = 0
@@ -454,7 +513,7 @@ class tx_t3jquery
 		}
 		// If the jQuery lib is not added to page yet, add it!
 		tx_t3jquery::addJqJS();
-		// where should be he data stored (footer or header) / Fix moveJsFromHeaderToFooter (add all scripts to the footer)
+		// where should be the data stored (footer or header) / Fix moveJsFromHeaderToFooter (add all scripts to the footer)
 		$conf['tofooter'] = ($conf['tofooter'] || $GLOBALS['TSFE']->config['config']['moveJsFromHeaderToFooter'] ? 'footer' : 'header');
 		$conf['compress'] = ($conf['compress'] || $conf['jsminify']);
 		$conf['type']     = $conf['type'] ? $conf['type'] : 'text/javascript';
@@ -493,12 +552,12 @@ class tx_t3jquery
 	 * Add JS-File to the HTML
 	 * 
 	 * @param string $file
-	 * @param boolean $conf
+	 * @param array $conf
 	 * @return void
 	 */
 	function addJsFile($file, $conf=array())
 	{
-		if (t3lib_div::int_from_ver(TYPO3_version) >= 4003000) {
+		if (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) >= 4003000) {
 			$pagerender = $GLOBALS['TSFE']->getPageRenderer();
 			if ($conf['tofooter'] == 'footer') {
 				$pagerender->addJsFooterFile($file, $conf['type'], $conf['compress'], $conf['forceOnTop'], $conf['allWrap']);
@@ -520,14 +579,14 @@ class tx_t3jquery
 	 * 
 	 * @param string $name
 	 * @param string $block
-	 * @param boolean $conf
+	 * @param array $conf
 	 * @return void
 	 */
 	function addJsInlineCode($name, $block, $conf=array())
 	{
 		if ($conf['jsinline']) {
 			$GLOBALS['TSFE']->inlineJS['t3jquery.jsdata.' . $name] = $block;
-		} elseif (t3lib_div::int_from_ver(TYPO3_version) >= 4003000) {
+		} elseif (t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) >= 4003000) {
 			$pagerender = $GLOBALS['TSFE']->getPageRenderer();
 			if ($conf['tofooter'] == 'footer') {
 				$pagerender->addJsFooterInlineCode($name, $block, $conf['compress'], $conf['forceOnTop']);

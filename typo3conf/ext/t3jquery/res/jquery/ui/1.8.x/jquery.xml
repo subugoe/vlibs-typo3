@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <t3jquery>
 	<version type="array">
-		<act>1.8.17</act>
-		<cdn>1.8.17</cdn>
+		<act>1.8.20</act>
+		<cdn>1.8.20</cdn>
 	</version>
 	<groups type="array">
 		<numIndex index="1" type="array">
@@ -125,6 +125,7 @@
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:jquery.component.button</detail>
 					<file>ui/jquery.ui.button.js</file>
 					<depends>Core,Widget</depends>
+					<disturbing>BootstrapButton</disturbing>
 					<sources type="array">
 						<numIndex index="1">.button(</numIndex>
 					</sources>
@@ -301,211 +302,227 @@
 							<file>ui/i18n/jquery.ui.datepicker-fr.js</file>
 						</numIndex>
 						<numIndex index="25" type="array">
+							<name>Datepicker-GE</name>
+							<label>Georgian (UTF-8)</label>
+							<file>ui/i18n/jquery.ui.datepicker-ge.js</file>
+						</numIndex>
+
+						<numIndex index="26" type="array">
 							<name>Datepicker-GL</name>
 							<label>Galician</label>
 							<file>ui/i18n/jquery.ui.datepicker-gl.js</file>
 						</numIndex>
-						<numIndex index="26" type="array">
+						<numIndex index="27" type="array">
 							<name>Datepicker-HE</name>
 							<label>Hebrew</label>
 							<file>ui/i18n/jquery.ui.datepicker-he.js</file>
 						</numIndex>
-						<numIndex index="27" type="array">
+						<numIndex index="28" type="array">
+							<name>Datepicker-HI</name>
+							<label>Hindi</label>
+							<file>ui/i18n/jquery.ui.datepicker-hi.js</file>
+						</numIndex>
+						<numIndex index="29" type="array">
 							<name>Datepicker-HR</name>
 							<label>Croatian</label>
 							<file>ui/i18n/jquery.ui.datepicker-hr.js</file>
 						</numIndex>
-						<numIndex index="28" type="array">
+						<numIndex index="30" type="array">
 							<name>Datepicker-HU</name>
 							<label>Hungarian</label>
 							<file>ui/i18n/jquery.ui.datepicker-hu.js</file>
 						</numIndex>
-						<numIndex index="29" type="array">
+						<numIndex index="31" type="array">
 							<name>Datepicker-HY</name>
 							<label>Armenian (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-hy.js</file>
 						</numIndex>
-						<numIndex index="30" type="array">
+						<numIndex index="32" type="array">
 							<name>Datepicker-ID</name>
 							<label>Indonesian</label>
 							<file>ui/i18n/jquery.ui.datepicker-id.js</file>
 						</numIndex>
-						<numIndex index="31" type="array">
+						<numIndex index="33" type="array">
 							<name>Datepicker-IS</name>
 							<label>Icelandic</label>
 							<file>ui/i18n/jquery.ui.datepicker-is.js</file>
 						</numIndex>
-						<numIndex index="32" type="array">
+						<numIndex index="34" type="array">
 							<name>Datepicker-IT</name>
 							<label>Italian</label>
 							<file>ui/i18n/jquery.ui.datepicker-it.js</file>
 						</numIndex>
-						<numIndex index="33" type="array">
+						<numIndex index="35" type="array">
 							<name>Datepicker-JA</name>
 							<label>Japanese</label>
 							<file>ui/i18n/jquery.ui.datepicker-ja.js</file>
 						</numIndex>
-						<numIndex index="34" type="array">
+						<numIndex index="36" type="array">
 							<name>Datepicker-KK</name>
 							<label>Kazakh (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-kk.js</file>
 						</numIndex>
-						<numIndex index="35" type="array">
+						<numIndex index="37" type="array">
+							<name>Datepicker-KM</name>
+							<label>Khmer</label>
+							<file>ui/i18n/jquery.ui.datepicker-km.js</file>
+						</numIndex>
+						<numIndex index="38" type="array">
 							<name>Datepicker-KO</name>
 							<label>Korean</label>
 							<file>ui/i18n/jquery.ui.datepicker-ko.js</file>
 						</numIndex>
-						<numIndex index="36" type="array">
+						<numIndex index="39" type="array">
 							<name>Datepicker-KZ</name>
 							<label>Kazakh</label>
 							<file>ui/i18n/jquery.ui.datepicker-kz.js</file>
 						</numIndex>
-						<numIndex index="37" type="array">
+						<numIndex index="40" type="array">
 							<name>Datepicker-LB</name>
 							<label>Luxembourgish</label>
 							<file>ui/i18n/jquery.ui.datepicker-lb.js</file>
 						</numIndex>
-						<numIndex index="38" type="array">
+						<numIndex index="41" type="array">
 							<name>Datepicker-LT</name>
 							<label>Lithuanian (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-lt.js</file>
 						</numIndex>
-						<numIndex index="39" type="array">
+						<numIndex index="42" type="array">
 							<name>Datepicker-LV</name>
 							<label>Latvian (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-lv.js</file>
 						</numIndex>
-						<numIndex index="40" type="array">
+						<numIndex index="43" type="array">
 							<name>Datepicker-MK</name>
 							<label>Macedonian</label>
 							<file>ui/i18n/jquery.ui.datepicker-mk.js</file>
 						</numIndex>
-						<numIndex index="41" type="array">
+						<numIndex index="44" type="array">
 							<name>Datepicker-ML</name>
 							<label>Malayalam</label>
 							<file>ui/i18n/jquery.ui.datepicker-ml.js</file>
 						</numIndex>
-						<numIndex index="42" type="array">
+						<numIndex index="45" type="array">
 							<name>Datepicker-MS</name>
 							<label>Malaysian</label>
 							<file>ui/i18n/jquery.ui.datepicker-ms.js</file>
 						</numIndex>
-						<numIndex index="43" type="array">
+						<numIndex index="46" type="array">
 							<name>Datepicker-NL</name>
 							<label>Dutch (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-nl.js</file>
 						</numIndex>
-						<numIndex index="44" type="array">
+						<numIndex index="47" type="array">
 							<name>Datepicker-NL-BE</name>
 							<label>Dutch (Belgium)</label>
 							<file>ui/i18n/jquery.ui.datepicker-nl-BE.js</file>
 						</numIndex>
-						<numIndex index="45" type="array">
+						<numIndex index="48" type="array">
 							<name>Datepicker-NO</name>
 							<label>Norwegian</label>
 							<file>ui/i18n/jquery.ui.datepicker-no.js</file>
 						</numIndex>
-						<numIndex index="46" type="array">
+						<numIndex index="49" type="array">
 							<name>Datepicker-PL</name>
 							<label>Polish</label>
 							<file>ui/i18n/jquery.ui.datepicker-pl.js</file>
 						</numIndex>
-						<numIndex index="47" type="array">
+						<numIndex index="50" type="array">
 							<name>Datepicker-PT</name>
 							<label>Portuguese</label>
 							<file>ui/i18n/jquery.ui.datepicker-pt.js</file>
 						</numIndex>
-						<numIndex index="48" type="array">
+						<numIndex index="51" type="array">
 							<name>Datepicker-PT-BR</name>
 							<label>Brazilian</label>
 							<file>ui/i18n/jquery.ui.datepicker-pt-BR.js</file>
 						</numIndex>
-						<numIndex index="49" type="array">
+						<numIndex index="52" type="array">
 							<name>Datepicker-RM</name>
 							<label>Romansh</label>
 							<file>ui/i18n/jquery.ui.datepicker-rm.js</file>
 						</numIndex>
-						<numIndex index="50" type="array">
+						<numIndex index="53" type="array">
 							<name>Datepicker-RO</name>
 							<label>Romanian</label>
 							<file>ui/i18n/jquery.ui.datepicker-ro.js</file>
 						</numIndex>
-						<numIndex index="51" type="array">
+						<numIndex index="54" type="array">
 							<name>Datepicker-RU</name>
 							<label>Russian (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-ru.js</file>
 						</numIndex>
-						<numIndex index="52" type="array">
+						<numIndex index="55" type="array">
 							<name>Datepicker-SK</name>
 							<label>Slovak</label>
 							<file>ui/i18n/jquery.ui.datepicker-sk.js</file>
 						</numIndex>
-						<numIndex index="53" type="array">
+						<numIndex index="56" type="array">
 							<name>Datepicker-SL</name>
 							<label>Slovenian</label>
 							<file>ui/i18n/jquery.ui.datepicker-sl.js</file>
 						</numIndex>
-						<numIndex index="54" type="array">
+						<numIndex index="57" type="array">
 							<name>Datepicker-SQ</name>
 							<label>Albanian</label>
 							<file>ui/i18n/jquery.ui.datepicker-sq.js</file>
 						</numIndex>
-						<numIndex index="55" type="array">
+						<numIndex index="58" type="array">
 							<name>Datepicker-SR</name>
 							<label>Serbian (SR)</label>
 							<file>ui/i18n/jquery.ui.datepicker-sr.js</file>
 						</numIndex>
-						<numIndex index="56" type="array">
+						<numIndex index="59" type="array">
 							<name>Datepicker-SR-SR</name>
 							<label>Serbian (SR-SR)</label>
 							<file>ui/i18n/jquery.ui.datepicker-sr-SR.js</file>
 						</numIndex>
-						<numIndex index="57" type="array">
+						<numIndex index="60" type="array">
 							<name>Datepicker-SV</name>
 							<label>Swedish</label>
 							<file>ui/i18n/jquery.ui.datepicker-sv.js</file>
 						</numIndex>
-						<numIndex index="58" type="array">
+						<numIndex index="61" type="array">
 							<name>Datepicker-TA</name>
 							<label>Tamil</label>
 							<file>ui/i18n/jquery.ui.datepicker-ta.js</file>
 						</numIndex>
-						<numIndex index="59" type="array">
+						<numIndex index="62" type="array">
 							<name>Datepicker-TH</name>
 							<label>Thai</label>
 							<file>ui/i18n/jquery.ui.datepicker-th.js</file>
 						</numIndex>
-						<numIndex index="60" type="array">
+						<numIndex index="63" type="array">
 							<name>Datepicker-TJ</name>
 							<label>Tajiki</label>
 							<file>ui/i18n/jquery.ui.datepicker-tj.js</file>
 						</numIndex>
-						<numIndex index="61" type="array">
+						<numIndex index="64" type="array">
 							<name>Datepicker-TR</name>
 							<label>Turkish</label>
 							<file>ui/i18n/jquery.ui.datepicker-tr.js</file>
 						</numIndex>
-						<numIndex index="62" type="array">
+						<numIndex index="65" type="array">
 							<name>Datepicker-UK</name>
 							<label>Ukrainian (UTF-8)</label>
 							<file>ui/i18n/jquery.ui.datepicker-uk.js</file>
 						</numIndex>
-						<numIndex index="63" type="array">
+						<numIndex index="66" type="array">
 							<name>Datepicker-VI</name>
 							<label>Vietnamese</label>
 							<file>ui/i18n/jquery.ui.datepicker-vi.js</file>
 						</numIndex>
-						<numIndex index="64" type="array">
+						<numIndex index="67" type="array">
 							<name>Datepicker-ZH-CN</name>
 							<label>Chinese (CN)</label>
 							<file>ui/i18n/jquery.ui.datepicker-zh-CN.js</file>
 						</numIndex>
-						<numIndex index="65" type="array">
+						<numIndex index="68" type="array">
 							<name>Datepicker-ZH-HK</name>
 							<label>Chinese (HK)</label>
 							<file>ui/i18n/jquery.ui.datepicker-zh-HK.js</file>
 						</numIndex>
-						<numIndex index="66" type="array">
+						<numIndex index="69" type="array">
 							<name>Datepicker-ZH-TW</name>
 							<label>Chinese (TW)</label>
 							<file>ui/i18n/jquery.ui.datepicker-zh-TW.js</file>

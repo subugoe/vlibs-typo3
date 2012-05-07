@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <t3jquery>
 	<version type="array">
-		<act>1.2.6</act>
-		<cdn>1.2.6</cdn>
+		<act>1.2.7</act>
+		<cdn>1.2.7</cdn>
 	</version>
 	<groups type="array">
 		<numIndex index="1" type="array">
@@ -42,6 +42,7 @@
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:tools.component.tooltip</detail>
 					<file>TOOLS:tools.tooltip.js</file>
 					<depends>jQuery</depends>
+					<disturbing>BootstrapTooltip</disturbing>
 					<sources type="array">
 						<numIndex index="1">.tooltip(</numIndex>
 					</sources>
