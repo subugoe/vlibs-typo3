@@ -826,3 +826,42 @@ padding: .5em .5em;
 
 
 
+/*
+	SUBJECT SEARCH COLUMN VIEW
+*/
+#contentContainer .gokContainer.column {
+	padding-left: 243px;
+}
+
+#contentContainer .gokContainer.column ul {
+	width: 24%;
+	padding: 0;
+	background: transparent;
+}
+
+#contentContainer .gokContainer.column li {
+	padding: 0;
+	border: 0px none;
+}
+
+#contentContainer .gokContainer.column li.selected {
+	background: #B5C7E7;
+}
+
+#contentContainer .gokContainer.column li a {
+	border-bottom: 1px dotted #192D57;
+	padding: 7px 12px 7px 7px;
+	color: #192D57;
+	font-weight: normal;
+	font-size: 114%;
+}
+
+#contentContainer .gokContainer.column li.open:after,
+#contentContainer .gokContainer.column li.close:after {
+	top: 0.7em;
+	right: 0.3em;
+}
+
+#contentContainer .gokContainer.column .GOKID {
+	font-weight: bold;
+}
