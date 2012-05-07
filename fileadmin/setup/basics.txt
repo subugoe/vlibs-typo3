@@ -5,6 +5,12 @@ config {
 
 	index_enable = 1
 	index_external = 1
+
+	removeDefaultJS = 1
+	admPanel = 1
+
+	noPageTitle = 2
+	uniqueLinkVars = 1
 }
 
 config.admPanel = 1

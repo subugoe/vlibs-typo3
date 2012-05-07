@@ -1,9 +1,20 @@
 # configure pazpar2:
-# * listen to nkwgok changes
-plugin.tx_pazpar2.settings.triggeredByNKWGOKMenu = 1
+plugin.tx_pazpar2.settings {
+	# listen to nkwgok changes
+	triggeredByNKWGOKMenu = 1
+	# hide the extended search link
+	allowExtendedSearch = 0
+}
 
-# * hide the extended search link
-plugin.tx_pazpar2.settings.allowExtendedSearch = 0
+# configure pazpar2 placeholder strings
+plugin.tx_pazpar2._LOCAL_LANG.de {
+  form-main-placeholder = zusätzlicher Suchbegriff
+}
+
+plugin.tx_pazpar2._LOCAL_LANG.en {
+  form-main-placeholder = add a search term
+}
+
 
 
 # add CSS rules to reposition the search form

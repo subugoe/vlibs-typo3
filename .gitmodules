@@ -1,12 +1,16 @@
 [submodule "typo3conf/ext/pazpar2"]
 	path = typo3conf/ext/pazpar2
-	url = git@github.com:ssp/typo3-pazpar2.git
+	url = git://github.com/ssp/typo3-pazpar2.git
 [submodule "typo3conf/ext/nkwgok"]
 	path = typo3conf/ext/nkwgok
-	url = git@github.com:ssp/typo3-nkwgok.git
+	url = git://github.com/ssp/typo3-nkwgok.git
 [submodule "fileadmin/opac"]
 	path = fileadmin/opac
 	url = git://github.com/ssp/Opac-2-Atom.git
 [submodule "typo3conf/ext/ezbrequest"]
 	path = typo3conf/ext/ezbrequest
-	url = git@github.com:ssp/typo3-ezbrequest.git
+	url = git://github.com/ssp/typo3-ezbrequest.git
+[submodule "typo3conf/ext/xmlinclude"]
+    path = typo3conf/ext/xmlinclude
+	url = git://github.com/ssp/typo3-xmlinclude.git
+
