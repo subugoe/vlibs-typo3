@@ -437,6 +437,7 @@ li {
 #pazpar2 #pz2-results .pz2-extraLinks ul li input,
 #pazpar2 #pz2-results .pz2-extraLinks ul li a {
 	color: #999;
+	font-family: Verdana, Geneva, sans-serif;
 }
 
 #pazpar2 #pz2-results .pz2-extraLinks:hover ul li input,
