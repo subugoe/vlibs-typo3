@@ -628,6 +628,7 @@ a.languageSwitcher:hover {
 #pazpar2 #pz2-results .pz2-extraLinks ul li input,
 #pazpar2 #pz2-results .pz2-extraLinks ul li a {
 	color: #7d7d7d;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Helvetica, "Helvetica Neue", Arial, sans-serif;
 }
 
 #pazpar2 #pz2-results .pz2-extraLinks:hover ul li input,
