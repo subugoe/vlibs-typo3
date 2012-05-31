@@ -1,7 +1,7 @@
 # configure pazpar2:
 plugin.tx_pazpar2.settings {
 	# listen to nkwgok changes
-	triggeredByNKWGOKMenu = 1
+	triggeredByNKWGOK = 1
 	# hide the extended search link
 	allowExtendedSearch = 0
 }

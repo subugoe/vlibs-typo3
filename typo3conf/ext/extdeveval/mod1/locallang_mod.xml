@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<description>Standard Module labels for Extension Development Evaluator</description>
+		<type>module</type>
+		<csh_table></csh_table>
+		<fileId>EXT:extdeveval/mod1/locallang_mod.xml</fileId>
+		<labelContext type="array">
+		</labelContext>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">The Extension Development Evaluator tool.</label>
+		</languageKey>
+		<languageKey index="dk" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Evalueringsværktøj til udvikling af extensions.</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Das Extension-Entwicklung Evaluationstool.</label>
+		</languageKey>
+		<languageKey index="no" type="array">
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Tool di valutazione per lo sviluppo di estensioni</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+		</languageKey>
+		<languageKey index="es" type="array">
+		</languageKey>
+		<languageKey index="nl" type="array">
+		</languageKey>
+		<languageKey index="cz" type="array">
+		</languageKey>
+		<languageKey index="pl" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Narzędzie do sprawdzania tworzonych dodatków.</label>
+		</languageKey>
+		<languageKey index="si" type="array">
+		</languageKey>
+		<languageKey index="fi" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Tyokalu lisäyksien (extension) kehittämisen avuksi.</label>
+		</languageKey>
+		<languageKey index="tr" type="array">
+		</languageKey>
+		<languageKey index="se" type="array">
+			<label index="mlang_tabs_tab">ExtDevEcal</label>
+			<label index="mlang_labels_tabdescr">Extension-utvecklarens värderingsverktyg</label>
+		</languageKey>
+		<languageKey index="pt" type="array">
+		</languageKey>
+		<languageKey index="ru" type="array">
+		</languageKey>
+		<languageKey index="ro" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">Instrumentul de Evaluare al Dezvoltarii Extensiilor</label>
+		</languageKey>
+		<languageKey index="ch" type="array">
+		</languageKey>
+		<languageKey index="sk" type="array">
+		</languageKey>
+		<languageKey index="lt" type="array">
+		</languageKey>
+		<languageKey index="is" type="array">
+		</languageKey>
+		<languageKey index="hr" type="array">
+		</languageKey>
+		<languageKey index="hu" type="array">
+		</languageKey>
+		<languageKey index="gl" type="array">
+		</languageKey>
+		<languageKey index="th" type="array">
+		</languageKey>
+		<languageKey index="gr" type="array">
+		</languageKey>
+		<languageKey index="hk" type="array">
+			<label index="mlang_tabs_tab">ExtDevEval</label>
+			<label index="mlang_labels_tabdescr">延伸發展評估工具</label>
+		</languageKey>
+		<languageKey index="eu" type="array">
+		</languageKey>
+		<languageKey index="bg" type="array">
+		</languageKey>
+		<languageKey index="br" type="array">
+		</languageKey>
+		<languageKey index="et" type="array">
+		</languageKey>
+		<languageKey index="ar" type="array">
+		</languageKey>
+		<languageKey index="he" type="array">
+		</languageKey>
+		<languageKey index="ua" type="array">
+		</languageKey>
+	</data>
+	<orig_hash type="array">
+		<languageKey index="dk" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="no" type="array">
+		</languageKey>
+		<languageKey index="it" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="fr" type="array">
+		</languageKey>
+		<languageKey index="es" type="array">
+		</languageKey>
+		<languageKey index="nl" type="array">
+		</languageKey>
+		<languageKey index="cz" type="array">
+		</languageKey>
+		<languageKey index="pl" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="si" type="array">
+		</languageKey>
+		<languageKey index="fi" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="tr" type="array">
+		</languageKey>
+		<languageKey index="se" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="pt" type="array">
+		</languageKey>
+		<languageKey index="ru" type="array">
+		</languageKey>
+		<languageKey index="ro" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="ch" type="array">
+		</languageKey>
+		<languageKey index="sk" type="array">
+		</languageKey>
+		<languageKey index="lt" type="array">
+		</languageKey>
+		<languageKey index="is" type="array">
+		</languageKey>
+		<languageKey index="hr" type="array">
+		</languageKey>
+		<languageKey index="hu" type="array">
+		</languageKey>
+		<languageKey index="gl" type="array">
+		</languageKey>
+		<languageKey index="th" type="array">
+		</languageKey>
+		<languageKey index="gr" type="array">
+		</languageKey>
+		<languageKey index="hk" type="array">
+			<label index="mlang_tabs_tab" type="integer">114927868</label>
+			<label index="mlang_labels_tabdescr" type="integer">187879914</label>
+		</languageKey>
+		<languageKey index="eu" type="array">
+		</languageKey>
+		<languageKey index="bg" type="array">
+		</languageKey>
+		<languageKey index="br" type="array">
+		</languageKey>
+		<languageKey index="et" type="array">
+		</languageKey>
+		<languageKey index="ar" type="array">
+		</languageKey>
+		<languageKey index="he" type="array">
+		</languageKey>
+		<languageKey index="ua" type="array">
+		</languageKey>
+	</orig_hash>
+</T3locallang>
