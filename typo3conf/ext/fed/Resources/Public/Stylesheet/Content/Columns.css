@@ -1,9 +1,0 @@
-.content-columns { width: 100%; clear: both; }
-.content-columns .content-column { float: left; }
-.content-columns .content-column .content-column-padding { clear: both; }
-.content-column-50 { width: 50%; }
-.content-column-33 { width: 33.3%; }
-.content-column-25 { width: 25%; }
-.content-column-20 { width: 20%; }
-.content-column-15 { width: 15%; }
-.content-column-10 { width: 10%; }
