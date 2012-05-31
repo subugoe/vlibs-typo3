@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:41:13 UTC 2011" product-name="tstemplate_analyzer">
+    <header/>
+    <body>
+      <trans-unit id="currentTemplate" approved="yes">
+        <source>Current template:</source>
+        <target state="translated">Aktuelles Template:</target>
+      </trans-unit>
+      <trans-unit id="title" approved="yes">
+        <source>Title</source>
+        <target state="translated">Titel</target>
+      </trans-unit>
+      <trans-unit id="rootlevel" approved="yes">
+        <source>Rootlevel</source>
+        <target state="translated">Wurzelebene</target>
+      </trans-unit>
+      <trans-unit id="clearSetup" approved="yes">
+        <source>Clear Setup</source>
+        <target state="translated">Setup löschen</target>
+      </trans-unit>
+      <trans-unit id="clearConstants" approved="yes">
+        <source>Clear Constants</source>
+        <target state="translated">Konstanten löschen</target>
+      </trans-unit>
+      <trans-unit id="pid" approved="yes">
+        <source>PID</source>
+        <target state="translated">PID</target>
+      </trans-unit>
+      <trans-unit id="rootline" approved="yes">
+        <source>Rootline</source>
+        <target state="translated">Rootline</target>
+      </trans-unit>
+      <trans-unit id="nextLevel" approved="yes">
+        <source>Next Level</source>
+        <target state="translated">Nächste Ebene</target>
+      </trans-unit>
+      <trans-unit id="templateHierarchy" approved="yes">
+        <source>Template hierarchy:</source>
+        <target state="translated">Template-Hierarchie:</target>
+      </trans-unit>
+      <trans-unit id="displayOptions" approved="yes">
+        <source>Display Options</source>
+        <target state="translated">Optionen anzeigen</target>
+      </trans-unit>
+      <trans-unit id="lineNumbers" approved="yes">
+        <source>Line numbers</source>
+        <target state="translated">Zeilennummern</target>
+      </trans-unit>
+      <trans-unit id="syntaxHighlight" approved="yes">
+        <source>Syntax highlight</source>
+        <target state="translated">Syntaxhervorhebung</target>
+      </trans-unit>
+      <trans-unit id="comments" approved="yes">
+        <source>Comments</source>
+        <target state="translated">Kommentare</target>
+      </trans-unit>
+      <trans-unit id="cropLines" approved="yes">
+        <source>Crop lines</source>
+        <target state="translated">Zeilen kappen</target>
+      </trans-unit>
+      <trans-unit id="blockMode" approved="yes">
+        <source>Block mode</source>
+        <target state="translated">Blockmodus</target>
+      </trans-unit>
+      <trans-unit id="constants" approved="yes">
+        <source>Constants:</source>
+        <target state="translated">Konstanten:</target>
+      </trans-unit>
+      <trans-unit id="setup" approved="yes">
+        <source>Setup:</source>
+        <target state="translated">Setup:</target>
+      </trans-unit>
+      <trans-unit id="viewCompleteTS" approved="yes">
+        <source>View the complete TS Listing</source>
+        <target state="translated">Vollständige TS-Auflistung anzeigen</target>
+      </trans-unit>
+      <trans-unit id="completeTS" approved="yes">
+        <source>Complete TS:</source>
+        <target state="translated">Vollständiges TS:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

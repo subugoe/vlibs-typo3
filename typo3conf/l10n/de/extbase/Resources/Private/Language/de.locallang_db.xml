@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="fe_users.tx_extbase_type">Datensatztyp</label>
+      <label index="fe_users.tx_extbase_type.0">nicht definiert</label>
+      <label index="fe_users.tx_extbase_type.Tx_Extbase_Domain_Model_FrontendUser">Tx_Extbase_Domain_Model_FrontendUser</label>
+      <label index="fe_groups.tx_extbase_type">Datensatztyp</label>
+      <label index="fe_groups.tx_extbase_type.0">nicht definiert</label>
+      <label index="fe_groups.tx_extbase_type.Tx_Extbase_Domain_Model_FrontendUserGroup">Tx_Extbase_Domain_Model_FrontendUserGroup</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

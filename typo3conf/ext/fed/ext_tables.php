@@ -13,7 +13,16 @@ if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableSolrFeatures']
 		'Solr',
 		'Solr AJAX Search'
 	);
-	Tx_Fed_Core::registerFluidFlexFormContentObject('fed_solr', t3lib_extMgm::extPath($_EXTKEY, 'Resources/Private/Templates/Solr/Form.html'));
+	Tx_Flux_Core::registerFluidFlexFormContentObject(
+		t3lib_extMgm::extPath($_EXTKEY, 'Resources/Private/Templates/Solr/Form.html'),
+		'fed_solr',
+		array(),
+		'Configuration',
+		array(
+			'templateRootPath' => 'EXT:fed/Resources/Private/Templates/',
+			'layoutRootPath' => 'EXT:fed/Resources/Private/Layouts/',
+			'partialRootPath' => 'EXT:fed/Resources/Private/Partials/',
+		));
 	$TCA['tt_content']['types']['fed_solr']['showitem'] = '
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.general;general,
 	--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,

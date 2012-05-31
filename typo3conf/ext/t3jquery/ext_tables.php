@@ -3,12 +3,14 @@ if (!defined ('TYPO3_MODE')) {
 	die('Access denied.');
 }
 
+
 if (TYPO3_MODE == 'BE') {
 	// get extension configuration
 	$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
 
 	if ($confArr['enableStyleStatic']) {
 		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/bootstrap',         'T3JQUERY Style: Bootstrap default');
+		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/mobile',            'T3JQUERY Style: Mobiles default');
 		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/ui/blitzer',        'T3JQUERY Style: UI Blitzer');
 		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/ui/cupertino',      'T3JQUERY Style: UI Cupertino');
 		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/ui/dark-hive',      'T3JQUERY Style: UI Dark-Hive');
@@ -31,6 +33,7 @@ if (TYPO3_MODE == 'BE') {
 	}
 
 	if (! $confArr['integrateFromCDN']) {
+		t3lib_extMgm::addModulePath('tools_txt3jqueryM1', t3lib_extMgm::extPath($_EXTKEY) . 'mod1/');
 		t3lib_extMgm::addModule('tools', 'txt3jqueryM1', '', t3lib_extMgm::extPath($_EXTKEY).'mod1/');
 	}
 }

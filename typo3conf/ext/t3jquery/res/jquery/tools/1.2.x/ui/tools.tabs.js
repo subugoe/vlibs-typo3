@@ -22,6 +22,7 @@
 			onBeforeClick: null,
 			onClick: null, 
 			effect: 'default',
+			initialEffect: false,   // whether or not to show effect in first init of tabs
 			initialIndex: 0,			
 			event: 'click',
 			rotate: false,
@@ -141,11 +142,11 @@
 	
 	function Tabs(root, paneSelector, conf) {
 		
-		var self = this, 
-			 trigger = root.add(this),
-			 tabs = root.find(conf.tabs),
-			 panes = paneSelector.jquery ? paneSelector : root.children(paneSelector),			 
-			 current;
+		var self = this,
+        trigger = root.add(this),
+        tabs = root.find(conf.tabs),
+        panes = paneSelector.jquery ? paneSelector : root.children(paneSelector),
+        current;
 			 
 		
 		// make sure tabs and panes are found
@@ -158,10 +159,11 @@
 		$.extend(this, {				
 			click: function(i, e) {
 			  
-				var tab = tabs.eq(i);
+				var tab = tabs.eq(i),
+				    firstRender = !root.data('tabs');
 				
 				if (typeof i == 'string' && i.replace("#", "")) {
-					tab = tabs.filter("[href*=" + i.replace("#", "") + "]");
+					tab = tabs.filter("[href*=\"" + i.replace("#", "") + "\"]");
 					i = Math.max(tabs.index(tab), 0);
 				}
 								
@@ -185,9 +187,12 @@
 				e.type = "onBeforeClick";
 				trigger.trigger(e, [i]);				
 				if (e.isDefaultPrevented()) { return; }
+				
+        // if firstRender, only run effect if initialEffect is set, otherwise default
+				var effect = firstRender ? conf.initialEffect && conf.effect || 'default' : conf.effect;
 
 				// call the effect
-				effects[conf.effect].call(self, i, function() {
+				effects[effect].call(self, i, function() {
 					current = i;
 					// onClick callback
 					e.type = "onClick";
@@ -234,8 +239,8 @@
 			},
 			
 			destroy: function() {
-				tabs.unbind(conf.event).removeClass(conf.current);
-				panes.find("a[href^=#]").unbind("click.T"); 
+				tabs.off(conf.event).removeClass(conf.current);
+				panes.find("a[href^=\"#\"]").off("click.T"); 
 				return self;
 			}
 		
@@ -246,12 +251,12 @@
 				
 			// configuration
 			if ($.isFunction(conf[name])) {
-				$(self).bind(name, conf[name]); 
+				$(self).on(name, conf[name]); 
 			}
 
 			// API
 			self[name] = function(fn) {
-				if (fn) { $(self).bind(name, fn); }
+				if (fn) { $(self).on(name, fn); }
 				return self;	
 			};
 		});
@@ -264,19 +269,19 @@
 		
 		// setup click actions for each tab
 		tabs.each(function(i) { 				
-			$(this).bind(conf.event, function(e) {
+			$(this).on(conf.event, function(e) {
 				self.click(i, e);
 				return e.preventDefault();
 			});			
 		});
 		
 		// cross tab anchor link
-		panes.find("a[href^=#]").bind("click.T", function(e) {
+		panes.find("a[href^=\"#\"]").on("click.T", function(e) {
 			self.click($(this).attr("href"), e);		
 		}); 
 		
 		// open initial tab
-		if (location.hash && conf.tabs == "a" && root.find("[href=" +location.hash+ "]").length) {
+		if (location.hash && conf.tabs == "a" && root.find("[href=\"" +location.hash+ "\"]").length) {
 			self.click(location.hash);
 
 		} else {

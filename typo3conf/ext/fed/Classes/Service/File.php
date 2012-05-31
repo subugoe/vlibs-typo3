@@ -130,19 +130,23 @@ class Tx_Fed_Service_File implements t3lib_Singleton {
 		if (is_array($postFiles) === FALSE) {
 			$filename = $postFiles;
 			$targetFilename = $_FILES[$namespace]['name'][$propertyName];
-			$object = $this->objectManager->get($objectType, $filename);
-			$object->setTargetFilename($targetFilename);
-			$fileObjectStorage->attach($object);
-			return $fileObjectStorage;
+			if($targetFilename && $targetFilename != '') {
+				$object = $this->objectManager->get($objectType, $filename);
+				$object->setTargetFilename($targetFilename);
+				$fileObjectStorage->attach($object);
+				return $fileObjectStorage;
+			}
 		}
 		$numFiles = count($postFiles);
 		for ($i=0; $i<$numFiles; $i++) {
 			$filename = $_FILES[$namespace]['tmp_name'][$propertyName][$i];
 			$targetFilename = $_FILES[$namespace]['name'][$propertyName][$i];
-			if (is_file($filename)) {
-				$object = $this->objectManager->get($objectType, $filename);
-				$object->setTargetFilename($targetFilename);
-				$fileObjectStorage->attach($object);
+			if($targetFilename && $targetFilename != '') {
+				if (is_file($filename)) {
+					$object = $this->objectManager->get($objectType, $filename);
+					$object->setTargetFilename($targetFilename);
+					$fileObjectStorage->attach($object);
+				}
 			}
 		}
 		return $fileObjectStorage;

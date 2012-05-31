@@ -207,7 +207,6 @@ class Tx_Fed_Persistence_FileObjectStorage extends SplObjectStorage {
 		foreach ($this as $fileObject) {
 			if ($this->basePath) {
 				$filename = $fileObject->getBasename();
-				var_dump($filename);
 			} else {
 				$filename = $fileObject->getRelativePath();
 			}

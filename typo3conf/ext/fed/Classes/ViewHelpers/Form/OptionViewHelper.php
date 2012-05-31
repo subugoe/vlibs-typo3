@@ -61,7 +61,13 @@ class Tx_Fed_ViewHelpers_Form_OptionViewHelper extends Tx_Fluid_ViewHelpers_Form
 			$selected = 'selected';
 		} else if ($this->viewHelperVariableContainer->exists('Tx_Fed_ViewHelpers_Form_SelectViewHelper', 'value')) {
 			$value = $this->viewHelperVariableContainer->get('Tx_Fed_ViewHelpers_Form_SelectViewHelper', 'value');
-			$selected = $this->arguments['value'] ==  $value || in_array($this->arguments['value'], $value) ? 'selected' : '';
+			
+			if (is_string($this->arguments['value'])) {
+				$selected = $this->arguments['value'] == $value ? 'selected' : '';
+            }
+            if (is_array($this->arguments['value'])) {
+				$selected = in_array($this->arguments['value'], $value) ? 'selected' : '';
+            }
 		}
 		$tagContent = $this->renderChildren();
 		$options = $this->viewHelperVariableContainer->get('Tx_Fed_ViewHelpers_Form_SelectViewHelper', 'options');

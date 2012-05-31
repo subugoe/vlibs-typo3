@@ -72,7 +72,9 @@ class Tx_Fed_Backend_FCESelector {
 			$files = Tx_Fed_Utility_Path::getFiles($templatePathSet['templateRootPath'], TRUE);
 			if (count($files) > 0) {
 				$groupLabel = '';
-				if (!t3lib_extMgm::isLoaded($key)) {
+				if ($templatePathSet['label']) {
+					$groupLabel = $templatePathSet['label'];
+				} elseif (!t3lib_extMgm::isLoaded($key)) {
 					$groupLabel = ucfirst($key);
 				} else {
 					$emConfigFile = t3lib_extMgm::extPath($key, 'ext_emconf.php');
