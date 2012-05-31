@@ -40,8 +40,8 @@ jQueryBootstrapVersion =
 # cat=basic/enable/10; type=boolean; label=Integrate from CDN: If set, the libs will be integrated from a CDN
 integrateFromCDN = 
 
-# cat=basic/enable/20; type=options[google,msn]; label=Location of CDN: Choose the used CDN, jQuery TOOLS even comes from jquerytools.com
-locationCDN = google
+# cat=basic/enable/20; type=options[jquery,google,msn]; label=Location of CDN: Choose the used CDN (jQuery TOOLS even comes from jquerytools.com)
+locationCDN = jquery
 
 
 

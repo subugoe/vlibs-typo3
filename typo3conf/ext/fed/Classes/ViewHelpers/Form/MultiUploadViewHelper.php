@@ -226,6 +226,25 @@ class Tx_Fed_ViewHelpers_Form_MultiUploadViewHelper extends Tx_Fluid_ViewHelpers
 			)
 		);
 		$optionsJson = $this->jsonService->encode($options);
+		// remove last }
+		$optionsJson = substr($optionsJson,0, -1);
+		if(!empty($this->arguments['preinit'])) {
+			$optionsJson .= ',"preinit":{';
+			$preInitHandler = array();
+			foreach($this->arguments['preinit'] as $preInitEvent => $preInitEventHandler) {
+				$preInitHandler[] = $preInitEvent . ':' . $preInitEventHandler;
+			}
+			$optionsJson .= implode(',',$preInitHandler) . '}';
+		}
+		if(!empty($this->arguments['init'])) {
+			$optionsJson .= ',"init":{';
+			$initHandler = array();
+			foreach($this->arguments['init'] as $initEvent => $initEventHandler) {
+				$initHandler[] = $initEvent . ':' . $initEventHandler;
+			}
+			$optionsJson .= implode(',',$initHandler) . '}';
+		}
+		$optionsJson .= '}';
 		$this->documentHead->includeHeader("
 			var {$this->uniqueId} = null;
 			var {$this->uniqueId}options = {$optionsJson};

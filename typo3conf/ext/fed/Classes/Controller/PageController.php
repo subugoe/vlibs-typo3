@@ -78,12 +78,27 @@ class Tx_Fed_Controller_PageController extends Tx_Fed_Core_AbstractController {
 			$templatePathAndFilename = $this->settings['templates']['fallbackFluidPageTemplate'];
 		}
 		$templatePathAndFilename = Tx_Fed_Utility_Path::translatePath($templatePathAndFilename);
-		$view->setTemplatePathAndFilename($templatePathAndFilename);
-		$view->assignMultiple($flexformData);
-		$view->assign('page', $GLOBALS['TSFE']->page);
-		$view->assign('user', $GLOBALS['TSFE']->fe_user->user);
-		$view->assign('cookies', $_COOKIE);
-		$view->assign('session', $_SESSION);
+		if (file_exists($templatePathAndFilename) === TRUE) {
+			$view->setTemplatePathAndFilename($templatePathAndFilename);
+			$view->assignMultiple($flexformData);
+			$view->assign('page', $GLOBALS['TSFE']->page);
+			$view->assign('user', $GLOBALS['TSFE']->fe_user->user);
+			$view->assign('cookies', $_COOKIE);
+			$view->assign('session', $_SESSION);
+		} else {
+			$message = 'Template file "' . $templatePathAndFilename . '" does not exist.';
+			if (pathinfo($templatePathAndFilename, PATHINFO_BASENAME) === '') {
+				$message .= ' Additionally, the specified template file basename was empty.';
+				if ($GLOBALS['TYPO3_CONF_VARS']['EXTCONF']['fed']['setup']['enableFallbackFluidPageTemplate']) {
+					$message .= ' The fallback page template feature is enabled but the fallback template was not found.';
+				} else {
+					$message .= ' A fallback page template was not defined - which means that you probably just need to';
+					$message .= ' select a page template for this page or make sure your page inherits its template ';
+					$message .= ' from the parent page template.';
+				}
+			}
+			return $message;
+		}
 	}
 
 	/**

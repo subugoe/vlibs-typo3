@@ -56,15 +56,25 @@ class Tx_Fed_Provider_Configuration_ContentObjectConfigurationProvider extends T
 	protected $configurationSectionName = 'Configuration';
 
 	/**
+	 * @var Tx_Fed_Configuration_ConfigurationManager
+	 */
+	protected $configurationManager;
+
+	/**
+	 * @param Tx_Fed_Configuration_ConfigurationManager $configurationManager
+	 */
+	public function injectConfigurationManager(Tx_Fed_Configuration_ConfigurationManager $configurationManager) {
+		$this->configurationManager = $configurationManager;
+	}
+
+	/**
 	 * @param array $row
 	 * @return string
 	 */
 	public function getTemplatePathAndFilename(array $row) {
 		$templatePathAndFilename = $row['tx_fed_fcefile'];
 		list ($extensionName, $filename) = explode(':', $templatePathAndFilename);
-		$paths = array();
-		$configurationManager = t3lib_div::makeInstance('Tx_Fed_Configuration_ConfigurationManager');
-		$paths = $configurationManager->getContentConfiguration($extensionName);
+		$paths = $this->configurationManager->getContentConfiguration($extensionName);
 		$templatePathAndFilename = Tx_Fed_Utility_Path::translatePath($paths['templateRootPath'] . $filename);
 		return $templatePathAndFilename;
 	}
@@ -74,20 +84,17 @@ class Tx_Fed_Provider_Configuration_ContentObjectConfigurationProvider extends T
 	 * @return array
 	 */
 	public function getTemplateVariables(array $row) {
-		$objectManager = t3lib_div::makeInstance('Tx_Extbase_Object_ObjectManager');
-		$flexFormUtility = $objectManager->get('Tx_Fed_Utility_FlexForm');
+		$flexFormUtility = $this->objectManager->get('Tx_Fed_Utility_FlexForm');
 		$templatePathAndFilename = $row['tx_fed_fcefile'];
 		list ($extensionName, $filename) = explode(':', $templatePathAndFilename);
-		$paths = array();
-		$configurationManager = t3lib_div::makeInstance('Tx_Fed_Configuration_ConfigurationManager');
-		$paths = $configurationManager->getContentConfiguration($extensionName);
+		$paths = $this->configurationManager->getContentConfiguration($extensionName);
 		$templatePathAndFilename = Tx_Fed_Utility_Path::translatePath($paths['templateRootPath'] . $filename);
-		$view = $objectManager->get('Tx_Flux_MVC_View_ExposedStandaloneView');
+		$view = $this->objectManager->get('Tx_Flux_MVC_View_ExposedStandaloneView');
 		$view->setTemplatePathAndFilename($templatePathAndFilename);
 		$flexFormUtility->setContentObjectData($row);
 		$flexform = $flexFormUtility->getAll();
 		$view->assignMultiple($flexform);
-		$view->assignMultiple((array) $variables);
+		$view->assignMultiple($this->flexFormService->setContentObjectData($row)->getAll());
 		try {
 			$stored = $view->getStoredVariable('Tx_Flux_ViewHelpers_FlexformViewHelper', 'storage', 'Configuration');
 			$stored['sheets'] = array();
@@ -118,8 +125,7 @@ class Tx_Fed_Provider_Configuration_ContentObjectConfigurationProvider extends T
 		$templatePathAndFilename = $row['tx_fed_fcefile'];
 		list ($extensionName, $filename) = explode(':', $templatePathAndFilename);
 		$paths = array();
-		$configurationManager = t3lib_div::makeInstance('Tx_Fed_Configuration_ConfigurationManager');
-		$paths = $configurationManager->getContentConfiguration($extensionName);
+		$paths = $this->configurationManager->getContentConfiguration($extensionName);
 		return $paths;
 	}
 

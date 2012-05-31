@@ -27,7 +27,7 @@
 				// create iframe that is constantly checked for hash changes
 				if (!iframe) {
 					iframe = $("<iframe/>").attr("src", "javascript:false;").hide().get(0);
-					$("body").prepend(iframe);
+					$("body").append(iframe);
 									
 					setInterval(function() {
 						var idoc = iframe.contentWindow.document, 
@@ -80,7 +80,7 @@
 	} 
 		 
 	// global histroy change listener
-	$(window).bind("hash", function(e, h)  { 
+	$(window).on("hash", function(e, h)  { 
 		if (h) {
 			links.filter(function() {
 			  var href = $(this).attr("href");
@@ -101,7 +101,7 @@
 		$.tools.history.init(this);
 
 		// return jQuery
-		return this.bind("history", fn);		
+		return this.on("history", fn);		
 	};	
 		
 })(jQuery); 

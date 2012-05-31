@@ -29,12 +29,21 @@
  * @package Fed
  * @subpackage ViewHelpers\Data
  */
-class Tx_Fed_ViewHelpers_Data_VarViewHelper extends Tx_Fed_Core_ViewHelper_AbstractViewHelper {
+class Tx_Fed_ViewHelpers_Data_VarViewHelper extends Tx_Fed_Core_ViewHelper_AbstractViewHelper implements Tx_Fluid_Core_ViewHelper_Facets_ChildNodeAccessInterface {
 
+	/**
+	 * @var array<Tx_Fluid_Core_Parser_SyntaxTree_AbstractNode>
+	 */
+	protected $childNodes;
+
+	/**
+	 * Initialize arguments
+	 */
 	public function initializeArguments() {
 		$this->registerArgument('name', 'string', 'Name of the variable to get or set', TRUE, NULL, TRUE);
 		$this->registerArgument('value', 'mixed', 'If specified, takes value from content of this argument', FALSE, NULL, TRUE);
-		$this->registerArgument('type', 'string', 'Data-type for this variable. Empty means string', FALSE, NULL, TRUE);
+		$this->registerArgument('type', 'string', 'Data-type for this variable. Casts the value if set.', FALSE, NULL, TRUE);
+		$this->registerArgument('scope', 'string', 'Scope in which to get the variable - switch this to "php" to read PHP variables by path', FALSE, 'fluid');
 	}
 
 	/**
@@ -42,28 +51,19 @@ class Tx_Fed_ViewHelpers_Data_VarViewHelper extends Tx_Fed_Core_ViewHelper_Abstr
 	 * @return mixed
 	 */
 	public function render() {
+		$value = NULL;
 		$name = $this->arguments['name'];
 		$value = $this->arguments['value'];
 		$type = $this->arguments['type'];
-		if ($value === NULL) {
+		$parts = array();
+		if (count($this->childNodes) > 0 && isset($this->arguments['value']) === FALSE) {
 			$value = $this->renderChildren();
 		}
-		if ($value) {
+		if ($value !== NULL || isset($this->arguments['value']) === TRUE) {
 				// we are setting a variable
-			if ($type === NULL) {
-				if (is_object($value)) {
-					$type = 'object';
-				} else if (is_string($value)) {
-					$type = 'string';
-				} else if (is_int($value)) {
-					$type = 'integer';
-				} else if (is_float($value)) {
-					$type = 'float';
-				} else if (is_array($value)) {
-					$type = 'array';
-				}
+			if ($type !== NULL) {
+				$value = $this->typeCast($value, $type);
 			}
-			$value = $this->typeCast($value, $type);
 			if ($this->templateVariableContainer->exists($name)) {
 				$this->templateVariableContainer->remove($name);
 			}
@@ -75,10 +75,22 @@ class Tx_Fed_ViewHelpers_Data_VarViewHelper extends Tx_Fed_Core_ViewHelper_Abstr
 				$parts = explode('.', $name);
 				$name = array_shift($parts);
 			}
+			if ($this->arguments['scope'] === 'php') {
+				global $$name;
+				$allVariables = get_defined_vars();
+				if (isset($allVariables[$name])) {
+					$rootVariable = $allVariables[$name];
+					if (count($parts) > 0) {
+						return Tx_Extbase_Reflection_ObjectAccess::getPropertyPath($rootVariable, implode('.', $parts));
+					} else {
+						return $rootVariable;
+					}
+				}
+			}
 			if ($this->templateVariableContainer->exists($name)) {
 				$value = $this->templateVariableContainer->get($name);
 				if (is_array($parts) && count($parts) > 0) {
-					$value = $this->recursiveValueRead($value, $parts);
+					$value = Tx_Extbase_Reflection_ObjectAccess::getPropertyPath($value, implode('.', $parts));
 				}
 				return $value;
 			} else {
@@ -110,22 +122,40 @@ class Tx_Fed_ViewHelpers_Data_VarViewHelper extends Tx_Fed_Core_ViewHelper_Abstr
 					$value = explode(',', $value);
 				}
 				break;
+			case 'DateTime':
+				// TODO: remove first if-part if TYPO3 4.5 is not supported anymore:
+				if (!class_exists('t3lib_utility_Math')) {
+					if (t3lib_div::testInt($value)) {
+						$value = date(DateTime::W3C, $value);
+					}
+					$value = DateTime::createFromFormat(DateTime::W3C, $value);
+					if ($value === FALSE) {
+						throw new Exception('fed.data.var ViewHelper: The given value could not be converted to DateTime. Use this format: "' . DateTime::W3C . '"', 1307719788);
+					}
+				} else {
+					// pretty easy assumption: integer = Unix timestamp
+					if (t3lib_utility_Math::canBeInterpretedAsInteger($value)) {
+						// Convert to interpretable string to respect the local timezone
+						$value = date(DateTime::W3C, $value);
+					}
+					$converter = new Tx_Extbase_Property_TypeConverter_DateTimeConverter();
+					$value = $converter->convertFrom($value, 'DateTime');
+				}
+				break;
 			case 'string':
-			default:
 				$value = (string) $value;
 		}
 		return $value;
 	}
 
-	private function recursiveValueRead($value, &$parts) {
-		if ((!is_array($value) && !is_object($value)) || count($parts) === 0) {
-			return $value;
-		}
-		$field = array_shift($parts);
-		if ($field) {
-			$newValue = Tx_Extbase_Reflection_ObjectAccess::getProperty($value, $field);
-			return $this->recursiveValueRead($newValue, $parts);
-		}
+	/**
+	 * Sets the direct child nodes of the current syntax tree node.
+	 *
+	 * @param array<Tx_Fluid_Core_Parser_SyntaxTree_AbstractNode> $childNodes
+	 * @return void
+	 */
+	public function setChildNodes(array $childNodes) {
+		$this->childNodes = $childNodes;
 	}
 }
 

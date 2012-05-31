@@ -164,5 +164,16 @@ class Tx_Fed_Backend_TCEMain {
 	public function processDatamap_afterDatabaseOperations($status, $table, $id, &$fieldArray, t3lib_TCEmain &$reference) {
 	}
 
+	/**
+	 * Perform various cleanup operations upon clearing cache
+	 *
+	 * @return void
+	 */
+	public function clearCacheCommand() {
+		if (file_exists(PATH_site . Tx_Fed_Core::CACHED_CONTENT_ELEMENTS_FILE) === TRUE) {
+			unlink(PATH_site . Tx_Fed_Core::CACHED_CONTENT_ELEMENTS_FILE);
+		}
+	}
+
 }
-?>
+

@@ -40,7 +40,7 @@ class Tx_Fed_Configuration_ConfigurationManager extends Tx_Extbase_Configuration
 	 * @api
 	 */
 	public function getContentConfiguration($extensionName=NULL) {
-		return $this->getTypoScriptSubConfiguration($extensionName, 'fce');
+		return $this->getTypoScriptSubConfiguration($extensionName, 'fce', array('label'));
 	}
 
 	/**
@@ -61,21 +61,33 @@ class Tx_Fed_Configuration_ConfigurationManager extends Tx_Extbase_Configuration
 	 *
 	 * @param string $extensionName
 	 * @param string $memberName
+	 * @param array $dontTranslateMembers Array of members not to be translated by path
 	 * @return array
 	 */
-	protected function getTypoScriptSubConfiguration($extensionName, $memberName) {
+	protected function getTypoScriptSubConfiguration($extensionName, $memberName, $dontTranslateMembers=array()) {
 		$config = $this->getConfiguration(Tx_Extbase_Configuration_ConfigurationManagerInterface::CONFIGURATION_TYPE_FULL_TYPOSCRIPT);
 		$config = $config['plugin.']['tx_fed.'][$memberName . '.'];
 		if (is_array($config) === FALSE) {
 			return array();
 		}
 		$config = Tx_Extbase_Utility_TypoScript::convertTypoScriptArrayToPlainArray($config);
-		$config = Tx_Fed_Utility_Path::translatePath($config);
 		if ($extensionName) {
-			return $config[$extensionName];
-		} else {
-			return $config;
+			$config = $config[$extensionName];
 		}
+		foreach ($config as $k=>$v) {
+			if ($extensionName) {
+				if (in_array($k, $dontTranslateMembers) === FALSE) {
+					$config[$k] = Tx_Fed_Utility_Path::translatePath($v);
+				}
+			} else {
+				foreach ($v as $subkey=>$paths) {
+					if (in_array($subkey, $dontTranslateMembers) === FALSE) {
+						$config[$k][$subkey] = Tx_Fed_Utility_Path::translatePath($paths);
+					}
+				}
+			}
+		}
+		return $config;
 	}
 
 	/**
