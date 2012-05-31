@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="#internalStyle" type="text/css"?>
+<!DOCTYPE html
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type="text/css" id="internalStyle">
+		/*<![CDATA[*/
+
+			BODY, TD { font-family: arial, helvetica, verdana; font-size: 12px; }
+
+			H2 { background-color: #999999; text-align: center; padding: 20px 2px 20px 2px; }
+			H2.c-details {margin-top: 100px; }
+			H3 { background-color: #cccccc; padding: 2px 2px 2px 10px;}
+			H4 { background-color: #eeeeee;  padding: 2px 2px 2px 10px;}
+			A { text-decoration: none; color: black; }
+			P.c-headerDescription { font-style: italic; }
+			TABLE TR TD {padding: 2px 3px 2px 3px; }
+			TABLE TR {background-color: #ddddcc; }
+			TABLE { margin: 5px 0px 10px 0px;}
+			DIV#c-body DIV.c-function TABLE.c-details TR TD.c-Hcell,
+					DIV#c-body DIV.c-class TABLE.c-details TR TD.c-Hcell {background-color: #ccdddd; font-weight: bold; }
+
+			DIV#c-body TABLE.c-details {margin-top: 5px; width: 90%; }
+			DIV#c-body DIV.c-function  TABLE.c-details {width: 100%; }
+			DIV#c-body TABLE.c-details TR TD.c-Hcell {width: 25%;}
+			DIV#c-body TABLE.c-details TR TD.c-vDescr {width: 75%;}
+			.typo3-red { color: red; }
+			.typo3-dimmed { color: #333333; }
+			DIV#c-index P.c-indexTags { margin: 0px 0px 0px 110px; font-size:11px;}
+			DIV#c-index H4.c-function { margin-left: 80px; }
+
+			DIV#s-index {margin-top: 20px;}
+			DIV#s-index H3 {background-color: #ccbbbb; margin: 0px 0px 0px 30px;}
+
+
+			DIV#c-index { margin-left: 30px; }
+			DIV#c-index H4 { margin-left: 60px; margin-top: 0px; margin-bottom: 1px;}
+			DIV#c-index P.c-fileDescription { margin-top: 0px; margin-bottom: 5px; }
+			DIV#c-index H3 { margin-bottom: 5px;}
+			DIV#c-body H4 { background-color: #cccccc; }
+			DIV#c-body DIV.c-class P.c-funcDescription {font-style: italic;}
+			DIV#c-body DIV.c-class H4 { margin-bottom: 5px;}
+			DIV#c-body DIV.c-class { margin-left: 30px; margin-top: 30px;}
+			DIV#c-body H4 { margin-bottom: 5px;}
+			DIV#c-body DIV.c-header P.c-fileDescription {font-style: italic;}
+			DIV#c-body DIV.c-function { margin-left: 60px;  margin-top: 30px;  margin-right: 100px; }
+			DIV#c-body DIV.c-function P.c-funcDescription {font-style: italic; margin: 5px 0px 5px 0px;}
+			DIV#c-body DIV.c-header { margin-top: 100px; }
+			DIV#c-body DIV.c-header H3 { background-color: #998888; font-size: 18px;}
+
+			DIV#c-APIdoc H3.section { margin-left: 100px; }
+		/*]]>*/
+	</style>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="GENERATOR" content="TYPO3 3.6.0-dev, http://typo3.com, &#169; Kasper Sk&#229;rh&#248;j 1998-2003, extensions are copyright of their respective owners." />
+	<title>API: lang.php</title>
+</head>
+<body>
+
+<div id="c-APIdoc">
+
+			<h2>lang.php</h2>
+			<p class="c-headerDescription">Contains the TYPO3 Backend Language class<br />
+<br />
+For detailed information about how localization is handled,<br />
+please refer to the 'Inside TYPO3' document which descibes this.<br />
+<br />
+This class is normally instantiated as the global variable $LANG in typo3/template.php<br />
+It's only available in the backend and under certain circumstances in the frontend</p>
+
+			<p>&nbsp;</p>
+			<p>
+			Files: <strong>1</strong><br/>
+			Total filesizes: <strong>18.4 Kbytes</strong><br/>
+			Functions and classes: <strong>13</strong><br/>
+			</p>
+
+			
+
+			<div id="c-index">
+			<h3><a name="s-5401c77440b513780360a3c299277e35"></a><a href="#5401c77440b513780360a3c299277e35">lang.php</a></h3>
+			<p class="c-fileDescription">Contains the TYPO3 Backend Language class<br />
+<br />
+For detailed information about how localization is handled,<br />
+please refer to the 'Inside TYPO3' document which descibes this.<br />
+<br />
+This class is normally instantiated as the global variable $LANG in typo3/template.php<br />
+
+It's only available in the backend and under certain circumstances in the frontend</p>
+						<h4 class="c-class"><a href="#35213ca21f755772d2fd9531dda1ba6f">class language </a></h4><p class="c-indexTags"><span class="typo3-dimmed"><strong>@package:</strong> TYPO3 </span></p><p class="c-indexTags"><span class="typo3-dimmed"><strong>@subpackage:</strong> core </span></p>
+						<h4 class="c-function"><a href="#43a968c48e3d6da7832ef021b0bee5c7">function init($lang,$altPath='')	</a></h4>
+						<h4 class="c-function"><a href="#639ee09c1451bd8825b821c8de1aaca6">function addModuleLabels($arr,$prefix)	</a></h4>
+
+						<h4 class="c-function"><a href="#b0c6a417c478ee79abab7ce5a5bdf1b5">function hscAndCharConv($lStr,$hsc)	</a></h4>
+						<h4 class="c-function"><a href="#33cd0a4cd316d1c5ff5ee2b6f49e3863">function makeEntities($str)	</a></h4>
+						<h4 class="c-function"><a href="#65e7af055528bef876df96c28eb0ea4e">function JScharCode($str)	</a></h4>
+						<h4 class="c-function"><a href="#d8e3748957a9ec91673d95b51c0db120">function getLL($index,$hsc=0)	</a></h4>
+						<h4 class="c-function"><a href="#46c8584769bd97e0728f6d61430d08f1">function getLLL($index,$LOCAL_LANG,$hsc=0)	</a></h4>
+						<h4 class="c-function"><a href="#61d935fef722c4e3a3f4eb914d6578f7">function sL($input,$hsc=0)	</a></h4>
+
+						<h4 class="c-function"><a href="#74442e5640f62ba0aac2cf0d939ef137">function loadSingleTableDescription($table)	</a></h4>
+						<h4 class="c-function"><a href="#b9d7143a86ce5a183dd596a1c2b49eea">function includeLLFile($fileRef,$setGlobal=1,$mergeLocalOntoDefault=0)	</a></h4>
+						<h4 class="c-function"><a href="#f78c4f6c65cb89deb24a83fff7192358">function readLLfile($fileRef)	</a></h4>
+						<h4 class="c-function"><a href="#e41637e1bb345b866bb7f85cf6fcf9cf">function localizedFileRef($fileRef)	</a></h4></div>
+
+			<h2 class="c-details">Detailed descriptions:</h2>
+			<div id="c-body">
+
+					<!--
+						API content for file: lang.php
+					-->
+					<div class="c-header">
+						<a name="5401c77440b513780360a3c299277e35"></a>
+						<h3><a href="#top">lang.php</a></h3>
+						<p class="c-fileDescription">Contains the TYPO3 Backend Language class<br />
+<br />
+For detailed information about how localization is handled,<br />
+please refer to the 'Inside TYPO3' document which descibes this.<br />
+
+<br />
+This class is normally instantiated as the global variable $LANG in typo3/template.php<br />
+It's only available in the backend and under certain circumstances in the frontend</p>
+
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							<tr>
+								<td class="c-Hcell">Filesize:</td>
+								<td>18.4 K</td>
+							</tr>
+
+							<tr>
+								<td class="c-Hcell">Func/Classes:</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td class="c-Hcell">Tags:</td>
+								<td>@author	Kasper Skaarhoj &lt;kasperYYYY@typo3.com&gt;<br />
+
+@package TYPO3<br />
+@subpackage core<br />
+@see typo3/template.php, template</td>
+							</tr>
+						</table>
+					</div>
+			
+					<!--
+						Description for "class language "
+					-->
+					<div class="c-class">
+						<a name="35213ca21f755772d2fd9531dda1ba6f"></a>
+
+						<h4><a href="#top">class language </a></h4>
+						<p class="c-funcDescription">Contains the TYPO3 Backend Language class<br />
+<br />
+For detailed information about how localization is handled,<br />
+please refer to the 'Inside TYPO3' document which descibes this.<br />
+<br />
+This class is normally instantiated as the global variable $LANG in typo3/template.php<br />
+It's only available in the backend and under certain circumstances in the frontend</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">[type]</td>
+								<td class="c-vDescr">...</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+
+								<td colspan="2" class="c-vDescr">@author	Kasper Skaarhoj &lt;kasperYYYY@typo3.com&gt;</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+								<td colspan="2" class="c-vDescr">@package TYPO3</td>
+							</tr>
+							
+							<tr>
+
+								<td>&nbsp;</td>
+								<td colspan="2" class="c-vDescr">@subpackage core</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+								<td colspan="2" class="c-vDescr">@see typo3/template.php, template</td>
+							</tr>
+						</table>
+
+					</div>
+					
+					<!--
+						Description for "function init($lang,$altPath='')	"
+					-->
+					<div class="c-function">
+						<a name="43a968c48e3d6da7832ef021b0bee5c7"></a>
+						<h4><a href="#top">function init($lang,$altPath='')	</a></h4>
+						<p class="c-funcDescription">Initializes the backend language.<br />
+This is for example done in typo3/template.php with lines like these:<br />
+<br />
+
+require (PATH_typo3.'sysext/lang/lang.php');<br />
+$LANG = t3lib_div::makeInstance('language');<br />
+$LANG-&gt;init($BE_USER-&gt;uc['lang']);</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$lang</td>
+								<td class="c-vType">string</td>
+
+								<td class="c-vDescr">The language key (two character string from backend users profile)</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$altPath=''</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">IGNORE. Not used.</td>
+							</tr>
+
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">void</td>
+								<td class="c-vDescr"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function addModuleLabels($arr,$prefix)	"
+					-->
+
+					<div class="c-function">
+						<a name="639ee09c1451bd8825b821c8de1aaca6"></a>
+						<h4><a href="#top">function addModuleLabels($arr,$prefix)	</a></h4>
+						<p class="c-funcDescription">Adds labels and image references from the backend modules to the internal moduleLabels array</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$arr</td>
+
+								<td class="c-vType">array</td>
+								<td class="c-vDescr">Array with references to module labels, keys: ['labels']['tablabel'], ['labels']['tabdescr'], ['tabs']['tab']</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$prefix</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Module name prefix</td>
+
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">void</td>
+								<td class="c-vDescr"></td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+
+								<td colspan="2" class="c-vDescr">@see t3lib_loadModules</td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function hscAndCharConv($lStr,$hsc)	"
+					-->
+					<div class="c-function">
+						<a name="b0c6a417c478ee79abab7ce5a5bdf1b5"></a>
+						<h4><a href="#top">function hscAndCharConv($lStr,$hsc)	</a></h4>
+
+						<p class="c-funcDescription">Will htmlspecialchar() the input string and before that any charset conversion will also have taken place if needed (see init())<br />
+Used to pipe language labels through just before they are returned.</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$lStr</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">The string to process</td>
+
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$hsc</td>
+								<td class="c-vType">boolean</td>
+								<td class="c-vDescr">If set, then the string is htmlspecialchars()'ed</td>
+							</tr>
+							
+							<tr>
+
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">The processed string</td>
+							</tr>
+							
+							<tr>
+								<td>&nbsp;</td>
+								<td colspan="2" class="c-vDescr">@see init()</td>
+
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function makeEntities($str)	"
+					-->
+					<div class="c-function">
+						<a name="33cd0a4cd316d1c5ff5ee2b6f49e3863"></a>
+						<h4><a href="#top">function makeEntities($str)	</a></h4>
+						<p class="c-funcDescription">Will convert the input strings special chars (all above 127) to entities. The string is expected to be encoded in the charset, $this-&gt;charSet<br />
+
+This function is used to create strings that can be used in the Click Menu (Context Sensitive Menus). The reason is that the values that are dynamically written into the &lt;div&gt; layer is decoded as iso-8859-1 no matter what charset is used in the document otherwise (only MSIE, Mozilla is OK). So by converting we by-pass this problem.</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$str</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Input string</td>
+
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Output string</td>
+							</tr>
+						</table>
+
+					</div>
+					
+					<!--
+						Description for "function JScharCode($str)	"
+					-->
+					<div class="c-function">
+						<a name="65e7af055528bef876df96c28eb0ea4e"></a>
+						<h4><a href="#top">function JScharCode($str)	</a></h4>
+						<p class="c-funcDescription">Converts the input string to a JavaScript function returning the same string, but charset-safe.<br />
+Used for confirm and alert boxes where we must make sure that any string content does not break the script AND want to make sure the charset is preserved.<br />
+Originally I used the JS function unescape() in combination with PHP function rawurlencode() in order to pass strings in a safe way. This could still be done for iso-8859-1 charsets but now I have applied the same method here for all charsets.</p>
+
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$str</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Input string, encoded with $this-&gt;charSet</td>
+							</tr>
+							
+							<tr>
+
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Output string, a JavaScript function: &quot;String.fromCharCode(......)&quot;</td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function getLL($index,$hsc=0)	"
+					-->
+
+					<div class="c-function">
+						<a name="d8e3748957a9ec91673d95b51c0db120"></a>
+						<h4><a href="#top">function getLL($index,$hsc=0)	</a></h4>
+						<p class="c-funcDescription">Returns the label with key $index form the globally loaded $LOCAL_LANG array.<br />
+Mostly used from modules with only one LOCAL_LANG file loaded into the global space.</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$index</td>
+
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Label key</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$hsc=0</td>
+								<td class="c-vType">boolean</td>
+								<td class="c-vDescr">If set, the return value is htmlspecialchar'ed</td>
+
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr"></td>
+							</tr>
+						</table>
+					</div>
+
+					
+					<!--
+						Description for "function getLLL($index,$LOCAL_LANG,$hsc=0)	"
+					-->
+					<div class="c-function">
+						<a name="46c8584769bd97e0728f6d61430d08f1"></a>
+						<h4><a href="#top">function getLLL($index,$LOCAL_LANG,$hsc=0)	</a></h4>
+						<p class="c-funcDescription">Works like -&gt;getLL() but takes the $LOCAL_LANG array used as the second argument instead of using the global array.</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+
+								<td class="c-Hcell">$index</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Label key</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$LOCAL_LANG</td>
+								<td class="c-vType">array</td>
+
+								<td class="c-vDescr">$LOCAL_LANG array to get label key from</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$hsc=0</td>
+								<td class="c-vType">boolean</td>
+								<td class="c-vDescr">If set, the return value is htmlspecialchar'ed</td>
+							</tr>
+
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function sL($input,$hsc=0)	"
+					-->
+
+					<div class="c-function">
+						<a name="61d935fef722c4e3a3f4eb914d6578f7"></a>
+						<h4><a href="#top">function sL($input,$hsc=0)	</a></h4>
+						<p class="c-funcDescription">splitLabel function<br />
+Historically labels were exploded by '|' and each part would correspond to the translation of the language found at the same 'index' in the TYPO3_languages constant.<br />
+Today all translations are based on $LOCAL_LANG variables. 'language-splitted' labels can therefore refer to a local-lang file + index instead!<br />
+It's highly recommended to use the 'local_lang' method (and thereby it's highly deprecated to use 'language-splitted' label strings)<br />
+Refer to 'Inside TYPO3' for more details</p>
+
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$input</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Label key/reference</td>
+							</tr>
+							
+							<tr>
+
+								<td class="c-Hcell">$hsc=0</td>
+								<td class="c-vType">boolean</td>
+								<td class="c-vDescr">If set, the return value is htmlspecialchar'ed</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+
+								<td class="c-vDescr"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function loadSingleTableDescription($table)	"
+					-->
+					<div class="c-function">
+						<a name="74442e5640f62ba0aac2cf0d939ef137"></a>
+						<h4><a href="#top">function loadSingleTableDescription($table)	</a></h4>
+
+						<p class="c-funcDescription">Loading $TCA_DESCR[$table]['columns'] with content from locallang files as defined in $TCA_DESCR[$table]['refs']<br />
+$TCA_DESCR is a global var</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$table</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Table name found as key in global array $TCA_DESCR</td>
+
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">void</td>
+								<td class="c-vDescr"></td>
+							</tr>
+						</table>
+					</div>
+
+					
+					<!--
+						Description for "function includeLLFile($fileRef,$setGlobal=1,$mergeLocalOntoDefault=0)	"
+					-->
+					<div class="c-function">
+						<a name="b9d7143a86ce5a183dd596a1c2b49eea"></a>
+						<h4><a href="#top">function includeLLFile($fileRef,$setGlobal=1,$mergeLocalOntoDefault=0)	</a></h4>
+						<p class="c-funcDescription">Includes locallang file (and possibly additional localized version if configured for)<br />
+Read language labels will be merged with $LOCAL_LANG (if $setGlobal=1).</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+
+								<td class="c-Hcell">$fileRef</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">$fileRef is a file-reference (see t3lib_div::getFileAbsFileName)</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$setGlobal=1</td>
+								<td class="c-vType">boolean</td>
+
+								<td class="c-vDescr">Setting in global variable $LOCAL_LANG (or returning the variable)</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">$mergeLocalOntoDefault=0</td>
+								<td class="c-vType">boolean</td>
+								<td class="c-vDescr">If $mergeLocalOntoDefault is set the local part of the $LOCAL_LANG array is merged onto the default part (if the local part exists) and the local part is unset.</td>
+							</tr>
+
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">mixed</td>
+								<td class="c-vDescr">If $setGlobal is true the LL-files will set the $LOCAL_LANG in the global scope. Otherwise the $LOCAL_LANG array is returned from function</td>
+							</tr>
+						</table>
+					</div>
+
+					
+					<!--
+						Description for "function readLLfile($fileRef)	"
+					-->
+					<div class="c-function">
+						<a name="f78c4f6c65cb89deb24a83fff7192358"></a>
+						<h4><a href="#top">function readLLfile($fileRef)	</a></h4>
+						<p class="c-funcDescription">Includes a locallang file and returns the $LOCAL_LANG array found inside.</p>
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$fileRef</td>
+
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Input is a file-reference (see t3lib_div::getFileAbsFileName) which, if exists, is included. That file is expected to be a 'local_lang' file containing a $LOCAL_LANG array.</td>
+							</tr>
+							
+							<tr>
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">array</td>
+								<td class="c-vDescr">Value of $LOCAL_LANG found in the included file. If that array is found it's returned. Otherwise an empty array</td>
+
+							</tr>
+						</table>
+					</div>
+					
+					<!--
+						Description for "function localizedFileRef($fileRef)	"
+					-->
+					<div class="c-function">
+						<a name="e41637e1bb345b866bb7f85cf6fcf9cf"></a>
+						<h4><a href="#top">function localizedFileRef($fileRef)	</a></h4>
+						<p class="c-funcDescription">Returns localized fileRef (.[langkey].php)</p>
+
+						
+						<table border="0" cellpadding="0" cellspacing="1" class="c-details">
+							
+							<tr>
+								<td class="c-Hcell">$fileRef</td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Filename/path of a 'locallang.php' file</td>
+							</tr>
+							
+							<tr>
+
+								<td class="c-Hcell">Returns: </td>
+								<td class="c-vType">string</td>
+								<td class="c-vDescr">Input filename with a '.[lang-key].php' ending added if $this-&gt;lang is not 'default'</td>
+							</tr>
+						</table>
+					</div>
+					</div>
+
+</div>
+</body>
+</html>

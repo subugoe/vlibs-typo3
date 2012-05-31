@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:45:55 UTC 2011" product-name="devlog">
+    <header/>
+    <body>
+      <trans-unit id="title" approved="yes">
+        <source>Developer Log</source>
+        <target state="translated">Entwicklerprotokoll</target>
+      </trans-unit>
+      <trans-unit id="showlog" approved="yes">
+        <source>Show Log</source>
+        <target state="translated">Protokoll anzeigen</target>
+      </trans-unit>
+      <trans-unit id="selectlog" approved="yes">
+        <source>Select Log:</source>
+        <target state="translated">Protokoll auswählen:</target>
+      </trans-unit>
+      <trans-unit id="log_entries" approved="yes">
+        <source>Log entries</source>
+        <target state="translated">Protokolleinträge</target>
+      </trans-unit>
+      <trans-unit id="entries" approved="yes">
+        <source>Entries</source>
+        <target state="translated">Einträge</target>
+      </trans-unit>
+      <trans-unit id="cleanup" approved="yes">
+        <source>Clean up</source>
+        <target state="translated">Aufräumen</target>
+      </trans-unit>
+      <trans-unit id="setup" approved="yes">
+        <source>Setup</source>
+        <target state="translated">Konfiguration</target>
+      </trans-unit>
+      <trans-unit id="search" approved="yes">
+        <source>Search</source>
+        <target state="translated">Suchen</target>
+      </trans-unit>
+      <trans-unit id="clear_search" approved="yes">
+        <source>Clear search</source>
+        <target state="translated">Suche löschen</target>
+      </trans-unit>
+      <trans-unit id="clear_filters" approved="yes">
+        <source>Clear all filters</source>
+        <target state="translated">Alle Filter löschen</target>
+      </trans-unit>
+      <trans-unit id="search_data" approved="yes">
+        <source>Search log data</source>
+        <target state="translated">Protokolldaten durchsuchen</target>
+      </trans-unit>
+      <trans-unit id="latest_run" approved="yes">
+        <source>latest log run</source>
+        <target state="translated">Neueste Ausführung der Protokollierung</target>
+      </trans-unit>
+      <trans-unit id="latest_25" approved="yes">
+        <source>latest 25 entries</source>
+        <target state="translated">Neueste 25 Einträge</target>
+      </trans-unit>
+      <trans-unit id="latest_50" approved="yes">
+        <source>latest 50 entries</source>
+        <target state="translated">Neueste 50 Einträge</target>
+      </trans-unit>
+      <trans-unit id="latest_100" approved="yes">
+        <source>latest 100 entries</source>
+        <target state="translated">Neueste 100 Einträge</target>
+      </trans-unit>
+      <trans-unit id="all_entries" approved="yes">
+        <source>all entries</source>
+        <target state="translated">Alle Einträge</target>
+      </trans-unit>
+      <trans-unit id="auto_refresh" approved="yes">
+        <source>Auto refresh</source>
+        <target state="translated">Automatische Aktualisierung</target>
+      </trans-unit>
+      <trans-unit id="log_time" approved="yes">
+        <source>Log time</source>
+        <target state="translated">Protkollzeit</target>
+      </trans-unit>
+      <trans-unit id="log_period" approved="yes">
+        <source>Log period</source>
+        <target state="translated">Protokollspanne</target>
+      </trans-unit>
+      <trans-unit id="refresh" approved="yes">
+        <source>Refresh</source>
+        <target state="translated">Aktualisieren</target>
+      </trans-unit>
+      <trans-unit id="crdate" approved="yes">
+        <source>Date</source>
+        <target state="translated">Datum</target>
+      </trans-unit>
+      <trans-unit id="severity" approved="yes">
+        <source>Severity</source>
+        <target state="translated">Schwere</target>
+      </trans-unit>
+      <trans-unit id="extkey" approved="yes">
+        <source>Extension</source>
+        <target state="translated">Erweiterung</target>
+      </trans-unit>
+      <trans-unit id="msg" approved="yes">
+        <source>Message</source>
+        <target state="translated">Nachricht</target>
+      </trans-unit>
+      <trans-unit id="location" approved="yes">
+        <source>Called from</source>
+        <target state="translated">Aufgerufen von</target>
+      </trans-unit>
+      <trans-unit id="pid" approved="yes">
+        <source>Page</source>
+        <target state="translated">Seite</target>
+      </trans-unit>
+      <trans-unit id="cruser_id" approved="yes">
+        <source>User</source>
+        <target state="translated">Benutzer</target>
+      </trans-unit>
+      <trans-unit id="data_var" approved="yes">
+        <source>Extra data</source>
+        <target state="translated">Zusätzliche Daten</target>
+      </trans-unit>
+      <trans-unit id="no_entries_found" approved="yes">
+        <source>No entries found. Try to relax your filter and search criteria.</source>
+        <target state="translated">Keine Einträge gefunden. Versuchen Sie, die Filter und Suchkriterien aufzuweiten.</target>
+      </trans-unit>
+      <trans-unit id="open_view" approved="yes">
+        <source>Open new window</source>
+        <target state="translated">Neues Fenster öffnen.</target>
+      </trans-unit>
+      <trans-unit id="line_call" approved="yes">
+        <source>%s, line %d</source>
+        <target state="translated">%s, Zeile %d</target>
+      </trans-unit>
+      <trans-unit id="extra_data_error" approved="yes">
+        <source>Error reading extra data</source>
+        <target state="translated">Fehler beim Lesen der zusätzlichen Daten</target>
+      </trans-unit>
+      <trans-unit id="tx_devlog_error.toolong" approved="yes">
+        <source>The extra data exceeded the maximum size. It was not stored.</source>
+        <target state="translated">Die zusätzlichen Daten waren zu groß. Sie wurden nicht gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="tx_devlog_error.invalid" approved="yes">
+        <source>The extra data was not an array. It was not stored.</source>
+        <target state="translated">Die zusätzlichen Daten waren kein Array. Sie wurden nicht gespeichert.</target>
+      </trans-unit>
+      <trans-unit id="show_extra_data" approved="yes">
+        <source>Show extra data</source>
+        <target state="translated">Zusätzliche Daten anzeigen</target>
+      </trans-unit>
+      <trans-unit id="hide_extra_data" approved="yes">
+        <source>Hide extra data</source>
+        <target state="translated">Zusätzliche Daten verbergen</target>
+      </trans-unit>
+      <trans-unit id="severity_ok" approved="yes">
+        <source>OK</source>
+        <target state="translated">OK</target>
+      </trans-unit>
+      <trans-unit id="severity_info" approved="yes">
+        <source>Info</source>
+        <target state="translated">Info</target>
+      </trans-unit>
+      <trans-unit id="severity_notice" approved="yes">
+        <source>Notice</source>
+        <target state="translated">Hinweis</target>
+      </trans-unit>
+      <trans-unit id="severity_warning" approved="yes">
+        <source>Warning</source>
+        <target state="translated">Warnung</target>
+      </trans-unit>
+      <trans-unit id="severity_error" approved="yes">
+        <source>Error</source>
+        <target state="translated">Fehler</target>
+      </trans-unit>
+      <trans-unit id="latest" approved="yes">
+        <source>latest &gt;&gt;</source>
+        <target state="translated">neueste &gt;&gt;</target>
+      </trans-unit>
+      <trans-unit id="next" approved="yes">
+        <source>next &gt;</source>
+        <target state="translated">nächste &gt;</target>
+      </trans-unit>
+      <trans-unit id="previous" approved="yes">
+        <source>&lt; previous</source>
+        <target state="translated">&lt; vorherige</target>
+      </trans-unit>
+      <trans-unit id="oldest" approved="yes">
+        <source>&lt;&lt; oldest</source>
+        <target state="translated">&lt;&lt; älteste</target>
+      </trans-unit>
+      <trans-unit id="expand_all_extra_data" approved="yes">
+        <source>Expand all extra data</source>
+        <target state="translated">Alle Zusatzdaten erweitern</target>
+      </trans-unit>
+      <trans-unit id="info_excluded_key" approved="yes">
+        <source>The following keys are currently not logged</source>
+        <target state="translated">Die folgenden Schlüssel werden momentan nicht protokolliert</target>
+      </trans-unit>
+      <trans-unit id="clearlog" approved="yes">
+        <source>Clear Log</source>
+        <target state="translated">Protokoll löschen</target>
+      </trans-unit>
+      <trans-unit id="clearlog_intro" approved="yes">
+        <source>Use any of the clean up options below to clear your developer log.</source>
+        <target state="translated">Nutzen Sie die unten stehenden Optionen, um das Entwicklerprotokoll zu löschen.</target>
+      </trans-unit>
+      <trans-unit id="clearalllog" approved="yes">
+        <source>Clear All Entries!</source>
+        <target state="translated">Alle Einträge löschen!</target>
+      </trans-unit>
+      <trans-unit id="cleared_log" approved="yes">
+        <source>%d log entries were deleted.</source>
+        <target state="translated">%d Protokolleinträge wurden gelöscht.</target>
+      </trans-unit>
+      <trans-unit id="cleanup_for_period" approved="yes">
+        <source>Delete all log entries that are older than:</source>
+        <target state="translated">Alle Protokolleinträge löschen, die älter sind als:</target>
+      </trans-unit>
+      <trans-unit id="cleanup_for_extension" approved="yes">
+        <source>Delete all log entries for extension:</source>
+        <target state="translated">Alle Protokolleinträge löschen für Erweiterung:</target>
+      </trans-unit>
+      <trans-unit id="cleanup_all" approved="yes">
+        <source>Pressing the button below will actually delete ALL log entries. Make sure that this is really what you want to do!</source>
+        <target state="translated">Wenn Sie den Knopf unten anklicken, löschen Sie ALLE Protokolleinträge. Stellen Sie sicher, dass das wirklich das ist, was Sie wollen!</target>
+      </trans-unit>
+      <trans-unit id="1hour" approved="yes">
+        <source>1 hour</source>
+        <target state="translated">1 Stunde</target>
+      </trans-unit>
+      <trans-unit id="1week" approved="yes">
+        <source>1 week</source>
+        <target state="translated">1 Woche</target>
+      </trans-unit>
+      <trans-unit id="1month" approved="yes">
+        <source>1 month</source>
+        <target state="translated">1 Monat</target>
+      </trans-unit>
+      <trans-unit id="3months" approved="yes">
+        <source>3 months</source>
+        <target state="translated">3 Monate</target>
+      </trans-unit>
+      <trans-unit id="6months" approved="yes">
+        <source>6 months</source>
+        <target state="translated">6 Monate</target>
+      </trans-unit>
+      <trans-unit id="1year" approved="yes">
+        <source>1 year</source>
+        <target state="translated">1 Jahr</target>
+      </trans-unit>
+      <trans-unit id="no_entries" approved="yes">
+        <source>There are currently no log entries in the Developer Log.</source>
+        <target state="translated">Es gibt im Moment keine Einträge im Entwicklerprotokoll.</target>
+      </trans-unit>
+      <trans-unit id="xx_entries" approved="yes">
+        <source>There are currently %d log entries in the Developer Log.</source>
+        <target state="translated">Es gibt im Moment %d Einträge im Entwicklerprotokoll.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

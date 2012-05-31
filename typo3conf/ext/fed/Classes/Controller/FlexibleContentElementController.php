@@ -40,10 +40,10 @@ class Tx_Fed_Controller_FlexibleContentElementController extends Tx_Fed_Core_Abs
 	 * @param Tx_Fed_MVC_View_ExposedTemplateView $view
 	 */
 	public function initializeView(Tx_Flux_MVC_View_ExposedTemplateView $view) {
-		$cObj = $this->request->getContentObjectData();
-		$this->flexform->setContentObjectData($cObj);
+		$cObj = $this->configurationManager->getContentObject();
+		$this->flexform->setContentObjectData($cObj->data);
 		$configurationManager = $this->objectManager->get('Tx_Fed_Configuration_ConfigurationManager');
-		list ($extensionName, $filename) = explode(':', $cObj['tx_fed_fcefile']);
+		list ($extensionName, $filename) = explode(':', $cObj->data['tx_fed_fcefile']);
 		$paths = $configurationManager->getContentConfiguration($extensionName);
 		$absolutePath = $paths['templateRootPath'] . DIRECTORY_SEPARATOR . $filename;
 		$view->setLayoutRootPath($paths['layoutRootPath']);
@@ -52,7 +52,8 @@ class Tx_Fed_Controller_FlexibleContentElementController extends Tx_Fed_Core_Abs
 		$config = $view->getStoredVariable('Tx_Flux_ViewHelpers_FlexformViewHelper', 'storage', 'Configuration');
 		$view->assignMultiple($this->flexform->getAllAndTransform($config['fields']));
 		$view->assign('page', $GLOBALS['TSFE']->page);
-		$view->assign('record', $cObj);
+		$view->assign('record', $cObj->data);
+		$view->assign('contentObject', $cObj);
 	}
 
 	/**

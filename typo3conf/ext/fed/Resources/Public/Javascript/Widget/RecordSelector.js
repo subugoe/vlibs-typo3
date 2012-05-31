@@ -27,6 +27,7 @@ var recordSelector = function(id, name, multiple, removeIcon, searchProperty, al
 		};
 	};
 	this.onListSelect = function(event) {
+		var target = jQuery('#' + parent.id + 'search');
 		var id = parseInt(jQuery(this).attr('data-id'));
 		var label = jQuery(this).html();
 		var value = {
@@ -36,14 +37,16 @@ var recordSelector = function(id, name, multiple, removeIcon, searchProperty, al
 			}
 		};
 		parent.onSelect(event, value);
+		target.val('');
 	};
 	this.onClose = function(event) {
 		var target = jQuery('#' + parent.id + 'search');
-		target.val('');
 	};
 	this.addSelection = function() {
+		var target = jQuery('#' + parent.id + 'search');
 		var itemName = jQuery('#' + parent.id + 'search').val();
 		parent.createListItem(null, itemName);
+		target.val('');
 	};
 	this.createListItem = function(id, name) {
 		if (id) {
@@ -63,6 +66,7 @@ var recordSelector = function(id, name, multiple, removeIcon, searchProperty, al
 	this.hideFullList = function() {
 		var listElement = jQuery('#' + parent.id + 'list .list-element');
 		listElement.fadeOut();
+        jQuery('#' + parent.id + 'listbutton').unbind('click', parent.hideFullList);
 		jQuery('#' + parent.id + 'listbutton').click(parent.displayFullList);
 	};
 	this.displayFullList = function() {
@@ -89,7 +93,9 @@ var recordSelector = function(id, name, multiple, removeIcon, searchProperty, al
 					listElement.removeClass('loading');
 				}
 			});
-		};
+		} else {
+			listElement.fadeIn();
+        };
 	};
 	if (multiple) {
 		jQuery('#' + id).find('a').live('click', function() {

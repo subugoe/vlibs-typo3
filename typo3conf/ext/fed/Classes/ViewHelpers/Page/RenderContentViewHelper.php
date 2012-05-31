@@ -106,7 +106,7 @@ class Tx_Fed_ViewHelpers_Page_RenderContentViewHelper extends Tx_Fed_Core_ViewHe
 				}
 				$pid = $page['uid'];
 			}
-			$conditions = "pid = '" . $pid ."' AND colPos = '" . $colPos . "' AND tx_flux_column = '' AND deleted = '0' AND hidden = '0' AND (sys_language_uid IN (-1,0) OR (sys_language_uid = '" . $GLOBALS['TSFE']->sys_language_uid . "' AND l18n_parent = '0'))";
+			$conditions = "pid = '" . $pid ."' AND colPos = '" . $colPos . "' AND tx_flux_column = '' " . $GLOBALS['TSFE']->cObj->enableFields('tt_content') . " AND (sys_language_uid IN (-1,0) OR (sys_language_uid = '" . $GLOBALS['TSFE']->sys_language_uid . "' AND l18n_parent = '0'))";
 			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery('uid', 'tt_content', $conditions, 'uid', $order, $this->arguments['limit']);
 			while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res)) {
 				$conf = array(

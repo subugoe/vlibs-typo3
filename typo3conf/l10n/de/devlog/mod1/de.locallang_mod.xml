@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="mlang_tabs_tab">Entwicklerprotokoll</label>
+      <label index="mlang_labels_tabdescr">Anzeige von Einträgen, die in das Entwicklerprotokoll über t3lib_div::devLog() geschrieben wurden.</label>
+      <label index="mlang_labels_tablabel">Entwicklerprotokoll</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

@@ -115,9 +115,9 @@ class Tx_Fed_ViewHelpers_Page_LanguageMenuViewHelper extends Tx_Fed_Core_ViewHel
 				$class = '';
 			}
 			if ((bool) $this->arguments['linkCurrent'] === TRUE) {
-				$html[] = '<' . $tagName . $class . '><a href="' . htmlspecialchars($var['url']) . '">' . $ths->getLayout($var) . '</a></' . $tagName . '>';
+				$html[] = '<' . $tagName . $class . '><a href="' . htmlspecialchars($var['url']) . '">' . $this->getLayout($var) . '</a></' . $tagName . '>';
 			} else {
-				$html[] = '<' . $tagName . $class . '>' . $ths->getLayout($var) . '</' . $tagName . '>';
+				$html[] = '<' . $tagName . $class . '>' . $this->getLayout($var) . '</' . $tagName . '>';
 			}
 		}
 		return implode(LF, $html);

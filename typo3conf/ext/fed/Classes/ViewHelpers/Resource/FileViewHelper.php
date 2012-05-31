@@ -101,7 +101,11 @@ class Tx_Fed_ViewHelpers_Resource_FileViewHelper extends Tx_Fed_ViewHelpers_Reso
 				}
 			}
 		} else {
-			return '';
+			if ($this->arguments['return'] === TRUE) {
+				return array();
+			} else {
+				return '';
+			}
 			//throw new Exception('Invalid path given to Resource ViewHelper', $code, $previous);
 		}
 		$files = $this->arrayToFileObjects($files);

@@ -57,7 +57,7 @@ class Tx_Fed_ViewHelpers_ExistsViewHelper extends Tx_Fed_Core_ViewHelper_Abstrac
 	 */
 	public function render() {
 		
-		$file = $this->arguments['file'];
+		$file = t3lib_div::getFileAbsFileName($this->arguments['file']);
 		$directory = $this->arguments['directory'];
 		
 		if (isset($this->arguments['file'])) {

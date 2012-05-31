@@ -35,12 +35,12 @@ class Tx_Fed_Controller_TemplateController extends Tx_Fed_MVC_Controller_Abstrac
 	/**
 	 * @var string
 	 */
-	protected $defaultViewObjectName = 'Tx_Fed_MVC_View_ExposedTemplateView';
+	protected $defaultViewObjectName = 'Tx_Flux_MVC_View_ExposedTemplateView';
 
 	/**
-	 * @param Tx_Fed_MVC_View_ExposedTemplateView $view
+	 * @param Tx_Flux_MVC_View_ExposedTemplateView $view
 	 */
-	public function initializeView(Tx_Fed_MVC_View_ExposedTemplateView $view) {
+	public function initializeView(Tx_Flux_MVC_View_ExposedTemplateView $view) {
 		$json = $this->objectManager->get('Tx_Fed_Utility_JSON');
 		$flexform = $this->getFlexForm();
 		if ($flexform['templateFile']) {

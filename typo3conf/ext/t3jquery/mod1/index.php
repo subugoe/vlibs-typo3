@@ -3,7 +3,7 @@
  *  Copyright notice
  *
  *  Based on t3mootools from Peter Klein <peter@umloud.dk>
- *  (c) 2007-2009 Juergen Furrer (juergen.furrer@gmail.com)
+ *  (c) 2007-2012 Juergen Furrer (juergen.furrer@gmail.com)
  *  All rights reserved
  *
  *  This script is part of the TYPO3 project. The TYPO3 project is
@@ -22,48 +22,23 @@
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
  ***************************************************************/
+/**
+ * [CLASS/FUNCTION INDEX of SCRIPT]
+ *
+ * Hint: use extdeveval to insert/update function index above.
+ */
 
-
-// DEFAULT initialization of a module [BEGIN]
-unset($MCONF);
-require_once('conf.php');
-
-/* Workaround for Linux with softlink */
-$path = dirname($_SERVER['SCRIPT_FILENAME']).'/';
-$back_array = explode('/', $BACK_PATH);
-$path_array = explode('/', $path);
-$end_array = array();
-$is_link = FALSE;
-array_pop($path_array);
-foreach ($back_array as $back) {
-	if ($back == '..') {
-		array_pop($path_array);
-	} else {
-		$end_array[] = $back;
-	}
-	if (is_link(implode('/', $path_array))) {
-		$is_link = TRUE;
-	}
-}
-if ($is_link === TRUE && ! is_dir($BACK_PATH)) {
-	$BACK_PATH_NEW = implode('/', array_merge($path_array, $end_array));
-} else {
-	$BACK_PATH_NEW = $BACK_PATH;
-}
-
-
-require_once($BACK_PATH_NEW . 'init.php');
-require_once($BACK_PATH_NEW . 'template.php');
 
 $LANG->includeLLFile('EXT:t3jquery/mod1/locallang.xml');
 require_once(PATH_t3lib . 'class.t3lib_scbase.php');
-$BE_USER->modAccess($MCONF, 1);	// This checks permissions and exits if the users has no permission for entry.
+$BE_USER->modAccess($MCONF,1);
 // DEFAULT initialization of a module [END]
 
+
 if (intval(PHP_VERSION) < 5) {
-	require_once('class.JavaScriptPacker.php');
+	require_once('class.JavaScriptPacker.php4');
 } else {
-	require_once('class.JavaScriptPacker_php5.php');
+	require_once('class.JavaScriptPacker.php');
 }
 require_once('class.analyzeJqJS.php');
 if (t3lib_extMgm::isLoaded('extdeveval')) {
@@ -170,19 +145,36 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			$this->configDir = PATH_site . 'uploads/tx_t3jquery/';
 		}
 		$this->createFolder();
+		$this->initConfig();
 		parent::init();
 	}
 
 	/**
 	 * Creates all needed folders and files if not exist
 	 * 
-	 * @return	void
+	 * @return	boolean
 	 */
 	function createFolder()
 	{
 		// create the config folder
 		if (! is_dir($this->configDir)) {
 			if (! t3lib_div::mkdir($this->configDir)) {
+				t3lib_div::devLog("Could not create config path '{$this->configDir}'!", 't3jquery', 3);
+				return FALSE;
+			}
+		}
+		return TRUE;
+	}
+
+	/**
+	 * Create the config-file if not exist
+	 * 
+	 * @return	boolean
+	 */
+	function initConfig() {
+		if (! file_exists($this->configDir.'t3jquery.cfg')) {
+			if (! t3lib_div::writeFile($this->configDir.'t3jquery.cfg', '')) {
+				t3lib_div::devLog("Could not create config file '{$this->configDir}t3jquery.cfg'!", 't3jquery', 3);
 				return FALSE;
 			}
 		}
@@ -263,10 +255,9 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			$this->doc->form = '<form action="'.t3lib_div::linkThisScript().'#jqbuttons" method="post" enctype="multipart/form-data" name="jq" id="jq">';
 
 			// JavaScript (jQuery subscripts is used, as no compressed lib exists yet or might not include the supparts needed.)
-
 			$this->doc->JScode = '
-<script type="text/javascript" src="../res/jquery/core/' . $this->confArray['jQueryVersion'] . '/jquery.js"></script>
-<script type="text/javascript" src="../res/jqconfig.js"></script>
+<script type="text/javascript" src="../'.t3lib_extMgm::siteRelPath('t3jquery').'res/jquery/core/' . $this->confArray['jQueryVersion'] . '/jquery.js"></script>
+<script type="text/javascript" src="../'.t3lib_extMgm::siteRelPath('t3jquery').'res/jqconfig.js"></script>
 <script language="javascript" type="text/javascript">
 	script_ended = 0;
 	function jumpToUrl(URL)	{
@@ -287,14 +278,14 @@ class  tx_t3jquery_module1 extends t3lib_SCbase
 			// Use button from the Analyzer has been pressed
 			if ($_POST['usejq'] && $_POST['dependencies']) {
 				$temp = array();
-				$temp['files'] = unserialize(urldecode($_POST['dependencies']));
+				$temp['files'] = $this->safe_unserialize(urldecode($_POST['dependencies']));
 				$this->saveJqConf($temp);
 				$this->MOD_SETTINGS['function'] = 1;
 			}
 			// Merge&Use button from the Analyzer has been pressed
 			if ($_POST['mergejq'] && $_POST['dependencies']) {
 				$temp = array();
-				$temp['files'] = $this->mergeJqConf(unserialize(urldecode($_POST['dependencies'])));
+				$temp['files'] = $this->mergeJqConf($this->safe_unserialize(urldecode($_POST['dependencies'])));
 				$this->saveJqConf($temp);
 				$this->MOD_SETTINGS['function'] = 1;
 			}
@@ -835,7 +826,7 @@ jQuery(document).ready(function() {
 			case 0 : {
 				$t1 = microtime(TRUE);
 
-				$packer = new JavaScriptPacker($script, 'Normal', TRUE, FALSE);
+				$packer = new JavaScriptPacker($script, 'None', TRUE, FALSE);
 				$script = $packer->pack();
 
 				$t2 = microtime(TRUE);
@@ -920,7 +911,7 @@ jQuery(document).ready(function() {
 			case 'packer' : {
 				$t1 = microtime(TRUE);
 
-				$packer = new JavaScriptPacker($script, 'Normal', TRUE, FALSE);
+				$packer = new JavaScriptPacker($script, 'None', TRUE, FALSE);
 				$script = $packer->pack();
 
 				$t2 = microtime(TRUE);
@@ -1289,6 +1280,30 @@ jQuery(document).ready(function() {
 			}
 		}
 		return $result;
+	}
+
+	/**
+	* mixed safe_unserialize(string $serialized)
+	* Safely unserialize, that is only unserialize string, numbers and arrays, not objects
+	*
+	* @license Public Domain
+	* @author dcz (at) phpbb-seo (dot) com
+	*/
+	function safe_unserialize($serialized) {
+		// unserialize will return false for object declared with small cap o
+		// as well as if there is any ws between O and :
+		if (is_string($serialized) && strpos($serialized, "\0") === false) {
+			if (strpos($serialized, 'O:') === false) {
+				// the easy case, nothing to worry about
+				// let unserialize do the job
+				return @unserialize($serialized);
+			} else if (!preg_match('/(^|;|{|})O:[0-9]+:"/', $serialized)) {
+				// in case we did have a string with O: in it,
+				// but it was not a true serialized object
+				return @unserialize($serialized);
+			}
+		}
+		return false;
 	}
 }
 

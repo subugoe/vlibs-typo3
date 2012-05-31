@@ -70,7 +70,7 @@ class Tx_Fed_ViewHelpers_JQuery_AccordionViewHelper extends Tx_Fed_Core_ViewHelp
 		$this->registerUniversalTagAttributes();
 		$this->registerArgument('tagName', 'string', 'Tag name to use, default "div"');
 		$this->registerArgument('animated', 'string', 'String name of optional jQuery animation to use.', FALSE, 'slide');
-		$this->registerArgument('active', 'boolean', 'Set this to TRUE to indicate which tab should be active - use only on a single tab');
+		$this->registerArgument('active', 'string', 'Selector for the active element. Set to false to display none at start. Needs collapsible: true.');
 		$this->registerArgument('disabled', 'boolean', 'Set this to true to deactivate entire tab sets or individual tabs');
 		$this->registerArgument('autoHeight', 'boolean', 'Automatically adjust height of tabs');
 		$this->registerArgument('fillSpace', 'boolean', 'Fill space to match max tab height');
@@ -213,6 +213,7 @@ class Tx_Fed_ViewHelpers_JQuery_AccordionViewHelper extends Tx_Fed_Core_ViewHelp
 		$clearStyle = $this->getBooleanForJavascript('clearStyle');
 		$fillSpace = $this->getBooleanForJavascript('fillSpace');
 		$csvOfDisabledTabIndices = implode(',' ,$this->templateVariableContainer->get('disabledIndices'));
+		$active = $this->templateVariableContainer->get('active');
 		$init = <<< INITSCRIPT
 jQuery(document).ready(function() {
 	jQuery('#{$this->uniqId}').accordion({
@@ -222,7 +223,7 @@ jQuery(document).ready(function() {
 		clearStyle : {$clearStyle},
 		collapsible : {$collapsible},
 		fillSpace : {$fillSpace},
-		active : ''
+		active : {$active}
 	});
 });
 INITSCRIPT;
