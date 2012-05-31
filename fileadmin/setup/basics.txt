@@ -22,9 +22,9 @@ page {
 	headerData.1 = TEXT
 	headerData.1.field = subtitle // title
 	headerData.1.noTrimWrap = |<title>| – Library of Anglo-American Culture</title>|
-	headerData.10 = HTML
+	headerData.10 = TEXT
 	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="Lib AAC" href="?type=9004">
-	headerData.20 = HTML
+	headerData.20 = TEXT
 	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/AAC/favicon.ico" type="image/ico">
 }
 
