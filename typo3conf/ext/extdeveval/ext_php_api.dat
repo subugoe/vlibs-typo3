@@ -1,0 +1,1076 @@
+a:2:{s:4:"meta";a:3:{s:5:"title";s:31:"Extension Development Evaluator";s:5:"descr";s:47:"Documentation of the classes in this extension.";s:7:"options";a:2:{s:10:"usageCount";s:1:"1";s:19:"includeCodeAbstract";s:1:"1";}}s:5:"files";a:11:{s:14:"MD5_35a357884a";a:5:{s:8:"filename";s:33:"class.ux_sc_alt_topmenu_dummy.php";s:8:"filesize";i:3420;s:6:"header";a:5:{s:4:"text";s:87:"
+
+Adding content to dummy script display in top frame; Listing of links for developers
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:3:{i:1;a:8:{s:6:"header";s:60:"class ux_SC_alt_topmenu_dummy extends SC_alt_topmenu_dummy {";s:5:"class";i:1;s:11:"parentClass";s:23:"ux_SC_alt_topmenu_dummy";s:4:"cDat";a:5:{s:4:"text";s:87:"
+
+Adding content to dummy script display in top frame; Listing of links for developers
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:3:"	
+	";i:1;i:-1;}s:12:"content_size";i:3;s:13:"content_lines";i:1;s:6:"atLine";i:55;}i:3;a:4:{s:6:"header";s:25:"function dummyContent()	{";s:11:"parentClass";s:23:"ux_SC_alt_topmenu_dummy";s:4:"cDat";a:3:{s:4:"text";s:81:"
+
+Creates the dummy content of the top frame if no menu - which is a blank page.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:6:"atLine";i:62;}i:5;a:7:{s:6:"header";s:22:"function ext_links()	{";s:11:"parentClass";s:23:"ux_SC_alt_topmenu_dummy";s:4:"cDat";a:3:{s:4:"text";s:62:"
+
+Render the links from the script options in TYPO3_CONF_VARS
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:515:"		global $TYPO3_CONF_VARS;
+		
+		$links=array();
+		if (is_array($TYPO3_CONF_VARS['SC_OPTIONS']['ext/extdeveval/class.ux_sc_alt_topmenu_dummy.php']['links']))	{
+			foreach($TYPO3_CONF_VARS['SC_OPTIONS']['ext/extdeveval/class.ux_sc_alt_topmenu_dummy.php']['links'] as $linkConf)	{
+				$aOnClick = "return top.openUrlInWindow('".$linkConf[1]."','ShowAPI');";
+				$links[]='<a href="#" onclick="'.htmlspecialchars($aOnClick).'">'.htmlspecialchars($linkConf[0]).'</a>';
+			}
+		}
+		
+		return implode(' | ',$links);
+	}
+}
+?>";i:1;i:0;}s:12:"content_size";i:515;s:13:"content_lines";i:13;s:6:"atLine";i:96;}}s:10:"usageCount";a:3:{s:12:"H_1aef0981d6";a:2:{s:24:"_searchtime_milliseconds";d:195;s:15:"_functionHeader";s:60:"class ux_SC_alt_topmenu_dummy extends SC_alt_topmenu_dummy {";}s:12:"H_b84e96da61";a:4:{s:3:"ALL";a:2:{s:14:"nonObjectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_35a357884a";a:3:{s:8:"fileName";s:33:"class.ux_sc_alt_topmenu_dummy.php";s:14:"nonObjectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:5;s:15:"_functionHeader";s:25:"function dummyContent()	{";}s:12:"H_bef961e575";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_35a357884a";a:3:{s:8:"fileName";s:33:"class.ux_sc_alt_topmenu_dummy.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:22:"function ext_links()	{";}}}s:14:"MD5_2615c4653e";a:5:{s:8:"filename";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:8:"filesize";i:17393;s:6:"header";a:5:{s:4:"text";s:72:"
+
+Class for rendering the API data from "ext_php_api.dat" files as HTML
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:7:{i:1;a:8:{s:6:"header";s:32:"class tx_extdeveval_apidisplay {";s:5:"class";i:1;s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:5:{s:4:"text";s:72:"
+
+Class for rendering the API data from "ext_php_api.dat" files as HTML
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:331:"
+		// External, static:
+	var $showPrivateIgnoreFunc=1;
+
+		// Internal, static: GPvar:
+	var $showAPI;			// If true, the display of the API HTML will be rendered in a standAlone HTML document (the one which opens in a new window!)
+	
+		// Internal, dynamic:
+	var $fileSizeTotal=0;			// Counter
+	var $funcClassesTotal=0;		// Counter
+
+	";i:1;i:-1;}s:12:"content_size";i:331;s:13:"content_lines";i:11;s:6:"atLine";i:55;}i:3;a:7:{s:6:"header";s:37:"function main($SERcontent,$phpFile)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:54:"
+
+Main function, branching out to rendering functions
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:41:"Serialized PHP array with the API data in";}i:1;a:2:{i:0;s:6:"string";i:1;s:96:"Specifically, which PHP file from the extension to list API for (if blank, all files are shown).";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"HTML content for the module.";}}s:7:"content";a:2:{i:0;s:314:"			
+			// Setting GPvar:
+		$this->showAPI = t3lib_div::_GP('showAPI');			
+	
+			// Unserialize content:
+		$apiDat = unserialize($SERcontent);
+		if (is_array($apiDat))	{
+			return $this->renderAPIdata($apiDat,$phpFile);
+		} else {
+			return '<strong>ERROR:</strong> XML data could not be parsed: '.$apiDat;
+		}
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:314;s:13:"content_lines";i:13;s:6:"atLine";i:74;}i:5;a:7:{s:6:"header";s:42:"function renderAPIdata($apiDat,$phpFile)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:47:"
+
+Renders the API data array into browser HTML
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:5:"array";i:1;s:14:"API data array";}i:1;a:2:{i:0;s:6:"string";i:1;s:83:"Specific PHP file to display if any. Blank will display all files in the extension.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML output.";}}s:7:"content";a:2:{i:0;s:507:"	
+			// Initialize:
+		$content = '';
+		
+			// If there is an array of files, then render the API:
+		if (is_array($apiDat['files']))	{
+		
+				// The array key used for each file:
+			$phpFileKey = 'MD5_'.t3lib_div::shortMD5($phpFile);
+			$superIndexAcc='';
+			$indexAcc='';
+			$detailsAcc='';
+			
+				// Checking for specific or all rendering:
+			if ($phpFile && is_array($apiD
+[...]
+n API in new window.</a></div>'.$content;
+		}
+	
+			// Return content:
+		return '<div id="c-APIdoc">'.$content.'</div>';
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:2973;s:13:"content_lines";i:82;s:6:"atLine";i:95;}i:7;a:7:{s:6:"header";s:27:"function makeHeader($dat)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:41:"
+
+Creates the header of the API listing.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:37:"Array with meta data for the API data";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:27:"HTML content of the header.";}}s:7:"content";a:2:{i:0;s:197:"	
+		$content.='
+			<h2>'.htmlspecialchars($dat['title']).'</h2>';
+		$content.='
+			<p class="c-headerDescription">'.nl2br(htmlspecialchars(trim($dat['descr']))).'</p>';
+			
+		return $content;
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:197;s:13:"content_lines";i:9;s:6:"atLine";i:184;}i:9;a:7:{s:6:"header";s:35:"function renderFileContent($fDat)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:76:"
+
+Renders the API listing for a single file, represented by the input array
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:45:"Array with API information for a single file.";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:55:"Array with superindex / index / body content (keys 0/1)";}}s:7:"content";a:2:{i:0;s:507:"	
+			// Set anchor value:
+		$anchor = md5($fDat['filename']);
+
+		$this->fileSizeTotal+=$fDat['filesize'];
+		$this->funcClassesTotal+=(is_array($fDat['DAT'])?count($fDat['DAT']):'0');
+
+			// Create file header content:
+		$superIndex.='
+			<h3><a href="#s-'.$anchor.'">'.htmlspecialchars($fDat['filename']).'</a></h3>
+		';
+
+		$index.='
+			<h3><a name="s-'.$anchor.'"></a><a hre
+[...]
+</div>
+					';
+				}
+			}
+		}
+		
+			// Return index and content variables:
+		return array($superIndex,$index,$content);
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:6509;s:13:"content_lines";i:189;s:6:"atLine";i:200;}i:11;a:4:{s:6:"header";s:34:"function splitFunctionHeader($v)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:66:"
+
+Creates an array of the arguments for the input function header
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:86:"String with PHP-function header in, eg. '   function blablabla($this, $that="22")	{		'";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:55:"The function arguments (here: $this, $that) in an array";}}s:6:"atLine";i:396;}i:13;a:7:{s:6:"header";s:51:"function outputStandAloneDisplay($title,$content)	{";s:11:"parentClass";s:24:"tx_extdeveval_apidisplay";s:4:"cDat";a:3:{s:4:"text";s:63:"
+
+Will output a stand-alone HTML page with $title and content.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:21:"The title of the page";}i:1;a:2:{i:0;s:6:"string";i:1;s:24:"The content on the page!";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:20:"Exits before return!";}}s:7:"content";a:2:{i:0;s:507:"
+			// Create a XHTML document with the API in:
+		$docContent = '<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="#internalStyle" type="text/css"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<style type="text/css" id="internalStyle">
+		/*<![CDATA[*/
+		
+			B
+[...]
+hp'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_apidisplay.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:3249;s:13:"content_lines";i:78;s:6:"atLine";i:417;}}s:10:"usageCount";a:7:{s:12:"H_f054ac6826";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:39;s:15:"_functionHeader";s:32:"class tx_extdeveval_apidisplay {";}s:12:"H_4ae607843a";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:37:"function main($SERcontent,$phpFile)	{";}s:12:"H_939a9eb57d";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_2615c4653e";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:2;s:15:"_functionHeader";s:42:"function renderAPIdata($apiDat,$phpFile)	{";}s:12:"H_f8c39542ec";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_2615c4653e";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:24:"_searchtime_milliseconds";d:7;s:15:"_functionHeader";s:27:"function makeHeader($dat)	{";}s:12:"H_eab3bf3d03";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_2615c4653e";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:35:"function renderFileContent($fDat)	{";}s:12:"H_5a3aceb1cb";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_2615c4653e";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:5;s:15:"_functionHeader";s:34:"function splitFunctionHeader($v)	{";}s:12:"H_5bf8d8cf2c";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_2615c4653e";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_apidisplay.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:51:"function outputStandAloneDisplay($title,$content)	{";}}}s:14:"MD5_1787d36b51";a:5:{s:8:"filename";s:39:"mod1/class.tx_extdeveval_cachefiles.php";s:8:"filesize";i:4395;s:6:"header";a:5:{s:4:"text";s:42:"
+
+Confirmed removal of temp_CACHED_ files
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:4:{i:1;a:8:{s:6:"header";s:32:"class tx_extdeveval_cachefiles {";s:5:"class";i:1;s:11:"parentClass";s:24:"tx_extdeveval_cachefiles";s:4:"cDat";a:5:{s:4:"text";s:42:"
+
+Confirmed removal of temp_CACHED_ files
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:2:"
+	";i:1;i:-1;}s:12:"content_size";i:2;s:13:"content_lines";i:1;s:6:"atLine";i:51;}i:3;a:7:{s:6:"header";s:23:"function cacheFiles()	{";s:11:"parentClass";s:24:"tx_extdeveval_cachefiles";s:4:"cDat";a:3:{s:4:"text";s:33:"
+
+The main function in the class
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:507:"		$content = '';
+
+			// CURRENT:
+		$content.='<strong>1: The current cache files:</strong>'.
+			t3lib_div::view_array(t3lib_extMgm::currentCacheFiles());
+
+			// REMOVING?
+		if (t3lib_div::_GP('REMOVE_temp_CACHED'))	{
+			$number = $this->removeCacheFiles();
+			$content.= '<hr /><p><strong>2: Tried to remove '.$number.' cache files.</strong></p>';
+		}
+		if (t3lib_div::_GP('R
+[...]
+ue="REMOVE ALL temp_CACHED_* files" />
+		<input type="submit" name="_" value="Refresh" />
+		';
+		
+		
+		return $content;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1203;s:13:"content_lines";i:40;s:6:"atLine";i:58;}i:5;a:4:{s:6:"header";s:29:"function removeCacheFiles()	{";s:11:"parentClass";s:24:"tx_extdeveval_cachefiles";s:4:"cDat";a:3:{s:4:"text";s:59:"
+
+Unlink (delete) cache files - only the two current ones!
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:7:"integer";i:1;s:47:"Number of files which were tried to be removed.";}}s:6:"atLine";i:104;}i:7;a:7:{s:6:"header";s:37:"function removeALLtempCachedFiles()	{";s:11:"parentClass";s:24:"tx_extdeveval_cachefiles";s:4:"cDat";a:3:{s:4:"text";s:92:"
+
+Unlink (delete) cache files - ALL, including those not current, made by another sitepath.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:14:"Status Message";}}s:7:"content";a:2:{i:0;s:507:"		$path = PATH_typo3conf;
+		if (is_dir($path))	{
+			$filesInDir=t3lib_div::getFilesInDir($path,'php',1);
+			reset($filesInDir);
+			while(list($kk,$vv)=each($filesInDir))	{
+				if (t3lib_div::isFirstPartOfStr(basename($vv),'temp_CACHED_'))	{
+					if (strstr(basename($vv),'ext_localconf.php') || strstr(basename($vv),'ext_tables.php'))	{
+						$content.='REMOVED: '.$vv.'<br /
+[...]
+hp'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_cachefiles.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:840;s:13:"content_lines";i:22;s:6:"atLine";i:123;}}s:10:"usageCount";a:4:{s:12:"H_a204761db3";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:31;s:15:"_functionHeader";s:32:"class tx_extdeveval_cachefiles {";}s:12:"H_b867953f4b";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:23:"function cacheFiles()	{";}s:12:"H_4881a63fed";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_1787d36b51";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_cachefiles.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:29:"function removeCacheFiles()	{";}s:12:"H_5753b77c13";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_1787d36b51";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_cachefiles.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:37:"function removeALLtempCachedFiles()	{";}}}s:14:"MD5_1176e7d4c9";a:5:{s:8:"filename";s:33:"mod1/class.tx_extdeveval_calc.php";s:8:"filesize";i:11761;s:6:"header";a:5:{s:4:"text";s:25:"
+
+Class for calculations
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:7:{i:1;a:8:{s:6:"header";s:26:"class tx_extdeveval_calc {";s:5:"class";i:1;s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:5:{s:4:"text";s:25:"
+
+Class for calculations
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:92:"
+		// Internal GPvars:
+	var $cmd;				// Command array
+	var $inputCalc;			// Data array
+	
+	
+	";i:1;i:-1;}s:12:"content_size";i:92;s:13:"content_lines";i:6;s:6:"atLine";i:57;}i:3;a:7:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:3:{s:4:"text";s:43:"
+
+Main function, launching the calculator.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"HTML content for the module.";}}s:7:"content";a:2:{i:0;s:507:"
+			// Set GPvar:		
+		$this->cmd = @key(t3lib_div::_GP('cmd'));
+		$this->inputCalc = t3lib_div::_GP('inputCalc');
+		
+			// Call calculators:
+		switch($this->cmd)	{
+			case 'unixTime_toTime':
+			case 'unixTime_toSeconds':
+				$content.=$this->calc_unixTime();
+			break;
+			case 'crypt':
+				$content.=$this->calc_crypt();
+			break;
+			case 'md5':
+				$content.=$this->calc_md5
+[...]
+ content:
+		return $content;
+	}
+
+	
+	
+	/*************************
+	 *
+	 * Tools functions:
+	 *
+	 *************************/
+
+	";i:1;i:1;}s:12:"content_size";i:844;s:13:"content_lines";i:44;s:6:"atLine";i:69;}i:5;a:8:{s:6:"header";s:26:"function calc_unixTime()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:11:"sectionText";a:1:{i:0;s:16:"Tools functions:";}s:4:"cDat";a:3:{s:4:"text";s:66:"
+
+Converting from human-readable time to unix time and vice versa
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:507:"	
+			// Processing incoming command:
+		if ($this->cmd=='unixTime_toTime')	{
+			$this->inputCalc['unixTime']['seconds'] = intval($this->inputCalc['unixTime']['seconds']);
+		} elseif ($this->cmd=='unixTime_toSeconds')	{
+			$timeParts=array();
+			ereg('([0-9]+)[ ]*-[ ]*([0-9]+)[ ]*-([0-9]+)[ ]*([0-9]*):?([0-9]*):?([0-9]*)',trim($this->inputCalc['unixTime']['time']),$timeParts
+[...]
+g>The input time string was reformatted during clean-up! Please check it!</p>';
+		}
+		
+			// Output:
+		return $content;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1735;s:13:"content_lines";i:31;s:6:"atLine";i:119;}i:7;a:7:{s:6:"header";s:23:"function calc_crypt()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:3:{s:4:"text";s:73:"
+
+Converting input string with "crypt()" - for maing htaccess passwords.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:599:"	
+			// Render input form:
+		$content.='
+			<h3>Input string to crypt:</h3>
+			<p>Useful for making passwords for .htaccess files.</p>
+				<input type="text" name="inputCalc[crypt][input]" value="'.htmlspecialchars($this->inputCalc['crypt']['input']).'" size="50" />
+				<input type="submit" name="cmd[crypt]" value="Crypt" />
+		';
+		if ($this->cmd=='crypt' && trim($this->inputCalc['crypt']['input']))	{
+			$content.='
+			<p>Crypted string:</p>
+			<input type="text" name="-" value="'.htmlspecialchars(crypt($this->inputCalc['crypt']['input'])).'" size="50" />
+			';
+		}
+		
+		return $content;
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:599;s:13:"content_lines";i:18;s:6:"atLine";i:156;}i:9;a:7:{s:6:"header";s:21:"function calc_md5()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:3:{s:4:"text";s:38:"
+
+Creating MD5 hash of input content.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:565:"	
+			// Render input form:
+		$content.='
+			<h3>Input string to MD5 process:</h3>
+				<textarea rows="10" name="inputCalc[md5][input]" wrap="off"'.$GLOBALS['TBE_TEMPLATE']->formWidthText(48,'width:98%;','off').'>'.
+				t3lib_div::formatForTextarea($this->inputCalc['md5']['input']).
+				'</textarea>
+				<input type="submit" name="cmd[md5]" value="MD5 process" />
+		';
+		if ($this->cmd=='md5' && trim($this->inputCalc['md5']['input']))	{
+			$content.='
+			<p>MD5 hash: <strong>'.md5($this->inputCalc['md5']['input']).'</strong></p>';
+		}
+		
+		return $content;
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:565;s:13:"content_lines";i:17;s:6:"atLine";i:180;}i:11;a:4:{s:6:"header";s:22:"function calc_diff()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:3:{s:4:"text";s:51:"
+
+Shows a diff between the two input text strings.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:6:"atLine";i:203;}i:13;a:7:{s:6:"header";s:21:"function calc_sql()	{";s:11:"parentClass";s:18:"tx_extdeveval_calc";s:4:"cDat";a:3:{s:4:"text";s:41:"
+
+Parsing input SQL with t3lib_sqlengine
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:11:"SQL content";}}s:7:"content";a:2:{i:0;s:507:"	
+			// Render input form:
+		$content.='
+			<h3>Input SQL string:</h3>
+				<textarea rows="10" name="inputCalc[sql][input]" wrap="off"'.$GLOBALS['TBE_TEMPLATE']->formWidthText(48,'width:98%;','off').'>'.
+				t3lib_div::formatForTextarea($this->inputCalc['sql']['input']).
+				'</textarea>
+				<input type="submit" name="cmd[sql]" value="Parse SQL" />
+		';
+		if ($this->cmd=='
+[...]
+calc.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_calc.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:1914;s:13:"content_lines";i:48;s:6:"atLine";i:295;}}s:10:"usageCount";a:7:{s:12:"H_3f037c801a";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:200;s:15:"_functionHeader";s:26:"class tx_extdeveval_calc {";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:11;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_c296a75576";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_1176e7d4c9";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_calc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:2;s:15:"_functionHeader";s:26:"function calc_unixTime()	{";}s:12:"H_3f0d2f6b0b";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_1176e7d4c9";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_calc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:23:"function calc_crypt()	{";}s:12:"H_3db9d08f3b";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_1176e7d4c9";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_calc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:2;s:15:"_functionHeader";s:21:"function calc_md5()	{";}s:12:"H_3c04d53731";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_1176e7d4c9";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_calc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:22:"function calc_diff()	{";}s:12:"H_0ca49bcfb5";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_1176e7d4c9";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_calc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:2;s:15:"_functionHeader";s:21:"function calc_sql()	{";}}}s:14:"MD5_054b794bbc";a:5:{s:8:"filename";s:40:"mod1/class.tx_extdeveval_cssanalyzer.php";s:8:"filesize";i:8161;s:6:"header";a:5:{s:4:"text";s:74:"
+
+Class for displaying the hierarchy of CSS selectors in HTML source code
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:3:{i:1;a:8:{s:6:"header";s:33:"class tx_extdeveval_cssanalyzer {";s:5:"class";i:1;s:11:"parentClass";s:25:"tx_extdeveval_cssanalyzer";s:4:"cDat";a:5:{s:4:"text";s:74:"
+
+Class for displaying the hierarchy of CSS selectors in HTML source code
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:300:"
+		// GPvars:
+	var $inputHTML = '';			// Input HTML code to analyze
+	var $removePrefix = '';			// Prefix to remove from shown selectors
+	var $useLimit = '';				// Default limit - the value of the limit field 
+
+		// Internal, dynamic:
+	var $foundSelectors = array();
+	var $contentIndex = array();
+
+	
+	";i:1;i:-1;}s:12:"content_size";i:300;s:13:"content_lines";i:11;s:6:"atLine";i:52;}i:3;a:4:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:25:"tx_extdeveval_cssanalyzer";s:4:"cDat";a:3:{s:4:"text";s:54:"
+
+Main function, branching out to rendering functions
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"HTML content for the module.";}}s:6:"atLine";i:69;}i:5;a:7:{s:6:"header";s:61:"function getHierarchy($HTMLcontent,$count=20,$selPrefix='')	{";s:11:"parentClass";s:25:"tx_extdeveval_cssanalyzer";s:4:"cDat";a:3:{s:4:"text";s:62:"
+
+Creates hierarchy of CSS selectors from input HTML content:
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:17:"HTML body content";}i:1;a:2:{i:0;s:7:"integer";i:1;s:14:"Max recursions";}i:2;a:2:{i:0;s:6:"string";i:1;s:23:"Current selector prefix";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:49:"Array with information about the found selectors.";}}s:7:"content";a:2:{i:0;s:507:"		$parts = $this->parseHTML->splitIntoBlock('a,b,blockquote,body,div,em,font,form,h1,h2,h3,h4,h5,h6,i,li,ol,option,p,pre,select,span,strong,table,td,textarea,tr,u,ul,iframe',$HTMLcontent,1);
+
+		$thisSelectors=array();
+		$exampleContentAccum=array();
+		
+		reset($parts);
+		while(list($k,$v)=each($parts))	{
+			if ($k%2 && $count)	{
+				$firstTag = $this->parseHTML->getFirstTa
+[...]
+p'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_cssanalyzer.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:2898;s:13:"content_lines";i:88;s:6:"atLine";i:157;}}s:10:"usageCount";a:3:{s:12:"H_3f8bd5d953";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:118;s:15:"_functionHeader";s:33:"class tx_extdeveval_cssanalyzer {";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:27;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_138b773ad1";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_054b794bbc";a:3:{s:8:"fileName";s:40:"mod1/class.tx_extdeveval_cssanalyzer.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:61:"function getHierarchy($HTMLcontent,$count=20,$selPrefix='')	{";}}}s:14:"MD5_c5cf681c34";a:5:{s:8:"filename";s:38:"mod1/class.tx_extdeveval_highlight.php";s:8:"filesize";i:13865;s:6:"header";a:5:{s:4:"text";s:45:"
+
+Syntax Highlighting TypoScript or PHP code
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:4:{i:1;a:8:{s:6:"header";s:31:"class tx_extdeveval_highlight {";s:5:"class";i:1;s:11:"parentClass";s:23:"tx_extdeveval_highlight";s:4:"cDat";a:5:{s:4:"text";s:45:"
+
+Syntax Highlighting TypoScript or PHP code
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:3521:"	var $highLightStyles = array(
+		'prespace' 			=> array('<span style="">','</span>'),	// Space before any content on a line
+		'objstr_postspace' 	=> array('<span style="">','</span>'),	// Space after the object string on a line
+		'operator_postspace' => array('<span style="">','</span>'),	// Space after the operator on a line
+		'operator' 			=> array('<span style="color: black; font-weight: bold;">','</span>'),	// The operator char
+		'value' 			=> array('<span style="color: #cc0000;">','</span>'),	// The value of a line
+		'objstr' 			=> array('<span style="color: #0000cc;">','</span>'),	// The object string of a line
+		'value_copy' 		=> array('<span style="color: #006600;">','</span>'),	// The value when the copy syntax (<) is used; that means the object reference
+		'value_unset' 		=> array('<span style="background-color: #66cc66;">','</span>'),	// The value when an object is unset. Should not exist.
+		'ignored'			=> array('<span style="background-color: #66cc66;">','</span>'),	// The "rest" of a line which will be ignored. 
+		'default' 			=> array('<span style="background-color: #66cc66;">','</span>'),	// The default style if none other is applied.
+		'comment' 			=> array('<span style="color: #666666; font-style: italic;">','</span>'),	// Comment lines
+		'condition'			=> array('<span style="background-color: maroon; color: #ffffff; font-weight: bold;">','</span>'),	// Conditions
+		'error' 			=> array('<span style="background-color: yellow; border: 1px red dashed; font-weight: bold;">','</span>'),	// Error messages
+		'linenum' 			=> array('<span style="background-color: #eeeeee;">','</span>'),	// Line numbers
+	);
+	var $highLightStyles_analytic = array(
+		'prespace' 			=> array('<span style="background-color: #cccc99;">','</span>'),	// Space before any content on a line
+		'objstr_postspace' 	=> array('<span style="background-color: #cccc99;">','</span>'),	// Space after the object string on a line
+		'operator_postspace' => array('<span style="background-color: #cccc99;">','</span>'),	// Space after the operator on a line
+		'operator' 			=> array('<span style="color: black; font-weight: bold; background-color: #cc6600;">','</span>'),	// The operator char
+		'value' 			=> array('<span style="background-color: #ffff00; color: #cc0000;">','</span>'),	// The value of a line
+		'objstr' 			=> array('<span style="background-color: #99ffff; color: #0000cc;">','</span>'),	// The object string of a line
+		'value_copy' 		=> array('<span style="color: #006600;">','</span>'),	// The value when the copy syntax (<) is used; that means the object reference
+		'value_unset' 		=> array('<span style="background-color: #66cc66;">','</span>'),	// The value when an object is unset. Should not exist.
+		'ignored'			=> array('<span style="background-color: #66cc66;">','</span>'),	// The "rest" of a line which will be ignored. 
+		'default' 			=> array('<span style="background-color: #66cc66;">','</span>'),	// The default style if none other is applied.
+		'comment' 			=> array('<span style="color: #666666; font-style: italic;">','</span>'),	// Comment lines
+		'condition'			=> array('<span style="background-color: maroon; color: #ffffff; font-weight: bold;">','</span>'),	// Conditions
+		'error' 			=> array('<span style="background-color: yellow; border: 1px red dashed; font-weight: bold;">','</span>'),	// Error messages
+		'linenum' 			=> array('<span style="background-color: #eeeeee;">','</span>'),	// Line numbers
+	);
+
+	var $highLightBlockStyles = 'border-left: black solid 3px;';
+
+					
+	";i:1;i:-1;}s:12:"content_size";i:3521;s:13:"content_lines";i:36;s:6:"atLine";i:54;}i:3;a:7:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:23:"tx_extdeveval_highlight";s:4:"cDat";a:3:{s:4:"text";s:33:"
+
+The main function in the class
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:12:"HTML content";}}s:7:"content";a:2:{i:0;s:507:"		$inputCode = t3lib_div::_GP('input_code');
+	
+		$content = '';
+		$content.='
+		<textarea rows="15" name="input_code" wrap="off"'.$GLOBALS['TBE_TEMPLATE']->formWidthText(48,'width:98%;','off').'>'.
+			t3lib_div::formatForTextarea($inputCode).
+			'</textarea>
+		<br />
+		<input type="submit" name="highlight_php" value="PHP" />
+		<input type="submit" name="highlight_ts" value
+[...]
+nt.='MD5: '.md5(serialize($treeDat));
+					$content.=t3lib_div::view_array($treeDat);
+				}
+			}
+		}
+		return $content;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:4251;s:13:"content_lines";i:96;s:6:"atLine";i:96;}i:5;a:4:{s:6:"header";s:42:"function xmlHighLight($string,$HLstyles) {";s:11:"parentClass";s:23:"tx_extdeveval_highlight";s:4:"cDat";a:3:{s:4:"text";s:97:"
+
+Parses XML input into a PHP array AND formats it again for syntax highlighting/structure view.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:14:"XML data input";}i:1;a:2:{i:0;s:5:"array";i:1;s:76:"Array of styling information to be wrapped around various parts of the code.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:70:"Either error message or the highlighted content wrapped in <pre></pre>";}}s:6:"atLine";i:200;}i:7;a:7:{s:6:"header";s:35:"function xml2arrayHighLight($str)	{";s:11:"parentClass";s:23:"tx_extdeveval_highlight";s:4:"cDat";a:3:{s:4:"text";s:57:"
+
+Highlights XML code which can be parsed by xml2array()
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:16:"Input XML string";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:22:"HTML code with markup.";}}s:7:"content";a:2:{i:0;s:507:"		require_once(PATH_t3lib.'class.t3lib_syntaxhl.php');
+		
+			// Make instance of syntax highlight class:
+		$hlObj = t3lib_div::makeInstance('t3lib_syntaxhl');
+		
+			// Check which document type, if applicable:
+		if (strstr(substr($str,0,100),'<T3DataStructure'))	{
+			$title = 'Syntax highlighting <T3DataStructure> XML:';
+			$formattedContent = $hlObj->highLight_DS($str);
+	
+[...]
+php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_highlight.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:1405;s:13:"content_lines";i:38;s:6:"atLine";i:257;}}s:10:"usageCount";a:4:{s:12:"H_c736805399";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:128;s:15:"_functionHeader";s:31:"class tx_extdeveval_highlight {";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_550bb86af3";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_c5cf681c34";a:3:{s:8:"fileName";s:38:"mod1/class.tx_extdeveval_highlight.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:42:"function xmlHighLight($string,$HLstyles) {";}s:12:"H_5db08dbf23";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_c5cf681c34";a:3:{s:8:"fileName";s:38:"mod1/class.tx_extdeveval_highlight.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:4;s:15:"_functionHeader";s:35:"function xml2arrayHighLight($str)	{";}}}s:14:"MD5_13a035c275";a:5:{s:8:"filename";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:8:"filesize";i:12394;s:6:"header";a:5:{s:4:"text";s:57:"
+
+Class for displaying/generating all icons from a table
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:8:{i:1;a:8:{s:6:"header";s:32:"class tx_extdeveval_iconlister {";s:5:"class";i:1;s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:5:{s:4:"text";s:57:"
+
+Class for displaying/generating all icons from a table
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:133:"
+		// GPvars:
+	var $tableName = '';		// Table name to show icons from
+	var $optionsMatrix = array();		// Options for what to show.
+
+	";i:1;i:-1;}s:12:"content_size";i:133;s:13:"content_lines";i:5;s:6:"atLine";i:56;}i:3;a:7:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:54:"
+
+Main function, branching out to rendering functions
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"HTML content for the module.";}}s:7:"content";a:2:{i:0;s:410:"
+			// Set GPvar:		
+		$this->tableName = t3lib_div::_GP('tableName');
+		$this->optionsMatrix = t3lib_div::_GP('optionsMatrix');
+
+			// Render table menu:
+		$content.=$this->renderTableMenu();
+
+			// Render icons from specific table, if any is set:
+		if ($this->tableName)	{
+			$content.=$this->renderOptionsMatrix();
+			$content.=$this->renderTableIcons();
+		}
+		
+			// Return content:
+		return $content;
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:410;s:13:"content_lines";i:18;s:6:"atLine";i:67;}i:5;a:7:{s:6:"header";s:29:"function renderTableIcons()	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:28:"
+
+Rendering the table icons
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:4:"HTML";}}s:7:"content";a:2:{i:0;s:507:"		global $TCA,$PAGES_TYPES,$ICON_TYPES;
+	
+		if (is_array($TCA[$this->tableName]))	{
+		
+				// Set the default:
+			$this->testRecords=array();
+			$this->testRecords[]=array();
+			$tableCols=array();
+		
+				// Set hidden:
+			if ($TCA[$this->tableName]['ctrl']['enablecolumns']['disabled'] && $this->optionsMatrix['Hidden'])	{
+				$this->addTestRecordFields(array(
+					$TCA[$th
+[...]
+oses, do NOT rename if you don't know what you are doing!
+			#$this->renameIconsInTypo3Temp();
+		}
+		
+		return $output;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:5565;s:13:"content_lines";i:182;s:6:"atLine";i:91;}i:7;a:7:{s:6:"header";s:28:"function renderTableMenu()	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:35:"
+
+Rendering the table select menu:
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:4:"HTML";}}s:7:"content";a:2:{i:0;s:507:"		global $TCA;
+		
+			// Create menu options:
+		$opt=array();
+		$opt[]='
+				<option value=""></option>';
+		foreach($TCA as $tableName => $cfg)	{
+			$opt[]='
+				<option value="'.htmlspecialchars($tableName).'"'.($this->tableName==$tableName?' selected="selected"':'').'>'.htmlspecialchars($GLOBALS['LANG']->sL($cfg['ctrl']['title'])).'</option>';
+		}
+		
+			// Compile selecto
+[...]
+value').'">
+				'.implode('',$opt).'
+			</select>
+			<hr />
+			';
+		
+			// Return selector box menu:
+		return $content;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:687;s:13:"content_lines";i:24;s:6:"atLine";i:279;}i:9;a:7:{s:6:"header";s:32:"function renderOptionsMatrix()	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:99:"
+
+Render the list of checkboxes with options for which kind of renderings of icons should be done:
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:4:"HTML";}}s:7:"content";a:2:{i:0;s:507:"		global $TCA,$PAGES_TYPES,$ICON_TYPES;
+	
+		if (is_array($TCA[$this->tableName]))	{
+		
+				// Set the default:
+			$options=array();
+		
+				// Set hidden:
+			if ($TCA[$this->tableName]['ctrl']['enablecolumns']['disabled'])	{
+				$options[]=$this->addCheckBox('Hidden');
+			}
+				// Set starttime:
+			if ($TCA[$this->tableName]['ctrl']['enablecolumns']['starttime'])	{
+				$opt
+[...]
+.'
+			<br />
+			<input type="submit" name="set" value="Set options" />
+			<hr />
+			';
+			
+			return $content;
+		}					
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1534;s:13:"content_lines";i:59;s:6:"atLine";i:309;}i:11;a:7:{s:6:"header";s:42:"function addTestRecordFields($recFields)	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:103:"
+
+This will traverse the current pseudo records and replicate them all, adding the new array supplied.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:60:"Array with a field set to value according to what is tested.";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:192:"		
+		$tempArray=array();
+		foreach($this->testRecords as $rec)	{
+			$tempArray[] = array_merge($rec,$recFields);
+		}
+		
+		$this->testRecords = array_merge($this->testRecords,$tempArray);
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:192;s:13:"content_lines";i:9;s:6:"atLine";i:375;}i:13;a:4:{s:6:"header";s:30:"function addCheckBox($label)	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:38:"
+
+Create checkbox for options-matrix.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:19:"Label for checkbox.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:21:"Checkbox <input> tag.";}}s:6:"atLine";i:391;}i:15;a:7:{s:6:"header";s:35:"function renameIconsInTypo3Temp()	{";s:11:"parentClass";s:24:"tx_extdeveval_iconlister";s:4:"cDat";a:3:{s:4:"text";s:72:"
+
+Rename "icon_" files in typo3temp/
+Function for development purposes.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:507:"		$files = t3lib_div::getFilesInDir(PATH_site.'typo3temp/','gif,png',1);
+		foreach($files as $filename)	{
+			if (t3lib_div::isFirstPartOfStr(basename($filename),'icon_'))	{
+				$dir = dirname($filename).'/';
+
+				$reg=array();
+				if (ereg('icon_[[:alnum:]]+_([[:alnum:]_]+).(gif|png).(gif|png)',basename($filename),$reg))	{
+					if (@is_file($filename))	{
+						$newFile = $
+[...]
+hp'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_iconlister.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:734;s:13:"content_lines";i:22;s:6:"atLine";i:401;}}s:10:"usageCount";a:8:{s:12:"H_5b8e34b986";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:39;s:15:"_functionHeader";s:32:"class tx_extdeveval_iconlister {";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_d36651c2d2";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:29:"function renderTableIcons()	{";}s:12:"H_74a0f1183b";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:28:"function renderTableMenu()	{";}s:12:"H_3cc6611e0f";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:2;s:15:"_functionHeader";s:32:"function renderOptionsMatrix()	{";}s:12:"H_a3ebe94e42";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:6;s:5:"TOTAL";i:6;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:6;s:5:"TOTAL";i:6;}s:24:"_searchtime_milliseconds";d:7;s:15:"_functionHeader";s:42:"function addTestRecordFields($recFields)	{";}s:12:"H_247fc7ed7f";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:10;s:5:"TOTAL";i:10;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:10;s:5:"TOTAL";i:10;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:30:"function addCheckBox($label)	{";}s:12:"H_13ab542c23";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_13a035c275";a:3:{s:8:"fileName";s:39:"mod1/class.tx_extdeveval_iconlister.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:35:"function renameIconsInTypo3Temp()	{";}}}s:14:"MD5_9b229070ec";a:5:{s:8:"filename";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:8:"filesize";i:34751;s:6:"header";a:5:{s:4:"text";s:35:"
+
+Class for the PHP-doc functions.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:15:{i:1;a:8:{s:6:"header";s:28:"class tx_extdeveval_phpdoc {";s:5:"class";i:1;s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:5:{s:4:"text";s:35:"
+
+Class for the PHP-doc functions.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:931:"
+		// External, Static: 
+	var $includeContent=500;			// The number of bytes of a functions' code to include for the API
+	var $argCommentLen=7;				// The number of chars which an argument comment should exceed in order to be accepted as sufficient
+	var $funcCommentLen=20;				// The number of chars which a function/class comment should exceed in order to be accepted as sufficient
+	var $varTypeList = 'string,integer,boolean,array,object,mixed,pointer,void';		// List of variable type values accepted for argument comments
+
+		// Internal, dynamic:
+	var $fileInfo=array();				// Used during the parsing of a file.
+	var $sectionTextCounter=0;			// Counting when sections are found.
+	var $classCounter=0;				// Counting for classes
+	var $colorCount=array();			// Counting functions of "black", "navy" and "red" types
+	
+	var $searchFile_fileCache=array();	// Internal caching of files contents during searching for function names.
+		
+	";i:1;i:-1;}s:12:"content_size";i:931;s:13:"content_lines";i:15;s:6:"atLine";i:63;}i:3;a:7:{s:6:"header";s:64:"function analyseFile($filepath,$extDir,$includeCodeAbstract=1)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:33:"
+
+The main function in the class
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:66:"The absolute path to an existing PHP file which should be analysed";}i:1;a:2:{i:0;s:6:"string";i:1;s:126:"The local/global/system extension main directory relative to PATH_site - normally set to "typo3conf/ext/" for local extensions";}i:2;a:2:{i:0;s:7:"boolean";i:1;s:106:"If true, an abstract of the source code of the functions will be included (approx. 500 bytes per function)";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:30:"HTML content from the function";}}s:7:"content";a:2:{i:0;s:507:"			// Getting the content from the phpfile.
+		$content = t3lib_div::getUrl($filepath);
+		$hash_current = md5($content);
+
+			// Splitting the file based on a regex:
+			// NOTICE: "\{" (escaping a curly brace) should NOT be done when it is in [] - thus below it should be "[^{]" and not "[^\{]" - the last will also find backslash characters in addition to curly braces. But cu
+[...]
+			}
+	
+			return $output;
+		} else return 'ERROR: There was an internal error in process of splitting the PHP-script.';
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:7332;s:13:"content_lines";i:175;s:6:"atLine";i:87;}i:5;a:7:{s:6:"header";s:57:"function updateDat($extDir,$extPhpFiles,$passOn_extDir)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:167:"
+
+Creates an interface where there user can select which "class." files to include in the ext_php_api.dat file which the function can create/update by a single click.
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:43:"$extDir: Extension Directory, absolute path";}i:1;a:2:{i:0;s:5:"array";i:1;s:76:"$extPhpFiles: Array with PHP files (rel. paths) from the extension directory";}i:2;a:2:{i:0;s:6:"string";i:1;s:160:"The local/global/system extension main directory relative to PATH_site - normally set to "typo3conf/ext/" for local extensions. Used to pass on to analyseFile()";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:11:"HTML output";}}s:7:"content";a:2:{i:0;s:507:"		if (is_array($extPhpFiles))	{
+				
+				// GPvars:
+			$doWrite = t3lib_div::_GP('WRITE');
+			$gp_options = t3lib_div::_GP('options');
+		
+	
+				// Find current dat file:
+			$datArray='';
+			if (@is_file($extDir.'ext_php_api.dat'))	{
+				$datArray = unserialize(t3lib_div::getUrl($extDir.'ext_php_api.dat'));
+				if (!is_array($datArray))	{
+					$content.='<br /><br /><p><str
+[...]
+"_" />
+				';
+			}
+						
+		} else $content='<p>No PHP/INC files found extension directory.</p>';
+		
+		return $content;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:7431;s:13:"content_lines";i:163;s:6:"atLine";i:271;}i:7;a:7:{s:6:"header";s:72:"function generateComment($cDat,$commentLinesWhiteSpacePrefix,$isClass)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:49:"
+
+Converts a "cDat" array into a JavaDoc comment
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:5:"array";i:1;s:134:"$cDat: This array contains keys/values which will be turned into a JavaDoc comment (see comment inside this function for the "syntax")";}i:1;a:2:{i:0;s:6:"string";i:1;s:119:"$commentLinesWhiteSpacePrefix: Prefix for the lines in the comment starting with " * " (normally a tab or blank string)";}i:2;a:2:{i:0;s:7:"boolean";i:1;s:51:"$isClass: Tells whether the comment is for a class.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:67:"The JavaDoc comment, lines are indented with one tab (except first)";}}s:7:"content";a:2:{i:0;s:507:"		/*	SYNTAX of cDat array:
+		
+			$cDat['text'] = '
+			Lines of text
+			
+			More lines here.
+			';
+			
+			$cDat['return']=array('string','Description value');
+			$cDat['param'][]=array('string','Description value, param 1');
+			$cDat['param'][]=array('string','Description value, param 2');
+			$cDat['param'][]=array('string','Description value, param 3');
+			$cDat['other'][]
+[...]
+acePrefix.' * '.$v;
+			}
+		}
+		
+		return '/**
+'.implode(chr(10),$commentLines).'
+'.$commentLinesWhiteSpacePrefix.' */';
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1530;s:13:"content_lines";i:56;s:6:"atLine";i:443;}i:9;a:7:{s:6:"header";s:52:"function tryToMakeParamTagsFromFunctionDefLine($v)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:113:"
+
+Creates an array of param-tag parts (designed for a cDat array) from a string containing a PHP-function header
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:86:"String with PHP-function header in, eg. '   function blablabla($this, $that="22")	{		'";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:55:"The function arguments (here: $this, $that) in an array";}}s:7:"content";a:2:{i:0;s:359:"		$reg='';
+		ereg('^[^\(]*\((.*)\)[^\)]*$',$v,$reg);
+		
+		$paramA=array();
+		if (trim($reg[1]))	{
+			$parts = split(',[[:space:]]*[\$&]',$reg[1]);
+
+			foreach($parts as $vv)	{
+				$varName='';
+				list($varName) = t3lib_div::trimExplode('=',ereg_replace('^[\$&]','',$vv),1);
+				$paramA[]=array('[type]','$'.$varName.': ...');
+			}
+		}
+		return $paramA;
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:359;s:13:"content_lines";i:16;s:6:"atLine";i:506;}i:11;a:7:{s:6:"header";s:46:"function parseFunctionComment($content,$arr)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:76:"
+
+Parses a JavaDoc comment into a cDat array with contents for the comment.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:68:"$content: The JavaDoc comment to parse (without initial "[slash]**")";}i:1;a:2:{i:0;s:5:"array";i:1;s:28:"Default array of parameters.";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:43:""cDat" array of the parsed JavaDoc comment.";}}s:7:"content";a:2:{i:0;s:507:"		$pC=0;
+		$outArr = array();
+		$outArr['text']='';
+		$outArr['param']=is_array($arr)?$arr:array();
+		$outArr['return']=array('[type]','...');
+
+		$linesInComment = explode(chr(10),$content);
+		foreach($linesInComment as $v)	{
+			$lineParts = explode('*',$v,2);
+			if (count($lineParts)==2 && !trim($lineParts[0]))	{
+				$lineContent = trim($lineParts[1]);
+				if ($lineConten
+[...]
+_replace('^[ ]','',$lineParts[1]);
+					}
+				}
+			} else {
+				$outArr['text'].=chr(10).$v;
+			}
+		}
+		return $outArr;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1181;s:13:"content_lines";i:44;s:6:"atLine";i:530;}i:13;a:7:{s:6:"header";s:39:"function getWhiteSpacePrefix($string)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:4:{s:4:"text";s:55:"
+
+Returns the whitespace before the [slash]** comment.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:11:"Input value";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:17:"The prefix string";}s:6:"access";s:7:"private";}s:7:"content";a:2:{i:0;s:89:"		$reg=array();
+		ereg(chr(10).'([^'.chr(10).'])$',$string,$reg);
+		return $reg[1];
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:89;s:13:"content_lines";i:5;s:6:"atLine";i:582;}i:15;a:7:{s:6:"header";s:33:"function isHeaderClass($string)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:4:{s:4:"text";s:64:"
+
+Returns the class name if the input string is a class header.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:11:"Input value";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:41:"If a class header, then return class name";}s:6:"access";s:7:"private";}s:7:"content";a:2:{i:0;s:104:"		$reg = '';
+		ereg('class[[:space:]]+([[:alnum:]_]+)[^{]*',trim($string),$reg);
+		return $reg[1];
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:104;s:13:"content_lines";i:5;s:6:"atLine";i:595;}i:17;a:7:{s:6:"header";s:30:"function splitHeader($inStr)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:4:{s:4:"text";s:89:"
+
+Processes the script-header (with comments like license, author, class/function index)
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:24:"$inStr: The header part.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:16:"Processed output";}s:6:"access";s:7:"private";}s:7:"content";a:2:{i:0;s:507:"		$splitStr = md5(microtime());
+		$string = $inStr;
+		$string = ereg_replace('('.chr(10).'[[:space:]]*)(\/\*\*)','\1'.$splitStr.'\2',$string);
+		$string = ereg_replace('(\*\/)([[:space:]]*'.chr(10).')','\1'.$splitStr.'\2',$string);
+		
+		$comments = explode($splitStr,$string);
+		$funcCounter=0;
+
+		if (md5($inStr)==md5(implode('',$comments)))	{
+			foreach($comments as $k => 
+[...]
+				
+						
+						');
+					}
+				}
+			}
+			$inStr=implode('',$comments);
+		} else debug('MD5 error:');
+		return $inStr;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1825;s:13:"content_lines";i:56;s:6:"atLine";i:608;}i:19;a:7:{s:6:"header";s:43:"function includeContent($content, $class)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:4:{s:4:"text";s:77:"
+
+Returns content to include in the ->fileInfo array (for API documentation)
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:31:"$content: The function content.";}i:1;a:2:{i:0;s:7:"boolean";i:1;s:22:"$class: If class start";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:18:"Processed content.";}s:6:"access";s:7:"private";}s:7:"content";a:2:{i:0;s:337:"		if ($class)	return array($content,-1);
+		
+		if ($this->includeContent>0)	{
+			if (strlen($content) > $this->includeContent+100)	{
+				return array(substr($content,0,$this->includeContent*3/4).
+					chr(10).
+					'[...]'.
+					chr(10).
+					substr($content,-($this->includeContent*1/4)),1);
+			} else return array($content,0);
+		}
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:337;s:13:"content_lines";i:13;s:6:"atLine";i:673;}i:21;a:7:{s:6:"header";s:45:"function getSectionDivisionComment($string)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:4:{s:4:"text";s:55:"
+
+Tries to get the division comment above the function
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:6:"string";i:1;s:24:"$string: Content to test";}}s:6:"return";a:2:{i:0;s:5:"mixed";i:1;s:47:"Returns array with comment text lines if found.";}s:6:"access";s:7:"private";}s:7:"content";a:2:{i:0;s:374:"		$comment = t3lib_div::revExplode('**/',$string,2);
+		if (trim($comment[1]) && ereg('\*\/$',trim($comment[1])))	{
+			$outLines=array();
+			$cDat = $this->parseFunctionComment($comment[1],array());
+			$textLines = t3lib_div::trimExplode(chr(10),$cDat['text'],1);
+			foreach($textLines as $v)	{
+				if (substr($v,0,1)!='*')	$outLines[]=$v;
+			}
+			return $outLines;
+		}
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:374;s:13:"content_lines";i:12;s:6:"atLine";i:694;}i:23;a:7:{s:6:"header";s:50:"function checkCommentQuality($datArray,$class=0)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:32:"
+
+My function is cool and clear
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:5:"array";i:1;s:104:"Array of function comment information; this includes the keys "text" "params" and "return" for instance.";}i:1;a:2:{i:0;s:7:"boolean";i:1;s:56:"If true, the information is for a class, not a function.";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:50:"Array with message/severity and max-severity level";}}s:7:"content";a:2:{i:0;s:507:"
+			// Initialize:
+		$messages=array();
+		$severity=array();	// Add values 1-3, 3 is worts, 1 is cosmetic.
+
+		if (is_array($datArray))	{	// If comment is found:
+
+				// Analyse text:
+			$text = trim($datArray['text']);
+			
+			if (!$text)	{
+				$messages[]='Function/Class has no comment text at all. Please supply that!';
+				$severity[]=3;
+			} elseif (t3lib_div::isFirstPar
+[...]
+/ Create output array:
+		$output = array($messages, $severity, count($severity)?max($severity):0);
+		
+		return $output;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1479;s:13:"content_lines";i:43;s:6:"atLine";i:714;}i:25;a:7:{s:6:"header";s:81:"function checkParameterComment($var,$label,&$messages,&$severity,$return=FALSE)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:5:{s:4:"text";s:57:"
+
+Checking function arguments / return value for quality
+";s:5:"param";a:5:{i:0;a:2:{i:0;s:5:"array";i:1;s:70:"Array with keys 0/1 being type / comment of the argument being checked";}i:1;a:2:{i:0;s:6:"string";i:1;s:87:"Label identifying the argument/return, eg. "Function argument number 1" or "Return tag"";}i:2;a:2:{i:0;s:5:"array";i:1;s:46:"Array of return messages. Passed by reference!";}i:3;a:2:{i:0;s:5:"array";i:1;s:46:"Array of severity levels. Passed by reference!";}i:4;a:2:{i:0;s:7:"boolean";i:1;s:44:"If true, the comment is for the @return tag.";}}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:96:"No return value needed - changes made to messages/severity arrays which are passed by reference.";}s:5:"other";a:1:{i:0;s:26:"@see checkCommentQuality()";}s:11:"other_index";a:1:{s:4:"@see";a:1:{i:0;s:22:"checkCommentQuality() ";}}}s:7:"content";a:2:{i:0;s:507:"		if (trim($var[0])=='[type]')	{
+			$messages[]=$label.' had type "[type]" (or does not exist) which is the default label applied by the documentation help module. Please enter a proper type for variable ('.$this->varTypeList.').';
+			$severity[]=3;
+		} elseif (!t3lib_div::inList($this->varTypeList,$var[0])) {
+			$messages[]=$label.' had type "'.$var[0].'" which is not in 
+[...]
+his->argCommentLen.' chars), which can hardly be sufficiently descriptive. Please correct';
+				$severity[]=2;
+			}
+		}
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:899;s:13:"content_lines";i:15;s:6:"atLine";i:769;}i:27;a:4:{s:6:"header";s:69:"function countFunctionUsage($functionHeader, $extPhpFiles, $extDir)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:78:"
+
+Counts the usage of a function/class in all files related to the extension!
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:54:"Function or class header, eg. "function blablabla() {"";}i:1;a:2:{i:0;s:5:"array";i:1;s:41:"Array of files in the extension to search";}i:2;a:2:{i:0;s:6:"string";i:1;s:51:"Absolute directory prefix for files in $extPhpFiles";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:29:"Count statistics in an array.";}}s:6:"atLine";i:793;}i:29;a:7:{s:6:"header";s:55:"function searchFile($splitString, $fileName, $extDir)	{";s:11:"parentClass";s:20:"tx_extdeveval_phpdoc";s:4:"cDat";a:3:{s:4:"text";s:30:"
+
+Searches a file for a regex
+";s:5:"param";a:3:{i:0;a:2:{i:0;s:6:"string";i:1;s:50:"Regex to split the content with (based on split())";}i:1;a:2:{i:0;s:6:"string";i:1;s:64:"The filename to search in (is cached each time it has been read)";}i:2;a:2:{i:0;s:6:"string";i:1;s:63:"Absolute path to the directory of the file (prefix for reading)";}}s:6:"return";a:2:{i:0;s:5:"array";i:1;s:131:"Array of count statistics. First key (0 - zero) contains the count information. (Rest is reserved for future use, like linenumbers)";}}s:7:"content";a:2:{i:0;s:507:"
+			// Set/Get file content from cache:
+		if (!isset($this->searchFile_fileCache[$fileName]))	{
+			$this->searchFile_fileCache[$fileName] = strtolower(t3lib_div::getUrl($extDir.$fileName));	// strtolower for matching case insensitive...
+		}
+
+			// Make search (by splitting)
+		$result = split($splitString, $this->searchFile_fileCache[$fileName]);
+
+		if (count($result)>1)	{
+
+[...]
+c.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_phpdoc.php']);
+}
+?>
+";i:1;i:1;}s:12:"content_size";i:691;s:13:"content_lines";i:22;s:6:"atLine";i:868;}}s:10:"usageCount";a:15:{s:12:"H_5af983afc1";a:5:{s:3:"ALL";a:2:{s:12:"makeinstance";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:117;s:15:"_functionHeader";s:28:"class tx_extdeveval_phpdoc {";}s:12:"H_13aeafaaf4";a:5:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:64:"function analyseFile($filepath,$extDir,$includeCodeAbstract=1)	{";}s:12:"H_5a342c1c97";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:57:"function updateDat($extDir,$extPhpFiles,$passOn_extDir)	{";}s:12:"H_17cc62ba7f";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:72:"function generateComment($cDat,$commentLinesWhiteSpacePrefix,$isClass)	{";}s:12:"H_1f93162fc5";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:52:"function tryToMakeParamTagsFromFunctionDefLine($v)	{";}s:12:"H_4c283504e1";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:24:"_searchtime_milliseconds";d:13;s:15:"_functionHeader";s:46:"function parseFunctionComment($content,$arr)	{";}s:12:"H_1c24d9847e";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:39:"function getWhiteSpacePrefix($string)	{";}s:12:"H_7a3b1085a6";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:33:"function isHeaderClass($string)	{";}s:12:"H_5e643e41a1";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:30:"function splitHeader($inStr)	{";}s:12:"H_d84831f0f7";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:15;s:15:"_functionHeader";s:43:"function includeContent($content, $class)	{";}s:12:"H_17a645e8f1";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:45:"function getSectionDivisionComment($string)	{";}s:12:"H_554a2ec4d4";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:50:"function checkCommentQuality($datArray,$class=0)	{";}s:12:"H_fe4ffe076a";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:13;s:15:"_functionHeader";s:81:"function checkParameterComment($var,$label,&$messages,&$severity,$return=FALSE)	{";}s:12:"H_9a8bffa903";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:69:"function countFunctionUsage($functionHeader, $extPhpFiles, $extDir)	{";}s:12:"H_db04b51537";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:24:"_searchtime_milliseconds";d:16;s:15:"_functionHeader";s:55:"function searchFile($splitString, $fileName, $extDir)	{";}}}s:14:"MD5_4adbf8c092";a:5:{s:8:"filename";s:40:"mod1/class.tx_extdeveval_submodgetll.php";s:8:"filesize";i:8669;s:6:"header";a:5:{s:4:"text";s:143:"
+
+Class for substituting empty getLL() function calls with ones with a key (auto-made) and the value formatted for entry into a locallang file
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:4:{i:1;a:8:{s:6:"header";s:33:"class tx_extdeveval_submodgetll {";s:5:"class";i:1;s:11:"parentClass";s:25:"tx_extdeveval_submodgetll";s:4:"cDat";a:5:{s:4:"text";s:143:"
+
+Class for substituting empty getLL() function calls with ones with a key (auto-made) and the value formatted for entry into a locallang file
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:260:"	
+	var $keepValue = 0;		// If set, the getLL functions (for pi_ at least) will have their second parameter set to the value, otherwise blank (recommended)
+	var $module=1;			// Whether the class looks for "$this->pi_getLL(" or "$LANG->getLL"
+	var $prefix='';
+
+	";i:1;i:-1;}s:12:"content_size";i:260;s:13:"content_lines";i:5;s:6:"atLine";i:51;}i:3;a:7:{s:6:"header";s:41:"function analyseFile($filepath,$extDir)	{";s:11:"parentClass";s:25:"tx_extdeveval_submodgetll";s:4:"cDat";a:3:{s:4:"text";s:31:"
+
+Main function in this class.
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:66:"The absolute path to an existing PHP file which should be analysed";}i:1;a:2:{i:0;s:6:"string";i:1;s:126:"The local/global/system extension main directory relative to PATH_site - normally set to "typo3conf/ext/" for local extensions";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:30:"HTML content from the function";}}s:7:"content";a:2:{i:0;s:507:"			// Getting the content from the phpfile.
+		$content = t3lib_div::getUrl($filepath);
+		$this->prefix = strtolower(ereg_replace('[^[:alnum:]]*','',t3lib_div::_GP('prefix')));
+		
+			// String to explode filecontent with + exploding
+		if (strstr($content,'$LANG->getLL('))	{
+			$expStr = '$LANG->getLL(\'\',\'';
+			$expStrSubst = '$LANG->getLL(\'%s\',\'1';
+		} elseif (strstr(
+[...]
+S['TBE_TEMPLATE']->formWidthText(48,'','off').'>'.$this->makeLLArrayPart($llArray).'</textarea>';
+		
+
+		return $output;
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:4578;s:13:"content_lines";i:108;s:6:"atLine";i:64;}i:5;a:4:{s:6:"header";s:27:"function llKey($f,$value)	{";s:11:"parentClass";s:25:"tx_extdeveval_submodgetll";s:4:"cDat";a:3:{s:4:"text";s:81:"
+
+Generates a suggested locallang key based on input function name and the value
+";s:5:"param";a:2:{i:0;a:2:{i:0;s:6:"string";i:1;s:43:"$f: Function name. Will use first 10 chars.";}i:1;a:2:{i:0;s:6:"string";i:1;s:65:"$value: The label value. Will take the first three words and use.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:35:"Output suggestion for locallang key";}}s:6:"atLine";i:180;}i:7;a:7:{s:6:"header";s:34:"function makeLLArrayPart($llArr)	{";s:11:"parentClass";s:25:"tx_extdeveval_submodgetll";s:4:"cDat";a:3:{s:4:"text";s:93:"
+
+Compiles a part of a PHP-array structure from the input array of locallang key/value pairs
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:98:"$llArr: locallang key/value pairs (where any single-quotes in the value would already be escaped!)";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:83:"String ready to insert into a locallang files definition of the "default" language.";}}s:7:"content";a:2:{i:0;s:383:"		$lines = array();
+		foreach($llArr as $k => $v)	{
+			$lines[]="
+		'".$k."' => '".$v."',";			
+		}
+		return implode('',$lines);
+	}
+}
+
+
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_submodgetll.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_submodgetll.php']);
+}
+?>";i:1;i:0;}s:12:"content_size";i:383;s:13:"content_lines";i:13;s:6:"atLine";i:206;}}s:10:"usageCount";a:4:{s:12:"H_3a0b9596fd";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:29;s:15:"_functionHeader";s:33:"class tx_extdeveval_submodgetll {";}s:12:"H_a9913f0bf2";a:5:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_9b229070ec";a:3:{s:8:"fileName";s:35:"mod1/class.tx_extdeveval_phpdoc.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:11;s:15:"_functionHeader";s:41:"function analyseFile($filepath,$extDir)	{";}s:12:"H_a2c4bd82af";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_4adbf8c092";a:3:{s:8:"fileName";s:40:"mod1/class.tx_extdeveval_submodgetll.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:7;s:15:"_functionHeader";s:27:"function llKey($f,$value)	{";}s:12:"H_3ad7ae7dee";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_4adbf8c092";a:3:{s:8:"fileName";s:40:"mod1/class.tx_extdeveval_submodgetll.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:34:"function makeLLArrayPart($llArr)	{";}}}s:14:"MD5_2830450252";a:5:{s:8:"filename";s:33:"mod1/class.tx_extdeveval_tmpl.php";s:8:"filesize";i:4822;s:6:"header";a:5:{s:4:"text";s:37:"
+
+Class for dumping template tables.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:3:{i:1;a:8:{s:6:"header";s:26:"class tx_extdeveval_tmpl {";s:5:"class";i:1;s:11:"parentClass";s:18:"tx_extdeveval_tmpl";s:4:"cDat";a:5:{s:4:"text";s:37:"
+
+Class for dumping template tables.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:62:"
+		// Internal, GPvars:
+	var $table;
+	var $hide;
+	var $uid;
+
+	";i:1;i:-1;}s:12:"content_size";i:62;s:13:"content_lines";i:6;s:6:"atLine";i:51;}i:3;a:4:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:18:"tx_extdeveval_tmpl";s:4:"cDat";a:3:{s:4:"text";s:51:"
+
+Main function, launching the dump functionality.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:28:"HTML content for the module.";}}s:6:"atLine";i:63;}i:5;a:7:{s:6:"header";s:34:"function getTemplateOutput($row)	{";s:11:"parentClass";s:18:"tx_extdeveval_tmpl";s:4:"cDat";a:3:{s:4:"text";s:54:"
+
+Renders the content of a static / sys template row.
+";s:5:"param";a:1:{i:0;a:2:{i:0;s:5:"array";i:1;s:50:"Record from static_template or sys_template table.";}}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:64:"Plain text content. Must be htmlspecialchars()'ed before output.";}}s:7:"content";a:2:{i:0;s:507:"		$title = 'TITLE: '.$row['title'].'                                                                      ';
+		$info = 'PID: '.$row['pid'].'  UID: '.$row['uid'].'                                                                    ';
+		
+		$out='';
+		$out.="[*******************************************************************]\n";
+		$out.="[*** ".substr($title,0,59)." ***]\n"
+[...]
+tmpl.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/class.tx_extdeveval_tmpl.php']);
+}
+?>";i:1;i:1;}s:12:"content_size";i:1270;s:13:"content_lines";i:29;s:6:"atLine";i:127;}}s:10:"usageCount";a:3:{s:12:"H_f320c885ed";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:102;s:15:"_functionHeader";s:26:"class tx_extdeveval_tmpl {";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_812fead743";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_2830450252";a:3:{s:8:"fileName";s:33:"mod1/class.tx_extdeveval_tmpl.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:34:"function getTemplateOutput($row)	{";}}}s:14:"MD5_19aaeae789";a:5:{s:8:"filename";s:14:"mod1/index.php";s:8:"filesize";i:23529;s:6:"header";a:5:{s:4:"text";s:63:"
+
+Script class for the Extension Development Evaluation module
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:3:"DAT";a:10:{i:1;a:8:{s:6:"header";s:50:"class tx_extdeveval_module1 extends t3lib_SCbase {";s:5:"class";i:1;s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:5:{s:4:"text";s:63:"
+
+Script class for the Extension Development Evaluation module
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"[type]";i:1;s:3:"...";}s:5:"other";a:3:{i:0;s:42:"@author	Kasper Skaarhoj <kasper@typo3.com>";i:1;s:14:"@package TYPO3";i:2;s:25:"@subpackage tx_extdeveval";}s:11:"other_index";a:3:{s:7:"@author";a:1:{i:0;s:34:"Kasper Skaarhoj <kasper@typo3.com>";}s:8:"@package";a:1:{i:0;s:6:"TYPO3 ";}s:11:"@subpackage";a:1:{i:0;s:14:"tx_extdeveval ";}}}s:7:"content";a:2:{i:0;s:333:"
+		// Internal, fixed:
+	var $localExtensionDir = 'typo3conf/ext/';			// Operate on local extensions (the ext. main dir relative to PATH_site). Can be set to the global and system ext. dirs as well (but should not be needed for the common man...)
+#	var $localExtensionDir = 'typo3/ext/';
+#	var $localExtensionDir = 'typo3/sysext/';
+
+	";i:1;i:-1;}s:12:"content_size";i:333;s:13:"content_lines";i:6;s:6:"atLine";i:73;}i:3;a:7:{s:6:"header";s:17:"function init()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:50:"
+
+Init function, calling the parent init function
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:23:"		parent::init();
+	}
+
+	";i:1;i:0;}s:12:"content_size";i:23;s:13:"content_lines";i:3;s:6:"atLine";i:85;}i:5;a:7:{s:6:"header";s:23:"function menuConfig()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:75:"
+
+Adds items to the ->MOD_MENU array. Used for the function menu selector.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:507:"		global $LANG;
+		$this->MOD_MENU = Array (
+			'function' => Array (
+				'1' => 'getLL() converter',
+				'2' => 'PHP script documentation help',
+				'4' => 'Create/Update Extensions PHP API data',
+#				'5' => 'Create/Update Extensions TypoScript API data (still empty)',
+				'6' => 'Display API from "ext_php_api.dat" file',
+				'3' => 'temp_CACHED files confirmed removal',
+
+[...]
+
+			'phpFile' => '',
+			'tuneXHTML' => '',
+			'tuneQuotes' => '',
+			'tuneBeautify' => '',
+		);
+		parent::menuConfig();
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:745;s:13:"content_lines";i:26;s:6:"atLine";i:94;}i:7;a:7:{s:6:"header";s:17:"function main()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:67:"
+
+Main function of the module. Write the content to $this->content
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:507:"		global $BE_USER,$LANG,$BACK_PATH,$TCA_DESCR,$TCA,$HTTP_GET_VARS,$HTTP_POST_VARS,$CLIENT,$TYPO3_CONF_VARS;
+		
+			// Draw the header.
+		$this->doc = t3lib_div::makeInstance('noDoc');
+		$this->doc->backPath = $BACK_PATH;
+		$this->doc->form='<form action="" method="post">';
+		$this->doc->docType = 'xhtml_trans';
+
+			// JavaScript
+		$this->doc->JScode = $this->doc->wrapScript
+[...]
+on('id',implode(',',array_keys($this->MOD_MENU)),$this->MCONF['name']));
+		}
+
+		$this->content.=$this->doc->spacer(10);
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:3908;s:13:"content_lines";i:84;s:6:"atLine";i:126;}i:9;a:7:{s:6:"header";s:25:"function printContent()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:29:"
+
+Prints out the module HTML
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:127:"		global $SOBE;
+
+		$this->content.=$this->doc->middle();
+		$this->content.=$this->doc->endPage();
+		echo $this->content;
+	}
+	
+	";i:1;i:0;}s:12:"content_size";i:127;s:13:"content_lines";i:7;s:6:"atLine";i:216;}i:11;a:7:{s:6:"header";s:26:"function moduleContent()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:31:"
+
+Generates the module content
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:4:"void";i:1;s:0:"";}}s:7:"content";a:2:{i:0;s:507:"		switch((string)$this->MOD_SETTINGS['function'])	{
+			case 1:
+				$content = 'A tool which helps developers of extensions to (more) easily convert hardcoded labels to labels provided by the localization engine in TYPO3 (using the pi_getLL() functions)';
+				$this->content.=$this->doc->section('getLL() converter',$content,0,1);
+				$phpFile = $this->getCurrentPHPfileName()
+[...]
+
+	
+	/*************************************
+	 *
+	 * Various helper functions
+	 * 
+	 *************************************/
+	
+	";i:1;i:1;}s:12:"content_size";i:11244;s:13:"content_lines";i:227;s:6:"atLine";i:229;}i:13;a:8:{s:6:"header";s:40:"function getSelectForLocalExtensions()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:11:"sectionText";a:1:{i:0;s:24:"Various helper functions";}s:4:"cDat";a:3:{s:4:"text";s:87:"
+
+Generates a selector box with the extension keys locally available for this install.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:76:"Selector box for selecting the local extension to work on (or error message)";}}s:7:"content";a:2:{i:0;s:507:"		$path = PATH_site.$this->localExtensionDir;
+		if (@is_dir($path))	{
+			$dirs = t3lib_div::get_dirs($path);
+			if (is_array($dirs))	{
+				sort($dirs);
+				$opt=array();
+				$opt[]='<option value="">[ Select Local Extension ]</option>';
+				foreach($dirs as $dirName)		{
+					$selVal = strcmp($dirName,$this->MOD_SETTINGS['extSel']) ? '' : ' selected="selected"';
+					$opt[]
+[...]
+OR: Could not read directories from path: "'.$path.'"';
+		} else return 'ERROR: No local extensions path: "'.$path.'"';
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:785;s:13:"content_lines";i:16;s:6:"atLine";i:462;}i:15;a:7:{s:6:"header";s:39:"function getSelectForExtensionFiles()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:79:"
+
+Generates a selector box with file names of the currently selected extension
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:29:"Selectorbox or error message.";}}s:7:"content";a:2:{i:0;s:507:"		if ($this->MOD_SETTINGS['extSel'])	{
+			$path = PATH_site.$this->localExtensionDir.ereg_replace('\/$','',$this->MOD_SETTINGS['extSel']).'/';
+			if (@is_dir($path))	{
+				$phpFiles = t3lib_div::removePrefixPathFromList(t3lib_div::getAllFilesAndFoldersInPath(array(),$path,'php,inc'),$path);
+				if (is_array($phpFiles))	{
+					sort($phpFiles);
+					$opt=array();
+					$allFi
+[...]
+nd in path: "'.$path.'"';
+			} else return 'ERROR: Local extension not found: "'.$this->MOD_SETTINGS['extSel'].'"';
+		}
+	}
+
+	";i:1;i:1;}s:12:"content_size";i:1184;s:13:"content_lines";i:21;s:6:"atLine";i:484;}i:17;a:4:{s:6:"header";s:34:"function getCurrentPHPfileName()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:120:"
+
+Returns the currently selected PHP file name according to the selectors with field names SET[extSel] and SET[phpFile]
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:5:"mixed";i:1;s:75:"String: Error message. Array: The PHP-file as first value in key "0" (zero)";}}s:6:"atLine";i:511;}i:19;a:7:{s:6:"header";s:29:"function getCurrentExtDir()	{";s:11:"parentClass";s:21:"tx_extdeveval_module1";s:4:"cDat";a:3:{s:4:"text";s:75:"
+
+Returns the absolute path to the currently selected extension directory.
+";s:5:"param";a:0:{}s:6:"return";a:2:{i:0;s:6:"string";i:1;s:82:"Returns the directory IF it is also found to be a true directory. Otherwise blank.";}}s:7:"content";a:2:{i:0;s:507:"		if ($this->MOD_SETTINGS['extSel'])	{
+			$path = PATH_site.$this->localExtensionDir.ereg_replace('\/$','',$this->MOD_SETTINGS['extSel']).'/';
+			if (@is_dir($path))	{
+				return $path;
+			}
+		}
+	}
+}
+
+
+
+if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval/mod1/index.php'])	{
+	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/extdeveval
+[...]
+ILE)=each($SOBE->include_once))	{	include_once($INC_FILE);	}
+$SOBE->checkExtObj();
+
+$SOBE->main();
+$SOBE->printContent();
+
+?>";i:1;i:1;}s:12:"content_size";i:683;s:13:"content_lines";i:30;s:6:"atLine";i:530;}}s:10:"usageCount";a:10:{s:12:"H_6d1c2c781e";a:4:{s:3:"ALL";a:2:{s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:12:"makeinstance";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:108;s:15:"_functionHeader";s:50:"class tx_extdeveval_module1 extends t3lib_SCbase {";}s:12:"H_7c6ff40199";a:4:{s:3:"ALL";a:3:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:2;s:14:"nonObjectUsage";i:1;}s:14:"MD5_19aaeae789";a:4:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:2;s:14:"nonObjectUsage";i:1;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:17:"function init()	{";}s:12:"H_759a824b85";a:4:{s:3:"ALL";a:2:{s:14:"nonObjectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:14:"nonObjectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:23:"function menuConfig()	{";}s:12:"H_9c2550bb82";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:7;s:5:"TOTAL";i:7;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:17:"function main()	{";}s:12:"H_a337945941";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:25:"function printContent()	{";}s:12:"H_2bf59c198a";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:3;s:15:"_functionHeader";s:26:"function moduleContent()	{";}s:12:"H_7766cbba2d";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:9;s:15:"_functionHeader";s:40:"function getSelectForLocalExtensions()	{";}s:12:"H_1865c9fcee";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:1;s:5:"TOTAL";i:1;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:39:"function getSelectForExtensionFiles()	{";}s:12:"H_a48fdb0c52";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:3;s:5:"TOTAL";i:3;}s:24:"_searchtime_milliseconds";d:10;s:15:"_functionHeader";s:34:"function getCurrentPHPfileName()	{";}s:12:"H_2cc488c248";a:4:{s:3:"ALL";a:2:{s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:14:"MD5_19aaeae789";a:3:{s:8:"fileName";s:14:"mod1/index.php";s:11:"objectUsage";i:2;s:5:"TOTAL";i:2;}s:24:"_searchtime_milliseconds";d:8;s:15:"_functionHeader";s:29:"function getCurrentExtDir()	{";}}}}}
