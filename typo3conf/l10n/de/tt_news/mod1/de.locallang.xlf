@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:56:15 UTC 2011" product-name="tt_news">
+    <header/>
+    <body>
+      <trans-unit id="title" approved="yes">
+        <source>News Admin</source>
+        <target state="translated">Nachrichtenverwaltung</target>
+      </trans-unit>
+      <trans-unit id="function1" approved="yes">
+        <source>News category manager</source>
+        <target state="translated">Nachrichtenkategorieverwaltung</target>
+      </trans-unit>
+      <trans-unit id="function2">
+        <source/>
+      </trans-unit>
+      <trans-unit id="nothingfound" approved="yes">
+        <source>This page contains no tt_news categories. Please select a page with categories from the list below:</source>
+        <target state="translated">Diese Seite enthält keine tt_news-Kategorien. Bitte wählen Sie eine Seite mit Kategorien aus der folgenden Liste:</target>
+      </trans-unit>
+      <trans-unit id="noNewsFound" approved="yes">
+        <source>There are no news matching the current selection.</source>
+        <target state="translated">Es gibt keine Artikel in der aktuellen Auswahl.</target>
+      </trans-unit>
+      <trans-unit id="showSubcatgories" approved="yes">
+        <source>Show subcategories</source>
+        <target state="translated">Unterkategorien anzeigen</target>
+      </trans-unit>
+      <trans-unit id="hideSubcatgories" approved="yes">
+        <source>Hide subcategories</source>
+        <target state="translated">Unterkategorien verbergen</target>
+      </trans-unit>
+      <trans-unit id="path" approved="yes">
+        <source>Path:</source>
+        <target state="translated">Pfad:</target>
+      </trans-unit>
+      <trans-unit id="categories" approved="yes">
+        <source>Categories:</source>
+        <target state="translated">Kategorien:</target>
+      </trans-unit>
+      <trans-unit id="showOnlyEditable" approved="yes">
+        <source>Show only editable records</source>
+        <target state="translated">Nur editierbare Datensätze anzeigen</target>
+      </trans-unit>
+      <trans-unit id="showThumbs" approved="yes">
+        <source>Show images</source>
+        <target state="translated">Bilder anzeigen</target>
+      </trans-unit>
+      <trans-unit id="defaultLangLabel" approved="yes">
+        <source>Default</source>
+        <target state="translated">Standard</target>
+      </trans-unit>
+      <trans-unit id="allPages" approved="yes">
+        <source>all pages</source>
+        <target state="translated">allen Seiten</target>
+      </trans-unit>
+      <trans-unit id="thisPage" approved="yes">
+        <source>this page</source>
+        <target state="translated">dieser Seite</target>
+      </trans-unit>
+      <trans-unit id="oneLevel" approved="yes">
+        <source>this page and 1 level down</source>
+        <target state="translated">dieser Seite + 1 Ebene</target>
+      </trans-unit>
+      <trans-unit id="twoLevels" approved="yes">
+        <source>this page and 2 levels down</source>
+        <target state="translated">dieser Seite + 2 Ebenen</target>
+      </trans-unit>
+      <trans-unit id="threeLevels" approved="yes">
+        <source>this page and 3 levels down</source>
+        <target state="translated">dieser Seite + 3 Ebenen</target>
+      </trans-unit>
+      <trans-unit id="fourLevels" approved="yes">
+        <source>this page and 4 levels down</source>
+        <target state="translated">dieser Seite + 4 Ebenen</target>
+      </trans-unit>
+      <trans-unit id="enterSearchLevels" approved="yes">
+        <source>Show news from:</source>
+        <target state="translated">Zeige Artikel in:</target>
+      </trans-unit>
+      <trans-unit id="showingAll" approved="yes">
+        <source>Showing news from all categories.</source>
+        <target state="translated">Artikel aus allen Kategorien</target>
+      </trans-unit>
+      <trans-unit id="showingOnlyCat" approved="yes">
+        <source>Showing news from category: </source>
+        <target state="translated">Artikel aus der Kategorie:</target>
+      </trans-unit>
+      <trans-unit id="selectCategory" approved="yes">
+        <source>Please select a category </source>
+        <target state="translated">Bitte eine Kategorie auswählen</target>
+      </trans-unit>
+      <trans-unit id="showEditIcons" approved="yes">
+        <source>Show edit icons in tree</source>
+        <target state="translated">Bearbeiten-Symbole in der Baumansicht anzeigen</target>
+      </trans-unit>
+      <trans-unit id="expandAll" approved="yes">
+        <source>Expand all</source>
+        <target state="translated">Alle öffnen</target>
+      </trans-unit>
+      <trans-unit id="showHiddenCategories" approved="yes">
+        <source>Show hidden categories</source>
+        <target state="translated">Versteckte Kategorien anzeigen</target>
+      </trans-unit>
+      <trans-unit id="treeTitle" approved="yes">
+        <source>News categories</source>
+        <target state="translated">Nachrichtenkategorien</target>
+      </trans-unit>
+      <trans-unit id="resetCatSelection" approved="yes">
+        <source>[reset selection]</source>
+        <target state="translated">[Auswahl zurücksetzen]</target>
+      </trans-unit>
+      <trans-unit id="showAllResetSel" approved="yes">
+        <source>Reset current category selection</source>
+        <target state="translated">[Kategorieauswahl zurücksetzen]</target>
+      </trans-unit>
+      <trans-unit id="moveCategoryinto" approved="yes">
+        <source>Move category into</source>
+        <target state="translated">Kategorie verschieben in</target>
+      </trans-unit>
+      <trans-unit id="copyCategoryinto" approved="yes">
+        <source>Copy category into</source>
+        <target state="translated">Kategorie kopieren in</target>
+      </trans-unit>
+      <trans-unit id="copyCategoryafter" approved="yes">
+        <source>Copy category after</source>
+        <target state="translated">Kategorie kopieren hinter</target>
+      </trans-unit>
+      <trans-unit id="createCategory" approved="yes">
+        <source>Create new category</source>
+        <target state="translated">Neue Kategorie anlegen</target>
+      </trans-unit>
+      <trans-unit id="createArticle" approved="yes">
+        <source>Create new article</source>
+        <target state="translated">Neuen Artikel anlegen</target>
+      </trans-unit>
+      <trans-unit id="createArticleInCategory" approved="yes">
+        <source>Create new article in this category</source>
+        <target state="translated">Neuen Artikel in dieser Kategorie anlegen</target>
+      </trans-unit>
+      <trans-unit id="edit" approved="yes">
+        <source>Edit record</source>
+        <target state="translated">Datensatz bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="showInfo" approved="yes">
+        <source>Show information</source>
+        <target state="translated">Informationen anzeigen</target>
+      </trans-unit>
+      <trans-unit id="unHide" approved="yes">
+        <source>Unhide Record</source>
+        <target state="translated">Datensatz sichtbar machen</target>
+      </trans-unit>
+      <trans-unit id="hide" approved="yes">
+        <source>Hide Record</source>
+        <target state="translated">Datensatz verbergen</target>
+      </trans-unit>
+      <trans-unit id="deleteWarning" approved="yes">
+        <source>Are you sure you want to delete this record?</source>
+        <target state="translated">Diesen Datensatz tatsächlich löschen?</target>
+      </trans-unit>
+      <trans-unit id="delete" approved="yes">
+        <source>Delete record (!)</source>
+        <target state="translated">Datensatz löschen (!)</target>
+      </trans-unit>
+      <trans-unit id="openFePreview" approved="yes">
+        <source>Open preview</source>
+        <target state="translated">Vorschau öffnen</target>
+      </trans-unit>
+      <trans-unit id="noEditPagePerms" approved="yes">
+        <source>You're not allowed to edit content in the page where this record is located.</source>
+        <target state="translated">Sie haben keine Berechtigung, den Inhalt jener Seite zu editieren, in der dieser Datensatz gespeichert ist.</target>
+      </trans-unit>
+      <trans-unit id="noEditCategories" approved="yes">
+        <source>You're not allowed to edit this record because it has disallowed categories assigned.</source>
+        <target state="translated">Sie haben keine Berechtigung, diesen Datensatz zu editieren, weil Sie eine der zugewiesenen Kategorien nicht editieren dürfen.</target>
+      </trans-unit>
+      <trans-unit id="first" approved="yes">
+        <source>First</source>
+        <target state="translated">Erste</target>
+      </trans-unit>
+      <trans-unit id="last" approved="yes">
+        <source>Last</source>
+        <target state="translated">Letzte</target>
+      </trans-unit>
+      <trans-unit id="reload" approved="yes">
+        <source>Reload</source>
+        <target state="translated">Neu laden</target>
+      </trans-unit>
+      <trans-unit id="next" approved="yes">
+        <source>Next</source>
+        <target state="translated">Nächste</target>
+      </trans-unit>
+      <trans-unit id="previous" approved="yes">
+        <source>Previous</source>
+        <target state="translated">Vorige</target>
+      </trans-unit>
+      <trans-unit id="pageIndicator" approved="yes">
+        <source>Page %1$s of %2$d</source>
+        <target state="translated">Seite %1$s von %2$d</target>
+      </trans-unit>
+      <trans-unit id="rangeIndicator" approved="yes">
+        <source>Records %1$d - %2$d of %3$d</source>
+        <target state="translated">Datensätze %1$d - %2$d von %3$d</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

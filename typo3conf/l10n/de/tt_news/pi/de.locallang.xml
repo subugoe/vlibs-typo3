@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="latestHeader">Aktuelles:</label>
+      <label index="textCatLatest">Kat:</label>
+      <label index="textCat">Kategorie:</label>
+      <label index="textNewsAge">Alter:</label>
+      <label index="more">[mehr]</label>
+      <label index="preAuthor">Von:</label>
+      <label index="backToList">&lt;- Zurück zu: %s</label>
+      <label index="goToArchive">zum Archiv -&gt;</label>
+      <label index="archiveHeader">Archiv:</label>
+      <label index="archiveItems">Einträge</label>
+      <label index="archiveItem">Artikel</label>
+      <label index="archiveEmptyMsg">Es sind leider keine Artikel im Archiv vorhanden.</label>
+      <label index="noResultsMsg">Keine Treffer</label>
+      <label index="searchEmptyMsg">Bitte geben Sie einen Suchbegriff ein.</label>
+      <label index="noNewsToListMsg">Keine Artikel in dieser Ansicht.</label>
+      <label index="versionPreviewMessage">Versionsvorschau!</label>
+      <label index="versionPreviewMessageLinkToOriginal">(Klicken Sie hier, um die öffentliche Version dieses Artikels zu sehen)</label>
+      <label index="nonPlublicVersionMsg">Fehler! Sie haben eine nicht-öffentliche Version eines Artikels aufgerufen.</label>
+      <label index="noNewsIdMsg">Keine news_id übergeben.</label>
+      <label index="noTranslMsg">Leider gibt es für diesen Artikel keine Übersetzung.</label>
+      <label index="noNewsForArchPeriod">Leider gibts es für diesen Archivzeitraum keine übersetzten Artikel.</label>
+      <label index="textRelated">In Verbindung stehende Artikel:</label>
+      <label index="textLinks">Links:</label>
+      <label index="textFiles">Dateien:</label>
+      <label index="textRelatedByCategory">Weitere Artikel in dieser Kategorie</label>
+      <label index="pi_list_browseresults_prev">&lt; Vorherige</label>
+      <label index="pi_list_browseresults_page">Seite</label>
+      <label index="pi_list_browseresults_next">Nächste &gt;</label>
+      <label index="pi_list_browseresults_first">&lt;&lt; Erste</label>
+      <label index="pi_list_browseresults_last">Letzte &gt;&gt;</label>
+      <label index="pi_list_browseresults_displays">Treffer ###SPAN_BEGIN###%s bis %s&lt;/span&gt; von ###SPAN_BEGIN###%s&lt;/span&gt;</label>
+      <label index="pi_list_browseresults_displays_advanced">Treffer ###FROM### bis ###TO### von ###OUT_OF###</label>
+      <label index="pi_list_browseresults_to">bis</label>
+      <label index="searchButtonLabel">Suchen</label>
+      <label index="altTextCatSelector">Nur diese Kategorie anzeigen:</label>
+      <label index="altTextCatShortcut">Gehe zu:</label>
+      <label index="catmenuHeader">Kategorieauswahl:</label>
+      <label index="nextArticle">Nächster Artikel</label>
+      <label index="prevArticle">Vorheriger Artikel</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

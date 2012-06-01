@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:40:37 UTC 2011" product-name="statictemplates">
+    <header/>
+    <body>
+      <trans-unit id="static_template" approved="yes">
+        <source>Static templates</source>
+        <target state="translated">Statische Templates</target>
+      </trans-unit>
+      <trans-unit id="static_template.title" approved="yes">
+        <source>Template title:</source>
+        <target state="translated">Template-Titel:</target>
+      </trans-unit>
+      <trans-unit id="static_template.constants" approved="yes">
+        <source>Constants:</source>
+        <target state="translated">Konstanten:</target>
+      </trans-unit>
+      <trans-unit id="static_template.include_static" approved="yes">
+        <source>Include static:</source>
+        <target state="translated">Statische Templates einschließen:</target>
+      </trans-unit>
+      <trans-unit id="static_template.config" approved="yes">
+        <source>Setup:</source>
+        <target state="translated">Setup:</target>
+      </trans-unit>
+      <trans-unit id="static_template.editorcfg" approved="yes">
+        <source>Backend Editor Configuration:</source>
+        <target state="translated">Backend-Editor-Konfiguration:</target>
+      </trans-unit>
+      <trans-unit id="static_template.description" approved="yes">
+        <source>Description:</source>
+        <target state="translated">Beschreibung:</target>
+      </trans-unit>
+      <trans-unit id="include_static" approved="yes">
+        <source>Include static:</source>
+        <target state="translated">Statische Templates einschließen:</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

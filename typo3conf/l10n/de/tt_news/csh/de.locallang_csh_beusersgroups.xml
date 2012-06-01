@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="tt_news_categorymounts.description">Hier können dem aktuellen Artikel Kategorien zugewiesen werden (sofern es sich bei dem Datensatz nicht um die Übersetzung eines anderen handelt).</label>
+      <label index="tt_news_categorymounts.details">Artikeln, bei denen es sich nicht um Übersetzungen anderer Artikel handelt, können Kategorien zugewiesen werden.</label>
+      <label index="_tt_news_categorymounts.seeAlso">tt_news_cat:parent_category,section "Kategorien" von tt_news Anleitung | http://typo3.org/documentation/document-library/tt_news/</label>
+      <label index="_tt_news_categorymounts.image">EXT:tt_news/csh/tt_news_categoy.png,EXT:tt_news/csh/tt_news_categoy_msg.png</label>
+      <label index="tt_news_categorymounts.image_descr">das Feld "Kategorie" im Datensatz des Artikels.
+Öffnet ein BE-Benutzer einen Datensatz, dem Kategorien zugewiesen wurden, für die der Benutzer keine Berechtigung hat, wird diese Meldung angezeigt.</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

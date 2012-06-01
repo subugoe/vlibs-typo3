@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="static_template">Statische Templates</label>
+      <label index="static_template.title">Template-Titel:</label>
+      <label index="static_template.constants">Konstanten:</label>
+      <label index="static_template.include_static">Statische Templates einschließen:</label>
+      <label index="static_template.config">Setup:</label>
+      <label index="static_template.editorcfg">Backend-Editor-Konfiguration:</label>
+      <label index="static_template.description">Beschreibung:</label>
+      <label index="include_static">Statische Templates einschließen:</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,460 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:56:14 UTC 2011" product-name="tt_news">
+    <header/>
+    <body>
+      <trans-unit id="tt_news" approved="yes">
+        <source>News</source>
+        <target state="translated">Nachrichten</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.special" approved="yes">
+        <source>Special</source>
+        <target state="translated">Spezial</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.media" approved="yes">
+        <source>Media</source>
+        <target state="translated">Medien</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.catAndRels" approved="yes">
+        <source>Categories &amp; Relations</source>
+        <target state="translated">Kategorien &amp; Beziehungen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.categories" approved="yes">
+        <source>Categories</source>
+        <target state="translated">Kategorien</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.access" approved="yes">
+        <source>Access</source>
+        <target state="translated">Zugriff</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tabs.extended" approved="yes">
+        <source>Extended</source>
+        <target state="translated">Erweitert</target>
+      </trans-unit>
+      <trans-unit id="tt_news.uid" approved="yes">
+        <source>ID:</source>
+        <target state="translated">ID:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.tstamp" approved="yes">
+        <source>Last change:</source>
+        <target state="translated">Letzte Änderung:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pid" approved="yes">
+        <source>Page:</source>
+        <target state="translated">Seite:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.type.I.0" approved="yes">
+        <source>News</source>
+        <target state="translated">Nachrichten</target>
+      </trans-unit>
+      <trans-unit id="tt_news.type.I.1" approved="yes">
+        <source>Link internal Page</source>
+        <target state="translated">Link zu interner Seite</target>
+      </trans-unit>
+      <trans-unit id="tt_news.type.I.2" approved="yes">
+        <source>Link external URL</source>
+        <target state="translated">Link zu externer URL</target>
+      </trans-unit>
+      <trans-unit id="tt_news.datetime" approved="yes">
+        <source>Date/Time:</source>
+        <target state="translated">Datum/Zeit:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.archivedate" approved="yes">
+        <source>Archive date:</source>
+        <target state="translated">Archivdatum:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.no_auto_pb" approved="yes">
+        <source>No automatic pagebreaks for this record</source>
+        <target state="translated">Keine Seitenumbrüche in diesem Artikel einfügen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.manageCategories" approved="yes">
+        <source>Open tt_news category manager</source>
+        <target state="translated">Kategorieverwaltung für Nachrichten öffnen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.editCategory" approved="yes">
+        <source>edit category</source>
+        <target state="translated">Kategorie bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="tt_news.editDefLangVersion" approved="yes">
+        <source>edit default language version of this article</source>
+        <target state="translated">Diesen Artikel in der Originalsprache bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="tt_news.imagealttext" approved="yes">
+        <source>Image alttext</source>
+        <target state="translated">ALT-Text des Bildes</target>
+      </trans-unit>
+      <trans-unit id="tt_news.imagetitletext" approved="yes">
+        <source>Image titletext</source>
+        <target state="translated">Titel des Bildes</target>
+      </trans-unit>
+      <trans-unit id="tt_news.related" approved="yes">
+        <source>Related news:</source>
+        <target state="translated">In Verbindung stehende Artikel:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.random" approved="yes">
+        <source>Randomize 0rder</source>
+        <target state="translated">Zufällige Reihefolge</target>
+      </trans-unit>
+      <trans-unit id="tt_news.category" approved="yes">
+        <source>Category:</source>
+        <target state="translated">Kategorie:</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat" approved="yes">
+        <source>News category</source>
+        <target state="translated">Nachrichtenkategorie</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.image" approved="yes">
+        <source>Category image</source>
+        <target state="translated">Kategoriebild</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.createNewParentCategory" approved="yes">
+        <source>create new parent category</source>
+        <target state="translated">Neue übergeordnete Kategorie erstellen</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.listCategories" approved="yes">
+        <source>list categories</source>
+        <target state="translated">Kategorieliste anzeigen</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.title_lang_ol" approved="yes">
+        <source>title language overlays</source>
+        <target state="translated">Titelübersetzungen (mehrere Einträge durch "|" trennen)</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.parent_category" approved="yes">
+        <source>Parent category</source>
+        <target state="translated">übergeordnete Kategorie</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.shortcut" approved="yes">
+        <source>News category shortcut</source>
+        <target state="translated">Verweis auf Kategorie</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.shortcut_target" approved="yes">
+        <source>Target for news category shortcut</source>
+        <target state="translated">Ziel für Verweis auf Kategorie</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.single_pid" approved="yes">
+        <source>Single-view page for news from this category</source>
+        <target state="translated">Seite mit Einzelansicht (News-Details) für Nachrichten dieser Kategorie</target>
+      </trans-unit>
+      <trans-unit id="tt_news_cat.description" approved="yes">
+        <source>Description</source>
+        <target state="translated">Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.sheet_general" approved="yes">
+        <source>General Settings</source>
+        <target state="translated">Allgemeine Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.sheet_template" approved="yes">
+        <source>Template</source>
+        <target state="translated">Vorlage</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.sheet_category" approved="yes">
+        <source>Category Settings</source>
+        <target state="translated">Kategorieeinstellungen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.sheet_misc" approved="yes">
+        <source>Other Settings</source>
+        <target state="translated">Sonstige Einstellungen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.what_to_display" approved="yes">
+        <source>What to display:</source>
+        <target state="translated">Ansicht:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.codeFromTS" approved="yes">
+        <source>Defined by TypoScript</source>
+        <target state="translated">Definiert durch TypoScript</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.LIST" approved="yes">
+        <source>Standard list view (LIST)</source>
+        <target state="translated">Standard-Listenansicht (LIST)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.LIST2" approved="yes">
+        <source>Advanced list view with 6 alternating template parts (LIST2)</source>
+        <target state="translated">Erweiterte Listenansicht mit 6 abwechselnden Vorlagenteilen (LIST2)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.LIST3" approved="yes">
+        <source>Standard list view with 3 alternating template parts (LIST3)</source>
+        <target state="translated">Erweiterte Listenansicht mit 3 abwechselnden Vorlagenteilen (LIST2)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.LATEST" approved="yes">
+        <source>Latest view (LATEST)</source>
+        <target state="translated">Ansicht neueste Artikel (LATEST)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.SINGLE" approved="yes">
+        <source>Detail view (SINGLE)</source>
+        <target state="translated">Einzelansicht (SINGLE)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.SINGLE2" approved="yes">
+        <source>Advanced detail view with 3 image markers (SINGLE2)</source>
+        <target state="translated">Erweiterte Einzelansicht mit 3 Bild-Markern (SINGLE1)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.HEADER_LIST" approved="yes">
+        <source>Header list without images (HEADER_LIST)</source>
+        <target state="translated">Überschriftenliste ohne Bilder (HEADER_LIST)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.AMENU" approved="yes">
+        <source>Archive menu (AMENU)</source>
+        <target state="translated">Archivmenü (AMENU)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.SEARCH" approved="yes">
+        <source>Searchform with result list (SEARCH)</source>
+        <target state="translated">Suchformular mit Trefferliste (SEARCH)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.CATMENU" approved="yes">
+        <source>Category menu (CATMENU)</source>
+        <target state="translated">Kategoriemenü (CATMENU)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.VERSION_PREVIEW" approved="yes">
+        <source>Preview of not published versions of news records (VERSION_PREVIEW)</source>
+        <target state="translated">Voransicht nicht veröffentlichter Artikel (VERSION_PREVIEW)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.listOrderby" approved="yes">
+        <source>"Order by" this field (LIST &amp; LATEST):</source>
+        <target state="translated">Sortiere Beiträge (LIST &amp; LATEST) nach:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.ascDesc" approved="yes">
+        <source>Ascending or Descending (LIST &amp; LATEST):</source>
+        <target state="translated">Sortierreihenfolge (LIST &amp; LATEST):</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.ascDesc_asc" approved="yes">
+        <source>Ascending</source>
+        <target state="translated">Aufsteigend</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.ascDesc_desc" approved="yes">
+        <source>Descending</source>
+        <target state="translated">Absteigend</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.select_deselect_categories" approved="yes">
+        <source>Category mode:</source>
+        <target state="translated">Kategoriemodus:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.itemsHeader" approved="yes">
+        <source>Special options:</source>
+        <target state="translated">weitere Optionen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_notCategorized" approved="yes">
+        <source>[not categorized]</source>
+        <target state="translated">[nicht kategorisiert]</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection" approved="yes">
+        <source>Category selection</source>
+        <target state="translated">Kategorieauswahl:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_showAll" approved="yes">
+        <source>Show all (don't care about selection below)</source>
+        <target state="translated">Zeige alle Beiträge (ignoriere folgende Auswahl)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_showSelected" approved="yes">
+        <source>Show items with selected categories (OR)</source>
+        <target state="translated">Zeige alle Beiträge aus den ausgewählten Kategorien (ODER)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_showSelectedAND" approved="yes">
+        <source>Show items with selected categories (AND)</source>
+        <target state="translated">Zeige alle Beiträge aus den ausgewählten Kategorien (UND)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_DontShowSelected" approved="yes">
+        <source>Do NOT show items with selected categories (AND)</source>
+        <target state="translated">KEINE Artikel aus den ausgewählten Kategorien anzeigen (UND)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.category_selection_DontShowSelectedOR" approved="yes">
+        <source>Do NOT show items with selected categories (OR)</source>
+        <target state="translated">KEINE Artikel aus den ausgewählten Kategorien anzeigen (ODER)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.useSubCategories" approved="yes">
+        <source>Use subcategories</source>
+        <target state="translated">Unterkategorien benutzen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.useSubCategories_TS" approved="yes">
+        <source>Defined by TypoScript</source>
+        <target state="translated">Definiert durch TypoScript</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.yes" approved="yes">
+        <source>Yes</source>
+        <target state="translated">Ja</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.no" approved="yes">
+        <source>No</source>
+        <target state="translated">Nein</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.archive" approved="yes">
+        <source>Archive setting (for LIST)</source>
+        <target state="translated">Archiveinstellungen (für LIST-Ansicht):</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.template_file" approved="yes">
+        <source>Template file</source>
+        <target state="translated">Vorlagendatei</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.template_file_ref" approved="yes">
+        <source>Template file reference</source>
+        <target state="translated">Verweis auf Vorlagendatei</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catImageMode" approved="yes">
+        <source>Category Image Link Mode:</source>
+        <target state="translated">Link-Modus für Kategoriebild:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catTextMode" approved="yes">
+        <source>Category Text Link Mode:</source>
+        <target state="translated">Link-Modus für Kategorietext:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.recursive" approved="yes">
+        <source>Recursive level selection:</source>
+        <target state="translated">Rekursiv:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.recursive.I.0" approved="yes">
+        <source>0 levels</source>
+        <target state="translated">0 Ebenen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.recursive_TS" approved="yes">
+        <source>Defined by TypoScript</source>
+        <target state="translated">Definiert durch TypoScript</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catImageMaxWidth" approved="yes">
+        <source>Max width of category image:</source>
+        <target state="translated">Maximale Breite für Kategoriebild:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catImageMaxHeight" approved="yes">
+        <source>Max height of category image:</source>
+        <target state="translated">Maximale Höhe für Kategoriebild:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.maxCatImages" approved="yes">
+        <source>Max number of category images:</source>
+        <target state="translated">Maximale Anzahl für Kategoriebilder:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.maxTextLength" approved="yes">
+        <source>Max length of category text:</source>
+        <target state="translated">Maximale Länge für Kategorietext:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.maxCatTexts" approved="yes">
+        <source>Max number of categorys texts:</source>
+        <target state="translated">Maximale Anzahl für Kategorietexte:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.PIDitemDisplay" approved="yes">
+        <source>PageId for single news display:</source>
+        <target state="translated">Seite für die Einzelansicht:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.backPid" approved="yes">
+        <source>PageId to return to:</source>
+        <target state="translated">Seite für 'Zurück':</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.archive_nonarc" approved="yes">
+        <source>SHOW NON-ARCHIVED</source>
+        <target state="translated">Zeige nicht-archivierte</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.archive_arc" approved="yes">
+        <source>SHOW ARCHIVED</source>
+        <target state="translated">Zeige archivierte</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.archive_dontcare" approved="yes">
+        <source>Don't Care</source>
+        <target state="translated">Egal</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catLinkMode_TS" approved="yes">
+        <source>Defined by TypoScript</source>
+        <target state="translated">Definiert durch TypoScript</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catLinkMode_dontshow" approved="yes">
+        <source>Don't display at all</source>
+        <target state="translated">Nicht anzeigen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catLinkMode_shownolink" approved="yes">
+        <source>Display, but no links</source>
+        <target state="translated">Anzeigen, aber ohne Link</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catLinkMode_catshortcut" approved="yes">
+        <source>Acts as link to category shortcuts</source>
+        <target state="translated">Anzeigen und Link zum Kategorieverweis</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.catLinkMode_catsel" approved="yes">
+        <source>Acts as a category selector</source>
+        <target state="translated">Anzeigen und Link als Kategorieauswahl</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.firstImageIsPreview" approved="yes">
+        <source>Don't display first image in single view (firstImageIsPreview)</source>
+        <target state="translated">Erstes Bild in Einzelansicht NICHT anzeigen (firstImageIsPreview)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.forceFirstImageIsPreview" approved="yes">
+        <source>Don't display first image in single view (forceFirstImageIsPreview) even when only one image is available</source>
+        <target state="translated">Erstes Bild in Einzelansicht NICHT anzeigen, auch wenn nur ein Bild vorhanden ist (forceFirstImageIsPreview)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.limit" approved="yes">
+        <source>Limit: max items for LIST and LATEST</source>
+        <target state="translated">Maximale Anzahl von Artikeln in LIST (und LATEST, wenn 'latestLimit' nicht gesetzt ist)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.listStartId" approved="yes">
+        <source>List StartId: Force LIST or LATEST to start from this item</source>
+        <target state="translated">List StartId: LIST- &amp; LATEST-Ansicht ab diesem Artikel beginnen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.noPageBrowser" approved="yes">
+        <source>Don't display Pagebrowser in LIST</source>
+        <target state="translated">Seitennavigation in LIST-Ansicht verbergen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.imageMaxWidth" approved="yes">
+        <source>Max width for images in news records (accepts optionSplit)</source>
+        <target state="translated">Maximale Breite für Bilder in Artikeln</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.imageMaxHeight" approved="yes">
+        <source>Max height for images in news records (accepts optionSplit)</source>
+        <target state="translated">Maximale Höhe für Bilder in Artikeln</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.altLayoutsOptionSplit" approved="yes">
+        <source>Template part number / optionSplit of template part numbers</source>
+        <target state="translated">Nummer des Vorlagenteils / optionSplit der Nummern der Vorlagenteile</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.alternatingLayouts" approved="yes">
+        <source>Number of alternating template parts (is ignored if "Template part number / optionSplit" is set)</source>
+        <target state="translated">Anzahl abwechselnder Vorlagenlayouts (wird ignoriert, wenn "Nummer des Vorlagenteils" gesetzt)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.croppingLenght" approved="yes">
+        <source>stdWrap.crop for the subheader (short)</source>
+        <target state="translated">Untertitel abschneiden nach ... Zeichen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.croppingLenghtOptionSplit" approved="yes">
+        <source>OptionSplit for cropping lenght of subheader (overwrites lenght parameter from stdWrap.crop)</source>
+        <target state="translated">OptionSplit für Untertitel (überschreibt Längenangabe für stdWrap.crop)</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.maxWordsInSingleView" approved="yes">
+        <source>insert pagebreak in SINGLE after this number of words</source>
+        <target state="translated">Seitenumbruch nach dieser Anzahl von Wörtern einfügen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.startingpoint" approved="yes">
+        <source>Page(s) with tt_news records</source>
+        <target state="translated">Seite(n) mit tt_news-Datensätzen</target>
+      </trans-unit>
+      <trans-unit id="tt_news.pi_flexform.tsconfig" approved="yes">
+        <source>Typoscript for this content element (plugin.tt_news.[your TS])</source>
+        <target state="translated">TypoScript für dieses Inhaltselement (plugin.tt_news.[your TS])</target>
+      </trans-unit>
+      <trans-unit id="tt_news.categorymounts" approved="yes">
+        <source>tt_news: allowed/visible categories</source>
+        <target state="translated">tt_news: Erlaubte/sichtbare Kategorien</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.msg_notInGRSP" approved="yes">
+        <source>The current category is not located in the "general record storage page" but "useStoragePid" is activated in tt_news configuration. Selecting a parent category from a different pid is not supported.</source>
+        <target state="translated">Die aktuelle Kategorie befindet sich nicht in der "Allgemeinen Datensatzsammlung", sondern es wurde in der tt_news-Konfiguration "useStoragePid" aktiviert. Die Auswahl von Oberkategorien mit einer abweichenden pid wird nicht unterstützt.</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.msg_emptyTree" approved="yes">
+        <source>No categories found in page: ###PID###</source>
+        <target state="translated">Keine Kategorien in der Seite ###PID### gefunden.</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.translOrgCat" approved="yes">
+        <source>Categories from the translation original of this record:</source>
+        <target state="translated">Kategorien der Originalsprache dieses Datensatzes:</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.translOrgNoCat" approved="yes">
+        <source>The translation original of this record has no categories assigned.</source>
+        <target state="translated">In der Originalsprache wurden keine Kategorien für diesen Datensatz definiert.</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.pageTitleSuffix" approved="yes">
+        <source>[pid: %s]</source>
+        <target state="translated">[pid: %s]</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.pageTitleSuffixNoGrsp" approved="yes">
+        <source>[from all pages]</source>
+        <target state="translated">[aus allen Seiten]</target>
+      </trans-unit>
+      <trans-unit id="tt_news.treeSelect.treeTitle" approved="yes">
+        <source>News categories</source>
+        <target state="translated">Nachrichtenkategorien</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

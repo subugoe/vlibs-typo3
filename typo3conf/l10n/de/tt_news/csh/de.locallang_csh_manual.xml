@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index=".alttitle">Nachrichten</label>
+      <label index=".description">Beschreibung Nachrichten</label>
+      <label index="_.seeAlso">tt_news-Anleitung | http://typo3.org/documentation/document-library/extension-manuals/tt_news/current/</label>
+      <label index="_.image"/>
+      <label index=".image_descr"/>
+      <label index=".syntax"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="ext.saltedpasswords.title.tx_saltedpasswords_salts_phpass">Portables PHP-Passwort-Hashing (phpass)</label>
+      <label index="ext.saltedpasswords.title.tx_saltedpasswords_salts_md5">MD5-salted Hashing (sicher)</label>
+      <label index="ext.saltedpasswords.title.tx_saltedpasswords_salts_blowfish">Blowfish-salted Hashing (erweitert)</label>
+      <label index="ext.saltedpasswords.tasks.bulkupdate.name"/>
+      <label index="ext.saltedpasswords.tasks.bulkupdate.description">Aktualisiere alle Frontend und Backend Benutzerpasswörter zu saltedpasswords. Dieser Task deaktiviert sich nach Beendigung selbst .</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

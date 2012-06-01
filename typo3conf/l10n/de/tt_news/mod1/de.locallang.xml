@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="title">Nachrichtenverwaltung</label>
+      <label index="function1">Nachrichtenkategorieverwaltung</label>
+      <label index="function2"/>
+      <label index="nothingfound">Diese Seite enthält keine tt_news-Kategorien. Bitte wählen Sie eine Seite mit Kategorien aus der folgenden Liste:</label>
+      <label index="noNewsFound">Es gibt keine Artikel in der aktuellen Auswahl.</label>
+      <label index="showSubcatgories">Unterkategorien anzeigen</label>
+      <label index="hideSubcatgories">Unterkategorien verbergen</label>
+      <label index="path">Pfad:</label>
+      <label index="categories">Kategorien:</label>
+      <label index="showOnlyEditable">Nur editierbare Datensätze anzeigen</label>
+      <label index="showThumbs">Bilder anzeigen</label>
+      <label index="defaultLangLabel">Standard</label>
+      <label index="allPages">allen Seiten</label>
+      <label index="thisPage">dieser Seite</label>
+      <label index="oneLevel">dieser Seite + 1 Ebene</label>
+      <label index="twoLevels">dieser Seite + 2 Ebenen</label>
+      <label index="threeLevels">dieser Seite + 3 Ebenen</label>
+      <label index="fourLevels">dieser Seite + 4 Ebenen</label>
+      <label index="enterSearchLevels">Zeige Artikel in:</label>
+      <label index="showingAll">Artikel aus allen Kategorien</label>
+      <label index="showingOnlyCat">Artikel aus der Kategorie:</label>
+      <label index="selectCategory">Bitte eine Kategorie auswählen</label>
+      <label index="showEditIcons">Bearbeiten-Symbole in der Baumansicht anzeigen</label>
+      <label index="expandAll">Alle öffnen</label>
+      <label index="showHiddenCategories">Versteckte Kategorien anzeigen</label>
+      <label index="treeTitle">Nachrichtenkategorien</label>
+      <label index="resetCatSelection">[Auswahl zurücksetzen]</label>
+      <label index="showAllResetSel">[Kategorieauswahl zurücksetzen]</label>
+      <label index="moveCategoryinto">Kategorie verschieben in</label>
+      <label index="copyCategoryinto">Kategorie kopieren in</label>
+      <label index="copyCategoryafter">Kategorie kopieren hinter</label>
+      <label index="createCategory">Neue Kategorie anlegen</label>
+      <label index="createArticle">Neuen Artikel anlegen</label>
+      <label index="createArticleInCategory">Neuen Artikel in dieser Kategorie anlegen</label>
+      <label index="edit">Datensatz bearbeiten</label>
+      <label index="showInfo">Informationen anzeigen</label>
+      <label index="unHide">Datensatz sichtbar machen</label>
+      <label index="hide">Datensatz verbergen</label>
+      <label index="deleteWarning">Diesen Datensatz tatsächlich löschen?</label>
+      <label index="delete">Datensatz löschen (!)</label>
+      <label index="openFePreview">Vorschau öffnen</label>
+      <label index="noEditPagePerms">Sie haben keine Berechtigung, den Inhalt jener Seite zu editieren, in der dieser Datensatz gespeichert ist.</label>
+      <label index="noEditCategories">Sie haben keine Berechtigung, diesen Datensatz zu editieren, weil Sie eine der zugewiesenen Kategorien nicht editieren dürfen.</label>
+      <label index="first">Erste</label>
+      <label index="last">Letzte</label>
+      <label index="reload">Neu laden</label>
+      <label index="next">Nächste</label>
+      <label index="previous">Vorige</label>
+      <label index="pageIndicator">Seite %1$s von %2$d</label>
+      <label index="rangeIndicator">Datensätze %1$d - %2$d von %3$d</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

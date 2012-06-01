@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:56:14 UTC 2011" product-name="tt_news">
+    <header/>
+    <body>
+      <trans-unit id="tt_news_categorymounts.description" approved="yes">
+        <source>Here you can assign categories to the current news record (if this record is no translation of another record).</source>
+        <target state="translated">Hier können dem aktuellen Artikel Kategorien zugewiesen werden (sofern es sich bei dem Datensatz nicht um die Übersetzung eines anderen handelt).</target>
+      </trans-unit>
+      <trans-unit id="tt_news_categorymounts.details" approved="yes">
+        <source>You can assign categories to news records that are not translations of</source>
+        <target state="translated">Artikeln, bei denen es sich nicht um Übersetzungen anderer Artikel handelt, können Kategorien zugewiesen werden.</target>
+      </trans-unit>
+      <trans-unit id="_tt_news_categorymounts.seeAlso" approved="yes">
+        <source>tt_news_cat:parent_category,section "Categories" from tt_news manual | http://typo3.org/documentation/document-library/tt_news/</source>
+      <target state="translated">tt_news_cat:parent_category,section "Kategorien" von tt_news Anleitung | http://typo3.org/documentation/document-library/tt_news/</target></trans-unit>
+      <trans-unit id="_tt_news_categorymounts.image" approved="yes">
+        <source>EXT:tt_news/csh/tt_news_categoy.png,EXT:tt_news/csh/tt_news_categoy_msg.png</source>
+      <target state="translated">EXT:tt_news/csh/tt_news_categoy.png,EXT:tt_news/csh/tt_news_categoy_msg.png</target></trans-unit>
+      <trans-unit id="tt_news_categorymounts.image_descr" approved="yes">
+        <source>the field "Category" in the tt_news db-record.
+		If a BE-user opens a record that has non-allowed categories assigned this message will be displayed.</source>
+        <target state="translated">das Feld "Kategorie" im Datensatz des Artikels.
+Öffnet ein BE-Benutzer einen Datensatz, dem Kategorien zugewiesen wurden, für die der Benutzer keine Berechtigung hat, wird diese Meldung angezeigt.</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index=".description">Vielseitiges Nachrichtensystem für TYPO3.</label>
+      <label index=".details">Normalerweise werden "Nachrichten" auf der Startseite der Web-Site angezeigt und sind mit einem Link auf den Volltext der Meldung versehen. Sie können aber auch Links zu anderen Artikeln (Seiten innerhalb der Web-Site) darstellen.</label>
+      <label index="_.seeAlso">tt_news_cat, tt_news-Anleitung | http://typo3.org/documentation/document-library/tt_news/</label>
+      <label index="title.description">Eine Überschrift für den Artikel eingeben.</label>
+      <label index="title.details"/>
+      <label index="type.description">Hier kann der Typ des Datensatzes festgelegt werden (normaler Artikel, Link auf interne Seite, Link auf externe Seite).</label>
+      <label index="type.details"/>
+      <label index="hidden.description">Diese Option verwenden, um den Artikel temporär von der Anzeige auszuschließen.</label>
+      <label index="hidden.details"/>
+      <label index="_hidden.seeAlso">tt_news:starttime,tt_news:endtime,tt_news:fe_group</label>
+      <label index="starttime.description">Die "Start"-Zeit bestimmt das Datum, von dem an der tt_news-Datensatz online verfügbar sein wird.</label>
+      <label index="_starttime.seeAlso">tt_news:endtime,tt_news:hidden,tt_news:fe_group</label>
+      <label index="endtime.description">Die "Stopp"-Zeit bestimmt das Datum, von dem an der tt_news-Datensatz nicht mehr online verfügbar sein wird.</label>
+      <label index="_endtime.seeAlso">tt_news:starttime,tt_news:hidden,tt_news:fe_group</label>
+      <label index="editlock.description">Ist diese Option aktiviert, können Benutzer ohne Administratorstatus den Datensatz nicht mehr bearbeiten.</label>
+      <label index="_editlock.seeAlso">pages:editlock</label>
+      <label index="fe_group.description"/>
+      <label index="_fe_group.seeAlso">tt_news:starttime,tt_news:endtime,tt_news:hidden</label>
+      <label index="datetime.description">Der hier eingegebene Wert wird als Datum und/oder Zeit im Nachrichtenartikel angezeigt.</label>
+      <label index="datetime.details"/>
+      <label index="_datetime.seeAlso">tt_news:archivedate</label>
+      <label index="archivedate.description">Das hier angegebene Datum legt fest, ob der Artikel als archiviert angesehen wird oder nicht.</label>
+      <label index="archivedate.details"/>
+      <label index="_archivedate.seeAlso">tt_news:datetime</label>
+      <label index="sys_language_uid.description">Die Sprache, in der der Artikel verfasst ist.</label>
+      <label index="sys_language_uid.details">Dies sollte die Standardsprache sein, es sei denn, bei dem Artikel handelte es sich um die Übersetzung eines anderen.</label>
+      <label index="_sys_language_uid.seeAlso">tt_content:sys_language_uid,pages:sys_language_uid,pages_language_overlay:sys_language_uid</label>
+      <label index="l18n_parent.description">Der in der Standardsprache verfasste Artikel, dessen Übersetzung dieser Artikel ist.</label>
+      <label index="l18n_parent.details">Dieses Feld sollte nicht von Hand geändert werden, da es vom TYPO3-Lokalisierungssystem verwendet wird.</label>
+      <label index="author.description">Der Verfasser des Artikels.</label>
+      <label index="author.details"/>
+      <label index="_author.seeAlso">tt_news:email</label>
+      <label index="t3ver_label.description">Die Versionskennzeichnung des Artikels.</label>
+      <label index="t3ver_label.details">Sie können dieses Feld im Versionierungsmodul oder im Arbeitsumgebungsmodul bearbeiten. Dieses Feld erscheint nur, wenn es einen Wert hat.</label>
+      <label index="author_email.description">Die E-Mail-Adresse des Verfassers des Artikels.</label>
+      <label index="author_email.details"/>
+      <label index="_author_email.seeAlso">tt_news:email</label>
+      <label index="short.description">Ein kurzer Antext für den Artikel.</label>
+      <label index="short.details"/>
+      <label index="_short.seeAlso"/>
+      <label index="bodytext.description">Der eigentliche Text des Artikels.</label>
+      <label index="bodytext.details">Beim Datensatztyp "Artikel" wird der Rich-Text-Editor (RTE) zum Bearbeiten des Feldes verwendet (sofern dies vom Browser unterstützt wird und im System aktiviert ist). Beachten Sie, dass der Inhalt vor dem Speichern in der Datenbank "gesäubert" wird.
+Der Inhalt dieses Feldes wird an Stelle der Vorlagenmarkierung ###NEWS_CONTENT### dargestellt.
+
+In der Einzelansicht kann der Inhalt dieses Feldes auf mehrere Seiten aufgeteilt werden, auf die über eine Seitennavigation zugegriffen werden kann.</label>
+      <label index="_bodytext.seeAlso"/>
+      <label index="keywords.description">Hier können Sie einige Stichwörter eingeben, die als &amp;lt;meta&amp;gt;-Stichwörter im Kopf der Seite eingefügt werden (Plug-In "metatags" wird benötigt).</label>
+      <label index="keywords.details"/>
+      <label index="_keywords.seeAlso"/>
+      <label index="no_auto_pb.description">Hier können Sie den automatischen Seitenumbruch für diesen Datensatz deaktivieren.</label>
+      <label index="no_auto_pb.details"/>
+      <label index="_no_auto_pb.seeAlso"/>
+      <label index="category.description">Hier können Sie Kategorien für den aktuellen Nachrichtensatz zuordnen (falls dieser Datensatz keine Übersetzung eines anderen Datensatzes ist).</label>
+      <label index="category.details"/>
+      <label index="_category.image"/>
+      <label index="category.image_descr"/>
+      <label index="_category.seeAlso"/>
+      <label index="image.description">Hier können dem Artikel Bilder zugewiesen werden.</label>
+      <label index="image.details">Alle zugewiesenen Bilder werden an Stelle der Vorlagenmarkierung ###NEWS_IMAGE### ausgegeben. Die Bilder werden in den Ordner uploads/pics/ hochgeladen.
+Die Anzahl Bilder, die in einer Ansicht (single, list, latest) dargestellt wird, kann über die TS-Eigenschaft "imageCount" festgelegt werden.</label>
+      <label index="imagecaption.description">Die Bildbeschreibung unterhalb des Bildes.</label>
+      <label index="imagecaption.details">Bei mehreren Bildern wird jeweils eine Zeile Text bis zum Zeilenumbruch einem Bild zugeordnet.</label>
+      <label index="_imagecaption.seeAlso"/>
+      <label index="imagealttext.description">Hier eingetragener Text wird für das Attribut "alt" des HTML-Tags des Bilds verwendet.</label>
+      <label index="imagealttext.details">Bei mehreren Bildern wird jeweils eine Zeile Text bis zum Zeilenumbruch einem Bild zugeordnet.</label>
+      <label index="_imagealttext.seeAlso"/>
+      <label index="imagetitletext.description">Hier eingetragener Text wird für das Attribut "title" des HTML-Tags des Bilds verwendet.</label>
+      <label index="imagetitletext.details">Bei mehreren Bildern wird jeweils eine Zeile Text bis zum Zeilenumbruch einem Bild zugeordnet.</label>
+      <label index="_imagetitletext.seeAlso"/>
+      <label index="links.description">Hier eingetragenen Links werden unterhalb des Artikeltextes dargestellt.</label>
+      <label index="links.details">Dieses Feld wird mit der stdWrap-Funktion "parseFunc" analysiert. Daher ist es möglich Links als Typolinks einzugeben. Z.B. &lt;em&gt;&amp;lt;LINKhttp://typo3.org _blank&amp;gt;open typo3.org&amp;lt;/LINK&amp;gt;&lt;/em&gt;</label>
+      <label index="_links.seeAlso"/>
+      <label index="related.description">Mit dem Artikel verwandte Artikel oder Seiten.</label>
+      <label index="related.details"/>
+      <label index="news_files.description">Hier können dem Artikel Dateien zugeordnet werden.</label>
+      <label index="news_files.details">Die zugeordneten Dateien werden über die stdWrap-Funktion "filelink" dargestellt. Beispiel siehe die Standard-TS-Konfiguration.</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

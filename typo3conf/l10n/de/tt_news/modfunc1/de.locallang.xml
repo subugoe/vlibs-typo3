@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="moduleFunction.tx_ttnews_modfunc1">tt_news Kategorie-Manager</label>
+      <label index="title">Nachrichtenkategorie-Manager</label>
+      <label index="moveCategoryinto">Kategorie verschieben in</label>
+      <label index="copyCategoryinto">Kategorie kopieren in</label>
+      <label index="copyCategoryafter">Kategorie kopieren hinter</label>
+      <label index="edit">Datensatz bearbeiten</label>
+      <label index="showInfo">Information anzeigen</label>
+      <label index="unHide">Datensatz sichtbar machen</label>
+      <label index="hide">Datensatz verbergen</label>
+      <label index="deleteWarning">Diesen Datensatz tatsächlich löschen?</label>
+      <label index="delete">Datensatz löschen (!)</label>
+    </languageKey>
+  </data>
+</T3locallangExt>

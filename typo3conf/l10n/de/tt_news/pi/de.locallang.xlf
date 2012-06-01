@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:56:15 UTC 2011" product-name="tt_news">
+    <header/>
+    <body>
+      <trans-unit id="latestHeader" approved="yes">
+        <source>Breaking News:</source>
+        <target state="translated">Aktuelles:</target>
+      </trans-unit>
+      <trans-unit id="textCatLatest" approved="yes">
+        <source>Cat:</source>
+        <target state="translated">Kat:</target>
+      </trans-unit>
+      <trans-unit id="textCat" approved="yes">
+        <source>Category:</source>
+        <target state="translated">Kategorie:</target>
+      </trans-unit>
+      <trans-unit id="textNewsAge" approved="yes">
+        <source>Age:</source>
+        <target state="translated">Alter:</target>
+      </trans-unit>
+      <trans-unit id="more" approved="yes">
+        <source>[more]</source>
+        <target state="translated">[mehr]</target>
+      </trans-unit>
+      <trans-unit id="preAuthor" approved="yes">
+        <source>By:</source>
+        <target state="translated">Von:</target>
+      </trans-unit>
+      <trans-unit id="backToList" approved="yes">
+        <source>&lt;- Back to: %s</source>
+        <target state="translated">&lt;- Zurück zu: %s</target>
+      </trans-unit>
+      <trans-unit id="goToArchive" approved="yes">
+        <source>go to Archive -&gt;</source>
+        <target state="translated">zum Archiv -&gt;</target>
+      </trans-unit>
+      <trans-unit id="archiveHeader" approved="yes">
+        <source>ARCHIVE:</source>
+        <target state="translated">Archiv:</target>
+      </trans-unit>
+      <trans-unit id="archiveItems" approved="yes">
+        <source>items</source>
+        <target state="translated">Einträge</target>
+      </trans-unit>
+      <trans-unit id="archiveItem" approved="yes">
+        <source>item</source>
+        <target state="translated">Artikel</target>
+      </trans-unit>
+      <trans-unit id="archiveEmptyMsg" approved="yes">
+        <source>Sorry, Archive contains no items</source>
+        <target state="translated">Es sind leider keine Artikel im Archiv vorhanden.</target>
+      </trans-unit>
+      <trans-unit id="noResultsMsg" approved="yes">
+        <source>nothing found</source>
+        <target state="translated">Keine Treffer</target>
+      </trans-unit>
+      <trans-unit id="searchEmptyMsg" approved="yes">
+        <source>Please enter a searchword.</source>
+        <target state="translated">Bitte geben Sie einen Suchbegriff ein.</target>
+      </trans-unit>
+      <trans-unit id="noNewsToListMsg" approved="yes">
+        <source>no news in this list.</source>
+        <target state="translated">Keine Artikel in dieser Ansicht.</target>
+      </trans-unit>
+      <trans-unit id="versionPreviewMessage" approved="yes">
+        <source>Version preview !</source>
+        <target state="translated">Versionsvorschau!</target>
+      </trans-unit>
+      <trans-unit id="versionPreviewMessageLinkToOriginal" approved="yes">
+        <source>(click here to see the public version of this record)</source>
+        <target state="translated">(Klicken Sie hier, um die öffentliche Version dieses Artikels zu sehen)</target>
+      </trans-unit>
+      <trans-unit id="nonPlublicVersionMsg" approved="yes">
+        <source>Error! You requested a non-public version of a tt_news article.</source>
+        <target state="translated">Fehler! Sie haben eine nicht-öffentliche Version eines Artikels aufgerufen.</target>
+      </trans-unit>
+      <trans-unit id="noNewsIdMsg" approved="yes">
+        <source>no news_id given</source>
+        <target state="translated">Keine news_id übergeben.</target>
+      </trans-unit>
+      <trans-unit id="noTranslMsg" approved="yes">
+        <source>Sorry, there is no translation for this news-article.</source>
+        <target state="translated">Leider gibt es für diesen Artikel keine Übersetzung.</target>
+      </trans-unit>
+      <trans-unit id="noNewsForArchPeriod" approved="yes">
+        <source>Sorry, there are no translated news-articles in this Archive period.</source>
+        <target state="translated">Leider gibts es für diesen Archivzeitraum keine übersetzten Artikel.</target>
+      </trans-unit>
+      <trans-unit id="textRelated" approved="yes">
+        <source>Related News:</source>
+        <target state="translated">In Verbindung stehende Artikel:</target>
+      </trans-unit>
+      <trans-unit id="textLinks" approved="yes">
+        <source>Links:</source>
+        <target state="translated">Links:</target>
+      </trans-unit>
+      <trans-unit id="textFiles" approved="yes">
+        <source>Files:</source>
+        <target state="translated">Dateien:</target>
+      </trans-unit>
+      <trans-unit id="textRelatedByCategory" approved="yes">
+        <source>Other news from this category:</source>
+        <target state="translated">Weitere Artikel in dieser Kategorie</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_prev" approved="yes">
+        <source>&lt; Previous</source>
+        <target state="translated">&lt; Vorherige</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_page" approved="yes">
+        <source>Page</source>
+        <target state="translated">Seite</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_next" approved="yes">
+        <source>Next &gt;</source>
+        <target state="translated">Nächste &gt;</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_first" approved="yes">
+        <source>&lt;&lt; First</source>
+        <target state="translated">&lt;&lt; Erste</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_last" approved="yes">
+        <source>Last &gt;&gt;</source>
+        <target state="translated">Letzte &gt;&gt;</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_displays" approved="yes">
+        <source>Displaying results ###SPAN_BEGIN###%s to %s&lt;/span&gt; out of ###SPAN_BEGIN###%s&lt;/span&gt;</source>
+        <target state="translated">Treffer ###SPAN_BEGIN###%s bis %s&lt;/span&gt; von ###SPAN_BEGIN###%s&lt;/span&gt;</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_displays_advanced" approved="yes">
+        <source>Displaying results ###FROM### to ###TO### out of ###OUT_OF###</source>
+        <target state="translated">Treffer ###FROM### bis ###TO### von ###OUT_OF###</target>
+      </trans-unit>
+      <trans-unit id="pi_list_browseresults_to" approved="yes">
+        <source>to</source>
+        <target state="translated">bis</target>
+      </trans-unit>
+      <trans-unit id="searchButtonLabel" approved="yes">
+        <source>Search</source>
+        <target state="translated">Suchen</target>
+      </trans-unit>
+      <trans-unit id="altTextCatSelector" approved="yes">
+        <source>Display only category:</source>
+        <target state="translated">Nur diese Kategorie anzeigen:</target>
+      </trans-unit>
+      <trans-unit id="altTextCatShortcut" approved="yes">
+        <source>Go to:</source>
+        <target state="translated">Gehe zu:</target>
+      </trans-unit>
+      <trans-unit id="catmenuHeader" approved="yes">
+        <source>Select a category:</source>
+        <target state="translated">Kategorieauswahl:</target>
+      </trans-unit>
+      <trans-unit id="nextArticle" approved="yes">
+        <source>Next article</source>
+        <target state="translated">Nächster Artikel</target>
+      </trans-unit>
+      <trans-unit id="prevArticle" approved="yes">
+        <source>Previous article</source>
+        <target state="translated">Vorheriger Artikel</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

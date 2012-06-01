@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<xliff version="1.0">
+  <file source-language="en" target-language="de" datatype="plaintext" original="messages" date="Tue Jul 12 18:56:15 UTC 2011" product-name="tt_news">
+    <header/>
+    <body>
+      <trans-unit id="moduleFunction.tx_ttnews_modfunc1" approved="yes">
+        <source>tt_news category manager</source>
+        <target state="translated">tt_news Kategorie-Manager</target>
+      </trans-unit>
+      <trans-unit id="title" approved="yes">
+        <source>News category manager</source>
+        <target state="translated">Nachrichtenkategorie-Manager</target>
+      </trans-unit>
+      <trans-unit id="moveCategoryinto" approved="yes">
+        <source>move category into</source>
+        <target state="translated">Kategorie verschieben in</target>
+      </trans-unit>
+      <trans-unit id="copyCategoryinto" approved="yes">
+        <source>copy category into</source>
+        <target state="translated">Kategorie kopieren in</target>
+      </trans-unit>
+      <trans-unit id="copyCategoryafter" approved="yes">
+        <source>copy category after</source>
+        <target state="translated">Kategorie kopieren hinter</target>
+      </trans-unit>
+      <trans-unit id="edit" approved="yes">
+        <source>Edit record</source>
+        <target state="translated">Datensatz bearbeiten</target>
+      </trans-unit>
+      <trans-unit id="showInfo" approved="yes">
+        <source>Show information</source>
+        <target state="translated">Information anzeigen</target>
+      </trans-unit>
+      <trans-unit id="unHide" approved="yes">
+        <source>Unhide Record</source>
+        <target state="translated">Datensatz sichtbar machen</target>
+      </trans-unit>
+      <trans-unit id="hide" approved="yes">
+        <source>Hide Record</source>
+        <target state="translated">Datensatz verbergen</target>
+      </trans-unit>
+      <trans-unit id="deleteWarning" approved="yes">
+        <source>Are you sure you want to delete this record?</source>
+        <target state="translated">Diesen Datensatz tatsächlich löschen?</target>
+      </trans-unit>
+      <trans-unit id="delete" approved="yes">
+        <source>Delete record (!)</source>
+        <target state="translated">Datensatz löschen (!)</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
