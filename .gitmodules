@@ -10,7 +10,4 @@
 [submodule "typo3conf/ext/ezbrequest"]
 	path = typo3conf/ext/ezbrequest
 	url = git://github.com/ssp/typo3-ezbrequest.git
-[submodule "typo3conf/ext/xmlinclude"]
-    path = typo3conf/ext/xmlinclude
-	url = git://github.com/ssp/typo3-xmlinclude.git
 
