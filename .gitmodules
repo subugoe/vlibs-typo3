@@ -10,4 +10,10 @@
 [submodule "typo3conf/ext/ezbrequest"]
 	path = typo3conf/ext/ezbrequest
 	url = git://github.com/ssp/typo3-ezbrequest.git
+[submodule "typo3conf/ext/zamn"]
+	path = typo3conf/ext/zamn
+	url = git://github.com/ssp/typo3-zamn.git
+[submodule "typo3conf/ext/mathematicians"]
+	path = typo3conf/ext/mathematicians
+	url = git://github.com/ssp/typo3-mathematicians.git
 
