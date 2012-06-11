@@ -301,12 +301,20 @@ max-width: 1200px;
 	font-size: 111%;
 }
 
-#pz2-results ol.pz2-resultList {
+#pazpar2 #pz2-results ol.pz2-resultList {
 	padding-left: 30px;
 }
 
-#pazpar2 .pz2-currentPage {
-	padding: 0 0 0.2em 0.8em;
+#pazpar2 .pz2-pager li {
+	padding: 0;
+}
+
+#pazpar2 .pz2-pager li a {
+	padding: 0 0.3em;
+}
+
+#pazpar2 .pz2-pager .pz2-currentPage {
+	padding: 0 0.3em;
 }
 
 #pazpar2 #pz2-termLists .pz2-progressIndicator {
@@ -339,7 +347,7 @@ max-width: 1200px;
 }
 
 #pazpar2 .pz2-details dd {
-	margin-left: 115px;
+	margin-left: 11em;
 }
 
 #pazpar2 .pz2-details dl li {
