@@ -935,3 +935,11 @@ padding: .5em .5em;
 #cText .tx-ezbrequest-pi1 #journalList li span.ampel {
 	left: -32px;
 }
+
+
+/*
+	Hide duplicate more link in news list
+*/
+span.news-list-morelink {
+	display: none;
+}
