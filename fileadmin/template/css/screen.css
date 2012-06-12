@@ -533,15 +533,11 @@ margin-bottom: 0;
 padding-bottom: 0;
 }
 
-.newsTeaser p.bodytext
-{
-
+.news-list-container .showResultsWrap {
+	display: none;
 }
 
-.newsTeaser a
-{
 
-}
 /* Ende Content Bereich*/
 
 /* Abschluss unten*/
