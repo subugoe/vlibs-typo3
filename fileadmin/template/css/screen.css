@@ -366,6 +366,17 @@ max-width: 1200px;
 	color: #930;
 }
 
+#pazpar2 .pz2-fieldsets ul {
+	margin-left: 1.5em;
+}
+
+#pazpar2 .pz2-fieldsets ul li {
+	padding: 0;
+}
+
+#pazpar2 #pz2-mainForm {
+	line-height: 180%;
+}
 
 #cInhalt
 {
