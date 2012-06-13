@@ -15,6 +15,9 @@ RedirectMatch 301 geo-leo-e-docs(.*) http://e-docs.geo-leo.de/
 	# Opac To Atom Script
 	RewriteRule opac.atom fileadmin/opac/opac-feed2.php [L]
 
+	# Redirect geo-guide.de domain to /geo-guide
+	RewriteCond %{HTTP_HOST} geo-guide\.de [NC]
+	RewriteRule ^/.*$ http://geo-leo.de/geo-guide [L,R,NE]
 
 	# Redirect TYPO3 backend requests to SSL connections if SSL is available.
 	<IfDefine SSL>
