@@ -4,6 +4,15 @@
 	# Opac To Atom Script
 	RewriteRule opac.atom fileadmin/opac/opac-feed2.php [L]
 
+	# Redirect vlib-math.de domain to /?L=1
+	RewriteCond %{HTTP_HOST} vlib-math\.de$ [NC]
+	RewriteRule .* http://vifamath.de/?L=1 [L,R=301]
+
+	# Ensure canonical host name
+	RewriteCond %{HTTP_HOST} !^vifamath\.de [NC]
+	RewriteCond %{HTTP_HOST} !^10.0.* [NC]
+	RewriteCond %{HTTP_HOST} !^$
+	RewriteRule ^/?(.*) http://vifamath.de/$1 [L,R=301,NE]
 
 	# Redirect TYPO3 backend requests to SSL connections if SSL is available.
 	<IfDefine SSL>
