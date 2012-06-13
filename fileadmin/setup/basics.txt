@@ -24,7 +24,7 @@ page {
 	headerData.1.field = subtitle // title
 	headerData.1.noTrimWrap = |<title>| – GEO-LEO</title>|
 	headerData.10 = TEXT
-	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="GEO-LEO" href="?type=9004">
+	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="GEO-LEO" href="http://geo-leo.de/?type=9004">
 	headerData.20 = TEXT
 	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/geoleo/favicon.ico" type="image/ico">
 }
