@@ -11,6 +11,7 @@
 	# Ensure canonical host name
 	RewriteCond %{HTTP_HOST} !^vifamath\.de [NC]
 	RewriteCond %{HTTP_HOST} !^10.0.* [NC]
+	RewriteCond %{HTTP_HOST} !^vlib3.sub.uni-goettingen.de [NC]
 	RewriteCond %{HTTP_HOST} !^$
 	RewriteRule ^/?(.*) http://vifamath.de/$1 [L,R=301,NE]
 
@@ -22,7 +23,8 @@
 	</IfDefine>
 
 	# Redirect for old search plug-in.
-	RewriteCond %{REQUEST_URI} /recherche/over-all-search/
+	RewriteCond %{REQUEST_URI} /recherche/over-all-search/ [OR]
+	RewriteCond %{REQUEST_URI} /recherche/ergebnisse/
 	RewriteCond %{QUERY_STRING} query=([^&]*)
 	RewriteRule ^(.*)$ /?tx_pazpar2_pazpar2[queryString]=%1 [L,R=301]
 
