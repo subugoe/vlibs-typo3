@@ -2,6 +2,8 @@ User-agent: *
 
 # Disallow pages that cause EZB searches
 Disallow: /e-zeitschriften/
+Disallow: /e-journals/
+Disallow: /en/e-zeitschriften/
 Disallow: /en/e-journals/
 Disallow: /nationallizenzen/
 Disallow: /en/nationallizenzen/
