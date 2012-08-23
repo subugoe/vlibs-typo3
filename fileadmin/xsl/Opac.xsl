@@ -54,7 +54,7 @@
 
             <div class="searchForm">
                 <form>
-                    <xsl:copy-of select="//form[@class='form']/@*"/>
+                    <xsl:copy-of select="//form[@name='SearchForm']/@*"/>
                     <xsl:copy-of select="//td[@class='cmd']/descendant::select
                                 | //td[@class='cmd']/descendant::input"
                     />
