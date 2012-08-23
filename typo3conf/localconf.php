@@ -101,5 +101,9 @@ $TYPO3_CONF_VARS['EXT']['extConf']['lang'] = 'a:0:{}';	//  Modified or inserted 
 $TYPO3_CONF_VARS['EXT']['extConf']['fed'] = 'a:8:{s:29:"enableBackendRecordController";s:1:"0";s:26:"enableFluidContentElements";s:1:"0";s:24:"enableFluidPageTemplates";s:1:"0";s:18:"enableSolrFeatures";s:1:"0";s:21:"enableFrontendPlugins";s:1:"0";s:30:"enableIntegratedBackendLayouts";s:1:"0";s:28:"increaseExtbaseCacheLifetime";s:1:"1";s:31:"enableFallbackFluidPageTemplate";s:1:"0";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.7';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 31-05-12 15:13:00
-// Updated by TYPO3 Extension Manager 01-06-12 09:56:10
+$TYPO3_CONF_VARS['EXT']['extConf']['saltedpasswords'] = 'a:2:{s:3:"FE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}s:3:"BE.";a:5:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";s:11:"forceSalted";s:1:"0";s:15:"onlyAuthService";s:1:"0";s:12:"updatePasswd";s:1:"1";}}';	// Modified or inserted by TYPO3 Extension Manager. 
+// Updated by TYPO3 Extension Manager 23-08-12 10:51:28
+$TYPO3_CONF_VARS['BE']['loginSecurityLevel'] = 'rsa';	//  Modified or inserted by TYPO3 Install Tool.
+// Updated by TYPO3 Install Tool 23-08-12 10:52:04
+// Updated by TYPO3 Extension Manager 23-08-12 10:52:23
 ?>
