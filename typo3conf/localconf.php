@@ -109,4 +109,7 @@ $TYPO3_CONF_VARS['EXT']['extConf']['em'] = 'a:1:{s:17:"selectedLanguages";s:2:"d
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.7';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 31-05-12 19:01:33
 // Updated by TYPO3 Extension Manager 01-06-12 09:28:46
+$TYPO3_CONF_VARS['BE']['loginSecurityLevel'] = 'rsa';	//  Modified or inserted by TYPO3 Install Tool.
+$TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
+// Updated by TYPO3 Install Tool 23-08-12 11:23:58
 ?>
