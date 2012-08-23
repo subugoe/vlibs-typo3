@@ -82,11 +82,14 @@ $TYPO3_CONF_VARS['EXT']['extConf']['piwik'] = 'a:1:{s:20:"showFaultyConfigHelp";
 $TYPO3_CONF_VARS['INSTALL']['wizardDone']['tx_coreupdates_installsysexts'] = '1';	//  Modified or inserted by TYPO3 Upgrade Wizard.
 $TYPO3_CONF_VARS['BE']['lockSSL'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 16-01-12 10:54:06
-$TYPO3_CONF_VARS['EXT']['extConf']['saltedpasswords'] = 'a:2:{s:3:"FE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}s:3:"BE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}}';	//  Modified or inserted by TYPO3 Extension Manager.
+$TYPO3_CONF_VARS['EXT']['extConf']['saltedpasswords'] = 'a:2:{s:3:"FE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}s:3:"BE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['EXT']['extConf']['em'] = 'a:1:{s:17:"selectedLanguages";s:2:"de";}';	//  Modified or inserted by TYPO3 Extension Manager.
 $TYPO3_CONF_VARS['EXT']['extConf']['lang'] = 'a:0:{}';	//  Modified or inserted by TYPO3 Extension Manager.
 $TYPO3_CONF_VARS['EXT']['extConf']['fed'] = 'a:8:{s:29:"enableBackendRecordController";s:1:"0";s:26:"enableFluidContentElements";s:1:"0";s:24:"enableFluidPageTemplates";s:1:"0";s:18:"enableSolrFeatures";s:1:"0";s:21:"enableFrontendPlugins";s:1:"0";s:30:"enableIntegratedBackendLayouts";s:1:"0";s:28:"increaseExtbaseCacheLifetime";s:1:"1";s:31:"enableFallbackFluidPageTemplate";s:1:"0";}';	// Modified or inserted by TYPO3 Extension Manager. 
 $TYPO3_CONF_VARS['SYS']['compat_version'] = '4.7';	//  Modified or inserted by TYPO3 Install Tool.
 // Updated by TYPO3 Install Tool 31-05-12 15:13:00
 // Updated by TYPO3 Extension Manager 01-06-12 09:56:10
+$TYPO3_CONF_VARS['BE']['loginSecurityLevel'] = 'rsa';	//  Modified or inserted by TYPO3 Install Tool.
+// Updated by TYPO3 Install Tool 23-08-12 11:11:16
+// Updated by TYPO3 Extension Manager 23-08-12 11:11:37
 ?>
