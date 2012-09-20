@@ -2,7 +2,6 @@
 $typo_db_extTableDef_script = 'extTables.php';
 
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
-$TYPO3_CONF_VARS['SYS']['compat_version'] = '4.6';	// Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['SYS']['displayErrors'] = 2;
 $TYPO3_CONF_VARS['SYS']['devIPmask'] = '127.0.0.1,::1,134.76.162.165';
 
