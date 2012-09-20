@@ -11,7 +11,9 @@
 	# Ensure canonical host name
 	RewriteCond %{HTTP_HOST} !^vifamath\.de [NC]
 	RewriteCond %{HTTP_HOST} !^10.0.* [NC]
-	RewriteCond %{HTTP_HOST} !^vlib3.sub.uni-goettingen.de [NC]
+	RewriteCond %{HTTP_HOST} !^localhost* [NC]
+	RewriteCond %{HTTP_HOST} !^127.0.0.1* [NC]
+	RewriteCond %{HTTP_HOST} !^totoro.local* [NC]
 	RewriteCond %{HTTP_HOST} !^$
 	RewriteRule ^/?(.*) http://vifamath.de/$1 [L,R=301,NE]
 
