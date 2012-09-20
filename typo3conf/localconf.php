@@ -2,6 +2,7 @@
 $typo_db_extTableDef_script = 'extTables.php';
 
 ## INSTALL SCRIPT EDIT POINT TOKEN - all lines after this points may be changed by the install script!
+$TYPO3_CONF_VARS['SYS']['compat_version'] = '4.7';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['SYS']['displayErrors'] = 2;
 $TYPO3_CONF_VARS['SYS']['devIPmask'] = '127.0.0.1,::1,134.76.162.165';
 
@@ -11,7 +12,7 @@ $TYPO3_CONF_VARS['SYS']['devIPmask'] = '127.0.0.1,::1,134.76.162.165';
 $TYPO3_CONF_VARS['SYS']['encryptionKey'] = 'eff43017a2a82314f23139d9daf0e129a20af589316ec80bd0084f268b67125e5a14a2b2a9e0527657b4059ebd41f44e';	// Modified or inserted by TYPO3 Install Tool. 
 $typo_db_username = 'root';	//  Modified or inserted by TYPO3 Install Tool.
 $typo_db_password = '';	//  Modified or inserted by TYPO3 Install Tool.
-$typo_db_host = 'localhost';	//  Modified or inserted by TYPO3 Install Tool.
+$typo_db_host = '127.0.0.1';	//  Modified or inserted by TYPO3 Install Tool.
 $typo_db = 't3_vlib3';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['BE']['installToolPassword'] = '7c68019aff42ab5929c42aea9a441bcd';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['BE']['disable_exec_function'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
@@ -105,8 +106,6 @@ $TYPO3_CONF_VARS['GFX']['im_path_lzw'] = '';	//  Modified or inserted by TYPO3 I
 $TYPO3_CONF_VARS['INSTALL']['wizardDone']['tx_coreupdates_installsysexts'] = '1';	//  Modified or inserted by TYPO3 Upgrade Wizard.
 // Updated by TYPO3 Upgrade Wizard 11-01-12 09:23:00
 $TYPO3_CONF_VARS['EXT']['extConf']['em'] = 'a:1:{s:17:"selectedLanguages";s:2:"de";}';	//  Modified or inserted by TYPO3 Extension Manager.
-$TYPO3_CONF_VARS['SYS']['compat_version'] = '4.7';	//  Modified or inserted by TYPO3 Install Tool.
-// Updated by TYPO3 Install Tool 31-05-12 19:01:33
 // Updated by TYPO3 Extension Manager 01-06-12 09:28:46
 $TYPO3_CONF_VARS['BE']['loginSecurityLevel'] = 'rsa';	//  Modified or inserted by TYPO3 Install Tool.
 $TYPO3_CONF_VARS['BE']['versionNumberInFilename'] = '0';	//  Modified or inserted by TYPO3 Install Tool.
