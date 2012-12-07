@@ -24,7 +24,7 @@
 /**
  * Contains a class, tx_extdeveval_iconlister, which can display all icon combinations of a table
  *
- * $Id: class.tx_extdeveval_iconlister.php 51316 2011-08-24 10:04:37Z xperseguers $
+ * $Id: class.tx_extdeveval_iconlister.php 63722 2012-06-22 14:24:10Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -262,7 +262,7 @@ class tx_extdeveval_iconlister {
 			$sortRows = array_unique($sortRows);
 			$output.='<br /><p><strong>Unique icons:</strong></p>'.count($sortRows);
 			$output.='<br/><br/>';
-			$output.='<p><strong>Filenames:</strong></p>'.t3lib_div::view_array($sortRows);
+			$output.='<p><strong>Filenames:</strong></p>'.Tx_Extdeveval_Compatibility::viewArray($sortRows);
 
 				// DEVELOPMENT purposes, do NOT rename if you don't know what you are doing!
 			#$this->renameIconsInTypo3Temp();
@@ -289,7 +289,7 @@ class tx_extdeveval_iconlister {
 			// Compile selector box menu:
 		$content = '
 			<p><strong>Select table:</strong></p>
-			<select onchange="'.htmlspecialchars('document.location = \'index.php?tableName=\'+this.options[this.selectedIndex].value').'">
+			<select onchange="'.htmlspecialchars('document.location = \'' . t3lib_BEfunc::getModuleUrl('tools_txextdevevalM1') . '&tableName=\'+this.options[this.selectedIndex].value').'">
 				'.implode('',$opt).'
 			</select>
 			<hr />

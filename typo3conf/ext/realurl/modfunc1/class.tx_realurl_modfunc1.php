@@ -25,7 +25,7 @@
 /**
  * Speaking Url management extension
  *
- * $Id: class.tx_realurl_modfunc1.php 55784 2011-12-21 13:35:08Z dmitry $
+ * $Id: class.tx_realurl_modfunc1.php 63822 2012-06-25 09:29:36Z dmitry $
  *
  * @author	Kasper Skaarhoj <kasperYYYY@typo3.com>
  */
@@ -1522,10 +1522,13 @@ class tx_realurl_modfunc1 extends t3lib_extobjbase {
 		$condition = '';
 		$seachPath = t3lib_div::_GP('pathPrefixSearch');
 		if ($seachPath) {
+			$seachPathDecoded = $GLOBALS['TYPO3_DB']->quoteStr(
+				$GLOBALS['TYPO3_DB']->escapeStrForLike(rawurlencode($seachPath), 'tx_realurl_redirects'),
+				'tx_realurl_redirects');
 			$seachPath = $GLOBALS['TYPO3_DB']->quoteStr(
 				$GLOBALS['TYPO3_DB']->escapeStrForLike($seachPath, 'tx_realurl_redirects'),
 				'tx_realurl_redirects');
-			$condition = 'url LIKE \'%' . $seachPath . '%\' OR ' .
+			$condition = 'url LIKE \'%' . $seachPathDecoded . '%\' OR ' .
 				'destination LIKE \'%' . $seachPath . '%\'';
 		}
 
@@ -1882,7 +1885,7 @@ class tx_realurl_modfunc1 extends t3lib_extobjbase {
 				// Validate
 				//
 				$fields['source'] = strtolower(trim($fields['source']));
-				$fields['target'] = strtolower(trim($fields['target']));
+				$fields['target'] = trim($fields['target']);
 				// Check empty or same
 				if ($fields['source'] == $fields['target']) {
 					// Either equal or empty, ignore the input

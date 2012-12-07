@@ -24,7 +24,7 @@
 /**
  * Syntax Highlighting TypoScript or PHP code
  *
- * $Id: class.tx_extdeveval_highlight.php 43222 2011-02-07 15:40:53Z ohader $
+ * $Id: class.tx_extdeveval_highlight.php 63721 2012-06-22 14:12:37Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -155,7 +155,7 @@ class tx_extdeveval_highlight {
 #$tsparser->xmlToTypoScriptStruct($inputCode);
 
 				if (t3lib_div::_GP('option_showparsed'))	{
-					$content.='<hr />'.t3lib_div::view_array($tsparser->setup);
+					$content.='<hr />'.Tx_Extdeveval_Compatibility::viewArray($tsparser->setup);
 					/*
 					ob_start();
 					print_r($tsparser->setup);
@@ -173,7 +173,7 @@ class tx_extdeveval_highlight {
 					$treeDat = t3lib_div::xml2tree($inputCode);
 					$content.='<hr />';
 					$content.='MD5: '.md5(serialize($treeDat));
-					$content.=t3lib_div::view_array($treeDat);
+					$content.=Tx_Extdeveval_Compatibility::viewArray($treeDat);
 				}
 			}
 				// Highlight XML content parsable with xml2array()
@@ -185,7 +185,7 @@ class tx_extdeveval_highlight {
 					$treeDat = t3lib_div::xml2array($inputCode);
 					$content.='<hr />';
 					$content.='MD5: '.md5(serialize($treeDat));
-					$content.=t3lib_div::view_array($treeDat);
+					$content.=Tx_Extdeveval_Compatibility::viewArray($treeDat);
 				}
 			}
 		}

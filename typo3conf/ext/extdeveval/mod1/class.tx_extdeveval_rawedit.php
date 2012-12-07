@@ -78,7 +78,7 @@ class tx_extdeveval_rawedit {
 					$output.='<input type="checkbox" name="show_path" value="1"'.(t3lib_div::_POST('show_path')?' checked="checked"':'').'/> Show path and rootline of record<br/>';
 					if (t3lib_div::_POST('show_path'))	{
 						$output.='<br/>Path of PID '.$pidOfRecord.': <em>'.t3lib_BEfunc::getRecordPath($pidOfRecord, '', 30).'</em><br/>';
-						$output.='RL:'.t3lib_div::view_array(t3lib_BEfunc::BEgetRootLine($pidOfRecord)).'<br/>';
+						$output.='RL:'.Tx_Extdeveval_Compatibility::viewArray(t3lib_BEfunc::BEgetRootLine($pidOfRecord)).'<br/>';
 						$output.='FLAGS:'.
 								($rec['deleted'] ? ' <b>DELETED</b>' : '').
 								($rec['pid']==-1 ? ' <b>OFFLINE VERSION of '.$rec['t3ver_oid'].'</b>' : '').
@@ -109,7 +109,7 @@ class tx_extdeveval_rawedit {
 						$output.='<input type="submit" name="_EDIT" value="EDIT" />';
 						$output.='<input type="submit" name="_DELETE" value="DELETE" onclick="return confirm(\'Are you sure you wish to delete?\');" />';
 						$output.='<br/>'.md5(implode($rec));
-						$output.=t3lib_div::view_array($rec);
+						$output.=Tx_Extdeveval_Compatibility::viewArray($rec);
 					}
 				} else {
 					$output.='No record existed!';

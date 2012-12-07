@@ -106,8 +106,9 @@
 			<label index="jquery.component.bootstrap.alert">The alert plugin is a tiny class for adding close functionality to alerts.</label>
 			<label index="jquery.component.bootstrap.button">Do more with buttons. Control button states or create groups of buttons for more components like toolbars.</label>
 			<label index="jquery.component.bootstrap.collapse">Get base styles and flexible support for collapsible components like accordions and navigation.</label>
-			<label index="jquery.component.bootstrap.carousel">A generic plugin for cycling through elements. </label>
+			<label index="jquery.component.bootstrap.carousel">A generic plugin for cycling through elements.</label>
 			<label index="jquery.component.bootstrap.typeahead">A basic, easily extended plugin for quickly creating elegant typeaheads with any form text input.</label>
+			<label index="jquery.component.bootstrap.affix">This plugin will set fixed position to elements.</label>
 			<label index="tools.component.tabs">The most important UI widget on the web</label>
 			<label index="tools.component.tabsslideshow">Transforms tabs into a working slideshow</label>
 			<label index="tools.component.tabshistory">The ability to navigate through tabs with the browser's back and forward buttons</label>

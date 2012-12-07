@@ -24,7 +24,7 @@
 /**
  * Module 'ExtDevEval' for the 'extdeveval' extension.
  *
- * $Id: index.php 51509 2011-08-29 18:22:26Z xperseguers $
+ * $Id: index.php 63722 2012-06-22 14:24:10Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -122,7 +122,7 @@ class tx_extdeveval_module1 extends t3lib_SCbase {
 		);
 
 			// If TYPO3 version is lower then TYPO3 4.5, remove features:
-		if (t3lib_div::int_from_ver(TYPO3_version) < 4005000) {
+		if (Tx_Extdeveval_Compatibility::convertVersionNumberToInteger(TYPO3_version) < 4005000) {
 			unset($this->MOD_MENU['function']['18']);
 		}
 
@@ -405,7 +405,7 @@ class tx_extdeveval_module1 extends t3lib_SCbase {
 			case 10:	// PHP source code tuning
 				$content = 'A tool to tune your source code.<br />';
 
-				$onCLick = "document.location='index.php?SET[tuneQuotes]=".($this->MOD_SETTINGS['tuneQuotes']?'0':'1')."';return false;";
+				$onCLick = "document.location='" . t3lib_BEfunc::getModuleUrl('tools_txextdevevalM1') . "'&SET[tuneQuotes]=".($this->MOD_SETTINGS['tuneQuotes']?'0':'1')."';return false;";
 				$content .= '<br /><input type="hidden" name="SET[tuneQuotes]" value="0" />
 						<input type="checkbox" name="SET[tuneQuotes]" value="1"'.($this->MOD_SETTINGS['tuneQuotes']?' checked':'').' onclick="'.htmlspecialchars($onCLick).'" /> convert double quotes ( " ) to single quotes ( \' )';
 
@@ -413,7 +413,7 @@ class tx_extdeveval_module1 extends t3lib_SCbase {
 #				$content .= '<br /><input type="hidden" name="SET[tuneXHTML]" value="0" />
 #						<input type="checkbox" name="SET[tuneXHTML]" value="1"'.($this->MOD_SETTINGS['tuneXHTML']?' checked':'').' onclick="'.htmlspecialchars($onCLick).'" /> convert to XHTML (silently; use for HTML)';
 $this->MOD_SETTINGS['tuneXHTML'] = false;
-				$onCLick = "document.location='index.php?SET[tuneBeautify]=".($this->MOD_SETTINGS['tuneBeautify']?'0':'1')."';return false;";
+				$onCLick = "document.location='" . t3lib_BEfunc::getModuleUrl('tools_txextdevevalM1') . "'&SET[tuneBeautify]=".($this->MOD_SETTINGS['tuneBeautify']?'0':'1')."';return false;";
 				$content .= '<br /><input type="hidden" name="SET[tuneBeautify]" value="0" />
 						<input type="checkbox" name="SET[tuneBeautify]" value="1"'.($this->MOD_SETTINGS['tuneBeautify']?' checked':'').' onclick="'.htmlspecialchars($onCLick).'" /> reformat/beautify PHP source code (not nice with arrays like TCA)';
 
@@ -495,7 +495,7 @@ $this->MOD_SETTINGS['tuneXHTML'] = false;
 					$getEnvArray[$k] = getenv($k);
 				}
 
-				$this->content.=$this->doc->section('t3lib_div::getIndpEnv()',t3lib_div::view_array(t3lib_div::getIndpEnv('_ARRAY')),1,1);
+				$this->content.=$this->doc->section('t3lib_div::getIndpEnv()',Tx_Extdeveval_Compatibility::viewArray(t3lib_div::getIndpEnv('_ARRAY')),1,1);
 				$this->content.=$this->doc->section('getenv()',t3lib_div::view_array($getEnvArray),1,1);
 				$this->content.=$this->doc->section('HTTP_ENV_VARS',t3lib_div::view_array($GLOBALS['HTTP_ENV_VARS']),1,1);
 				$this->content.=$this->doc->section('HTTP_SERVER_VARS',t3lib_div::view_array($GLOBALS['HTTP_SERVER_VARS']),1,1);

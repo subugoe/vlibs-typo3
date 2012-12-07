@@ -24,7 +24,7 @@
 /**
  * Conversion of locallang.php files to new XML format.
  *
- * $Id: class.tx_extdeveval_ll2xml.php 51316 2011-08-24 10:04:37Z xperseguers $
+ * $Id: class.tx_extdeveval_ll2xml.php 63721 2012-06-22 14:12:37Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -79,7 +79,7 @@ class tx_extdeveval_ll2xml {
 						return $this->renderSaveForm($phpFile);
 					}
 
-					return t3lib_div::view_array(array($phpFile, $extensionDir));
+					return Tx_Extdeveval_Compatibility::viewArray(array($phpFile, $extensionDir));
 				} else return 'ERROR: Output file "'.$newFileName.'" existed already!';
 			} else return 'ERROR: '.$fCheck;
 		}
@@ -217,14 +217,16 @@ class tx_extdeveval_ll2xml {
 	function getLLarray($phpFile)	{
 		$LOCAL_LANG = t3lib_div::readLLfile($phpFile, $GLOBALS['LANG']->lang, $GLOBALS['LANG']->charSet);
 
-		$languages = explode('|', TYPO3_languages);
-		foreach($languages as $langKey)	{
+		if (defined('TYPO3_languages')) {
+			$languages = explode('|', TYPO3_languages);
+			foreach($languages as $langKey)	{
 
-				// Localized addition?
-			$lFileRef = $this->localizedFileRef($phpFile,$langKey);
-			if ($lFileRef && (string)$LOCAL_LANG[$langKey]=='EXT')	{
-				$llang = t3lib_div::readLLfile($lFileRef, $GLOBALS['LANG']->lang, $GLOBALS['LANG']->charSet);
-				$LOCAL_LANG = t3lib_div::array_merge_recursive_overrule($LOCAL_LANG, $llang);
+					// Localized addition?
+				$lFileRef = $this->localizedFileRef($phpFile,$langKey);
+				if ($lFileRef && (string)$LOCAL_LANG[$langKey]=='EXT')	{
+					$llang = t3lib_div::readLLfile($lFileRef, $GLOBALS['LANG']->lang, $GLOBALS['LANG']->charSet);
+					$LOCAL_LANG = t3lib_div::array_merge_recursive_overrule($LOCAL_LANG, $llang);
+				}
 			}
 		}
 

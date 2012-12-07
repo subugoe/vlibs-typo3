@@ -357,7 +357,7 @@
 					<label>Effects Core</label>
 					<detail>LLL:EXT:t3jquery/mod1/locallang.xml:jquery.component.effects.core</detail>
 					<file>ui/jquery.effects.core.js</file>
-					<depends>Core,EffectsCore</depends>
+					<depends>Core</depends>
 					<sources type="array">
 						<numIndex index="1">.effect(</numIndex>
 					</sources>

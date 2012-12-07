@@ -24,7 +24,7 @@
 /**
  * Moving localizations out of ll-XML files and into csh_* extensions.
  *
- * $Id: class.tx_extdeveval_llxmlsplit.php 43387 2011-02-10 11:32:42Z ohader $
+ * $Id: class.tx_extdeveval_llxmlsplit.php 63721 2012-06-22 14:12:37Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -251,9 +251,9 @@ class tx_extdeveval_llxmlsplit {
 		$content.=
 			'<h3>Meta Data and default labels of file:</h3>'.
 			'Meta data:'.
-			(is_array($fileContent['meta']) ? t3lib_div::view_array($fileContent['meta']) : '').
+			(is_array($fileContent['meta']) ? Tx_Extdeveval_Compatibility::viewArray($fileContent['meta']) : '').
 			'Default labels:'.
-			(is_array($fileContent['data']['default']) ? t3lib_div::view_array($fileContent['data']['default']) : '');
+			(is_array($fileContent['data']['default']) ? Tx_Extdeveval_Compatibility::viewArray($fileContent['data']['default']) : '');
 
 
 

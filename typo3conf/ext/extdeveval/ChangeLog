@@ -1,3 +1,25 @@
+2012-06-22  Oliver Hader  <oliver.hader@typo3.org>
+
+	* [TASK] Release of version 3.3.2
+
+2012-06-22  Oliver Hader  <oliver.hader@typo3.org>
+
+	* [FEATURE] #38296: Enabled autoload builder to consider TYPO3 6.0 scheme
+	* [FEATURE] #38299: Detect duplicate class definitions
+	* [BUGFIX] #37241: Test for case insensitive filesystem always failes (thanks to Andreas Kiessling)
+	* [BUGFIX] #38299: Follow-up to duplicated class definition check
+	* [FEATURE] Integrate TYPO3 compatibility layer
+	* [BUGFIX] #36951: Fix removed deprecated function calls (thanks to Sven Juergens)
+	* [BUGFIX] Module calls to mod.php are not considered in all places
+
+2012-01-31  Xavier Perseguers  <xavier.perseguers@typo3.org>
+
+	* [TASK] Add xml:space="preserve" to trans-units when converting ll-XML to XLIFF
+
+2011-12-29  Oliver Hader  <oliver.hader@typo3.org>
+
+	* [BUGFIX] Ensure that autoload registry is sorted by class name
+
 2011-10-18  Oliver Hader  <oliver.hader@typo3.org>
 
 	* [TASK] Release of version 3.3.1

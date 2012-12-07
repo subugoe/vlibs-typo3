@@ -24,7 +24,7 @@
 /**
  * Contains a class, tx_extdeveval_phpdoc, which can parse JavaDoc comments in PHP scripts, insert new, create a data-file for a display-plugin that exists as well.
  *
- * $Id: class.tx_extdeveval_phpdoc.php 43357 2011-02-09 18:31:59Z ohader $
+ * $Id: class.tx_extdeveval_phpdoc.php 63721 2012-06-22 14:12:37Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -239,7 +239,7 @@ class tx_extdeveval_phpdoc {
 
 
 			$output='';
-			$output.='<b>Color count:</b><br />"red"=new comments<br />"navy"=existing, modified<br />"black"=existing, not modified'.t3lib_div::view_array($this->colorCount);
+			$output.='<b>Color count:</b><br />"red"=new comments<br />"navy"=existing, modified<br />"black"=existing, not modified'.Tx_Extdeveval_Compatibility::viewArray($this->colorCount);
 
 				// Output the file
 			if (t3lib_div::_GP('_save_script'))	{

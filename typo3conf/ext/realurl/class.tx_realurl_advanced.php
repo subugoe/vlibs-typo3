@@ -28,7 +28,7 @@
 /**
  * Class for translating page ids to/from path strings (Speaking URLs)
  *
- * $Id: class.tx_realurl_advanced.php 47273 2011-05-04 08:18:31Z dmitry $
+ * $Id: class.tx_realurl_advanced.php 65533 2012-08-21 15:08:59Z dmitry $
  *
  * @author	Martin Poelstra <martin@beryllium.net>
  * @author	Kasper Skaarhoj <kasper@typo3.com>
@@ -881,15 +881,15 @@ class tx_realurl_advanced {
 	 */
 	protected function fetchPagesForPath($url) {
 		$pages = array();
-		$language = $this->pObj->getDetectedLanguage();
-		if ($language != 0) {
+		$language = intval($this->pObj->getDetectedLanguage());
+		if ($language > 0) {
 			$pagesOverlay = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('t1.pid',
 				'pages_language_overlay t1, pages t2',
 				't1.hidden=0 AND t1.deleted=0 AND ' .
 				't2.hidden=0 AND t2.deleted=0 AND ' .
 				't1.pid=t2.uid AND ' .
 				't2.tx_realurl_pathoverride=1 AND ' .
-				($language > 0 ? 't1.sys_language_uid=' . $language . ' AND ' : '') .
+				't1.sys_language_uid=' . $language . ' AND ' .
 				't1.tx_realurl_pathsegment=' . $GLOBALS['TYPO3_DB']->fullQuoteStr($url, 'pages_language_overlay'),
 				'', '', '', 'pid'
 			);
@@ -907,7 +907,7 @@ class tx_realurl_advanced {
 				$GLOBALS['TYPO3_DB']->fullQuoteStr($url, 'pages'),
 				'', '', '', 'uid');
 		if (count($pages2)) {
-			$pages = array_merge($pages, $pages2);
+			$pages = $pages + $pages2;
 		}
 		return $pages;
 	}
@@ -1265,7 +1265,7 @@ class tx_realurl_advanced {
 				$mpvar .= $row['_MP_PARAM'];
 			}
 		}
-		elseif ($page['shortcut_mode'] == 4) {
+		elseif ($page['shortcut_mode'] == 3) {
 			// Jumps to the parent page
 			$page = $GLOBALS['TSFE']->sys_page->getPage($page['pid'], $disableGroupAccessCheck);
 			$pageid = $page['uid'];

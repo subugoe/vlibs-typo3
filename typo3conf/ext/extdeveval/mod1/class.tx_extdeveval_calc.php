@@ -24,7 +24,7 @@
 /**
  * Contains a class, tx_extdeveval_calc, which can do various handy calculations
  *
- * $Id: class.tx_extdeveval_calc.php 45140 2011-03-16 15:33:04Z ohader $
+ * $Id: class.tx_extdeveval_calc.php 63721 2012-06-22 14:12:37Z ohader $
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  */
@@ -338,16 +338,16 @@ class tx_extdeveval_calc {
 				$recompiledSQL = $sqlParser->compileSQL($result);
 				if ($parts = $sqlParser->debug_parseSQLpartCompare($this->inputCalc['sql']['input'],$recompiledSQL))	{
 					if ($parts = $sqlParser->debug_parseSQLpartCompare($this->inputCalc['sql']['input'],$recompiledSQL,TRUE))	{
-						$content.= '<p><strong>Error:</strong> Re-compiled query did not match original!</p>'.t3lib_div::view_array($parts);
+						$content.= '<p><strong>Error:</strong> Re-compiled query did not match original!</p>'.Tx_Extdeveval_Compatibility::viewArray($parts);
 					} else {
-						$content.= '<p><strong>CASE Error:</strong> Re-compiled OK insensitive to character case, BUT did not match original without case equalization!</p>'.t3lib_div::view_array($parts);
+						$content.= '<p><strong>CASE Error:</strong> Re-compiled OK insensitive to character case, BUT did not match original without case equalization!</p>'.Tx_Extdeveval_Compatibility::viewArray($parts);
 					}
 				} else {
 					$content.= '<p><strong>OK: </strong> Re-compiled query OK</p>';
 				}
 				$content.= '<hr />';
 
-				$content.= t3lib_div::view_array($result);
+				$content.= Tx_Extdeveval_Compatibility::viewArray($result);
 			} else {
 				$content.= '<p>'.$result.'</p>';
 			}
@@ -435,7 +435,7 @@ class tx_extdeveval_calc {
 				}
 			}
 
-			$content.=t3lib_div::view_array($outRow);
+			$content.=Tx_Extdeveval_Compatibility::viewArray($outRow);
 		}
 
 		return $content;
@@ -544,7 +544,7 @@ class tx_extdeveval_calc {
 				unset($organizedTerms[$key]['RAWDATA']);
 			}
 
-			$content.= t3lib_div::view_array($organizedTerms);
+			$content.= Tx_Extdeveval_Compatibility::viewArray($organizedTerms);
 
 			ksort($organizedTerms);
 
