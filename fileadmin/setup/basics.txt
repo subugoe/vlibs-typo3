@@ -45,18 +45,39 @@ page.1 {
 
 
 # configure pazpar2 placeholder strings
-plugin.tx_pazpar2._LOCAL_LANG {
-	# Hack! TYPO3 seems unable to recognise the 'en' language code
-	default {
-		form-main-placeholder = e.g. planet or arctic*
-		form-extended-placeholder-person = e.g. Hubble or Wegener, Alfred
+plugin.tx_pazpar2 {
+	_LOCAL_LANG {
+		# Hack! TYPO3 seems unable to recognise the 'en' language code
+		default {
+			form-main-placeholder = e.g. planet or arctic*
+			form-extended-placeholder-person = e.g. Hubble or Wegener, Alfred
+		}
+		de {
+			form-main-placeholder = z.B. Planet oder Vulkan*
+			form-extended-placeholder-person = z.B. Hubble oder Wegener, Alfred
+		}
 	}
-	de {
-		form-main-placeholder = z.B. Planet oder Vulkan*
-		form-extended-placeholder-person = z.B. Hubble oder Wegener, Alfred
+
+	settings {
+		fulltextSearch = 2
+		journalTitleOnlySearch = 1
+		exportFormats {
+			ris = 1
+			bibtex = 1
+		}
+		showKVKLink = 1
+		sortOrder {
+			1.fieldName = date
+			1.direction = descending
+			2.fieldName = author
+			2.direction = ascending
+			3.fieldName = title
+			3.direction = ascending
+			4.fieldName = title-number-section
+			4.direction = ascending
+		}
 	}
 }
-
 
 # don’t use cssstyledcontent’s default CSS
 plugin.tx_cssstyledcontent._CSS_DEFAULT_STYLE >
