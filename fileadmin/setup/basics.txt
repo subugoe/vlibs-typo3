@@ -39,7 +39,29 @@ page.1 {
 	variables {
 		headline = TEXT
 		headline.field = subtitle // title
-    }
+		}
+}
+
+
+plugin.tx_pazpar2.settings {
+	fulltextSearch = 2
+	journalTitleOnlySearch = 1
+	exportFormats {
+		ris = 1
+		bibtex = 1
+	}
+	showKVKLink = 1
+	sortOrder {
+		1.fieldName = date
+		1.direction = descending
+		2.fieldName = author
+		2.direction = ascending
+		3.fieldName = title
+		3.direction = ascending
+		4.fieldName = title-number-section
+		4.direction = ascending
+	}
+	resultsPerPage = 20
 }
 
 
