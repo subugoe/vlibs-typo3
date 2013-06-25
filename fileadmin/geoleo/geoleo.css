@@ -80,7 +80,7 @@ body:before {
 
 /* GENERAL ELEMENT SETUP */
 
-a {
+a:link {
 	text-decoration: none;
 	color: #039;
 }
