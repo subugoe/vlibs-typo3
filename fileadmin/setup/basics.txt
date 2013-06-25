@@ -7,7 +7,7 @@ config {
 	index_external = 1
 
 	removeDefaultJS = 1
-	admPanel = 1
+	admPanel = 0
 
 	noPageTitle = 2
 	uniqueLinkVars = 1
