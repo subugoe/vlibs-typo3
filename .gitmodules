@@ -14,3 +14,6 @@
     path = typo3conf/ext/xmlinclude
 	url = git://github.com/ssp/typo3-xmlinclude.git
 
+[submodule "fileadmin/jfk-institut-zeitungen"]
+	path = fileadmin/jfk-institut-zeitungen
+	url = git@github.com:subugoe/jfk-institut-zeitungen.git
