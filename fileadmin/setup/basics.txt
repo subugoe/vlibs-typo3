@@ -7,11 +7,15 @@ config {
 	index_external = 1
 
 	removeDefaultJS = 1
-	admPanel = 1
+	admPanel = 0
 
-	noPageTitle = 2
+	pageTitleFirst = 1
+	pageTitleSeparator = —
+	pageTitleSeparator.noTrimWrap = | | |
+
 	uniqueLinkVars = 1
 }
+
 
 page = PAGE
 page {
@@ -19,9 +23,6 @@ page {
 	stylesheet = {$my_stylesheet_file}
 	meta.description.field = description
 	meta.keywords.field = keywords
-	headerData.1 = TEXT
-	headerData.1.field = subtitle // title
-	headerData.1.noTrimWrap = |<title>| – Library of Anglo-American Culture</title>|
 	headerData.10 = TEXT
 	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="Lib AAC" href="http://aac.sub.uni-goettingen.de/?type=9004">
 	headerData.20 = TEXT
@@ -39,7 +40,7 @@ page.1 {
 	variables {
 		headline = TEXT
 		headline.field = subtitle // title
-		}
+	}
 }
 
 

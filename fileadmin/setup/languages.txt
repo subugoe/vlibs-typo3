@@ -5,6 +5,23 @@
 
 */
 
+plugin.tx_pazpar2 {
+	_LOCAL_LANG {
+		# Hack! TYPO3 seems unable to recognise the 'en' language code
+		default {
+			form-main-placeholder = e.g. planet or arctic*
+			form-extended-placeholder-person = e.g. Hubble or Wegener, Alfred
+			facet-title-xtargets = gaga
+			media-type-book = gaga
+			link-description-Link = gaga
+		}
+		de {
+			form-main-placeholder = z.B. Planet oder Vulkan*
+			form-extended-placeholder-person = z.B. Hubble oder Wegener, Alfred
+			facet-title-xtargets = gaga
+		}
+	}
+}
 
 // Global defaults
 config {
