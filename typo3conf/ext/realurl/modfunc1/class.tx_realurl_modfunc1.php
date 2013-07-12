@@ -25,7 +25,7 @@
 /**
  * Speaking Url management extension
  *
- * $Id: class.tx_realurl_modfunc1.php 63822 2012-06-25 09:29:36Z dmitry $
+ * $Id$
  *
  * @author	Kasper Skaarhoj <kasperYYYY@typo3.com>
  */

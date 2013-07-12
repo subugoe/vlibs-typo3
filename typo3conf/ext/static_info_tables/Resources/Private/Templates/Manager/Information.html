@@ -1,0 +1,18 @@
+<f:layout name="Default" />
+
+<f:section name="iconButtons">
+</f:section>
+
+<f:section name="Content">
+	<h3>{f:translate(key: 'actionList')}</h3>
+	<dl class="t3-overview-list">
+		<f:for each="{actions}" as="action" key="key">
+			<dt>
+				<f:link.action action="{action.code}">
+					<f:translate key="{action.title}" />
+				</f:link.action>
+			</dt>
+			<dd><f:translate key="{action.description}" /></dd>
+		</f:for>
+	</dl>
+</f:section>

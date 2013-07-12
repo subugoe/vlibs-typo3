@@ -1,3 +1,13 @@
+2013-03-14  Franz Holzinger  <franz@ttproducts.de>
+	* add a manual with the description where the UPDATE! function can be found
+
+2013-03-01  Daniel Minder <typo3@minder.de>
+	* Upgrade to changes of static_info_tables 2.3.0:
+	  added translations for 2 territories, 9 countries, 33 country zones,
+	  4 currencies and 2 languages and changed 1 currency
+	* Dependency setting will now always reflect the version of
+	  static_info_tables for which the translation is made
+
 2011-05-18  Franz Holzinger  <franz@ttproducts.de>
 	* replace 'Belarus' by 'Weißrussland'
 

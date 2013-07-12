@@ -1,3 +1,41 @@
+2013-05-07  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fix mixed case extension key
+	* Released version 1.12.6
+
+2013-05-06  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Released version 1.12.5
+
+2013-04-11  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* [BUGFIX] mysqli compatibility issue with TYPO3 CMS 6.1 (thanks to Benni Mack and Oliver Hader)
+	* Fixed bug #46782: avoid using loadTCA with TYPO3 >= 6.1
+	* Change url decoding: replace rawurldecode() with urldecode()
+	* [BUGFIX] Decodefilename adds rawurlencode to only one segment (thanks to Stephan Schuler)
+
+2013-03-13  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Released version 1.12.4
+
+2013-02-26  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Added information to the manual about calling userFunc for alias processing (thanks to Christian Ludwig)
+
+2013-02-08  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #43816: flock() calls in autoconf file generation prevent NFS hosting
+	* Fixed bug #42295: Revitalization of pathcache confused if nothing changed
+	* Fixed bug #41477: Pathcache entries are not expired for subpages (thanks to Steffen Gebert)
+
+2013-01-29  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #43599: 404 error if there is a separator in the subpage
+
+2012-08-23  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Do not set cHash if there are no GET variables (sfp 926.1041)
+
 2012-08-21  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 
 	* Fixed bug #18548: Deprecation Warnings with TYPO3 4.7

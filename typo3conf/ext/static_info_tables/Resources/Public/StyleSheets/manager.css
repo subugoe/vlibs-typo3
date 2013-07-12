@@ -1,0 +1,34 @@
+.sjbr-static-info-tables-manager dl {
+	margin: 0;
+	padding: 1em 0 0 0;
+}
+.sjbr-static-info-tables-manager dt,
+.sjbr-static-info-tables-manager dd {
+	float: left;
+	margin: 0;
+	padding: 0 0 .5em 0;
+}
+.sjbr-static-info-tables-manager dt {
+	clear: left;
+	margin-top: 5px;
+	padding-right: 1em;
+	text-align: right;
+	width: 25%;
+}
+.sjbr-static-info-tables-manager dd {
+	margin-top: 8px;
+	text-align: left;
+	width: 50%;
+}
+.sjbr-static-info-tables-manager dd input {
+	margin-bottom: 5px;
+}
+.sjbr-static-info-tables-manager dd label {
+	margin-bottom: 3px;
+	padding: 0 0 0 .5em;
+	vertical-align: top;
+}
+.sjbr-static-info-tables-manager ul.errors li {
+	font-weight: bold;
+}
+

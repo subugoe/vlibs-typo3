@@ -23,53 +23,14 @@
 ***************************************************************/
 /**
  * Functions to convert the character encoding of the static info tables
+ * * DEPRECATED * Used by language packs prior to Static Info Tables version 6
  *
- * $Id: class.tx_staticinfotables_encoding.php 8613 2008-03-16 07:07:25Z franzholz $
- *
- * @author	René Fritz <r.fritz@colorcube.de>
- * @package TYPO3
- */
-/**
- * [CLASS/FUNCTION INDEX of SCRIPT]
- *
- *
- *
- *   60: class tx_staticinfotables_encoding
- *
- *              SECTION: GUI functions
- *   80:     function getEncodingSelect ($elementName, $currentKey, $firstEntry='', $unsetEntries='')
- *
- *              SECTION: Processing functions
- *  159:     function convertEncodingTable($table, $source_encoding, $dest_encoding='utf-8')
- *
- * TOTAL FUNCTIONS: 2
- * (This index is automatically created/updated by the extension "extdeveval")
- *
- */
-
-
-global $TYPO3_CONF_VARS;
-
-
-/**
- * Functions to convert the character encoding of the static info tables
- *
- * @author	René Fritz <r.fritz@colorcube.de>
- * @package TYPO3
  */
 class tx_staticinfotables_encoding {
-
-
-
-	/*************************************
-	 *
-	 * GUI functions
-	 *
-	 *************************************/
-
-
 	/**
 	 * Returns a selector box with charset encodings
+	 *
+	 * @deprecated since 6.0, will be removed two versions later - Language pack should be re-created
 	 *
 	 * @param	string		$elementName it the form elements name, probably something like "SET[...]"
 	 * @param	string		$currentKey is the key to be selected currently.
@@ -77,39 +38,13 @@ class tx_staticinfotables_encoding {
 	 * @param	string		$unsetEntries List of keys that should be removed (comma list).
 	 * @return	string		HTML code for selector box
 	 */
-	function getEncodingSelect ($elementName, $currentKey, $firstEntry='', $unsetEntries='')	{
-
+	function getEncodingSelect ($elementName, $currentKey, $firstEntry='', $unsetEntries='') {
+		\TYPO3\CMS\Core\Utility\GeneralUtility::logDeprecatedFunction();
 		$menuItems = array(
 			'utf-8' => 'UTF-8',
-			'iso-8859-1' => 'ISO-8859-1 (Western Europe)',
-			'iso-8859-2' => 'ISO-8859-2 (Central Europe)',
-			'iso-8859-3' => 'ISO-8859-3 (Latin 3)',
-			'iso-8859-4' => 'ISO-8859-4 (Baltic)',
-			'iso-8859-5' => 'ISO-8859-5 (Cyrillic)',
-			'iso-8859-6' => 'ISO-8859-6 (Arabic)',
-			'iso-8859-7' => 'ISO-8859-7 (Greek)',
-			'iso-8859-7' => 'ISO-8859-8 (Hebrew)',
-			'iso-8859-9' => 'ISO-8859-9 (Turkish)',
-			'iso-8859-14' => 'ISO-8859-14 (Celtic)',
-			'iso-8859-15' => 'ISO-8859-15 (Latin 9)',
-			'windows-1250' => 'Windows 1250 (ANSI - Central Europe)',
-			'windows-1251' => 'Windows 1251 (ANSI - Cyrillic)',
-			'windows-1252' => 'Windows 1252 (ANSI - Western Europe)',
-			'windows-1253' => 'Windows 1253 (ANSI - Greek)',
-			'windows-1254' => 'Windows 1254 (ANSI - Turkish)',
-			'windows-1255' => 'Windows 1255 (ANSI - Hebrew)',
-			'windows-1256' => 'Windows 1256 (ANSI - Arabic)',
-			'windows-1257' => 'Windows 1257 (ANSI - Baltic)',
-			'windows-1258' => 'Windows 1258 (ANSI - Vietnamese)',
-			'koi-8r' => 'KOI-8R (Russian)',
-			'shift_jis' => 'Shift JIS (Japanese)',
-			'euc-jp' => 'EUC-JP (Japanese)',
-			'gb2312' => 'GB2312 / EUC-CN (Chinese Simplified)',
-			'big5' => 'Big5 (Chinese)',
-			'ascii' => 'ASCII',
 		);
 
-		if($firstEntry AND $menuItems[$firstEntry]) {
+		if ($firstEntry && $menuItems[$firstEntry]) {
 			$entry = array($firstEntry => $menuItems[$firstEntry]);
 			unset($menuItems[$firstEntry]);
 			$menuItems = array_merge($entry, $menuItems);
@@ -123,10 +58,10 @@ class tx_staticinfotables_encoding {
 		$options = array();
 		foreach($menuItems as $value => $label)	{
 			$options[] = '<option value="'.htmlspecialchars($value).'"'.(!strcmp($currentKey,$value)?' selected="selected"':'').'>'.
-							t3lib_div::deHSCentities(htmlspecialchars($label)).
+							\TYPO3\CMS\Core\Utility\GeneralUtility::deHSCentities(htmlspecialchars($label)).
 							'</option>';
 		}
-		if (count($options))	{
+		if (count($options)) {
 			return '
 
 					<!-- charset encoding menu -->
@@ -137,56 +72,5 @@ class tx_staticinfotables_encoding {
 						';
 		}
 	}
-
-
-
-	/*************************************
-	 *
-	 * Processing functions
-	 *
-	 *************************************/
-
-
-	/**
-	 * Converts the font encoding of text fields of a selected table
-	 * The fields must be marked in TCA...['config']['_is_string'] => 1
-	 *
-	 * @param	string		$table DB table
-	 * @param	string		$source_encoding Current encoding used in DB
-	 * @param	string		$dest_encoding Destination encoding
-	 * @return	void
-	 */
-	function convertEncodingTable($table, $source_encoding, $dest_encoding='utf-8') {
-		global $TCA;
-
-		if ($source_encoding AND $dest_encoding) {
-		 	t3lib_div::loadTCA($table);
-
-		 		// search columns which are text
-		 	$stringColumns = array();
-		 	foreach ($TCA[$table]['columns'] as $field => $colDef) {
-		 		if($colDef['config']['_is_string']) {
-		 			$stringColumns[] = $field;
-		 		}
-		 	}
-
-			$csconv = t3lib_div::makeInstance('t3lib_cs');
-		 	$stringColumns[] = 'uid';
-			$res = $GLOBALS['TYPO3_DB']->exec_SELECTquery(implode(',', $stringColumns), $table, '');
-		 	while ($row = $GLOBALS['TYPO3_DB']->sql_fetch_assoc($res))	{
-		 		$uid = $row['uid'];
-		 		unset($row['uid']);
-		 		foreach ($row as $field => $value) {
-		 			$row[$field] = $csconv->conv($value, $source_encoding, $dest_encoding);
-		 		}
-				$GLOBALS['TYPO3_DB']->exec_UPDATEquery($table, 'uid='.intval($uid), $row);
-		 	}
-		}
-	}
-
-}
-
-if (defined('TYPO3_MODE') && $GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/static_info_tables/class.tx_staticinfotables_encoding.php'])	{
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/static_info_tables/class.tx_staticinfotables_encoding.php']);
 }
 ?>

@@ -2,7 +2,7 @@
 /***************************************************************
 *  Copyright notice
 *
-*  (c) 2005-2008 René Fritz (r.fritz@colorcube.de)
+*  (c) 2013 Stanislas Rolland <typo3(arobas)sjbr.ca>
 *  All rights reserved
 *
 *  This script is part of the Typo3 project. The Typo3 project is
@@ -21,73 +21,43 @@
 *
 *  This copyright notice MUST APPEAR in all copies of the script!
 ***************************************************************/
-
-
-
 /**
  * Class for updating the db
- *
- * $Id: class.ext_update.php 9462 2008-07-15 16:05:14Z franzholz $
- *
- * @author	 René Fritz <r.fritz@colorcube.de>
  */
-class ext_update  {
-
+class ext_update {
 	/**
-	 * Main function, returning the HTML content of the module
+	 * Main function, returning the HTML content
 	 *
-	 * @return	string		HTML
+	 * @return string HTML
 	 */
 	function main()	{
-
-		require_once(t3lib_extMgm::extPath(STATIC_INFO_TABLES_EXTkey).'class.tx_staticinfotables_encoding.php');
-
-		$tableArray = array ('static_countries', 'static_country_zones', 'static_languages', 'static_currencies');
-
 		$content = '';
-		$content.= '<br />Convert character encoding of the static info tables.';
-		$content.= '<br />The default encoding is UTF-8.';
-		$destEncoding = t3lib_div::_GP('dest_encoding');
 
-		if(t3lib_div::_GP('convert') AND ($destEncoding != '')) {
-			foreach ($tableArray as $table) {
-				$content .= '<p>'.htmlspecialchars($table.' > '.$destEncoding).'</p>';
-				tx_staticinfotables_encoding::convertEncodingTable($table, 'utf-8', $destEncoding);
+		$objectManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
+		$databaseUpdateUtility = $objectManager->get('SJBR\\StaticInfoTables\\Utility\\DatabaseUpdateUtility');
+		
+		// Clear the class cache
+		$classCacheManager = $objectManager->get('SJBR\\StaticInfoTables\\Cache\\ClassCacheManager');
+		$classCacheManager->reBuild();
+
+		// Get the extensions which want to extend static_info_tables
+		$loadedExtensions = array_unique(\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getLoadedExtensionListArray());
+		foreach ($loadedExtensions as $extensionKey) {
+			$extensionInfoFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extensionKey) . 'Configuration/DomainModelExtension/StaticInfoTables.txt';
+			if (file_exists($extensionInfoFile)) {
+				$databaseUpdateUtility->doUpdate($extensionKey);
+				$content.= '<p>' . \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables') . ' ' . $extensionKey . '</p>';
 			}
-			$content .= '<p>You must enter the charset \''.$destEncoding.'\' now manually in the EM for static_info_tables!</p>';
-			$content .= '<p>Done</p>';
-		} else {
-			$content .= '<form name="static_info_tables_form" action="'.htmlspecialchars(t3lib_div::linkThisScript()).'" method="post">';
-			$linkScript = t3lib_div::slashJS(t3lib_div::linkThisScript());
-			$content .= '<br /><br />';
-			$content .= 'This conversion works only once. When you converted the tables and you want to do it again to another encoding you have to reinstall the tables with the Extension Manager or select \'UPDATE!\'.';
-			$content .= '<br /><br />';
-			$content .= 'Destination character encoding:';
-			$content .= '<br />'.tx_staticinfotables_encoding::getEncodingSelect('dest_encoding', '', '', $TYPO3_CONF_VARS['EXTCONF'][STATIC_INFO_TABLES_EXTkey]['charset']);
-			$content .= '<br /><br />';
-			$content .= '<input type="submit" name="convert" value="Convert"  onclick="this.form.action=\''.$linkScript.'\';submit();" />';
-			$content .= '</form>';
 		}
-
+		if (!$content) {
+			// Nothing to do
+			$content .= '<p>' . \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('nothingToDo', 'StaticInfoTables') . '</p>';
+		}
 		return $content;
 	}
 
-	/**
-	 * access is always allowed
-	 *
-	 * @return	boolean		Always returns true
-	 */
 	function access() {
-		return true;
+		return TRUE;
 	}
-
-
 }
-
-// Include extension?
-if (defined('TYPO3_MODE') && $GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/static_info_tables/class.ext_update.php'])	{
-	include_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/static_info_tables/class.ext_update.php']);
-}
-
-
 ?>
