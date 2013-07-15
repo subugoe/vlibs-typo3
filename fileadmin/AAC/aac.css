@@ -737,7 +737,8 @@ a.languageSwitcher:hover {
 	content: '\2013';
 }
 
-.pz2-detail-catalogueLink:link {
+.pz2-detail-catalogueLink:link,
+.pz2-detail-catalogueLink:visited {
 	color: #7d7d7d;
 	white-space: nowrap;
 }
