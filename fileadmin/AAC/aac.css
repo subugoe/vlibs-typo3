@@ -712,7 +712,7 @@ a.languageSwitcher:hover {
 }
 
 .container_16 .tx_find .results ol.resultList {
-	margin-bottom: 2em;
+	margin: 0 0 2em 0;
 }
 
 .tx_find li {
@@ -737,18 +737,18 @@ a.languageSwitcher:hover {
 	content: '\2013';
 }
 
-.pz2-detail-catalogueLink:link,
-.pz2-detail-catalogueLink:visited {
+.catalogueLink:link,
+.catalogueLink:visited {
 	color: #7d7d7d;
 	white-space: nowrap;
 }
 
-.pz2-detail-catalogueLink:hover:link,
-.pz2-detail-catalogueLink:hover:visited {
+.catalogueLink:hover:link,
+.catalogueLink:hover:visited {
 	color: #263476;
 }
 
-.pz2-detail-catalogueLink:after {
+.catalogueLink:after {
 	content: '\002192';
 	margin-left: 0.2em;
 }
