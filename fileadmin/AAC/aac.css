@@ -706,6 +706,58 @@ a.languageSwitcher:hover {
 	background-image: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small_click.png);
 }
 
+/* styling for find items in jfk-institut-zeitungen */
+.tx_find {
+	padding: 0 10px;
+}
+
+.container_16 .tx_find .results ol.resultList {
+	margin-bottom: 2em;
+}
+
+.tx_find li {
+	margin-bottom: 0.5em;
+}
+
+.tx_find li p {
+	margin: 0;
+}
+
+.field-title {
+	font-weight: bold;
+	color: #263476;
+}
+
+.field-publisher {
+	font-style: italic;
+}
+
+.field-publisher:before {
+	margin-right: 0.2em;
+	content: '\2013';
+}
+
+.pz2-detail-catalogueLink:link {
+	color: #7d7d7d;
+	white-space: nowrap;
+}
+
+.pz2-detail-catalogueLink:hover:link,
+.pz2-detail-catalogueLink:hover:visited {
+	color: #263476;
+}
+
+.pz2-detail-catalogueLink:after {
+	content: '\002192';
+	margin-left: 0.2em;
+}
+
+.field-coverage {
+	display: none;
+	font-style: italic;
+	color: #999;
+}
+
 
 
 /* Opera Fix for CSS Sticky footer */
