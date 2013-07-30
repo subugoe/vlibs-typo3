@@ -37,11 +37,27 @@ class tx_staticinfotables_div extends \SJBR\StaticInfoTables\Utility\Localizatio
 	}
 
 	/**
+	 * Fetches short title from an iso code
+	 *
+	 * @deprecated since 6.0, will be removed two versions later - Use \SJBR\StaticInfoTables\Utility\LocalizationUtility::getLabelFieldValue or, better, \SJBR\StaticInfoTables\Utility\LocalizationUtility::translate instead
+	 * @param string $tableName: table name
+	 * @param string $isoCode: iso code
+	 * @param string $language: language code - if not set current default language is used
+	 * @param boolean $local: local name only - if set local title is returned
+	 * @return string short title
+	 */
+	public static function getTitleFromIsoCode ($tableName, $isoCode, $language = '', $local = FALSE) {
+		\TYPO3\CMS\Core\Utility\GeneralUtility::logDeprecatedFunction();
+		$indentifiers = array();
+		$indentifiers['iso'] = $isoCode;
+		return parent::getLabelFieldValue($identifiers, $tableName, $language, $local);
+	}
+
+	/**
 	 * Get a list of countries by specific parameters or parts of names of countries
 	 * in different languages. Parameters might be left empty.
 	 *
 	 * @deprecated since 6.0, will be removed two versions later - Use methods of \SJBR\StaticInfoTables\Domain\Repository\CountryRepository directly
-	 *
 	 *
 	 * @param	string		a name of the country or a part of it in any language
 	 * @param	string		ISO alpha-2 code of the country
@@ -83,6 +99,18 @@ class tx_staticinfotables_div extends \SJBR\StaticInfoTables\Utility\Localizatio
 			$GLOBALS['TYPO3_DB']->sql_free_result($res);
 		}
 		return $rcArray;
+	}
+
+	/**
+	 * Function to add additional select items in the form of a hotlist
+	 *
+	 * @deprecated since 6.0, will be removed two versions later - Use suggest wizard instead
+	 *
+	 * @param array	 itemsProcFunc data array:
+	 * @return void	 The $items array may have been modified
+	 */
+	public function selectItemsTCA ($params) {
+		\TYPO3\CMS\Core\Utility\GeneralUtility::logDeprecatedFunction();
 	}
 }
 ?>

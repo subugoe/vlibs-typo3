@@ -72,7 +72,7 @@ class LocalizationUtility {
 	 * @param boolean local name only - if set local labels are returned
 	 * @return string the value for the label field
 	 */
-	protected static function getLabelFieldValue ($identifiers, $tableName, $language, $local = FALSE) {
+	public static function getLabelFieldValue ($identifiers, $tableName, $language, $local = FALSE) {
 		$value = '';
 		$labelFields = self::getLabelFields($tableName, $language, $local);
 		if (count($labelFields)) {

@@ -25,48 +25,81 @@ namespace SJBR\StaticInfoTables\Cache;
  */
 class ClassCacheManager {
 
-	const CACHE_FILE_LOCATION = 'typo3temp/Cache/Code/cache_phpcode/StaticInfoTables/';
+	/**
+	 * Extension key
+	 *
+	 * @var string
+	 */
+	protected $extensionKey = 'static_info_tables';
 
 	/**
-	 * Builds the proxy files
+	 * @var \TYPO3\CMS\Core\Cache\Frontend\FrontendInterface
+	 */
+	protected $cacheInstance;
+ 
+	/**
+	 * Constructor
+	 */
+	public function __construct() {
+		$this->initializeCache();
+	}
+ 
+	/**
+	 * Initialize cache instance to be ready to use
 	 *
-	 * @return array information for the autoloader
+	 * @return void
+	 */
+	protected function initializeCache() {
+		try {
+			$this->cacheInstance = $GLOBALS['typo3CacheManager']->getCache($this->extensionKey);
+		} catch (\TYPO3\CMS\Core\Cache\Exception\NoSuchCacheException $e) {
+			$this->cacheInstance = $GLOBALS['typo3CacheFactory']->create(
+				$this->extensionKey,
+				$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$this->extensionKey]['frontend'],
+				$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations'][$this->extensionKey]['backend']
+			);
+		}
+	}
+
+	/**
+	 * Builds and caches the proxy files
+	 *
+	 * @return void
 	 * @throws Exception
 	 */
 	public function build() {
-		$cacheEntries = array();
-
 		$extensibleExtensions = $this->getExtensibleExtensions();
-		foreach ($extensibleExtensions as $key => $extensionsWithThisClass) {
-			$extendingClassFound = FALSE;
+		$entities = $GLOBALS['TYPO3_CONF_VARS']['EXTCONF'][$this->extensionKey]['entities'];
+		foreach ($entities as $entity) {
+			$key = 'Domain/Model/' . $entity;
 
 			// Get the file from static_info_tables itself, this needs to be loaded as first
-			$path = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('static_info_tables') . 'Classes/' . $key . '.php';
+			$path = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($this->extensionKey) . 'Classes/' . $key . '.php';
 			if (!is_file($path)) {
 				throw new Exception('given file "' . $path . '" does not exist');
 			}
 			$code = $this->parseSingleFile($path, FALSE);
 
-			// Get the files from all other extensions
+			// Get the files from all other extensions that are extending this domain model class
+			$extensionsWithThisClass = $extensibleExtensions[$key];
 			foreach ($extensionsWithThisClass as $extension => $value) {
 				$path = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extension) . 'Classes/' . $key . '.php';
 				if (is_file($path)) {
-					$extendingClassFound = TRUE;
 					$code .= $this->parseSingleFile($path);
 				}
 			}
 
-			// If an extending class is found, the file is written and added to the autoloader info
-			if ($extendingClassFound) {
-				$cacheIdentifier = 'SJBR\StaticInfoTables\\' . str_replace('/', '\\', $key);
-				try {
-					$cacheEntries[$cacheIdentifier] = $this->writeFile($code, 'staticInfoTables_' . $key);
-				} catch (Exception $e) {
-					throw new Exception($e->getMessage());
-				}
+			// Close the class definition and the php tag
+			$code =  $this->closeClassDefinition($code);
+
+			// The file is added to the class cache
+			$entryIdentifier = str_replace('/', '', $key);
+			try {
+				$this->cacheInstance->set($entryIdentifier, $code);
+			} catch (Exception $e) {
+				throw new Exception($e->getMessage());
 			}
 		}
-		return $cacheEntries;
 	}
 
 	/**
@@ -93,49 +126,8 @@ class ClassCacheManager {
 	}
 
 	/**
-	 * Write the proxy file
-	 *
-	 * @param string $content
-	 * @param string $identifier identifier of the file
-	 * @return string path of the written file
-	 */
-	protected function writeFile($content, $identifier) {
-		$path = PATH_site . self::CACHE_FILE_LOCATION;
-		if (!is_dir($path)) {
-			\TYPO3\CMS\Core\Utility\GeneralUtility::mkdir_deep(PATH_site, self::CACHE_FILE_LOCATION);
-		}
-
-		$content = '<?php ' . LF . $content . LF . '}' . LF . '?>';
-
-		$path .= $this->generateFileNameFromIdentifier($identifier);
-
-		$success = \TYPO3\CMS\Core\Utility\GeneralUtility::writeFile($path, $content);
-		if (!$success) {
-			throw new RuntimeException('File "' . $path . '" could not be written');
-		}
-		return $path;
-	}
-
-	/**
-	 * Generate cache file name
-	 *
-	 * @param string $identifier identifier
-	 * @return string
-	 */
-	protected function generateFileNameFromIdentifier($identifier) {
-		if (!is_string($identifier) || empty($identifier)) {
-			throw new InvalidArgumentException('Given identifier is either not a string or empty');
-		}
-
-		$result = str_replace('/', '_', $identifier) . '.php';
-		$result = ucfirst($result);
-
-		return $result;
-	}
-
-	/**
 	 * Parse a single file and does some magic
-	 * - Remove the <?php tags
+	 * - Remove the php tags
 	 * - Remove the class definition (if set)
 	 *
 	 * @param string $filePath path of the file
@@ -196,19 +188,18 @@ class ClassCacheManager {
 			' * this is partial from: ' . $filePath . LF . str_repeat('*', 70) . '*/' . LF . TAB;
 	}
 
+	protected function closeClassDefinition($code) {
+		return $code . LF . '}';
+	}
+
 	/**
 	 * Clear the class cache
 	 *
 	 * @return void
 	 */
 	public function clear() {
-		$path = PATH_site . self::CACHE_FILE_LOCATION;
-		if (is_dir($path)) {
-			\TYPO3\CMS\Core\Utility\GeneralUtility::rmdir($path, TRUE);
-		}
-		if (isset($GLOBALS['BE_USER'])) {
-			$GLOBALS['BE_USER']->writelog(3, 1, 0, 0, '[StaticInfoTables]: User %s has cleared the class cache', array($GLOBALS['BE_USER']->user['username']));
-		}
+		$this->cacheInstance->flush();
+		$GLOBALS['BE_USER']->writelog(3, 1, 0, 0, '[StaticInfoTables]: User %s has cleared the class cache', array($GLOBALS['BE_USER']->user['username']));
 	}
 
 	/**
@@ -216,25 +207,18 @@ class ClassCacheManager {
 	 *
 	 * @return void
 	 */
-	public function reBuild() {
-		$this->clear();
-		$this->build();
-	}
-
-	/**
-	 * Load the cached classes
-	 *
-	 * @return void
-	 */
-	public function load() {
-		$path = PATH_site . self::CACHE_FILE_LOCATION;
-		if (!is_dir($path)) {
+	public function reBuild(array $parameters = array()) {
+		$isValidCall = (
+			empty($parameters)
+			|| (
+				!empty($parameters['cacheCmd'])
+				&& \TYPO3\CMS\Core\Utility\GeneralUtility::inList('all,temp_cached', $parameters['cacheCmd'])
+			)
+		);
+		if ($isValidCall && isset($GLOBALS['BE_USER'])) {
+			$this->clear();
 			$this->build();
 		}
-		$classFiles = \TYPO3\CMS\Core\Utility\GeneralUtility::getFilesInDir($path, 'php', TRUE);
-		foreach ($classFiles as $classFile) {
-			require_once($classFile);
-		}		
 	}
 }
 ?>

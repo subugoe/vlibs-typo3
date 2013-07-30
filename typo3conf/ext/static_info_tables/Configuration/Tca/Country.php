@@ -131,6 +131,14 @@ $GLOBALS['TCA']['static_countries'] = array(
 				'size' => 1,
 				'minitems' => 0,
 				'maxitems' => 1,
+				'wizards' => array(
+					'suggest' => array(
+						'type' => 'suggest',
+						'default' => array(
+							'receiverClass' => 'SJBR\StaticInfoTables\Hook\Backend\Form\SuggestReceiver'
+						)
+					)
+				)
 			)
 		),
 		'cn_currency_iso_nr' => array(

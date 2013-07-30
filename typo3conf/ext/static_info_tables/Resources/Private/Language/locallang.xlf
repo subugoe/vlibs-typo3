@@ -98,7 +98,10 @@
 				<source>The Static Info Tables were updated with language labels from language pack</source>
 			</trans-unit>
 			<trans-unit id="nothingToDo" xml:space="preserve">
-				<source>Nothing to do: no language pack is installed.</source>
+				<source>No update was necessary as no language pack is installed.</source>
+			</trans-unit>
+			<trans-unit id="update.oldLanguagePacks" xml:space="preserve">
+				<source>If language packs with versions lower than 6.0 are installed, they could not be detected and they need to be re-created. Please read the manual.</source>
 			</trans-unit>
 			<trans-unit id="selectCountry" xml:space="preserve">
 				<source>Select a country</source>

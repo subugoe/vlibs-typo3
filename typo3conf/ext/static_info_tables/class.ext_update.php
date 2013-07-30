@@ -46,13 +46,15 @@ class ext_update {
 			$extensionInfoFile = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath($extensionKey) . 'Configuration/DomainModelExtension/StaticInfoTables.txt';
 			if (file_exists($extensionInfoFile)) {
 				$databaseUpdateUtility->doUpdate($extensionKey);
-				$content.= '<p>' . \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables') . ' ' . $extensionKey . '</p>';
+				$content.= '<p>' . nl2br(\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('updateLanguageLabels', 'StaticInfoTables')) . ' ' . $extensionKey . '</p>';
 			}
 		}
 		if (!$content) {
 			// Nothing to do
-			$content .= '<p>' . \TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('nothingToDo', 'StaticInfoTables') . '</p>';
+			$content .= '<p>' . nl2br(\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('nothingToDo', 'StaticInfoTables')) . '</p>';
 		}
+		// Notice for old language packs
+		$content .= '<p>' . nl2br(\TYPO3\CMS\Extbase\Utility\LocalizationUtility::translate('update.oldLanguagePacks', 'StaticInfoTables')) . '</p>';
 		return $content;
 	}
 

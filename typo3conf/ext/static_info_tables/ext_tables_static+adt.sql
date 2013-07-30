@@ -1386,6 +1386,7 @@ INSERT INTO static_languages VALUES ('189', '0', '0', 'PT', 'Português brasilei
 INSERT INTO static_languages VALUES ('190', '0', '0', 'ZH', '汉语', 'Chinese (Simplified)', 'ch', 'CN', 'zh_CN', '0', '0');
 INSERT INTO static_languages VALUES ('191', '0', '0', 'FR', 'Français canadien', 'Canadian French', 'qc', 'CA', 'fr_CA', '0', '0');
 INSERT INTO static_languages VALUES ('192', '0', '0', 'TL', 'Filipino', 'Filipino', '', 'PH', 'fil', '0', '0');
+INSERT INTO static_languages VALUES ('193', '0', '0', 'SR', 'Crnogorski jezik', 'Montenegrin', '', 'ME', 'sr_ME', '0', '0');
 
 
 

@@ -17,7 +17,7 @@ $GLOBALS['TCA']['static_countries'] = array(
 		'label' => 'cn_short_en',
 		'label_alt' => 'cn_iso_2',
 		'label_alt_force' => 1,
-		'label_userFunc' => 'SJBR\StaticInfoTables\Hook\Backend\Form\ElementRenderingHelper->addIsoCodeToLabel',
+		'label_userFunc' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper->addIsoCodeToLabel',
 		'adminOnly' => 1,
 		'rootLevel' => 1,
 		'is_static' => 1,
@@ -59,7 +59,7 @@ $GLOBALS['TCA']['static_currencies'] = array(
 		'label' => 'cu_name_en',
 		'label_alt' => 'cu_iso_3',
 		'label_alt_force' => 1,
-		'label_userFunc' => 'SJBR\StaticInfoTables\Hook\Backend\Form\ElementRenderingHelper->addIsoCodeToLabel',
+		'label_userFunc' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper->addIsoCodeToLabel',
 		'adminOnly' => 1,
 		'rootLevel' => 1,
 		'is_static' => 1,
@@ -81,7 +81,7 @@ $GLOBALS['TCA']['static_languages'] = array(
 		'label' => 'lg_name_en',
 		'label_alt' => 'lg_iso_2',
 		'label_alt_force' => 1,
-		'label_userFunc' => 'SJBR\StaticInfoTables\Hook\Backend\Form\ElementRenderingHelper->addIsoCodeToLabel',
+		'label_userFunc' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper->addIsoCodeToLabel',
 		'adminOnly' => 1,
 		'rootLevel' => 1,
 		'is_static' => 1,
@@ -103,7 +103,7 @@ $GLOBALS['TCA']['static_territories'] = array(
 		'label' => 'tr_name_en',
 		'label_alt' => 'tr_iso_nr',
 		'label_alt_force' => 1,
-		'label_userFunc' => 'SJBR\StaticInfoTables\Hook\Backend\Form\ElementRenderingHelper->addIsoCodeToLabel',
+		'label_userFunc' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper->addIsoCodeToLabel',
 		'adminOnly' => 1,
 		'rootLevel' => 1,
 		'is_static' => 1,
@@ -134,7 +134,7 @@ $GLOBALS['TCA']['sys_language']['columns']['static_lang_isocode']['config'] = ar
 	),
 	'foreign_table' => 'static_languages',
 	'foreign_table_where' => 'AND static_languages.pid=0 ORDER BY static_languages.lg_name_en',
-	'itemsProcFunc' => 'SJBR\StaticInfoTables\Hook\Backend\Form\ElementRenderingHelper->translateLanguagesSelector',
+	'itemsProcFunc' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\ElementRenderingHelper->translateLanguagesSelector',
 	'size' => 1,
 	'minitems' => '0',
 	'maxitems' => 1,
@@ -142,14 +142,14 @@ $GLOBALS['TCA']['sys_language']['columns']['static_lang_isocode']['config'] = ar
 		'suggest' => array(
 			'type' => 'suggest',
 			'default' => array(
-				'receiverClass' => 'SJBR\StaticInfoTables\Hook\Backend\Form\SuggestReceiver'
+				'receiverClass' => 'SJBR\\StaticInfoTables\\Hook\\Backend\\Form\\SuggestReceiver'
 			)
 		)
 	)
 );
 
 // Add data handling hook to manage ISO codes redundancies on records
-$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'SJBR\StaticInfoTables\Hook\Core\DataHandling\ProcessDataMap';
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['t3lib/class.t3lib_tcemain.php']['processDatamapClass'][] = 'SJBR\\StaticInfoTables\\Hook\\Core\\DataHandling\\ProcessDataMap';
 
 if (TYPO3_MODE == 'BE' && !(TYPO3_REQUESTTYPE & TYPO3_REQUESTTYPE_INSTALL)) {
 	/**

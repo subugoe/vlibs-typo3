@@ -1,7 +1,0 @@
-lib.foot = CONTENT
-lib.foot {
-	table = tt_content
-	select.pidInList = {$my_foot_pid}
-	select.languageField = sys_language_uid
-}
-

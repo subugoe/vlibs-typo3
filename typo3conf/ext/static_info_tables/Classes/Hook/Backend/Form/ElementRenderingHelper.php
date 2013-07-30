@@ -129,6 +129,18 @@ class ElementRenderingHelper {
 	}
 
 	/*
+	 * Translate and sort the countries selector using the current locale
+	 */
+	public function translateCountriesSelector ($PA, $fObj) {
+		foreach ($PA['items'] as $index => $item) {
+			if ($PA['items'][$index][1]) {
+				$PA['items'][$index][0] = \SJBR\StaticInfoTables\Utility\LocalizationUtility::translate(array('uid' => $item[1]), 'static_countries');
+			}
+		}
+		asort($PA['items']);
+	}
+
+	/*
 	 * Translate and sort the currencies selector using the current locale
 	 */
 	public function translateCurrenciesSelector ($PA, $fObj) {

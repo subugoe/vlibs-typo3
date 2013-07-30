@@ -1,3 +1,32 @@
+2013-07-24  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Update version to 6.0.5
+
+2013-07-18  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Follow-up to #50050: Use TYPO3 caching framework for extended domain model classes
+	* Resolves #50164: Autoload cached extended domain model classes
+
+2013-07-15  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Resolves #50034: Re-introduce tx_staticinfotables_div::getTitleFromIsoCode as deprecated method
+	* Resolves #50036: Clarify message from ext_update script
+	* Resolves #49878: clearCachePostProc should clear proxy classes only when cacheCmd=all
+	* Resolves #50050: Use TYPO3 caching framework for extended domain model classes
+	* Resolves #49590: Montenegrin language is missing in the static_info_tables
+
+2013-07-02  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Resolves #49397: No method name 'selectItemsTCA' in class tx_staticinfotables_div
+	* Follow-up to #49397: Correction to the manual
+	* Cleanup unescaped backslashes
+	* Correction to the manual
+
+2013-06-26  Stanislas Rolland  <typo3@sjbr.ca>
+
+	* Resolves #49462: Class tx_staticinfotables_pi1 not always available
+	* Resolves #49463: Make extension version available to other extensions
+
 2013-06-17  Stanislas Rolland  <typo3@sjbr.ca>
 
 	* Update version to 6.0.4
