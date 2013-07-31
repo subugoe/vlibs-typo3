@@ -61,7 +61,7 @@ class tx_t3jquery_tsparserext
 	public function displayMessage(&$params, &$tsObj)
 	{
 		$out = '';
-		if (class_exists(t3lib_utility_VersionNumber) && t3lib_utility_VersionNumber::convertVersionNumberToInteger(TYPO3_version) < 4003000) {
+		if (tx_t3jquery::getIntFromVersion(TYPO3_version) < 4003000) {
 			// 4.3.0 comes with flashmessages styles. For older versions we include the needed styles here
 			$cssPath = $GLOBALS['BACK_PATH'] . t3lib_extMgm::extRelPath('t3jquery');
 			$out .= '<link rel="stylesheet" type="text/css" href="' . $cssPath . 'compat/flashmessages.css" media="screen" />';

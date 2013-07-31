@@ -1,21 +1,21 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "devlog".
-#
-# Auto generated 31-05-2012 15:07
-#
-# Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
-########################################################################
+/***************************************************************
+ * Extension Manager/Repository config file for ext "devlog".
+ *
+ * Auto generated 31-07-2013 13:33
+ *
+ * Manual updates:
+ * Only the data in the array - everything else is removed by next
+ * writing. "version" and "dependencies" must not be touched!
+ ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Developer Log',
 	'description' => 'The Developer log extension provides development logging/debugging functionality for usage of t3lib_div::devlog() and a BE module to browse the logs.',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '2.9.4',
+	'version' => '2.10.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -34,7 +34,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '3.5.0-4.7.99',
+			'typo3' => '4.5.0-6.1.99',
 			'cms' => '',
 		),
 		'conflicts' => array(
@@ -42,7 +42,7 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:21:{s:9:"ChangeLog";s:4:"fac9";s:19:"class.tx_devlog.php";s:4:"9182";s:28:"class.tx_devlog_tceforms.php";s:4:"8935";s:21:"ext_conf_template.txt";s:4:"af5a";s:12:"ext_icon.gif";s:4:"cd8e";s:17:"ext_localconf.php";s:4:"a7f0";s:14:"ext_tables.php";s:4:"4845";s:14:"ext_tables.sql";s:4:"8608";s:18:"icon_tx_devlog.gif";s:4:"cd8e";s:13:"locallang.xml";s:4:"68e6";s:26:"locallang_csh_txdevlog.xml";s:4:"b9da";s:16:"locallang_db.xml";s:4:"03db";s:7:"tca.php";s:4:"162e";s:14:"doc/manual.sxw";s:4:"6ba1";s:14:"mod1/clear.gif";s:4:"cc11";s:13:"mod1/conf.php";s:4:"4129";s:14:"mod1/index.php";s:4:"6066";s:18:"mod1/locallang.xml";s:4:"68d2";s:22:"mod1/locallang_mod.xml";s:4:"5454";s:19:"mod1/moduleicon.gif";s:4:"cd8e";s:22:"res/csh_severities.png";s:4:"facf";}',
+	'_md5_values_when_last_written' => 'a:21:{s:9:"ChangeLog";s:4:"4ae2";s:19:"class.tx_devlog.php";s:4:"0795";s:28:"class.tx_devlog_tceforms.php";s:4:"8935";s:21:"ext_conf_template.txt";s:4:"af5a";s:12:"ext_icon.gif";s:4:"cd8e";s:17:"ext_localconf.php";s:4:"a7f0";s:14:"ext_tables.php";s:4:"4845";s:14:"ext_tables.sql";s:4:"0305";s:18:"icon_tx_devlog.gif";s:4:"cd8e";s:13:"locallang.xml";s:4:"68e6";s:26:"locallang_csh_txdevlog.xml";s:4:"b9da";s:16:"locallang_db.xml";s:4:"03db";s:7:"tca.php";s:4:"162e";s:14:"doc/manual.sxw";s:4:"6ba1";s:14:"mod1/clear.gif";s:4:"cc11";s:13:"mod1/conf.php";s:4:"4129";s:14:"mod1/index.php";s:4:"e67c";s:18:"mod1/locallang.xml";s:4:"68d2";s:22:"mod1/locallang_mod.xml";s:4:"5454";s:19:"mod1/moduleicon.gif";s:4:"cd8e";s:22:"res/csh_severities.png";s:4:"facf";}',
 );
 
 ?>

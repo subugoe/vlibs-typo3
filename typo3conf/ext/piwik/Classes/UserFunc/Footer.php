@@ -61,7 +61,7 @@ class tx_Piwik_UserFunc_Footer {
 			} else {
 				return '';
 			}
-		} elseif($beUserLogin == 1) {
+		} elseif (($beUserLogin == 1) && (!intval($conf['trackBackendUsers']))) {
 			$template = t3lib_div::getURL(t3lib_extMgm::extPath('piwik').'Resources/Private/Templates/Piwik/notracker_beuser.html');
 		}else {
 			//fetch the js template file, makes editing easier ;)

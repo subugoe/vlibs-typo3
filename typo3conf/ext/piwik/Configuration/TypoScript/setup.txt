@@ -5,6 +5,9 @@ config.tx_piwik {
   	############################################################################
 	# idsite inside piwik
 		piwik_idsite     = {$config.tx_piwik.piwik_idsite}
+	############################################################################
+	# track beusers or not
+		trackBackendUsers = {$config.tx_piwik.trackBackendUsers}
 }
 
 page.footerData {
