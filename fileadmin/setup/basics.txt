@@ -10,11 +10,15 @@ config {
 	admPanel = 0
 
 	pageTitleFirst = 1
-	pageTitleSeparator = —
+	pageTitleSeparator = –
 	pageTitleSeparator.noTrimWrap = | | |
 
 	uniqueLinkVars = 1
 }
+
+[globalVar = TSFE:id = 12]
+	config.noPageTitle = 1
+[global]
 
 
 page = PAGE
