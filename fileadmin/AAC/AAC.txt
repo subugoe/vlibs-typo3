@@ -4,7 +4,7 @@
 [else]
    config.baseURL = http
 [global]
-config.baseURL := appendString(://aac.sub.uni-goettigen.de/)
+config.baseURL := appendString(://aac.sub.uni-goettingen.de/)
 
 # load basic config
 <INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/setup/basics.txt">
