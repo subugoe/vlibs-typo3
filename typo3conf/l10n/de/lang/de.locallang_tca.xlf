@@ -134,7 +134,7 @@
       <target state="translated">Feldwerte explizit erlauben/verbieten:</target></trans-unit>
       <trans-unit id="be_groups.custom_options" xml:space="preserve" approved="yes">
         <source>Custom module options:</source>
-      <target state="translated">Benutzdefinierte Moduloptionen:</target></trans-unit>
+      <target state="translated">Benutzerdefinierte Moduloptionen:</target></trans-unit>
       <trans-unit id="be_groups.inc_access_lists" xml:space="preserve" approved="yes">
         <source>Include Access Lists:</source>
       <target state="translated">Zugrifflisten mit einschließen:</target></trans-unit>
@@ -201,6 +201,9 @@
       <trans-unit id="sys_filemounts.base_relative" xml:space="preserve" approved="yes">
         <source>relative ../fileadmin/</source>
       <target state="translated">relativ ../fileadmin/</target></trans-unit>
+      <trans-unit id="sys_log" xml:space="preserve" approved="yes">
+        <source>System Log</source>
+      <target state="translated">System-Protokoll</target></trans-unit>
       <trans-unit id="sys_news" xml:space="preserve" approved="yes">
         <source>System News</source>
       <target state="translated">System-Nachrichten</target></trans-unit>
@@ -282,6 +285,183 @@
       <trans-unit id="sys_filemounts" xml:space="preserve" approved="yes">
         <source>Filemount</source>
       <target state="translated">Verzeichnisfreigaben</target></trans-unit>
+      <trans-unit id="sys_collection" xml:space="preserve" approved="yes">
+        <source>Record Collection</source>
+      <target state="translated">Datensatz-Sammlung</target></trans-unit>
+      <trans-unit id="sys_collection.title" xml:space="preserve" approved="yes">
+        <source>Collection-Name</source>
+      <target state="translated">Sammlungsname</target></trans-unit>
+      <trans-unit id="sys_collection.description" xml:space="preserve" approved="yes">
+        <source>Description</source>
+      <target state="translated">Beschreibung</target></trans-unit>
+      <trans-unit id="sys_collection.table_name" xml:space="preserve" approved="yes">
+        <source>Record Type of Collection</source>
+      <target state="translated">Datensatztyp der Sammlung</target></trans-unit>
+      <trans-unit id="sys_collection.items" xml:space="preserve" approved="yes">
+        <source>Items</source>
+      <target state="translated">Elemente</target></trans-unit>
+      <trans-unit id="sys_collection.type" xml:space="preserve" approved="yes">
+        <source>Type of collection</source>
+      <target state="translated">Typ der Sammlung</target></trans-unit>
+      <trans-unit id="sys_collection.type.static" xml:space="preserve" approved="yes">
+        <source>static record composition</source>
+      <target state="translated">Zusammenstellung statischer Datensätze</target></trans-unit>
+      <trans-unit id="sys_file_storage" xml:space="preserve" approved="yes">
+        <source>File Storage</source>
+      <target state="translated">Dateispeicher</target></trans-unit>
+      <trans-unit id="sys_file_storage.type" xml:space="preserve" approved="yes">
+        <source>Entry point</source>
+      <target state="translated">Einstiegspunkt</target></trans-unit>
+      <trans-unit id="sys_file_storage.name" xml:space="preserve" approved="yes">
+        <source>Name</source>
+      <target state="translated">Name</target></trans-unit>
+      <trans-unit id="sys_file_storage.description" xml:space="preserve" approved="yes">
+        <source>Description</source>
+      <target state="translated">Beschreibung</target></trans-unit>
+      <trans-unit id="sys_file_storage.hidden" xml:space="preserve" approved="yes">
+        <source>Hide from listings</source>
+      <target state="translated">In Auflistungen verbergen</target></trans-unit>
+      <trans-unit id="sys_file_storage.is_online" xml:space="preserve" approved="yes">
+        <source>Is online?</source>
+      <target state="translated">Ist online?</target></trans-unit>
+      <trans-unit id="sys_file_storage.is_browsable" xml:space="preserve" approved="yes">
+        <source>Is browsable?</source>
+      <target state="translated">Ist durchsuchbar?</target></trans-unit>
+      <trans-unit id="sys_file_storage.is_public" xml:space="preserve" approved="yes">
+        <source>Is publically available?</source>
+      <target state="translated">Ist öffentlich verfügbar?</target></trans-unit>
+      <trans-unit id="sys_file_storage.is_writable" xml:space="preserve" approved="yes">
+        <source>Is writable?</source>
+      <target state="translated">Ist beschreibbar?</target></trans-unit>
+      <trans-unit id="sys_file_storage.capabilities" xml:space="preserve" approved="yes">
+        <source>Capabilities</source>
+      <target state="translated">Fähigkeiten</target></trans-unit>
+      <trans-unit id="sys_file_storage.processingfolder" xml:space="preserve" approved="yes">
+        <source>Folder for manipulated and temporary images etc.</source>
+      <target state="translated">Ordner für bearbeitete und temporäre Bilder, etc.</target></trans-unit>
+      <trans-unit id="sys_file_storage.driver" xml:space="preserve" approved="yes">
+        <source>Driver</source>
+      <target state="translated">Treiber</target></trans-unit>
+      <trans-unit id="sys_file_storage.driver.local" xml:space="preserve" approved="yes">
+        <source>Local Filesystem</source>
+      <target state="translated">Lokales Dateisystem</target></trans-unit>
+      <trans-unit id="sys_file_storage.configuration" xml:space="preserve" approved="yes">
+        <source>Driver Configuration</source>
+      <target state="translated">Treiber-Konfiguration</target></trans-unit>
+      <trans-unit id="sys_file" xml:space="preserve" approved="yes">
+        <source>File</source>
+      <target state="translated">Datei</target></trans-unit>
+      <trans-unit id="sys_file.storage" xml:space="preserve" approved="yes">
+        <source>Storage</source>
+      <target state="translated">Speicher</target></trans-unit>
+      <trans-unit id="sys_file.identifier" xml:space="preserve" approved="yes">
+        <source>Identifier</source>
+      <target state="translated">Bezeichner</target></trans-unit>
+      <trans-unit id="sys_file.name" xml:space="preserve" approved="yes">
+        <source>Filename</source>
+      <target state="translated">Dateiname</target></trans-unit>
+      <trans-unit id="sys_file.title" xml:space="preserve" approved="yes">
+        <source>Title</source>
+      <target state="translated">Titel</target></trans-unit>
+      <trans-unit id="sys_file.type" xml:space="preserve" approved="yes">
+        <source>File Type</source>
+      <target state="translated">Dateityp</target></trans-unit>
+      <trans-unit id="sys_file.type.unknown" xml:space="preserve" approved="yes">
+        <source>Unknown</source>
+      <target state="translated">Unbekannt</target></trans-unit>
+      <trans-unit id="sys_file.type.text" xml:space="preserve" approved="yes">
+        <source>Text</source>
+      <target state="translated">Text</target></trans-unit>
+      <trans-unit id="sys_file.type.image" xml:space="preserve" approved="yes">
+        <source>Image</source>
+      <target state="translated">Bild</target></trans-unit>
+      <trans-unit id="sys_file.type.audio" xml:space="preserve" approved="yes">
+        <source>Audio</source>
+      <target state="translated">Audio</target></trans-unit>
+      <trans-unit id="sys_file.type.video" xml:space="preserve" approved="yes">
+        <source>Video</source>
+      <target state="translated">Video</target></trans-unit>
+      <trans-unit id="sys_file.type.software" xml:space="preserve" approved="yes">
+        <source>Software</source>
+      <target state="translated">Software</target></trans-unit>
+      <trans-unit id="sys_file.mime_type" xml:space="preserve" approved="yes">
+        <source>Mime Type</source>
+      <target state="translated">Mime Type</target></trans-unit>
+      <trans-unit id="sys_file.sha1" xml:space="preserve" approved="yes">
+        <source>SHA1</source>
+      <target state="translated">SHA1</target></trans-unit>
+      <trans-unit id="sys_file.size" xml:space="preserve" approved="yes">
+        <source>Size</source>
+      <target state="translated">Größe</target></trans-unit>
+      <trans-unit id="sys_file.identifier" xml:space="preserve" approved="yes">
+        <source>Identifier</source>
+      <target state="translated">Bezeichner</target></trans-unit>
+      <trans-unit id="sys_file.usage_count" xml:space="preserve" approved="yes">
+        <source>Usage Count</source>
+      <target state="translated">Verwendungsanzahl</target></trans-unit>
+      <trans-unit id="sys_file.description" xml:space="preserve" approved="yes">
+        <source>Description</source>
+      <target state="translated">Beschreibung</target></trans-unit>
+      <trans-unit id="sys_file.alternative" xml:space="preserve" approved="yes">
+        <source>Alternative Text</source>
+      <target state="translated">Alternativer Text</target></trans-unit>
+      <trans-unit id="sys_file_reference" xml:space="preserve" approved="yes">
+        <source>File Reference</source>
+      <target state="translated">Dateireferenz</target></trans-unit>
+      <trans-unit id="sys_file_reference.uid_local" xml:space="preserve" approved="yes">
+        <source>File</source>
+      <target state="translated">Datei</target></trans-unit>
+      <trans-unit id="sys_file_reference.uid_foreign" xml:space="preserve" approved="yes">
+        <source>Used by content elements</source>
+      <target state="translated">Verwendet von Inhaltselementen</target></trans-unit>
+      <trans-unit id="sys_file_reference.tablenames" xml:space="preserve" approved="yes">
+        <source>Table name</source>
+      <target state="translated">Tabellenname</target></trans-unit>
+      <trans-unit id="sys_file_reference.fieldname" xml:space="preserve" approved="yes">
+        <source>Foreign Field</source>
+      <target state="translated">Fremdfeld</target></trans-unit>
+      <trans-unit id="sys_file_reference.sorting_foreign" xml:space="preserve" approved="yes">
+        <source>Sorting foreign</source>
+      <target state="translated">Fremdsortierung</target></trans-unit>
+      <trans-unit id="sys_file_reference.basicoverlayPalette" xml:space="preserve" approved="yes">
+        <source>File Metadata</source>
+      <target state="translated">Datei-Metadaten</target></trans-unit>
+      <trans-unit id="sys_file_reference.imageoverlayPalette" xml:space="preserve" approved="yes">
+        <source>Image Metadata</source>
+      <target state="translated">Bild-Metadaten</target></trans-unit>
+      <trans-unit id="sys_file_reference.title" xml:space="preserve" approved="yes">
+        <source>Title</source>
+      <target state="translated">Titel</target></trans-unit>
+      <trans-unit id="sys_file_reference.description" xml:space="preserve" approved="yes">
+        <source>Description (Caption)</source>
+      <target state="translated">Beschreibung (Bildunterschrift)</target></trans-unit>
+      <trans-unit id="sys_file_reference.downloadname" xml:space="preserve" approved="yes">
+        <source>Download Name</source>
+      <target state="translated">Dateiname für Download</target></trans-unit>
+      <trans-unit id="sys_file_reference.alternative" xml:space="preserve" approved="yes">
+        <source>Alternative Text</source>
+      <target state="translated">Alternativer Text</target></trans-unit>
+      <trans-unit id="sys_file_reference.link" xml:space="preserve" approved="yes">
+        <source>Link</source>
+      <target state="translated">Link</target></trans-unit>
+      <trans-unit id="sys_file_collection" xml:space="preserve" approved="yes">
+        <source>File collection</source>
+      <target state="translated">Dateisammlung</target></trans-unit>
+      <trans-unit id="sys_file_collection.files" xml:space="preserve" approved="yes">
+        <source>Files</source>
+      <target state="translated">Dateien</target></trans-unit>
+      <trans-unit id="sys_file_collection.title" xml:space="preserve" approved="yes">
+        <source>Title</source>
+      <target state="translated">Titel</target></trans-unit>
+      <trans-unit id="sys_file_collection.type" xml:space="preserve" approved="yes">
+        <source>Type</source>
+      <target state="translated">Typ</target></trans-unit>
+      <trans-unit id="sys_file_collection.storage" xml:space="preserve" approved="yes">
+        <source>File Storage</source>
+      <target state="translated">Dateispeicher</target></trans-unit>
+      <trans-unit id="sys_file_collection.folder" xml:space="preserve" approved="yes">
+        <source>Folder</source>
+      <target state="translated">Ordner</target><note>100%</note></trans-unit>
       <trans-unit id="sys_language" xml:space="preserve" approved="yes">
         <source>Website Language</source>
       <target state="translated">Website-Sprache</target></trans-unit>
@@ -297,6 +477,30 @@
       <trans-unit id="editlock" xml:space="preserve" approved="yes">
         <source>Restrict editing by non-Admins:</source>
       <target state="translated">Bearbeitung erfordert Admin-Rechte:</target></trans-unit>
+      <trans-unit id="sys_category" xml:space="preserve" approved="yes">
+        <source>Category</source>
+      <target state="translated">Kategorie</target></trans-unit>
+      <trans-unit id="sys_category.title" xml:space="preserve" approved="yes">
+        <source>Title</source>
+      <target state="translated">Titel</target></trans-unit>
+      <trans-unit id="sys_category.description" xml:space="preserve" approved="yes">
+        <source>Description</source>
+      <target state="translated">Beschreibung</target></trans-unit>
+      <trans-unit id="sys_category.parent" xml:space="preserve" approved="yes">
+        <source>Parent</source>
+      <target state="translated">Eltern</target></trans-unit>
+      <trans-unit id="sys_category.items" xml:space="preserve" approved="yes">
+        <source>Items</source>
+      <target state="translated">Elemente</target></trans-unit>
+      <trans-unit id="sys_category.categories" xml:space="preserve" approved="yes">
+        <source>Categories</source>
+      <target state="translated">Kategorien</target></trans-unit>
+      <trans-unit id="sys_category.tabs.category" xml:space="preserve" approved="yes">
+        <source>Categories</source>
+      <target state="translated">Kategorien</target></trans-unit>
+      <trans-unit id="sys_category.tabs.items" xml:space="preserve" approved="yes">
+        <source>Items</source>
+      <target state="translated">Elemente</target></trans-unit>
     </body>
   </file>
 </xliff>

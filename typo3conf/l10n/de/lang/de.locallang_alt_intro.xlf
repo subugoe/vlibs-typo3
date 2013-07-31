@@ -7,7 +7,7 @@
         <source>Web Content Management System</source>
       <target state="translated">Content-Management-System</target></trans-unit>
       <trans-unit id="introtext2" xml:space="preserve" approved="yes">
-        <source>This is a brief description of the available modules:</source>
+        <source>This is a brief description of the available modules.</source>
       <target state="translated">Dies ist eine kurze Beschreibung der vorhandenen Module:</target></trans-unit>
       <trans-unit id="endText" xml:space="preserve" approved="yes">
         <source>Features may vary depending on your website and permissions</source>

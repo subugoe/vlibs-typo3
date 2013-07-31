@@ -20,7 +20,7 @@ See the links for more information about what Page TSconfig is.</source>
 pages:TSconfig,
 Page TSconfig objects | http://typo3.org/documentation/document-library/doc_core_tsconfig/Page_TSconfig/</source>
         <target state="translated">_MOD_web_info:tsconfig_edit, pages:TSconfig, Page TSconfig objects | http://typo3.org/documentation/document-library/doc_core_tsconfig/Page_TSconfig/</target><note from="developer">A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note>
-      <note>A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note></trans-unit>
+      <note>A part of this string is an internal text, which must not be changed. Just copy this part into the translation field and do not change it. For more information have a look at the Tutorial.</note><alt-trans xml:space="preserve" origin="jloderhose"><target>_MOD_web_info:tsconfig_edit, pages:TSconfig, Seiten-TSconfig-Objekte | http://typo3.org/documentation/document-library/doc_core_tsconfig/Page_TSconfig/</target></alt-trans><alt-trans xml:space="preserve" origin="hugoist"><target>keine übersetzung möglich ?!?</target></alt-trans></trans-unit>
       <trans-unit id="_tsconfig_hierarchy.image" xml:space="preserve" approved="yes">
         <source>EXT:info_pagetsconfig/cshimages/img_1.png,
 EXT:info_pagetsconfig/cshimages/img_2.png,</source>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="fr" datatype="plaintext" original="messages" date="2013-03-05T21:51:13Z" product-name="static_info_tables">
+		<header/>
+		<body>
+			<trans-unit id="mlang_labels_tablabel" xml:space="preserve" approved="yes">
+				<source>Static Info Tables Manager</source>
+				<target>Gestion des tables de données statiques</target>
+			</trans-unit>
+			<trans-unit id="mlang_labels_tabdescr" xml:space="preserve" approved="yes">
+				<source>Provides tools to manage static info tables and create language packs.</source>
+				<target>Ce module permet de gérer les tables de données statiques et de créer des extensions de localisation.</target>
+			</trans-unit>
+			<trans-unit id="mlang_tabs_tab" xml:space="preserve" approved="yes">
+				<source>Static Info Tables</source>
+				<target>Données statiques</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

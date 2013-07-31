@@ -101,6 +101,7 @@
       <label index="msg.userNotCreated">Der Benutzer "_cli_scheduler" konnte nicht erstellt werden.</label>
       <label index="none">Keine</label>
       <label index="status">Status</label>
+      <label index="status.progress">Fortschritt</label>
       <label index="status.legend">Status-Legende</label>
       <label index="status.legend.disabled">Deaktiviert, wird nicht ausgeführt, es sei denn manuell</label>
       <label index="status.legend.failure">Fehler! Während der letzten Ausführung ist ein Fehler aufgetreten (halten Sie den Mauszeiger auf das Symbol, um Details anzuzeigen)</label>
@@ -114,6 +115,7 @@
       <label index="status.scheduled">geplant</label>
       <label index="task">Task</label>
       <label index="title">Administrationsmodul des TYPO3-Planers</label>
+      <label index="action.run_task">Task ausführen</label>
     </languageKey>
   </data>
 </T3locallangExt>

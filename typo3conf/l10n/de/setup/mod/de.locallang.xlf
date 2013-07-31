@@ -12,6 +12,9 @@
       <trans-unit id="lang_default" xml:space="preserve" approved="yes">
         <source>English</source>
       <target state="translated">Englisch</target></trans-unit>
+      <trans-unit id="lang_af" xml:space="preserve" approved="yes">
+        <source>Afrikaans</source>
+      <target state="translated">Afrikaans</target></trans-unit>
       <trans-unit id="lang_ar" xml:space="preserve" approved="yes">
         <source>Arabic</source>
       <target state="translated">Arabisch</target></trans-unit>
@@ -273,6 +276,9 @@
       <trans-unit id="edit_docModuleUpload" xml:space="preserve" approved="yes">
         <source>File upload directly in Doc-module</source>
       <target state="translated">Hochladen von Dateien direkt im Web-Modul</target></trans-unit>
+      <trans-unit id="showHiddenFilesAndFolders" xml:space="preserve" approved="yes">
+        <source>Show hidden files and folders in the file list</source>
+      <target state="translated">Versteckte Dateien und Ordner in der Dateiliste anzeigen</target></trans-unit>
       <trans-unit id="enableFlashUploader" xml:space="preserve" approved="yes">
         <source>Enable Flash Uploader (requires Flash 9+)</source>
       <target state="translated">Flash-Schnittstelle zum Hochladen aktivieren (erfordert Flash 9+)</target></trans-unit>
@@ -284,7 +290,7 @@
       <target state="translated">Maximale Höhe in der Größe anpassbarer, mehrzeiliger Textfelder in Pixel</target></trans-unit>
       <trans-unit id="flexibleTextareas_MaxHeight" xml:space="preserve" approved="yes">
         <source>Maximal Height of flexible Textareas in Pixel</source>
-      <target state="translated">Maximale Höhe flexibler Textfelder in Pixel</target><alt-trans xml:space="preserve" origin="mmartin"><target>maximale Höhe flexibler Texteingabebereiche in Pixel</target></alt-trans><alt-trans xml:space="preserve" origin="flyguide"><target>Maximale Höhe flexibler Textfelder in Pixel</target></alt-trans></trans-unit>
+      <target state="translated">Maximale Höhe flexibler Textfelder in Pixel</target></trans-unit>
       <trans-unit id="resizeTextareas_Flexible" xml:space="preserve" approved="yes">
         <source>Make Textareas flexible</source>
       <target state="translated">Textfelder flexibel machen</target></trans-unit>
@@ -300,15 +306,24 @@
       <trans-unit id="setToStandard" xml:space="preserve" approved="yes">
         <source>Reset all Values to default</source>
       <target state="translated">Alle Werte auf Standard zurücksetzen</target></trans-unit>
+      <trans-unit id="resetSectionHeader" xml:space="preserve" approved="yes">
+        <source>Reset Settings</source>
+      <target state="translated">Einstellungen zurücksetzen</target><note>78%</note></trans-unit>
       <trans-unit id="resetConfiguration" xml:space="preserve" approved="yes">
         <source>Reset Configuration and Clear Temporary Data</source>
       <target state="translated">Konfiguration zurücksetzen und temporäre Daten löschen</target></trans-unit>
+      <trans-unit id="resetConfigurationShort" xml:space="preserve" approved="yes">
+        <source>Reset</source>
+      <target state="translated">Zurücksetzen</target></trans-unit>
       <trans-unit id="setToStandardQuestion" xml:space="preserve" approved="yes">
         <source>Are you sure you want to reset all values to default?</source>
       <target state="translated">Alle Werte tatsächlich auf die Standardwerte zurücksetzen?</target></trans-unit>
       <trans-unit id="clearSessionVars" xml:space="preserve" approved="yes">
         <source>Clear Temporary Data</source>
       <target state="translated">Temporäre Daten löschen</target></trans-unit>
+      <trans-unit id="clearSessionVarsShort" xml:space="preserve" approved="yes">
+        <source>Clear</source>
+      <target state="translated">Leeren</target></trans-unit>
       <trans-unit id="clearSessionVarsQuestion" xml:space="preserve" approved="yes">
         <source>Are you sure you want to clear the temporary data?</source>
       <target state="translated">Die temporären Daten tatsächlich löschen?</target></trans-unit>

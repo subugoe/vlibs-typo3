@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ro" datatype="plaintext" original="messages" date="2013-02-21T01:35:44Z" product-name="static_info_tables">
+		<header/>
+		<body>
+			<trans-unit id="static_territories.title" xml:space="preserve" approved="yes">
+				<source>Territory</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_territories_item.tr_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO nr territory code:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_territories_item.tr_parent_iso_nr" xml:space="preserve" approved="yes">
+				<source>Parent territory code:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_territories_item.tr_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries.title" xml:space="preserve" approved="yes">
+				<source>Countries</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A2 Country code:</source>
+				<target>Codul ISO 2 al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A3 Country code:</source>
+				<target>Codul ISO 3 al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 Nr Country code:</source>
+				<target>Codul ISO al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_local" xml:space="preserve" approved="yes">
+				<source>Official name (local):</source>
+				<target>Numele oficial (local):</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_official_name_en" xml:space="preserve" approved="yes">
+				<source>Official name (EN):</source>
+				<target>Numele oficial (EN):</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_capital" xml:space="preserve" approved="yes">
+				<source>Capital:</source>
+				<target>Capitala:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_tldomain" xml:space="preserve" approved="yes">
+				<source>Top level domain:</source>
+				<target>Domeniu de varf:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 4217 Nr Currency code:</source>
+				<target>Numarul ISO al valutei:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_currency_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 4217 A3 Currency code:</source>
+				<target>Codul ISO 3 al valutei:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_phone" xml:space="preserve" approved="yes">
+				<source>Int. phone prefix:</source>
+				<target>Prefix telefon intern:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_uno_member" xml:space="preserve" approved="yes">
+				<source>UN member:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_eu_member" xml:space="preserve" approved="yes">
+				<source>EU member:</source>
+				<target>Membru EU:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format" xml:space="preserve" approved="yes">
+				<source>Address format:</source>
+				<target>Format adresa:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_1" xml:space="preserve" approved="yes">
+				<source>zip city</source>
+				<target>zip, oras</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_2" xml:space="preserve" approved="yes">
+				<source>city zip</source>
+				<target>oras, zip</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_3" xml:space="preserve" approved="yes">
+				<source>city region-code zip</source>
+				<target>oras, regiune, zip</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_4" xml:space="preserve" approved="yes">
+				<source>city (region-name) zip</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_5" xml:space="preserve" approved="yes">
+				<source>city/zip</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_6" xml:space="preserve" approved="yes">
+				<source>zip city, region-code</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_7" xml:space="preserve" approved="yes">
+				<source>zip city region-code</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_8" xml:space="preserve" approved="yes">
+				<source>zip city (region-name)</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_address_format_9" xml:space="preserve" approved="yes">
+				<source>city - region-code/zip</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_zone_flag" xml:space="preserve" approved="yes">
+				<source>Zone flag:</source>
+				<target>Steagul zonei:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_short_local" xml:space="preserve" approved="yes">
+				<source>Short name (local):</source>
+				<target>Nume prescurtat (local):</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_short_en" xml:space="preserve" approved="yes">
+				<source>Short name (EN):</source>
+				<target>Nume prescurtat (EN):</target>
+			</trans-unit>
+			<trans-unit id="static_country_zones.title" xml:space="preserve" approved="yes">
+				<source>Country subdivisions</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 Nr Country code:</source>
+				<target>Codul ISO al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A2 Country code:</source>
+				<target>Codul ISO 2 al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_country_zones_item.zn_country_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 3166-1 A3 Country code:</source>
+				<target>Codul ISO 3 al tarii:</target>
+			</trans-unit>
+			<trans-unit id="static_country_zones_item.zn_code" xml:space="preserve" approved="yes">
+				<source>ISO 3166-2 Country Zone code:</source>
+				<target>Codul zonei:</target>
+			</trans-unit>
+			<trans-unit id="static_country_zones_item.zn_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_languages.title" xml:space="preserve" approved="yes">
+				<source>Languages</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_iso_2" xml:space="preserve" approved="yes">
+				<source>ISO 639-1 A2 Language code:</source>
+				<target>Codul ISO 2 al limbii:</target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_collate_locale" xml:space="preserve" approved="yes">
+				<source>Collating locale:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+				<target>Nume (EN):</target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_typo3" xml:space="preserve" approved="yes">
+				<source>Typo3 language code:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_sacred" xml:space="preserve" approved="yes">
+				<source>Sacred language:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_languages_item.lg_constructed" xml:space="preserve" approved="yes">
+				<source>Constructed language:</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_currencies.title" xml:space="preserve" approved="yes">
+				<source>Currencies</source>
+				<target></target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_3" xml:space="preserve" approved="yes">
+				<source>ISO 4217 A3 Currency code:</source>
+				<target>Codul ISO 3 al valutei:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_iso_nr" xml:space="preserve" approved="yes">
+				<source>ISO 4217 Nr Currency code:</source>
+				<target>Numarul ISO al valutei:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_name_en" xml:space="preserve" approved="yes">
+				<source>Name (EN):</source>
+				<target>Nume (EN):</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_name_en" xml:space="preserve" approved="yes">
+				<source>Sub name (EN):</source>
+				<target>Subnume (EN):</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_left" xml:space="preserve" approved="yes">
+				<source>Symbol left:</source>
+				<target>Simbol stanga:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_symbol_right" xml:space="preserve" approved="yes">
+				<source>Symbol right:</source>
+				<target>Simbol dreapta:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_thousands_point" xml:space="preserve" approved="yes">
+				<source>Thousands point:</source>
+				<target>Punct mii:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_point" xml:space="preserve" approved="yes">
+				<source>Decimal point:</source>
+				<target>Punct zecimal:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_decimal_digits" xml:space="preserve" approved="yes">
+				<source>Decimal digits:</source>
+				<target>Caractere decimale:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_divisor" xml:space="preserve" approved="yes">
+				<source>Divisor:</source>
+				<target>Diviziune:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_left" xml:space="preserve" approved="yes">
+				<source>Sub symbol left:</source>
+				<target>Subsimbol dreapta:</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_symbol_right" xml:space="preserve" approved="yes">
+				<source>Sub symbol right:</source>
+				<target>Subsimbol stanga:</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_short_dk" xml:space="preserve" approved="yes">
+				<source></source>
+				<target>Nume prescurtat (DK):</target>
+			</trans-unit>
+			<trans-unit id="static_countries_item.cn_short_de" xml:space="preserve" approved="yes">
+				<source></source>
+				<target>Nume prescurtat (DE):</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_name_de" xml:space="preserve" approved="yes">
+				<source></source>
+				<target>Nume (DE):</target>
+			</trans-unit>
+			<trans-unit id="static_currencies_item.cu_sub_name_de" xml:space="preserve" approved="yes">
+				<source></source>
+				<target>Subnume (DE):</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

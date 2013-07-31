@@ -1,0 +1,10 @@
+## Configuring the Static Info Manager backend module
+module.tx_staticinfotables {
+	features.rewrittenPropertyMapper = 1
+	## Paths for Manager templates
+	view {
+		templateRootPath = EXT:static_info_tables/Resources/Private/Templates/
+		partialRootPath = EXT:static_info_tables/Resources/Private/Partials/
+		layoutRootPath = EXT:static_info_tables/Resources/Private/Layouts/
+	}
+}

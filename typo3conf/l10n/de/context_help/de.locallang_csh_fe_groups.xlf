@@ -16,7 +16,7 @@ For instance if a page or content element was assigned access only by this group
       <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="title.description" xml:space="preserve" approved="yes">
         <source>Name of the group.</source>
-      <target state="translated">Name der Gruppe.</target><alt-trans xml:space="preserve" origin="7elix"><target>Name der Gruppe.</target></alt-trans></trans-unit>
+      <target state="translated">Name der Gruppe.</target></trans-unit>
       <trans-unit id="title.details" xml:space="preserve" approved="yes">
         <source>This title will appear as the group name in the 'Access'-list in other records.</source>
       <target state="translated">Dieser Name erscheint in den Auswahlfeldern aller Elemente, für die eine Zugriffsbeschränkung definiert werden kann.</target></trans-unit>

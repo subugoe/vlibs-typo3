@@ -43,7 +43,7 @@
         <source>Textbox</source>
       <target state="translated">Textfeld</target></trans-unit>
       <trans-unit id="CType.I.12" xml:space="preserve" approved="yes">
-        <source>Menu/Sitemap</source>
+        <source>Special Menus</source>
       <target state="translated">Menü/Sitemap</target></trans-unit>
       <trans-unit id="CType.I.13" xml:space="preserve" approved="yes">
         <source>Insert Records</source>
@@ -93,6 +93,9 @@
       <trans-unit id="colPos.I.0" xml:space="preserve" approved="yes">
         <source>Left</source>
       <target state="translated">Links</target></trans-unit>
+      <trans-unit id="colPos.I.1" xml:space="preserve" approved="yes">
+        <source>Normal</source>
+      <target state="translated">Normal</target></trans-unit>
       <trans-unit id="colPos.I.2" xml:space="preserve" approved="yes">
         <source>Right</source>
       <target state="translated">Rechts</target></trans-unit>
@@ -498,6 +501,9 @@
       <trans-unit id="image_longdescURL" xml:space="preserve" approved="yes">
         <source>Long Description URL:</source>
       <target state="translated">Langbeschreibung URL:</target></trans-unit>
+      <trans-unit id="images.addFileReference" xml:space="preserve" approved="yes">
+        <source>Add image</source>
+      <target state="translated">Bild hinzufügen</target><alt-trans xml:space="preserve" origin="neichinger"><target>Bild hinfügen</target></alt-trans></trans-unit>
       <trans-unit id="longdescURL_formlabel" xml:space="preserve" approved="yes">
         <source>Long Description URLs (one per line)</source>
       <target state="translated">Langbeschreibung URLs (eine pro Zeile)</target></trans-unit>
@@ -555,6 +561,9 @@
       <trans-unit id="menu_type.I.7" xml:space="preserve" approved="yes">
         <source>Related pages (based on keywords)</source>
       <target state="translated">Verwandte Seiten (nach Stichworten)</target></trans-unit>
+      <trans-unit id="menu_type.I.8" xml:space="preserve" approved="yes">
+        <source>Sitemaps of selected pages</source>
+      <target state="translated">Sitemap der ausgewählten Seiten.</target></trans-unit>
       <trans-unit id="list_type" xml:space="preserve" approved="yes">
         <source>Plugin:</source>
       <target state="translated">Plug-In:</target></trans-unit>
@@ -612,21 +621,63 @@
       <trans-unit id="media" xml:space="preserve" approved="yes">
         <source>Files</source>
       <target state="translated">Dateien</target></trans-unit>
+      <trans-unit id="media.dataAttributes" xml:space="preserve" approved="yes">
+        <source>Additional data-* Attributes for HTML5 video tag</source>
+      <target state="translated">Zusätzliche "data-*"-Attribute für das HTML5-Video-Tag</target></trans-unit>
+      <trans-unit id="media.dataAttributes.attributeName" xml:space="preserve" approved="yes">
+        <source>Name of attribute (without data-)</source>
+      <target state="translated">Name des Attributs (ohne data-)</target></trans-unit>
+      <trans-unit id="media.dataAttributes.content" xml:space="preserve" approved="yes">
+        <source>Content</source>
+      <target state="translated">Inhalt</target></trans-unit>
       <trans-unit id="media.ALT.uploads_formlabel" xml:space="preserve" approved="yes">
-        <source>Select Files</source>
+        <source>Select single files</source>
       <target state="translated">Dateien auswählen</target></trans-unit>
+      <trans-unit id="media.addFileReference" xml:space="preserve" approved="yes">
+        <source>Add file</source>
+      <target state="translated">Datei hinzufügen</target></trans-unit>
       <trans-unit id="multimedia" xml:space="preserve" approved="yes">
         <source>File:</source>
       <target state="translated">Datei:</target></trans-unit>
       <trans-unit id="multimedia_formlabel" xml:space="preserve" approved="yes">
         <source>Selected Media File</source>
       <target state="translated">Ausgewählte Mediendateien</target></trans-unit>
+      <trans-unit id="file_collections" xml:space="preserve" approved="yes">
+        <source>File collections</source>
+      <target state="translated">Dateisammlung</target></trans-unit>
+      <trans-unit id="file_collections.ALT.uploads_formlabel" xml:space="preserve" approved="yes">
+        <source>Select file collections</source>
+      <target state="translated">Dateisammlung auswählen</target></trans-unit>
       <trans-unit id="filelink_size" xml:space="preserve" approved="yes">
         <source>Show File Size:</source>
       <target state="translated">Zeige Dateigröße:</target></trans-unit>
+      <trans-unit id="filelink_sorting" xml:space="preserve" approved="yes">
+        <source>Sort Filelist:</source>
+      <target state="translated">Dateiliste sortieren:</target></trans-unit>
+      <trans-unit id="filelink_sorting.none" xml:space="preserve" approved="yes">
+        <source>none</source>
+      <target state="translated">keine</target><note>75%</note></trans-unit>
+      <trans-unit id="filelink_sorting.extension" xml:space="preserve" approved="yes">
+        <source>by Fileextension</source>
+      <target state="translated">nach Dateiendung</target></trans-unit>
+      <trans-unit id="filelink_sorting.name" xml:space="preserve" approved="yes">
+        <source>by Filename</source>
+      <target state="translated">nach Dateiname</target></trans-unit>
+      <trans-unit id="filelink_sorting.type" xml:space="preserve" approved="yes">
+        <source>by Filetype</source>
+      <target state="translated">nach Dateityp</target></trans-unit>
+      <trans-unit id="filelink_sorting.size" xml:space="preserve" approved="yes">
+        <source>by Filesize</source>
+      <target state="translated">nach Dateigröße</target></trans-unit>
       <trans-unit id="filelink_size_formlabel" xml:space="preserve" approved="yes">
         <source>Display File Size Information</source>
       <target state="translated">Informationen zur Dateigröße anzeigen</target></trans-unit>
+      <trans-unit id="target" xml:space="preserve" approved="yes">
+        <source>Target:</source>
+      <target state="translated">Ziel:</target></trans-unit>
+      <trans-unit id="target.I.1" xml:space="preserve" approved="yes">
+        <source>New window</source>
+      <target state="translated">Neues Fenster</target></trans-unit>
       <trans-unit id="records" xml:space="preserve" approved="yes">
         <source>Items:</source>
       <target state="translated">Objekte:</target></trans-unit>
@@ -720,6 +771,15 @@
       <trans-unit id="pi_flexform" xml:space="preserve" approved="yes">
         <source>Plugin Options</source>
       <target state="translated">Erweiterungsoptionen</target></trans-unit>
+      <trans-unit id="accessibility_title" xml:space="preserve" approved="yes">
+        <source>Block title</source>
+      <target state="translated">Blocktitel</target></trans-unit>
+      <trans-unit id="accessibility_bypass" xml:space="preserve" approved="yes">
+        <source>Add link to bypass block</source>
+      <target state="translated">Link zum Überspringen des Blocks hinzufügen</target></trans-unit>
+      <trans-unit id="accessibility_bypass_text" xml:space="preserve" approved="yes">
+        <source>Link text to bypass block</source>
+      <target state="translated">Link-Text zum Überspringen des Blocks</target></trans-unit>
       <trans-unit id="ALT.imgOptions" xml:space="preserve" approved="yes">
         <source>Image Options</source>
       <target state="translated">Bildoptionen</target></trans-unit>
@@ -789,6 +849,15 @@
       <trans-unit id="bodytext.ALT.html" xml:space="preserve" approved="yes">
         <source>HTML:</source>
       <target state="translated">HTML:</target></trans-unit>
+      <trans-unit id="menu.ALT.accessibility_title_formlabel" xml:space="preserve" approved="yes">
+        <source>Menu block title</source>
+      <target state="translated">Title-Attribut für den Abschnitt</target></trans-unit>
+      <trans-unit id="menu.ALT.accessibility_bypass_formlabel" xml:space="preserve" approved="yes">
+        <source>Add link to bypass navigation block</source>
+      <target state="translated">Link zum Überspringen des Navigationsblocks hinzufügen</target></trans-unit>
+      <trans-unit id="menu.ALT.accessibility_bypass_text_formlabel" xml:space="preserve" approved="yes">
+        <source>Link text to bypass navigation block</source>
+      <target state="translated">Link-Text zum Überspringen des Navigations-Blocks</target></trans-unit>
       <trans-unit id="tabs.text" xml:space="preserve" approved="yes">
         <source>Text</source>
       <target state="translated">Text</target></trans-unit>
@@ -801,9 +870,39 @@
       <trans-unit id="media.options" xml:space="preserve" approved="yes">
         <source>Media Options</source>
       <target state="translated">Medienoptionen</target></trans-unit>
+      <trans-unit id="media.tabAudio" xml:space="preserve" approved="yes">
+        <source>Audio Element</source>
+      <target state="translated">Audio-Element</target></trans-unit>
+      <trans-unit id="media.tabVideo" xml:space="preserve" approved="yes">
+        <source>Video Element</source>
+      <target state="translated">Video-Element</target></trans-unit>
+      <trans-unit id="media.tabVideoAccessible" xml:space="preserve" approved="yes">
+        <source>HTML5 Additions</source>
+      <target state="translated">HTML5-Zusätze</target></trans-unit>
       <trans-unit id="media.url" xml:space="preserve" approved="yes">
         <source>Path or URL</source>
       <target state="translated">Relativer Pfad oder URL</target></trans-unit>
+      <trans-unit id="media.fallbackUrl" xml:space="preserve" approved="yes">
+        <source>Path or URL to fallback video source (Flash or QuickTime)</source>
+      <target state="translated">Alternativer Pfad oder URL der Video-Quelldatei (Flash oder QuickTime)</target></trans-unit>
+      <trans-unit id="media.previewImage" xml:space="preserve" approved="yes">
+        <source>Preview-Image for the Video (HTML5 only)</source>
+      <target state="translated">Vorschau-Bild zum Video (nur für HTML5)</target></trans-unit>
+      <trans-unit id="media.sources" xml:space="preserve" approved="yes">
+        <source>Video sources for HTML5 &lt;video&gt; element</source>
+      <target state="translated">Video-Quelle(n) für das HTML5-Element &lt;video&gt;</target></trans-unit>
+      <trans-unit id="media.captionUrl" xml:space="preserve" approved="yes">
+        <source>Path or URL to captions file</source>
+      <target state="translated">Pfad oder URL der Untertitel-Datei</target></trans-unit>
+      <trans-unit id="media.audioSources" xml:space="preserve" approved="yes">
+        <source>Audio sources for HTML5 &lt;audio&gt; element</source>
+      <target state="translated">Audio-Quelle(n) für das HTML5-Element &lt;audio&gt;</target></trans-unit>
+      <trans-unit id="media.audioDescription" xml:space="preserve" approved="yes">
+        <source>audio description for videos</source>
+      <target state="translated">Audio-Beschreibung(en) für Videos</target></trans-unit>
+      <trans-unit id="media.audioFallbackUrl" xml:space="preserve" approved="yes">
+        <source>Path or URL to fallback audio source (Flash or QuickTime)</source>
+      <target state="translated">Alternativer Pfad oder URL zur Audio-Quelldatei (Flash oder QuickTime)</target></trans-unit>
       <trans-unit id="media.browseUrlTitle" xml:space="preserve" approved="yes">
         <source>Select File or URL</source>
       <target state="translated">Datei oder URL auswählen</target></trans-unit>
@@ -819,6 +918,9 @@
       <trans-unit id="media.type" xml:space="preserve" approved="yes">
         <source>Media Type</source>
       <target state="translated">Medientyp</target></trans-unit>
+      <trans-unit id="media.useHTML5" xml:space="preserve" approved="yes">
+        <source>HTML5 / accessible rendering</source>
+      <target state="translated">HTML5 / barrierefreie Darstellung</target></trans-unit>
       <trans-unit id="media.type.video" xml:space="preserve" approved="yes">
         <source>Video</source>
       <target state="translated">Video</target></trans-unit>
@@ -834,6 +936,12 @@
       <trans-unit id="media.renderType.swf" xml:space="preserve" approved="yes">
         <source>Flash Browser Plugin</source>
       <target state="translated">Browser-Plug-In für Shockwave Flash</target></trans-unit>
+      <trans-unit id="media.renderType.preferHtml5OverFlash" xml:space="preserve" approved="yes">
+        <source>HTML5 video/audio tag with fallback to Flash</source>
+      <target state="translated">HTML5-Video-/Audio-Tag mit Flash als Alternative</target></trans-unit>
+      <trans-unit id="media.renderType.preferFlashOverHtml5" xml:space="preserve" approved="yes">
+        <source>Flash with fallback to HTML5 video/audio tag</source>
+      <target state="translated">Flash mit alternativem HTML5-Video-/Audio-Tag</target></trans-unit>
       <trans-unit id="media.renderType.qt" xml:space="preserve" approved="yes">
         <source>QuickTime Browser Plugin</source>
       <target state="translated">Browser-Plug-In für QuickTime</target></trans-unit>
@@ -885,6 +993,21 @@
       <trans-unit id="media.params.allowFullScreen" xml:space="preserve" approved="yes">
         <source>Allow Fullscreen</source>
       <target state="translated">Vollbildschirm erlauben</target></trans-unit>
+      <trans-unit id="media.params.preload" xml:space="preserve" approved="yes">
+        <source>Preload media</source>
+      <target state="translated">Medien vorladen</target></trans-unit>
+      <trans-unit id="media.params.controlsBelow" xml:space="preserve" approved="yes">
+        <source>Display controls below video</source>
+      <target state="translated">Steuerelemente unterhalb des Videos anzeigen</target></trans-unit>
+      <trans-unit id="media.params.controlsAtStart" xml:space="preserve" approved="yes">
+        <source>Make controls visible when page loads</source>
+      <target state="translated">Steuerelemente während des Seiten-Aufbaus anzeigen</target></trans-unit>
+      <trans-unit id="media.params.controlsHiding" xml:space="preserve" approved="yes">
+        <source>Hide controls when not over the video</source>
+      <target state="translated">Steuerelemente verbergen, wenn der Mauszeiger nicht über dem Video positioniert ist</target><note>Imho geht es hier um NouseOver, müsste im Source überprüft werden...</note><alt-trans xml:space="preserve" origin="neichinger"><target>Steuer-Elemente verbergen, wenn sie nicht über dem Video positioniert sind</target></alt-trans></trans-unit>
+      <trans-unit id="media.params.defaultVolume" xml:space="preserve" approved="yes">
+        <source>Default volume</source>
+      <target state="translated">Standard-Lautstärke</target></trans-unit>
       <trans-unit id="media.alternativeContent" xml:space="preserve" approved="yes">
         <source>Alternative Content</source>
       <target state="translated">Alternativer Inhalt</target></trans-unit>
@@ -897,6 +1020,12 @@
       <trans-unit id="media.noFile" xml:space="preserve" approved="yes">
         <source>ERROR: Missing URL or File!</source>
       <target state="translated">FEHLER: URL oder Datei fehlt!</target></trans-unit>
+      <trans-unit id="media.needFlashPlugin" xml:space="preserve" approved="yes">
+        <source>You need a Flash plugin to view this content.</source>
+      <target state="translated">Sie benötigen das Flash-Plug-In.</target></trans-unit>
+      <trans-unit id="media.downloadFlash" xml:space="preserve" approved="yes">
+        <source>Click here to download the latest version.</source>
+      <target state="translated">Zum Download der neuesten Version hier klicken.</target><alt-trans xml:space="preserve" origin="manne."><target>Klicken Sie hier um die neueste Version herunterzuladen.</target></alt-trans></trans-unit>
       <trans-unit id="sys_language_uid_formlabel" xml:space="preserve" approved="yes">
         <source>Language</source>
       <target state="translated">Sprache</target></trans-unit>
@@ -1011,6 +1140,9 @@
       <trans-unit id="palette.menu" xml:space="preserve" approved="yes">
         <source>Menu and Sitemap</source>
       <target state="translated">Menü und Sitemap</target></trans-unit>
+      <trans-unit id="palette.menu_accessibility" xml:space="preserve" approved="yes">
+        <source>Accessibility</source>
+      <target state="translated">Barrierefreiheit</target><note>100%</note></trans-unit>
       <trans-unit id="palette.uploads_layout" xml:space="preserve" approved="yes">
         <source>Filelinks Layout</source>
       <target state="translated">Dateilinklayout</target></trans-unit>

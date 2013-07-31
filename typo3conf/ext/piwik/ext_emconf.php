@@ -1,27 +1,27 @@
 <?php
 
-########################################################################
-# Extension Manager/Repository config file for ext "piwik".
-#
-# Auto generated 21-09-2011 09:42
-#
-# Manual updates:
-# Only the data in the array - everything else is removed by next
-# writing. "version" and "dependencies" must not be touched!
-########################################################################
+/***************************************************************
+ * Extension Manager/Repository config file for ext "piwik".
+ *
+ * Auto generated 05-06-2013 17:15
+ *
+ * Manual updates:
+ * Only the data in the array - everything else is removed by next
+ * writing. "version" and "dependencies" must not be touched!
+ ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Piwik - web analytics, new API',
 	'description' => 'Adds Piwik JS-Code (http://piwik.org/) to your pages',
-	'category' => 'fe',
+	'category' => 2,
 	'shy' => 0,
-	'version' => '3.0.1',
+	'version' => '3.0.2',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
 	'module' => '',
-	'state' => 'stable',
+	'state' => 2,
 	'uploadfolder' => 0,
 	'createDirs' => '',
 	'modify_tables' => '',
@@ -34,14 +34,13 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.3.0-4.6.0',
 		),
 		'conflicts' => array(
 		),
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:11:{s:21:"ext_conf_template.txt";s:4:"ee4a";s:12:"ext_icon.gif";s:4:"d803";s:17:"ext_localconf.php";s:4:"e709";s:14:"ext_tables.php";s:4:"4523";s:27:"Classes/UserFunc/Footer.php";s:4:"206f";s:38:"Configuration/TypoScript/constants.txt";s:4:"9070";s:34:"Configuration/TypoScript/setup.txt";s:4:"7b0d";s:48:"Resources/Private/Templates/Piwik/notracker.html";s:4:"b38e";s:55:"Resources/Private/Templates/Piwik/notracker_beuser.html";s:4:"3482";s:46:"Resources/Private/Templates/Piwik/tracker.html";s:4:"4932";s:14:"doc/manual.sxw";s:4:"ab5a";}',
+	'_md5_values_when_last_written' => 'a:11:{s:21:"ext_conf_template.txt";s:4:"ee4a";s:12:"ext_icon.gif";s:4:"d803";s:17:"ext_localconf.php";s:4:"af6c";s:14:"ext_tables.php";s:4:"4523";s:27:"Classes/UserFunc/Footer.php";s:4:"2786";s:38:"Configuration/TypoScript/constants.txt";s:4:"da90";s:34:"Configuration/TypoScript/setup.txt";s:4:"0881";s:48:"Resources/Private/Templates/Piwik/notracker.html";s:4:"b38e";s:55:"Resources/Private/Templates/Piwik/notracker_beuser.html";s:4:"3482";s:46:"Resources/Private/Templates/Piwik/tracker.html";s:4:"4932";s:14:"doc/manual.sxw";s:4:"ab5a";}',
 );
 
 ?>

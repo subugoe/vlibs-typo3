@@ -84,9 +84,12 @@
       <trans-unit id="special_sitemap_title" xml:space="preserve" approved="yes">
         <source>Sitemap</source>
       <target state="translated">Sitemap</target></trans-unit>
-      <trans-unit id="special_sitemap_description" xml:space="preserve" approved="yes">
-        <source>Creates a sitemap of the website.</source>
-      <target state="translated">Erzeugt eine Sitemap der Website.</target></trans-unit>
+      <trans-unit id="special_menus_title" xml:space="preserve" approved="yes">
+        <source>Special Menus</source>
+      <target state="translated">Spezial-Menüs</target></trans-unit>
+      <trans-unit id="special_menus_description" xml:space="preserve" approved="yes">
+        <source>Creates a menu of pages, sitemap or other special menus.</source>
+      <target state="translated">Erstellt ein Seitenmenü, eine Sitemap oder andere Spezial-Menüs.</target></trans-unit>
       <trans-unit id="special_plainHTML_title" xml:space="preserve" approved="yes">
         <source>Plain HTML</source>
       <target state="translated">Reines HTML</target></trans-unit>
@@ -99,6 +102,12 @@
       <trans-unit id="special_divider_description" xml:space="preserve" approved="yes">
         <source>This element inserts a visual divider, which is by default a horizontal line.</source>
       <target state="translated">Mit diesem Element wird ein sichtbarer Trenner eingefügt, standardmäßig eine horizontale Linie.</target></trans-unit>
+      <trans-unit id="special_shortcut_title" xml:space="preserve" approved="yes">
+        <source>Insert records</source>
+      <target state="translated">Datensätze einfügen</target></trans-unit>
+      <trans-unit id="special_shortcut_description" xml:space="preserve" approved="yes">
+        <source>With this element you can embed other content elements.</source>
+      <target state="translated">Mit diesem Element werden andere Inhaltselemente eingebunden.</target></trans-unit>
       <trans-unit id="forms" xml:space="preserve" approved="yes">
         <source>Form elements</source>
       <target state="translated">Formulare</target></trans-unit>

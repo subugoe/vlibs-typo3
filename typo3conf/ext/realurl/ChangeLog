@@ -1,3 +1,79 @@
+2013-05-07  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fix mixed case extension key
+	* Released version 1.12.6
+
+2013-05-06  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Released version 1.12.5
+
+2013-04-11  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* [BUGFIX] mysqli compatibility issue with TYPO3 CMS 6.1 (thanks to Benni Mack and Oliver Hader)
+	* Fixed bug #46782: avoid using loadTCA with TYPO3 >= 6.1
+	* Change url decoding: replace rawurldecode() with urldecode()
+	* [BUGFIX] Decodefilename adds rawurlencode to only one segment (thanks to Stephan Schuler)
+
+2013-03-13  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Released version 1.12.4
+
+2013-02-26  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Added information to the manual about calling userFunc for alias processing (thanks to Christian Ludwig)
+
+2013-02-08  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #43816: flock() calls in autoconf file generation prevent NFS hosting
+	* Fixed bug #42295: Revitalization of pathcache confused if nothing changed
+	* Fixed bug #41477: Pathcache entries are not expired for subpages (thanks to Steffen Gebert)
+
+2013-01-29  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #43599: 404 error if there is a separator in the subpage
+
+2012-08-23  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Do not set cHash if there are no GET variables (sfp 926.1041)
+
+2012-08-21  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18548: Deprecation Warnings with TYPO3 4.7
+	* Fixed bug #18575: wrong code for localized title detection
+	* Released version 1.12.3
+
+2012-06-29  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18578: 404 error is not displayed if appendMissingSlash is not set
+
+2012-06-25  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18568: insufficient URL conversion of Redirects with umlauts
+	* Fixed bug #18527: URLs with a . at the end do not produce 404 error
+	* Fixed bug #18437: Wrong ID in shortcut mode "Parent page"
+	* Fixed bug #18443: produce fewer results on title lookup
+	* Fixed bug #18190: apendMissingSlash handling different if a point is in query parameter
+	* Fixed bug #18133: Double quotation if magic_quotes_gpc is on
+	* Released version 1.12.2
+
+2012-06-19  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Snowflake task 1570.179: cHash issues with multilanguage domains
+
+2012-05-29  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18551: target redirect path is saved in lower case
+	* Fixed bug #18532: cHash is incorrectly recalculated if the postVar is discarded due to the empty segment
+
+2012-05-22  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18477: cHash is wrong when using noMatch=bypass with the last parameter in the postVarSets
+
+2012-04-23  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
+
+	* Fixed bug #18462: wrong definition for uid column in tx_realurl_redirects
+	* Fixed bug #18479: redirect statistics sometimes are not updated
+
 2012-02-17  Dmitry Dulepov  <dmitry.dulepov@gmail.com>
 
 	* Released version 1.12.1

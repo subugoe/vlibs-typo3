@@ -5,6 +5,7 @@
       <label index="CharacterMapTooltip">Einfügen von Sonderzeichen</label>
       <label index="InsertCharacter-Tooltip">Einfügen von Sonderzeichen</label>
       <label index="Insert special character">Sonderzeichen einfügen</label>
+      <label index="InsertSoftHyphen-Tooltip">Weiches Trennzeichen einfügen</label>
       <label index="general">Allgemein</label>
       <label index="mathematical">Mathematisch</label>
       <label index="graphical">Formen und Farben</label>
@@ -121,8 +122,8 @@
       <label index="emsp">Geviert-Leerzeichen</label>
       <label index="ensp">Halbgeviert-Leerzeichen</label>
       <label index="thinsp">Schmales Leerzeichen</label>
-      <label index="zwj"/>
-      <label index="zwnj"/>
+      <label index="zwj">Verbinder ohne Zeichenabstand</label>
+      <label index="zwnj">Nicht-Verbinder ohne Zeichenabstand</label>
       <label index="minus">Minus</label>
       <label index="plusmn">Plus-/Minuszeichen</label>
       <label index="times">Multiplikationszeichen</label>

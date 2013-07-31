@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index=".alttitle">htmlArea RTE &gt; Microdata</label>
+      <label index=".description">Die Microdata-Funktion erlaubt es, Microdata-Attribute von Elementen im RTE zu bearbeiten.</label>
+      <label index=".details"/>
+      <label index=".image"/>
+      <label index=".image_descr"/>
+      <label index=".seeAlso">xEXT_rtehtmlarea_EditElement,
+xEXT_rtehtmlarea_MicrodataSchema:Show_microdata,
+xEXT_rtehtmlarea_MicrodataSchema:currentItemType,
+xEXT_rtehtmlarea_MicrodataSchema:itemscope,
+xEXT_rtehtmlarea_MicrodataSchema:itemtype,
+xEXT_rtehtmlarea_MicrodataSchema:itemprop</label>
+      <label index="Show_microdata.alttitle">Microdata zeigen</label>
+      <label index="Show_microdata.image">EXT:rtehtmlarea/extensions/MicrodataSchema/skin/images/microdata-show.gif</label>
+      <label index="Show_microdata.image_descr">Symbol "Microdata zeigen".</label>
+      <label index="Show_microdata.description"/>
+      <label index="Show_microdata.details"/>
+      <label index="currentItemType.alttitle"/>
+      <label index="currentItemType.description"/>
+      <label index="currentItemType.details"/>
+      <label index="itemprop.description"/>
+      <label index="itemprop.details"/>
+      <label index="itemscope.alttitle"/>
+      <label index="itemscope.description"/>
+      <label index="itemscope.details"/>
+      <label index="itemtype.alttitle"/>
+      <label index="itemtype.description"/>
+      <label index="itemprop.alttitle"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

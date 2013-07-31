@@ -1,0 +1,92 @@
+config.tx_extbase {
+	persistence {
+		classes {
+			SJBR\StaticInfoTables\Domain\Model\Country {
+				mapping {
+					tableName = static_countries
+					columns {
+						cn_address_format.mapOnProperty = addressFormat
+						cn_capital.mapOnProperty = capitalCity
+						cn_currency_iso_3.mapOnProperty = currencyIsoCodeA3
+						cn_currency_iso_nr.mapOnProperty = currencyIsoCodeNumber
+						cn_eu_member.mapOnProperty = euMember
+						cn_iso_2.mapOnProperty = isoCodeA2
+						cn_iso_3.mapOnProperty = isoCodeA3
+						cn_iso_nr.mapOnProperty = isoCodeNumber
+						cn_official_name_local.mapOnProperty = officialNameLocal
+						cn_official_name_en.mapOnProperty = officialNameEn
+						cn_parent_tr_iso_nr.mapOnProperty = parentTerritoryUnCodeNumber
+						cn_phone.mapOnProperty = phonePrefix
+						cn_short_local.mapOnProperty = shortNameLocal
+						cn_short_en.mapOnProperty = shortNameEn
+						cn_tldomain.mapOnProperty = topLevelDomain
+						cn_uno_member.mapOnProperty = unMember
+						cn_zone_flag.mapOnProperty = zoneFlag
+						deleted = deleted
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\CountryZone {
+				mapping {
+					tableName = static_country_zones
+					columns {
+						zn_country_iso_2.mapOnProperty = countryIsoCodeA2
+						zn_country_iso_3.mapOnProperty = countryIsoCodeA3
+						zn_country_iso_nr.mapOnProperty = countryIsoCodeNumber
+						zn_code.mapOnProperty = isoCode
+						zn_name_local.mapOnProperty = localName
+						zn_name_en.mapOnProperty = nameEn
+						deleted = deleted
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Currency {
+				mapping {
+					tableName = static_currencies
+					columns {
+						cu_decimal_digits.mapOnProperty = decimalDigits
+						cu_decimal_point.mapOnProperty = decimalPoint
+						cu_sub_divisor.mapOnProperty = divisor
+						cu_iso_3.mapOnProperty = isoCodeA3
+						cu_iso_nr.mapOnProperty = isoCodeNumber
+						cu_name_en.mapOnProperty = nameEn
+						cu_sub_name_en.mapOnProperty = subdivisionNameEn
+						cu_sub_symbol_left.mapOnProperty = subdivisionSymbolLeft
+						cu_sub_symbol_right.mapOnProperty = subdivisionSymbolRight
+						cu_symbol_left.mapOnProperty = symbolLeft
+						cu_symbol_right.mapOnProperty = symbolRight
+						cu_thousands_point.mapOnProperty = thousandsPoint
+						deleted = deleted
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Language {
+				mapping {
+					tableName = static_languages
+					columns {
+						lg_collate_locale.mapOnProperty = collatingLocale
+						lg_country_iso_2.mapOnProperty = countryIsoCodeA2
+						lg_constructed.mapOnProperty = constructedLanguage
+						lg_iso_2.mapOnProperty = isoCodeA2
+						lg_name_local.mapOnProperty = localName
+						lg_name_en.mapOnProperty = nameEn
+						lg_sacred.mapOnProperty = sacredLanguage
+						lg_typo3.mapOnProperty = typo3Code
+						deleted = deleted
+					}
+				}
+			}
+			SJBR\StaticInfoTables\Domain\Model\Territory {
+				mapping {
+					tableName = static_territories
+					columns {
+						tr_iso_nr.mapOnProperty = unCodeNumber
+						tr_name_en.mapOnProperty = nameEn
+						tr_parent_iso_nr.mapOnProperty = parentTerritoryUnCodeNumber
+						deleted = deleted
+					}
+				}
+			}
+		}
+	}
+}

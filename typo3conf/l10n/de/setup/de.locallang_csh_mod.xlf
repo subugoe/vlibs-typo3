@@ -194,19 +194,25 @@ The default module is "About Modules".</source>
       <target state="translated">Maximale Höhe für mehrzeilige Textfelder</target></trans-unit>
       <trans-unit id="option_flexibleTextareas_MaxHeight.alttitle" xml:space="preserve" approved="yes">
         <source>Maximal Height of flexible textareas</source>
-      <target state="translated">Maximale Höhe für flexible Textfelder</target><alt-trans xml:space="preserve" origin="silaz"><target>Maximale höhe für den flexiblen Textbereich</target></alt-trans><alt-trans xml:space="preserve" origin="suhemi"><target>maximale Höhe für den flexiblen Textbereich</target></alt-trans><alt-trans xml:space="preserve" origin="mmartin"><target>maximale Höhe für flexible Texteingabebereiche</target></alt-trans></trans-unit>
+      <target state="translated">Maximale Höhe für flexible Textfelder</target></trans-unit>
       <trans-unit id="option_resizeTextareas_MaxHeight.description" xml:space="preserve" approved="yes">
         <source>Define the maximal height of textarea (in Pixel).</source>
       <target state="translated">Legt die maximale Höhe mehrzeiliger Textfelder in Pixel fest.</target></trans-unit>
       <trans-unit id="option_flexibleTextareas_MaxHeight.description" xml:space="preserve" approved="yes">
         <source>Define the maximal height of flexible textareas (in Pixel).</source>
-      <target state="translated">Legt die maximale Höhe mehrzeiliger Textfelder in Pixel fest.</target><note from="translator">Fragwürdig? Finde ich doch recht gut (Stefano)</note></trans-unit>
+      <target state="translated">Legt die maximale Höhe mehrzeiliger Textfelder in Pixel fest.</target><note>Fragwürdig? Finde ich doch recht gut (Stefano)</note></trans-unit>
       <trans-unit id="option_resizeTextareas_Flexible.alttitle" xml:space="preserve" approved="yes">
         <source>Make Textareas Flexible</source>
       <target state="translated">Mehrzeilige Textfelder flexibel machen</target></trans-unit>
       <trans-unit id="option_resizeTextareas_Flexible.description" xml:space="preserve" approved="yes">
         <source>This option will make textareas flexible. The height will grow automatically while typing. Limit is the maximal height set (default 600).</source>
       <target state="translated">Mit dieser werden mehrzeilige Textfelder flexibel. Die Höhe passt sich automatisch bei der Eingabe an. Obergrenze ist die anderweitig festgelegte maximale Höhe (Standard 600 Pixel).</target></trans-unit>
+      <trans-unit id="option_showHiddenFilesAndFolders.description" xml:space="preserve" approved="yes">
+        <source>Defines whether you want to list all the hidden files and folders (beginning with a .) in the file list and element browser.</source>
+      <target state="translated">Gibt an ob Sie alle versteckten Dateien und Ordner (beginnend mit einem .) in Dateiliste und Element-Browser anzeigen möchten.</target></trans-unit>
+      <trans-unit id="option_showHiddenFilesAndFolders.details" xml:space="preserve" approved="yes">
+        <source>By default all hidden files are not displayed in file lists and element browsers and link pickers. This option enables to additionally show the hidden files.</source>
+      <target state="translated">Standardmäßig werden alle versteckten Dateien nicht in der Dateiliste, dem Element-Browser und der Linkauswahl angezeigt. Diese Option aktiviert zusätzlich die Anzeige versteckter Dateien.</target></trans-unit>
       <trans-unit id="option_edit_showFieldHelp.description" xml:space="preserve" approved="yes">
         <source>Defines the mode of Context Sensitive Help (CSH) in TYPO3. The default is that small help icons are shown everywhere a help item is available. You can click the icon and help will appear in a window for you.</source>
       <target state="translated">Legt die Art der Darstellung der kontextabhängigen Hilfe innerhalb von TYPO3 fest. Normalerweise werden Hilfesymbole (in Form kleiner Fragezeichen) neben denjenigen Optionen angezeigt, zu denen Hilfetexte verfügbar sind. Sobald Sie auf eines dieser Symbole klicken, öffnet sich ein Hilfefenster.</target></trans-unit>

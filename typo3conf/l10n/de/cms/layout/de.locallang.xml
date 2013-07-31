@@ -13,6 +13,7 @@
       <label index="hide">Verbergen</label>
       <label index="edit">Bearbeiten</label>
       <label index="newAfter">Neuen Datensatz nach diesem anfügen</label>
+      <label index="newRecordHere">Neuen Datensatz an diesem Ort hinzufügen</label>
       <label index="move_record">Datensatz verschieben</label>
       <label index="move_page">Seite verschieben</label>
       <label index="deleteItem">Löschen</label>
@@ -36,6 +37,7 @@
       <label index="defaultLanguage">Standard</label>
       <label index="editLanguageHeader">Sprach-Header bearbeiten</label>
       <label index="editPageProperties">Seiteneigenschaften bearbeiten</label>
+      <label index="editPageLanguageOverlayProperties">Übersetzungseigenschaften bearbeiten</label>
       <label index="newRecordGeneral">Neuen Datensatz anlegen</label>
       <label index="newContentElement">Neues Inhaltselement anlegen</label>
       <label index="CEonThisPage">Inhaltselemente auf dieser Seite:</label>
@@ -83,6 +85,7 @@
       <label index="content_from_pid_title">Die Seite benutzt Inhalt von dieser Seite: %s</label>
       <label index="goToListModule">Zum Modul Liste gehen</label>
       <label index="goToListModuleMessage">Die aktuelle Seite ist ein Ordner. Ordner enthalten gewöhnlich keine Inhaltselemente, sondern werden zum Sammeln anderer Arten von Datensätzen verwendet.</label>
+      <label index="noPluginSelected">Kein Plug-In ausgewählt</label>
     </languageKey>
   </data>
 </T3locallangExt>

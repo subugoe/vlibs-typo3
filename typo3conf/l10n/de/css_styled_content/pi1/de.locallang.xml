@@ -3,6 +3,7 @@
   <data type="array">
     <languageKey index="de" type="array">
       <label index="label.toTop">Nach oben</label>
+      <label index="uploads.icon">Datei-Link-Symbol für %s</label>
       <label index="login.username">Benutzername:</label>
       <label index="login.password">Passwort:</label>
       <label index="login.login">Anmelden</label>
@@ -16,6 +17,7 @@
       <label index="search.headersKeywords">Überschriften und Schlagwörter</label>
       <label index="search.pageContent">Seiteninhalt</label>
       <label index="search.searchButton">Suchen!</label>
+      <label index="menu.bypassNavigation">Navigations-Block überspringen</label>
       <label index="eIcon.html">Reinen HTML-Inhalt bearbeiten</label>
       <label index="eIcon.header">Überschrift bearbeiten</label>
       <label index="eIcon.subheader">Unterüberschrift bearbeiten</label>

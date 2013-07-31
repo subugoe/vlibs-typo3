@@ -4,6 +4,9 @@
     <languageKey index="de" type="array">
       <label index="LGL.endtime">Stopp:</label>
       <label index="LGL.hidden">Verbergen:</label>
+      <label index="LGL.timestamp">Letzte Änderung:</label>
+      <label index="LGL.creationDate">Erstellt am:</label>
+      <label index="LGL.creationUserId">Erstellt von:</label>
       <label index="LGL.starttime">Start:</label>
       <label index="LGL.fe_group">Zugriff:</label>
       <label index="LGL.hide_at_login">Nach Anmeldung verbergen</label>
@@ -46,6 +49,8 @@
       <label index="LGL.shortcut_page">Verweis auf Seite:</label>
       <label index="LGL.keywords">Stichworte (kommagetrennt):</label>
       <label index="LGL.disable">Inaktiv:</label>
+      <label index="LGL.baseStorage">Speicher:</label>
+      <label index="LGL.folder">Ordner</label>
       <label index="LGL.startingpoint">Ausgangspunkt:</label>
       <label index="LGL.disableRTE">Rich-Text-Editor deaktivieren:</label>
       <label index="LGL.external">Externe URL</label>

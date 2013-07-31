@@ -1,0 +1,44 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+	<h3>{f:translate(key: 'testFormResultTitle')}</h3>
+		<dl class="sjbr-static-info-tables-manager">
+			<dt>
+				<label for="sjbr-static-info-tables-manager-country">{f:translate(key: 'countryLocalizedName')}:</label>
+			</dt>
+			<dd>
+				<strong>{country.nameLocalized}</strong>
+				<br /><strong>{country.isoCodeA3}</strong>
+			</dd>
+			<f:if condition="{countryZone}">
+				<dt>
+					<label for="sjbr-static-info-tables-manager-country-zone">{f:translate(key: 'countryZoneLocalizedName')}:</label>
+				</dt>
+				<dd>
+					<strong>{countryZone.nameLocalized}</strong>
+					<br /><strong>{countryZone.isoCode}</strong>
+				</dd>
+			</f:if>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-currency">{f:translate(key: 'currencyLocalizedName')}:</label>
+			</dt>
+			<dd>
+				<strong>{currency.nameLocalized}</strong>
+				<br /><strong>{currency.isoCodeA3}</strong>
+			</dd>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-language">{f:translate(key: 'languageLocalizedName')}:</label>
+			</dt>
+			<dd>
+				<strong>{language.nameLocalized}</strong>
+				<br /><strong>{language.isoCodeA2}<f:if condition="{language.countryIsoCodeA2}">_{language.countryIsoCodeA2}</f:if></strong>
+			</dd>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-territory">{f:translate(key: 'territoryLocalizedName')}:</label>
+			</dt>
+			<dd>
+				<strong>{territory.nameLocalized}</strong>
+				<br /><strong>{territory.unCodeNumber}</strong>
+			</dd>
+		</dl>
+</f:section>

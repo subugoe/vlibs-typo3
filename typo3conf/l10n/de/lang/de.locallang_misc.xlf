@@ -183,6 +183,15 @@
       <trans-unit id="overwriteExistingFiles" xml:space="preserve" approved="yes">
         <source>Overwrite existing files</source>
       <target state="translated">Vorhandene Dateien überschreiben</target></trans-unit>
+      <trans-unit id="uploadMultipleFilesInfo" xml:space="preserve" approved="yes">
+        <source>Upload multiple files by holding the Shift or CTRL-file pressed while selecting your files (works on modern browsers only).</source>
+      <target state="translated">Um mehrere Dateien hochzuladen kann die Hochstell- oder Strg-Taste gedrückt gehalten werden, während die Dateien ausgesucht werden (funktioniert nur in aktuellen Browsern).</target></trans-unit>
+      <trans-unit id="fileMetaDataLocation" xml:space="preserve" approved="yes">
+        <source>Location</source>
+      <target state="translated">Ort</target></trans-unit>
+      <trans-unit id="fileMetaErrorInvalidRecord" xml:space="preserve" approved="yes">
+        <source>File meta data not found</source>
+      <target state="translated">Meta-Daten der Datei nicht gefunden</target></trans-unit>
       <trans-unit id="selectPosition" xml:space="preserve" approved="yes">
         <source>Select a position for the new page</source>
       <target state="translated">Position für neue Seite auswählen</target></trans-unit>

@@ -5,7 +5,7 @@
     <body>
       <trans-unit id="mlang_labels_tablabel" xml:space="preserve" approved="yes">
         <source>Page content</source>
-      <target state="translated">Seiteninfo und Inhalt</target></trans-unit>
+      <target state="translated">Seiteninfo und Inhalt</target><alt-trans xml:space="preserve" origin="manne."><target>Seiteninhalt</target></alt-trans></trans-unit>
       <trans-unit id="mlang_labels_tabdescr" xml:space="preserve" approved="yes">
         <source>This module allows you to create and edit webpages, view page hit statistics, manage different languages and columns of content per page and access special page contents like guestbooks and shopping items.</source>
       <target state="translated">Mit diesem Modul können neue Web-Seiten angelegt und bearbeitet werden. Es bietet einen Quickeditor für schnellen Zugriff auf den Hauptseiteninhalt. Zusätzlich können Sie verschiedene Sprachen und Inhaltsspalten Ihrer Seite verwalten. Darüber hinaus lassen sich spezielle Seiteninhalte wie Gästebücher-, Forums- und Shop-Einträge verwalten. Das Modul zeigt auch Seitenzugriffstatistiken für die einzelnen Seiten an.</target></trans-unit>

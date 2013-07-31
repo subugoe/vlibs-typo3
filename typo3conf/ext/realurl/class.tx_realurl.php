@@ -28,7 +28,7 @@
 /**
  * Class for creating and parsing Speaking Urls
  *
- * $Id: class.tx_realurl.php 57153 2012-02-02 14:23:28Z dmitry $
+ * $Id$
  *
  * @author	Kasper Skaarhoj <kasper@typo3.com>
  * @author	Dmitry Dulepov <dmitry@typo3.org>
@@ -236,11 +236,10 @@ class tx_realurl {
 	 * @return	void
 	 */
 	public function __construct() {
-		if (!t3lib_extMgm::isLoaded('dbal') && strpos(get_resource_type($GLOBALS['TYPO3_DB']->link), 'mysql link') !== false) {
-			$res = $GLOBALS['TYPO3_DB']->sql_query('SELECT @@VERSION');
-			$rec = $GLOBALS['TYPO3_DB']->sql_fetch_row($res);
-			$GLOBALS['TYPO3_DB']->sql_free_result($res);
-			$this->useMySQLExtendedSyntax = version_compare($rec[0], '4.1.0', '>');
+
+		if (!t3lib_extMgm::isLoaded('dbal')) {
+			// allow to use the MySQL features of 5.x with mysqli
+			$this->useMySQLExtendedSyntax = TRUE;
 		}
 		$sysconf = (array)unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['realurl']);
 		$this->enableStrictMode = (boolean)$sysconf['enableStrictMode'];
@@ -437,9 +436,9 @@ class tx_realurl {
 		$GETparams = explode('&', $inputQuery);
 		foreach ($GETparams as $paramAndValue) {
 			list($p, $v) = explode('=', $paramAndValue, 2);
-			$p = rawurldecode($p);
+			$p = urldecode($p);
 			if ($p != '') {
-				$paramKeyValues[$p] = rawurldecode($v);
+				$paramKeyValues[$p] = urldecode($v);
 			}
 		}
 		$this->orig_paramKeyValues = $paramKeyValues;
@@ -561,6 +560,7 @@ class tx_realurl {
 							if (isset($paramKeyValues[$Gcfg['GETvar']])) {
 								$pathParts[] = rawurlencode($keyWord);
 								$pathPartsSize = count($pathParts);
+								$cHashParameters = $this->cHashParameters;
 								$this->encodeSpURL_setSequence($cfg, $paramKeyValues, $pathParts);
 								// If (1) nothing was added or (2) only empty segments added, remove this part completely
 								if (count($pathParts) == $pathPartsSize) {
@@ -576,6 +576,8 @@ class tx_realurl {
 									}
 									if ($dropSegment) {
 										$pathParts = array_slice($pathParts, 0, $pathPartsSize - 1);
+										// Nothing goes to cHash from this part.
+										$this->cHashParameters = $cHashParameters;
 									}
 								}
 								break;
@@ -700,7 +702,8 @@ class tx_realurl {
 									'pObj' => &$this,
 									'value' => $GETvarVal,
 									'decodeAlias' => false,
-									'pathParts' => &$pathParts
+									'pathParts' => &$pathParts,
+									'setup' => $setup
 								);
 								$prevVal = $GETvarVal;
 								$GETvarVal = t3lib_div::callUserFunction($setup['userFunc'], $params, $this);
@@ -854,15 +857,29 @@ class tx_realurl {
 		if (isset($paramKeyValues['cHash'])) {
 
 			if ($this->rebuildCHash) {
+				$cacheHashClassExists = class_exists('t3lib_cacheHash');
+				$cacheHash = ($cacheHashClassExists ? t3lib_div::makeInstance('t3lib_cacheHash') : NULL);
+				/* @var t3lib_cacheHash $cacheHash */
+
 				$cHashParameters = array_merge($this->cHashParameters, $paramKeyValues);
 				unset($cHashParameters['cHash']);
-				$cHashParameters = t3lib_div::cHashParams(substr(t3lib_div::implodeArrayForUrl('', $cHashParameters), 1));
+				$cHashParameters = t3lib_div::implodeArrayForUrl('', $cHashParameters);
+				if ($cacheHashClassExists) {
+					$cHashParameters = $cacheHash->getRelevantParameters($cHashParameters);
+				} else {
+					$cHashParameters = t3lib_div::cHashParams($cHashParameters);
+				}
 				unset($cHashParameters['']);
-				if (count($cHashParameters) > 1) {
-					if (method_exists('t3lib_div', 'calculateCHash')) {
+				if (count($cHashParameters) == 1) {
+					// No cHash needed.
+					unset($paramKeyValues['cHash']);
+				}
+				elseif (count($cHashParameters) > 1) {
+					if ($cacheHashClassExists) {
+						$paramKeyValues['cHash'] = $cacheHash->calculateCacheHash($cHashParameters);
+					} elseif (method_exists('t3lib_div', 'calculateCHash')) {
 						$paramKeyValues['cHash'] = t3lib_div::calculateCHash($cHashParameters);
-					}
-					else {
+					} else {
 						$paramKeyValues['cHash'] = t3lib_div::shortMD5(serialize($cHashParameters));
 					}
 				}
@@ -975,7 +992,7 @@ class tx_realurl {
 				if (preg_match($regexp, $speakingURIpath)) { // Only process if a slash is missing:
 					$options = t3lib_div::trimExplode(',', $this->extConf['init']['appendMissingSlash'], true);
 					if (in_array('ifNotFile', $options)) {
-						if (!preg_match('/\/[^\/]+\.[^\/]+(\?.*)?$/', '/' . $speakingURIpath)) {
+						if (!preg_match('/\/[^\/\?]+\.[^\/]+(\?.*)?$/', '/' . $speakingURIpath)) {
 							$speakingURIpath = preg_replace($regexp, '\1/\2', $speakingURIpath);
 							$this->appendedSlash = true;
 						}
@@ -1103,7 +1120,7 @@ class tx_realurl {
 		$url = $GLOBALS['TYPO3_DB']->fullQuoteStr($speakingURIpath, 'tx_realurl_redirects');
 		$domainId = $this->getCurrentDomainId();
 		list($redirectRow) = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows(
-			'destination,has_moved', 'tx_realurl_redirects',
+			'destination,has_moved,domain_limit', 'tx_realurl_redirects',
 			'url_hash=' . $hash . ' AND url=' . $url . ' AND domain_limit IN (0,' . $domainId . ')',
 			'', 'domain_limit DESC');
 		if (is_array($redirectRow)) {
@@ -1114,7 +1131,7 @@ class tx_realurl {
 				'last_referer' => t3lib_div::getIndpEnv('HTTP_REFERER')
 			);
 			$GLOBALS['TYPO3_DB']->exec_UPDATEquery('tx_realurl_redirects',
-				'url_hash=' . $hash . ' AND url=' . $url . ' AND domain_limit=' . $domainId,
+				'url_hash=' . $hash . ' AND url=' . $url . ' AND domain_limit=' . $redirectRow['domain_limit'],
 				$fields_values, array('counter'));
 
 			// Redirect
@@ -1130,7 +1147,7 @@ class tx_realurl {
 	/**
 	 * Obtains current domain id from sys_domain.
 	 *
-	 * @return void
+	 * @return int
 	 */
 	protected function getCurrentDomainId() {
 		list($row) = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('uid',
@@ -1158,7 +1175,7 @@ class tx_realurl {
 
 		// Convert URL to segments
 		$pathParts = explode('/', $speakingURIpath);
-		array_walk($pathParts, create_function('&$value', '$value = rawurldecode($value);'));
+		array_walk($pathParts, create_function('&$value', '$value = urldecode($value);'));
 
 		// Strip/process file name or extension first
 		$file_GET_VARS = $this->decodeSpURL_decodeFileName($pathParts);
@@ -1210,7 +1227,7 @@ class tx_realurl {
 			$cachedInfo['GET_VARS'] = t3lib_div::array_merge_recursive_overrule($cachedInfo['GET_VARS'], $file_GET_VARS);
 
 		// cHash handling:
-		if ($cHashCache) {
+		if ($cHashCache && count($cachedInfo['GET_VARS']) > 0) {
 			$cHash_value = $this->decodeSpURL_cHashCache($speakingURIpath);
 			if ($cHash_value) {
 				$cachedInfo['GET_VARS']['cHash'] = $cHash_value;
@@ -1343,7 +1360,7 @@ class tx_realurl {
 
 			// Getting first value, the key (and keep stripping of sets of segments until the end is reached!)
 			while (false != ($key = array_shift($pathParts))) {
-				$key = rawurldecode($key);
+				$key = urldecode($key);
 				if (is_array($postVarSetCfg[$key])) {
 					switch ((string)$postVarSetCfg[$key]['type']) {
 						case 'admin':
@@ -1389,6 +1406,7 @@ class tx_realurl {
 			if ($GET_string) {
 				$GET_VARS = false;
 				parse_str($GET_string, $GET_VARS);
+				$this->decodeSpURL_fixMagicQuotes($GET_VARS);
 				$this->decodeSpURL_fixBrackets($GET_VARS);
 				return $GET_VARS;
 			}
@@ -1397,10 +1415,22 @@ class tx_realurl {
 	}
 
 	/**
+	 * Fix for the magic_quotes_gpc. See http://bugs.typo3.org/view.php?id=18133
+	 *
+	 * @param mixed $array
+	 * @return void
+	 */
+	protected function decodeSpURL_fixMagicQuotes(&$array) {
+		if (get_magic_quotes_gpc() && is_array($array)) {
+			t3lib_div::stripSlashesOnArray($array);
+		}
+	}
+
+	/**
 	 * Fixes a problem with parse_url that returns `a[b[c]` instead of `a[b[c]]` when parsing `a%5Bb%5Bc%5D%5D`
 	 *
-	 * @param	array		Input array
-	 * @return	[type]		...
+	 * @param	mixed	$arr
+	 * @return	void
 	 * @see decodeSpURL_settingPostVarSets()
 	 */
 	protected function decodeSpURL_fixBrackets(&$arr) {
@@ -1430,8 +1460,12 @@ class tx_realurl {
 	 */
 	protected function decodeSpURL_decodeFileName(array &$pathParts) {
 		$getVars = array();
-		$fileName = rawurldecode(array_pop($pathParts));
-		list($segment, $extension) = t3lib_div::revExplode('.', $fileName, 2);
+		$fileName = array_pop($pathParts);
+		$fileParts = t3lib_div::revExplode('.', $fileName, 2);
+		if (count($fileParts) == 2 && !$fileParts[1]) {
+			$this->decodeSpURL_throw404('File "' . $fileName . '" was not found (2)!');
+		}
+		list($segment, $extension) = $fileParts;
 		if ($extension) {
 			$getVars = array();
 			if (!$this->decodeSpURL_decodeFileName_lookupInIndex($fileName, $segment, $extension, $pathParts, $getVars)) {
@@ -1439,6 +1473,9 @@ class tx_realurl {
 					$this->decodeSpURL_throw404('File "' . $fileName . '" was not found (1)!');
 				}
 			}
+		}
+		elseif ($fileName != '') {
+			$pathParts[] = $fileName;
 		}
 		return $getVars;
 	}
@@ -1458,7 +1495,7 @@ class tx_realurl {
 			$suffix = $this->extConf['fileName']['defaultToHTMLsuffixOnPrev'];
 			$suffix = (!$this->isString($suffix, 'defaultToHTMLsuffixOnPrev') ? '.html' : $suffix);
 			if ($suffix == '.' . $extension) {
-				$pathParts[] = rawurlencode($segment);
+				$pathParts[] = $segment;
 				$this->filePart = '.' . $extension;
 				$handled = true;
 			}
@@ -1467,7 +1504,7 @@ class tx_realurl {
 			$suffix = $this->extConf['fileName']['acceptHTMLsuffix'];
 			$suffix = (!$this->isString($suffix, 'acceptHTMLsuffix') ? '.html' : $suffix);
 			if (substr($fileName, -strlen($suffix)) == $suffix) {
-				$pathParts[] = rawurlencode($segment);
+				$pathParts[] = $segment;
 				$this->filePart = $suffix;
 				$handled = true;
 			}
@@ -1540,8 +1577,8 @@ class tx_realurl {
 				// Since some items still remain in the $setupArr, it means
 				// we stripped empty segments at the end of the URL on encoding.
 				// Reconstruct them or cHash check will fail in TSFE.
-				// Related to bug #15906.
-				if (!$setup['optional']) {
+				// Related to bugs #15906, #18477.
+				if (!$setup['optional'] && $setup['noMatch'] != 'bypass') {
 					if (!isset($_GET[$setup['GETvar']]) && (!is_array($setup['cond']) || $this->checkCondition($setup['cond'], $prevVal))) {
 						$GET_string .= '&' . rawurlencode($setup['GETvar']) . '=';
 						$prevVal = '';
@@ -1551,7 +1588,7 @@ class tx_realurl {
 			else {
 				// Get value and remove from path parts:
 				$value = $origValue = array_shift($pathParts);
-				$value = rawurldecode($value);
+				$value = urldecode($value);
 
 				switch ($setup['type']) {
 					case 'action':
@@ -1568,7 +1605,7 @@ class tx_realurl {
 								if ($this->appendedSlash) {
 									$remainPath = substr($remainPath, 0, -1);
 								}
-								$url = str_replace('###REMAIN_PATH###', rawurlencode(rawurldecode($remainPath)), $url);
+								$url = str_replace('###REMAIN_PATH###', rawurlencode(urldecode($remainPath)), $url);
 
 								header('Location: ' . t3lib_div::locationHeaderUrl($url));
 								exit();
@@ -1606,6 +1643,7 @@ class tx_realurl {
 									'pathParts' => &$pathParts,
 									'pObj' => &$this,
 									'value' => $value,
+									'setup' => $setup
 								);
 								$value = t3lib_div::callUserFunction($setup['userFunc'], $params, $this);
 							} elseif (is_array($setup['lookUpTable'])) {
@@ -1817,6 +1855,17 @@ class tx_realurl {
 			'tx_realurl_chashcache', 'spurl_hash=' .
 			$GLOBALS['TYPO3_DB']->fullQuoteStr(md5($stringForHash),
 				'tx_realurl_chashcache'));
+
+		if (!is_array($row) && $stringForHash != $speakingURIpath) {
+			// Use a more generic query if specific fails. This can happen when
+			// using _DOMAINS and the variable is set to 'bypass'.
+			$stringForHash = $speakingURIpath;
+			list($row) = $GLOBALS['TYPO3_DB']->exec_SELECTgetRows('chash_string',
+				'tx_realurl_chashcache', 'spurl_hash=' .
+				$GLOBALS['TYPO3_DB']->fullQuoteStr(md5($stringForHash),
+					'tx_realurl_chashcache'));
+		}
+
 		return is_array($row) ? $row['chash_string'] : false;
 	}
 
@@ -2384,7 +2433,7 @@ class tx_realurl {
 					foreach ($hostConfiguration['GETvars'] as $key => $value) {
 						if (empty($_GET[$key])) {
 							$_GET[$key] = $value;
-							$this->additionalParametersForChash[$key] = $this->testInt($value) ? $value : $value;
+							$this->additionalParametersForChash[$key] = $this->testInt($value) ? intval($value) : $value;
 						}
 					}
 					if (isset($hostConfiguration['useConfiguration'])) {

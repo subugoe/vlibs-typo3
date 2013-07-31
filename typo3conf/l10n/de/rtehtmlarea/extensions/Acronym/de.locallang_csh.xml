@@ -19,22 +19,23 @@ tx_rtehtmlarea_acronym</label>
       <label index="preDefinedAbbreviation.alttitle">Vordefinierte Abkürzungen</label>
       <label index="preDefinedAbbreviation.description">Dieser Bereich erlaubt die Auswahl einer bereits in der Datenbank definierten Abkürzung.</label>
       <label index="preDefinedAbbreviation.seeAlso">tx_rtehtmlarea_acronym</label>
-      <label index="preDefinedAcronym.alttitle"/>
-      <label index="preDefinedAcronym.description"/>
+      <label index="preDefinedAcronym.alttitle">Vordefinierte Akronyme</label>
+      <label index="preDefinedAcronym.description">Mit Hilfe dieses Abschnitts können Sie vordefinierte Akronyme aus der Datenbank auswählen.</label>
       <label index="preDefinedAcronym.seeAlso">tx_rtehtmlarea_acronym</label>
       <label index="unabridgedTerm.alttitle">Nicht abgekürzter Begriff</label>
       <label index="unabridgedTerm.description">Wählen Sie die nicht abgekürzte Form eines Begriffs.</label>
-      <label index="unabridgedTerm.details"/>
+      <label index="unabridgedTerm.details">Die ausgewählte Bezeichnung wird als Titelattribut des Elements für Abkürzungen (oder Akronyme) gesetzt.</label>
       <label index="abridgedTerm.alttitle">Abkürzung</label>
       <label index="abridgedTerm.description">Wählen Sie die Kurzform eines Begriffs.</label>
       <label index="language.alttitle">Sprache</label>
-      <label index="language.description">Wählen Sie die Sprahce für welche die Abkürzung definiert ist.</label>
-      <label index="language.details"/>
+      <label index="language.description">Wählen Sie die Sprache für welche die Abkürzung definiert ist.</label>
+      <label index="language.details">Die ausgewählte Sprache wird als Sprachattribut für die Abkürzung (oder das Akronym) gesetzt. 
+Wenn eine vordefinierte Abkürzung (oder Akronym) ausgewählt wird, wird die Sprache, für die es definiert ist, bereits vorausgewählt.</label>
       <label index="termToAbridge.alttitle">Abzukürzender Begriff</label>
-      <label index="termToAbridge.description"/>
+      <label index="termToAbridge.description">Dieser Abschnitt erlaubt es, einen Begriff anzugeben, für den die aktuelle Auswahl die Kurzform ist.</label>
       <label index="useThisTerm.alttitle">Diesen Begriff verwenden</label>
-      <label index="useThisTerm.description"/>
-      <label index="useThisTerm.details"/>
+      <label index="useThisTerm.description">Geben Sie den Begriff ein, der als unabgekürzte Form der aktuellen Auswahl zugeordnet werden soll.</label>
+      <label index="useThisTerm.details">Die eingegebene Bezeichnung wird als Titelattribut der Abkürzung (oder Akronym) gesetzt.</label>
     </languageKey>
   </data>
 </T3locallangExt>

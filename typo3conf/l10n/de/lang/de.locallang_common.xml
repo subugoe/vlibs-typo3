@@ -6,8 +6,8 @@
       <label index="and">und</label>
       <label index="ascending">Aufsteigend</label>
       <label index="back">Zurück</label>
-      <label index="byteSizeUnits">B| KB| MB| GB</label>
-      <label index="cancel">Abbruch</label>
+      <label index="byteSizeUnits"> B| KB| MB| GB</label>
+      <label index="cancel">Abbrechen</label>
       <label index="category">Kategorie</label>
       <label index="close">Schließen</label>
       <label index="delete">Löschen</label>
@@ -24,6 +24,7 @@
       <label index="enabled">Aktiviert</label>
       <label index="file">Datei</label>
       <label index="files">Dateien</label>
+      <label index="folder">Ordner</label>
       <label index="first">Erste</label>
       <label index="from">Von</label>
       <label index="go">Gehen</label>

@@ -32,7 +32,7 @@
       <target state="translated">Redaktion</target></trans-unit>
       <trans-unit id="pages.palettes.abstract" xml:space="preserve" approved="yes">
         <source>Abstract</source>
-      <target state="translated">Zusammenfassung</target><alt-trans xml:space="preserve" origin="andreas"><target>Kurzbeschreibung</target></alt-trans></trans-unit>
+      <target state="translated">Zusammenfassung</target></trans-unit>
       <trans-unit id="pages.palettes.layout" xml:space="preserve" approved="yes">
         <source>Page Layout</source>
       <target state="translated">Seitenlayout</target></trans-unit>
@@ -197,7 +197,7 @@
       <target state="translated">Letzte Aktualisierung</target></trans-unit>
       <trans-unit id="pages.newUntil" xml:space="preserve" approved="yes">
         <source>'New' Until:</source>
-      <target state="translated">"Neu" bis:</target></trans-unit>
+      <target state="translated">"Neu" bis:</target><alt-trans xml:space="preserve" origin="blackips"><target>'Neu' bis:</target></alt-trans></trans-unit>
       <trans-unit id="pages.newUntil_formlabel" xml:space="preserve" approved="yes">
         <source>Mark as 'New' Until</source>
       <target state="translated">Markiere als 'Neu' bis</target></trans-unit>
@@ -237,6 +237,9 @@
       <trans-unit id="pages.cache_timeout.I.10" xml:space="preserve" approved="yes">
         <source>1 month</source>
       <target state="translated">1 Monat</target></trans-unit>
+      <trans-unit id="pages.cache_tags" xml:space="preserve" approved="yes">
+        <source>Cache Tags:</source>
+      <target state="translated">Cache-Tags:</target></trans-unit>
       <trans-unit id="pages.editlock_formlabel" xml:space="preserve" approved="yes">
         <source>Editable for Admins Only</source>
       <target state="translated">Bearbeitbar nur für Administratoren</target></trans-unit>
@@ -301,13 +304,13 @@
         <source>Selected page</source>
       <target state="translated">Ausgewählte Seite</target></trans-unit>
       <trans-unit id="pages.shortcut_mode.I.1" xml:space="preserve" approved="yes">
-        <source>First subpage of current page</source>
+        <source>First subpage of selected/current page</source>
       <target state="translated">Erste Unterseite der aktuellen Seite</target></trans-unit>
       <trans-unit id="pages.shortcut_mode.I.2" xml:space="preserve" approved="yes">
-        <source>Random subpage of current page</source>
+        <source>Random subpage of selected/current page</source>
       <target state="translated">Zufällige Unterseite der aktuellen Seite</target></trans-unit>
       <trans-unit id="pages.shortcut_mode.I.3" xml:space="preserve" approved="yes">
-        <source>Parent page of current page</source>
+        <source>Parent page of selected/current page</source>
       <target state="translated">Oberseite der aktuellen Seite</target></trans-unit>
       <trans-unit id="pages.shortcut_formlabel" xml:space="preserve" approved="yes">
         <source>Shortcut Target</source>
@@ -575,16 +578,16 @@
       <target state="translated">Stets vor diesem Template-Datensatz einschließen</target></trans-unit>
       <trans-unit id="sys_template.static_file_mode.2" xml:space="preserve" approved="yes">
         <source>Never include before this template record</source>
-      <target state="translated">Nie vor diesem Template-Datensatz einschließen</target><alt-trans xml:space="preserve" origin="derlorenz"><target>Nie vor diesem Template-Datensatz einbinden</target></alt-trans></trans-unit>
+      <target state="translated">Nie vor diesem Template-Datensatz einbinden</target></trans-unit>
       <trans-unit id="sys_template.static_file_mode.3" xml:space="preserve" approved="yes">
         <source>Include before all static templates if root flag is set</source>
-      <target state="translated">Vor allen statischen Templates einfügen, wenn die Wurzel-Option gesetzt ist.</target><alt-trans xml:space="preserve" origin="derlorenz"><target>Vor statischen Templates einbinden, wenn Root-Option gesetzt</target></alt-trans><alt-trans xml:space="preserve" origin="haaarp"><target>Vor allen statischen Templates einfügen, wenn die Root-Option gesetzt ist</target></alt-trans><alt-trans xml:space="preserve" origin="suhemi"><target>Vor allen statischen Templates einfügen, wenn die Wurzel-Option gesetzt ist.</target></alt-trans><alt-trans xml:space="preserve" origin="bouche"><target>Vor statischen Templates einschließen, wenn Wurzel-Option gesetzt</target></alt-trans><alt-trans xml:space="preserve" origin="jansch"><target>Vor allen statischen TypoScript-Templates einfügen, wenn die Root-Option gesetzt ist</target></alt-trans></trans-unit>
+      <target state="translated">Vor allen statischen Templates einbinden, wenn die Wurzel-Option gesetzt ist</target><alt-trans xml:space="preserve" origin="jansch"><target>Vor allen statischen TypoScript-Templates einfügen, wenn die Root-Option gesetzt ist</target></alt-trans><alt-trans xml:space="preserve" origin="derlorenz"><target>Vor statischen Templates einbinden, wenn Root-Option gesetzt</target></alt-trans><alt-trans xml:space="preserve" origin="haaarp"><target>Vor allen statischen Templates einfügen, wenn die Root-Option gesetzt ist</target></alt-trans><alt-trans xml:space="preserve" origin="bouche"><target>Vor statischen Templates einschließen, wenn Wurzel-Option gesetzt</target></alt-trans></trans-unit>
       <trans-unit id="sys_template.basedOn_add" xml:space="preserve" approved="yes">
         <source>Add New Basis Template</source>
       <target state="translated">Neues Basis-Template hinzufügen</target></trans-unit>
       <trans-unit id="sys_template.tabs.files" xml:space="preserve" approved="yes">
         <source>Resources</source>
-      <target state="translated">Ressourcen</target><alt-trans xml:space="preserve" origin="derlorenz"><target>Quellen</target></alt-trans></trans-unit>
+      <target state="translated">Quellen</target></trans-unit>
       <trans-unit id="sys_template.tabs.include" xml:space="preserve" approved="yes">
         <source>Includes</source>
       <target state="translated">Enthält</target></trans-unit>

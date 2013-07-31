@@ -36,8 +36,26 @@
       <trans-unit id="Address" xml:space="preserve" approved="yes">
         <source>Address</source>
       <target state="translated">Adresse</target></trans-unit>
-      <trans-unit id="Section" xml:space="preserve" approved="yes">
+      <trans-unit id="Article" xml:space="preserve" approved="yes">
+        <source>Article</source>
+      <target state="translated">Artikel</target></trans-unit>
+      <trans-unit id="Aside" xml:space="preserve" approved="yes">
+        <source>Aside</source>
+      <target state="translated">Nebenbemerkung</target></trans-unit>
+      <trans-unit id="Container" xml:space="preserve" approved="yes">
         <source>Container</source>
+      <target state="translated">Behälter</target><note>100%</note></trans-unit>
+      <trans-unit id="Footer" xml:space="preserve" approved="yes">
+        <source>Footer</source>
+      <target state="translated">Fußzeile</target></trans-unit>
+      <trans-unit id="Header" xml:space="preserve" approved="yes">
+        <source>Header</source>
+      <target state="translated">Kopfzeile</target></trans-unit>
+      <trans-unit id="Navigation" xml:space="preserve" approved="yes">
+        <source>Navigation</source>
+      <target state="translated">Navigation</target></trans-unit>
+      <trans-unit id="Section" xml:space="preserve" approved="yes">
+        <source>Section</source>
       <target state="translated">Behälter</target></trans-unit>
     </body>
   </file>

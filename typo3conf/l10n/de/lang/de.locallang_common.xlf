@@ -17,10 +17,10 @@
       <target state="translated">Zurück</target></trans-unit>
       <trans-unit id="byteSizeUnits" xml:space="preserve" approved="yes">
         <source> B| KB| MB| GB</source>
-      <target state="translated">B| KB| MB| GB</target></trans-unit>
+      <target state="translated"> B| KB| MB| GB</target></trans-unit>
       <trans-unit id="cancel" xml:space="preserve" approved="yes">
         <source>Cancel</source>
-      <target state="translated">Abbruch</target></trans-unit>
+      <target state="translated">Abbrechen</target></trans-unit>
       <trans-unit id="category" xml:space="preserve" approved="yes">
         <source>Category</source>
       <target state="translated">Kategorie</target></trans-unit>
@@ -69,6 +69,9 @@
       <trans-unit id="files" xml:space="preserve" approved="yes">
         <source>Files</source>
       <target state="translated">Dateien</target></trans-unit>
+      <trans-unit id="folder" xml:space="preserve" approved="yes">
+        <source>Folder</source>
+      <target state="translated">Ordner</target></trans-unit>
       <trans-unit id="first" xml:space="preserve" approved="yes">
         <source>First</source>
       <target state="translated">Erste</target></trans-unit>

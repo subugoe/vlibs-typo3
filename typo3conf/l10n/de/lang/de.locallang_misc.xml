@@ -62,6 +62,9 @@
       <label index="bookmark_workspaceComparisonView">Vergleichsansicht aktivieren</label>
       <label index="bookmark_workspace">Modul Arbeitsumgebungen aufrufen</label>
       <label index="overwriteExistingFiles">Vorhandene Dateien überschreiben</label>
+      <label index="uploadMultipleFilesInfo">Um mehrere Dateien hochzuladen kann die Hochstell- oder Strg-Taste gedrückt gehalten werden, während die Dateien ausgesucht werden (funktioniert nur in aktuellen Browsern).</label>
+      <label index="fileMetaDataLocation">Ort</label>
+      <label index="fileMetaErrorInvalidRecord">Meta-Daten der Datei nicht gefunden</label>
       <label index="selectPosition">Position für neue Seite auswählen</label>
       <label index="pageSelectPosition">Seite (Position auswählen)</label>
       <label index="goBack">Zurück</label>

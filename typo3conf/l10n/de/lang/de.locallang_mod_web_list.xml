@@ -49,6 +49,8 @@
       <label index="viewRecords">Anzeige der Datensätze von</label>
       <label index="pageIndicator">Seite %1$s von %2$d</label>
       <label index="rangeIndicator">Datensätze %1$s - %2$d</label>
+      <label index="missingTcaColumnsMessageTitle">TCA-Definition fehlt</label>
+      <label index="missingTcaColumnsMessage">Warnung: Für die Tabelle "%s" wurden keine Felder gefunden. $TCA['%s']['columns'] enthält nicht die notwendigen Definitionen.</label>
     </languageKey>
   </data>
 </T3locallangExt>

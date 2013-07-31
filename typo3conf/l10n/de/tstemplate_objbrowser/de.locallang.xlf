@@ -22,7 +22,7 @@
         <source>UN-substituted constants in green</source>
       <target state="translated">NICHT-ersetzte Konstanten in grün</target></trans-unit>
       <trans-unit id="currentTemplate" xml:space="preserve" approved="yes">
-        <source>Current template:</source>
+        <source>Current template</source>
       <target state="translated">Aktuelles Template:</target></trans-unit>
       <trans-unit id="badProperty" xml:space="preserve" approved="yes">
         <source>Bad property!</source>
@@ -93,6 +93,9 @@
       <trans-unit id="errorsWarnings" xml:space="preserve" approved="yes">
         <source>Errors and warnings</source>
       <target state="translated">Fehler und Warnungen</target></trans-unit>
+      <trans-unit id="errorShowDetails" xml:space="preserve" approved="yes">
+        <source>Show details</source>
+      <target state="translated">Details anzeigen</target></trans-unit>
       <trans-unit id="removeKey" xml:space="preserve" approved="yes">
         <source>Remove key from OL</source>
       <target state="translated">Schlüssel aus Objektliste entfernen</target></trans-unit>
@@ -115,10 +118,10 @@
         <source>Display constants:</source>
       <target state="translated">Konstanten anzeigen:</target></trans-unit>
       <trans-unit id="displayOptions" xml:space="preserve" approved="yes">
-        <source>Display options:</source>
+        <source>Display options</source>
       <target state="translated">Optionen anzeigen:</target></trans-unit>
       <trans-unit id="conditions" xml:space="preserve" approved="yes">
-        <source>Conditions:</source>
+        <source>Conditions</source>
       <target state="translated">Bedingungen:</target></trans-unit>
       <trans-unit id="setConditions" xml:space="preserve" approved="yes">
         <source>Set conditions</source>

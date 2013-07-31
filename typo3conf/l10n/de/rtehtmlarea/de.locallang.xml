@@ -19,7 +19,7 @@
       <label index="rteHeight">Höhe des RTE in Pixel oder Prozent</label>
       <label index="rteResize">Größe des RTE veränderlich machen</label>
       <label index="rteMaxHeight">Maximale Höhe des in der Größe veränderlichen RTE</label>
-      <label index="deprecatedPropertyMessage"/>
+      <label index="deprecatedPropertyMessage">Die Seiten-TSconfig-Eigenschaft "%1$s" auf Seiten-ID #%4$s ist DEPRECATED und wird in TYPO3 %3$s entfernt. Nutzen Sie stattdessen "%2$s".</label>
     </languageKey>
   </data>
 </T3locallangExt>

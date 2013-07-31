@@ -25,7 +25,7 @@
         <source>Classes</source>
       <target state="translated">CSS-Klassenselektor</target></trans-unit>
       <trans-unit id="Table class:" xml:space="preserve" approved="yes">
-        <source>Table classes:</source>
+        <source>Table:</source>
       <target state="translated">Tabelle:</target></trans-unit>
       <trans-unit id="Table class selector" xml:space="preserve" approved="yes">
         <source>Classes of the table</source>
@@ -109,7 +109,7 @@
         <source>Bottom</source>
       <target state="translated">Unten</target></trans-unit>
       <trans-unit id="Border width" xml:space="preserve" approved="yes">
-        <source>Border width</source>
+        <source>Border width in pixels</source>
       <target state="translated">Rahmenbreite</target></trans-unit>
       <trans-unit id="Border width:" xml:space="preserve" approved="yes">
         <source>Border width:</source>
@@ -202,7 +202,7 @@
         <source>Description</source>
       <target state="translated">Beschreibung</target></trans-unit>
       <trans-unit id="FG Color:" xml:space="preserve" approved="yes">
-        <source>FG Color:</source>
+        <source>Text:</source>
       <target state="translated">Vordergrundfarbe:</target></trans-unit>
       <trans-unit id="Float:" xml:space="preserve" approved="yes">
         <source>Float:</source>
@@ -454,7 +454,7 @@
         <source>em</source>
       <target state="translated">em</target></trans-unit>
       <trans-unit id="Headers:" xml:space="preserve" approved="yes">
-        <source>Headers:</source>
+        <source>Header cells</source>
       <target state="translated">Köpfe:</target></trans-unit>
       <trans-unit id="Table headers" xml:space="preserve" approved="yes">
         <source>Table headers</source>
