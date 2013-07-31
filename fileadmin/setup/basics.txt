@@ -66,7 +66,6 @@ plugin.tx_pazpar2.settings {
 		4.fieldName = title-number-section
 		4.direction = ascending
 	}
-	resultsPerPage = 20
 }
 
 
