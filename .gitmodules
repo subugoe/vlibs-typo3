@@ -18,4 +18,4 @@
 	url = git://github.com/subugoe/jfk-institut-zeitungen.git
 [submodule "typo3conf/ext/find"]
 	path = typo3conf/ext/find
-	url = git@github.com:subugoe/typo3-find
+	url = git://github.com/subugoe/typo3-find
