@@ -13,35 +13,7 @@ config {
 	uniqueLinkVars = 1
 }
 
-config.admPanel = 1
-
-page = PAGE
-page {
-	typenum = 0
-	stylesheet = {$my_stylesheet_file}
-	meta.description.field = description
-	meta.keywords.field = keywords
-	headerData.10 = HTML
-	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="Lib AAC" href="?type=9004">
-	headerData.20 = HTML
-	headerData.20.value = <link rel="SHORTCUT ICON" href="fileadmin/AAC/favicon.ico" type="image/ico">
-}
-
-lib.content < styles.content.get
-
-page.1 = FLUIDTEMPLATE
-page.1 {
-	file = fileadmin/templates/page.html
-	partialRootPath = fileadmin/templates/partials/
-	layoutRootPath = fileadmin/templates/layouts/
-
-	variables {
-		pageTitle = TEXT
-		pageTitle.data = page:title
-		headline = TEXT
-		headline.field = subtitle // title
-    }
-}
+config.admPanel = 0
 
 plugin.tx_pazpar2.settings {
 	fulltextSearch = 2
