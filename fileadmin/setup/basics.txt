@@ -16,6 +16,10 @@ config {
 	uniqueLinkVars = 1
 }
 
+[globalVar = TSFE:id = 2]
+	config.noPageTitle = 1
+[global]
+
 
 page = PAGE
 page {
