@@ -30,7 +30,7 @@ return array(
 			'pazpar2' => 'a:0:{}',
 			'piwik' => 'a:1:{s:20:"showFaultyConfigHelp";s:1:"1";}',
 			'piwikintegration' => 'a:5:{s:12:"emMakeHeader";s:0:"";s:19:"databaseTablePrefix";s:0:"";s:21:"enableIndependentMode";s:1:"0";s:19:"enableSchedulerTask";s:1:"0";s:21:"enableSchedulerLoging";s:1:"0";}',
-			'realurl' => 'a:5:{s:10:"configFile";s:0:"";s:14:"enableAutoConf";s:1:"1";s:14:"autoConfFormat";s:1:"0";s:12:"enableDevLog";s:1:"1";s:19:"enableChashUrlDebug";s:1:"0";}',
+			'realurl' => 'a:5:{s:10:"configFile";s:0:"";s:14:"enableAutoConf";s:1:"0";s:14:"autoConfFormat";s:1:"0";s:12:"enableDevLog";s:1:"1";s:19:"enableChashUrlDebug";s:1:"0";}',
 			'saltedpasswords' => 'a:2:{s:3:"FE.";a:2:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";}s:3:"BE.";a:5:{s:7:"enabled";s:1:"1";s:21:"saltedPWHashingMethod";s:28:"tx_saltedpasswords_salts_md5";s:11:"forceSalted";s:1:"0";s:15:"onlyAuthService";s:1:"0";s:12:"updatePasswd";s:1:"1";}}',
 			'sevenpack' => 'a:0:{}',
 			'simulatestatic' => 'a:0:{}',
