@@ -19,7 +19,6 @@ return array(
 	'EXT' => array(
 		'extConf' => array(
 			'beko_debugster' => 'a:3:{s:7:"ip_mask";s:36:"134.76.*, 127.0.0.1, 10.*, 192.168.*";s:10:"steps_back";s:1:"3";s:12:"useDevIpMask";s:1:"1";}',
-			'cag_linkchecker' => 'a:1:{s:15:"setPageTSconfig";s:1:"1";}',
 			'devlog' => 'a:12:{s:10:"maxLogRuns";s:2:"15";s:14:"entriesPerPage";s:2:"25";s:7:"maxRows";s:4:"1000";s:8:"optimize";s:1:"0";s:8:"dumpSize";s:7:"1000000";s:11:"minLogLevel";s:1:"1";s:11:"excludeKeys";s:0:"";s:14:"highlightStyle";s:60:"padding: 2px; background-color: #fc3; border: 1px solid #666";s:16:"refreshFrequency";s:1:"2";s:13:"prototypePath";s:0:"";s:11:"autoCleanup";s:1:"0";s:8:"__meta__";N;}',
 			'em' => 'a:1:{s:17:"selectedLanguages";s:2:"de";}',
 			'lang' => 'a:0:{}',
