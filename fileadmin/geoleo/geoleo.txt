@@ -4,7 +4,7 @@
 [else]
    config.baseURL = http
 [global]
-config.baseURL := appendString(://10.0.5.99/geoleo/)
+config.baseURL := appendString(://geo-leo.de/)
 
 
 # load basic config
