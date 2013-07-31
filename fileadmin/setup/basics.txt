@@ -9,7 +9,10 @@ config {
 	removeDefaultJS = 1
 	admPanel = 0
 
-	noPageTitle = 2
+	pageTitleFirst = 1
+	pageTitleSeparator = –
+	pageTitleSeparator.noTrimWrap = | | |
+
 	uniqueLinkVars = 1
 }
 
@@ -20,9 +23,6 @@ page {
 	stylesheet = {$my_stylesheet_file}
 	meta.description.field = description
 	meta.keywords.field = keywords
-	headerData.1 = TEXT
-	headerData.1.field = subtitle // title
-	headerData.1.noTrimWrap = |<title>| – GEO-LEO</title>|
 	headerData.10 = TEXT
 	headerData.10.value = <link rel="search" type="application/opensearchdescription+xml" title="GEO-LEO" href="http://geo-leo.de/?type=9004">
 	headerData.20 = TEXT
