@@ -13,6 +13,9 @@ RedirectMatch 301 geo-leo-e-docs(.*) http://e-docs.geo-leo.de/
 	# Ensure canonical host name
 	RewriteCond %{HTTP_HOST} !^geo-leo\.de [NC]
 	RewriteCond %{HTTP_HOST} !^10.0.* [NC]
+	RewriteCond %{HTTP_HOST} !^localhost* [NC]
+	RewriteCond %{HTTP_HOST} !^127.0.0.1* [NC]
+	RewriteCond %{HTTP_HOST} !^totoro.local* [NC]
 	RewriteCond %{HTTP_HOST} !^$
 	RewriteRule ^/?(.*) http://geo-leo.de/$1 [L,R=301,NE]
 
