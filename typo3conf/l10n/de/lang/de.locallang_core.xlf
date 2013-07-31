@@ -138,7 +138,7 @@ Do you want to continue WITHOUT saving?</source>
       <target state="translated">Stopp</target></trans-unit>
       <trans-unit id="labels.minutesHoursDaysYears" xml:space="preserve" approved="yes">
         <source> min| hrs| days| yrs| min| hour| day| year</source>
-      <target state="translated">Min| Std| Tage| Jahre</target></trans-unit>
+      <target state="translated"> Min| Std| Tage| Jahre| Min| Std| Tag| Jahr</target></trans-unit>
       <trans-unit id="labels.menu" xml:space="preserve" approved="yes">
         <source>Menu:</source>
       <target state="translated">Menü:</target></trans-unit>
@@ -216,7 +216,7 @@ Do you want to continue WITHOUT saving?</source>
       <target state="translated">%s "%s" bearbeiten</target></trans-unit>
       <trans-unit id="labels.editRecord" xml:space="preserve" approved="yes">
         <source>Edit %s "%s" on page "%s"</source>
-      <target state="translated">%s "%s" auf Seite %s bearbeiten</target></trans-unit>
+      <target state="translated">%s "%s" auf Seite "%s" bearbeiten</target></trans-unit>
       <trans-unit id="labels.editRecordNoTitle" xml:space="preserve" approved="yes">
         <source>Edit %s on page "%s"</source>
       <target state="translated">%s auf Seite "%s" bearbeiten</target></trans-unit>
@@ -282,7 +282,7 @@ Do you want to continue WITHOUT saving?</source>
       <target state="translated">Weitere Optionen...</target></trans-unit>
       <trans-unit id="labels.noMatchingValue" xml:space="preserve" approved="yes">
         <source>INVALID VALUE ("%s")</source>
-      <target state="translated">AKTUELLER WERT IST NICHT ERLAUBT (%s)</target></trans-unit>
+      <target state="translated">WERT IST NICHT ERLAUBT ("%s")</target></trans-unit>
       <trans-unit id="labels.thumbmode_clip" xml:space="preserve" approved="yes">
         <source>Show Thumbnails on ClipBoard</source>
       <target state="translated">Vorschaubilder in der Zwischenablage anzeigen</target></trans-unit>
@@ -436,6 +436,36 @@ Do you want to continue WITHOUT saving?</source>
       <trans-unit id="file_upload.php.files" xml:space="preserve" approved="yes">
         <source>files</source>
       <target state="translated">Dateien</target></trans-unit>
+      <trans-unit id="file_upload.draginformation.message" xml:space="preserve" approved="yes">
+        <source>You simply can drag your files into the filelist. Click again for classic mode.</source>
+      <target state="translated">Sie können Ihre Dateien einfach in die Dateiliste ziehen. Klicken Sie nochmals, um in den klassischen Modus zu gelangen.</target></trans-unit>
+      <trans-unit id="file_upload.draginformation.title" xml:space="preserve" approved="yes">
+        <source>Drag &amp; Drop available</source>
+      <target state="translated">Drag &amp; Drop verfügbar</target></trans-unit>
+      <trans-unit id="file_upload.dropzonehint" xml:space="preserve" approved="yes">
+        <source>Drop your files here!</source>
+      <target state="translated">Legen Sie Ihre Dateien hier ab!</target></trans-unit>
+      <trans-unit id="file_upload.maxFilesizeExceeded" xml:space="preserve" approved="yes">
+        <source>File "{0}" exceeds maximum filesize of {1} bytes!</source>
+      <target state="translated">Datei "{0}" überschreitet maximale Dateigröße von {1} Byte!</target></trans-unit>
+      <trans-unit id="file_upload.fileNotAllowwed" xml:space="preserve" approved="yes">
+        <source>Filename "{0}" is not allowed!</source>
+      <target state="translated">Dateiname "{0}" ist nicht erlaubt!</target></trans-unit>
+      <trans-unit id="file_upload.uploadFailed" xml:space="preserve" approved="yes">
+        <source>Upload of file "{0}" failed!</source>
+      <target state="translated">Hochladen von Datei "{0}" fehlgeschlagen!</target></trans-unit>
+      <trans-unit id="file_upload.upload-in-progress" xml:space="preserve" approved="yes">
+        <source>File upload in progress...</source>
+      <target state="translated">Hochladen...</target></trans-unit>
+      <trans-unit id="file_upload.upload-progress-info" xml:space="preserve" approved="yes">
+        <source>Uploading file {0} out of {1} files.</source>
+      <target state="translated">Hochladen von Datei {0} von {1}.</target></trans-unit>
+      <trans-unit id="file_upload.upload-finished" xml:space="preserve" approved="yes">
+        <source>Upload complete! Filelist reloading...</source>
+      <target state="translated">Hochladen fertig! Dateiliste lädt neu...</target></trans-unit>
+      <trans-unit id="file_upload.overwriteExistingFiles" xml:space="preserve" approved="yes">
+        <source>Shall existing files be overwritten?</source>
+      <target state="translated">Bestehende Dateien überschreiben?</target></trans-unit>
       <trans-unit id="file_upload.php.number_of_files" xml:space="preserve" approved="yes">
         <source>Number of files:</source>
       <target state="translated">Anzahl Dateien:</target></trans-unit>
@@ -486,7 +516,7 @@ Do you want to continue WITHOUT saving?</source>
       <target state="translated">Durch das Neuzeichnen der Seite gehen die aktuellen Daten verloren. Den Vorgang fortsetzen?</target></trans-unit>
       <trans-unit id="mess.delete" xml:space="preserve" approved="yes">
         <source>Are you sure you want to delete "%s"?</source>
-      <target state="translated">"%s" tatsächlich löschen?</target></trans-unit>
+      <target state="translated">Sind Sie sicher, dass Sie "%s" tatsächlich löschen wollen?</target></trans-unit>
       <trans-unit id="mess.deleteClip" xml:space="preserve" approved="yes">
         <source>Are you sure you want to delete ALL selected elements (%s) on the clipboard?</source>
       <target state="translated">Alle markierten Elemente (%s) aus der Zwischenablage entfernen?</target></trans-unit>
@@ -645,6 +675,30 @@ Would you like to save now in order to refresh the display?</source>
       <trans-unit id="rm.delete" xml:space="preserve" approved="yes">
         <source>Delete</source>
       <target state="translated">Löschen</target></trans-unit>
+      <trans-unit id="message.header.fileNotDeletedHasReferences" xml:space="preserve" approved="yes">
+        <source>File not deleted</source>
+      <target state="translated">Datei nicht gelöscht</target></trans-unit>
+      <trans-unit id="message.description.fileNotDeletedHasReferences" xml:space="preserve" approved="yes">
+        <source>The file cannot be deleted since it is still used at the following places:</source>
+      <target state="translated">Die Datei kann nicht gelöscht werden, weil sie noch an den folgenden Orten benutzt wird:</target></trans-unit>
+      <trans-unit id="message.header.fileDeleted" xml:space="preserve" approved="yes">
+        <source>File deleted</source>
+      <target state="translated">Datei gelöscht</target></trans-unit>
+      <trans-unit id="message.description.fileDeleted" xml:space="preserve" approved="yes">
+        <source>The file "%s" was successfully deleted.</source>
+      <target state="translated">Die Datei "%s" wurde erfolgreich gelöscht.</target></trans-unit>
+      <trans-unit id="message.header.folderDeleted" xml:space="preserve" approved="yes">
+        <source>Folder deleted</source>
+      <target state="translated">Ordner gelöscht</target></trans-unit>
+      <trans-unit id="message.description.folderDeleted" xml:space="preserve" approved="yes">
+        <source>The folder "%s" was successfully deleted.</source>
+      <target state="translated">Der Ordner "%s" wurde erfolgreich gelöscht.</target></trans-unit>
+      <trans-unit id="message.header.folderNotDeletedHasFiles" xml:space="preserve" approved="yes">
+        <source>Folder not deleted</source>
+      <target state="translated">Ordner nicht gelöscht</target></trans-unit>
+      <trans-unit id="message.description.folderNotDeletedHasFiles" xml:space="preserve" approved="yes">
+        <source>The folder cannot be deleted since it still contains files.</source>
+      <target state="translated">Der Ordner kann nicht gelöscht werden, weil er noch Dateien enthält.</target></trans-unit>
       <trans-unit id="buttons.logout" xml:space="preserve" approved="yes">
         <source>Logout</source>
       <target state="translated">Abmelden</target></trans-unit>
@@ -702,6 +756,12 @@ Would you like to save now in order to refresh the display?</source>
       <trans-unit id="cm.unhide" xml:space="preserve" approved="yes">
         <source>Unhide</source>
       <target state="translated">Sichtbar machen</target></trans-unit>
+      <trans-unit id="cm.online" xml:space="preserve" approved="yes">
+        <source>Turn online</source>
+      <target state="translated">Online schalten</target></trans-unit>
+      <trans-unit id="cm.offline" xml:space="preserve" approved="yes">
+        <source>Turn offline</source>
+      <target state="translated">Offline schalten</target></trans-unit>
       <trans-unit id="cm.upload" xml:space="preserve" approved="yes">
         <source>Upload Files</source>
       <target state="translated">Dateien hochladen</target></trans-unit>
@@ -789,6 +849,9 @@ Would you like to save now in order to refresh the display?</source>
       <trans-unit id="warning.install_password" xml:space="preserve" approved="yes">
         <source>The Install Tool is still using the default password "joh316". Update this within the %sAbout section%s of the Install Tool.</source>
       <target state="translated">Das Installationsprogramm benutzt noch das Standardpasswort "joh316". Bitte ersetzen Sie es %shier%s.</target></trans-unit>
+      <trans-unit id="warning.installtool_default_password" xml:space="preserve" approved="yes">
+        <source>The Install Tool is still using the default password "joh316". Update this within the %sImportant actions section%s of the Install Tool.</source>
+      <target state="translated">Das Install Tool verwendet noch das Standardpasswort "joh316". Aktualisieren Sie es im Abschnitt %sImportant actions%s im Install Tool.</target></trans-unit>
       <trans-unit id="warning.backend_admin" xml:space="preserve" approved="yes">
         <source>The default backend user "admin" with password "password" is still present. %sEdit this account%s, either deleting it completely or changing the username and password.</source>
       <target state="translated">Der Standardbenutzer "admin" des Backends mit dem Passwort "password" ist noch vorhanden. %sÄndern Sie dieses Konto%s. Entweder indem Sie es vollständig löschen oder indem Sie Benutzername und Passwort ändern.</target></trans-unit>
@@ -811,7 +874,7 @@ Would you like to save now in order to refresh the display?</source>
         <source>The encryption key is not set. Set it in the %sBasic Configuration section%s of the Install Tool.</source>
       <target state="translated">Es ist kein Schlüssel für die Verschlüsselung festgelegt. Legen Sie ihn im %sAbschnitt Grundkonfiguration%s des Installationsprogramms fest.</target></trans-unit>
       <trans-unit id="warning.install_update" xml:space="preserve" approved="yes">
-        <source>This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the %sUpdate Wizard%s section of the Install Tool to see how TYPO3 would change.</source>
+        <source>This installation is not configured for the TYPO3 version it is running. If you did so intentionally, this message can be safely ignored. If you are unsure, visit the Update Wizard section of the %sInstall Tool%s to see how TYPO3 would change.</source>
       <target state="translated">Diese Installation ist nicht für die laufende TYPO3-Version konfiguriert. Haben Sie dies mit Absicht getan, können Sie die Nachricht beruhigt ignorieren. Wenn Sie unsicher sind, rufen Sie den Abschnitt %sAktualisierungsassistent%s des Installationsprogramms auf, um die möglichen Änderungen zu überprüfen.</target></trans-unit>
       <trans-unit id="warning.header" xml:space="preserve" approved="yes">
         <source>Important Notice!</source>
@@ -912,7 +975,7 @@ Check also the following points:\n
         <source>Extension "%s" is not installed.</source>
       <target state="translated">Erweiterung "%s" ist nicht installiert.</target></trans-unit>
       <trans-unit id="link.to.dblist.correctly" xml:space="preserve" approved="yes">
-        <source>Please, do not link to this page. Use t3lib_BEfunc::getListViewLink() for link generation.</source>
+        <source>Please, do not link to this page. Use \TYPO3\CMS\Backend\Utility\BackendUtility::getListViewLink() for link generation.</source>
       <target state="translated">Bitte verlinken Sie nicht auf diese Seite. Benutzen Sie stattdessen t3lib_extMgm::createListViewLink(), um Links zu erzeugen.</target></trans-unit>
       <trans-unit id="link.to.filefile.correctly" xml:space="preserve" approved="yes">
         <source>Please, do not link to this page.</source>
@@ -923,6 +986,12 @@ Check also the following points:\n
       <trans-unit id="csh_tooltip_loading" xml:space="preserve" approved="yes">
         <source>Loading help...</source>
       <target state="translated">Lädt Hilfetext...</target></trans-unit>
+      <trans-unit id="error.database_schema_mismatch" xml:space="preserve" approved="yes">
+        <source>A SQL error occurred. This may indicate a schema mismatch between TCA and the database. Try running database compare in the Install Tool.</source>
+      <target state="translated">Es ist ein SQL-Fehler aufgetreten. Dies kann auf eine Schema-Abweichung zwischen TCA und der Datenbank hindeuten. Sie sollten im Install Tool einen Datenbank-Vergelich durchführen.</target></trans-unit>
+      <trans-unit id="error.database_schema_mismatch_title" xml:space="preserve" approved="yes">
+        <source>Database Error</source>
+      <target state="translated">Datenbank-Fehler</target></trans-unit>
     </body>
   </file>
 </xliff>

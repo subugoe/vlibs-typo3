@@ -5,6 +5,7 @@
       <label index="UserSettings">Einstellungen</label>
       <label index="language">Backend-Sprache</label>
       <label index="lang_default">Englisch</label>
+      <label index="lang_af">Afrikaans</label>
       <label index="lang_ar">Arabisch</label>
       <label index="lang_ba">Bosnisch</label>
       <label index="lang_bs">Bosnisch</label>
@@ -92,6 +93,7 @@
       <label index="edit_wideDocument">Breiten Hintergrund anzeigen</label>
       <label index="edit_RTE">Rich-Text-Editor aktivieren (falls verfügbar)</label>
       <label index="edit_docModuleUpload">Hochladen von Dateien direkt im Web-Modul</label>
+      <label index="showHiddenFilesAndFolders">Versteckte Dateien und Ordner in der Dateiliste anzeigen</label>
       <label index="enableFlashUploader">Flash-Schnittstelle zum Hochladen aktivieren (erfordert Flash 9+)</label>
       <label index="resizeTextareas">Größe von mehrzeiligen Textfeldern anpassbar machen</label>
       <label index="resizeTextareas_MaxHeight">Maximale Höhe in der Größe anpassbarer, mehrzeiliger Textfelder in Pixel</label>
@@ -101,9 +103,12 @@
       <label index="edit_functions">Bearbeiten</label>
       <label index="disableCMlayers">Inhaltskontextmenüs deaktivieren</label>
       <label index="setToStandard">Alle Werte auf Standard zurücksetzen</label>
+      <label index="resetSectionHeader">Einstellungen zurücksetzen</label>
       <label index="resetConfiguration">Konfiguration zurücksetzen und temporäre Daten löschen</label>
+      <label index="resetConfigurationShort">Zurücksetzen</label>
       <label index="setToStandardQuestion">Alle Werte tatsächlich auf die Standardwerte zurücksetzen?</label>
       <label index="clearSessionVars">Temporäre Daten löschen</label>
+      <label index="clearSessionVarsShort">Leeren</label>
       <label index="clearSessionVarsQuestion">Die temporären Daten tatsächlich löschen?</label>
       <label index="functions">Erweiterte Funktionen</label>
       <label index="copyLevels">&lt;b&gt;Rekursives Kopieren:&lt;/b&gt; Geben Sie die Anzahl der zu kopierenden Unterebenen an</label>

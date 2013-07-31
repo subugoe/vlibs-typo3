@@ -54,6 +54,13 @@
       <trans-unit id="temp" xml:space="preserve" approved="yes">
         <source>Temporary files</source>
       <target state="translated">Temporäre Dateien</target></trans-unit>
+      <trans-unit id="role_folder_temporary" xml:space="preserve" approved="yes">
+        <source>Temporary files</source>
+      <target state="translated">Temporäre Dateien</target><note>100%</note></trans-unit>
+      <trans-unit id="role_folder_recycler" xml:space="preserve" approved="yes">
+        <source>Recycler</source>
+      <target state="translated">Papierkorb</target><note>100%
+100%</note></trans-unit>
       <trans-unit id="read" xml:space="preserve" approved="yes">
         <source>R</source>
       <target state="translated">L</target></trans-unit>
@@ -78,6 +85,30 @@
       <trans-unit id="targetNoDir" xml:space="preserve" approved="yes">
         <source>Target was not a directory!</source>
       <target state="translated">Ziel war kein Verzeichnis!</target></trans-unit>
+      <trans-unit id="localDriverFlexform_basePath" xml:space="preserve" approved="yes">
+        <source>Base path:</source>
+      <target state="translated">Pfad zur Basis:</target></trans-unit>
+      <trans-unit id="localDriverFlexform_pathType" xml:space="preserve" approved="yes">
+        <source>Path type:</source>
+      <target state="translated">Pfadtyp:</target></trans-unit>
+      <trans-unit id="localDriverFlexform_pathType_relative" xml:space="preserve" approved="yes">
+        <source>relative</source>
+      <target state="translated">relativ</target></trans-unit>
+      <trans-unit id="localDriverFlexform_pathType_absolute" xml:space="preserve" approved="yes">
+        <source>absolute</source>
+      <target state="translated">absolut</target></trans-unit>
+      <trans-unit id="storageNotBrowsableTitle" xml:space="preserve" approved="yes">
+        <source>Access denied.</source>
+      <target state="translated">Zugriff verweigert.</target></trans-unit>
+      <trans-unit id="storageNotBrowsableMessage" xml:space="preserve" approved="yes">
+        <source>You are trying to access a folder in a storage that is not browsable.</source>
+      <target state="translated">Sie versuchen, auf einen Ordner in einem Speicher zuzugreifen, der nicht durchsucht werden kann.</target></trans-unit>
+      <trans-unit id="folderNotFoundTitle" xml:space="preserve" approved="yes">
+        <source>Folder not found.</source>
+      <target state="translated">Ordner nicht gefunden.</target></trans-unit>
+      <trans-unit id="folderNotFoundMessage" xml:space="preserve" approved="yes">
+        <source>The folder "%s" cannot be accessed. Trying to use parent folder(s).</source>
+      <target state="translated">Auf den Ordner "%s" kann nicht zugegriffen werden. Versuchen Sie es mit einem übergeordneten Ordner.</target></trans-unit>
     </body>
   </file>
 </xliff>

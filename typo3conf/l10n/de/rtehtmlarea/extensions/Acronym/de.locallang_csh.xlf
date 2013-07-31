@@ -19,7 +19,7 @@ Der Dialog erlaubt die Zuordnung einer Abkürzung zu einem Begriff. The Abkürzu
       <trans-unit id=".image" xml:space="preserve" approved="yes">
         <source>EXT:rtehtmlarea/extensions/Acronym/skin/images/acronym.gif</source>
         <target state="translated">EXT:rtehtmlarea/extensions/Acronym/skin/images/acronym.gif</target><note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-      </trans-unit>
+      <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id=".image_descr" xml:space="preserve" approved="yes">
         <source>"Insert abbreviation" icon in the editor tool bar.</source>
       <target state="translated">"Abkürzung einfügen"-Symbol in der Editor-Werkzeugleiste.</target></trans-unit>
@@ -38,7 +38,7 @@ xEXT_rtehtmlarea_Acronym:language,
 xEXT_rtehtmlarea_Acronym:termToAbridge,
 xEXT_rtehtmlarea_Acronym:useThisTerm
 tx_rtehtmlarea_acronym</target><note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
-      </trans-unit>
+      <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>
       <trans-unit id="preDefinedAbbreviation.alttitle" xml:space="preserve" approved="yes">
         <source>Pre-defined abbreviations</source>
       <target state="translated">Vordefinierte Abkürzungen</target></trans-unit>
@@ -48,12 +48,12 @@ tx_rtehtmlarea_acronym</target><note from="developer">This string contains an in
       <trans-unit id="preDefinedAbbreviation.seeAlso" xml:space="preserve" approved="yes">
         <source>tx_rtehtmlarea_acronym</source>
       <target state="translated">tx_rtehtmlarea_acronym</target></trans-unit>
-      <trans-unit id="preDefinedAcronym.alttitle" xml:space="preserve">
+      <trans-unit id="preDefinedAcronym.alttitle" xml:space="preserve" approved="yes">
         <source>Pre-defined acronyms</source>
-      <target></target></trans-unit>
-      <trans-unit id="preDefinedAcronym.description" xml:space="preserve">
+      <target state="translated">Vordefinierte Akronyme</target></trans-unit>
+      <trans-unit id="preDefinedAcronym.description" xml:space="preserve" approved="yes">
         <source>This section lets you select acronyms already defined in the database.</source>
-      <target></target></trans-unit>
+      <target state="translated">Mit Hilfe dieses Abschnitts können Sie vordefinierte Akronyme aus der Datenbank auswählen.</target></trans-unit>
       <trans-unit id="preDefinedAcronym.seeAlso" xml:space="preserve" approved="yes">
         <source>tx_rtehtmlarea_acronym</source>
       <target state="translated">tx_rtehtmlarea_acronym</target></trans-unit>
@@ -63,9 +63,9 @@ tx_rtehtmlarea_acronym</target><note from="developer">This string contains an in
       <trans-unit id="unabridgedTerm.description" xml:space="preserve" approved="yes">
         <source>Select the unabbreviated form of the term.</source>
       <target state="translated">Wählen Sie die nicht abgekürzte Form eines Begriffs.</target></trans-unit>
-      <trans-unit id="unabridgedTerm.details" xml:space="preserve">
+      <trans-unit id="unabridgedTerm.details" xml:space="preserve" approved="yes">
         <source>The selected term will be set as the title attribute of the abbreviation (or acronym) element.</source>
-      <target></target></trans-unit>
+      <target state="translated">Die ausgewählte Bezeichnung wird als Titelattribut des Elements für Abkürzungen (oder Akronyme) gesetzt.</target></trans-unit>
       <trans-unit id="abridgedTerm.alttitle" xml:space="preserve" approved="yes">
         <source>Abbreviation</source>
       <target state="translated">Abkürzung</target></trans-unit>
@@ -77,26 +77,27 @@ tx_rtehtmlarea_acronym</target><note from="developer">This string contains an in
       <target state="translated">Sprache</target></trans-unit>
       <trans-unit id="language.description" xml:space="preserve" approved="yes">
         <source>Select the language for which the abbreviation is defined.</source>
-      <target state="translated">Wählen Sie die Sprahce für welche die Abkürzung definiert ist.</target></trans-unit>
-      <trans-unit id="language.details" xml:space="preserve">
+      <target state="translated">Wählen Sie die Sprache für welche die Abkürzung definiert ist.</target></trans-unit>
+      <trans-unit id="language.details" xml:space="preserve" approved="yes">
         <source>The selected language will be set as the language attribute of the abbreviation (or acronym) element.
 If a pre-defined abbreviation (or acronym) is selected, the language for which it is defined, if any, is initially selected.</source>
-      <target></target></trans-unit>
+      <target state="translated">Die ausgewählte Sprache wird als Sprachattribut für die Abkürzung (oder das Akronym) gesetzt. 
+Wenn eine vordefinierte Abkürzung (oder Akronym) ausgewählt wird, wird die Sprache, für die es definiert ist, bereits vorausgewählt.</target></trans-unit>
       <trans-unit id="termToAbridge.alttitle" xml:space="preserve" approved="yes">
         <source>Term to abbreviate</source>
       <target state="translated">Abzukürzender Begriff</target></trans-unit>
-      <trans-unit id="termToAbridge.description" xml:space="preserve">
+      <trans-unit id="termToAbridge.description" xml:space="preserve" approved="yes">
         <source>This section lets you enter a term for which the current selection will be the short form.</source>
-      <target></target></trans-unit>
+      <target state="translated">Dieser Abschnitt erlaubt es, einen Begriff anzugeben, für den die aktuelle Auswahl die Kurzform ist.</target></trans-unit>
       <trans-unit id="useThisTerm.alttitle" xml:space="preserve" approved="yes">
         <source>Use this term</source>
       <target state="translated">Diesen Begriff verwenden</target></trans-unit>
-      <trans-unit id="useThisTerm.description" xml:space="preserve">
+      <trans-unit id="useThisTerm.description" xml:space="preserve" approved="yes">
         <source>Enter the term that you want to associate as the unabbreviated form of the current selection.</source>
-      <target></target></trans-unit>
-      <trans-unit id="useThisTerm.details" xml:space="preserve">
+      <target state="translated">Geben Sie den Begriff ein, der als unabgekürzte Form der aktuellen Auswahl zugeordnet werden soll.</target></trans-unit>
+      <trans-unit id="useThisTerm.details" xml:space="preserve" approved="yes">
         <source>The entered term will be set as the title attribute of the abbreviation (or acronym) element.</source>
-      <target></target></trans-unit>
+      <target state="translated">Die eingegebene Bezeichnung wird als Titelattribut der Abkürzung (oder Akronym) gesetzt.</target></trans-unit>
     </body>
   </file>
 </xliff>

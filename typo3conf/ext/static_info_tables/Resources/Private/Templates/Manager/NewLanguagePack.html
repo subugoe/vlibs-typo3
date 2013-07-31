@@ -1,0 +1,50 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+	<h3>{f:translate(key: 'createLanguagePackTitle')}</h3>
+	<f:form method="post" controller="Manager" action="createLanguagePack" name="languagePack" object="{languagePack}" class="sjbr-static-info-tables-manager">
+		<fieldset>
+		<dl>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-locale">{f:translate(key: 'language')}:</label>
+			</dt>
+			<dd>
+				<f:form.select id="sjbr-static-info-tables-manager-locale" property="locale" options="{locales}" optionValueField="collatingLocale" optionLabelField="nameEn" />
+			</dd>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-version">{f:translate(key: 'version')}:</label>
+			</dt>
+			<dd>
+				<f:form.textfield id="sjbr-static-info-tables-manager-version" property="version" size="50" />
+				<f:render partial="FormErrors" arguments="{for: 'languagePack.version'}" />
+			</dd>
+			<dt>
+			<label for="sjbr-static-info-tables-manager-author">{f:translate(key: 'author')}:</label>
+			</dt>
+			<dd>
+				<f:form.textfield id="sjbr-static-info-tables-manager-author" property="author" size="50" />
+				<f:render partial="FormErrors" arguments="{for: 'languagePack.author'}" />
+			</dd>
+			<dt>
+			<label for="sjbr-static-info-tables-manager-authorCompany">{f:translate(key: 'authorCompany')}:</label>
+			</dt>
+			<dd>
+				<f:form.textfield id="sjbr-static-info-tables-manager-authorCompany" property="authorCompany" size="50" />
+				<f:render partial="FormErrors" arguments="{for: 'languagePack.authorCompany'}" />
+			</dd>
+			<dt>
+			<label for="sjbr-static-info-tables-manager-authorEmail">{f:translate(key: 'authorEmail')}:</label>
+			</dt>
+			<dd>
+				<f:form.textfield id="sjbr-static-info-tables-manager-authorEmail" property="authorEmail" size="50" />
+				<f:render partial="FormErrors" arguments="{for: 'languagePack.authorEmail'}" />
+			</dd>
+			<dt>
+			</dt>
+			<dd>
+				<f:form.submit class="submit" value="{f:translate(key: 'createLanguagePackSubmit')}" />
+			</dd>
+		</dl>
+		</fieldset>
+	</f:form>
+</f:section>

@@ -7,12 +7,12 @@
         <source>jQuery Setup</source>
         <target state="translated">jQuery-Konfiguration</target>
       </trans-unit>
-      <trans-unit id="version_in_use">
+      <trans-unit id="version_in_use" approved="yes">
         <source>Versions in use: %s</source>
-      <target></target></trans-unit>
-      <trans-unit id="integrate_from_cdn">
+      <target state="translated">Version im Einsatz: %s</target></trans-unit>
+      <trans-unit id="integrate_from_cdn" approved="yes">
         <source>You are using CDN to integrate the jQuery-Libs, there are no further settings.</source>
-      <target></target></trans-unit>
+      <target state="translated">Sie nutzen CDN zur Integration der jQuery-Bibliothek, es gibt keine weiteren Einstellungen.</target></trans-unit>
       <trans-unit id="function1" approved="yes">
         <source>Create custom jQuery JS library</source>
         <target state="translated">Erstellung einer individuellen jQuery-JS-Bibliothek</target>
@@ -193,9 +193,9 @@
         <source>The jQuery, required for UI Core.</source>
         <target state="translated">jQuery, für UI-Kern erforderlich.</target>
       </trans-unit>
-      <trans-unit id="jquery.component.noConflict">
+      <trans-unit id="jquery.component.noConflict" approved="yes">
         <source>Activates the noConflict mode of jQuery to work with other JS-Frameworks</source>
-      <target></target></trans-unit>
+      <target state="translated">Aktiviert den noConflict-Modus für jQuery, damit Sie auch mit anderen JS-Frameworks arbeiten können.</target></trans-unit>
       <trans-unit id="jquery.component.uicore" approved="yes">
         <source>The core of jQuery UI, required for all interactions and widgets.</source>
         <target state="translated">Die Basis des jQuery-UI. Erforderlich für alle Interaktionen und Widgets.</target>
@@ -208,9 +208,9 @@
         <source>Track and handle mouse-based interactions.</source>
         <target state="translated">Mouse, für alle Interaktionen mit der Maus erforderlich.</target>
       </trans-unit>
-      <trans-unit id="jquery.component.position">
+      <trans-unit id="jquery.component.position" approved="yes">
         <source>Place elements at specific locations in relation to other elements.</source>
-      <target></target></trans-unit>
+      <target state="translated">Plaziert Elemente an einer bestimmten Stelle in Relation zu anderen Elementen.</target></trans-unit>
       <trans-unit id="jquery.component.draggable" approved="yes">
         <source>Makes any element on the page draggable.</source>
         <target state="translated">Macht alle Elemente einer Seite ziehbar.</target>
@@ -237,10 +237,10 @@
       </trans-unit>
       <trans-unit id="jquery.component.autocomplete">
         <source>Autocomplete, added to an input field, enables users to quickly find and select from a pre-populated list of values as they type, leveraging searching and filtering.</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="Hazzard"><target>auto-vervollständigung, um ein Eingabefeld, mit einer Liste bestehend aus vordefinierten Werten mit dem der Benutzer Einträge schnell Suchen und Filtern kann.</target></alt-trans><alt-trans xml:space="preserve" origin="ghermens"><target>Auto-Vervollständigung ermöglicht es Benutzern, während der Eingabe schnell aus einer Liste vordefinierter Werte zu wählen, wenn sie zu einem Eingabefeld hinzugefügt wird. Das erleichtert Suchen und Filtern.</target></alt-trans></trans-unit>
       <trans-unit id="jquery.component.button">
         <source>Button enhances standard form elements like button, input of type submit or reset or anchors to themable buttons with appropiate mouseover and active styles.</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="jquery.component.dialog" approved="yes">
         <source>Opens existing markup in a draggable and resizable dialog.</source>
         <target state="translated">Öffnet vorhandenes Markup in einem ziehbaren und in der Größe veränderbaren Dialog.</target>
@@ -255,14 +255,14 @@
       </trans-unit>
       <trans-unit id="jquery.component.datepicker">
         <source>A datepicker that can be toggled from an input or displayed inline.</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Eine Datumsauswahl, die aus einer Eingabe heraus aktiviert werden kann oder angezeigt werden kann.</target></alt-trans></trans-unit>
       <trans-unit id="jquery.component.progressbar" approved="yes">
         <source>A status indicator that can be used for a loading state and standard percentage indicators.</source>
         <target state="translated">Ein Statusindikator. Er kann für den Ladefortschritt oder als Prozentindikator benutzt werden.</target>
       </trans-unit>
-      <trans-unit id="jquery.component.effects.core">
+      <trans-unit id="jquery.component.effects.core" approved="yes">
         <source>Extends the internal jQuery effects, includes morphing, easing and is required by all other effects.</source>
-      <target></target></trans-unit>
+      <target state="translated">Erweitert die internen jQuery-Effekte, beinhaltet Morphing, Easng und wird von allen anderen Effekten benötigt.</target></trans-unit>
       <trans-unit id="jquery.component.effects.blind" approved="yes">
         <source>Blinds the element.</source>
         <target state="translated">Blendet das Element aus.</target>
@@ -277,7 +277,7 @@
       </trans-unit>
       <trans-unit id="jquery.component.effects.drop">
         <source>A Drop out effect by moving the element in one direction and hiding it at the same time.</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Ein Ausblend-Effekt, bei dem das Element in eine Richtung bewegt und gleichzeitig versteckt wird.</target></alt-trans></trans-unit>
       <trans-unit id="jquery.component.effects.explode" approved="yes">
         <source>The element explodes in all directions into n pieces. Also supports imploding again.</source>
         <target state="translated">Das Element explodiert nach allen Richtungen in n Stücken. Es kann auch wieder implodieren.</target>
@@ -316,85 +316,85 @@
       </trans-unit>
       <trans-unit id="jquery.component.easing">
         <source>A jQuery plugin to give advanced easing options.</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="jquery.component.lint">
         <source>jQuery Lint works over the top of jQuery and diligently reports errors and any incorrect usage of jQuery. It will also, to some extent, offer guidance on best practices and performance concerns.</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.tabs">
         <source>The most important UI widget on the web</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Das wichtigste UI Widget im Netz</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.tabsslideshow">
         <source>Transforms tabs into a working slideshow</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="silaz"><target>Verwandelt Tabs in eine funktionierende Diashow</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.tabshistory">
         <source>The ability to navigate through tabs with the browser's back and forward buttons</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.tooltip">
         <source>The second most important UI widget on the web.</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Das zweitwichtigste UI Widget im Netz</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.tooltipslide">
         <source>A sliding tooltip effect with customized sliding directions, dimensions and speeds</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.tooltipdynamic">
         <source>Dynamic positioning of the tooltip so that it always stays in the viewport</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Dynamische Positionierung des Tooltip, so dass es immer innerhalb des sichtbaren Bereichs bleibt</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.scrollable">
         <source>A generic HTML scrolling widget</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.scrollablecircular">
         <source>Makes an infinite loop from the scrollable items so that there is no beginning or end</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.scrollableautoscroll">
         <source>Makes the scrolling behaviour automatic. highly configurable</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.scrollablenavigator">
         <source>Provides navigation buttons for switching between pages in scrollable</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.scrollablemousewheel">
         <source>Enables mousewheel support for scrollable</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.overlay">
         <source>A generic HTML overlaying widget</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.overlaygallery">
         <source>A plugin for creating "lightbox" style image galleries</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.overlayapple">
         <source>An overlay effect that you have seen on apple.com</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.formdateinput">
         <source>HTML5 date input for humans</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>HTML5 Datumseingabe für Menschen</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.formrangeinput">
         <source>HTML5 range input for humans</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>HTML5 Bereichseingabe für Menschen</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.formvalidator">
         <source>HTML5 input validation for humans</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>HTML5 Eingabevalidierung für Menschen</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.flashembed">
         <source>The future of Flash embedding. Works as a standalone tool and jQuery is not required. flowplayer.js contains this script.</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.history">
         <source>Back button for AJAX apps</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Zurück Schaltfläche für AJAX Anwendungen</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.expose">
         <source>Makes your HTML stand out from its surroundings</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="tools.component.mousewheel">
         <source>A generic mousewheel support for jQuery</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Eine standard Mausrad-Unterstützung für jQuery</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.flowplayer">
         <source>The JavaScript component of Flowplayer - the Video player for the Web</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Die Javascript Komponente des Flowplayers - Der VideoPlayer fürs Netz</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.flowplayercontrolbar">
         <source>Generate video controls with HTML and CSS</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Erzeuge Video-Bedienelemente mit HTML und CSS</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.flowplayerplaylist">
         <source>Generate video playlists with HTML and CSS</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="piphi"><target>Erzeuge Video Spiellisten mit HTML und CSS</target></alt-trans></trans-unit>
       <trans-unit id="tools.component.flowplayerembedding">
         <source>Generates embedding codes for Flowplayer</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
     </body>
   </file>
 </xliff>

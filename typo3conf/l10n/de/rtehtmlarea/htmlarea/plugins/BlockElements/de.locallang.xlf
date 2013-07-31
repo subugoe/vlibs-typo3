@@ -79,7 +79,7 @@
         <source>Bulleted List</source>
       <target state="translated">Aufzählung</target></trans-unit>
       <trans-unit id="InsertUnorderedList-helpText" xml:space="preserve" approved="yes">
-        <source>Makes an bulleted list from the curent selection</source>
+        <source>Makes a bulleted list from the current selection</source>
       <target state="translated">Erzeugt eine Aufzählung aus dem aktuell ausgewählten Text</target></trans-unit>
       <trans-unit id="InsertHorizontalRule-Tooltip" xml:space="preserve" approved="yes">
         <source>Horizontal Rule</source>

@@ -3,8 +3,8 @@
   <data type="array">
     <languageKey index="de" type="array">
       <label index="title">jQuery-Konfiguration</label>
-      <label index="version_in_use"/>
-      <label index="integrate_from_cdn"/>
+      <label index="version_in_use">Version im Einsatz: %s</label>
+      <label index="integrate_from_cdn">Sie nutzen CDN zur Integration der jQuery-Bibliothek, es gibt keine weiteren Einstellungen.</label>
       <label index="function1">Erstellung einer individuellen jQuery-JS-Bibliothek</label>
       <label index="function2">JS-Analyse auf jQuery-Abhängigkeiten</label>
       <label index="function3">JS-Analyse von t3jquery.txt in Extensions</label>
@@ -50,11 +50,11 @@
       <label index="jquery.packito.note">&lt;em&gt;Achtung: Nur Dateien mit &lt;strong&gt;.js&lt;/strong&gt; werden akzeptiert.&lt;br /&gt; Extension-Verzeichnisse können mit EXT: abgerufen werden. zB. EXT:t3jquery/res/jqconfig.js&lt;/em&gt;</label>
       <label index="jquery.packito.remote">Datei am Server:</label>
       <label index="jquery.component.jquery">jQuery, für UI-Kern erforderlich.</label>
-      <label index="jquery.component.noConflict"/>
+      <label index="jquery.component.noConflict">Aktiviert den noConflict-Modus für jQuery, damit Sie auch mit anderen JS-Frameworks arbeiten können.</label>
       <label index="jquery.component.uicore">Die Basis des jQuery-UI. Erforderlich für alle Interaktionen und Widgets.</label>
       <label index="jquery.component.widget">Widget, für alle Widgets erforderlich.</label>
       <label index="jquery.component.mouse">Mouse, für alle Interaktionen mit der Maus erforderlich.</label>
-      <label index="jquery.component.position"/>
+      <label index="jquery.component.position">Plaziert Elemente an einer bestimmten Stelle in Relation zu anderen Elementen.</label>
       <label index="jquery.component.draggable">Macht alle Elemente einer Seite ziehbar.</label>
       <label index="jquery.component.droppable">Generierte Ziele für ziehbare Elemente.</label>
       <label index="jquery.component.resizable">Macht alle Elemente einer Seite in der Größe veränderbar.</label>
@@ -68,7 +68,7 @@
       <label index="jquery.component.tabs">Transformiert ein Set mit Containerelementen in eine Tabstruktur.</label>
       <label index="jquery.component.datepicker"/>
       <label index="jquery.component.progressbar">Ein Statusindikator. Er kann für den Ladefortschritt oder als Prozentindikator benutzt werden.</label>
-      <label index="jquery.component.effects.core"/>
+      <label index="jquery.component.effects.core">Erweitert die internen jQuery-Effekte, beinhaltet Morphing, Easng und wird von allen anderen Effekten benötigt.</label>
       <label index="jquery.component.effects.blind">Blendet das Element aus.</label>
       <label index="jquery.component.effects.bounce">Das Element hüpft n-mal horizontal oder vertikal.</label>
       <label index="jquery.component.effects.clip">Schaltet ein Element, wie einen alten Fernsehr, an und aus.</label>

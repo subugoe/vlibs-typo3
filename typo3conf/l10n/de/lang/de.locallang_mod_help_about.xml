@@ -2,11 +2,12 @@
 <T3locallangExt>
   <data type="array">
     <languageKey index="de" type="array">
-      <label index="title">Über TYPO3</label>
-      <label index="typo3_logo">TYPO3-Logo</label>
+      <label index="title">Über TYPO3 CMS</label>
+      <label index="typo3_logo">TYPO3-CMS-Logo</label>
       <label index="information">Informationen zu TYPO3</label>
-      <label index="welcome">TYPO3 Content-Management-System</label>
-      <label index="minor">TYPO3 ist ein flexibles und professionelles Open-Source-Web-CMS basierend auf PHP und MySQL.&lt;br /&gt;&lt;br /&gt;TYPO3 ist &lt;b&gt;frei verfügbar&lt;/b&gt; unter der &lt;a href="http://typo3.com/1316.0.html" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;%s %s&lt;br /&gt;</label>
+      <label index="welcome">TYPO3 CMS - Professionelles Web-Content-Management-System</label>
+      <label index="minor">TYPO3 CMS ist ein flexibles und professionelles Open-Source-Content-Management-System, das weltweit eingesetzt wird, um Webseiten jeglicher Art zu bauen und zu verwalten, angefangen bei kleinen Seiten für Non-Profit-Organisationen bis hin zu mehrsprachigen Enterprise-Lösungen für große Firmen.&lt;br /&gt;&lt;br /&gt;Für weitere Informationen besuchen Sie &lt;a href="http://typo3.org/about/typo3-the-cms/" target="_blank"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS ist &lt;b&gt;frei verfügbar&lt;/b&gt; unter der &lt;a href="http://typo3.org/license" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;%s %s&lt;br /&gt;</label>
+      <label index="cms_description">TYPO3 CMS ist ein flexibles und professionelles Open-Source-Web-Content-Management-System, das weltweit eingesetzt wird, um Webseiten jeglicher Art zu bauen und zu verwalten, angefangen bei kleinen Seiten für Non-Profit-Organisationen bis hin zu mehrsprachigen Enterprise-Lösungen für große Firmen.&lt;br /&gt;&lt;br /&gt;Für weitere Informationen besuchen Sie &lt;a href="http://typo3.org/about/typo3-the-cms/" target="_blank"&gt;typo3.org&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;TYPO3 CMS ist &lt;b&gt;frei verfügbar&lt;/b&gt; unter der &lt;a href="http://typo3.org/license" target="_blank"&gt;TYPO3-Lizenz (GNU/GPL)&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Sie verwenden Version %s - Copyright %s %s</label>
       <label index="community_credits">Die TYPO3-Community</label>
       <label index="information_detail">Besuchen Sie &lt;a href="http://typo3.org/community/" target="_blank"&gt;typo3.org/community/&lt;/a&gt;, um zu erfahren, warum TYPO3 rockt!</label>
       <label index="coredevs">Kern-Team</label>

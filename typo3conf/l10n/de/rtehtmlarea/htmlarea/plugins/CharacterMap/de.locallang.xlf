@@ -12,6 +12,9 @@
       <trans-unit id="Insert special character" xml:space="preserve" approved="yes">
         <source>Insert special character</source>
       <target state="translated">Sonderzeichen einfügen</target></trans-unit>
+      <trans-unit id="InsertSoftHyphen-Tooltip" xml:space="preserve" approved="yes">
+        <source>Insert soft hyphen</source>
+      <target state="translated">Weiches Trennzeichen einfügen</target></trans-unit>
       <trans-unit id="general" xml:space="preserve" approved="yes">
         <source>General</source>
       <target state="translated">Allgemein</target></trans-unit>
@@ -242,7 +245,7 @@
       <target state="translated">Abstand mit Akut</target></trans-unit>
       <trans-unit id="circ" xml:space="preserve">
         <source>Modifier letter circumflex accent</source>
-      <target></target><alt-trans xml:space="preserve" origin="manne."><target>Kleines u mit Zirkumflex</target></alt-trans><alt-trans xml:space="preserve" origin="dkrupke"><target>Zirkumflex</target></alt-trans></trans-unit>
+      <target></target><alt-trans xml:space="preserve" origin="manne."><target>Modifizierender Zirkumflex</target></alt-trans><alt-trans xml:space="preserve" origin="dkrupke"><target>Zirkumflex</target></alt-trans></trans-unit>
       <trans-unit id="tilde" xml:space="preserve" approved="yes">
         <source>Small tilde</source>
       <target state="translated">Kleine Tilde</target></trans-unit>
@@ -360,12 +363,12 @@
       <trans-unit id="thinsp" xml:space="preserve" approved="yes">
         <source>Thin space</source>
       <target state="translated">Schmales Leerzeichen</target></trans-unit>
-      <trans-unit id="zwj" xml:space="preserve">
+      <trans-unit id="zwj" xml:space="preserve" approved="yes">
         <source>Zero width joiner</source>
-      <target></target><alt-trans xml:space="preserve" origin="manne."><target>Null breiter Verbinder</target></alt-trans><alt-trans xml:space="preserve" origin="dkrupke"><target>Verbindung ohne Zeichen-Abstand</target></alt-trans></trans-unit>
-      <trans-unit id="zwnj" xml:space="preserve">
+      <target state="translated">Verbinder ohne Zeichenabstand</target></trans-unit>
+      <trans-unit id="zwnj" xml:space="preserve" approved="yes">
         <source>Zero width non-joiner</source>
-      <target></target><alt-trans xml:space="preserve" origin="dkrupke"><target>Nicht-Verbindung ohne Zeichen-Abstand</target></alt-trans><alt-trans xml:space="preserve" origin="manne."><target>Null breiter Nichtverbinder</target></alt-trans></trans-unit>
+      <target state="translated">Nicht-Verbinder ohne Zeichenabstand</target></trans-unit>
       <trans-unit id="minus" xml:space="preserve" approved="yes">
         <source>Minus sign</source>
       <target state="translated">Minus</target></trans-unit>

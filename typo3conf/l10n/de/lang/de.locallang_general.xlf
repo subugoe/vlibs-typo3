@@ -9,6 +9,15 @@
       <trans-unit id="LGL.hidden" xml:space="preserve" approved="yes">
         <source>Hide:</source>
       <target state="translated">Verbergen:</target></trans-unit>
+      <trans-unit id="LGL.timestamp" xml:space="preserve" approved="yes">
+        <source>Last Modified:</source>
+      <target state="translated">Letzte Änderung:</target></trans-unit>
+      <trans-unit id="LGL.creationDate" xml:space="preserve" approved="yes">
+        <source>Created At:</source>
+      <target state="translated">Erstellt am:</target></trans-unit>
+      <trans-unit id="LGL.creationUserId" xml:space="preserve" approved="yes">
+        <source>Created By:</source>
+      <target state="translated">Erstellt von:</target></trans-unit>
       <trans-unit id="LGL.starttime" xml:space="preserve" approved="yes">
         <source>Start:</source>
       <target state="translated">Start:</target></trans-unit>
@@ -135,6 +144,12 @@
       <trans-unit id="LGL.disable" xml:space="preserve" approved="yes">
         <source>Disable:</source>
       <target state="translated">Inaktiv:</target></trans-unit>
+      <trans-unit id="LGL.baseStorage" xml:space="preserve" approved="yes">
+        <source>Storage:</source>
+      <target state="translated">Speicher:</target></trans-unit>
+      <trans-unit id="LGL.folder" xml:space="preserve" approved="yes">
+        <source>Folder:</source>
+      <target state="translated">Ordner</target></trans-unit>
       <trans-unit id="LGL.startingpoint" xml:space="preserve" approved="yes">
         <source>Startingpoint:</source>
       <target state="translated">Ausgangspunkt:</target></trans-unit>

@@ -21,7 +21,7 @@
 				$severity: Severity: 0 is info, 1 is notice, 2 is warning, 3 is fatal error, -1 is "OK" message (integer)
 				$dataVar: Additional data you want to pass to the logger (array)
 			</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="manne."><target>Falls Sie devlog in Ihrer Erweiterung verwenden möchten, rufen Sie einfach folgende Helferfunktionen mit den angemessenen Parametern auf: t3lib_div::devlog($msg, $extKey, $severity = 0, $dataVar = false); Die Parameter sind: $msg: Hauptnachricht des Protokolls (string) $extKey: Erweiterungsschlüssel (von welcher Erweiterung das Protokoll aufgerufen wurde) (string) $severity: Schweregrad: 0 für Info, 1 für Bemerkung, 2 für Warnung, 3 für schwerwiegender Fehler, -1 für "OK"-Nachricht (integer) $dataVar: zusätzliche Daten welche an den Logger weitergereicht werden (array)</target></alt-trans></trans-unit>
       <trans-unit id="crdate.alttitle" approved="yes">
         <source>Log run time</source>
         <target state="translated">Log-Laufzeit</target>
@@ -61,10 +61,10 @@
 				Warning: These events are used to notify significant problems. Processes have been completed, but parts of them may be missing, wrong or corrupted. Warnings should not be ignored and action should definitely be taken.
 				Error: These events signal that something went fatally wrong. Processes were not completed and action is definitely needed. Alternately this level may be used to point to a failed event, but in a process where failure can be expected, e.g. a login attempt with the wrong password.
 			</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="_severity.image">
         <source>EXT:devlog/res/csh_severities.png</source>
-      <target></target></trans-unit>
+      <target/><alt-trans xml:space="preserve" origin="silaz"><target>EXT:devlog/res/csh_severities.png</target></alt-trans></trans-unit>
       <trans-unit id="extkey.alttitle" approved="yes">
         <source>Extension</source>
         <target state="translated">Erweiterung</target>
@@ -78,7 +78,7 @@
 				The value is either an extension key or a reference to the core itself or some part of it. It depends on the logging implementation of the component which has triggered the event.
 				One hint about excluded keys: There's an option in the extension manager to exclude some keys from being logged. Notice that if there were events registered with that key before you excluded it, those events will still be visible in the list.
 			</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
       <trans-unit id="location.alttitle" approved="yes">
         <source>Call location</source>
         <target state="translated">Aufrufort</target>
@@ -124,7 +124,7 @@
 				There are almost no boundaries for this field, except that it is an array. In many cases, this field can contain the processed data, when the event has been triggered. For example, you could get the full stack debug trace when there is an SQL error. Another showcase would be to deliver be the relevant TS setup parts or any other configuration array.
 				The value depends on the logging implementation of the component which has triggered the event.
 			</source>
-      <target></target></trans-unit>
+      <target/></trans-unit>
     </body>
   </file>
 </xliff>

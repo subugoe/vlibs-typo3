@@ -35,13 +35,13 @@
       <target state="translated">Aus dieser Liste können die zuletzt bearbeiteten Datensätze ausgewählt werden:</target></trans-unit>
       <trans-unit id="noDocuments_pagemodule" xml:space="preserve" approved="yes">
         <source>the Web&gt;Page module</source>
-      <target state="translated">Web &gt; Seite</target></trans-unit>
+      <target state="translated">das Modul Web&gt;Seite</target></trans-unit>
       <trans-unit id="noDocuments_OR" xml:space="preserve" approved="yes">
         <source>or</source>
       <target state="translated">oder</target></trans-unit>
       <trans-unit id="noDocuments_listmodule" xml:space="preserve" approved="yes">
         <source>the Web&gt;List module</source>
-      <target state="translated">Web &gt; Liste</target></trans-unit>
+      <target state="translated">das Modul Web&gt;Liste</target></trans-unit>
     </body>
   </file>
 </xliff>

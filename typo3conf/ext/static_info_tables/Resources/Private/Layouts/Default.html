@@ -1,0 +1,33 @@
+<f:be.container addCssFile="{f:uri.resource(path:'StyleSheets/manager.css')}">
+	<div class="typo3-fullDoc">
+		<div id="typo3-docheader">
+			<div class="typo3-docheader-functions">
+				<div class="left">
+					<f:be.buttons.csh />
+					<f:be.menus.actionMenu>
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'information')}" controller="Manager" action="information" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'newLanguagePack')}" controller="Manager" action="newLanguagePack" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'testForm')}" controller="Manager" action="testForm" />
+						<f:be.menus.actionMenuItem label="{f:translate(key: 'sqlDumpNonLocalizedData')}" controller="Manager" action="sqlDumpNonLocalizedData" />
+					</f:be.menus.actionMenu>
+				</div>
+				<div class="right">
+				</div>
+			</div>
+			<div class="typo3-docheader-buttons">
+				<div class="left">
+				</div>
+				<div class="right">
+					<f:be.buttons.shortcut />
+				</div>
+			</div>
+		</div>
+		<div id="typo3-docbody">
+			<div id="typo3-inner-docbody">
+				<h2><f:translate key="title">Static Info Tables Manager</f:translate></h2>
+				<f:flashMessages renderMode="div" />
+				<f:render section="Content" />
+			</div>
+		</div>
+	</div>
+</f:be.container>

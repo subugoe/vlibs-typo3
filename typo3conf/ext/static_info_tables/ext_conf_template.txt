@@ -1,3 +1,6 @@
 
-  # cat=basic; type=string; label=charset: Specify the charset of the tables in the database. Enter here the same charset you have used with the UPDATE! import function.
-charset = utf-8
+  # cat=enable; type=boolean; label=Static Info Tables Manager: Enable the Static Info Tables Manager module in the backend
+enableManager = 0
+
+  # cat=enable; type=boolean; label= ATTENTION: After installing or upgrading this extension, you should execute the update script.
+dummy = 0

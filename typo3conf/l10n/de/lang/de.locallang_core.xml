@@ -46,7 +46,7 @@
       <label index="labels.hidden">Verborgen</label>
       <label index="labels.starttime">Start</label>
       <label index="labels.endtime">Stopp</label>
-      <label index="labels.minutesHoursDaysYears">Min| Std| Tage| Jahre</label>
+      <label index="labels.minutesHoursDaysYears"> Min| Std| Tage| Jahre| Min| Std| Tag| Jahr</label>
       <label index="labels.menu">Menü:</label>
       <label index="labels.showPage">Web-Seite anzeigen</label>
       <label index="labels.showList">Datensatzliste anzeigen</label>
@@ -72,7 +72,7 @@
       <label index="labels.createNewRecord">%s auf Seite "%s" neu erstellen</label>
       <label index="labels.createNewRecordRootLevel">%s auf Wurzelebene neu erstellen</label>
       <label index="labels.editPage">%s "%s" bearbeiten</label>
-      <label index="labels.editRecord">%s "%s" auf Seite %s bearbeiten</label>
+      <label index="labels.editRecord">%s "%s" auf Seite "%s" bearbeiten</label>
       <label index="labels.editRecordNoTitle">%s auf Seite "%s" bearbeiten</label>
       <label index="labels.editRecordRootLevel">%s "%s" auf Wurzelebene bearbeiten</label>
       <label index="labels.rootLevel">Wurzelebene</label>
@@ -94,7 +94,7 @@
       <label index="labels.generalOptions_more">Allgemeine Optionen (Fortsetzung):</label>
       <label index="labels.allTables">[Alle Tabellen]</label>
       <label index="labels.moreOptions">Weitere Optionen...</label>
-      <label index="labels.noMatchingValue">AKTUELLER WERT IST NICHT ERLAUBT (%s)</label>
+      <label index="labels.noMatchingValue">WERT IST NICHT ERLAUBT ("%s")</label>
       <label index="labels.thumbmode_clip">Vorschaubilder in der Zwischenablage anzeigen</label>
       <label index="labels.copymode">Objekte kopieren statt zu verschieben</label>
       <label index="labels.clipNoEl">Keine Elemente</label>
@@ -146,6 +146,16 @@
       <label index="file_upload.php.pagetitle">Dateien hochladen</label>
       <label index="file_upload.php.submit">Hochladen</label>
       <label index="file_upload.php.files">Dateien</label>
+      <label index="file_upload.draginformation.message">Sie können Ihre Dateien einfach in die Dateiliste ziehen. Klicken Sie nochmals, um in den klassischen Modus zu gelangen.</label>
+      <label index="file_upload.draginformation.title">Drag &amp; Drop verfügbar</label>
+      <label index="file_upload.dropzonehint">Legen Sie Ihre Dateien hier ab!</label>
+      <label index="file_upload.maxFilesizeExceeded">Datei "{0}" überschreitet maximale Dateigröße von {1} Byte!</label>
+      <label index="file_upload.fileNotAllowwed">Dateiname "{0}" ist nicht erlaubt!</label>
+      <label index="file_upload.uploadFailed">Hochladen von Datei "{0}" fehlgeschlagen!</label>
+      <label index="file_upload.upload-in-progress">Hochladen...</label>
+      <label index="file_upload.upload-progress-info">Hochladen von Datei {0} von {1}.</label>
+      <label index="file_upload.upload-finished">Hochladen fertig! Dateiliste lädt neu...</label>
+      <label index="file_upload.overwriteExistingFiles">Bestehende Dateien überschreiben?</label>
       <label index="file_upload.php.number_of_files">Anzahl Dateien:</label>
       <label index="file_rename.php.pagetitle">Umbenennen</label>
       <label index="file_rename.php.submit">Umbenennen</label>
@@ -162,7 +172,7 @@
       <label index="file_clipupload.php.warning_head">Pfadfehler beim Hochladen</label>
       <label index="file_clipupload.php.warning">Kein Ordner zum Hochladen gefunden. Legen Sie zuerst einen TEMP-Ordner in einem Ihrer Hauptverzeichnisse an ("_temp_")!</label>
       <label index="mess.redraw">Durch das Neuzeichnen der Seite gehen die aktuellen Daten verloren. Den Vorgang fortsetzen?</label>
-      <label index="mess.delete">"%s" tatsächlich löschen?</label>
+      <label index="mess.delete">Sind Sie sicher, dass Sie "%s" tatsächlich löschen wollen?</label>
       <label index="mess.deleteClip">Alle markierten Elemente (%s) aus der Zwischenablage entfernen?</label>
       <label index="mess.refresh_login">Ihre Anmeldung ist abgelaufen. Die Anmeldung erneuern?</label>
       <label index="mess.refresh_login_refresh_button">Angemeldet bleiben!</label>
@@ -215,6 +225,14 @@
       <label index="rm.edit">Bearbeiten</label>
       <label index="rm.export">Export</label>
       <label index="rm.delete">Löschen</label>
+      <label index="message.header.fileNotDeletedHasReferences">Datei nicht gelöscht</label>
+      <label index="message.description.fileNotDeletedHasReferences">Die Datei kann nicht gelöscht werden, weil sie noch an den folgenden Orten benutzt wird:</label>
+      <label index="message.header.fileDeleted">Datei gelöscht</label>
+      <label index="message.description.fileDeleted">Die Datei "%s" wurde erfolgreich gelöscht.</label>
+      <label index="message.header.folderDeleted">Ordner gelöscht</label>
+      <label index="message.description.folderDeleted">Der Ordner "%s" wurde erfolgreich gelöscht.</label>
+      <label index="message.header.folderNotDeletedHasFiles">Ordner nicht gelöscht</label>
+      <label index="message.description.folderNotDeletedHasFiles">Der Ordner kann nicht gelöscht werden, weil er noch Dateien enthält.</label>
       <label index="buttons.logout">Abmelden</label>
       <label index="buttons.exit">Verlassen</label>
       <label index="buttons.selMenu_modules">MODULE</label>
@@ -234,6 +252,8 @@
       <label index="cm.delete">Löschen</label>
       <label index="cm.hide">Verbergen</label>
       <label index="cm.unhide">Sichtbar machen</label>
+      <label index="cm.online">Online schalten</label>
+      <label index="cm.offline">Offline schalten</label>
       <label index="cm.upload">Dateien hochladen</label>
       <label index="cm.rename">Umbenennen</label>
       <label index="cm.open">Öffnen</label>
@@ -263,6 +283,7 @@
       <label index="tree.buttonFilter">Baum filtern</label>
       <label index="tree.searchTermInfo">Suchbegriff eingeben</label>
       <label index="warning.install_password">Das Installationsprogramm benutzt noch das Standardpasswort "joh316". Bitte ersetzen Sie es %shier%s.</label>
+      <label index="warning.installtool_default_password">Das Install Tool verwendet noch das Standardpasswort "joh316". Aktualisieren Sie es im Abschnitt %sImportant actions%s im Install Tool.</label>
       <label index="warning.backend_admin">Der Standardbenutzer "admin" des Backends mit dem Passwort "password" ist noch vorhanden. %sÄndern Sie dieses Konto%s. Entweder indem Sie es vollständig löschen oder indem Sie Benutzername und Passwort ändern.</label>
       <label index="warning.file_deny_pattern">Für fileDenyPattern ist nicht der Standardwert definiert: %s Wird TYPO3 mit Apache betrieben, kann ein angepasster Wert dazu führen, dass Backend- oder Frontend-Benutzer in die Lage versetzt werden, bösartige PHP-Skripte auszuführen.</label>
       <label index="warning.file_deny_pattern_partsNotPresent">Sicherheitsrisiko! Der neue Wert von fileDenyPattern enthält nicht alle Teile des Standardwertes %s. Wenn TYPO3 auf einem Apache-Server ausgeführt wird, kann ein veränderter Wert Backend- oder Frontend-Benutzer in die Lage versetzen, bösartige PHP-Skripte auszuführen.</label>
@@ -306,6 +327,8 @@
       <label index="link.to.filefile.correctly">Bitte verlinken Sie nicht auf diese Seite.</label>
       <label index="loadingIndicator">Lädt...</label>
       <label index="csh_tooltip_loading">Lädt Hilfetext...</label>
+      <label index="error.database_schema_mismatch">Es ist ein SQL-Fehler aufgetreten. Dies kann auf eine Schema-Abweichung zwischen TCA und der Datenbank hindeuten. Sie sollten im Install Tool einen Datenbank-Vergelich durchführen.</label>
+      <label index="error.database_schema_mismatch_title">Datenbank-Fehler</label>
     </languageKey>
   </data>
 </T3locallangExt>

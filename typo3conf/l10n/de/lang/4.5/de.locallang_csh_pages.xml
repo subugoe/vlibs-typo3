@@ -3,12 +3,23 @@
   <data type="array">
     <languageKey index="de" type="array">
       <label index=".description">Der Datensatz "Seite" repräsentiert gewöhnlicherweise eine Webseite in TYPO3. Alle Seiten haben eine ID (UID) über welche diese verlinkt und referenziert werden können. Der Datensatz "Seite" enthält nicht die Inhalte der Seite. Hierfür werden Datensätze vom Typ "Inhaltselement" verwendet.</label>
-      <label index=".details"/>
-      <label index="_.seeAlso"/>
+      <label index=".details">Die Tabelle 'pages' ist das Rückgrat von TYPO3. Alle Datensätze, die im Haupmodul von TYPO3 bearbeitet werden müssen zu einer Seite gehören. Es ist genau wie bei Dateien und Ordnern auf der Festplatte Ihres Computers. 
+
+&lt;b&gt;Der Seitenbaum&lt;/b&gt;
+Die Seiten werden in einer Baumstruktur, die die Organisation Ihrer Website wieder spiegelt, gespeichert.
+
+&lt;p&gt;UID, PID und die Seitenbaum Wurzel&lt;/b&gt;
+Alle Datenbank-Elemente haben ein Feld 'uid', das eine eindeutige Identifikationsnummer ist. Sie haben auch ein Feld "pid" (Seiten Id), welche die ID (uid) der Seite enthält, zu der sie gehören. Wenn das "pid" Feld Null ist, wird der Datensatz in der Wurzel-Seite angezeigt. Nur Administratoren ist der Zugriff auf die Wurzel Seite erlaubt. Datensätze müssen so konfiguriert werden, dass sie entweder zu einer Seite gehören oder in der Wurzel gezeigt werden.
+
+&lt;b&gt;Speicherung der Datenbank-Datensätze&lt;/b&gt;
+Je nach "Typ" kann eine Seite auch ein allgemeinen Speicher für Datenbank-Elemente in TYPO3 sein. In diesem Fall ist es nicht als eine Webseite verfügbar, sondern wird intern im Seitenbaum als einen Ort benutzt, um Elemente zu speichern wie z. B. Benutzer, Anmeldungen, usw.. Solche Seiten sind in der Regel vom Typ "Folder".</label>
+      <label index="_.seeAlso">xMOD_csh_corebe:pagetree,
+tt_content,
+Über Seiten | http://typo3.org/documentation/document-library/doc_tut_quickstart/Pagetree/</label>
       <label index="_.image">EXT:lang/cshimages/pages_1.png,
 EXT:lang/cshimages/pages_2.png,</label>
       <label index=".image_descr"/>
-      <label index="title.description">Geben Sie hier den Titel der Seite oder des Ordners an. Dieses Feld ist ein Pflichtfeld.</label>
+      <label index="title.description">Geben Sie den Titel der Seite ein! Dieses Feld ist ein Pflichtfeld.</label>
       <label index="title.details"/>
       <label index="_title.image">EXT:lang/cshimages/pages_3.png</label>
       <label index="title.image_descr"/>

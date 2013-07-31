@@ -13,6 +13,12 @@
       <label index="Preformatted">Vorformatiert</label>
       <label index="Long quotation">Zitat</label>
       <label index="Address">Adresse</label>
+      <label index="Article">Artikel</label>
+      <label index="Aside">Nebenbemerkung</label>
+      <label index="Container">Behälter</label>
+      <label index="Footer">Fußzeile</label>
+      <label index="Header">Kopfzeile</label>
+      <label index="Navigation">Navigation</label>
       <label index="Section">Behälter</label>
     </languageKey>
   </data>

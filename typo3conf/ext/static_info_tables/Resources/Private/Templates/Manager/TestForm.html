@@ -1,0 +1,36 @@
+<f:layout name="Default" />
+
+<f:section name="Content">
+	<h3>{f:translate(key: 'testFormTitle')}</h3>
+	<f:form method="post" controller="Manager" action="testForm" name="testForm" class="sjbr-static-info-tables-manager">
+		<fieldset>
+		<dl>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-country">{f:translate(key: 'selectCountry')}:</label>
+			</dt>
+			<dd>
+				<f:form.select id="sjbr-static-info-tables-manager-country" name="country" options="{countries}" value="{selectedCountry}" optionLabelField="nameLocalized" additionalAttributes="{onchange:'javascript:this.form.submit();'}" />
+			</dd>
+				<f:if condition="{countryZones}">
+					<dt>
+						<label for="sjbr-static-info-tables-manager-country-zone">{f:translate(key: 'selectCountryZone')}:</label>
+					</dt>
+					<dd>
+						<f:form.select id="sjbr-static-info-tables-manager-country-zone" name="countryZone" options="{countryZones}" value="{selectedCountryZone}" optionLabelField="nameLocalized" />
+					</dd>
+				</f:if>
+			<dt>
+				<label for="sjbr-static-info-tables-manager-language">{f:translate(key: 'selectLanguage')}:</label>
+			</dt>
+			<dd>
+				<f:form.select id="sjbr-static-info-tables-manager-language" name="language" options="{languages}" value="{selectedLanguage}" optionLabelField="nameLocalized" sortByOptionLabel="1"/>
+			</dd>
+			<dt>
+			</dt>
+			<dd>
+				<f:form.submit class="submit" value="{f:translate(key: 'testFormSubmit')}" />
+			</dd>
+		</dl>
+		</fieldset>
+	</f:form>
+</f:section>

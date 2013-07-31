@@ -12,9 +12,9 @@
       <label index="noDocuments_msg">Es sind keine Dokumente zur Bearbeitung geöffnet.</label>
       <label index="noDocuments_msg2">Rufen Sie %s auf, um die Seite oder den Datensatz zu finden, den Sie bearbeiten möchten.</label>
       <label index="noDocuments_msg3">Aus dieser Liste können die zuletzt bearbeiteten Datensätze ausgewählt werden:</label>
-      <label index="noDocuments_pagemodule">Web &gt; Seite</label>
+      <label index="noDocuments_pagemodule">das Modul Web&gt;Seite</label>
       <label index="noDocuments_OR">oder</label>
-      <label index="noDocuments_listmodule">Web &gt; Liste</label>
+      <label index="noDocuments_listmodule">das Modul Web&gt;Liste</label>
     </languageKey>
   </data>
 </T3locallangExt>

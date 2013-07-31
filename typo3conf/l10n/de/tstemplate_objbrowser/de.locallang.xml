@@ -32,6 +32,7 @@
       <label index="search">Suche:</label>
       <label index="regExp">Reguläre Ausdrücke</label>
       <label index="errorsWarnings">Fehler und Warnungen</label>
+      <label index="errorShowDetails">Details anzeigen</label>
       <label index="removeKey">Schlüssel aus Objektliste entfernen</label>
       <label index="setupRoot">Setup-Wurzel</label>
       <label index="constantRoot">Konstantenwurzel</label>

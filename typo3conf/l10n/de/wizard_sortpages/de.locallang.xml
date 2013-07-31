@@ -12,6 +12,7 @@
       <label index="wiz_changeOrder_tChange">Änderungszeitpunkt</label>
       <label index="wiz_changeOrder_REVERSE">Reihenfolge umkehren</label>
       <label index="wiz_changeOrder_msg1">Die Reihenfolge der obigen Seiten wird geändert. Den Vorgang fortsetzen?</label>
+      <label index="no_subpages">Sie müssen eine Seite mit Unterseiten auswählen.</label>
     </languageKey>
   </data>
 </T3locallangExt>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3locallangExt>
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="property.error"/>
+      <label index="validator.emailaddress.notvalid"/>
+      <label index="validator.stringlength.between"/>
+      <label index="validator.stringlength.less"/>
+      <label index="validator.string.notvalid"/>
+      <label index="validator.stringlength.exceed"/>
+      <label index="validator.alphanumeric.notvalid"/>
+      <label index="validator.datetime.notvalid"/>
+      <label index="validator.genericobject.noobject"/>
+      <label index="validator.float.notvalid"/>
+      <label index="validator.text.notvalid"/>
+      <label index="validator.regularexpression.empty"/>
+      <label index="validator.regularexpression.nomatch"/>
+      <label index="validator.regularexpression.error"/>
+      <label index="validator.numberrange.notvalid"/>
+      <label index="validator.numberrange.range"/>
+      <label index="validator.notempty.null"/>
+      <label index="validator.notempty.empty"/>
+      <label index="validator.number.notvalid"/>
+      <label index="validator.integer.notvalid"/>
+    </languageKey>
+  </data>
+</T3locallangExt>

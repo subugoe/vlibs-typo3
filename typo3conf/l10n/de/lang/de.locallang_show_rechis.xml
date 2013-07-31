@@ -37,7 +37,6 @@
       <label index="no">Nein</label>
       <label index="yes">Ja</label>
       <label index="showInsertDelete">Eingefügte/gelöschte Datensätze anzeigen</label>
-      <label index="consistenceWarning">Änderungen vor diesem Zeitpunkt können u.U. nicht wiederhergestellt werden, da ältere Änderungen normalerweise nicht erhalten bleiben.</label>
       <label index="noDifferences">Es liegen keine Unterschiede zur aktuellen Seite vor!</label>
     </languageKey>
   </data>

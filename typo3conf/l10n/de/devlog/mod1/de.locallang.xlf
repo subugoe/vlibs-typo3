@@ -74,7 +74,7 @@
       <trans-unit id="log_time" approved="yes">
         <source>Log time</source>
         <target state="translated">Protkollzeit</target>
-      </trans-unit>
+      <alt-trans xml:space="preserve" origin="manne."><target>Protokollzeit</target></alt-trans></trans-unit>
       <trans-unit id="log_period" approved="yes">
         <source>Log period</source>
         <target state="translated">Protokollspanne</target>

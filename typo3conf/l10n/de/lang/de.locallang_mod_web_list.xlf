@@ -144,6 +144,12 @@
       <trans-unit id="rangeIndicator" xml:space="preserve" approved="yes">
         <source>Records %1$d - %2$d</source>
       <target state="translated">Datensätze %1$s - %2$d</target></trans-unit>
+      <trans-unit id="missingTcaColumnsMessageTitle" xml:space="preserve" approved="yes">
+        <source>Missing TCA definition</source>
+      <target state="translated">TCA-Definition fehlt</target></trans-unit>
+      <trans-unit id="missingTcaColumnsMessage" xml:space="preserve" approved="yes">
+        <source>Warning: No fields for table "%s" have been found. $TCA['%s']['columns'] does not contain the neccessary definitions.</source>
+      <target state="translated">Warnung: Für die Tabelle "%s" wurden keine Felder gefunden. $TCA['%s']['columns'] enthält nicht die notwendigen Definitionen.</target></trans-unit>
     </body>
   </file>
 </xliff>

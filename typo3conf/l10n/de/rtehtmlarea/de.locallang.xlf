@@ -54,9 +54,9 @@
       <trans-unit id="rteMaxHeight" xml:space="preserve" approved="yes">
         <source>Maximal height of resizable RTE in pixels</source>
       <target state="translated">Maximale Höhe des in der Größe veränderlichen RTE</target></trans-unit>
-      <trans-unit id="deprecatedPropertyMessage" xml:space="preserve">
+      <trans-unit id="deprecatedPropertyMessage" xml:space="preserve" approved="yes">
         <source>Page TSConfig property "%1$s" used on page id #%4$s is DEPRECATED and will be removed in TYPO3 %3$s. Use "%2$s" instead.</source>
-      <target></target></trans-unit>
+      <target state="translated">Die Seiten-TSconfig-Eigenschaft "%1$s" auf Seiten-ID #%4$s ist DEPRECATED und wird in TYPO3 %3$s entfernt. Nutzen Sie stattdessen "%2$s".</target></trans-unit>
     </body>
   </file>
 </xliff>

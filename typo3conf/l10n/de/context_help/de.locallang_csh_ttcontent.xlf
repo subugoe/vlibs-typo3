@@ -4,10 +4,10 @@
     <header/>
     <body>
       <trans-unit id=".description" xml:space="preserve" approved="yes">
-        <source>All visible content on webpages in TYPO3 is typically made by "Pagecontent" records. They are typically referred to as "Content Elements". Often Content Elements are managed by the "Page" module which is designed to handle Content Elements in multiple columns and languages.</source>
+        <source>All visible content on webpages in TYPO3 is typically made by "Page content" records. They are typically referred to as "Content Elements". Often Content Elements are managed by the "Page" module which is designed to handle Content Elements in multiple columns and languages.</source>
       <target state="translated">Alle sichtbaren Inhalte auf Web-Seiten in TYPO3 werden typischerweise mittels "Seiteninhalt"-Datensätzen erzeugt. Sie werden in der Regel als "Inhaltselemente" bezeichnet. Inhaltselemente werden meist durch das Modul "Seite" verwaltet, das dafür eingerichtet ist, Inhalte in mehreren Spalten und mehreren Sprachen zu handhaben.</target></trans-unit>
       <trans-unit id=".details" xml:space="preserve" approved="yes">
-        <source>"Pagecontent" records is ordered and can thus be rearranged. Also notice that the "Language" and "Column" selector of the "Pagecontent" records determines where and in which situation they appear. If you do not change the value of the "Language" and "Column" selectors you are most sure that the element will appear by default.</source>
+        <source>"Page content" records is ordered and can thus be rearranged. Also notice that the "Language" and "Column" selector of the "Page content" records determines where and in which situation they appear. If you do not change the value of the "Language" and "Column" selectors you are most sure that the element will appear by default.</source>
       <target state="translated">Seiteninhalte sind geordnet und können daher in beliebiger Reihenfolge angeordnet werden. Beachten Sie auch, dass die Auswahlfelder "Spalte" und "Sprache" bestimmen, wo und unter welchen Umständen die Inhalte erscheinen. Wenn Sie diese Werte nicht ändern, können Sie davon ausgehen, dass Ihre Inhalte standardmäßig erscheinen.</target></trans-unit>
       <trans-unit id="_.seeAlso" xml:space="preserve" approved="yes">
         <source>Page Content principles | http://typo3.org/documentation/document-library/doc_tut_quickstart/Page_content/,
@@ -78,9 +78,6 @@ This is a placeholder for other records. In other words, by this element you can
 
 &lt;strong&gt;Insert plugin&lt;/strong&gt;
 This will allow you to insert a forum, guestbook, list of addresses, shopping basket etc. The various features are available &lt;em&gt;only&lt;/em&gt; if they are configured correctly in the template of your website. So before you use it, make sure this is the case.
-
-&lt;strong&gt;Script&lt;/strong&gt;
-This is reserved for custom purposes where the template developer can allow you to insert specialized page content by this element type along with a code to identify which special content you want.
 
 &lt;strong&gt;HTML&lt;/strong&gt;
 This is plain HTML content. Everything put here will be displayed directly on the page without any preprocessing.</source>
@@ -221,7 +218,7 @@ tt_content:date,</source>
       <trans-unit id="header_link.syntax" xml:space="preserve" approved="yes">
         <source>If you insert an id-number, eg. "51", the link will refer to page with id=51 &lt;em&gt;inside&lt;/em&gt; TYPO3.
 If you insert an email address, eg. "name@my-domain.test", the link will point to that email address.
-If you insert an URL or domain, eg. "www.typo3.com" or "http://www.my-domain.org", the link will point to that website.</source>
+If you insert an URL or domain, eg. "www.typo3.org" or "http://www.my-domain.org", the link will point to that website.</source>
       <target state="translated">Wenn Sie eine ID-Nummer, z.B. "51" eingeben, verlinkt die Überschrift zu der Seite mit der id=51 &lt;em&gt;innerhalb&lt;/em&gt; Ihres TYPO3-Web-Auftritts. Wenn Sie eine E-Mail-Adresse, z.B.. "name@my-domain.test" eingeben, wird der Link auf diese E-Mail-Adresse zeigen. Wenn Sie eine URL oder Domäne eingeben, z.B. "www.typo3.com" oder "http://www.my-domain.org", wird der Link auf diese externe Website zeigen.</target></trans-unit>
       <trans-unit id="_header_link.seeAlso" xml:space="preserve" approved="yes">
         <source>tt_content:header</source>
@@ -233,7 +230,7 @@ If you insert an URL or domain, eg. "www.typo3.com" or "http://www.my-domain.org
       <trans-unit id="header_layout.details" xml:space="preserve" approved="yes">
         <source>If you select "Default" the standard design (which is one of the layouts 1-5) will be used.
 Alternatively you can select from Layout 1 through 5 which are configured in the website template with individual visual designs.
-If you select "Hidden" the header will simply not appear. This is usefull if you wish a header for the content element (in order to identify it in the backend) but do not wish the header to be displayed on the website.</source>
+If you select "Hidden" the header will simply not appear. This is useful if you wish a header for the content element (in order to identify it in the backend) but do not wish the header to be displayed on the website.</source>
       <target state="translated">Wenn Sie "Normal" auswählen, wird das Standardlayout (eines der Layouts 1-5) verwendet. Der Standard ist in der Vorlage festgelegt. Alternativ können Sie auch ein Layout ausdrücklich (von 1 bis 5) festlegen, das in der Vorlage der Website individuell konfiguriert ist. Wenn Sie "Verborgen" auswählen, erscheint die Überschrift einfach nicht. Dies ist hilfreich, wenn Sie dem Element einen Namen geben wollen (um es im Backend zu identifizieren), auf der Seite aber keine Überschrift erscheinen soll.</target></trans-unit>
       <trans-unit id="_header_layout.seeAlso" xml:space="preserve" approved="yes">
         <source>tt_content:header</source>
@@ -303,7 +300,7 @@ xMOD_csh_corebe:wizard_table_wiz</source>
         <source>Places the body text to the left, centered or to the right.</source>
       <target state="translated">Richtet den Text links, mittig oder rechts aus.</target></trans-unit>
       <trans-unit id="text_align.details" xml:space="preserve" approved="yes">
-        <source>See Pagecontent / Fontface for comments.
+        <source>See Page content / Font face for comments.
 &lt;b&gt;Notice:&lt;/b&gt; This option is obsolete when you are using CSS for rendering.</source>
       <target state="translated">Siehe Seiteninhalt / Schriftart für Kommentare. &lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</target></trans-unit>
       <trans-unit id="_text_align.seeAlso" xml:space="preserve" approved="yes">
@@ -326,7 +323,7 @@ tt_content:bodytext</source>
         <source>Select a font size for the body text.</source>
       <target state="translated">Wählen Sie eine Schriftgröße für den Text aus.</target></trans-unit>
       <trans-unit id="text_size.details" xml:space="preserve" approved="yes">
-        <source>See Pagecontent / Fontface for comments.
+        <source>See Page content / Font face for comments.
 &lt;b&gt;Notice:&lt;/b&gt; This option is obsolete when you are using CSS for rendering.</source>
       <target state="translated">Siehe Seiteninhalt / Schriftart für Kommentare. &lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</target></trans-unit>
       <trans-unit id="_text_size.seeAlso" xml:space="preserve" approved="yes">
@@ -338,7 +335,7 @@ tt_content:bodytext</source>
         <source>Select a color for the body text.</source>
       <target state="translated">Wählen Sie eine Schriftfarbe für den Text aus.</target></trans-unit>
       <trans-unit id="text_color.details" xml:space="preserve" approved="yes">
-        <source>See Pagecontent / Fontface for comments.
+        <source>See Page content / Font face for comments.
 &lt;b&gt;Notice:&lt;/b&gt; This option is obsolete when you are using CSS for rendering.</source>
       <target state="translated">Siehe Seiteninhalt / Schriftart für Kommentare. &lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet.</target></trans-unit>
       <trans-unit id="_text_color.seeAlso" xml:space="preserve" approved="yes">
@@ -356,7 +353,7 @@ tt_content:bodytext</source>
 &amp;lt;i&amp;gt;&lt;em&gt;This is italics&lt;/em&gt;&amp;lt;i&amp;gt;
 &amp;lt;u&amp;gt;&lt;u&gt;This is underlined&lt;/u&gt;&amp;lt;u&amp;gt;
 
-See Pagecontent / Fontface for comments.
+See Page content / Font face for comments.
 &lt;b&gt;Notice:&lt;/b&gt; This option is obsolete when you are using CSS for rendering.</source>
       <target state="translated">Diese Optionen wählen Schrifteigenschaften für den gesamten Text aus. Falls Sie nur einen Teil des Textes formatieren möchten, nutzen Sie besser die Formatierungsfunktionen des Rich-Text-Editors. Alternativ können Sie auch HTML-Tags verwenden: &amp;lt;B&amp;gt;&lt;strong&gt;Dies ist fettgedruckt&lt;/strong&gt;&amp;lt;/B&amp;gt; &amp;lt;I&amp;gt;&lt;em&gt;Dies ist kursiv&lt;/em&gt;&amp;lt;/I&amp;gt; &amp;lt;U&amp;gt;&lt;u&gt;Dies ist unterstrichen&lt;/u&gt;&amp;lt;/U&amp;gt; Siehe Seiteninhalt / Schriftart für Kommentare. &lt;b&gt;Hinweis:&lt;/b&gt; Diese Option ist wirkungslos, wenn Ihre Website CSS verwendet. Die Formatierung einzelner Textstellen, wie gezeigt, funktioniert dagegen in der Regel auch mit CSS.</target></trans-unit>
       <trans-unit id="_text_properties.seeAlso" xml:space="preserve" approved="yes">
@@ -371,7 +368,7 @@ tt_content:bodytext</source>
         <source>You can attach images to the content element and almost as many as you like.
 Depending on the configuration of TYPO3 you can even attach them in any format you like. Especially you do not need to worry about size and compression because these factors are normally handled by TYPO3 internally.
 
-When you use the "Text w/image" type, it's important to select a proper position of the imageblock. For this purpose, use the Position selector which is displayed below (or if you click in the image list field in the Classic backend). See link to "Pagecontent / Position" below.
+When you use the "Text w/image" type, it's important to select a proper position of the image block. For this purpose, use the Position selector which is displayed below (or if you click in the image list field in the Classic backend). See link to "Page content / Position" below.
 You can also display images in multiple columns and enable an option which enables a link so you can click the image and see a bigger version. Just to name a few options.
 Most likely you don't have all options available. This depends on your permissions in the system.</source>
       <target state="translated">Sie können dem Element Bilder in fast beliebiger Anzahl hinzufügen. Abhängig von Ihrer TYPO3-Konfiguration können Sie Bilder in fast jedem Format anfügen. Sie müssen sich insbesondere keine Gedanken über Größe oder Kompression machen, da diese Faktoren normalerweise TYPO3-intern gehandhabt werden. Wenn Sie "Text und Bilder" verwenden, ist es wichtig, die richtige Position des Bildblocks auszuwählen. Für diesen Zweck nutzen Sie die Positionsauswahl, die unterhalb des Textfelds gezeigt wird. Siehe Link zu Seiteninhalt&gt;Position unten. Sie können Bilder auch in mehreren Spalten anordnen und eine Option aktivieren, mit der Sie durch Anklicken des kleinen Bildes eine größere Version des Bildes ansehen können. Um nur ein paar Optionen zu nennen. Sehr wahrscheinlich stehen Ihnen gar nicht alle Optionen zur Verfügung. Dies hängt von Ihren Berechtigungen im System ab.</target></trans-unit>
@@ -453,7 +450,7 @@ tt_content:image</source>
       <trans-unit id="image_link.details" xml:space="preserve" approved="yes">
         <source>By default all images share the same link. However you may ask the administrator to configure the TypoScript template to allow a separate link for each image. If this is the case, you simply separate the link values by a comma.
 
-See Pagecontent&gt;Link below for details on syntax.</source>
+See Page content&gt;Link below for details on syntax.</source>
       <target state="translated">Standardmäßig haben alle Bilder denselben Link. Sie können aber Ihren Administrator darum bitten, die TYPO3-Vorlage so zu ändern, dass jedes Bild seinen eigenen Link erhält. Wenn dies der Fall ist, trennen Sie die einzelnen Links einfach mit einem Komma. Einzelheiten zur Syntax erhalten Sie unten über Seiteninhalt &gt; Link.</target></trans-unit>
       <trans-unit id="_image_link.seeAlso" xml:space="preserve" approved="yes">
         <source>tt_content:header_link,
@@ -586,7 +583,7 @@ Like the previous, but including 'submenu' links to all content elements on the 
 &lt;strong&gt;Sitemap&lt;/strong&gt;
 Generates a classic tree sitemap. Maybe your TypoScript template is configured to another design of the sitemap, but anyhow you'll get a sitemap out of this. Notice that the sitemap will begin from the current page unless you specify another "Startingpoint" page in the list below.
 
-&lt;strong&gt;Section index (pagecontent w/Index checked)&lt;/strong&gt;
+&lt;strong&gt;Section index (page content w/Index checked)&lt;/strong&gt;
 This makes a menu to the content elements on this page (or the page specified in the Starting point list). Great way to make an index in the top of the page.
 Notice that all content elements with the "Index" checkbox set is selected. So if you don't want certain content elements to appear in the list, just un-check the Index checkbox for those elements.
 

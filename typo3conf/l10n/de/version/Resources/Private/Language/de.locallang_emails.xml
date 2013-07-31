@@ -1,37 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <T3locallangExt>
-	<data type="array">
-		<languageKey index="de" type="array">
-			<label index="subject">TYPO3-Arbeitsumgebungshinweis: Stufe geändert für ###ELEMENT_NAME###</label>
-			<label index="message">Auf der TYPO3-Site &quot;###SITE_NAME###&quot; (###SITE_URL###) wurde in der Arbeitsumgebung &quot;###WORKSPACE_TITLE###&quot; (###WORKSPACE_UID###) die Stufe für das Element/die Elemente &quot;###RECORD_TITLE###&quot; (###ELEMENT_NAME###) an der Stelle &quot;###RECORD_PATH###&quot; im Seitenbaum geändert:
+  <data type="array">
+    <languageKey index="de" type="array">
+      <label index="subject">TYPO3 Hinweis für Arbeitsumgebung: Stufe für ###ELEMENT_NAME### geändert</label>
+      <label index="message">In der TYPO3 Website "###SITE_NAME###" (###SITE_URL###)
+in der Arbeitsumgebung "###WORKSPACE_TITLE###" (###WORKSPACE_UID###)
+hat sich die Stufe des Elements/der Elemente "###RECORD_TITLE###" (###ELEMENT_NAME###) im Seitenbaum an der Stelle "###RECORD_PATH###" geändert:
 
 =&gt; ###NEXT_STAGE###
 
-Benutzerkommentar:
-&quot;###COMMENT###&quot;
+Kommentar der Nutzers:
+"###COMMENT###"
 
-Stufe wurde geändert von ###USER_FULLNAME### (Benutzername: ###USER_USERNAME###).</label>
-		</languageKey>
-	</data>
-	<orig_hash type="array">
-		<languageKey index="de" type="array">
-			<label index="subject" type="integer">66468829</label>
-			<label index="message" type="integer">173227141</label>
-		</languageKey>
-	</orig_hash>
-	<orig_text type="array">
-		<languageKey index="de" type="array">
-			<label index="subject">TYPO3 Workspace Note: Stage Change for ###ELEMENT_NAME###</label>
-			<label index="message">At the TYPO3 site &quot;###SITE_NAME###&quot; (###SITE_URL###)
-in workspace &quot;###WORKSPACE_TITLE###&quot; (###WORKSPACE_UID###)
-the stage has changed for the element(s) &quot;###RECORD_TITLE###&quot; (###ELEMENT_NAME###) at location &quot;###RECORD_PATH###&quot; in the page tree:
-
-=&gt; ###NEXT_STAGE###
-
-User Comment:
-&quot;###COMMENT###&quot;
-
-State was changed by ###USER_FULLNAME### (username: ###USER_USERNAME###)</label>
-		</languageKey>
-	</orig_text>
+Stufe wurde geändert von ###USER_FULLNAME### (Benutzername: ###USER_USERNAME###)</label>
+    </languageKey>
+  </data>
 </T3locallangExt>

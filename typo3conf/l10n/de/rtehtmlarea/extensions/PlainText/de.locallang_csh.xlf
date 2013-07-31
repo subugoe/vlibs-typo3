@@ -43,7 +43,13 @@ EXT:rtehtmlarea/extensions/PlainText/skin/images/paste-behaviour.gif</source>
 
 Which behaviour is activated when clicking the toggle button may be set either in the TYPO3 BE User Settings or in the "Clean Paste Behaviour" dialogue. If not set, it defaults to "Paste as plain text".
 The "Clean Paste Behaviour" dialogue is activated by clicking on the "Clean Paste Behaviour" button in the toolbar of the RTE.</source>
-      <target></target></trans-unit>
+      <target></target><alt-trans xml:space="preserve" origin="hugoist"><target>Wenn der "Clean paste" Umschalter in der RTE-Toolbar auf "on" steht, wird der Inhalt entsprechend der drei folgenden Arten umgewandelt, bevor er eingefügt wird:
+-Klartext: alle HTML-Elemente sind entfernt;
+-nur Struktur: nur die strukturellen HTML-Elemente bleiben erhalten, alle Formatierungen sind entfernt;
+-Struktur und grundlegende Formatierungen: strukturelle HTML-Elemente bleiben erhalten, wie grundlegende Formatierungen durch HTML-Elemente. 
+
+Welche Art aktiviert wird, wenn der Umschaltbutton betätigt wird, kann in den TYPO3 BE Nutzereinstellungen oder im  "Clean Paste Behaviour"-Dialog eingestellt werden. Wenn nichts eingestellt ist, ist es standardmäßig "Klartext".
+Der "Clean Paste Behaviour"-Dialog wird durch Klicken auf den "Clean Paste Behaviour"-Button in der RTE-Toolbar aktiviert.</target></alt-trans></trans-unit>
       <trans-unit id="behaviour.seeAlso" xml:space="preserve" approved="yes">
         <source>xEXT_rtehtmlarea_PlainText:plainText,xEXT_rtehtmlarea_PlainText:pasteStructure,xEXT_rtehtmlarea_PlainText:pasteFormat,_MOD_user_setup</source>
         <target state="translated">xEXT_rtehtmlarea_PlainText:plainText,xEXT_rtehtmlarea_PlainText:pasteStructure,xEXT_rtehtmlarea_PlainText:pasteFormat,_MOD_user_setup</target><note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
@@ -66,11 +72,15 @@ The "Clean Paste Behaviour" dialogue is activated by clicking on the "Clean Past
       <target></target><alt-trans xml:space="preserve" origin="dkrupke"><target>Wenn dieses Einfüge-Verhalten aktiviert ist, werden beim Einfügen von Inhalten aus der Zwischenablage nur strukturspezifische HTML-Befehle beibehalten. Alle formatierungsspezifischen HTML-Befehle werden entfernt.</target></alt-trans><alt-trans xml:space="preserve" origin="maxhb"><target>Wenn dieses Einfüge-Verhalten aktiviert ist, wird beim Einfügen von Inhalten aus der Zwischenablage nur die Struktur übernommen, Formatierungen werden entfernt.</target></alt-trans></trans-unit>
       <trans-unit id="pasteStructure.details" xml:space="preserve">
         <source>By default, "Structure only" means that:
-- only the following HTML elements are retained: a, p, h[0-6], pre, address, blockquote, div, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd;
+- only the following HTML elements are retained: a, p, h[0-6], pre, address, article, aside, blockquote, div, footer, header, nav, section, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd;
 - the following HTML attributes are removed: id, style, class, lang, align, valign, bgcolor, color, border, face, any attribute starting with "on", and any attribute containing ":".
 
 These defaults may be modified in Page TSConfig.</source>
-      <target></target><alt-trans xml:space="preserve" origin="maxhb"><target>In der Standardeinstellung bedeutet "nur Struktur", dass nur die folgenden HTML-Elemente beibehalten werden: a, p, h[0-6], pre, address, blockquote, div, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd. Die folgenden HTML-Attribute werden entfernt: id, style, class, lang, align, valign, bgcolor, color, border, face, alle Attribute, die mit "on" beginnen und alle Attribute, die ein ":" beinhalten. Diese Vorgaben können per Seiten-TSConfig angepasst werden.</target></alt-trans></trans-unit>
+      <target></target><alt-trans xml:space="preserve" origin="manne."><target>In der Standardeinstellung bedeutet "nur Struktur", dass:
+- nur folgende HTML-Elemente beibehalten bleiben: a, p, h[0-6], pre, address, blockquote, div, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd.
+- die folgenden HTML-Attribute werden entfernt: id, style, class, lang, align, valign, bgcolor, color, border, face, alle mit "on" beginnende Attribute und alle Attribute, die ein ":" beinhalten.
+
+Diese Vorgaben können per Seiten-TSConfig angepasst werden.</target></alt-trans><alt-trans xml:space="preserve" origin="maxhb"><target>In der Standardeinstellung bedeutet "nur Struktur", dass nur die folgenden HTML-Elemente beibehalten werden: a, p, h[0-6], pre, address, blockquote, div, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd. Die folgenden HTML-Attribute werden entfernt: id, style, class, lang, align, valign, bgcolor, color, border, face, alle Attribute, die mit "on" beginnen und alle Attribute, die ein ":" beinhalten. Diese Vorgaben können per Seiten-TSConfig angepasst werden.</target></alt-trans></trans-unit>
       <trans-unit id="pasteStructure.seeAlso" xml:space="preserve" approved="yes">
         <source>xEXT_rtehtmlarea_PlainText:behaviour</source>
         <target state="translated">xEXT_rtehtmlarea_PlainText:behaviour</target><note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
@@ -83,7 +93,7 @@ These defaults may be modified in Page TSConfig.</source>
       <target></target><alt-trans xml:space="preserve" origin="maxhb"><target>Wenn dieses Einfüge-Verhalten aktiviert ist, dann werden beim Einfügen von Inhalten in das Bearbeitungsfeld sowohl die HTML-Struktur als auch grundlegende Formatierungen durch HTML-Inline-Elemente beibehalten</target></alt-trans></trans-unit>
       <trans-unit id="pasteFormat.details" xml:space="preserve">
         <source>By default, "Structure and basic format" means that:
-- the following HTML structural elements are retained: a, p, h[0-6], pre, address, blockquote, div, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd;
+- the following HTML structural elements are retained: a, p, h[0-6], pre, address, article, aside, blockquote, div, footer, header, nav, section, hr, br, table, thead, tbody, tfoot, caption, tr, th, td, ul, ol, dl, li, dt, dd;
 - the following HTML inline elements are also retained: b, bdo, big, cite, code, del, dfn, em, i, ins, kbd, label, q, samp, small, strike, strong, sub, sup, tt, u, var;
 - the following HTML attributes are removed: id, style, class, lang, align, valign, bgcolor, color, border, face, any attribute starting with "on", and any attribute containing ":".
 

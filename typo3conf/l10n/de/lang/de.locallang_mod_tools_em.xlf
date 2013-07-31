@@ -643,8 +643,8 @@
         <source>Write access error</source>
       <target state="translated">Fehler bei Schreibzugriff</target></trans-unit>
       <trans-unit id="ext_details_write_error_localconf" xml:space="preserve" approved="yes">
-        <source>typo3conf/localconf.php seems not to be writable, so the extension cannot be installed automatically!</source>
-      <target state="translated">In typo3conf/localconf.php kann nicht geschrieben werden, daher ist eine automatische Installation der Erweiterung nicht möglich!</target></trans-unit>
+        <source>typo3conf/LocalConfiguration.php seems not to be writable, so the extension cannot be installed automatically!</source>
+      <target state="translated">typo3conf/localconf.php ist nicht schreibbar, sodass die Erweiterung nicht automatisch installiert werden kann!</target></trans-unit>
       <trans-unit id="ext_details_error_downloading" xml:space="preserve" approved="yes">
         <source>Error while trying to download the extension file...</source>
       <target state="translated">Fehler beim Herunterladen der Erweiterungsdatei...</target></trans-unit>
@@ -1301,7 +1301,7 @@
       <target state="translated">Die Abhängigkeit von %s wurde wie gewünscht ignoriert.</target></trans-unit>
       <trans-unit id="checkDependencies_php_too_low" xml:space="preserve" approved="yes">
         <source>The running PHP version (%s) is lower than required (%s).</source>
-      <target state="translated">Die aktuelle PHP-Version (%s) ist niedriger als erforderlich.</target></trans-unit>
+      <target state="translated">Die aktuelle PHP-Version (%s) ist niedriger als erforderlich (%s).</target></trans-unit>
       <trans-unit id="checkDependencies_ignore_requirement" xml:space="preserve" approved="yes">
         <source>Ignore this version requirement</source>
       <target state="translated">Versionserfordernis ignorieren</target></trans-unit>
@@ -1334,7 +1334,7 @@
       <target state="translated">Jetzt installieren (öffnet ein neues Fenster)</target></trans-unit>
       <trans-unit id="checkDependencies_ext_too_low" xml:space="preserve" approved="yes">
         <source>The running version of extension "%s" (%s) is lower than required (%s).</source>
-      <target state="translated">Die aktuelle Version der Erweiterung "%s" (%s) ist niedriger als erforderlich.</target></trans-unit>
+      <target state="translated">Die aktuelle Version der Erweiterung "%s" (%s) ist niedriger als erforderlich (%s).</target></trans-unit>
       <trans-unit id="checkDependencies_ext_too_high" xml:space="preserve" approved="yes">
         <source>The running version of extension "%s" (%s) is higher than allowed (%s).</source>
       <target state="translated">Die aktuelle Version der Erweiterung "%s" (%s) ist höher als erlaubt.</target></trans-unit>

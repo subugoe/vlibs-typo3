@@ -29,11 +29,14 @@
       <label index="special_qtobject_title">Fügt ein QuickTime-Element hinzu.</label>
       <label index="special_qtobject_description">Fügt ein QuickTime-Element wie eine QuickTime-Audiodatei oder einen -Video-Clip (*.mov) hinzu.</label>
       <label index="special_sitemap_title">Sitemap</label>
-      <label index="special_sitemap_description">Erzeugt eine Sitemap der Website.</label>
+      <label index="special_menus_title">Spezial-Menüs</label>
+      <label index="special_menus_description">Erstellt ein Seitenmenü, eine Sitemap oder andere Spezial-Menüs.</label>
       <label index="special_plainHTML_title">Reines HTML</label>
       <label index="special_plainHTML_description">Mit diesem Element kann reiner HTML-Quelltext auf der Seite eingefügt werden.</label>
       <label index="special_divider_title">Trenner</label>
       <label index="special_divider_description">Mit diesem Element wird ein sichtbarer Trenner eingefügt, standardmäßig eine horizontale Linie.</label>
+      <label index="special_shortcut_title">Datensätze einfügen</label>
+      <label index="special_shortcut_description">Mit diesem Element werden andere Inhaltselemente eingebunden.</label>
       <label index="forms">Formulare</label>
       <label index="forms_mail_title">Mail-Formular</label>
       <label index="forms_mail_description">Ein E-Mail-Formular, mit dem Besucher mit Ihnen Kontakt aufnehmen können.</label>

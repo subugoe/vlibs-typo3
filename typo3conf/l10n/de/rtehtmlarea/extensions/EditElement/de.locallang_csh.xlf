@@ -11,7 +11,7 @@
       <target state="translated">Der Dialog "Element bearbeiten" erlaubt es, die allgemeinen Attribute eines Elements im RTE zu bearbeiten.</target></trans-unit>
       <trans-unit id=".details" xml:space="preserve" approved="yes">
         <source>Clicking the "Edit element" icon in the RTE tool bar opens a dialogue that allows to edit the general attributes of an element.
-The dialogue allows to edit the id, title, class, lang and dir attributes of the element. It also allows to specify handlers for keyboard and mouse events.</source>
+The dialogue allows to edit the id, title, class, lang and dir attributes, as well as the microdata attributes of the element. It also allows to specify handlers for keyboard and mouse events.</source>
       <target state="translated">Ein Klick auf das Symbol "Element bearbeiten" in der Menüleiste des RTE öffnet einen Dialog, mit dessen Hilfe Sie die allgemeinen Attribute eines Elements im RTE bearbeiten können. Der Dialog ermöglicht es, die Attribute id, title, class, lang und dir des Elements zu bearbeiten. Außerdem können Sie JavaScript-Handler für Tastatur- und Mausevents festlegen.</target></trans-unit>
       <trans-unit id=".image" xml:space="preserve" approved="yes">
         <source>EXT:rtehtmlarea/extensions/EditElement/skin/images/element-edit.png</source>
@@ -26,6 +26,7 @@ xEXT_rtehtmlarea_EditElement:title,
 xEXT_rtehtmlarea_EditElement:className,
 xEXT_rtehtmlarea_Language:languageCombo,
 xEXT_rtehtmlarea_Language:directionCombo,
+xEXT_rtehtmlarea_MicrodataSchema,
 xEXT_rtehtmlarea_EditElement:events</source>
         <target state="translated">xEXT_rtehtmlarea_EditElement:id, xEXT_rtehtmlarea_EditElement:title, xEXT_rtehtmlarea_EditElement:className, xEXT_rtehtmlarea_Language:languageCombo, xEXT_rtehtmlarea_Language:directionCombo, xEXT_rtehtmlarea_EditElement:events</target><note from="developer">This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note>
       <note>This string contains an internal text, which must not be changed. Just copy the original text into the translation field. For more information have a look at the Tutorial.</note></trans-unit>

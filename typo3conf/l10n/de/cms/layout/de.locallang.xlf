@@ -36,6 +36,9 @@
       <trans-unit id="newAfter" xml:space="preserve" approved="yes">
         <source>New record after this one</source>
       <target state="translated">Neuen Datensatz nach diesem anfügen</target></trans-unit>
+      <trans-unit id="newRecordHere" xml:space="preserve" approved="yes">
+        <source>Add a new record at this place</source>
+      <target state="translated">Neuen Datensatz an diesem Ort hinzufügen</target></trans-unit>
       <trans-unit id="move_record" xml:space="preserve" approved="yes">
         <source>Re-position current content element</source>
       <target state="translated">Datensatz verschieben</target></trans-unit>
@@ -105,6 +108,9 @@
       <trans-unit id="editPageProperties" xml:space="preserve" approved="yes">
         <source>Edit page properties</source>
       <target state="translated">Seiteneigenschaften bearbeiten</target></trans-unit>
+      <trans-unit id="editPageLanguageOverlayProperties" xml:space="preserve" approved="yes">
+        <source>Edit page language overlay properties</source>
+      <target state="translated">Übersetzungseigenschaften bearbeiten</target></trans-unit>
       <trans-unit id="newRecordGeneral" xml:space="preserve" approved="yes">
         <source>Create new record</source>
       <target state="translated">Neuen Datensatz anlegen</target></trans-unit>
@@ -246,6 +252,9 @@
       <trans-unit id="goToListModuleMessage" xml:space="preserve" approved="yes">
         <source>The current page is a folder. Folders usually don't contain content elements but are used for collecting other types of records.</source>
       <target state="translated">Die aktuelle Seite ist ein Ordner. Ordner enthalten gewöhnlich keine Inhaltselemente, sondern werden zum Sammeln anderer Arten von Datensätzen verwendet.</target></trans-unit>
+      <trans-unit id="noPluginSelected" xml:space="preserve" approved="yes">
+        <source>No plugin selected</source>
+      <target state="translated">Kein Plug-In ausgewählt</target></trans-unit>
     </body>
   </file>
 </xliff>

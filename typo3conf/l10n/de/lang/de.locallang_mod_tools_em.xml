@@ -215,7 +215,7 @@
       <label index="ext_details_installed">installiert</label>
       <label index="ext_details_removed">deinstalliert</label>
       <label index="ext_details_write_access_error">Fehler bei Schreibzugriff</label>
-      <label index="ext_details_write_error_localconf">In typo3conf/localconf.php kann nicht geschrieben werden, daher ist eine automatische Installation der Erweiterung nicht möglich!</label>
+      <label index="ext_details_write_error_localconf">typo3conf/localconf.php ist nicht schreibbar, sodass die Erweiterung nicht automatisch installiert werden kann!</label>
       <label index="ext_details_error_downloading">Fehler beim Herunterladen der Erweiterungsdatei...</label>
       <label index="ext_details_md5_previous">MD5: %s (Vorherige Datei)</label>
       <label index="ext_details_no_changes">Keine Änderungen an der Datei gefunden!</label>
@@ -434,7 +434,7 @@
       <label index="makeUploadArray_error_size">Fehler: Gesamtgröße des nicht komprimierten Hochladens (%s) überschreitet %s!</label>
       <label index="makeUploadArray_error_path">Fehler: Erweiterungspfad für Erweiterung "%s" nicht gefunden!</label>
       <label index="checkDependencies_ignored">Die Abhängigkeit von %s wurde wie gewünscht ignoriert.</label>
-      <label index="checkDependencies_php_too_low">Die aktuelle PHP-Version (%s) ist niedriger als erforderlich.</label>
+      <label index="checkDependencies_php_too_low">Die aktuelle PHP-Version (%s) ist niedriger als erforderlich (%s).</label>
       <label index="checkDependencies_ignore_requirement">Versionserfordernis ignorieren</label>
       <label index="checkDependencies_php_too_high">Die aktuelle PHP-Version (%s) ist höher als erlaubt (%s).</label>
       <label index="checkDependencies_typo3_too_low">Die aktuelle TYPO3-Version (%s) ist niedriger als erforderlich (%s).</label>
@@ -445,7 +445,7 @@
       <label index="checkDependencies_ignore_ext_requirement">Dieses Erweiterungserfordernis ignorieren</label>
       <label index="checkDependencies_ext_not_installed">Die Erweiterung "%s" (%s) wurde nicht installiert. Bitte installieren Sie sie zuerst.</label>
       <label index="checkDependencies_install_now">Jetzt installieren (öffnet ein neues Fenster)</label>
-      <label index="checkDependencies_ext_too_low">Die aktuelle Version der Erweiterung "%s" (%s) ist niedriger als erforderlich.</label>
+      <label index="checkDependencies_ext_too_low">Die aktuelle Version der Erweiterung "%s" (%s) ist niedriger als erforderlich (%s).</label>
       <label index="checkDependencies_ext_too_high">Die aktuelle Version der Erweiterung "%s" (%s) ist höher als erlaubt.</label>
       <label index="checkDependencies_conflict_ignored">Der Konflikt mit %s wurde wie gewünscht ignoriert.</label>
       <label index="checkDependencies_conflict_remove">Es besteht ein Konflikt zwischen den Erweiterungen "%s" und "%s" (%s) . Bitte "%s" deinstallieren, wenn "%s" installiert werden soll.</label>
