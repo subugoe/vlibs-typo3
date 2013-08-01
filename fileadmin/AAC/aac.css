@@ -706,6 +706,8 @@ a.languageSwitcher:hover {
 	background-image: url(../../typo3conf/ext/pazpar2/Resources/Public/button_shade_small_click.png);
 }
 
+
+
 /* styling for find items in jfk-institut-zeitungen */
 .tx_find {
 	padding: 0 10px;
@@ -723,37 +725,37 @@ a.languageSwitcher:hover {
 	margin: 0;
 }
 
-.field-title {
+.tx_find .field-title {
 	font-weight: bold;
 	color: #263476;
 }
 
-.field-publisher {
+.tx_find .field-publisher {
 	font-style: italic;
 }
 
-.field-publisher:before {
+.tx_find .field-publisher:before {
 	margin-right: 0.2em;
 	content: '\2013';
 }
 
-.catalogueLink:link,
-.catalogueLink:visited {
+.tx_find .catalogueLink:link,
+.tx_find .catalogueLink:visited {
 	color: #7d7d7d;
 	white-space: nowrap;
 }
 
-.catalogueLink:hover:link,
-.catalogueLink:hover:visited {
+.tx_find .catalogueLink:hover:link,
+.tx_find .catalogueLink:hover:visited {
 	color: #263476;
 }
 
-.catalogueLink:after {
+.tx_find .catalogueLink:after {
 	content: '\002192';
 	margin-left: 0.2em;
 }
 
-.field-coverage {
+.tx_find .field-coverage {
 	display: none;
 	font-style: italic;
 	color: #999;
