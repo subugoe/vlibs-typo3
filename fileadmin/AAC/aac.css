@@ -28,7 +28,8 @@
 #pazpar2,
 .container_16 #pz2-results,
 .gokContainer,
-.tx-ezbrequest-pi1 {
+.tx-ezbrequest-pi1,
+.tx_find {
 	display: inline;
 	float: left;
 	position: relative;
@@ -72,7 +73,8 @@
 .container_16 .grid_16,
 #pazpar2,
 .gokContainer,
-.tx-ezbrequest-pi1 {
+.tx-ezbrequest-pi1,
+.tx_find {
 	width: 940px;
 }
 
