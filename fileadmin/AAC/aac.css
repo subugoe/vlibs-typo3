@@ -711,10 +711,6 @@ a.languageSwitcher:hover {
 
 
 /* styling for find items in jfk-institut-zeitungen */
-.tx_find {
-	padding: 0 10px;
-}
-
 .container_16 .tx_find .results ol.resultList {
 	margin: 0 0 2em 0;
 }
