@@ -13,7 +13,7 @@ Die Auswahl dieser technischen Lösungen erfolgte mit Blick auf die Wartbarkeit 
 
 
 ### Pazpar2
-Pazpar2 ist eine Open Source Metasuchsoftware von Index Data [*](http://www.indexdata.com/pazpar2). Sie führt Metasuchen über die Z39.50 und SRU Protokolle sowie Solr Indexe durch.
+Pazpar2 ist eine Open Source Metasuchsoftware von Index Data[*](http://www.indexdata.com/pazpar2). Sie führt Metasuchen über die Z39.50 und SRU Protokolle sowie Solr Indexe durch.
 
 Pazpar2 ist ein reiner Datendienst: Es stellt die Antworten auf Suchanfragen als Daten zur Verfügung. Die Nutzeroberfläche zur Darstellung der Ergebnisse ist ein separates Modul. Hierdurch kann der Metasuchdienst unabhängig von der Technik und dem Design der Website, in der die Daten erscheinen, betrieben werden. Durch eine Schnittstelle über das Web-Protokoll http läßt sich Pazpar2 gut in Webseiten einbinden. Die Software ermöglicht eine dynamische Anzeige mit schnellem Erscheinen der ersten Treffer, indem sie gleich mit dem Eintreffen der ersten Ergebnisse der Metasuche beginnt, Treffer auszuliefern. So läßt sich eine dynamische Benutzeroberfläche realisieren.
 
@@ -60,7 +60,7 @@ Pazpar2 wird von Index Data aktiv entwickelt. Gemeldete Fehler wurden häufig sc
 ## OAI Harvesting
 Die in der GEO-LEO Metasuche eingebundenen Datenbestände „Digitalisate“, „Repositories“ und „Pangaea Data Publisher“ enthalten über OAI-PMH geharvestete Metadaten aus über 100 Dokumentenservern aus aller Welt.
 
-Der verwendete Harvester wurde von Timo Schleier für [EROMM](European Register of of Microform and Digital Masters: http://www.eromm.org) entwickelt und zeichnet sich durch eine Weboberfläche zur Konfiguration aus. Mit der graphischen Oberfläche können die Fachreferenten direkt die inhaltliche Auswahl der zu harvestenden Daten treffen und sofort konfigurieren.
+Der verwendete Harvester wurde von Timo Schleier für EROMM[*](European Register of of Microform and Digital Masters: http://www.eromm.org) entwickelt und zeichnet sich durch eine Weboberfläche zur Konfiguration aus. Mit der graphischen Oberfläche können die Fachreferenten direkt die inhaltliche Auswahl der zu harvestenden Daten treffen und sofort konfigurieren.
 
 Nach Eingabe der URL einer OAI-PMH Schnittstelle lädt der Harvester die vom Server angebotenen Sets und zeigt sie zur Auswahl an. Sets, die seit dem letzten Bearbeiten hinzugekommen oder verschwunden sind werden dabei extra hervorgehoben. Eine Liste aktueller Fehlermeldungen in der Weboberfläche vereinfacht es, Probleme wie verschwundene Server (häufig geänderte Adressen der OAI Schnittstellen) zu erkennen und zu beheben.
 
@@ -70,7 +70,7 @@ Im Hintergrund laufen regelmäßig Skripte, die den Datenbestand von den konfigu
 
 
 ## TYPO3
-Der TYPO3 Server der SUB Göttingen stellt eine fertige Umgebung für beliebige TYPO3 Installationen zur Verfügung. Hier laufen unter anderem die drei an der SUB Göttingen betriebenen virtuellen Fachbibliotheken GEO-LEO, Library of Anglo-American Culture [*](Lib AAC: http://aac.sub.uni-goettingen.de) und vifamath [*](http://vifamath.de). Zur Präsentation der speziell in den virtuellen Fachbibliotheken vorhanden Inhalte gibt es TYPO3 Extensions:
+Der TYPO3 Server der SUB Göttingen stellt eine fertige Umgebung für TYPO3 Installationen zur Verfügung. Hier laufen unter anderem die drei an der SUB Göttingen betriebenen virtuellen Fachbibliotheken GEO-LEO, Library of Anglo-American Culture[*](Lib AAC: http://aac.sub.uni-goettingen.de) und vifamath[*](http://vifamath.de). Zur Präsentation der speziell in den virtuellen Fachbibliotheken vorhanden Inhalte gibt es TYPO3 Extensions:
 
 * pazpar2: Einbindung der Metasuche
 * nkwgok: Einbindung fachlicher Themenbäume
@@ -81,9 +81,9 @@ Der TYPO3 Server der SUB Göttingen stellt eine fertige Umgebung für beliebige 
 ### Pazpar2
 Die _pazpar2_ TYPO3 Extension stellt die Nutzeroberfläche für die Metasuche zur Verfügung. Sie kümmert sich um die Anzeige des Suchformulars auf der Seite und enthält die JavaScript Client-Software, die sich um die Anzeige der Ergebnisse und die Interaktion mit dem Nutzer kümmert.
 
-Die Funktionen der Client-Software sind umfangreich. Sie beinhalten das Anzeigen der Ergebnisliste mit Blättern und Facettierung und die möglichst detailreiche Darstellung der Trefferdaten. Die Detailanzeige beginnt mit den elementaren Metadaten zu Titel, Personen, Serien und Zeitschriften und reicht bis zu speziellen Features wie der Verfügbarkeitsanzeige von Zeitschriften für die IP Adresse des Nutzers über den Journals Online & Print Dienst der ZDB, der Einbindung von Google Books falls dort vorhanden, der Einbindung Google Maps für Karten mit Geoinformationen in den Metadaten, dem Export der Metadaten im RIS oder BibTeX Format für Bibliographieprogramme oder einer Suche nach dem Titel im KVK.
+Die Funktionen der Client-Software sind umfangreich. Sie beinhalten das Anzeigen der Ergebnisliste mit Blättern und Facettierung und die möglichst detailreiche Darstellung der Trefferdaten. Die Detailanzeige beginnt mit den elementaren Metadaten zu Titel, Personen, Serien und Zeitschriften und reicht bis zu speziellen Features wie der Verfügbarkeitsanzeige von Zeitschriften für die IP Adresse des Nutzers über den Journals Online & Print Dienst der ZDB (ZDB-JOP); der Einbindung von Google Books falls der Titel dort vorhanden ist; der Einbindung von Google Maps für Karten mit Geoinformationen in den Metadaten; dem Export der Metadaten im RIS oder BibTeX Format für Literaturverwaltungsprogramme; oder einer Suche nach dem Titel im KVK.
 
-Diese TYPO3 Extension kommt mittlerweile auch (angpaßt) in der Metasuche von CrossAsia [*](http://crossasia.org/) zum Einsatz. Die Umsetzung einer Pazpar2 Suche für vifanord [*](http://www.vifanord.de/) mit Einbindung in TYPO3 ist ebenfalls in Arbeit.
+Diese TYPO3 Extension kommt mittlerweile auch (angpaßt) in der Metasuche von CrossAsia[*](http://crossasia.org/) zum Einsatz. Die Umsetzung einer Pazpar2 Suche für vifanord[*](http://www.vifanord.de/) mit Einbindung in TYPO3 ist ebenfalls in Arbeit.
 
 ### Themenbäume
 Zur Darstellung von Themenbäumen existiert die TYPO3 Extension _nkwgok_. Sie lädt Informationen zur Struktur der Themenbäume aus einfachen CSV Dateien – und alternativ aus lokalen Normsätzen im Pica OPAC.
@@ -95,14 +95,14 @@ Bei der Einbindung in die Site löst eine Themenauswahl sofort die Pazpar2 Suche
 Eine weitere Kopplung der beiden Extensions ist bei der Nutzung zur Anzeige von Neuerwerbungen möglich – die in GEO-LEO momentan nicht genutzt wird aber in Lib AAC, vifamath und den SUB Göttingen Seiten verwendet wird. Hier kann ein grober Themenbaum mit Abfragen definiert werden und es wird für jedes Thema eine Checkbox angezeigt. Nutzer können sich dann die Neuerwerbungen zu diesem Thema anzeigen lassen oder sie als RSS Feed abonnieren.
 
 ### EZB Abfrage
-Zur Anzeige der „e-Zeitschriften“ ist die Extension _ezbrequest_ im Einsatz, die die XML Schnittstelle der EZB nutzt und für vifamath entwickelt wurde. TYPO3 Extensions mit fast identischer Funktion gibt es auch an der SUB Hamburg (libconnect), an der HU Berlin (huubzeitschriftendienst: evifa) und der BSB München (bsbezb: vifaost).
+Zur Anzeige der „e-Zeitschriften“ ist die Extension _ezbrequest_ im Einsatz, die die XML Schnittstelle der EZB nutzt und für vifamath entwickelt wurde. TYPO3 Extensions mit ähnlicher Funktion gibt es auch an der SUB Hamburg (libconnect), an der HU Berlin (huubzeitschriftendienst: evifa) und der BSB München (bsbezb: vifaost).
 
 ### Piwik
-Neben den selbstentwickelten Extensions kommt weiterhin die bereits existierende Extension _piwik_ zum Einsatz, die eine Einbindung aller Seiten im TYPO3 System mit der Nutzerzählungssoftware Piwik [*](http://de.piwik.org/). Durch den Einsatz derselben modernen Zählsoftware auf allen Webservern der SUB Göttingen erhalten wir eine realistische und konsistente Nutzerzählung.
+Neben den selbstentwickelten Extensions kommt weiterhin die bereits existierende Extension _piwik_ zum Einsatz, die eine Einbindung aller Seiten im TYPO3 System mit der Nutzerzählungssoftware Piwik[*](http://de.piwik.org/). Durch den Einsatz derselben modernen Zählsoftware auf allen Webservern der SUB Göttingen erhalten wir eine realistische und konsistente Nutzerzählung.
 
 
- ## Open Source
- Als öffentlich finanziertes Projekt und großer Nutzer von Open Source Komponenten sind auch alle zur Umsetzung von GEO-LEO erstellten Programme und Konfigurationen frei verfüg- und weiterverwendbar. Sie sind mit allen anderen Projekten der SUB Göttingen im Account _subugoe_ bei GitHub [*](https://github.com/subugoe) abgelegt. Insbesondere:
+## Open Source
+Als öffentlich finanziertes Projekt und großer Nutzer von Open Source Komponenten sind auch alle zur Umsetzung von GEO-LEO erstellten Programme und Konfigurationen frei verfüg- und weiterverwendbar. Sie sind mit den anderen Projekten der SUB Göttingen im Account _subugoe_ bei GitHub[*](https://github.com/subugoe) abgelegt. Insbesondere:
 
 * pazpar2 Konfiguration: https://github.com/subugoe/pazpar2-SUB
 * OAI-PMH Harvester: https://github.com/subugoe/SUB-Harvester
