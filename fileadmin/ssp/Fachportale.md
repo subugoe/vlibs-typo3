@@ -60,7 +60,7 @@ Pazpar2 wird von Index Data aktiv entwickelt. Gemeldete Fehler wurden häufig sc
 ## OAI Harvesting
 Die in der GEO-LEO Metasuche eingebundenen Datenbestände „Digitalisate“, „Repositories“ und „Pangaea Data Publisher“ enthalten über OAI-PMH geharvestete Metadaten aus über 100 Dokumentenservern aus aller Welt.
 
-Der verwendete Harvester wurde von Timo Schleier für EROMM[*](European Register of of Microform and Digital Masters: http://www.eromm.org) entwickelt und zeichnet sich durch eine Weboberfläche zur Konfiguration aus. Mit der graphischen Oberfläche können die Fachreferenten direkt die inhaltliche Auswahl der zu harvestenden Daten treffen und sofort konfigurieren.
+Der verwendete Harvester wurde von Timo Schleier für EROMM[*](http://www.eromm.org "European Register of of Microform and Digital Masters") entwickelt und zeichnet sich durch eine Weboberfläche zur Konfiguration aus. Mit der graphischen Oberfläche können die Fachreferenten direkt die inhaltliche Auswahl der zu harvestenden Daten treffen und sofort konfigurieren.
 
 Nach Eingabe der URL einer OAI-PMH Schnittstelle lädt der Harvester die vom Server angebotenen Sets und zeigt sie zur Auswahl an. Sets, die seit dem letzten Bearbeiten hinzugekommen oder verschwunden sind werden dabei extra hervorgehoben. Eine Liste aktueller Fehlermeldungen in der Weboberfläche vereinfacht es, Probleme wie verschwundene Server (häufig geänderte Adressen der OAI Schnittstellen) zu erkennen und zu beheben.
 
@@ -83,7 +83,7 @@ Die _pazpar2_ TYPO3 Extension stellt die Nutzeroberfläche für die Metasuche zu
 
 Die Funktionen der Client-Software sind umfangreich. Sie beinhalten das Anzeigen der Ergebnisliste mit Blättern und Facettierung und die möglichst detailreiche Darstellung der Trefferdaten. Die Detailanzeige beginnt mit den elementaren Metadaten zu Titel, Personen, Serien und Zeitschriften und reicht bis zu speziellen Features wie der Verfügbarkeitsanzeige von Zeitschriften für die IP Adresse des Nutzers über den Journals Online & Print Dienst der ZDB (ZDB-JOP); der Einbindung von Google Books falls der Titel dort vorhanden ist; der Einbindung von Google Maps für Karten mit Geoinformationen in den Metadaten; dem Export der Metadaten im RIS oder BibTeX Format für Literaturverwaltungsprogramme; oder einer Suche nach dem Titel im KVK.
 
-Diese TYPO3 Extension kommt mittlerweile auch (angpaßt) in der Metasuche von CrossAsia[*](http://crossasia.org/) zum Einsatz. Die Umsetzung einer Pazpar2 Suche für vifanord[*](http://www.vifanord.de/) mit Einbindung in TYPO3 ist ebenfalls in Arbeit.
+Die Umsetzung einer Pazpar2 Suche für vifanord[*](http://www.vifanord.de/) mit Einbindung in TYPO3 ist in Arbeit und die Anzeigelogik dieser TYPO3 Extension wird für die Metasuche von CrossAsia[*](http://crossasia.org/) genutzt.
 
 ### Themenbäume
 Zur Darstellung von Themenbäumen existiert die TYPO3 Extension _nkwgok_. Sie lädt Informationen zur Struktur der Themenbäume aus einfachen CSV Dateien – und alternativ aus lokalen Normsätzen im Pica OPAC.
