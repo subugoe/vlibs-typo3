@@ -605,8 +605,8 @@ a.languageSwitcher:hover {
 	margin-bottom: 5px;
 }
 
-#pazpar2 .pz2-details ul {
-	list-style-type: disc;
+#pazpar2 #pz2-results .pz2-details dd ul li {
+	list-style-type: circle;
 }
 
 #pazpar2 .pz2-details dd.pz2-googleBooks {
