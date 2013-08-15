@@ -350,8 +350,8 @@ max-width: 1200px;
 	margin-left: 11em;
 }
 
-#pazpar2 .pz2-details dl li {
-	list-style-type: disc;
+#pazpar2 #pz2-results .pz2-details dl ul li {
+	list-style-type: circle;
 }
 
 #pazpar2 .pz2-extraLinks form {
