@@ -16,7 +16,6 @@
 [submodule "typo3conf/ext/mathematicians"]
 	path = typo3conf/ext/mathematicians
 	url = git://github.com/subugoe/typo3-mathematicians.git
-
 [submodule "typo3conf/ext/tt_news"]
 	path = typo3conf/ext/tt_news
-	url = https://git.typo3.org/TYPO3v4/Extensions/tt_news.git
+	url = git://git.typo3.org/TYPO3v4/Extensions/tt_news.git
