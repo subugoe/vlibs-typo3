@@ -533,24 +533,9 @@ a.languageSwitcher:hover {
 	font-weight: normal;
 }
 
-#pazpar2 .pz2-recordLink:after {
-	position: relative;
-	bottom: -1px;
-	content: url(magnifier.png);
-}
-
-#pazpar2 .pz2-recordLink:hover:after {
-	content: url(magnifier_hover.png);
-}
-
 #pazpar2 .pz2-title-main {
 	font-weight: bold;
 	color: #263476;
-}
-
-#pazpar2 #pz2-results .pz2-mediaIcon {
-	top: -2px;
-	left: -38px;
 }
 
 #pazpar2 .pz2-progressIndicator {
@@ -615,16 +600,6 @@ a.languageSwitcher:hover {
 
 #pazpar2 .pz2-detail-parentCatalogueLink {
 	display: none;
-}
-
-#pazpar2 .pz2-detail-catalogueLink {
-	padding: 1px 12px 1px 4px;
-	background: #d9dbe4 url(arrow.png) right center no-repeat;
-}
-
-#pazpar2 .pz2-detail-catalogueLink:after {
-	margin: 0;
-	content: '';
 }
 
 #pazpar2 #pz2-results .pz2-extraLinks ul li input,
