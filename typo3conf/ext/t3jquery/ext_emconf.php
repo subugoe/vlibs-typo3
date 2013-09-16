@@ -3,7 +3,7 @@
 /***************************************************************
  * Extension Manager/Repository config file for ext "t3jquery".
  *
- * Auto generated 12-07-2013 08:44
+ * Auto generated 16-09-2013 17:07
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -15,7 +15,7 @@ $EM_CONF[$_EXTKEY] = array (
 	'description' => 'Provides a shared version of the jQuery Javascript framework for use in other extensions. See class.tx_t3jquery.php for API and usage. Includes BE module to configure the used parts of jQuery UI, jQuery TOOLS and Bootstrap.',
 	'category' => 'misc',
 	'shy' => 0,
-	'version' => '2.6.6',
+	'version' => '2.7.0',
 	'dependencies' => '',
 	'conflicts' => '',
 	'priority' => '',
@@ -40,7 +40,9 @@ $EM_CONF[$_EXTKEY] = array (
 			'php' => '5.0.0-0.0.0',
 			'typo3' => '4.3.0-6.1.99',
 		),
-		'conflicts' => '',
+		'conflicts' => 
+		array (
+		),
 		'suggests' => 
 		array (
 		),
