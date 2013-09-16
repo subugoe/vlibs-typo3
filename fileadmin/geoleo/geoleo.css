@@ -342,8 +342,20 @@ li {
 	font-size: 89.286%;
 }
 
-#pazpar2 .pz2-mediaIcon {
+*:first-child+html #pazpar2 .pz2-mediaIcon {
 	background-image: url(geo-leo_mediatype_icons.png);
+}
+
+#pazpar2 .pz2-mediaIcon {
+	top: -9px;
+}
+
+#pazpar2 .pz2-mediaIcon:before {
+	color: #f8f5f3;
+}
+
+#pazpar2 .pz2-mediaIcon:after {
+	color: #482e2a;
 }
 
 #pazpar2 a.pz2-recordLink {
@@ -355,23 +367,15 @@ li {
 }
 
 #pazpar2 .pz2-recordLink:after {
-	position: relative;
-	bottom: -1px;
-	content: url(magnifier.png);
+	color: #6c564c;
 }
 
 #pazpar2 .pz2-recordLink:hover:after {
-	content: url(magnifier_hover.png);
+	color: #482e2a;
 }
 
 #pazpar2 .pz2-detail-catalogueLink {
-	padding: 1px 12px 1px 4px;
-	background: #d9dbe4 url(arrow_single_right.png) 100% 50% no-repeat;
-}
-
-#pazpar2 .pz2-detail-catalogueLink:after {
-	margin: 0;
-	content: '';
+	background: #d9dbe4;
 }
 
 #pazpar2 .pz2-termList li {
@@ -400,30 +404,23 @@ li {
 	color: #464646;
 }
 
-#pazpar2 .pz2-prev,
-#pazpar2 .pz2-next {
-	display: inline-block;
-	height: 12px;
-	width: 12px;
-	text-indent: -9999em;
-	background-repeat: no-repeat;
-	background-image: url(arrows.png);
+#pazpar2 .pz2-pages {
+	padding-left: 2px;
 }
 
-#pazpar2 .pz2-prev {
-	background-position: -15px 100%;
+#pazpar2 .pz2-pager a:link,
+#pazpar2 .pz2-pager a:visited {
+	color: #039
 }
 
-#pazpar2 a.pz2-prev {
-	background-position: 1px 100%;
+#pazpar2 .pz2-prev:after,
+#pazpar2 .pz2-next:after {
+	top: 0.07em;
 }
 
-#pazpar2 .pz2-next {
-	background-position: -48px 100%;
-}
-
-#pazpar2 a.pz2-next {
-	background-position: -32px 100%;
+#pazpar2 span.pz2-prev:after,
+#pazpar2 span.pz2-next:after {
+	color: #7c8dc0
 }
 
 #pazpar2 #pz2-results ol.pz2-resultList li.pz2-detailsVisible {
@@ -474,10 +471,6 @@ li {
 
 #pazpar2 #pz2-results {
 	margin: 0px;
-}
-
-#pazpar2 .pz2-resultList .pz2-mediaIcon {
-	top: -2px;
 }
 
 #pazpar2 .pz2-ZDBInfo h5 {
