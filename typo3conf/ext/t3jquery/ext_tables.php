@@ -9,7 +9,8 @@ if (TYPO3_MODE == 'BE') {
 	$confArr = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3jquery']);
 
 	if ($confArr['enableStyleStatic']) {
-		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/bootstrap',         'T3JQUERY Style: Bootstrap default');
+		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/bootstrap',         'T3JQUERY Style: Bootstrap 2 default');
+		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/bootstrap-3.0.x',   'T3JQUERY Style: Bootstrap 3 default');
 		t3lib_extMgm::addStaticFile($_EXTKEY, 'static/mobile',            'T3JQUERY Style: Mobiles default');
 		if ($confArr['jQueryUiVersion'] == '1.9.x') {
 			t3lib_extMgm::addStaticFile($_EXTKEY, 'static/ui-1.9.x/base',           'T3JQUERY Style: UI Base');
