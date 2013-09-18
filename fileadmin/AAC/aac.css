@@ -116,6 +116,28 @@ h1, h2, h3 {
 	padding-bottom: 0.357em;
 }
 
+
+
+/* PAGE */
+#page {
+    position: relative;
+    min-height: 100%;
+}
+
+
+/* HEAD */
+#head {
+	height: 140px;
+	background: #eaecf4 url(header.png) no-repeat;
+	text-indent: -9999em;
+}
+
+#head a {
+	height: 100%;
+	width: 100%;
+}
+
+
 #head h1 {
 	font-size: 1.786em; /*=25px*/
 	position: absolute;
@@ -126,6 +148,25 @@ h1, h2, h3 {
 	padding: 0px;
 	background: transparent url(header_titles.png) 0px 0px no-repeat;
 }
+
+@media  (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+	#head {
+		background-image: url("header@2x.png");
+		-webkit-background-size: 940px 140px;
+		-moz-background-size: 940px 140px;
+		-o-background-size: 940px 140px;
+		background-size: 940px 140px;
+	}
+
+	#head h1 {
+		background-image: url("header_titles@2x.png");
+		-webkit-background-size: 308px 230px;
+		-moz-background-size: 308px 230px;
+		-o-background-size: 308px 230px;
+		background-size: 308px 230px;
+	}
+}
+
 
 body.historyguide h1 {
 	background-position: 0px -77px;
@@ -213,26 +254,6 @@ visible when they're tabbed to.
 	width: auto;
 	height: auto;
 	white-space: nowrap;
-}
-
-
-/* PAGE */
-#page {
-    position: relative;
-    min-height: 100%;
-}
-
-
-/* HEAD */
-#head {
-	height: 140px;
-	background: #eaecf4 url(header.png) no-repeat;
-	text-indent: -9999em;
-}
-
-#head a {
-	height: 100%;
-	width: 100%;
 }
 
 
