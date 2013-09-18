@@ -711,6 +711,10 @@ a.languageSwitcher:hover {
 	margin: 0 0 2em 0;
 }
 
+.container_16 .tx_find form .field-default input {
+	height: auto;
+}
+
 .tx_find li {
 	margin-bottom: 0.5em;
 }
