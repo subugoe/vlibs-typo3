@@ -92,7 +92,7 @@ body:before {
 
 @media  (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
 	body {
-		background-image: url("bg1@2x.png");
+		background-image: url("bg1@2x.gif");
 		-webkit-background-size: 100px 100px;
 		-moz-background-size: 100px 100px;
 		-o-background-size: 100px 100px;
