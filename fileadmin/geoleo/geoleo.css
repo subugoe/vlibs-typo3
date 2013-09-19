@@ -76,7 +76,61 @@ body:before {
 	background: url(footer_bg.png) repeat-x bottom center;
 }
 
+#head h1 {
+	position: absolute;
+	top: 0px;
+	left: -17px;
+	margin: 0px;
+	padding: 0px;
+	text-indent: -9999em;
+	height: 100px;
+	width: 240px;
+	background: transparent url(geo-leo-logo.png) no-repeat 0px 0px;
+}
 
+
+
+@media  (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+	body {
+		background-image: url("bg1@2x.png");
+		-webkit-background-size: 100px 100px;
+		-moz-background-size: 100px 100px;
+		-o-background-size: 100px 100px;
+		background-size: 100px 100px;
+	}
+
+	#page {
+		background-image: url("header_repeat@2x.png");
+		-webkit-background-size: 590px 170px;
+		-moz-background-size: 590px 170px;
+		-o-background-size: 590px 170px;
+		background-size: 590px 170px;
+	}
+
+	#head {
+		background-image: url("header@2x.png");
+		-webkit-background-size: 960px 170px;
+		-moz-background-size: 960px 170px;
+		-o-background-size: 960px 170px;
+		background-size: 960px 170px;
+	}
+
+	#head h1 {
+		background-image: url("geo-leo-logo@2x.png");
+		-webkit-background-size: 230px 104px;
+		-moz-background-size: 230px 104px;
+		-o-background-size: 230px 104px;
+		background-size: 230px 104px;
+	}
+
+	#foot {
+		background-image: url("footer_bg@2x.png");
+		-webkit-background-size: 1118px 60px;
+		-moz-background-size: 1118px 60px;
+		-o-background-size: 1118px 60px;
+		background-size: 1118px 60px;
+	}
+}
 
 /* GENERAL ELEMENT SETUP */
 
@@ -232,22 +286,6 @@ li {
 #bottommenu ul.bottommenu li a {
 	color: #464646;
 }
-
-
-
-
-#head h1 {
-	position: absolute;
-	top: 0px;
-	left: -17px;
-	margin: 0px;
-	padding: 0px;
-	text-indent: -9999em;
-	height: 100px;
-	width: 240px;
-	background: transparent url(geo-leo-logo.png) no-repeat 0px 0px;
-}
-
 
 
 /* 960gs positioning */
